@@ -813,6 +813,284 @@ extern "C" void LAB_100983c4(void);
 extern "C" void LAB_100996f2(void);
 extern "C" void LAB_10c41b5a(void);
 extern "C" void LAB_10c44730(void);
+extern "C" void LAB_10c447a4(void);
+extern "C" void LAB_10c447af(void);
+extern "C" void LAB_10c44b70(void);
+extern "C" void LAB_10c44be4(void);
+extern "C" void LAB_10c44bef(void);
+extern "C" void LAB_10c44d90(void);
+extern "C" void LAB_10c44e10(void);
+extern "C" void LAB_10c44e1c(void);
+extern "C" void LAB_10c46b9c(void);
+extern "C" void LAB_10c4a14c(void);
+extern "C" void LAB_10c4d28d(void);
+extern "C" void LAB_10c70a58(void);
+extern "C" void LAB_10c70a76(void);
+extern "C" void LAB_10c70b58(void);
+extern "C" void LAB_10c70b76(void);
+extern "C" void LAB_10c72320(void);
+extern "C" void LAB_10c73468(void);
+extern "C" void LAB_10c73486(void);
+extern "C" void LAB_10c73568(void);
+extern "C" void LAB_10c73586(void);
+extern "C" void LAB_10c76935(void);
+extern "C" void LAB_10c76946(void);
+extern "C" void LAB_10c76955(void);
+extern "C" void LAB_10c76a55(void);
+extern "C" void LAB_10c76a66(void);
+extern "C" void LAB_10c76a75(void);
+extern "C" void LAB_10c79eda(void);
+extern "C" void LAB_10c79faa(void);
+extern "C" void LAB_10c7a15d(void);
+extern "C" void LAB_10c7a17b(void);
+extern "C" void LAB_10c7a26d(void);
+extern "C" void LAB_10c7a28b(void);
+extern "C" void LAB_10c7c13c(void);
+extern "C" void LAB_10c7c144(void);
+extern "C" void LAB_10c7c178(void);
+extern "C" void LAB_10c7c188(void);
+extern "C" void LAB_10c7c334(void);
+extern "C" void LAB_10c7c33c(void);
+extern "C" void LAB_10c7c370(void);
+extern "C" void LAB_10c7c380(void);
+extern "C" void LAB_10c7ce6b(void);
+extern "C" void LAB_10c7cf1e(void);
+extern "C" void LAB_1148a054(void);
+extern "C" void LAB_1148a066(void);
+extern "C" void LAB_1148a279(void);
+extern "C" void LAB_1148a27f(void);
+extern "C" void LAB_1148cded(void);
+extern "C" void LAB_1148cdf3(void);
+extern "C" void LAB_1148ce0b(void);
+extern "C" void LAB_1148ce11(void);
+extern "C" void LAB_116de755(void);
+extern "C" void LAB_1186d2ee(void);
+extern "C" void LAB_11880f54(void);
+extern "C" void LAB_11880fb0(void);
+extern "C" void LAB_11880fec(void);
+extern "C" void LAB_11881068(void);
+extern "C" void LAB_11881488(void);
+extern "C" void LAB_11881498(void);
+extern "C" void LAB_11883984(void);
+extern "C" void LAB_11883b7c(void);
+extern "C" void LAB_1188cfa8(void);
+extern "C" void LAB_1188db30(void);
+extern "C" void LAB_11893ddc(void);
+extern "C" void LAB_118b9f98(void);
+extern "C" void LAB_118ba664(void);
+extern "C" void LAB_119165dc(void);
+extern "C" void LAB_119169b8(void);
+extern "C" void LAB_11916d04(void);
+extern "C" void LAB_11916d4c(void);
+extern "C" void LAB_11916d5c(void);
+extern "C" void LAB_11916d6c(void);
+extern "C" void LAB_11916e18(void);
+extern "C" void LAB_11916e20(void);
+extern "C" void LAB_11916e34(void);
+extern "C" void LAB_11916e48(void);
+extern "C" void LAB_11916e90(void);
+extern "C" void LAB_11916ecc(void);
+extern "C" void LAB_11916f64(void);
+extern "C" void LAB_11916fac(void);
+extern "C" void LAB_11917000(void);
+extern "C" void LAB_119171b8(void);
+extern "C" void LAB_11917200(void);
+extern "C" void LAB_1191723c(void);
+extern "C" void LAB_11917248(void);
+extern "C" void LAB_11917280(void);
+extern "C" void LAB_119172c8(void);
+extern "C" void LAB_11917304(void);
+extern "C" void LAB_11917310(void);
+extern "C" void LAB_11917330(void);
+extern "C" void LAB_11917378(void);
+extern "C" void LAB_119173b4(void);
+extern "C" void LAB_119173c0(void);
+extern "C" void LAB_119173dc(void);
+extern "C" void LAB_11917424(void);
+extern "C" void LAB_11917460(void);
+extern "C" void LAB_1191746c(void);
+extern "C" void LAB_11917498(void);
+extern "C" void LAB_119174e0(void);
+extern "C" void LAB_1191751c(void);
+extern "C" void LAB_11917528(void);
+extern "C" void LAB_11917548(void);
+extern "C" void LAB_119175f4(void);
+extern "C" void LAB_11917640(void);
+extern "C" void LAB_11917650(void);
+extern "C" void LAB_119176fc(void);
+extern "C" void LAB_11917748(void);
+extern "C" void LAB_11917758(void);
+extern "C" void LAB_11917804(void);
+extern "C" void LAB_11917850(void);
+extern "C" void LAB_119178d4(void);
+extern "C" void LAB_1191796c(void);
+extern "C" void LAB_119179b4(void);
+extern "C" void LAB_119179c4(void);
+extern "C" void LAB_11917a70(void);
+extern "C" void LAB_11917abc(void);
+extern "C" void LAB_11917b08(void);
+extern "C" void LAB_11917b44(void);
+extern "C" void LAB_11917b88(void);
+extern "C" void LAB_11917ca0(void);
+extern "C" void LAB_11917ce8(void);
+extern "C" void LAB_11917d24(void);
+extern "C" void LAB_11917d30(void);
+extern "C" void LAB_11917d60(void);
+extern "C" void LAB_11917da8(void);
+extern "C" void LAB_11917de4(void);
+extern "C" void LAB_11917df0(void);
+extern "C" void LAB_11917eac(void);
+extern "C" void LAB_11917f44(void);
+extern "C" void LAB_11917f8c(void);
+extern "C" void LAB_11917f9c(void);
+extern "C" void LAB_11918054(void);
+extern "C" void LAB_119180a8(void);
+extern "C" void LAB_11918118(void);
+extern "C" void LAB_119181b0(void);
+extern "C" void LAB_119181f8(void);
+extern "C" void LAB_11918208(void);
+extern "C" void LAB_119182c0(void);
+extern "C" void LAB_11918314(void);
+extern "C" void LAB_11918350(void);
+extern "C" void LAB_1191837c(void);
+extern "C" void LAB_119183b0(void);
+extern "C" void LAB_1191845c(void);
+extern "C" void LAB_119184a4(void);
+extern "C" void LAB_119184e0(void);
+extern "C" void LAB_119184ec(void);
+extern "C" void LAB_11918528(void);
+extern "C" void LAB_119185d4(void);
+extern "C" void LAB_11918620(void);
+extern "C" void LAB_119187c8(void);
+extern "C" void LAB_119188f4(void);
+extern "C" void LAB_11918a28(void);
+extern "C" void LAB_11918d08(void);
+extern "C" void LAB_11918fb0(void);
+extern "C" void LAB_1191a0b8(void);
+extern "C" void LAB_1191a7c0(void);
+extern "C" void LAB_1191a8f8(void);
+extern "C" void LAB_1191a904(void);
+extern "C" void LAB_1191a910(void);
+extern "C" void LAB_1191a91c(void);
+extern "C" void LAB_1191a928(void);
+extern "C" void LAB_1191a934(void);
+extern "C" void LAB_1191a940(void);
+extern "C" void LAB_1191a94c(void);
+extern "C" void LAB_1191a958(void);
+extern "C" void LAB_1191a964(void);
+extern "C" void LAB_1191a9ac(void);
+extern "C" void LAB_1191ad00(void);
+extern "C" void LAB_1191ad0c(void);
+extern "C" void LAB_1191afe8(void);
+extern "C" void LAB_1191b030(void);
+extern "C" void LAB_1191b0a4(void);
+extern "C" void LAB_1191b0ec(void);
+extern "C" void LAB_1191b0fc(void);
+extern "C" void LAB_1191b118(void);
+extern "C" void LAB_1191b270(void);
+extern "C" void LAB_1191b28c(void);
+extern "C" void LAB_1191b600(void);
+extern "C" void LAB_12126b84(void);
+extern "C" void LAB_121a0e68(void);
+extern "C" void LAB_121a568c(void);
+extern "C" void LAB_122fc300(void);
+extern "C" void LAB_122fc7a8(void);
+extern "C" void LAB_122fc7ac(void);
+extern "C" void LAB_122fc888(void);
+
+extern "C" void LAB_10005272(void);
+extern "C" void LAB_10006299(void);
+extern "C" void LAB_1000b456(void);
+extern "C" void LAB_1000b73a(void);
+extern "C" void LAB_1000c158(void);
+extern "C" void LAB_1000cfa4(void);
+extern "C" void LAB_1000d076(void);
+extern "C" void LAB_1000d4ae(void);
+extern "C" void LAB_1000e435(void);
+extern "C" void LAB_1000e656(void);
+extern "C" void LAB_1000f9a7(void);
+extern "C" void LAB_100114b4(void);
+extern "C" void LAB_10012b16(void);
+extern "C" void LAB_100131d8(void);
+extern "C" void LAB_10013336(void);
+extern "C" void LAB_1001445c(void);
+extern "C" void LAB_10014f60(void);
+extern "C" void LAB_100188c7(void);
+extern "C" void LAB_1001af41(void);
+extern "C" void LAB_1001c6cf(void);
+extern "C" void LAB_1001f2fd(void);
+extern "C" void LAB_100210fd(void);
+extern "C" void LAB_10021ed6(void);
+extern "C" void LAB_100238df(void);
+extern "C" void LAB_10024bef(void);
+extern "C" void LAB_10024f14(void);
+extern "C" void LAB_1002630f(void);
+extern "C" void LAB_100276f1(void);
+extern "C" void LAB_100287a4(void);
+extern "C" void LAB_10028d21(void);
+extern "C" void LAB_10029fe1(void);
+extern "C" void LAB_1002a973(void);
+extern "C" void LAB_1002ac39(void);
+extern "C" void LAB_1002c174(void);
+extern "C" void LAB_1002f22f(void);
+extern "C" void LAB_10030f30(void);
+extern "C" void LAB_10033514(void);
+extern "C" void LAB_10036c23(void);
+extern "C" void LAB_10037a97(void);
+extern "C" void LAB_100382f3(void);
+extern "C" void LAB_10038357(void);
+extern "C" void LAB_1003dd52(void);
+extern "C" void LAB_1003ec3e(void);
+extern "C" void LAB_10043dba(void);
+extern "C" void LAB_1004458a(void);
+extern "C" void LAB_10045921(void);
+extern "C" void LAB_10045d95(void);
+extern "C" void LAB_10046a33(void);
+extern "C" void LAB_10049558(void);
+extern "C" void LAB_1004a052(void);
+extern "C" void LAB_100520d1(void);
+extern "C" void LAB_1005273e(void);
+extern "C" void LAB_10053a80(void);
+extern "C" void LAB_10053ce2(void);
+extern "C" void LAB_10054458(void);
+extern "C" void LAB_100545d9(void);
+extern "C" void LAB_10055a33(void);
+extern "C" void LAB_10055fd3(void);
+extern "C" void LAB_10057676(void);
+extern "C" void LAB_10058486(void);
+extern "C" void LAB_100585e4(void);
+extern "C" void LAB_1005c315(void);
+extern "C" void LAB_1005f2f9(void);
+extern "C" void LAB_1005f6c8(void);
+extern "C" void LAB_10065348(void);
+extern "C" void LAB_100675d0(void);
+extern "C" void LAB_1006a316(void);
+extern "C" void LAB_10070892(void);
+extern "C" void LAB_10070f3b(void);
+extern "C" void LAB_10071f8a(void);
+extern "C" void LAB_10073718(void);
+extern "C" void LAB_10074a64(void);
+extern "C" void LAB_10075eeb(void);
+extern "C" void LAB_10076c01(void);
+extern "C" void LAB_1007aecd(void);
+extern "C" void LAB_1007bcbf(void);
+extern "C" void LAB_1007d9a7(void);
+extern "C" void LAB_1007efb4(void);
+extern "C" void LAB_1007f432(void);
+extern "C" void LAB_10080c3d(void);
+extern "C" void LAB_1008442d(void);
+extern "C" void LAB_10089b49(void);
+extern "C" void LAB_1008a53f(void);
+extern "C" void LAB_1008a7ec(void);
+extern "C" void LAB_1008bf9d(void);
+extern "C" void LAB_1008e144(void);
+extern "C" void LAB_10095197(void);
+extern "C" void LAB_1009552f(void);
+extern "C" void LAB_100965ab(void);
+extern "C" void LAB_100983c4(void);
+extern "C" void LAB_100996f2(void);
+extern "C" void LAB_10c41b5a(void);
+extern "C" void LAB_10c44730(void);
 extern "C" void LAB_10c447af(void);
 extern "C" void LAB_10c44b70(void);
 extern "C" void LAB_10c44bef(void);
@@ -3663,36 +3941,16 @@ void __fastcall FUN_10c36350(undefined4 *param_1)
 __declspec(naked) void FUN_10c36370(void)
 
 {
-  __asm push ecx
-  __asm push edi
-  __asm mov edi, dword ptr [ecx]
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x3d
-  __asm cmp dword ptr [edi + 0x10], 0
-  __asm _emit 0x74 __asm _emit 0x37
-  __asm push esi
-  __asm push dword ptr [edi + 0xc]
-  __asm lea esi, [edi + 0xc]
-  __asm push esi
+  __asm _emit 0x51 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x39 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x3d __asm _emit 0x83 __asm _emit 0x7f __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0x37 __asm _emit 0x56 __asm _emit 0xff
+  __asm _emit 0x77 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x77 __asm _emit 0x0c __asm _emit 0x56
   __asm call LAB_100996f2
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [eax], eax
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [eax + 4], eax
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm lea eax, [esp + 0x10]
-  __asm push eax
-  __asm push dword ptr [edi + 0x18]
-  __asm push dword ptr [edi + 0x14]
+  __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x18 __asm _emit 0xff __asm _emit 0x77
+  __asm _emit 0x14
   __asm call LAB_1007aecd
-  __asm add esp, 0x14
-  __asm pop esi
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x14 __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -3953,17 +4211,11 @@ bool __stdcall FUN_10c366c0(int *param_1,int *param_2)
 __declspec(naked) void FUN_10c369a0(void)
 
 {
-  __asm push esi
-  __asm push 0x14
-  __asm mov esi, ecx
+  __asm _emit 0x56 __asm _emit 0x6a __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xf1
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [esi], eax
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -3975,12 +4227,11 @@ __declspec(naked) void FUN_10c369a0(void)
 __declspec(naked) void FUN_10c36b00(void)
 
 {
-  __asm cmp dword ptr [ecx + 0x10], 0xccccccc
-  __asm _emit 0x74 __asm _emit 0x01
-  __asm ret
+  __asm _emit 0x81 __asm _emit 0x79 __asm _emit 0x10 __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0x0c __asm _emit 0x74 __asm _emit 0x01 __asm _emit 0xc3
   __asm push offset LAB_11880f54
   __asm call LAB_1148a054
 }
+
 
 
 
@@ -3992,24 +4243,14 @@ __declspec(naked) void FUN_10c36b00(void)
 __declspec(naked) void FUN_10c36b20(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 0x10]
-  __asm inc eax
-  __asm movd xmm0, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0
-  __asm shr eax, 0x1f
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x40 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x6e __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0 __asm _emit 0xc1 __asm _emit 0xe8 __asm _emit 0x1f
   __asm addsd xmm0, qword ptr [eax*8 + LAB_11880fb0]
-  __asm mov eax, dword ptr [ecx + 0x24]
-  __asm cvtpd2ps xmm1, xmm0
-  __asm movd xmm0, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0
-  __asm shr eax, 0x1f
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x24 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x5a __asm _emit 0xc8 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x6e __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0 __asm _emit 0xc1
+  __asm _emit 0xe8 __asm _emit 0x1f
   __asm addsd xmm0, qword ptr [eax*8 + LAB_11880fb0]
-  __asm cvtpd2ps xmm0, xmm0
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x5e __asm _emit 0xc8
-  __asm comiss xmm1, dword ptr [ecx + 8]
-  __asm seta al
-  __asm ret
+  __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x5a __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x5e __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0x2f __asm _emit 0x49 __asm _emit 0x08 __asm _emit 0x0f __asm _emit 0x97 __asm _emit 0xc0 __asm _emit 0xc3
 }
+
 
 
 
@@ -4165,49 +4406,14 @@ undefined4 __fastcall FUN_10c36ea0(int param_1)
 __declspec(naked) void FUN_10c36eb0(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x14]
-  __asm mov edx, ecx
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x14]
-  __asm mov ebx, dword ptr [edi + 4]
-  __asm inc dword ptr [edx + 0x10]
-  __asm mov dword ptr [esi], edi
-  __asm mov dword ptr [esi + 4], ebx
-  __asm mov dword ptr [ebx], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm mov eax, dword ptr [edx + 0x20]
-  __asm mov ecx, dword ptr [edx + 0x14]
-  __asm and eax, dword ptr [esp + 0x10]
-  __asm lea eax, [ecx + eax*8]
-  __asm mov ecx, dword ptr [eax]
-  __asm cmp ecx, dword ptr [edx + 0xc]
-  __asm _emit 0x75 __asm _emit 0x0d
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [eax + 4], esi
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
-  __asm cmp ecx, edi
-  __asm _emit 0x75 __asm _emit 0x0a
-  __asm mov dword ptr [eax], esi
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
-  __asm cmp dword ptr [eax + 4], ebx
-  __asm _emit 0x75 __asm _emit 0x03
-  __asm mov dword ptr [eax + 4], esi
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xd1 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x5f __asm _emit 0x04
+  __asm _emit 0xff __asm _emit 0x42 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x89 __asm _emit 0x5e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x33 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x20
+  __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x14 __asm _emit 0x23 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0x4a __asm _emit 0x0c __asm _emit 0x75
+  __asm _emit 0x0d __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x3b __asm _emit 0xcf
+  __asm _emit 0x75 __asm _emit 0x0a __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x39 __asm _emit 0x58 __asm _emit 0x04 __asm _emit 0x75
+  __asm _emit 0x03 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -4296,19 +4502,10 @@ void __fastcall FUN_10c370a0(undefined4 *param_1)
 __declspec(naked) void FUN_10c370b0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm mov ecx, dword ptr [eax + 0x24]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x08
-  __asm mov eax, dword ptr [ecx]
-  __asm push esi
-  __asm call dword ptr [eax]
-  __asm mov dword ptr [esi + 0x24], eax
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x24 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -4331,12 +4528,9 @@ __declspec(naked) void FUN_10c370b0(void)
 __declspec(naked) void FUN_10c371a0(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 0xc]
-  __asm mov ecx, dword ptr [eax]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov dword ptr [eax], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -4381,26 +4575,11 @@ __declspec(naked) void FUN_10c371a0(void)
 __declspec(naked) void FUN_10c371f0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov edx, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [ebx + 4]
-  __asm mov dword ptr [edi], eax
-  __asm mov esi, dword ptr [eax + 4]
-  __asm mov dword ptr [esi], edx
-  __asm mov ecx, dword ptr [edx + 4]
-  __asm mov dword ptr [ecx], ebx
-  __asm mov dword ptr [edx + 4], esi
-  __asm mov dword ptr [eax + 4], edi
-  __asm pop edi
-  __asm pop esi
-  __asm mov dword ptr [ebx + 4], ecx
-  __asm pop ebx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b
+  __asm _emit 0x7b __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0x8b __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x16 __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x19 __asm _emit 0x89 __asm _emit 0x72
+  __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x78 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x89 __asm _emit 0x4b __asm _emit 0x04 __asm _emit 0x5b __asm _emit 0xc3
 }
+
 
 
 
@@ -4412,37 +4591,18 @@ __declspec(naked) void FUN_10c371f0(void)
 __declspec(naked) void FUN_10c37550(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0xccccccc
-  __asm _emit 0x77 __asm _emit 0x4a
-  __asm lea eax, [eax + eax*4]
-  __asm shl eax, 2
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0x0c __asm _emit 0x77 __asm _emit 0x4a __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x80 __asm _emit 0xc1 __asm _emit 0xe0
+  __asm _emit 0x02 __asm _emit 0x3d __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -4454,36 +4614,18 @@ __declspec(naked) void FUN_10c37550(void)
 __declspec(naked) void FUN_10c375d0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0x3fffffff
-  __asm _emit 0x77 __asm _emit 0x47
-  __asm shl eax, 2
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0x77 __asm _emit 0x47 __asm _emit 0xc1 __asm _emit 0xe0 __asm _emit 0x02 __asm _emit 0x3d __asm _emit 0x00
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -4495,28 +4637,13 @@ __declspec(naked) void FUN_10c375d0(void)
 __declspec(naked) void FUN_10c37640(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm movzx eax, byte ptr [esi]
-  __asm xor eax, 0x811c9dc5
-  __asm imul edx, eax, 0x1000193
-  __asm movzx eax, byte ptr [esi + 1]
-  __asm xor edx, eax
-  __asm movzx eax, byte ptr [esi + 2]
-  __asm imul edx, edx, 0x1000193
-  __asm xor edx, eax
-  __asm movzx eax, byte ptr [esi + 3]
-  __asm imul ecx, edx, 0x1000193
-  __asm xor ecx, eax
-  __asm mov eax, dword ptr [edi + 0x20]
-  __asm imul ecx, ecx, 0x1000193
-  __asm pop edi
-  __asm pop esi
-  __asm and eax, ecx
-  __asm ret 4
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x06 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81
+  __asm _emit 0x69 __asm _emit 0xd0 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x02
+  __asm _emit 0x69 __asm _emit 0xd2 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x03 __asm _emit 0x69 __asm _emit 0xca __asm _emit 0x93 __asm _emit 0x01
+  __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x20 __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x23
+  __asm _emit 0xc1 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -4540,34 +4667,16 @@ undefined4 __fastcall FUN_10c376a0(int param_1)
 __declspec(naked) void FUN_10c376c0(void)
 
 {
-  __asm push ecx
-  __asm push edi
-  __asm mov edi, ecx
-  __asm cmp dword ptr [edi + 0x10], 0
-  __asm _emit 0x74 __asm _emit 0x37
-  __asm push esi
-  __asm push dword ptr [edi + 0xc]
-  __asm lea esi, [edi + 0xc]
-  __asm push esi
+  __asm _emit 0x51 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x83 __asm _emit 0x7f __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0x37 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x77
+  __asm _emit 0x0c __asm _emit 0x56
   __asm call LAB_100996f2
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [eax], eax
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [eax + 4], eax
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm lea eax, [esp + 0x10]
-  __asm push eax
-  __asm push dword ptr [edi + 0x18]
-  __asm push dword ptr [edi + 0x14]
+  __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x18 __asm _emit 0xff __asm _emit 0x77
+  __asm _emit 0x14
   __asm call LAB_1007aecd
-  __asm add esp, 0x14
-  __asm pop esi
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x14 __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -4579,26 +4688,14 @@ __declspec(naked) void FUN_10c376c0(void)
 __declspec(naked) void FUN_10c37830(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm lea ecx, [eax + eax*4]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm shl ecx, 2
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0d
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x80 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x02 __asm _emit 0x81 __asm _emit 0xf9
+  __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0
+  __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0d __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc3
   __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 
@@ -4610,27 +4707,15 @@ __declspec(naked) void FUN_10c37830(void)
 __declspec(naked) void FUN_10c37880(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm lea ecx, [eax + eax*4]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm shl ecx, 2
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x80 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x02 __asm _emit 0x81 __asm _emit 0xf9
+  __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0
+  __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -4642,26 +4727,15 @@ __declspec(naked) void FUN_10c37880(void)
 __declspec(naked) void FUN_10c378d0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x81
+  __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -4889,34 +4963,13 @@ int __fastcall FUN_10c38fd0(int *param_1)
 __declspec(naked) void FUN_10c39a00(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm push edi
-  __asm mov edi, dword ptr [eax]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov ecx, dword ptr [esi + 4]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x12 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 8]
-  __asm mov dword ptr [esi], edi
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x11
-  __asm mov eax, dword ptr [edi]
-  __asm mov ecx, edi
-  __asm call dword ptr [eax + 0xc]
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm ret 4
-  __asm pop edi
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x38 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x12 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x11 __asm _emit 0x8b
+  __asm _emit 0x07 __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
+  __asm _emit 0x5f __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -4928,34 +4981,13 @@ __declspec(naked) void FUN_10c39a00(void)
 __declspec(naked) void FUN_10c39a70(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm push edi
-  __asm mov edi, dword ptr [eax]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov ecx, dword ptr [esi + 4]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x12 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 8]
-  __asm mov dword ptr [esi], edi
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x11
-  __asm mov eax, dword ptr [edi]
-  __asm mov ecx, edi
-  __asm call dword ptr [eax + 0xc]
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm ret 4
-  __asm pop edi
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x38 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x12 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x11 __asm _emit 0x8b
+  __asm _emit 0x07 __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
+  __asm _emit 0x5f __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -4981,18 +5013,15 @@ undefined4 * __fastcall FUN_10c39ae0(undefined4 *param_1)
 __declspec(naked) void FUN_10c39b40(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_11881498
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_119165dc
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -5126,13 +5155,11 @@ void __fastcall FUN_10c3b6b0(undefined4 *param_1)
 __declspec(naked) void FUN_10c3b790(void)
 
 {
-  __asm push 0
-  __asm push 0x3e8
-  __asm push dword ptr [esp + 0x10]
-  __asm push dword ptr [esp + 0x10]
+  __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x68 __asm _emit 0xe8 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10
   __asm call LAB_100276f1
-  __asm ret
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -5144,47 +5171,18 @@ __declspec(naked) void FUN_10c3b790(void)
 __declspec(naked) void FUN_10c3bf90(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push ebx
-  __asm mov ebx, ecx
-  __asm push ebp
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [esp + 8], ebx
-  __asm mov dword ptr [ebx], eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov ecx, dword ptr [eax]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm mov dword ptr [esp + 0x14], ecx
-  __asm cmp ecx, eax
-  __asm _emit 0x74 __asm _emit 0x32
-  __asm push esi
-  __asm sub eax, ecx
-  __asm lea ecx, [ebx + 4]
-  __asm push edi
-  __asm mov edi, eax
-  __asm mov dword ptr [esp + 0x18], eax
-  __asm sar edi, 2
-  __asm push edi
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89
+  __asm _emit 0x03 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89
+  __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x74 __asm _emit 0x32 __asm _emit 0x56 __asm _emit 0x2b __asm _emit 0xc1 __asm _emit 0x8d __asm _emit 0x4b __asm _emit 0x04 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf8
+  __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x57
   __asm call LAB_1003dd52
-  __asm push dword ptr [esp + 0x18]
-  __asm mov esi, dword ptr [ebx + 4]
-  __asm push dword ptr [esp + 0x20]
-  __asm push esi
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x73 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm mov dword ptr [ebx + 8], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm mov eax, ebx
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x8b __asm _emit 0xc3 __asm _emit 0x5b __asm _emit 0x59
+  __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -5399,31 +5397,14 @@ undefined4 * __fastcall FUN_10c3c490(undefined4 *param_1, unsigned int recovered
 __declspec(naked) void FUN_10c3c4b0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov eax, dword ptr [eax]
-  __asm lea esi, [edi + 4]
-  __asm mov dword ptr [esp + 8], edi
-  __asm push 0x14
-  __asm mov dword ptr [edi], eax
-  __asm mov dword ptr [esp + 0xc], esi
-  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x7c
+  __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x6a __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [eax + 8], eax
-  __asm mov word ptr [eax + 0xc], 0x101
-  __asm mov dword ptr [esi], eax
-  __asm mov eax, edi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x66 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x01
+  __asm _emit 0x01 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x8b __asm _emit 0xc7 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -5699,32 +5680,14 @@ undefined4 * __fastcall FUN_10c3c890(undefined4 *param_1, unsigned int recovered
 __declspec(naked) void FUN_10c3c8b0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov eax, dword ptr [eax]
-  __asm lea esi, [edi + 4]
-  __asm push 0x14
-  __asm mov dword ptr [esp + 0xc], edi
-  __asm mov dword ptr [esp + 0x14], esi
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [edi], eax
-  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x6a __asm _emit 0x14
+  __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [eax + 8], eax
-  __asm mov word ptr [eax + 0xc], 0x101
-  __asm mov dword ptr [esi], eax
-  __asm mov eax, edi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 0x10
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x66 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x01
+  __asm _emit 0x01 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x8b __asm _emit 0xc7 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x10 __asm _emit 0x00
 }
+
 
 
 
@@ -6168,52 +6131,17 @@ void FUN_10c3cdb0(undefined4 *param_1,undefined4 *param_2)
 __declspec(naked) void FUN_10c3cdc0(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm push dword ptr [esp + 0x10]
-  __asm mov edi, ecx
-  __asm mov eax, dword ptr [esi]
-  __asm push dword ptr [edi]
-  __asm push dword ptr [eax + 4]
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0xff __asm _emit 0x37
+  __asm _emit 0xff __asm _emit 0x70 __asm _emit 0x04
   __asm call LAB_10055a33
-  __asm mov ecx, dword ptr [edi]
-  __asm mov dword ptr [ecx + 4], eax
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov esi, dword ptr [edi]
-  __asm mov dword ptr [edi + 4], eax
-  __asm mov edx, dword ptr [esi + 4]
-  __asm cmp byte ptr [edx + 0xd], 0
-  __asm _emit 0x75 __asm _emit 0x37
-  __asm mov ecx, dword ptr [edx]
-  __asm cmp byte ptr [ecx + 0xd], 0
-  __asm _emit 0x75 __asm _emit 0x0c
-  __asm mov eax, dword ptr [ecx]
-  __asm mov edx, ecx
-  __asm mov ecx, eax
-  __asm cmp byte ptr [eax + 0xd], 0
-  __asm _emit 0x74 __asm _emit 0xf4
-  __asm mov dword ptr [esi], edx
-  __asm mov edx, dword ptr [edi]
-  __asm mov ecx, dword ptr [edx + 4]
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm cmp byte ptr [eax + 0xd], 0
-  __asm _emit 0x75 __asm _emit 0x0b
-  __asm mov ecx, eax
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm cmp byte ptr [eax + 0xd], 0
-  __asm _emit 0x74 __asm _emit 0xf5
-  __asm pop edi
-  __asm mov dword ptr [edx + 8], ecx
-  __asm pop esi
-  __asm ret 8
-  __asm mov dword ptr [esi], esi
-  __asm mov eax, dword ptr [edi]
-  __asm pop edi
-  __asm pop esi
-  __asm mov dword ptr [eax + 8], eax
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0x0f __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x56 __asm _emit 0x04
+  __asm _emit 0x80 __asm _emit 0x7a __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x37 __asm _emit 0x8b __asm _emit 0x0a __asm _emit 0x80 __asm _emit 0x79 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x8b __asm _emit 0xd1 __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x80 __asm _emit 0x78 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0xf4 __asm _emit 0x89 __asm _emit 0x16 __asm _emit 0x8b __asm _emit 0x17 __asm _emit 0x8b __asm _emit 0x4a
+  __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x80 __asm _emit 0x78 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x0b __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x80
+  __asm _emit 0x78 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0xf5 __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x4a __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x36 __asm _emit 0x8b
+  __asm _emit 0x07 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -6225,22 +6153,12 @@ __declspec(naked) void FUN_10c3cdc0(void)
 __declspec(naked) void FUN_10c3ce50(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -6252,22 +6170,12 @@ __declspec(naked) void FUN_10c3ce50(void)
 __declspec(naked) void FUN_10c3ce80(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -6505,28 +6413,14 @@ void FUN_10c3d9b0(undefined4 param_1,undefined4 *param_2)
 __declspec(naked) void FUN_10c3d9f0(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov esi, dword ptr [esi]
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x1d
-  __asm push edi
-  __asm mov edi, dword ptr [esi]
-  __asm lea ecx, [esi + 8]
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x36
+  __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74 __asm _emit 0x1d __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x3e __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x08
   __asm call LAB_10080c3d
-  __asm push 0x18
-  __asm push esi
+  __asm _emit 0x6a __asm _emit 0x18 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm mov esi, edi
-  __asm test edi, edi
-  __asm _emit 0x75 __asm _emit 0xe5
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xf7 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x75 __asm _emit 0xe5 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -6603,18 +6497,13 @@ void FUN_10c3dab0(undefined4 param_1,undefined4 param_2)
 __declspec(naked) void FUN_10c3dad0(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm lea ecx, [esi + 0xc]
-  __asm push ecx
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x0c __asm _emit 0x51
   __asm call LAB_10043dba
-  __asm push 0x14
-  __asm push esi
+  __asm _emit 0x6a __asm _emit 0x14 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -6639,17 +6528,13 @@ void FUN_10c3db00(undefined4 param_1,undefined4 param_2)
 __declspec(naked) void FUN_10c3db20(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm lea ecx, [esi + 8]
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x08
   __asm call LAB_10080c3d
-  __asm push 0x18
-  __asm push esi
+  __asm _emit 0x6a __asm _emit 0x18 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -6841,37 +6726,16 @@ undefined4 FUN_10c3dca0(undefined4 param_1)
 __declspec(naked) void FUN_10c3dcb0(void)
 
 {
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm sub ebx, dword ptr [esp + 8]
-  __asm push ebp
-  __asm push edi
-  __asm mov edi, ebx
-  __asm mov ebp, ecx
-  __asm sar edi, 2
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x27
-  __asm cmp edi, 0x3fffffff
-  __asm _emit 0x77 __asm _emit 0x25
-  __asm push esi
-  __asm push edi
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x2b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x55 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xfb __asm _emit 0x8b __asm _emit 0xe9 __asm _emit 0xc1
+  __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x27 __asm _emit 0x81 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0x77 __asm _emit 0x25 __asm _emit 0x56 __asm _emit 0x57
   __asm call LAB_1003dd52
-  __asm mov esi, dword ptr [ebp]
-  __asm push ebx
-  __asm push dword ptr [esp + 0x18]
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x75 __asm _emit 0x00 __asm _emit 0x53 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm mov dword ptr [ebp + 4], eax
-  __asm pop esi
-  __asm pop edi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x89 __asm _emit 0x45 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
   __asm call LAB_1001c6cf
   __asm _emit 0xcc
 }
+
 
 
 
@@ -6895,23 +6759,12 @@ undefined4 FUN_10c3dfc0(undefined4 *param_1)
 __declspec(naked) void FUN_10c3dfd0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm sar edi, 2
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm pop edi
-  __asm pop esi
-  __asm ret 0xc
+  __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -6923,23 +6776,12 @@ __declspec(naked) void FUN_10c3dfd0(void)
 __declspec(naked) void FUN_10c3e000(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm sar edi, 2
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm pop edi
-  __asm pop esi
-  __asm ret 0xc
+  __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -6963,23 +6805,12 @@ undefined4 FUN_10c3e030(undefined4 param_1)
 __declspec(naked) void FUN_10c3e040(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm sar edi, 2
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -6991,23 +6822,12 @@ __declspec(naked) void FUN_10c3e040(void)
 __declspec(naked) void FUN_10c3e070(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm sar edi, 2
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -7357,14 +7177,10 @@ void FUN_10c3e250(undefined4 param_1,undefined4 *param_2,undefined4 *param_3)
 __declspec(naked) void FUN_10c3e260(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov ecx, dword ptr [eax]
-  __asm mov edx, dword ptr [eax + 4]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [eax], ecx
-  __asm mov dword ptr [eax + 4], edx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0x89
+  __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0xc3
 }
+
 
 
 
@@ -7376,26 +7192,14 @@ __declspec(naked) void FUN_10c3e260(void)
 __declspec(naked) void FUN_10c3e280(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [esp + 8]
-  __asm push esi
-  __asm lea esi, [ecx + 4]
-  __asm mov eax, dword ptr [eax]
-  __asm push 0x14
-  __asm mov dword ptr [esp + 0x18], esi
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [ecx], eax
-  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0x8d __asm _emit 0x71 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x6a __asm _emit 0x14
+  __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x01 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46
+  __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [eax + 8], eax
-  __asm mov word ptr [eax + 0xc], 0x101
-  __asm mov dword ptr [esi], eax
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x66 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x01
+  __asm _emit 0x01 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -7407,14 +7211,10 @@ __declspec(naked) void FUN_10c3e280(void)
 __declspec(naked) void FUN_10c3e2d0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov ecx, dword ptr [eax]
-  __asm mov edx, dword ptr [eax + 4]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [eax], ecx
-  __asm mov dword ptr [eax + 4], edx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0x89
+  __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0xc3
 }
+
 
 
 
@@ -7426,42 +7226,16 @@ __declspec(naked) void FUN_10c3e2d0(void)
 __declspec(naked) void FUN_10c3e2f0(void)
 
 {
-  __asm mov edx, dword ptr [esp + 0xc]
-  __asm mov ecx, dword ptr [esp + 8]
-  __asm push ebx
-  __asm lea ebx, [ecx + 4]
-  __asm mov eax, dword ptr [edx]
-  __asm mov dword ptr [ecx], eax
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x8d __asm _emit 0x59 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x02 __asm _emit 0x89 __asm _emit 0x01
   __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [edx + 4]
-  __asm push ebp
-  __asm mov ebp, dword ptr [edx + 8]
-  __asm mov dword ptr [esp + 0x14], eax
-  __asm cmp eax, ebp
-  __asm _emit 0x74 __asm _emit 0x29
-  __asm push esi
-  __asm push edi
-  __asm sub ebp, eax
-  __asm mov ecx, ebx
-  __asm mov edi, ebp
-  __asm sar edi, 2
-  __asm push edi
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6a __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x3b
+  __asm _emit 0xc5 __asm _emit 0x74 __asm _emit 0x29 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x2b __asm _emit 0xe8 __asm _emit 0x8b __asm _emit 0xcb __asm _emit 0x8b __asm _emit 0xfd __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x57
   __asm call LAB_1003dd52
-  __asm mov esi, dword ptr [ebx]
-  __asm push ebp
-  __asm push dword ptr [esp + 0x20]
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x33 __asm _emit 0x55 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm mov dword ptr [ebx + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc3
 }
+
 
 
 
@@ -7485,12 +7259,11 @@ void FUN_10c3e3f0(void)
 __declspec(naked) void FUN_10c3e400(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 8]
-  __asm add ecx, 4
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x04 __asm _emit 0x51
   __asm call LAB_10043dba
-  __asm ret
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -7514,9 +7287,10 @@ void FUN_10c3e420(void)
 __declspec(naked) void FUN_10c3e430(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 8]
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08
   __asm jmp LAB_10080c3d
 }
+
 
 
 
@@ -8025,20 +7799,10 @@ undefined4 FUN_10c3fc60(undefined4 param_1)
 __declspec(naked) void FUN_10c3fc70(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov edx, dword ptr [esp + 8]
-  __asm cmp eax, edx
-  __asm _emit 0x74 __asm _emit 0x11
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [esi]
-  __asm mov dword ptr [eax], ecx
-  __asm add eax, 4
-  __asm cmp eax, edx
-  __asm _emit 0x75 __asm _emit 0xf5
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x74 __asm _emit 0x11 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24
+  __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x75 __asm _emit 0xf5 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -8050,20 +7814,10 @@ __declspec(naked) void FUN_10c3fc70(void)
 __declspec(naked) void FUN_10c3fca0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov edx, dword ptr [esp + 8]
-  __asm cmp eax, edx
-  __asm _emit 0x74 __asm _emit 0x11
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [esi]
-  __asm mov dword ptr [eax], ecx
-  __asm add eax, 4
-  __asm cmp eax, edx
-  __asm _emit 0x75 __asm _emit 0xf5
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x74 __asm _emit 0x11 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24
+  __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x75 __asm _emit 0xf5 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -8075,20 +7829,10 @@ __declspec(naked) void FUN_10c3fca0(void)
 __declspec(naked) void FUN_10c3fcd0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov edx, dword ptr [esp + 8]
-  __asm cmp eax, edx
-  __asm _emit 0x74 __asm _emit 0x11
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [esi]
-  __asm mov dword ptr [eax], ecx
-  __asm add eax, 4
-  __asm cmp eax, edx
-  __asm _emit 0x75 __asm _emit 0xf5
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x74 __asm _emit 0x11 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24
+  __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x75 __asm _emit 0xf5 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -8100,20 +7844,10 @@ __declspec(naked) void FUN_10c3fcd0(void)
 __declspec(naked) void FUN_10c3fd00(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov edx, dword ptr [esp + 8]
-  __asm cmp eax, edx
-  __asm _emit 0x74 __asm _emit 0x11
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [esi]
-  __asm mov dword ptr [eax], ecx
-  __asm add eax, 4
-  __asm cmp eax, edx
-  __asm _emit 0x75 __asm _emit 0xf5
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x74 __asm _emit 0x11 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24
+  __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x75 __asm _emit 0xf5 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -8394,25 +8128,13 @@ undefined4 * __fastcall FUN_10c40240(undefined4 *param_1)
 __declspec(naked) void FUN_10c40260(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm push 0x14
-  __asm mov dword ptr [esi], eax
-  __asm mov eax, dword ptr [esp + 0x10]
-  __asm mov dword ptr [esi + 4], eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x6a __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x89
+  __asm _emit 0x46 __asm _emit 0x04
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [eax + 8], eax
-  __asm mov word ptr [eax + 0xc], 0x101
-  __asm mov ecx, dword ptr [esi + 4]
-  __asm mov dword ptr [ecx], eax
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x66 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x01
+  __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -8725,46 +8447,18 @@ undefined4 __fastcall FUN_10c40460(undefined4 param_1)
 __declspec(naked) void FUN_10c405b0(void)
 
 {
-  __asm push ecx
-  __asm mov edx, dword ptr [esp + 8]
-  __asm push ebx
-  __asm mov ebx, ecx
-  __asm mov dword ptr [esp + 4], ebx
-  __asm mov eax, dword ptr [edx]
-  __asm push ebp
-  __asm mov dword ptr [ebx], eax
-  __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov ecx, dword ptr [edx + 4]
-  __asm mov eax, dword ptr [edx + 8]
-  __asm mov dword ptr [esp + 8], ecx
-  __asm cmp ecx, eax
-  __asm _emit 0x74 __asm _emit 0x32
-  __asm push esi
-  __asm sub eax, ecx
-  __asm lea ecx, [ebx + 4]
-  __asm push edi
-  __asm mov edi, eax
-  __asm mov dword ptr [esp + 0x18], eax
-  __asm sar edi, 2
-  __asm push edi
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x89 __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x02 __asm _emit 0x55 __asm _emit 0x89
+  __asm _emit 0x03 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7
+  __asm _emit 0x43 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08
+  __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x74 __asm _emit 0x32 __asm _emit 0x56 __asm _emit 0x2b __asm _emit 0xc1 __asm _emit 0x8d __asm _emit 0x4b __asm _emit 0x04 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf8 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24
+  __asm _emit 0x18 __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x57
   __asm call LAB_1003dd52
-  __asm push dword ptr [esp + 0x18]
-  __asm mov esi, dword ptr [ebx + 4]
-  __asm push dword ptr [esp + 0x14]
-  __asm push esi
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x73 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm mov dword ptr [ebx + 8], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm mov eax, ebx
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x8b __asm _emit 0xc3 __asm _emit 0x5b __asm _emit 0x59
+  __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -8798,40 +8492,17 @@ __declspec(naked) void FUN_10c405b0(void)
 __declspec(naked) void FUN_10c40c70(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, ecx
-  __asm push ebp
-  __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov ecx, dword ptr [eax]
-  __asm mov ebp, dword ptr [eax + 4]
-  __asm mov dword ptr [esp + 0xc], ecx
-  __asm cmp ecx, ebp
-  __asm _emit 0x74 __asm _emit 0x29
-  __asm push esi
-  __asm push edi
-  __asm sub ebp, ecx
-  __asm mov ecx, ebx
-  __asm mov edi, ebp
-  __asm sar edi, 2
-  __asm push edi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x55 __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43
+  __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x68
+  __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xcd __asm _emit 0x74 __asm _emit 0x29 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x2b __asm _emit 0xe9 __asm _emit 0x8b __asm _emit 0xcb __asm _emit 0x8b
+  __asm _emit 0xfd __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x57
   __asm call LAB_1003dd52
-  __asm mov esi, dword ptr [ebx]
-  __asm push ebp
-  __asm push dword ptr [esp + 0x18]
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x33 __asm _emit 0x55 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm mov dword ptr [ebx + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm mov eax, ebx
-  __asm pop ebx
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x8b __asm _emit 0xc3 __asm _emit 0x5b __asm _emit 0xc2
+  __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -8843,46 +8514,19 @@ __declspec(naked) void FUN_10c40c70(void)
 __declspec(naked) void FUN_10c40ce0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push ebx
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x14]
-  __asm mov ebx, ecx
-  __asm push edi
-  __asm mov edi, ebp
-  __asm mov dword ptr [esp + 0xc], eax
-  __asm sub edi, eax
-  __asm sar edi, 2
-  __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x29
-  __asm cmp edi, 0x3fffffff
-  __asm _emit 0x77 __asm _emit 0x2a
-  __asm push esi
-  __asm push edi
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xfd
+  __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x2b __asm _emit 0xf8 __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7
+  __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74
+  __asm _emit 0x29 __asm _emit 0x81 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0x77 __asm _emit 0x2a __asm _emit 0x56 __asm _emit 0x57
   __asm call LAB_1003dd52
-  __asm mov eax, dword ptr [esp + 0x10]
-  __asm sub ebp, eax
-  __asm mov esi, dword ptr [ebx]
-  __asm push ebp
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xe8 __asm _emit 0x8b __asm _emit 0x33 __asm _emit 0x55 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm mov dword ptr [ebx + 4], eax
-  __asm pop esi
-  __asm pop edi
-  __asm pop ebp
-  __asm mov eax, ebx
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0x5d __asm _emit 0x8b __asm _emit 0xc3 __asm _emit 0x5b __asm _emit 0x59
+  __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
   __asm call LAB_1001c6cf
   __asm _emit 0xcc
 }
+
 
 
 
@@ -8990,12 +8634,11 @@ __declspec(naked) void FUN_10c40ce0(void)
 __declspec(naked) void FUN_10c41580(void)
 
 {
-  __asm mov ecx, dword ptr [ecx]
-  __asm test ecx, ecx
+  __asm _emit 0x8b __asm _emit 0x09 __asm _emit 0x85 __asm _emit 0xc9
   __asm jne LAB_1001af41
-  __asm ret
-  __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc
+  __asm _emit 0xc3 __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc
 }
+
 
 
 
@@ -9055,11 +8698,11 @@ void FUN_10c415e0(void)
 __declspec(naked) void FUN_10c41710(void)
 
 {
-  __asm add ecx, 4
-  __asm push ecx
+  __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x04 __asm _emit 0x51
   __asm call LAB_10043dba
-  __asm ret
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -9101,60 +8744,20 @@ void __fastcall FUN_10c417c0(int param_1)
 __declspec(naked) void FUN_10c41960(void)
 
 {
-  __asm push ecx
-  __asm push edi
-  __asm mov edi, dword ptr [ecx]
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x78
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x71
-  __asm mov eax, dword ptr [edi + 0x1c]
-  __asm shr eax, 3
-  __asm cmp eax, ecx
-  __asm _emit 0x76 __asm _emit 0x10
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov ecx, edi
-  __asm push eax
-  __asm push dword ptr [eax]
+  __asm _emit 0x51 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x39 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x78 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x71 __asm _emit 0x8b
+  __asm _emit 0x47 __asm _emit 0x1c __asm _emit 0xc1 __asm _emit 0xe8 __asm _emit 0x03 __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0x76 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0x50 __asm _emit 0xff
+  __asm _emit 0x30
   __asm call LAB_10095197
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
-  __asm mov ecx, dword ptr [edi + 4]
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [ecx]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x19
-  __asm push esi
-  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00
-  __asm mov esi, dword ptr [eax]
-  __asm push 0x10
-  __asm push eax
+  __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0x01 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x19 __asm _emit 0x56 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x30 __asm _emit 0x6a __asm _emit 0x10 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm mov eax, esi
-  __asm test esi, esi
-  __asm _emit 0x75 __asm _emit 0xed
-  __asm pop esi
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax], eax
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax + 4], eax
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [esp + 4], eax
-  __asm lea eax, [esp + 4]
-  __asm push eax
-  __asm push dword ptr [edi + 0x10]
-  __asm push dword ptr [edi + 0xc]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x75 __asm _emit 0xed __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x0c
   __asm call LAB_10005272
-  __asm add esp, 0xc
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -9166,11 +8769,11 @@ __declspec(naked) void FUN_10c41960(void)
 __declspec(naked) void FUN_10c41a10(void)
 
 {
-  __asm mov ecx, dword ptr [ecx]
-  __asm test ecx, ecx
+  __asm _emit 0x8b __asm _emit 0x09 __asm _emit 0x85 __asm _emit 0xc9
   __asm jne LAB_100983c4
-  __asm ret
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -9182,60 +8785,20 @@ __declspec(naked) void FUN_10c41a10(void)
 __declspec(naked) void FUN_10c41a20(void)
 
 {
-  __asm push ecx
-  __asm push edi
-  __asm mov edi, dword ptr [ecx]
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x78
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x71
-  __asm mov eax, dword ptr [edi + 0x1c]
-  __asm shr eax, 3
-  __asm cmp eax, ecx
-  __asm _emit 0x76 __asm _emit 0x10
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov ecx, edi
-  __asm push eax
-  __asm push dword ptr [eax]
+  __asm _emit 0x51 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x39 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x78 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x71 __asm _emit 0x8b
+  __asm _emit 0x47 __asm _emit 0x1c __asm _emit 0xc1 __asm _emit 0xe8 __asm _emit 0x03 __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0x76 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0x50 __asm _emit 0xff
+  __asm _emit 0x30
   __asm call LAB_10029fe1
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
-  __asm mov ecx, dword ptr [edi + 4]
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [ecx]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x19
-  __asm push esi
-  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00
-  __asm mov esi, dword ptr [eax]
-  __asm push 0x10
-  __asm push eax
+  __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0x01 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x19 __asm _emit 0x56 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x30 __asm _emit 0x6a __asm _emit 0x10 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm mov eax, esi
-  __asm test esi, esi
-  __asm _emit 0x75 __asm _emit 0xed
-  __asm pop esi
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax], eax
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax + 4], eax
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [esp + 4], eax
-  __asm lea eax, [esp + 4]
-  __asm push eax
-  __asm push dword ptr [edi + 0x10]
-  __asm push dword ptr [edi + 0xc]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x75 __asm _emit 0xed __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x0c
   __asm call LAB_10049558
-  __asm add esp, 0xc
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -9247,63 +8810,23 @@ __declspec(naked) void FUN_10c41a20(void)
 __declspec(naked) void FUN_10c41ad0(void)
 
 {
-  __asm push ecx
-  __asm push edi
-  __asm mov edi, dword ptr [ecx]
-  __asm test edi, edi
+  __asm _emit 0x51 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x39 __asm _emit 0x85 __asm _emit 0xff
   __asm je LAB_10c41b5a
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x77
-  __asm mov eax, dword ptr [edi + 0x1c]
-  __asm shr eax, 3
-  __asm cmp eax, ecx
-  __asm _emit 0x76 __asm _emit 0x10
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov ecx, edi
-  __asm push eax
-  __asm push dword ptr [eax]
+  __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x77 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x1c __asm _emit 0xc1 __asm _emit 0xe8 __asm _emit 0x03 __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0x76
+  __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x30
   __asm call LAB_1008a53f
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
-  __asm mov ecx, dword ptr [edi + 4]
-  __asm push ebx
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov ebx, dword ptr [ecx]
-  __asm test ebx, ebx
-  __asm _emit 0x74 __asm _emit 0x1d
-  __asm push esi
-  __asm mov esi, dword ptr [ebx]
-  __asm lea ecx, [ebx + 8]
+  __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0x19 __asm _emit 0x85 __asm _emit 0xdb __asm _emit 0x74 __asm _emit 0x1d __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x33 __asm _emit 0x8d __asm _emit 0x4b __asm _emit 0x08
   __asm call LAB_10080c3d
-  __asm push 0x18
-  __asm push ebx
+  __asm _emit 0x6a __asm _emit 0x18 __asm _emit 0x53
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm mov ebx, esi
-  __asm test esi, esi
-  __asm _emit 0x75 __asm _emit 0xe5
-  __asm pop esi
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax], eax
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax + 4], eax
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [esp + 8], eax
-  __asm lea eax, [esp + 8]
-  __asm push eax
-  __asm push dword ptr [edi + 0x10]
-  __asm push dword ptr [edi + 0xc]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xde __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x75 __asm _emit 0xe5 __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x0c
   __asm call LAB_1008e144
-  __asm add esp, 0xc
-  __asm pop ebx
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x5b __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -9627,16 +9150,11 @@ int __fastcall FUN_10c41e30(int *param_1)
 __declspec(naked) void FUN_10c41e40(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [ecx]
-  __asm lea ecx, [esp]
-  __asm mov dword ptr [esp], eax
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x89 __asm _emit 0x04 __asm _emit 0x24
   __asm call LAB_100210fd
-  __asm mov eax, dword ptr [esp]
-  __asm add eax, 0x10
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x04 __asm _emit 0x24 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x10 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -9852,17 +9370,11 @@ bool __stdcall FUN_10c42100(int *param_1,int *param_2)
 __declspec(naked) void FUN_10c422e0(void)
 
 {
-  __asm push esi
-  __asm push 0x10
-  __asm mov esi, ecx
+  __asm _emit 0x56 __asm _emit 0x6a __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [esi], eax
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -9874,17 +9386,11 @@ __declspec(naked) void FUN_10c422e0(void)
 __declspec(naked) void FUN_10c42300(void)
 
 {
-  __asm push esi
-  __asm push 0x14
-  __asm mov esi, ecx
+  __asm _emit 0x56 __asm _emit 0x6a __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xf1
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [esi], eax
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -9896,17 +9402,11 @@ __declspec(naked) void FUN_10c42300(void)
 __declspec(naked) void FUN_10c42320(void)
 
 {
-  __asm push esi
-  __asm push 0x10
-  __asm mov esi, ecx
+  __asm _emit 0x56 __asm _emit 0x6a __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [esi], eax
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -9918,17 +9418,11 @@ __declspec(naked) void FUN_10c42320(void)
 __declspec(naked) void FUN_10c42340(void)
 
 {
-  __asm push esi
-  __asm push 0x18
-  __asm mov esi, ecx
+  __asm _emit 0x56 __asm _emit 0x6a __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0xf1
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [esi], eax
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -9940,14 +9434,12 @@ __declspec(naked) void FUN_10c42340(void)
 __declspec(naked) void FUN_10c42930(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0x3fffffff
-  __asm _emit 0x77 __asm _emit 0x09
-  __asm mov dword ptr [esp + 4], eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0x77 __asm _emit 0x09 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04
   __asm jmp LAB_1003dd52
   __asm call LAB_1001c6cf
   __asm _emit 0xcc
 }
+
 
 
 
@@ -9959,12 +9451,11 @@ __declspec(naked) void FUN_10c42930(void)
 __declspec(naked) void FUN_10c42a00(void)
 
 {
-  __asm cmp dword ptr [ecx + 8], 0xfffffff
-  __asm _emit 0x74 __asm _emit 0x01
-  __asm ret
+  __asm _emit 0x81 __asm _emit 0x79 __asm _emit 0x08 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x0f __asm _emit 0x74 __asm _emit 0x01 __asm _emit 0xc3
   __asm push offset LAB_11880f54
   __asm call LAB_1148a054
 }
+
 
 
 
@@ -9976,12 +9467,11 @@ __declspec(naked) void FUN_10c42a00(void)
 __declspec(naked) void FUN_10c42a20(void)
 
 {
-  __asm cmp dword ptr [ecx + 8], 0xccccccc
-  __asm _emit 0x74 __asm _emit 0x01
-  __asm ret
+  __asm _emit 0x81 __asm _emit 0x79 __asm _emit 0x08 __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0x0c __asm _emit 0x74 __asm _emit 0x01 __asm _emit 0xc3
   __asm push offset LAB_11880f54
   __asm call LAB_1148a054
 }
+
 
 
 
@@ -9993,12 +9483,11 @@ __declspec(naked) void FUN_10c42a20(void)
 __declspec(naked) void FUN_10c42a40(void)
 
 {
-  __asm cmp dword ptr [ecx + 8], 0xfffffff
-  __asm _emit 0x74 __asm _emit 0x01
-  __asm ret
+  __asm _emit 0x81 __asm _emit 0x79 __asm _emit 0x08 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x0f __asm _emit 0x74 __asm _emit 0x01 __asm _emit 0xc3
   __asm push offset LAB_11880f54
   __asm call LAB_1148a054
 }
+
 
 
 
@@ -10010,12 +9499,11 @@ __declspec(naked) void FUN_10c42a40(void)
 __declspec(naked) void FUN_10c42a60(void)
 
 {
-  __asm cmp dword ptr [ecx + 8], 0xaaaaaaa
-  __asm _emit 0x74 __asm _emit 0x01
-  __asm ret
+  __asm _emit 0x81 __asm _emit 0x79 __asm _emit 0x08 __asm _emit 0xaa __asm _emit 0xaa __asm _emit 0xaa __asm _emit 0x0a __asm _emit 0x74 __asm _emit 0x01 __asm _emit 0xc3
   __asm push offset LAB_11880f54
   __asm call LAB_1148a054
 }
+
 
 
 
@@ -10027,24 +9515,14 @@ __declspec(naked) void FUN_10c42a60(void)
 __declspec(naked) void FUN_10c42a80(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm inc eax
-  __asm movd xmm0, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0
-  __asm shr eax, 0x1f
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x40 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x6e __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0 __asm _emit 0xc1 __asm _emit 0xe8 __asm _emit 0x1f
   __asm addsd xmm0, qword ptr [eax*8 + LAB_11880fb0]
-  __asm mov eax, dword ptr [ecx + 0x1c]
-  __asm cvtpd2ps xmm1, xmm0
-  __asm movd xmm0, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0
-  __asm shr eax, 0x1f
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x5a __asm _emit 0xc8 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x6e __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0 __asm _emit 0xc1
+  __asm _emit 0xe8 __asm _emit 0x1f
   __asm addsd xmm0, qword ptr [eax*8 + LAB_11880fb0]
-  __asm cvtpd2ps xmm0, xmm0
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x5e __asm _emit 0xc8
-  __asm comiss xmm1, dword ptr [ecx]
-  __asm seta al
-  __asm ret
+  __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x5a __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x5e __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0x2f __asm _emit 0x09 __asm _emit 0x0f __asm _emit 0x97 __asm _emit 0xc0 __asm _emit 0xc3
 }
+
 
 
 
@@ -10056,24 +9534,14 @@ __declspec(naked) void FUN_10c42a80(void)
 __declspec(naked) void FUN_10c42ae0(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm inc eax
-  __asm movd xmm0, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0
-  __asm shr eax, 0x1f
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x40 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x6e __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0 __asm _emit 0xc1 __asm _emit 0xe8 __asm _emit 0x1f
   __asm addsd xmm0, qword ptr [eax*8 + LAB_11880fb0]
-  __asm mov eax, dword ptr [ecx + 0x1c]
-  __asm cvtpd2ps xmm1, xmm0
-  __asm movd xmm0, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0
-  __asm shr eax, 0x1f
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x5a __asm _emit 0xc8 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x6e __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0 __asm _emit 0xc1
+  __asm _emit 0xe8 __asm _emit 0x1f
   __asm addsd xmm0, qword ptr [eax*8 + LAB_11880fb0]
-  __asm cvtpd2ps xmm0, xmm0
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x5e __asm _emit 0xc8
-  __asm comiss xmm1, dword ptr [ecx]
-  __asm seta al
-  __asm ret
+  __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x5a __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x5e __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0x2f __asm _emit 0x09 __asm _emit 0x0f __asm _emit 0x97 __asm _emit 0xc0 __asm _emit 0xc3
 }
+
 
 
 
@@ -10085,24 +9553,14 @@ __declspec(naked) void FUN_10c42ae0(void)
 __declspec(naked) void FUN_10c42b40(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm inc eax
-  __asm movd xmm0, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0
-  __asm shr eax, 0x1f
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x40 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x6e __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0 __asm _emit 0xc1 __asm _emit 0xe8 __asm _emit 0x1f
   __asm addsd xmm0, qword ptr [eax*8 + LAB_11880fb0]
-  __asm mov eax, dword ptr [ecx + 0x1c]
-  __asm cvtpd2ps xmm1, xmm0
-  __asm movd xmm0, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0
-  __asm shr eax, 0x1f
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x5a __asm _emit 0xc8 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x6e __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0 __asm _emit 0xc1
+  __asm _emit 0xe8 __asm _emit 0x1f
   __asm addsd xmm0, qword ptr [eax*8 + LAB_11880fb0]
-  __asm cvtpd2ps xmm0, xmm0
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x5e __asm _emit 0xc8
-  __asm comiss xmm1, dword ptr [ecx]
-  __asm seta al
-  __asm ret
+  __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x5a __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x5e __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0x2f __asm _emit 0x09 __asm _emit 0x0f __asm _emit 0x97 __asm _emit 0xc0 __asm _emit 0xc3
 }
+
 
 
 
@@ -10114,24 +9572,14 @@ __declspec(naked) void FUN_10c42b40(void)
 __declspec(naked) void FUN_10c42ba0(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm inc eax
-  __asm movd xmm0, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0
-  __asm shr eax, 0x1f
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x40 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x6e __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0 __asm _emit 0xc1 __asm _emit 0xe8 __asm _emit 0x1f
   __asm addsd xmm0, qword ptr [eax*8 + LAB_11880fb0]
-  __asm mov eax, dword ptr [ecx + 0x1c]
-  __asm cvtpd2ps xmm1, xmm0
-  __asm movd xmm0, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0
-  __asm shr eax, 0x1f
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x5a __asm _emit 0xc8 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x6e __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0xe6 __asm _emit 0xc0 __asm _emit 0xc1
+  __asm _emit 0xe8 __asm _emit 0x1f
   __asm addsd xmm0, qword ptr [eax*8 + LAB_11880fb0]
-  __asm cvtpd2ps xmm0, xmm0
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x5e __asm _emit 0xc8
-  __asm comiss xmm1, dword ptr [ecx]
-  __asm seta al
-  __asm ret
+  __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x5a __asm _emit 0xc0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x5e __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0x2f __asm _emit 0x09 __asm _emit 0x0f __asm _emit 0x97 __asm _emit 0xc0 __asm _emit 0xc3
 }
+
 
 
 
@@ -10647,49 +10095,14 @@ undefined4 __fastcall FUN_10c438d0(undefined4 param_1)
 __declspec(naked) void FUN_10c438e0(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x14]
-  __asm mov edx, ecx
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x14]
-  __asm mov ebx, dword ptr [edi + 4]
-  __asm inc dword ptr [edx + 8]
-  __asm mov dword ptr [esi], edi
-  __asm mov dword ptr [esi + 4], ebx
-  __asm mov dword ptr [ebx], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm mov eax, dword ptr [edx + 0x18]
-  __asm mov ecx, dword ptr [edx + 0xc]
-  __asm and eax, dword ptr [esp + 0x10]
-  __asm lea eax, [ecx + eax*8]
-  __asm mov ecx, dword ptr [eax]
-  __asm cmp ecx, dword ptr [edx + 4]
-  __asm _emit 0x75 __asm _emit 0x0d
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [eax + 4], esi
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
-  __asm cmp ecx, edi
-  __asm _emit 0x75 __asm _emit 0x0a
-  __asm mov dword ptr [eax], esi
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
-  __asm cmp dword ptr [eax + 4], ebx
-  __asm _emit 0x75 __asm _emit 0x03
-  __asm mov dword ptr [eax + 4], esi
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xd1 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x5f __asm _emit 0x04
+  __asm _emit 0xff __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x89 __asm _emit 0x5e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x33 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x18
+  __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x0c __asm _emit 0x23 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x75
+  __asm _emit 0x0d __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x3b __asm _emit 0xcf
+  __asm _emit 0x75 __asm _emit 0x0a __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x39 __asm _emit 0x58 __asm _emit 0x04 __asm _emit 0x75
+  __asm _emit 0x03 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -10701,49 +10114,14 @@ __declspec(naked) void FUN_10c438e0(void)
 __declspec(naked) void FUN_10c43960(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x14]
-  __asm mov edx, ecx
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x14]
-  __asm mov ebx, dword ptr [edi + 4]
-  __asm inc dword ptr [edx + 8]
-  __asm mov dword ptr [esi], edi
-  __asm mov dword ptr [esi + 4], ebx
-  __asm mov dword ptr [ebx], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm mov eax, dword ptr [edx + 0x18]
-  __asm mov ecx, dword ptr [edx + 0xc]
-  __asm and eax, dword ptr [esp + 0x10]
-  __asm lea eax, [ecx + eax*8]
-  __asm mov ecx, dword ptr [eax]
-  __asm cmp ecx, dword ptr [edx + 4]
-  __asm _emit 0x75 __asm _emit 0x0d
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [eax + 4], esi
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
-  __asm cmp ecx, edi
-  __asm _emit 0x75 __asm _emit 0x0a
-  __asm mov dword ptr [eax], esi
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
-  __asm cmp dword ptr [eax + 4], ebx
-  __asm _emit 0x75 __asm _emit 0x03
-  __asm mov dword ptr [eax + 4], esi
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xd1 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x5f __asm _emit 0x04
+  __asm _emit 0xff __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x89 __asm _emit 0x5e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x33 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x18
+  __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x0c __asm _emit 0x23 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x75
+  __asm _emit 0x0d __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x3b __asm _emit 0xcf
+  __asm _emit 0x75 __asm _emit 0x0a __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x39 __asm _emit 0x58 __asm _emit 0x04 __asm _emit 0x75
+  __asm _emit 0x03 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -10755,49 +10133,14 @@ __declspec(naked) void FUN_10c43960(void)
 __declspec(naked) void FUN_10c439e0(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x14]
-  __asm mov edx, ecx
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x14]
-  __asm mov ebx, dword ptr [edi + 4]
-  __asm inc dword ptr [edx + 8]
-  __asm mov dword ptr [esi], edi
-  __asm mov dword ptr [esi + 4], ebx
-  __asm mov dword ptr [ebx], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm mov eax, dword ptr [edx + 0x18]
-  __asm mov ecx, dword ptr [edx + 0xc]
-  __asm and eax, dword ptr [esp + 0x10]
-  __asm lea eax, [ecx + eax*8]
-  __asm mov ecx, dword ptr [eax]
-  __asm cmp ecx, dword ptr [edx + 4]
-  __asm _emit 0x75 __asm _emit 0x0d
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [eax + 4], esi
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
-  __asm cmp ecx, edi
-  __asm _emit 0x75 __asm _emit 0x0a
-  __asm mov dword ptr [eax], esi
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
-  __asm cmp dword ptr [eax + 4], ebx
-  __asm _emit 0x75 __asm _emit 0x03
-  __asm mov dword ptr [eax + 4], esi
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xd1 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x5f __asm _emit 0x04
+  __asm _emit 0xff __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x89 __asm _emit 0x5e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x33 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x18
+  __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x0c __asm _emit 0x23 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x75
+  __asm _emit 0x0d __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x3b __asm _emit 0xcf
+  __asm _emit 0x75 __asm _emit 0x0a __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x39 __asm _emit 0x58 __asm _emit 0x04 __asm _emit 0x75
+  __asm _emit 0x03 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -10809,49 +10152,14 @@ __declspec(naked) void FUN_10c439e0(void)
 __declspec(naked) void FUN_10c43a60(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x14]
-  __asm mov edx, ecx
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x14]
-  __asm mov ebx, dword ptr [edi + 4]
-  __asm inc dword ptr [edx + 8]
-  __asm mov dword ptr [esi], edi
-  __asm mov dword ptr [esi + 4], ebx
-  __asm mov dword ptr [ebx], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm mov eax, dword ptr [edx + 0x18]
-  __asm mov ecx, dword ptr [edx + 0xc]
-  __asm and eax, dword ptr [esp + 0x10]
-  __asm lea eax, [ecx + eax*8]
-  __asm mov ecx, dword ptr [eax]
-  __asm cmp ecx, dword ptr [edx + 4]
-  __asm _emit 0x75 __asm _emit 0x0d
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [eax + 4], esi
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
-  __asm cmp ecx, edi
-  __asm _emit 0x75 __asm _emit 0x0a
-  __asm mov dword ptr [eax], esi
-  __asm mov eax, esi
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
-  __asm cmp dword ptr [eax + 4], ebx
-  __asm _emit 0x75 __asm _emit 0x03
-  __asm mov dword ptr [eax + 4], esi
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xd1 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x5f __asm _emit 0x04
+  __asm _emit 0xff __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x89 __asm _emit 0x5e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x33 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x18
+  __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x0c __asm _emit 0x23 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x75
+  __asm _emit 0x0d __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x3b __asm _emit 0xcf
+  __asm _emit 0x75 __asm _emit 0x0a __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x39 __asm _emit 0x58 __asm _emit 0x04 __asm _emit 0x75
+  __asm _emit 0x03 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -10928,17 +10236,10 @@ void __stdcall FUN_10c43b20(undefined4 *param_1,undefined4 param_2)
 __declspec(naked) void FUN_10c43b30(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm cmp byte ptr [eax + 0xd], 0
-  __asm _emit 0x75 __asm _emit 0x0e __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
-  __asm mov ecx, eax
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm cmp byte ptr [eax + 0xd], 0
-  __asm _emit 0x74 __asm _emit 0xf5
-  __asm mov eax, ecx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x80 __asm _emit 0x78 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x0e __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x80 __asm _emit 0x78 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0xf5 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc3
 }
+
 
 
 
@@ -11283,12 +10584,9 @@ void __fastcall FUN_10c443a0(int *param_1)
 __declspec(naked) void FUN_10c444c0(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm mov ecx, dword ptr [eax]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov dword ptr [eax], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -11300,12 +10598,9 @@ __declspec(naked) void FUN_10c444c0(void)
 __declspec(naked) void FUN_10c444e0(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm mov ecx, dword ptr [eax]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov dword ptr [eax], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -11317,12 +10612,9 @@ __declspec(naked) void FUN_10c444e0(void)
 __declspec(naked) void FUN_10c44500(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm mov ecx, dword ptr [eax]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov dword ptr [eax], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -11334,12 +10626,9 @@ __declspec(naked) void FUN_10c44500(void)
 __declspec(naked) void FUN_10c44520(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm mov ecx, dword ptr [eax]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov dword ptr [eax], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -11531,144 +10820,42 @@ undefined4 __fastcall FUN_10c44630(int param_1)
 __declspec(naked) void FUN_10c44640(void)
 
 {
-  __asm mov edx, dword ptr [esp + 4]
-  __asm sub esp, 0x14
-  __asm push ebx
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x24]
-  __asm mov ebx, ecx
-  __asm cmp edx, ebp
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xec __asm _emit 0x14 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x3b
+  __asm _emit 0xd5
   __asm je LAB_10c447af
-  __asm mov eax, dword ptr [ebx + 4]
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm mov eax, dword ptr [edx + 4]
-  __asm mov dword ptr [esp + 0x24], eax
-  __asm movzx eax, byte ptr [edx + 8]
-  __asm xor eax, 0x811c9dc5
-  __asm imul ecx, eax, 0x1000193
-  __asm movzx eax, byte ptr [edx + 9]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [ebx + 0xc]
-  __asm mov esi, edx
-  __asm xor ecx, eax
-  __asm mov dword ptr [esp + 0x20], edi
-  __asm movzx eax, byte ptr [edx + 0xa]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm movzx eax, byte ptr [edx + 0xb]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm mov eax, dword ptr [ebx + 0x18]
-  __asm imul ecx, ecx, 0x1000193
-  __asm and eax, ecx
-  __asm mov ecx, dword ptr [edi + eax*8]
-  __asm mov dword ptr [esp + 0x14], ecx
-  __asm lea eax, [edi + eax*8]
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm mov eax, dword ptr [eax + 4]
-  __asm mov dword ptr [esp + 0x1c], eax
-  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
-  __asm mov eax, esi
-  __asm mov edi, esi
-  __asm mov esi, dword ptr [esi]
-  __asm push 0x10
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x0f __asm _emit 0xb6
+  __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81 __asm _emit 0x69 __asm _emit 0xc8 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x42
+  __asm _emit 0x09 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7b __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x0f __asm _emit 0xb6
+  __asm _emit 0x42 __asm _emit 0x0a __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x42 __asm _emit 0x0b __asm _emit 0x69 __asm _emit 0xc9
+  __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x43 __asm _emit 0x18 __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x23
+  __asm _emit 0xc1 __asm _emit 0x8b __asm _emit 0x0c __asm _emit 0xc7 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b
+  __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x8b __asm _emit 0xfe __asm _emit 0x8b __asm _emit 0x36 __asm _emit 0x6a
+  __asm _emit 0x10 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm dec dword ptr [ebx + 8]
-  __asm add esp, 8
-  __asm cmp edi, dword ptr [esp + 0x1c]
-  __asm _emit 0x74 __asm _emit 0x2d
-  __asm cmp esi, ebp
-  __asm _emit 0x75 __asm _emit 0xe2
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm cmp eax, dword ptr [esp + 0x28]
+  __asm _emit 0xff __asm _emit 0x4b __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x74 __asm _emit 0x2d __asm _emit 0x3b __asm _emit 0xf5 __asm _emit 0x75 __asm _emit 0xe2
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x3b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28
   __asm jne LAB_10c447a4
-  __asm mov eax, dword ptr [esp + 0x2c]
-  __asm mov ecx, dword ptr [esp + 0x10]
-  __asm pop edi
-  __asm mov dword ptr [ecx], esi
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov eax, ebp
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm add esp, 0x14
-  __asm ret 8
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov ecx, dword ptr [esp + 0x10]
-  __asm cmp eax, dword ptr [esp + 0x28]
-  __asm _emit 0x75 __asm _emit 0x08
-  __asm mov eax, dword ptr [esp + 0x18]
-  __asm mov dword ptr [ecx], eax
-  __asm _emit 0xeb __asm _emit 0x04
-  __asm mov eax, dword ptr [esp + 0x2c]
-  __asm mov dword ptr [ecx + 4], eax
-  __asm cmp esi, ebp
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x31 __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04
+  __asm _emit 0x8b __asm _emit 0xc5 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x14 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b
+  __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x3b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x75 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x01 __asm _emit 0xeb
+  __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xf5
   __asm je LAB_10c447a4
-  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00
-  __asm movzx eax, byte ptr [esi + 8]
-  __asm xor eax, 0x811c9dc5
-  __asm imul ecx, eax, 0x1000193
-  __asm movzx eax, byte ptr [esi + 9]
-  __asm xor ecx, eax
-  __asm movzx eax, byte ptr [esi + 0xa]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm movzx eax, byte ptr [esi + 0xb]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm imul eax, ecx, 0x1000193
-  __asm mov ecx, dword ptr [ebx + 0x18]
-  __asm and ecx, eax
-  __asm mov eax, dword ptr [esp + 0x20]
-  __asm lea eax, [eax + ecx*8]
-  __asm mov dword ptr [esp + 0x28], eax
-  __asm mov eax, dword ptr [eax + 4]
-  __asm mov dword ptr [esp + 0x1c], eax
-  __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, esi
-  __asm mov edi, esi
-  __asm mov esi, dword ptr [esi]
-  __asm push 0x10
-  __asm push eax
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81 __asm _emit 0x69 __asm _emit 0xc8 __asm _emit 0x93
+  __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x09 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x0a __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93
+  __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x0b __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33
+  __asm _emit 0xc8 __asm _emit 0x69 __asm _emit 0xc1 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0x4b __asm _emit 0x18 __asm _emit 0x23 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x20
+  __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc8 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x66 __asm _emit 0x0f
+  __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x8b __asm _emit 0xfe __asm _emit 0x8b __asm _emit 0x36 __asm _emit 0x6a __asm _emit 0x10 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm dec dword ptr [ebx + 8]
-  __asm add esp, 8
-  __asm cmp edi, dword ptr [esp + 0x1c]
-  __asm _emit 0x74 __asm _emit 0x1f
-  __asm cmp esi, ebp
-  __asm _emit 0x75 __asm _emit 0xe2
-  __asm mov eax, dword ptr [esp + 0x28]
-  __asm mov dword ptr [eax], esi
-  __asm mov eax, dword ptr [esp + 0x2c]
-  __asm pop edi
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [esi + 4], eax
-  __asm pop esi
-  __asm mov eax, ebp
-  __asm pop ebp
-  __asm pop ebx
-  __asm add esp, 0x14
-  __asm ret 8
-  __asm mov eax, dword ptr [esp + 0x28]
-  __asm mov edx, dword ptr [esp + 0x18]
-  __asm mov dword ptr [eax], edx
-  __asm mov dword ptr [eax + 4], edx
-  __asm cmp esi, ebp
+  __asm _emit 0xff __asm _emit 0x4b __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x74 __asm _emit 0x1f __asm _emit 0x3b __asm _emit 0xf5 __asm _emit 0x75 __asm _emit 0xe2
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04
+  __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0xc5 __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x14 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x8b
+  __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xf5
   __asm jne LAB_10c44730
-  __asm mov eax, dword ptr [esp + 0x2c]
-  __asm pop edi
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov eax, ebp
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm add esp, 0x14
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc5 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x83
+  __asm _emit 0xc4 __asm _emit 0x14 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -11680,144 +10867,42 @@ __declspec(naked) void FUN_10c44640(void)
 __declspec(naked) void FUN_10c44a80(void)
 
 {
-  __asm mov edx, dword ptr [esp + 4]
-  __asm sub esp, 0x14
-  __asm push ebx
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x24]
-  __asm mov ebx, ecx
-  __asm cmp edx, ebp
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xec __asm _emit 0x14 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x3b
+  __asm _emit 0xd5
   __asm je LAB_10c44bef
-  __asm mov eax, dword ptr [ebx + 4]
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm mov eax, dword ptr [edx + 4]
-  __asm mov dword ptr [esp + 0x24], eax
-  __asm movzx eax, byte ptr [edx + 8]
-  __asm xor eax, 0x811c9dc5
-  __asm imul ecx, eax, 0x1000193
-  __asm movzx eax, byte ptr [edx + 9]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [ebx + 0xc]
-  __asm mov esi, edx
-  __asm xor ecx, eax
-  __asm mov dword ptr [esp + 0x20], edi
-  __asm movzx eax, byte ptr [edx + 0xa]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm movzx eax, byte ptr [edx + 0xb]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm mov eax, dword ptr [ebx + 0x18]
-  __asm imul ecx, ecx, 0x1000193
-  __asm and eax, ecx
-  __asm mov ecx, dword ptr [edi + eax*8]
-  __asm mov dword ptr [esp + 0x14], ecx
-  __asm lea eax, [edi + eax*8]
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm mov eax, dword ptr [eax + 4]
-  __asm mov dword ptr [esp + 0x1c], eax
-  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
-  __asm mov eax, esi
-  __asm mov edi, esi
-  __asm mov esi, dword ptr [esi]
-  __asm push 0x10
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x0f __asm _emit 0xb6
+  __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81 __asm _emit 0x69 __asm _emit 0xc8 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x42
+  __asm _emit 0x09 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7b __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x0f __asm _emit 0xb6
+  __asm _emit 0x42 __asm _emit 0x0a __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x42 __asm _emit 0x0b __asm _emit 0x69 __asm _emit 0xc9
+  __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x43 __asm _emit 0x18 __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x23
+  __asm _emit 0xc1 __asm _emit 0x8b __asm _emit 0x0c __asm _emit 0xc7 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b
+  __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x8b __asm _emit 0xfe __asm _emit 0x8b __asm _emit 0x36 __asm _emit 0x6a
+  __asm _emit 0x10 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm dec dword ptr [ebx + 8]
-  __asm add esp, 8
-  __asm cmp edi, dword ptr [esp + 0x1c]
-  __asm _emit 0x74 __asm _emit 0x2d
-  __asm cmp esi, ebp
-  __asm _emit 0x75 __asm _emit 0xe2
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm cmp eax, dword ptr [esp + 0x28]
+  __asm _emit 0xff __asm _emit 0x4b __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x74 __asm _emit 0x2d __asm _emit 0x3b __asm _emit 0xf5 __asm _emit 0x75 __asm _emit 0xe2
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x3b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28
   __asm jne LAB_10c44be4
-  __asm mov eax, dword ptr [esp + 0x2c]
-  __asm mov ecx, dword ptr [esp + 0x10]
-  __asm pop edi
-  __asm mov dword ptr [ecx], esi
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov eax, ebp
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm add esp, 0x14
-  __asm ret 8
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov ecx, dword ptr [esp + 0x10]
-  __asm cmp eax, dword ptr [esp + 0x28]
-  __asm _emit 0x75 __asm _emit 0x08
-  __asm mov eax, dword ptr [esp + 0x18]
-  __asm mov dword ptr [ecx], eax
-  __asm _emit 0xeb __asm _emit 0x04
-  __asm mov eax, dword ptr [esp + 0x2c]
-  __asm mov dword ptr [ecx + 4], eax
-  __asm cmp esi, ebp
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x31 __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04
+  __asm _emit 0x8b __asm _emit 0xc5 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x14 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b
+  __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x3b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x75 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x01 __asm _emit 0xeb
+  __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xf5
   __asm je LAB_10c44be4
-  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00
-  __asm movzx eax, byte ptr [esi + 8]
-  __asm xor eax, 0x811c9dc5
-  __asm imul ecx, eax, 0x1000193
-  __asm movzx eax, byte ptr [esi + 9]
-  __asm xor ecx, eax
-  __asm movzx eax, byte ptr [esi + 0xa]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm movzx eax, byte ptr [esi + 0xb]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm imul eax, ecx, 0x1000193
-  __asm mov ecx, dword ptr [ebx + 0x18]
-  __asm and ecx, eax
-  __asm mov eax, dword ptr [esp + 0x20]
-  __asm lea eax, [eax + ecx*8]
-  __asm mov dword ptr [esp + 0x28], eax
-  __asm mov eax, dword ptr [eax + 4]
-  __asm mov dword ptr [esp + 0x1c], eax
-  __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, esi
-  __asm mov edi, esi
-  __asm mov esi, dword ptr [esi]
-  __asm push 0x10
-  __asm push eax
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81 __asm _emit 0x69 __asm _emit 0xc8 __asm _emit 0x93
+  __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x09 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x0a __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93
+  __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x0b __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33
+  __asm _emit 0xc8 __asm _emit 0x69 __asm _emit 0xc1 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0x4b __asm _emit 0x18 __asm _emit 0x23 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x20
+  __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc8 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x66 __asm _emit 0x0f
+  __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x8b __asm _emit 0xfe __asm _emit 0x8b __asm _emit 0x36 __asm _emit 0x6a __asm _emit 0x10 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm dec dword ptr [ebx + 8]
-  __asm add esp, 8
-  __asm cmp edi, dword ptr [esp + 0x1c]
-  __asm _emit 0x74 __asm _emit 0x1f
-  __asm cmp esi, ebp
-  __asm _emit 0x75 __asm _emit 0xe2
-  __asm mov eax, dword ptr [esp + 0x28]
-  __asm mov dword ptr [eax], esi
-  __asm mov eax, dword ptr [esp + 0x2c]
-  __asm pop edi
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [esi + 4], eax
-  __asm pop esi
-  __asm mov eax, ebp
-  __asm pop ebp
-  __asm pop ebx
-  __asm add esp, 0x14
-  __asm ret 8
-  __asm mov eax, dword ptr [esp + 0x28]
-  __asm mov edx, dword ptr [esp + 0x18]
-  __asm mov dword ptr [eax], edx
-  __asm mov dword ptr [eax + 4], edx
-  __asm cmp esi, ebp
+  __asm _emit 0xff __asm _emit 0x4b __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x74 __asm _emit 0x1f __asm _emit 0x3b __asm _emit 0xf5 __asm _emit 0x75 __asm _emit 0xe2
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04
+  __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0xc5 __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x14 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x8b
+  __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xf5
   __asm jne LAB_10c44b70
-  __asm mov eax, dword ptr [esp + 0x2c]
-  __asm pop edi
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov eax, ebp
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm add esp, 0x14
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc5 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x83
+  __asm _emit 0xc4 __asm _emit 0x14 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -11829,149 +10914,45 @@ __declspec(naked) void FUN_10c44a80(void)
 __declspec(naked) void FUN_10c44c90(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm sub esp, 0x18
-  __asm mov edx, dword ptr [esp + 0x1c]
-  __asm push ebp
-  __asm mov ebp, ecx
-  __asm cmp edx, eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xec __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0xe9 __asm _emit 0x3b __asm _emit 0xd0
   __asm je LAB_10c44e1c
-  __asm mov eax, dword ptr [ebp + 4]
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm mov eax, dword ptr [edx + 4]
-  __asm mov dword ptr [esp + 4], eax
-  __asm movzx eax, byte ptr [edx + 8]
-  __asm xor eax, 0x811c9dc5
-  __asm imul ecx, eax, 0x1000193
-  __asm movzx eax, byte ptr [edx + 9]
-  __asm push ebx
-  __asm mov ebx, dword ptr [ebp + 0xc]
-  __asm push esi
-  __asm xor ecx, eax
-  __asm mov dword ptr [esp + 0x20], ebx
-  __asm movzx eax, byte ptr [edx + 0xa]
-  __asm mov esi, edx
-  __asm imul ecx, ecx, 0x1000193
-  __asm push edi
-  __asm xor ecx, eax
-  __asm movzx eax, byte ptr [edx + 0xb]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm mov eax, dword ptr [ebp + 0x18]
-  __asm imul ecx, ecx, 0x1000193
-  __asm and eax, ecx
-  __asm mov ecx, dword ptr [ebx + eax*8]
-  __asm mov dword ptr [esp + 0x18], ecx
-  __asm lea eax, [ebx + eax*8]
-  __asm mov dword ptr [esp + 0x14], eax
-  __asm mov eax, dword ptr [eax + 4]
-  __asm mov dword ptr [esp + 0x20], eax
-  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
-  __asm mov edi, esi
-  __asm mov ebx, esi
-  __asm mov esi, dword ptr [esi]
-  __asm lea ecx, [edi + 8]
+  __asm _emit 0x8b __asm _emit 0x45 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x0f __asm _emit 0xb6
+  __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81 __asm _emit 0x69 __asm _emit 0xc8 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x42
+  __asm _emit 0x09 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5d __asm _emit 0x0c __asm _emit 0x56 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x89 __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x42 __asm _emit 0x0a
+  __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x57 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x42 __asm _emit 0x0b __asm _emit 0x69
+  __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x45 __asm _emit 0x18 __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01
+  __asm _emit 0x23 __asm _emit 0xc1 __asm _emit 0x8b __asm _emit 0x0c __asm _emit 0xc3 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc3 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14
+  __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xfe __asm _emit 0x8b __asm _emit 0xde __asm _emit 0x8b __asm _emit 0x36
+  __asm _emit 0x8d __asm _emit 0x4f __asm _emit 0x08
   __asm call LAB_10080c3d
-  __asm push 0x18
-  __asm push edi
+  __asm _emit 0x6a __asm _emit 0x18 __asm _emit 0x57
   __asm call LAB_100131d8
-  __asm dec dword ptr [ebp + 8]
-  __asm add esp, 8
-  __asm cmp ebx, dword ptr [esp + 0x20]
-  __asm _emit 0x74 __asm _emit 0x2f
-  __asm mov eax, dword ptr [esp + 0x30]
-  __asm cmp esi, eax
-  __asm _emit 0x75 __asm _emit 0xd6
-  __asm mov ecx, dword ptr [esp + 0x18]
-  __asm cmp ecx, dword ptr [esp + 0x2c]
+  __asm _emit 0xff __asm _emit 0x4d __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x74 __asm _emit 0x2f __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x30
+  __asm _emit 0x3b __asm _emit 0xf0 __asm _emit 0x75 __asm _emit 0xd6 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x3b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x2c
   __asm jne LAB_10c44e10
-  __asm mov edx, dword ptr [esp + 0x14]
-  __asm mov ecx, dword ptr [esp + 0x10]
-  __asm pop edi
-  __asm mov dword ptr [edx], esi
-  __asm mov dword ptr [ecx], esi
-  __asm mov dword ptr [esi + 4], ecx
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ebp
-  __asm add esp, 0x18
-  __asm ret 8
-  __asm mov ecx, dword ptr [esp + 0x18]
-  __asm mov edx, dword ptr [esp + 0x14]
-  __asm cmp ecx, dword ptr [esp + 0x2c]
-  __asm _emit 0x75 __asm _emit 0x0a
-  __asm mov eax, dword ptr [esp + 0x1c]
-  __asm mov ecx, eax
-  __asm mov dword ptr [edx], eax
-  __asm _emit 0xeb __asm _emit 0x04
-  __asm mov ecx, dword ptr [esp + 0x10]
-  __asm mov eax, dword ptr [esp + 0x30]
-  __asm mov dword ptr [edx + 4], ecx
-  __asm cmp esi, eax
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x32 __asm _emit 0x89 __asm _emit 0x31 __asm _emit 0x89 __asm _emit 0x4e __asm _emit 0x04
+  __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x5d __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x18 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24
+  __asm _emit 0x14 __asm _emit 0x3b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x75 __asm _emit 0x0a __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x89 __asm _emit 0x02 __asm _emit 0xeb
+  __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xf0
   __asm je LAB_10c44e10
-  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00
-  __asm movzx eax, byte ptr [esi + 8]
-  __asm xor eax, 0x811c9dc5
-  __asm imul ecx, eax, 0x1000193
-  __asm movzx eax, byte ptr [esi + 9]
-  __asm xor ecx, eax
-  __asm movzx eax, byte ptr [esi + 0xa]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm movzx eax, byte ptr [esi + 0xb]
-  __asm imul ecx, ecx, 0x1000193
-  __asm xor ecx, eax
-  __asm imul eax, ecx, 0x1000193
-  __asm mov ecx, dword ptr [ebp + 0x18]
-  __asm and ecx, eax
-  __asm mov eax, dword ptr [esp + 0x24]
-  __asm lea eax, [eax + ecx*8]
-  __asm mov dword ptr [esp + 0x2c], eax
-  __asm mov eax, dword ptr [eax + 4]
-  __asm mov dword ptr [esp + 0x20], eax
-  __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov edi, esi
-  __asm mov ebx, esi
-  __asm mov esi, dword ptr [esi]
-  __asm lea ecx, [edi + 8]
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81 __asm _emit 0x69 __asm _emit 0xc8 __asm _emit 0x93
+  __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x09 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x0a __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93
+  __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x0b __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33
+  __asm _emit 0xc8 __asm _emit 0x69 __asm _emit 0xc1 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0x4d __asm _emit 0x18 __asm _emit 0x23 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x24
+  __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xc8 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x66 __asm _emit 0x0f
+  __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xfe __asm _emit 0x8b __asm _emit 0xde __asm _emit 0x8b __asm _emit 0x36 __asm _emit 0x8d __asm _emit 0x4f __asm _emit 0x08
   __asm call LAB_10080c3d
-  __asm push 0x18
-  __asm push edi
+  __asm _emit 0x6a __asm _emit 0x18 __asm _emit 0x57
   __asm call LAB_100131d8
-  __asm dec dword ptr [ebp + 8]
-  __asm add esp, 8
-  __asm mov eax, dword ptr [esp + 0x30]
-  __asm cmp ebx, dword ptr [esp + 0x20]
-  __asm _emit 0x74 __asm _emit 0x1d
-  __asm cmp esi, eax
-  __asm _emit 0x75 __asm _emit 0xd6
-  __asm mov ecx, dword ptr [esp + 0x2c]
-  __asm mov dword ptr [ecx], esi
-  __asm mov ecx, dword ptr [esp + 0x10]
-  __asm pop edi
-  __asm mov dword ptr [ecx], esi
-  __asm mov dword ptr [esi + 4], ecx
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ebp
-  __asm add esp, 0x18
-  __asm ret 8
-  __asm mov ecx, dword ptr [esp + 0x2c]
-  __asm mov edx, dword ptr [esp + 0x1c]
-  __asm mov dword ptr [ecx], edx
-  __asm mov dword ptr [ecx + 4], edx
-  __asm cmp esi, eax
+  __asm _emit 0xff __asm _emit 0x4d __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x30 __asm _emit 0x3b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x74 __asm _emit 0x1d
+  __asm _emit 0x3b __asm _emit 0xf0 __asm _emit 0x75 __asm _emit 0xd6 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x89 __asm _emit 0x31 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x5f __asm _emit 0x89
+  __asm _emit 0x31 __asm _emit 0x89 __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x5d __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x18 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24
+  __asm _emit 0x2c __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x89 __asm _emit 0x11 __asm _emit 0x89 __asm _emit 0x51 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xf0
   __asm jne LAB_10c44d90
-  __asm mov ecx, dword ptr [esp + 0x10]
-  __asm pop edi
-  __asm mov dword ptr [ecx], esi
-  __asm mov dword ptr [esi + 4], ecx
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ebp
-  __asm add esp, 0x18
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x31 __asm _emit 0x89 __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x5d __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x18
+  __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -11983,26 +10964,11 @@ __declspec(naked) void FUN_10c44c90(void)
 __declspec(naked) void FUN_10c44ec0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov edx, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [ebx + 4]
-  __asm mov dword ptr [edi], eax
-  __asm mov esi, dword ptr [eax + 4]
-  __asm mov dword ptr [esi], edx
-  __asm mov ecx, dword ptr [edx + 4]
-  __asm mov dword ptr [ecx], ebx
-  __asm mov dword ptr [edx + 4], esi
-  __asm mov dword ptr [eax + 4], edi
-  __asm pop edi
-  __asm pop esi
-  __asm mov dword ptr [ebx + 4], ecx
-  __asm pop ebx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b
+  __asm _emit 0x7b __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0x8b __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x16 __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x19 __asm _emit 0x89 __asm _emit 0x72
+  __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x78 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x89 __asm _emit 0x4b __asm _emit 0x04 __asm _emit 0x5b __asm _emit 0xc3
 }
+
 
 
 
@@ -12014,26 +10980,11 @@ __declspec(naked) void FUN_10c44ec0(void)
 __declspec(naked) void FUN_10c44f00(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov edx, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [ebx + 4]
-  __asm mov dword ptr [edi], eax
-  __asm mov esi, dword ptr [eax + 4]
-  __asm mov dword ptr [esi], edx
-  __asm mov ecx, dword ptr [edx + 4]
-  __asm mov dword ptr [ecx], ebx
-  __asm mov dword ptr [edx + 4], esi
-  __asm mov dword ptr [eax + 4], edi
-  __asm pop edi
-  __asm pop esi
-  __asm mov dword ptr [ebx + 4], ecx
-  __asm pop ebx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b
+  __asm _emit 0x7b __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0x8b __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x16 __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x19 __asm _emit 0x89 __asm _emit 0x72
+  __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x78 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x89 __asm _emit 0x4b __asm _emit 0x04 __asm _emit 0x5b __asm _emit 0xc3
 }
+
 
 
 
@@ -12045,26 +10996,11 @@ __declspec(naked) void FUN_10c44f00(void)
 __declspec(naked) void FUN_10c44f40(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov edx, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [ebx + 4]
-  __asm mov dword ptr [edi], eax
-  __asm mov esi, dword ptr [eax + 4]
-  __asm mov dword ptr [esi], edx
-  __asm mov ecx, dword ptr [edx + 4]
-  __asm mov dword ptr [ecx], ebx
-  __asm mov dword ptr [edx + 4], esi
-  __asm mov dword ptr [eax + 4], edi
-  __asm pop edi
-  __asm pop esi
-  __asm mov dword ptr [ebx + 4], ecx
-  __asm pop ebx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b
+  __asm _emit 0x7b __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0x8b __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x16 __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x19 __asm _emit 0x89 __asm _emit 0x72
+  __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x78 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x89 __asm _emit 0x4b __asm _emit 0x04 __asm _emit 0x5b __asm _emit 0xc3
 }
+
 
 
 
@@ -12076,26 +11012,11 @@ __declspec(naked) void FUN_10c44f40(void)
 __declspec(naked) void FUN_10c44f80(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov edx, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [ebx + 4]
-  __asm mov dword ptr [edi], eax
-  __asm mov esi, dword ptr [eax + 4]
-  __asm mov dword ptr [esi], edx
-  __asm mov ecx, dword ptr [edx + 4]
-  __asm mov dword ptr [ecx], ebx
-  __asm mov dword ptr [edx + 4], esi
-  __asm mov dword ptr [eax + 4], edi
-  __asm pop edi
-  __asm pop esi
-  __asm mov dword ptr [ebx + 4], ecx
-  __asm pop ebx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b
+  __asm _emit 0x7b __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0x8b __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x16 __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x19 __asm _emit 0x89 __asm _emit 0x72
+  __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x78 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x89 __asm _emit 0x4b __asm _emit 0x04 __asm _emit 0x5b __asm _emit 0xc3
 }
+
 
 
 
@@ -12115,42 +11036,25 @@ __declspec(naked) void FUN_10c44fc0(void)
 
 
 
+
 // Reference entry 10c44fd0; body size 87 bytes.
 #line 1 "ENTRY_10c44fd0"
 
 __declspec(naked) void FUN_10c44fd0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0xfffffff
-  __asm _emit 0x77 __asm _emit 0x47
-  __asm shl eax, 4
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x0f __asm _emit 0x77 __asm _emit 0x47 __asm _emit 0xc1 __asm _emit 0xe0 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0x00
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -12162,37 +11066,18 @@ __declspec(naked) void FUN_10c44fd0(void)
 __declspec(naked) void FUN_10c45040(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0xccccccc
-  __asm _emit 0x77 __asm _emit 0x4a
-  __asm lea eax, [eax + eax*4]
-  __asm shl eax, 2
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0x0c __asm _emit 0x77 __asm _emit 0x4a __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x80 __asm _emit 0xc1 __asm _emit 0xe0
+  __asm _emit 0x02 __asm _emit 0x3d __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -12204,36 +11089,18 @@ __declspec(naked) void FUN_10c45040(void)
 __declspec(naked) void FUN_10c450c0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0xfffffff
-  __asm _emit 0x77 __asm _emit 0x47
-  __asm shl eax, 4
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x0f __asm _emit 0x77 __asm _emit 0x47 __asm _emit 0xc1 __asm _emit 0xe0 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0x00
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -12245,37 +11112,18 @@ __declspec(naked) void FUN_10c450c0(void)
 __declspec(naked) void FUN_10c45130(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0xaaaaaaa
-  __asm _emit 0x77 __asm _emit 0x4a
-  __asm lea eax, [eax + eax*2]
-  __asm shl eax, 3
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xaa __asm _emit 0xaa __asm _emit 0xaa __asm _emit 0x0a __asm _emit 0x77 __asm _emit 0x4a __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x40 __asm _emit 0xc1 __asm _emit 0xe0
+  __asm _emit 0x03 __asm _emit 0x3d __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -12287,36 +11135,18 @@ __declspec(naked) void FUN_10c45130(void)
 __declspec(naked) void FUN_10c451b0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0x3fffffff
-  __asm _emit 0x77 __asm _emit 0x47
-  __asm shl eax, 2
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0x77 __asm _emit 0x47 __asm _emit 0xc1 __asm _emit 0xe0 __asm _emit 0x02 __asm _emit 0x3d __asm _emit 0x00
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -12328,36 +11158,18 @@ __declspec(naked) void FUN_10c451b0(void)
 __declspec(naked) void FUN_10c45220(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0x3fffffff
-  __asm _emit 0x77 __asm _emit 0x47
-  __asm shl eax, 2
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0x77 __asm _emit 0x47 __asm _emit 0xc1 __asm _emit 0xe0 __asm _emit 0x02 __asm _emit 0x3d __asm _emit 0x00
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -12369,36 +11181,18 @@ __declspec(naked) void FUN_10c45220(void)
 __declspec(naked) void FUN_10c45290(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0x3fffffff
-  __asm _emit 0x77 __asm _emit 0x47
-  __asm shl eax, 2
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0x77 __asm _emit 0x47 __asm _emit 0xc1 __asm _emit 0xe0 __asm _emit 0x02 __asm _emit 0x3d __asm _emit 0x00
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -12410,36 +11204,18 @@ __declspec(naked) void FUN_10c45290(void)
 __declspec(naked) void FUN_10c45300(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0x3fffffff
-  __asm _emit 0x77 __asm _emit 0x47
-  __asm shl eax, 2
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0x77 __asm _emit 0x47 __asm _emit 0xc1 __asm _emit 0xe0 __asm _emit 0x02 __asm _emit 0x3d __asm _emit 0x00
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -12451,36 +11227,18 @@ __declspec(naked) void FUN_10c45300(void)
 __declspec(naked) void FUN_10c45370(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0x3fffffff
-  __asm _emit 0x77 __asm _emit 0x47
-  __asm shl eax, 2
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0x77 __asm _emit 0x47 __asm _emit 0xc1 __asm _emit 0xe0 __asm _emit 0x02 __asm _emit 0x3d __asm _emit 0x00
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -12540,28 +11298,13 @@ undefined4 __fastcall FUN_10c45530(undefined4 *param_1)
 __declspec(naked) void FUN_10c45540(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm movzx eax, byte ptr [esi]
-  __asm xor eax, 0x811c9dc5
-  __asm imul edx, eax, 0x1000193
-  __asm movzx eax, byte ptr [esi + 1]
-  __asm xor edx, eax
-  __asm movzx eax, byte ptr [esi + 2]
-  __asm imul edx, edx, 0x1000193
-  __asm xor edx, eax
-  __asm movzx eax, byte ptr [esi + 3]
-  __asm imul ecx, edx, 0x1000193
-  __asm xor ecx, eax
-  __asm mov eax, dword ptr [edi + 0x18]
-  __asm imul ecx, ecx, 0x1000193
-  __asm pop edi
-  __asm pop esi
-  __asm and eax, ecx
-  __asm ret 4
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x06 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81
+  __asm _emit 0x69 __asm _emit 0xd0 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x02
+  __asm _emit 0x69 __asm _emit 0xd2 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x03 __asm _emit 0x69 __asm _emit 0xca __asm _emit 0x93 __asm _emit 0x01
+  __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x18 __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x23
+  __asm _emit 0xc1 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -12573,28 +11316,13 @@ __declspec(naked) void FUN_10c45540(void)
 __declspec(naked) void FUN_10c455a0(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm movzx eax, byte ptr [esi]
-  __asm xor eax, 0x811c9dc5
-  __asm imul edx, eax, 0x1000193
-  __asm movzx eax, byte ptr [esi + 1]
-  __asm xor edx, eax
-  __asm movzx eax, byte ptr [esi + 2]
-  __asm imul edx, edx, 0x1000193
-  __asm xor edx, eax
-  __asm movzx eax, byte ptr [esi + 3]
-  __asm imul ecx, edx, 0x1000193
-  __asm xor ecx, eax
-  __asm mov eax, dword ptr [edi + 0x18]
-  __asm imul ecx, ecx, 0x1000193
-  __asm pop edi
-  __asm pop esi
-  __asm and eax, ecx
-  __asm ret 4
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x06 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81
+  __asm _emit 0x69 __asm _emit 0xd0 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x02
+  __asm _emit 0x69 __asm _emit 0xd2 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x03 __asm _emit 0x69 __asm _emit 0xca __asm _emit 0x93 __asm _emit 0x01
+  __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x18 __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x23
+  __asm _emit 0xc1 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -12606,28 +11334,13 @@ __declspec(naked) void FUN_10c455a0(void)
 __declspec(naked) void FUN_10c45600(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm movzx eax, byte ptr [esi]
-  __asm xor eax, 0x811c9dc5
-  __asm imul edx, eax, 0x1000193
-  __asm movzx eax, byte ptr [esi + 1]
-  __asm xor edx, eax
-  __asm movzx eax, byte ptr [esi + 2]
-  __asm imul edx, edx, 0x1000193
-  __asm xor edx, eax
-  __asm movzx eax, byte ptr [esi + 3]
-  __asm imul ecx, edx, 0x1000193
-  __asm xor ecx, eax
-  __asm mov eax, dword ptr [edi + 0x18]
-  __asm imul ecx, ecx, 0x1000193
-  __asm pop edi
-  __asm pop esi
-  __asm and eax, ecx
-  __asm ret 4
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x06 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81
+  __asm _emit 0x69 __asm _emit 0xd0 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x02
+  __asm _emit 0x69 __asm _emit 0xd2 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x03 __asm _emit 0x69 __asm _emit 0xca __asm _emit 0x93 __asm _emit 0x01
+  __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x18 __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x23
+  __asm _emit 0xc1 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -12639,28 +11352,13 @@ __declspec(naked) void FUN_10c45600(void)
 __declspec(naked) void FUN_10c45660(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm movzx eax, byte ptr [esi]
-  __asm xor eax, 0x811c9dc5
-  __asm imul edx, eax, 0x1000193
-  __asm movzx eax, byte ptr [esi + 1]
-  __asm xor edx, eax
-  __asm movzx eax, byte ptr [esi + 2]
-  __asm imul edx, edx, 0x1000193
-  __asm xor edx, eax
-  __asm movzx eax, byte ptr [esi + 3]
-  __asm imul ecx, edx, 0x1000193
-  __asm xor ecx, eax
-  __asm mov eax, dword ptr [edi + 0x18]
-  __asm imul ecx, ecx, 0x1000193
-  __asm pop edi
-  __asm pop esi
-  __asm and eax, ecx
-  __asm ret 4
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x06 __asm _emit 0x35 __asm _emit 0xc5 __asm _emit 0x9d __asm _emit 0x1c __asm _emit 0x81
+  __asm _emit 0x69 __asm _emit 0xd0 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x02
+  __asm _emit 0x69 __asm _emit 0xd2 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x46 __asm _emit 0x03 __asm _emit 0x69 __asm _emit 0xca __asm _emit 0x93 __asm _emit 0x01
+  __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x33 __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x18 __asm _emit 0x69 __asm _emit 0xc9 __asm _emit 0x93 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x23
+  __asm _emit 0xc1 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -12720,57 +11418,19 @@ undefined4 __fastcall FUN_10c456f0(int param_1)
 __declspec(naked) void FUN_10c45700(void)
 
 {
-  __asm push ecx
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x6d
-  __asm mov eax, dword ptr [edi + 0x1c]
-  __asm shr eax, 3
-  __asm cmp eax, ecx
-  __asm _emit 0x76 __asm _emit 0x10
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov ecx, edi
-  __asm push eax
-  __asm push dword ptr [eax]
+  __asm _emit 0x51 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x6d __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x1c __asm _emit 0xc1 __asm _emit 0xe8
+  __asm _emit 0x03 __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0x76 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x30
   __asm call LAB_10095197
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
-  __asm mov ecx, dword ptr [edi + 4]
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [ecx]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x15
-  __asm push esi
-  __asm mov esi, dword ptr [eax]
-  __asm push 0x10
-  __asm push eax
+  __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0x01 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x15 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x30 __asm _emit 0x6a __asm _emit 0x10 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm mov eax, esi
-  __asm test esi, esi
-  __asm _emit 0x75 __asm _emit 0xed
-  __asm pop esi
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax], eax
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax + 4], eax
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [esp + 4], eax
-  __asm lea eax, [esp + 4]
-  __asm push eax
-  __asm push dword ptr [edi + 0x10]
-  __asm push dword ptr [edi + 0xc]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x75 __asm _emit 0xed __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x0c
   __asm call LAB_10005272
-  __asm add esp, 0xc
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -12782,57 +11442,19 @@ __declspec(naked) void FUN_10c45700(void)
 __declspec(naked) void FUN_10c45820(void)
 
 {
-  __asm push ecx
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x6d
-  __asm mov eax, dword ptr [edi + 0x1c]
-  __asm shr eax, 3
-  __asm cmp eax, ecx
-  __asm _emit 0x76 __asm _emit 0x10
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov ecx, edi
-  __asm push eax
-  __asm push dword ptr [eax]
+  __asm _emit 0x51 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x6d __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x1c __asm _emit 0xc1 __asm _emit 0xe8
+  __asm _emit 0x03 __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0x76 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x30
   __asm call LAB_10029fe1
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
-  __asm mov ecx, dword ptr [edi + 4]
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [ecx]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x15
-  __asm push esi
-  __asm mov esi, dword ptr [eax]
-  __asm push 0x10
-  __asm push eax
+  __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0x01 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x15 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x30 __asm _emit 0x6a __asm _emit 0x10 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm mov eax, esi
-  __asm test esi, esi
-  __asm _emit 0x75 __asm _emit 0xed
-  __asm pop esi
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax], eax
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax + 4], eax
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [esp + 4], eax
-  __asm lea eax, [esp + 4]
-  __asm push eax
-  __asm push dword ptr [edi + 0x10]
-  __asm push dword ptr [edi + 0xc]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x75 __asm _emit 0xed __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x0c
   __asm call LAB_10049558
-  __asm add esp, 0xc
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -12844,62 +11466,22 @@ __declspec(naked) void FUN_10c45820(void)
 __declspec(naked) void FUN_10c458c0(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm mov ebx, ecx
-  __asm mov ecx, dword ptr [ebx + 8]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x7e
-  __asm mov eax, dword ptr [ebx + 0x1c]
-  __asm shr eax, 3
-  __asm cmp eax, ecx
-  __asm _emit 0x76 __asm _emit 0x10
-  __asm mov eax, dword ptr [ebx + 4]
-  __asm mov ecx, ebx
-  __asm push eax
-  __asm push dword ptr [eax]
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x8b __asm _emit 0x4b __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x7e __asm _emit 0x8b __asm _emit 0x43 __asm _emit 0x1c __asm _emit 0xc1 __asm _emit 0xe8
+  __asm _emit 0x03 __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0x76 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xcb __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x30
   __asm call LAB_1008a53f
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret
-  __asm mov ecx, dword ptr [ebx + 4]
-  __asm push edi
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov edi, dword ptr [ecx]
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x24
-  __asm push esi
-  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov esi, dword ptr [edi]
-  __asm lea ecx, [edi + 8]
+  __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc3 __asm _emit 0x8b __asm _emit 0x4b __asm _emit 0x04 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0x39 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x56 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x37
+  __asm _emit 0x8d __asm _emit 0x4f __asm _emit 0x08
   __asm call LAB_10080c3d
-  __asm push 0x18
-  __asm push edi
+  __asm _emit 0x6a __asm _emit 0x18 __asm _emit 0x57
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm mov edi, esi
-  __asm test esi, esi
-  __asm _emit 0x75 __asm _emit 0xe5
-  __asm pop esi
-  __asm mov eax, dword ptr [ebx + 4]
-  __asm mov dword ptr [eax], eax
-  __asm mov eax, dword ptr [ebx + 4]
-  __asm mov dword ptr [eax + 4], eax
-  __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [ebx + 4]
-  __asm mov dword ptr [esp + 8], eax
-  __asm lea eax, [esp + 8]
-  __asm push eax
-  __asm push dword ptr [ebx + 0x10]
-  __asm push dword ptr [ebx + 0xc]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xfe __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x75 __asm _emit 0xe5 __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x89
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x73 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x73 __asm _emit 0x0c
   __asm call LAB_1008e144
-  __asm add esp, 0xc
-  __asm pop edi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x5f __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -12963,25 +11545,14 @@ void __fastcall FUN_10c459f0(int *param_1)
 __declspec(naked) void FUN_10c45aa0(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 0xc]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm shl ecx, 4
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0d
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x04 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8
+  __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0d __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc3
   __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 
@@ -12993,26 +11564,14 @@ __declspec(naked) void FUN_10c45aa0(void)
 __declspec(naked) void FUN_10c45af0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm lea ecx, [eax + eax*4]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm shl ecx, 2
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0d
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x80 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x02 __asm _emit 0x81 __asm _emit 0xf9
+  __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0
+  __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0d __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc3
   __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 
@@ -13024,25 +11583,14 @@ __declspec(naked) void FUN_10c45af0(void)
 __declspec(naked) void FUN_10c45b40(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 0xc]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm shl ecx, 4
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0d
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x04 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8
+  __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0d __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc3
   __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 
@@ -13054,26 +11602,14 @@ __declspec(naked) void FUN_10c45b40(void)
 __declspec(naked) void FUN_10c45b90(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm lea ecx, [eax + eax*2]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm shl ecx, 3
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0d
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x40 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x03 __asm _emit 0x81 __asm _emit 0xf9
+  __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0
+  __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0d __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc3
   __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 
@@ -13085,26 +11621,15 @@ __declspec(naked) void FUN_10c45b90(void)
 __declspec(naked) void FUN_10c45be0(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 8]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm shl ecx, 4
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x04 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8
+  __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -13116,27 +11641,15 @@ __declspec(naked) void FUN_10c45be0(void)
 __declspec(naked) void FUN_10c45c30(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm lea ecx, [eax + eax*4]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm shl ecx, 2
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x80 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x02 __asm _emit 0x81 __asm _emit 0xf9
+  __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0
+  __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -13148,26 +11661,15 @@ __declspec(naked) void FUN_10c45c30(void)
 __declspec(naked) void FUN_10c45c80(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 8]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm shl ecx, 4
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x04 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8
+  __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -13179,27 +11681,15 @@ __declspec(naked) void FUN_10c45c80(void)
 __declspec(naked) void FUN_10c45cd0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm lea ecx, [eax + eax*2]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm shl ecx, 3
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x40 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x03 __asm _emit 0x81 __asm _emit 0xf9
+  __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0
+  __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -13211,26 +11701,15 @@ __declspec(naked) void FUN_10c45cd0(void)
 __declspec(naked) void FUN_10c45d20(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x81
+  __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -13242,26 +11721,15 @@ __declspec(naked) void FUN_10c45d20(void)
 __declspec(naked) void FUN_10c45d70(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x81
+  __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -13273,26 +11741,15 @@ __declspec(naked) void FUN_10c45d70(void)
 __declspec(naked) void FUN_10c45dc0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x81
+  __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -13304,26 +11761,15 @@ __declspec(naked) void FUN_10c45dc0(void)
 __declspec(naked) void FUN_10c45e10(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x81
+  __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -13335,26 +11781,15 @@ __declspec(naked) void FUN_10c45e10(void)
 __declspec(naked) void FUN_10c45e60(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x81
+  __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -13447,11 +11882,11 @@ undefined4 __fastcall FUN_10c45fa0(int param_1)
 __declspec(naked) void FUN_10c462e0(void)
 
 {
-  __asm push dword ptr [esp + 8]
-  __asm push dword ptr [esp + 8]
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_1007f432
-  __asm ret 8
+  __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -13463,11 +11898,11 @@ __declspec(naked) void FUN_10c462e0(void)
 __declspec(naked) void FUN_10c46300(void)
 
 {
-  __asm push dword ptr [esp + 8]
-  __asm push dword ptr [esp + 8]
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_10012b16
-  __asm ret 8
+  __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -13479,11 +11914,11 @@ __declspec(naked) void FUN_10c46300(void)
 __declspec(naked) void FUN_10c46320(void)
 
 {
-  __asm push dword ptr [esp + 8]
-  __asm push dword ptr [esp + 8]
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_10074a64
-  __asm ret 8
+  __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -13495,12 +11930,11 @@ __declspec(naked) void FUN_10c46320(void)
 __declspec(naked) void FUN_10c46b70(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 5
-  __asm _emit 0x77 __asm _emit 0x1c
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x05 __asm _emit 0x77 __asm _emit 0x1c
   __asm jmp dword ptr [eax*4 + LAB_10c46b9c]
-  __asm cmp dword ptr [esp + 8], 4
+  __asm _emit 0x83 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x04
 }
+
 
 
 
@@ -13895,17 +12329,15 @@ int __fastcall FUN_10c475d0(int *param_1)
 __declspec(naked) void FUN_10c47620(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11881068
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
   __asm mov dword ptr [ecx], offset LAB_119169b8
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -14006,68 +12438,27 @@ SCStr * __stdcall FUN_10c496e0(SCStr *param_1)
 __declspec(naked) void FUN_10c4a0a0(void)
 
 {
-  __asm sub esp, 0x104
+  __asm _emit 0x81 __asm _emit 0xec __asm _emit 0x04 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00
   __asm mov eax, dword ptr [LAB_12126b84]
-  __asm xor eax, esp
-  __asm mov dword ptr [esp + 0x100], eax
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x11c]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x124]
-  __asm test edi, edi
+  __asm _emit 0x33 __asm _emit 0xc4 __asm _emit 0x89 __asm _emit 0x84 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xb4 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x01
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xbc __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x85 __asm _emit 0xff
   __asm je LAB_10c4a14c
-  __asm mov ebx, dword ptr [esp + 0x118]
-  __asm test ebx, ebx
-  __asm _emit 0x74 __asm _emit 0x74
-  __asm push 0x100
-  __asm lea eax, [esp + 0x10]
-  __asm push 0
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x9c __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x85 __asm _emit 0xdb __asm _emit 0x74 __asm _emit 0x74 __asm _emit 0x68 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x50
   __asm call LAB_1148ce0b
-  __asm lea ecx, [esi + edi]
-  __asm add esp, 0xc
-  __asm cmp esi, ecx
-  __asm _emit 0x74 __asm _emit 0x0d
-  __asm movzx eax, byte ptr [esi]
-  __asm inc esi
-  __asm mov byte ptr [esp + eax + 0xc], 1
-  __asm cmp esi, ecx
-  __asm _emit 0x75 __asm _emit 0xf3
-  __asm mov eax, dword ptr [esp + 0x11c]
-  __asm lea ecx, [ebx - 1]
-  __asm mov edx, dword ptr [esp + 0x114]
-  __asm cmp ecx, eax
-  __asm cmovb eax, ecx
-  __asm add eax, edx
-  __asm movzx ecx, byte ptr [eax]
-  __asm cmp byte ptr [esp + ecx + 0xc], 0
-  __asm _emit 0x75 __asm _emit 0x10
-  __asm cmp eax, edx
-  __asm _emit 0x74 __asm _emit 0x26
-  __asm movzx ecx, byte ptr [eax - 1]
-  __asm dec eax
-  __asm cmp byte ptr [esp + ecx + 0xc], 0
-  __asm _emit 0x74 __asm _emit 0xf0
-  __asm pop edi
-  __asm pop esi
-  __asm sub eax, edx
-  __asm pop ebx
-  __asm mov ecx, dword ptr [esp + 0x100]
-  __asm xor ecx, esp
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x3e __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xf1 __asm _emit 0x74 __asm _emit 0x0d __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x06 __asm _emit 0x46 __asm _emit 0xc6 __asm _emit 0x44
+  __asm _emit 0x04 __asm _emit 0x0c __asm _emit 0x01 __asm _emit 0x3b __asm _emit 0xf1 __asm _emit 0x75 __asm _emit 0xf3 __asm _emit 0x8b __asm _emit 0x84 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x4b
+  __asm _emit 0xff __asm _emit 0x8b __asm _emit 0x94 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xc1 __asm _emit 0x03 __asm _emit 0xc2 __asm _emit 0x0f
+  __asm _emit 0xb6 __asm _emit 0x08 __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x0c __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x10 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x74 __asm _emit 0x26 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x48
+  __asm _emit 0xff __asm _emit 0x48 __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x0c __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0xf0 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x5b __asm _emit 0x8b __asm _emit 0x8c
+  __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xcc
   __asm call LAB_100382f3
-  __asm add esp, 0x104
-  __asm ret
-  __asm mov ecx, dword ptr [esp + 0x10c]
-  __asm or eax, 0xffffffff
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm xor ecx, esp
+  __asm _emit 0x81 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc3 __asm _emit 0x8b __asm _emit 0x8c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc8
+  __asm _emit 0xff __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x33 __asm _emit 0xcc
   __asm call LAB_100382f3
-  __asm add esp, 0x104
-  __asm ret
+  __asm _emit 0x81 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc3
 }
+
 
 
 
@@ -14079,47 +12470,20 @@ __declspec(naked) void FUN_10c4a0a0(void)
 __declspec(naked) void FUN_10c4a230(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm push edi
-  __asm mov edi, dword ptr [eax]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esi]
-  __asm call dword ptr [eax + 4]
-  __asm mov ecx, dword ptr [esi + 8]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x13 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 8]
-  __asm mov dword ptr [esi + 4], edi
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x22
-  __asm mov eax, dword ptr [edi]
-  __asm mov ecx, edi
-  __asm call dword ptr [eax + 0xc]
-  __asm mov ecx, dword ptr [esi + 4]
-  __asm mov dword ptr [esi + 8], eax
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x18
-  __asm mov eax, dword ptr [ecx]
-  __asm push dword ptr [esp + 0x10]
-  __asm call dword ptr [eax + 0x14]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm pop edi
-  __asm pop esi
-  __asm ret 8
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x38 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x4e __asm _emit 0x08 __asm _emit 0x85
+  __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x13 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x7e __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x22 __asm _emit 0x8b __asm _emit 0x07 __asm _emit 0x8b
+  __asm _emit 0xcf __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0xc7
+  __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm push offset LAB_11883b7c
-  __asm push 1
+  __asm _emit 0x6a __asm _emit 0x01
   __asm push offset LAB_11881488
   __asm call LAB_100238df
-  __asm mov eax, dword ptr [esi + 4]
-  __asm add esp, 0xc
-  __asm pop edi
-  __asm pop esi
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -14143,15 +12507,12 @@ undefined4 FUN_10c4a2e0(undefined4 param_1)
 __declspec(naked) void FUN_10c4a2f0(void)
 
 {
-  __asm push ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_11916ecc
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -14163,20 +12524,16 @@ __declspec(naked) void FUN_10c4a2f0(void)
 __declspec(naked) void FUN_10c4a510(void)
 
 {
-  __asm push ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00
   __asm mov dword ptr [ecx + 0xc], offset LAB_11883984
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_11916d5c
   __asm mov dword ptr [ecx + 0xc], offset LAB_11916d6c
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x3c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x64 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x3c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x64 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -14214,40 +12571,19 @@ int __fastcall FUN_10c4a600(int param_1, unsigned int recovered_unused_stack_0, 
 __declspec(naked) void FUN_10c4a690(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm mov edx, esi
-  __asm push edi
-  __asm push 0
-  __asm neg edx
-  __asm mov edi, ecx
-  __asm push 0
-  __asm push dword ptr [esp + 0x20]
-  __asm sbb edx, edx
-  __asm mov dword ptr [esp + 0x14], edi
-  __asm push dword ptr [esp + 0x20]
-  __asm lea eax, [esi + 0x610c]
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xd6 __asm _emit 0x57 __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0xf7 __asm _emit 0xda __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x6a
+  __asm _emit 0x00 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x1b __asm _emit 0xd2 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x8d
+  __asm _emit 0x86 __asm _emit 0x0c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm mov ecx, offset LAB_1186d2ee
-  __asm and edx, eax
-  __asm mov eax, dword ptr [esi + 0x6110]
-  __asm test eax, eax
-  __asm cmovne ecx, eax
-  __asm push ecx
-  __asm push esi
-  __asm push edx
-  __asm mov ecx, edi
+  __asm _emit 0x23 __asm _emit 0xd0 __asm _emit 0x8b __asm _emit 0x86 __asm _emit 0x10 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xc8 __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0x52
+  __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10071f8a
-  __asm mov dword ptr [edi + 0x4494], esi
-  __asm mov eax, edi
-  __asm mov byte ptr [edi + 0x4490], 0
+  __asm _emit 0x89 __asm _emit 0xb7 __asm _emit 0x94 __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc7 __asm _emit 0xc6 __asm _emit 0x87 __asm _emit 0x90 __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [edi], offset LAB_11916e48
   __asm mov dword ptr [edi + 0x60], offset LAB_11916e90
-  __asm pop edi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 0xc
+  __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -14332,6 +12668,7 @@ __declspec(naked) void FUN_10c4b710(void)
   __asm mov dword ptr [ecx + 8], offset LAB_11916d4c
   __asm jmp LAB_1000cfa4
 }
+
 
 
 
@@ -14451,19 +12788,10 @@ bool __fastcall FUN_10c4bf50(int param_1)
 __declspec(naked) void FUN_10c4bf60(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm mov ecx, dword ptr [eax + 0x24]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x08
-  __asm mov eax, dword ptr [ecx]
-  __asm push esi
-  __asm call dword ptr [eax]
-  __asm mov dword ptr [esi + 0x24], eax
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x24 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -14504,13 +12832,12 @@ __declspec(naked) void FUN_10c4c950(void)
 
 {
   __asm mov ecx, dword ptr [LAB_121a568c]
-  __asm lea ecx, [ecx + 8]
+  __asm _emit 0x8d __asm _emit 0x49 __asm _emit 0x08
   __asm call LAB_10073718
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [eax], 0x7fffffff
-  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x7f __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0xc3
 }
+
 
 
 
@@ -14522,73 +12849,25 @@ __declspec(naked) void FUN_10c4c950(void)
 __declspec(naked) void FUN_10c4c980(void)
 
 {
-  __asm sub esp, 0x104
+  __asm _emit 0x81 __asm _emit 0xec __asm _emit 0x04 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00
   __asm mov eax, dword ptr [LAB_12126b84]
-  __asm xor eax, esp
-  __asm mov dword ptr [esp + 0x100], eax
-  __asm push ebx
-  __asm push ebp
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x114]
-  __asm push edi
-  __asm mov edi, esi
-  __asm lea edx, [edi + 1]
-  __asm mov al, byte ptr [edi]
-  __asm inc edi
-  __asm test al, al
-  __asm _emit 0x75 __asm _emit 0xf9
-  __asm sub edi, edx
-  __asm mov ebx, ecx
-  __asm cmp dword ptr [ecx + 0x14], 0x10
-  __asm _emit 0x72 __asm _emit 0x02
-  __asm mov ebx, dword ptr [ecx]
-  __asm mov ebp, dword ptr [ecx + 0x10]
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x68
-  __asm test ebp, ebp
-  __asm _emit 0x74 __asm _emit 0x64
-  __asm push 0x100
-  __asm lea eax, [esp + 0x14]
-  __asm push 0
-  __asm push eax
+  __asm _emit 0x33 __asm _emit 0xc4 __asm _emit 0x89 __asm _emit 0x84 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xb4 __asm _emit 0x24 __asm _emit 0x14
+  __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xfe __asm _emit 0x8d __asm _emit 0x57 __asm _emit 0x01 __asm _emit 0x8a __asm _emit 0x07 __asm _emit 0x47 __asm _emit 0x84 __asm _emit 0xc0 __asm _emit 0x75 __asm _emit 0xf9
+  __asm _emit 0x2b __asm _emit 0xfa __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x83 __asm _emit 0x79 __asm _emit 0x14 __asm _emit 0x10 __asm _emit 0x72 __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x19 __asm _emit 0x8b __asm _emit 0x69 __asm _emit 0x10 __asm _emit 0x85
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x68 __asm _emit 0x85 __asm _emit 0xed __asm _emit 0x74 __asm _emit 0x64 __asm _emit 0x68 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14
+  __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x50
   __asm call LAB_1148ce0b
-  __asm lea ecx, [esi + edi]
-  __asm add esp, 0xc
-  __asm cmp esi, ecx
-  __asm _emit 0x74 __asm _emit 0x10 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
-  __asm movzx eax, byte ptr [esi]
-  __asm inc esi
-  __asm mov byte ptr [esp + eax + 0x10], 1
-  __asm cmp esi, ecx
-  __asm _emit 0x75 __asm _emit 0xf3
-  __asm mov edx, dword ptr [esp + 0x11c]
-  __asm lea eax, [ebp - 1]
-  __asm cmp eax, edx
-  __asm cmovb edx, eax
-  __asm movzx eax, byte ptr [edx + ebx]
-  __asm add edx, ebx
-  __asm cmp byte ptr [esp + eax + 0x10], 0
-  __asm _emit 0x75 __asm _emit 0x17 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm cmp edx, ebx
-  __asm _emit 0x74 __asm _emit 0x12
-  __asm movzx ecx, byte ptr [edx - 1]
-  __asm dec edx
-  __asm cmp byte ptr [esp + ecx + 0x10], 0
-  __asm _emit 0x74 __asm _emit 0xf0
-  __asm sub edx, ebx
-  __asm mov eax, edx
-  __asm _emit 0xeb __asm _emit 0x03
-  __asm or eax, 0xffffffff
-  __asm mov ecx, dword ptr [esp + 0x110]
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm xor ecx, esp
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x3e __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xf1 __asm _emit 0x74 __asm _emit 0x10 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x06
+  __asm _emit 0x46 __asm _emit 0xc6 __asm _emit 0x44 __asm _emit 0x04 __asm _emit 0x10 __asm _emit 0x01 __asm _emit 0x3b __asm _emit 0xf1 __asm _emit 0x75 __asm _emit 0xf3 __asm _emit 0x8b __asm _emit 0x94 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x01 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x45 __asm _emit 0xff __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xd0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x04 __asm _emit 0x1a __asm _emit 0x03 __asm _emit 0xd3 __asm _emit 0x80
+  __asm _emit 0x7c __asm _emit 0x04 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x17 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x3b __asm _emit 0xd3 __asm _emit 0x74
+  __asm _emit 0x12 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x4a __asm _emit 0xff __asm _emit 0x4a __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x0c __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0xf0 __asm _emit 0x2b __asm _emit 0xd3 __asm _emit 0x8b
+  __asm _emit 0xc2 __asm _emit 0xeb __asm _emit 0x03 __asm _emit 0x83 __asm _emit 0xc8 __asm _emit 0xff __asm _emit 0x8b __asm _emit 0x8c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d
+  __asm _emit 0x5b __asm _emit 0x33 __asm _emit 0xcc
   __asm call LAB_100382f3
-  __asm add esp, 0x104
-  __asm ret 8
+  __asm _emit 0x81 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -14826,112 +13105,56 @@ void __fastcall FUN_10c4d0c0(undefined4 *param_1)
 __declspec(naked) void FUN_10c4d160(void)
 
 {
-  __asm push ebp
-  __asm lea ebp, [esp - 0x408]
-  __asm sub esp, 0x408
-  __asm push -1
+  __asm _emit 0x55 __asm _emit 0x8d __asm _emit 0xac __asm _emit 0x24 __asm _emit 0xf8 __asm _emit 0xfb __asm _emit 0xff __asm _emit 0xff __asm _emit 0x81 __asm _emit 0xec __asm _emit 0x08 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x6a __asm _emit 0xff
   __asm push offset LAB_116de755
-  __asm _emit 0x64 __asm _emit 0xa1 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push eax
-  __asm sub esp, 0x1c
+  __asm _emit 0x64 __asm _emit 0xa1 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x50 __asm _emit 0x83 __asm _emit 0xec __asm _emit 0x1c
   __asm mov eax, dword ptr [LAB_12126b84]
-  __asm xor eax, ebp
-  __asm mov dword ptr [ebp + 0x404], eax
-  __asm push ebx
-  __asm push esi
-  __asm push edi
-  __asm push eax
-  __asm lea eax, [ebp - 0xc]
-  __asm _emit 0x64 __asm _emit 0xa3 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov esi, ecx
-  __asm mov edi, dword ptr [ebp + 0x410]
-  __asm lea eax, [ebp]
-  __asm push 0x401
-  __asm push eax
-  __asm lea ecx, [ebp - 0x28]
+  __asm _emit 0x33 __asm _emit 0xc5 __asm _emit 0x89 __asm _emit 0x85 __asm _emit 0x04 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x8d __asm _emit 0x45 __asm _emit 0xf4 __asm _emit 0x64
+  __asm _emit 0xa3 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0xbd __asm _emit 0x10 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x45 __asm _emit 0x00
+  __asm _emit 0x68 __asm _emit 0x01 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x50 __asm _emit 0x8d __asm _emit 0x4d __asm _emit 0xd8
   __asm call LAB_1007bcbf
-  __asm push 0
-  __asm push edi
-  __asm lea ecx, [ebp - 0x28]
-  __asm _emit 0xc7 __asm _emit 0x45 __asm _emit 0xfc __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x57 __asm _emit 0x8d __asm _emit 0x4d __asm _emit 0xd8 __asm _emit 0xc7 __asm _emit 0x45 __asm _emit 0xfc __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm call LAB_100585e4
-  __asm push 0
-  __asm lea ecx, [ebp - 0x28]
+  __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x4d __asm _emit 0xd8
   __asm call LAB_10089b49
-  __asm mov ebx, eax
-  __asm test ebx, ebx
+  __asm _emit 0x8b __asm _emit 0xd8 __asm _emit 0x85 __asm _emit 0xdb
   __asm je LAB_10c4d28d
-  __asm push 5
+  __asm _emit 0x6a __asm _emit 0x05
   __asm push offset LAB_11916e18
-  __asm push edi
+  __asm _emit 0x57
   __asm call LAB_10053a80
-  __asm add esp, 0xc
-  __asm test eax, eax
-  __asm _emit 0x75 __asm _emit 0x44
-  __asm push ebx
-  __asm lea ecx, [ebp - 0x28]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x75 __asm _emit 0x44 __asm _emit 0x53 __asm _emit 0x8d __asm _emit 0x4d __asm _emit 0xd8
   __asm call LAB_100675d0
-  __asm push eax
-  __asm lea ecx, [ebp - 0x10]
+  __asm _emit 0x50 __asm _emit 0x8d __asm _emit 0x4d __asm _emit 0xf0
   __asm call LAB_1005273e
-  __asm add esi, 0x6120
-  __asm mov byte ptr [ebp - 4], 1
-  __asm lea eax, [ebp - 0x10]
-  __asm cmp eax, esi
-  __asm _emit 0x74 __asm _emit 0x13
-  __asm mov ecx, esi
+  __asm _emit 0x81 __asm _emit 0xc6 __asm _emit 0x20 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc6 __asm _emit 0x45 __asm _emit 0xfc __asm _emit 0x01 __asm _emit 0x8d __asm _emit 0x45 __asm _emit 0xf0 __asm _emit 0x3b __asm _emit 0xc6 __asm _emit 0x74
+  __asm _emit 0x13 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_1005c315
-  __asm mov eax, dword ptr [ebp - 0x10]
-  __asm mov ecx, esi
-  __asm mov dword ptr [esi], eax
+  __asm _emit 0x8b __asm _emit 0x45 __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0xce __asm _emit 0x89 __asm _emit 0x06
   __asm call LAB_1002a973
-  __asm lea ecx, [ebp - 0x10]
-  __asm mov byte ptr [ebp - 4], 2
+  __asm _emit 0x8d __asm _emit 0x4d __asm _emit 0xf0 __asm _emit 0xc6 __asm _emit 0x45 __asm _emit 0xfc __asm _emit 0x02
   __asm call LAB_1005c315
-  __asm _emit 0xeb __asm _emit 0x5d
-  __asm push 0xe
+  __asm _emit 0xeb __asm _emit 0x5d __asm _emit 0x6a __asm _emit 0x0e
   __asm push offset LAB_11916e20
-  __asm push edi
+  __asm _emit 0x57
   __asm call LAB_10053a80
-  __asm add esp, 0xc
-  __asm test eax, eax
-  __asm _emit 0x75 __asm _emit 0x49
-  __asm push ebx
-  __asm lea ecx, [ebp - 0x28]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x75 __asm _emit 0x49 __asm _emit 0x53 __asm _emit 0x8d __asm _emit 0x4d __asm _emit 0xd8
   __asm call LAB_100675d0
   __asm push offset LAB_11916e34
-  __asm push eax
+  __asm _emit 0x50
   __asm call LAB_10024bef
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x45 __asm _emit 0xec __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x27
-  __asm lea ecx, [ebp - 0x14]
-  __asm add eax, 8
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x45 __asm _emit 0xec __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x27 __asm _emit 0x8d __asm _emit 0x4d
+  __asm _emit 0xec __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x08 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_1002ac39
-  __asm add esp, 8
-  __asm test al, al
-  __asm _emit 0x74 __asm _emit 0x13
-  __asm mov eax, dword ptr [ebp - 0x14]
-  __asm mov dword ptr [esi + 0x6128], eax
-  __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x2c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm lea ecx, [ebp - 0x28]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x84 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x13 __asm _emit 0x8b __asm _emit 0x45 __asm _emit 0xec __asm _emit 0x89 __asm _emit 0x86 __asm _emit 0x28 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x2c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x4d __asm _emit 0xd8
   __asm call LAB_10006299
-  __asm mov ecx, dword ptr [ebp - 0xc]
-  __asm _emit 0x64 __asm _emit 0x89 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm mov ecx, dword ptr [ebp + 0x404]
-  __asm xor ecx, ebp
+  __asm _emit 0x8b __asm _emit 0x4d __asm _emit 0xf4 __asm _emit 0x64 __asm _emit 0x89 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x8b __asm _emit 0x8d
+  __asm _emit 0x04 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xcd
   __asm call LAB_100382f3
-  __asm lea esp, [ebp + 0x408]
-  __asm pop ebp
-  __asm ret 4
+  __asm _emit 0x8d __asm _emit 0xa5 __asm _emit 0x08 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5d __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -15016,15 +13239,13 @@ char * FUN_10c4da00(void)
 __declspec(naked) void FUN_10c4dce0(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11916f64
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -15036,15 +13257,13 @@ __declspec(naked) void FUN_10c4dce0(void)
 __declspec(naked) void FUN_10c4dd10(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11917548
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -15056,15 +13275,13 @@ __declspec(naked) void FUN_10c4dd10(void)
 __declspec(naked) void FUN_10c4dd40(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11917650
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -15076,15 +13293,13 @@ __declspec(naked) void FUN_10c4dd40(void)
 __declspec(naked) void FUN_10c4dd70(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11917758
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -15096,15 +13311,13 @@ __declspec(naked) void FUN_10c4dd70(void)
 __declspec(naked) void FUN_10c4dda0(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_119179c4
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -15116,15 +13329,13 @@ __declspec(naked) void FUN_10c4dda0(void)
 __declspec(naked) void FUN_10c4ddd0(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_119178d4
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -15136,18 +13347,15 @@ __declspec(naked) void FUN_10c4ddd0(void)
 __declspec(naked) void FUN_10c4de00(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_11916f64
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_11916fac
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -15159,18 +13367,15 @@ __declspec(naked) void FUN_10c4de00(void)
 __declspec(naked) void FUN_10c4de40(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_11916f64
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_11917000
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -15182,51 +13387,22 @@ __declspec(naked) void FUN_10c4de40(void)
 __declspec(naked) void FUN_10c4e720(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov dword ptr [esp + 0xc], edi
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov ecx, dword ptr [eax + 4]
-  __asm add ecx, 4
-  __asm add ecx, esi
-  __asm cmp byte ptr [esp + 0x28], 0
-  __asm mov eax, dword ptr [ecx]
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm call dword ptr [eax + 0x4c]
-  __asm _emit 0xeb __asm _emit 0x03
-  __asm call dword ptr [eax + 0x48]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov ebx, eax
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm push dword ptr [esp + 0x24]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm add ecx, eax
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 0x50]
-  __asm push eax
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46
+  __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xce __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x4c __asm _emit 0xeb __asm _emit 0x03 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x48 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xd8
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x40
+  __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x50 __asm _emit 0x50
   __asm push offset LAB_11917310
   __asm push offset LAB_11893ddc
-  __asm push ebx
-  __asm mov ecx, edi
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10013336
   __asm mov dword ptr [edi], offset LAB_11917280
-  __asm mov eax, edi
+  __asm _emit 0x8b __asm _emit 0xc7
   __asm mov dword ptr [edi + 0x60], offset LAB_119172c8
   __asm mov dword ptr [edi + 0x46c], offset LAB_11917304
-  __asm mov byte ptr [edi + 0xd7d0], 0
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0x18
+  __asm _emit 0xc6 __asm _emit 0x87 __asm _emit 0xd0 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x18 __asm _emit 0x00
 }
+
 
 
 
@@ -15238,51 +13414,22 @@ __declspec(naked) void FUN_10c4e720(void)
 __declspec(naked) void FUN_10c4e7d0(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov dword ptr [esp + 0xc], edi
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov ecx, dword ptr [eax + 4]
-  __asm add ecx, 4
-  __asm add ecx, esi
-  __asm cmp byte ptr [esp + 0x28], 0
-  __asm mov eax, dword ptr [ecx]
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm call dword ptr [eax + 0x4c]
-  __asm _emit 0xeb __asm _emit 0x03
-  __asm call dword ptr [eax + 0x48]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov ebx, eax
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm push dword ptr [esp + 0x24]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm add ecx, eax
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 0x50]
-  __asm push eax
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46
+  __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xce __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x4c __asm _emit 0xeb __asm _emit 0x03 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x48 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xd8
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x40
+  __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x50 __asm _emit 0x50
   __asm push offset LAB_119173c0
   __asm push offset LAB_11893ddc
-  __asm push ebx
-  __asm mov ecx, edi
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10013336
   __asm mov dword ptr [edi], offset LAB_11917330
-  __asm mov eax, edi
+  __asm _emit 0x8b __asm _emit 0xc7
   __asm mov dword ptr [edi + 0x60], offset LAB_11917378
   __asm mov dword ptr [edi + 0x46c], offset LAB_119173b4
-  __asm mov byte ptr [edi + 0xd7d0], 0
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0x18
+  __asm _emit 0xc6 __asm _emit 0x87 __asm _emit 0xd0 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x18 __asm _emit 0x00
 }
+
 
 
 
@@ -15294,52 +13441,23 @@ __declspec(naked) void FUN_10c4e7d0(void)
 __declspec(naked) void FUN_10c4e880(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov dword ptr [esp + 0xc], edi
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov ecx, dword ptr [eax + 4]
-  __asm add ecx, 4
-  __asm add ecx, esi
-  __asm cmp byte ptr [esp + 0x28], 0
-  __asm mov eax, dword ptr [ecx]
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm call dword ptr [eax + 0x4c]
-  __asm _emit 0xeb __asm _emit 0x03
-  __asm call dword ptr [eax + 0x48]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov ebx, eax
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm push dword ptr [esp + 0x24]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm add ecx, eax
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 0x50]
-  __asm push eax
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46
+  __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xce __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x4c __asm _emit 0xeb __asm _emit 0x03 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x48 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xd8
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x40
+  __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x50 __asm _emit 0x50
   __asm push offset LAB_1191746c
   __asm push offset LAB_11893ddc
-  __asm push ebx
-  __asm mov ecx, edi
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10013336
-  __asm xor eax, eax
+  __asm _emit 0x33 __asm _emit 0xc0
   __asm mov dword ptr [edi], offset LAB_119173dc
-  __asm mov word ptr [edi + 0xd7d0], ax
-  __asm mov eax, edi
+  __asm _emit 0x66 __asm _emit 0x89 __asm _emit 0x87 __asm _emit 0xd0 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc7
   __asm mov dword ptr [edi + 0x60], offset LAB_11917424
   __asm mov dword ptr [edi + 0x46c], offset LAB_11917460
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0x18
+  __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x18 __asm _emit 0x00
 }
+
 
 
 
@@ -15351,51 +13469,22 @@ __declspec(naked) void FUN_10c4e880(void)
 __declspec(naked) void FUN_10c4e930(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov dword ptr [esp + 0xc], edi
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov ecx, dword ptr [eax + 4]
-  __asm add ecx, 4
-  __asm add ecx, esi
-  __asm cmp byte ptr [esp + 0x28], 0
-  __asm mov eax, dword ptr [ecx]
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm call dword ptr [eax + 0x4c]
-  __asm _emit 0xeb __asm _emit 0x03
-  __asm call dword ptr [eax + 0x48]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov ebx, eax
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm push dword ptr [esp + 0x24]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm add ecx, eax
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 0x50]
-  __asm push eax
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46
+  __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xce __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x4c __asm _emit 0xeb __asm _emit 0x03 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x48 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xd8
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x40
+  __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x50 __asm _emit 0x50
   __asm push offset LAB_11917528
   __asm push offset LAB_11893ddc
-  __asm push ebx
-  __asm mov ecx, edi
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10013336
   __asm mov dword ptr [edi], offset LAB_11917498
-  __asm mov eax, edi
+  __asm _emit 0x8b __asm _emit 0xc7
   __asm mov dword ptr [edi + 0x60], offset LAB_119174e0
   __asm mov dword ptr [edi + 0x46c], offset LAB_1191751c
-  __asm mov byte ptr [edi + 0xd7d0], 0
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0x18
+  __asm _emit 0xc6 __asm _emit 0x87 __asm _emit 0xd0 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x18 __asm _emit 0x00
 }
+
 
 
 
@@ -15407,50 +13496,22 @@ __declspec(naked) void FUN_10c4e930(void)
 __declspec(naked) void FUN_10c4e9e0(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov dword ptr [esp + 0xc], edi
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov ecx, dword ptr [eax + 4]
-  __asm add ecx, 4
-  __asm add ecx, esi
-  __asm cmp byte ptr [esp + 0x28], 0
-  __asm mov eax, dword ptr [ecx]
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm call dword ptr [eax + 0x4c]
-  __asm _emit 0xeb __asm _emit 0x03
-  __asm call dword ptr [eax + 0x48]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov ebx, eax
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm push dword ptr [esp + 0x24]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm add ecx, eax
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 0x50]
-  __asm push eax
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46
+  __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xce __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x4c __asm _emit 0xeb __asm _emit 0x03 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x48 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xd8
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x40
+  __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x50 __asm _emit 0x50
   __asm push offset LAB_11917248
   __asm push offset LAB_11893ddc
-  __asm push ebx
-  __asm mov ecx, edi
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10013336
   __asm mov dword ptr [edi], offset LAB_119171b8
-  __asm mov eax, edi
+  __asm _emit 0x8b __asm _emit 0xc7
   __asm mov dword ptr [edi + 0x60], offset LAB_11917200
   __asm mov dword ptr [edi + 0x46c], offset LAB_1191723c
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0x18
+  __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x18 __asm _emit 0x00
 }
+
 
 
 
@@ -15831,6 +13892,7 @@ __declspec(naked) void FUN_10c4fe30(void)
 
 
 
+
 // Reference entry 10c4fe50; body size 18 bytes.
 #line 1 "ENTRY_10c4fe50"
 
@@ -15841,6 +13903,7 @@ __declspec(naked) void FUN_10c4fe50(void)
   __asm mov dword ptr [ecx + 8], offset LAB_11917748
   __asm jmp LAB_100545d9
 }
+
 
 
 
@@ -15861,6 +13924,7 @@ __declspec(naked) void FUN_10c4fe70(void)
 
 
 
+
 // Reference entry 10c4fe90; body size 18 bytes.
 #line 1 "ENTRY_10c4fe90"
 
@@ -15876,6 +13940,7 @@ __declspec(naked) void FUN_10c4fe90(void)
 
 
 
+
 // Reference entry 10c4feb0; body size 18 bytes.
 #line 1 "ENTRY_10c4feb0"
 
@@ -15886,6 +13951,7 @@ __declspec(naked) void FUN_10c4feb0(void)
   __asm mov dword ptr [ecx + 8], offset LAB_119179b4
   __asm jmp LAB_1002f22f
 }
+
 
 
 
@@ -16228,15 +14294,13 @@ char * FUN_10c54270(void)
 __declspec(naked) void FUN_10c544c0(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11917b08
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -16248,15 +14312,13 @@ __declspec(naked) void FUN_10c544c0(void)
 __declspec(naked) void FUN_10c544f0(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11917f9c
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -16268,15 +14330,13 @@ __declspec(naked) void FUN_10c544f0(void)
 __declspec(naked) void FUN_10c54520(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11918208
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -16288,15 +14348,13 @@ __declspec(naked) void FUN_10c54520(void)
 __declspec(naked) void FUN_10c54550(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11917eac
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -16308,15 +14366,13 @@ __declspec(naked) void FUN_10c54550(void)
 __declspec(naked) void FUN_10c54580(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11918118
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -16328,18 +14384,15 @@ __declspec(naked) void FUN_10c54580(void)
 __declspec(naked) void FUN_10c545b0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_11917b08
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_11917b44
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -16351,18 +14404,15 @@ __declspec(naked) void FUN_10c545b0(void)
 __declspec(naked) void FUN_10c545f0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_11917b08
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_11917b88
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -16374,52 +14424,23 @@ __declspec(naked) void FUN_10c545f0(void)
 __declspec(naked) void FUN_10c54cf0(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov dword ptr [esp + 0xc], edi
-  __asm mov eax, dword ptr [esi + 4]
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm add ecx, eax
-  __asm cmp byte ptr [esp + 0x28], 0
-  __asm mov eax, dword ptr [ecx]
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm call dword ptr [eax + 0x4c]
-  __asm _emit 0xeb __asm _emit 0x03
-  __asm call dword ptr [eax + 0x48]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov ebx, eax
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm push dword ptr [esp + 0x24]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm add ecx, eax
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 0x50]
-  __asm push eax
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46
+  __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x4c __asm _emit 0xeb __asm _emit 0x03 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x48 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xd8
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x40
+  __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x50 __asm _emit 0x50
   __asm push offset LAB_11917d30
   __asm push offset LAB_118b9f98
-  __asm push ebx
-  __asm mov ecx, edi
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10013336
   __asm mov dword ptr [edi], offset LAB_11917ca0
-  __asm mov eax, edi
+  __asm _emit 0x8b __asm _emit 0xc7
   __asm mov dword ptr [edi + 0x60], offset LAB_11917ce8
   __asm mov dword ptr [edi + 0x46c], offset LAB_11917d24
-  __asm mov byte ptr [edi + 0xd7d0], 0
-  __asm mov byte ptr [edi + 0xd850], 0
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0x18
+  __asm _emit 0xc6 __asm _emit 0x87 __asm _emit 0xd0 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc6 __asm _emit 0x87 __asm _emit 0x50 __asm _emit 0xd8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0x5e
+  __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x18 __asm _emit 0x00
 }
+
 
 
 
@@ -16431,52 +14452,23 @@ __declspec(naked) void FUN_10c54cf0(void)
 __declspec(naked) void FUN_10c54da0(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov dword ptr [esp + 0xc], edi
-  __asm mov eax, dword ptr [esi + 4]
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm add ecx, eax
-  __asm cmp byte ptr [esp + 0x28], 0
-  __asm mov eax, dword ptr [ecx]
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm call dword ptr [eax + 0x4c]
-  __asm _emit 0xeb __asm _emit 0x03
-  __asm call dword ptr [eax + 0x48]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov ebx, eax
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm push dword ptr [esp + 0x24]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm add ecx, eax
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 0x50]
-  __asm push eax
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46
+  __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x4c __asm _emit 0xeb __asm _emit 0x03 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x48 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xd8
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x40
+  __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x50 __asm _emit 0x50
   __asm push offset LAB_11917df0
   __asm push offset LAB_118b9f98
-  __asm push ebx
-  __asm mov ecx, edi
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10013336
   __asm mov dword ptr [edi], offset LAB_11917d60
-  __asm mov eax, edi
+  __asm _emit 0x8b __asm _emit 0xc7
   __asm mov dword ptr [edi + 0x60], offset LAB_11917da8
   __asm mov dword ptr [edi + 0x46c], offset LAB_11917de4
   __asm _emit 0xc7 __asm _emit 0x87 __asm _emit 0xd0 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x87 __asm _emit 0xd4 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0x18
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x18 __asm _emit 0x00
 }
+
 
 
 
@@ -16744,6 +14736,7 @@ __declspec(naked) void FUN_10c55dd0(void)
 
 
 
+
 // Reference entry 10c55df0; body size 18 bytes.
 #line 1 "ENTRY_10c55df0"
 
@@ -16754,6 +14747,7 @@ __declspec(naked) void FUN_10c55df0(void)
   __asm mov dword ptr [ecx + 8], offset LAB_11918314
   __asm jmp LAB_10055fd3
 }
+
 
 
 
@@ -16774,6 +14768,7 @@ __declspec(naked) void FUN_10c55e10(void)
 
 
 
+
 // Reference entry 10c55e30; body size 18 bytes.
 #line 1 "ENTRY_10c55e30"
 
@@ -16784,6 +14779,7 @@ __declspec(naked) void FUN_10c55e30(void)
   __asm mov dword ptr [ecx + 8], offset LAB_119181f8
   __asm jmp LAB_10014f60
 }
+
 
 
 
@@ -17031,15 +15027,13 @@ char * FUN_10c59090(void)
 __declspec(naked) void FUN_10c59130(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11918350
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -17051,15 +15045,13 @@ __declspec(naked) void FUN_10c59130(void)
 __declspec(naked) void FUN_10c59160(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_11918528
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -17071,18 +15063,15 @@ __declspec(naked) void FUN_10c59160(void)
 __declspec(naked) void FUN_10c59190(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_11918350
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_1191837c
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -17094,18 +15083,15 @@ __declspec(naked) void FUN_10c59190(void)
 __declspec(naked) void FUN_10c591d0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_11918350
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_119183b0
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -17117,51 +15103,22 @@ __declspec(naked) void FUN_10c591d0(void)
 __declspec(naked) void FUN_10c593f0(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov dword ptr [esp + 0xc], edi
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov ecx, dword ptr [eax + 4]
-  __asm add ecx, 4
-  __asm add ecx, esi
-  __asm cmp byte ptr [esp + 0x28], 0
-  __asm mov eax, dword ptr [ecx]
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm call dword ptr [eax + 0x4c]
-  __asm _emit 0xeb __asm _emit 0x03
-  __asm call dword ptr [eax + 0x48]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov ebx, eax
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm push dword ptr [esp + 0x24]
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm add ecx, eax
-  __asm push dword ptr [esp + 0x24]
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 0x50]
-  __asm push eax
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x89 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46
+  __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xce __asm _emit 0x80 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x4c __asm _emit 0xeb __asm _emit 0x03 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x48 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xd8
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x40
+  __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x50 __asm _emit 0x50
   __asm push offset LAB_119184ec
   __asm push offset LAB_118ba664
-  __asm push ebx
-  __asm mov ecx, edi
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10013336
   __asm mov dword ptr [edi], offset LAB_1191845c
-  __asm mov eax, edi
+  __asm _emit 0x8b __asm _emit 0xc7
   __asm mov dword ptr [edi + 0x60], offset LAB_119184a4
   __asm mov dword ptr [edi + 0x46c], offset LAB_119184e0
-  __asm mov byte ptr [edi + 0xd7d0], 0
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0x18
+  __asm _emit 0xc6 __asm _emit 0x87 __asm _emit 0xd0 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x18 __asm _emit 0x00
 }
+
 
 
 
@@ -17332,6 +15289,7 @@ __declspec(naked) void FUN_10c59930(void)
 
 
 
+
 // Reference entry 10c59950; body size 4 bytes.
 #line 1 "ENTRY_10c59950"
 
@@ -17409,15 +15367,13 @@ void __fastcall FUN_10c5aee0(undefined4 *param_1)
 __declspec(naked) void FUN_10c5aff0(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_119187c8
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -17429,18 +15385,15 @@ __declspec(naked) void FUN_10c5aff0(void)
 __declspec(naked) void FUN_10c5b020(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_119187c8
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_119188f4
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -17452,18 +15405,15 @@ __declspec(naked) void FUN_10c5b020(void)
 __declspec(naked) void FUN_10c5b060(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_119187c8
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_11918a28
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -17520,18 +15470,15 @@ undefined4 * __fastcall FUN_10c5b0f0(undefined4 *param_1)
 __declspec(naked) void FUN_10c5b3c0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_11881498
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_11918d08
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -17668,42 +15615,14 @@ bool __fastcall FUN_10c5c910(int param_1)
 __declspec(naked) void FUN_10c5c9b0(void)
 
 {
-  __asm mov dx, word ptr [esp + 4]
-  __asm push esi
-  __asm mov si, word ptr [esp + 0xc]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm cmp dx, si
-  __asm _emit 0x76 __asm _emit 0x28
-  __asm movzx eax, si
-  __asm imul eax, eax, 0x64
-  __asm movzx ecx, dx
-  __asm xor edx, edx
-  __asm div ecx
-  __asm lea ecx, [eax - 0x64]
-  __asm mov eax, 0x66666667
-  __asm imul ecx
-  __asm _emit 0xd1 __asm _emit 0xfa
-  __asm mov eax, edx
-  __asm shr eax, 0x1f
-  __asm add eax, edx
-  __asm mov dword ptr [edi + 0x3c], eax
-  __asm pop edi
-  __asm pop esi
-  __asm ret 8
-  __asm _emit 0x73 __asm _emit 0x16
-  __asm movzx eax, dx
-  __asm xor edx, edx
-  __asm imul eax, eax, 0x64
-  __asm movzx ecx, si
-  __asm div ecx
-  __asm mov ecx, 0x64
-  __asm sub ecx, eax
-  __asm _emit 0xeb __asm _emit 0xd0 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x3c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop edi
-  __asm pop esi
-  __asm ret 8
+  __asm _emit 0x66 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x66 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x66 __asm _emit 0x3b
+  __asm _emit 0xd6 __asm _emit 0x76 __asm _emit 0x28 __asm _emit 0x0f __asm _emit 0xb7 __asm _emit 0xc6 __asm _emit 0x6b __asm _emit 0xc0 __asm _emit 0x64 __asm _emit 0x0f __asm _emit 0xb7 __asm _emit 0xca __asm _emit 0x33 __asm _emit 0xd2 __asm _emit 0xf7 __asm _emit 0xf1
+  __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x9c __asm _emit 0xb8 __asm _emit 0x67 __asm _emit 0x66 __asm _emit 0x66 __asm _emit 0x66 __asm _emit 0xf7 __asm _emit 0xe9 __asm _emit 0xd1 __asm _emit 0xfa __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0xc1 __asm _emit 0xe8
+  __asm _emit 0x1f __asm _emit 0x03 __asm _emit 0xc2 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x3c __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x73 __asm _emit 0x16 __asm _emit 0x0f __asm _emit 0xb7 __asm _emit 0xc2
+  __asm _emit 0x33 __asm _emit 0xd2 __asm _emit 0x6b __asm _emit 0xc0 __asm _emit 0x64 __asm _emit 0x0f __asm _emit 0xb7 __asm _emit 0xce __asm _emit 0xf7 __asm _emit 0xf1 __asm _emit 0xb9 __asm _emit 0x64 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x2b
+  __asm _emit 0xc8 __asm _emit 0xeb __asm _emit 0xd0 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x3c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -17988,19 +15907,12 @@ undefined4 * __fastcall FUN_10c5dca0(undefined4 *param_1, unsigned int recovered
 __declspec(naked) void FUN_10c5de50(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm push dword ptr [esp + 0x10]
-  __asm mov esi, ecx
-  __asm mov dword ptr [esp + 8], esi
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_10036c23
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, esi
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 0xc
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -18012,21 +15924,12 @@ __declspec(naked) void FUN_10c5de50(void)
 __declspec(naked) void FUN_10c5de80(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm push dword ptr [esp + 0x10]
-  __asm mov esi, ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [esp + 8], esi
-  __asm lea ecx, [esi + 4]
-  __asm mov dword ptr [esi], eax
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06
   __asm call LAB_1005273e
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18038,21 +15941,12 @@ __declspec(naked) void FUN_10c5de80(void)
 __declspec(naked) void FUN_10c5deb0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm push dword ptr [esp + 0x10]
-  __asm mov esi, ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [esp + 8], esi
-  __asm lea ecx, [esi + 4]
-  __asm mov dword ptr [esi], eax
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06
   __asm call LAB_1005273e
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18064,21 +15958,12 @@ __declspec(naked) void FUN_10c5deb0(void)
 __declspec(naked) void FUN_10c5dee0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm push dword ptr [esp + 0x10]
-  __asm mov esi, ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [esp + 8], esi
-  __asm lea ecx, [esi + 4]
-  __asm mov dword ptr [esi], eax
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06
   __asm call LAB_1005273e
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18090,21 +15975,12 @@ __declspec(naked) void FUN_10c5dee0(void)
 __declspec(naked) void FUN_10c5df10(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm push dword ptr [esp + 0x10]
-  __asm mov esi, ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [esp + 8], esi
-  __asm lea ecx, [esi + 4]
-  __asm mov dword ptr [esi], eax
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06
   __asm call LAB_1005273e
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18116,21 +15992,12 @@ __declspec(naked) void FUN_10c5df10(void)
 __declspec(naked) void FUN_10c5df40(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm push dword ptr [esp + 0x10]
-  __asm mov esi, ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [esp + 8], esi
-  __asm lea ecx, [esi + 4]
-  __asm mov dword ptr [esi], eax
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06
   __asm call LAB_1005273e
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18142,21 +16009,12 @@ __declspec(naked) void FUN_10c5df40(void)
 __declspec(naked) void FUN_10c5df70(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm push dword ptr [esp + 0x10]
-  __asm mov esi, ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [esp + 8], esi
-  __asm lea ecx, [esi + 4]
-  __asm mov dword ptr [esi], eax
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06
   __asm call LAB_1005273e
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18168,21 +16026,12 @@ __declspec(naked) void FUN_10c5df70(void)
 __declspec(naked) void FUN_10c5dfa0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm push dword ptr [esp + 0x10]
-  __asm mov esi, ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [esp + 8], esi
-  __asm lea ecx, [esi + 4]
-  __asm mov dword ptr [esi], eax
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06
   __asm call LAB_1005273e
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18194,21 +16043,12 @@ __declspec(naked) void FUN_10c5dfa0(void)
 __declspec(naked) void FUN_10c5dfd0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm push dword ptr [esp + 0x10]
-  __asm mov esi, ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [esp + 8], esi
-  __asm lea ecx, [esi + 4]
-  __asm mov dword ptr [esi], eax
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06
   __asm call LAB_1005273e
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18220,22 +16060,12 @@ __declspec(naked) void FUN_10c5dfd0(void)
 __declspec(naked) void FUN_10c5e000(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm mov dword ptr [esp + 4], esi
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [esi], eax
-  __asm lea ecx, [esi + 4]
-  __asm mov eax, dword ptr [esp + 0x10]
-  __asm push dword ptr [eax]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x06
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x30
   __asm call LAB_1005273e
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18247,20 +16077,12 @@ __declspec(naked) void FUN_10c5e000(void)
 __declspec(naked) void FUN_10c5e030(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm mov dword ptr [esp + 4], esi
-  __asm push dword ptr [eax]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xff __asm _emit 0x30
   __asm call LAB_10036c23
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, esi
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 0x10
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x10 __asm _emit 0x00
 }
+
 
 
 
@@ -18272,15 +16094,12 @@ __declspec(naked) void FUN_10c5e030(void)
 __declspec(naked) void FUN_10c5e070(void)
 
 {
-  __asm push 0x18
+  __asm _emit 0x6a __asm _emit 0x18
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [eax + 8], eax
-  __asm mov word ptr [eax + 0xc], 0x101
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x66 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x01
+  __asm _emit 0x01 __asm _emit 0xc3
 }
+
 
 
 
@@ -18355,18 +16174,10 @@ undefined4 FUN_10c5e6a0(undefined4 param_1)
 __declspec(naked) void FUN_10c5e6b0(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm cmp byte ptr [ecx + 0xd], 0
-  __asm _emit 0x75 __asm _emit 0x10
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov eax, dword ptr [eax]
-  __asm cmp eax, dword ptr [ecx + 0x10]
-  __asm _emit 0x7c __asm _emit 0x05
-  __asm mov al, 1
-  __asm ret 8
-  __asm xor al, al
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x80 __asm _emit 0x79 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x00
+  __asm _emit 0x3b __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x7c __asm _emit 0x05 __asm _emit 0xb0 __asm _emit 0x01 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x32 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18593,24 +16404,13 @@ undefined4 __fastcall FUN_10c5ec00(undefined4 param_1)
 __declspec(naked) void FUN_10c5ecb0(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm mov esi, ecx
-  __asm push 0x18
-  __asm mov dword ptr [esp + 8], esi
-  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x6a __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [eax + 8], eax
-  __asm mov word ptr [eax + 0xc], 0x101
-  __asm mov dword ptr [esi], eax
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x66 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x01
+  __asm _emit 0x01 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -18622,17 +16422,11 @@ __declspec(naked) void FUN_10c5ecb0(void)
 __declspec(naked) void FUN_10c5ed20(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm push dword ptr [esp + 0xc]
-  __asm mov esi, ecx
-  __asm mov dword ptr [esp + 8], esi
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_10036c23
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -18644,21 +16438,12 @@ __declspec(naked) void FUN_10c5ed20(void)
 __declspec(naked) void FUN_10c5ed40(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm push dword ptr [esp + 0xc]
-  __asm mov esi, ecx
-  __asm mov dword ptr [esp + 8], esi
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_10036c23
-  __asm mov eax, dword ptr [esp + 0x10]
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [esi + 8], eax
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 0xc
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc6
+  __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -18670,19 +16455,11 @@ __declspec(naked) void FUN_10c5ed40(void)
 __declspec(naked) void FUN_10c5f810(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm push dword ptr [esp + 0xc]
-  __asm mov esi, ecx
-  __asm mov dword ptr [esp + 8], esi
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_10036c23
-  __asm mov eax, dword ptr [esp + 0x10]
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -18746,11 +16523,9 @@ void FUN_10c5fa60(void)
 __declspec(naked) void FUN_10c5fb40(void)
 
 {
-  __asm mov eax, dword ptr [ecx]
-  __asm cmp byte ptr [eax + 0xd], 0
-  __asm sete al
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0x80 __asm _emit 0x78 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x0f __asm _emit 0x94 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -18870,19 +16645,12 @@ int __fastcall FUN_10c5fd00(int *param_1)
 __declspec(naked) void FUN_10c5fe30(void)
 
 {
-  __asm push esi
-  __asm push 0x18
-  __asm mov esi, ecx
+  __asm _emit 0x56 __asm _emit 0x6a __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0xf1
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [eax], eax
-  __asm mov dword ptr [eax + 4], eax
-  __asm mov dword ptr [eax + 8], eax
-  __asm mov word ptr [eax + 0xc], 0x101
-  __asm mov dword ptr [esi], eax
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x66 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x01
+  __asm _emit 0x01 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -18894,10 +16662,11 @@ __declspec(naked) void FUN_10c5fe30(void)
 __declspec(naked) void FUN_10c5fe80(void)
 
 {
-  __asm cmp dword ptr [ecx + 4], 0xaaaaaaa
+  __asm _emit 0x81 __asm _emit 0x79 __asm _emit 0x04 __asm _emit 0xaa __asm _emit 0xaa __asm _emit 0xaa __asm _emit 0x0a
   __asm je LAB_1000d4ae
-  __asm ret
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -19005,39 +16774,13 @@ undefined4 __fastcall FUN_10c5ff10(undefined4 param_1)
 __declspec(naked) void FUN_10c601b0(void)
 
 {
-  __asm mov edx, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [edx + 8]
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [edx + 8], eax
-  __asm mov eax, dword ptr [esi]
-  __asm cmp byte ptr [eax + 0xd], 0
-  __asm _emit 0x75 __asm _emit 0x03
-  __asm mov dword ptr [eax + 4], edx
-  __asm mov eax, dword ptr [edx + 4]
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov eax, dword ptr [ecx]
-  __asm cmp edx, dword ptr [eax + 4]
-  __asm _emit 0x75 __asm _emit 0x0c
-  __asm mov dword ptr [eax + 4], esi
-  __asm mov dword ptr [esi], edx
-  __asm mov dword ptr [edx + 4], esi
-  __asm pop esi
-  __asm ret 4
-  __asm mov eax, dword ptr [edx + 4]
-  __asm cmp edx, dword ptr [eax]
-  __asm _emit 0x75 __asm _emit 0x0b
-  __asm mov dword ptr [eax], esi
-  __asm mov dword ptr [esi], edx
-  __asm mov dword ptr [edx + 4], esi
-  __asm pop esi
-  __asm ret 4
-  __asm mov dword ptr [eax + 8], esi
-  __asm mov dword ptr [esi], edx
-  __asm mov dword ptr [edx + 4], esi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x72 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x80
+  __asm _emit 0x78 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x03 __asm _emit 0x89 __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x01
+  __asm _emit 0x3b __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x75 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x16 __asm _emit 0x89 __asm _emit 0x72 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0x10 __asm _emit 0x75 __asm _emit 0x0b __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x89 __asm _emit 0x16 __asm _emit 0x89 __asm _emit 0x72 __asm _emit 0x04 __asm _emit 0x5e
+  __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x16 __asm _emit 0x89 __asm _emit 0x72 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -19049,17 +16792,10 @@ __declspec(naked) void FUN_10c601b0(void)
 __declspec(naked) void FUN_10c60220(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm cmp byte ptr [eax + 0xd], 0
-  __asm _emit 0x75 __asm _emit 0x0e __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
-  __asm mov ecx, eax
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm cmp byte ptr [eax + 0xd], 0
-  __asm _emit 0x74 __asm _emit 0xf5
-  __asm mov eax, ecx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x80 __asm _emit 0x78 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x0e __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x80 __asm _emit 0x78 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0xf5 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc3
 }
+
 
 
 
@@ -19181,37 +16917,18 @@ void __stdcall FUN_10c60320(undefined1 *param_1)
 __declspec(naked) void FUN_10c60330(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0xaaaaaaa
-  __asm _emit 0x77 __asm _emit 0x4a
-  __asm lea eax, [eax + eax*2]
-  __asm shl eax, 3
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xaa __asm _emit 0xaa __asm _emit 0xaa __asm _emit 0x0a __asm _emit 0x77 __asm _emit 0x4a __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x40 __asm _emit 0xc1 __asm _emit 0xe0
+  __asm _emit 0x03 __asm _emit 0x3d __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -19245,26 +16962,14 @@ __declspec(naked) void FUN_10c60330(void)
 __declspec(naked) void FUN_10c61270(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm lea ecx, [eax + eax*2]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm shl ecx, 3
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0d
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x40 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x03 __asm _emit 0x81 __asm _emit 0xf9
+  __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0
+  __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0d __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc3
   __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 
@@ -19276,27 +16981,15 @@ __declspec(naked) void FUN_10c61270(void)
 __declspec(naked) void FUN_10c612c0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm lea ecx, [eax + eax*2]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm shl ecx, 3
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x40 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x03 __asm _emit 0x81 __asm _emit 0xf9
+  __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0
+  __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -19354,13 +17047,11 @@ bool __fastcall FUN_10c614d0(int param_1)
 __declspec(naked) void FUN_10c619d0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov ecx, dword ptr [eax]
-  __asm test ecx, ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc9
   __asm mov eax, offset LAB_1186d2ee
-  __asm cmovne eax, ecx
-  __asm ret
+  __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xc1 __asm _emit 0xc3
 }
+
 
 
 
@@ -19372,13 +17063,11 @@ __declspec(naked) void FUN_10c619d0(void)
 __declspec(naked) void FUN_10c619f0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov ecx, dword ptr [eax]
-  __asm test ecx, ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc9
   __asm mov eax, offset LAB_1186d2ee
-  __asm cmovne eax, ecx
-  __asm ret
+  __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xc1 __asm _emit 0xc3
 }
+
 
 
 
@@ -19414,20 +17103,15 @@ undefined4 __fastcall FUN_10c62320(int param_1)
 __declspec(naked) void FUN_10c62840(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov ecx, offset LAB_1186d2ee
-  __asm push dword ptr [esp + 0xc]
-  __asm mov eax, dword ptr [eax]
-  __asm test eax, eax
-  __asm cmovne ecx, eax
-  __asm push ecx
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xc8 __asm _emit 0x51
   __asm push offset LAB_11918fb0
-  __asm push dword ptr [esp + 0x10]
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10
   __asm call LAB_1006a316
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm add esp, 0x10
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x10 __asm _emit 0xc3
 }
+
 
 
 
@@ -19439,16 +17123,10 @@ __declspec(naked) void FUN_10c62840(void)
 __declspec(naked) void FUN_10c62f80(void)
 
 {
-  __asm mov eax, dword ptr [ecx]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x08
-  __asm cmp byte ptr [eax], 0
-  __asm _emit 0x74 __asm _emit 0x03
-  __asm xor al, al
-  __asm ret
-  __asm mov al, 1
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x08 __asm _emit 0x80 __asm _emit 0x38 __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0x03 __asm _emit 0x32 __asm _emit 0xc0 __asm _emit 0xc3 __asm _emit 0xb0 __asm _emit 0x01
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -19557,25 +17235,13 @@ undefined4 FUN_10c647e0(void)
 __declspec(naked) void FUN_10c64ef0(void)
 
 {
-  __asm cmp dword ptr [esp + 4], 1
-  __asm push esi
-  __asm mov esi, ecx
-  __asm _emit 0x72 __asm _emit 0x20
-  __asm cmp dword ptr [esi + 0x1c], 0
-  __asm _emit 0x74 __asm _emit 0x1a
-  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm _emit 0x83 __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x01 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x72 __asm _emit 0x20 __asm _emit 0x83 __asm _emit 0x7e __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0x1a
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x0c
   __asm call LAB_10038357
-  __asm mov ecx, dword ptr [esi + 0x1c]
-  __asm test eax, eax
-  __asm setne al
-  __asm movzx eax, al
-  __asm mov edx, dword ptr [ecx]
-  __asm push eax
-  __asm call dword ptr [edx + 4]
-  __asm xor eax, eax
-  __asm pop esi
-  __asm ret 0xc
+  __asm _emit 0x8b __asm _emit 0x4e __asm _emit 0x1c __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x0f __asm _emit 0x95 __asm _emit 0xc0 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0xc0 __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x52
+  __asm _emit 0x04 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -19714,25 +17380,13 @@ undefined4 __fastcall FUN_10c68f80(undefined4 *param_1)
 __declspec(naked) void FUN_10c69f10(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_1002c174
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x14
-  __asm lea ecx, [eax - 8]
-  __asm mov dword ptr [esi], ecx
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x11
-  __asm mov edx, dword ptr [ecx]
-  __asm call dword ptr [edx + 4]
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret 4
-  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x14 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0xf8 __asm _emit 0x89 __asm _emit 0x0e __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x11 __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0xff
+  __asm _emit 0x52 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc6
+  __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -19786,15 +17440,13 @@ char * FUN_10c6d1f0(void)
 __declspec(naked) void FUN_10c6d200(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_1191a0b8
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -20000,35 +17652,16 @@ undefined4 * __fastcall FUN_10c704d0(undefined4 *param_1, unsigned int recovered
 __declspec(naked) void FUN_10c704f0(void)
 
 {
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0xc]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm sub ebx, ebp
-  __asm _emit 0x74 __asm _emit 0x1e
-  __asm push esi
-  __asm push ebx
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x2b __asm _emit 0xdd __asm _emit 0x74 __asm _emit 0x1e __asm _emit 0x56 __asm _emit 0x53
   __asm call LAB_1004a052
-  __asm mov esi, dword ptr [edi]
-  __asm push ebx
-  __asm push ebp
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x37 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm sub esi, ebp
-  __asm add esi, dword ptr [esp + 0x18]
-  __asm mov dword ptr [edi + 4], esi
-  __asm pop esi
-  __asm mov eax, edi
-  __asm pop edi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x2b __asm _emit 0xf5 __asm _emit 0x03 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0xc7 __asm _emit 0x5f
+  __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -20040,35 +17673,16 @@ __declspec(naked) void FUN_10c704f0(void)
 __declspec(naked) void FUN_10c70550(void)
 
 {
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0xc]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm sub ebx, ebp
-  __asm _emit 0x74 __asm _emit 0x1e
-  __asm push esi
-  __asm push ebx
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x2b __asm _emit 0xdd __asm _emit 0x74 __asm _emit 0x1e __asm _emit 0x56 __asm _emit 0x53
   __asm call LAB_1004a052
-  __asm mov esi, dword ptr [edi]
-  __asm push ebx
-  __asm push ebp
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x37 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm sub esi, ebp
-  __asm add esi, dword ptr [esp + 0x18]
-  __asm mov dword ptr [edi + 4], esi
-  __asm pop esi
-  __asm mov eax, edi
-  __asm pop edi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x2b __asm _emit 0xf5 __asm _emit 0x03 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0xc7 __asm _emit 0x5f
+  __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -20117,22 +17731,13 @@ __declspec(naked) void FUN_10c70550(void)
 __declspec(naked) void FUN_10c705f0(void)
 
 {
-  __asm mov edx, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x14 __asm _emit 0x0f __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov byte ptr [esi], 0
-  __asm cmp edx, eax
-  __asm _emit 0x74 __asm _emit 0x09
-  __asm sub eax, edx
-  __asm push eax
-  __asm push edx
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x14 __asm _emit 0x0f __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc6 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x3b __asm _emit 0xd0 __asm _emit 0x74 __asm _emit 0x09
+  __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x50 __asm _emit 0x52
   __asm call LAB_10037a97
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret 0xc
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -20158,39 +17763,16 @@ undefined4 * __fastcall FUN_10c70630(undefined4 *param_1)
 __declspec(naked) void FUN_10c70650(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm push ebx
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x10]
-  __asm mov ebx, eax
-  __asm mov dword ptr [esp + 8], eax
-  __asm push edi
-  __asm mov edi, ecx
-  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm sub ebx, ebp
-  __asm _emit 0x74 __asm _emit 0x1e
-  __asm push esi
-  __asm push ebx
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xd8 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24
+  __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x2b __asm _emit 0xdd __asm _emit 0x74 __asm _emit 0x1e __asm _emit 0x56 __asm _emit 0x53
   __asm call LAB_1004a052
-  __asm mov esi, dword ptr [edi]
-  __asm push ebx
-  __asm push ebp
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x37 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm sub esi, ebp
-  __asm add esi, dword ptr [esp + 0x10]
-  __asm mov dword ptr [edi + 4], esi
-  __asm pop esi
-  __asm mov eax, edi
-  __asm pop edi
-  __asm pop ebp
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x2b __asm _emit 0xf5 __asm _emit 0x03 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0xc7 __asm _emit 0x5f
+  __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -20232,38 +17814,14 @@ undefined4 * __fastcall FUN_10c706e0(undefined4 *param_1, unsigned int recovered
 __declspec(naked) void FUN_10c70700(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm push edi
-  __asm mov edi, dword ptr [eax]
-  __asm cmp edi, dword ptr [esi]
-  __asm _emit 0x74 __asm _emit 0x3e
-  __asm mov ecx, dword ptr [esi + 4]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x12 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 8]
-  __asm mov dword ptr [esi], edi
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x18
-  __asm mov eax, dword ptr [edi]
-  __asm mov ecx, edi
-  __asm call dword ptr [eax + 0xc]
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov ecx, eax
-  __asm mov edx, dword ptr [eax]
-  __asm call dword ptr [edx + 4]
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret 4
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x38 __asm _emit 0x3b __asm _emit 0x3e __asm _emit 0x74 __asm _emit 0x3e __asm _emit 0x8b __asm _emit 0x4e
+  __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x12 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x07 __asm _emit 0x8b
+  __asm _emit 0xcf __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x52 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x8b
+  __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e
+  __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -20299,77 +17857,28 @@ void FUN_10c709a0(void)
 __declspec(naked) void FUN_10c709b0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push ebp
-  __asm push esi
-  __asm push edi
-  __asm mov edi, ecx
-  __asm sub ebx, eax
-  __asm mov edx, ebx
-  __asm sar edx, 2
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm mov esi, dword ptr [edi]
-  __asm sub ecx, esi
-  __asm sar ecx, 2
-  __asm cmp edx, ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x2b __asm _emit 0xd8
+  __asm _emit 0x8b __asm _emit 0xd3 __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x37 __asm _emit 0x2b __asm _emit 0xce __asm _emit 0xc1 __asm _emit 0xf9 __asm _emit 0x02 __asm _emit 0x3b
+  __asm _emit 0xd1
   __asm jbe LAB_10c70a58
-  __asm cmp edx, 0x3fffffff
+  __asm _emit 0x81 __asm _emit 0xfa __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f
   __asm ja LAB_10c70a76
-  __asm mov ebp, ecx
-  __asm mov eax, 0x3fffffff
-  __asm _emit 0xd1 __asm _emit 0xed
-  __asm sub eax, ebp
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov ebp, 0x3fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add ebp, ecx
-  __asm cmp ebp, edx
-  __asm cmovb ebp, edx
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x3b
-  __asm shl ecx, 2
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [esi - 4]
-  __asm add ecx, 0x23
-  __asm sub esi, edx
-  __asm lea eax, [esi - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x51
-  __asm mov esi, edx
-  __asm push ecx
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xe9 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0xd1 __asm _emit 0xed __asm _emit 0x2b __asm _emit 0xc5 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbd
+  __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0xeb __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xe9 __asm _emit 0x3b __asm _emit 0xea __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xea __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74
+  __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x02 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x56 __asm _emit 0xfc __asm _emit 0x83
+  __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xf2 __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x51 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push ebp
-  __asm mov ecx, edi
+  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10054458
-  __asm mov esi, eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [edi], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm lea ecx, [esi + ebp*4]
-  __asm mov dword ptr [edi + 8], ecx
-  __asm push ebx
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xae __asm _emit 0x89 __asm _emit 0x4f
+  __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [ebx + esi]
-  __asm mov dword ptr [edi + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x33 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm call LAB_100965ab
 }
+
 
 
 
@@ -20381,77 +17890,28 @@ __declspec(naked) void FUN_10c709b0(void)
 __declspec(naked) void FUN_10c70ab0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push ebp
-  __asm push esi
-  __asm push edi
-  __asm mov edi, ecx
-  __asm sub ebx, eax
-  __asm mov edx, ebx
-  __asm sar edx, 3
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm mov esi, dword ptr [edi]
-  __asm sub ecx, esi
-  __asm sar ecx, 3
-  __asm cmp edx, ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x2b __asm _emit 0xd8
+  __asm _emit 0x8b __asm _emit 0xd3 __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x03 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x37 __asm _emit 0x2b __asm _emit 0xce __asm _emit 0xc1 __asm _emit 0xf9 __asm _emit 0x03 __asm _emit 0x3b
+  __asm _emit 0xd1
   __asm jbe LAB_10c70b58
-  __asm cmp edx, 0x1fffffff
+  __asm _emit 0x81 __asm _emit 0xfa __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f
   __asm ja LAB_10c70b76
-  __asm mov ebp, ecx
-  __asm mov eax, 0x1fffffff
-  __asm _emit 0xd1 __asm _emit 0xed
-  __asm sub eax, ebp
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov ebp, 0x1fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add ebp, ecx
-  __asm cmp ebp, edx
-  __asm cmovb ebp, edx
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x3b
-  __asm shl ecx, 3
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [esi - 4]
-  __asm add ecx, 0x23
-  __asm sub esi, edx
-  __asm lea eax, [esi - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x51
-  __asm mov esi, edx
-  __asm push ecx
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xe9 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xd1 __asm _emit 0xed __asm _emit 0x2b __asm _emit 0xc5 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbd
+  __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xeb __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xe9 __asm _emit 0x3b __asm _emit 0xea __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xea __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74
+  __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x03 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x56 __asm _emit 0xfc __asm _emit 0x83
+  __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xf2 __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x51 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push ebp
-  __asm mov ecx, edi
+  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_1007d9a7
-  __asm mov esi, eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [edi], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm lea ecx, [esi + ebp*8]
-  __asm mov dword ptr [edi + 8], ecx
-  __asm push ebx
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xee __asm _emit 0x89 __asm _emit 0x4f
+  __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [ebx + esi]
-  __asm mov dword ptr [edi + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x33 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm call LAB_100188c7
 }
+
 
 
 
@@ -20463,49 +17923,18 @@ __declspec(naked) void FUN_10c70ab0(void)
 __declspec(naked) void FUN_10c70bb0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm sub esp, 8
-  __asm push ebx
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x24]
-  __asm push esi
-  __asm mov esi, eax
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x28]
-  __asm cmp esi, dword ptr [esp + 0x24]
-  __asm _emit 0x74 __asm _emit 0x47 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00
-  __asm cmp edi, ebp
-  __asm _emit 0x74 __asm _emit 0x40
-  __asm mov cl, byte ptr [edi]
-  __asm mov byte ptr [esp + 0x10], cl
-  __asm lea ecx, [eax + 1]
-  __asm push dword ptr [esp + 0x10]
-  __asm mov dword ptr [esp + 0x24], ecx
-  __asm mov al, byte ptr [eax]
-  __asm mov ecx, dword ptr [esp + 0x34]
-  __asm mov byte ptr [esp + 0x18], al
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xec __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf0
+  __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x3b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x74 __asm _emit 0x47 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x3b __asm _emit 0xfd __asm _emit 0x74 __asm _emit 0x40 __asm _emit 0x8a __asm _emit 0x0f __asm _emit 0x88 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24
+  __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8a __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x34 __asm _emit 0x88 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x18
   __asm call LAB_1002630f
-  __asm push dword ptr [esp + 0x14]
-  __asm mov ecx, dword ptr [esp + 0x34]
-  __asm mov bl, al
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x34 __asm _emit 0x8a __asm _emit 0xd8
   __asm call LAB_1002630f
-  __asm inc edi
-  __asm cmp al, bl
-  __asm _emit 0x75 __asm _emit 0x0f
-  __asm mov eax, dword ptr [esp + 0x20]
-  __asm cmp eax, dword ptr [esp + 0x24]
-  __asm _emit 0x75 __asm _emit 0xbe
-  __asm cmp edi, ebp
-  __asm cmove esi, eax
-  __asm mov eax, dword ptr [esp + 0x1c]
-  __asm pop edi
-  __asm mov dword ptr [eax], esi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm add esp, 8
-  __asm ret
+  __asm _emit 0x47 __asm _emit 0x3a __asm _emit 0xc3 __asm _emit 0x75 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x3b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x75 __asm _emit 0xbe __asm _emit 0x3b
+  __asm _emit 0xfd __asm _emit 0x0f __asm _emit 0x44 __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x83 __asm _emit 0xc4
+  __asm _emit 0x08 __asm _emit 0xc3
 }
+
 
 
 
@@ -20517,40 +17946,13 @@ __declspec(naked) void FUN_10c70bb0(void)
 __declspec(naked) void FUN_10c70c50(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 8]
-  __asm mov edx, ecx
-  __asm push ebx
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x1c]
-  __asm mov eax, edx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x18]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x20]
-  __asm cmp edx, esi
-  __asm _emit 0x74 __asm _emit 0x1e __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00
-  __asm cmp edi, ebp
-  __asm _emit 0x74 __asm _emit 0x18
-  __asm mov bl, byte ptr [edi]
-  __asm mov eax, ecx
-  __asm inc edi
-  __asm lea ecx, [eax + 1]
-  __asm mov dword ptr [esp + 0x18], ecx
-  __asm cmp byte ptr [eax], bl
-  __asm _emit 0x75 __asm _emit 0x0b
-  __asm mov eax, ecx
-  __asm cmp ecx, esi
-  __asm _emit 0x75 __asm _emit 0xe6
-  __asm cmp edi, ebp
-  __asm cmove edx, eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm mov dword ptr [eax], edx
-  __asm pop ebx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xd1 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x56 __asm _emit 0x8b
+  __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x3b __asm _emit 0xd6 __asm _emit 0x74 __asm _emit 0x1e __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00
+  __asm _emit 0x3b __asm _emit 0xfd __asm _emit 0x74 __asm _emit 0x18 __asm _emit 0x8a __asm _emit 0x1f __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x47 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x01 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x18
+  __asm _emit 0x38 __asm _emit 0x18 __asm _emit 0x75 __asm _emit 0x0b __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x3b __asm _emit 0xce __asm _emit 0x75 __asm _emit 0xe6 __asm _emit 0x3b __asm _emit 0xfd __asm _emit 0x0f __asm _emit 0x44 __asm _emit 0xd0 __asm _emit 0x8b
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x5b __asm _emit 0xc3
 }
+
 
 
 
@@ -20562,51 +17964,18 @@ __declspec(naked) void FUN_10c70c50(void)
 __declspec(naked) void FUN_10c70cb0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm sub esp, 0xc
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0x20]
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x28]
-  __asm push esi
-  __asm mov esi, eax
-  __asm push edi
-  __asm cmp esi, dword ptr [esp + 0x28]
-  __asm _emit 0x74 __asm _emit 0x4b
-  __asm mov edi, dword ptr [esp + 0x34]
-  __asm nop
-  __asm cmp ebx, ebp
-  __asm _emit 0x74 __asm _emit 0x44
-  __asm mov cl, byte ptr [ebx]
-  __asm mov byte ptr [esp + 0x18], cl
-  __asm lea ecx, [eax + 1]
-  __asm mov dword ptr [esp + 0x24], ecx
-  __asm mov al, byte ptr [eax]
-  __asm mov ecx, dword ptr [edi + 4]
-  __asm mov byte ptr [esp + 0x14], al
-  __asm push dword ptr [esp + 0x14]
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xec __asm _emit 0x0c __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24
+  __asm _emit 0x28 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x57 __asm _emit 0x3b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x74 __asm _emit 0x4b __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x34 __asm _emit 0x90
+  __asm _emit 0x3b __asm _emit 0xdd __asm _emit 0x74 __asm _emit 0x44 __asm _emit 0x8a __asm _emit 0x0b __asm _emit 0x88 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x01 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24
+  __asm _emit 0x24 __asm _emit 0x8a __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x04 __asm _emit 0x88 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14
   __asm call dword ptr [LAB_122fc300]
-  __asm push dword ptr [esp + 0x18]
-  __asm mov ecx, dword ptr [edi + 4]
-  __asm mov byte ptr [esp + 0x17], al
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x04 __asm _emit 0x88 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x17
   __asm call dword ptr [LAB_122fc300]
-  __asm inc ebx
-  __asm cmp byte ptr [esp + 0x13], al
-  __asm _emit 0x75 __asm _emit 0x0f
-  __asm mov eax, dword ptr [esp + 0x24]
-  __asm cmp eax, dword ptr [esp + 0x28]
-  __asm _emit 0x75 __asm _emit 0xba
-  __asm cmp ebx, ebp
-  __asm cmove esi, eax
-  __asm mov eax, dword ptr [esp + 0x20]
-  __asm pop edi
-  __asm mov dword ptr [eax], esi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm add esp, 0xc
-  __asm ret
+  __asm _emit 0x43 __asm _emit 0x38 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x13 __asm _emit 0x75 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x3b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x75
+  __asm _emit 0xba __asm _emit 0x3b __asm _emit 0xdd __asm _emit 0x0f __asm _emit 0x44 __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0xc3
 }
+
 
 
 
@@ -20618,47 +17987,18 @@ __declspec(naked) void FUN_10c70cb0(void)
 __declspec(naked) void FUN_10c70d50(void)
 
 {
-  __asm mov edx, dword ptr [esp + 8]
-  __asm sub esp, 8
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, edx
-  __asm cmp esi, dword ptr [esp + 0x1c]
-  __asm _emit 0x74 __asm _emit 0x4e
-  __asm mov ecx, dword ptr [esp + 0x20]
-  __asm cmp ecx, dword ptr [esp + 0x24]
-  __asm _emit 0x74 __asm _emit 0x4c
-  __asm mov eax, ecx
-  __asm inc ecx
-  __asm mov dword ptr [esp + 0x20], ecx
-  __asm lea ecx, [edx + 1]
-  __asm mov dword ptr [esp + 0x18], ecx
-  __asm mov ecx, dword ptr [esp + 0x28]
-  __asm mov al, byte ptr [eax]
-  __asm mov byte ptr [esp + 0xc], al
-  __asm mov al, byte ptr [edx]
-  __asm mov byte ptr [esp + 8], al
-  __asm push dword ptr [esp + 8]
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xec __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x3b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x74
+  __asm _emit 0x4e __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x3b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x74 __asm _emit 0x4c __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x41 __asm _emit 0x89 __asm _emit 0x4c
+  __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x8d __asm _emit 0x4a __asm _emit 0x01 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x8a __asm _emit 0x00 __asm _emit 0x88
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8a __asm _emit 0x02 __asm _emit 0x88 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_1002630f
-  __asm push dword ptr [esp + 0xc]
-  __asm mov ecx, dword ptr [esp + 0x2c]
-  __asm mov bl, al
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x8a __asm _emit 0xd8
   __asm call LAB_1002630f
-  __asm cmp bl, al
-  __asm _emit 0x75 __asm _emit 0x15
-  __asm mov edx, dword ptr [esp + 0x18]
-  __asm cmp edx, dword ptr [esp + 0x1c]
-  __asm _emit 0x75 __asm _emit 0xb2
-  __asm mov ecx, dword ptr [esp + 0x20]
-  __asm cmp ecx, dword ptr [esp + 0x24]
-  __asm cmove esi, edx
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [eax], esi
-  __asm pop esi
-  __asm pop ebx
-  __asm add esp, 8
-  __asm ret
+  __asm _emit 0x3a __asm _emit 0xd8 __asm _emit 0x75 __asm _emit 0x15 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x3b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x75 __asm _emit 0xb2 __asm _emit 0x8b __asm _emit 0x4c
+  __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x3b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x0f __asm _emit 0x44 __asm _emit 0xf2 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x30 __asm _emit 0x5e
+  __asm _emit 0x5b __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc3
 }
+
 
 
 
@@ -20670,38 +18010,13 @@ __declspec(naked) void FUN_10c70d50(void)
 __declspec(naked) void FUN_10c70df0(void)
 
 {
-  __asm mov edx, dword ptr [esp + 8]
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x14]
-  __asm push edi
-  __asm mov edi, edx
-  __asm mov ecx, edi
-  __asm cmp edi, dword ptr [esp + 0x14]
-  __asm _emit 0x74 __asm _emit 0x26
-  __asm cmp esi, eax
-  __asm _emit 0x74 __asm _emit 0x24
-  __asm mov eax, edx
-  __asm mov ecx, esi
-  __asm inc esi
-  __asm mov dword ptr [esp + 0x18], esi
-  __asm lea edx, [eax + 1]
-  __asm mov dword ptr [esp + 0x10], edx
-  __asm mov al, byte ptr [eax]
-  __asm cmp al, byte ptr [ecx]
-  __asm _emit 0x75 __asm _emit 0x11
-  __asm mov ecx, edx
-  __asm mov eax, dword ptr [esp + 0x1c]
-  __asm cmp edx, dword ptr [esp + 0x14]
-  __asm _emit 0x75 __asm _emit 0xda
-  __asm cmp esi, eax
-  __asm cmove edi, ecx
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov dword ptr [eax], edi
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xfa
+  __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0x3b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x74 __asm _emit 0x26 __asm _emit 0x3b __asm _emit 0xf0 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x8b __asm _emit 0xce
+  __asm _emit 0x46 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8d __asm _emit 0x50 __asm _emit 0x01 __asm _emit 0x89 __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8a __asm _emit 0x00 __asm _emit 0x3a __asm _emit 0x01
+  __asm _emit 0x75 __asm _emit 0x11 __asm _emit 0x8b __asm _emit 0xca __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x3b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x75 __asm _emit 0xda __asm _emit 0x3b __asm _emit 0xf0
+  __asm _emit 0x0f __asm _emit 0x44 __asm _emit 0xf9 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x38 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -20713,50 +18028,19 @@ __declspec(naked) void FUN_10c70df0(void)
 __declspec(naked) void FUN_10c70e50(void)
 
 {
-  __asm mov edx, dword ptr [esp + 8]
-  __asm sub esp, 8
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, edx
-  __asm push edi
-  __asm cmp esi, dword ptr [esp + 0x20]
-  __asm _emit 0x74 __asm _emit 0x52
-  __asm mov edi, dword ptr [esp + 0x2c]
-  __asm mov ecx, dword ptr [esp + 0x24]
-  __asm cmp ecx, dword ptr [esp + 0x28]
-  __asm _emit 0x74 __asm _emit 0x4c
-  __asm mov eax, ecx
-  __asm inc ecx
-  __asm mov dword ptr [esp + 0x24], ecx
-  __asm lea ecx, [edx + 1]
-  __asm mov dword ptr [esp + 0x1c], ecx
-  __asm mov ecx, dword ptr [edi + 4]
-  __asm mov al, byte ptr [eax]
-  __asm mov byte ptr [esp + 0x10], al
-  __asm mov al, byte ptr [edx]
-  __asm mov byte ptr [esp + 0xc], al
-  __asm push dword ptr [esp + 0xc]
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xec __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x57 __asm _emit 0x3b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x20
+  __asm _emit 0x74 __asm _emit 0x52 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x3b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x74 __asm _emit 0x4c
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x41 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8d __asm _emit 0x4a __asm _emit 0x01 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x8b __asm _emit 0x4f
+  __asm _emit 0x04 __asm _emit 0x8a __asm _emit 0x00 __asm _emit 0x88 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8a __asm _emit 0x02 __asm _emit 0x88 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24
+  __asm _emit 0x0c
   __asm call dword ptr [LAB_122fc300]
-  __asm push dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [edi + 4]
-  __asm mov bl, al
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x04 __asm _emit 0x8a __asm _emit 0xd8
   __asm call dword ptr [LAB_122fc300]
-  __asm cmp bl, al
-  __asm _emit 0x75 __asm _emit 0x15
-  __asm mov edx, dword ptr [esp + 0x1c]
-  __asm cmp edx, dword ptr [esp + 0x20]
-  __asm _emit 0x75 __asm _emit 0xb2
-  __asm mov ecx, dword ptr [esp + 0x24]
-  __asm cmp ecx, dword ptr [esp + 0x28]
-  __asm cmove esi, edx
-  __asm mov eax, dword ptr [esp + 0x18]
-  __asm pop edi
-  __asm mov dword ptr [eax], esi
-  __asm pop esi
-  __asm pop ebx
-  __asm add esp, 8
-  __asm ret
+  __asm _emit 0x3a __asm _emit 0xd8 __asm _emit 0x75 __asm _emit 0x15 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x3b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x75 __asm _emit 0xb2 __asm _emit 0x8b __asm _emit 0x4c
+  __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x3b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x0f __asm _emit 0x44 __asm _emit 0xf2 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x30
+  __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc3
 }
+
 
 
 
@@ -20768,22 +18052,12 @@ __declspec(naked) void FUN_10c70e50(void)
 __declspec(naked) void FUN_10c71290(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -20795,22 +18069,12 @@ __declspec(naked) void FUN_10c71290(void)
 __declspec(naked) void FUN_10c712c0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -20822,22 +18086,12 @@ __declspec(naked) void FUN_10c712c0(void)
 __declspec(naked) void FUN_10c712f0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -20849,22 +18103,12 @@ __declspec(naked) void FUN_10c712f0(void)
 __declspec(naked) void FUN_10c71320(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -20924,11 +18168,10 @@ void FUN_10c71380(void)
 __declspec(naked) void FUN_10c71390(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add dword ptr [ecx + 4], 8
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x83 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x08 __asm _emit 0xc3
 }
+
 
 
 
@@ -20940,12 +18183,9 @@ __declspec(naked) void FUN_10c71390(void)
 __declspec(naked) void FUN_10c713b0(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm xorps xmm0, xmm0
-  __asm movq qword ptr [eax], xmm0
-  __asm add dword ptr [ecx + 4], 8
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x0f __asm _emit 0x57 __asm _emit 0xc0 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0xd6 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x08 __asm _emit 0xc3
 }
+
 
 
 
@@ -20957,12 +18197,10 @@ __declspec(naked) void FUN_10c713b0(void)
 __declspec(naked) void FUN_10c713d0(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov byte ptr [eax + 8], 0
-  __asm add dword ptr [ecx + 4], 0xc
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc6 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x0c __asm _emit 0xc3
 }
+
 
 
 
@@ -20974,17 +18212,10 @@ __declspec(naked) void FUN_10c713d0(void)
 __declspec(naked) void FUN_10c713f0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [eax + 4]
-  __asm mov edx, dword ptr [eax]
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm mov dword ptr [eax], edx
-  __asm mov dword ptr [eax + 4], esi
-  __asm add dword ptr [ecx + 4], 8
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x89
+  __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -20996,17 +18227,10 @@ __declspec(naked) void FUN_10c713f0(void)
 __declspec(naked) void FUN_10c71410(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [eax + 4]
-  __asm mov edx, dword ptr [eax]
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm mov dword ptr [eax], edx
-  __asm mov dword ptr [eax + 4], esi
-  __asm add dword ptr [ecx + 4], 8
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x89
+  __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -21018,15 +18242,10 @@ __declspec(naked) void FUN_10c71410(void)
 __declspec(naked) void FUN_10c71430(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov edx, dword ptr [ecx + 4]
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00
-  __asm movq qword ptr [edx], xmm0
-  __asm mov eax, dword ptr [eax + 8]
-  __asm mov dword ptr [edx + 8], eax
-  __asm add dword ptr [ecx + 4], 0xc
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x51 __asm _emit 0x04 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0xd6 __asm _emit 0x02 __asm _emit 0x8b
+  __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x0c __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -21038,19 +18257,11 @@ __declspec(naked) void FUN_10c71430(void)
 __declspec(naked) void FUN_10c71460(void)
 
 {
-  __asm movzx edx, byte ptr [esp + 4]
-  __asm mov eax, 1
-  __asm push esi
-  __asm mov esi, ecx
-  __asm mov ecx, edx
-  __asm and ecx, 7
-  __asm shr edx, 3
-  __asm shl eax, cl
-  __asm test byte ptr [edx + esi], al
-  __asm pop esi
-  __asm setne al
-  __asm ret 4
+  __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xb8 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0xca __asm _emit 0x83
+  __asm _emit 0xe1 __asm _emit 0x07 __asm _emit 0xc1 __asm _emit 0xea __asm _emit 0x03 __asm _emit 0xd3 __asm _emit 0xe0 __asm _emit 0x84 __asm _emit 0x04 __asm _emit 0x32 __asm _emit 0x5e __asm _emit 0x0f __asm _emit 0x95 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00
 }
+
 
 
 
@@ -21062,29 +18273,13 @@ __declspec(naked) void FUN_10c71460(void)
 __declspec(naked) void FUN_10c71490(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov cl, byte ptr [eax]
-  __asm cmp cl, 0x7f
-  __asm _emit 0x76 __asm _emit 0x05
-  __asm mov eax, dword ptr [esp + 8]
-  __asm ret
-  __asm mov edx, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm mov eax, esi
-  __asm sub eax, edx
-  __asm movzx ecx, cl
-  __asm push eax
-  __asm push ecx
-  __asm push edx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8a __asm _emit 0x08 __asm _emit 0x80 __asm _emit 0xf9 __asm _emit 0x7f __asm _emit 0x76 __asm _emit 0x05 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc3
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0xc9
+  __asm _emit 0x50 __asm _emit 0x51 __asm _emit 0x52
   __asm call LAB_1148ce11
-  __asm add esp, 0xc
-  __asm test eax, eax
-  __asm cmovne esi, eax
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -21096,22 +18291,11 @@ __declspec(naked) void FUN_10c71490(void)
 __declspec(naked) void FUN_10c714e0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov edx, dword ptr [esp + 8]
-  __asm cmp eax, edx
-  __asm _emit 0x74 __asm _emit 0x14
-  __asm mov ecx, dword ptr [esp + 0xc]
-  __asm push esi
-  __asm mov esi, dword ptr [ecx]
-  __asm movsx ecx, byte ptr [eax]
-  __asm cmp ecx, esi
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm inc eax
-  __asm cmp eax, edx
-  __asm _emit 0x75 __asm _emit 0xf4
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x74 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x0c
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x31 __asm _emit 0x0f __asm _emit 0xbe __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xce __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0x40 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x75 __asm _emit 0xf4 __asm _emit 0x5e
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -21123,29 +18307,13 @@ __declspec(naked) void FUN_10c714e0(void)
 __declspec(naked) void FUN_10c71510(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov dl, byte ptr [eax]
-  __asm cmp dl, 0x7f
-  __asm _emit 0x76 __asm _emit 0x05
-  __asm mov eax, dword ptr [esp + 8]
-  __asm ret
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm mov eax, esi
-  __asm sub eax, ecx
-  __asm push eax
-  __asm movzx eax, dl
-  __asm push eax
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8a __asm _emit 0x10 __asm _emit 0x80 __asm _emit 0xfa __asm _emit 0x7f __asm _emit 0x76 __asm _emit 0x05 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc3
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x2b __asm _emit 0xc1 __asm _emit 0x50 __asm _emit 0x0f __asm _emit 0xb6
+  __asm _emit 0xc2 __asm _emit 0x50 __asm _emit 0x51
   __asm call LAB_1148ce11
-  __asm add esp, 0xc
-  __asm test eax, eax
-  __asm cmovne esi, eax
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -21157,22 +18325,11 @@ __declspec(naked) void FUN_10c71510(void)
 __declspec(naked) void FUN_10c71560(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov edx, dword ptr [esp + 8]
-  __asm cmp eax, edx
-  __asm _emit 0x74 __asm _emit 0x14
-  __asm mov ecx, dword ptr [esp + 0xc]
-  __asm push esi
-  __asm mov esi, dword ptr [ecx]
-  __asm movsx ecx, byte ptr [eax]
-  __asm cmp ecx, esi
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm inc eax
-  __asm cmp eax, edx
-  __asm _emit 0x75 __asm _emit 0xf4
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x74 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x0c
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x31 __asm _emit 0x0f __asm _emit 0xbe __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xce __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0x40 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x75 __asm _emit 0xf4 __asm _emit 0x5e
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -21316,45 +18473,16 @@ int FUN_10c71630(int *param_1,int *param_2)
 __declspec(naked) void FUN_10c71640(void)
 
 {
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0xc]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm mov esi, ecx
-  __asm cmp edi, ebp
-  __asm _emit 0x74 __asm _emit 0x40
-  __asm mov eax, dword ptr [esi + 4]
-  __asm push ebx
-  __asm mov cl, byte ptr [edi]
-  __asm mov byte ptr [esp + 0x14], cl
-  __asm cmp dword ptr [esi], eax
-  __asm _emit 0x77 __asm _emit 0x19
-  __asm lea ebx, [eax + 0x10]
-  __asm push ebx
-  __asm push dword ptr [esi + 8]
+  __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x3b __asm _emit 0xfd __asm _emit 0x74
+  __asm _emit 0x40 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8a __asm _emit 0x0f __asm _emit 0x88 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x39 __asm _emit 0x06 __asm _emit 0x77 __asm _emit 0x19 __asm _emit 0x8d
+  __asm _emit 0x58 __asm _emit 0x10 __asm _emit 0x53 __asm _emit 0xff __asm _emit 0x76 __asm _emit 0x08
   __asm call dword ptr [LAB_122fc7a8]
-  __asm add esp, 8
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x24
-  __asm mov dword ptr [esi + 8], eax
-  __asm mov dword ptr [esi], ebx
-  __asm mov eax, dword ptr [esi + 4]
-  __asm inc edi
-  __asm mov ecx, dword ptr [esi + 8]
-  __asm mov dl, byte ptr [esp + 0x14]
-  __asm mov byte ptr [ecx + eax], dl
-  __asm inc dword ptr [esi + 4]
-  __asm mov eax, dword ptr [esi + 4]
-  __asm cmp edi, ebp
-  __asm _emit 0x75 __asm _emit 0xc5
-  __asm pop ebx
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x1e __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x47
+  __asm _emit 0x8b __asm _emit 0x4e __asm _emit 0x08 __asm _emit 0x8a __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x88 __asm _emit 0x14 __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04
+  __asm _emit 0x3b __asm _emit 0xfd __asm _emit 0x75 __asm _emit 0xc5 __asm _emit 0x5b __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call LAB_1148a066
 }
+
 
 
 
@@ -21373,6 +18501,7 @@ __declspec(naked) void FUN_10c716c0(void)
 
 
 
+
 // Reference entry 10c716d0; body size 5 bytes.
 #line 1 "ENTRY_10c716d0"
 
@@ -21386,22 +18515,17 @@ __declspec(naked) void FUN_10c716d0(void)
 
 
 
+
 // Reference entry 10c71f00; body size 26 bytes.
 #line 1 "ENTRY_10c71f00"
 
 __declspec(naked) void FUN_10c71f00(void)
 
 {
-  __asm movzx edx, byte ptr [esp + 4]
-  __asm mov eax, edx
-  __asm and edx, 7
-  __asm shr eax, 3
-  __asm add ecx, eax
-  __asm movzx eax, byte ptr [ecx]
-  __asm bts eax, edx
-  __asm mov byte ptr [ecx], al
-  __asm ret 4
+  __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xe2 __asm _emit 0x07 __asm _emit 0xc1 __asm _emit 0xe8 __asm _emit 0x03 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0x0f
+  __asm _emit 0xb6 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xab __asm _emit 0xd0 __asm _emit 0x88 __asm _emit 0x01 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -21413,16 +18537,10 @@ __declspec(naked) void FUN_10c71f00(void)
 __declspec(naked) void FUN_10c71f20(void)
 
 {
-  __asm mov edx, dword ptr [esp + 4]
-  __asm mov eax, edx
-  __asm shr eax, 3
-  __asm and edx, 7
-  __asm add ecx, eax
-  __asm movzx eax, byte ptr [ecx]
-  __asm bts eax, edx
-  __asm mov byte ptr [ecx], al
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0xc1 __asm _emit 0xe8 __asm _emit 0x03 __asm _emit 0x83 __asm _emit 0xe2 __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0x0f __asm _emit 0xb6
+  __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0xab __asm _emit 0xd0 __asm _emit 0x88 __asm _emit 0x01 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -21496,28 +18614,13 @@ int * FUN_10c72170(int *param_1,int param_2)
 __declspec(naked) void FUN_10c72190(void)
 
 {
-  __asm push ebx
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm mov ebx, ecx
-  __asm sub edi, dword ptr [esp + 0xc]
-  __asm _emit 0x74 __asm _emit 0x1e
-  __asm push esi
-  __asm push edi
+  __asm _emit 0x53 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x2b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x74 __asm _emit 0x1e __asm _emit 0x56 __asm _emit 0x57
   __asm call LAB_1004a052
-  __asm mov esi, dword ptr [ebx]
-  __asm push edi
-  __asm push dword ptr [esp + 0x14]
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x33 __asm _emit 0x57 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm mov dword ptr [ebx + 4], eax
-  __asm pop esi
-  __asm pop edi
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -21529,28 +18632,13 @@ __declspec(naked) void FUN_10c72190(void)
 __declspec(naked) void FUN_10c721d0(void)
 
 {
-  __asm push ebx
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm mov ebx, ecx
-  __asm sub edi, dword ptr [esp + 0xc]
-  __asm _emit 0x74 __asm _emit 0x1e
-  __asm push esi
-  __asm push edi
+  __asm _emit 0x53 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x2b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x74 __asm _emit 0x1e __asm _emit 0x56 __asm _emit 0x57
   __asm call LAB_1004a052
-  __asm mov esi, dword ptr [ebx]
-  __asm push edi
-  __asm push dword ptr [esp + 0x14]
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x33 __asm _emit 0x57 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm mov dword ptr [ebx + 4], eax
-  __asm pop esi
-  __asm pop edi
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -21562,112 +18650,35 @@ __declspec(naked) void FUN_10c721d0(void)
 __declspec(naked) void FUN_10c72210(void)
 
 {
-  __asm push ecx
-  __asm mov edx, dword ptr [esp + 8]
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, ecx
-  __asm mov ecx, 0x7fffffff
-  __asm mov eax, ecx
-  __asm mov ebx, dword ptr [esi + 0x10]
-  __asm sub eax, ebx
-  __asm cmp eax, edx
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0xb9 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x7f __asm _emit 0x8b __asm _emit 0xc1
+  __asm _emit 0x8b __asm _emit 0x5e __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xc3 __asm _emit 0x3b __asm _emit 0xc2
   __asm jb LAB_10c72320
-  __asm mov eax, dword ptr [esi + 0x14]
-  __asm add edx, ebx
-  __asm push edi
-  __asm mov edi, edx
-  __asm mov dword ptr [esp + 0xc], edx
-  __asm or edi, 0xf
-  __asm mov dword ptr [esp + 0x14], eax
-  __asm cmp edi, ecx
-  __asm _emit 0x76 __asm _emit 0x04
-  __asm mov edi, ecx
-  __asm _emit 0xeb __asm _emit 0x18
-  __asm mov edx, eax
-  __asm _emit 0xd1 __asm _emit 0xea
-  __asm sub ecx, edx
-  __asm cmp eax, ecx
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov edi, 0x7fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add eax, edx
-  __asm cmp edi, eax
-  __asm cmovb edi, eax
-  __asm push ebp
-  __asm lea eax, [edi + 1]
-  __asm mov ecx, esi
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x14 __asm _emit 0x03 __asm _emit 0xd3 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xfa __asm _emit 0x89 __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x83 __asm _emit 0xcf __asm _emit 0x0f __asm _emit 0x89
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x3b __asm _emit 0xf9 __asm _emit 0x76 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0xeb __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0xd0 __asm _emit 0xd1 __asm _emit 0xea __asm _emit 0x2b
+  __asm _emit 0xca __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbf __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x7f __asm _emit 0xeb __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xc2 __asm _emit 0x3b __asm _emit 0xf8
+  __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xf8 __asm _emit 0x55 __asm _emit 0x8d __asm _emit 0x47 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0xce __asm _emit 0x50
   __asm call LAB_1000b73a
-  __asm mov ebp, eax
-  __asm mov dword ptr [esi + 0x14], edi
-  __asm mov eax, dword ptr [esp + 0x10]
-  __asm mov dword ptr [esi + 0x10], eax
-  __asm movsx eax, byte ptr [esp + 0x24]
-  __asm mov dword ptr [esp + 0x24], eax
-  __asm lea edi, [ebx + ebp]
-  __asm mov eax, dword ptr [esp + 0x20]
-  __asm add eax, edi
-  __asm cmp dword ptr [esp + 0x18], 0x10
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm push ebx
-  __asm _emit 0x72 __asm _emit 0x5f
-  __asm mov edi, dword ptr [esi]
-  __asm push edi
-  __asm push ebp
+  __asm _emit 0x8b __asm _emit 0xe8 __asm _emit 0x89 __asm _emit 0x7e __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x10 __asm _emit 0x0f __asm _emit 0xbe __asm _emit 0x44 __asm _emit 0x24
+  __asm _emit 0x24 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x8d __asm _emit 0x3c __asm _emit 0x2b __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x03 __asm _emit 0xc7 __asm _emit 0x83 __asm _emit 0x7c
+  __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x53 __asm _emit 0x72 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0x3e __asm _emit 0x57 __asm _emit 0x55
   __asm call LAB_1148cded
-  __asm push dword ptr [esp + 0x2c]
-  __asm lea eax, [ebx + ebp]
-  __asm push dword ptr [esp + 0x34]
-  __asm push eax
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x2b __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x34 __asm _emit 0x50
   __asm call LAB_1148ce0b
-  __asm mov eax, dword ptr [esp + 0x28]
-  __asm add esp, 0x18
-  __asm mov ecx, dword ptr [esp + 0x18]
-  __asm inc ecx
-  __asm mov byte ptr [eax], 0
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [edi - 4]
-  __asm add ecx, 0x23
-  __asm sub edi, edx
-  __asm lea eax, [edi - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x18
-  __asm mov edi, edx
-  __asm push ecx
-  __asm push edi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x41 __asm _emit 0xc6 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x81
+  __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x57 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xfa __asm _emit 0x8d
+  __asm _emit 0x47 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0xfa __asm _emit 0x51 __asm _emit 0x57
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm mov dword ptr [esi], ebp
-  __asm mov eax, esi
-  __asm pop ebp
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0x10
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x2e __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5d __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x10 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm push esi
-  __asm push ebp
+  __asm _emit 0x56 __asm _emit 0x55
   __asm call LAB_1148cded
-  __asm push dword ptr [esp + 0x2c]
-  __asm push dword ptr [esp + 0x34]
-  __asm push edi
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x2c __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x34 __asm _emit 0x57
   __asm call LAB_1148ce0b
-  __asm mov eax, dword ptr [esp + 0x28]
-  __asm add esp, 0x18
-  __asm mov byte ptr [eax], 0
-  __asm mov eax, esi
-  __asm mov dword ptr [esi], ebp
-  __asm pop ebp
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 0x10
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x18 __asm _emit 0xc6 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x89 __asm _emit 0x2e __asm _emit 0x5d __asm _emit 0x5f
+  __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x10 __asm _emit 0x00
   __asm call LAB_10046a33
 }
+
 
 
 
@@ -21703,52 +18714,17 @@ undefined4 FUN_10c72380(undefined4 param_1)
 __declspec(naked) void FUN_10c72980(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov ebx, dword ptr [edi + 4]
-  __asm mov ecx, ebx
-  __asm mov edx, dword ptr [edi]
-  __asm sub ecx, edx
-  __asm sar ecx, 3
-  __asm cmp esi, ecx
-  __asm _emit 0x73 __asm _emit 0x0c
-  __asm lea eax, [edx + esi*8]
-  __asm mov dword ptr [edi + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 8
-  __asm _emit 0x76 __asm _emit 0x3b
-  __asm mov eax, dword ptr [edi + 8]
-  __asm sub eax, edx
-  __asm sar eax, 3
-  __asm cmp esi, eax
-  __asm _emit 0x76 __asm _emit 0x12
-  __asm push dword ptr [esp + 0x14]
-  __asm mov ecx, edi
-  __asm push esi
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x8b __asm _emit 0x5f __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xcb __asm _emit 0x8b __asm _emit 0x17
+  __asm _emit 0x2b __asm _emit 0xca __asm _emit 0xc1 __asm _emit 0xf9 __asm _emit 0x03 __asm _emit 0x3b __asm _emit 0xf1 __asm _emit 0x73 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xf2 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x5f
+  __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x76 __asm _emit 0x3b __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0xc1 __asm _emit 0xf8 __asm _emit 0x03 __asm _emit 0x3b
+  __asm _emit 0xf0 __asm _emit 0x76 __asm _emit 0x12 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0x56
   __asm call LAB_1007efb4
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 8
-  __asm sub esi, ecx
-  __asm _emit 0x74 __asm _emit 0x16 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xf5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push eax
-  __asm push 0
-  __asm push ebx
+  __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x2b __asm _emit 0xf1 __asm _emit 0x74 __asm _emit 0x16 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xf5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x50 __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x53
   __asm call LAB_1148ce0b
-  __asm add esp, 0xc
-  __asm lea ebx, [ebx + esi*8]
-  __asm mov dword ptr [edi + 4], ebx
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x1c __asm _emit 0xf3 __asm _emit 0x89 __asm _emit 0x5f __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -21803,22 +18779,12 @@ void FUN_10c72f80(undefined4 *param_1,undefined4 *param_2)
 __declspec(naked) void FUN_10c72fa0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm pop edi
-  __asm pop esi
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -21830,23 +18796,12 @@ __declspec(naked) void FUN_10c72fa0(void)
 __declspec(naked) void FUN_10c72fd0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm sar edi, 2
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm pop edi
-  __asm pop esi
-  __asm ret 0xc
+  __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -21858,25 +18813,11 @@ __declspec(naked) void FUN_10c72fd0(void)
 __declspec(naked) void FUN_10c73000(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0xc]
-  __asm cmp ecx, edi
-  __asm _emit 0x74 __asm _emit 0x16
-  __asm push esi
-  __asm mov edx, dword ptr [ecx]
-  __asm mov esi, dword ptr [ecx + 4]
-  __asm add ecx, 8
-  __asm mov dword ptr [eax], edx
-  __asm mov dword ptr [eax + 4], esi
-  __asm add eax, 8
-  __asm cmp ecx, edi
-  __asm _emit 0x75 __asm _emit 0xec
-  __asm pop esi
-  __asm pop edi
-  __asm ret 0xc
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xcf __asm _emit 0x74
+  __asm _emit 0x16 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0x8b __asm _emit 0x71 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xcf __asm _emit 0x75 __asm _emit 0xec __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -21888,22 +18829,12 @@ __declspec(naked) void FUN_10c73000(void)
 __declspec(naked) void FUN_10c73040(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm pop edi
-  __asm pop esi
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -21963,22 +18894,12 @@ undefined4 FUN_10c730a0(undefined4 param_1)
 __declspec(naked) void FUN_10c730b0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -21990,23 +18911,12 @@ __declspec(naked) void FUN_10c730b0(void)
 __declspec(naked) void FUN_10c730e0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm sar edi, 2
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*4]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x02 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xbe __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -22018,25 +18928,11 @@ __declspec(naked) void FUN_10c730e0(void)
 __declspec(naked) void FUN_10c73110(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0xc]
-  __asm cmp ecx, edi
-  __asm _emit 0x74 __asm _emit 0x16
-  __asm push esi
-  __asm mov edx, dword ptr [ecx]
-  __asm mov esi, dword ptr [ecx + 4]
-  __asm add ecx, 8
-  __asm mov dword ptr [eax], edx
-  __asm mov dword ptr [eax + 4], esi
-  __asm add eax, 8
-  __asm cmp ecx, edi
-  __asm _emit 0x75 __asm _emit 0xec
-  __asm pop esi
-  __asm pop edi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xcf __asm _emit 0x74
+  __asm _emit 0x16 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0x8b __asm _emit 0x71 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xcf __asm _emit 0x75 __asm _emit 0xec __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0xc3
 }
+
 
 
 
@@ -22048,22 +18944,12 @@ __declspec(naked) void FUN_10c73110(void)
 __declspec(naked) void FUN_10c73150(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -22075,25 +18961,11 @@ __declspec(naked) void FUN_10c73150(void)
 __declspec(naked) void FUN_10c73180(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0xc]
-  __asm cmp ecx, edi
-  __asm _emit 0x74 __asm _emit 0x16
-  __asm push esi
-  __asm mov edx, dword ptr [ecx]
-  __asm mov esi, dword ptr [ecx + 4]
-  __asm add ecx, 8
-  __asm mov dword ptr [eax], edx
-  __asm mov dword ptr [eax + 4], esi
-  __asm add eax, 8
-  __asm cmp ecx, edi
-  __asm _emit 0x75 __asm _emit 0xec
-  __asm pop esi
-  __asm pop edi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xcf __asm _emit 0x74
+  __asm _emit 0x16 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0x8b __asm _emit 0x71 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x04 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xcf __asm _emit 0x75 __asm _emit 0xec __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0xc3
 }
+
 
 
 
@@ -22105,23 +18977,12 @@ __declspec(naked) void FUN_10c73180(void)
 __declspec(naked) void FUN_10c731c0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm sub edi, eax
-  __asm push edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xf8
+  __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm sar edi, 3
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*8]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x03 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xfe __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -22133,22 +18994,11 @@ __declspec(naked) void FUN_10c731c0(void)
 __declspec(naked) void FUN_10c731f0(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm cmp ecx, esi
-  __asm _emit 0x74 __asm _emit 0x18 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x01
-  __asm movq qword ptr [eax], xmm0
-  __asm mov edx, dword ptr [ecx + 8]
-  __asm add ecx, 0xc
-  __asm mov dword ptr [eax + 8], edx
-  __asm add eax, 0xc
-  __asm cmp ecx, esi
-  __asm _emit 0x75 __asm _emit 0xe8
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xce __asm _emit 0x74
+  __asm _emit 0x18 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x01 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0xd6 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x51 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x0c __asm _emit 0x89
+  __asm _emit 0x50 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xce __asm _emit 0x75 __asm _emit 0xe8 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -22177,26 +19027,12 @@ undefined4 *  FUN_10c73230(undefined4 *param_1,int param_2)
 __declspec(naked) void FUN_10c73260(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x19 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xfd __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push eax
-  __asm push 0
-  __asm push esi
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x19 __asm _emit 0x8d __asm _emit 0x04
+  __asm _emit 0xfd __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x50 __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x56
   __asm call LAB_1148ce0b
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*8]
-  __asm pop edi
-  __asm pop esi
-  __asm ret
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xfe __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -22208,17 +19044,11 @@ __declspec(naked) void FUN_10c73260(void)
 __declspec(naked) void FUN_10c732a0(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 8]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x1d __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov byte ptr [eax + 8], 0
-  __asm add eax, 0xc
-  __asm sub ecx, 1
-  __asm _emit 0x75 __asm _emit 0xe7
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x1d __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x40 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc6 __asm _emit 0x40 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x0c __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x01 __asm _emit 0x75 __asm _emit 0xe7 __asm _emit 0xc3
 }
+
 
 
 
@@ -22230,11 +19060,9 @@ __declspec(naked) void FUN_10c732a0(void)
 __declspec(naked) void FUN_10c732e0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp byte ptr [eax], 0x7f
-  __asm setbe al
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x80 __asm _emit 0x38 __asm _emit 0x7f __asm _emit 0x0f __asm _emit 0x96 __asm _emit 0xc0 __asm _emit 0xc3
 }
+
 
 
 
@@ -22246,11 +19074,9 @@ __declspec(naked) void FUN_10c732e0(void)
 __declspec(naked) void FUN_10c732f0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm cmp byte ptr [eax], 0x7f
-  __asm setbe al
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x80 __asm _emit 0x38 __asm _emit 0x7f __asm _emit 0x0f __asm _emit 0x96 __asm _emit 0xc0 __asm _emit 0xc3
 }
+
 
 
 
@@ -22370,77 +19196,28 @@ undefined4 FUN_10c73380(undefined4 param_1)
 __declspec(naked) void FUN_10c733c0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push ebp
-  __asm push esi
-  __asm push edi
-  __asm mov edi, ecx
-  __asm sub ebx, eax
-  __asm mov edx, ebx
-  __asm sar edx, 2
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm mov esi, dword ptr [edi]
-  __asm sub ecx, esi
-  __asm sar ecx, 2
-  __asm cmp edx, ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x2b __asm _emit 0xd8
+  __asm _emit 0x8b __asm _emit 0xd3 __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x37 __asm _emit 0x2b __asm _emit 0xce __asm _emit 0xc1 __asm _emit 0xf9 __asm _emit 0x02 __asm _emit 0x3b
+  __asm _emit 0xd1
   __asm jbe LAB_10c73468
-  __asm cmp edx, 0x3fffffff
+  __asm _emit 0x81 __asm _emit 0xfa __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f
   __asm ja LAB_10c73486
-  __asm mov ebp, ecx
-  __asm mov eax, 0x3fffffff
-  __asm _emit 0xd1 __asm _emit 0xed
-  __asm sub eax, ebp
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov ebp, 0x3fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add ebp, ecx
-  __asm cmp ebp, edx
-  __asm cmovb ebp, edx
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x3b
-  __asm shl ecx, 2
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [esi - 4]
-  __asm add ecx, 0x23
-  __asm sub esi, edx
-  __asm lea eax, [esi - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x51
-  __asm mov esi, edx
-  __asm push ecx
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xe9 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0xd1 __asm _emit 0xed __asm _emit 0x2b __asm _emit 0xc5 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbd
+  __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0xeb __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xe9 __asm _emit 0x3b __asm _emit 0xea __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xea __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74
+  __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x02 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x56 __asm _emit 0xfc __asm _emit 0x83
+  __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xf2 __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x51 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push ebp
-  __asm mov ecx, edi
+  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10054458
-  __asm mov esi, eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [edi], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm lea ecx, [esi + ebp*4]
-  __asm mov dword ptr [edi + 8], ecx
-  __asm push ebx
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xae __asm _emit 0x89 __asm _emit 0x4f
+  __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [ebx + esi]
-  __asm mov dword ptr [edi + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x33 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm call LAB_100965ab
 }
+
 
 
 
@@ -22452,77 +19229,28 @@ __declspec(naked) void FUN_10c733c0(void)
 __declspec(naked) void FUN_10c734c0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0xc]
-  __asm push ebp
-  __asm push esi
-  __asm push edi
-  __asm mov edi, ecx
-  __asm sub ebx, eax
-  __asm mov edx, ebx
-  __asm sar edx, 3
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm mov esi, dword ptr [edi]
-  __asm sub ecx, esi
-  __asm sar ecx, 3
-  __asm cmp edx, ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x2b __asm _emit 0xd8
+  __asm _emit 0x8b __asm _emit 0xd3 __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x03 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x37 __asm _emit 0x2b __asm _emit 0xce __asm _emit 0xc1 __asm _emit 0xf9 __asm _emit 0x03 __asm _emit 0x3b
+  __asm _emit 0xd1
   __asm jbe LAB_10c73568
-  __asm cmp edx, 0x1fffffff
+  __asm _emit 0x81 __asm _emit 0xfa __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f
   __asm ja LAB_10c73586
-  __asm mov ebp, ecx
-  __asm mov eax, 0x1fffffff
-  __asm _emit 0xd1 __asm _emit 0xed
-  __asm sub eax, ebp
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov ebp, 0x1fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add ebp, ecx
-  __asm cmp ebp, edx
-  __asm cmovb ebp, edx
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x3b
-  __asm shl ecx, 3
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [esi - 4]
-  __asm add ecx, 0x23
-  __asm sub esi, edx
-  __asm lea eax, [esi - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x51
-  __asm mov esi, edx
-  __asm push ecx
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xe9 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xd1 __asm _emit 0xed __asm _emit 0x2b __asm _emit 0xc5 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbd
+  __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xeb __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xe9 __asm _emit 0x3b __asm _emit 0xea __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xea __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74
+  __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x03 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x56 __asm _emit 0xfc __asm _emit 0x83
+  __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xf2 __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x51 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push ebp
-  __asm mov ecx, edi
+  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_1007d9a7
-  __asm mov esi, eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [edi], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm lea ecx, [esi + ebp*8]
-  __asm mov dword ptr [edi + 8], ecx
-  __asm push ebx
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xee __asm _emit 0x89 __asm _emit 0x4f
+  __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [ebx + esi]
-  __asm mov dword ptr [edi + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x33 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm call LAB_100188c7
 }
+
 
 
 
@@ -22548,14 +19276,10 @@ void FUN_10c735c0(undefined4 param_1,undefined4 *param_2)
 __declspec(naked) void FUN_10c735e0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov ecx, dword ptr [eax]
-  __asm mov edx, dword ptr [eax + 4]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [eax], ecx
-  __asm mov dword ptr [eax + 4], edx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0x89
+  __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0xc3
 }
+
 
 
 
@@ -22567,14 +19291,10 @@ __declspec(naked) void FUN_10c735e0(void)
 __declspec(naked) void FUN_10c73600(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov ecx, dword ptr [eax]
-  __asm mov edx, dword ptr [eax + 4]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [eax], ecx
-  __asm mov dword ptr [eax + 4], edx
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0x89
+  __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0xc3
 }
+
 
 
 
@@ -22586,11 +19306,9 @@ __declspec(naked) void FUN_10c73600(void)
 __declspec(naked) void FUN_10c73620(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm xorps xmm0, xmm0
-  __asm movq qword ptr [eax], xmm0
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x0f __asm _emit 0x57 __asm _emit 0xc0 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0xd6 __asm _emit 0x00 __asm _emit 0xc3
 }
+
 
 
 
@@ -22617,14 +19335,10 @@ void FUN_10c73630(undefined4 param_1,undefined4 *param_2)
 __declspec(naked) void FUN_10c73650(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov ecx, dword ptr [esp + 8]
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00
-  __asm movq qword ptr [ecx], xmm0
-  __asm mov eax, dword ptr [eax + 8]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0xd6 __asm _emit 0x01
+  __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0xc3
 }
+
 
 
 
@@ -22696,60 +19410,18 @@ int FUN_10c736b0(int param_1,int param_2)
 __declspec(naked) void FUN_10c736c0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0x10]
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x10]
-  __asm sub eax, ebp
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x14]
-  __asm mov ecx, edi
-  __asm sub ecx, esi
-  __asm cmp ecx, eax
-  __asm _emit 0x74 __asm _emit 0x06
-  __asm pop edi
-  __asm pop esi
-  __asm xor al, al
-  __asm pop ebp
-  __asm ret
-  __asm push ebx
-  __asm cmp esi, edi
-  __asm _emit 0x74 __asm _emit 0x44
-  __asm mov ecx, dword ptr [esp + 0x24]
-  __asm sub ebp, esi
-  __asm mov dword ptr [esp + 0x18], ecx
-  __asm mov al, byte ptr [esi + ebp]
-  __asm mov ecx, dword ptr [ecx + 4]
-  __asm mov byte ptr [esp + 0x20], al
-  __asm mov al, byte ptr [esi]
-  __asm mov byte ptr [esp + 0x14], al
-  __asm push dword ptr [esp + 0x14]
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xc5 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c
+  __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0x2b __asm _emit 0xce __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x74 __asm _emit 0x06 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x32
+  __asm _emit 0xc0 __asm _emit 0x5d __asm _emit 0xc3 __asm _emit 0x53 __asm _emit 0x3b __asm _emit 0xf7 __asm _emit 0x74 __asm _emit 0x44 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x24 __asm _emit 0x2b __asm _emit 0xee __asm _emit 0x89 __asm _emit 0x4c
+  __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8a __asm _emit 0x04 __asm _emit 0x2e __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x04 __asm _emit 0x88 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x8a __asm _emit 0x06 __asm _emit 0x88 __asm _emit 0x44
+  __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14
   __asm call dword ptr [LAB_122fc300]
-  __asm mov ecx, dword ptr [esp + 0x18]
-  __asm mov bl, al
-  __asm push dword ptr [esp + 0x20]
-  __asm mov ecx, dword ptr [ecx + 4]
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8a __asm _emit 0xd8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x04
   __asm call dword ptr [LAB_122fc300]
-  __asm cmp bl, al
-  __asm _emit 0x75 __asm _emit 0x10
-  __asm mov ecx, dword ptr [esp + 0x18]
-  __asm inc esi
-  __asm cmp esi, edi
-  __asm _emit 0x75 __asm _emit 0xc6
-  __asm pop ebx
-  __asm pop edi
-  __asm pop esi
-  __asm mov al, 1
-  __asm pop ebp
-  __asm ret
-  __asm pop ebx
-  __asm pop edi
-  __asm pop esi
-  __asm xor al, al
-  __asm pop ebp
-  __asm ret
+  __asm _emit 0x3a __asm _emit 0xd8 __asm _emit 0x75 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x46 __asm _emit 0x3b __asm _emit 0xf7 __asm _emit 0x75 __asm _emit 0xc6 __asm _emit 0x5b __asm _emit 0x5f __asm _emit 0x5e
+  __asm _emit 0xb0 __asm _emit 0x01 __asm _emit 0x5d __asm _emit 0xc3 __asm _emit 0x5b __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x32 __asm _emit 0xc0 __asm _emit 0x5d __asm _emit 0xc3
 }
+
 
 
 
@@ -22777,29 +19449,13 @@ undefined4 FUN_10c737f0(undefined4 *param_1,undefined4 *param_2)
 __declspec(naked) void FUN_10c73810(void)
 
 {
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov dl, byte ptr [eax]
-  __asm cmp dl, 0x7f
-  __asm _emit 0x76 __asm _emit 0x05
-  __asm mov eax, dword ptr [esp + 8]
-  __asm ret
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm mov eax, esi
-  __asm sub eax, ecx
-  __asm push eax
-  __asm movzx eax, dl
-  __asm push eax
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8a __asm _emit 0x10 __asm _emit 0x80 __asm _emit 0xfa __asm _emit 0x7f __asm _emit 0x76 __asm _emit 0x05 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc3
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x2b __asm _emit 0xc1 __asm _emit 0x50 __asm _emit 0x0f __asm _emit 0xb6
+  __asm _emit 0xc2 __asm _emit 0x50 __asm _emit 0x51
   __asm call LAB_1148ce11
-  __asm add esp, 0xc
-  __asm test eax, eax
-  __asm cmovne esi, eax
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -22943,29 +19599,16 @@ char * FUN_10c73940(void)
 __declspec(naked) void FUN_10c73a60(void)
 
 {
-  __asm push ecx
-  __asm push 0x18
+  __asm _emit 0x51 __asm _emit 0x6a __asm _emit 0x18
   __asm call LAB_10024f14
-  __asm mov edx, eax
-  __asm add esp, 4
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [esp], edx
-  __asm test edx, edx
-  __asm _emit 0x74 __asm _emit 0x2f
-  __asm mov ecx, dword ptr [esp + 0xc]
-  __asm mov ecx, dword ptr [ecx]
-  __asm mov dword ptr [edx + 4], ecx
-  __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42
-  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xd0 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x14 __asm _emit 0x24 __asm _emit 0x85 __asm _emit 0xd2 __asm _emit 0x74 __asm _emit 0x2f
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x09 __asm _emit 0x89 __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [edx], offset LAB_1191a91c
-  __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov dword ptr [eax], edx
-  __asm pop ecx
-  __asm ret
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x59 __asm _emit 0xc3 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -23013,34 +19656,14 @@ undefined4 FUN_10c73af0(undefined4 param_1)
 __declspec(naked) void FUN_10c73b00(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov edx, dword ptr [ecx + 0x14]
-  __asm cmp edx, 0x10
-  __asm _emit 0x72 __asm _emit 0x02
-  __asm mov edi, dword ptr [ecx]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm _emit 0x72 __asm _emit 0x02
-  __asm mov esi, dword ptr [ecx]
-  __asm mov eax, dword ptr [ecx + 0x10]
-  __asm add eax, esi
-  __asm pop esi
-  __asm cmp edx, 0x10
-  __asm _emit 0x72 __asm _emit 0x02
-  __asm mov ecx, dword ptr [ecx]
-  __asm push edi
-  __asm push dword ptr [esp + 0x18]
-  __asm push dword ptr [esp + 0x18]
-  __asm push dword ptr [esp + 0x18]
-  __asm push eax
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x8b __asm _emit 0x51 __asm _emit 0x14 __asm _emit 0x83 __asm _emit 0xfa __asm _emit 0x10 __asm _emit 0x72 __asm _emit 0x02 __asm _emit 0x8b
+  __asm _emit 0x39 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x72 __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x31 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x03 __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x83 __asm _emit 0xfa
+  __asm _emit 0x10 __asm _emit 0x72 __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x09 __asm _emit 0x57 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0xff __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x50 __asm _emit 0x51
   __asm call LAB_1003ec3e
-  __asm add esp, 0x18
-  __asm pop edi
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x18 __asm _emit 0x5f __asm _emit 0xc3
 }
+
 
 
 
@@ -23069,15 +19692,13 @@ void FUN_10c73b50(undefined4 *param_1,undefined4 *param_2)
 __declspec(naked) void FUN_10c74540(void)
 
 {
-  __asm push ecx
+  __asm _emit 0x51
   __asm mov dword ptr [ecx], offset LAB_1191a9ac
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [esp], ecx
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -23148,40 +19769,19 @@ undefined4 * __fastcall FUN_10c74690(undefined4 *param_1)
 __declspec(naked) void FUN_10c746b0(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm push 0x24
-  __asm mov esi, ecx
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0x6a __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xf1
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [esp + 4], eax
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x39 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x39 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x14 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [eax], offset LAB_1191a904
   __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40
-  __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xeb __asm _emit 0x02
-  __asm xor eax, eax
-  __asm mov ecx, dword ptr [esp + 0x10]
-  __asm mov dword ptr [esi], eax
-  __asm mov dword ptr [esi + 4], eax
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov dword ptr [esi + 0xc], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esi + 8], ecx
-  __asm shr eax, 3
-  __asm shr ecx, 9
-  __asm not eax
-  __asm and eax, 0x100
-  __asm not ecx
-  __asm mov dword ptr [esi + 0x10], eax
-  __asm and ecx, 4
-  __asm mov dword ptr [esi + 0x14], ecx
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xeb __asm _emit 0x02 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x89
+  __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x4e __asm _emit 0x08 __asm _emit 0xc1 __asm _emit 0xe8
+  __asm _emit 0x03 __asm _emit 0xc1 __asm _emit 0xe9 __asm _emit 0x09 __asm _emit 0xf7 __asm _emit 0xd0 __asm _emit 0x25 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xf7 __asm _emit 0xd1 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x10
+  __asm _emit 0x83 __asm _emit 0xe1 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x4e __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -23226,23 +19826,14 @@ __declspec(naked) void FUN_10c746b0(void)
 __declspec(naked) void FUN_10c74960(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [ecx + 4], eax
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm xor eax, eax
-  __asm mov word ptr [ecx + 0x24], ax
-  __asm mov dword ptr [ecx + 0x28], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x33
+  __asm _emit 0xc0 __asm _emit 0x66 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x24 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x28 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191ad0c
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -23254,19 +19845,13 @@ __declspec(naked) void FUN_10c74960(void)
 __declspec(naked) void FUN_10c749d0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191ad00
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -23278,16 +19863,11 @@ __declspec(naked) void FUN_10c749d0(void)
 __declspec(naked) void FUN_10c74cf0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [ecx], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -23371,51 +19951,18 @@ undefined4 * __fastcall FUN_10c74e30(undefined4 *param_1)
 __declspec(naked) void FUN_10c74ee0(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm mov ebx, ecx
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x10]
-  __asm mov dword ptr [esp + 8], ebx
-  __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov ecx, dword ptr [ebp]
-  __asm mov eax, dword ptr [ebp + 4]
-  __asm mov dword ptr [esp + 8], ecx
-  __asm cmp ecx, eax
-  __asm _emit 0x74 __asm _emit 0x41
-  __asm push esi
-  __asm sub eax, ecx
-  __asm mov ecx, ebx
-  __asm mov esi, eax
-  __asm mov dword ptr [esp + 0x14], eax
-  __asm push edi
-  __asm sar esi, 2
-  __asm push esi
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x4d __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x45 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x74 __asm _emit 0x41 __asm _emit 0x56
+  __asm _emit 0x2b __asm _emit 0xc1 __asm _emit 0x8b __asm _emit 0xcb __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x57 __asm _emit 0xc1 __asm _emit 0xfe __asm _emit 0x02 __asm _emit 0x56
   __asm call LAB_10054458
-  __asm push dword ptr [esp + 0x18]
-  __asm mov dword ptr [ebx], eax
-  __asm _emit 0x8d __asm _emit 0x3c __asm _emit 0xb5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push dword ptr [esp + 0x14]
-  __asm mov dword ptr [ebx + 4], eax
-  __asm add eax, edi
-  __asm mov dword ptr [ebx + 8], eax
-  __asm mov esi, dword ptr [ebx]
-  __asm push esi
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x03 __asm _emit 0x8d __asm _emit 0x3c __asm _emit 0xb5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24
+  __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc7 __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x33 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm mov dword ptr [ebx + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm mov eax, dword ptr [ebp + 0xc]
-  __asm mov dword ptr [ebx + 0xc], eax
-  __asm mov eax, ebx
-  __asm pop ebp
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0x45 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x43
+  __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xc3 __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -23523,22 +20070,14 @@ undefined4 __fastcall FUN_10c75020(undefined4 param_1)
 __declspec(naked) void FUN_10c752a0(void)
 
 {
-  __asm push ecx
-  __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, ecx
-  __asm mov byte ptr [ecx + 4], 0
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov byte ptr [ecx + 0x1c], 0
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov byte ptr [ecx + 0x28], 0
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x30 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov byte ptr [ecx + 0x34], 0
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x51 __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc6 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc6 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc6 __asm _emit 0x41 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x30 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc6 __asm _emit 0x41 __asm _emit 0x34 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -23565,44 +20104,18 @@ undefined4 * __fastcall FUN_10c753b0(undefined4 *param_1)
 __declspec(naked) void FUN_10c753d0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, ecx
-  __asm push ebp
-  __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov ecx, dword ptr [eax]
-  __asm mov ebp, dword ptr [eax + 4]
-  __asm mov dword ptr [esp + 0xc], ecx
-  __asm cmp ecx, ebp
-  __asm _emit 0x74 __asm _emit 0x34
-  __asm push esi
-  __asm sub ebp, ecx
-  __asm mov ecx, ebx
-  __asm mov esi, ebp
-  __asm push edi
-  __asm sar esi, 2
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x55 __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43
+  __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x68
+  __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xcd __asm _emit 0x74 __asm _emit 0x34 __asm _emit 0x56 __asm _emit 0x2b __asm _emit 0xe9 __asm _emit 0x8b __asm _emit 0xcb __asm _emit 0x8b __asm _emit 0xf5
+  __asm _emit 0x57 __asm _emit 0xc1 __asm _emit 0xfe __asm _emit 0x02 __asm _emit 0x56
   __asm call LAB_10054458
-  __asm mov edi, eax
-  __asm push ebp
-  __asm push dword ptr [esp + 0x18]
-  __asm mov dword ptr [ebx], edi
-  __asm lea ecx, [edi + esi*4]
-  __asm mov dword ptr [ebx + 4], edi
-  __asm push edi
-  __asm mov dword ptr [ebx + 8], ecx
+  __asm _emit 0x8b __asm _emit 0xf8 __asm _emit 0x55 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x3b __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xb7 __asm _emit 0x89 __asm _emit 0x7b __asm _emit 0x04 __asm _emit 0x57
+  __asm _emit 0x89 __asm _emit 0x4b __asm _emit 0x08
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi*4]
-  __asm mov dword ptr [ebx + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm mov eax, ebx
-  __asm pop ebx
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xb7 __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x8b __asm _emit 0xc3 __asm _emit 0x5b __asm _emit 0xc2
+  __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -23614,44 +20127,15 @@ __declspec(naked) void FUN_10c753d0(void)
 __declspec(naked) void FUN_10c75450(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, ecx
-  __asm push ebp
-  __asm push esi
-  __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov esi, dword ptr [eax]
-  __asm mov ebp, dword ptr [eax + 4]
-  __asm cmp esi, ebp
-  __asm _emit 0x74 __asm _emit 0x33
-  __asm push edi
-  __asm mov edi, ebp
-  __asm sub edi, esi
-  __asm sar edi, 3
-  __asm push edi
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7
+  __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x30 __asm _emit 0x8b
+  __asm _emit 0x68 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xf5 __asm _emit 0x74 __asm _emit 0x33 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xfd __asm _emit 0x2b __asm _emit 0xfe __asm _emit 0xc1 __asm _emit 0xff __asm _emit 0x03 __asm _emit 0x57
   __asm call LAB_1007d9a7
-  __asm mov edx, eax
-  __asm mov dword ptr [ebx], edx
-  __asm mov dword ptr [ebx + 4], edx
-  __asm lea ecx, [edx + edi*8]
-  __asm mov dword ptr [ebx + 8], ecx
-  __asm pop edi
-  __asm mov eax, dword ptr [esi]
-  __asm mov ecx, dword ptr [esi + 4]
-  __asm add esi, 8
-  __asm mov dword ptr [edx], eax
-  __asm mov dword ptr [edx + 4], ecx
-  __asm add edx, 8
-  __asm cmp esi, ebp
-  __asm _emit 0x75 __asm _emit 0xec
-  __asm mov dword ptr [ebx + 4], edx
-  __asm pop esi
-  __asm pop ebp
-  __asm mov eax, ebx
-  __asm pop ebx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xd0 __asm _emit 0x89 __asm _emit 0x13 __asm _emit 0x89 __asm _emit 0x53 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xfa __asm _emit 0x89 __asm _emit 0x4b __asm _emit 0x08 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0x06
+  __asm _emit 0x8b __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc6 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x02 __asm _emit 0x89 __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xf5
+  __asm _emit 0x75 __asm _emit 0xec __asm _emit 0x89 __asm _emit 0x53 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x8b __asm _emit 0xc3 __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -23708,51 +20192,18 @@ undefined4 * __fastcall FUN_10c75510(undefined4 *param_1)
 __declspec(naked) void FUN_10c75530(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm mov ebx, ecx
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x10]
-  __asm mov dword ptr [esp + 8], ebx
-  __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov ecx, dword ptr [ebp]
-  __asm mov eax, dword ptr [ebp + 4]
-  __asm mov dword ptr [esp + 8], ecx
-  __asm cmp ecx, eax
-  __asm _emit 0x74 __asm _emit 0x41
-  __asm push esi
-  __asm sub eax, ecx
-  __asm mov ecx, ebx
-  __asm mov esi, eax
-  __asm mov dword ptr [esp + 0x14], eax
-  __asm push edi
-  __asm sar esi, 2
-  __asm push esi
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x03 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x4d __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x45 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x74 __asm _emit 0x41 __asm _emit 0x56
+  __asm _emit 0x2b __asm _emit 0xc1 __asm _emit 0x8b __asm _emit 0xcb __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x57 __asm _emit 0xc1 __asm _emit 0xfe __asm _emit 0x02 __asm _emit 0x56
   __asm call LAB_10054458
-  __asm push dword ptr [esp + 0x18]
-  __asm mov dword ptr [ebx], eax
-  __asm _emit 0x8d __asm _emit 0x3c __asm _emit 0xb5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push dword ptr [esp + 0x14]
-  __asm mov dword ptr [ebx + 4], eax
-  __asm add eax, edi
-  __asm mov dword ptr [ebx + 8], eax
-  __asm mov esi, dword ptr [ebx]
-  __asm push esi
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x03 __asm _emit 0x8d __asm _emit 0x3c __asm _emit 0xb5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24
+  __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc7 __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x33 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [edi + esi]
-  __asm mov dword ptr [ebx + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm mov eax, dword ptr [ebp + 0xc]
-  __asm mov dword ptr [ebx + 0xc], eax
-  __asm mov eax, ebx
-  __asm pop ebp
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0x45 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x43
+  __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xc3 __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -23777,12 +20228,9 @@ undefined4 * __fastcall FUN_10c756a0(undefined4 *param_1)
 __declspec(naked) void FUN_10c759a0(void)
 
 {
-  __asm xorps xmm0, xmm0
-  __asm mov eax, ecx
-  __asm movups xmmword ptr [ecx], xmm0
-  __asm movups xmmword ptr [ecx + 0x10], xmm0
-  __asm ret
+  __asm _emit 0x0f __asm _emit 0x57 __asm _emit 0xc0 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x0f __asm _emit 0x11 __asm _emit 0x01 __asm _emit 0x0f __asm _emit 0x11 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0xc3
 }
+
 
 
 
@@ -23808,19 +20256,13 @@ undefined4 * __fastcall FUN_10c759b0(undefined4 *param_1)
 __declspec(naked) void FUN_10c759d0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [ecx + 4], eax
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b
+  __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191a91c
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret 8
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -23832,17 +20274,13 @@ __declspec(naked) void FUN_10c759d0(void)
 __declspec(naked) void FUN_10c75a10(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [ecx + 0x14], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x0f __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04
+  __asm _emit 0x0f __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191a934
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -23869,17 +20307,13 @@ __declspec(naked) void FUN_10c75a10(void)
 __declspec(naked) void FUN_10c75a80(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [ecx + 0x14], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04
+  __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191a928
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -23891,20 +20325,13 @@ __declspec(naked) void FUN_10c75a80(void)
 __declspec(naked) void FUN_10c75ac0(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [ecx + 4], eax
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, dword ptr [esp + 0x10]
-  __asm mov dword ptr [ecx + 0x14], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191a910
-  __asm pop ecx
-  __asm ret 0xc
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -23916,16 +20343,13 @@ __declspec(naked) void FUN_10c75ac0(void)
 __declspec(naked) void FUN_10c75b00(void)
 
 {
-  __asm push ecx
-  __asm mov dword ptr [esp], ecx
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x13 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x13 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191a958
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -23937,15 +20361,13 @@ __declspec(naked) void FUN_10c75b00(void)
 __declspec(naked) void FUN_10c75b40(void)
 
 {
-  __asm push ecx
-  __asm mov dword ptr [esp], ecx
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x11 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x11 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191a940
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -23957,18 +20379,13 @@ __declspec(naked) void FUN_10c75b40(void)
 __declspec(naked) void FUN_10c75b80(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [ecx + 0x14], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191a94c
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -23980,27 +20397,15 @@ __declspec(naked) void FUN_10c75b80(void)
 __declspec(naked) void FUN_10c75bd0(void)
 
 {
-  __asm push ecx
-  __asm movzx eax, byte ptr [esp + 8]
-  __asm add eax, eax
-  __asm mov dword ptr [esp], ecx
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov dword ptr [ecx + 0x14], eax
-  __asm mov eax, dword ptr [esp + 0x10]
-  __asm mov dword ptr [ecx + 0x18], eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [ecx + 0x1c], eax
-  __asm mov eax, dword ptr [esp + 0x18]
-  __asm mov dword ptr [ecx + 0x20], eax
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x12 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x03 __asm _emit 0xc0 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x44
+  __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x12
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191a964
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x24 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff
-  __asm pop ecx
-  __asm ret 0x14
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x24 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x14 __asm _emit 0x00
 }
+
 
 
 
@@ -24012,17 +20417,14 @@ __declspec(naked) void FUN_10c75bd0(void)
 __declspec(naked) void FUN_10c75c40(void)
 
 {
-  __asm push ecx
-  __asm mov dword ptr [esp], ecx
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x51 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [ecx], offset LAB_1191a904
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -24034,11 +20436,11 @@ __declspec(naked) void FUN_10c75c40(void)
 __declspec(naked) void FUN_10c75e50(void)
 
 {
-  __asm push dword ptr [ecx + 8]
+  __asm _emit 0xff __asm _emit 0x71 __asm _emit 0x08
   __asm call dword ptr [LAB_122fc7ac]
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -24050,68 +20452,29 @@ __declspec(naked) void FUN_10c75e50(void)
 __declspec(naked) void FUN_10c75ee0(void)
 
 {
-  __asm push ebx
-  __asm push ebp
+  __asm _emit 0x53 __asm _emit 0x55
   __asm mov ebp, dword ptr [LAB_122fc7ac]
-  __asm mov ebx, ecx
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [ebx + 0x14]
+  __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7b __asm _emit 0x14
   __asm mov dword ptr [ebx], offset LAB_1191ad0c
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x20 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov esi, edi
-  __asm mov edi, dword ptr [edi + 0x10]
-  __asm push dword ptr [esi + 0xc]
-  __asm call ebp
-  __asm push 0x14
-  __asm push esi
+  __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x20 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xf7 __asm _emit 0x8b __asm _emit 0x7f __asm _emit 0x10
+  __asm _emit 0xff __asm _emit 0x76 __asm _emit 0x0c __asm _emit 0xff __asm _emit 0xd5 __asm _emit 0x6a __asm _emit 0x14 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm add esp, 0xc
-  __asm test edi, edi
-  __asm _emit 0x75 __asm _emit 0xe7
-  __asm push 0x20
-  __asm push dword ptr [ebx + 0x18]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x75 __asm _emit 0xe7 __asm _emit 0x6a __asm _emit 0x20 __asm _emit 0xff __asm _emit 0x73 __asm _emit 0x18
   __asm call LAB_100131d8
-  __asm mov esi, dword ptr [ebx + 0x1c]
-  __asm add esp, 8
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x10
-  __asm push dword ptr [esi + 8]
-  __asm call ebp
-  __asm push 0xc
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0x73 __asm _emit 0x1c __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x76 __asm _emit 0x08 __asm _emit 0xff __asm _emit 0xd5 __asm _emit 0x6a
+  __asm _emit 0x0c __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm add esp, 0xc
-  __asm mov esi, dword ptr [ebx + 0x20]
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x10
-  __asm push dword ptr [esi + 8]
-  __asm call ebp
-  __asm push 0xc
-  __asm push esi
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x73 __asm _emit 0x20 __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x76 __asm _emit 0x08 __asm _emit 0xff __asm _emit 0xd5 __asm _emit 0x6a
+  __asm _emit 0x0c __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm add esp, 0xc
-  __asm mov edi, dword ptr [ebx + 0x28]
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x1e __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov esi, edi
-  __asm mov edi, dword ptr [edi + 0x10]
-  __asm push dword ptr [esi + 0xc]
-  __asm call ebp
-  __asm push 0x14
-  __asm push esi
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x7b __asm _emit 0x28 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x1e __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b
+  __asm _emit 0xf7 __asm _emit 0x8b __asm _emit 0x7f __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x76 __asm _emit 0x0c __asm _emit 0xff __asm _emit 0xd5 __asm _emit 0x6a __asm _emit 0x14 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm add esp, 0xc
-  __asm test edi, edi
-  __asm _emit 0x75 __asm _emit 0xe7
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x75 __asm _emit 0xe7 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d
   __asm mov dword ptr [ebx], offset LAB_1191a8f8
-  __asm pop ebx
-  __asm ret
+  __asm _emit 0x5b __asm _emit 0xc3
 }
+
 
 
 
@@ -24123,19 +20486,10 @@ __declspec(naked) void FUN_10c75ee0(void)
 __declspec(naked) void FUN_10c76040(void)
 
 {
-  __asm mov ecx, dword ptr [ecx + 0xc]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x11
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 8]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x08
-  __asm mov edx, dword ptr [eax]
-  __asm mov ecx, eax
-  __asm push 1
-  __asm call dword ptr [edx]
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x11 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x08
+  __asm _emit 0x8b __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x6a __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x12 __asm _emit 0xc3
 }
+
 
 
 
@@ -24147,11 +20501,11 @@ __declspec(naked) void FUN_10c76040(void)
 __declspec(naked) void FUN_10c76060(void)
 
 {
-  __asm push dword ptr [ecx + 0xc]
+  __asm _emit 0xff __asm _emit 0x71 __asm _emit 0x0c
   __asm call dword ptr [LAB_122fc7ac]
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -24163,12 +20517,11 @@ __declspec(naked) void FUN_10c76060(void)
 __declspec(naked) void FUN_10c76120(void)
 
 {
-  __asm mov ecx, dword ptr [ecx]
-  __asm test ecx, ecx
+  __asm _emit 0x8b __asm _emit 0x09 __asm _emit 0x85 __asm _emit 0xc9
   __asm jne LAB_10053ce2
-  __asm ret
-  __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc
+  __asm _emit 0xc3 __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc
 }
+
 
 
 
@@ -24180,12 +20533,11 @@ __declspec(naked) void FUN_10c76120(void)
 __declspec(naked) void FUN_10c76130(void)
 
 {
-  __asm mov ecx, dword ptr [ecx]
-  __asm test ecx, ecx
+  __asm _emit 0x8b __asm _emit 0x09 __asm _emit 0x85 __asm _emit 0xc9
   __asm jne LAB_1008bf9d
-  __asm ret
-  __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc
+  __asm _emit 0xc3 __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc
 }
+
 
 
 
@@ -24324,42 +20676,16 @@ void __fastcall FUN_10c765d0(undefined4 *param_1)
 __declspec(naked) void FUN_10c765e0(void)
 
 {
-  __asm push ebp
-  __asm mov ebp, ecx
-  __asm push edi
-  __asm mov edi, dword ptr [ebp + 0x18]
+  __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0xe9 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7d __asm _emit 0x18
   __asm mov dword ptr [ebp], offset LAB_1191a94c
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x37
-  __asm push ebx
-  __asm push esi
-  __asm lea eax, [edi + 0x18]
-  __asm mov esi, edi
-  __asm mov edi, dword ptr [eax]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov ebx, dword ptr [ebp + 0x14]
-  __asm cmp esi, ebx
-  __asm _emit 0x74 __asm _emit 0x1b
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x17
-  __asm mov ecx, esi
-  __asm lea eax, [esi + 0xc]
-  __asm mov esi, dword ptr [eax]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push 1
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax]
-  __asm cmp esi, ebx
-  __asm _emit 0x75 __asm _emit 0xe5
-  __asm test edi, edi
-  __asm _emit 0x75 __asm _emit 0xcd
-  __asm pop esi
-  __asm pop ebx
-  __asm pop edi
+  __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x37 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8d __asm _emit 0x47 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0xf7 __asm _emit 0x8b __asm _emit 0x38 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x5d __asm _emit 0x14 __asm _emit 0x3b __asm _emit 0xf3 __asm _emit 0x74 __asm _emit 0x1b __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74 __asm _emit 0x17 __asm _emit 0x8b __asm _emit 0xce
+  __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x30 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x6a __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff
+  __asm _emit 0x10 __asm _emit 0x3b __asm _emit 0xf3 __asm _emit 0x75 __asm _emit 0xe5 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x75 __asm _emit 0xcd __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x5f
   __asm mov dword ptr [ebp], offset LAB_1191a8f8
-  __asm pop ebp
-  __asm ret
+  __asm _emit 0x5d __asm _emit 0xc3
 }
+
 
 
 
@@ -24397,19 +20723,12 @@ void __fastcall FUN_10c76660(undefined4 *param_1)
 __declspec(naked) void FUN_10c766e0(void)
 
 {
-  __asm mov edx, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm mov eax, dword ptr [edx]
-  __asm mov dword ptr [esi], eax
-  __asm lea ecx, [esi + 4]
-  __asm lea eax, [edx + 4]
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x02 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x42
+  __asm _emit 0x04 __asm _emit 0x50
   __asm call LAB_1000e656
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -24421,14 +20740,11 @@ __declspec(naked) void FUN_10c766e0(void)
 __declspec(naked) void FUN_10c76860(void)
 
 {
-  __asm mov edx, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [edx]
-  __asm mov dword ptr [ecx], eax
-  __asm lea eax, [edx + 4]
-  __asm mov dword ptr [esp + 4], eax
-  __asm add ecx, 4
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x02 __asm _emit 0x89 __asm _emit 0x01 __asm _emit 0x8d __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x83
+  __asm _emit 0xc1 __asm _emit 0x04
   __asm jmp LAB_1000e656
 }
+
 
 
 
@@ -24440,82 +20756,30 @@ __declspec(naked) void FUN_10c76860(void)
 __declspec(naked) void FUN_10c76880(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm push ebp
-  __asm push esi
-  __asm mov esi, ecx
-  __asm push edi
-  __asm cmp esi, eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x57 __asm _emit 0x3b __asm _emit 0xf0
   __asm je LAB_10c76946
-  __asm mov ebx, dword ptr [eax + 4]
-  __asm mov eax, dword ptr [eax]
-  __asm sub ebx, eax
-  __asm mov ecx, dword ptr [esi + 8]
-  __asm mov edx, ebx
-  __asm mov edi, dword ptr [esi]
-  __asm sub ecx, edi
-  __asm sar edx, 2
-  __asm sar ecx, 2
-  __asm mov dword ptr [esp + 0x14], eax
-  __asm cmp edx, ecx
+  __asm _emit 0x8b __asm _emit 0x58 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x2b __asm _emit 0xd8 __asm _emit 0x8b __asm _emit 0x4e __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xd3 __asm _emit 0x8b __asm _emit 0x3e __asm _emit 0x2b __asm _emit 0xcf
+  __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x02 __asm _emit 0xc1 __asm _emit 0xf9 __asm _emit 0x02 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x3b __asm _emit 0xd1
   __asm jbe LAB_10c76935
-  __asm cmp edx, 0x3fffffff
+  __asm _emit 0x81 __asm _emit 0xfa __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f
   __asm ja LAB_10c76955
-  __asm mov ebp, ecx
-  __asm mov eax, 0x3fffffff
-  __asm _emit 0xd1 __asm _emit 0xed
-  __asm sub eax, ebp
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov ebp, 0x3fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add ebp, ecx
-  __asm cmp ebp, edx
-  __asm cmovb ebp, edx
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x3b
-  __asm shl ecx, 2
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [edi - 4]
-  __asm add ecx, 0x23
-  __asm sub edi, edx
-  __asm lea eax, [edi - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x53
-  __asm mov edi, edx
-  __asm push ecx
-  __asm push edi
+  __asm _emit 0x8b __asm _emit 0xe9 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0xd1 __asm _emit 0xed __asm _emit 0x2b __asm _emit 0xc5 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbd
+  __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0xeb __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xe9 __asm _emit 0x3b __asm _emit 0xea __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xea __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74
+  __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x02 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x57 __asm _emit 0xfc __asm _emit 0x83
+  __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xfa __asm _emit 0x8d __asm _emit 0x47 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xfa __asm _emit 0x51 __asm _emit 0x57
   __asm call LAB_100131d8
-  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push ebp
-  __asm mov ecx, esi
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_10054458
-  __asm mov edi, eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [esi], edi
-  __asm mov dword ptr [esi + 4], edi
-  __asm lea ecx, [edi + ebp*4]
-  __asm mov dword ptr [esi + 8], ecx
-  __asm push ebx
-  __asm push eax
-  __asm push edi
+  __asm _emit 0x8b __asm _emit 0xf8 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x89 __asm _emit 0x7e __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xaf __asm _emit 0x89 __asm _emit 0x4e
+  __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x50 __asm _emit 0x57
   __asm call LAB_1148cdf3
-  __asm lea eax, [ebx + edi]
-  __asm add esp, 0xc
-  __asm mov dword ptr [esi + 4], eax
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 4
+  __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2
+  __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm call LAB_100965ab
 }
+
 
 
 
@@ -24527,82 +20791,30 @@ __declspec(naked) void FUN_10c76880(void)
 __declspec(naked) void FUN_10c769a0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm push ebp
-  __asm push esi
-  __asm mov esi, ecx
-  __asm push edi
-  __asm cmp esi, eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x57 __asm _emit 0x3b __asm _emit 0xf0
   __asm je LAB_10c76a66
-  __asm mov ebx, dword ptr [eax + 4]
-  __asm mov eax, dword ptr [eax]
-  __asm sub ebx, eax
-  __asm mov ecx, dword ptr [esi + 8]
-  __asm mov edx, ebx
-  __asm mov edi, dword ptr [esi]
-  __asm sub ecx, edi
-  __asm sar edx, 3
-  __asm sar ecx, 3
-  __asm mov dword ptr [esp + 0x14], eax
-  __asm cmp edx, ecx
+  __asm _emit 0x8b __asm _emit 0x58 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x2b __asm _emit 0xd8 __asm _emit 0x8b __asm _emit 0x4e __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xd3 __asm _emit 0x8b __asm _emit 0x3e __asm _emit 0x2b __asm _emit 0xcf
+  __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x03 __asm _emit 0xc1 __asm _emit 0xf9 __asm _emit 0x03 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x3b __asm _emit 0xd1
   __asm jbe LAB_10c76a55
-  __asm cmp edx, 0x1fffffff
+  __asm _emit 0x81 __asm _emit 0xfa __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f
   __asm ja LAB_10c76a75
-  __asm mov ebp, ecx
-  __asm mov eax, 0x1fffffff
-  __asm _emit 0xd1 __asm _emit 0xed
-  __asm sub eax, ebp
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov ebp, 0x1fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add ebp, ecx
-  __asm cmp ebp, edx
-  __asm cmovb ebp, edx
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x3b
-  __asm shl ecx, 3
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [edi - 4]
-  __asm add ecx, 0x23
-  __asm sub edi, edx
-  __asm lea eax, [edi - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x53
-  __asm mov edi, edx
-  __asm push ecx
-  __asm push edi
+  __asm _emit 0x8b __asm _emit 0xe9 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xd1 __asm _emit 0xed __asm _emit 0x2b __asm _emit 0xc5 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbd
+  __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xeb __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xe9 __asm _emit 0x3b __asm _emit 0xea __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xea __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74
+  __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x03 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x57 __asm _emit 0xfc __asm _emit 0x83
+  __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xfa __asm _emit 0x8d __asm _emit 0x47 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xfa __asm _emit 0x51 __asm _emit 0x57
   __asm call LAB_100131d8
-  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push ebp
-  __asm mov ecx, esi
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_1007d9a7
-  __asm mov edi, eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [esi], edi
-  __asm mov dword ptr [esi + 4], edi
-  __asm lea ecx, [edi + ebp*8]
-  __asm mov dword ptr [esi + 8], ecx
-  __asm push ebx
-  __asm push eax
-  __asm push edi
+  __asm _emit 0x8b __asm _emit 0xf8 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x89 __asm _emit 0x7e __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xef __asm _emit 0x89 __asm _emit 0x4e
+  __asm _emit 0x08 __asm _emit 0x53 __asm _emit 0x50 __asm _emit 0x57
   __asm call LAB_1148cdf3
-  __asm lea eax, [ebx + edi]
-  __asm add esp, 0xc
-  __asm mov dword ptr [esi + 4], eax
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 4
+  __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2
+  __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm call LAB_100188c7
 }
+
 
 
 
@@ -24614,35 +20826,13 @@ __declspec(naked) void FUN_10c769a0(void)
 __declspec(naked) void FUN_10c76c00(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov dl, byte ptr [ecx + 1]
-  __asm push ebx
-  __asm cmp dl, byte ptr [eax + 1]
-  __asm _emit 0x76 __asm _emit 0x0e
-  __asm mov eax, 1
-  __asm test eax, eax
-  __asm pop ebx
-  __asm setne al
-  __asm ret 4
-  __asm _emit 0x75 __asm _emit 0x21
-  __asm mov dl, byte ptr [ecx + 2]
-  __asm cmp dl, byte ptr [eax + 2]
-  __asm _emit 0x77 __asm _emit 0xe8 __asm _emit 0x75 __asm _emit 0x17
-  __asm mov ecx, dword ptr [ecx + 4]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm cmp ecx, eax
-  __asm _emit 0x77 __asm _emit 0xdc __asm _emit 0x75 __asm _emit 0x0b
-  __asm xor eax, eax
-  __asm test eax, eax
-  __asm pop ebx
-  __asm setne al
-  __asm ret 4
-  __asm or eax, 0xffffffff
-  __asm test eax, eax
-  __asm pop ebx
-  __asm setne al
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8a __asm _emit 0x51 __asm _emit 0x01 __asm _emit 0x53 __asm _emit 0x3a __asm _emit 0x50 __asm _emit 0x01 __asm _emit 0x76 __asm _emit 0x0e __asm _emit 0xb8 __asm _emit 0x01 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x5b __asm _emit 0x0f __asm _emit 0x95 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x21 __asm _emit 0x8a __asm _emit 0x51 __asm _emit 0x02
+  __asm _emit 0x3a __asm _emit 0x50 __asm _emit 0x02 __asm _emit 0x77 __asm _emit 0xe8 __asm _emit 0x75 __asm _emit 0x17 __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x77
+  __asm _emit 0xdc __asm _emit 0x75 __asm _emit 0x0b __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x5b __asm _emit 0x0f __asm _emit 0x95 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc8
+  __asm _emit 0xff __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x5b __asm _emit 0x0f __asm _emit 0x95 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -24718,13 +20908,9 @@ undefined4 __fastcall FUN_10c76db0(undefined4 *param_1)
 __declspec(naked) void FUN_10c76dc0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov edx, dword ptr [ecx]
-  __asm mov dword ptr [eax], edx
-  __asm inc edx
-  __asm mov dword ptr [ecx], edx
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x42 __asm _emit 0x89 __asm _emit 0x11 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -24810,22 +20996,13 @@ void __stdcall FUN_10c76e30(void *param_1,void *param_2,size_t param_3,size_t pa
 __declspec(naked) void FUN_10c76e80(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm push dword ptr [esp + 0xc]
-  __asm mov esi, ecx
-  __asm mov ecx, dword ptr [esi]
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x0e
   __asm call LAB_1002630f
-  __asm push dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [esi]
-  __asm mov bl, al
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x8a __asm _emit 0xd8
   __asm call LAB_1002630f
-  __asm cmp bl, al
-  __asm pop esi
-  __asm sete al
-  __asm pop ebx
-  __asm ret 8
+  __asm _emit 0x3a __asm _emit 0xd8 __asm _emit 0x5e __asm _emit 0x0f __asm _emit 0x94 __asm _emit 0xc0 __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -24849,24 +21026,13 @@ bool __stdcall FUN_10c76eb0(char param_1,char param_2)
 __declspec(naked) void FUN_10c76ed0(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm push dword ptr [esp + 0xc]
-  __asm mov esi, ecx
-  __asm mov ecx, dword ptr [esi]
-  __asm mov ecx, dword ptr [ecx + 4]
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x04
   __asm call dword ptr [LAB_122fc300]
-  __asm mov ecx, dword ptr [esi]
-  __asm mov bl, al
-  __asm push dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [ecx + 4]
+  __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x8a __asm _emit 0xd8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x04
   __asm call dword ptr [LAB_122fc300]
-  __asm cmp bl, al
-  __asm pop esi
-  __asm sete al
-  __asm pop ebx
-  __asm ret 8
+  __asm _emit 0x3a __asm _emit 0xd8 __asm _emit 0x5e __asm _emit 0x0f __asm _emit 0x94 __asm _emit 0xc0 __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -24878,24 +21044,13 @@ __declspec(naked) void FUN_10c76ed0(void)
 __declspec(naked) void FUN_10c76f10(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm push dword ptr [esp + 0xc]
-  __asm mov esi, ecx
-  __asm mov ecx, dword ptr [esi]
-  __asm mov ecx, dword ptr [ecx + 4]
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x04
   __asm call dword ptr [LAB_122fc300]
-  __asm mov ecx, dword ptr [esi]
-  __asm mov bl, al
-  __asm push dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [ecx + 4]
+  __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x8a __asm _emit 0xd8 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x04
   __asm call dword ptr [LAB_122fc300]
-  __asm cmp bl, al
-  __asm pop esi
-  __asm sete al
-  __asm pop ebx
-  __asm ret 8
+  __asm _emit 0x3a __asm _emit 0xd8 __asm _emit 0x5e __asm _emit 0x0f __asm _emit 0x94 __asm _emit 0xc0 __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -24907,14 +21062,10 @@ __declspec(naked) void FUN_10c76f10(void)
 __declspec(naked) void FUN_10c76f50(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm mov eax, dword ptr [ecx]
-  __asm _emit 0xc7 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm jmp dword ptr [eax]
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xc7 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x01 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xff __asm _emit 0x20 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -25026,40 +21177,18 @@ undefined4 *  FUN_10c76fe0(uint *param_1,uint param_2)
 __declspec(naked) void FUN_10c77690(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm push 0x18
-  __asm mov esi, ecx
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0x6a __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0xf1
   __asm call LAB_10024f14
-  __asm mov edx, eax
-  __asm add esp, 4
-  __asm mov dword ptr [esp + 4], edx
-  __asm test edx, edx
-  __asm _emit 0x74 __asm _emit 0x2b
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x0f __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xd0 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xd2 __asm _emit 0x74 __asm _emit 0x2b __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24
+  __asm _emit 0x0c __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x0f __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7
+  __asm _emit 0x42 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [edx], offset LAB_1191a934
-  __asm mov dword ptr [edx + 0x14], eax
-  __asm _emit 0xeb __asm _emit 0x02
-  __asm xor edx, edx
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov dword ptr [edx + 0x10], eax
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov ecx, dword ptr [eax + 0xc]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0f
-  __asm mov dword ptr [edx + 0xc], ecx
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov eax, dword ptr [eax + 0xc]
-  __asm mov dword ptr [eax + 0x10], edx
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov dword ptr [eax + 0xc], edx
-  __asm mov dword ptr [esi + 4], edx
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x89 __asm _emit 0x42 __asm _emit 0x14 __asm _emit 0xeb __asm _emit 0x02 __asm _emit 0x33 __asm _emit 0xd2 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x42 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04
+  __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0f __asm _emit 0x89 __asm _emit 0x4a __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x0c
+  __asm _emit 0x89 __asm _emit 0x50 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x50 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x56 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00
 }
+
 
 
 
@@ -25084,15 +21213,12 @@ void FUN_10c77720(void)
 __declspec(naked) void FUN_10c77b00(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm add eax, 0x14
-  __asm push eax
-  __asm push dword ptr [esp + 0x10]
-  __asm push dword ptr [esp + 0x10]
-  __asm push dword ptr [esp + 0x10]
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x14 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0xff
+  __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10
   __asm call LAB_1009552f
-  __asm ret 0xc
+  __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -25130,38 +21256,19 @@ void FUN_10c77c20(void)
 __declspec(naked) void FUN_10c78470(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm push 0x20
-  __asm mov esi, ecx
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0x6a __asm _emit 0x20 __asm _emit 0x8b __asm _emit 0xf1
   __asm call LAB_10024f14
-  __asm mov edx, eax
-  __asm add esp, 4
-  __asm mov dword ptr [esp + 4], edx
-  __asm test edx, edx
-  __asm _emit 0x74 __asm _emit 0x39 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xd0 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xd2 __asm _emit 0x74 __asm _emit 0x39 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x04
+  __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [edx], offset LAB_1191ad00
   __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42
-  __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xeb __asm _emit 0x02
-  __asm xor edx, edx
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov dword ptr [edx + 0x10], eax
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov ecx, dword ptr [eax + 0xc]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0f
-  __asm mov dword ptr [edx + 0xc], ecx
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov eax, dword ptr [eax + 0xc]
-  __asm mov dword ptr [eax + 0x10], edx
-  __asm mov eax, dword ptr [esi + 4]
-  __asm mov dword ptr [eax + 0xc], edx
-  __asm mov dword ptr [esi + 4], edx
-  __asm pop esi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xeb __asm _emit 0x02 __asm _emit 0x33 __asm _emit 0xd2 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x42 __asm _emit 0x10 __asm _emit 0x8b
+  __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0f __asm _emit 0x89 __asm _emit 0x4a __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8b
+  __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x50 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x50 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x56 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0x59
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -25206,19 +21313,10 @@ void FUN_10c78510(void)
 __declspec(naked) void FUN_10c78bc0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [eax + 4]
-  __asm cmp eax, 0x14
-  __asm _emit 0x74 __asm _emit 0x0f
-  __asm cmp eax, 8
-  __asm _emit 0x74 __asm _emit 0x0a
-  __asm cmp eax, 0xd
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm xor al, al
-  __asm ret 4
-  __asm mov al, 1
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x14 __asm _emit 0x74 __asm _emit 0x0f __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x08 __asm _emit 0x74
+  __asm _emit 0x0a __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x0d __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0x32 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0xb0 __asm _emit 0x01 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -25243,59 +21341,25 @@ void FUN_10c78e00(void)
 __declspec(naked) void FUN_10c78e10(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm push edi
-  __asm push 0x14
-  __asm mov edi, ecx
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x6a __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xf9
   __asm call LAB_10024f14
-  __asm mov esi, eax
-  __asm add esp, 4
-  __asm mov dword ptr [esp + 8], esi
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x11 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04
+  __asm _emit 0x11 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [esi], offset LAB_1191a940
-  __asm _emit 0xeb __asm _emit 0x02
-  __asm xor esi, esi
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [esi + 0x10], eax
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov ecx, dword ptr [eax + 0xc]
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0f
-  __asm mov dword ptr [esi + 0xc], ecx
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov eax, dword ptr [eax + 0xc]
-  __asm mov dword ptr [eax + 0x10], esi
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov dword ptr [eax + 0xc], esi
-  __asm push 0x1c
-  __asm mov dword ptr [edi + 4], esi
+  __asm _emit 0xeb __asm _emit 0x02 __asm _emit 0x33 __asm _emit 0xf6 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x0c
+  __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0f __asm _emit 0x89 __asm _emit 0x4e __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x10
+  __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x0c __asm _emit 0x6a __asm _emit 0x1c __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [esp + 8], eax
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x2e __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x2e __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x10 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [eax], offset LAB_1191a94c
-  __asm mov dword ptr [eax + 0x14], esi
-  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xeb __asm _emit 0x02
-  __asm xor eax, eax
-  __asm mov ecx, dword ptr [esp + 0x10]
-  __asm pop edi
-  __asm mov edx, dword ptr [ecx + 0xc]
-  __asm mov ecx, dword ptr [edx + 0x10]
-  __asm mov dword ptr [ecx + 0xc], eax
-  __asm mov ecx, dword ptr [edx + 0x10]
-  __asm mov dword ptr [eax + 0x10], ecx
-  __asm mov dword ptr [edx + 0x10], eax
-  __asm mov dword ptr [eax + 0xc], edx
-  __asm mov eax, esi
-  __asm pop esi
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x89 __asm _emit 0x70 __asm _emit 0x14 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xeb __asm _emit 0x02 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0x8b __asm _emit 0x4c
+  __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0x51 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x4a __asm _emit 0x10 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x42 __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x50 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -25307,54 +21371,21 @@ __declspec(naked) void FUN_10c78e10(void)
 __declspec(naked) void FUN_10c79070(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm cmp esi, 0x1000
-  __asm _emit 0x72 __asm _emit 0x34
-  __asm lea eax, [esi + 0x23]
-  __asm cmp eax, esi
-  __asm _emit 0x76 __asm _emit 0x5a
-  __asm push eax
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x81 __asm _emit 0xfe __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x34
+  __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc6 __asm _emit 0x76 __asm _emit 0x5a __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x18
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm mov dword ptr [edi], eax
-  __asm mov dword ptr [edi + 4], eax
-  __asm add eax, esi
-  __asm mov dword ptr [edi + 8], eax
-  __asm pop edi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x18 __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc6 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x18
-  __asm push esi
+  __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74 __asm _emit 0x18 __asm _emit 0x56
   __asm call LAB_10024f14
-  __asm mov dword ptr [edi], eax
-  __asm add esp, 4
-  __asm mov dword ptr [edi + 4], eax
-  __asm add eax, esi
-  __asm mov dword ptr [edi + 8], eax
-  __asm pop edi
-  __asm pop esi
-  __asm ret 4
-  __asm xor eax, eax
-  __asm mov dword ptr [edi], eax
-  __asm mov dword ptr [edi + 4], eax
-  __asm mov eax, esi
-  __asm mov dword ptr [edi + 8], eax
-  __asm pop edi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x03 __asm _emit 0xc6 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2
+  __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x5f __asm _emit 0x5e
+  __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -25366,20 +21397,11 @@ __declspec(naked) void FUN_10c79070(void)
 __declspec(naked) void FUN_10c79110(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm push esi
-  __asm mov edi, ecx
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf9
   __asm call LAB_1007d9a7
-  __asm mov dword ptr [edi], eax
-  __asm mov dword ptr [edi + 4], eax
-  __asm lea eax, [eax + esi*8]
-  __asm mov dword ptr [edi + 8], eax
-  __asm pop edi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x89 __asm _emit 0x07 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xf0 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -25391,25 +21413,12 @@ __declspec(naked) void FUN_10c79110(void)
 __declspec(naked) void FUN_10c79170(void)
 
 {
-  __asm mov edx, dword ptr [ecx + 8]
-  __asm sub edx, dword ptr [ecx]
-  __asm mov ecx, 0x1fffffff
-  __asm sar edx, 3
-  __asm push esi
-  __asm mov esi, edx
-  __asm _emit 0xd1 __asm _emit 0xee
-  __asm sub ecx, esi
-  __asm cmp edx, ecx
-  __asm _emit 0x76 __asm _emit 0x09
-  __asm mov eax, 0x1fffffff
-  __asm pop esi
-  __asm ret 4
-  __asm lea eax, [esi + edx]
-  __asm cmp eax, dword ptr [esp + 8]
-  __asm pop esi
-  __asm cmovb eax, dword ptr [esp + 4]
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x51 __asm _emit 0x08 __asm _emit 0x2b __asm _emit 0x11 __asm _emit 0xb9 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x03 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf2
+  __asm _emit 0xd1 __asm _emit 0xee __asm _emit 0x2b __asm _emit 0xce __asm _emit 0x3b __asm _emit 0xd1 __asm _emit 0x76 __asm _emit 0x09 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x16 __asm _emit 0x3b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00
 }
+
 
 
 
@@ -25421,25 +21430,12 @@ __declspec(naked) void FUN_10c79170(void)
 __declspec(naked) void FUN_10c791b0(void)
 
 {
-  __asm mov edx, dword ptr [ecx + 8]
-  __asm sub edx, dword ptr [ecx]
-  __asm mov ecx, 0x1fffffff
-  __asm sar edx, 3
-  __asm push esi
-  __asm mov esi, edx
-  __asm _emit 0xd1 __asm _emit 0xee
-  __asm sub ecx, esi
-  __asm cmp edx, ecx
-  __asm _emit 0x76 __asm _emit 0x09
-  __asm mov eax, 0x1fffffff
-  __asm pop esi
-  __asm ret 4
-  __asm lea eax, [esi + edx]
-  __asm cmp eax, dword ptr [esp + 8]
-  __asm pop esi
-  __asm cmovb eax, dword ptr [esp + 4]
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x51 __asm _emit 0x08 __asm _emit 0x2b __asm _emit 0x11 __asm _emit 0xb9 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x03 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf2
+  __asm _emit 0xd1 __asm _emit 0xee __asm _emit 0x2b __asm _emit 0xce __asm _emit 0x3b __asm _emit 0xd1 __asm _emit 0x76 __asm _emit 0x09 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x16 __asm _emit 0x3b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00
 }
+
 
 
 
@@ -25451,30 +21447,12 @@ __declspec(naked) void FUN_10c791b0(void)
 __declspec(naked) void FUN_10c791f0(void)
 
 {
-  __asm mov edx, dword ptr [ecx + 8]
-  __asm mov eax, 0x2aaaaaab
-  __asm sub edx, dword ptr [ecx]
-  __asm mov ecx, 0x15555555
-  __asm imul edx
-  __asm push esi
-  __asm _emit 0xd1 __asm _emit 0xfa
-  __asm mov esi, edx
-  __asm shr esi, 0x1f
-  __asm add esi, edx
-  __asm mov edx, esi
-  __asm _emit 0xd1 __asm _emit 0xea
-  __asm sub ecx, edx
-  __asm cmp esi, ecx
-  __asm _emit 0x76 __asm _emit 0x09
-  __asm mov eax, 0x15555555
-  __asm pop esi
-  __asm ret 4
-  __asm lea eax, [edx + esi]
-  __asm cmp eax, dword ptr [esp + 8]
-  __asm pop esi
-  __asm cmovb eax, dword ptr [esp + 4]
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x51 __asm _emit 0x08 __asm _emit 0xb8 __asm _emit 0xab __asm _emit 0xaa __asm _emit 0xaa __asm _emit 0x2a __asm _emit 0x2b __asm _emit 0x11 __asm _emit 0xb9 __asm _emit 0x55 __asm _emit 0x55 __asm _emit 0x55 __asm _emit 0x15 __asm _emit 0xf7
+  __asm _emit 0xea __asm _emit 0x56 __asm _emit 0xd1 __asm _emit 0xfa __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0xc1 __asm _emit 0xee __asm _emit 0x1f __asm _emit 0x03 __asm _emit 0xf2 __asm _emit 0x8b __asm _emit 0xd6 __asm _emit 0xd1 __asm _emit 0xea __asm _emit 0x2b
+  __asm _emit 0xca __asm _emit 0x3b __asm _emit 0xf1 __asm _emit 0x76 __asm _emit 0x09 __asm _emit 0xb8 __asm _emit 0x55 __asm _emit 0x55 __asm _emit 0x55 __asm _emit 0x15 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x04
+  __asm _emit 0x32 __asm _emit 0x3b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -25486,60 +21464,23 @@ __declspec(naked) void FUN_10c791f0(void)
 __declspec(naked) void FUN_10c79e40(void)
 
 {
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 8]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm cmp ebx, 0x3fffffff
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x81 __asm _emit 0xfb __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f
   __asm ja LAB_10c79eda
-  __asm mov edx, dword ptr [esi + 8]
-  __asm mov eax, 0x3fffffff
-  __asm mov ecx, dword ptr [esi]
-  __asm sub edx, ecx
-  __asm sar edx, 2
-  __asm push edi
-  __asm mov edi, edx
-  __asm _emit 0xd1 __asm _emit 0xef
-  __asm sub eax, edi
-  __asm cmp edx, eax
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov edi, 0x3fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add edi, edx
-  __asm cmp edi, ebx
-  __asm cmovb edi, ebx
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x3b
-  __asm shl edx, 2
-  __asm cmp edx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov ebx, dword ptr [ecx - 4]
-  __asm add edx, 0x23
-  __asm sub ecx, ebx
-  __asm lea eax, [ecx - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x39
-  __asm mov ecx, ebx
-  __asm push edx
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x56 __asm _emit 0x08 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x2b __asm _emit 0xd1 __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x02 __asm _emit 0x57
+  __asm _emit 0x8b __asm _emit 0xfa __asm _emit 0xd1 __asm _emit 0xef __asm _emit 0x2b __asm _emit 0xc7 __asm _emit 0x3b __asm _emit 0xd0 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbf __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0xeb
+  __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xfa __asm _emit 0x3b __asm _emit 0xfb __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xfb __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0xe2 __asm _emit 0x02 __asm _emit 0x81
+  __asm _emit 0xfa __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x59 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc2 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xcb __asm _emit 0x8d
+  __asm _emit 0x41 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x39 __asm _emit 0x8b __asm _emit 0xcb __asm _emit 0x52 __asm _emit 0x51
   __asm call LAB_100131d8
-  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push edi
-  __asm mov ecx, esi
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_10054458
-  __asm mov dword ptr [esi], eax
-  __asm mov dword ptr [esi + 4], eax
-  __asm lea eax, [eax + edi*4]
-  __asm pop edi
-  __asm mov dword ptr [esi + 8], eax
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 4
+  __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xb8 __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm call LAB_100965ab
 }
+
 
 
 
@@ -25551,60 +21492,23 @@ __declspec(naked) void FUN_10c79e40(void)
 __declspec(naked) void FUN_10c79f10(void)
 
 {
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 8]
-  __asm push esi
-  __asm mov esi, ecx
-  __asm cmp ebx, 0x1fffffff
+  __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x81 __asm _emit 0xfb __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f
   __asm ja LAB_10c79faa
-  __asm mov edx, dword ptr [esi + 8]
-  __asm mov eax, 0x1fffffff
-  __asm mov ecx, dword ptr [esi]
-  __asm sub edx, ecx
-  __asm sar edx, 3
-  __asm push edi
-  __asm mov edi, edx
-  __asm _emit 0xd1 __asm _emit 0xef
-  __asm sub eax, edi
-  __asm cmp edx, eax
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov edi, 0x1fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add edi, edx
-  __asm cmp edi, ebx
-  __asm cmovb edi, ebx
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x3b
-  __asm shl edx, 3
-  __asm cmp edx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov ebx, dword ptr [ecx - 4]
-  __asm add edx, 0x23
-  __asm sub ecx, ebx
-  __asm lea eax, [ecx - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x39
-  __asm mov ecx, ebx
-  __asm push edx
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x56 __asm _emit 0x08 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x2b __asm _emit 0xd1 __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x03 __asm _emit 0x57
+  __asm _emit 0x8b __asm _emit 0xfa __asm _emit 0xd1 __asm _emit 0xef __asm _emit 0x2b __asm _emit 0xc7 __asm _emit 0x3b __asm _emit 0xd0 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbf __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xeb
+  __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xfa __asm _emit 0x3b __asm _emit 0xfb __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xfb __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0xe2 __asm _emit 0x03 __asm _emit 0x81
+  __asm _emit 0xfa __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x59 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc2 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xcb __asm _emit 0x8d
+  __asm _emit 0x41 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x39 __asm _emit 0x8b __asm _emit 0xcb __asm _emit 0x52 __asm _emit 0x51
   __asm call LAB_100131d8
-  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push edi
-  __asm mov ecx, esi
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_1007d9a7
-  __asm mov dword ptr [esi], eax
-  __asm mov dword ptr [esi + 4], eax
-  __asm lea eax, [eax + edi*8]
-  __asm pop edi
-  __asm mov dword ptr [esi + 8], eax
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 4
+  __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xf8 __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm call LAB_100188c7
 }
+
 
 
 
@@ -25627,79 +21531,28 @@ __declspec(naked) void FUN_10c79f10(void)
 __declspec(naked) void FUN_10c7a0b0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm push ebp
-  __asm push esi
-  __asm mov ebp, dword ptr [eax + 4]
-  __asm mov eax, dword ptr [eax]
-  __asm sub ebp, eax
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov dword ptr [esp + 0x14], eax
-  __asm mov edx, ebp
-  __asm sar edx, 2
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm mov esi, dword ptr [edi]
-  __asm sub ecx, esi
-  __asm sar ecx, 2
-  __asm cmp edx, ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x68 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x2b __asm _emit 0xe8 __asm _emit 0x57 __asm _emit 0x8b
+  __asm _emit 0xf9 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xd5 __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x37 __asm _emit 0x2b
+  __asm _emit 0xce __asm _emit 0xc1 __asm _emit 0xf9 __asm _emit 0x02 __asm _emit 0x3b __asm _emit 0xd1
   __asm jbe LAB_10c7a15d
-  __asm cmp edx, 0x3fffffff
+  __asm _emit 0x81 __asm _emit 0xfa __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f
   __asm ja LAB_10c7a17b
-  __asm mov ebx, ecx
-  __asm mov eax, 0x3fffffff
-  __asm _emit 0xd1 __asm _emit 0xeb
-  __asm sub eax, ebx
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov ebx, 0x3fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add ebx, ecx
-  __asm cmp ebx, edx
-  __asm cmovb ebx, edx
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x3b
-  __asm shl ecx, 2
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [esi - 4]
-  __asm add ecx, 0x23
-  __asm sub esi, edx
-  __asm lea eax, [esi - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x51
-  __asm mov esi, edx
-  __asm push ecx
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0xd1 __asm _emit 0xeb __asm _emit 0x2b __asm _emit 0xc3 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbb
+  __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x3f __asm _emit 0xeb __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xd9 __asm _emit 0x3b __asm _emit 0xda __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xda __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74
+  __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x02 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x56 __asm _emit 0xfc __asm _emit 0x83
+  __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xf2 __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x51 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push ebx
-  __asm mov ecx, edi
+  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_10054458
-  __asm mov esi, eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [edi], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm lea ecx, [esi + ebx*4]
-  __asm mov dword ptr [edi + 8], ecx
-  __asm push ebp
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x9e __asm _emit 0x89 __asm _emit 0x4f
+  __asm _emit 0x08 __asm _emit 0x55 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [esi + ebp]
-  __asm mov dword ptr [edi + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x2e __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm call LAB_100965ab
 }
+
 
 
 
@@ -25711,79 +21564,28 @@ __declspec(naked) void FUN_10c7a0b0(void)
 __declspec(naked) void FUN_10c7a1c0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm push ebp
-  __asm push esi
-  __asm mov ebp, dword ptr [eax + 4]
-  __asm mov eax, dword ptr [eax]
-  __asm sub ebp, eax
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov dword ptr [esp + 0x14], eax
-  __asm mov edx, ebp
-  __asm sar edx, 3
-  __asm mov ecx, dword ptr [edi + 8]
-  __asm mov esi, dword ptr [edi]
-  __asm sub ecx, esi
-  __asm sar ecx, 3
-  __asm cmp edx, ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x68 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x2b __asm _emit 0xe8 __asm _emit 0x57 __asm _emit 0x8b
+  __asm _emit 0xf9 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0xd5 __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x03 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x37 __asm _emit 0x2b
+  __asm _emit 0xce __asm _emit 0xc1 __asm _emit 0xf9 __asm _emit 0x03 __asm _emit 0x3b __asm _emit 0xd1
   __asm jbe LAB_10c7a26d
-  __asm cmp edx, 0x1fffffff
+  __asm _emit 0x81 __asm _emit 0xfa __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f
   __asm ja LAB_10c7a28b
-  __asm mov ebx, ecx
-  __asm mov eax, 0x1fffffff
-  __asm _emit 0xd1 __asm _emit 0xeb
-  __asm sub eax, ebx
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x07
-  __asm mov ebx, 0x1fffffff
-  __asm _emit 0xeb __asm _emit 0x07
-  __asm add ebx, ecx
-  __asm cmp ebx, edx
-  __asm cmovb ebx, edx
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x3b
-  __asm shl ecx, 3
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [esi - 4]
-  __asm add ecx, 0x23
-  __asm sub esi, edx
-  __asm lea eax, [esi - 4]
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x51
-  __asm mov esi, edx
-  __asm push ecx
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0xb8 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xd1 __asm _emit 0xeb __asm _emit 0x2b __asm _emit 0xc3 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x07 __asm _emit 0xbb
+  __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0xeb __asm _emit 0x07 __asm _emit 0x03 __asm _emit 0xd9 __asm _emit 0x3b __asm _emit 0xda __asm _emit 0x0f __asm _emit 0x42 __asm _emit 0xda __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74
+  __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x03 __asm _emit 0x81 __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x56 __asm _emit 0xfc __asm _emit 0x83
+  __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xf2 __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x51 __asm _emit 0x56
   __asm call LAB_100131d8
-  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm add esp, 8
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push ebx
-  __asm mov ecx, edi
+  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0xcf
   __asm call LAB_1007d9a7
-  __asm mov esi, eax
-  __asm mov eax, dword ptr [esp + 0x14]
-  __asm mov dword ptr [edi], esi
-  __asm mov dword ptr [edi + 4], esi
-  __asm lea ecx, [esi + ebx*8]
-  __asm mov dword ptr [edi + 8], ecx
-  __asm push ebp
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x89 __asm _emit 0x37 __asm _emit 0x89 __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xde __asm _emit 0x89 __asm _emit 0x4f
+  __asm _emit 0x08 __asm _emit 0x55 __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm lea eax, [esi + ebp]
-  __asm mov dword ptr [edi + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x2e __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm call LAB_100188c7
 }
+
 
 
 
@@ -25795,12 +21597,9 @@ __declspec(naked) void FUN_10c7a1c0(void)
 __declspec(naked) void FUN_10c7a2f0(void)
 
 {
-  __asm dec dword ptr [ecx + 4]
-  __asm mov edx, dword ptr [ecx + 4]
-  __asm mov eax, dword ptr [ecx + 8]
-  __asm mov al, byte ptr [edx + eax]
-  __asm ret
+  __asm _emit 0xff __asm _emit 0x49 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x51 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8a __asm _emit 0x04 __asm _emit 0x02 __asm _emit 0xc3
 }
+
 
 
 
@@ -25860,28 +21659,11 @@ void __stdcall FUN_10c7a330(unsigned int recovered_unused_stack_0, unsigned int 
 __declspec(naked) void FUN_10c7a340(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm cmp esi, edi
-  __asm _emit 0x74 __asm _emit 0x1d
-  __asm nop
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x17
-  __asm mov ecx, esi
-  __asm lea eax, [esi + 0xc]
-  __asm mov esi, dword ptr [eax]
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push 1
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax]
-  __asm cmp esi, edi
-  __asm _emit 0x75 __asm _emit 0xe5
-  __asm pop edi
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x3b __asm _emit 0xf7 __asm _emit 0x74 __asm _emit 0x1d __asm _emit 0x66 __asm _emit 0x90
+  __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74 __asm _emit 0x17 __asm _emit 0x8b __asm _emit 0xce __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x30 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x6a __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x10 __asm _emit 0x3b __asm _emit 0xf7 __asm _emit 0x75 __asm _emit 0xe5 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -25893,97 +21675,27 @@ __declspec(naked) void FUN_10c7a340(void)
 __declspec(naked) void FUN_10c7a8c0(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm push ebp
-  __asm push esi
-  __asm push edi
-  __asm mov edi, ecx
-  __asm test dword ptr [edi + 0x5c], 0x100
-  __asm mov eax, dword ptr [edi]
-  __asm mov bl, byte ptr [eax]
-  __asm mov byte ptr [esp + 0x10], bl
-  __asm _emit 0x74 __asm _emit 0x18
-  __asm mov ecx, dword ptr [edi + 0x70]
-  __asm push dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [ecx + 4]
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0xf7 __asm _emit 0x47 __asm _emit 0x5c __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x07
+  __asm _emit 0x8a __asm _emit 0x18 __asm _emit 0x88 __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x74 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x70 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b
+  __asm _emit 0x49 __asm _emit 0x04
   __asm call dword ptr [LAB_122fc300]
-  __asm mov bl, al
-  __asm mov eax, dword ptr [edi]
-  __asm mov byte ptr [esp + 0x10], bl
-  __asm mov ebp, dword ptr [esp + 0x18]
-  __asm lea esi, [eax + 1]
-  __asm mov eax, dword ptr [ebp + 0x14]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x1f
-  __asm push eax
-  __asm push dword ptr [edi + 0x50]
-  __asm lea eax, [esp + 0x20]
-  __asm push dword ptr [edi]
-  __asm push eax
+  __asm _emit 0x8a __asm _emit 0xd8 __asm _emit 0x8b __asm _emit 0x07 __asm _emit 0x88 __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x6c __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0x8d __asm _emit 0x70 __asm _emit 0x01 __asm _emit 0x8b
+  __asm _emit 0x45 __asm _emit 0x14 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x1f __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x50 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0xff __asm _emit 0x37
+  __asm _emit 0x50
   __asm call LAB_10030f30
-  __asm add esp, 0x10
-  __asm mov eax, dword ptr [eax]
-  __asm cmp eax, dword ptr [edi]
-  __asm _emit 0x74 __asm _emit 0x06
-  __asm mov esi, eax
-  __asm mov cl, 1
-  __asm _emit 0xeb __asm _emit 0x5e
-  __asm mov eax, dword ptr [ebp + 0x20]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x33
-  __asm test dword ptr [edi + 0x5c], 0x800
-  __asm _emit 0x74 __asm _emit 0x13
-  __asm push dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [edi + 0x70]
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x3b __asm _emit 0x07 __asm _emit 0x74 __asm _emit 0x06 __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0xb1 __asm _emit 0x01 __asm _emit 0xeb __asm _emit 0x5e __asm _emit 0x8b
+  __asm _emit 0x45 __asm _emit 0x20 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x33 __asm _emit 0xf7 __asm _emit 0x47 __asm _emit 0x5c __asm _emit 0x00 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0x13 __asm _emit 0xff
+  __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x4f __asm _emit 0x70
   __asm call LAB_1002630f
-  __asm mov cl, al
-  __asm mov eax, dword ptr [ebp + 0x20]
-  __asm _emit 0xeb __asm _emit 0x02
-  __asm mov cl, bl
-  __asm push eax
-  __asm movzx eax, cl
-  __asm push eax
+  __asm _emit 0x8a __asm _emit 0xc8 __asm _emit 0x8b __asm _emit 0x45 __asm _emit 0x20 __asm _emit 0xeb __asm _emit 0x02 __asm _emit 0x8a __asm _emit 0xcb __asm _emit 0x50 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0xc1 __asm _emit 0x50
   __asm call LAB_1001445c
-  __asm add esp, 8
-  __asm test al, al
-  __asm _emit 0x74 __asm _emit 0x04
-  __asm mov cl, 1
-  __asm _emit 0xeb __asm _emit 0x24
-  __asm movzx edx, bl
-  __asm mov ebx, dword ptr [ebp + 0x18]
-  __asm test ebx, ebx
-  __asm _emit 0x74 __asm _emit 0x18
-  __asm mov ecx, edx
-  __asm mov eax, 1
-  __asm and ecx, 7
-  __asm shr edx, 3
-  __asm shl eax, cl
-  __asm test byte ptr [edx + ebx], al
-  __asm _emit 0x74 __asm _emit 0x04
-  __asm mov cl, 1
-  __asm _emit 0xeb __asm _emit 0x02
-  __asm xor cl, cl
-  __asm mov al, byte ptr [ebp + 8]
-  __asm and al, 1
-  __asm cmp cl, al
-  __asm _emit 0x75 __asm _emit 0x0a
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm xor al, al
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 4
-  __asm mov dword ptr [edi], esi
-  __asm mov al, 1
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x84 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x04 __asm _emit 0xb1 __asm _emit 0x01 __asm _emit 0xeb __asm _emit 0x24 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0xd3 __asm _emit 0x8b __asm _emit 0x5d
+  __asm _emit 0x18 __asm _emit 0x85 __asm _emit 0xdb __asm _emit 0x74 __asm _emit 0x18 __asm _emit 0x8b __asm _emit 0xca __asm _emit 0xb8 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xe1 __asm _emit 0x07 __asm _emit 0xc1
+  __asm _emit 0xea __asm _emit 0x03 __asm _emit 0xd3 __asm _emit 0xe0 __asm _emit 0x84 __asm _emit 0x04 __asm _emit 0x1a __asm _emit 0x74 __asm _emit 0x04 __asm _emit 0xb1 __asm _emit 0x01 __asm _emit 0xeb __asm _emit 0x02 __asm _emit 0x32 __asm _emit 0xc9 __asm _emit 0x8a
+  __asm _emit 0x45 __asm _emit 0x08 __asm _emit 0x24 __asm _emit 0x01 __asm _emit 0x3a __asm _emit 0xc8 __asm _emit 0x75 __asm _emit 0x0a __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x32 __asm _emit 0xc0 __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2
+  __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x37 __asm _emit 0xb0 __asm _emit 0x01 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -25995,17 +21707,11 @@ __declspec(naked) void FUN_10c7a8c0(void)
 __declspec(naked) void FUN_10c7bb40(void)
 
 {
-  __asm cmp byte ptr [ecx + 8], 0
-  __asm mov eax, dword ptr [esp + 4]
-  __asm _emit 0x74 __asm _emit 0x0d
-  __asm mov edx, dword ptr [ecx]
-  __asm mov ecx, dword ptr [ecx + 4]
-  __asm mov dword ptr [eax], edx
-  __asm mov dword ptr [eax + 4], ecx
-  __asm ret 4
-  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm ret 4
+  __asm _emit 0x80 __asm _emit 0x79 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x74 __asm _emit 0x0d __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x04 __asm _emit 0x89
+  __asm _emit 0x10 __asm _emit 0x89 __asm _emit 0x48 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -26017,55 +21723,20 @@ __declspec(naked) void FUN_10c7bb40(void)
 __declspec(naked) void FUN_10c7bb70(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push ebx
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x14]
-  __asm mov esi, dword ptr [eax + 0xc]
-  __asm mov ebx, dword ptr [edi + 0xc]
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [ecx + 4]
-  __asm mov dword ptr [ecx + 4], edi
-  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov dword ptr [eax + 0xc], edi
-  __asm mov eax, dword ptr [esi + 0x18]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0a
-  __asm nop
-  __asm mov esi, eax
-  __asm mov eax, dword ptr [esi + 0x18]
-  __asm test eax, eax
-  __asm _emit 0x75 __asm _emit 0xf7
-  __asm push 0x1c
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x8b __asm _emit 0x70 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x5f
+  __asm _emit 0x0c __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x79 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x47
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x78 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x18 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0a __asm _emit 0x90
+  __asm _emit 0x8b __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x18 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x75 __asm _emit 0xf7 __asm _emit 0x6a __asm _emit 0x1c
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x3e
-  __asm mov dword ptr [eax + 0x14], edi
-  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40
-  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x3e __asm _emit 0x89 __asm _emit 0x78 __asm _emit 0x14 __asm _emit 0xc7 __asm _emit 0x40
+  __asm _emit 0x04 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov dword ptr [eax], offset LAB_1191a94c
-  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov dword ptr [esi + 0x18], eax
-  __asm mov dword ptr [eax + 0xc], ebx
-  __asm mov eax, dword ptr [esi + 0x18]
-  __asm pop edi
-  __asm pop esi
-  __asm mov dword ptr [ebx + 0x10], eax
-  __asm pop ebx
-  __asm ret 8
-  __asm xor eax, eax
-  __asm mov dword ptr [esi + 0x18], eax
-  __asm pop edi
-  __asm mov dword ptr [eax + 0xc], ebx
-  __asm mov eax, dword ptr [esi + 0x18]
-  __asm pop esi
-  __asm mov dword ptr [ebx + 0x10], eax
-  __asm pop ebx
-  __asm ret 8
+  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x18 __asm _emit 0x89 __asm _emit 0x58 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x18
+  __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x10 __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x18 __asm _emit 0x5f __asm _emit 0x89
+  __asm _emit 0x58 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x18 __asm _emit 0x5e __asm _emit 0x89 __asm _emit 0x43 __asm _emit 0x10 __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -26114,23 +21785,13 @@ undefined4 __fastcall FUN_10c7bd30(undefined4 *param_1)
 __declspec(naked) void FUN_10c7bd60(void)
 
 {
-  __asm push esi
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0xc]
-  __asm mov esi, ecx
-  __asm push edi
-  __asm push dword ptr [esi + 8]
+  __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x57 __asm _emit 0xff __asm _emit 0x76 __asm _emit 0x08
   __asm call dword ptr [LAB_122fc7a8]
-  __asm add esp, 8
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0a
-  __asm mov dword ptr [esi], edi
-  __asm pop edi
-  __asm mov dword ptr [esi + 8], eax
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0a __asm _emit 0x89 __asm _emit 0x3e __asm _emit 0x5f __asm _emit 0x89 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00
   __asm call LAB_1148a066
 }
+
 
 
 
@@ -26142,14 +21803,12 @@ __declspec(naked) void FUN_10c7bd60(void)
 __declspec(naked) void FUN_10c7bda0(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 0x4c]
-  __asm cmp eax, dword ptr [esp + 4]
-  __asm _emit 0x75 __asm _emit 0x08
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x4c __asm _emit 0x3b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x75 __asm _emit 0x08
   __asm call LAB_1008a7ec
-  __asm ret 8
-  __asm push dword ptr [esp + 8]
+  __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_100287a4
 }
+
 
 
 
@@ -26461,19 +22120,12 @@ undefined4 __fastcall FUN_10c7c0a0(int param_1)
 __declspec(naked) void FUN_10c7c0b0(void)
 
 {
-  __asm push esi
-  __asm push dword ptr [esp + 8]
-  __asm mov esi, ecx
-  __asm push 0x10
+  __asm _emit 0x56 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x6a __asm _emit 0x10
   __asm call LAB_1000e435
-  __asm test eax, eax
-  __asm _emit 0x75 __asm _emit 0x04
-  __asm pop esi
-  __asm ret 4
-  __asm push 2
-  __asm mov ecx, esi
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x75 __asm _emit 0x04 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x6a __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_100287a4
 }
+
 
 
 
@@ -26485,28 +22137,16 @@ __declspec(naked) void FUN_10c7c0b0(void)
 __declspec(naked) void FUN_10c7c0e0(void)
 
 {
-  __asm mov edx, dword ptr [ecx + 0x50]
-  __asm push esi
-  __asm movsx esi, byte ptr [ecx + 0x48]
-  __asm test edx, 0x400000
-  __asm _emit 0x74 __asm _emit 0x16
-  __asm lea eax, [esi - 0x44]
-  __asm cmp eax, 0x33
-  __asm _emit 0x77 __asm _emit 0x31
+  __asm _emit 0x8b __asm _emit 0x51 __asm _emit 0x50 __asm _emit 0x56 __asm _emit 0x0f __asm _emit 0xbe __asm _emit 0x71 __asm _emit 0x48 __asm _emit 0xf7 __asm _emit 0xc2 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0x16
+  __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0xbc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x33 __asm _emit 0x77 __asm _emit 0x31
   __asm movzx eax, byte ptr [eax + LAB_10c7c144]
   __asm jmp dword ptr [eax*4 + LAB_10c7c13c]
-  __asm lea eax, [esi - 0x22]
-  __asm cmp eax, 0x5b
-  __asm _emit 0x77 __asm _emit 0x27
+  __asm _emit 0x8d __asm _emit 0x46 __asm _emit 0xde __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x5b __asm _emit 0x77 __asm _emit 0x27
   __asm movzx eax, byte ptr [eax + LAB_10c7c188]
   __asm jmp dword ptr [eax*4 + LAB_10c7c178]
-  __asm shr edx, 0x17
-  __asm _emit 0xeb __asm _emit 0x03
-  __asm shr edx, 0x18
-  __asm test dl, 1
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm mov dword ptr [ecx + 0x44], esi
+  __asm _emit 0xc1 __asm _emit 0xea __asm _emit 0x17 __asm _emit 0xeb __asm _emit 0x03 __asm _emit 0xc1 __asm _emit 0xea __asm _emit 0x18 __asm _emit 0xf6 __asm _emit 0xc2 __asm _emit 0x01 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x71 __asm _emit 0x44
 }
+
 
 
 
@@ -26534,24 +22174,16 @@ void FUN_10c7c2b0(int param_1,int param_2)
 __declspec(naked) void FUN_10c7c2e0(void)
 
 {
-  __asm mov edx, dword ptr [ecx + 0x50]
-  __asm movsx eax, byte ptr [ecx + 0x48]
-  __asm test edx, 0x400000
-  __asm _emit 0x74 __asm _emit 0x16
-  __asm add eax, -0x44
-  __asm cmp eax, 0x33
-  __asm _emit 0x77 __asm _emit 0x24
+  __asm _emit 0x8b __asm _emit 0x51 __asm _emit 0x50 __asm _emit 0x0f __asm _emit 0xbe __asm _emit 0x41 __asm _emit 0x48 __asm _emit 0xf7 __asm _emit 0xc2 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0x16 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0xbc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x33 __asm _emit 0x77 __asm _emit 0x24
   __asm movzx eax, byte ptr [eax + LAB_10c7c33c]
   __asm jmp dword ptr [eax*4 + LAB_10c7c334]
-  __asm add eax, -0x22
-  __asm cmp eax, 0x5b
-  __asm _emit 0x77 __asm _emit 0x23
+  __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0xde __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x5b __asm _emit 0x77 __asm _emit 0x23
   __asm movzx eax, byte ptr [eax + LAB_10c7c380]
   __asm jmp dword ptr [eax*4 + LAB_10c7c370]
-  __asm mov al, 1
-  __asm ret
-  __asm shr edx, 0x17
+  __asm _emit 0xb0 __asm _emit 0x01 __asm _emit 0xc3 __asm _emit 0xc1 __asm _emit 0xea __asm _emit 0x17
 }
+
 
 
 
@@ -26563,38 +22195,19 @@ __declspec(naked) void FUN_10c7c2e0(void)
 __declspec(naked) void FUN_10c7c460(void)
 
 {
-  __asm mov eax, dword ptr [ecx + 0x60]
-  __asm _emit 0xa9 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x25
-  __asm mov edx, dword ptr [ecx]
-  __asm cmp edx, dword ptr [ecx + 0x4c]
-  __asm _emit 0x75 __asm _emit 0x1e
-  __asm cmp edx, dword ptr [ecx + 0x50]
-  __asm _emit 0x75 __asm _emit 0x06 __asm _emit 0xa8 __asm _emit 0x0c
-  __asm sete al
-  __asm ret
-  __asm _emit 0xa8 __asm _emit 0x04 __asm _emit 0x75 __asm _emit 0x2a
-  __asm movzx eax, byte ptr [edx]
+  __asm _emit 0x8b __asm _emit 0x41 __asm _emit 0x60 __asm _emit 0xa9 __asm _emit 0x00 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x25 __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0x3b __asm _emit 0x51 __asm _emit 0x4c __asm _emit 0x75
+  __asm _emit 0x1e __asm _emit 0x3b __asm _emit 0x51 __asm _emit 0x50 __asm _emit 0x75 __asm _emit 0x06 __asm _emit 0xa8 __asm _emit 0x0c __asm _emit 0x0f __asm _emit 0x94 __asm _emit 0xc0 __asm _emit 0xc3 __asm _emit 0xa8 __asm _emit 0x04 __asm _emit 0x75 __asm _emit 0x2a
+  __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x02
   __asm cmp byte ptr [eax + LAB_1191a7c0], 0
-  __asm _emit 0x74 __asm _emit 0x1e
-  __asm mov al, 1
-  __asm ret
-  __asm mov edx, dword ptr [ecx]
-  __asm cmp edx, dword ptr [ecx + 0x50]
-  __asm _emit 0x75 __asm _emit 0x17 __asm _emit 0xa8 __asm _emit 0x08 __asm _emit 0x75 __asm _emit 0x10
-  __asm movzx eax, byte ptr [edx - 1]
+  __asm _emit 0x74 __asm _emit 0x1e __asm _emit 0xb0 __asm _emit 0x01 __asm _emit 0xc3 __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0x3b __asm _emit 0x51 __asm _emit 0x50 __asm _emit 0x75 __asm _emit 0x17 __asm _emit 0xa8 __asm _emit 0x08 __asm _emit 0x75 __asm _emit 0x10
+  __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x42 __asm _emit 0xff
   __asm cmp byte ptr [eax + LAB_1191a7c0], 0
-  __asm _emit 0x74 __asm _emit 0x03
-  __asm mov al, 1
-  __asm ret
-  __asm xor al, al
-  __asm ret
-  __asm movzx eax, byte ptr [edx - 1]
-  __asm movzx ecx, byte ptr [edx]
+  __asm _emit 0x74 __asm _emit 0x03 __asm _emit 0xb0 __asm _emit 0x01 __asm _emit 0xc3 __asm _emit 0x32 __asm _emit 0xc0 __asm _emit 0xc3 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x42 __asm _emit 0xff __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x0a
   __asm mov al, byte ptr [eax + LAB_1191a7c0]
   __asm cmp al, byte ptr [ecx + LAB_1191a7c0]
-  __asm setne al
-  __asm ret
+  __asm _emit 0x0f __asm _emit 0x95 __asm _emit 0xc0 __asm _emit 0xc3
 }
+
 
 
 
@@ -26606,10 +22219,11 @@ __declspec(naked) void FUN_10c7c460(void)
 __declspec(naked) void FUN_10c7c4e0(void)
 
 {
-  __asm movzx eax, byte ptr [esp + 4]
+  __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04
   __asm mov al, byte ptr [eax + LAB_1191a7c0]
-  __asm ret
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -26621,10 +22235,11 @@ __declspec(naked) void FUN_10c7c4e0(void)
 __declspec(naked) void FUN_10c7c4f0(void)
 
 {
-  __asm movzx eax, byte ptr [esp + 4]
+  __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04
   __asm mov al, byte ptr [eax + LAB_1191a7c0]
-  __asm ret
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -26713,13 +22328,11 @@ int __fastcall FUN_10c7cde0(int param_1)
 __declspec(naked) bool FUN_10c7cdf0(void)
 
 {
-  __asm push 3
-  __asm push 8
+  __asm _emit 0x6a __asm _emit 0x03 __asm _emit 0x6a __asm _emit 0x08
   __asm call LAB_1000e435
-  __asm cmp eax, 3
-  __asm setne al
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x03 __asm _emit 0x0f __asm _emit 0x95 __asm _emit 0xc0 __asm _emit 0xc3
 }
+
 
 
 
@@ -26779,92 +22392,39 @@ int __fastcall FUN_10c7ce40(int param_1)
 __declspec(naked) void FUN_10c7ce50(void)
 
 {
-  __asm push ecx
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, ecx
-  __asm xor ebx, ebx
-  __asm push edi
-  __asm or edi, 0xffffffff
-  __asm mov eax, dword ptr [esi + 0x4c]
-  __asm cmp eax, 0x2a
-  __asm _emit 0x74 __asm _emit 0x08
-  __asm cmp eax, 0x2b
-  __asm _emit 0x75 __asm _emit 0x47
-  __asm lea ebx, [edi + 2]
-  __asm mov eax, dword ptr [esi + 0x28]
-  __asm mov ecx, esi
-  __asm or dword ptr [eax + 8], 4
+  __asm _emit 0x51 __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x33 __asm _emit 0xdb __asm _emit 0x57 __asm _emit 0x83 __asm _emit 0xcf __asm _emit 0xff __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x4c __asm _emit 0x83 __asm _emit 0xf8
+  __asm _emit 0x2a __asm _emit 0x74 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x2b __asm _emit 0x75 __asm _emit 0x47 __asm _emit 0x8d __asm _emit 0x5f __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x28 __asm _emit 0x8b __asm _emit 0xce
+  __asm _emit 0x83 __asm _emit 0x48 __asm _emit 0x08 __asm _emit 0x04
   __asm call LAB_1008a7ec
-  __asm test dword ptr [esi + 0x50], 0x400
+  __asm _emit 0xf7 __asm _emit 0x46 __asm _emit 0x50 __asm _emit 0x00 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm je LAB_10c7cf1e
-  __asm cmp dword ptr [esi + 0x4c], 0x3f
+  __asm _emit 0x83 __asm _emit 0x7e __asm _emit 0x4c __asm _emit 0x3f
   __asm jne LAB_10c7cf1e
-  __asm mov ecx, esi
-  __asm mov byte ptr [esp + 0xc], 0
+  __asm _emit 0x8b __asm _emit 0xce __asm _emit 0xc6 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x00
   __asm call LAB_1008a7ec
-  __asm push dword ptr [esp + 0xc]
-  __asm lea ecx, [esi + 0x24]
-  __asm push edi
-  __asm push ebx
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x24 __asm _emit 0x57 __asm _emit 0x53
   __asm call LAB_1001f2fd
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret
-  __asm cmp eax, 0x3f
-  __asm _emit 0x75 __asm _emit 0x05
-  __asm lea edi, [eax - 0x3e]
-  __asm _emit 0xeb __asm _emit 0xb2
-  __asm cmp eax, 0x7b
-  __asm _emit 0x75 __asm _emit 0x73
+  __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc3 __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x3f __asm _emit 0x75 __asm _emit 0x05 __asm _emit 0x8d __asm _emit 0x78 __asm _emit 0xc2 __asm _emit 0xeb __asm _emit 0xb2 __asm _emit 0x83
+  __asm _emit 0xf8 __asm _emit 0x7b __asm _emit 0x75 __asm _emit 0x73
   __asm call LAB_1008a7ec
-  __asm push 0x7fffffff
-  __asm push 0xa
-  __asm mov ecx, esi
+  __asm _emit 0x68 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x7f __asm _emit 0x6a __asm _emit 0x0a __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_1000e435
-  __asm cmp eax, 0x7fffffff
-  __asm _emit 0x74 __asm _emit 0x5e
-  __asm mov eax, dword ptr [esi + 0x4c]
-  __asm mov ebx, dword ptr [esi + 0x44]
-  __asm cmp eax, 0x2c
-  __asm _emit 0x74 __asm _emit 0x04
-  __asm mov edi, ebx
-  __asm _emit 0xeb __asm _emit 0x20
-  __asm mov ecx, esi
+  __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x7f __asm _emit 0x74 __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x4c __asm _emit 0x8b __asm _emit 0x5e __asm _emit 0x44 __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x2c
+  __asm _emit 0x74 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xfb __asm _emit 0xeb __asm _emit 0x20 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_1008a7ec
-  __asm mov eax, dword ptr [esi + 0x4c]
-  __asm cmp eax, 0x7d
-  __asm _emit 0x74 __asm _emit 0x16
-  __asm mov ecx, esi
+  __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x4c __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x7d __asm _emit 0x74 __asm _emit 0x16 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_100520d1
-  __asm test al, al
-  __asm _emit 0x74 __asm _emit 0x35
-  __asm mov edi, dword ptr [esi + 0x44]
-  __asm mov eax, dword ptr [esi + 0x4c]
-  __asm cmp eax, 0x7d
-  __asm _emit 0x75 __asm _emit 0x2a
-  __asm cmp edi, -1
+  __asm _emit 0x84 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x35 __asm _emit 0x8b __asm _emit 0x7e __asm _emit 0x44 __asm _emit 0x8b __asm _emit 0x46 __asm _emit 0x4c __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x7d __asm _emit 0x75 __asm _emit 0x2a __asm _emit 0x83
+  __asm _emit 0xff __asm _emit 0xff
   __asm je LAB_10c7ce6b
-  __asm cmp edi, ebx
-  __asm _emit 0x7c __asm _emit 0x1d
+  __asm _emit 0x3b __asm _emit 0xfb __asm _emit 0x7c __asm _emit 0x1d
   __asm jmp LAB_10c7ce6b
-  __asm mov byte ptr [esp + 0xc], 1
-  __asm lea ecx, [esi + 0x24]
-  __asm push dword ptr [esp + 0xc]
-  __asm push edi
-  __asm push ebx
+  __asm _emit 0xc6 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x01 __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x24 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x57 __asm _emit 0x53
   __asm call LAB_1001f2fd
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm pop ecx
-  __asm ret
-  __asm push 7
-  __asm mov ecx, esi
+  __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0x59 __asm _emit 0xc3 __asm _emit 0x6a __asm _emit 0x07 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_100287a4
 }
+
 
 
 
@@ -26915,18 +22475,11 @@ void __fastcall FUN_10c7cfa0(undefined4 *param_1)
 __declspec(naked) void FUN_10c7cfb0(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x04 __asm _emit 0xf0 __asm _emit 0xff __asm _emit 0x46 __asm _emit 0x20
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74 __asm _emit 0x04 __asm _emit 0xf0 __asm _emit 0xff __asm _emit 0x46 __asm _emit 0x20
   __asm call LAB_1000f9a7
-  __asm mov dword ptr [edi], esi
-  __asm pop edi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x89 __asm _emit 0x37 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -26998,28 +22551,13 @@ undefined4 __fastcall FUN_10c7d3a0(int param_1)
 __declspec(naked) void FUN_10c7d3f0(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm test esi, esi
-  __asm _emit 0x74 __asm _emit 0x23
-  __asm push ebx
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x74 __asm _emit 0x23 __asm _emit 0x53
   __asm mov ebx, dword ptr [LAB_122fc7ac]
-  __asm push edi
-  __asm mov edi, esi
-  __asm mov esi, dword ptr [esi + 0x10]
-  __asm push dword ptr [edi + 0xc]
-  __asm call ebx
-  __asm push 0x14
-  __asm push edi
+  __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xfe __asm _emit 0x8b __asm _emit 0x76 __asm _emit 0x10 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x0c __asm _emit 0xff __asm _emit 0xd3 __asm _emit 0x6a __asm _emit 0x14 __asm _emit 0x57
   __asm call LAB_100131d8
-  __asm add esp, 0xc
-  __asm test esi, esi
-  __asm _emit 0x75 __asm _emit 0xe7
-  __asm pop edi
-  __asm pop ebx
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0xf6 __asm _emit 0x75 __asm _emit 0xe7 __asm _emit 0x5f __asm _emit 0x5b __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -27031,26 +22569,13 @@ __declspec(naked) void FUN_10c7d3f0(void)
 __declspec(naked) void FUN_10c7d8b0(void)
 
 {
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 8]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0x10]
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x1b __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xfd __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push eax
-  __asm push 0
-  __asm push esi
+  __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x1b __asm _emit 0x8d __asm _emit 0x04
+  __asm _emit 0xfd __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x50 __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x56
   __asm call LAB_1148ce0b
-  __asm add esp, 0xc
-  __asm lea eax, [esi + edi*8]
-  __asm pop edi
-  __asm pop esi
-  __asm ret 0xc
-  __asm pop edi
-  __asm mov eax, esi
-  __asm pop esi
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xfe __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x5e __asm _emit 0xc2
+  __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -27062,25 +22587,11 @@ __declspec(naked) void FUN_10c7d8b0(void)
 __declspec(naked) void FUN_10c7d930(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0xc]
-  __asm cmp eax, edi
-  __asm _emit 0x74 __asm _emit 0x1b
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x14]
-  __asm sub esi, eax
-  __asm mov ecx, dword ptr [eax]
-  __asm mov edx, dword ptr [eax + 4]
-  __asm mov dword ptr [esi + eax], ecx
-  __asm mov dword ptr [esi + eax + 4], edx
-  __asm add eax, 8
-  __asm cmp eax, edi
-  __asm _emit 0x75 __asm _emit 0xed
-  __asm pop esi
-  __asm pop edi
-  __asm ret 0x10
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xc7 __asm _emit 0x74 __asm _emit 0x1b __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x2b __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x54 __asm _emit 0x06 __asm _emit 0x04
+  __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc7 __asm _emit 0x75 __asm _emit 0xed __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0xc2 __asm _emit 0x10 __asm _emit 0x00
 }
+
 
 
 
@@ -27092,16 +22603,11 @@ __declspec(naked) void FUN_10c7d930(void)
 __declspec(naked) void FUN_10c7d970(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm sub eax, ecx
-  __asm push eax
-  __asm push ecx
-  __asm push dword ptr [esp + 0x14]
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x2b __asm _emit 0xc1 __asm _emit 0x50 __asm _emit 0x51 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm ret 0x10
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0xc2 __asm _emit 0x10 __asm _emit 0x00
 }
+
 
 
 
@@ -27113,23 +22619,11 @@ __declspec(naked) void FUN_10c7d970(void)
 __declspec(naked) void FUN_10c7d9a0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm cmp eax, esi
-  __asm _emit 0x74 __asm _emit 0x1d
-  __asm mov edx, dword ptr [esp + 0x10]
-  __asm sub edx, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00
-  __asm movq qword ptr [edx + eax], xmm0
-  __asm mov ecx, dword ptr [eax + 8]
-  __asm mov dword ptr [edx + eax + 8], ecx
-  __asm add eax, 0xc
-  __asm cmp eax, esi
-  __asm _emit 0x75 __asm _emit 0xe9
-  __asm pop esi
-  __asm ret 0x10
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xc6 __asm _emit 0x74 __asm _emit 0x1d __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24
+  __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xd0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0xd6 __asm _emit 0x04 __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x08 __asm _emit 0x89
+  __asm _emit 0x4c __asm _emit 0x02 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xc6 __asm _emit 0x75 __asm _emit 0xe9 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x10 __asm _emit 0x00
 }
+
 
 
 
@@ -27141,25 +22635,11 @@ __declspec(naked) void FUN_10c7d9a0(void)
 __declspec(naked) void FUN_10c7d9e0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push edi
-  __asm mov edi, dword ptr [esp + 0xc]
-  __asm cmp eax, edi
-  __asm _emit 0x74 __asm _emit 0x1b
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x14]
-  __asm sub esi, eax
-  __asm mov ecx, dword ptr [eax]
-  __asm mov edx, dword ptr [eax + 4]
-  __asm mov dword ptr [esi + eax], ecx
-  __asm mov dword ptr [esi + eax + 4], edx
-  __asm add eax, 8
-  __asm cmp eax, edi
-  __asm _emit 0x75 __asm _emit 0xed
-  __asm pop esi
-  __asm pop edi
-  __asm ret 0xc
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x7c __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xc7 __asm _emit 0x74 __asm _emit 0x1b __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74
+  __asm _emit 0x24 __asm _emit 0x14 __asm _emit 0x2b __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x54 __asm _emit 0x06 __asm _emit 0x04
+  __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc7 __asm _emit 0x75 __asm _emit 0xed __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -27171,16 +22651,11 @@ __declspec(naked) void FUN_10c7d9e0(void)
 __declspec(naked) void FUN_10c7da20(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm mov eax, dword ptr [esp + 8]
-  __asm sub eax, ecx
-  __asm push eax
-  __asm push ecx
-  __asm push dword ptr [esp + 0x14]
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x2b __asm _emit 0xc1 __asm _emit 0x50 __asm _emit 0x51 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x14
   __asm call LAB_1148cdf3
-  __asm add esp, 0xc
-  __asm ret 0xc
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -27192,23 +22667,11 @@ __declspec(naked) void FUN_10c7da20(void)
 __declspec(naked) void FUN_10c7da50(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm cmp eax, esi
-  __asm _emit 0x74 __asm _emit 0x1d
-  __asm mov edx, dword ptr [esp + 0x10]
-  __asm sub edx, eax
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00
-  __asm movq qword ptr [edx + eax], xmm0
-  __asm mov ecx, dword ptr [eax + 8]
-  __asm mov dword ptr [edx + eax + 8], ecx
-  __asm add eax, 0xc
-  __asm cmp eax, esi
-  __asm _emit 0x75 __asm _emit 0xe9
-  __asm pop esi
-  __asm ret 0xc
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xc6 __asm _emit 0x74 __asm _emit 0x1d __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24
+  __asm _emit 0x10 __asm _emit 0x2b __asm _emit 0xd0 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0xd6 __asm _emit 0x04 __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x48 __asm _emit 0x08 __asm _emit 0x89
+  __asm _emit 0x4c __asm _emit 0x02 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x0c __asm _emit 0x3b __asm _emit 0xc6 __asm _emit 0x75 __asm _emit 0xe9 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -27232,36 +22695,18 @@ undefined4 __fastcall FUN_10c7da90(undefined4 *param_1)
 __declspec(naked) void FUN_10c7dd00(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0x1fffffff
-  __asm _emit 0x77 __asm _emit 0x47
-  __asm shl eax, 3
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x47 __asm _emit 0xc1 __asm _emit 0xe0 __asm _emit 0x03 __asm _emit 0x3d __asm _emit 0x00
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -27273,37 +22718,18 @@ __declspec(naked) void FUN_10c7dd00(void)
 __declspec(naked) void FUN_10c7dd70(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp eax, 0x15555555
-  __asm _emit 0x77 __asm _emit 0x4a
-  __asm lea eax, [eax + eax*2]
-  __asm shl eax, 2
-  __asm cmp eax, 0x1000
-  __asm _emit 0x72 __asm _emit 0x28
-  __asm lea ecx, [eax + 0x23]
-  __asm cmp ecx, eax
-  __asm _emit 0x76 __asm _emit 0x36
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x3d __asm _emit 0x55 __asm _emit 0x55 __asm _emit 0x55 __asm _emit 0x15 __asm _emit 0x77 __asm _emit 0x4a __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x40 __asm _emit 0xc1 __asm _emit 0xe0
+  __asm _emit 0x02 __asm _emit 0x3d __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x28 __asm _emit 0x8d __asm _emit 0x48 __asm _emit 0x23 __asm _emit 0x3b __asm _emit 0xc8 __asm _emit 0x76 __asm _emit 0x36 __asm _emit 0x51
   __asm call LAB_10024f14
-  __asm mov ecx, eax
-  __asm add esp, 4
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm lea eax, [ecx + 0x23]
-  __asm and eax, 0xffffffe0
-  __asm mov dword ptr [eax - 4], ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0xc8 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x23 __asm _emit 0x83 __asm _emit 0xe0 __asm _emit 0xe0 __asm _emit 0x89
+  __asm _emit 0x48 __asm _emit 0xfc __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
-  __asm test eax, eax
-  __asm _emit 0x74 __asm _emit 0x0c
-  __asm push eax
+  __asm _emit 0x85 __asm _emit 0xc0 __asm _emit 0x74 __asm _emit 0x0c __asm _emit 0x50
   __asm call LAB_10024f14
-  __asm add esp, 4
-  __asm ret 4
-  __asm xor eax, eax
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
   __asm call LAB_10070f3b
 }
+
 
 
 
@@ -27327,13 +22753,10 @@ void  FUN_10c7dfa0(void *param_1,size_t param_2,char param_3)
 __declspec(naked) void FUN_10c7dfc0(void)
 
 {
-  __asm cmp dword ptr [ecx + 0x14], 0x10
-  __asm mov eax, dword ptr [esp + 4]
-  __asm _emit 0x72 __asm _emit 0x02
-  __asm mov ecx, dword ptr [ecx]
-  __asm mov dword ptr [eax], ecx
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0x79 __asm _emit 0x14 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x72 __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x09 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x04
+  __asm _emit 0x00
 }
+
 
 
 
@@ -27393,26 +22816,15 @@ undefined4 __fastcall FUN_10c7e020(undefined4 *param_1)
 __declspec(naked) void FUN_10c7e030(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x81
+  __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -27424,26 +22836,15 @@ __declspec(naked) void FUN_10c7e030(void)
 __declspec(naked) void FUN_10c7e080(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esp + 4]
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x81
+  __asm _emit 0xf9 __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83
+  __asm _emit 0xc0 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -27455,27 +22856,15 @@ __declspec(naked) void FUN_10c7e080(void)
 __declspec(naked) void FUN_10c7e0d0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm lea ecx, [eax + eax*2]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm shl ecx, 2
-  __asm cmp ecx, 0x1000
-  __asm _emit 0x72 __asm _emit 0x12
-  __asm mov edx, dword ptr [eax - 4]
-  __asm add ecx, 0x23
-  __asm sub eax, edx
-  __asm add eax, -4
-  __asm cmp eax, 0x1f
-  __asm _emit 0x77 __asm _emit 0x0f
-  __asm mov eax, edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x40 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc1 __asm _emit 0xe1 __asm _emit 0x02 __asm _emit 0x81 __asm _emit 0xf9
+  __asm _emit 0x00 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x72 __asm _emit 0x12 __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x23 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0x83 __asm _emit 0xc0
+  __asm _emit 0xfc __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x1f __asm _emit 0x77 __asm _emit 0x0f __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_100131d8
-  __asm add esp, 8
-  __asm ret 8
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
   __asm call dword ptr [LAB_122fc888]
   __asm _emit 0xcc
 }
+
 
 
 
@@ -27487,16 +22876,10 @@ __declspec(naked) void FUN_10c7e0d0(void)
 __declspec(naked) void FUN_10c7e310(void)
 
 {
-  __asm cmp dword ptr [ecx + 0x14], 0x10
-  __asm mov eax, ecx
-  __asm _emit 0x72 __asm _emit 0x02
-  __asm mov eax, dword ptr [ecx]
-  __asm mov ecx, dword ptr [ecx + 0x10]
-  __asm add ecx, eax
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov dword ptr [eax], ecx
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0x79 __asm _emit 0x14 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x72 __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x10 __asm _emit 0x03 __asm _emit 0xc8 __asm _emit 0x8b
+  __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -27571,38 +22954,13 @@ bool __fastcall FUN_10c7e9a0(int *param_1)
 __declspec(naked) void FUN_10c7e9b0(void)
 
 {
-  __asm push esi
-  __asm mov si, word ptr [esp + 0xc]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm cmp si, -1
-  __asm _emit 0x74 __asm _emit 0x17
-  __asm mov eax, dword ptr [edi + 4]
-  __asm movzx edx, byte ptr [esp + 0xc]
-  __asm pop edi
-  __asm mov eax, dword ptr [eax + 0xc]
-  __asm test word ptr [eax + edx*2], si
-  __asm pop esi
-  __asm setne al
-  __asm ret 8
-  __asm mov al, byte ptr [esp + 0xc]
-  __asm cmp al, 0x5f
-  __asm _emit 0x74 __asm _emit 0x1b
-  __asm movzx ecx, al
-  __asm mov edx, 0x107
-  __asm mov eax, dword ptr [edi + 4]
-  __asm mov eax, dword ptr [eax + 0xc]
-  __asm test word ptr [eax + ecx*2], dx
-  __asm _emit 0x75 __asm _emit 0x07
-  __asm pop edi
-  __asm xor al, al
-  __asm pop esi
-  __asm ret 8
-  __asm pop edi
-  __asm mov al, 1
-  __asm pop esi
-  __asm ret 8
+  __asm _emit 0x56 __asm _emit 0x66 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x66 __asm _emit 0x83 __asm _emit 0xfe __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x17 __asm _emit 0x8b
+  __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x0f __asm _emit 0xb6 __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x5f __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x66 __asm _emit 0x85 __asm _emit 0x34 __asm _emit 0x50 __asm _emit 0x5e
+  __asm _emit 0x0f __asm _emit 0x95 __asm _emit 0xc0 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x8a __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x3c __asm _emit 0x5f __asm _emit 0x74 __asm _emit 0x1b __asm _emit 0x0f __asm _emit 0xb6
+  __asm _emit 0xc8 __asm _emit 0xba __asm _emit 0x07 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x0c __asm _emit 0x66 __asm _emit 0x85 __asm _emit 0x14 __asm _emit 0x48
+  __asm _emit 0x75 __asm _emit 0x07 __asm _emit 0x5f __asm _emit 0x32 __asm _emit 0xc0 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x5f __asm _emit 0xb0 __asm _emit 0x01 __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -27849,53 +23207,17 @@ undefined4 __fastcall FUN_10c7fcc0(undefined4 *param_1)
 __declspec(naked) void FUN_10c7fd80(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0xc]
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov ebx, dword ptr [edi + 4]
-  __asm mov ecx, ebx
-  __asm mov edx, dword ptr [edi]
-  __asm sub ecx, edx
-  __asm sar ecx, 3
-  __asm cmp esi, ecx
-  __asm _emit 0x73 __asm _emit 0x0c
-  __asm lea eax, [edx + esi*8]
-  __asm mov dword ptr [edi + 4], eax
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 4
-  __asm _emit 0x76 __asm _emit 0x3c
-  __asm mov eax, dword ptr [edi + 8]
-  __asm sub eax, edx
-  __asm sar eax, 3
-  __asm cmp esi, eax
-  __asm _emit 0x76 __asm _emit 0x13
-  __asm lea eax, [esp + 0x10]
-  __asm mov ecx, edi
-  __asm push eax
-  __asm push esi
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x8b __asm _emit 0x5f __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0xcb __asm _emit 0x8b __asm _emit 0x17
+  __asm _emit 0x2b __asm _emit 0xca __asm _emit 0xc1 __asm _emit 0xf9 __asm _emit 0x03 __asm _emit 0x3b __asm _emit 0xf1 __asm _emit 0x73 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xf2 __asm _emit 0x89 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x5f
+  __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x76 __asm _emit 0x3c __asm _emit 0x8b __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x2b __asm _emit 0xc2 __asm _emit 0xc1 __asm _emit 0xf8 __asm _emit 0x03 __asm _emit 0x3b
+  __asm _emit 0xf0 __asm _emit 0x76 __asm _emit 0x13 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xcf __asm _emit 0x50 __asm _emit 0x56
   __asm call LAB_1007efb4
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 4
-  __asm sub esi, ecx
-  __asm _emit 0x74 __asm _emit 0x16 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xf5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm push eax
-  __asm push 0
-  __asm push ebx
+  __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x2b __asm _emit 0xf1 __asm _emit 0x74 __asm _emit 0x16 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xf5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x50 __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x53
   __asm call LAB_1148ce0b
-  __asm add esp, 0xc
-  __asm lea ebx, [ebx + esi*8]
-  __asm mov dword ptr [edi + 4], ebx
-  __asm pop edi
-  __asm pop esi
-  __asm pop ebx
-  __asm ret 4
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x1c __asm _emit 0xf3 __asm _emit 0x89 __asm _emit 0x5f __asm _emit 0x04 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x5b __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -27967,14 +23289,10 @@ int __fastcall FUN_10c7fff0(int *param_1)
 __declspec(naked) void FUN_10c80130(void)
 
 {
-  __asm push dword ptr [esp + 0xc]
-  __asm mov eax, dword ptr [ecx]
-  __asm push dword ptr [esp + 0xc]
-  __asm push dword ptr [esp + 0xc]
-  __asm call dword ptr [eax + 0x10]
-  __asm mov eax, dword ptr [esp + 4]
-  __asm ret 0xc
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0xff __asm _emit 0x50
+  __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -27986,9 +23304,10 @@ __declspec(naked) void FUN_10c80130(void)
 __declspec(naked) void FUN_10c80200(void)
 
 {
-  __asm mov ecx, dword ptr [ecx + 4]
+  __asm _emit 0x8b __asm _emit 0x49 __asm _emit 0x04
   __asm jmp dword ptr [LAB_122fc300]
 }
+
 
 
 
@@ -28000,37 +23319,14 @@ __declspec(naked) void FUN_10c80200(void)
 __declspec(naked) void FUN_10c80210(void)
 
 {
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov cl, byte ptr [esp + 4]
-  __asm cmp eax, 8
-  __asm _emit 0x74 __asm _emit 0x2f
-  __asm cmp cl, 0x30
-  __asm _emit 0x7c __asm _emit 0x05
-  __asm cmp cl, 0x39
-  __asm _emit 0x7e __asm _emit 0x2c
-  __asm cmp eax, 0x10
-  __asm _emit 0x75 __asm _emit 0x30
-  __asm lea eax, [ecx - 0x61]
-  __asm cmp al, 5
-  __asm _emit 0x77 __asm _emit 0x09
-  __asm movsx eax, cl
-  __asm sub eax, 0x57
-  __asm ret 8
-  __asm lea eax, [ecx - 0x41]
-  __asm cmp al, 5
-  __asm _emit 0x77 __asm _emit 0x19
-  __asm movsx eax, cl
-  __asm sub eax, 0x37
-  __asm ret 8
-  __asm lea eax, [ecx - 0x30]
-  __asm cmp al, 7
-  __asm _emit 0x77 __asm _emit 0x09
-  __asm movsx eax, cl
-  __asm sub eax, 0x30
-  __asm ret 8
-  __asm or eax, 0xffffffff
-  __asm ret 8
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8a __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x08 __asm _emit 0x74 __asm _emit 0x2f __asm _emit 0x80 __asm _emit 0xf9 __asm _emit 0x30
+  __asm _emit 0x7c __asm _emit 0x05 __asm _emit 0x80 __asm _emit 0xf9 __asm _emit 0x39 __asm _emit 0x7e __asm _emit 0x2c __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x10 __asm _emit 0x75 __asm _emit 0x30 __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0x9f __asm _emit 0x3c
+  __asm _emit 0x05 __asm _emit 0x77 __asm _emit 0x09 __asm _emit 0x0f __asm _emit 0xbe __asm _emit 0xc1 __asm _emit 0x83 __asm _emit 0xe8 __asm _emit 0x57 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0xbf __asm _emit 0x3c
+  __asm _emit 0x05 __asm _emit 0x77 __asm _emit 0x19 __asm _emit 0x0f __asm _emit 0xbe __asm _emit 0xc1 __asm _emit 0x83 __asm _emit 0xe8 __asm _emit 0x37 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x41 __asm _emit 0xd0 __asm _emit 0x3c
+  __asm _emit 0x07 __asm _emit 0x77 __asm _emit 0x09 __asm _emit 0x0f __asm _emit 0xbe __asm _emit 0xc1 __asm _emit 0x83 __asm _emit 0xe8 __asm _emit 0x30 __asm _emit 0xc2 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x83 __asm _emit 0xc8 __asm _emit 0xff __asm _emit 0xc2
+  __asm _emit 0x08 __asm _emit 0x00
 }
+
 
 
 
@@ -28042,24 +23338,18 @@ __declspec(naked) void FUN_10c80210(void)
 __declspec(naked) void FUN_10c807c0(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm mov esi, ecx
-  __asm push 0
-  __asm mov dword ptr [esp + 8], esi
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0xf1 __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x08
   __asm call LAB_1004458a
   __asm mov dword ptr [esi + 0x610c], offset LAB_1188db30
-  __asm mov eax, esi
+  __asm _emit 0x8b __asm _emit 0xc6
   __asm mov dword ptr [esi], offset LAB_1191b0fc
   __asm mov dword ptr [esi + 0x610c], offset LAB_1191b118
   __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x10 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x14 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x18 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86
   __asm _emit 0x1c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x20 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x24 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop esi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x24 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -28071,25 +23361,20 @@ __declspec(naked) void FUN_10c807c0(void)
 __declspec(naked) void FUN_10c80850(void)
 
 {
-  __asm push ecx
-  __asm push esi
-  __asm push 0
-  __asm mov esi, ecx
+  __asm _emit 0x51 __asm _emit 0x56 __asm _emit 0x6a __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xf1
   __asm push offset LAB_1188cfa8
-  __asm mov dword ptr [esp + 0xc], esi
+  __asm _emit 0x89 __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c
   __asm call LAB_1005f6c8
   __asm mov dword ptr [esi + 0x620c], offset LAB_1188db30
-  __asm mov eax, esi
+  __asm _emit 0x8b __asm _emit 0xc6
   __asm mov dword ptr [esi], offset LAB_1191b270
   __asm mov dword ptr [esi + 0x620c], offset LAB_1191b28c
   __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x10 __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x14 __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x18 __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86
   __asm _emit 0x1c __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x20 __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x24 __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop esi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0x24 __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x5e __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -28146,6 +23431,7 @@ __declspec(naked) void FUN_10c815d0(void)
 
 
 
+
 // Reference entry 10c815f0; body size 18 bytes.
 #line 1 "ENTRY_10c815f0"
 
@@ -28156,6 +23442,7 @@ __declspec(naked) void FUN_10c815f0(void)
   __asm mov dword ptr [ecx + 8], offset LAB_1191b0ec
   __asm jmp LAB_1005f2f9
 }
+
 
 
 
@@ -28179,12 +23466,11 @@ undefined4 __fastcall FUN_10c81610(int param_1)
 __declspec(naked) void FUN_10c81dd0(void)
 
 {
-  __asm mov ecx, dword ptr [ecx + 0x6114]
+  __asm _emit 0x8b __asm _emit 0x89 __asm _emit 0x14 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm mov eax, offset LAB_1186d2ee
-  __asm test ecx, ecx
-  __asm cmovne eax, ecx
-  __asm ret
+  __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xc1 __asm _emit 0xc3
 }
+
 
 
 
@@ -28196,12 +23482,11 @@ __declspec(naked) void FUN_10c81dd0(void)
 __declspec(naked) void FUN_10c81df0(void)
 
 {
-  __asm mov ecx, dword ptr [ecx + 0x621c]
+  __asm _emit 0x8b __asm _emit 0x89 __asm _emit 0x1c __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm mov eax, offset LAB_1186d2ee
-  __asm test ecx, ecx
-  __asm cmovne eax, ecx
-  __asm ret
+  __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xc1 __asm _emit 0xc3
 }
+
 
 
 
@@ -28224,12 +23509,11 @@ __declspec(naked) void FUN_10c81df0(void)
 __declspec(naked) void FUN_10c81e90(void)
 
 {
-  __asm mov ecx, dword ptr [ecx + 0x6110]
+  __asm _emit 0x8b __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm mov eax, offset LAB_1186d2ee
-  __asm test ecx, ecx
-  __asm cmovne eax, ecx
-  __asm ret
+  __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xc1 __asm _emit 0xc3
 }
+
 
 
 
@@ -28241,12 +23525,11 @@ __declspec(naked) void FUN_10c81e90(void)
 __declspec(naked) void FUN_10c81eb0(void)
 
 {
-  __asm mov ecx, dword ptr [ecx + 0x6210]
+  __asm _emit 0x8b __asm _emit 0x89 __asm _emit 0x10 __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm mov eax, offset LAB_1186d2ee
-  __asm test ecx, ecx
-  __asm cmovne eax, ecx
-  __asm ret
+  __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x0f __asm _emit 0x45 __asm _emit 0xc1 __asm _emit 0xc3
 }
+
 
 
 
@@ -28294,9 +23577,10 @@ undefined4 FUN_10c83cd0(void)
 __declspec(naked) void FUN_10c83e40(void)
 
 {
-  __asm add ecx, 0x2c
+  __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x2c
   __asm jmp LAB_10070892
 }
+
 
 
 
@@ -28323,27 +23607,14 @@ undefined4 __fastcall FUN_10c83ec0(int param_1, unsigned int recovered_unused_st
 __declspec(naked) void FUN_10c83ed0(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm mov ebx, ecx
-  __asm push edi
-  __asm mov ecx, esi
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_10028d21
-  __asm lea ecx, [esi + 0x10]
-  __asm mov edi, eax
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf8
   __asm call LAB_10028d21
-  __asm mov ecx, dword ptr [ebx + 0x18]
-  __asm push edi
-  __asm push eax
-  __asm mov edx, dword ptr [ecx]
-  __asm call dword ptr [edx + 0x10]
-  __asm pop edi
-  __asm pop esi
-  __asm xor eax, eax
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x8b __asm _emit 0x4b __asm _emit 0x18 __asm _emit 0x57 __asm _emit 0x50 __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0xff __asm _emit 0x52 __asm _emit 0x10 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0x5b __asm _emit 0xc2
+  __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -28355,27 +23626,14 @@ __declspec(naked) void FUN_10c83ed0(void)
 __declspec(naked) void FUN_10c83f40(void)
 
 {
-  __asm push ebx
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm mov ebx, ecx
-  __asm push edi
-  __asm mov ecx, esi
+  __asm _emit 0x53 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xd9 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xce
   __asm call LAB_10028d21
-  __asm lea ecx, [esi + 0x10]
-  __asm mov edi, eax
+  __asm _emit 0x8d __asm _emit 0x4e __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xf8
   __asm call LAB_10028d21
-  __asm mov ecx, dword ptr [ebx + 0x18]
-  __asm push eax
-  __asm push edi
-  __asm mov edx, dword ptr [ecx]
-  __asm call dword ptr [edx + 8]
-  __asm pop edi
-  __asm pop esi
-  __asm xor eax, eax
-  __asm pop ebx
-  __asm ret 0xc
+  __asm _emit 0x8b __asm _emit 0x4b __asm _emit 0x18 __asm _emit 0x50 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x11 __asm _emit 0xff __asm _emit 0x52 __asm _emit 0x08 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0x33 __asm _emit 0xc0 __asm _emit 0x5b __asm _emit 0xc2
+  __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -28387,9 +23645,10 @@ __declspec(naked) void FUN_10c83f40(void)
 __declspec(naked) void FUN_10c83f80(void)
 
 {
-  __asm add ecx, 0x2c
+  __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x2c
   __asm jmp LAB_10065348
 }
+
 
 
 
@@ -28403,19 +23662,12 @@ __declspec(naked) void FUN_10c83f80(void)
 __declspec(naked) void FUN_10c84630(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov dword ptr [esp], ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [ecx], eax
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov dword ptr [ecx + 0xc], 0x80000000
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret 0xc
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x80 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -28427,19 +23679,12 @@ __declspec(naked) void FUN_10c84630(void)
 __declspec(naked) void FUN_10c84680(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 0xc]
-  __asm mov dword ptr [esp], ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [ecx], eax
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov dword ptr [ecx + 0xc], 0x80000000
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret 0xc
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x80 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x0c __asm _emit 0x00
 }
+
 
 
 
@@ -28659,20 +23904,12 @@ undefined4 __fastcall FUN_10c849f0(undefined4 param_1, unsigned int recovered_un
 __declspec(naked) void FUN_10c84a00(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [esp], ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [ecx], eax
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov dword ptr [ecx + 0xc], 0x80000000
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret 0x10
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0xc1
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x80 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x10 __asm _emit 0x00
 }
+
 
 
 
@@ -28684,20 +23921,12 @@ __declspec(naked) void FUN_10c84a00(void)
 __declspec(naked) void FUN_10c84a50(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
-  __asm mov dword ptr [esp], ecx
-  __asm mov eax, dword ptr [eax]
-  __asm mov eax, dword ptr [eax]
-  __asm mov dword ptr [ecx], eax
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov dword ptr [ecx + 0xc], 0x80000000
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
-  __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret 0x10
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0xc1
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x80 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x10 __asm _emit 0x00
 }
+
 
 
 
@@ -28895,24 +24124,11 @@ void FUN_10c84d30(void)
 __declspec(naked) void FUN_10c84d80(void)
 
 {
-  __asm mov edx, dword ptr [esp + 4]
-  __asm push esi
-  __asm push edi
-  __asm mov edi, ecx
-  __asm mov eax, dword ptr [edx]
-  __asm mov esi, dword ptr [edi + 4]
-  __asm mov dword ptr [esi], eax
-  __asm mov ecx, dword ptr [edx + 4]
-  __asm mov dword ptr [esi + 4], ecx
-  __asm test ecx, ecx
-  __asm _emit 0x74 __asm _emit 0x05
-  __asm mov eax, dword ptr [ecx]
-  __asm call dword ptr [eax + 4]
-  __asm add dword ptr [edi + 4], 8
-  __asm pop edi
-  __asm pop esi
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x56 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0xf9 __asm _emit 0x8b __asm _emit 0x02 __asm _emit 0x8b __asm _emit 0x77 __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x06 __asm _emit 0x8b
+  __asm _emit 0x4a __asm _emit 0x04 __asm _emit 0x89 __asm _emit 0x4e __asm _emit 0x04 __asm _emit 0x85 __asm _emit 0xc9 __asm _emit 0x74 __asm _emit 0x05 __asm _emit 0x8b __asm _emit 0x01 __asm _emit 0xff __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x83 __asm _emit 0x47
+  __asm _emit 0x04 __asm _emit 0x08 __asm _emit 0x5f __asm _emit 0x5e __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -28998,74 +24214,23 @@ undefined4 FUN_10c85690(undefined4 *param_1)
 __declspec(naked) void FUN_10c856a0(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 4]
-  __asm push ebx
-  __asm mov ebx, dword ptr [esp + 0x10]
-  __asm mov eax, ebx
-  __asm sub eax, ecx
-  __asm push ebp
-  __asm mov ebp, dword ptr [esp + 0x18]
-  __asm sar eax, 3
-  __asm push esi
-  __asm cmp eax, 0x28
-  __asm _emit 0x7e __asm _emit 0x64
-  __asm push edi
-  __asm inc eax
-  __asm sar eax, 3
-  __asm mov edi, eax
-  __asm shl edi, 4
-  __asm push ebp
-  __asm _emit 0x8d __asm _emit 0x34 __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm lea edx, [esi + ecx]
-  __asm lea eax, [edi + ecx]
-  __asm mov dword ptr [esp + 0x20], edx
-  __asm push eax
-  __asm push edx
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x53 __asm _emit 0x8b __asm _emit 0x5c __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0xc3 __asm _emit 0x2b __asm _emit 0xc1 __asm _emit 0x55 __asm _emit 0x8b __asm _emit 0x6c
+  __asm _emit 0x24 __asm _emit 0x18 __asm _emit 0xc1 __asm _emit 0xf8 __asm _emit 0x03 __asm _emit 0x56 __asm _emit 0x83 __asm _emit 0xf8 __asm _emit 0x28 __asm _emit 0x7e __asm _emit 0x64 __asm _emit 0x57 __asm _emit 0x40 __asm _emit 0xc1 __asm _emit 0xf8 __asm _emit 0x03
+  __asm _emit 0x8b __asm _emit 0xf8 __asm _emit 0xc1 __asm _emit 0xe7 __asm _emit 0x04 __asm _emit 0x55 __asm _emit 0x8d __asm _emit 0x34 __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8d __asm _emit 0x14 __asm _emit 0x0e
+  __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x0f __asm _emit 0x89 __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x20 __asm _emit 0x50 __asm _emit 0x52 __asm _emit 0x51
   __asm call LAB_10076c01
-  __asm mov ecx, dword ptr [esp + 0x28]
-  __asm push ebp
-  __asm lea eax, [esi + ecx]
-  __asm push eax
-  __asm push ecx
-  __asm sub ecx, esi
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x28 __asm _emit 0x55 __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0x0e __asm _emit 0x50 __asm _emit 0x51 __asm _emit 0x2b __asm _emit 0xce __asm _emit 0x51
   __asm call LAB_10076c01
-  __asm mov ebp, ebx
-  __asm sub ebp, esi
-  __asm mov esi, dword ptr [esp + 0x40]
-  __asm push esi
-  __asm push ebx
-  __asm push ebp
-  __asm sub ebx, edi
-  __asm push ebx
+  __asm _emit 0x8b __asm _emit 0xeb __asm _emit 0x2b __asm _emit 0xee __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x40 __asm _emit 0x56 __asm _emit 0x53 __asm _emit 0x55 __asm _emit 0x2b __asm _emit 0xdf __asm _emit 0x53
   __asm call LAB_10076c01
-  __asm mov ecx, dword ptr [esp + 0x4c]
-  __asm add esp, 0x30
-  __asm pop edi
-  __asm push esi
-  __asm push ebp
-  __asm push dword ptr [esp + 0x1c]
-  __asm push ecx
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x4c __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x30 __asm _emit 0x5f __asm _emit 0x56 __asm _emit 0x55 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x51
   __asm call LAB_10076c01
-  __asm add esp, 0x10
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret
-  __asm mov esi, dword ptr [esp + 0x1c]
-  __asm mov ebp, ebx
-  __asm push esi
-  __asm push ebp
-  __asm push dword ptr [esp + 0x1c]
-  __asm push ecx
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x10 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc3 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x8b __asm _emit 0xeb __asm _emit 0x56 __asm _emit 0x55 __asm _emit 0xff
+  __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x1c __asm _emit 0x51
   __asm call LAB_10076c01
-  __asm add esp, 0x10
-  __asm pop esi
-  __asm pop ebp
-  __asm pop ebx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x10 __asm _emit 0x5e __asm _emit 0x5d __asm _emit 0x5b __asm _emit 0xc3
 }
+
 
 
 
@@ -29397,44 +24562,14 @@ void FUN_10c87990(undefined4 param_1,undefined4 *param_2,undefined4 *param_3)
 __declspec(naked) void FUN_10c87b00(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov ecx, dword ptr [esp + 8]
-  __asm push edi
-  __asm xor edi, edi
-  __asm cmp eax, ecx
-  __asm _emit 0x74 __asm _emit 0x43
-  __asm push esi
-  __asm mov edx, dword ptr [eax + 8]
-  __asm inc edi
-  __asm cmp byte ptr [edx + 0xd], 0
-  __asm _emit 0x74 __asm _emit 0x1d
-  __asm mov edx, dword ptr [eax + 4]
-  __asm cmp byte ptr [edx + 0xd], 0
-  __asm _emit 0x75 __asm _emit 0x10
-  __asm cmp eax, dword ptr [edx + 8]
-  __asm _emit 0x75 __asm _emit 0x0b
-  __asm mov eax, edx
-  __asm mov edx, dword ptr [edx + 4]
-  __asm cmp byte ptr [edx + 0xd], 0
-  __asm _emit 0x74 __asm _emit 0xf0
-  __asm mov eax, edx
-  __asm _emit 0xeb __asm _emit 0x16
-  __asm mov eax, edx
-  __asm mov esi, dword ptr [eax]
-  __asm cmp byte ptr [esi + 0xd], 0
-  __asm _emit 0x75 __asm _emit 0x0c
-  __asm mov edx, dword ptr [esi]
-  __asm mov eax, esi
-  __asm mov esi, edx
-  __asm cmp byte ptr [edx + 0xd], 0
-  __asm _emit 0x74 __asm _emit 0xf4
-  __asm cmp eax, ecx
-  __asm _emit 0x75 __asm _emit 0xbf
-  __asm pop esi
-  __asm mov eax, edi
-  __asm pop edi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x57 __asm _emit 0x33 __asm _emit 0xff __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0x74 __asm _emit 0x43 __asm _emit 0x56
+  __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0x08 __asm _emit 0x47 __asm _emit 0x80 __asm _emit 0x7a __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0x1d __asm _emit 0x8b __asm _emit 0x50 __asm _emit 0x04 __asm _emit 0x80 __asm _emit 0x7a __asm _emit 0x0d
+  __asm _emit 0x00 __asm _emit 0x75 __asm _emit 0x10 __asm _emit 0x3b __asm _emit 0x42 __asm _emit 0x08 __asm _emit 0x75 __asm _emit 0x0b __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x8b __asm _emit 0x52 __asm _emit 0x04 __asm _emit 0x80 __asm _emit 0x7a __asm _emit 0x0d
+  __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0xf0 __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0xeb __asm _emit 0x16 __asm _emit 0x8b __asm _emit 0xc2 __asm _emit 0x8b __asm _emit 0x30 __asm _emit 0x80 __asm _emit 0x7e __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x75
+  __asm _emit 0x0c __asm _emit 0x8b __asm _emit 0x16 __asm _emit 0x8b __asm _emit 0xc6 __asm _emit 0x8b __asm _emit 0xf2 __asm _emit 0x80 __asm _emit 0x7a __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0xf4 __asm _emit 0x3b __asm _emit 0xc1 __asm _emit 0x75
+  __asm _emit 0xbf __asm _emit 0x5e __asm _emit 0x8b __asm _emit 0xc7 __asm _emit 0x5f __asm _emit 0xc3
 }
+
 
 
 
@@ -29622,19 +24757,12 @@ undefined4 FUN_10c88170(undefined4 param_1)
 __declspec(naked) void FUN_10c88290(void)
 
 {
-  __asm mov ecx, dword ptr [esp + 8]
-  __asm mov edx, ecx
-  __asm mov eax, dword ptr [esp + 4]
-  __asm sub edx, eax
-  __asm push dword ptr [esp + 0xc]
-  __asm sar edx, 3
-  __asm push edx
-  __asm push ecx
-  __asm push eax
+  __asm _emit 0x8b __asm _emit 0x4c __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xd1 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x2b __asm _emit 0xd0 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x0c
+  __asm _emit 0xc1 __asm _emit 0xfa __asm _emit 0x03 __asm _emit 0x52 __asm _emit 0x51 __asm _emit 0x50
   __asm call LAB_10058486
-  __asm add esp, 0x10
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x10 __asm _emit 0xc3
 }
+
 
 
 
@@ -29646,20 +24774,10 @@ __declspec(naked) void FUN_10c88290(void)
 __declspec(naked) void FUN_10c883d0(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov edx, dword ptr [esp + 8]
-  __asm cmp eax, edx
-  __asm _emit 0x74 __asm _emit 0x11
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [esi]
-  __asm mov dword ptr [eax], ecx
-  __asm add eax, 4
-  __asm cmp eax, edx
-  __asm _emit 0x75 __asm _emit 0xf5
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x74 __asm _emit 0x11 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24
+  __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x75 __asm _emit 0xf5 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -29671,20 +24789,10 @@ __declspec(naked) void FUN_10c883d0(void)
 __declspec(naked) void FUN_10c88400(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm mov edx, dword ptr [esp + 8]
-  __asm cmp eax, edx
-  __asm _emit 0x74 __asm _emit 0x11
-  __asm push esi
-  __asm mov esi, dword ptr [esp + 0x10]
-  __asm mov ecx, dword ptr [esi]
-  __asm mov dword ptr [eax], ecx
-  __asm add eax, 4
-  __asm cmp eax, edx
-  __asm _emit 0x75 __asm _emit 0xf5
-  __asm pop esi
-  __asm ret
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x8b __asm _emit 0x54 __asm _emit 0x24 __asm _emit 0x08 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x74 __asm _emit 0x11 __asm _emit 0x56 __asm _emit 0x8b __asm _emit 0x74 __asm _emit 0x24
+  __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x0e __asm _emit 0x89 __asm _emit 0x08 __asm _emit 0x83 __asm _emit 0xc0 __asm _emit 0x04 __asm _emit 0x3b __asm _emit 0xc2 __asm _emit 0x75 __asm _emit 0xf5 __asm _emit 0x5e __asm _emit 0xc3
 }
+
 
 
 
@@ -29696,13 +24804,9 @@ __declspec(naked) void FUN_10c88400(void)
 __declspec(naked) void FUN_10c88610(void)
 
 {
-  __asm push ecx
-  __asm mov dword ptr [esp], ecx
-  __asm mov eax, ecx
-  __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x51 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -29728,18 +24832,15 @@ undefined4 * __fastcall FUN_10c88630(undefined4 *param_1)
 __declspec(naked) void FUN_10c88650(void)
 
 {
-  __asm push ecx
-  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x51 __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x08
   __asm mov dword ptr [ecx], offset LAB_11881068
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm inc dword ptr [LAB_121a0e68]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm mov dword ptr [esp], ecx
+  __asm _emit 0x89 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0x89 __asm _emit 0x0c __asm _emit 0x24
   __asm mov dword ptr [ecx], offset LAB_1191b600
-  __asm pop ecx
-  __asm ret 4
+  __asm _emit 0x59 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -29891,14 +24992,10 @@ undefined4 * __fastcall FUN_10c88930(undefined4 *param_1)
 __declspec(naked) void FUN_10c88950(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00
-  __asm movq qword ptr [ecx], xmm0
-  __asm mov eax, dword ptr [eax + 8]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0xd6 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x89
+  __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -29910,14 +25007,10 @@ __declspec(naked) void FUN_10c88950(void)
 __declspec(naked) void FUN_10c88970(void)
 
 {
-  __asm mov eax, dword ptr [esp + 4]
-  __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00
-  __asm movq qword ptr [ecx], xmm0
-  __asm mov eax, dword ptr [eax + 8]
-  __asm mov dword ptr [ecx + 8], eax
-  __asm mov eax, ecx
-  __asm ret 4
+  __asm _emit 0x8b __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xf3 __asm _emit 0x0f __asm _emit 0x7e __asm _emit 0x00 __asm _emit 0x66 __asm _emit 0x0f __asm _emit 0xd6 __asm _emit 0x01 __asm _emit 0x8b __asm _emit 0x40 __asm _emit 0x08 __asm _emit 0x89
+  __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc2 __asm _emit 0x04 __asm _emit 0x00
 }
+
 
 
 
@@ -30007,16 +25100,11 @@ undefined4 __fastcall FUN_10c88a20(undefined4 param_1)
 __declspec(naked) void FUN_10c89140(void)
 
 {
-  __asm push ecx
-  __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, ecx
-  __asm mov dword ptr [ecx + 4], 0x80000000
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x51 __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x80
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x0c
+  __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -30050,16 +25138,12 @@ __declspec(naked) void FUN_10c89140(void)
 __declspec(naked) void FUN_10c891a0(void)
 
 {
-  __asm push ecx
-  __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, ecx
-  __asm mov dword ptr [ecx + 4], 0x80000000
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov dword ptr [esp], ecx
-  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x51 __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0xc1 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x80
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x89 __asm _emit 0x0c
+  __asm _emit 0x24 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x59
+  __asm _emit 0xc3
 }
+
 
 
 
@@ -30115,36 +25199,16 @@ void __fastcall FUN_10c897d0(int param_1)
 __declspec(naked) void FUN_10c89b10(void)
 
 {
-  __asm push ecx
-  __asm push edi
-  __asm mov edi, dword ptr [ecx]
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x3d
-  __asm cmp dword ptr [edi + 0x10], 0
-  __asm _emit 0x74 __asm _emit 0x37
-  __asm push esi
-  __asm push dword ptr [edi + 0xc]
-  __asm lea esi, [edi + 0xc]
-  __asm push esi
+  __asm _emit 0x51 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x39 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x3d __asm _emit 0x83 __asm _emit 0x7f __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0x37 __asm _emit 0x56 __asm _emit 0xff
+  __asm _emit 0x77 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x77 __asm _emit 0x0c __asm _emit 0x56
   __asm call LAB_100114b4
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [eax], eax
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [eax + 4], eax
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm lea eax, [esp + 0x10]
-  __asm push eax
-  __asm push dword ptr [edi + 0x18]
-  __asm push dword ptr [edi + 0x14]
+  __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x18 __asm _emit 0xff __asm _emit 0x77
+  __asm _emit 0x14
   __asm call LAB_1000b456
-  __asm add esp, 0x14
-  __asm pop esi
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x14 __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 
@@ -30156,36 +25220,16 @@ __declspec(naked) void FUN_10c89b10(void)
 __declspec(naked) void FUN_10c89b70(void)
 
 {
-  __asm push ecx
-  __asm push edi
-  __asm mov edi, dword ptr [ecx]
-  __asm test edi, edi
-  __asm _emit 0x74 __asm _emit 0x3d
-  __asm cmp dword ptr [edi + 0x10], 0
-  __asm _emit 0x74 __asm _emit 0x37
-  __asm push esi
-  __asm push dword ptr [edi + 0xc]
-  __asm lea esi, [edi + 0xc]
-  __asm push esi
+  __asm _emit 0x51 __asm _emit 0x57 __asm _emit 0x8b __asm _emit 0x39 __asm _emit 0x85 __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x3d __asm _emit 0x83 __asm _emit 0x7f __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x74 __asm _emit 0x37 __asm _emit 0x56 __asm _emit 0xff
+  __asm _emit 0x77 __asm _emit 0x0c __asm _emit 0x8d __asm _emit 0x77 __asm _emit 0x0c __asm _emit 0x56
   __asm call LAB_10075eeb
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [eax], eax
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [eax + 4], eax
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
-  __asm mov eax, dword ptr [esi]
-  __asm mov dword ptr [esp + 0x10], eax
-  __asm lea eax, [esp + 0x10]
-  __asm push eax
-  __asm push dword ptr [edi + 0x18]
-  __asm push dword ptr [edi + 0x14]
+  __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x00 __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x8b __asm _emit 0x06 __asm _emit 0x89 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x8d __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x10 __asm _emit 0x50 __asm _emit 0xff __asm _emit 0x77 __asm _emit 0x18 __asm _emit 0xff __asm _emit 0x77
+  __asm _emit 0x14
   __asm call LAB_10045d95
-  __asm add esp, 0x14
-  __asm pop esi
-  __asm pop edi
-  __asm pop ecx
-  __asm ret
+  __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x14 __asm _emit 0x5e __asm _emit 0x5f __asm _emit 0x59 __asm _emit 0xc3
 }
+
 
 
 

@@ -1353,6 +1353,418 @@ extern "C" void LAB_100993aa(void);
 extern "C" void LAB_1009a115(void);
 extern "C" void LAB_1009a458(void);
 
+extern "C" void LAB_1000174e(void);
+extern "C" void LAB_10002c16(void);
+extern "C" void LAB_10002e1e(void);
+extern "C" void LAB_10003418(void);
+extern "C" void LAB_10003c15(void);
+extern "C" void LAB_10003ddc(void);
+extern "C" void LAB_1000413d(void);
+extern "C" void LAB_10005303(void);
+extern "C" void LAB_10006573(void);
+extern "C" void LAB_100075a4(void);
+extern "C" void LAB_10007635(void);
+extern "C" void LAB_10007950(void);
+extern "C" void LAB_100080a3(void);
+extern "C" void LAB_100087a6(void);
+extern "C" void LAB_1000a03d(void);
+extern "C" void LAB_1000a28b(void);
+extern "C" void LAB_1000a470(void);
+extern "C" void LAB_1000a8a8(void);
+extern "C" void LAB_1000ada8(void);
+extern "C" void LAB_1000ae16(void);
+extern "C" void LAB_1000d9ae(void);
+extern "C" void LAB_1000dfc6(void);
+extern "C" void LAB_1000e2e6(void);
+extern "C" void LAB_1000e38b(void);
+extern "C" void LAB_1000ea52(void);
+extern "C" void LAB_1000ea5c(void);
+extern "C" void LAB_1000f20e(void);
+extern "C" void LAB_1000f605(void);
+extern "C" void LAB_1000fe20(void);
+extern "C" void LAB_1000ffa1(void);
+extern "C" void LAB_10010636(void);
+extern "C" void LAB_10010749(void);
+extern "C" void LAB_10010753(void);
+extern "C" void LAB_10010839(void);
+extern "C" void LAB_10011955(void);
+extern "C" void LAB_10012288(void);
+extern "C" void LAB_100123b4(void);
+extern "C" void LAB_1001283c(void);
+extern "C" void LAB_100129d6(void);
+extern "C" void LAB_10012a6c(void);
+extern "C" void LAB_100132a0(void);
+extern "C" void LAB_10013368(void);
+extern "C" void LAB_10014272(void);
+extern "C" void LAB_10014d94(void);
+extern "C" void LAB_10015050(void);
+extern "C" void LAB_1001505a(void);
+extern "C" void LAB_1001546f(void);
+extern "C" void LAB_100160a4(void);
+extern "C" void LAB_1001648c(void);
+extern "C" void LAB_10017b57(void);
+extern "C" void LAB_10017ef4(void);
+extern "C" void LAB_1001803e(void);
+extern "C" void LAB_1001818d(void);
+extern "C" void LAB_100182f0(void);
+extern "C" void LAB_10018c69(void);
+extern "C" void LAB_100191d2(void);
+extern "C" void LAB_1001984e(void);
+extern "C" void LAB_100198f8(void);
+extern "C" void LAB_10019fba(void);
+extern "C" void LAB_1001acbc(void);
+extern "C" void LAB_1001b92d(void);
+extern "C" void LAB_1001bb85(void);
+extern "C" void LAB_1001bbf8(void);
+extern "C" void LAB_1001bd15(void);
+extern "C" void LAB_1001c2ba(void);
+extern "C" void LAB_1001c2c9(void);
+extern "C" void LAB_1001c2ce(void);
+extern "C" void LAB_1001cae4(void);
+extern "C" void LAB_1001ce0e(void);
+extern "C" void LAB_1001d133(void);
+extern "C" void LAB_1001d26e(void);
+extern "C" void LAB_1001decb(void);
+extern "C" void LAB_1001e812(void);
+extern "C" void LAB_1001eaa1(void);
+extern "C" void LAB_1001eb28(void);
+extern "C" void LAB_1001eb2d(void);
+extern "C" void LAB_1001eddf(void);
+extern "C" void LAB_1001f50a(void);
+extern "C" void LAB_1001fdc0(void);
+extern "C" void LAB_1001fe7e(void);
+extern "C" void LAB_10020090(void);
+extern "C" void LAB_10020095(void);
+extern "C" void LAB_100201cb(void);
+extern "C" void LAB_100208b5(void);
+extern "C" void LAB_1002164d(void);
+extern "C" void LAB_1002191d(void);
+extern "C" void LAB_10021eb3(void);
+extern "C" void LAB_10022174(void);
+extern "C" void LAB_1002268d(void);
+extern "C" void LAB_1002279b(void);
+extern "C" void LAB_10022b5b(void);
+extern "C" void LAB_10022e5d(void);
+extern "C" void LAB_100236e1(void);
+extern "C" void LAB_10023e9d(void);
+extern "C" void LAB_10024041(void);
+extern "C" void LAB_1002464f(void);
+extern "C" void LAB_1002530b(void);
+extern "C" void LAB_100253a1(void);
+extern "C" void LAB_10025d9c(void);
+extern "C" void LAB_10025da1(void);
+extern "C" void LAB_1002680a(void);
+extern "C" void LAB_100269bd(void);
+extern "C" void LAB_10026f80(void);
+extern "C" void LAB_1002795d(void);
+extern "C" void LAB_1002822c(void);
+extern "C" void LAB_10028b41(void);
+extern "C" void LAB_1002991a(void);
+extern "C" void LAB_1002a518(void);
+extern "C" void LAB_1002b594(void);
+extern "C" void LAB_1002b7dd(void);
+extern "C" void LAB_1002b9e0(void);
+extern "C" void LAB_1002be90(void);
+extern "C" void LAB_1002c372(void);
+extern "C" void LAB_1002cc05(void);
+extern "C" void LAB_1002d231(void);
+extern "C" void LAB_1002dc63(void);
+extern "C" void LAB_1002ef73(void);
+extern "C" void LAB_1002f018(void);
+extern "C" void LAB_1002fb1c(void);
+extern "C" void LAB_1002fcd9(void);
+extern "C" void LAB_1003161f(void);
+extern "C" void LAB_10031a11(void);
+extern "C" void LAB_10032290(void);
+extern "C" void LAB_10032fec(void);
+extern "C" void LAB_10032ff1(void);
+extern "C" void LAB_10033398(void);
+extern "C" void LAB_10033438(void);
+extern "C" void LAB_10033da2(void);
+extern "C" void LAB_1003404a(void);
+extern "C" void LAB_10034711(void);
+extern "C" void LAB_10035364(void);
+extern "C" void LAB_10036769(void);
+extern "C" void LAB_100368c2(void);
+extern "C" void LAB_10036a8e(void);
+extern "C" void LAB_10036cfa(void);
+extern "C" void LAB_100373d5(void);
+extern "C" void LAB_10037d7b(void);
+extern "C" void LAB_10037dfd(void);
+extern "C" void LAB_1003820d(void);
+extern "C" void LAB_10038bfe(void);
+extern "C" void LAB_10038da2(void);
+extern "C" void LAB_10038e24(void);
+extern "C" void LAB_10039a68(void);
+extern "C" void LAB_1003a5c6(void);
+extern "C" void LAB_1003bc0a(void);
+extern "C" void LAB_1003cf4c(void);
+extern "C" void LAB_1003cff1(void);
+extern "C" void LAB_1003d253(void);
+extern "C" void LAB_1003ddd4(void);
+extern "C" void LAB_1003e095(void);
+extern "C" void LAB_1003f12f(void);
+extern "C" void LAB_1003f61b(void);
+extern "C" void LAB_1003f7c4(void);
+extern "C" void LAB_1003f96d(void);
+extern "C" void LAB_10040b4c(void);
+extern "C" void LAB_10040e8f(void);
+extern "C" void LAB_10040f48(void);
+extern "C" void LAB_10041209(void);
+extern "C" void LAB_1004120e(void);
+extern "C" void LAB_100419c5(void);
+extern "C" void LAB_10041fbf(void);
+extern "C" void LAB_10042505(void);
+extern "C" void LAB_10042ae1(void);
+extern "C" void LAB_1004453f(void);
+extern "C" void LAB_100447ba(void);
+extern "C" void LAB_10044869(void);
+extern "C" void LAB_10044cec(void);
+extern "C" void LAB_1004515b(void);
+extern "C" void LAB_100452af(void);
+extern "C" void LAB_10046c8b(void);
+extern "C" void LAB_10046fc9(void);
+extern "C" void LAB_10047906(void);
+extern "C" void LAB_10047e1a(void);
+extern "C" void LAB_10047fdc(void);
+extern "C" void LAB_10048d2e(void);
+extern "C" void LAB_100498f0(void);
+extern "C" void LAB_10049ab7(void);
+extern "C" void LAB_1004a0bb(void);
+extern "C" void LAB_1004a18d(void);
+extern "C" void LAB_1004a421(void);
+extern "C" void LAB_1004ad13(void);
+extern "C" void LAB_1004b876(void);
+extern "C" void LAB_1004bc72(void);
+extern "C" void LAB_1004bebb(void);
+extern "C" void LAB_1004bf33(void);
+extern "C" void LAB_1004c375(void);
+extern "C" void LAB_1004c67c(void);
+extern "C" void LAB_1004cf2d(void);
+extern "C" void LAB_1004cfb9(void);
+extern "C" void LAB_1004d194(void);
+extern "C" void LAB_1004d793(void);
+extern "C" void LAB_1004e17a(void);
+extern "C" void LAB_1004eeef(void);
+extern "C" void LAB_1004efa8(void);
+extern "C" void LAB_1004f0e3(void);
+extern "C" void LAB_1004f20a(void);
+extern "C" void LAB_1004f76e(void);
+extern "C" void LAB_10050380(void);
+extern "C" void LAB_100514f1(void);
+extern "C" void LAB_10051f55(void);
+extern "C" void LAB_10052211(void);
+extern "C" void LAB_10052405(void);
+extern "C" void LAB_10052a27(void);
+extern "C" void LAB_10052d88(void);
+extern "C" void LAB_1005330f(void);
+extern "C" void LAB_100534e0(void);
+extern "C" void LAB_10053751(void);
+extern "C" void LAB_10053d96(void);
+extern "C" void LAB_10054ba1(void);
+extern "C" void LAB_100551a0(void);
+extern "C" void LAB_10055218(void);
+extern "C" void LAB_10055588(void);
+extern "C" void LAB_1005588a(void);
+extern "C" void LAB_100563a2(void);
+extern "C" void LAB_1005641f(void);
+extern "C" void LAB_10056b2c(void);
+extern "C" void LAB_10056ba9(void);
+extern "C" void LAB_10057702(void);
+extern "C" void LAB_10057a5e(void);
+extern "C" void LAB_10057ce3(void);
+extern "C" void LAB_100580a3(void);
+extern "C" void LAB_1005851c(void);
+extern "C" void LAB_1005862f(void);
+extern "C" void LAB_100588dc(void);
+extern "C" void LAB_10058981(void);
+extern "C" void LAB_10058a94(void);
+extern "C" void LAB_10059016(void);
+extern "C" void LAB_1005908e(void);
+extern "C" void LAB_1005927d(void);
+extern "C" void LAB_10059282(void);
+extern "C" void LAB_10059cb9(void);
+extern "C" void LAB_1005a01a(void);
+extern "C" void LAB_1005a1e6(void);
+extern "C" void LAB_1005af10(void);
+extern "C" void LAB_1005afb0(void);
+extern "C" void LAB_1005bc2b(void);
+extern "C" void LAB_1005c018(void);
+extern "C" void LAB_1005c1f8(void);
+extern "C" void LAB_1005d472(void);
+extern "C" void LAB_1005d6cf(void);
+extern "C" void LAB_1005db3e(void);
+extern "C" void LAB_1005df8f(void);
+extern "C" void LAB_1005f641(void);
+extern "C" void LAB_1005fe02(void);
+extern "C" void LAB_100617de(void);
+extern "C" void LAB_10061a6d(void);
+extern "C" void LAB_1006273d(void);
+extern "C" void LAB_1006322d(void);
+extern "C" void LAB_100633c2(void);
+extern "C" void LAB_10063584(void);
+extern "C" void LAB_10064934(void);
+extern "C" void LAB_1006493e(void);
+extern "C" void LAB_10064a38(void);
+extern "C" void LAB_10064aab(void);
+extern "C" void LAB_10064ed9(void);
+extern "C" void LAB_100660cc(void);
+extern "C" void LAB_10067350(void);
+extern "C" void LAB_10067562(void);
+extern "C" void LAB_1006757b(void);
+extern "C" void LAB_10067e0e(void);
+extern "C" void LAB_10067f6c(void);
+extern "C" void LAB_10068aa2(void);
+extern "C" void LAB_10068c5a(void);
+extern "C" void LAB_10068cd2(void);
+extern "C" void LAB_100690b5(void);
+extern "C" void LAB_100698f3(void);
+extern "C" void LAB_10069989(void);
+extern "C" void LAB_1006aa8c(void);
+extern "C" void LAB_1006ad11(void);
+extern "C" void LAB_1006b2ca(void);
+extern "C" void LAB_1006b789(void);
+extern "C" void LAB_1006bb76(void);
+extern "C" void LAB_1006bc7f(void);
+extern "C" void LAB_1006c558(void);
+extern "C" void LAB_1006cce2(void);
+extern "C" void LAB_1006cd8c(void);
+extern "C" void LAB_1006cdfa(void);
+extern "C" void LAB_1006d0a2(void);
+extern "C" void LAB_1006d156(void);
+extern "C" void LAB_1006d4ee(void);
+extern "C" void LAB_1006dbb5(void);
+extern "C" void LAB_1006df11(void);
+extern "C" void LAB_1006e90c(void);
+extern "C" void LAB_1006e9b6(void);
+extern "C" void LAB_1006ea2e(void);
+extern "C" void LAB_1006eaab(void);
+extern "C" void LAB_1006ecfe(void);
+extern "C" void LAB_1006ee07(void);
+extern "C" void LAB_1006f25d(void);
+extern "C" void LAB_1006f84d(void);
+extern "C" void LAB_1006ffbe(void);
+extern "C" void LAB_1007079d(void);
+extern "C" void LAB_10070fe0(void);
+extern "C" void LAB_10071b9d(void);
+extern "C" void LAB_10071ca6(void);
+extern "C" void LAB_10072070(void);
+extern "C" void LAB_10072a52(void);
+extern "C" void LAB_10072db3(void);
+extern "C" void LAB_1007306a(void);
+extern "C" void LAB_1007333f(void);
+extern "C" void LAB_10073984(void);
+extern "C" void LAB_10073e25(void);
+extern "C" void LAB_100740f0(void);
+extern "C" void LAB_10074c1c(void);
+extern "C" void LAB_10074f32(void);
+extern "C" void LAB_100754f5(void);
+extern "C" void LAB_10075dab(void);
+extern "C" void LAB_10076733(void);
+extern "C" void LAB_10076acb(void);
+extern "C" void LAB_10076e77(void);
+extern "C" void LAB_10076f03(void);
+extern "C" void LAB_10077fca(void);
+extern "C" void LAB_100780ec(void);
+extern "C" void LAB_10078457(void);
+extern "C" void LAB_10078628(void);
+extern "C" void LAB_10078a7e(void);
+extern "C" void LAB_10078dee(void);
+extern "C" void LAB_10078df8(void);
+extern "C" void LAB_10079384(void);
+extern "C" void LAB_10079564(void);
+extern "C" void LAB_10079794(void);
+extern "C" void LAB_1007a68a(void);
+extern "C" void LAB_1007a905(void);
+extern "C" void LAB_1007af90(void);
+extern "C" void LAB_1007bb4d(void);
+extern "C" void LAB_1007bd0f(void);
+extern "C" void LAB_1007be0e(void);
+extern "C" void LAB_1007beae(void);
+extern "C" void LAB_1007ca9d(void);
+extern "C" void LAB_1007cbe2(void);
+extern "C" void LAB_1007d376(void);
+extern "C" void LAB_1007d466(void);
+extern "C" void LAB_1007d62d(void);
+extern "C" void LAB_1007de25(void);
+extern "C" void LAB_1007ec62(void);
+extern "C" void LAB_1007f4b9(void);
+extern "C" void LAB_1007f860(void);
+extern "C" void LAB_1007fd29(void);
+extern "C" void LAB_10080774(void);
+extern "C" void LAB_10081007(void);
+extern "C" void LAB_100811b5(void);
+extern "C" void LAB_100811ba(void);
+extern "C" void LAB_1008143a(void);
+extern "C" void LAB_100816d3(void);
+extern "C" void LAB_10081827(void);
+extern "C" void LAB_10081fc5(void);
+extern "C" void LAB_100820b5(void);
+extern "C" void LAB_10082231(void);
+extern "C" void LAB_10082380(void);
+extern "C" void LAB_1008238f(void);
+extern "C" void LAB_10082fd3(void);
+extern "C" void LAB_10083302(void);
+extern "C" void LAB_1008346f(void);
+extern "C" void LAB_10083519(void);
+extern "C" void LAB_10083807(void);
+extern "C" void LAB_10083c30(void);
+extern "C" void LAB_10083d2a(void);
+extern "C" void LAB_10084040(void);
+extern "C" void LAB_10084149(void);
+extern "C" void LAB_10084153(void);
+extern "C" void LAB_10084fdb(void);
+extern "C" void LAB_10085a1c(void);
+extern "C" void LAB_10085c65(void);
+extern "C" void LAB_10085cfb(void);
+extern "C" void LAB_1008730d(void);
+extern "C" void LAB_10087d12(void);
+extern "C" void LAB_100896fd(void);
+extern "C" void LAB_1008a68e(void);
+extern "C" void LAB_1008a963(void);
+extern "C" void LAB_1008b011(void);
+extern "C" void LAB_1008b0b6(void);
+extern "C" void LAB_1008b58e(void);
+extern "C" void LAB_1008ba70(void);
+extern "C" void LAB_1008bca5(void);
+extern "C" void LAB_1008bd27(void);
+extern "C" void LAB_1008cc4a(void);
+extern "C" void LAB_1008d019(void);
+extern "C" void LAB_1008de29(void);
+extern "C" void LAB_1008df5a(void);
+extern "C" void LAB_1008e1d5(void);
+extern "C" void LAB_1008e338(void);
+extern "C" void LAB_1008e554(void);
+extern "C" void LAB_1008e941(void);
+extern "C" void LAB_1008ef68(void);
+extern "C" void LAB_1008f026(void);
+extern "C" void LAB_1008f22e(void);
+extern "C" void LAB_1008ff44(void);
+extern "C" void LAB_10090129(void);
+extern "C" void LAB_10091e7a(void);
+extern "C" void LAB_10092a6e(void);
+extern "C" void LAB_10092c76(void);
+extern "C" void LAB_10093081(void);
+extern "C" void LAB_1009341e(void);
+extern "C" void LAB_1009386a(void);
+extern "C" void LAB_10093905(void);
+extern "C" void LAB_10093b0d(void);
+extern "C" void LAB_10093ba8(void);
+extern "C" void LAB_100941d9(void);
+extern "C" void LAB_100948c3(void);
+extern "C" void LAB_10094c6f(void);
+extern "C" void LAB_1009569c(void);
+extern "C" void LAB_1009575a(void);
+extern "C" void LAB_10095e12(void);
+extern "C" void LAB_10096182(void);
+extern "C" void LAB_10097929(void);
+extern "C" void LAB_1009793d(void);
+extern "C" void LAB_100988ab(void);
+extern "C" void LAB_10098af4(void);
+extern "C" void LAB_100993aa(void);
+extern "C" void LAB_1009a115(void);
+extern "C" void LAB_1009a458(void);
+
 
 
 
@@ -3299,9 +3711,10 @@ struct SCVtbl_33_0 { virtual void _p0(); virtual void _p1(); virtual void _p2();
 __declspec(naked) void FUN_10dd8a41(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_100129d6
 }
+
 
 
 
@@ -3315,9 +3728,10 @@ __declspec(naked) void FUN_10dd8a41(void)
 __declspec(naked) void FUN_10dd9ab0(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100563a2
 }
+
 
 
 
@@ -3331,9 +3745,10 @@ __declspec(naked) void FUN_10dd9ab0(void)
 __declspec(naked) void FUN_10dd9aba(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_100563a2
 }
+
 
 
 
@@ -3347,9 +3762,10 @@ __declspec(naked) void FUN_10dd9aba(void)
 __declspec(naked) void FUN_10dd9ae0(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10076e77
 }
+
 
 
 
@@ -3363,9 +3779,10 @@ __declspec(naked) void FUN_10dd9ae0(void)
 __declspec(naked) void FUN_10dd9aea(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10076e77
 }
+
 
 
 
@@ -3389,9 +3806,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10ddae40(void)
 __declspec(naked) void FUN_10ddae43(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1004e17a
 }
+
 
 
 
@@ -3405,9 +3823,10 @@ __declspec(naked) void FUN_10ddae43(void)
 __declspec(naked) void FUN_10ddae4d(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_1004e17a
 }
+
 
 
 
@@ -3431,9 +3850,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10ddae60(void)
 __declspec(naked) void FUN_10ddae63(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10095e12
 }
+
 
 
 
@@ -3447,9 +3867,10 @@ __declspec(naked) void FUN_10ddae63(void)
 __declspec(naked) void FUN_10ddae6d(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10095e12
 }
+
 
 
 
@@ -3463,9 +3884,10 @@ __declspec(naked) void FUN_10ddae6d(void)
 __declspec(naked) void FUN_10ddced9(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10076f03
 }
+
 
 
 
@@ -3479,9 +3901,10 @@ __declspec(naked) void FUN_10ddced9(void)
 __declspec(naked) void FUN_10ddcee3(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_10076f03
 }
+
 
 
 
@@ -3495,9 +3918,10 @@ __declspec(naked) void FUN_10ddcee3(void)
 __declspec(naked) void FUN_10ddcf89(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1007d466
 }
+
 
 
 
@@ -3511,9 +3935,10 @@ __declspec(naked) void FUN_10ddcf89(void)
 __declspec(naked) void FUN_10ddcf93(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1007d466
 }
+
 
 
 
@@ -3547,9 +3972,10 @@ undefined1 FUN_10de2150(void)
 __declspec(naked) void FUN_10de5763(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10033398
 }
+
 
 
 
@@ -3563,9 +3989,10 @@ __declspec(naked) void FUN_10de5763(void)
 __declspec(naked) void FUN_10de576d(void)
 
 {
-  __asm sub ecx, 0x46c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x6c __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1003d253
 }
+
 
 
 
@@ -3579,9 +4006,10 @@ __declspec(naked) void FUN_10de576d(void)
 __declspec(naked) void FUN_10de577a(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_1003d253
 }
+
 
 
 
@@ -3595,9 +4023,10 @@ __declspec(naked) void FUN_10de577a(void)
 __declspec(naked) void FUN_10de5784(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100660cc
 }
+
 
 
 
@@ -3611,9 +4040,10 @@ __declspec(naked) void FUN_10de5784(void)
 __declspec(naked) void FUN_10de578e(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_100660cc
 }
+
 
 
 
@@ -3627,9 +4057,10 @@ __declspec(naked) void FUN_10de578e(void)
 __declspec(naked) void FUN_10de5798(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10084fdb
 }
+
 
 
 
@@ -3643,9 +4074,10 @@ __declspec(naked) void FUN_10de5798(void)
 __declspec(naked) void FUN_10de57a2(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1001d133
 }
+
 
 
 
@@ -3659,9 +4091,10 @@ __declspec(naked) void FUN_10de57a2(void)
 __declspec(naked) void FUN_10de57ac(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1001d133
 }
+
 
 
 
@@ -3675,9 +4108,10 @@ __declspec(naked) void FUN_10de57ac(void)
 __declspec(naked) void FUN_10de57b6(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_1001d133
 }
+
 
 
 
@@ -3691,9 +4125,10 @@ __declspec(naked) void FUN_10de57b6(void)
 __declspec(naked) void FUN_10de57c0(void)
 
 {
-  __asm sub ecx, 0x34
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x34
   __asm jmp LAB_1001d133
 }
+
 
 
 
@@ -3707,9 +4142,10 @@ __declspec(naked) void FUN_10de57c0(void)
 __declspec(naked) void FUN_10de57ca(void)
 
 {
-  __asm sub ecx, 0x40
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x40
   __asm jmp LAB_1001d133
 }
+
 
 
 
@@ -3723,9 +4159,10 @@ __declspec(naked) void FUN_10de57ca(void)
 __declspec(naked) void FUN_10de57d4(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1001d133
 }
+
 
 
 
@@ -4150,9 +4587,10 @@ void FUN_10dff4d0(void)
 __declspec(naked) void FUN_10dff853(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1009a458
 }
+
 
 
 
@@ -4166,9 +4604,10 @@ __declspec(naked) void FUN_10dff853(void)
 __declspec(naked) void FUN_10dff85d(void)
 
 {
-  __asm sub ecx, 0x14
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x14
   __asm jmp LAB_1002530b
 }
+
 
 
 
@@ -4182,9 +4621,10 @@ __declspec(naked) void FUN_10dff85d(void)
 __declspec(naked) void FUN_10dff867(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10078a7e
 }
+
 
 
 
@@ -4198,9 +4638,10 @@ __declspec(naked) void FUN_10dff867(void)
 __declspec(naked) void FUN_10dff871(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1003ddd4
 }
+
 
 
 
@@ -4214,9 +4655,10 @@ __declspec(naked) void FUN_10dff871(void)
 __declspec(naked) void FUN_10dff87b(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1008e941
 }
+
 
 
 
@@ -4230,9 +4672,10 @@ __declspec(naked) void FUN_10dff87b(void)
 __declspec(naked) void FUN_10dff885(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10083807
 }
+
 
 
 
@@ -4316,9 +4759,10 @@ void __stdcall FUN_10e07950(unsigned int recovered_unused_stack_0)
 __declspec(naked) void FUN_10e0a324(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10010636
 }
+
 
 
 
@@ -4342,9 +4786,10 @@ void __stdcall FUN_10e0aee0(unsigned int recovered_unused_stack_0, unsigned int 
 __declspec(naked) void FUN_10e13796(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1006e9b6
 }
+
 
 
 
@@ -4358,9 +4803,10 @@ __declspec(naked) void FUN_10e13796(void)
 __declspec(naked) void FUN_10e137a0(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10013368
 }
+
 
 
 
@@ -4374,9 +4820,10 @@ __declspec(naked) void FUN_10e137a0(void)
 __declspec(naked) void FUN_10e137aa(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10013368
 }
+
 
 
 
@@ -4390,9 +4837,10 @@ __declspec(naked) void FUN_10e137aa(void)
 __declspec(naked) void FUN_10e137b4(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1006ffbe
 }
+
 
 
 
@@ -4406,9 +4854,10 @@ __declspec(naked) void FUN_10e137b4(void)
 __declspec(naked) void FUN_10e137be(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1006ffbe
 }
+
 
 
 
@@ -4422,9 +4871,10 @@ __declspec(naked) void FUN_10e137be(void)
 __declspec(naked) void FUN_10e137c8(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_100988ab
 }
+
 
 
 
@@ -4438,9 +4888,10 @@ __declspec(naked) void FUN_10e137c8(void)
 __declspec(naked) void FUN_10e137d2(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1005588a
 }
+
 
 
 
@@ -4454,9 +4905,10 @@ __declspec(naked) void FUN_10e137d2(void)
 __declspec(naked) void FUN_10e137dc(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10053751
 }
+
 
 
 
@@ -4470,9 +4922,10 @@ __declspec(naked) void FUN_10e137dc(void)
 __declspec(naked) void FUN_10e137e6(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10053751
 }
+
 
 
 
@@ -4486,9 +4939,10 @@ __declspec(naked) void FUN_10e137e6(void)
 __declspec(naked) void FUN_10e137f0(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10071b9d
 }
+
 
 
 
@@ -4502,9 +4956,10 @@ __declspec(naked) void FUN_10e137f0(void)
 __declspec(naked) void FUN_10e137fa(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10071b9d
 }
+
 
 
 
@@ -4518,9 +4973,10 @@ __declspec(naked) void FUN_10e137fa(void)
 __declspec(naked) void FUN_10e13804(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1001bb85
 }
+
 
 
 
@@ -4534,9 +4990,10 @@ __declspec(naked) void FUN_10e13804(void)
 __declspec(naked) void FUN_10e1380e(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1001bb85
 }
+
 
 
 
@@ -4550,9 +5007,10 @@ __declspec(naked) void FUN_10e1380e(void)
 __declspec(naked) void FUN_10e13818(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1001bb85
 }
+
 
 
 
@@ -4566,9 +5024,10 @@ __declspec(naked) void FUN_10e13818(void)
 __declspec(naked) void FUN_10e13822(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1001bb85
 }
+
 
 
 
@@ -4832,9 +5291,10 @@ void FUN_10e20bc0(void)
 __declspec(naked) void FUN_10e234e7(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10003418
 }
+
 
 
 
@@ -4848,9 +5308,10 @@ __declspec(naked) void FUN_10e234e7(void)
 __declspec(naked) void FUN_10e234f1(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10005303
 }
+
 
 
 
@@ -4864,9 +5325,10 @@ __declspec(naked) void FUN_10e234f1(void)
 __declspec(naked) void FUN_10e234fb(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_10005303
 }
+
 
 
 
@@ -4880,9 +5342,10 @@ __declspec(naked) void FUN_10e234fb(void)
 __declspec(naked) void FUN_10e23505(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_10005303
 }
+
 
 
 
@@ -4896,9 +5359,10 @@ __declspec(naked) void FUN_10e23505(void)
 __declspec(naked) void FUN_10e2350f(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_10005303
 }
+
 
 
 
@@ -5002,9 +5466,10 @@ undefined1 FUN_10e24df0(void)
 __declspec(naked) void FUN_10e29072(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1008ba70
 }
+
 
 
 
@@ -5018,9 +5483,10 @@ __declspec(naked) void FUN_10e29072(void)
 __declspec(naked) void FUN_10e2907c(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10047e1a
 }
+
 
 
 
@@ -5034,9 +5500,10 @@ __declspec(naked) void FUN_10e2907c(void)
 __declspec(naked) void FUN_10e29086(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1007bb4d
 }
+
 
 
 
@@ -5050,9 +5517,10 @@ __declspec(naked) void FUN_10e29086(void)
 __declspec(naked) void FUN_10e29090(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10002c16
 }
+
 
 
 
@@ -5066,9 +5534,10 @@ __declspec(naked) void FUN_10e29090(void)
 __declspec(naked) void FUN_10e2909a(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1002795d
 }
+
 
 
 
@@ -5082,9 +5551,10 @@ __declspec(naked) void FUN_10e2909a(void)
 __declspec(naked) void FUN_10e290a4(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1002795d
 }
+
 
 
 
@@ -5098,9 +5568,10 @@ __declspec(naked) void FUN_10e290a4(void)
 __declspec(naked) void FUN_10e290ae(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1006757b
 }
+
 
 
 
@@ -5114,9 +5585,10 @@ __declspec(naked) void FUN_10e290ae(void)
 __declspec(naked) void FUN_10e290b8(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10067350
 }
+
 
 
 
@@ -5130,9 +5602,10 @@ __declspec(naked) void FUN_10e290b8(void)
 __declspec(naked) void FUN_10e290c2(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1008cc4a
 }
+
 
 
 
@@ -5146,9 +5619,10 @@ __declspec(naked) void FUN_10e290c2(void)
 __declspec(naked) void FUN_10e290cc(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1008cc4a
 }
+
 
 
 
@@ -5162,9 +5636,10 @@ __declspec(naked) void FUN_10e290cc(void)
 __declspec(naked) void FUN_10e290d6(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1000f605
 }
+
 
 
 
@@ -5178,9 +5653,10 @@ __declspec(naked) void FUN_10e290d6(void)
 __declspec(naked) void FUN_10e290e0(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10020095
 }
+
 
 
 
@@ -5194,9 +5670,10 @@ __declspec(naked) void FUN_10e290e0(void)
 __declspec(naked) void FUN_10e290ea(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10022e5d
 }
+
 
 
 
@@ -5210,9 +5687,10 @@ __declspec(naked) void FUN_10e290ea(void)
 __declspec(naked) void FUN_10e290f4(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10022e5d
 }
+
 
 
 
@@ -5226,9 +5704,10 @@ __declspec(naked) void FUN_10e290f4(void)
 __declspec(naked) void FUN_10e290fe(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10036cfa
 }
+
 
 
 
@@ -5242,9 +5721,10 @@ __declspec(naked) void FUN_10e290fe(void)
 __declspec(naked) void FUN_10e29108(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10059282
 }
+
 
 
 
@@ -5258,9 +5738,10 @@ __declspec(naked) void FUN_10e29108(void)
 __declspec(naked) void FUN_10e29112(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10059282
 }
+
 
 
 
@@ -5274,9 +5755,10 @@ __declspec(naked) void FUN_10e29112(void)
 __declspec(naked) void FUN_10e2911c(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1009569c
 }
+
 
 
 
@@ -5290,9 +5772,10 @@ __declspec(naked) void FUN_10e2911c(void)
 __declspec(naked) void FUN_10e29126(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1004f20a
 }
+
 
 
 
@@ -5306,9 +5789,10 @@ __declspec(naked) void FUN_10e29126(void)
 __declspec(naked) void FUN_10e29130(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1005db3e
 }
+
 
 
 
@@ -5322,9 +5806,10 @@ __declspec(naked) void FUN_10e29130(void)
 __declspec(naked) void FUN_10e2913a(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1000fe20
 }
+
 
 
 
@@ -5338,9 +5823,10 @@ __declspec(naked) void FUN_10e2913a(void)
 __declspec(naked) void FUN_10e29144(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10093081
 }
+
 
 
 
@@ -5354,9 +5840,10 @@ __declspec(naked) void FUN_10e29144(void)
 __declspec(naked) void FUN_10e2914e(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1001eddf
 }
+
 
 
 
@@ -5370,9 +5857,10 @@ __declspec(naked) void FUN_10e2914e(void)
 __declspec(naked) void FUN_10e29158(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1001eddf
 }
+
 
 
 
@@ -5386,9 +5874,10 @@ __declspec(naked) void FUN_10e29158(void)
 __declspec(naked) void FUN_10e29162(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1001eddf
 }
+
 
 
 
@@ -5402,9 +5891,10 @@ __declspec(naked) void FUN_10e29162(void)
 __declspec(naked) void FUN_10e2916c(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1001eddf
 }
+
 
 
 
@@ -5648,9 +6138,10 @@ void FUN_10e47380(void)
 __declspec(naked) void FUN_10e478b6(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10042ae1
 }
+
 
 
 
@@ -5664,9 +6155,10 @@ __declspec(naked) void FUN_10e478b6(void)
 __declspec(naked) void FUN_10e478c0(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1008e554
 }
+
 
 
 
@@ -5680,9 +6172,10 @@ __declspec(naked) void FUN_10e478c0(void)
 __declspec(naked) void FUN_10e478ca(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1000ada8
 }
+
 
 
 
@@ -5696,9 +6189,10 @@ __declspec(naked) void FUN_10e478ca(void)
 __declspec(naked) void FUN_10e478d4(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1000ada8
 }
+
 
 
 
@@ -5712,9 +6206,10 @@ __declspec(naked) void FUN_10e478d4(void)
 __declspec(naked) void FUN_10e478de(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1000ada8
 }
+
 
 
 
@@ -5728,9 +6223,10 @@ __declspec(naked) void FUN_10e478de(void)
 __declspec(naked) void FUN_10e478e8(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1000ada8
 }
+
 
 
 
@@ -5984,9 +6480,10 @@ void FUN_10e4f7f0(void)
 __declspec(naked) void FUN_10e51750(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008730d
 }
+
 
 
 
@@ -6000,9 +6497,10 @@ __declspec(naked) void FUN_10e51750(void)
 __declspec(naked) void FUN_10e5175a(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1005330f
 }
+
 
 
 
@@ -6016,9 +6514,10 @@ __declspec(naked) void FUN_10e5175a(void)
 __declspec(naked) void FUN_10e51764(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_1005330f
 }
+
 
 
 
@@ -6032,9 +6531,10 @@ __declspec(naked) void FUN_10e51764(void)
 __declspec(naked) void FUN_10e5176e(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1005330f
 }
+
 
 
 
@@ -6048,9 +6548,10 @@ __declspec(naked) void FUN_10e5176e(void)
 __declspec(naked) void FUN_10e51778(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10061a6d
 }
+
 
 
 
@@ -6064,9 +6565,10 @@ __declspec(naked) void FUN_10e51778(void)
 __declspec(naked) void FUN_10e51782(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10061a6d
 }
+
 
 
 
@@ -6080,9 +6582,10 @@ __declspec(naked) void FUN_10e51782(void)
 __declspec(naked) void FUN_10e5178c(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10064a38
 }
+
 
 
 
@@ -6096,9 +6599,10 @@ __declspec(naked) void FUN_10e5178c(void)
 __declspec(naked) void FUN_10e51796(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10064a38
 }
+
 
 
 
@@ -6112,9 +6616,10 @@ __declspec(naked) void FUN_10e51796(void)
 __declspec(naked) void FUN_10e517a0(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10047906
 }
+
 
 
 
@@ -6128,9 +6633,10 @@ __declspec(naked) void FUN_10e517a0(void)
 __declspec(naked) void FUN_10e517aa(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_10047906
 }
+
 
 
 
@@ -6144,9 +6650,10 @@ __declspec(naked) void FUN_10e517aa(void)
 __declspec(naked) void FUN_10e517b4(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_10047906
 }
+
 
 
 
@@ -6160,9 +6667,10 @@ __declspec(naked) void FUN_10e517b4(void)
 __declspec(naked) void FUN_10e517be(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_10047906
 }
+
 
 
 
@@ -6486,9 +6994,10 @@ undefined1 FUN_10e5a280(void)
 __declspec(naked) void FUN_10e5fe12(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10050380
 }
+
 
 
 
@@ -6502,9 +7011,10 @@ __declspec(naked) void FUN_10e5fe12(void)
 __declspec(naked) void FUN_10e5fe1c(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10052a27
 }
+
 
 
 
@@ -6518,9 +7028,10 @@ __declspec(naked) void FUN_10e5fe1c(void)
 __declspec(naked) void FUN_10e5fe26(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1001984e
 }
+
 
 
 
@@ -6534,9 +7045,10 @@ __declspec(naked) void FUN_10e5fe26(void)
 __declspec(naked) void FUN_10e5fe30(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1009a115
 }
+
 
 
 
@@ -6550,9 +7062,10 @@ __declspec(naked) void FUN_10e5fe30(void)
 __declspec(naked) void FUN_10e5fe3a(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1004ad13
 }
+
 
 
 
@@ -6566,9 +7079,10 @@ __declspec(naked) void FUN_10e5fe3a(void)
 __declspec(naked) void FUN_10e5fe44(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1004d793
 }
+
 
 
 
@@ -6582,9 +7096,10 @@ __declspec(naked) void FUN_10e5fe44(void)
 __declspec(naked) void FUN_10e5fe4e(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1006bc7f
 }
+
 
 
 
@@ -6598,9 +7113,10 @@ __declspec(naked) void FUN_10e5fe4e(void)
 __declspec(naked) void FUN_10e5fe58(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1006322d
 }
+
 
 
 
@@ -6614,9 +7130,10 @@ __declspec(naked) void FUN_10e5fe58(void)
 __declspec(naked) void FUN_10e5fe62(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1002164d
 }
+
 
 
 
@@ -6630,9 +7147,10 @@ __declspec(naked) void FUN_10e5fe62(void)
 __declspec(naked) void FUN_10e5fe6c(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1002f018
 }
+
 
 
 
@@ -6646,9 +7164,10 @@ __declspec(naked) void FUN_10e5fe6c(void)
 __declspec(naked) void FUN_10e5fe76(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1002f018
 }
+
 
 
 
@@ -6662,9 +7181,10 @@ __declspec(naked) void FUN_10e5fe76(void)
 __declspec(naked) void FUN_10e5fe80(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10044cec
 }
+
 
 
 
@@ -6678,9 +7198,10 @@ __declspec(naked) void FUN_10e5fe80(void)
 __declspec(naked) void FUN_10e5fe8a(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10057702
 }
+
 
 
 
@@ -6694,9 +7215,10 @@ __declspec(naked) void FUN_10e5fe8a(void)
 __declspec(naked) void FUN_10e5fe94(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1006f25d
 }
+
 
 
 
@@ -6710,9 +7232,10 @@ __declspec(naked) void FUN_10e5fe94(void)
 __declspec(naked) void FUN_10e5fe9e(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1007d376
 }
+
 
 
 
@@ -6726,9 +7249,10 @@ __declspec(naked) void FUN_10e5fe9e(void)
 __declspec(naked) void FUN_10e5fea8(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_100160a4
 }
+
 
 
 
@@ -6742,9 +7266,10 @@ __declspec(naked) void FUN_10e5fea8(void)
 __declspec(naked) void FUN_10e5feb2(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10052211
 }
+
 
 
 
@@ -6758,9 +7283,10 @@ __declspec(naked) void FUN_10e5feb2(void)
 __declspec(naked) void FUN_10e5febc(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10044869
 }
+
 
 
 
@@ -6774,9 +7300,10 @@ __declspec(naked) void FUN_10e5febc(void)
 __declspec(naked) void FUN_10e5fec6(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1003820d
 }
+
 
 
 
@@ -6790,9 +7317,10 @@ __declspec(naked) void FUN_10e5fec6(void)
 __declspec(naked) void FUN_10e5fed0(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1003820d
 }
+
 
 
 
@@ -6806,9 +7334,10 @@ __declspec(naked) void FUN_10e5fed0(void)
 __declspec(naked) void FUN_10e5feda(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1003820d
 }
+
 
 
 
@@ -6822,9 +7351,10 @@ __declspec(naked) void FUN_10e5feda(void)
 __declspec(naked) void FUN_10e5fee4(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1003820d
 }
+
 
 
 
@@ -6838,9 +7368,10 @@ __declspec(naked) void FUN_10e5fee4(void)
 __declspec(naked) void FUN_10e5feee(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1003820d
 }
+
 
 
 
@@ -6854,9 +7385,10 @@ __declspec(naked) void FUN_10e5feee(void)
 __declspec(naked) void FUN_10e5fefb(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10056b2c
 }
+
 
 
 
@@ -6870,9 +7402,10 @@ __declspec(naked) void FUN_10e5fefb(void)
 __declspec(naked) void FUN_10e5ff05(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10084040
 }
+
 
 
 
@@ -7336,9 +7869,10 @@ undefined1 FUN_10e75750(void)
 __declspec(naked) void FUN_10e76c47(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100948c3
 }
+
 
 
 
@@ -7352,9 +7886,10 @@ __declspec(naked) void FUN_10e76c47(void)
 __declspec(naked) void FUN_10e76c51(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1000ea5c
 }
+
 
 
 
@@ -7368,9 +7903,10 @@ __declspec(naked) void FUN_10e76c51(void)
 __declspec(naked) void FUN_10e76c5b(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1000ea5c
 }
+
 
 
 
@@ -7384,9 +7920,10 @@ __declspec(naked) void FUN_10e76c5b(void)
 __declspec(naked) void FUN_10e76c65(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1000ea5c
 }
+
 
 
 
@@ -7400,9 +7937,10 @@ __declspec(naked) void FUN_10e76c65(void)
 __declspec(naked) void FUN_10e76c6f(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1000ea5c
 }
+
 
 
 
@@ -7416,9 +7954,10 @@ __declspec(naked) void FUN_10e76c6f(void)
 __declspec(naked) void FUN_10e76c79(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10079564
 }
+
 
 
 
@@ -7432,9 +7971,10 @@ __declspec(naked) void FUN_10e76c79(void)
 __declspec(naked) void FUN_10e76c83(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1002680a
 }
+
 
 
 
@@ -7448,9 +7988,10 @@ __declspec(naked) void FUN_10e76c83(void)
 __declspec(naked) void FUN_10e76c8d(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10022b5b
 }
+
 
 
 
@@ -7604,9 +8145,10 @@ void FUN_10e7f550(void)
 __declspec(naked) void FUN_10e7fde3(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1006ee07
 }
+
 
 
 
@@ -7620,9 +8162,10 @@ __declspec(naked) void FUN_10e7fde3(void)
 __declspec(naked) void FUN_10e7fded(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_1006ee07
 }
+
 
 
 
@@ -7636,9 +8179,10 @@ __declspec(naked) void FUN_10e7fded(void)
 __declspec(naked) void FUN_10e7fdf7(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1006ee07
 }
+
 
 
 
@@ -7652,9 +8196,10 @@ __declspec(naked) void FUN_10e7fdf7(void)
 __declspec(naked) void FUN_10e7fe01(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1009793d
 }
+
 
 
 
@@ -7758,9 +8303,10 @@ void FUN_10e82af0(void)
 __declspec(naked) void FUN_10e838f3(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10049ab7
 }
+
 
 
 
@@ -7774,9 +8320,10 @@ __declspec(naked) void FUN_10e838f3(void)
 __declspec(naked) void FUN_10e838fd(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10084153
 }
+
 
 
 
@@ -7790,9 +8337,10 @@ __declspec(naked) void FUN_10e838fd(void)
 __declspec(naked) void FUN_10e83907(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10014d94
 }
+
 
 
 
@@ -7806,9 +8354,10 @@ __declspec(naked) void FUN_10e83907(void)
 __declspec(naked) void FUN_10e83911(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_10014d94
 }
+
 
 
 
@@ -7822,9 +8371,10 @@ __declspec(naked) void FUN_10e83911(void)
 __declspec(naked) void FUN_10e8391b(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_10014d94
 }
+
 
 
 
@@ -7838,9 +8388,10 @@ __declspec(naked) void FUN_10e8391b(void)
 __declspec(naked) void FUN_10e83925(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_10014d94
 }
+
 
 
 
@@ -7954,9 +8505,10 @@ void FUN_10e86d30(void)
 __declspec(naked) void FUN_10e86f77(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008b58e
 }
+
 
 
 
@@ -7970,9 +8522,10 @@ __declspec(naked) void FUN_10e86f77(void)
 __declspec(naked) void FUN_10e86f81(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1008b58e
 }
+
 
 
 
@@ -7986,9 +8539,10 @@ __declspec(naked) void FUN_10e86f81(void)
 __declspec(naked) void FUN_10e86f8b(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1008b58e
 }
+
 
 
 
@@ -8002,9 +8556,10 @@ __declspec(naked) void FUN_10e86f8b(void)
 __declspec(naked) void FUN_10e86f95(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1008b58e
 }
+
 
 
 
@@ -8108,9 +8663,10 @@ void FUN_10e89950(void)
 __declspec(naked) void FUN_10e89b47(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008e338
 }
+
 
 
 
@@ -8124,9 +8680,10 @@ __declspec(naked) void FUN_10e89b47(void)
 __declspec(naked) void FUN_10e89b51(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1008e338
 }
+
 
 
 
@@ -8140,9 +8697,10 @@ __declspec(naked) void FUN_10e89b51(void)
 __declspec(naked) void FUN_10e89b5b(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1008e338
 }
+
 
 
 
@@ -8156,9 +8714,10 @@ __declspec(naked) void FUN_10e89b5b(void)
 __declspec(naked) void FUN_10e89b65(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1008e338
 }
+
 
 
 
@@ -8222,9 +8781,10 @@ undefined1 FUN_10e89f10(void)
 __declspec(naked) void FUN_10e96e42(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100754f5
 }
+
 
 
 
@@ -8238,9 +8798,10 @@ __declspec(naked) void FUN_10e96e42(void)
 __declspec(naked) void FUN_10e96e4c(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1001eaa1
 }
+
 
 
 
@@ -8254,9 +8815,10 @@ __declspec(naked) void FUN_10e96e4c(void)
 __declspec(naked) void FUN_10e96e56(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1001c2ce
 }
+
 
 
 
@@ -8270,9 +8832,10 @@ __declspec(naked) void FUN_10e96e56(void)
 __declspec(naked) void FUN_10e96e60(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1006dbb5
 }
+
 
 
 
@@ -8286,9 +8849,10 @@ __declspec(naked) void FUN_10e96e60(void)
 __declspec(naked) void FUN_10e96e6a(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10092a6e
 }
+
 
 
 
@@ -8302,9 +8866,10 @@ __declspec(naked) void FUN_10e96e6a(void)
 __declspec(naked) void FUN_10e96e74(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1007333f
 }
+
 
 
 
@@ -8318,9 +8883,10 @@ __declspec(naked) void FUN_10e96e74(void)
 __declspec(naked) void FUN_10e96e7e(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1007f4b9
 }
+
 
 
 
@@ -8334,9 +8900,10 @@ __declspec(naked) void FUN_10e96e7e(void)
 __declspec(naked) void FUN_10e96e88(void)
 
 {
-  __asm sub ecx, 0x46c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x6c __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007af90
 }
+
 
 
 
@@ -8350,9 +8917,10 @@ __declspec(naked) void FUN_10e96e88(void)
 __declspec(naked) void FUN_10e96e95(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_1007af90
 }
+
 
 
 
@@ -8366,9 +8934,10 @@ __declspec(naked) void FUN_10e96e95(void)
 __declspec(naked) void FUN_10e96e9f(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_100816d3
 }
+
 
 
 
@@ -8382,9 +8951,10 @@ __declspec(naked) void FUN_10e96e9f(void)
 __declspec(naked) void FUN_10e96ea9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_100816d3
 }
+
 
 
 
@@ -8398,9 +8968,10 @@ __declspec(naked) void FUN_10e96ea9(void)
 __declspec(naked) void FUN_10e96eb3(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_100816d3
 }
+
 
 
 
@@ -8414,9 +8985,10 @@ __declspec(naked) void FUN_10e96eb3(void)
 __declspec(naked) void FUN_10e96ebd(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10037dfd
 }
+
 
 
 
@@ -8430,9 +9002,10 @@ __declspec(naked) void FUN_10e96ebd(void)
 __declspec(naked) void FUN_10e96ec7(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10037dfd
 }
+
 
 
 
@@ -8446,9 +9019,10 @@ __declspec(naked) void FUN_10e96ec7(void)
 __declspec(naked) void FUN_10e96ed1(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10037dfd
 }
+
 
 
 
@@ -8462,9 +9036,10 @@ __declspec(naked) void FUN_10e96ed1(void)
 __declspec(naked) void FUN_10e96edb(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10037dfd
 }
+
 
 
 
@@ -8478,9 +9053,10 @@ __declspec(naked) void FUN_10e96edb(void)
 __declspec(naked) void FUN_10e96ee8(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10098af4
 }
+
 
 
 
@@ -8494,9 +9070,10 @@ __declspec(naked) void FUN_10e96ee8(void)
 __declspec(naked) void FUN_10e96ef2(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10098af4
 }
+
 
 
 
@@ -8510,9 +9087,10 @@ __declspec(naked) void FUN_10e96ef2(void)
 __declspec(naked) void FUN_10e96efc(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10098af4
 }
+
 
 
 
@@ -8526,9 +9104,10 @@ __declspec(naked) void FUN_10e96efc(void)
 __declspec(naked) void FUN_10e96f06(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10080774
 }
+
 
 
 
@@ -8542,9 +9121,10 @@ __declspec(naked) void FUN_10e96f06(void)
 __declspec(naked) void FUN_10e96f10(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10080774
 }
+
 
 
 
@@ -8558,9 +9138,10 @@ __declspec(naked) void FUN_10e96f10(void)
 __declspec(naked) void FUN_10e96f1a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10080774
 }
+
 
 
 
@@ -8574,9 +9155,10 @@ __declspec(naked) void FUN_10e96f1a(void)
 __declspec(naked) void FUN_10e96f24(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1003e095
 }
+
 
 
 
@@ -8590,9 +9172,10 @@ __declspec(naked) void FUN_10e96f24(void)
 __declspec(naked) void FUN_10e96f2e(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1003e095
 }
+
 
 
 
@@ -8606,9 +9189,10 @@ __declspec(naked) void FUN_10e96f2e(void)
 __declspec(naked) void FUN_10e96f38(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1003e095
 }
+
 
 
 
@@ -8622,9 +9206,10 @@ __declspec(naked) void FUN_10e96f38(void)
 __declspec(naked) void FUN_10e96f42(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100253a1
 }
+
 
 
 
@@ -8638,9 +9223,10 @@ __declspec(naked) void FUN_10e96f42(void)
 __declspec(naked) void FUN_10e96f4c(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10073e25
 }
+
 
 
 
@@ -8654,9 +9240,10 @@ __declspec(naked) void FUN_10e96f4c(void)
 __declspec(naked) void FUN_10e96f56(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10073e25
 }
+
 
 
 
@@ -8670,9 +9257,10 @@ __declspec(naked) void FUN_10e96f56(void)
 __declspec(naked) void FUN_10e96f60(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10073e25
 }
+
 
 
 
@@ -8686,9 +9274,10 @@ __declspec(naked) void FUN_10e96f60(void)
 __declspec(naked) void FUN_10e96f6a(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10017ef4
 }
+
 
 
 
@@ -8702,9 +9291,10 @@ __declspec(naked) void FUN_10e96f6a(void)
 __declspec(naked) void FUN_10e96f74(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10017ef4
 }
+
 
 
 
@@ -8718,9 +9308,10 @@ __declspec(naked) void FUN_10e96f74(void)
 __declspec(naked) void FUN_10e96f7e(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10017ef4
 }
+
 
 
 
@@ -8734,9 +9325,10 @@ __declspec(naked) void FUN_10e96f7e(void)
 __declspec(naked) void FUN_10e96f88(void)
 
 {
-  __asm sub ecx, 0x7c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x7c
   __asm jmp LAB_10017ef4
 }
+
 
 
 
@@ -8750,9 +9342,10 @@ __declspec(naked) void FUN_10e96f88(void)
 __declspec(naked) void FUN_10e96f92(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10042505
 }
+
 
 
 
@@ -8766,9 +9359,10 @@ __declspec(naked) void FUN_10e96f92(void)
 __declspec(naked) void FUN_10e96f9c(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10042505
 }
+
 
 
 
@@ -8782,9 +9376,10 @@ __declspec(naked) void FUN_10e96f9c(void)
 __declspec(naked) void FUN_10e96fa6(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10042505
 }
+
 
 
 
@@ -8798,9 +9393,10 @@ __declspec(naked) void FUN_10e96fa6(void)
 __declspec(naked) void FUN_10e96fb0(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10036769
 }
+
 
 
 
@@ -8814,9 +9410,10 @@ __declspec(naked) void FUN_10e96fb0(void)
 __declspec(naked) void FUN_10e96fba(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10036769
 }
+
 
 
 
@@ -8830,9 +9427,10 @@ __declspec(naked) void FUN_10e96fba(void)
 __declspec(naked) void FUN_10e96fc4(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10036769
 }
+
 
 
 
@@ -8846,9 +9444,10 @@ __declspec(naked) void FUN_10e96fc4(void)
 __declspec(naked) void FUN_10e96fce(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10032ff1
 }
+
 
 
 
@@ -8862,9 +9461,10 @@ __declspec(naked) void FUN_10e96fce(void)
 __declspec(naked) void FUN_10e96fd8(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10032ff1
 }
+
 
 
 
@@ -8878,9 +9478,10 @@ __declspec(naked) void FUN_10e96fd8(void)
 __declspec(naked) void FUN_10e96fe2(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_100080a3
 }
+
 
 
 
@@ -8894,9 +9495,10 @@ __declspec(naked) void FUN_10e96fe2(void)
 __declspec(naked) void FUN_10e96fec(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_100080a3
 }
+
 
 
 
@@ -8910,9 +9512,10 @@ __declspec(naked) void FUN_10e96fec(void)
 __declspec(naked) void FUN_10e96ff6(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_100080a3
 }
+
 
 
 
@@ -8926,9 +9529,10 @@ __declspec(naked) void FUN_10e96ff6(void)
 __declspec(naked) void FUN_10e97000(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10011955
 }
+
 
 
 
@@ -8942,9 +9546,10 @@ __declspec(naked) void FUN_10e97000(void)
 __declspec(naked) void FUN_10e9700a(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10011955
 }
+
 
 
 
@@ -8958,9 +9563,10 @@ __declspec(naked) void FUN_10e9700a(void)
 __declspec(naked) void FUN_10e97014(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10011955
 }
+
 
 
 
@@ -8974,9 +9580,10 @@ __declspec(naked) void FUN_10e97014(void)
 __declspec(naked) void FUN_10e9cad0(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1002191d
 }
+
 
 
 
@@ -8990,9 +9597,10 @@ __declspec(naked) void FUN_10e9cad0(void)
 __declspec(naked) void FUN_10e9cada(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1002191d
 }
+
 
 
 
@@ -9006,9 +9614,10 @@ __declspec(naked) void FUN_10e9cada(void)
 __declspec(naked) void FUN_10e9cb00(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1006cdfa
 }
+
 
 
 
@@ -9022,9 +9631,10 @@ __declspec(naked) void FUN_10e9cb00(void)
 __declspec(naked) void FUN_10e9cb0a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1006cdfa
 }
+
 
 
 
@@ -9038,9 +9648,10 @@ __declspec(naked) void FUN_10e9cb0a(void)
 __declspec(naked) void FUN_10e9cb14(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1006cdfa
 }
+
 
 
 
@@ -9054,9 +9665,10 @@ __declspec(naked) void FUN_10e9cb14(void)
 __declspec(naked) void FUN_10e9cb40(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10084149
 }
+
 
 
 
@@ -9070,9 +9682,10 @@ __declspec(naked) void FUN_10e9cb40(void)
 __declspec(naked) void FUN_10e9cb4a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10084149
 }
+
 
 
 
@@ -9086,9 +9699,10 @@ __declspec(naked) void FUN_10e9cb4a(void)
 __declspec(naked) void FUN_10e9cb70(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1008f026
 }
+
 
 
 
@@ -9102,9 +9716,10 @@ __declspec(naked) void FUN_10e9cb70(void)
 __declspec(naked) void FUN_10e9cb7a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1008f026
 }
+
 
 
 
@@ -9118,9 +9733,10 @@ __declspec(naked) void FUN_10e9cb7a(void)
 __declspec(naked) void FUN_10e9cba0(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1008b011
 }
+
 
 
 
@@ -9134,9 +9750,10 @@ __declspec(naked) void FUN_10e9cba0(void)
 __declspec(naked) void FUN_10e9cbaa(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1008b011
 }
+
 
 
 
@@ -9150,9 +9767,10 @@ __declspec(naked) void FUN_10e9cbaa(void)
 __declspec(naked) void FUN_10e9cbd0(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10085cfb
 }
+
 
 
 
@@ -9166,9 +9784,10 @@ __declspec(naked) void FUN_10e9cbd0(void)
 __declspec(naked) void FUN_10e9cbda(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10085cfb
 }
+
 
 
 
@@ -9182,9 +9801,10 @@ __declspec(naked) void FUN_10e9cbda(void)
 __declspec(naked) void FUN_10e9cc00(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1007bd0f
 }
+
 
 
 
@@ -9198,9 +9818,10 @@ __declspec(naked) void FUN_10e9cc00(void)
 __declspec(naked) void FUN_10e9cc0a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1007bd0f
 }
+
 
 
 
@@ -9214,9 +9835,10 @@ __declspec(naked) void FUN_10e9cc0a(void)
 __declspec(naked) void FUN_10e9cc14(void)
 
 {
-  __asm sub ecx, 0x7c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x7c
   __asm jmp LAB_1007bd0f
 }
+
 
 
 
@@ -9230,9 +9852,10 @@ __declspec(naked) void FUN_10e9cc14(void)
 __declspec(naked) void FUN_10e9cc30(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1000ffa1
 }
+
 
 
 
@@ -9246,9 +9869,10 @@ __declspec(naked) void FUN_10e9cc30(void)
 __declspec(naked) void FUN_10e9cc3a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1000ffa1
 }
+
 
 
 
@@ -9262,9 +9886,10 @@ __declspec(naked) void FUN_10e9cc3a(void)
 __declspec(naked) void FUN_10e9cc60(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1005a1e6
 }
+
 
 
 
@@ -9278,9 +9903,10 @@ __declspec(naked) void FUN_10e9cc60(void)
 __declspec(naked) void FUN_10e9cc6a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1005a1e6
 }
+
 
 
 
@@ -9294,9 +9920,10 @@ __declspec(naked) void FUN_10e9cc6a(void)
 __declspec(naked) void FUN_10e9cc90(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001505a
 }
+
 
 
 
@@ -9310,9 +9937,10 @@ __declspec(naked) void FUN_10e9cc90(void)
 __declspec(naked) void FUN_10e9ccb0(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10026f80
 }
+
 
 
 
@@ -9326,9 +9954,10 @@ __declspec(naked) void FUN_10e9ccb0(void)
 __declspec(naked) void FUN_10e9ccba(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10026f80
 }
+
 
 
 
@@ -9342,9 +9971,10 @@ __declspec(naked) void FUN_10e9ccba(void)
 __declspec(naked) void FUN_10e9cce0(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10014272
 }
+
 
 
 
@@ -9358,9 +9988,10 @@ __declspec(naked) void FUN_10e9cce0(void)
 __declspec(naked) void FUN_10e9ccea(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10014272
 }
+
 
 
 
@@ -9424,9 +10055,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e030(void)
 __declspec(naked) void FUN_10e9e033(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10093ba8
 }
+
 
 
 
@@ -9440,9 +10072,10 @@ __declspec(naked) void FUN_10e9e033(void)
 __declspec(naked) void FUN_10e9e03d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10093ba8
 }
+
 
 
 
@@ -9466,9 +10099,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e050(void)
 __declspec(naked) void FUN_10e9e053(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10032290
 }
+
 
 
 
@@ -9482,9 +10116,10 @@ __declspec(naked) void FUN_10e9e053(void)
 __declspec(naked) void FUN_10e9e05d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10032290
 }
+
 
 
 
@@ -9498,9 +10133,10 @@ __declspec(naked) void FUN_10e9e05d(void)
 __declspec(naked) void FUN_10e9e067(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10032290
 }
+
 
 
 
@@ -9524,9 +10160,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e080(void)
 __declspec(naked) void FUN_10e9e083(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1004efa8
 }
+
 
 
 
@@ -9540,9 +10177,10 @@ __declspec(naked) void FUN_10e9e083(void)
 __declspec(naked) void FUN_10e9e08d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1004efa8
 }
+
 
 
 
@@ -9566,9 +10204,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e0a0(void)
 __declspec(naked) void FUN_10e9e0a3(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1004cfb9
 }
+
 
 
 
@@ -9582,9 +10221,10 @@ __declspec(naked) void FUN_10e9e0a3(void)
 __declspec(naked) void FUN_10e9e0ad(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1004cfb9
 }
+
 
 
 
@@ -9608,9 +10248,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e0c0(void)
 __declspec(naked) void FUN_10e9e0c3(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1002b594
 }
+
 
 
 
@@ -9624,9 +10265,10 @@ __declspec(naked) void FUN_10e9e0c3(void)
 __declspec(naked) void FUN_10e9e0cd(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1002b594
 }
+
 
 
 
@@ -9650,9 +10292,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e0e0(void)
 __declspec(naked) void FUN_10e9e0e3(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1004bebb
 }
+
 
 
 
@@ -9666,9 +10309,10 @@ __declspec(naked) void FUN_10e9e0e3(void)
 __declspec(naked) void FUN_10e9e0ed(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1004bebb
 }
+
 
 
 
@@ -9692,9 +10336,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e100(void)
 __declspec(naked) void FUN_10e9e103(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001eb28
 }
+
 
 
 
@@ -9708,9 +10353,10 @@ __declspec(naked) void FUN_10e9e103(void)
 __declspec(naked) void FUN_10e9e10d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1001eb28
 }
+
 
 
 
@@ -9724,9 +10370,10 @@ __declspec(naked) void FUN_10e9e10d(void)
 __declspec(naked) void FUN_10e9e117(void)
 
 {
-  __asm sub ecx, 0x7c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x7c
   __asm jmp LAB_1001eb28
 }
+
 
 
 
@@ -9750,9 +10397,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e130(void)
 __declspec(naked) void FUN_10e9e133(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001fe7e
 }
+
 
 
 
@@ -9766,9 +10414,10 @@ __declspec(naked) void FUN_10e9e133(void)
 __declspec(naked) void FUN_10e9e13d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1001fe7e
 }
+
 
 
 
@@ -9792,9 +10441,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e150(void)
 __declspec(naked) void FUN_10e9e153(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1003404a
 }
+
 
 
 
@@ -9808,9 +10458,10 @@ __declspec(naked) void FUN_10e9e153(void)
 __declspec(naked) void FUN_10e9e15d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1003404a
 }
+
 
 
 
@@ -9834,9 +10485,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e170(void)
 __declspec(naked) void FUN_10e9e173(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001c2c9
 }
+
 
 
 
@@ -9860,9 +10512,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e180(void)
 __declspec(naked) void FUN_10e9e183(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1006cd8c
 }
+
 
 
 
@@ -9876,9 +10529,10 @@ __declspec(naked) void FUN_10e9e183(void)
 __declspec(naked) void FUN_10e9e18d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1006cd8c
 }
+
 
 
 
@@ -9902,9 +10556,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10e9e1a0(void)
 __declspec(naked) void FUN_10e9e1a3(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10057a5e
 }
+
 
 
 
@@ -9918,9 +10573,10 @@ __declspec(naked) void FUN_10e9e1a3(void)
 __declspec(naked) void FUN_10e9e1ad(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10057a5e
 }
+
 
 
 
@@ -9974,9 +10630,10 @@ undefined1 FUN_10ea26a0(void)
 __declspec(naked) void FUN_10ea2c51(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10082fd3
 }
+
 
 
 
@@ -9990,9 +10647,10 @@ __declspec(naked) void FUN_10ea2c51(void)
 __declspec(naked) void FUN_10ea2c5b(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10082fd3
 }
+
 
 
 
@@ -10006,9 +10664,10 @@ __declspec(naked) void FUN_10ea2c5b(void)
 __declspec(naked) void FUN_10ea2c65(void)
 
 {
-  __asm sub ecx, 0x7c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x7c
   __asm jmp LAB_10082fd3
 }
+
 
 
 
@@ -10022,9 +10681,10 @@ __declspec(naked) void FUN_10ea2c65(void)
 __declspec(naked) void FUN_10ea63c9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10087d12
 }
+
 
 
 
@@ -10038,9 +10698,10 @@ __declspec(naked) void FUN_10ea63c9(void)
 __declspec(naked) void FUN_10ea63d3(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10087d12
 }
+
 
 
 
@@ -10054,9 +10715,10 @@ __declspec(naked) void FUN_10ea63d3(void)
 __declspec(naked) void FUN_10ea6479(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1006d4ee
 }
+
 
 
 
@@ -10070,9 +10732,10 @@ __declspec(naked) void FUN_10ea6479(void)
 __declspec(naked) void FUN_10ea6483(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1006d4ee
 }
+
 
 
 
@@ -10086,9 +10749,10 @@ __declspec(naked) void FUN_10ea6483(void)
 __declspec(naked) void FUN_10ea648d(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1006d4ee
 }
+
 
 
 
@@ -10102,9 +10766,10 @@ __declspec(naked) void FUN_10ea648d(void)
 __declspec(naked) void FUN_10ea6539(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10078df8
 }
+
 
 
 
@@ -10118,9 +10783,10 @@ __declspec(naked) void FUN_10ea6539(void)
 __declspec(naked) void FUN_10ea6543(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10078df8
 }
+
 
 
 
@@ -10134,9 +10800,10 @@ __declspec(naked) void FUN_10ea6543(void)
 __declspec(naked) void FUN_10ea65e9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1000413d
 }
+
 
 
 
@@ -10150,9 +10817,10 @@ __declspec(naked) void FUN_10ea65e9(void)
 __declspec(naked) void FUN_10ea65f3(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1000413d
 }
+
 
 
 
@@ -10166,9 +10834,10 @@ __declspec(naked) void FUN_10ea65f3(void)
 __declspec(naked) void FUN_10ea6699(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1008ef68
 }
+
 
 
 
@@ -10182,9 +10851,10 @@ __declspec(naked) void FUN_10ea6699(void)
 __declspec(naked) void FUN_10ea66a3(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1008ef68
 }
+
 
 
 
@@ -10198,9 +10868,10 @@ __declspec(naked) void FUN_10ea66a3(void)
 __declspec(naked) void FUN_10ea6749(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10002e1e
 }
+
 
 
 
@@ -10214,9 +10885,10 @@ __declspec(naked) void FUN_10ea6749(void)
 __declspec(naked) void FUN_10ea6753(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10002e1e
 }
+
 
 
 
@@ -10230,9 +10902,10 @@ __declspec(naked) void FUN_10ea6753(void)
 __declspec(naked) void FUN_10ea67f9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_100419c5
 }
+
 
 
 
@@ -10246,9 +10919,10 @@ __declspec(naked) void FUN_10ea67f9(void)
 __declspec(naked) void FUN_10ea6803(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_100419c5
 }
+
 
 
 
@@ -10262,9 +10936,10 @@ __declspec(naked) void FUN_10ea6803(void)
 __declspec(naked) void FUN_10ea680d(void)
 
 {
-  __asm sub ecx, 0x7c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x7c
   __asm jmp LAB_100419c5
 }
+
 
 
 
@@ -10278,9 +10953,10 @@ __declspec(naked) void FUN_10ea680d(void)
 __declspec(naked) void FUN_10ea68b9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10047fdc
 }
+
 
 
 
@@ -10294,9 +10970,10 @@ __declspec(naked) void FUN_10ea68b9(void)
 __declspec(naked) void FUN_10ea68c3(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10047fdc
 }
+
 
 
 
@@ -10310,9 +10987,10 @@ __declspec(naked) void FUN_10ea68c3(void)
 __declspec(naked) void FUN_10ea6969(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001648c
 }
+
 
 
 
@@ -10326,9 +11004,10 @@ __declspec(naked) void FUN_10ea6969(void)
 __declspec(naked) void FUN_10ea6973(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1001648c
 }
+
 
 
 
@@ -10342,9 +11021,10 @@ __declspec(naked) void FUN_10ea6973(void)
 __declspec(naked) void FUN_10ea6a19(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1007306a
 }
+
 
 
 
@@ -10358,9 +11038,10 @@ __declspec(naked) void FUN_10ea6a19(void)
 __declspec(naked) void FUN_10ea6ac9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001eb2d
 }
+
 
 
 
@@ -10374,9 +11055,10 @@ __declspec(naked) void FUN_10ea6ac9(void)
 __declspec(naked) void FUN_10ea6ad3(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1001eb2d
 }
+
 
 
 
@@ -10390,9 +11072,10 @@ __declspec(naked) void FUN_10ea6ad3(void)
 __declspec(naked) void FUN_10ea6b79(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_100208b5
 }
+
 
 
 
@@ -10406,9 +11089,10 @@ __declspec(naked) void FUN_10ea6b79(void)
 __declspec(naked) void FUN_10ea6b83(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_100208b5
 }
+
 
 
 
@@ -10482,9 +11166,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10eb3b10(void)
 __declspec(naked) void FUN_10eb4098(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1006aa8c
 }
+
 
 
 
@@ -10498,9 +11183,10 @@ __declspec(naked) void FUN_10eb4098(void)
 __declspec(naked) void FUN_10eb40a2(void)
 
 {
-  __asm sub ecx, 0x8c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x8c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1006aa8c
 }
+
 
 
 
@@ -10514,9 +11200,10 @@ __declspec(naked) void FUN_10eb40a2(void)
 __declspec(naked) void FUN_10eb40af(void)
 
 {
-  __asm sub ecx, 0xa8
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1006aa8c
 }
+
 
 
 
@@ -10530,9 +11217,10 @@ __declspec(naked) void FUN_10eb40af(void)
 __declspec(naked) void FUN_10eb7416(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10010753
 }
+
 
 
 
@@ -10546,9 +11234,10 @@ __declspec(naked) void FUN_10eb7416(void)
 __declspec(naked) void FUN_10eb7420(void)
 
 {
-  __asm sub ecx, 0x8c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x8c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10010753
 }
+
 
 
 
@@ -10562,9 +11251,10 @@ __declspec(naked) void FUN_10eb7420(void)
 __declspec(naked) void FUN_10eb742d(void)
 
 {
-  __asm sub ecx, 0xa8
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10010753
 }
+
 
 
 
@@ -10608,9 +11298,10 @@ void __stdcall FUN_10ebb240(unsigned int recovered_unused_stack_0)
 __declspec(naked) void FUN_10ebc13f(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10068aa2
 }
+
 
 
 
@@ -10624,9 +11315,10 @@ __declspec(naked) void FUN_10ebc13f(void)
 __declspec(naked) void FUN_10ebc149(void)
 
 {
-  __asm sub ecx, 0x8c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x8c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10068aa2
 }
+
 
 
 
@@ -10640,9 +11332,10 @@ __declspec(naked) void FUN_10ebc149(void)
 __declspec(naked) void FUN_10ebc156(void)
 
 {
-  __asm sub ecx, 0xa8
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10068aa2
 }
+
 
 
 
@@ -10876,9 +11569,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10ec9d20(void)
 __declspec(naked) void FUN_10edfba2(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10032fec
 }
+
 
 
 
@@ -10892,9 +11586,10 @@ __declspec(naked) void FUN_10edfba2(void)
 __declspec(naked) void FUN_10edfbac(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10056ba9
 }
+
 
 
 
@@ -10908,9 +11603,10 @@ __declspec(naked) void FUN_10edfbac(void)
 __declspec(naked) void FUN_10edfbb6(void)
 
 {
-  __asm sub ecx, 0x14
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x14
   __asm jmp LAB_10056ba9
 }
+
 
 
 
@@ -10924,9 +11620,10 @@ __declspec(naked) void FUN_10edfbb6(void)
 __declspec(naked) void FUN_10edfbc0(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10056ba9
 }
+
 
 
 
@@ -10990,9 +11687,10 @@ void __stdcall FUN_10ee0cc0(unsigned int recovered_unused_stack_0, unsigned int 
 __declspec(naked) void FUN_10ee0ff6(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10068c5a
 }
+
 
 
 
@@ -11026,9 +11724,10 @@ void __stdcall FUN_10ee1810(unsigned int recovered_unused_stack_0, unsigned int 
 __declspec(naked) void FUN_10ee2683(void)
 
 {
-  __asm sub ecx, 4
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x04
   __asm jmp LAB_10034711
 }
+
 
 
 
@@ -11342,9 +12041,10 @@ void FUN_10ee8720(void)
 __declspec(naked) void FUN_10eec0a2(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1002be90
 }
+
 
 
 
@@ -11358,9 +12058,10 @@ __declspec(naked) void FUN_10eec0a2(void)
 __declspec(naked) void FUN_10eec0ac(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10092c76
 }
+
 
 
 
@@ -11374,9 +12075,10 @@ __declspec(naked) void FUN_10eec0ac(void)
 __declspec(naked) void FUN_10eec0b6(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1002cc05
 }
+
 
 
 
@@ -11390,9 +12092,10 @@ __declspec(naked) void FUN_10eec0b6(void)
 __declspec(naked) void FUN_10eec0c0(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1002cc05
 }
+
 
 
 
@@ -11436,9 +12139,10 @@ void __stdcall FUN_10eeec60(unsigned int recovered_unused_stack_0)
 __declspec(naked) void FUN_10ef1cf4(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10074c1c
 }
+
 
 
 
@@ -11452,9 +12156,10 @@ __declspec(naked) void FUN_10ef1cf4(void)
 __declspec(naked) void FUN_10ef1cfe(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008bca5
 }
+
 
 
 
@@ -11468,9 +12173,10 @@ __declspec(naked) void FUN_10ef1cfe(void)
 __declspec(naked) void FUN_10ef1d08(void)
 
 {
-  __asm sub ecx, 0x610c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004453f
 }
+
 
 
 
@@ -11484,9 +12190,10 @@ __declspec(naked) void FUN_10ef1d08(void)
 __declspec(naked) void FUN_10ef1d15(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1003161f
 }
+
 
 
 
@@ -11520,9 +12227,10 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_10ef2980(void)
 __declspec(naked) void FUN_10ef55b4(void)
 
 {
-  __asm sub ecx, 0x14
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x14
   __asm jmp LAB_1008a68e
 }
+
 
 
 
@@ -11556,9 +12264,10 @@ void FUN_10ef82b0(void)
 __declspec(naked) void FUN_10f04e76(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1007079d
 }
+
 
 
 
@@ -11842,9 +12551,10 @@ undefined1 FUN_10f0d4b0(void)
 __declspec(naked) void FUN_10f0fee0(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1004f0e3
 }
+
 
 
 
@@ -11858,9 +12568,10 @@ __declspec(naked) void FUN_10f0fee0(void)
 __declspec(naked) void FUN_10f0feea(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1006b789
 }
+
 
 
 
@@ -11874,9 +12585,10 @@ __declspec(naked) void FUN_10f0feea(void)
 __declspec(naked) void FUN_10f0fef4(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10094c6f
 }
+
 
 
 
@@ -11890,9 +12602,10 @@ __declspec(naked) void FUN_10f0fef4(void)
 __declspec(naked) void FUN_10f0fefe(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1007d62d
 }
+
 
 
 
@@ -11906,9 +12619,10 @@ __declspec(naked) void FUN_10f0fefe(void)
 __declspec(naked) void FUN_10f0ff08(void)
 
 {
-  __asm sub ecx, 0x620c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1002d231
 }
+
 
 
 
@@ -11922,9 +12636,10 @@ __declspec(naked) void FUN_10f0ff08(void)
 __declspec(naked) void FUN_10f0ff15(void)
 
 {
-  __asm sub ecx, 0x610c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10093905
 }
+
 
 
 
@@ -11938,9 +12653,10 @@ __declspec(naked) void FUN_10f0ff15(void)
 __declspec(naked) void FUN_10f0ff22(void)
 
 {
-  __asm sub ecx, 0x610c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100498f0
 }
+
 
 
 
@@ -11954,9 +12670,10 @@ __declspec(naked) void FUN_10f0ff22(void)
 __declspec(naked) void FUN_10f0ff2f(void)
 
 {
-  __asm sub ecx, 0x620c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10048d2e
 }
+
 
 
 
@@ -11970,9 +12687,10 @@ __declspec(naked) void FUN_10f0ff2f(void)
 __declspec(naked) void FUN_10f0ff3c(void)
 
 {
-  __asm sub ecx, 0x620c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007fd29
 }
+
 
 
 
@@ -11986,9 +12704,10 @@ __declspec(naked) void FUN_10f0ff3c(void)
 __declspec(naked) void FUN_10f0ff49(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10077fca
 }
+
 
 
 
@@ -12002,9 +12721,10 @@ __declspec(naked) void FUN_10f0ff49(void)
 __declspec(naked) void FUN_10f0ff53(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1006e90c
 }
+
 
 
 
@@ -12018,9 +12738,10 @@ __declspec(naked) void FUN_10f0ff53(void)
 __declspec(naked) void FUN_10f0ff5d(void)
 
 {
-  __asm sub ecx, 0x46c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x6c __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10083519
 }
+
 
 
 
@@ -12034,9 +12755,10 @@ __declspec(naked) void FUN_10f0ff5d(void)
 __declspec(naked) void FUN_10f0ff6a(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_10083519
 }
+
 
 
 
@@ -12050,9 +12772,10 @@ __declspec(naked) void FUN_10f0ff6a(void)
 __declspec(naked) void FUN_10f0ff74(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10067f6c
 }
+
 
 
 
@@ -12066,9 +12789,10 @@ __declspec(naked) void FUN_10f0ff74(void)
 __declspec(naked) void FUN_10f0ff7e(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10091e7a
 }
+
 
 
 
@@ -12082,9 +12806,10 @@ __declspec(naked) void FUN_10f0ff7e(void)
 __declspec(naked) void FUN_10f0ff88(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10038da2
 }
+
 
 
 
@@ -12098,9 +12823,10 @@ __declspec(naked) void FUN_10f0ff88(void)
 __declspec(naked) void FUN_10f116f0(void)
 
 {
-  __asm add ecx, 0x622c
+  __asm _emit 0x81 __asm _emit 0xc1 __asm _emit 0x2c __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10039a68
 }
+
 
 
 
@@ -12114,9 +12840,10 @@ __declspec(naked) void FUN_10f116f0(void)
 __declspec(naked) void FUN_10f11700(void)
 
 {
-  __asm add ecx, 0x6228
+  __asm _emit 0x81 __asm _emit 0xc1 __asm _emit 0x28 __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10039a68
 }
+
 
 
 
@@ -12180,9 +12907,10 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_10f13670(void)
 __declspec(naked) void FUN_10f21ad3(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1002dc63
 }
+
 
 
 
@@ -12196,9 +12924,10 @@ __declspec(naked) void FUN_10f21ad3(void)
 __declspec(naked) void FUN_10f21add(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1002dc63
 }
+
 
 
 
@@ -12212,9 +12941,10 @@ __declspec(naked) void FUN_10f21add(void)
 __declspec(naked) void FUN_10f21ae7(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1002dc63
 }
+
 
 
 
@@ -12248,9 +12978,10 @@ void __stdcall FUN_10f22950(unsigned int recovered_unused_stack_0, unsigned int 
 __declspec(naked) void FUN_10f26796(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1000a03d
 }
+
 
 
 
@@ -12264,9 +12995,10 @@ __declspec(naked) void FUN_10f26796(void)
 __declspec(naked) void FUN_10f267a0(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10083302
 }
+
 
 
 
@@ -12280,9 +13012,10 @@ __declspec(naked) void FUN_10f267a0(void)
 __declspec(naked) void FUN_10f267aa(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_10083302
 }
+
 
 
 
@@ -12296,9 +13029,10 @@ __declspec(naked) void FUN_10f267aa(void)
 __declspec(naked) void FUN_10f267b4(void)
 
 {
-  __asm sub ecx, 0x46c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x6c __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10064aab
 }
+
 
 
 
@@ -12312,9 +13046,10 @@ __declspec(naked) void FUN_10f267b4(void)
 __declspec(naked) void FUN_10f267c1(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_10064aab
 }
+
 
 
 
@@ -12328,9 +13063,10 @@ __declspec(naked) void FUN_10f267c1(void)
 __declspec(naked) void FUN_10f267cb(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1002464f
 }
+
 
 
 
@@ -12344,9 +13080,10 @@ __declspec(naked) void FUN_10f267cb(void)
 __declspec(naked) void FUN_10f267d5(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10036a8e
 }
+
 
 
 
@@ -12410,9 +13147,10 @@ void FUN_10f2b950(void)
 __declspec(naked) void FUN_10f32854(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1001acbc
 }
+
 
 
 
@@ -12426,9 +13164,10 @@ __declspec(naked) void FUN_10f32854(void)
 __declspec(naked) void FUN_10f3285e(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1001b92d
 }
+
 
 
 
@@ -12442,9 +13181,10 @@ __declspec(naked) void FUN_10f3285e(void)
 __declspec(naked) void FUN_10f32868(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10051f55
 }
+
 
 
 
@@ -12458,9 +13198,10 @@ __declspec(naked) void FUN_10f32868(void)
 __declspec(naked) void FUN_10f32872(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1003cff1
 }
+
 
 
 
@@ -12474,9 +13215,10 @@ __declspec(naked) void FUN_10f32872(void)
 __declspec(naked) void FUN_10f3287c(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1001bd15
 }
+
 
 
 
@@ -12490,9 +13232,10 @@ __declspec(naked) void FUN_10f3287c(void)
 __declspec(naked) void FUN_10f32886(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1007a905
 }
+
 
 
 
@@ -12506,9 +13249,10 @@ __declspec(naked) void FUN_10f32886(void)
 __declspec(naked) void FUN_10f32890(void)
 
 {
-  __asm sub ecx, 0x610c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10072070
 }
+
 
 
 
@@ -12522,9 +13266,10 @@ __declspec(naked) void FUN_10f32890(void)
 __declspec(naked) void FUN_10f3289d(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10010749
 }
+
 
 
 
@@ -12538,9 +13283,10 @@ __declspec(naked) void FUN_10f3289d(void)
 __declspec(naked) void FUN_10f328a7(void)
 
 {
-  __asm sub ecx, 0x610c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10081827
 }
+
 
 
 
@@ -12554,9 +13300,10 @@ __declspec(naked) void FUN_10f328a7(void)
 __declspec(naked) void FUN_10f328b4(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10041fbf
 }
+
 
 
 
@@ -12570,9 +13317,10 @@ __declspec(naked) void FUN_10f328b4(void)
 __declspec(naked) void FUN_10f328be(void)
 
 {
-  __asm sub ecx, 0x620c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1005a01a
 }
+
 
 
 
@@ -12586,9 +13334,10 @@ __declspec(naked) void FUN_10f328be(void)
 __declspec(naked) void FUN_10f328cb(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1005d472
 }
+
 
 
 
@@ -12602,9 +13351,10 @@ __declspec(naked) void FUN_10f328cb(void)
 __declspec(naked) void FUN_10f328d5(void)
 
 {
-  __asm sub ecx, 0x620c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1005927d
 }
+
 
 
 
@@ -12618,9 +13368,10 @@ __declspec(naked) void FUN_10f328d5(void)
 __declspec(naked) void FUN_10f328e2(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1004cf2d
 }
+
 
 
 
@@ -12634,9 +13385,10 @@ __declspec(naked) void FUN_10f328e2(void)
 __declspec(naked) void FUN_10f328ec(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1001f50a
 }
+
 
 
 
@@ -12650,9 +13402,10 @@ __declspec(naked) void FUN_10f328ec(void)
 __declspec(naked) void FUN_10f328f6(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1003cf4c
 }
+
 
 
 
@@ -12666,9 +13419,10 @@ __declspec(naked) void FUN_10f328f6(void)
 __declspec(naked) void FUN_10f32900(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1002a518
 }
+
 
 
 
@@ -12832,9 +13586,10 @@ void FUN_10f37300(void)
 __declspec(naked) void FUN_10f3d0f7(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1004a18d
 }
+
 
 
 
@@ -12848,9 +13603,10 @@ __declspec(naked) void FUN_10f3d0f7(void)
 __declspec(naked) void FUN_10f3d101(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1004a18d
 }
+
 
 
 
@@ -12864,9 +13620,10 @@ __declspec(naked) void FUN_10f3d101(void)
 __declspec(naked) void FUN_10f3d10b(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1004a18d
 }
+
 
 
 
@@ -12880,9 +13637,10 @@ __declspec(naked) void FUN_10f3d10b(void)
 __declspec(naked) void FUN_10f3d115(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1006ad11
 }
+
 
 
 
@@ -12896,9 +13654,10 @@ __declspec(naked) void FUN_10f3d115(void)
 __declspec(naked) void FUN_10f3d11f(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1006ad11
 }
+
 
 
 
@@ -12912,9 +13671,10 @@ __declspec(naked) void FUN_10f3d11f(void)
 __declspec(naked) void FUN_10f3d129(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1006ad11
 }
+
 
 
 
@@ -12978,9 +13738,10 @@ void __stdcall FUN_10f3f030(unsigned int recovered_unused_stack_0, unsigned int 
 __declspec(naked) void FUN_10f3f380(void)
 
 {
-  __asm sub ecx, 4
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x04
   __asm jmp LAB_100191d2
 }
+
 
 
 
@@ -12994,9 +13755,10 @@ __declspec(naked) void FUN_10f3f380(void)
 __declspec(naked) void FUN_10f41a13(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1007de25
 }
+
 
 
 
@@ -13010,9 +13772,10 @@ __declspec(naked) void FUN_10f41a13(void)
 __declspec(naked) void FUN_10f41a1d(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1007de25
 }
+
 
 
 
@@ -13036,9 +13799,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10f42860(void)
 __declspec(naked) void FUN_10f44ea3(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_100993aa
 }
+
 
 
 
@@ -13052,9 +13816,10 @@ __declspec(naked) void FUN_10f44ea3(void)
 __declspec(naked) void FUN_10f44ead(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_100993aa
 }
+
 
 
 
@@ -13068,9 +13833,10 @@ __declspec(naked) void FUN_10f44ead(void)
 __declspec(naked) void FUN_10f44eb7(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_100993aa
 }
+
 
 
 
@@ -13084,9 +13850,10 @@ __declspec(naked) void FUN_10f44eb7(void)
 __declspec(naked) void FUN_10f44ec1(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13100,9 +13867,10 @@ __declspec(naked) void FUN_10f44ec1(void)
 __declspec(naked) void FUN_10f44ecb(void)
 
 {
-  __asm sub ecx, 0x250
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x50 __asm _emit 0x02 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13116,9 +13884,10 @@ __declspec(naked) void FUN_10f44ecb(void)
 __declspec(naked) void FUN_10f44ed8(void)
 
 {
-  __asm sub ecx, 0x254
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x54 __asm _emit 0x02 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13132,9 +13901,10 @@ __declspec(naked) void FUN_10f44ed8(void)
 __declspec(naked) void FUN_10f44ee5(void)
 
 {
-  __asm sub ecx, 0x258
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x58 __asm _emit 0x02 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13148,9 +13918,10 @@ __declspec(naked) void FUN_10f44ee5(void)
 __declspec(naked) void FUN_10f44ef2(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13164,9 +13935,10 @@ __declspec(naked) void FUN_10f44ef2(void)
 __declspec(naked) void FUN_10f44efc(void)
 
 {
-  __asm sub ecx, 0x280
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x02 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13180,9 +13952,10 @@ __declspec(naked) void FUN_10f44efc(void)
 __declspec(naked) void FUN_10f44f09(void)
 
 {
-  __asm sub ecx, 0x28c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x8c __asm _emit 0x02 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13196,9 +13969,10 @@ __declspec(naked) void FUN_10f44f09(void)
 __declspec(naked) void FUN_10f44f16(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13212,9 +13986,10 @@ __declspec(naked) void FUN_10f44f16(void)
 __declspec(naked) void FUN_10f44f23(void)
 
 {
-  __asm sub ecx, 0x84
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13228,9 +14003,10 @@ __declspec(naked) void FUN_10f44f23(void)
 __declspec(naked) void FUN_10f44f30(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13244,9 +14020,10 @@ __declspec(naked) void FUN_10f44f30(void)
 __declspec(naked) void FUN_10f44f3d(void)
 
 {
-  __asm sub ecx, 0x8c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x8c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13260,9 +14037,10 @@ __declspec(naked) void FUN_10f44f3d(void)
 __declspec(naked) void FUN_10f44f4a(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13276,9 +14054,10 @@ __declspec(naked) void FUN_10f44f4a(void)
 __declspec(naked) void FUN_10f44f57(void)
 
 {
-  __asm sub ecx, 0x94
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x94 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007a68a
 }
+
 
 
 
@@ -13442,9 +14221,10 @@ void FUN_10f476e0(void)
 __declspec(naked) void FUN_10f47840(void)
 
 {
-  __asm add ecx, -0xc
+  __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0xf4
   __asm jmp LAB_1006b2ca
 }
+
 
 
 
@@ -13468,9 +14248,10 @@ void FUN_10f47880(void)
 __declspec(naked) void FUN_10f47cd5(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004bc72
 }
+
 
 
 
@@ -13484,9 +14265,10 @@ __declspec(naked) void FUN_10f47cd5(void)
 __declspec(naked) void FUN_10f47ce2(void)
 
 {
-  __asm sub ecx, 0x84
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004bc72
 }
+
 
 
 
@@ -13500,9 +14282,10 @@ __declspec(naked) void FUN_10f47ce2(void)
 __declspec(naked) void FUN_10f47cef(void)
 
 {
-  __asm sub ecx, 0x8c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x8c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004bc72
 }
+
 
 
 
@@ -13526,9 +14309,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10f48bb0(void)
 __declspec(naked) void FUN_10f4ab93(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10017b57
 }
+
 
 
 
@@ -13603,9 +14387,10 @@ void __thiscall Recovered_Bulk::m_FUN_10f4d190(int param_2)
 __declspec(naked) void FUN_10f4d4b0(void)
 
 {
-  __asm add ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x10
   __asm jmp LAB_100373d5
 }
+
 
 
 
@@ -13619,9 +14404,10 @@ __declspec(naked) void FUN_10f4d4b0(void)
 __declspec(naked) void FUN_10f4ed5c(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1003bc0a
 }
+
 
 
 
@@ -13635,9 +14421,10 @@ __declspec(naked) void FUN_10f4ed5c(void)
 __declspec(naked) void FUN_10f4f720(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1002ef73
 }
+
 
 
 
@@ -13661,9 +14448,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10f50740(void)
 __declspec(naked) void FUN_10f50743(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_100740f0
 }
+
 
 
 
@@ -13677,9 +14465,10 @@ __declspec(naked) void FUN_10f50743(void)
 __declspec(naked) void FUN_10f515a2(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10085a1c
 }
+
 
 
 
@@ -13703,9 +14492,10 @@ void FUN_10f51630(void)
 __declspec(naked) void FUN_10f51709(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1008143a
 }
+
 
 
 
@@ -13719,9 +14509,10 @@ __declspec(naked) void FUN_10f51709(void)
 __declspec(naked) void FUN_10f52642(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10073984
 }
+
 
 
 
@@ -13735,9 +14526,10 @@ __declspec(naked) void FUN_10f52642(void)
 __declspec(naked) void FUN_10f5264c(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10033438
 }
+
 
 
 
@@ -13751,9 +14543,10 @@ __declspec(naked) void FUN_10f5264c(void)
 __declspec(naked) void FUN_10f530e0(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1000ea52
 }
+
 
 
 
@@ -13777,9 +14570,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10f531b0(void)
 __declspec(naked) void FUN_10f531b3(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10090129
 }
+
 
 
 
@@ -13793,9 +14587,10 @@ __declspec(naked) void FUN_10f531b3(void)
 __declspec(naked) void FUN_10f53699(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1000a470
 }
+
 
 
 
@@ -13809,9 +14604,10 @@ __declspec(naked) void FUN_10f53699(void)
 __declspec(naked) void FUN_10f58263(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10038bfe
 }
+
 
 
 
@@ -13825,9 +14621,10 @@ __declspec(naked) void FUN_10f58263(void)
 __declspec(naked) void FUN_10f5826d(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10038e24
 }
+
 
 
 
@@ -13841,9 +14638,10 @@ __declspec(naked) void FUN_10f5826d(void)
 __declspec(naked) void FUN_10f58277(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10074f32
 }
+
 
 
 
@@ -13857,9 +14655,10 @@ __declspec(naked) void FUN_10f58277(void)
 __declspec(naked) void FUN_10f58281(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1000f20e
 }
+
 
 
 
@@ -13873,9 +14672,10 @@ __declspec(naked) void FUN_10f58281(void)
 __declspec(naked) void FUN_10f5828b(void)
 
 {
-  __asm sub ecx, 0x46c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x6c __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100368c2
 }
+
 
 
 
@@ -13889,9 +14689,10 @@ __declspec(naked) void FUN_10f5828b(void)
 __declspec(naked) void FUN_10f58298(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_100368c2
 }
+
 
 
 
@@ -13905,9 +14706,10 @@ __declspec(naked) void FUN_10f58298(void)
 __declspec(naked) void FUN_10f582a2(void)
 
 {
-  __asm sub ecx, 0x46c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x6c __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1001cae4
 }
+
 
 
 
@@ -13921,9 +14723,10 @@ __declspec(naked) void FUN_10f582a2(void)
 __declspec(naked) void FUN_10f582af(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_1001cae4
 }
+
 
 
 
@@ -13937,9 +14740,10 @@ __declspec(naked) void FUN_10f582af(void)
 __declspec(naked) void FUN_10f582b9(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10023e9d
 }
+
 
 
 
@@ -13953,9 +14757,10 @@ __declspec(naked) void FUN_10f582b9(void)
 __declspec(naked) void FUN_10f582c3(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1006cce2
 }
+
 
 
 
@@ -13969,9 +14774,10 @@ __declspec(naked) void FUN_10f582c3(void)
 __declspec(naked) void FUN_10f582cd(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10020090
 }
+
 
 
 
@@ -13985,9 +14791,10 @@ __declspec(naked) void FUN_10f582cd(void)
 __declspec(naked) void FUN_10f582d7(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100182f0
 }
+
 
 
 
@@ -14001,9 +14808,10 @@ __declspec(naked) void FUN_10f582d7(void)
 __declspec(naked) void FUN_10f582e1(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10063584
 }
+
 
 
 
@@ -14017,9 +14825,10 @@ __declspec(naked) void FUN_10f582e1(void)
 __declspec(naked) void FUN_10f582eb(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10031a11
 }
+
 
 
 
@@ -14033,9 +14842,10 @@ __declspec(naked) void FUN_10f582eb(void)
 __declspec(naked) void FUN_10f59650(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1006273d
 }
+
 
 
 
@@ -14049,9 +14859,10 @@ __declspec(naked) void FUN_10f59650(void)
 __declspec(naked) void FUN_10f59670(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10012288
 }
+
 
 
 
@@ -14115,9 +14926,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10f615e0(void)
 __declspec(naked) void FUN_10f615e3(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10076acb
 }
+
 
 
 
@@ -14141,9 +14953,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10f615f0(void)
 __declspec(naked) void FUN_10f615f3(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1005851c
 }
+
 
 
 
@@ -14197,9 +15010,10 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_10f618f0(void)
 __declspec(naked) void FUN_10f62ef9(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1006493e
 }
+
 
 
 
@@ -14213,9 +15027,10 @@ __declspec(naked) void FUN_10f62ef9(void)
 __declspec(naked) void FUN_10f62fa9(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10015050
 }
+
 
 
 
@@ -14279,9 +15094,10 @@ void __stdcall FUN_10f646f0(unsigned int recovered_unused_stack_0, unsigned int 
 __declspec(naked) void FUN_10f662d2(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100087a6
 }
+
 
 
 
@@ -14295,9 +15111,10 @@ __declspec(naked) void FUN_10f662d2(void)
 __declspec(naked) void FUN_10f662dc(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1002b9e0
 }
+
 
 
 
@@ -14311,9 +15128,10 @@ __declspec(naked) void FUN_10f662dc(void)
 __declspec(naked) void FUN_10f662e6(void)
 
 {
-  __asm sub ecx, 0x46c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x6c __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100811ba
 }
+
 
 
 
@@ -14327,9 +15145,10 @@ __declspec(naked) void FUN_10f662e6(void)
 __declspec(naked) void FUN_10f662f3(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_100811ba
 }
+
 
 
 
@@ -14343,9 +15162,10 @@ __declspec(naked) void FUN_10f662f3(void)
 __declspec(naked) void FUN_10f662fd(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1004f76e
 }
+
 
 
 
@@ -14359,9 +15179,10 @@ __declspec(naked) void FUN_10f662fd(void)
 __declspec(naked) void FUN_10f66307(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1004c67c
 }
+
 
 
 
@@ -14375,9 +15196,10 @@ __declspec(naked) void FUN_10f66307(void)
 __declspec(naked) void FUN_10f66d50(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_100236e1
 }
+
 
 
 
@@ -14411,9 +15233,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10f675f0(void)
 __declspec(naked) void FUN_10f675f3(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10069989
 }
+
 
 
 
@@ -14437,9 +15260,10 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_10f676e0(void)
 __declspec(naked) void FUN_10f68549(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1002279b
 }
+
 
 
 
@@ -14453,9 +15277,10 @@ __declspec(naked) void FUN_10f68549(void)
 __declspec(naked) void FUN_10f6976e(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10059016
 }
+
 
 
 
@@ -14469,9 +15294,10 @@ __declspec(naked) void FUN_10f6976e(void)
 __declspec(naked) void FUN_10f69c70(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_1006ecfe
 }
+
 
 
 
@@ -14495,9 +15321,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10f6a170(void)
 __declspec(naked) void FUN_10f6a173(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10085c65
 }
+
 
 
 
@@ -14511,9 +15338,10 @@ __declspec(naked) void FUN_10f6a173(void)
 __declspec(naked) void FUN_10f6a9e9(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10040f48
 }
+
 
 
 
@@ -14527,9 +15355,10 @@ __declspec(naked) void FUN_10f6a9e9(void)
 __declspec(naked) void FUN_10f6c297(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_10053d96
 }
+
 
 
 
@@ -14553,9 +15382,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10f6d4f0(void)
 __declspec(naked) void FUN_10f71252(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1005bc2b
 }
+
 
 
 
@@ -14569,9 +15399,10 @@ __declspec(naked) void FUN_10f71252(void)
 __declspec(naked) void FUN_10f7125c(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_100633c2
 }
+
 
 
 
@@ -14585,9 +15416,10 @@ __declspec(naked) void FUN_10f7125c(void)
 __declspec(naked) void FUN_10f71266(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1009575a
 }
+
 
 
 
@@ -14601,9 +15433,10 @@ __declspec(naked) void FUN_10f71266(void)
 __declspec(naked) void FUN_10f71270(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10046fc9
 }
+
 
 
 
@@ -14617,9 +15450,10 @@ __declspec(naked) void FUN_10f71270(void)
 __declspec(naked) void FUN_10f7127a(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1004bf33
 }
+
 
 
 
@@ -14633,9 +15467,10 @@ __declspec(naked) void FUN_10f7127a(void)
 __declspec(naked) void FUN_10f71284(void)
 
 {
-  __asm sub ecx, 0x10
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x10
   __asm jmp LAB_100452af
 }
+
 
 
 
@@ -14749,9 +15584,10 @@ void FUN_10f749c0(void)
 __declspec(naked) void FUN_10f74f07(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1003a5c6
 }
+
 
 
 
@@ -14765,9 +15601,10 @@ __declspec(naked) void FUN_10f74f07(void)
 __declspec(naked) void FUN_10f74f11(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10037d7b
 }
+
 
 
 
@@ -14781,9 +15618,10 @@ __declspec(naked) void FUN_10f74f11(void)
 __declspec(naked) void FUN_10f74f1b(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008238f
 }
+
 
 
 
@@ -14797,9 +15635,10 @@ __declspec(naked) void FUN_10f74f1b(void)
 __declspec(naked) void FUN_10f74f25(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_1008238f
 }
+
 
 
 
@@ -14813,9 +15652,10 @@ __declspec(naked) void FUN_10f74f25(void)
 __declspec(naked) void FUN_10f74f2f(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10082231
 }
+
 
 
 
@@ -14829,9 +15669,10 @@ __declspec(naked) void FUN_10f74f2f(void)
 __declspec(naked) void FUN_10f74f39(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_10082231
 }
+
 
 
 
@@ -14866,9 +15707,10 @@ void __thiscall Recovered_Bulk::m_FUN_10f76bd0(int param_2)
 __declspec(naked) void FUN_10f76c00(void)
 
 {
-  __asm add ecx, 0xc068
+  __asm _emit 0x81 __asm _emit 0xc1 __asm _emit 0x68 __asm _emit 0xc0 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1002fcd9
 }
+
 
 
 
@@ -14882,9 +15724,10 @@ __declspec(naked) void FUN_10f76c00(void)
 __declspec(naked) void FUN_10f77da6(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008bd27
 }
+
 
 
 
@@ -14898,9 +15741,10 @@ __declspec(naked) void FUN_10f77da6(void)
 __declspec(naked) void FUN_10f77db0(void)
 
 {
-  __asm sub ecx, 0x46c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x6c __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10072a52
 }
+
 
 
 
@@ -14914,9 +15758,10 @@ __declspec(naked) void FUN_10f77db0(void)
 __declspec(naked) void FUN_10f77dbd(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_10072a52
 }
+
 
 
 
@@ -14930,9 +15775,10 @@ __declspec(naked) void FUN_10f77dbd(void)
 __declspec(naked) void FUN_10f77dc7(void)
 
 {
-  __asm sub ecx, 0x46c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x6c __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1000e38b
 }
+
 
 
 
@@ -14946,9 +15792,10 @@ __declspec(naked) void FUN_10f77dc7(void)
 __declspec(naked) void FUN_10f77dd4(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_1000e38b
 }
+
 
 
 
@@ -14962,9 +15809,10 @@ __declspec(naked) void FUN_10f77dd4(void)
 __declspec(naked) void FUN_10f77dde(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1005afb0
 }
+
 
 
 
@@ -14978,9 +15826,10 @@ __declspec(naked) void FUN_10f77dde(void)
 __declspec(naked) void FUN_10f77de8(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100551a0
 }
+
 
 
 
@@ -15045,9 +15894,10 @@ void __thiscall Recovered_Bulk::m_FUN_10f7ae20(int param_2)
 __declspec(naked) void FUN_10f7e56d(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008df5a
 }
+
 
 
 
@@ -15061,9 +15911,10 @@ __declspec(naked) void FUN_10f7e56d(void)
 __declspec(naked) void FUN_10f7e577(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10083d2a
 }
+
 
 
 
@@ -15077,9 +15928,10 @@ __declspec(naked) void FUN_10f7e577(void)
 __declspec(naked) void FUN_10f7e581(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1000dfc6
 }
+
 
 
 
@@ -15093,9 +15945,10 @@ __declspec(naked) void FUN_10f7e581(void)
 __declspec(naked) void FUN_10f7e58b(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_1000dfc6
 }
+
 
 
 
@@ -15109,9 +15962,10 @@ __declspec(naked) void FUN_10f7e58b(void)
 __declspec(naked) void FUN_10f7e595(void)
 
 {
-  __asm sub ecx, 0x620c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10083c30
 }
+
 
 
 
@@ -15125,9 +15979,10 @@ __declspec(naked) void FUN_10f7e595(void)
 __declspec(naked) void FUN_10f7e5a2(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10081007
 }
+
 
 
 
@@ -15141,9 +15996,10 @@ __declspec(naked) void FUN_10f7e5a2(void)
 __declspec(naked) void FUN_10f7e5ac(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_10081007
 }
+
 
 
 
@@ -15157,9 +16013,10 @@ __declspec(naked) void FUN_10f7e5ac(void)
 __declspec(naked) void FUN_10f7e5b6(void)
 
 {
-  __asm sub ecx, 0x610c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1006df11
 }
+
 
 
 
@@ -15173,9 +16030,10 @@ __declspec(naked) void FUN_10f7e5b6(void)
 __declspec(naked) void FUN_10f7e5c3(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10079384
 }
+
 
 
 
@@ -15189,9 +16047,10 @@ __declspec(naked) void FUN_10f7e5c3(void)
 __declspec(naked) void FUN_10f7e5cd(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_10079384
 }
+
 
 
 
@@ -15205,9 +16064,10 @@ __declspec(naked) void FUN_10f7e5cd(void)
 __declspec(naked) void FUN_10f7e5d7(void)
 
 {
-  __asm sub ecx, 0x610c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x61 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1001fdc0
 }
+
 
 
 
@@ -15221,9 +16081,10 @@ __declspec(naked) void FUN_10f7e5d7(void)
 __declspec(naked) void FUN_10f7e5e4(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008f22e
 }
+
 
 
 
@@ -15237,9 +16098,10 @@ __declspec(naked) void FUN_10f7e5e4(void)
 __declspec(naked) void FUN_10f7e5ee(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008ff44
 }
+
 
 
 
@@ -15373,9 +16235,10 @@ void FUN_10f83120(void)
 __declspec(naked) void FUN_10f83330(void)
 
 {
-  __asm add ecx, 0x688
+  __asm _emit 0x81 __asm _emit 0xc1 __asm _emit 0x88 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100820b5
 }
+
 
 
 
@@ -15389,9 +16252,10 @@ __declspec(naked) void FUN_10f83330(void)
 __declspec(naked) void FUN_10f83400(void)
 
 {
-  __asm add ecx, 0x688
+  __asm _emit 0x81 __asm _emit 0xc1 __asm _emit 0x88 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100820b5
 }
+
 
 
 
@@ -15405,9 +16269,10 @@ __declspec(naked) void FUN_10f83400(void)
 __declspec(naked) void FUN_10f8345d(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10064ed9
 }
+
 
 
 
@@ -15421,9 +16286,10 @@ __declspec(naked) void FUN_10f8345d(void)
 __declspec(naked) void FUN_10f83467(void)
 
 {
-  __asm sub ecx, 0x378
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x78 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007f860
 }
+
 
 
 
@@ -15437,9 +16303,10 @@ __declspec(naked) void FUN_10f83467(void)
 __declspec(naked) void FUN_10f83474(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1005af10
 }
+
 
 
 
@@ -15453,9 +16320,10 @@ __declspec(naked) void FUN_10f83474(void)
 __declspec(naked) void FUN_10f8347e(void)
 
 {
-  __asm sub ecx, 0x378
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x78 __asm _emit 0x03 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1002c372
 }
+
 
 
 
@@ -15469,9 +16337,10 @@ __declspec(naked) void FUN_10f8347e(void)
 __declspec(naked) void FUN_10f8348b(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10024041
 }
+
 
 
 
@@ -15485,9 +16354,10 @@ __declspec(naked) void FUN_10f8348b(void)
 __declspec(naked) void FUN_10f83495(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10024041
 }
+
 
 
 
@@ -15501,9 +16371,10 @@ __declspec(naked) void FUN_10f83495(void)
 __declspec(naked) void FUN_10f8349f(void)
 
 {
-  __asm sub ecx, 0x7c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x7c
   __asm jmp LAB_10024041
 }
+
 
 
 
@@ -15517,9 +16388,10 @@ __declspec(naked) void FUN_10f8349f(void)
 __declspec(naked) void FUN_10f834a9(void)
 
 {
-  __asm sub ecx, 0x8c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x8c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10024041
 }
+
 
 
 
@@ -15533,9 +16405,10 @@ __declspec(naked) void FUN_10f834a9(void)
 __declspec(naked) void FUN_10f834b6(void)
 
 {
-  __asm sub ecx, 0x98
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x98 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10024041
 }
+
 
 
 
@@ -15549,9 +16422,10 @@ __declspec(naked) void FUN_10f834b6(void)
 __declspec(naked) void FUN_10f834c3(void)
 
 {
-  __asm sub ecx, 0xe0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xe0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10024041
 }
+
 
 
 
@@ -15565,9 +16439,10 @@ __declspec(naked) void FUN_10f834c3(void)
 __declspec(naked) void FUN_10f834d0(void)
 
 {
-  __asm sub ecx, 0xec
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xec __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10024041
 }
+
 
 
 
@@ -15581,9 +16456,10 @@ __declspec(naked) void FUN_10f834d0(void)
 __declspec(naked) void FUN_10f834dd(void)
 
 {
-  __asm sub ecx, 0xf8
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xf8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10024041
 }
+
 
 
 
@@ -15597,9 +16473,10 @@ __declspec(naked) void FUN_10f834dd(void)
 __declspec(naked) void FUN_10f8bd76(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100811b5
 }
+
 
 
 
@@ -15613,9 +16490,10 @@ __declspec(naked) void FUN_10f8bd76(void)
 __declspec(naked) void FUN_10f8bd80(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008d019
 }
+
 
 
 
@@ -15629,9 +16507,10 @@ __declspec(naked) void FUN_10f8bd80(void)
 __declspec(naked) void FUN_10f8bd8a(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1005d6cf
 }
+
 
 
 
@@ -15645,9 +16524,10 @@ __declspec(naked) void FUN_10f8bd8a(void)
 __declspec(naked) void FUN_10f8bd94(void)
 
 {
-  __asm sub ecx, 0x620c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x0c __asm _emit 0x62 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10075dab
 }
+
 
 
 
@@ -15661,9 +16541,10 @@ __declspec(naked) void FUN_10f8bd94(void)
 __declspec(naked) void FUN_10f8bda1(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1000a28b
 }
+
 
 
 
@@ -15677,9 +16558,10 @@ __declspec(naked) void FUN_10f8bda1(void)
 __declspec(naked) void FUN_10f8bdab(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10007635
 }
+
 
 
 
@@ -15693,9 +16575,10 @@ __declspec(naked) void FUN_10f8bdab(void)
 __declspec(naked) void FUN_10f8bdb5(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1000e2e6
 }
+
 
 
 
@@ -15709,9 +16592,10 @@ __declspec(naked) void FUN_10f8bdb5(void)
 __declspec(naked) void FUN_10f8bdbf(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10033da2
 }
+
 
 
 
@@ -15725,9 +16609,10 @@ __declspec(naked) void FUN_10f8bdbf(void)
 __declspec(naked) void FUN_10f8bdc9(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10076733
 }
+
 
 
 
@@ -15741,9 +16626,10 @@ __declspec(naked) void FUN_10f8bdc9(void)
 __declspec(naked) void FUN_10f8bdd3(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10055588
 }
+
 
 
 
@@ -15757,9 +16643,10 @@ __declspec(naked) void FUN_10f8bdd3(void)
 __declspec(naked) void FUN_10f8bddd(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100132a0
 }
+
 
 
 
@@ -15853,9 +16740,10 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_10f8de40(void)
 __declspec(naked) void FUN_10f8f390(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10003ddc
 }
+
 
 
 
@@ -15869,9 +16757,10 @@ __declspec(naked) void FUN_10f8f390(void)
 __declspec(naked) void FUN_10f8f39a(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_10003ddc
 }
+
 
 
 
@@ -15885,9 +16774,10 @@ __declspec(naked) void FUN_10f8f39a(void)
 __declspec(naked) void FUN_10f8f3a4(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_10003ddc
 }
+
 
 
 
@@ -15901,9 +16791,10 @@ __declspec(naked) void FUN_10f8f3a4(void)
 __declspec(naked) void FUN_10f8f3ae(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_10003ddc
 }
+
 
 
 
@@ -15917,9 +16808,10 @@ __declspec(naked) void FUN_10f8f3ae(void)
 __declspec(naked) void FUN_10f8f3b8(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10079794
 }
+
 
 
 
@@ -15933,9 +16825,10 @@ __declspec(naked) void FUN_10f8f3b8(void)
 __declspec(naked) void FUN_10f8f3c2(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10054ba1
 }
+
 
 
 
@@ -15949,9 +16842,10 @@ __declspec(naked) void FUN_10f8f3c2(void)
 __declspec(naked) void FUN_10f8f3cc(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10096182
 }
+
 
 
 
@@ -16065,9 +16959,10 @@ void FUN_10f90940(void)
 __declspec(naked) void FUN_10f91d16(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_100698f3
 }
+
 
 
 
@@ -16081,9 +16976,10 @@ __declspec(naked) void FUN_10f91d16(void)
 __declspec(naked) void FUN_10f91d20(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10093b0d
 }
+
 
 
 
@@ -16097,9 +16993,10 @@ __declspec(naked) void FUN_10f91d20(void)
 __declspec(naked) void FUN_10f91d2a(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_10093b0d
 }
+
 
 
 
@@ -16113,9 +17010,10 @@ __declspec(naked) void FUN_10f91d2a(void)
 __declspec(naked) void FUN_10f91d34(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_10093b0d
 }
+
 
 
 
@@ -16129,9 +17027,10 @@ __declspec(naked) void FUN_10f91d34(void)
 __declspec(naked) void FUN_10f91d3e(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_10093b0d
 }
+
 
 
 
@@ -16295,9 +17194,10 @@ void FUN_10f96a00(void)
 __declspec(naked) void FUN_10f97160(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10018c69
 }
+
 
 
 
@@ -16311,9 +17211,10 @@ __declspec(naked) void FUN_10f97160(void)
 __declspec(naked) void FUN_10f9716a(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1007ec62
 }
+
 
 
 
@@ -16327,9 +17228,10 @@ __declspec(naked) void FUN_10f9716a(void)
 __declspec(naked) void FUN_10f97174(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1007ec62
 }
+
 
 
 
@@ -16343,9 +17245,10 @@ __declspec(naked) void FUN_10f97174(void)
 __declspec(naked) void FUN_10f9717e(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1007ec62
 }
+
 
 
 
@@ -16359,9 +17262,10 @@ __declspec(naked) void FUN_10f9717e(void)
 __declspec(naked) void FUN_10f97188(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1007ec62
 }
+
 
 
 
@@ -16545,9 +17449,10 @@ undefined1 FUN_10f99420(void)
 __declspec(naked) void FUN_10f9bc77(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1005641f
 }
+
 
 
 
@@ -16561,9 +17466,10 @@ __declspec(naked) void FUN_10f9bc77(void)
 __declspec(naked) void FUN_10f9bc81(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1000174e
 }
+
 
 
 
@@ -16577,9 +17483,10 @@ __declspec(naked) void FUN_10f9bc81(void)
 __declspec(naked) void FUN_10f9bc8b(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1000174e
 }
+
 
 
 
@@ -16593,9 +17500,10 @@ __declspec(naked) void FUN_10f9bc8b(void)
 __declspec(naked) void FUN_10f9bc95(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1000174e
 }
+
 
 
 
@@ -16609,9 +17517,10 @@ __declspec(naked) void FUN_10f9bc95(void)
 __declspec(naked) void FUN_10f9bc9f(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1000174e
 }
+
 
 
 
@@ -16625,9 +17534,10 @@ __declspec(naked) void FUN_10f9bc9f(void)
 __declspec(naked) void FUN_10f9bca9(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1000174e
 }
+
 
 
 
@@ -16641,9 +17551,10 @@ __declspec(naked) void FUN_10f9bca9(void)
 __declspec(naked) void FUN_10f9bcb6(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1002822c
 }
+
 
 
 
@@ -16657,9 +17568,10 @@ __declspec(naked) void FUN_10f9bcb6(void)
 __declspec(naked) void FUN_10f9bcc0(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1002822c
 }
+
 
 
 
@@ -16673,9 +17585,10 @@ __declspec(naked) void FUN_10f9bcc0(void)
 __declspec(naked) void FUN_10f9daa0(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1002fb1c
 }
+
 
 
 
@@ -16799,9 +17712,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fa04a0(void)
 __declspec(naked) void FUN_10fa04a3(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10068cd2
 }
+
 
 
 
@@ -16875,9 +17789,10 @@ undefined1 FUN_10fa3480(void)
 __declspec(naked) void FUN_10fa3915(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100269bd
 }
+
 
 
 
@@ -16891,9 +17806,10 @@ __declspec(naked) void FUN_10fa3915(void)
 __declspec(naked) void FUN_10fa39c9(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1005f641
 }
+
 
 
 
@@ -16997,9 +17913,10 @@ void FUN_10fa3ef0(void)
 __declspec(naked) void FUN_10fa54e7(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1003f12f
 }
+
 
 
 
@@ -17013,9 +17930,10 @@ __declspec(naked) void FUN_10fa54e7(void)
 __declspec(naked) void FUN_10fa54f1(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1001c2ba
 }
+
 
 
 
@@ -17029,9 +17947,10 @@ __declspec(naked) void FUN_10fa54f1(void)
 __declspec(naked) void FUN_10fa54fb(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1001c2ba
 }
+
 
 
 
@@ -17045,9 +17964,10 @@ __declspec(naked) void FUN_10fa54fb(void)
 __declspec(naked) void FUN_10fa5505(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1001c2ba
 }
+
 
 
 
@@ -17061,9 +17981,10 @@ __declspec(naked) void FUN_10fa5505(void)
 __declspec(naked) void FUN_10fa550f(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1001c2ba
 }
+
 
 
 
@@ -17077,9 +17998,10 @@ __declspec(naked) void FUN_10fa550f(void)
 __declspec(naked) void FUN_10fa5519(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_100588dc
 }
+
 
 
 
@@ -17093,9 +18015,10 @@ __declspec(naked) void FUN_10fa5519(void)
 __declspec(naked) void FUN_10fa5523(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_100588dc
 }
+
 
 
 
@@ -17259,9 +18182,10 @@ void FUN_10faf670(void)
 __declspec(naked) void FUN_10fb151c(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10059cb9
 }
+
 
 
 
@@ -17275,9 +18199,10 @@ __declspec(naked) void FUN_10fb151c(void)
 __declspec(naked) void FUN_10fb1526(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10059cb9
 }
+
 
 
 
@@ -17291,9 +18216,10 @@ __declspec(naked) void FUN_10fb1526(void)
 __declspec(naked) void FUN_10fb1530(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1007ca9d
 }
+
 
 
 
@@ -17307,9 +18233,10 @@ __declspec(naked) void FUN_10fb1530(void)
 __declspec(naked) void FUN_10fb153a(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_100198f8
 }
+
 
 
 
@@ -17323,9 +18250,10 @@ __declspec(naked) void FUN_10fb153a(void)
 __declspec(naked) void FUN_10fb1544(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1001bbf8
 }
+
 
 
 
@@ -17339,9 +18267,10 @@ __declspec(naked) void FUN_10fb1544(void)
 __declspec(naked) void FUN_10fb154e(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10012a6c
 }
+
 
 
 
@@ -17355,9 +18284,10 @@ __declspec(naked) void FUN_10fb154e(void)
 __declspec(naked) void FUN_10fb1558(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_10012a6c
 }
+
 
 
 
@@ -17371,9 +18301,10 @@ __declspec(naked) void FUN_10fb1558(void)
 __declspec(naked) void FUN_10fb1562(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_10012a6c
 }
+
 
 
 
@@ -17387,9 +18318,10 @@ __declspec(naked) void FUN_10fb1562(void)
 __declspec(naked) void FUN_10fb156c(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_10012a6c
 }
+
 
 
 
@@ -17623,9 +18555,10 @@ undefined1 FUN_10fc0840(void)
 __declspec(naked) void FUN_10fc2637(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10010839
 }
+
 
 
 
@@ -17639,9 +18572,10 @@ __declspec(naked) void FUN_10fc2637(void)
 __declspec(naked) void FUN_10fc2641(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1003f96d
 }
+
 
 
 
@@ -17655,9 +18589,10 @@ __declspec(naked) void FUN_10fc2641(void)
 __declspec(naked) void FUN_10fc264b(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1003f96d
 }
+
 
 
 
@@ -17671,9 +18606,10 @@ __declspec(naked) void FUN_10fc264b(void)
 __declspec(naked) void FUN_10fc2655(void)
 
 {
-  __asm sub ecx, 0x48
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x48
   __asm jmp LAB_1003f96d
 }
+
 
 
 
@@ -17687,9 +18623,10 @@ __declspec(naked) void FUN_10fc2655(void)
 __declspec(naked) void FUN_10fc265f(void)
 
 {
-  __asm sub ecx, 0x4c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x4c
   __asm jmp LAB_1003f96d
 }
+
 
 
 
@@ -17703,9 +18640,10 @@ __declspec(naked) void FUN_10fc265f(void)
 __declspec(naked) void FUN_10fc2669(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1003f96d
 }
+
 
 
 
@@ -17719,9 +18657,10 @@ __declspec(naked) void FUN_10fc2669(void)
 __declspec(naked) void FUN_10fc2676(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10064934
 }
+
 
 
 
@@ -17735,9 +18674,10 @@ __declspec(naked) void FUN_10fc2676(void)
 __declspec(naked) void FUN_10fc2680(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_10064934
 }
+
 
 
 
@@ -17751,9 +18691,10 @@ __declspec(naked) void FUN_10fc2680(void)
 __declspec(naked) void FUN_10fc268a(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_1001ce0e
 }
+
 
 
 
@@ -17767,9 +18708,10 @@ __declspec(naked) void FUN_10fc268a(void)
 __declspec(naked) void FUN_10fc3a80(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100514f1
 }
+
 
 
 
@@ -17903,9 +18845,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fc5e50(void)
 __declspec(naked) void FUN_10fc5e53(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10021eb3
 }
+
 
 
 
@@ -17979,9 +18922,10 @@ undefined1 FUN_10fc93a0(void)
 __declspec(naked) void FUN_10fc9815(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1006eaab
 }
+
 
 
 
@@ -17995,9 +18939,10 @@ __declspec(naked) void FUN_10fc9815(void)
 __declspec(naked) void FUN_10fc98c9(void)
 
 {
-  __asm sub ecx, 0xd0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xd0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1006d156
 }
+
 
 
 
@@ -18111,9 +19056,10 @@ void FUN_10fc9d80(void)
 __declspec(naked) void FUN_10fca63a(void)
 
 {
-  __asm sub ecx, 0xc
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x0c
   __asm jmp LAB_100580a3
 }
+
 
 
 
@@ -18347,9 +19293,10 @@ void FUN_10fccea0(void)
 __declspec(naked) void FUN_10fcd1eb(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100780ec
 }
+
 
 
 
@@ -18363,9 +19310,10 @@ __declspec(naked) void FUN_10fcd1eb(void)
 __declspec(naked) void FUN_10fcd1f5(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_100780ec
 }
+
 
 
 
@@ -18879,9 +19827,10 @@ void __stdcall FUN_10fcf630(unsigned int recovered_unused_stack_0)
 __declspec(naked) void FUN_10fd0e63(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10006573
 }
+
 
 
 
@@ -18895,9 +19844,10 @@ __declspec(naked) void FUN_10fd0e63(void)
 __declspec(naked) void FUN_10fd0e6d(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10006573
 }
+
 
 
 
@@ -18911,9 +19861,10 @@ __declspec(naked) void FUN_10fd0e6d(void)
 __declspec(naked) void FUN_10fd0e77(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10006573
 }
+
 
 
 
@@ -18927,9 +19878,10 @@ __declspec(naked) void FUN_10fd0e77(void)
 __declspec(naked) void FUN_10fd0e81(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10070fe0
 }
+
 
 
 
@@ -18943,9 +19895,10 @@ __declspec(naked) void FUN_10fd0e81(void)
 __declspec(naked) void FUN_10fd0e8b(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10070fe0
 }
+
 
 
 
@@ -18959,9 +19912,10 @@ __declspec(naked) void FUN_10fd0e8b(void)
 __declspec(naked) void FUN_10fd1750(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1004a421
 }
+
 
 
 
@@ -18975,9 +19929,10 @@ __declspec(naked) void FUN_10fd1750(void)
 __declspec(naked) void FUN_10fd175a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1004a421
 }
+
 
 
 
@@ -18991,9 +19946,10 @@ __declspec(naked) void FUN_10fd175a(void)
 __declspec(naked) void FUN_10fd1780(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10040e8f
 }
+
 
 
 
@@ -19027,9 +19983,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fd1d10(void)
 __declspec(naked) void FUN_10fd1d13(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10052405
 }
+
 
 
 
@@ -19043,9 +20000,10 @@ __declspec(naked) void FUN_10fd1d13(void)
 __declspec(naked) void FUN_10fd1d1d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10052405
 }
+
 
 
 
@@ -19069,9 +20027,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fd1d30(void)
 __declspec(naked) void FUN_10fd1d33(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10058981
 }
+
 
 
 
@@ -19085,9 +20044,10 @@ __declspec(naked) void FUN_10fd1d33(void)
 __declspec(naked) void FUN_10fd2ee9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001d26e
 }
+
 
 
 
@@ -19101,9 +20061,10 @@ __declspec(naked) void FUN_10fd2ee9(void)
 __declspec(naked) void FUN_10fd2ef3(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1001d26e
 }
+
 
 
 
@@ -19117,9 +20078,10 @@ __declspec(naked) void FUN_10fd2ef3(void)
 __declspec(naked) void FUN_10fd2f99(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10071ca6
 }
+
 
 
 
@@ -19133,9 +20095,10 @@ __declspec(naked) void FUN_10fd2f99(void)
 __declspec(naked) void FUN_10fd96d3(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1006bb76
 }
+
 
 
 
@@ -19149,9 +20112,10 @@ __declspec(naked) void FUN_10fd96d3(void)
 __declspec(naked) void FUN_10fd96dd(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_1006bb76
 }
+
 
 
 
@@ -19165,9 +20129,10 @@ __declspec(naked) void FUN_10fd96dd(void)
 __declspec(naked) void FUN_10fd96e7(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1006bb76
 }
+
 
 
 
@@ -19181,9 +20146,10 @@ __declspec(naked) void FUN_10fd96e7(void)
 __declspec(naked) void FUN_10fd96f4(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1006bb76
 }
+
 
 
 
@@ -19197,9 +20163,10 @@ __declspec(naked) void FUN_10fd96f4(void)
 __declspec(naked) void FUN_10fd9701(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10022174
 }
+
 
 
 
@@ -19213,9 +20180,10 @@ __declspec(naked) void FUN_10fd9701(void)
 __declspec(naked) void FUN_10fd970b(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_10022174
 }
+
 
 
 
@@ -19229,9 +20197,10 @@ __declspec(naked) void FUN_10fd970b(void)
 __declspec(naked) void FUN_10fd9715(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10022174
 }
+
 
 
 
@@ -19245,9 +20214,10 @@ __declspec(naked) void FUN_10fd9715(void)
 __declspec(naked) void FUN_10fd9722(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10022174
 }
+
 
 
 
@@ -19261,9 +20231,10 @@ __declspec(naked) void FUN_10fd9722(void)
 __declspec(naked) void FUN_10fd972f(void)
 
 {
-  __asm sub ecx, 0xa0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10022174
 }
+
 
 
 
@@ -19277,9 +20248,10 @@ __declspec(naked) void FUN_10fd972f(void)
 __declspec(naked) void FUN_10fd973c(void)
 
 {
-  __asm sub ecx, 0xa8
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10022174
 }
+
 
 
 
@@ -19293,9 +20265,10 @@ __declspec(naked) void FUN_10fd973c(void)
 __declspec(naked) void FUN_10fd9749(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_100617de
 }
+
 
 
 
@@ -19309,9 +20282,10 @@ __declspec(naked) void FUN_10fd9749(void)
 __declspec(naked) void FUN_10fd9753(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_100617de
 }
+
 
 
 
@@ -19325,9 +20299,10 @@ __declspec(naked) void FUN_10fd9753(void)
 __declspec(naked) void FUN_10fd975d(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100617de
 }
+
 
 
 
@@ -19341,9 +20316,10 @@ __declspec(naked) void FUN_10fd975d(void)
 __declspec(naked) void FUN_10fd976a(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100617de
 }
+
 
 
 
@@ -19357,9 +20333,10 @@ __declspec(naked) void FUN_10fd976a(void)
 __declspec(naked) void FUN_10fd9777(void)
 
 {
-  __asm sub ecx, 0xa0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100617de
 }
+
 
 
 
@@ -19373,9 +20350,10 @@ __declspec(naked) void FUN_10fd9777(void)
 __declspec(naked) void FUN_10fd9784(void)
 
 {
-  __asm sub ecx, 0xa8
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100617de
 }
+
 
 
 
@@ -19389,9 +20367,10 @@ __declspec(naked) void FUN_10fd9784(void)
 __declspec(naked) void FUN_10fd9791(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10007950
 }
+
 
 
 
@@ -19405,9 +20384,10 @@ __declspec(naked) void FUN_10fd9791(void)
 __declspec(naked) void FUN_10fd979b(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_10007950
 }
+
 
 
 
@@ -19421,9 +20401,10 @@ __declspec(naked) void FUN_10fd979b(void)
 __declspec(naked) void FUN_10fd97a5(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10007950
 }
+
 
 
 
@@ -19437,9 +20418,10 @@ __declspec(naked) void FUN_10fd97a5(void)
 __declspec(naked) void FUN_10fd97b2(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10007950
 }
+
 
 
 
@@ -19453,9 +20435,10 @@ __declspec(naked) void FUN_10fd97b2(void)
 __declspec(naked) void FUN_10fd97bf(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1004b876
 }
+
 
 
 
@@ -19469,9 +20452,10 @@ __declspec(naked) void FUN_10fd97bf(void)
 __declspec(naked) void FUN_10fd97c9(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_1004b876
 }
+
 
 
 
@@ -19485,9 +20469,10 @@ __declspec(naked) void FUN_10fd97c9(void)
 __declspec(naked) void FUN_10fd97d3(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004b876
 }
+
 
 
 
@@ -19501,9 +20486,10 @@ __declspec(naked) void FUN_10fd97d3(void)
 __declspec(naked) void FUN_10fd97e0(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004b876
 }
+
 
 
 
@@ -19517,9 +20503,10 @@ __declspec(naked) void FUN_10fd97e0(void)
 __declspec(naked) void FUN_10fd97ed(void)
 
 {
-  __asm sub ecx, 0xa0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004b876
 }
+
 
 
 
@@ -19533,9 +20520,10 @@ __declspec(naked) void FUN_10fd97ed(void)
 __declspec(naked) void FUN_10fd97fa(void)
 
 {
-  __asm sub ecx, 0xa8
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004b876
 }
+
 
 
 
@@ -19549,9 +20537,10 @@ __declspec(naked) void FUN_10fd97fa(void)
 __declspec(naked) void FUN_10fd9807(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10057ce3
 }
+
 
 
 
@@ -19565,9 +20554,10 @@ __declspec(naked) void FUN_10fd9807(void)
 __declspec(naked) void FUN_10fd9811(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_10057ce3
 }
+
 
 
 
@@ -19581,9 +20571,10 @@ __declspec(naked) void FUN_10fd9811(void)
 __declspec(naked) void FUN_10fd981b(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10057ce3
 }
+
 
 
 
@@ -19597,9 +20588,10 @@ __declspec(naked) void FUN_10fd981b(void)
 __declspec(naked) void FUN_10fd9828(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10057ce3
 }
+
 
 
 
@@ -19613,9 +20605,10 @@ __declspec(naked) void FUN_10fd9828(void)
 __declspec(naked) void FUN_10fd9835(void)
 
 {
-  __asm sub ecx, 0xa0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10057ce3
 }
+
 
 
 
@@ -19629,9 +20622,10 @@ __declspec(naked) void FUN_10fd9835(void)
 __declspec(naked) void FUN_10fd9842(void)
 
 {
-  __asm sub ecx, 0xa8
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10057ce3
 }
+
 
 
 
@@ -19645,9 +20639,10 @@ __declspec(naked) void FUN_10fd9842(void)
 __declspec(naked) void FUN_10fd984f(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1005908e
 }
+
 
 
 
@@ -19661,9 +20656,10 @@ __declspec(naked) void FUN_10fd984f(void)
 __declspec(naked) void FUN_10fd9859(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_1005908e
 }
+
 
 
 
@@ -19677,9 +20673,10 @@ __declspec(naked) void FUN_10fd9859(void)
 __declspec(naked) void FUN_10fd9863(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1005908e
 }
+
 
 
 
@@ -19693,9 +20690,10 @@ __declspec(naked) void FUN_10fd9863(void)
 __declspec(naked) void FUN_10fd9870(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1005908e
 }
+
 
 
 
@@ -19709,9 +20707,10 @@ __declspec(naked) void FUN_10fd9870(void)
 __declspec(naked) void FUN_10fd987d(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1000ae16
 }
+
 
 
 
@@ -19725,9 +20724,10 @@ __declspec(naked) void FUN_10fd987d(void)
 __declspec(naked) void FUN_10fd9887(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_1000ae16
 }
+
 
 
 
@@ -19741,9 +20741,10 @@ __declspec(naked) void FUN_10fd9887(void)
 __declspec(naked) void FUN_10fd9891(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1000ae16
 }
+
 
 
 
@@ -19757,9 +20758,10 @@ __declspec(naked) void FUN_10fd9891(void)
 __declspec(naked) void FUN_10fd989e(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1000ae16
 }
+
 
 
 
@@ -19773,9 +20775,10 @@ __declspec(naked) void FUN_10fd989e(void)
 __declspec(naked) void FUN_10fd98ab(void)
 
 {
-  __asm sub ecx, 0xa0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1000ae16
 }
+
 
 
 
@@ -19789,9 +20792,10 @@ __declspec(naked) void FUN_10fd98ab(void)
 __declspec(naked) void FUN_10fd98b8(void)
 
 {
-  __asm sub ecx, 0xa8
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1000ae16
 }
+
 
 
 
@@ -19805,9 +20809,10 @@ __declspec(naked) void FUN_10fd98b8(void)
 __declspec(naked) void FUN_10fd98c5(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1002268d
 }
+
 
 
 
@@ -19821,9 +20826,10 @@ __declspec(naked) void FUN_10fd98c5(void)
 __declspec(naked) void FUN_10fd98cf(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_1002268d
 }
+
 
 
 
@@ -19837,9 +20843,10 @@ __declspec(naked) void FUN_10fd98cf(void)
 __declspec(naked) void FUN_10fd98d9(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1002268d
 }
+
 
 
 
@@ -19853,9 +20860,10 @@ __declspec(naked) void FUN_10fd98d9(void)
 __declspec(naked) void FUN_10fd98e6(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1002268d
 }
+
 
 
 
@@ -19869,9 +20877,10 @@ __declspec(naked) void FUN_10fd98e6(void)
 __declspec(naked) void FUN_10fd98f3(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1009386a
 }
+
 
 
 
@@ -19885,9 +20894,10 @@ __declspec(naked) void FUN_10fd98f3(void)
 __declspec(naked) void FUN_10fd98fd(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_1009386a
 }
+
 
 
 
@@ -19901,9 +20911,10 @@ __declspec(naked) void FUN_10fd98fd(void)
 __declspec(naked) void FUN_10fd9907(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1009386a
 }
+
 
 
 
@@ -19917,9 +20928,10 @@ __declspec(naked) void FUN_10fd9907(void)
 __declspec(naked) void FUN_10fd9914(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1009386a
 }
+
 
 
 
@@ -19933,9 +20945,10 @@ __declspec(naked) void FUN_10fd9914(void)
 __declspec(naked) void FUN_10fd9921(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10040b4c
 }
+
 
 
 
@@ -19949,9 +20962,10 @@ __declspec(naked) void FUN_10fd9921(void)
 __declspec(naked) void FUN_10fd992b(void)
 
 {
-  __asm sub ecx, 0x30
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x30
   __asm jmp LAB_10040b4c
 }
+
 
 
 
@@ -19965,9 +20979,10 @@ __declspec(naked) void FUN_10fd992b(void)
 __declspec(naked) void FUN_10fd9935(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10040b4c
 }
+
 
 
 
@@ -19981,9 +20996,10 @@ __declspec(naked) void FUN_10fd9935(void)
 __declspec(naked) void FUN_10fd9942(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10040b4c
 }
+
 
 
 
@@ -19997,9 +21013,10 @@ __declspec(naked) void FUN_10fd9942(void)
 __declspec(naked) void FUN_10fd994f(void)
 
 {
-  __asm sub ecx, 0xa0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10040b4c
 }
+
 
 
 
@@ -20013,9 +21030,10 @@ __declspec(naked) void FUN_10fd994f(void)
 __declspec(naked) void FUN_10fd995c(void)
 
 {
-  __asm sub ecx, 0xa8
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10040b4c
 }
+
 
 
 
@@ -20029,9 +21047,10 @@ __declspec(naked) void FUN_10fd995c(void)
 __declspec(naked) void FUN_10fdacd0(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10078dee
 }
+
 
 
 
@@ -20045,9 +21064,10 @@ __declspec(naked) void FUN_10fdacd0(void)
 __declspec(naked) void FUN_10fdacda(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10078dee
 }
+
 
 
 
@@ -20061,9 +21081,10 @@ __declspec(naked) void FUN_10fdacda(void)
 __declspec(naked) void FUN_10fdad00(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10058a94
 }
+
 
 
 
@@ -20077,9 +21098,10 @@ __declspec(naked) void FUN_10fdad00(void)
 __declspec(naked) void FUN_10fdad0a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10058a94
 }
+
 
 
 
@@ -20093,9 +21115,10 @@ __declspec(naked) void FUN_10fdad0a(void)
 __declspec(naked) void FUN_10fdad14(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10058a94
 }
+
 
 
 
@@ -20109,9 +21132,10 @@ __declspec(naked) void FUN_10fdad14(void)
 __declspec(naked) void FUN_10fdad21(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10058a94
 }
+
 
 
 
@@ -20125,9 +21149,10 @@ __declspec(naked) void FUN_10fdad21(void)
 __declspec(naked) void FUN_10fdad40(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1007beae
 }
+
 
 
 
@@ -20141,9 +21166,10 @@ __declspec(naked) void FUN_10fdad40(void)
 __declspec(naked) void FUN_10fdad4a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1007beae
 }
+
 
 
 
@@ -20157,9 +21183,10 @@ __declspec(naked) void FUN_10fdad4a(void)
 __declspec(naked) void FUN_10fdad54(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007beae
 }
+
 
 
 
@@ -20173,9 +21200,10 @@ __declspec(naked) void FUN_10fdad54(void)
 __declspec(naked) void FUN_10fdad61(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007beae
 }
+
 
 
 
@@ -20189,9 +21217,10 @@ __declspec(naked) void FUN_10fdad61(void)
 __declspec(naked) void FUN_10fdad80(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_100690b5
 }
+
 
 
 
@@ -20205,9 +21234,10 @@ __declspec(naked) void FUN_10fdad80(void)
 __declspec(naked) void FUN_10fdad8a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_100690b5
 }
+
 
 
 
@@ -20221,9 +21251,10 @@ __declspec(naked) void FUN_10fdad8a(void)
 __declspec(naked) void FUN_10fdadb0(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1008de29
 }
+
 
 
 
@@ -20237,9 +21268,10 @@ __declspec(naked) void FUN_10fdadb0(void)
 __declspec(naked) void FUN_10fdadba(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1008de29
 }
+
 
 
 
@@ -20253,9 +21285,10 @@ __declspec(naked) void FUN_10fdadba(void)
 __declspec(naked) void FUN_10fdadc4(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1008de29
 }
+
 
 
 
@@ -20269,9 +21302,10 @@ __declspec(naked) void FUN_10fdadc4(void)
 __declspec(naked) void FUN_10fdadd1(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1008de29
 }
+
 
 
 
@@ -20285,9 +21319,10 @@ __declspec(naked) void FUN_10fdadd1(void)
 __declspec(naked) void FUN_10fdadf0(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10028b41
 }
+
 
 
 
@@ -20301,9 +21336,10 @@ __declspec(naked) void FUN_10fdadf0(void)
 __declspec(naked) void FUN_10fdadfa(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10028b41
 }
+
 
 
 
@@ -20317,9 +21353,10 @@ __declspec(naked) void FUN_10fdadfa(void)
 __declspec(naked) void FUN_10fdae04(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10028b41
 }
+
 
 
 
@@ -20333,9 +21370,10 @@ __declspec(naked) void FUN_10fdae04(void)
 __declspec(naked) void FUN_10fdae11(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10028b41
 }
+
 
 
 
@@ -20349,9 +21387,10 @@ __declspec(naked) void FUN_10fdae11(void)
 __declspec(naked) void FUN_10fdae30(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10035364
 }
+
 
 
 
@@ -20365,9 +21404,10 @@ __declspec(naked) void FUN_10fdae30(void)
 __declspec(naked) void FUN_10fdae3a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10035364
 }
+
 
 
 
@@ -20381,9 +21421,10 @@ __declspec(naked) void FUN_10fdae3a(void)
 __declspec(naked) void FUN_10fdae60(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1002991a
 }
+
 
 
 
@@ -20397,9 +21438,10 @@ __declspec(naked) void FUN_10fdae60(void)
 __declspec(naked) void FUN_10fdae6a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1002991a
 }
+
 
 
 
@@ -20413,9 +21455,10 @@ __declspec(naked) void FUN_10fdae6a(void)
 __declspec(naked) void FUN_10fdae74(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1002991a
 }
+
 
 
 
@@ -20429,9 +21472,10 @@ __declspec(naked) void FUN_10fdae74(void)
 __declspec(naked) void FUN_10fdae81(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1002991a
 }
+
 
 
 
@@ -20445,9 +21489,10 @@ __declspec(naked) void FUN_10fdae81(void)
 __declspec(naked) void FUN_10fdaea0(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1006ea2e
 }
+
 
 
 
@@ -20461,9 +21506,10 @@ __declspec(naked) void FUN_10fdaea0(void)
 __declspec(naked) void FUN_10fdaeaa(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1006ea2e
 }
+
 
 
 
@@ -20477,9 +21523,10 @@ __declspec(naked) void FUN_10fdaeaa(void)
 __declspec(naked) void FUN_10fdaed0(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1003f7c4
 }
+
 
 
 
@@ -20493,9 +21540,10 @@ __declspec(naked) void FUN_10fdaed0(void)
 __declspec(naked) void FUN_10fdaeda(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1003f7c4
 }
+
 
 
 
@@ -20509,9 +21557,10 @@ __declspec(naked) void FUN_10fdaeda(void)
 __declspec(naked) void FUN_10fdaf00(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1003f61b
 }
+
 
 
 
@@ -20525,9 +21574,10 @@ __declspec(naked) void FUN_10fdaf00(void)
 __declspec(naked) void FUN_10fdaf0a(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1003f61b
 }
+
 
 
 
@@ -20541,9 +21591,10 @@ __declspec(naked) void FUN_10fdaf0a(void)
 __declspec(naked) void FUN_10fdaf14(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1003f61b
 }
+
 
 
 
@@ -20557,9 +21608,10 @@ __declspec(naked) void FUN_10fdaf14(void)
 __declspec(naked) void FUN_10fdaf21(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1003f61b
 }
+
 
 
 
@@ -20583,9 +21635,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb530(void)
 __declspec(naked) void FUN_10fdb533(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10081fc5
 }
+
 
 
 
@@ -20599,9 +21652,10 @@ __declspec(naked) void FUN_10fdb533(void)
 __declspec(naked) void FUN_10fdb53d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10081fc5
 }
+
 
 
 
@@ -20625,9 +21679,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb550(void)
 __declspec(naked) void FUN_10fdb553(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1005fe02
 }
+
 
 
 
@@ -20641,9 +21696,10 @@ __declspec(naked) void FUN_10fdb553(void)
 __declspec(naked) void FUN_10fdb55d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1005fe02
 }
+
 
 
 
@@ -20657,9 +21713,10 @@ __declspec(naked) void FUN_10fdb55d(void)
 __declspec(naked) void FUN_10fdb567(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1005fe02
 }
+
 
 
 
@@ -20673,9 +21730,10 @@ __declspec(naked) void FUN_10fdb567(void)
 __declspec(naked) void FUN_10fdb574(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1005fe02
 }
+
 
 
 
@@ -20699,9 +21757,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb590(void)
 __declspec(naked) void FUN_10fdb593(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10067e0e
 }
+
 
 
 
@@ -20715,9 +21774,10 @@ __declspec(naked) void FUN_10fdb593(void)
 __declspec(naked) void FUN_10fdb59d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10067e0e
 }
+
 
 
 
@@ -20731,9 +21791,10 @@ __declspec(naked) void FUN_10fdb59d(void)
 __declspec(naked) void FUN_10fdb5a7(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10067e0e
 }
+
 
 
 
@@ -20747,9 +21808,10 @@ __declspec(naked) void FUN_10fdb5a7(void)
 __declspec(naked) void FUN_10fdb5b4(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10067e0e
 }
+
 
 
 
@@ -20773,9 +21835,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb5d0(void)
 __declspec(naked) void FUN_10fdb5d3(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1005df8f
 }
+
 
 
 
@@ -20789,9 +21852,10 @@ __declspec(naked) void FUN_10fdb5d3(void)
 __declspec(naked) void FUN_10fdb5dd(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1005df8f
 }
+
 
 
 
@@ -20815,9 +21879,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb5f0(void)
 __declspec(naked) void FUN_10fdb5f3(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1005c1f8
 }
+
 
 
 
@@ -20831,9 +21896,10 @@ __declspec(naked) void FUN_10fdb5f3(void)
 __declspec(naked) void FUN_10fdb5fd(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1005c1f8
 }
+
 
 
 
@@ -20847,9 +21913,10 @@ __declspec(naked) void FUN_10fdb5fd(void)
 __declspec(naked) void FUN_10fdb607(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1005c1f8
 }
+
 
 
 
@@ -20863,9 +21930,10 @@ __declspec(naked) void FUN_10fdb607(void)
 __declspec(naked) void FUN_10fdb614(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1005c1f8
 }
+
 
 
 
@@ -20889,9 +21957,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb630(void)
 __declspec(naked) void FUN_10fdb633(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1008346f
 }
+
 
 
 
@@ -20905,9 +21974,10 @@ __declspec(naked) void FUN_10fdb633(void)
 __declspec(naked) void FUN_10fdb63d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1008346f
 }
+
 
 
 
@@ -20921,9 +21991,10 @@ __declspec(naked) void FUN_10fdb63d(void)
 __declspec(naked) void FUN_10fdb647(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1008346f
 }
+
 
 
 
@@ -20937,9 +22008,10 @@ __declspec(naked) void FUN_10fdb647(void)
 __declspec(naked) void FUN_10fdb654(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1008346f
 }
+
 
 
 
@@ -20963,9 +22035,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb670(void)
 __declspec(naked) void FUN_10fdb673(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10052d88
 }
+
 
 
 
@@ -20979,9 +22052,10 @@ __declspec(naked) void FUN_10fdb673(void)
 __declspec(naked) void FUN_10fdb67d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10052d88
 }
+
 
 
 
@@ -21005,9 +22079,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb690(void)
 __declspec(naked) void FUN_10fdb693(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001818d
 }
+
 
 
 
@@ -21021,9 +22096,10 @@ __declspec(naked) void FUN_10fdb693(void)
 __declspec(naked) void FUN_10fdb69d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1001818d
 }
+
 
 
 
@@ -21037,9 +22113,10 @@ __declspec(naked) void FUN_10fdb69d(void)
 __declspec(naked) void FUN_10fdb6a7(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1001818d
 }
+
 
 
 
@@ -21053,9 +22130,10 @@ __declspec(naked) void FUN_10fdb6a7(void)
 __declspec(naked) void FUN_10fdb6b4(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1001818d
 }
+
 
 
 
@@ -21079,9 +22157,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb6d0(void)
 __declspec(naked) void FUN_10fdb6d3(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1007be0e
 }
+
 
 
 
@@ -21095,9 +22174,10 @@ __declspec(naked) void FUN_10fdb6d3(void)
 __declspec(naked) void FUN_10fdb6dd(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1007be0e
 }
+
 
 
 
@@ -21121,9 +22201,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb6f0(void)
 __declspec(naked) void FUN_10fdb6f3(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1005862f
 }
+
 
 
 
@@ -21137,9 +22218,10 @@ __declspec(naked) void FUN_10fdb6f3(void)
 __declspec(naked) void FUN_10fdb6fd(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1005862f
 }
+
 
 
 
@@ -21163,9 +22245,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10fdb710(void)
 __declspec(naked) void FUN_10fdb713(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001803e
 }
+
 
 
 
@@ -21179,9 +22262,10 @@ __declspec(naked) void FUN_10fdb713(void)
 __declspec(naked) void FUN_10fdb71d(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1001803e
 }
+
 
 
 
@@ -21195,9 +22279,10 @@ __declspec(naked) void FUN_10fdb71d(void)
 __declspec(naked) void FUN_10fdb727(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1001803e
 }
+
 
 
 
@@ -21211,9 +22296,10 @@ __declspec(naked) void FUN_10fdb727(void)
 __declspec(naked) void FUN_10fdb734(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1001803e
 }
+
 
 
 
@@ -21227,9 +22313,10 @@ __declspec(naked) void FUN_10fdb734(void)
 __declspec(naked) void FUN_10fdd672(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1008a963
 }
+
 
 
 
@@ -21243,9 +22330,10 @@ __declspec(naked) void FUN_10fdd672(void)
 __declspec(naked) void FUN_10fdd67c(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1008a963
 }
+
 
 
 
@@ -21259,9 +22347,10 @@ __declspec(naked) void FUN_10fdd67c(void)
 __declspec(naked) void FUN_10fde079(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10046c8b
 }
+
 
 
 
@@ -21275,9 +22364,10 @@ __declspec(naked) void FUN_10fde079(void)
 __declspec(naked) void FUN_10fde083(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10046c8b
 }
+
 
 
 
@@ -21291,9 +22381,10 @@ __declspec(naked) void FUN_10fde083(void)
 __declspec(naked) void FUN_10fde129(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1009341e
 }
+
 
 
 
@@ -21307,9 +22398,10 @@ __declspec(naked) void FUN_10fde129(void)
 __declspec(naked) void FUN_10fde133(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1009341e
 }
+
 
 
 
@@ -21323,9 +22415,10 @@ __declspec(naked) void FUN_10fde133(void)
 __declspec(naked) void FUN_10fde13d(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1009341e
 }
+
 
 
 
@@ -21339,9 +22432,10 @@ __declspec(naked) void FUN_10fde13d(void)
 __declspec(naked) void FUN_10fde14a(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1009341e
 }
+
 
 
 
@@ -21355,9 +22449,10 @@ __declspec(naked) void FUN_10fde14a(void)
 __declspec(naked) void FUN_10fde1f9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1007cbe2
 }
+
 
 
 
@@ -21371,9 +22466,10 @@ __declspec(naked) void FUN_10fde1f9(void)
 __declspec(naked) void FUN_10fde203(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1007cbe2
 }
+
 
 
 
@@ -21387,9 +22483,10 @@ __declspec(naked) void FUN_10fde203(void)
 __declspec(naked) void FUN_10fde20d(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007cbe2
 }
+
 
 
 
@@ -21403,9 +22500,10 @@ __declspec(naked) void FUN_10fde20d(void)
 __declspec(naked) void FUN_10fde21a(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1007cbe2
 }
+
 
 
 
@@ -21419,9 +22517,10 @@ __declspec(naked) void FUN_10fde21a(void)
 __declspec(naked) void FUN_10fde2c9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10019fba
 }
+
 
 
 
@@ -21435,9 +22534,10 @@ __declspec(naked) void FUN_10fde2c9(void)
 __declspec(naked) void FUN_10fde2d3(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10019fba
 }
+
 
 
 
@@ -21451,9 +22551,10 @@ __declspec(naked) void FUN_10fde2d3(void)
 __declspec(naked) void FUN_10fde379(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001546f
 }
+
 
 
 
@@ -21467,9 +22568,10 @@ __declspec(naked) void FUN_10fde379(void)
 __declspec(naked) void FUN_10fde383(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1001546f
 }
+
 
 
 
@@ -21483,9 +22585,10 @@ __declspec(naked) void FUN_10fde383(void)
 __declspec(naked) void FUN_10fde38d(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1001546f
 }
+
 
 
 
@@ -21499,9 +22602,10 @@ __declspec(naked) void FUN_10fde38d(void)
 __declspec(naked) void FUN_10fde39a(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1001546f
 }
+
 
 
 
@@ -21515,9 +22619,10 @@ __declspec(naked) void FUN_10fde39a(void)
 __declspec(naked) void FUN_10fde449(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1000a8a8
 }
+
 
 
 
@@ -21531,9 +22636,10 @@ __declspec(naked) void FUN_10fde449(void)
 __declspec(naked) void FUN_10fde453(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1000a8a8
 }
+
 
 
 
@@ -21547,9 +22653,10 @@ __declspec(naked) void FUN_10fde453(void)
 __declspec(naked) void FUN_10fde45d(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1000a8a8
 }
+
 
 
 
@@ -21563,9 +22670,10 @@ __declspec(naked) void FUN_10fde45d(void)
 __declspec(naked) void FUN_10fde46a(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1000a8a8
 }
+
 
 
 
@@ -21579,9 +22687,10 @@ __declspec(naked) void FUN_10fde46a(void)
 __declspec(naked) void FUN_10fde519(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1000d9ae
 }
+
 
 
 
@@ -21595,9 +22704,10 @@ __declspec(naked) void FUN_10fde519(void)
 __declspec(naked) void FUN_10fde523(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1000d9ae
 }
+
 
 
 
@@ -21611,9 +22721,10 @@ __declspec(naked) void FUN_10fde523(void)
 __declspec(naked) void FUN_10fde5c9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10003c15
 }
+
 
 
 
@@ -21627,9 +22738,10 @@ __declspec(naked) void FUN_10fde5c9(void)
 __declspec(naked) void FUN_10fde5d3(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10003c15
 }
+
 
 
 
@@ -21643,9 +22755,10 @@ __declspec(naked) void FUN_10fde5d3(void)
 __declspec(naked) void FUN_10fde5dd(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10003c15
 }
+
 
 
 
@@ -21659,9 +22772,10 @@ __declspec(naked) void FUN_10fde5dd(void)
 __declspec(naked) void FUN_10fde5ea(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10003c15
 }
+
 
 
 
@@ -21675,9 +22789,10 @@ __declspec(naked) void FUN_10fde5ea(void)
 __declspec(naked) void FUN_10fde699(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1001decb
 }
+
 
 
 
@@ -21691,9 +22806,10 @@ __declspec(naked) void FUN_10fde699(void)
 __declspec(naked) void FUN_10fde6a3(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1001decb
 }
+
 
 
 
@@ -21707,9 +22823,10 @@ __declspec(naked) void FUN_10fde6a3(void)
 __declspec(naked) void FUN_10fde749(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_1004eeef
 }
+
 
 
 
@@ -21723,9 +22840,10 @@ __declspec(naked) void FUN_10fde749(void)
 __declspec(naked) void FUN_10fde753(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_1004eeef
 }
+
 
 
 
@@ -21739,9 +22857,10 @@ __declspec(naked) void FUN_10fde753(void)
 __declspec(naked) void FUN_10fde7f9(void)
 
 {
-  __asm sub ecx, 0x68
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x68
   __asm jmp LAB_10078628
 }
+
 
 
 
@@ -21755,9 +22874,10 @@ __declspec(naked) void FUN_10fde7f9(void)
 __declspec(naked) void FUN_10fde803(void)
 
 {
-  __asm sub ecx, 0x78
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x78
   __asm jmp LAB_10078628
 }
+
 
 
 
@@ -21771,9 +22891,10 @@ __declspec(naked) void FUN_10fde803(void)
 __declspec(naked) void FUN_10fde80d(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10078628
 }
+
 
 
 
@@ -21787,9 +22908,10 @@ __declspec(naked) void FUN_10fde80d(void)
 __declspec(naked) void FUN_10fde81a(void)
 
 {
-  __asm sub ecx, 0x90
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10078628
 }
+
 
 
 
@@ -21803,9 +22925,10 @@ __declspec(naked) void FUN_10fde81a(void)
 __declspec(naked) void FUN_10fe0c91(void)
 
 {
-  __asm sub ecx, 0x46c
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x6c __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100075a4
 }
+
 
 
 
@@ -21819,9 +22942,10 @@ __declspec(naked) void FUN_10fe0c91(void)
 __declspec(naked) void FUN_10fe0c9e(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_100075a4
 }
+
 
 
 
@@ -21835,9 +22959,10 @@ __declspec(naked) void FUN_10fe0c9e(void)
 __declspec(naked) void FUN_10fe0ca8(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100896fd
 }
+
 
 
 
@@ -21851,9 +22976,10 @@ __declspec(naked) void FUN_10fe0ca8(void)
 __declspec(naked) void FUN_10fe0cb2(void)
 
 {
-  __asm sub ecx, 0x24
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x24
   __asm jmp LAB_100896fd
 }
+
 
 
 
@@ -21897,9 +23023,10 @@ void __stdcall FUN_10fe3f30(unsigned int recovered_unused_stack_0)
 __declspec(naked) void FUN_10fe49c1(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1006c558
 }
+
 
 
 
@@ -21913,9 +23040,10 @@ __declspec(naked) void FUN_10fe49c1(void)
 __declspec(naked) void FUN_10fe49cb(void)
 
 {
-  __asm sub ecx, 0x24
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x24
   __asm jmp LAB_1006c558
 }
+
 
 
 
@@ -21969,9 +23097,10 @@ void FUN_10fed810(void)
 __declspec(naked) void FUN_10feeb61(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1004120e
 }
+
 
 
 
@@ -21985,9 +23114,10 @@ __declspec(naked) void FUN_10feeb61(void)
 __declspec(naked) void FUN_10feeb6b(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100534e0
 }
+
 
 
 
@@ -22001,9 +23131,10 @@ __declspec(naked) void FUN_10feeb6b(void)
 __declspec(naked) void FUN_10feeb75(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_100534e0
 }
+
 
 
 
@@ -22017,9 +23148,10 @@ __declspec(naked) void FUN_10feeb75(void)
 __declspec(naked) void FUN_10feeb7f(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100534e0
 }
+
 
 
 
@@ -22033,9 +23165,10 @@ __declspec(naked) void FUN_10feeb7f(void)
 __declspec(naked) void FUN_10feeb8c(void)
 
 {
-  __asm sub ecx, 0x84
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100534e0
 }
+
 
 
 
@@ -22049,9 +23182,10 @@ __declspec(naked) void FUN_10feeb8c(void)
 __declspec(naked) void FUN_10feeb99(void)
 
 {
-  __asm sub ecx, 0x88
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100534e0
 }
+
 
 
 
@@ -22065,9 +23199,10 @@ __declspec(naked) void FUN_10feeb99(void)
 __declspec(naked) void FUN_10feeba6(void)
 
 {
-  __asm sub ecx, 0x94
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x94 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100534e0
 }
+
 
 
 
@@ -22081,9 +23216,10 @@ __declspec(naked) void FUN_10feeba6(void)
 __declspec(naked) void FUN_10feebb3(void)
 
 {
-  __asm sub ecx, 0xa0
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0xa0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_100534e0
 }
+
 
 
 
@@ -22097,9 +23233,10 @@ __declspec(naked) void FUN_10feebb3(void)
 __declspec(naked) void FUN_10feebc0(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_100941d9
 }
+
 
 
 
@@ -22113,9 +23250,10 @@ __declspec(naked) void FUN_10feebc0(void)
 __declspec(naked) void FUN_10feebca(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_100941d9
 }
+
 
 
 
@@ -22129,9 +23267,10 @@ __declspec(naked) void FUN_10feebca(void)
 __declspec(naked) void FUN_10fefe90(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10078457
 }
+
 
 
 
@@ -22145,9 +23284,10 @@ __declspec(naked) void FUN_10fefe90(void)
 __declspec(naked) void FUN_10fefeb0(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1008e1d5
 }
+
 
 
 
@@ -22161,9 +23301,10 @@ __declspec(naked) void FUN_10fefeb0(void)
 __declspec(naked) void FUN_10fefebd(void)
 
 {
-  __asm sub ecx, 0x84
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1008e1d5
 }
+
 
 
 
@@ -22177,9 +23318,10 @@ __declspec(naked) void FUN_10fefebd(void)
 __declspec(naked) void FUN_10fefee0(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1005c018
 }
+
 
 
 
@@ -22213,9 +23355,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10ff21f0(void)
 __declspec(naked) void FUN_10ff21f3(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1004c375
 }
+
 
 
 
@@ -22239,9 +23382,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10ff2200(void)
 __declspec(naked) void FUN_10ff2203(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10072db3
 }
+
 
 
 
@@ -22255,9 +23399,10 @@ __declspec(naked) void FUN_10ff2203(void)
 __declspec(naked) void FUN_10ff2210(void)
 
 {
-  __asm sub ecx, 0x84
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_10072db3
 }
+
 
 
 
@@ -22281,9 +23426,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10ff2220(void)
 __declspec(naked) void FUN_10ff2223(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1006f84d
 }
+
 
 
 
@@ -22347,9 +23493,10 @@ void FUN_10ff8140(void)
 __declspec(naked) void FUN_10ff85d0(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10097929
 }
+
 
 
 
@@ -22363,9 +23510,10 @@ __declspec(naked) void FUN_10ff85d0(void)
 __declspec(naked) void FUN_10ff869f(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004a0bb
 }
+
 
 
 
@@ -22379,9 +23527,10 @@ __declspec(naked) void FUN_10ff869f(void)
 __declspec(naked) void FUN_10ff86ac(void)
 
 {
-  __asm sub ecx, 0x84
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004a0bb
 }
+
 
 
 
@@ -22395,9 +23544,10 @@ __declspec(naked) void FUN_10ff86ac(void)
 __declspec(naked) void FUN_10ff8740(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1006d0a2
 }
+
 
 
 
@@ -22411,9 +23561,10 @@ __declspec(naked) void FUN_10ff8740(void)
 __declspec(naked) void FUN_10ff88c9(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10055218
 }
+
 
 
 
@@ -22427,9 +23578,10 @@ __declspec(naked) void FUN_10ff88c9(void)
 __declspec(naked) void FUN_10ff8979(void)
 
 {
-  __asm sub ecx, 0x80
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004515b
 }
+
 
 
 
@@ -22443,9 +23595,10 @@ __declspec(naked) void FUN_10ff8979(void)
 __declspec(naked) void FUN_10ff8986(void)
 
 {
-  __asm sub ecx, 0x84
+  __asm _emit 0x81 __asm _emit 0xe9 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm jmp LAB_1004515b
 }
+
 
 
 
@@ -22459,9 +23612,10 @@ __declspec(naked) void FUN_10ff8986(void)
 __declspec(naked) void FUN_10ff8a39(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1001e812
 }
+
 
 
 
@@ -22496,9 +23650,10 @@ void __thiscall Recovered_Bulk::m_FUN_10ffbca0(int param_2)
 __declspec(naked) void FUN_10ffc799(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1001283c
 }
+
 
 
 
@@ -22512,9 +23667,10 @@ __declspec(naked) void FUN_10ffc799(void)
 __declspec(naked) void FUN_10ffc7a3(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_1001283c
 }
+
 
 
 
@@ -22528,9 +23684,10 @@ __declspec(naked) void FUN_10ffc7a3(void)
 __declspec(naked) void FUN_10ffc900(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_100201cb
 }
+
 
 
 
@@ -22564,9 +23721,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10ffcb00(void)
 __declspec(naked) void FUN_10ffcb03(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_100123b4
 }
+
 
 
 
@@ -22650,9 +23808,10 @@ void __stdcall FUN_10ffd0c0(unsigned int recovered_unused_stack_0)
 __declspec(naked) void FUN_10ffd150(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_10067562
 }
+
 
 
 
@@ -22666,9 +23825,10 @@ __declspec(naked) void FUN_10ffd150(void)
 __declspec(naked) void FUN_10ffd1f9(void)
 
 {
-  __asm sub ecx, 0x28
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x28
   __asm jmp LAB_10025da1
 }
+
 
 
 
@@ -22682,9 +23842,10 @@ __declspec(naked) void FUN_10ffd1f9(void)
 __declspec(naked) void FUN_10fff270(void)
 
 {
-  __asm add ecx, 8
+  __asm _emit 0x83 __asm _emit 0xc1 __asm _emit 0x08
   __asm jmp LAB_10082380
 }
+
 
 
 
@@ -22698,9 +23859,10 @@ __declspec(naked) void FUN_10fff270(void)
 __declspec(naked) void FUN_10fff8b3(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1004d194
 }
+
 
 
 
@@ -22714,9 +23876,10 @@ __declspec(naked) void FUN_10fff8b3(void)
 __declspec(naked) void FUN_10fff8bd(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_1004d194
 }
+
 
 
 
@@ -22730,9 +23893,10 @@ __declspec(naked) void FUN_10fff8bd(void)
 __declspec(naked) void FUN_10fff8c7(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_10041209
 }
+
 
 
 
@@ -22746,9 +23910,10 @@ __declspec(naked) void FUN_10fff8c7(void)
 __declspec(naked) void FUN_10fff8d1(void)
 
 {
-  __asm sub ecx, 0x18
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x18
   __asm jmp LAB_10041209
 }
+
 
 
 
@@ -22772,9 +23937,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11002ad0(void)
 __declspec(naked) void FUN_11003040(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_1008b0b6
 }
+
 
 
 
@@ -22788,9 +23954,10 @@ __declspec(naked) void FUN_11003040(void)
 __declspec(naked) void FUN_110045c4(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_10025d9c
 }
+
 
 
 
@@ -22804,9 +23971,10 @@ __declspec(naked) void FUN_110045c4(void)
 __declspec(naked) void FUN_110045ce(void)
 
 {
-  __asm sub ecx, 0x60
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x60
   __asm jmp LAB_1002b7dd
 }
+
 
 
 
@@ -22820,9 +23988,10 @@ __declspec(naked) void FUN_110045ce(void)
 __declspec(naked) void FUN_110045d8(void)
 
 {
-  __asm sub ecx, 8
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x08
   __asm jmp LAB_100447ba
 }
+
 
 
 
@@ -22836,9 +24005,10 @@ __declspec(naked) void FUN_110045d8(void)
 __declspec(naked) void FUN_110045e2(void)
 
 {
-  __asm sub ecx, 0x1c
+  __asm _emit 0x83 __asm _emit 0xe9 __asm _emit 0x1c
   __asm jmp LAB_100447ba
 }
+
 
 
 
