@@ -3122,6 +3122,11 @@ template<class... A> int FUN_1111e100(A...);
 template<class... A> int FUN_1111e120(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_1111e140(undefined4 *param_1);
 template<class... A> int FUN_1111e140(A...);
+extern void __fastcall FUN_1113e6f0(void *param_1);
+extern void __fastcall FUN_11172910(void *param_1);
+extern void __fastcall FUN_111a4f00(void *param_1);
+extern void __fastcall FUN_111feb50(void *param_1);
+
 // Reference entry 1109cf00; body size 6 bytes.
 #line 1 "ENTRY_1109cf00"
 
@@ -12063,61 +12068,10 @@ void __fastcall FUN_110b6c00(undefined4 *param_1)
 void __fastcall FUN_110b6c30(undefined4 *param_1)
 
 {
- try {
-  int iVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjAvt);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjUpnpService);
-  thunk_FUN_111401c0<>(1);
-  iVar1 = (int)(param_1[10]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10),uVar2), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
-  iVar1 = (int)(param_1[9]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10),uVar2), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
-  iVar1 = (int)(param_1[8]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10),uVar2), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
-  thunk_FUN_111a6f10();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
-  thunk_FUN_111a4f00();
 
-  return;
+  FUN_1113e6f0(param_1);
 
- } catch (...) { }
 }
 
 
@@ -12996,61 +12950,10 @@ void __fastcall FUN_110c0990(undefined4 *param_1)
 void __fastcall FUN_110c09c0(undefined4 *param_1)
 
 {
- try {
-  int iVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjMSD);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjUpnpService);
-  thunk_FUN_111401c0<>(1);
-  iVar1 = (int)(param_1[10]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10),uVar2), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
-  iVar1 = (int)(param_1[9]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10),uVar2), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
-  iVar1 = (int)(param_1[8]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10),uVar2), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
-  thunk_FUN_111a6f10();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
-  thunk_FUN_111a4f00();
 
-  return;
+  FUN_1113e6f0(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13062,44 +12965,10 @@ void __fastcall FUN_110c09c0(undefined4 *param_1)
 void __fastcall FUN_110c0b50(undefined4 *param_1)
 
 {
- try {
-  int iVar1;
-  uint uVar2;
-  int iVar3;
-  undefined1 *puVar4;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjServiceDesc);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObj);
-  puVar4 = (undefined1 *)(&DAT_1186d2ee);
-  if ((undefined1 *)param_1[2] != (undefined1 *)(((0x0)))) {
-    puVar4 = (undefined1 *)((undefined1 *)param_1[2]);
-  }
-  thunk_FUN_111a74d0("FlashDebugObjects",10,"destroy instance 0x%p of class %s",param_1,puVar4,uVar2
-                    );
-  thunk_FUN_111a2140();
-  iVar1 = (int)(param_1[2]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10)), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
   *param_1 = (undefined4)((uint)&ghidra_vftable_RefCountBase);
 
-  return;
+  FUN_111a4f00(param_1);
 
- } catch (...) { }
 }
 
 
@@ -14678,40 +14547,10 @@ undefined4 * __fastcall FUN_110c67e0(undefined4 *param_1)
 void __fastcall FUN_110c7e40(undefined4 *param_1)
 
 {
- try {
-  undefined4 *puVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjZPCMR);
-
-  uVar2 = (uint)(DAT_12126b84);
-
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCM);
-  puVar1 = (undefined4 *)((undefined4 *)param_1[0xe]);
 
-  if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2), 0);
-    if (iVar3 == 0) {
-      (**(code **)*puVar1)(1);
-    }
-  }
-  puVar1 = (undefined4 *)((undefined4 *)param_1[0xd]);
+  FUN_11172910(param_1);
 
-  if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2), 0);
-    if (iVar3 == 0) {
-      (**(code **)*puVar1)(1);
-    }
-  }
-  thunk_FUN_1113e6f0();
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -18797,9 +18636,10 @@ void __fastcall FUN_110e8fe0(undefined4 *param_1)
 void __fastcall FUN_110e9000(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RRadioTimeContentProvider);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RContentProvider);
-  return;
+
+  FUN_111feb50(param_1);
+
 }
 
 
@@ -24621,61 +24461,10 @@ void __fastcall FUN_1110b790(undefined4 *param_1)
 void __fastcall FUN_1110b7c0(undefined4 *param_1)
 
 {
- try {
-  int iVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjAC);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjUpnpService);
-  thunk_FUN_111401c0<>(1);
-  iVar1 = (int)(param_1[10]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10),uVar2), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
-  iVar1 = (int)(param_1[9]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10),uVar2), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
-  iVar1 = (int)(param_1[8]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10),uVar2), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
-  thunk_FUN_111a6f10();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
-  thunk_FUN_111a4f00();
 
-  return;
+  FUN_1113e6f0(param_1);
 
- } catch (...) { }
 }
 
 

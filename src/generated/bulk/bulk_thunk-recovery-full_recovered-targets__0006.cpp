@@ -2715,6 +2715,9 @@ template<class... A> int FUN_103d0a10(A...);
 template<class... A> int FUN_103d0ff0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __fastcall FUN_103d1000(int *param_1);
 template<class... A> int FUN_103d1000(A...);
+extern void __fastcall FUN_101ba0d0(void *param_1);
+extern void __fastcall FUN_11132140(void *param_1);
+
 // Reference entry 103566b0; body size 3 bytes.
 #line 1 "ENTRY_103566b0"
 
@@ -6857,35 +6860,10 @@ undefined4 * __fastcall FUN_103600e0(undefined4 *param_1)
 void __fastcall FUN_10360310(undefined4 *param_1)
 
 {
- try {
-  undefined4 *puVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
-  if ((int *)param_1[1] != (int *)(((0x0)))) {
-    if (param_1[2] != 0) {
-      (**(code **)(*(int *)param_1[1] + 0x10))(uVar2);
-    }
-    puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
-    if (((undefined4 *)(puVar1) != (undefined4 *)(0x0)) && (iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1), 0), iVar3 == 0)) {
-      (**(code **)*puVar1)(1);
-    }
-    param_1[1] = (undefined4)(0);
-    param_1[2] = (undefined4)(0);
-  }
 
-  return;
+  FUN_101ba0d0(param_1);
 
- } catch (...) { }
 }
 
 
@@ -7558,25 +7536,10 @@ void __fastcall FUN_103635a0(undefined4 *param_1)
 void __fastcall FUN_103635c0(undefined4 *param_1)
 
 {
- try {
-  uint uVar1;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCompatibleZPPairCandidateEnumerator);
-
-
-  uVar1 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCustomZPEnumerator);
-  thunk_FUN_1106b1c0(param_1,uVar1);
-  thunk_FUN_11079440();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
 
-  return;
+  FUN_11132140(param_1);
 
- } catch (...) { }
 }
 
 
@@ -7646,25 +7609,10 @@ void __fastcall FUN_10363600(undefined4 *param_1)
 void __fastcall FUN_10363630(undefined4 *param_1)
 
 {
- try {
-  uint uVar1;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTPrimaryZPCandidateEnumerator);
-
-
-  uVar1 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCustomZPEnumerator);
-  thunk_FUN_1106b1c0(param_1,uVar1);
-  thunk_FUN_11079440();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
 
-  return;
+  FUN_11132140(param_1);
 
- } catch (...) { }
 }
 
 
@@ -7676,25 +7624,10 @@ void __fastcall FUN_10363630(undefined4 *param_1)
 void __fastcall FUN_10363900(undefined4 *param_1)
 
 {
- try {
-  uint uVar1;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RSubwooferPrimaryZPCandidateEnumerator);
-
-
-  uVar1 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCustomZPEnumerator);
-  thunk_FUN_1106b1c0(param_1,uVar1);
-  thunk_FUN_11079440();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
 
-  return;
+  FUN_11132140(param_1);
 
- } catch (...) { }
 }
 
 
@@ -7706,25 +7639,10 @@ void __fastcall FUN_10363900(undefined4 *param_1)
 void __fastcall FUN_10363910(undefined4 *param_1)
 
 {
- try {
-  uint uVar1;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RSubwooferZPCandidateEnumerator);
-
-
-  uVar1 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCustomZPEnumerator);
-  thunk_FUN_1106b1c0(param_1,uVar1);
-  thunk_FUN_11079440();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
 
-  return;
+  FUN_11132140(param_1);
 
- } catch (...) { }
 }
 
 
@@ -7794,25 +7712,10 @@ void __fastcall FUN_10363950(undefined4 *param_1)
 void __fastcall FUN_10363980(undefined4 *param_1)
 
 {
- try {
-  uint uVar1;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RZPAirPlayEnumerator);
-
-
-  uVar1 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCustomZPEnumerator);
-  thunk_FUN_1106b1c0(param_1,uVar1);
-  thunk_FUN_11079440();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
 
-  return;
+  FUN_11132140(param_1);
 
- } catch (...) { }
 }
 
 
@@ -7824,25 +7727,10 @@ void __fastcall FUN_10363980(undefined4 *param_1)
 void __fastcall FUN_103639c0(undefined4 *param_1)
 
 {
- try {
-  uint uVar1;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RZPIkeaLampEnumerator);
-
-
-  uVar1 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCustomZPEnumerator);
-  thunk_FUN_1106b1c0(param_1,uVar1);
-  thunk_FUN_11079440();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
 
-  return;
+  FUN_11132140(param_1);
 
- } catch (...) { }
 }
 
 
@@ -7854,25 +7742,10 @@ void __fastcall FUN_103639c0(undefined4 *param_1)
 void __fastcall FUN_103639d0(undefined4 *param_1)
 
 {
- try {
-  uint uVar1;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RZPLineInEnumerator);
-
-
-  uVar1 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCustomZPEnumerator);
-  thunk_FUN_1106b1c0(param_1,uVar1);
-  thunk_FUN_11079440();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
 
-  return;
+  FUN_11132140(param_1);
 
- } catch (...) { }
 }
 
 
@@ -16410,35 +16283,10 @@ undefined4 * __fastcall FUN_1039f3c0(undefined4 *param_1)
 void __fastcall FUN_1039f830(undefined4 *param_1)
 
 {
- try {
-  undefined4 *puVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
-  if ((int *)param_1[1] != (int *)(((0x0)))) {
-    if (param_1[2] != 0) {
-      (**(code **)(*(int *)param_1[1] + 0x10))(uVar2);
-    }
-    puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
-    if (((undefined4 *)(puVar1) != (undefined4 *)(0x0)) && (iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1), 0), iVar3 == 0)) {
-      (**(code **)*puVar1)(1);
-    }
-    param_1[1] = (undefined4)(0);
-    param_1[2] = (undefined4)(0);
-  }
 
-  return;
+  FUN_101ba0d0(param_1);
 
- } catch (...) { }
 }
 
 
@@ -16453,35 +16301,10 @@ void __fastcall FUN_1039f830(undefined4 *param_1)
 void __fastcall FUN_1039f840(undefined4 *param_1)
 
 {
- try {
-  undefined4 *puVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
-  if ((int *)param_1[1] != (int *)(((0x0)))) {
-    if (param_1[2] != 0) {
-      (**(code **)(*(int *)param_1[1] + 0x10))(uVar2);
-    }
-    puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
-    if (((undefined4 *)(puVar1) != (undefined4 *)(0x0)) && (iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1), 0), iVar3 == 0)) {
-      (**(code **)*puVar1)(1);
-    }
-    param_1[1] = (undefined4)(0);
-    param_1[2] = (undefined4)(0);
-  }
 
-  return;
+  FUN_101ba0d0(param_1);
 
- } catch (...) { }
 }
 
 
@@ -23330,35 +23153,10 @@ int __fastcall FUN_103c1d90(int param_1)
 void __fastcall FUN_103c1dc0(undefined4 *param_1)
 
 {
- try {
-  undefined4 *puVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
-  if ((int *)param_1[1] != (int *)(((0x0)))) {
-    if (param_1[2] != 0) {
-      (**(code **)(*(int *)param_1[1] + 0x10))(uVar2);
-    }
-    puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
-    if (((undefined4 *)(puVar1) != (undefined4 *)(0x0)) && (iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1), 0), iVar3 == 0)) {
-      (**(code **)*puVar1)(1);
-    }
-    param_1[1] = (undefined4)(0);
-    param_1[2] = (undefined4)(0);
-  }
 
-  return;
+  FUN_101ba0d0(param_1);
 
- } catch (...) { }
 }
 
 

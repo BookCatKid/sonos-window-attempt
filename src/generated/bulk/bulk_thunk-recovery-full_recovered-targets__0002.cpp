@@ -2817,6 +2817,8 @@ template<class... A> int FUN_10262f30(A...);
 template<class... A> int FUN_10262f50(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __fastcall FUN_10263300(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3);
 template<class... A> int FUN_10263300(A...);
+extern void __fastcall FUN_1022df10(void *param_1);
+
 // Reference entry 101fe5c0; body size 6 bytes.
 #line 1 "ENTRY_101fe5c0"
 
@@ -12958,56 +12960,10 @@ void __fastcall FUN_1022de00(int param_1)
 void __fastcall FUN_1022de30(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_BatteryWeakChargerData);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13034,56 +12990,10 @@ void __fastcall FUN_1022de40(undefined4 *param_1)
 void __fastcall FUN_1022de60(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_FactoryResetData);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13095,56 +13005,10 @@ void __fastcall FUN_1022de60(int *param_1)
 void __fastcall FUN_1022de70(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_ForgotHouseholdData);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13156,56 +13020,10 @@ void __fastcall FUN_1022de70(int *param_1)
 void __fastcall FUN_1022dee0(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_InvalidOptimo2OrientationData);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13217,56 +13035,10 @@ void __fastcall FUN_1022dee0(int *param_1)
 void __fastcall FUN_1022def0(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_LaunchWifiConfig);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13278,56 +13050,10 @@ void __fastcall FUN_1022def0(int *param_1)
 void __fastcall FUN_1022df00(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_LegacyCRModernHHData);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13339,56 +13065,10 @@ void __fastcall FUN_1022df00(int *param_1)
 void __fastcall FUN_1022e0c0(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_NoNetworkFoundData);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13400,56 +13080,10 @@ void __fastcall FUN_1022e0c0(int *param_1)
 void __fastcall FUN_1022e0d0(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_OutdatedControllerData);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13461,56 +13095,10 @@ void __fastcall FUN_1022e0d0(int *param_1)
 void __fastcall FUN_1022e1d0(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_RetailDemoData);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13655,56 +13243,10 @@ void __fastcall FUN_1022eeb0(undefined4 *param_1)
 void __fastcall FUN_1022ef80(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_UnsupportedData);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13716,56 +13258,10 @@ void __fastcall FUN_1022ef80(int *param_1)
 void __fastcall FUN_1022ef90(int *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_ZonePlayerUpdateData);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCController_LimitedAccessStateData);
-  piStack_14 = (int *)(param_1);
-  if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
-    param_1[8] = (int)(0);
-  }
-  piVar3 = (int *)((int *)thunk_FUN_10292c70(&piStack_14,uVar2), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-
-  if (((int *)(piVar1) != (int *)(0x0)) && (param_1[7] != 0)) {
-    (**(code **)(*piVar1 + 0x3c))(param_1[7],0,1);
-    param_1[7] = (int)(0);
-  }
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
 
-  return;
+  FUN_1022df10(param_1);
 
- } catch (...) { }
 }
 
 

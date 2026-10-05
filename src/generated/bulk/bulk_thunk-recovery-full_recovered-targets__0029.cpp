@@ -3412,6 +3412,9 @@ template<class... A> int FUN_112aca10(A...);
 template<class... A> int FUN_112ad180(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * FUN_112ad1c0(int param_1,undefined4 param_2,int *param_3);
 template<class... A> int FUN_112ad1c0(A...);
+extern void __fastcall FUN_1003d5d7(void *param_1);
+extern void __fastcall FUN_112878e0(void *param_1);
+
 // Reference entry 11227a70; body size 11 bytes.
 #line 1 "ENTRY_11227a70"
 
@@ -5681,12 +5684,10 @@ void __fastcall FUN_11236080(undefined4 *param_1)
 void __fastcall FUN_11236090(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLRPCResultParser);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
-  thunk_FUN_112c8b80(param_1[1]);
-  param_1[1] = (undefined4)(0);
-  thunk_FUN_11285a90();
-  return;
+
+  FUN_1003d5d7(param_1);
+
 }
 
 
@@ -14224,9 +14225,10 @@ undefined4 * __fastcall FUN_11266430(undefined4 *param_1)
 void __fastcall FUN_112664f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCountWritableStream);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RWritableStreamWithHeaders);
-  return;
+
+  FUN_112878e0(param_1);
+
 }
 
 
@@ -18342,12 +18344,10 @@ void __fastcall FUN_112765a0(undefined4 *param_1)
 void __fastcall FUN_112765f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportFileParserCB);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
-  thunk_FUN_112c8b80(param_1[1]);
-  param_1[1] = (undefined4)(0);
-  thunk_FUN_11285a90();
-  return;
+
+  FUN_1003d5d7(param_1);
+
 }
 
 

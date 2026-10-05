@@ -2526,6 +2526,8 @@ template<class... A> int FUN_10c35680(A...);
 template<class... A> int FUN_10c35690(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_10c35c20(void);
 template<class... A> int FUN_10c35c20(A...);
+extern void __fastcall FUN_106845c0(void *param_1);
+
 // Reference entry 10bd1ae0; body size 5 bytes.
 #line 1 "ENTRY_10bd1ae0"
 
@@ -12962,43 +12964,10 @@ void __fastcall FUN_10bf0150(undefined4 *param_1)
 void __fastcall FUN_10bf0280(undefined4 *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlDeleteRequest);
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlRequest);
-
-  ((SCStr *)((SCStr *)(param_1 + 0x12)))->int_release();
-  param_1[0x12] = (undefined4)(0);
-  piVar1 = (int *)((int *)param_1[0x11]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x10] = (undefined4)(0);
-    param_1[0x11] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  piVar1 = (int *)((int *)param_1[0xf]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0xe] = (undefined4)(0);
-    param_1[0xf] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
-  }
-  thunk_FUN_10120220();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
-  return;
+  FUN_106845c0(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13010,43 +12979,10 @@ void __fastcall FUN_10bf0280(undefined4 *param_1)
 void __fastcall FUN_10bf02a0(undefined4 *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlPostRequest);
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlRequest);
-
-  ((SCStr *)((SCStr *)(param_1 + 0x12)))->int_release();
-  param_1[0x12] = (undefined4)(0);
-  piVar1 = (int *)((int *)param_1[0x11]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x10] = (undefined4)(0);
-    param_1[0x11] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  piVar1 = (int *)((int *)param_1[0xf]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0xe] = (undefined4)(0);
-    param_1[0xf] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
-  }
-  thunk_FUN_10120220();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
-  return;
+  FUN_106845c0(param_1);
 
- } catch (...) { }
 }
 
 
@@ -13058,43 +12994,10 @@ void __fastcall FUN_10bf02a0(undefined4 *param_1)
 void __fastcall FUN_10bf02b0(undefined4 *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlPutRequest);
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlRequest);
-
-  ((SCStr *)((SCStr *)(param_1 + 0x12)))->int_release();
-  param_1[0x12] = (undefined4)(0);
-  piVar1 = (int *)((int *)param_1[0x11]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x10] = (undefined4)(0);
-    param_1[0x11] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  piVar1 = (int *)((int *)param_1[0xf]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0xe] = (undefined4)(0);
-    param_1[0xf] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
-  }
-  thunk_FUN_10120220();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
-  return;
+  FUN_106845c0(param_1);
 
- } catch (...) { }
 }
 
 

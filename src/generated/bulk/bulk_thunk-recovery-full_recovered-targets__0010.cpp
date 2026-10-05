@@ -3005,6 +3005,10 @@ template<class... A> int FUN_106546d0(A...);
 template<class... A> int FUN_106546e0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_106546f0(undefined4 *param_1);
 template<class... A> int FUN_106546f0(A...);
+extern void __fastcall FUN_101ba0d0(void *param_1);
+extern void __fastcall FUN_105d3a20(void *param_1);
+extern void __fastcall FUN_106de7d0(void *param_1);
+
 // Reference entry 105b1030; body size 5 bytes.
 #line 1 "ENTRY_105b1030"
 
@@ -5738,35 +5742,10 @@ undefined4 * __fastcall FUN_105b9960(undefined4 *param_1)
 void __fastcall FUN_105b9980(undefined4 *param_1)
 
 {
- try {
-  undefined4 *puVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
+  FUN_101ba0d0(param_1);
 
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
-  if ((int *)param_1[1] != (int *)(((0x0)))) {
-    if (param_1[2] != 0) {
-      (**(code **)(*(int *)param_1[1] + 0x10))(uVar2);
-    }
-    puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
-    if (((undefined4 *)(puVar1) != (undefined4 *)(0x0)) && (iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1), 0), iVar3 == 0)) {
-      (**(code **)*puVar1)(1);
-    }
-    param_1[1] = (undefined4)(0);
-    param_1[2] = (undefined4)(0);
-  }
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -9361,35 +9340,10 @@ undefined4 * __fastcall FUN_105d24b0(undefined4 *param_1)
 void __fastcall FUN_105d2500(undefined4 *param_1)
 
 {
- try {
-  undefined4 *puVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
+  FUN_101ba0d0(param_1);
 
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
-  if ((int *)param_1[1] != (int *)(((0x0)))) {
-    if (param_1[2] != 0) {
-      (**(code **)(*(int *)param_1[1] + 0x10))(uVar2);
-    }
-    puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
-    if (((undefined4 *)(puVar1) != (undefined4 *)(0x0)) && (iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1), 0), iVar3 == 0)) {
-      (**(code **)*puVar1)(1);
-    }
-    param_1[1] = (undefined4)(0);
-    param_1[2] = (undefined4)(0);
-  }
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -9404,35 +9358,10 @@ void __fastcall FUN_105d2500(undefined4 *param_1)
 void __fastcall FUN_105d2540(undefined4 *param_1)
 
 {
- try {
-  undefined4 *puVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
+  FUN_101ba0d0(param_1);
 
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
-  if ((int *)param_1[1] != (int *)(((0x0)))) {
-    if (param_1[2] != 0) {
-      (**(code **)(*(int *)param_1[1] + 0x10))(uVar2);
-    }
-    puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
-    if (((undefined4 *)(puVar1) != (undefined4 *)(0x0)) && (iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1), 0), iVar3 == 0)) {
-      (**(code **)*puVar1)(1);
-    }
-    param_1[1] = (undefined4)(0);
-    param_1[2] = (undefined4)(0);
-  }
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -9763,65 +9692,10 @@ void __fastcall FUN_105d31c0(undefined4 *param_1)
 void __fastcall FUN_105d31f0(undefined4 *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAudioCompressionSelectAction);
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCMenuSelectSettingActionBase);
-  piVar1 = (int *)((int *)param_1[0xe]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0xd] = (undefined4)(0);
-    param_1[0xe] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  piVar1 = (int *)((int *)param_1[0xb]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[10] = (undefined4)(0);
-    param_1[0xb] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
-  }
-  piVar1 = (int *)((int *)param_1[9]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[8] = (undefined4)(0);
-    param_1[9] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
-  }
-
-  ((SCStr *)((SCStr *)(param_1 + 7)))->int_release();
-  param_1[7] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 6)))->int_release();
-  param_1[6] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 5)))->int_release();
-  param_1[5] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 4)))->int_release();
-  param_1[4] = (undefined4)(0);
-  piVar1 = (int *)((int *)param_1[3]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[2] = (undefined4)(0);
-    param_1[3] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
 
-  return;
+  FUN_105d3a20(param_1);
 
- } catch (...) { }
 }
 
 
@@ -15374,21 +15248,10 @@ void __fastcall FUN_105febc0(undefined4 *param_1)
 void __fastcall FUN_105ff000(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15400,21 +15263,10 @@ void __fastcall FUN_105ff000(undefined4 *param_1)
 void __fastcall FUN_105ff010(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15426,21 +15278,10 @@ void __fastcall FUN_105ff010(undefined4 *param_1)
 void __fastcall FUN_105ff020(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15452,21 +15293,10 @@ void __fastcall FUN_105ff020(undefined4 *param_1)
 void __fastcall FUN_105ff030(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15478,21 +15308,10 @@ void __fastcall FUN_105ff030(undefined4 *param_1)
 void __fastcall FUN_105ff040(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15504,21 +15323,10 @@ void __fastcall FUN_105ff040(undefined4 *param_1)
 void __fastcall FUN_105ff050(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15530,21 +15338,10 @@ void __fastcall FUN_105ff050(undefined4 *param_1)
 void __fastcall FUN_105ff060(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15556,21 +15353,10 @@ void __fastcall FUN_105ff060(undefined4 *param_1)
 void __fastcall FUN_105ff070(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15582,21 +15368,10 @@ void __fastcall FUN_105ff070(undefined4 *param_1)
 void __fastcall FUN_105ff080(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15608,21 +15383,10 @@ void __fastcall FUN_105ff080(undefined4 *param_1)
 void __fastcall FUN_105ff090(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15634,21 +15398,10 @@ void __fastcall FUN_105ff090(undefined4 *param_1)
 void __fastcall FUN_105ff0a0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15660,21 +15413,10 @@ void __fastcall FUN_105ff0a0(undefined4 *param_1)
 void __fastcall FUN_105ff0b0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15686,21 +15428,10 @@ void __fastcall FUN_105ff0b0(undefined4 *param_1)
 void __fastcall FUN_105ff0c0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15712,21 +15443,10 @@ void __fastcall FUN_105ff0c0(undefined4 *param_1)
 void __fastcall FUN_105ff0d0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15738,21 +15458,10 @@ void __fastcall FUN_105ff0d0(undefined4 *param_1)
 void __fastcall FUN_105ff0e0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15764,21 +15473,10 @@ void __fastcall FUN_105ff0e0(undefined4 *param_1)
 void __fastcall FUN_105ff0f0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15790,21 +15488,10 @@ void __fastcall FUN_105ff0f0(undefined4 *param_1)
 void __fastcall FUN_105ff100(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15816,21 +15503,10 @@ void __fastcall FUN_105ff100(undefined4 *param_1)
 void __fastcall FUN_105ff110(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15842,21 +15518,10 @@ void __fastcall FUN_105ff110(undefined4 *param_1)
 void __fastcall FUN_105ff120(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15868,21 +15533,10 @@ void __fastcall FUN_105ff120(undefined4 *param_1)
 void __fastcall FUN_105ff130(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15894,21 +15548,10 @@ void __fastcall FUN_105ff130(undefined4 *param_1)
 void __fastcall FUN_105ff140(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15920,21 +15563,10 @@ void __fastcall FUN_105ff140(undefined4 *param_1)
 void __fastcall FUN_105ff150(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15946,21 +15578,10 @@ void __fastcall FUN_105ff150(undefined4 *param_1)
 void __fastcall FUN_105ff160(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15972,21 +15593,10 @@ void __fastcall FUN_105ff160(undefined4 *param_1)
 void __fastcall FUN_105ff170(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -15998,21 +15608,10 @@ void __fastcall FUN_105ff170(undefined4 *param_1)
 void __fastcall FUN_105ff180(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -16024,21 +15623,10 @@ void __fastcall FUN_105ff180(undefined4 *param_1)
 void __fastcall FUN_105ff190(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -16050,21 +15638,10 @@ void __fastcall FUN_105ff190(undefined4 *param_1)
 void __fastcall FUN_105ff1a0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -20491,21 +20068,10 @@ void __fastcall FUN_1061f1f0(undefined4 *param_1)
 void __fastcall FUN_1061f2c0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -20517,21 +20083,10 @@ void __fastcall FUN_1061f2c0(undefined4 *param_1)
 void __fastcall FUN_1061f2d0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -20543,21 +20098,10 @@ void __fastcall FUN_1061f2d0(undefined4 *param_1)
 void __fastcall FUN_1061f2e0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -20569,21 +20113,10 @@ void __fastcall FUN_1061f2e0(undefined4 *param_1)
 void __fastcall FUN_1061f2f0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -21856,21 +21389,10 @@ undefined4 * __fastcall FUN_10625f80(undefined4 *param_1)
 void __fastcall FUN_1062c180(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -21882,21 +21404,10 @@ void __fastcall FUN_1062c180(undefined4 *param_1)
 void __fastcall FUN_1062c190(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -21908,21 +21419,10 @@ void __fastcall FUN_1062c190(undefined4 *param_1)
 void __fastcall FUN_1062c1a0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -21934,21 +21434,10 @@ void __fastcall FUN_1062c1a0(undefined4 *param_1)
 void __fastcall FUN_1062c1b0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -21960,21 +21449,10 @@ void __fastcall FUN_1062c1b0(undefined4 *param_1)
 void __fastcall FUN_1062c1c0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -21986,21 +21464,10 @@ void __fastcall FUN_1062c1c0(undefined4 *param_1)
 void __fastcall FUN_1062c1d0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22012,21 +21479,10 @@ void __fastcall FUN_1062c1d0(undefined4 *param_1)
 void __fastcall FUN_1062c1e0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22038,21 +21494,10 @@ void __fastcall FUN_1062c1e0(undefined4 *param_1)
 void __fastcall FUN_1062c1f0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22064,21 +21509,10 @@ void __fastcall FUN_1062c1f0(undefined4 *param_1)
 void __fastcall FUN_1062c200(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22090,21 +21524,10 @@ void __fastcall FUN_1062c200(undefined4 *param_1)
 void __fastcall FUN_1062c210(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22116,21 +21539,10 @@ void __fastcall FUN_1062c210(undefined4 *param_1)
 void __fastcall FUN_1062c220(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22142,21 +21554,10 @@ void __fastcall FUN_1062c220(undefined4 *param_1)
 void __fastcall FUN_1062c230(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22168,21 +21569,10 @@ void __fastcall FUN_1062c230(undefined4 *param_1)
 void __fastcall FUN_1062c240(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22194,21 +21584,10 @@ void __fastcall FUN_1062c240(undefined4 *param_1)
 void __fastcall FUN_1062c250(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22220,21 +21599,10 @@ void __fastcall FUN_1062c250(undefined4 *param_1)
 void __fastcall FUN_1062c260(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22246,21 +21614,10 @@ void __fastcall FUN_1062c260(undefined4 *param_1)
 void __fastcall FUN_1062c270(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22272,21 +21629,10 @@ void __fastcall FUN_1062c270(undefined4 *param_1)
 void __fastcall FUN_1062c280(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22298,21 +21644,10 @@ void __fastcall FUN_1062c280(undefined4 *param_1)
 void __fastcall FUN_1062c290(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22324,21 +21659,10 @@ void __fastcall FUN_1062c290(undefined4 *param_1)
 void __fastcall FUN_1062c2a0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22350,21 +21674,10 @@ void __fastcall FUN_1062c2a0(undefined4 *param_1)
 void __fastcall FUN_1062c2b0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22376,21 +21689,10 @@ void __fastcall FUN_1062c2b0(undefined4 *param_1)
 void __fastcall FUN_1062c2c0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22402,21 +21704,10 @@ void __fastcall FUN_1062c2c0(undefined4 *param_1)
 void __fastcall FUN_1062c2d0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22428,21 +21719,10 @@ void __fastcall FUN_1062c2d0(undefined4 *param_1)
 void __fastcall FUN_1062c2e0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22454,21 +21734,10 @@ void __fastcall FUN_1062c2e0(undefined4 *param_1)
 void __fastcall FUN_1062c2f0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22480,21 +21749,10 @@ void __fastcall FUN_1062c2f0(undefined4 *param_1)
 void __fastcall FUN_1062c300(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22506,21 +21764,10 @@ void __fastcall FUN_1062c300(undefined4 *param_1)
 void __fastcall FUN_1062c310(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22532,21 +21779,10 @@ void __fastcall FUN_1062c310(undefined4 *param_1)
 void __fastcall FUN_1062c320(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22558,21 +21794,10 @@ void __fastcall FUN_1062c320(undefined4 *param_1)
 void __fastcall FUN_1062c330(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -22584,21 +21809,10 @@ void __fastcall FUN_1062c330(undefined4 *param_1)
 void __fastcall FUN_1062c340(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -26806,21 +26020,10 @@ void __fastcall FUN_106545a0(undefined4 *param_1)
 void __fastcall FUN_10654620(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -26832,21 +26035,10 @@ void __fastcall FUN_10654620(undefined4 *param_1)
 void __fastcall FUN_10654630(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -26858,21 +26050,10 @@ void __fastcall FUN_10654630(undefined4 *param_1)
 void __fastcall FUN_10654640(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -26884,21 +26065,10 @@ void __fastcall FUN_10654640(undefined4 *param_1)
 void __fastcall FUN_10654650(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -26910,21 +26080,10 @@ void __fastcall FUN_10654650(undefined4 *param_1)
 void __fastcall FUN_10654660(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -26936,21 +26095,10 @@ void __fastcall FUN_10654660(undefined4 *param_1)
 void __fastcall FUN_10654670(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -26962,21 +26110,10 @@ void __fastcall FUN_10654670(undefined4 *param_1)
 void __fastcall FUN_10654680(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -26988,21 +26125,10 @@ void __fastcall FUN_10654680(undefined4 *param_1)
 void __fastcall FUN_10654690(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -27014,21 +26140,10 @@ void __fastcall FUN_10654690(undefined4 *param_1)
 void __fastcall FUN_106546a0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -27040,21 +26155,10 @@ void __fastcall FUN_106546a0(undefined4 *param_1)
 void __fastcall FUN_106546b0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -27066,21 +26170,10 @@ void __fastcall FUN_106546b0(undefined4 *param_1)
 void __fastcall FUN_106546c0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -27092,21 +26185,10 @@ void __fastcall FUN_106546c0(undefined4 *param_1)
 void __fastcall FUN_106546d0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -27118,21 +26200,10 @@ void __fastcall FUN_106546d0(undefined4 *param_1)
 void __fastcall FUN_106546e0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 
 
@@ -27144,20 +26215,9 @@ void __fastcall FUN_106546e0(undefined4 *param_1)
 void __fastcall FUN_106546f0(undefined4 *param_1)
 
 {
- try {
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
+  FUN_106de7d0(param_1);
 
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
 }
 

@@ -2565,6 +2565,8 @@ template<class... A> int FUN_10513700(A...);
 template<class... A> int FUN_10516cf0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __fastcall FUN_10516e60(int param_1);
 template<class... A> int FUN_10516e60(A...);
+extern void __fastcall FUN_104ed870(void *param_1);
+
 // Reference entry 10483060; body size 33 bytes.
 #line 1 "ENTRY_10483060"
 
@@ -19021,53 +19023,10 @@ void __fastcall FUN_104ed980(undefined4 *param_1)
 void __fastcall FUN_104ed990(undefined4 *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCInteractionActionContext);
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCActionContext);
-  piVar1 = (int *)((int *)param_1[9]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[8] = (undefined4)(0);
-    param_1[9] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  piVar1 = (int *)((int *)param_1[7]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[6] = (undefined4)(0);
-    param_1[7] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
-  }
-  piVar1 = (int *)((int *)param_1[5]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[4] = (undefined4)(0);
-    param_1[5] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
-  }
-  piVar1 = (int *)((int *)param_1[3]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[2] = (undefined4)(0);
-    param_1[3] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
-  return;
+  FUN_104ed870(param_1);
 
- } catch (...) { }
 }
 
 

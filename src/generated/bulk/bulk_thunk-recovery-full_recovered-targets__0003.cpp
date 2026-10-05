@@ -2711,6 +2711,8 @@ template<class... A> int FUN_102ab220(A...);
 template<class... A> int FUN_102ab230(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_102ab240(int *param_1);
 template<class... A> int FUN_102ab240(A...);
+extern void __fastcall FUN_101ba0d0(void *param_1);
+
 // Reference entry 102636d0; body size 26 bytes.
 #line 1 "ENTRY_102636d0"
 
@@ -10958,10 +10960,10 @@ void __fastcall FUN_1027f960(undefined4 *param_1)
 void __fastcall FUN_1027fb00(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_TestPointHandlerSCLIB);
   *param_1 = (undefined4)((uint)&ghidra_vftable_TestPointHandler);
-  FUN_1125bd20();
-  return;
+
+  FUN_1125bd20(param_1);
+
 }
 
 
@@ -18718,35 +18720,10 @@ undefined4 * __fastcall FUN_10295960(undefined4 *param_1)
 void __fastcall FUN_10296300(undefined4 *param_1)
 
 {
- try {
-  undefined4 *puVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
-  if ((int *)param_1[1] != (int *)(((0x0)))) {
-    if (param_1[2] != 0) {
-      (**(code **)(*(int *)param_1[1] + 0x10))(uVar2);
-    }
-    puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
-    if (((undefined4 *)(puVar1) != (undefined4 *)(0x0)) && (iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1), 0), iVar3 == 0)) {
-      (**(code **)*puVar1)(1);
-    }
-    param_1[1] = (undefined4)(0);
-    param_1[2] = (undefined4)(0);
-  }
 
-  return;
+  FUN_101ba0d0(param_1);
 
- } catch (...) { }
 }
 
 
