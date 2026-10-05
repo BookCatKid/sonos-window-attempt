@@ -6117,6 +6117,9 @@ int FUN_10b899a0();
 int FUN_1062e1ea();
 int FUN_110f9a2e();
 int FUN_10c2c12c();
+extern int LAB_10803243(...);
+extern int LAB_103a93f7(...);
+extern int LAB_10838995(...);
 #line 1 "ENTRY_1000100a"
 
 __declspec(naked) void FUN_1000100a(void)
@@ -8272,7 +8275,7 @@ void FUN_10001a3c(void)
 __declspec(naked) /* WARNING: Globals starting with _ overlap */
 void FUN_10001a4b(void)
 
-{ __asm jmp FUN_107e81f0 }
+{ __asm jmp LAB_10838995 }
 
 
 undefined4 __stdcall FUN_10001a50(undefined4 param_1){
@@ -9736,7 +9739,7 @@ __declspec(naked) SCStr * __stdcall FUN_100022de(SCStr *param_1)
 
 __declspec(naked) void FUN_100022e3(void)
 
-{ __asm jmp FUN_10783270 }
+{ __asm jmp FUN_10dff200 }
 
 
 void FUN_100022f2(void)
@@ -9967,7 +9970,7 @@ __declspec(naked) void FUN_10002437(void)
 
 __declspec(naked) void FUN_1000243c(void)
 
-{ __asm jmp FUN_110dbdf0 }
+{ __asm jmp LAB_10803243 }
 
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10002450(undefined4 param_2,undefined4 param_3,undefined4 param_4)
@@ -10487,7 +10490,7 @@ __declspec(naked) undefined1 FUN_10002711(void)
 
 __declspec(naked) void FUN_100028c9(void)
 
-{ __asm jmp FUN_10da6830 }
+{ __asm jmp LAB_103a93f7 }
 
 void __fastcall FUN_100028d3(undefined4 *param_1)
 
