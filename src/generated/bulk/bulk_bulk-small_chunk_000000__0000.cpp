@@ -42438,6 +42438,7 @@ undefined4 * __fastcall FUN_10003869(undefined4 *param_1)
 
 
 } catch (...) { }
+  return (undefined4 *)(param_1);
 }
 // Reference entry 1000387d; body size 5 bytes.
 #line 1 "ENTRY_1000387d"
