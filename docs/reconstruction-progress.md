@@ -60,3 +60,27 @@ exact bytes, zero regressions** across 85 objects. Also fixed three
 residual stdcall decl/def conflicts; all 451 objects compile. Corpus:
 **139,431 / 230,070 exact (60.6%)**, ~1.98M exact reference bytes.
 Whole-file identity not achieved.
+
+### Checkpoint — member-function-pointer calls, code-neutral (MSVC run 37295206203)
+
+3,698 sites of the bare `(**(code **)(V + N))(args)` spelling (V already
+holds the vtable pointer) rewritten to member calls via generated
+SCVtbl stubs (commit ab98696). Verified byte-codegen change
+(`mov eax,[eax+N]; call eax` -> `call [eax+N]`) but **0 verdict flips,
+0 losses** across the 65 touched objects — the rewritten sites were not
+the binding constraint in their functions. Kept as the faithful form.
+
+### Checkpoint — naked E9 thunk bodies (MSVC run 37296949792)
+
+~1,738 reference entries are 5-byte `E9` jump thunks whose generated
+source carried a full decompiled body (usually a `try{}catch{}`
+wrapper). Replaced with `__declspec(naked)` `__asm jmp` stubs; member
+defs were lowered to free `FUN_<va>` symbols since MSVC C2488 forbids
+naked members; jump operands use the self-describing `FUN_<va>` spelling
+to dodge overloaded `thunk_FUN_*` names, and the comparator now indexes
+each thunk/ILT stub site under `FUN_<site va>` (the name encodes the
+address, so no false resolutions are possible). Verified on 32 of 33
+touched objects: **+782 exact functions, +3,910 exact bytes, zero
+regressions**; one object failed on a decl-swallowed corner case,
+repaired in eaa6134/d369a6e and pending verification. Whole-file
+identity not achieved.
