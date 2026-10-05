@@ -26263,12 +26263,7 @@ void __stdcall FUN_10ef3af0(undefined4 param_1,char *param_2)
   char cVar1;
   char *pcVar2;
   
-  pcVar2 = (char *)(param_2);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
-  func_0x100632cd(param_1,param_2,(int)pcVar2 - (int)(param_2 + 1));
+  func_0x100632cd(param_1,param_2,(int)strlen((const char *)param_2));
   return;
 }
 

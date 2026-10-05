@@ -3517,12 +3517,7 @@ undefined4 FUN_106c8810(char *param_1)
   char *pcVar3;
   uint uVar4;
   
-  pcVar3 = (char *)(param_1);
-  do {
-    cVar1 = (char)(*pcVar3);
-    pcVar3 = (char *)(pcVar3 + 1);
-  } while (cVar1 != '\0');
-  if ((uint)((int)pcVar3 - (int)(param_1 + 1)) < 0x21) {
+  if ((uint)((int)strlen((const char *)param_1)) < 0x21) {
     uVar4 = (uint)(0);
     while( true ) {
       cVar1 = (char)(param_1[uVar4]);

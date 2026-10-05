@@ -117573,12 +117573,7 @@ void __stdcall FUN_108907f0(unsigned int recovered_unused_stack_0)
         }
 
         local_2c[0] = (undefined4 ***)((undefined4 ***)((uint)local_2c[0] & 0xffffff00));
-        pcVar8 = (char *)(pcVar10);
-        do {
-          cVar4 = (char)(*pcVar8);
-          pcVar8 = (char *)(pcVar8 + 1);
-        } while (cVar4 != '\0');
-        thunk_FUN_1012d130(pcVar10,(int)pcVar8 - (int)(pcVar10 + 1));
+        thunk_FUN_1012d130(pcVar10,(int)strlen((const char *)pcVar10));
         pppuVar3 = (undefined4 ***)(local_2c[0]);
         local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(6)));
         cVar4 = (char)(*(char *)((int)local_3c[0][1] + 0xd));

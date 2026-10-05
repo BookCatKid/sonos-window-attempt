@@ -57502,12 +57502,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10fe82c0(SCStr *param_2)
     local_14 = (undefined4 *)((undefined4 *)0x0);
   }
   else {
-    pcVar6 = (char *)(pcVar5);
-    do {
-      cVar1 = (char)(*pcVar6);
-      pcVar6 = (char *)(pcVar6 + 1);
-    } while (cVar1 != '\0');
-    _Size = (size_t)((int)pcVar6 - (int)(pcVar5 + 1));
+    _Size = (size_t)((int)strlen((const char *)pcVar5));
     puVar3 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(_Size + 0x11), 0);
     puVar2 = (undefined4 *)(puVar3 + 4);
     *puVar3 = (undefined4)(1);

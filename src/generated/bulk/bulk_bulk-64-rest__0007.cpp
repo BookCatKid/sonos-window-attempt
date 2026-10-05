@@ -20526,12 +20526,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_105c65c0(SCStr *param_2)
   if (*(char *)(param_1 + 0x14) != '\0') {
     ((SCStr *)(param_2))->append(" - ",3);
     pcVar4 = (char *)((char *)thunk_FUN_1109aba0(0x2404,&DAT_11882ff0,uVar2), 0);
-    pcVar3 = (char *)(pcVar4);
-    do {
-      cVar1 = (char)(*pcVar3);
-      pcVar3 = (char *)(pcVar3 + 1);
-    } while (cVar1 != '\0');
-    ((SCStr *)(param_2))->append(pcVar4,(int)pcVar3 - (int)(pcVar4 + 1));
+    ((SCStr *)(param_2))->append(pcVar4,(int)strlen((const char *)pcVar4));
   }
   if (*(char *)(param_1 + 0x10) != '\0') {
     ((SCStr *)(param_2))->append(" - DEBUG WIZARD",0xf);

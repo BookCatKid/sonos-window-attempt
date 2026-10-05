@@ -7076,12 +7076,7 @@ int __fastcall FUN_101a4ca0(undefined4 *param_1)
   if ((char *)(pcVar2) != (char *)(0x0)) {
     iVar4 = (int)(*(int *)(pcVar2 + -0xc));
     if (iVar4 == 0) {
-      pcVar3 = (char *)(pcVar2);
-      do {
-        cVar1 = (char)(*pcVar3);
-        pcVar3 = (char *)(pcVar3 + 1);
-      } while (cVar1 != '\0');
-      iVar4 = (int)((int)pcVar3 - (int)(pcVar2 + 1));
+      iVar4 = (int)((int)strlen((const char *)pcVar2));
       *(int*)(pcVar2 + -0xc) = (int)(iVar4);
     }
     return (int)(iVar4);
@@ -7105,12 +7100,7 @@ int __fastcall FUN_101a4cd0(undefined4 *param_1)
   if ((char *)(pcVar2) != (char *)(0x0)) {
     iVar4 = (int)(*(int *)(pcVar2 + -0xc));
     if (iVar4 == 0) {
-      pcVar3 = (char *)(pcVar2);
-      do {
-        cVar1 = (char)(*pcVar3);
-        pcVar3 = (char *)(pcVar3 + 1);
-      } while (cVar1 != '\0');
-      iVar4 = (int)((int)pcVar3 - (int)(pcVar2 + 1));
+      iVar4 = (int)((int)strlen((const char *)pcVar2));
       *(int*)(pcVar2 + -0xc) = (int)(iVar4);
     }
     return (int)(iVar4);

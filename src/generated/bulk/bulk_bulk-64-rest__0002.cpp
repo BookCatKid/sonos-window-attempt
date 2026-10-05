@@ -11469,12 +11469,7 @@ LAB_10261f93:
         }
 LAB_10261fc0:
         if ((int)param_1 < 2) {
-          pcVar6 = (char *)(pcVar5);
-          do {
-            cVar1 = (char)(*pcVar6);
-            pcVar6 = (char *)(pcVar6 + 1);
-          } while (cVar1 != '\0');
-          uVar3 = (uint)((int)pcVar6 - (int)(pcVar5 + 1));
+          uVar3 = (uint)((int)strlen((const char *)pcVar5));
         }
         else {
           uVar3 = (uint)(thunk_FUN_11069bc0(pcVar5), 0);
@@ -25110,12 +25105,7 @@ void FUN_1027bf00(int param_1)
     if ((char *)(local_18) != (char *)(0x0)) {
       pcVar10 = (char *)(local_18);
     }
-    pcVar8 = (char *)(pcVar10);
-    do {
-      cVar1 = (char)(*pcVar8);
-      pcVar8 = (char *)(pcVar8 + 1);
-    } while (cVar1 != '\0');
-    iVar9 = (int)((int)pcVar8 - (int)(pcVar10 + 1));
+    iVar9 = (int)((int)strlen((const char *)pcVar10));
     if (0 < iVar9) {
       iVar5 = (int)(0x400 - (int)pcVar10);
       iVar7 = (int)((iVar9 - 1U >> 10) + 1);
@@ -27215,12 +27205,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10281300(char *param_2,char *param_3
     } while (cVar1 != '\0');
     if ((char *)(pcVar4) != (char *)(param_3) + 1) {
       ((SCStr *)((SCStr *)&param_2))->append(".",1);
-      pcVar4 = (char *)(pcVar2);
-      do {
-        cVar1 = (char)(*pcVar4);
-        pcVar4 = (char *)(pcVar4 + 1);
-      } while (cVar1 != '\0');
-      ((SCStr *)((SCStr *)&param_2))->append(pcVar2,(int)pcVar4 - (int)(pcVar2 + 1));
+      ((SCStr *)((SCStr *)&param_2))->append(pcVar2,(int)strlen((const char *)pcVar2));
     }
     uVar3 = (undefined4)(thunk_FUN_103d4bf0(&param_2,param_1), 0);
 
@@ -28439,12 +28424,7 @@ void FUN_10283630(int param_1)
     if ((char *)(local_18) != (char *)(0x0)) {
       pcVar10 = (char *)(local_18);
     }
-    pcVar8 = (char *)(pcVar10);
-    do {
-      cVar1 = (char)(*pcVar8);
-      pcVar8 = (char *)(pcVar8 + 1);
-    } while (cVar1 != '\0');
-    iVar9 = (int)((int)pcVar8 - (int)(pcVar10 + 1));
+    iVar9 = (int)((int)strlen((const char *)pcVar10));
     if (0 < iVar9) {
       iVar5 = (int)(0x400 - (int)pcVar10);
       iVar7 = (int)((iVar9 - 1U >> 10) + 1);
@@ -49443,12 +49423,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102a72c0(char *param_2,char *param
     param_1[2] = (undefined4)(0);
   }
   else {
-    pcVar5 = (char *)(param_4);
-    do {
-      cVar1 = (char)(*pcVar5);
-      pcVar5 = (char *)(pcVar5 + 1);
-    } while (cVar1 != '\0');
-    sVar6 = (size_t)((int)pcVar5 - (int)(param_4 + 1));
+    sVar6 = (size_t)((int)strlen((const char *)param_4));
     puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(sVar6 + 0x11,uVar2), 0);
     puVar3 = (undefined4 *)(puVar4 + 4);
     *puVar4 = (undefined4)(1);
@@ -55186,12 +55161,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_102b0dd0(SCStr *param_2)
     local_14 = (undefined4 *)((undefined4 *)0x0);
   }
   else {
-    pcVar7 = (char *)(pcVar6);
-    do {
-      cVar2 = (char)(*pcVar7);
-      pcVar7 = (char *)(pcVar7 + 1);
-    } while (cVar2 != '\0');
-    _Size = (size_t)((int)pcVar7 - (int)(pcVar6 + 1));
+    _Size = (size_t)((int)strlen((const char *)pcVar6));
     puVar3 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(_Size + 0x11), 0);
     puVar1 = (undefined4 *)(puVar3 + 4);
     *puVar3 = (undefined4)(1);
@@ -64360,12 +64330,7 @@ LAB_102bee1b:
           else if (uVar10 == param_4 - 2) {
             ((SCStr *)((SCStr *)&local_14))->append(" ",1);
             pcVar12 = (char *)((char *)thunk_FUN_1109aba0(0x20a2,&DAT_11882ff0), 0);
-            pcVar5 = (char *)(pcVar12);
-            do {
-              cVar1 = (char)(*pcVar5);
-              pcVar5 = (char *)(pcVar5 + 1);
-            } while (cVar1 != '\0');
-            uVar9 = (uint)((int)pcVar5 - (int)(pcVar12 + 1));
+            uVar9 = (uint)((int)strlen((const char *)pcVar12));
             goto LAB_102bee1b;
           }
 
@@ -77822,12 +77787,7 @@ FUN_102d5720(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
     local_14 = (undefined4 *)((undefined4 *)0x0);
   }
   else {
-    pcVar9 = (char *)(local_1c);
-    do {
-      cVar3 = (char)(*pcVar9);
-      pcVar9 = (char *)(pcVar9 + 1);
-    } while (cVar3 != '\0');
-    sVar10 = (size_t)((int)pcVar9 - (int)(local_1c + 1));
+    sVar10 = (size_t)((int)strlen((const char *)local_1c));
     puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(sVar10 + 0x11), 0);
     puVar1 = (undefined4 *)(puVar4 + 4);
     *puVar4 = (undefined4)(1);

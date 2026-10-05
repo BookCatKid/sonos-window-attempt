@@ -6278,12 +6278,7 @@ void FUN_10116b10(undefined4 *param_1,undefined4 *param_2,char *param_3)
   char *pcVar10;
   uint _Size_00;
   
-  pcVar10 = (char *)(param_3);
-  do {
-    cVar1 = (char)(*pcVar10);
-    pcVar10 = (char *)(pcVar10 + 1);
-  } while (cVar1 != '\0');
-  _Size_00 = (uint)((int)pcVar10 - (int)(param_3 + 1));
+  _Size_00 = (uint)((int)strlen((const char *)param_3));
   uVar2 = (uint)(param_2[5]);
   _Size = (size_t)(param_2[4]);
   if (uVar2 - _Size < _Size_00) {
@@ -9913,12 +9908,7 @@ undefined1 * __thiscall Recovered_Bulk::m_FUN_10124ee0(undefined1 *param_2)
   *(undefined4*)(param_2 + 0x10) = (undefined4)(0);
   *(undefined4*)(param_2 + 0x14) = (undefined4)(0xf);
   *param_2 = (undefined1)(0);
-  pcVar2 = (char *)(pcVar3);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
-  thunk_FUN_1012d130(pcVar3,(int)pcVar2 - (int)(pcVar3 + 1));
+  thunk_FUN_1012d130(pcVar3,(int)strlen((const char *)pcVar3));
   return (undefined1 *)(param_2);
 }
 

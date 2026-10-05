@@ -5977,12 +5977,7 @@ undefined4 * FUN_101baca0(char *param_1)
   char *pcVar3;
   size_t _Size;
   
-  pcVar3 = (char *)(param_1);
-  do {
-    cVar1 = (char)(*pcVar3);
-    pcVar3 = (char *)(pcVar3 + 1);
-  } while (cVar1 != '\0');
-  _Size = (size_t)((int)pcVar3 - (int)(param_1 + 1));
+  _Size = (size_t)((int)strlen((const char *)param_1));
   puVar2 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(_Size + 0x11), 0);
   *puVar2 = (undefined4)(1);
   _Dst = (undefined4 *)(puVar2 + 4);

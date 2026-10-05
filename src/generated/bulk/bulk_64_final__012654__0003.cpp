@@ -7618,12 +7618,7 @@ void FUN_108df820(void)
 
 
   local_2c[0] = (char *******)((char *******)((uint)local_2c[0] & 0xffffff00));
-  pcVar5 = (char *)(pcVar6);
-  do {
-    cVar1 = (char)(*pcVar5);
-    pcVar5 = (char *)(pcVar5 + 1);
-  } while (cVar1 != '\0');
-  thunk_FUN_1012d130(pcVar6,(int)pcVar5 - (int)(pcVar6 + 1));
+  thunk_FUN_1012d130(pcVar6,(int)strlen((const char *)pcVar6));
   pppppppcVar3 = (char *******)((char *******)(uint)&local_2c);
   if (0xf < local_18) {
     pppppppcVar3 = (char *******)(local_2c[0]);

@@ -5700,12 +5700,7 @@ void __thiscall Recovered_Bulk::m_FUN_110f2af0(char *param_2)
   if (*(char *)(param_1 + 0x28) == '\0') {
     thunk_FUN_110f3120();
   }
-  pcVar2 = (char *)(param_2);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
-  thunk_FUN_1138fd50(*(undefined4 *)(param_1 + 0x30),*(undefined4 *)(param_1 + 0x38),param_2, (int)pcVar2 - (int)(param_2 + 1),0);
+  thunk_FUN_1138fd50(*(undefined4 *)(param_1 + 0x30),*(undefined4 *)(param_1 + 0x38),param_2, (int)strlen((const char *)param_2),0);
   *(int*)(param_1 + 0x38) = (int)(*(int *)(param_1 + 0x38) + 1);
   return;
 }
@@ -5723,12 +5718,7 @@ void __thiscall Recovered_Bulk::m_FUN_110f2b40(char *param_2)
   if (*(char *)(param_1 + 0x28) == '\0') {
     thunk_FUN_110f3120();
   }
-  pcVar2 = (char *)(param_2);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
-  thunk_FUN_1138fd50(*(undefined4 *)(param_1 + 0x30),*(undefined4 *)(param_1 + 0x38),param_2, (int)pcVar2 - (int)(param_2 + 1),0);
+  thunk_FUN_1138fd50(*(undefined4 *)(param_1 + 0x30),*(undefined4 *)(param_1 + 0x38),param_2, (int)strlen((const char *)param_2),0);
   *(int*)(param_1 + 0x38) = (int)(*(int *)(param_1 + 0x38) + 1);
   return;
 }

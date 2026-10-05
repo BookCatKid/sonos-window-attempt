@@ -10330,12 +10330,7 @@ int __fastcall FUN_10dadd60(int *param_1)
   else {
     iVar3 = (int)(*(int *)(pcVar6 + -0xc));
     if (iVar3 == 0) {
-      pcVar2 = (char *)(pcVar6);
-      do {
-        cVar1 = (char)(*pcVar2);
-        pcVar2 = (char *)(pcVar2 + 1);
-      } while (cVar1 != '\0');
-      iVar3 = (int)((int)pcVar2 - (int)(pcVar6 + 1));
+      iVar3 = (int)((int)strlen((const char *)pcVar6));
       *(int*)(pcVar6 + -0xc) = (int)(iVar3);
     }
   }

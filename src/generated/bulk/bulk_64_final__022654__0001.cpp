@@ -28421,12 +28421,7 @@ void __thiscall Recovered_Bulk::m_FUN_10cde390(undefined4 param_2,int *param_3,S
     _Dst = (undefined4 *)((undefined4 *)0x0);
   }
   else {
-    pcVar8 = (char *)(pcVar6);
-    do {
-      cVar1 = (char)(*pcVar8);
-      pcVar8 = (char *)(pcVar8 + 1);
-    } while (cVar1 != '\0');
-    _Size = (size_t)((int)pcVar8 - (int)(pcVar6 + 1));
+    _Size = (size_t)((int)strlen((const char *)pcVar6));
     puVar2 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(), 0);
     _Dst = (undefined4 *)(puVar2 + 4);
     *puVar2 = (undefined4)(1);
@@ -65127,12 +65122,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d19d10(undefined4 param_2,char *
     param_1[8] = (undefined4)(0);
   }
   else {
-    pcVar4 = (char *)(param_3);
-    do {
-      cVar1 = (char)(*pcVar4);
-      pcVar4 = (char *)(pcVar4 + 1);
-    } while (cVar1 != '\0');
-    _Size = (size_t)((int)pcVar4 - (int)(param_3 + 1));
+    _Size = (size_t)((int)strlen((const char *)param_3));
     puVar3 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(_Size + 0x11,uVar2), 0);
     _Dst = (undefined4 *)(puVar3 + 4);
     *puVar3 = (undefined4)(1);
@@ -85668,12 +85658,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d3acb0(undefined4 param_2,SCStr 
     puVar3 = (undefined4 *)((undefined4 *)0x0);
   }
   else {
-    pcVar8 = (char *)(_Src);
-    do {
-      cVar1 = (char)(*pcVar8);
-      pcVar8 = (char *)(pcVar8 + 1);
-    } while (cVar1 != '\0');
-    _Size = (size_t)((int)pcVar8 - (int)(_Src + 1));
+    _Size = (size_t)((int)strlen((const char *)_Src));
     puVar3 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(_Size + 0x11,uVar2), 0);
     *puVar3 = (undefined4)(1);
     puVar3[3] = (undefined4)(_Size);
@@ -86070,12 +86055,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d3b6c0(undefined4 *param_2,char *param_3
     param_2 = (undefined4 *)((undefined4 *)0x0);
   }
   else {
-    pcVar5 = (char *)(param_3);
-    do {
-      cVar1 = (char)(*pcVar5);
-      pcVar5 = (char *)(pcVar5 + 1);
-    } while (cVar1 != '\0');
-    _Size = (size_t)((int)pcVar5 - (int)(param_3 + 1));
+    _Size = (size_t)((int)strlen((const char *)param_3));
     puVar3 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(_Size + 0x11,uVar2), 0);
     param_2 = (undefined4 *)(puVar3 + 4);
     *puVar3 = (undefined4)(1);
@@ -86197,12 +86177,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d3b8c0(undefined4 param_2,char *param_3,
     puVar7 = (undefined4 *)((undefined4 *)0x0);
   }
   else {
-    pcVar8 = (char *)(param_4);
-    do {
-      cVar2 = (char)(*pcVar8);
-      pcVar8 = (char *)(pcVar8 + 1);
-    } while (cVar2 != '\0');
-    sVar9 = (size_t)((int)pcVar8 - (int)(param_4 + 1));
+    sVar9 = (size_t)((int)strlen((const char *)param_4));
     puVar3 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(), 0);
     puVar7 = (undefined4 *)(puVar3 + 4);
     *puVar3 = (undefined4)(1);

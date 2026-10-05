@@ -6755,12 +6755,7 @@ undefined4 * __fastcall FUN_110a90b0(undefined4 *param_1)
     _Dst = (undefined4 *)((undefined4 *)0x0);
   }
   else {
-    pcVar3 = (char *)(param_2);
-    do {
-      cVar1 = (char)(*pcVar3);
-      pcVar3 = (char *)(pcVar3 + 1);
-    } while (cVar1 != '\0');
-    _Size = (size_t)((int)pcVar3 - (int)(param_2 + 1));
+    _Size = (size_t)((int)strlen((const char *)param_2));
     puVar2 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(_Size + 0x11), 0);
     _Dst = (undefined4 *)(puVar2 + 4);
     *puVar2 = (undefined4)(1);
@@ -11145,12 +11140,7 @@ undefined4 __fastcall FUN_110b4ea0(int param_1)
   uint uVar4;
   uint uVar5;
   
-  pcVar3 = (char *)(param_2);
-  do {
-    cVar2 = (char)(*pcVar3);
-    pcVar3 = (char *)(pcVar3 + 1);
-  } while (cVar2 != '\0');
-  uVar4 = (uint)((int)pcVar3 - (int)(param_2 + 1));
+  uVar4 = (uint)((int)strlen((const char *)param_2));
   if ((param_4 != 0) && (param_4 < uVar4)) {
     uVar4 = (uint)(param_4);
   }
@@ -12674,12 +12664,7 @@ bool __fastcall FUN_110bfac0(int param_1)
   (**(code **)(*param_1 + 0xc))(param_3);
   param_1[1] = (int)(param_1[1] + -1);
   (**(code **)(*param_1 + 4))(&DAT_119df0a0,2);
-  pcVar2 = (char *)(param_2);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
-  (**(code **)(*param_1 + 4))(param_2,(int)pcVar2 - (int)(param_2 + 1));
+  (**(code **)(*param_1 + 4))(param_2,(int)strlen((const char *)param_2));
   (**(code **)(*param_1 + 4))(&DAT_1189dabc,1);
   return;
 }
@@ -15001,12 +14986,7 @@ int __fastcall FUN_110c8de0(int *param_1)
   else {
     iVar4 = (int)(*(int *)(pcVar2 + -0xc));
     if (iVar4 == 0) {
-      pcVar6 = (char *)(pcVar2);
-      do {
-        cVar1 = (char)(*pcVar6);
-        pcVar6 = (char *)(pcVar6 + 1);
-      } while (cVar1 != '\0');
-      iVar4 = (int)((int)pcVar6 - (int)(pcVar2 + 1));
+      iVar4 = (int)((int)strlen((const char *)pcVar2));
       *(int*)(pcVar2 + -0xc) = (int)(iVar4);
     }
   }
@@ -16492,12 +16472,7 @@ undefined4 FUN_110d8f90(int param_1,char *param_2,undefined4 param_3)
       } while (cVar1 != '\0');
       iVar3 = (int)(strncmp(param_2,"A:GENRE",(int)pcVar2 - (int)(param_2 + 1)), 0);
       if (iVar3 != 0) {
-        pcVar2 = (char *)(param_2);
-        do {
-          cVar1 = (char)(*pcVar2);
-          pcVar2 = (char *)(pcVar2 + 1);
-        } while (cVar1 != '\0');
-        iVar3 = (int)(strncmp(param_2,"A:PLAYLISTS",(int)pcVar2 - (int)(param_2 + 1)), 0);
+        iVar3 = (int)(strncmp(param_2,"A:PLAYLISTS",(int)strlen((const char *)param_2)), 0);
         if (iVar3 != 0) {
           return (undefined4)(param_3);
         }
@@ -16699,12 +16674,7 @@ void FUN_110db700(undefined4 *param_1,undefined4 *param_2)
   }
   _Src = (char *)((char *)thunk_FUN_11257820(puVar3), 0);
   if (((char *)(_Src) != (char *)(0x0)) && (*_Src != (char)(('\0')))) {
-    pcVar4 = (char *)(_Src);
-    do {
-      cVar1 = (char)(*pcVar4);
-      pcVar4 = (char *)(pcVar4 + 1);
-    } while (cVar1 != '\0');
-    _Size = (size_t)((int)pcVar4 - (int)(_Src + 1));
+    _Size = (size_t)((int)strlen((const char *)_Src));
     puVar2 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(_Size + 0x11), 0);
     _Dst = (undefined4 *)(puVar2 + 4);
     *puVar2 = (undefined4)(1);
@@ -18223,12 +18193,7 @@ void __fastcall FUN_110e3c30(undefined4 *param_1)
   else {
     iVar5 = (int)(*(int *)(pcVar2 + -0xc));
     if (iVar5 == 0) {
-      pcVar4 = (char *)(pcVar2);
-      do {
-        cVar1 = (char)(*pcVar4);
-        pcVar4 = (char *)(pcVar4 + 1);
-      } while (cVar1 != '\0');
-      iVar5 = (int)((int)pcVar4 - (int)(pcVar2 + 1));
+      iVar5 = (int)((int)strlen((const char *)pcVar2));
       *(int*)(pcVar2 + -0xc) = (int)(iVar5);
     }
   }

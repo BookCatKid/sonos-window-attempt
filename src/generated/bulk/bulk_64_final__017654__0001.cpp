@@ -38904,12 +38904,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5ca90(SCStr *param_2)
     }
 
     apppiStack_64[0] = (int ***)((int ***)((uint)apppiStack_64[0] & 0xffffff00));
-    pcVar9 = (char *)(pcVar10);
-    do {
-      cVar3 = (char)(*pcVar9);
-      pcVar9 = (char *)(pcVar9 + 1);
-    } while (cVar3 != '\0');
-    thunk_FUN_1012d130(pcVar10,(int)pcVar9 - (int)(pcVar10 + 1));
+    thunk_FUN_1012d130(pcVar10,(int)strlen((const char *)pcVar10));
 
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
     ((SCStr *)((SCStr *)&local_f0))->int_release();
@@ -66935,12 +66930,7 @@ void __stdcall FUN_10a8b580(int *param_1)
     }
 
     local_20[0] = (undefined ****)((undefined ****)((uint)local_20[0] & 0xffffff00));
-    pcVar11 = (char *)(pcVar13);
-    do {
-      cVar2 = (char)(*pcVar11);
-      pcVar11 = (char *)(pcVar11 + 1);
-    } while (cVar2 != '\0');
-    thunk_FUN_1012d130(pcVar13,(int)pcVar11 - (int)(pcVar13 + 1));
+    thunk_FUN_1012d130(pcVar13,(int)strlen((const char *)pcVar13));
     ppppuVar1 = (undefined ****)(local_20[0]);
     puVar15 = (undefined4 *)((undefined4 *)((undefined4 *)*piVar4)[1]);
     cVar2 = (char)(*(char *)((int)puVar15 + 0xd));

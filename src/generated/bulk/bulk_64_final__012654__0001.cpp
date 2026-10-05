@@ -9851,12 +9851,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_106dc2d0(SCStr *param_2)
       if (uVar3 != (*(int *)(param_1 + 0x28) - *(int *)(param_1 + 0x24)) / 0xc - 1U) {
         pcVar8 = (char *)(", ");
       }
-      pcVar6 = (char *)(pcVar8);
-      do {
-        cVar1 = (char)(*pcVar6);
-        pcVar6 = (char *)(pcVar6 + 1);
-      } while (cVar1 != '\0');
-      ((SCStr *)(param_2))->append(pcVar8,(int)pcVar6 - (int)(pcVar8 + 1));
+      ((SCStr *)(param_2))->append(pcVar8,(int)strlen((const char *)pcVar8));
       uVar3 = (uint)(uVar3 + 1);
       local_18 = (int)(local_18 + 0xc);
     } while (uVar3 < (uint)((*(int *)(param_1 + 0x28) - *(int *)(param_1 + 0x24)) / 0xc));

@@ -2353,12 +2353,7 @@ LAB_11043f39:
   }
   pcVar11 = (char *)(local_14);
   if (((char *)(local_14) != (char *)(0x0)) && (*local_14 != (char)(('\0')))) {
-    pcVar12 = (char *)(local_14);
-    do {
-      cVar1 = (char)(*pcVar12);
-      pcVar12 = (char *)(pcVar12 + 1);
-    } while (cVar1 != '\0');
-    _Size = (size_t)((int)pcVar12 - (int)(local_14 + 1));
+    _Size = (size_t)((int)strlen((const char *)local_14));
     puVar8 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(_Size + 0x11), 0);
     puVar14 = (undefined4 *)(puVar8 + 4);
     *puVar8 = (undefined4)(1);
@@ -3476,12 +3471,7 @@ LAB_11045b43:
         if ((char)param_5 == '\0') {
           pcVar6 = (char *)(&DAT_1192e2cc);
         }
-        pcVar5 = (char *)(pcVar6);
-        do {
-          cVar1 = (char)(*pcVar5);
-          pcVar5 = (char *)(pcVar5 + 1);
-        } while (cVar1 != '\0');
-        ((SCStr *)(param_1))->append(pcVar6,(int)pcVar5 - (int)(pcVar6 + 1));
+        ((SCStr *)(param_1))->append(pcVar6,(int)strlen((const char *)pcVar6));
       }
       pcVar6 = (char *)("");
       if ((char *)(param_4) != (char *)(0x0)) {
@@ -4877,12 +4867,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_110481b0(SCStr *param_2)
         local_18 = (undefined4 *)((undefined4 *)0x0);
       }
       else {
-        pcVar6 = (char *)(local_14);
-        do {
-          cVar2 = (char)(*pcVar6);
-          pcVar6 = (char *)(pcVar6 + 1);
-        } while (cVar2 != '\0');
-        _Size = (size_t)((int)pcVar6 - (int)(local_14 + 1));
+        _Size = (size_t)((int)strlen((const char *)local_14));
         puVar5 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(_Size + 0x11), 0);
         puVar1 = (undefined4 *)(puVar5 + 4);
         *puVar5 = (undefined4)(1);
@@ -27543,12 +27528,7 @@ void FUN_1106f470(undefined4 *param_1,char *param_2,char param_3)
     if (param_3 == '\0') {
       pcVar6 = (char *)(pcVar5);
     }
-    pcVar5 = (char *)(pcVar6);
-    do {
-      cVar1 = (char)(*pcVar5);
-      pcVar5 = (char *)(pcVar5 + 1);
-    } while (cVar1 != '\0');
-    if ((uint)((int)pcVar5 - (int)(pcVar6 + 1)) < 9) {
+    if ((uint)((int)strlen((const char *)pcVar6)) < 9) {
       *param_1 = (undefined4)(param_2);
       if (((char *)(param_2) != (char *)(0x0)) && (*(int *)(param_2 + -0x10) < 0xffff)) {
         thunk_FUN_1123fce0(param_2 + -0x10,local_14);

@@ -6261,12 +6261,7 @@ void __stdcall FUN_10f0fe30(char *param_1)
   char cVar1;
   char *pcVar2;
   
-  pcVar2 = (char *)(param_1);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
-  thunk_FUN_1012d130(param_1,(int)pcVar2 - (int)(param_1 + 1));
+  thunk_FUN_1012d130(param_1,(int)strlen((const char *)param_1));
   return;
 }
 
@@ -6342,12 +6337,7 @@ void __stdcall FUN_10f0feb0(char *param_1)
   char cVar1;
   char *pcVar2;
   
-  pcVar2 = (char *)(param_1);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
-  thunk_FUN_1012cdb0(param_1,(int)pcVar2 - (int)(param_1 + 1));
+  thunk_FUN_1012cdb0(param_1,(int)strlen((const char *)param_1));
   return;
 }
 

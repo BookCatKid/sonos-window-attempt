@@ -19298,12 +19298,7 @@ void __thiscall Recovered_Bulk::m_FUN_11254500(char *param_2)
   char cVar1;
   char *pcVar2;
   
-  pcVar2 = (char *)(param_2);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
-  (**(code **)(*param_1 + 4))(param_2,(int)pcVar2 - (int)(param_2 + 1));
+  (**(code **)(*param_1 + 4))(param_2,(int)strlen((const char *)param_2));
   return;
 }
 
@@ -19952,12 +19947,7 @@ void FUN_1125fd30(char *param_1)
   char *pcVar2;
   
   if ((char *)(param_1) != (char *)(0x0)) {
-    pcVar2 = (char *)(param_1);
-    do {
-      cVar1 = (char)(*pcVar2);
-      pcVar2 = (char *)(pcVar2 + 1);
-    } while (cVar1 != '\0');
-    thunk_FUN_112c6c00(param_1,(int)pcVar2 - (int)(param_1 + 1),0);
+    thunk_FUN_112c6c00(param_1,(int)strlen((const char *)param_1),0);
     return;
   }
   thunk_FUN_112c6c00(0,0,0);
@@ -21433,12 +21423,7 @@ void __thiscall Recovered_Bulk::m_FUN_11274540(char *param_2)
   char cVar1;
   char *pcVar2;
   
-  pcVar2 = (char *)(param_2);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
-  (**(code **)(*param_1 + 8))(param_2,(int)pcVar2 - (int)(param_2 + 1));
+  (**(code **)(*param_1 + 8))(param_2,(int)strlen((const char *)param_2));
   return;
 }
 
@@ -21463,12 +21448,7 @@ void __thiscall Recovered_Bulk::m_FUN_11274a70(char *param_2)
   char cVar1;
   char *pcVar2;
   
-  pcVar2 = (char *)(param_2);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
-  (**(code **)(*param_1 + 4))(param_2,(int)pcVar2 - (int)(param_2 + 1));
+  (**(code **)(*param_1 + 4))(param_2,(int)strlen((const char *)param_2));
   return;
 }
 
@@ -21698,12 +21678,7 @@ void __thiscall Recovered_Bulk::m_FUN_11278b20(char *param_2)
   if ((char *)(param_2) != (char *)(0x0)) {
     pcVar5 = (char *)(param_2);
   }
-  pcVar4 = (char *)(pcVar5);
-  do {
-    cVar2 = (char)(*pcVar4);
-    pcVar4 = (char *)(pcVar4 + 1);
-  } while (cVar2 != '\0');
-  thunk_FUN_1012d130(pcVar5,(int)pcVar4 - (int)(pcVar5 + 1));
+  thunk_FUN_1012d130(pcVar5,(int)strlen((const char *)pcVar5));
   if (cVar3 != '\0') {
     thunk_FUN_112a8010(iVar1);
   }

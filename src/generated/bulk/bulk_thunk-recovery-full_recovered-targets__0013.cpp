@@ -25157,16 +25157,11 @@ void FUN_1086e9c0(undefined4 *param_1,char *param_2)
   char *pcVar2;
   undefined4 *puVar3;
   
-  pcVar2 = (char *)(param_2);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
   puVar3 = (undefined4 *)(param_1);
   if (0xf < (uint)param_1[5]) {
     puVar3 = (undefined4 *)((undefined4 *)*param_1);
   }
-  thunk_FUN_104068e0(puVar3,param_1[4],param_2,(int)pcVar2 - (int)(param_2 + 1));
+  thunk_FUN_104068e0(puVar3,param_1[4],param_2,(int)strlen((const char *)param_2));
   return;
 }
 
@@ -25184,16 +25179,11 @@ uint FUN_1086ea00(undefined4 *param_1,char *param_2)
   uint uVar3;
   undefined4 *puVar4;
   
-  pcVar2 = (char *)(param_2);
-  do {
-    cVar1 = (char)(*pcVar2);
-    pcVar2 = (char *)(pcVar2 + 1);
-  } while (cVar1 != '\0');
   puVar4 = (undefined4 *)(param_1);
   if (0xf < (uint)param_1[5]) {
     puVar4 = (undefined4 *)((undefined4 *)*param_1);
   }
-  uVar3 = (uint)(thunk_FUN_104068e0(puVar4,param_1[4],param_2,(int)pcVar2 - (int)(param_2 + 1)), 0);
+  uVar3 = (uint)(thunk_FUN_104068e0(puVar4,param_1[4],param_2,(int)strlen((const char *)param_2)), 0);
   return (uint)(uVar3 ^ 1);
 }
 
@@ -25993,16 +25983,11 @@ int __fastcall FUN_10875ac0(int *param_1)
   undefined4 *puVar2;
   char *pcVar3;
   
-  pcVar3 = (char *)(param_2);
-  do {
-    cVar1 = (char)(*pcVar3);
-    pcVar3 = (char *)(pcVar3 + 1);
-  } while (cVar1 != '\0');
   puVar2 = (undefined4 *)(param_1);
   if (0xf < (uint)param_1[5]) {
     puVar2 = (undefined4 *)((undefined4 *)*param_1);
   }
-  thunk_FUN_104068e0(puVar2,param_1[4],param_2,(int)pcVar3 - (int)(param_2 + 1));
+  thunk_FUN_104068e0(puVar2,param_1[4],param_2,(int)strlen((const char *)param_2));
   return;
 }
 
