@@ -6257,7 +6257,7 @@ void __fastcall FUN_109ef0e0(undefined4 *param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-void __fastcall // Reference entry 109ef110; transcribed reference bytes.
+// Reference entry 109ef110; transcribed reference bytes.
 #line 1 "ENTRY_109ef110"
 
 __declspec(naked) void FUN_109ef110(void)
@@ -8772,7 +8772,7 @@ void __fastcall FUN_10a09c30(undefined4 *param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-void __fastcall // Reference entry 10a09c60; transcribed reference bytes.
+// Reference entry 10a09c60; transcribed reference bytes.
 #line 1 "ENTRY_10a09c60"
 
 __declspec(naked) void FUN_10a09c60(void)
@@ -8807,7 +8807,7 @@ void __fastcall FUN_10a09c80(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10a09cb0; transcribed reference bytes.
+// Reference entry 10a09cb0; transcribed reference bytes.
 #line 1 "ENTRY_10a09cb0"
 
 __declspec(naked) void FUN_10a09cb0(void)
@@ -16086,7 +16086,7 @@ void __fastcall FUN_10a513e0(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10a51410; transcribed reference bytes.
+// Reference entry 10a51410; transcribed reference bytes.
 #line 1 "ENTRY_10a51410"
 
 __declspec(naked) void FUN_10a51410(void)
@@ -16125,7 +16125,7 @@ void __fastcall FUN_10a51510(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10a51540; transcribed reference bytes.
+// Reference entry 10a51540; transcribed reference bytes.
 #line 1 "ENTRY_10a51540"
 
 __declspec(naked) void FUN_10a51540(void)
@@ -16162,7 +16162,7 @@ void __fastcall FUN_10a51560(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10a51590; transcribed reference bytes.
+// Reference entry 10a51590; transcribed reference bytes.
 #line 1 "ENTRY_10a51590"
 
 __declspec(naked) void FUN_10a51590(void)
@@ -16437,7 +16437,7 @@ void __fastcall FUN_10a51ba0(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10a51bd0; transcribed reference bytes.
+// Reference entry 10a51bd0; transcribed reference bytes.
 #line 1 "ENTRY_10a51bd0"
 
 __declspec(naked) void FUN_10a51bd0(void)

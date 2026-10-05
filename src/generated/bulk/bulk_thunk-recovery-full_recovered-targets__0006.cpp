@@ -654,7 +654,7 @@ extern undefined1 LAB_11503650[];
 extern undefined1 LAB_1153e9f0[];
 extern undefined1 LAB_1153f6b0[];
 extern undefined1 LAB_1153fb30[];
-extern undefined1 LAB_115486b5[];
+extern "C" void LAB_115486b5(void);
 extern undefined1 LAB_11549320[];
 extern undefined1 LAB_1154a6c0[];
 extern undefined1 LAB_1154a6f0[];

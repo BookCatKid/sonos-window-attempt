@@ -574,7 +574,7 @@ extern int uStack_4;
 extern int uStack_8;
 extern int uStack_c;
 extern undefined1 LAB_10234476[];
-extern undefined1 LAB_102349e4[];
+extern "C" void LAB_102349e4(void);
 extern undefined1 LAB_1059d6b4[];
 extern undefined1 LAB_1059d8b2[];
 extern undefined1 LAB_1150a330[];

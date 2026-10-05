@@ -769,7 +769,7 @@ extern undefined1 LAB_11719130[];
 extern undefined1 LAB_11719160[];
 extern undefined1 LAB_1171b620[];
 extern undefined1 LAB_1171ee20[];
-extern undefined1 LAB_117205cd[];
+extern "C" void LAB_117205cd(void);
 extern undefined1 LAB_11728460[];
 extern undefined1 LAB_1172a1a0[];
 extern undefined1 LAB_1172bc40[];

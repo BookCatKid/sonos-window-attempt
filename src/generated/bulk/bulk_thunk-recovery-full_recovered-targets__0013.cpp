@@ -1788,19 +1788,19 @@ extern int uStack_ec;
 extern int uStack_f4;
 extern undefined1 LAB_107f311f[];
 extern undefined1 LAB_107f3232[];
-extern undefined1 LAB_107f3649[];
+extern "C" void LAB_107f3649(void);
 extern undefined1 LAB_107fb85f[];
-extern undefined1 LAB_107fbf2a[];
+extern "C" void LAB_107fbf2a(void);
 extern undefined1 LAB_108003ff[];
-extern undefined1 LAB_10800567[];
+extern "C" void LAB_10800567(void);
 extern undefined1 LAB_10efa86c[];
 extern undefined1 LAB_115e0920[];
 extern undefined1 LAB_115e0ff0[];
 extern undefined1 LAB_115e1020[];
-extern undefined1 LAB_116145d8[];
-extern undefined1 LAB_11615b04[];
-extern undefined1 LAB_11616518[];
-extern undefined1 LAB_116301dd[];
+extern "C" void LAB_116145d8(void);
+extern "C" void LAB_11615b04(void);
+extern "C" void LAB_11616518(void);
+extern "C" void LAB_116301dd(void);
 extern undefined1 LAB_1176289d[];
 extern undefined1 LAB_1176355d[];
 extern void *ExceptionList;
@@ -15614,7 +15614,7 @@ void __fastcall FUN_10812d30(undefined4 *param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-void __fastcall // Reference entry 10812d60; transcribed reference bytes.
+// Reference entry 10812d60; transcribed reference bytes.
 #line 1 "ENTRY_10812d60"
 
 __declspec(naked) void FUN_10812d60(void)
@@ -21721,7 +21721,7 @@ void __fastcall FUN_10845bc0(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10845bf0; transcribed reference bytes.
+// Reference entry 10845bf0; transcribed reference bytes.
 #line 1 "ENTRY_10845bf0"
 
 __declspec(naked) void FUN_10845bf0(void)
@@ -21758,7 +21758,7 @@ void __fastcall FUN_10845c10(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10845c40; transcribed reference bytes.
+// Reference entry 10845c40; transcribed reference bytes.
 #line 1 "ENTRY_10845c40"
 
 __declspec(naked) void FUN_10845c40(void)
@@ -21914,7 +21914,7 @@ void __fastcall FUN_10845f70(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10845fa0; transcribed reference bytes.
+// Reference entry 10845fa0; transcribed reference bytes.
 #line 1 "ENTRY_10845fa0"
 
 __declspec(naked) void FUN_10845fa0(void)
@@ -22078,7 +22078,7 @@ void __fastcall FUN_108463f0(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10846420; transcribed reference bytes.
+// Reference entry 10846420; transcribed reference bytes.
 #line 1 "ENTRY_10846420"
 
 __declspec(naked) void FUN_10846420(void)
@@ -22113,7 +22113,7 @@ void __fastcall FUN_10846440(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10846470; transcribed reference bytes.
+// Reference entry 10846470; transcribed reference bytes.
 #line 1 "ENTRY_10846470"
 
 __declspec(naked) void FUN_10846470(void)
@@ -22148,7 +22148,7 @@ void __fastcall FUN_10846490(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 108464c0; transcribed reference bytes.
+// Reference entry 108464c0; transcribed reference bytes.
 #line 1 "ENTRY_108464c0"
 
 __declspec(naked) void FUN_108464c0(void)
@@ -22182,7 +22182,7 @@ void __fastcall FUN_108464e0(undefined4 *param_1)
 }
 
 
-void __fastcall // Reference entry 10846510; transcribed reference bytes.
+// Reference entry 10846510; transcribed reference bytes.
 #line 1 "ENTRY_10846510"
 
 __declspec(naked) void FUN_10846510(void)
@@ -22242,7 +22242,7 @@ void __fastcall FUN_10846670(undefined4 *param_1)
 }
 
 
-template<class... A> int // Reference entry 108466a0; transcribed reference bytes.
+// Reference entry 108466a0; transcribed reference bytes.
 #line 1 "ENTRY_108466a0"
 
 __declspec(naked) void FUN_108466a0(void)
@@ -25433,7 +25433,7 @@ void __fastcall FUN_108751e0(undefined4 *param_1)
 }
 
 
-template<class... A> int // Reference entry 10875640; transcribed reference bytes.
+// Reference entry 10875640; transcribed reference bytes.
 #line 1 "ENTRY_10875640"
 
 __declspec(naked) void FUN_10875640(void)
@@ -25482,7 +25482,7 @@ void __fastcall FUN_10875690(undefined4 *param_1)
 }
 
 
-void __fastcall // Reference entry 108756c0; transcribed reference bytes.
+// Reference entry 108756c0; transcribed reference bytes.
 #line 1 "ENTRY_108756c0"
 
 __declspec(naked) void FUN_108756c0(void)

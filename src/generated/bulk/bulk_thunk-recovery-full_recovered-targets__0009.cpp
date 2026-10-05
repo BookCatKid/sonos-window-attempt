@@ -622,7 +622,7 @@ extern undefined1 LAB_105584bb[];
 extern undefined1 LAB_105a12ad[];
 extern undefined1 LAB_114f5b00[];
 extern undefined1 LAB_114f5ce0[];
-extern undefined1 LAB_1159bde8[];
+extern "C" void LAB_1159bde8(void);
 extern undefined1 LAB_1159c5d0[];
 extern undefined1 LAB_115a0a10[];
 extern undefined1 LAB_115a2ce0[];

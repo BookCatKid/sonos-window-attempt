@@ -3795,7 +3795,7 @@ void __fastcall FUN_10654e30(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 106552b0; transcribed reference bytes.
+// Reference entry 106552b0; transcribed reference bytes.
 #line 1 "ENTRY_106552b0"
 
 __declspec(naked) void FUN_106552b0(void)
@@ -3874,7 +3874,7 @@ void __fastcall FUN_106553e0(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10655410; transcribed reference bytes.
+// Reference entry 10655410; transcribed reference bytes.
 #line 1 "ENTRY_10655410"
 
 __declspec(naked) void FUN_10655410(void)
@@ -3909,7 +3909,7 @@ void __fastcall FUN_10655430(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 10655460; transcribed reference bytes.
+// Reference entry 10655460; transcribed reference bytes.
 #line 1 "ENTRY_10655460"
 
 __declspec(naked) void FUN_10655460(void)
@@ -3944,7 +3944,7 @@ void __fastcall FUN_10655480(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 106554b0; transcribed reference bytes.
+// Reference entry 106554b0; transcribed reference bytes.
 #line 1 "ENTRY_106554b0"
 
 __declspec(naked) void FUN_106554b0(void)
@@ -3978,7 +3978,7 @@ void __fastcall FUN_106554d0(undefined4 *param_1)
 }
 
 
-void __fastcall // Reference entry 10655500; transcribed reference bytes.
+// Reference entry 10655500; transcribed reference bytes.
 #line 1 "ENTRY_10655500"
 
 __declspec(naked) void FUN_10655500(void)
@@ -4012,7 +4012,7 @@ void __fastcall FUN_10655520(undefined4 *param_1)
 }
 
 
-template<class... A> int // Reference entry 10655550; transcribed reference bytes.
+// Reference entry 10655550; transcribed reference bytes.
 #line 1 "ENTRY_10655550"
 
 __declspec(naked) void FUN_10655550(void)
@@ -4046,7 +4046,7 @@ void __fastcall FUN_10655570(undefined4 *param_1)
 }
 
 
-template<class... A> int // Reference entry 106555a0; transcribed reference bytes.
+// Reference entry 106555a0; transcribed reference bytes.
 #line 1 "ENTRY_106555a0"
 
 __declspec(naked) void FUN_106555a0(void)
@@ -4186,7 +4186,7 @@ void __fastcall FUN_10655780(undefined4 *param_1)
 }
 
 
-void __fastcall // Reference entry 106557b0; transcribed reference bytes.
+// Reference entry 106557b0; transcribed reference bytes.
 #line 1 "ENTRY_106557b0"
 
 __declspec(naked) void FUN_106557b0(void)
@@ -4282,7 +4282,7 @@ void __fastcall FUN_10655870(undefined4 *param_1)
 }
 
 
-void __fastcall // Reference entry 106558a0; transcribed reference bytes.
+// Reference entry 106558a0; transcribed reference bytes.
 #line 1 "ENTRY_106558a0"
 
 __declspec(naked) void FUN_106558a0(void)

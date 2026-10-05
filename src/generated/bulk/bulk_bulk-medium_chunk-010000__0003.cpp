@@ -519,7 +519,7 @@ extern int ghidra_vftable_SwfObjServiceDesc;
 extern int ghidra_vftable_SwfObjZPCMR;
 extern int in_EAX;
 extern int in_stack_00000010;
-extern undefined1 LAB_1003ddb6[];
+extern "C" void LAB_1003ddb6(void);
 extern int *PTR_s_A_ALBUMARTIST_1211dae0;
 extern int *PTR_s_ServiceListVersion_119c37dc;
 extern int *PTR_s_TransportState_119c29e8;

@@ -738,7 +738,7 @@ extern undefined1 LAB_11503620[];
 extern undefined1 LAB_11503650[];
 extern undefined1 LAB_115a0890[];
 extern undefined1 LAB_116f2640[];
-extern undefined1 LAB_116f3e8c[];
+extern "C" void LAB_116f3e8c(void);
 extern undefined1 LAB_116f4840[];
 extern undefined1 LAB_116f4870[];
 extern undefined1 LAB_116f48a0[];

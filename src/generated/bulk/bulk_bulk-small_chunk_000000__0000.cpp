@@ -6830,7 +6830,7 @@ void FUN_10001393(void)
 
 
 
-undefined1 // Reference entry 1000139d; transcribed reference bytes.
+// Reference entry 1000139d; transcribed reference bytes.
 #line 1 "ENTRY_1000139d"
 
 __declspec(naked) undefined1 FUN_1000139d(void)
@@ -6982,7 +6982,7 @@ void FUN_10001456(void)
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
-undefined4 __stdcall // Reference entry 10001460; transcribed reference bytes.
+// Reference entry 10001460; transcribed reference bytes.
 #line 1 "ENTRY_10001460"
 
 __declspec(naked) void FUN_10001460(void)
@@ -10219,7 +10219,7 @@ __declspec(naked) void FUN_10002720(void)
 }
 
 
-void __fastcall // Reference entry 100028d3; transcribed reference bytes.
+// Reference entry 100028d3; transcribed reference bytes.
 #line 1 "ENTRY_100028d3"
 
 __declspec(naked) void FUN_100028d3(void)

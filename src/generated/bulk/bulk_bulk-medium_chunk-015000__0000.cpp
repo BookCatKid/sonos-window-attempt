@@ -1738,14 +1738,14 @@ extern int uStack_8;
 extern int unaff_EDI;
 extern undefined1 LAB_10031520[];
 extern undefined1 LAB_100323a8[];
-extern undefined1 LAB_10064669[];
+extern "C" void LAB_10064669(void);
 extern undefined1 LAB_1006b14e[];
 extern undefined1 LAB_1007e6b3[];
-extern undefined1 LAB_100841f3[];
-extern undefined1 LAB_10088519[];
+extern "C" void LAB_100841f3(void);
+extern "C" void LAB_10088519(void);
 extern undefined1 LAB_1116d5a2[];
-extern undefined1 LAB_111b11e0[];
-extern undefined1 LAB_117c16d0[];
+extern "C" void LAB_111b11e0(void);
+extern "C" void LAB_117c16d0(void);
 extern undefined1 LAB_117cf11d[];
 extern int *PTR_DAT_1211df30;
 extern int *PTR_DAT_12120e30;
@@ -8509,7 +8509,7 @@ void __thiscall Recovered_Bulk::m_FUN_1114b9d0(undefined4 *param_2,undefined4 *p
 
 
 
-void __fastcall // Reference entry 1114d980; transcribed reference bytes.
+// Reference entry 1114d980; transcribed reference bytes.
 #line 1 "ENTRY_1114d980"
 
 __declspec(naked) void FUN_1114d980(void)
@@ -9566,7 +9566,7 @@ undefined4 __fastcall FUN_1115ca20(int param_1)
 
 
 
-void __fastcall // Reference entry 1115ca50; transcribed reference bytes.
+// Reference entry 1115ca50; transcribed reference bytes.
 #line 1 "ENTRY_1115ca50"
 
 __declspec(naked) void FUN_1115ca50(void)
@@ -9647,7 +9647,7 @@ void __fastcall FUN_1115ced0(int param_1)
 }
 
 
-template<class... A> int // Reference entry 1115e0c0; transcribed reference bytes.
+// Reference entry 1115e0c0; transcribed reference bytes.
 #line 1 "ENTRY_1115e0c0"
 
 __declspec(naked) void FUN_1115e0c0(void)

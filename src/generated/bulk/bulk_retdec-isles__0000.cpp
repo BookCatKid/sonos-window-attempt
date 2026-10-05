@@ -1219,7 +1219,7 @@ extern int DAT_122f6eac;
 extern int DAT_122f6ff0;
 extern int DAT_122fa560;
 extern int g_lSCObjCount;
-extern undefined1 LAB_1007d7e0[];
+extern "C" void LAB_1007d7e0(void);
 extern int *PTR_DAT_11c00958;
 extern int *PTR_s_HELLO_1211eeec;
 extern int *PTR_s_delete_119f7d80;

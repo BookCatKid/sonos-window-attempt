@@ -17383,7 +17383,7 @@ void __fastcall FUN_1070a3c0(undefined4 *param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-void __fastcall // Reference entry 1070a3f0; transcribed reference bytes.
+// Reference entry 1070a3f0; transcribed reference bytes.
 #line 1 "ENTRY_1070a3f0"
 
 __declspec(naked) void FUN_1070a3f0(void)
@@ -21045,7 +21045,7 @@ void __fastcall FUN_1072b080(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 1072b0b0; transcribed reference bytes.
+// Reference entry 1072b0b0; transcribed reference bytes.
 #line 1 "ENTRY_1072b0b0"
 
 __declspec(naked) void FUN_1072b0b0(void)
@@ -21082,7 +21082,7 @@ void __fastcall FUN_1072b0d0(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 1072b100; transcribed reference bytes.
+// Reference entry 1072b100; transcribed reference bytes.
 #line 1 "ENTRY_1072b100"
 
 __declspec(naked) void FUN_1072b100(void)
@@ -21119,7 +21119,7 @@ void __fastcall FUN_1072b120(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 1072b150; transcribed reference bytes.
+// Reference entry 1072b150; transcribed reference bytes.
 #line 1 "ENTRY_1072b150"
 
 __declspec(naked) void FUN_1072b150(void)
@@ -21293,7 +21293,7 @@ void __fastcall FUN_1072b300(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 1072b330; transcribed reference bytes.
+// Reference entry 1072b330; transcribed reference bytes.
 #line 1 "ENTRY_1072b330"
 
 __declspec(naked) void FUN_1072b330(void)
@@ -21483,7 +21483,7 @@ void __fastcall FUN_1072b4e0(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 1072b510; transcribed reference bytes.
+// Reference entry 1072b510; transcribed reference bytes.
 #line 1 "ENTRY_1072b510"
 
 __declspec(naked) void FUN_1072b510(void)
@@ -21544,7 +21544,7 @@ void __fastcall FUN_1072b680(undefined4 *param_1)
 
 
 
-void __fastcall // Reference entry 1072b6b0; transcribed reference bytes.
+// Reference entry 1072b6b0; transcribed reference bytes.
 #line 1 "ENTRY_1072b6b0"
 
 __declspec(naked) void FUN_1072b6b0(void)
@@ -21578,7 +21578,7 @@ void __fastcall FUN_1072b6d0(undefined4 *param_1)
 }
 
 
-void __fastcall // Reference entry 1072b700; transcribed reference bytes.
+// Reference entry 1072b700; transcribed reference bytes.
 #line 1 "ENTRY_1072b700"
 
 __declspec(naked) void FUN_1072b700(void)
@@ -21612,7 +21612,7 @@ void __fastcall FUN_1072b720(undefined4 *param_1)
 }
 
 
-template<class... A> int // Reference entry 1072b750; transcribed reference bytes.
+// Reference entry 1072b750; transcribed reference bytes.
 #line 1 "ENTRY_1072b750"
 
 __declspec(naked) void FUN_1072b750(void)
@@ -23646,7 +23646,7 @@ void __fastcall FUN_10750910(undefined4 *param_1)
 }
 
 
-void __fastcall // Reference entry 10750940; transcribed reference bytes.
+// Reference entry 10750940; transcribed reference bytes.
 #line 1 "ENTRY_10750940"
 
 __declspec(naked) void FUN_10750940(void)
