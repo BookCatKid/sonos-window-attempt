@@ -3471,7 +3471,7 @@ SCStr * __stdcall FUN_10d66760(SCStr *param_1)
 // Reference entry 10d668e0; body size 59 bytes.
 #line 1 "ENTRY_10d668e0"
 
-SCStr * FUN_10d668e0(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10d668e0(SCStr *param_1,int param_2)
 
 {
   if ((param_2 != 6) && (param_2 != 7)) {
@@ -23232,7 +23232,7 @@ SCStr * __stdcall FUN_10ef30f0(SCStr *param_1)
 // Reference entry 10ef3110; body size 41 bytes.
 #line 1 "ENTRY_10ef3110"
 
-char * FUN_10ef3110(char *param_1)
+char * __stdcall FUN_10ef3110(char *param_1)
 
 {
   char *pcVar1;

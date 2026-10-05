@@ -39199,7 +39199,7 @@ void __fastcall FUN_10e79390(int *param_1)
 // Reference entry 10e794a0; body size 197 bytes.
 #line 1 "ENTRY_10e794a0"
 
-SCStr * FUN_10e794a0(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10e794a0(SCStr *param_1,int param_2)
 
 {
   switch(param_2) {

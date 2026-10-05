@@ -59029,7 +59029,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10988a20(undefined4 *param_2)
 // Reference entry 10988b70; body size 319 bytes.
 #line 1 "ENTRY_10988b70"
 
-int * FUN_10988b70(int *param_1,undefined4 param_2)
+int * __stdcall FUN_10988b70(int *param_1,undefined4 param_2)
 
 {
  try {
@@ -81344,7 +81344,7 @@ LAB_109ad098:
 // Reference entry 109ad3f0; body size 483 bytes.
 #line 1 "ENTRY_109ad3f0"
 
-SCStr * FUN_109ad3f0(SCStr *param_1)
+SCStr * __stdcall FUN_109ad3f0(SCStr *param_1)
 
 {
  try {

@@ -17951,7 +17951,7 @@ undefined1 __stdcall FUN_101742c0(int *param_1)
 // Reference entry 101742f0; body size 38 bytes.
 #line 1 "ENTRY_101742f0"
 
-undefined4 * FUN_101742f0(int *param_1)
+undefined4 * __stdcall FUN_101742f0(int *param_1)
 
 {
   undefined4 uVar1;
@@ -22353,7 +22353,7 @@ bool __stdcall FUN_10193f70(SCIndexRange *param_1,SCIndexRange *param_2){
 // Reference entry 10193fb0; body size 38 bytes.
 #line 1 "ENTRY_10193fb0"
 
-SCIndexRange * FUN_10193fb0(SCIndexRange *param_1,SCIndexRange *param_2)
+SCIndexRange * __stdcall FUN_10193fb0(SCIndexRange *param_1,SCIndexRange *param_2)
 
 {
   SCIndexRange *pSVar1;
@@ -22400,7 +22400,7 @@ bool __stdcall FUN_10194030(SCIndexRange *param_1,SCIndexRange *param_2){
 // Reference entry 10194070; body size 38 bytes.
 #line 1 "ENTRY_10194070"
 
-SCIndexRange * FUN_10194070(SCIndexRange *param_1,SCIndexRange *param_2)
+SCIndexRange * __stdcall FUN_10194070(SCIndexRange *param_1,SCIndexRange *param_2)
 
 {
   SCIndexRange *pSVar1;

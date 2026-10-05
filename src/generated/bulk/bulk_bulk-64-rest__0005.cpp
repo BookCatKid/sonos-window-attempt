@@ -12334,7 +12334,7 @@ undefined4 * FUN_10436990(undefined4 *param_1)
 // Reference entry 10436b30; body size 241 bytes.
 #line 1 "ENTRY_10436b30"
 
-SCStr * FUN_10436b30(SCStr *param_1)
+SCStr * __stdcall FUN_10436b30(SCStr *param_1)
 
 { int stack0xfffffffc;
  try {
@@ -18193,7 +18193,7 @@ void __thiscall Recovered_Bulk::m_FUN_10440640(undefined4 param_2,SCStr *param_3
 // Reference entry 10440860; body size 139 bytes.
 #line 1 "ENTRY_10440860"
 
-SCStr * FUN_10440860(SCStr *param_1)
+SCStr * __stdcall FUN_10440860(SCStr *param_1)
 
 {
   char cVar1;
@@ -75083,7 +75083,7 @@ void __stdcall FUN_1049b790(undefined4 param_1,SCStr *param_2)
 // Reference entry 1049b880; body size 751 bytes.
 #line 1 "ENTRY_1049b880"
 
-SCImageResource * FUN_1049b880(SCImageResource *param_1,int *param_2,int *param_3)
+SCImageResource * __stdcall FUN_1049b880(SCImageResource *param_1,int *param_2,int *param_3)
 
 { int stack0xfffffffc;
  try {
@@ -75248,7 +75248,7 @@ LAB_1049bd12:
 // Reference entry 1049bd70; body size 482 bytes.
 #line 1 "ENTRY_1049bd70"
 
-undefined4 * FUN_1049bd70(undefined4 *param_1)
+undefined4 * __stdcall FUN_1049bd70(undefined4 *param_1)
 
 {
  try {

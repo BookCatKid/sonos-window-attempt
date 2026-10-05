@@ -68570,7 +68570,7 @@ void __fastcall FUN_10689dc0(int param_1)
 #line 1 "ENTRY_10689e20"
 
 undefined4 *
-FUN_10689e20(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+__stdcall FUN_10689e20(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 { int stack0xfffffffc;
  try {
@@ -68620,7 +68620,7 @@ FUN_10689e20(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 10689f40; body size 427 bytes.
 #line 1 "ENTRY_10689f40"
 
-undefined4 * FUN_10689f40(undefined4 *param_1,SCShare *param_2)
+undefined4 * __stdcall FUN_10689f40(undefined4 *param_1,SCShare *param_2)
 
 { int stack0xfffffffc;
  try {
@@ -81128,7 +81128,7 @@ LAB_1069f196:
 // Reference entry 1069f200; body size 944 bytes.
 #line 1 "ENTRY_1069f200"
 
-undefined4 * FUN_1069f200(undefined4 *param_1,int *param_2)
+undefined4 * __stdcall FUN_1069f200(undefined4 *param_1,int *param_2)
 
 { int stack0xfffffffc;
  try {
@@ -81510,7 +81510,7 @@ undefined4 * FUN_1069f850(undefined4 *param_1)
 // Reference entry 1069fa00; body size 158 bytes.
 #line 1 "ENTRY_1069fa00"
 
-undefined4 * FUN_1069fa00(undefined4 *param_1,int *param_2)
+undefined4 * __stdcall FUN_1069fa00(undefined4 *param_1,int *param_2)
 
 { int stack0xfffffffc;
  try {
@@ -81543,7 +81543,7 @@ undefined4 * FUN_1069fa00(undefined4 *param_1,int *param_2)
 // Reference entry 1069fad0; body size 74 bytes.
 #line 1 "ENTRY_1069fad0"
 
-undefined4 * FUN_1069fad0(undefined4 *param_1,undefined4 *param_2)
+undefined4 * __stdcall FUN_1069fad0(undefined4 *param_1,undefined4 *param_2)
 
 {
   char cVar1;
@@ -102298,7 +102298,7 @@ int * __stdcall FUN_106c2360(int *param_1)
 // Reference entry 106c2400; body size 750 bytes.
 #line 1 "ENTRY_106c2400"
 
-undefined4 * FUN_106c2400(undefined4 *param_1)
+undefined4 * __stdcall FUN_106c2400(undefined4 *param_1)
 
 {
  try {

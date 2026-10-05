@@ -9850,7 +9850,7 @@ void __stdcall FUN_11189900(int param_1,int param_2)
 // Reference entry 1118c1a0; body size 57 bytes.
 #line 1 "ENTRY_1118c1a0"
 
-int * FUN_1118c1a0(undefined4 param_1,int param_2)
+int * __stdcall FUN_1118c1a0(undefined4 param_1,int param_2)
 
 {
   int iVar1;
@@ -22046,7 +22046,7 @@ void __fastcall FUN_1127c4b0(int param_1)
 // Reference entry 1127c6d0; body size 39 bytes.
 #line 1 "ENTRY_1127c6d0"
 
-undefined1 * FUN_1127c6d0(undefined4 param_1)
+undefined1 * __stdcall FUN_1127c6d0(undefined4 param_1)
 
 {
   int iVar1;

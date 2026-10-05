@@ -1032,7 +1032,7 @@ extern int FUN_1146c240(...);
 extern int FUN_11478640(...);
 extern int FUN_1148a4d2(...);
 extern int FUN_1148a589(...);
-extern int FUN_1148b51b(...);
+extern int __stdcall FUN_1148b51b(...);
 template<class... A> int FUN_1148c2d0(A...);
 template<class... A> int FUN_1148c94c(A...);
 extern __declspec(dllimport) int GetCurrentProcess(...);

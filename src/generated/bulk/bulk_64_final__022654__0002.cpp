@@ -22618,7 +22618,7 @@ int * FUN_10d77b70(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
 // Reference entry 10d77dc0; body size 103 bytes.
 #line 1 "ENTRY_10d77dc0"
 
-SCStr * FUN_10d77dc0(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10d77dc0(SCStr *param_1,int param_2)
 
 {
   if (param_2 == -1) {
@@ -46548,7 +46548,7 @@ LAB_10d9d2a8:
 // Reference entry 10d9d410; body size 486 bytes.
 #line 1 "ENTRY_10d9d410"
 
-undefined4 * FUN_10d9d410(undefined4 *param_1,int *param_2)
+undefined4 * __stdcall FUN_10d9d410(undefined4 *param_1,int *param_2)
 
 {
  try {
@@ -60912,7 +60912,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10db49e0(SCStr *param_2,int param_3)
 // Reference entry 10db4d10; body size 104 bytes.
 #line 1 "ENTRY_10db4d10"
 
-SCStr * FUN_10db4d10(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10db4d10(SCStr *param_1,int param_2)
 
 {
   if (param_2 == 0) {
@@ -75406,7 +75406,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10dcd360(int *param_2)
 // Reference entry 10dcd6e0; body size 99 bytes.
 #line 1 "ENTRY_10dcd6e0"
 
-SCStr * FUN_10dcd6e0(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10dcd6e0(SCStr *param_1,int param_2)
 
 {
   char *pcVar1;

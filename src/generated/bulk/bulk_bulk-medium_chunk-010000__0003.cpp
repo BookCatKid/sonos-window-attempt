@@ -1899,7 +1899,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_110b7120(byte param_2)
 // Reference entry 110b7de0; body size 40 bytes.
 #line 1 "ENTRY_110b7de0"
 
-undefined4 * FUN_110b7de0(undefined4 *param_1)
+undefined4 * __stdcall FUN_110b7de0(undefined4 *param_1)
 
 {
   undefined4 uVar1;

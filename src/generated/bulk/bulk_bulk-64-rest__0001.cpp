@@ -36437,7 +36437,7 @@ undefined4 FUN_101f0dc0(undefined4 param_1)
 // Reference entry 101f0e90; body size 252 bytes.
 #line 1 "ENTRY_101f0e90"
 
-undefined4 * FUN_101f0e90(undefined4 *param_1,SCStr *param_2,undefined4 param_3)
+undefined4 * __stdcall FUN_101f0e90(undefined4 *param_1,SCStr *param_2,undefined4 param_3)
 
 {
  try {
@@ -36503,7 +36503,7 @@ undefined4 * FUN_101f0e90(undefined4 *param_1,SCStr *param_2,undefined4 param_3)
 // Reference entry 101f0fd0; body size 252 bytes.
 #line 1 "ENTRY_101f0fd0"
 
-undefined4 * FUN_101f0fd0(undefined4 *param_1,SCStr *param_2,undefined4 param_3)
+undefined4 * __stdcall FUN_101f0fd0(undefined4 *param_1,SCStr *param_2,undefined4 param_3)
 
 {
  try {
@@ -74742,7 +74742,7 @@ undefined4 * __stdcall FUN_10238060(undefined4 *param_1)
 // Reference entry 10238220; body size 669 bytes.
 #line 1 "ENTRY_10238220"
 
-undefined4 * FUN_10238220(undefined4 *param_1)
+undefined4 * __stdcall FUN_10238220(undefined4 *param_1)
 
 {
  try {
@@ -87575,7 +87575,7 @@ SCImageResource * FUN_1024c690(SCImageResource *param_1,undefined4 param_2)
 // Reference entry 1024cfc0; body size 699 bytes.
 #line 1 "ENTRY_1024cfc0"
 
-SCStr * FUN_1024cfc0(SCStr *param_1,undefined4 param_2)
+SCStr * __stdcall FUN_1024cfc0(SCStr *param_1,undefined4 param_2)
 
 {
   switch(param_2) {
@@ -87878,7 +87878,7 @@ undefined4 __stdcall FUN_1024d3c0(undefined1 *param_1)
 // Reference entry 1024d830; body size 398 bytes.
 #line 1 "ENTRY_1024d830"
 
-SCStr * FUN_1024d830(SCStr *param_1,undefined4 param_2)
+SCStr * __stdcall FUN_1024d830(SCStr *param_1,undefined4 param_2)
 
 {
  try {
@@ -89405,7 +89405,7 @@ LAB_10250099:
 // Reference entry 10250d90; body size 195 bytes.
 #line 1 "ENTRY_10250d90"
 
-undefined4 * FUN_10250d90(undefined4 *param_1)
+undefined4 * __stdcall FUN_10250d90(undefined4 *param_1)
 
 { int stack0xfffffffc;
  try {
@@ -90034,7 +90034,7 @@ LAB_10251a92:
 // Reference entry 10251c40; body size 141 bytes.
 #line 1 "ENTRY_10251c40"
 
-undefined4 * FUN_10251c40(undefined4 *param_1,undefined4 param_2)
+undefined4 * __stdcall FUN_10251c40(undefined4 *param_1,undefined4 param_2)
 
 { int stack0xfffffffc;
  try {

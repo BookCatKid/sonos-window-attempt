@@ -29581,7 +29581,7 @@ void __thiscall Recovered_Bulk::m_FUN_103ab8c0(uint param_2)
 // Reference entry 103ab950; body size 83 bytes.
 #line 1 "ENTRY_103ab950"
 
-int * FUN_103ab950(int *param_1,int param_2,int *param_3)
+int * __stdcall FUN_103ab950(int *param_1,int param_2,int *param_3)
 
 {
   if (*param_3 == (int)((0))) {
@@ -77681,7 +77681,7 @@ undefined4 FUN_103ff8c0(SCStr *param_1)
 // Reference entry 103ffa00; body size 107 bytes.
 #line 1 "ENTRY_103ffa00"
 
-SCStr * FUN_103ffa00(SCStr *param_1)
+SCStr * __stdcall FUN_103ffa00(SCStr *param_1)
 
 {
   int iVar1;
@@ -94686,7 +94686,7 @@ SCStr * __stdcall FUN_1041b570(SCStr *param_1,int *param_2,int *param_3)
 // Reference entry 1041b6d0; body size 108 bytes.
 #line 1 "ENTRY_1041b6d0"
 
-SCStr * FUN_1041b6d0(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_1041b6d0(SCStr *param_1,int param_2)
 
 {
   int *piVar1;

@@ -8045,7 +8045,7 @@ LAB_10e11ec8:
 // Reference entry 10e11fc0; body size 167 bytes.
 #line 1 "ENTRY_10e11fc0"
 
-SCStr * FUN_10e11fc0(SCStr *param_1,char *param_2)
+SCStr * __stdcall FUN_10e11fc0(SCStr *param_1,char *param_2)
 
 {
  try {
@@ -18842,7 +18842,7 @@ void __fastcall FUN_10e23ff0(int *param_1)
 // Reference entry 10e24100; body size 73 bytes.
 #line 1 "ENTRY_10e24100"
 
-SCStr * FUN_10e24100(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10e24100(SCStr *param_1,int param_2)
 
 {
   if (param_2 == 0) {
@@ -18861,7 +18861,7 @@ SCStr * FUN_10e24100(SCStr *param_1,int param_2)
 // Reference entry 10e24160; body size 128 bytes.
 #line 1 "ENTRY_10e24160"
 
-SCStr * FUN_10e24160(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10e24160(SCStr *param_1,int param_2)
 
 {
   switch(param_2) {

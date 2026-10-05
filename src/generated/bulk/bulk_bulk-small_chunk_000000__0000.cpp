@@ -5113,7 +5113,7 @@ int __thiscall Recovered_Bulk::m_FUN_1000100f(int param_2)
 // Reference entry 10001014; body size 5 bytes.
 #line 1 "ENTRY_10001014"
 
-SCStr * FUN_10001014(SCStr *param_1)
+SCStr * __stdcall FUN_10001014(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("sec_player_calc_confirm");
@@ -6773,7 +6773,7 @@ void FUN_100011bd(void)
 // Reference entry 100011c7; body size 5 bytes.
 #line 1 "ENTRY_100011c7"
 
-SCStr * FUN_100011c7(SCStr *param_1)
+SCStr * __stdcall FUN_100011c7(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("");
@@ -9070,7 +9070,7 @@ void FUN_1000131b(void)
 
 #line 1 "ENTRY_10001320"
 
-SCStr * FUN_10001320(SCStr *param_1)
+SCStr * __stdcall FUN_10001320(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("");
@@ -10428,7 +10428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10001438(undefined4 param_2)
 // Reference entry 1000143d; body size 5 bytes.
 #line 1 "ENTRY_1000143d"
 
-SCStr * FUN_1000143d(SCStr *param_1)
+SCStr * __stdcall FUN_1000143d(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("SCIActionCategoryInstant");
@@ -10799,7 +10799,7 @@ LAB_10620746:
 // Reference entry 1000146a; body size 5 bytes.
 #line 1 "ENTRY_1000146a"
 
-SCStr * FUN_1000146a(SCStr *param_1)
+SCStr * __stdcall FUN_1000146a(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("SCIActionCategoryDefault");
@@ -11104,7 +11104,7 @@ undefined4 __fastcall FUN_1000155f(undefined4 param_1)
 // Reference entry 10001564; body size 5 bytes.
 #line 1 "ENTRY_10001564"
 
-SCStr * FUN_10001564(SCStr *param_1)
+SCStr * __stdcall FUN_10001564(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("SCIActionCategorySettings");
@@ -11115,7 +11115,7 @@ SCStr * FUN_10001564(SCStr *param_1)
 // Reference entry 10001569; body size 5 bytes.
 #line 1 "ENTRY_10001569"
 
-SCStr * FUN_10001569(SCStr *param_1)
+SCStr * __stdcall FUN_10001569(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("STATE_SECURE_EXISTING_INIT");
@@ -11200,7 +11200,7 @@ undefined4 FUN_100015a0(void)
 // Reference entry 100015aa; body size 5 bytes.
 #line 1 "ENTRY_100015aa"
 
-int * FUN_100015aa(int *param_1)
+int * __stdcall FUN_100015aa(int *param_1)
 
 {
  try {
@@ -11296,7 +11296,7 @@ void FUN_100015c8(void)
 // Reference entry 100015dc; body size 5 bytes.
 #line 1 "ENTRY_100015dc"
 
-undefined4 * FUN_100015dc(undefined4 *param_1)
+undefined4 * __stdcall FUN_100015dc(undefined4 *param_1)
 
 {
  try {
@@ -11348,7 +11348,7 @@ undefined4 * FUN_100015dc(undefined4 *param_1)
 
 // Reference entry 100015e6; body size 5 bytes.
 #line 1 "ENTRY_100015e6"
-SCStr * FUN_100015e6(int *param_1,undefined4 param_2){
+SCStr * __stdcall FUN_100015e6(int *param_1,undefined4 param_2){
  try {
   uint uVar1;
   SCStr *pSVar2;
@@ -11982,7 +11982,7 @@ void __fastcall FUN_100016a9(int param_1)
 // Reference entry 100016c7; body size 5 bytes.
 #line 1 "ENTRY_100016c7"
 
-SCStr * FUN_100016c7(SCStr *param_1)
+SCStr * __stdcall FUN_100016c7(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("SCIActionCategoryDefault");
@@ -12105,7 +12105,7 @@ undefined2 __fastcall FUN_100016fe(int param_1)
 // Reference entry 10001712; body size 5 bytes.
 #line 1 "ENTRY_10001712"
 
-SCStr * FUN_10001712(SCStr *param_1)
+SCStr * __stdcall FUN_10001712(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("");
@@ -13670,7 +13670,7 @@ undefined4 __fastcall FUN_10001956(int *param_1){
 
 // Reference entry 1000195b; body size 5 bytes.
 #line 1 "ENTRY_1000195b"
-SCIndexRange * FUN_1000195b(SCIndexRange *param_1,SCIndexRange *param_2){
+SCIndexRange * __stdcall FUN_1000195b(SCIndexRange *param_1,SCIndexRange *param_2){
   SCIndexRange *pSVar1;
   
                     
@@ -14126,7 +14126,7 @@ void FUN_1000199c(void)
 // Reference entry 100019a1; body size 5 bytes.
 #line 1 "ENTRY_100019a1"
 
-undefined4 * FUN_100019a1(undefined4 *param_1)
+undefined4 * __stdcall FUN_100019a1(undefined4 *param_1)
 
 {
  try {
@@ -14619,7 +14619,7 @@ void __fastcall FUN_100019b0(int param_1)
 // Reference entry 100019b5; body size 5 bytes.
 #line 1 "ENTRY_100019b5"
 
-SCStr * FUN_100019b5(SCStr *param_1)
+SCStr * __stdcall FUN_100019b5(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("SCIActionCategorySettings");
@@ -15165,7 +15165,7 @@ void __stdcall FUN_100019e7(int *param_1){
 // Reference entry 100019fb; body size 5 bytes.
 #line 1 "ENTRY_100019fb"
 
-SCStr * FUN_100019fb(SCStr *param_1)
+SCStr * __stdcall FUN_100019fb(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -20135,7 +20135,7 @@ LAB_1110e4dd:
 // Reference entry 10001e0b; body size 5 bytes.
 #line 1 "ENTRY_10001e0b"
 
-SCStr * FUN_10001e0b(SCStr *param_1)
+SCStr * __stdcall FUN_10001e0b(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -21266,7 +21266,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10001ff5(SCStr *param_2)
 // Reference entry 10001ffa; body size 5 bytes.
 #line 1 "ENTRY_10001ffa"
 
-SCStr * FUN_10001ffa(SCStr *param_1)
+SCStr * __stdcall FUN_10001ffa(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -21911,7 +21911,7 @@ void FUN_100020ea(void){
 // Reference entry 1000210d; body size 5 bytes.
 #line 1 "ENTRY_1000210d"
 
-SCStr * FUN_1000210d(SCStr *param_1)
+SCStr * __stdcall FUN_1000210d(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("STATE_ALEXA_AUTH_ROOM");
@@ -22844,7 +22844,7 @@ void __fastcall FUN_100022d9(int param_1)
 // Reference entry 100022de; body size 5 bytes.
 #line 1 "ENTRY_100022de"
 
-SCStr * FUN_100022de(SCStr *param_1)
+SCStr * __stdcall FUN_100022de(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("sec_player_unconfirmed");
@@ -24202,7 +24202,7 @@ undefined1 FUN_100023fb(void)
 // Reference entry 10002405; body size 5 bytes.
 #line 1 "ENTRY_10002405"
 
-SCStr * FUN_10002405(SCStr *param_1)
+SCStr * __stdcall FUN_10002405(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("");
@@ -24213,7 +24213,7 @@ SCStr * FUN_10002405(SCStr *param_1)
 // Reference entry 1000240f; body size 5 bytes.
 #line 1 "ENTRY_1000240f"
 
-SCStr * FUN_1000240f(SCStr *param_1)
+SCStr * __stdcall FUN_1000240f(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -26625,7 +26625,7 @@ int __thiscall Recovered_Bulk::m_FUN_1000269e(undefined4 param_2)
 // Reference entry 100026ad; body size 5 bytes.
 #line 1 "ENTRY_100026ad"
 
-undefined4 * FUN_100026ad(undefined4 *param_1)
+undefined4 * __stdcall FUN_100026ad(undefined4 *param_1)
 
 {
  try {
@@ -29096,7 +29096,7 @@ bool __fastcall FUN_10002978(int param_1)
 // Reference entry 10002982; body size 5 bytes.
 #line 1 "ENTRY_10002982"
 
-undefined4 * FUN_10002982(undefined4 *param_1)
+undefined4 * __stdcall FUN_10002982(undefined4 *param_1)
 
 {
  try {
@@ -29344,7 +29344,7 @@ void FUN_100029b9(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
 // Reference entry 100029be; body size 5 bytes.
 #line 1 "ENTRY_100029be"
 
-SCStr * FUN_100029be(SCStr *param_1)
+SCStr * __stdcall FUN_100029be(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("sec_registration.reset_password");
@@ -29388,7 +29388,7 @@ void __fastcall FUN_100029cd(int param_1)
 // Reference entry 100029dc; body size 5 bytes.
 #line 1 "ENTRY_100029dc"
 
-SCStr * FUN_100029dc(SCStr *param_1)
+SCStr * __stdcall FUN_100029dc(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("Secure Player Wizard");
@@ -30121,7 +30121,7 @@ int __fastcall FUN_10002a9f(int *param_1)
 // Reference entry 10002aa9; body size 5 bytes.
 #line 1 "ENTRY_10002aa9"
 
-SCStr * FUN_10002aa9(SCStr *param_1)
+SCStr * __stdcall FUN_10002aa9(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("");
@@ -31026,7 +31026,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10002bad(undefined4 param_2,int *par
 // Reference entry 10002bc1; body size 5 bytes.
 #line 1 "ENTRY_10002bc1"
 
-undefined4 * FUN_10002bc1(undefined4 *param_1)
+undefined4 * __stdcall FUN_10002bc1(undefined4 *param_1)
 
 {
  try {
@@ -32230,7 +32230,7 @@ void __thiscall Recovered_Bulk::m_FUN_10002d51(int param_2,char *param_3)
 // Reference entry 10002d56; body size 5 bytes.
 #line 1 "ENTRY_10002d56"
 
-SCStr * FUN_10002d56(SCStr *param_1)
+SCStr * __stdcall FUN_10002d56(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("lifecycle_launcher.mixed_hh");
@@ -33109,7 +33109,7 @@ undefined4 FUN_10002eaa(void)
 // Reference entry 10002eb4; body size 5 bytes.
 #line 1 "ENTRY_10002eb4"
 
-SCStr * FUN_10002eb4(SCStr *param_1)
+SCStr * __stdcall FUN_10002eb4(SCStr *param_1)
 
 { int stack0xfffffffc;
  try {
@@ -34674,7 +34674,7 @@ undefined4 uVar4;
 // Reference entry 10003030; body size 5 bytes.
 #line 1 "ENTRY_10003030"
 
-SCStr * FUN_10003030(SCStr *param_1)
+SCStr * __stdcall FUN_10003030(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("SCIActionCategoryPush");
@@ -35766,7 +35766,7 @@ LAB_10a8f545:
 // Reference entry 100031f7; body size 5 bytes.
 #line 1 "ENTRY_100031f7"
 
-undefined4 * FUN_100031f7(undefined4 *param_1)
+undefined4 * __stdcall FUN_100031f7(undefined4 *param_1)
 
 {
  try {
@@ -36195,7 +36195,7 @@ void __thiscall Recovered_Bulk::m_FUN_10003265(SCStr *param_2,SCStr *param_3)
 // Reference entry 1000326a; body size 5 bytes.
 #line 1 "ENTRY_1000326a"
 
-SCStr * FUN_1000326a(SCStr *param_1)
+SCStr * __stdcall FUN_1000326a(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("lifecycle_player_removal.reset_failed");
@@ -36957,7 +36957,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000332d(byte param_2)
 // Reference entry 10003332; body size 5 bytes.
 #line 1 "ENTRY_10003332"
 
-SCStr * FUN_10003332(SCStr *param_1)
+SCStr * __stdcall FUN_10003332(SCStr *param_1)
 
 {
   char * pcVar1;
@@ -38353,7 +38353,7 @@ undefined4 __fastcall FUN_100034a4(int param_1)
 // Reference entry 100034b3; body size 5 bytes.
 #line 1 "ENTRY_100034b3"
 
-undefined4 * FUN_100034b3(undefined4 *param_1)
+undefined4 * __stdcall FUN_100034b3(undefined4 *param_1)
 
 {
  try {
@@ -38903,7 +38903,7 @@ undefined1 FUN_100034d1(void)
 // Reference entry 100034e0; body size 5 bytes.
 #line 1 "ENTRY_100034e0"
 
-SCStr * FUN_100034e0(SCStr *param_1)
+SCStr * __stdcall FUN_100034e0(SCStr *param_1)
 
 {
   char cVar1;
@@ -41522,7 +41522,7 @@ LAB_111358aa:
 // Reference entry 10003765; body size 5 bytes.
 #line 1 "ENTRY_10003765"
 
-SCStr * FUN_10003765(SCStr *param_1)
+SCStr * __stdcall FUN_10003765(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->int_allocRep("SCServiceDescriptorManager");
@@ -44559,7 +44559,7 @@ int __fastcall FUN_10003aa3(int param_1)
 // Reference entry 10003aa8; body size 5 bytes.
 #line 1 "ENTRY_10003aa8"
 
-SCStr * FUN_10003aa8(SCStr *param_1)
+SCStr * __stdcall FUN_10003aa8(SCStr *param_1)
 
 {
   ((SCStr *)(param_1))->m_op_ctor((SCStr *)&DAT_121a07b0);

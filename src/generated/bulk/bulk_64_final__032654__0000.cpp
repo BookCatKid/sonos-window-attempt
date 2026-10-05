@@ -9050,13 +9050,13 @@ LAB_1108593a:
         }
         iVar7 = (int)((**(code **)(*(int *)(local_54 + 0x1c) + 4))(param_1,1), 0);
         if (iVar7 == 0) {
-          local_ac = (code *)(thunk_FUN_11087730<>);
+          local_ac = (code *)static_cast<int (__stdcall *)(void)>(thunk_FUN_11087730);
           iStack_a8 = (int)(iVar7);
           iStack_a4 = (int)(iVar7);
           iStack_a0 = (int)(iVar7);
           thunk_FUN_110864c0(param_1,param_2,local_6c,local_50,local_4c,uVar3,local_68,local_64, local_60,local_5c,local_58,local_48,local_44,local_40,local_3c,local_38
                              ,local_34,local_30,param_4,local_2c,local_28,local_24,local_20,local_1c
-                             ,local_18,local_14,param_3,param_5,1,3,thunk_FUN_11087730<>,0,0,0);
+                             ,local_18,local_14,param_3,param_5,1,3,static_cast<int (__stdcall *)(void)>(thunk_FUN_11087730),0,0,0);
         }
         else {
           *param_6 = (int)(iVar7);
@@ -23500,7 +23500,7 @@ undefined4 __stdcall FUN_110a0410(char *param_1){ int stack0xfffffffc;
 // Reference entry 110a05c0; body size 324 bytes.
 #line 1 "ENTRY_110a05c0"
 
-undefined4 * FUN_110a05c0(undefined4 param_1,undefined4 param_2)
+undefined4 * __stdcall FUN_110a05c0(undefined4 param_1,undefined4 param_2)
 
 { int stack0xfffffffc;
  try {
@@ -33398,7 +33398,7 @@ void __stdcall FUN_110b2320(undefined4 param_1,undefined4 param_2){
 // Reference entry 110b2410; body size 607 bytes.
 #line 1 "ENTRY_110b2410"
 
-undefined4 * FUN_110b2410(int *param_1,undefined4 *param_2)
+undefined4 * __stdcall FUN_110b2410(int *param_1,undefined4 *param_2)
 
 { int stack0xfffffffc;
  try {
@@ -38407,7 +38407,7 @@ LAB_110bc1cf:
 // Reference entry 110bc220; body size 259 bytes.
 #line 1 "ENTRY_110bc220"
 
-undefined4 * FUN_110bc220(undefined4 *param_1,undefined4 param_2)
+undefined4 * __stdcall FUN_110bc220(undefined4 *param_1,undefined4 param_2)
 
 {
  try {
@@ -63628,7 +63628,7 @@ void FUN_110ec260(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 110ec2f0; body size 850 bytes.
 #line 1 "ENTRY_110ec2f0"
 
-undefined1 * FUN_110ec2f0(int *param_1)
+undefined1 * __stdcall FUN_110ec2f0(int *param_1)
 
 {
  try {

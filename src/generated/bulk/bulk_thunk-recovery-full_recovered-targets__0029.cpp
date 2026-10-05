@@ -14830,7 +14830,7 @@ uint FUN_11269520(char *param_1,char *param_2)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-undefined1 * FUN_11269fa0(undefined1 *param_1,undefined4 param_2)
+undefined1 * __stdcall FUN_11269fa0(undefined1 *param_1,undefined4 param_2)
 
 {
   char cVar1;

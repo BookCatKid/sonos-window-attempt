@@ -6639,7 +6639,7 @@ undefined4 FUN_101a1800(void)
 // Reference entry 101a19a0; body size 35 bytes.
 #line 1 "ENTRY_101a19a0"
 
-undefined4 * FUN_101a19a0(undefined4 param_1,undefined4 param_2)
+undefined4 * __stdcall FUN_101a19a0(undefined4 param_1,undefined4 param_2)
 
 {
   undefined4 *puVar1;

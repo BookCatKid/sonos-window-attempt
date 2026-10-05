@@ -4939,7 +4939,7 @@ undefined4 * __stdcall FUN_11047de0(undefined4 *param_1)
 // Reference entry 11047e60; body size 668 bytes.
 #line 1 "ENTRY_11047e60"
 
-SCStr * FUN_11047e60(SCStr *param_1)
+SCStr * __stdcall FUN_11047e60(SCStr *param_1)
 
 {
  try {
@@ -11903,7 +11903,7 @@ undefined4 __stdcall FUN_11052f50(undefined4 param_1,SCStr *param_2)
 // Reference entry 11053180; body size 92 bytes.
 #line 1 "ENTRY_11053180"
 
-SCStr * FUN_11053180(SCStr *param_1)
+SCStr * __stdcall FUN_11053180(SCStr *param_1)
 
 {
   char *pcVar1;

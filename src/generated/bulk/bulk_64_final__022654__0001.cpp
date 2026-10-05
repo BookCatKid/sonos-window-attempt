@@ -36303,7 +36303,7 @@ SCStr * __stdcall FUN_10ceaad0(SCStr *param_1)
 // Reference entry 10ceac50; body size 97 bytes.
 #line 1 "ENTRY_10ceac50"
 
-undefined4 * FUN_10ceac50(undefined4 *param_1)
+undefined4 * __stdcall FUN_10ceac50(undefined4 *param_1)
 
 {
   int *piVar1;
@@ -75131,7 +75131,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10d29e10(undefined4 param_2,undefine
 // Reference entry 10d2a100; body size 66 bytes.
 #line 1 "ENTRY_10d2a100"
 
-SCStr * FUN_10d2a100(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10d2a100(SCStr *param_1,int param_2)
 
 {
   char *pcVar1;
@@ -82902,7 +82902,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10d35cc0(SCStr *param_2,undefined4 para
 // Reference entry 10d35dd0; body size 411 bytes.
 #line 1 "ENTRY_10d35dd0"
 
-undefined4 * FUN_10d35dd0(undefined4 *param_1)
+undefined4 * __stdcall FUN_10d35dd0(undefined4 *param_1)
 
 { int stack0xfffffffc;
  try {
@@ -92695,7 +92695,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10d45fb0(SCStr *param_2,int param_3)
 // Reference entry 10d46020; body size 67 bytes.
 #line 1 "ENTRY_10d46020"
 
-SCStr * FUN_10d46020(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10d46020(SCStr *param_1,int param_2)
 
 {
   char *pcVar1;
@@ -92713,7 +92713,7 @@ SCStr * FUN_10d46020(SCStr *param_1,int param_2)
 // Reference entry 10d46080; body size 67 bytes.
 #line 1 "ENTRY_10d46080"
 
-SCStr * FUN_10d46080(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10d46080(SCStr *param_1,int param_2)
 
 {
   char *pcVar1;
@@ -98552,7 +98552,7 @@ int __fastcall FUN_10d4f340(int *param_1)
 // Reference entry 10d4f3d0; body size 82 bytes.
 #line 1 "ENTRY_10d4f3d0"
 
-SCStr * FUN_10d4f3d0(SCStr *param_1,int param_2,undefined4 param_3)
+SCStr * __stdcall FUN_10d4f3d0(SCStr *param_1,int param_2,undefined4 param_3)
 
 {
   if (param_2 == 1) {
@@ -101862,7 +101862,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10d55080(SCStr *param_2,undefined4 para
 // Reference entry 10d55180; body size 411 bytes.
 #line 1 "ENTRY_10d55180"
 
-undefined4 * FUN_10d55180(undefined4 *param_1)
+undefined4 * __stdcall FUN_10d55180(undefined4 *param_1)
 
 { int stack0xfffffffc;
  try {

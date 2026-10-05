@@ -13560,7 +13560,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10be6090(undefined4 *param_2,undef
 // Reference entry 10be63c0; body size 260 bytes.
 #line 1 "ENTRY_10be63c0"
 
-undefined4 * FUN_10be63c0(undefined4 *param_1,undefined4 param_2,int *param_3)
+undefined4 * __stdcall FUN_10be63c0(undefined4 *param_1,undefined4 param_2,int *param_3)
 
 {
  try {
@@ -13627,7 +13627,7 @@ undefined4 * FUN_10be63c0(undefined4 *param_1,undefined4 param_2,int *param_3)
 // Reference entry 10be6510; body size 295 bytes.
 #line 1 "ENTRY_10be6510"
 
-undefined4 * FUN_10be6510(undefined4 *param_1,undefined4 param_2,undefined4 param_3)
+undefined4 * __stdcall FUN_10be6510(undefined4 *param_1,undefined4 param_2,undefined4 param_3)
 
 {
  try {

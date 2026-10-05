@@ -85840,7 +85840,7 @@ undefined4 __fastcall FUN_10b9e7e0(int param_1)
 #line 1 "ENTRY_10b9e930"
 
 undefined4 *
-FUN_10b9e930(undefined4 *param_1,undefined4 param_2,int param_3,int param_4,undefined1 param_5)
+__stdcall FUN_10b9e930(undefined4 *param_1,undefined4 param_2,int param_3,int param_4,undefined1 param_5)
 
 {
  try {
@@ -99756,7 +99756,7 @@ undefined4 * __fastcall FUN_10bb78f0(int param_1)
 // Reference entry 10bb7a80; body size 215 bytes.
 #line 1 "ENTRY_10bb7a80"
 
-SCStr * FUN_10bb7a80(SCStr *param_1,undefined4 param_2)
+SCStr * __stdcall FUN_10bb7a80(SCStr *param_1,undefined4 param_2)
 
 {
   switch(param_2) {
@@ -99794,7 +99794,7 @@ SCStr * FUN_10bb7a80(SCStr *param_1,undefined4 param_2)
 // Reference entry 10bb7bc0; body size 150 bytes.
 #line 1 "ENTRY_10bb7bc0"
 
-SCStr * FUN_10bb7bc0(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10bb7bc0(SCStr *param_1,int param_2)
 
 {
   switch(param_2) {

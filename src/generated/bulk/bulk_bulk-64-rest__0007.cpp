@@ -37206,7 +37206,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_105dfad0(undefined4 *param_2,byte 
 // Reference entry 105dfd90; body size 684 bytes.
 #line 1 "ENTRY_105dfd90"
 
-undefined4 * FUN_105dfd90(undefined4 *param_1,byte param_2)
+undefined4 * __stdcall FUN_105dfd90(undefined4 *param_1,byte param_2)
 
 { int stack0xffffffa8;
  try {
@@ -37367,7 +37367,7 @@ undefined4 * FUN_105dfd90(undefined4 *param_1,byte param_2)
 // Reference entry 105e00f0; body size 684 bytes.
 #line 1 "ENTRY_105e00f0"
 
-undefined4 * FUN_105e00f0(undefined4 *param_1,byte param_2)
+undefined4 * __stdcall FUN_105e00f0(undefined4 *param_1,byte param_2)
 
 { int stack0xffffffa8;
  try {
@@ -37875,7 +37875,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_105e0a50(undefined4 *param_2,char 
 // Reference entry 105e0c30; body size 728 bytes.
 #line 1 "ENTRY_105e0c30"
 
-undefined4 * FUN_105e0c30(undefined4 *param_1,char param_2)
+undefined4 * __stdcall FUN_105e0c30(undefined4 *param_1,char param_2)
 
 { int stack0xffffffa8;
  try {

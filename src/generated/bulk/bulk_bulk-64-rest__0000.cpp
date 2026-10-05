@@ -41774,7 +41774,7 @@ undefined4 __stdcall FUN_10193e20(SCStr *param_1,SCStr *param_2){
 // Reference entry 101940a0; body size 135 bytes.
 #line 1 "ENTRY_101940a0"
 
-undefined4 * FUN_101940a0(SCIndexRange *param_1,int param_2)
+undefined4 * __stdcall FUN_101940a0(SCIndexRange *param_1,int param_2)
 
 {
   undefined4 *puVar1;
@@ -47143,7 +47143,7 @@ SCStr * __stdcall FUN_101a18e0(ushort *param_1)
 // Reference entry 101a19d0; body size 67 bytes.
 #line 1 "ENTRY_101a19d0"
 
-undefined4 * FUN_101a19d0(undefined4 *param_1)
+undefined4 * __stdcall FUN_101a19d0(undefined4 *param_1)
 
 {
   undefined4 *puVar1;

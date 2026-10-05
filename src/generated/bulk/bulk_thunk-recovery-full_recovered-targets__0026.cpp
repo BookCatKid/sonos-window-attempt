@@ -12167,7 +12167,7 @@ void __fastcall FUN_110b6c30(undefined4 *param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-undefined * FUN_110b75a0(byte *param_1)
+undefined * __stdcall FUN_110b75a0(byte *param_1)
 
 {
   byte bVar1;

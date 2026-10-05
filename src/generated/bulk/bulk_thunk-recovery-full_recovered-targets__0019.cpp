@@ -17880,7 +17880,7 @@ undefined4 __fastcall FUN_10c68f80(undefined4 *param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-int * FUN_10c69f10(int *param_1)
+int * __stdcall FUN_10c69f10(int *param_1)
 
 {
   int *piVar1;

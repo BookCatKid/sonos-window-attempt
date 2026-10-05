@@ -28868,7 +28868,7 @@ void __fastcall FUN_10fb88e0(int param_1)
 // Reference entry 10fb8f40; body size 175 bytes.
 #line 1 "ENTRY_10fb8f40"
 
-SCStr * FUN_10fb8f40(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10fb8f40(SCStr *param_1,int param_2)
 
 {
   switch(param_2) {
@@ -63087,7 +63087,7 @@ int * __stdcall FUN_10ff1990(int *param_1,undefined4 *param_2,int *param_3)
 // Reference entry 10ff1b10; body size 71 bytes.
 #line 1 "ENTRY_10ff1b10"
 
-SCStr * FUN_10ff1b10(SCStr *param_1,int param_2,undefined4 param_3)
+SCStr * __stdcall FUN_10ff1b10(SCStr *param_1,int param_2,undefined4 param_3)
 
 {
   char cVar1;
@@ -101037,7 +101037,7 @@ int * __thiscall Recovered_Bulk::m_FUN_11030480(int *param_2)
 // Reference entry 11030ad0; body size 358 bytes.
 #line 1 "ENTRY_11030ad0"
 
-undefined4 * FUN_11030ad0(undefined4 *param_1)
+undefined4 * __stdcall FUN_11030ad0(undefined4 *param_1)
 
 {
  try {
@@ -101115,7 +101115,7 @@ undefined4 * FUN_11030ad0(undefined4 *param_1)
 // Reference entry 11030d40; body size 65 bytes.
 #line 1 "ENTRY_11030d40"
 
-SCStr * FUN_11030d40(SCStr *param_1,undefined4 param_2)
+SCStr * __stdcall FUN_11030d40(SCStr *param_1,undefined4 param_2)
 
 {
   char cVar1;
@@ -101133,7 +101133,7 @@ SCStr * FUN_11030d40(SCStr *param_1,undefined4 param_2)
 // Reference entry 11030da0; body size 69 bytes.
 #line 1 "ENTRY_11030da0"
 
-SCStr * FUN_11030da0(SCStr *param_1,undefined4 param_2,undefined4 param_3)
+SCStr * __stdcall FUN_11030da0(SCStr *param_1,undefined4 param_2,undefined4 param_3)
 
 {
   char cVar1;
@@ -105926,7 +105926,7 @@ undefined1 * __fastcall FUN_11037de0(int param_1)
 // Reference entry 11037f20; body size 332 bytes.
 #line 1 "ENTRY_11037f20"
 
-undefined4 * FUN_11037f20(undefined4 param_1,undefined4 param_2)
+undefined4 * __stdcall FUN_11037f20(undefined4 param_1,undefined4 param_2)
 
 { int stack0xfffffffc;
  try {

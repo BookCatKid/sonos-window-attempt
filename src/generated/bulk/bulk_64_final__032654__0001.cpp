@@ -33743,7 +33743,7 @@ void __stdcall FUN_11174130(int param_1,undefined1 *param_2){
 // Reference entry 11174250; body size 382 bytes.
 #line 1 "ENTRY_11174250"
 
-undefined4 * FUN_11174250(char *param_1,char *param_2)
+undefined4 * __stdcall FUN_11174250(char *param_1,char *param_2)
 
 {
  try {
@@ -64613,7 +64613,7 @@ void __thiscall Recovered_Bulk::m_FUN_111a86c0(int param_2,int param_3,int param
 // Reference entry 111a87e0; body size 83 bytes.
 #line 1 "ENTRY_111a87e0"
 
-int * FUN_111a87e0(int *param_1,int param_2,int *param_3)
+int * __stdcall FUN_111a87e0(int *param_1,int param_2,int *param_3)
 
 {
   if (*param_3 == (int)((0))) {

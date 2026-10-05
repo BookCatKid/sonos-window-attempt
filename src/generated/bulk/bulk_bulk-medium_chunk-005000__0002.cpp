@@ -23018,7 +23018,7 @@ SCStr * __stdcall FUN_10b78e70(SCStr *param_1)
 // Reference entry 10b78e90; body size 57 bytes.
 #line 1 "ENTRY_10b78e90"
 
-SCStr * FUN_10b78e90(SCStr *param_1,SCStr *param_2)
+SCStr * __stdcall FUN_10b78e90(SCStr *param_1,SCStr *param_2)
 
 {
   bool bVar1;

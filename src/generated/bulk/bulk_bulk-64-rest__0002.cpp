@@ -36348,7 +36348,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10290490(SCStr *param_2)
 // Reference entry 102907c0; body size 373 bytes.
 #line 1 "ENTRY_102907c0"
 
-undefined4 * FUN_102907c0(undefined4 *param_1,int *param_2)
+undefined4 * __stdcall FUN_102907c0(undefined4 *param_1,int *param_2)
 
 {
  try {
@@ -58220,7 +58220,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_102b50c0(undefined1 param_2)
 // Reference entry 102b51d0; body size 390 bytes.
 #line 1 "ENTRY_102b51d0"
 
-SCStr * FUN_102b51d0(SCStr *param_1,SCStr *param_2)
+SCStr * __stdcall FUN_102b51d0(SCStr *param_1,SCStr *param_2)
 
 {
  try {
@@ -70536,7 +70536,7 @@ bool __thiscall Recovered_Bulk::m_FUN_102c8b90(undefined4 *param_2)
 // Reference entry 102c8c20; body size 392 bytes.
 #line 1 "ENTRY_102c8c20"
 
-int * FUN_102c8c20(int *param_1,int *param_2)
+int * __stdcall FUN_102c8c20(int *param_1,int *param_2)
 
 { int stack0xfffffffc;
  try {
@@ -78475,7 +78475,7 @@ int * __thiscall Recovered_Bulk::m_FUN_102d6270(int *param_2)
 // Reference entry 102d6390; body size 146 bytes.
 #line 1 "ENTRY_102d6390"
 
-SCStr * FUN_102d6390(SCStr *param_1)
+SCStr * __stdcall FUN_102d6390(SCStr *param_1)
 
 {
  try {
