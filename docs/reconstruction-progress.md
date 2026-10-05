@@ -33,3 +33,18 @@ e8a7f37; both fixed in ca8b5d2, verification pending. Stdcall
 verification note: run 37283901547 actually built pre-stdcall sha
 7995911, so the stdcall transform is unverified until the next run.
 Whole-file identity not achieved.
+
+### Checkpoint — virtual member dispatch verified (MSVC runs 37286056838/37288187858)
+
+Full verification of the SCVtbl stub rewrite across all 83 touched
+objects: **+2,206 exact functions, +59,739 exact bytes, zero
+regressions**. The companion stdcall-declaration pass (e8a7f37) proved
+byte-neutral on its own (0 flips in the 56 stdcall-only objects, +82
+fixed bytes net) — its real ABI benefit is subsumed by virtual-member
+thiscall callee-cleanup — but it is kept since it is the faithful
+convention and caused no losses. Its C2373 decl/def conflicts were
+repaired in ca8b5d2 and a follow-up covering comment-prefixed defs;
+all 182 objects again compile under pinned MSVC 14.28. Corpus:
+**137,509 / 230,070 exact (59.8%)**, 1,936,546 exact reference bytes.
+Residual leaders: +2 (10.6K), +5 (5.7K), +41 (4.8K), +3 (4.7K).
+Whole-file identity not achieved.
