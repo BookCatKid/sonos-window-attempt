@@ -1,16 +1,26 @@
 extern int vftable;
 
-// A: result = p upfront, all writes through p, return result
-int __fastcall FUN_a(int *p, int edx_, int a1) {
-    int *result = p;
-    p[1] = a1;
-    *p = (int)&vftable;
-    p[9] = (int)p;
-    return (int)result;
+// F: result materialized, all writes through result
+int __fastcall FUN_f(int *p, int edx_, int a1) {
+    int result = (int)p;
+    *(int*)(result + 4) = a1;
+    *(int*)result = (int)&vftable;
+    *(int*)(result + 0x24) = (int)p;
+    return result;
 }
 
-// B: assignment subexpression p[9] = (int)(result = p)
-int __fastcall FUN_b(int *p, int edx_, int a1) {
+// G: reassign result before f36 store
+int __fastcall FUN_g(int *p, int edx_, int a1) {
+    int result = (int)p;
+    *(int*)(result + 4) = a1;
+    *(int*)result = (int)&vftable;
+    result = (int)p;
+    *(int*)(result + 0x24) = (int)p;
+    return result;
+}
+
+// H: assign-subexpression feeding the f36 store
+int __fastcall FUN_h(int *p, int edx_, int a1) {
     int *result;
     p[1] = a1;
     *p = (int)&vftable;
@@ -18,29 +28,22 @@ int __fastcall FUN_b(int *p, int edx_, int a1) {
     return (int)result;
 }
 
-// C: writes through result
-int __fastcall FUN_c(int *p, int edx_, int a1) {
-    int *result = p;
-    result[1] = a1;
-    *result = (int)&vftable;
-    result[9] = (int)result;
-    return (int)result;
-}
-
-// D: result declared then assigned mid-body
-int __fastcall FUN_d(int *p, int edx_, int a1) {
-    int *result;
+// I: p spilled via named local that gets reassigned (post-inc style)
+int __fastcall FUN_i(int *p, int edx_, int a1) {
+    int result;
     p[1] = a1;
     *p = (int)&vftable;
-    result = p;
-    p[9] = (int)p;
-    return (int)result;
+    result = (int)p;
+    *(int*)(result + 0x24) = (int)p;
+    return result;
 }
 
-// E: this spelled as ecx-param ctor returning int
-int __fastcall FUN_e(int *p, int edx_, int a1) {
-    p[1] = a1;
-    *p = (int)&vftable;
-    p[9] = (int)p;
-    return (int)p;
+// J: two locals
+int __fastcall FUN_j(int *p, int edx_, int a1) {
+    int result = (int)p;
+    int other = a1;
+    *(int*)(result + 4) = other;
+    *(int*)result = (int)&vftable;
+    *(int*)(result + 0x24) = result;
+    return result;
 }
