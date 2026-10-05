@@ -5003,7 +5003,7 @@ template<class... A> int FUN_104bd430(A...);
 int FUN_104bd4c0(int a1, int a2);
 template<class... A> int FUN_104bd4c0(A...);
 int FUN_104c6b88(void);
-template<class... A> int FUN_104c6b88(A...);
+template<class... A> int __stdcall FUN_104c6b88(A...);
 int FUN_104c71b5(void);
 template<class... A> int FUN_104c71b5(A...);
 int __stdcall FUN_104c9730(int a1);
@@ -6127,7 +6127,7 @@ template<class... A> int FUN_1109a740(A...);
 int FUN_1109dc90(int a1);
 template<class... A> int FUN_1109dc90(A...);
 int FUN_110a4d90(int a1);
-template<class... A> int FUN_110a4d90(A...);
+template<class... A> int __stdcall FUN_110a4d90(A...);
 int FUN_110b4c20(void);
 template<class... A> int FUN_110b4c20(A...);
 int FUN_110bede0(int a1);
@@ -11372,7 +11372,7 @@ char *v3 = (char *)((char)((char *)(v2 - 4))); // (int)&FUN_10549c43
     FUN_1005c315();
     *(int*)(v2 - 40) = (int)(0);
     *v3 = (char)(40);
-    return (int)(((code *)LAB_10549b85)());
+    return (int)(((code *)(void *)LAB_10549b85)());
 }
 
 // Reference entry 10549e6d; body size 95 bytes.
@@ -11430,7 +11430,7 @@ char *v5 = (char *)((char)((char *)(v1 - 4))); // (int)&FUN_10549ee2
     FUN_1005c315();
     *(int*)(v1 - 44) = (int)(0);
     *v5 = (char)(70);
-    return (int)(((code *)LAB_10549b88)());
+    return (int)(((code *)(void *)LAB_10549b88)());
 }
 
 // Reference entry 1054a214; body size 115 bytes.
@@ -12297,7 +12297,7 @@ int FUN_106abff1(void) {
     thunk_FUN_1047a3b0(*(int *)(v2 - 40), *(int *)(v2 - 44));
     thunk_FUN_1047a590(*(int *)(v2 - 20), *(int *)(v2 - 36));
     thunk_FUN_1047c1c0();
-    return (int)(_CxxThrowException(0, 0));
+    return (int)(_CxxThrowException(0, 0), 0);
 }
 
 // Reference entry 106d1620; body size 26 bytes.
@@ -14489,7 +14489,7 @@ int FUN_10c7997e(void) {
     int result; // (int)((int(*)(void))&FUN_10c7997e<>)
     bool v1; // (int)((int(*)(void))&FUN_10c7997e<>)
     if (!v1) {
-        result = (int)(((code *)LAB_10c7991b)(), 0);
+        result = (int)(((code *)(void *)LAB_10c7991b)(), 0);
     }
     return (int)(result);
 }
@@ -15182,7 +15182,7 @@ int FUN_10d95a46(void) {
 
     int v1; // (int)((int(*)(void))&FUN_10d95a46<>)
     *(int*)(v1 + 16) = (int)(8);
-    return (int)(((code *)LAB_10d95263)(0x45c6ff2c));
+    return (int)(((code *)(void *)LAB_10d95263)(0x45c6ff2c));
 }
 
 // Reference entry 10d95a9f; body size 53 bytes.
@@ -15451,7 +15451,7 @@ int FUN_10decd1a(void) {
     thunk_FUN_105a1540(*(int *)(v2 - 44), *(int *)(v2 - 36));
     thunk_FUN_105a1710(*(int *)(v2 - 24), *(int *)(v2 - 40));
     thunk_FUN_105a2380();
-    return (int)(_CxxThrowException(0, 0));
+    return (int)(_CxxThrowException(0, 0), 0);
 }
 
 // Reference entry 10ded251; body size 48 bytes.
@@ -15465,7 +15465,7 @@ int FUN_10ded251(void) {
     thunk_FUN_105a1570(v3, v3);
     thunk_FUN_105a1730(*(int *)(v2 - 24), *(int *)(v2 - 40));
     thunk_FUN_105a23d0();
-    return (int)(_CxxThrowException(0, 0));
+    return (int)(_CxxThrowException(0, 0), 0);
 }
 
 // Reference entry 10e00bc0; body size 7 bytes.
@@ -15781,7 +15781,7 @@ int FUN_10eb138b(void) {
     thunk_FUN_106042e0(*(int *)(v2 - 36), *(int *)(v2 - 44));
     thunk_FUN_10604470(*(int *)(v2 - 28), *(int *)(v2 - 40));
     thunk_FUN_10607f70();
-    return (int)(_CxxThrowException(0, 0));
+    return (int)(_CxxThrowException(0, 0), 0);
 }
 
 // Reference entry 10ebcfee; body size 49 bytes.
@@ -15794,7 +15794,7 @@ int FUN_10ebcfee(void) {
     thunk_FUN_106043a0(*(int *)(v2 - 40), *(int *)(v2 - 44));
     thunk_FUN_106044f0(*(int *)(v2 - 24), *(int *)(v2 - 36));
     thunk_FUN_106080b0();
-    return (int)(_CxxThrowException(0, 0));
+    return (int)(_CxxThrowException(0, 0), 0);
 }
 
 // Reference entry 10ebd4f0; body size 49 bytes.
@@ -15807,7 +15807,7 @@ int FUN_10ebd4f0(void) {
     thunk_FUN_10630720(*(int *)(v2 - 40), *(int *)(v2 - 44));
     thunk_FUN_106307e0(*(int *)(v2 - 24), *(int *)(v2 - 36));
     thunk_FUN_10633d20();
-    return (int)(_CxxThrowException(0, 0));
+    return (int)(_CxxThrowException(0, 0), 0);
 }
 
 // Reference entry 10ebd8ed; body size 49 bytes.
@@ -15820,7 +15820,7 @@ int FUN_10ebd8ed(void) {
     thunk_FUN_1065a780(*(int *)(v2 - 40), *(int *)(v2 - 44));
     thunk_FUN_1065ac50(*(int *)(v2 - 20), *(int *)(v2 - 36));
     thunk_FUN_1065e730();
-    return (int)(_CxxThrowException(0, 0));
+    return (int)(_CxxThrowException(0, 0), 0);
 }
 
 // Reference entry 10ed9c1a; body size 90 bytes.
@@ -16870,7 +16870,7 @@ int FUN_110684c6(int a1, int a2, int a3, int a4) {
     int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_110684c6<>)
     *(char*)v1 = (char)((int)((char)v1));
     if (v1 < v1) {
-        ((code *)LAB_110683c5)();
+        ((code *)(void *)LAB_110683c5)();
     }
     *(int*)v1 = (int)((int)(2 * v1));
     return (int)(0);
@@ -17596,7 +17596,7 @@ int FUN_111abaca(int a1, int a2, int a3, int a4) {
 
     int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_111abaca<>)
     if (v1 < v1) {
-        ((code *)LAB_111ab990)();
+        ((code *)(void *)LAB_111ab990)();
     }
     *(int*)v1 = (int)((int)(v1 + 2));
     return (int)(0);
@@ -17668,7 +17668,7 @@ char *v3 = (char *)((char)((char *)(v1 + 16))); // (int)&FUN_111aec1f
     *(char*)(v1 + 264) = (char)((char)v6);
     *(char*)(*(int *)(v1 + 404) + 12) = (char)(1);
     *(int*)(v1 + 380) = (int)(v6);
-    return (int)(((code *)LAB_111aeafe)());
+    return (int)(((code *)(void *)LAB_111aeafe)());
 }
 
 // Reference entry 111b14a0; body size 19 bytes.
@@ -19262,7 +19262,7 @@ int FUN_1126a3e4(void) {
     int v1; // (int)((int(*)(void))&FUN_1126a3e4<>)
     bool v2; // (int)((int(*)(void))&FUN_1126a3e4<>)
     if (v1 != 1 == v2) {
-        result = (int)(((code *)LAB_1126a388)(), 0);
+        result = (int)(((code *)(void *)LAB_1126a388)(), 0);
     }
 int *v3 = (int *)((int)((int *)(v1 + 0x671126a2))); // (int)&FUN_1126a3e6
     uint v4 = (uint)(*v3); // (int)&FUN_1126a3e6
@@ -21457,7 +21457,7 @@ int FUN_112d997b(int a1, int a2, int a3, int a4, int a5, int a6) {
         return (int)(0);
     }
     if (v1 > 2) {
-        ((code *)LAB_112d9950)();
+        ((code *)(void *)LAB_112d9950)();
     }
     return (int)(-1);
 }
@@ -21505,13 +21505,13 @@ int FUN_112dc475(void) {
 
     int v1; // (int)((int(*)(void))&FUN_112dc475<>)
     if (v1 != 0) {
-        ((code *)LAB_112dc41e)();
+        ((code *)(void *)LAB_112dc41e)();
     }
     if (v1 >= v1) {
-        ((code *)LAB_112dc419)();
+        ((code *)(void *)LAB_112dc419)();
     }
     *(char*)(v1 + 12) = (char)(1);
-    return (int)(((code *)LAB_112dc419)());
+    return (int)(((code *)(void *)LAB_112dc419)());
 }
 
 // Reference entry 112de215; body size 16 bytes.
@@ -21520,13 +21520,13 @@ int FUN_112de215(void) {
 
     int v1; // (int)((int(*)(void))&FUN_112de215<>)
     if (v1 != 0) {
-        ((code *)LAB_112de1be)();
+        ((code *)(void *)LAB_112de1be)();
     }
     if (v1 >= v1) {
-        ((code *)LAB_112de1b9)();
+        ((code *)(void *)LAB_112de1b9)();
     }
     *(char*)(v1 + 12) = (char)(1);
-    return (int)(((code *)LAB_112de1b9)());
+    return (int)(((code *)(void *)LAB_112de1b9)());
 }
 
 // Reference entry 112de570; body size 44 bytes.
@@ -22884,7 +22884,7 @@ int *v2 = (int *)((int)((int *)(v1 + 65))); // (int)&FUN_112e485c
     bool v3; // (int)((int(*)(int a1, int a2))&FUN_112e485b<>)
     *v2 = (int)(v1 + (int)v3 + *v2);
     if (v1 > 0) {
-        ((code *)LAB_112e4840)();
+        ((code *)(void *)LAB_112e4840)();
     }
     return (int)(-1);
 }

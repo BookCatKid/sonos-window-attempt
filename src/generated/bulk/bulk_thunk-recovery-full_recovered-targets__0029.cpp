@@ -12658,6 +12658,7 @@ int FUN_1125ae30(char *param_1,char *param_2,int param_3)
     param_1 = (char *)(param_1 + 1);
   LAB_1125aea2: ;
     pcVar2 = (char *)(pcVar7);
+    return (int)(iVar5);
   }
 
 

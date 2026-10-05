@@ -10367,6 +10367,7 @@ int *v4 = (int *)((int)((int *)(v2 + 32)));
 int FUN_1145c6b0(int a1) {
 
     abort();
+    return (int)(0);
 }
 
 // Reference entry 1145d710; body size 73 bytes.

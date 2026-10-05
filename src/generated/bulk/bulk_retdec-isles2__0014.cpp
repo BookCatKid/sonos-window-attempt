@@ -8070,7 +8070,7 @@ int *v4 = (int *)((int)((int *)(v1 + 23))); // (int)&FUN_112fa9c1
 #line 1 "ENTRY_112faa1e"
 int FUN_112faa1e(void) {
 
-    return (int)(((code *)LAB_112fa9b4)(2));
+    return (int)(((code *)(void *)LAB_112fa9b4)(2));
 }
 
 // Reference entry 112fb220; body size 127 bytes.
@@ -8426,12 +8426,12 @@ int FUN_1131e8fb(int a1, int a2) {
     int v2 = (int)(*(int *)(v1 + 12)); // (int)((int(*)(int a1, int a2))&FUN_1131e8fb<>)
     int v3 = (int)(v2); // (int)&FUN_1131e900
     if (v2 == 0) {
-        v3 = (int)(((code *)LAB_1131e8f4)(), 0);
+        v3 = (int)(((code *)(void *)LAB_1131e8f4)(), 0);
     }
     int v4 = (int)(FUN_113a82c0(a2, v3), 0); // (int)&FUN_1131e907
     int result = (int)(v4); // (int)&FUN_1131e912
     if (v4 != 2) {
-        result = (int)(((code *)LAB_1131e8f4)(), 0);
+        result = (int)(((code *)(void *)LAB_1131e8f4)(), 0);
     }
     return (int)(result);
 }
@@ -8799,7 +8799,7 @@ char *v9 = (char *)((char)((char *)((v3 | (int)v8) + 0xc0b8))); // (int)&FUN_113
     }
     int v14 = (int)(FUN_113434e0(v1, 49, 0), 0); // (int)&FUN_11331ca1
     if (v14 == 0) {
-        ((code *)LAB_113319d4)();
+        ((code *)(void *)LAB_113319d4)();
     }
     memset((void *)(v14), 0, 48);
     *(char*)v14 = (char)((int)(-104));
@@ -9508,7 +9508,7 @@ int FUN_11372ec0(int a1) {
 #line 1 "ENTRY_1137444a"
 int FUN_1137444a(int a1, int a2, int a3, int a4) {
 
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11376002; body size 170 bytes.
@@ -9551,7 +9551,7 @@ char *v7 = (char *)((char)((char *)(v1 - 24))); // (int)&FUN_1137600d
     }
     int v15 = (int)(FUN_113434e0(v1, v1 + 33, 0), 0); // (int)&FUN_1137602a
     if (v15 == 0) {
-        return (int)(((code *)LAB_113732fa)());
+        return (int)(((code *)(void *)LAB_113732fa)());
     }
     int v16 = (int)(v15 + 32); // (int)&FUN_1137603c
     *(int*)v15 = (int)((int)(v16));
@@ -9571,7 +9571,7 @@ int *v19 = (int *)((int)((int *)(v1 + 448))); // (int)&FUN_11376061
     *(int*)(v15 + 12) = (int)(*(int *)(v1 + 468));
     *(int*)(v15 + 16) = (int)(*(int *)(v1 + 472));
     *(int*)(v15 + 20) = (int)(*(int *)(v1 + 476));
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113763db; body size 10 bytes.
@@ -9635,7 +9635,7 @@ int *v2 = (int *)((int)((int *)(v1 - 0x3f7aeb3c))); // (int)&FUN_113768fb
     if (result2 != 0) {
         return (int)(result2);
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11376d47; body size 12 bytes.
@@ -9666,9 +9666,9 @@ int FUN_1137754a(int a1, int a2, int a3, int a4, int a5, int a6) {
       lab_0x11377581:;
         int v3 = (int)(8 * a6 + a2);
         if (FUN_1137f970(*(int *)(v3 + 12), *(int *)(v3 + 16), v1, 0) != 0) {
-            ((code *)LAB_113752f3)();
+            ((code *)(void *)LAB_113752f3)();
         }
-        return (int)(((code *)LAB_113732fa)());
+        return (int)(((code *)(void *)LAB_113732fa)());
     }
     int v4 = (int)(0); // (int)&FUN_1137756a
     int result = (int)(*(int *)(v1 + 4) + 8); // (int)&FUN_11377570
@@ -9705,7 +9705,7 @@ char *v3 = (char *)((char)((char *)(v2 + 106))); // (int)&FUN_11377d5a
     int v6 = (int)(FUN_1133c7c0(v1, &v5, 0), 0); // (int)&FUN_11377d6b
     int result = (int)(v6); // (int)&FUN_11377d79
     if (v6 != 0) {
-        result = (int)(((code *)LAB_11376fac)(), 0);
+        result = (int)(((code *)(void *)LAB_11376fac)(), 0);
     }
     return (int)(result);
 }
@@ -9720,11 +9720,11 @@ int FUN_11377d83(int a1, int a2, int a3, int a4) {
 char *v3 = (char *)((char)((char *)(v1 + 23))); // (int)&FUN_11377d85
     *v3 = (char)(*v3 + (char)(v1 / 256));
     if (FUN_1133b270(v1, 4) != 0) {
-        ((code *)LAB_11376fac)();
+        ((code *)(void *)LAB_11376fac)();
     }
     *(int*)(v1 + 28) = (int)(0);
     *(int*)(v1 + 32) = (int)(0);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113797a7; body size 78 bytes.
@@ -9740,12 +9740,12 @@ int *v4 = (int *)((int)((int *)(v1 + 12))); // (int)&FUN_113797b9
     *v4 = (int)(*v4 + 1);
     if (v1 == 0) {
         FUN_11383050(a1, *(int *)(v1 + 8), v2);
-        return (int)(((code *)LAB_11376922)());
+        return (int)(((code *)(void *)LAB_11376922)());
     }
     if (*(int *)(v1 + 80) != 0) {
     }
     FUN_11383050(a1, *(int *)(v1 + 8), v2);
-    return (int)(((code *)LAB_11376922)());
+    return (int)(((code *)(void *)LAB_11376922)());
 }
 
 // Reference entry 1137a2b1; body size 121 bytes.
@@ -9768,7 +9768,7 @@ int *v7 = (int *)((int)((int *)(v1 + 4)));
     int v9 = (int)(v8); // (int)&FUN_1137a2cf
     if ((int)(v8) >= *(int *)&DAT_12121f7c) {
         if ((char)v1 == -86) {
-            return (int)(((code *)LAB_113732fa)());
+            return (int)(((code *)(void *)LAB_113732fa)());
         }
 int *v10 = (int *)((int)((int *)(v1 + 108))); // (int)&FUN_1137a2db
         if (*v10 >= (int)((2))) {
@@ -9802,7 +9802,7 @@ int *v10 = (int *)((int)((int *)(v1 + 108))); // (int)&FUN_1137a2db
     *v7 = (int)(v9 + 1);
 int *v15 = (int *)((int)((int *)(v1 + 188))); // (int)&FUN_1137a305
     *v15 = (int)(*v15 + 1);
-    return (int)(((code *)LAB_113752f3)());
+    return (int)(((code *)(void *)LAB_113752f3)());
 }
 
 // Reference entry 1137a792; body size 54 bytes.
@@ -17944,7 +17944,7 @@ int FUN_11478293(int a1, int a2, int a3) {
     int v1; // (int)((int(*)(int a1, int a2, int a3))&FUN_11478293<>)
     uint v2 = (uint)(v1);
     if (v1 != 1) {
-        ((code *)LAB_11478030)();
+        ((code *)(void *)LAB_11478030)();
     }
 int *v3 = (int *)((int)((int *)v1)); // (int)&FUN_114782bb
     int v4 = (int)(*v3); // (int)&FUN_114782bb
@@ -17995,7 +17995,7 @@ int FUN_11479a51(int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8,
     *(char*)(v1 + 3) = (char)((char)(v1 / 256));
     *(char*)(v1 + 4) = (char)((char)v1);
     if (v1 != 1) {
-        ((code *)LAB_11479a20)();
+        ((code *)(void *)LAB_11479a20)();
     }
     int v2; // bp+44, (int)((int(*)(int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, int a9, int a10))&FUN_11479a51<>)
     char v3; // (int)((int(*)(int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, int a9, int a10))&FUN_11479a51<>)
@@ -18007,11 +18007,11 @@ int FUN_11479a51(int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8,
     thunk_FUN_1147e120(a8, &v2);
     int v4 = (int)(a6 + 4); // (int)&FUN_11479ad7
     if (a5 + 1 < *(int *)(a8 + 260)) {
-        v4 = (int)(((code *)LAB_11479780)(), 0);
+        v4 = (int)(((code *)(void *)LAB_11479780)(), 0);
     }
     int result = (int)(v4); // (int)&FUN_11479aee
     if (a7 + 1 < a10) {
-        result = (int)(((code *)LAB_11479765)(), 0);
+        result = (int)(((code *)(void *)LAB_11479765)(), 0);
     }
     return (int)(result);
 }
@@ -18055,7 +18055,7 @@ char *v4 = (char *)((char)((char *)(v1 + 3))); // (int)&FUN_1147af14
     *v4 = (char)((char)(v5 / 256));
     *v2 = (char)((char)v5);
     if (v1 != 1) {
-        ((code *)LAB_1147aef1)();
+        ((code *)(void *)LAB_1147aef1)();
     }
     int v6; // bp+32, (int)((int(*)(int a1, int a2, int a3, int a4, int a5, int a6, int a7))&FUN_1147af09<>)
     char v7; // (int)((int(*)(int a1, int a2, int a3, int a4, int a5, int a6, int a7))&FUN_1147af09<>)
@@ -18067,7 +18067,7 @@ char *v4 = (char *)((char)((char *)(v1 + 3))); // (int)&FUN_1147af14
     thunk_FUN_1147e120(a7, &v6);
     int result = (int)(a6 + 4); // (int)&FUN_1147afa6
     if (a5 + 1 < v1) {
-        result = (int)(((code *)LAB_1147ac60)(), 0);
+        result = (int)(((code *)(void *)LAB_1147ac60)(), 0);
     }
     return (int)(result);
 }

@@ -11379,7 +11379,7 @@ int FUN_10444f11(void) {
     if ((char)result2 == 0) {
         return (int)(result2);
     }
-    return (int)(((code *)LAB_10444b22)((int)&s_wifiDisable_action_Succeeded_118a42ac));
+    return (int)(((code *)(void *)LAB_10444b22)((int)&s_wifiDisable_action_Succeeded_118a42ac));
 }
 
 // Reference entry 10444f3d; body size 475 bytes.
@@ -11468,9 +11468,9 @@ int *v19 = (int *)((int)(&v18)); // (int)&FUN_10444f66
         *(int*)v15 = (int)((int)(74));
     }
     if (*(int *)(v2 - 76) == 0) {
-        ((code *)LAB_10444b51)();
+        ((code *)(void *)LAB_10444b51)();
     }
-    return (int)(((code *)LAB_10444b51)());
+    return (int)(((code *)(void *)LAB_10444b51)());
 }
 
 // Reference entry 1045eea0; body size 53 bytes.
@@ -12903,7 +12903,7 @@ int *v6 = (int *)((int)((int *)v4)); // (int)&FUN_10549ccf
     FUN_1005c315();
     *(int*)v3 = (int)((int)(0));
     *v5 = (char)(56);
-    return (int)(((code *)LAB_10549b88)());
+    return (int)(((code *)(void *)LAB_10549b88)());
 }
 
 // Reference entry 10549f48; body size 72 bytes.
@@ -12918,7 +12918,7 @@ char *v4 = (char *)((char)((char *)(v2 - 4))); // (int)&FUN_10549f5e
     thunk_FUN_105253d0<>(v1, v3, v2 - 28, v2 - 24);
     *v4 = (char)(72);
     if (*(int *)v3 == 0) {
-        ((code *)LAB_10549b8d)();
+        ((code *)(void *)LAB_10549b8d)();
     }
     *v4 = (char)(24);
     return (int)(thunk_FUN_10525360<>(v1 + 72));
@@ -16382,7 +16382,7 @@ int *v14 = (int *)((int)((int *)(v1 + 28))); // (int)&FUN_10d9570e
     *(int*)(v17 - 8) = (int)(*(int *)(v2 + 8));
     FUN_1001c9c2();
     FUN_100869f3();
-    return (int)(((code *)LAB_10d9528b)());
+    return (int)(((code *)(void *)LAB_10d9528b)());
 }
 
 // Reference entry 10d95cbb; body size 54 bytes.
@@ -16394,7 +16394,7 @@ int FUN_10d95cbb(void) {
     thunk_FUN_112af4e0((int)&s_SCRecentlyPlayedToggleActionFact_119314b0, 0, (int)&s_Missing_user_confirmation_prop_b_11931538);
     *(int*)(v1 + 16) = (int)(14);
     thunk_FUN_1011be40(*(int *)(v2 + 8), *(int *)(v2 + 12));
-    return (int)(((code *)LAB_10d9528b)());
+    return (int)(((code *)(void *)LAB_10d9528b)());
 }
 
 // Reference entry 10d95cf1; body size 201 bytes.
@@ -16426,7 +16426,7 @@ int *v8 = (int *)((int)(&v6)); // (int)&FUN_10d95d56
         v8 = (int *)(&v9);
         if ((short)*v7 == (int)((0))) {
             *(int*)(v1 + 16) = (int)(12);
-            return (int)(((code *)LAB_10d95cd6)());
+            return (int)(((code *)(void *)LAB_10d95cd6)());
         }
     }
     int v10 = (int)((int)v8);
@@ -16435,7 +16435,7 @@ int *v8 = (int *)((int)(&v6)); // (int)&FUN_10d95d56
     *(int*)(v10 - 12) = (int)((int)&s_SCRecentlyPlayedToggleActionFact_119314b0);
     thunk_FUN_112af4e0();
     *(int*)(v1 + 16) = (int)(14);
-    return (int)(((code *)LAB_10d95cd6)());
+    return (int)(((code *)(void *)LAB_10d95cd6)());
 }
 
 // Reference entry 10d9606e; body size 46 bytes.
@@ -16446,7 +16446,7 @@ int FUN_10d9606e(void) {
     int v2 = (int)(v1);
     *(int*)(v1 + 16) = (int)(14);
     thunk_FUN_112af4e0((int)&s_SCRecentlyPlayedToggleActionFact_119314b0, 0, (int)&DAT_119313ac);
-    return (int)(((code *)LAB_10d9528b)(*(int *)(v2 + 8), *(int *)(v2 + 12)));
+    return (int)(((code *)(void *)LAB_10d9528b)(*(int *)(v2 + 8), *(int *)(v2 + 12)));
 }
 
 // Reference entry 10d9609c; body size 39 bytes.
@@ -16458,7 +16458,7 @@ int FUN_10d9609c(void) {
     int v3 = (int)(v1);
     *(char*)(v2 + 22) = (char)(1);
     *(int*)(v2 + 16) = (int)(2 * (int)(*(char *)(v2 + 20) == 0) | 12);
-    return (int)(((code *)LAB_10d9528b)(*(int *)(v3 + 8), *(int *)(v3 + 12)));
+    return (int)(((code *)(void *)LAB_10d9528b)(*(int *)(v3 + 8), *(int *)(v3 + 12)));
 }
 
 // Reference entry 10dab430; body size 76 bytes.
@@ -16561,14 +16561,14 @@ int *v6 = (int *)((int)((int *)(v1 - 0x2050))); // (int)&FUN_10dc1518
     *v3 = (char)(-3);
     if (v14 == 0) {
         *v3 = (char)(70);
-        return (int)(((code *)LAB_10dbec0d)());
+        return (int)(((code *)(void *)LAB_10dbec0d)());
     }
     int v15 = (int)(v14 - 16); // (int)&FUN_10dc15d8
 int *v16 = (int *)((int)((int *)(v1 - 0x2050))); // (int)&FUN_10dc15db
     *v16 = (int)(v15);
     if (*(int *)v15 > 0xfffe) {
         *v3 = (char)(70);
-        return (int)(((code *)LAB_10dbec0d)());
+        return (int)(((code *)(void *)LAB_10dbec0d)());
     }
 int *v17 = (int *)((int)((int *)(v9 - 4))); // (int)&FUN_10dc15e9
     *v17 = (int)(v15);
@@ -16583,7 +16583,7 @@ int *v17 = (int *)((int)((int *)(v9 - 4))); // (int)&FUN_10dc15e9
         free((void *)0);
     }
     *v3 = (char)(70);
-    return (int)(((code *)LAB_10dbec0d)());
+    return (int)(((code *)(void *)LAB_10dbec0d)());
 }
 
 // Reference entry 10dc162e; body size 1636 bytes.
@@ -16752,7 +16752,7 @@ int *v51 = (int *)((int)((int *)(v3 - 0x2094))); // (int)&FUN_10dc1952
     *v51 = (int)(v52);
     int result = (int)(v50); // (int)&FUN_10dc1969
     if ((int)(v52) < *(int *)(*v36 + 104)) {
-        result = (int)(((code *)LAB_10dbe7c0)(), 0);
+        result = (int)(((code *)(void *)LAB_10dbe7c0)(), 0);
     }
     if (*(char *)(v3 - 0x2069) != 0) {
         return (int)(result);
@@ -19563,14 +19563,14 @@ int FUN_111aec80(void) {
         return (int)(result);
     }
     *(int*)(v1 + 380) = (int)(0);
-    return (int)(((code *)LAB_111aeafe)());
+    return (int)(((code *)(void *)LAB_111aeafe)());
 }
 
 // Reference entry 111aeca6; body size 6 bytes.
 #line 1 "ENTRY_111aeca6"
 int FUN_111aeca6(void) {
 
-    return (int)(((code *)LAB_111aec84)(1, 0));
+    return (int)(((code *)(void *)LAB_111aec84)(1, 0));
 }
 
 // Reference entry 111aede2; body size 24 bytes.
@@ -19578,7 +19578,7 @@ int FUN_111aeca6(void) {
 int FUN_111aede2(void) {
 
     int v1; // (int)((int(*)(void))&FUN_111aede2<>)
-    return (int)(((code *)LAB_111aec8d)(v1));
+    return (int)(((code *)(void *)LAB_111aec8d)(v1));
 }
 
 // Reference entry 111aee40; body size 47 bytes.
@@ -19590,7 +19590,7 @@ int FUN_111aee40(void) {
 int *v2 = (int *)((int)((int *)(v1 + 380))); // (int)&FUN_111aee4b
     *(int*)(v1 + 24) = (int)(*v2);
     *v2 = (int)(0);
-    return (int)(((code *)LAB_111aeafe)(v1));
+    return (int)(((code *)(void *)LAB_111aeafe)(v1));
 }
 
 // Reference entry 111af200; body size 61 bytes.
@@ -21715,7 +21715,7 @@ int FUN_11250308(void) {
 
     int v1; // (int)((int(*)(void))&FUN_11250308<>)
     *(int*)(v1 + 4) = (int)(2);
-    return (int)(((code *)LAB_112502e1)(2));
+    return (int)(((code *)(void *)LAB_112502e1)(2));
 }
 
 // Reference entry 112508ec; body size 30 bytes.
@@ -22308,7 +22308,7 @@ int FUN_1129f480(int a1) {
 #line 1 "ENTRY_112a1b2a"
 int FUN_112a1b2a(void) {
 
-    return (int)(((code *)LAB_112a1b10)());
+    return (int)(((code *)(void *)LAB_112a1b10)());
 }
 
 // Reference entry 112a61c0; body size 85 bytes.
@@ -25055,7 +25055,7 @@ int FUN_112db58c(int a1, int a2, int a3, int a4) {
 
     int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_112db58c<>)
     if (v1 > 3) {
-        ((code *)LAB_112db550)();
+        ((code *)(void *)LAB_112db550)();
     }
     return (int)(-1);
 }
@@ -25298,7 +25298,7 @@ int FUN_112dc980(int a1, int a2) {
 #line 1 "ENTRY_112dc9b5"
 int FUN_112dc9b5(void) {
 
-    return (int)(((code *)LAB_112dc990)());
+    return (int)(((code *)(void *)LAB_112dc990)());
 }
 
 // Reference entry 112dcaa0; body size 45 bytes.
@@ -25465,7 +25465,7 @@ int FUN_112dd32c(int a1, int a2, int a3, int a4) {
 
     int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_112dd32c<>)
     if (v1 > 3) {
-        ((code *)LAB_112dd2f0)();
+        ((code *)(void *)LAB_112dd2f0)();
     }
     return (int)(-1);
 }
@@ -25663,7 +25663,7 @@ int FUN_112de720(int a1, int a2) {
 #line 1 "ENTRY_112de755"
 int FUN_112de755(void) {
 
-    return (int)(((code *)LAB_112de730)());
+    return (int)(((code *)(void *)LAB_112de730)());
 }
 
 // Reference entry 112de850; body size 45 bytes.
@@ -25779,7 +25779,7 @@ int FUN_112dfa31(int a1, int a2, int a3) {
 
     int v1; // (int)((int(*)(int a1, int a2, int a3))&FUN_112dfa31<>)
     if (v1 > 3) {
-        ((code *)LAB_112dfa00)();
+        ((code *)(void *)LAB_112dfa00)();
     }
     return (int)(-1);
 }
@@ -25952,7 +25952,7 @@ int FUN_112e2651(int a1, int a2, int a3) {
 
     int v1; // (int)((int(*)(int a1, int a2, int a3))&FUN_112e2651<>)
     if (v1 > 3) {
-        ((code *)LAB_112e2620)();
+        ((code *)(void *)LAB_112e2620)();
     }
     return (int)(-1);
 }
@@ -36984,7 +36984,7 @@ int FUN_113734f9(int a1, int a2) {
     int v4 = (int)(*(int *)(a1 + 4)); // (int)&FUN_11373528
     *(int*)v3 = (int)((int)(v4));
     *(int*)(v3 + 4) = (int)(v4 >> 31);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11373541; body size 42 bytes.
@@ -36996,7 +36996,7 @@ int FUN_11373541(int a1, int a2) {
     int v2 = (int)(*(int *)(a1 + 4)); // (int)&FUN_11373552
     *(int*)v1 = (int)((int)(v2));
     *(int*)(v1 + 4) = (int)(v2 >> 31);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137356b; body size 86 bytes.
@@ -37016,7 +37016,7 @@ short *v3 = (short *)((short)((short *)(v2 + 8))); // (int)&FUN_11373580
     int v5 = (int)(*(int *)(a1 + 16)); // (int)&FUN_113735a4
     *(int*)v4 = (int)((int)(*(int *)v5));
     *(int*)(v4 + 4) = (int)(*(int *)(v5 + 4));
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11373613; body size 183 bytes.
@@ -37068,7 +37068,7 @@ short *v16 = (short *)((short)(v15)); // (int)&FUN_11373689
     *v16 = (short)(2562);
     *(int*)(v17 + 16) = (int)(*v7);
     *(int*)(v17 + 12) = (int)(*v13);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113736ca; body size 168 bytes.
@@ -37127,7 +37127,7 @@ short *v17 = (short *)((short)((short *)v16)); // (int)&FUN_11373731
         *v17 = (short)(v14);
         *(int*)(v18 + 44) = (int)(0);
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11373772; body size 46 bytes.
@@ -37137,7 +37137,7 @@ int FUN_11373772(int a1) {
     int v1; // (int)((int(*)(int a1))&FUN_11373772<>)
 short *v2 = (short *)((short)((short *)(a1 + 8 + 40 * *(int *)(v1 + 4)))); // (int)&FUN_11373781
     *v2 = (short)(*v2 & -192 | 1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113737a0; body size 114 bytes.
@@ -37158,7 +37158,7 @@ short *v3 = (short *)((short)((short *)(v2 + 8))); // (int)&FUN_113737b5
         return (int)(0x2400);
     }
     FUN_113a10f0(v4);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11373812; body size 40 bytes.
@@ -37167,7 +37167,7 @@ int FUN_11373812(int a1, int a2, int a3, int a4) {
 
     int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_11373812<>)
     *(short*)(v1 + 8) = (short)(1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137383a; body size 143 bytes.
@@ -37219,7 +37219,7 @@ short *v9 = (short *)((short)((short *)(v1 + 8))); // (int)&FUN_1137387a
     *(int*)(v1 + 36) = (int)(0);
     *(int*)(v1 + 12) = (int)(v6);
     *v9 = (short)(v5);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 lab_brk_1137383a: ;
 }
 
@@ -37235,7 +37235,7 @@ int FUN_11373c08(int a1, int a2) {
         return (int)(result);
     }
     FUN_113a2d10(v2, *(int *)v3, result);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11373c50; body size 34 bytes.
@@ -37244,7 +37244,7 @@ int FUN_11373c50(int a1, int a2) {
 
     int v1; // (int)((int(*)(int a1, int a2))&FUN_11373c50<>)
     *(short*)(v1 + 8) = (short)(4);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11373c72; body size 100 bytes.
@@ -37264,7 +37264,7 @@ int FUN_11373c72(int a1, int a2, int a3, int a4, int a5) {
         return (int)(0x2400);
     }
     FUN_113a10f0(v6);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11373cd6; body size 37 bytes.
@@ -37273,7 +37273,7 @@ int FUN_11373cd6(int a1, int a2, int a3, int a4, int a5) {
 
     int v1; // (int)((int(*)(int a1, int a2, int a3, int a4, int a5))&FUN_11373cd6<>)
     *(short*)(v1 + 8) = (short)(1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11373eba; body size 225 bytes.
@@ -37320,7 +37320,7 @@ int FUN_11374399(void) {
 
     int v1; // (int)((int(*)(void))&FUN_11374399<>)
     *(short*)(v1 + 8) = (short)(1);
-    return (int)(((code *)LAB_11373cba)());
+    return (int)(((code *)(void *)LAB_11373cba)());
 }
 
 // Reference entry 113743e1; body size 34 bytes.
@@ -37331,7 +37331,7 @@ int FUN_113743e1(int a1) {
     *(int*)v1 = (int)((int)(0));
     *(int*)(v1 + 4) = (int)(0);
     *(short*)(v1 + 8) = (short)(4);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11374467; body size 33 bytes.
@@ -37340,7 +37340,7 @@ int FUN_11374467(int a1, int a2, int a3, int a4) {
 
     int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_11374467<>)
     *(short*)(v1 + 8) = (short)(1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137468c; body size 83 bytes.
@@ -37377,7 +37377,7 @@ int FUN_113746df(int a1, int a2) {
 
     int v1; // (int)((int(*)(int a1, int a2))&FUN_113746df<>)
     *(short*)(v1 + 8) = (short)((short)v1 & 0x3e40 | 4);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137475b; body size 120 bytes.
@@ -37433,7 +37433,7 @@ int FUN_113747d3(int result, int a2) {
         int v8 = (int)(v5); // (int)&FUN_113747f6
 short *v9 = (short *)((short)((short *)(40 * *(int *)(result + 8) + v3))); // (int)&FUN_113748a7
         *v9 = (short)(*v9 & 0x3e40 | 1);
-        return (int)(((code *)LAB_1137437d)(v8, 0x1000000 * v8 >> 24, v6, v2, v6));
+        return (int)(((code *)(void *)LAB_1137437d)(v8, 0x1000000 * v8 >> 24, v6, v2, v6));
     }
     short v10 = (short)(v5 & v4);
     if ((v10 & 1) == 0 || (v6 & 256) != 0) {
@@ -37451,7 +37451,7 @@ int FUN_113748bd(int a1, int a2, int a3, int a4, int a5) {
     if ((result & 16) != 0) {
         return (int)(result);
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113748e1; body size 549 bytes.
@@ -37615,7 +37615,7 @@ int *v44 = (int *)((int)((int *)(v17 + 20))); // (int)&FUN_11374a92
     *(int*)(v17 + 116) = (int)(v8);
     if ((v46 & 8) != 0) {
         if (v47 == (int)(*(char *)*v44 == (char)(((53))))) {
-            ((code *)LAB_11373cba)();
+            ((code *)(void *)LAB_11373cba)();
         }
     }
 int *v48 = (int *)((int)((int *)(v17 + 24))); // (int)&FUN_11374ac6
@@ -37625,7 +37625,7 @@ short *v50 = (short *)((short)((short *)(v49 + 8 + *v48))); // (int)&FUN_11374ad
     int v51 = (int)(*v48 + v49);
     *(int*)v51 = (int)((int)(v47));
     *(int*)(v51 + 4) = (int)(0);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
   lab_0x11374a7d:
     v6 = (int)(v9 + (int)&DAT_119f7f94);
     v8 = (int)(v7);
@@ -37643,7 +37643,7 @@ int FUN_11374b06(int a1, int a2, int a3, int a4, int a5) {
     if (result != 0) {
         return (int)(result);
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11374b3d; body size 163 bytes.
@@ -37675,7 +37675,7 @@ int FUN_11374b3d(int a1) {
         int v7 = (int)(v4 + 1); // (int)&FUN_11374bcd
         v3 += 4;
         if ((int)(v7) >= *(int *)(v2 + 44)) {
-            return (int)(((code *)LAB_1137437d)());
+            return (int)(((code *)(void *)LAB_1137437d)());
         }
         v4 = (int)(v7);
         int v8 = (int)(*(int *)(v2 + 100));
@@ -37717,9 +37717,9 @@ int FUN_11374be0(int a1, int a2, int a3, int a4, int a5) {
     }
   lab_0x11374c17:
     if (v2 == 0) {
-        ((code *)LAB_11373cc2)();
+        ((code *)(void *)LAB_11373cc2)();
     }
-    return (int)(((code *)LAB_113732fa)(-v1));
+    return (int)(((code *)(void *)LAB_113732fa)(-v1));
 }
 
 // Reference entry 11374c41; body size 40 bytes.
@@ -37730,7 +37730,7 @@ int FUN_11374c41(int a1) {
     if (result >= 0) {
         return (int)(result);
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11374dcb; body size 56 bytes.
@@ -37743,7 +37743,7 @@ int FUN_11374dcb(int a1, int a2) {
     *(int*)(v2 + 4) = (int)(0);
 short *v3 = (short *)((short)((short *)(v2 + 8))); // (int)&FUN_11374ddf
     *v3 = (short)(*v3 & 0x3e40 | 4);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11374e03; body size 102 bytes.
@@ -37765,7 +37765,7 @@ int FUN_11374e03(int a1, int a2) {
         return (int)(result3);
     }
     FUN_113a2d10(v2, result3, result3 >> 31);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11374ec3; body size 98 bytes.
@@ -37788,7 +37788,7 @@ int FUN_11374ec3(int a1, int a2) {
         return (int)(1);
     }
     FUN_113a2d10(v4, 1, 0);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11374f87; body size 40 bytes.
@@ -37800,7 +37800,7 @@ int FUN_11374f87(int a1, int a2) {
         return (int)(0x2400);
     }
     FUN_113a10f0(v1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11374fcc; body size 118 bytes.
@@ -37829,7 +37829,7 @@ short *v3 = (short *)((short)((short *)(v2 + 8))); // (int)&FUN_11374fe7
     }
     *(int*)v2 = (int)((int)(-1 - *(int *)v4));
     *(int*)(v2 + 4) = (int)(-1 - *(int *)(v4 + 4));
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113750e1; body size 105 bytes.
@@ -37853,7 +37853,7 @@ char *v6 = (char *)((char)((char *)(v5 / 8 + *(int *)(v2 + 24)))); // (int)&FUN_
     }
     *v6 = (char)(v7 | (char)result2);
     *(int*)(a1 + 4) = (int)(*(int *)(*v3 + 4));
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137514a; body size 42 bytes.
@@ -37867,7 +37867,7 @@ int *v2 = (int *)((int)((int *)(v1 + 4))); // (int)&FUN_11375154
         return (int)(result);
     }
     *v2 = (int)(result);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11375174; body size 67 bytes.
@@ -37884,7 +37884,7 @@ int FUN_11375174(int a1) {
     if ((result & 1) == 0 || *(int *)(v1 + 12) != 0) {
         return (int)(result);
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113752b6; body size 101 bytes.
@@ -37901,7 +37901,7 @@ int FUN_113752b6(int a1, int a2, int a3, int a4, int a5) {
         return (int)(result2);
     }
     FUN_113a10f0(result2);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137531b; body size 15 bytes.
@@ -37910,7 +37910,7 @@ int FUN_1137531b(int a1) {
 
     int v1; // (int)((int(*)(int a1))&FUN_1137531b<>)
     *(short*)(v1 + 8) = (short)(1);
-    return (int)(((code *)LAB_113752f7)(a1));
+    return (int)(((code *)(void *)LAB_113752f7)(a1));
 }
 
 // Reference entry 1137573f; body size 82 bytes.
@@ -37926,7 +37926,7 @@ int FUN_1137573f(int a1, int a2, int a3, int a4, int a5) {
         return (int)(0x2400);
     }
     FUN_1139f790(v1, *(int *)(a1 + 16), 2048);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113757fe; body size 33 bytes.
@@ -37935,7 +37935,7 @@ int FUN_113757fe(int a1, int a2, int a3, int a4) {
 
     int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_113757fe<>)
     *(short*)(v1 + 8) = (short)(1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137581f; body size 72 bytes.
@@ -37954,7 +37954,7 @@ int FUN_1137581f(int a1) {
         return (int)(result);
     }
     FUN_11380650(*(int *)v4 + *(int *)(v1 + 76), v3, v1);
-    return (int)(((code *)LAB_11373cba)());
+    return (int)(((code *)(void *)LAB_11373cba)());
 }
 
 // Reference entry 11375867; body size 109 bytes.
@@ -37992,7 +37992,7 @@ int *v10 = (int *)((int)((int *)(v1 + 16)));
     *(char*)(*v4 + v2) = (char)(0);
     *(char*)(v2 + 1 + *v4) = (char)(0);
     *v5 = (short)(*(short *)(2 * v1 & 2 | (int)&DAT_119f8004));
-    return (int)(((code *)LAB_11373cba)());
+    return (int)(((code *)(void *)LAB_11373cba)());
 }
 
 // Reference entry 113758d4; body size 79 bytes.
@@ -38005,7 +38005,7 @@ int FUN_113758d4(int a1) {
     if ((v3 & 192) != 0) {
         if (v2 > 11 == (v2 & 1) == 0 || (char)v3 < 0) {
             FUN_11380650((int)&DAT_119fb400, v2, v1);
-            return (int)(((code *)LAB_11373cba)());
+            return (int)(((code *)(void *)LAB_11373cba)());
         }
     }
     if (v2 >= 128) {
@@ -38016,7 +38016,7 @@ int FUN_113758d4(int a1) {
         return (int)(result);
     }
     FUN_11380650((int)&DAT_119fb400, v2, v1);
-    return (int)(((code *)LAB_11373cba)());
+    return (int)(((code *)(void *)LAB_11373cba)());
 }
 
 // Reference entry 11375923; body size 55 bytes.
@@ -38032,7 +38032,7 @@ int FUN_11375923(void) {
     FUN_11380650(result);
 short *v3 = (short *)((short)((short *)(v1 + 8))); // (int)&FUN_11375951
     *v3 = (short)(*v3 & -0x1001);
-    return (int)(((code *)LAB_11373cba)());
+    return (int)(((code *)(void *)LAB_11373cba)());
 }
 
 // Reference entry 113760ac; body size 72 bytes.
@@ -38242,14 +38242,14 @@ int *v58 = (int *)((int)((int *)(v56 + 456)));
         *(int*)(v61 + 472) = (int)(*(int *)(v1 + 16));
         *(int*)(v61 + 476) = (int)(*(int *)(v1 + 20));
         if (v60 != 0 == (v62 != 2)) {
-            ((code *)LAB_11373cba)();
+            ((code *)(void *)LAB_11373cba)();
         }
     } else {
         *(int*)(v51 - 8) = (int)(v61);
         *(int*)(v61 + 448) = (int)(*v2);
         FUN_113433c0();
         if (v60 != 0) {
-            ((code *)LAB_11373cba)();
+            ((code *)(void *)LAB_11373cba)();
         }
 int *v63 = (int *)((int)((int *)(*(int *)(v51 + 32) + 456))); // (int)&FUN_113762eb
         *v63 = (int)(*v63 - 1);
@@ -38314,7 +38314,7 @@ int FUN_113764a9(int a1, int a2) {
     int v11 = (int)(FUN_11324560(v10), 0); // (int)&FUN_113764f2
     *(int*)v11 = (int)((int)(v6));
     *(int*)(v11 + 4) = (int)(v6 >> 31);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11376518; body size 37 bytes.
@@ -38324,7 +38324,7 @@ int FUN_11376518(int a1, int a2) {
     int v1; // (int)((int(*)(int a1, int a2))&FUN_11376518<>)
     *(short*)(v1 + 8) = (short)(4);
     *(int*)(v1 + 4) = (int)(v1 >> 31);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137653d; body size 134 bytes.
@@ -38355,7 +38355,7 @@ int *v9 = (int *)((int)((int *)(v4 + 152))); // (int)&FUN_1137659c
     if (result != 0) {
         return (int)(result);
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113765c3; body size 324 bytes.
@@ -38447,7 +38447,7 @@ int *v25 = (int *)((int)((int *)(v23 + 40)));
   lab_0x113766d7:
     *(char*)(*v5 + 3) = (char)(*v4 & 3);
     if (result2 == 0) {
-        return (int)(((code *)LAB_113732fa)());
+        return (int)(((code *)(void *)LAB_113732fa)());
     }
     return (int)(result2);
 }
@@ -38473,7 +38473,7 @@ int *v5 = (int *)((int)((int *)(v4 + 8))); // (int)&FUN_11376737
     *(int*)(v4 + 52) = (int)(v7);
     *v5 = (int)(*v5 & -5 | *(int *)(v2 + 8) & 4);
     int v8 = (int)(FUN_11308e80(*(int *)(v2 + 12), v7, 4, v6, *(int *)(v4 + 40)), 0); // (int)&FUN_11376763
-    return (int)(((code *)LAB_113732fa)(v8));
+    return (int)(((code *)(void *)LAB_113732fa)(v8));
 }
 
 // Reference entry 11376789; body size 351 bytes.
@@ -38553,7 +38553,7 @@ int *v15 = (int *)((int)((int *)v10)); // (int)&FUN_1137681e
         return (int)(result);
     }
     *(char*)(v5 + 2) = (char)(1);
-    return (int)(((code *)LAB_113732fa)(v6));
+    return (int)(((code *)(void *)LAB_113732fa)(v6));
 }
 
 // Reference entry 1137693e; body size 67 bytes.
@@ -38569,9 +38569,9 @@ int *v5 = (int *)((int)((int *)(v2 + 20))); // (int)&FUN_11376950
     *v3 = (int)(v4 + 1);
     *v5 = (int)(v6 + (int)(v4 == -1));
     if ((v6 || v4) == 0) {
-        ((code *)LAB_113752f3)();
+        ((code *)(void *)LAB_113752f3)();
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11376981; body size 76 bytes.
@@ -38587,7 +38587,7 @@ int FUN_11376981(int a1, int a2) {
     *(int*)(v2 + 32) = (int)(*(int *)(a1 + 8));
     *(char*)(v2 + 4) = (char)(1);
     *(int*)(v2 + 40) = (int)((int)&DAT_122f6eab);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113769cd; body size 59 bytes.
@@ -38599,7 +38599,7 @@ int *v2 = (int *)((int)((int *)(v1 + 96))); // (int)&FUN_113769d1
 int *v3 = (int *)((int)((int *)(a1 + 4))); // (int)&FUN_113769d4
     FUN_1137d5a0(v1, *(int *)(4 * *v3 + *v2));
     *(int*)(*v2 + 4 * *v3) = (int)(0);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11376bf9; body size 59 bytes.
@@ -38610,12 +38610,12 @@ int FUN_11376bf9(void) {
     int v2 = (int)(FUN_1133d000(*(int *)(v1 + 40), 0), 0); // (int)&FUN_11376c06
     int result = (int)(v2); // (int)&FUN_11376c14
     if (v2 == 0) {
-        result = (int)(((code *)LAB_11376bcf)(), 0);
+        result = (int)(((code *)(void *)LAB_11376bcf)(), 0);
     }
     if (result != 101) {
         return (int)(result);
     }
-    return (int)(((code *)LAB_113752ef)(0));
+    return (int)(((code *)(void *)LAB_113752ef)(0));
 }
 
 // Reference entry 11376cd8; body size 32 bytes.
@@ -38627,7 +38627,7 @@ int FUN_11376cd8(int a1) {
     if (*(int *)(result + 4 * *(int *)(v1 + 4)) == 0) {
         return (int)(result);
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11376ffe; body size 32 bytes.
@@ -38635,9 +38635,9 @@ int FUN_11376cd8(int a1) {
 int FUN_11376ffe(int a1, int a2, int a3, int a4, int a5) {
 
     if (a5 != 0) {
-        ((code *)LAB_11376fb0)();
+        ((code *)(void *)LAB_11376fb0)();
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137701e; body size 110 bytes.
@@ -38665,7 +38665,7 @@ int *v9 = (int *)((int)((int *)(v8 + 16))); // (int)&FUN_11377078
     *v9 = (int)(v10 + 1);
 int *v11 = (int *)((int)((int *)(v8 + 20))); // (int)&FUN_1137707c
     *v11 = (int)(*v11 + (int)(v10 == -1));
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11377269; body size 398 bytes.
@@ -38713,14 +38713,14 @@ char *v15 = (char *)((char)((char *)v10)); // (int)&FUN_11377325
     *(char*)(v2 + 3) = (char)(0);
     *(int*)(v2 + 28) = (int)(0);
     if (v19 != 0) {
-        ((code *)LAB_11376fac)();
+        ((code *)(void *)LAB_11376fac)();
     }
     if (v6 == 0) {
-        ((code *)LAB_11373cba)();
+        ((code *)(void *)LAB_11373cba)();
     }
     int v20 = (int)((*v15 & 4) != 0 ? 23 : 18); // (int)&FUN_113773ca
     int v21 = (int)(*(int *)(a4 + 228)); // (int)&FUN_113773ce
-    return (int)(((code *)LAB_113732fa)(v21, v20, v7, *(int *)v6, v4, v5));
+    return (int)(((code *)(void *)LAB_113732fa)(v21, v20, v7, *(int *)v6, v4, v5));
 }
 
 // Reference entry 113773f7; body size 234 bytes.
@@ -38759,23 +38759,23 @@ int FUN_113773f7(int a1, int a2, int a3, int a4, int a5) {
     *(int*)(v2 + 28) = (int)(0);
     *(int*)(v2 + 32) = (int)(0);
     if (v10 != 0) {
-        ((code *)LAB_11376fac)();
+        ((code *)(void *)LAB_11376fac)();
     }
     if ((*(int *)(a1 + 8) & 1) == 0) {
-        ((code *)LAB_11373cba)();
+        ((code *)(void *)LAB_11373cba)();
     }
 int *v11 = (int *)((int)((int *)(a3 + 44))); // (int)&FUN_11377490
     *v11 = (int)(*v11 + 1);
     if (*(int *)(a4 + 232) == 0) {
-        ((code *)LAB_11373cba)();
+        ((code *)(void *)LAB_11373cba)();
     }
     if (*(char *)(v3 + 36) <= -1) {
-        ((code *)LAB_11373cba)();
+        ((code *)(void *)LAB_11373cba)();
     }
     int v12 = (int)(*(int *)(v2 + 64)); // (int)&FUN_113774b2
     int v13 = (int)(*(int *)v3); // (int)&FUN_113774b5
     int v14 = (int)(*(int *)(a4 + 228)); // (int)&FUN_113774be
-    return (int)(((code *)LAB_113732fa)(v14, 9, v4, v13, v12, *(int *)(v2 + 68)));
+    return (int)(((code *)(void *)LAB_113732fa)(v14, 9, v4, v13, v12, *(int *)(v2 + 68)));
 }
 
 // Reference entry 113775c6; body size 81 bytes.
@@ -38793,7 +38793,7 @@ int FUN_113775c6(int a1) {
     if (FUN_1137ead0(v2, v4, 0) == 0) {
         return (int)(0);
     }
-    return (int)(((code *)LAB_11376fac)());
+    return (int)(((code *)(void *)LAB_11376fac)());
 }
 
 // Reference entry 11377617; body size 99 bytes.
@@ -38809,7 +38809,7 @@ short *v3 = (short *)((short)((short *)(v1 + 8))); // (int)&FUN_1137761d
     memcpy((void *)(*v2), (void *)(v1), v1);
     int v4 = (int)(*(int *)(*(int *)(a3 + 96) + 4 * *(int *)(a1 + 12))); // (int)&FUN_11377660
     *(int*)(v4 + 28) = (int)(0);
-    return (int)(((code *)LAB_113732fa)(0));
+    return (int)(((code *)(void *)LAB_113732fa)(0));
 }
 
 // Reference entry 1137772b; body size 106 bytes.
@@ -38832,7 +38832,7 @@ short *v3 = (short *)((short)((short *)(v2 + 8))); // (int)&FUN_11377743
         return (int)(result);
     }
     *(short*)(v4 + 8) = (short)(1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11377840; body size 43 bytes.
@@ -38844,7 +38844,7 @@ int FUN_11377840(int a1, int a2) {
         return (int)(result);
     }
     *(short*)(result + 8) = (short)(1);
-    return (int)(((code *)LAB_113732fa)(0));
+    return (int)(((code *)(void *)LAB_113732fa)(0));
 }
 
 // Reference entry 1137786b; body size 59 bytes.
@@ -38858,7 +38858,7 @@ int FUN_1137786b(int a1, int a2) {
     int v4 = (int)(*(int *)(v2 + 36)); // (int)&FUN_1137787a
     *(int*)v1 = (int)((int)(v3));
     *(int*)(v1 + 4) = (int)(v4);
-    return (int)(((code *)LAB_113732fa)(v3, v4));
+    return (int)(((code *)(void *)LAB_113732fa)(v3, v4));
 }
 
 // Reference entry 113778a6; body size 56 bytes.
@@ -38871,10 +38871,10 @@ int FUN_113778a6(int a1) {
     *(int*)(v2 + 28) = (int)(0);
     int v3 = (int)(v2); // (int)&FUN_113778bd
     if (*(char *)v2 != 0) {
-        v3 = (int)(((code *)LAB_11373cc2)(), 0);
+        v3 = (int)(((code *)(void *)LAB_11373cc2)(), 0);
     }
     FUN_1133a640(*(int *)(v3 + 40));
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113778de; body size 126 bytes.
@@ -38890,7 +38890,7 @@ int FUN_113778de(int a1, int a2) {
         *(int*)(v3 + 32) = (int)(-1);
         v5 = (int)(v4);
         if (*(char *)v4 == 0) {
-            v5 = (int)(((code *)LAB_11376094)(), 0);
+            v5 = (int)(((code *)(void *)LAB_11376094)(), 0);
         }
     }
     int v6 = (int)(FUN_1133c6c0(v5, (int *)&v1), 0); // (int)&FUN_1137790d
@@ -38903,12 +38903,12 @@ int FUN_113778de(int a1, int a2) {
     }
     int v7 = (int)(result); // (int)&FUN_1137793e
     if (*(int *)(a1 + 8) < 1) {
-        v7 = (int)(((code *)LAB_11373cc2)(), 0);
+        v7 = (int)(((code *)(void *)LAB_11373cc2)(), 0);
     }
     if (v7 != 0) {
-        ((code *)LAB_113752f3)();
+        ((code *)(void *)LAB_113752f3)();
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11377add; body size 237 bytes.
@@ -38972,7 +38972,7 @@ int *v4 = (int *)((int)((int *)(a3 + 44))); // (int)&FUN_11377c54
     int v5 = (int)(40 * *(int *)(a1 + 8) + a2); // (int)&FUN_11377c4b
     if ((*(short *)(v5 + 8) & 0x4000) != 0) {
         if (FUN_1137e920(v5) != 0) {
-            ((code *)LAB_11376fac)();
+            ((code *)(void *)LAB_11376fac)();
         }
     }
     int v6; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_11377c2e<>)
@@ -38991,9 +38991,9 @@ int *v4 = (int *)((int)((int *)(a3 + 44))); // (int)&FUN_11377c54
         v6 = (int)(FUN_113815f0(v2, v5), 0);
     }
     if (v6 != 0) {
-        ((code *)LAB_11376fb0)();
+        ((code *)(void *)LAB_11376fb0)();
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11377dc5; body size 446 bytes.
@@ -39009,7 +39009,7 @@ int *v3 = (int *)((int)((int *)(v2 + 40))); // (int)&FUN_11377dd2
         int v5 = (int)(FUN_1131e2b0(v2), 0); // (int)&FUN_11377ddb
         result = (int)(v5);
         if (v5 != 0) {
-            result = (int)(((code *)LAB_11376fb0)(), 0);
+            result = (int)(((code *)(void *)LAB_11376fb0)(), 0);
         }
     }
     if (*(char *)(v2 + 2) != 0) {
@@ -39021,7 +39021,7 @@ int *v3 = (int *)((int)((int *)(v2 + 40))); // (int)&FUN_11377dd2
     int v8 = (int)(FUN_1137ea50(v6, 0, *(int *)(v6 + 44), &v7), 0); // (int)&FUN_11377e39
     int v9 = (int)(v8); // (int)&FUN_11377e43
     if (v8 != 0) {
-        v9 = (int)(((code *)LAB_11376fb0)(), 0);
+        v9 = (int)(((code *)(void *)LAB_11376fb0)(), 0);
     }
     char * v10; // (int)((int(*)(int result5, int a2, int a3, int a4, int a5))&FUN_11377dc5<>)
     int v11 = (int)((int)v10); // (int)&FUN_11377e49
@@ -39073,7 +39073,7 @@ int *v3 = (int *)((int)((int *)(v2 + 40))); // (int)&FUN_11377dd2
     *(int*)(v24 + 64) = (int)(v23);
     *(int*)(v24 + 24) = (int)(*(int *)(result5 + 16));
     *(int*)(v24 + 36) = (int)(v2);
-    return (int)(((code *)LAB_113732fa)(0));
+    return (int)(((code *)(void *)LAB_113732fa)(0));
 }
 
 // Reference entry 11377f83; body size 77 bytes.
@@ -39086,7 +39086,7 @@ int FUN_11377f83(int a1, int a2, int a3, int a4) {
         return (int)(0x2400);
     }
     FUN_11324560(v2);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11377fd0; body size 52 bytes.
@@ -39095,7 +39095,7 @@ int FUN_11377fd0(int a1, int a2, int a3, int a4) {
 
     int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_11377fd0<>)
     *(short*)(v1 + 8) = (short)(4);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378004; body size 62 bytes.
@@ -39107,7 +39107,7 @@ int FUN_11378004(int a1, int a2, int a3, int a4) {
         return (int)(result);
     }
     FUN_113a10f0(result);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137805f; body size 56 bytes.
@@ -39120,9 +39120,9 @@ int FUN_1137805f(int a1) {
         return (int)(result);
     }
     if (FUN_1137d300(result) != 0) {
-        ((code *)LAB_11376fb0)();
+        ((code *)(void *)LAB_11376fb0)();
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378097; body size 299 bytes.
@@ -39142,14 +39142,14 @@ int FUN_11378097(int a1, int a2) {
     int v7 = (int)(FUN_1137ea50(v3, 0, v5, &v6), 0); // (int)&FUN_1137812d
     int v8 = (int)(v7); // (int)&FUN_11378137
     if (v7 != 0) {
-        v8 = (int)(((code *)LAB_11376fb0)(), 0);
+        v8 = (int)(((code *)(void *)LAB_11376fb0)(), 0);
     }
     int v9 = (int)(FUN_1137f970(v1, v1, &v4, v8), 0); // (int)&FUN_11378154
     int v10 = (int)((*(char *)a1 & 1) != 0 ? v9 + 1 : -v9); // (int)&FUN_1137819b
     if (v10 >= 0 == (v10 != 0)) {
-        ((code *)LAB_113752f3)();
+        ((code *)(void *)LAB_113752f3)();
     }
-    return (int)(((code *)LAB_113732fa)(0));
+    return (int)(((code *)(void *)LAB_113732fa)(0));
 }
 
 // Reference entry 113781c2; body size 257 bytes.
@@ -39180,10 +39180,10 @@ int *v9 = (int *)((int)((int *)(a1 + 4))); // (int)&FUN_1137821b
     *(int*)v5 = (int)((int)(v10));
     *(int*)(v5 + 4) = (int)(v10 >> 31);
     if (v11 != 0) {
-        ((code *)LAB_11376fac)();
+        ((code *)(void *)LAB_11376fac)();
     }
     if (v10 == 0) {
-        ((code *)LAB_11376094)();
+        ((code *)(void *)LAB_11376094)();
     }
 int *v12 = (int *)((int)((int *)(*v7 + (v8 + 12)))); // (int)&FUN_11378266
     int v13 = (int)(*v12); // (int)&FUN_11378266
@@ -39208,7 +39208,7 @@ int *v18 = (int *)((int)((int *)(*(int *)(v16 + 8) + 28))); // (int)&FUN_1137827
     }
     int v19 = (int)(*(int *)(v17 + 32)); // (int)&FUN_11378289
     if (v19 == 0) {
-        return (int)(((code *)LAB_113732fa)(0x1000000 * v6 + 0x1000000 >> 24));
+        return (int)(((code *)(void *)LAB_113732fa)(0x1000000 * v6 + 0x1000000 >> 24));
     }
     int v20 = (int)(v19); // (int)&FUN_1137828e
 int *v21 = (int *)((int)((int *)(*(int *)(v20 + 8) + 44))); // (int)&FUN_11378293
@@ -39223,7 +39223,7 @@ int *v21 = (int *)((int)((int *)(*(int *)(v20 + 8) + 44))); // (int)&FUN_1137829
         }
         v20 = (int)(*(int *)v20);
     }
-    return (int)(((code *)LAB_113732fa)(0x1000000 * v6 + 0x1000000 >> 24));
+    return (int)(((code *)(void *)LAB_113732fa)(0x1000000 * v6 + 0x1000000 >> 24));
 }
 
 // Reference entry 113782c3; body size 137 bytes.
@@ -39253,9 +39253,9 @@ int *v15 = (int *)((int)((int *)(v11 + 4))); // (int)&FUN_1137832c
         }
     }
     if (v8 != 0) {
-        ((code *)LAB_11376fb0)();
+        ((code *)(void *)LAB_11376fb0)();
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137834c; body size 50 bytes.
@@ -39268,7 +39268,7 @@ int FUN_1137834c(int a1, int a2) {
         return (int)(result);
     }
     FUN_11381110(v1, *(int *)(result + 40));
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378393; body size 131 bytes.
@@ -39289,11 +39289,11 @@ short *v3 = (short *)((short)((short *)(v2 + 8))); // (int)&FUN_113783a8
     int v6 = (int)(0); // bp+44, (int)&FUN_113783d7
     int v7 = (int)(*(int *)((16 * *(int *)(a1 + 4) + 4) + v5)); // (int)&FUN_113783e0
     if (FUN_11308b60(v7, &v6, *(int *)(a1 + 12)) != 0) {
-        ((code *)LAB_11376fb0)();
+        ((code *)(void *)LAB_11376fb0)();
     }
     *(int*)v4 = (int)((int)(v6));
     *(int*)(v4 + 4) = (int)(v6 >> 31);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378416; body size 33 bytes.
@@ -39305,7 +39305,7 @@ char *v2 = (char *)((char)((char *)(v1 + 90))); // (int)&FUN_1137841a
     *v2 = (char)(*v2 + 1);
     thunk_FUN_11393b20(v1, *(int *)(a1 + 16), 0, 0, 0);
     *v2 = (char)(*v2 - 1);
-    return (int)(((code *)LAB_1137691e)());
+    return (int)(((code *)(void *)LAB_1137691e)());
 }
 
 // Reference entry 11378437; body size 332 bytes.
@@ -39350,7 +39350,7 @@ int *v13 = (int *)((int)((int *)(v4 + 152))); // (int)&FUN_1137846c
     if (v3 == 7) {
         return (int)(7);
     }
-    return (int)(((code *)LAB_11376fb8)());
+    return (int)(((code *)(void *)LAB_11376fb8)());
 }
 
 // Reference entry 11378598; body size 86 bytes.
@@ -39365,7 +39365,7 @@ int FUN_11378598(int a1, int a2) {
     if (v4 == 0) {
         v5 = (int *)((int *)(v1 + 24));
         *v5 = (int)(*v5 + 1);
-        return (int)(((code *)LAB_113732fa)());
+        return (int)(((code *)(void *)LAB_113732fa)());
     }
     if (*(int *)(v1 + 480) == 0) {
 int *v6 = (int *)((int)((int *)(v4 + 32))); // (int)&FUN_113785c6
@@ -39374,13 +39374,13 @@ int *v6 = (int *)((int)((int *)(v4 + 32))); // (int)&FUN_113785c6
         if (v7 != 0) {
             v5 = (int *)((int *)(v1 + 24));
             *v5 = (int)(*v5 + 1);
-            return (int)(((code *)LAB_113732fa)());
+            return (int)(((code *)(void *)LAB_113732fa)());
         }
     }
     FUN_11312370(v1, v4);
     v5 = (int *)((int *)(v1 + 24));
     *v5 = (int)(*v5 + 1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113785ee; body size 89 bytes.
@@ -39393,7 +39393,7 @@ int FUN_113785ee(int a1, int a2) {
     int v4 = (int)(FUN_11354080(v3 + 24, *(int *)(a1 + 16), 0), 0); // (int)&FUN_11378607
     int result = (int)(v4); // (int)&FUN_11378613
     if (v4 == 0) {
-        result = (int)(((code *)LAB_113785d6)(), 0);
+        result = (int)(((code *)(void *)LAB_113785d6)(), 0);
     }
 int *v5 = (int *)((int)((int *)(*(int *)(v4 + 12) + 8))); // (int)&FUN_11378618
     if (*v5 != (int)((v4))) {
@@ -39403,7 +39403,7 @@ int *v5 = (int *)((int)((int *)(*(int *)(v4 + 12) + 8))); // (int)&FUN_11378618
     FUN_1134f770(v2, v4);
 int *v6 = (int *)((int)((int *)(v2 + 24))); // (int)&FUN_11378633
     *v6 = (int)(*v6 + 1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137867f; body size 40 bytes.
@@ -39414,7 +39414,7 @@ int FUN_1137867f(int a1, int a2) {
     FUN_1134f770(v1, v1);
 int *v2 = (int *)((int)((int *)(v1 + 24))); // (int)&FUN_11378693
     *v2 = (int)(*v2 + 1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113786a7; body size 136 bytes.
@@ -39426,7 +39426,7 @@ int FUN_113786a7(int a1, int a2) {
     int v3 = (int)(*(int *)(*(int *)(v2 + 16) + 12 + 16 * v1)); // (int)&FUN_113786b8
     int result3 = (int)(FUN_11354080(v3 + 40, *(int *)(a1 + 16), 0), 0); // (int)&FUN_113786c0
     if (result3 == 0) {
-        ((code *)LAB_11376094)();
+        ((code *)(void *)LAB_11376094)();
     }
     int result = (int)(*(int *)(result3 + 24)); // (int)&FUN_113786d2
     if (*(int *)(result3 + 20) != (int)(result)) {
@@ -39448,7 +39448,7 @@ int FUN_113786a7(int a1, int a2) {
             FUN_113447b0(v2, result3);
 int *v7 = (int *)((int)((int *)(v2 + 24))); // (int)&FUN_1137871b
             *v7 = (int)(*v7 + 1);
-            return (int)(((code *)LAB_113732fa)());
+            return (int)(((code *)(void *)LAB_113732fa)());
         }
     }
     return (int)(result3);
@@ -39463,7 +39463,7 @@ int FUN_1137872f(int a1, int a2) {
     FUN_113447b0(v1, v1);
 int *v2 = (int *)((int)((int *)(v1 + 24))); // (int)&FUN_11378742
     *v2 = (int)(*v2 + 1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378756; body size 161 bytes.
@@ -39487,7 +39487,7 @@ short *v10 = (short *)((short)((short *)(v2 + 8))); // (int)&FUN_113787a1
     }
     int result = (int)(v8); // (int)&FUN_113787c4
     if (v8 == 0) {
-        result = (int)(((code *)LAB_11377bdd)(), 0);
+        result = (int)(((code *)(void *)LAB_11377bdd)(), 0);
     }
     if (v9 == 0) {
         return (int)(result);
@@ -39498,7 +39498,7 @@ short *v10 = (short *)((short)((short *)(v2 + 8))); // (int)&FUN_113787a1
 int *v13 = (int *)((int)((int *)(v3 + 4))); // (int)&FUN_113787e4
     *v13 = (int)(v11 / 0x80000000 + (int)(v12 < v11) + *v13);
     FUN_1137f250(v2, v9, -1, 1, (int)&FUN_10051695);
-    return (int)(((code *)LAB_11377bdd)());
+    return (int)(((code *)(void *)LAB_11377bdd)());
 }
 
 // Reference entry 113787f7; body size 89 bytes.
@@ -39515,7 +39515,7 @@ int FUN_113787f7(int a1, int a2, int a3, int a4) {
     int v2 = (int)(40 * *(int *)(a1 + 8) + a2);
     int v3 = (int)(*(int *)(v1 + 16)); // (int)&FUN_1137882d
     FUN_11365e00(v3, *(int *)v2, *(int *)(v2 + 4));
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378850; body size 131 bytes.
@@ -39552,7 +39552,7 @@ int *v8 = (int *)((int)((int *)(v3 + 8))); // (int)&FUN_11378893
     }
     int v11 = (int)(*(int *)(a1 + 12)); // (int)&FUN_113788bc
     FUN_1137f070(40 * v11 + a2, *(int *)v9, *(int *)(v9 + 4));
-    return (int)(((code *)LAB_11377bdd)());
+    return (int)(((code *)(void *)LAB_11377bdd)());
 }
 
 // Reference entry 113788fb; body size 135 bytes.
@@ -39578,17 +39578,17 @@ int FUN_113788fb(int a1, int a2, int a3, int a4) {
         int v7 = (int)(v4 + v5);
 int *v8 = (int *)((int)((int *)(v3 + 16)));
         if (FUN_11365f30(*v8, v1, *(int *)v7, *(int *)(v7 + 4)) != 0) {
-            ((code *)LAB_113752ef)();
+            ((code *)(void *)LAB_113752ef)();
         }
         v6 = (int *)(v8);
         if (v1 < 0) {
-            ((code *)LAB_11376094)();
+            ((code *)(void *)LAB_11376094)();
             v6 = (int *)(v8);
         }
     }
     int v9 = (int)(v5 + a2);
     FUN_11365e00(*v6, *(int *)v9, *(int *)(v9 + 4));
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378982; body size 560 bytes.
@@ -39707,7 +39707,7 @@ int *v33 = (int *)((int)((int *)(a2 + 220))); // (int)&FUN_11378b32
     int v38 = (int)(*(int *)v1); // (int)&FUN_11378b93
     *v15 = (int)(v38);
     *v16 = (int)(*v14);
-    return (int)(((code *)LAB_11377be5)(v38 - 20));
+    return (int)(((code *)(void *)LAB_11377be5)(v38 - 20));
   lab_0x11378a4f:
     *v26 = (short)(1040);
     *(int*)(v6 + 16) = (int)(v25);
@@ -39783,7 +39783,7 @@ short *v3 = (short *)((short)((short *)(v2 + 8)));
     int v6 = (int)(*(int *)(v5 + 48)); // (int)&FUN_11378bea
     int v7 = (int)(*(int *)(*(int *)(v5 + 8) + 4 + 20 * v6)); // (int)&FUN_11378bf3
     FUN_1139f790(v4, 40 * (*(int *)(a1 + 4) + v7) + result, 0x1000);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378c77; body size 47 bytes.
@@ -39801,14 +39801,14 @@ int *v3 = (int *)((int)((int *)(v1 + 472))); // (int)&FUN_11378c8e
     *v3 = (int)(v5);
 int *v6 = (int *)((int)((int *)(v1 + 476))); // (int)&FUN_11378c98
     *v6 = (int)(*v6 + (v2 >> 31) + (int)(v5 < v4));
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378d10; body size 8 bytes.
 #line 1 "ENTRY_11378d10"
 int FUN_11378d10(void) {
 
-    return (int)(((code *)LAB_11378cec)());
+    return (int)(((code *)(void *)LAB_11378cec)());
 }
 
 // Reference entry 11378db1; body size 59 bytes.
@@ -39822,15 +39822,15 @@ int *v3 = (int *)((int)((int *)(v2 + 4))); // (int)&FUN_11378dbb
 int *v5 = (int *)((int)((int *)v2)); // (int)&FUN_11378dbf
     uint v6 = (uint)(*v5); // (int)&FUN_11378dbf
     if (v4 < 0) {
-        ((code *)LAB_1137375a)();
+        ((code *)(void *)LAB_1137375a)();
     }
     if (v6 == 0 == (v4 >= 0 != v4 != 0)) {
-        ((code *)LAB_1137375a)();
+        ((code *)(void *)LAB_1137375a)();
     }
     uint v7 = (uint)(*(int *)(a1 + 12)); // (int)&FUN_11378dd8
     *v5 = (int)(v6 - v7);
     *v3 = (int)(v7 / 0x80000000 + v4 + (int)(v6 < v7));
-    return (int)(((code *)LAB_113752ef)());
+    return (int)(((code *)(void *)LAB_113752ef)());
 }
 
 // Reference entry 11378eb3; body size 37 bytes.
@@ -39840,7 +39840,7 @@ int FUN_11378eb3(int a1, int a2, int a3, int a4) {
     int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_11378eb3<>)
     *(int*)v1 = (int)((int)(-1));
     *(int*)(v1 + 4) = (int)(-1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378ed8; body size 67 bytes.
@@ -39856,14 +39856,14 @@ int *v4 = (int *)((int)((int *)(v1 + 4))); // (int)&FUN_11378eeb
         return (int)(0);
     }
     if (v5 < 0) {
-        ((code *)LAB_113752ef)();
+        ((code *)(void *)LAB_113752ef)();
     }
     if (v3 == 0 == (v5 >= 0 != v5 != 0)) {
-        ((code *)LAB_113752ef)();
+        ((code *)(void *)LAB_113752ef)();
     }
     *v2 = (int)(v3 - 1);
     *v4 = (int)(v5 - (int)(v3 == 0));
-    return (int)(((code *)LAB_113752ef)());
+    return (int)(((code *)(void *)LAB_113752ef)());
 }
 
 // Reference entry 11378f1b; body size 76 bytes.
@@ -39884,9 +39884,9 @@ int *v4 = (int *)((int)((int *)v1)); // (int)&FUN_11378f2d
         *v2 = (int)(v7);
     }
     if ((v7 || v6) == 0) {
-        ((code *)LAB_113752f7)();
+        ((code *)(void *)LAB_113752f7)();
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11378f67; body size 451 bytes.
@@ -39944,7 +39944,7 @@ int *v20 = (int *)((int)((int *)(v14 + 12))); // (int)&FUN_1137903c
     int v22; // (int)&FUN_11379070
     int v23; // (int)&FUN_1137907a
     if (v21 == 0) {
-        ((code *)LAB_11376094)();
+        ((code *)(void *)LAB_11376094)();
         goto lab_0x113790cb;
     } else {
         if (v21 < 1) {
@@ -39983,13 +39983,13 @@ short *v26 = (short *)((short)((short *)(v25 + 8)));
         if (*(int *)(v25 + 24) == 0) {
             *v26 = (short)(1);
             *v12 = (int)(0);
-            return (int)(((code *)LAB_11376922)());
+            return (int)(((code *)(void *)LAB_11376922)());
         }
     }
     FUN_113a10a0(v25);
     *(short*)(*v8 + 8) = (short)(1);
     *v12 = (int)(0);
-    return (int)(((code *)LAB_11376922)());
+    return (int)(((code *)(void *)LAB_11376922)());
   lab_0x11379097:;
     int v27 = (int)(0); // (int)&FUN_1137909a
     if ((v23 & 1) == 0) {
@@ -40009,7 +40009,7 @@ int FUN_11379216(int a1, int a2) {
     int v4; // (int)((int(*)(int a1, int a2))&FUN_11379216<>)
     int v5 = (int)(FUN_1133e100(v4, v2, *(int *)(a1 + 8), &v3, &v1), 0); // (int)&FUN_11379252
     if (v5 != 0 == (v5 != 5)) {
-        ((code *)LAB_11376fb0)();
+        ((code *)(void *)LAB_11376fb0)();
     }
     int v6; // (int)((int(*)(int a1, int a2))&FUN_11379216<>)
     int v7 = (int)(&v6); // (int)&FUN_11379257
@@ -40031,7 +40031,7 @@ int FUN_11379216(int a1, int a2) {
         v8++;
         v9 += 40;
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113792c5; body size 681 bytes.
@@ -40238,9 +40238,9 @@ short *v2 = (short *)((short)((short *)(v1 + 8))); // (int)&FUN_113792de
     *(int*)(v39 + 12) = (int)(v40);
     *(char*)(v39 + 10) = (char)(1);
     if (*(int *)(v36 + 40) != 0) {
-        ((code *)LAB_11376fb0)();
+        ((code *)(void *)LAB_11376fb0)();
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
   lab_0x11379397:
     v35 = (int)(v9);
     v36 = (int)(v25);
@@ -40317,7 +40317,7 @@ int FUN_1137956e(int a1) {
     int v1 = (int)(*(int *)(a1 + 8)); // (int)&FUN_11379572
     int v2; // (int)((int(*)(int a1))&FUN_1137956e<>)
     FUN_11366880(v2 + 124, v2, *(int *)(a1 + 4), v1 == 0 ? 0 : 40 * v1 + v2);
-    return (int)(((code *)LAB_1137691e)());
+    return (int)(((code *)(void *)LAB_1137691e)());
 }
 
 // Reference entry 11379599; body size 197 bytes.
@@ -40331,7 +40331,7 @@ int FUN_11379599(void) {
     if (*(char *)(v4 + 17) == 0) {
         int v5; // (int)((int(*)(void))&FUN_11379599<>)
         *(int*)(v5 + 40) = (int)(0);
-        return (int)(((code *)LAB_113752ef)());
+        return (int)(((code *)(void *)LAB_113752ef)());
     }
 int *v6 = (int *)((int)((int *)(v4 + 12))); // (int)&FUN_113795b2
 int *v7 = (int *)((int)((int *)(v4 + 48))); // (int)&FUN_113795b5
@@ -40345,7 +40345,7 @@ int *v7 = (int *)((int)((int *)(v4 + 48))); // (int)&FUN_113795b5
     int v11 = (int)(&v10); // (int)&FUN_113795ca
     if (v9 == 0) {
         *(int*)(v11 + 40) = (int)(0);
-        return (int)(((code *)LAB_113752ef)());
+        return (int)(((code *)(void *)LAB_113752ef)());
     }
     int v12 = (int)(*(int *)(v4 + 8)); // (int)&FUN_113795dd
     int v13; // (int)((int(*)(void))&FUN_11379599<>)
@@ -40373,13 +40373,13 @@ int *v7 = (int *)((int)((int *)(v4 + 48))); // (int)&FUN_113795b5
   lab_0x11379638:;
     int result2 = (int)(v13); // (int)&FUN_1137963e
     if (v13 == 0) {
-        result2 = (int)(((code *)LAB_11373cba)(), 0);
+        result2 = (int)(((code *)(void *)LAB_11373cba)(), 0);
     }
     if (result2 != 101) {
         return (int)(result2);
     }
     *(int*)(v11 + 40) = (int)(0);
-    return (int)(((code *)LAB_113752ef)());
+    return (int)(((code *)(void *)LAB_113752ef)());
 }
 
 // Reference entry 11379680; body size 31 bytes.
@@ -40389,7 +40389,7 @@ int FUN_11379680(int a1) {
     int v1; // (int)((int(*)(int a1))&FUN_11379680<>)
 int *v2 = (int *)((int)((int *)(v1 + 152))); // (int)&FUN_11379684
     *v2 = (int)(*(int *)(v1 + 8) + 1 & 3 | *v2 & -4);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137969f; body size 32 bytes.
@@ -40401,7 +40401,7 @@ int FUN_1137969f(int a1) {
     int v3 = (int)(*(int *)(*(int *)(v2 + 4 * *(int *)(v1 + 4)) + 40)); // (int)&FUN_113796ac
 char *v4 = (char *)((char)((char *)(v3 + 1))); // (int)&FUN_113796af
     *v4 = (char)(*v4 + 64);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113796bf; body size 32 bytes.
@@ -40413,7 +40413,7 @@ int FUN_113796bf(int a1) {
     int v3 = (int)(*(int *)(*(int *)(v2 + 4 * *(int *)(v1 + 4)) + 40)); // (int)&FUN_113796cc
 char *v4 = (char *)((char)((char *)(v3 + 1))); // (int)&FUN_113796cf
     *v4 = (char)(*v4 & -65);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 113796df; body size 72 bytes.
@@ -40426,17 +40426,17 @@ int FUN_113796df(int a1) {
     }
     int v1 = (int)(*(int *)(a1 + 16)); // (int)&FUN_113796eb
     if (v1 == 0) {
-        ((code *)LAB_11376fb0)();
+        ((code *)(void *)LAB_11376fb0)();
     }
     FUN_11383050(result, *(int *)(v1 + 8));
-    return (int)(((code *)LAB_11376922)());
+    return (int)(((code *)(void *)LAB_11376922)());
 }
 
 // Reference entry 113797f5; body size 10 bytes.
 #line 1 "ENTRY_113797f5"
 int FUN_113797f5(void) {
 
-    return (int)(((code *)LAB_113797dc)(0));
+    return (int)(((code *)(void *)LAB_113797dc)(0));
 }
 
 // Reference entry 11379991; body size 215 bytes.
@@ -40487,10 +40487,10 @@ int *v15 = (int *)((int)((int *)((int)&v14 + 40))); // (int)&FUN_11379a40
     int v16 = (int)(*v15); // (int)&FUN_11379a40
     int v17 = (int)(v16); // (int)&FUN_11379a4a
     if (v16 != 0) {
-        v17 = (int)(((code *)LAB_11376fb0)(), 0);
+        v17 = (int)(((code *)(void *)LAB_11376fb0)(), 0);
     }
     *v15 = (int)(v17);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
   lab_0x113799ff:;
 int *v18 = (int *)((int)((int *)(v4 + 32))); // (int)&FUN_113799ff
     *v18 = (int)(*v18 + 1);
@@ -40534,7 +40534,7 @@ int FUN_11379a68(int a1, int a2, int a3, int a4) {
     }
     FUN_11383050(a3, v2, v2, &v1);
     if (*(int *)(v3 + 24) != 0) {
-        ((code *)LAB_11377839)();
+        ((code *)(void *)LAB_11377839)();
     }
     *(int*)v1 = (int)((int)(v2));
     int v4 = (int)(FUN_11303590(a3, *(int *)(a1 + 4), 0, -1, 2), 0); // (int)&FUN_11379ad2
@@ -40544,7 +40544,7 @@ int FUN_11379a68(int a1, int a2, int a3, int a4) {
     *(int*)(v4 + 40) = (int)(v1);
 int *v5 = (int *)((int)((int *)(v2 + 4))); // (int)&FUN_11379aee
     *v5 = (int)(*v5 + 1);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11379ca9; body size 78 bytes.
@@ -40562,7 +40562,7 @@ int FUN_11379ca9(int a1, int a2, int a3, int a4) {
         return (int)(0x2400);
     }
     FUN_113a10f0(v4);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 11379e3a; body size 111 bytes.
@@ -40572,19 +40572,19 @@ int FUN_11379e3a(int a1, int a2) {
     int v1; // (int)((int(*)(int a1, int a2))&FUN_11379e3a<>)
     int v2 = (int)(*(int *)(*(int *)(v1 + 96) + 4 * *(int *)(v1 + 4))); // (int)&FUN_11379e40
     if (*(char *)(v2 + 2) != 0) {
-        ((code *)LAB_1137375e)();
+        ((code *)(void *)LAB_1137375e)();
     }
     int v3 = (int)(*(int *)(v2 + 40)); // (int)&FUN_11379e4d
     int v4 = (int)(*(int *)v3); // (int)&FUN_11379e51
     int v5 = (int)(*(int *)v4); // (int)&FUN_11379e53
     FUN_11383050(a2, v4, v3);
     if (*(int *)(v5 + 36) != 0) {
-        ((code *)LAB_11376fac)();
+        ((code *)(void *)LAB_11376fac)();
     }
     if (*(int *)(v5 + 40) != 0) {
-        ((code *)LAB_11377bdd)();
+        ((code *)(void *)LAB_11377bdd)();
     }
-    return (int)(((code *)LAB_11377be5)(v1 - 20 + 20 * *(int *)(a1 + 8)));
+    return (int)(((code *)(void *)LAB_11377be5)(v1 - 20 + 20 * *(int *)(a1 + 8)));
 }
 
 // Reference entry 11379ea9; body size 112 bytes.
@@ -40606,7 +40606,7 @@ int *v2 = (int *)((int)((int *)(v1 + 32))); // (int)((int(*)(int a1, int a2, int
         *v2 = (int)(v3 & -0x4000001);
     }
     FUN_11383050(a3, *(int *)(*(int *)(a1 + 16) + 8));
-    return (int)(((code *)LAB_11376599)());
+    return (int)(((code *)(void *)LAB_11376599)());
 }
 
 // Reference entry 1137a015; body size 35 bytes.
@@ -40617,9 +40617,9 @@ int FUN_1137a015(int a1, int a2) {
 int *v2 = (int *)((int)((int *)(v1 + 44))); // (int)&FUN_1137a01d
     *v2 = (int)(*v2 + 1);
     if (v1 != 0) {
-        ((code *)LAB_11376fb0)();
+        ((code *)(void *)LAB_11376fb0)();
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137a038; body size 70 bytes.
@@ -40632,7 +40632,7 @@ int FUN_1137a038(int a1, int a2) {
     int v4 = (int)(*(int *)(v3 + 4 + 16 * *(int *)(a1 + 4))); // (int)&FUN_1137a055
     *(int*)v2 = (int)((int)(*(int *)(*(int *)(v4 + 4) + 48) & 0x7fffffff));
     *(int*)(v2 + 4) = (int)(0);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137a07e; body size 104 bytes.
@@ -40657,7 +40657,7 @@ int FUN_1137a07e(int a1, int a2, int a3, int a4) {
     *(int*)(result + 156) = (int)(v8);
     *(int*)v2 = (int)((int)(v8));
     *(int*)(v2 + 4) = (int)(v8 >> 31);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137a0e6; body size 38 bytes.
@@ -40668,7 +40668,7 @@ int FUN_1137a0e6(int a1, int a2, int a3, int a4) {
     int v2 = (int)(*(int *)(v1 + 156)); // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_1137a0e6<>)
     *(int*)v1 = (int)((int)(v2));
     *(int*)(v1 + 4) = (int)(v2 >> 31);
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137a10c; body size 322 bytes.
@@ -40714,13 +40714,13 @@ int *v12 = (int *)((int)((int *)(v1 + 20))); // (int)&FUN_1137a18e
         FUN_11372fd0(v5, a3 + 220, v15, *(int *)(a1 + 4));
         *v12 = (int)(0);
         if (v14 != 0) {
-            ((code *)LAB_11376fac)();
+            ((code *)(void *)LAB_11376fac)();
         }
     }
     ushort v16 = (ushort)(*v11); // (int)&FUN_1137a212
     int v17 = (int)(v16); // (int)&FUN_1137a218
     if ((v16 & 18) == 0) {
-        v17 = (int)(((code *)LAB_11376094)(), 0);
+        v17 = (int)(((code *)(void *)LAB_11376094)(), 0);
     }
     int v18 = (int)(*(int *)(v3 + 12)); // (int)&FUN_1137a21e
     int v19 = (int)(v18); // (int)&FUN_1137a226
@@ -40731,7 +40731,7 @@ int *v12 = (int *)((int)((int *)(v1 + 20))); // (int)&FUN_1137a18e
     if ((int)(v19) > *(int *)(result + 108)) {
         return (int)(result);
     }
-    return (int)(((code *)LAB_113732fa)());
+    return (int)(((code *)(void *)LAB_113732fa)());
 }
 
 // Reference entry 1137a32a; body size 160 bytes.
@@ -40792,7 +40792,7 @@ int FUN_1137a447(void) {
 int FUN_1137a566(void) {
 
     thunk_FUN_11395910(11, (int)&DAT_11a02c78, (int)&s_database_corruption_11a02c98, 0x1416e, (int)&s_3bfa9cc97da10598521b342961df8f5f_11a02d14);
-    return (int)(((code *)LAB_11376fb0)());
+    return (int)(((code *)(void *)LAB_11376fb0)());
 }
 
 // Reference entry 1137a5cd; body size 30 bytes.
@@ -40801,7 +40801,7 @@ int FUN_1137a5cd(int a1) {
 
     int v1; // (int)((int(*)(int a1))&FUN_1137a5cd<>)
     FUN_11373210(v1, (int)&DAT_1188bc94, thunk_FUN_1139afd0(v1));
-    return (int)(((code *)LAB_11376fb0)());
+    return (int)(((code *)(void *)LAB_11376fb0)());
 }
 
 // Reference entry 1137a819; body size 117 bytes.
@@ -40837,7 +40837,7 @@ int FUN_1137a8cc(char a1) {
     int v1; // (int)((int(*)(char a1))&FUN_1137a8cc<>)
     FUN_11359c50(v1);
     FUN_11373210(v1, (int)&s_out_of_memory_119ea11c);
-    return (int)(((code *)LAB_11376fb8)());
+    return (int)(((code *)(void *)LAB_11376fb8)());
 }
 
 // Reference entry 1137d280; body size 92 bytes.

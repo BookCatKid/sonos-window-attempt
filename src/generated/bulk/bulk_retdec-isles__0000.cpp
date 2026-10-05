@@ -12633,7 +12633,7 @@ int FUN_110d8da0(void) {
     if (*(int *)(v1 + 28) == 0) {
         return (int)(v1 & -256);
     }
-    return (int)(((code *)LAB_1007d7e0)());
+    return (int)(((code *)(void *)LAB_1007d7e0)());
 }
 
 // Reference entry 110d9b50; body size 26 bytes.

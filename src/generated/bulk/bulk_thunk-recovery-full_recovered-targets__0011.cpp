@@ -13730,6 +13730,7 @@ void * FUN_10694fe0(uint param_1)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall Recovered_Bulk::m_FUN_10695060(byte *param_2)
 {
   int param_1 = (int )this;
+  return (uint)(param_1);
 }
 
 

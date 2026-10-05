@@ -24209,7 +24209,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002437(undefined4 param_2,undefi
 // Reference entry 10002450; body size 5 bytes.
 #line 1 "ENTRY_10002450"
 
-undefined4 * __thiscall m_FUN_10002450(undefined4 param_2,undefined4 param_3,undefined4 param_4);
 void FUN_1000243c(void)
 
 {
@@ -32820,7 +32819,6 @@ undefined4 __fastcall FUN_10002e55(int param_1)
 // Reference entry 10002e5a; body size 5 bytes.
 #line 1 "ENTRY_10002e5a"
 
-undefined4 * __thiscall m_FUN_10002e5a(undefined4 param_2,undefined4 param_3,undefined4 param_4, int *param_5);
                   
 void FUN_10002e50(void);
 
