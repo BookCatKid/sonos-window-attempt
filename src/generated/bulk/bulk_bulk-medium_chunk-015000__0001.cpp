@@ -16771,7 +16771,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1148b118(byte param_2)
 /* Library Function - Single Match
     int __stdcall dllmain_raw(struct HINSTANCE__ * const_,unsigned long_,void * const_)
    
-   Library: Visual Studio 2019 Release */int FUN_1148b51b(HINSTANCE__ *param_1,ulong param_2,void *param_3){
+   Library: Visual Studio 2019 Release */int __stdcall FUN_1148b51b(HINSTANCE__ *param_1,ulong param_2,void *param_3){
   code *pcVar1;
   int iVar2;
   
@@ -16793,7 +16793,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1148b118(byte param_2)
 /* Library Function - Single Match
     __DllMainCRTStartup@12
    
-   Library: Visual Studio 2019 Release */void FUN_1148b55b(HINSTANCE__ *param_1,ulong param_2,void *param_3){
+   Library: Visual Studio 2019 Release */void __stdcall FUN_1148b55b(HINSTANCE__ *param_1,ulong param_2,void *param_3){
   if (param_2 == 1) {
     ___security_init_cookie();
   }
@@ -16825,7 +16825,7 @@ void FUN_1148b60c(void)
 /* Library Function - Single Match
     __allmul
    
-   Library: Visual Studio */longlong FUN_1148ba80(uint param_1,int param_2,uint param_3,int param_4){
+   Library: Visual Studio */longlong __stdcall FUN_1148ba80(uint param_1,int param_2,uint param_3,int param_4){
   if (param_4 == 0 && param_2 == 0) {
     return (longlong)((ulonglong)param_1 * (ulonglong)param_3);
   }

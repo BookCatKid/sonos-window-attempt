@@ -36928,7 +36928,7 @@ void FUN_1148a176(void)
 #line 1 "ENTRY_1148a339"
 
 /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void FUN_1148a339(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4){
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void __stdcall FUN_1148a339(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4){
  try {
   void *pvVar1;
   undefined4 uStack_14;
@@ -37097,7 +37097,7 @@ void __fastcall FUN_1148b111(undefined4 *param_1)
 #line 1 "ENTRY_1148b5a7"
 
 /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void FUN_1148b5a7(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4,_func_void_void_ptr *param_5){
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void __stdcall FUN_1148b5a7(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4,_func_void_void_ptr *param_5){
  try {
   uint uVar1;
   void *pvVar2;
@@ -37120,7 +37120,7 @@ void __fastcall FUN_1148b111(undefined4 *param_1)
 #line 1 "ENTRY_1148bfae"
 
 /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void FUN_1148bfae(void *param_1,void *param_2,uint param_3,uint param_4,_func_void_void_ptr_void_ptr *param_5,_func_void_void_ptr *param_6){
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void __stdcall FUN_1148bfae(void *param_1,void *param_2,uint param_3,uint param_4,_func_void_void_ptr_void_ptr *param_5,_func_void_void_ptr *param_6){
  try {
   uint uVar1;
   void *pvVar2;

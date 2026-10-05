@@ -66226,7 +66226,7 @@ void FUN_11489a50(int param_1,int *param_2)
     void __stdcall `eh vector destructor iterator'(void *,unsigned int_,unsigned int_,void
    (__thiscall*)(void *))
    
-   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void FUN_1148a33e(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4){
+   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void __stdcall FUN_1148a33e(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4){
  try {
   void *pvVar1;
   undefined4 local_14;
@@ -66601,7 +66601,7 @@ void __fastcall FUN_1148b0c0(uint param_1)
 /* Library Function - Single Match
     int __stdcall dllmain_crt_dispatch(struct HINSTANCE__ * const_,unsigned long_,void * const_)
    
-   Library: Visual Studio 2019 Release */int FUN_1148b143(HINSTANCE__ *param_1,ulong param_2,void *param_3){
+   Library: Visual Studio 2019 Release */int __stdcall FUN_1148b143(HINSTANCE__ *param_1,ulong param_2,void *param_3){
   uint uVar1;
   
   if (param_2 == 0) {
@@ -66779,7 +66779,7 @@ byte FUN_1148b2f2(undefined4 param_1)
     void __stdcall `eh vector constructor iterator'(void *,unsigned int_,unsigned int_,void_1148b5ac
    (__thiscall*)(void *),void (__thiscall*)(void *))
    
-   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void FUN_1148b5ac(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4,_func_void_void_ptr *param_5){
+   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void __stdcall FUN_1148b5ac(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4,_func_void_void_ptr *param_5){
  try {
   uint uVar1;
   void *pvVar2;
@@ -66804,7 +66804,7 @@ byte FUN_1148b2f2(undefined4 param_1)
 /* Library Function - Single Match
     __alldiv
    
-   Library: Visual Studio */undefined8 FUN_1148b9a0(uint param_1,uint param_2,uint param_3,uint param_4){
+   Library: Visual Studio */undefined8 __stdcall FUN_1148b9a0(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -66873,7 +66873,7 @@ byte FUN_1148b2f2(undefined4 param_1)
 /* Library Function - Single Match
     __allrem
    
-   Library: Visual Studio */undefined8 FUN_1148bed0(uint param_1,uint param_2,uint param_3,uint param_4){
+   Library: Visual Studio */undefined8 __stdcall FUN_1148bed0(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -66950,7 +66950,7 @@ LAB_1148bf7d:
     void __stdcall `eh vector copy constructor iterator'(void *,void *,unsigned int_,unsigned
    int_,void_1148bfb3 (__thiscall*)(void *,void *),void (__thiscall*)(void *))
    
-   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void FUN_1148bfb3(void *param_1,void *param_2,uint param_3,uint param_4,_func_void_void_ptr_void_ptr *param_5,_func_void_void_ptr *param_6){
+   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void __stdcall FUN_1148bfb3(void *param_1,void *param_2,uint param_3,uint param_4,_func_void_void_ptr_void_ptr *param_5,_func_void_void_ptr *param_6){
  try {
   uint uVar1;
   void *pvVar2;
@@ -67051,7 +67051,7 @@ undefined4 FUN_1148c04b(void)
 /* Library Function - Single Match
     __aullrem
    
-   Library: Visual Studio */undefined8 FUN_1148c350(uint param_1,uint param_2,uint param_3,uint param_4){
+   Library: Visual Studio */undefined8 __stdcall FUN_1148c350(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -67106,7 +67106,7 @@ undefined4 FUN_1148c04b(void)
 /* Library Function - Single Match
     __alldvrm
    
-   Library: Visual Studio */undefined8 FUN_1148c3f0(uint param_1,uint param_2,uint param_3,uint param_4){
+   Library: Visual Studio */undefined8 __stdcall FUN_1148c3f0(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -67175,7 +67175,7 @@ undefined4 FUN_1148c04b(void)
 /* Library Function - Single Match
     __aulldiv
    
-   Library: Visual Studio */undefined8 FUN_1148c540(uint param_1,uint param_2,uint param_3,uint param_4){
+   Library: Visual Studio */undefined8 __stdcall FUN_1148c540(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -67225,7 +67225,7 @@ undefined4 FUN_1148c04b(void)
 /* Library Function - Single Match
     __aulldvrm
    
-   Library: Visual Studio */undefined8 FUN_1148c5d0(uint param_1,uint param_2,uint param_3,uint param_4){
+   Library: Visual Studio */undefined8 __stdcall FUN_1148c5d0(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
