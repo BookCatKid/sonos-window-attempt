@@ -758,107 +758,345 @@ template<class... A> int FUN_11862600(A...);
 int FUN_11862710(void);
 template<class... A> int FUN_11862710(A...);
 // Reference entry 117cd8c2; body size 27 bytes.
+extern int DAT_1205d30c;
+extern int DAT_1205d3e0;
+extern int DAT_1205d468;
+extern int DAT_1205d598;
+extern int DAT_1205d6a8;
+extern int DAT_1205d820;
+extern int DAT_1205ddc4;
+extern int DAT_1205ea8c;
+extern int DAT_1205ec4c;
+extern int DAT_1205eca4;
+extern int DAT_1205f154;
+extern int DAT_1205f218;
+extern int DAT_1205f500;
+extern int DAT_1205f704;
+extern int DAT_1205f75c;
+extern int DAT_1205f9a8;
+extern int DAT_1205fbbc;
+extern int DAT_120601f0;
+extern int FUN_1148cde7(...);
+extern int FuncInfo_1205d144;
+extern int FuncInfo_1205d180;
+extern int FuncInfo_1205d1bc;
+extern int FuncInfo_1205d284;
+extern int FuncInfo_1205d33c;
+extern int FuncInfo_1205d410;
+extern int FuncInfo_1205d498;
+extern int FuncInfo_1205d5c8;
+extern int FuncInfo_1205d650;
+extern int FuncInfo_1205d6d8;
+extern int FuncInfo_1205d708;
+extern int FuncInfo_1205d738;
+extern int FuncInfo_1205db04;
+extern int FuncInfo_1205db44;
+extern int FuncInfo_1205db70;
+extern int FuncInfo_1205dbf8;
+extern int FuncInfo_1205dc2c;
+extern int FuncInfo_1205dc5c;
+extern int FuncInfo_1205dc8c;
+extern int FuncInfo_1205dd08;
+extern int FuncInfo_1205dd44;
+extern int FuncInfo_1205dd70;
+extern int FuncInfo_1205ddfc;
+extern int FuncInfo_1205de60;
+extern int FuncInfo_1205de90;
+extern int FuncInfo_1205dec0;
+extern int FuncInfo_1205def0;
+extern int FuncInfo_1205df20;
+extern int FuncInfo_1205df50;
+extern int FuncInfo_1205df80;
+extern int FuncInfo_1205dfb0;
+extern int FuncInfo_1205dfe0;
+extern int FuncInfo_1205e018;
+extern int FuncInfo_1205e04c;
+extern int FuncInfo_1205e08c;
+extern int FuncInfo_1205e16c;
+extern int FuncInfo_1205e1a8;
+extern int FuncInfo_1205e1dc;
+extern int FuncInfo_1205e20c;
+extern int FuncInfo_1205e23c;
+extern int FuncInfo_1205e26c;
+extern int FuncInfo_1205e29c;
+extern int FuncInfo_1205e2fc;
+extern int FuncInfo_1205e32c;
+extern int FuncInfo_1205e35c;
+extern int FuncInfo_1205e38c;
+extern int FuncInfo_1205e3bc;
+extern int FuncInfo_1205e3ec;
+extern int FuncInfo_1205e520;
+extern int FuncInfo_1205e560;
+extern int FuncInfo_1205e5ac;
+extern int FuncInfo_1205e5e0;
+extern int FuncInfo_1205e610;
+extern int FuncInfo_1205e640;
+extern int FuncInfo_1205e670;
+extern int FuncInfo_1205e700;
+extern int FuncInfo_1205e778;
+extern int FuncInfo_1205e7ac;
+extern int FuncInfo_1205e7f4;
+extern int FuncInfo_1205e86c;
+extern int FuncInfo_1205e89c;
+extern int FuncInfo_1205e8fc;
+extern int FuncInfo_1205e95c;
+extern int FuncInfo_1205e994;
+extern int FuncInfo_1205e9d0;
+extern int FuncInfo_1205ea04;
+extern int FuncInfo_1205ea34;
+extern int FuncInfo_1205eabc;
+extern int FuncInfo_1205eaec;
+extern int FuncInfo_1205ebb4;
+extern int FuncInfo_1205ebe8;
+extern int FuncInfo_1205ec20;
+extern int FuncInfo_1205ec7c;
+extern int FuncInfo_1205ecd4;
+extern int FuncInfo_1205ed04;
+extern int FuncInfo_1205ed34;
+extern int FuncInfo_1205ed64;
+extern int FuncInfo_1205ed94;
+extern int FuncInfo_1205edc4;
+extern int FuncInfo_1205edf4;
+extern int FuncInfo_1205ee24;
+extern int FuncInfo_1205ee54;
+extern int FuncInfo_1205ee84;
+extern int FuncInfo_1205eee4;
+extern int FuncInfo_1205ef14;
+extern int FuncInfo_1205efe8;
+extern int FuncInfo_1205f018;
+extern int FuncInfo_1205f0fc;
+extern int FuncInfo_1205f12c;
+extern int FuncInfo_1205f184;
+extern int FuncInfo_1205f1bc;
+extern int FuncInfo_1205f1f0;
+extern int FuncInfo_1205f248;
+extern int FuncInfo_1205f278;
+extern int FuncInfo_1205f2a8;
+extern int FuncInfo_1205f2d8;
+extern int FuncInfo_1205f308;
+extern int FuncInfo_1205f338;
+extern int FuncInfo_1205f368;
+extern int FuncInfo_1205f398;
+extern int FuncInfo_1205f3c8;
+extern int FuncInfo_1205f408;
+extern int FuncInfo_1205f43c;
+extern int FuncInfo_1205f46c;
+extern int FuncInfo_1205f49c;
+extern int FuncInfo_1205f530;
+extern int FuncInfo_1205f560;
+extern int FuncInfo_1205f590;
+extern int FuncInfo_1205f734;
+extern int FuncInfo_1205f7bc;
+extern int FuncInfo_1205f7ec;
+extern int FuncInfo_1205f8ac;
+extern int FuncInfo_1205f91c;
+extern int FuncInfo_1205f980;
+extern int FuncInfo_1205f9d8;
+extern int FuncInfo_1205fb3c;
+extern int FuncInfo_1205fbec;
+extern int FuncInfo_1205fc1c;
+extern int FuncInfo_1205fc4c;
+extern int FuncInfo_1205fc7c;
+extern int FuncInfo_1205fcac;
+extern int FuncInfo_1205fd0c;
+extern int FuncInfo_1205fd6c;
+extern int FuncInfo_1205fd9c;
+extern int FuncInfo_1205fe40;
+extern int FuncInfo_1205fe74;
+extern int FuncInfo_1205fee8;
+extern int FuncInfo_1205ff24;
+extern int FuncInfo_1205ff60;
+extern int FuncInfo_1205ff9c;
+extern int FuncInfo_1205ffd8;
+extern int FuncInfo_1206000c;
+extern int FuncInfo_1206003c;
+extern int FuncInfo_12060134;
+extern int FuncInfo_120601c4;
+extern int FuncInfo_12060220;
+extern int FuncInfo_12060250;
+extern int FuncInfo_12060288;
+extern int FuncInfo_12060310;
+extern int FuncInfo_1206034c;
+extern int FuncInfo_120604bc;
 #line 1 "ENTRY_117cd8c2"
-int FUN_117cd8c2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cd8c2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205d598
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cd8f2; body size 27 bytes.
 #line 1 "ENTRY_117cd8f2"
-int FUN_117cd8f2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cd8f2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205d468
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cd922; body size 27 bytes.
 #line 1 "ENTRY_117cd922"
-int FUN_117cd922(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cd922(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205d3e0
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cd952; body size 27 bytes.
 #line 1 "ENTRY_117cd952"
-int FUN_117cd952(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cd952(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205d30c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cd982; body size 27 bytes.
 #line 1 "ENTRY_117cd982"
-int FUN_117cd982(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cd982(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205d6a8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cd9b2; body size 27 bytes.
 #line 1 "ENTRY_117cd9b2"
-int FUN_117cd9b2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cd9b2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d284
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cd9e2; body size 27 bytes.
 #line 1 "ENTRY_117cd9e2"
-int FUN_117cd9e2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cd9e2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d650
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cda12; body size 27 bytes.
 #line 1 "ENTRY_117cda12"
-int FUN_117cda12(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cda12(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d5c8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cda42; body size 27 bytes.
 #line 1 "ENTRY_117cda42"
-int FUN_117cda42(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cda42(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d498
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cda72; body size 27 bytes.
 #line 1 "ENTRY_117cda72"
-int FUN_117cda72(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cda72(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d410
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cdaa2; body size 27 bytes.
 #line 1 "ENTRY_117cdaa2"
-int FUN_117cdaa2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cdaa2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d33c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cdad2; body size 27 bytes.
 #line 1 "ENTRY_117cdad2"
-int FUN_117cdad2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cdad2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d6d8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cdb17; body size 27 bytes.
 #line 1 "ENTRY_117cdb17"
-int FUN_117cdb17(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cdb17(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-56]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d144
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cdb4f; body size 7 bytes.
@@ -878,34 +1116,58 @@ int FUN_117cdb59(void) {
 
 // Reference entry 117cdb97; body size 27 bytes.
 #line 1 "ENTRY_117cdb97"
-int FUN_117cdb97(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cdb97(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-84]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d1bc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cdbd7; body size 27 bytes.
 #line 1 "ENTRY_117cdbd7"
-int FUN_117cdbd7(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cdbd7(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-32]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d180
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cdc12; body size 27 bytes.
 #line 1 "ENTRY_117cdc12"
-int FUN_117cdc12(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cdc12(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-44]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d738
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cdc52; body size 27 bytes.
 #line 1 "ENTRY_117cdc52"
-int FUN_117cdc52(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cdc52(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d708
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cdc8f; body size 40 bytes.
@@ -946,10 +1208,16 @@ int FUN_117cdd7f(int a1) {
 
 // Reference entry 117cddc2; body size 27 bytes.
 #line 1 "ENTRY_117cddc2"
-int FUN_117cddc2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cddc2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205d820
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cde02; body size 40 bytes.
@@ -1078,58 +1346,100 @@ int FUN_117ce22f(int a1) {
 
 // Reference entry 117ce27f; body size 27 bytes.
 #line 1 "ENTRY_117ce27f"
-int FUN_117ce27f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce27f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205db04
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce30c; body size 27 bytes.
 #line 1 "ENTRY_117ce30c"
-int FUN_117ce30c(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce30c(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205db70
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce375; body size 27 bytes.
 #line 1 "ENTRY_117ce375"
-int FUN_117ce375(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce375(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205db44
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce3be; body size 27 bytes.
 #line 1 "ENTRY_117ce3be"
-int FUN_117ce3be(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce3be(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205dbf8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce3f2; body size 27 bytes.
 #line 1 "ENTRY_117ce3f2"
-int FUN_117ce3f2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce3f2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-4]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205dc2c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce422; body size 27 bytes.
 #line 1 "ENTRY_117ce422"
-int FUN_117ce422(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce422(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205dc8c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce452; body size 27 bytes.
 #line 1 "ENTRY_117ce452"
-int FUN_117ce452(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce452(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205dc5c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce48f; body size 17 bytes.
@@ -1149,130 +1459,226 @@ int FUN_117ce4a2(int a1) {
 
 // Reference entry 117ce4c2; body size 27 bytes.
 #line 1 "ENTRY_117ce4c2"
-int FUN_117ce4c2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce4c2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205dd08
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce4ff; body size 27 bytes.
 #line 1 "ENTRY_117ce4ff"
-int FUN_117ce4ff(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce4ff(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-32]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205dd44
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce53f; body size 27 bytes.
 #line 1 "ENTRY_117ce53f"
-int FUN_117ce53f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce53f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205de90
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce5b4; body size 27 bytes.
 #line 1 "ENTRY_117ce5b4"
-int FUN_117ce5b4(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce5b4(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205dd70
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce5ff; body size 27 bytes.
 #line 1 "ENTRY_117ce5ff"
-int FUN_117ce5ff(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce5ff(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205df80
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce647; body size 27 bytes.
 #line 1 "ENTRY_117ce647"
-int FUN_117ce647(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce647(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e018
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce68f; body size 27 bytes.
 #line 1 "ENTRY_117ce68f"
-int FUN_117ce68f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce68f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e08c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce6c2; body size 27 bytes.
 #line 1 "ENTRY_117ce6c2"
-int FUN_117ce6c2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce6c2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205df20
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce6f2; body size 27 bytes.
 #line 1 "ENTRY_117ce6f2"
-int FUN_117ce6f2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce6f2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205ddc4
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce722; body size 27 bytes.
 #line 1 "ENTRY_117ce722"
-int FUN_117ce722(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce722(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205dfb0
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce752; body size 27 bytes.
 #line 1 "ENTRY_117ce752"
-int FUN_117ce752(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce752(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e04c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce782; body size 27 bytes.
 #line 1 "ENTRY_117ce782"
-int FUN_117ce782(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce782(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205dec0
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce7b2; body size 27 bytes.
 #line 1 "ENTRY_117ce7b2"
-int FUN_117ce7b2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce7b2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205df50
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce7e2; body size 27 bytes.
 #line 1 "ENTRY_117ce7e2"
-int FUN_117ce7e2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce7e2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205de60
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce812; body size 27 bytes.
 #line 1 "ENTRY_117ce812"
-int FUN_117ce812(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce812(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205dfe0
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce842; body size 27 bytes.
 #line 1 "ENTRY_117ce842"
-int FUN_117ce842(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce842(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205def0
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce882; body size 40 bytes.
@@ -1295,10 +1701,16 @@ int FUN_117ce8d2(int a1) {
 
 // Reference entry 117ce927; body size 27 bytes.
 #line 1 "ENTRY_117ce927"
-int FUN_117ce927(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce927(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ddfc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce962; body size 40 bytes.
@@ -1312,50 +1724,86 @@ int FUN_117ce962(int a1) {
 
 // Reference entry 117ce9af; body size 27 bytes.
 #line 1 "ENTRY_117ce9af"
-int FUN_117ce9af(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce9af(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e3ec
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ce9ef; body size 27 bytes.
 #line 1 "ENTRY_117ce9ef"
-int FUN_117ce9ef(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ce9ef(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e3bc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cea2f; body size 27 bytes.
 #line 1 "ENTRY_117cea2f"
-int FUN_117cea2f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cea2f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e35c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cea6f; body size 27 bytes.
 #line 1 "ENTRY_117cea6f"
-int FUN_117cea6f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cea6f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e32c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ceaaf; body size 27 bytes.
 #line 1 "ENTRY_117ceaaf"
-int FUN_117ceaaf(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ceaaf(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-60]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e2fc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ceaef; body size 27 bytes.
 #line 1 "ENTRY_117ceaef"
-int FUN_117ceaef(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ceaef(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e38c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ceb45; body size 7 bytes.
@@ -1376,26 +1824,44 @@ int FUN_117ceb4f(void) {
 
 // Reference entry 117ceb9d; body size 27 bytes.
 #line 1 "ENTRY_117ceb9d"
-int FUN_117ceb9d(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ceb9d(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e16c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cebdf; body size 27 bytes.
 #line 1 "ENTRY_117cebdf"
-int FUN_117cebdf(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cebdf(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e26c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cec27; body size 27 bytes.
 #line 1 "ENTRY_117cec27"
-int FUN_117cec27(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cec27(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-80]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e1a8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cec5f; body size 17 bytes.
@@ -1407,34 +1873,58 @@ int FUN_117cec5f(int a1) {
 
 // Reference entry 117cec9f; body size 27 bytes.
 #line 1 "ENTRY_117cec9f"
-int FUN_117cec9f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cec9f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e20c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cecdf; body size 27 bytes.
 #line 1 "ENTRY_117cecdf"
-int FUN_117cecdf(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cecdf(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-28]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e23c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ced1f; body size 27 bytes.
 #line 1 "ENTRY_117ced1f"
-int FUN_117ced1f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ced1f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e1dc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ced5f; body size 30 bytes.
 #line 1 "ENTRY_117ced5f"
-int FUN_117ced5f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117ced5f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-160]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e29c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117ceda2; body size 40 bytes.
@@ -1448,10 +1938,16 @@ int FUN_117ceda2(int a1) {
 
 // Reference entry 117cedf6; body size 27 bytes.
 #line 1 "ENTRY_117cedf6"
-int FUN_117cedf6(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cedf6(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e520
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cee37; body size 40 bytes.
@@ -1483,34 +1979,58 @@ int FUN_117ceef7(int a1) {
 
 // Reference entry 117cef63; body size 27 bytes.
 #line 1 "ENTRY_117cef63"
-int FUN_117cef63(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cef63(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e5ac
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cefc5; body size 27 bytes.
 #line 1 "ENTRY_117cefc5"
-int FUN_117cefc5(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cefc5(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e560
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cefff; body size 27 bytes.
 #line 1 "ENTRY_117cefff"
-int FUN_117cefff(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cefff(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e670
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf03f; body size 27 bytes.
 #line 1 "ENTRY_117cf03f"
-int FUN_117cf03f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf03f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e640
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf07f; body size 40 bytes.
@@ -1533,26 +2053,44 @@ int FUN_117cf0cf(int a1) {
 
 // Reference entry 117cf11f; body size 27 bytes.
 #line 1 "ENTRY_117cf11f"
-int FUN_117cf11f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf11f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e5e0
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf15f; body size 27 bytes.
 #line 1 "ENTRY_117cf15f"
-int FUN_117cf15f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf15f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e610
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf19f; body size 27 bytes.
 #line 1 "ENTRY_117cf19f"
-int FUN_117cf19f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf19f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e700
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf1df; body size 40 bytes.
@@ -1566,18 +2104,30 @@ int FUN_117cf1df(int a1) {
 
 // Reference entry 117cf245; body size 27 bytes.
 #line 1 "ENTRY_117cf245"
-int FUN_117cf245(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf245(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e778
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf287; body size 27 bytes.
 #line 1 "ENTRY_117cf287"
-int FUN_117cf287(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf287(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e7f4
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf2b2; body size 40 bytes.
@@ -1591,10 +2141,16 @@ int FUN_117cf2b2(int a1) {
 
 // Reference entry 117cf2f2; body size 27 bytes.
 #line 1 "ENTRY_117cf2f2"
-int FUN_117cf2f2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf2f2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e7ac
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf332; body size 40 bytes.
@@ -1608,18 +2164,30 @@ int FUN_117cf332(int a1) {
 
 // Reference entry 117cf37f; body size 27 bytes.
 #line 1 "ENTRY_117cf37f"
-int FUN_117cf37f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf37f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e89c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf3bf; body size 27 bytes.
 #line 1 "ENTRY_117cf3bf"
-int FUN_117cf3bf(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf3bf(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e86c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf3ff; body size 17 bytes.
@@ -1631,74 +2199,128 @@ int FUN_117cf3ff(int a1) {
 
 // Reference entry 117cf43f; body size 27 bytes.
 #line 1 "ENTRY_117cf43f"
-int FUN_117cf43f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf43f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-40]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e8fc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf483; body size 27 bytes.
 #line 1 "ENTRY_117cf483"
-int FUN_117cf483(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf483(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e95c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf4c7; body size 27 bytes.
 #line 1 "ENTRY_117cf4c7"
-int FUN_117cf4c7(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf4c7(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-40]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e994
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf507; body size 27 bytes.
 #line 1 "ENTRY_117cf507"
-int FUN_117cf507(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf507(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205e9d0
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf546; body size 27 bytes.
 #line 1 "ENTRY_117cf546"
-int FUN_117cf546(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf546(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ea04
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf586; body size 27 bytes.
 #line 1 "ENTRY_117cf586"
-int FUN_117cf586(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf586(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ea34
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf5b2; body size 27 bytes.
 #line 1 "ENTRY_117cf5b2"
-int FUN_117cf5b2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf5b2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-4]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205ea8c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf5ef; body size 27 bytes.
 #line 1 "ENTRY_117cf5ef"
-int FUN_117cf5ef(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf5ef(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-40]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205eabc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf62f; body size 27 bytes.
 #line 1 "ENTRY_117cf62f"
-int FUN_117cf62f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf62f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205eaec
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf66f; body size 40 bytes.
@@ -1739,130 +2361,226 @@ int FUN_117cf75f(int a1) {
 
 // Reference entry 117cf7ca; body size 27 bytes.
 #line 1 "ENTRY_117cf7ca"
-int FUN_117cf7ca(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf7ca(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-56]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ebb4
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf82a; body size 27 bytes.
 #line 1 "ENTRY_117cf82a"
-int FUN_117cf82a(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf82a(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-56]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ec20
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf862; body size 27 bytes.
 #line 1 "ENTRY_117cf862"
-int FUN_117cf862(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf862(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205ec4c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf892; body size 27 bytes.
 #line 1 "ENTRY_117cf892"
-int FUN_117cf892(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf892(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ebe8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf8c2; body size 27 bytes.
 #line 1 "ENTRY_117cf8c2"
-int FUN_117cf8c2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf8c2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ec7c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf8ff; body size 27 bytes.
 #line 1 "ENTRY_117cf8ff"
-int FUN_117cf8ff(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf8ff(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ed94
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf93f; body size 27 bytes.
 #line 1 "ENTRY_117cf93f"
-int FUN_117cf93f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf93f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ed04
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf97f; body size 27 bytes.
 #line 1 "ENTRY_117cf97f"
-int FUN_117cf97f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf97f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ee24
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf9b2; body size 27 bytes.
 #line 1 "ENTRY_117cf9b2"
-int FUN_117cf9b2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf9b2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205edc4
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cf9e2; body size 27 bytes.
 #line 1 "ENTRY_117cf9e2"
-int FUN_117cf9e2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cf9e2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ed34
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfa12; body size 27 bytes.
 #line 1 "ENTRY_117cfa12"
-int FUN_117cfa12(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfa12(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ee54
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfa42; body size 27 bytes.
 #line 1 "ENTRY_117cfa42"
-int FUN_117cfa42(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfa42(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-4]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205eca4
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfa72; body size 27 bytes.
 #line 1 "ENTRY_117cfa72"
-int FUN_117cfa72(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfa72(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205edf4
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfaa2; body size 27 bytes.
 #line 1 "ENTRY_117cfaa2"
-int FUN_117cfaa2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfaa2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ed64
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfad2; body size 27 bytes.
 #line 1 "ENTRY_117cfad2"
-int FUN_117cfad2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfad2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ee84
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfb02; body size 27 bytes.
 #line 1 "ENTRY_117cfb02"
-int FUN_117cfb02(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfb02(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ecd4
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfb3f; body size 37 bytes.
@@ -1876,18 +2594,30 @@ int FUN_117cfb3f(int a1) {
 
 // Reference entry 117cfb8f; body size 27 bytes.
 #line 1 "ENTRY_117cfb8f"
-int FUN_117cfb8f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfb8f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205eee4
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfbcf; body size 27 bytes.
 #line 1 "ENTRY_117cfbcf"
-int FUN_117cfbcf(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfbcf(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ef14
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfc48; body size 43 bytes.
@@ -1910,210 +2640,366 @@ int FUN_117cfcaa(int a1) {
 
 // Reference entry 117cfcff; body size 27 bytes.
 #line 1 "ENTRY_117cfcff"
-int FUN_117cfcff(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfcff(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f3c8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfd3f; body size 27 bytes.
 #line 1 "ENTRY_117cfd3f"
-int FUN_117cfd3f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfd3f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f398
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfd7f; body size 27 bytes.
 #line 1 "ENTRY_117cfd7f"
-int FUN_117cfd7f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfd7f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f308
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfdbf; body size 27 bytes.
 #line 1 "ENTRY_117cfdbf"
-int FUN_117cfdbf(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfdbf(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f338
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfdff; body size 27 bytes.
 #line 1 "ENTRY_117cfdff"
-int FUN_117cfdff(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfdff(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f368
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfe32; body size 27 bytes.
 #line 1 "ENTRY_117cfe32"
-int FUN_117cfe32(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfe32(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205f218
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfe62; body size 27 bytes.
 #line 1 "ENTRY_117cfe62"
-int FUN_117cfe62(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfe62(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205f154
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfe9f; body size 27 bytes.
 #line 1 "ENTRY_117cfe9f"
-int FUN_117cfe9f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfe9f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f2a8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cfedf; body size 27 bytes.
 #line 1 "ENTRY_117cfedf"
-int FUN_117cfedf(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cfedf(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f2d8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cff12; body size 27 bytes.
 #line 1 "ENTRY_117cff12"
-int FUN_117cff12(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cff12(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f248
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cff42; body size 27 bytes.
 #line 1 "ENTRY_117cff42"
-int FUN_117cff42(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cff42(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f184
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cff86; body size 27 bytes.
 #line 1 "ENTRY_117cff86"
-int FUN_117cff86(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cff86(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f1bc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cffb2; body size 27 bytes.
 #line 1 "ENTRY_117cffb2"
-int FUN_117cffb2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cffb2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f018
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cffe2; body size 27 bytes.
 #line 1 "ENTRY_117cffe2"
-int FUN_117cffe2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cffe2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f278
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0012; body size 27 bytes.
 #line 1 "ENTRY_117d0012"
-int FUN_117d0012(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0012(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-4]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f0fc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0042; body size 27 bytes.
 #line 1 "ENTRY_117d0042"
-int FUN_117d0042(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0042(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205efe8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0072; body size 27 bytes.
 #line 1 "ENTRY_117d0072"
-int FUN_117d0072(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0072(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f12c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d00a2; body size 27 bytes.
 #line 1 "ENTRY_117d00a2"
-int FUN_117d00a2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d00a2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f1f0
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d01e9; body size 27 bytes.
 #line 1 "ENTRY_117d01e9"
-int FUN_117d01e9(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d01e9(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f530
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0222; body size 27 bytes.
 #line 1 "ENTRY_117d0222"
-int FUN_117d0222(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0222(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205f500
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0269; body size 27 bytes.
 #line 1 "ENTRY_117d0269"
-int FUN_117d0269(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0269(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f590
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d02d7; body size 27 bytes.
 #line 1 "ENTRY_117d02d7"
-int FUN_117d02d7(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d02d7(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-28]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f408
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d031f; body size 27 bytes.
 #line 1 "ENTRY_117d031f"
-int FUN_117d031f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d031f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-28]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f49c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d035f; body size 27 bytes.
 #line 1 "ENTRY_117d035f"
-int FUN_117d035f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d035f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-40]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f43c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d03a9; body size 27 bytes.
 #line 1 "ENTRY_117d03a9"
-int FUN_117d03a9(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d03a9(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-36]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f560
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d03ef; body size 27 bytes.
 #line 1 "ENTRY_117d03ef"
-int FUN_117d03ef(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d03ef(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-28]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f46c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d042f; body size 40 bytes.
@@ -2172,18 +3058,30 @@ int FUN_117d05c7(int a1) {
 
 // Reference entry 117d0602; body size 27 bytes.
 #line 1 "ENTRY_117d0602"
-int FUN_117d0602(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0602(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f734
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0632; body size 27 bytes.
 #line 1 "ENTRY_117d0632"
-int FUN_117d0632(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0632(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205f75c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d066f; body size 37 bytes.
@@ -2197,42 +3095,72 @@ int FUN_117d066f(int a1) {
 
 // Reference entry 117d06b2; body size 27 bytes.
 #line 1 "ENTRY_117d06b2"
-int FUN_117d06b2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d06b2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205f704
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d06ef; body size 27 bytes.
 #line 1 "ENTRY_117d06ef"
-int FUN_117d06ef(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d06ef(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1206003c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d072f; body size 27 bytes.
 #line 1 "ENTRY_117d072f"
-int FUN_117d072f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d072f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1206000c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0777; body size 27 bytes.
 #line 1 "ENTRY_117d0777"
-int FUN_117d0777(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0777(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fe40
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d07b7; body size 27 bytes.
 #line 1 "ENTRY_117d07b7"
-int FUN_117d07b7(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d07b7(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fee8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d07f7; body size 37 bytes.
@@ -2255,18 +3183,30 @@ int FUN_117d0847(int a1) {
 
 // Reference entry 117d0897; body size 27 bytes.
 #line 1 "ENTRY_117d0897"
-int FUN_117d0897(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0897(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ffd8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d08d7; body size 27 bytes.
 #line 1 "ENTRY_117d08d7"
-int FUN_117d08d7(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d08d7(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ff9c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d090f; body size 17 bytes.
@@ -2286,74 +3226,128 @@ int FUN_117d0922(int a1) {
 
 // Reference entry 117d094f; body size 27 bytes.
 #line 1 "ENTRY_117d094f"
-int FUN_117d094f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d094f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fe74
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d098f; body size 27 bytes.
 #line 1 "ENTRY_117d098f"
-int FUN_117d098f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d098f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fd0c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d09cf; body size 27 bytes.
 #line 1 "ENTRY_117d09cf"
-int FUN_117d09cf(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d09cf(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fd9c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0a0f; body size 27 bytes.
 #line 1 "ENTRY_117d0a0f"
-int FUN_117d0a0f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0a0f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fcac
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0a4f; body size 27 bytes.
 #line 1 "ENTRY_117d0a4f"
-int FUN_117d0a4f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0a4f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fd6c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0a9d; body size 27 bytes.
 #line 1 "ENTRY_117d0a9d"
-int FUN_117d0a9d(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0a9d(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-16]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fb3c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0ad2; body size 27 bytes.
 #line 1 "ENTRY_117d0ad2"
-int FUN_117d0ad2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0ad2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205fbbc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0b02; body size 27 bytes.
 #line 1 "ENTRY_117d0b02"
-int FUN_117d0b02(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0b02(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fc1c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0b32; body size 27 bytes.
 #line 1 "ENTRY_117d0b32"
-int FUN_117d0b32(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0b32(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_1205f9a8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0b6f; body size 37 bytes.
@@ -2376,50 +3370,86 @@ int FUN_117d0bbf(int a1) {
 
 // Reference entry 117d0c02; body size 27 bytes.
 #line 1 "ENTRY_117d0c02"
-int FUN_117d0c02(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0c02(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fbec
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0c32; body size 27 bytes.
 #line 1 "ENTRY_117d0c32"
-int FUN_117d0c32(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0c32(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f9d8
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0c62; body size 27 bytes.
 #line 1 "ENTRY_117d0c62"
-int FUN_117d0c62(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0c62(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fc7c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0ca7; body size 27 bytes.
 #line 1 "ENTRY_117d0ca7"
-int FUN_117d0ca7(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0ca7(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ff24
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0ce7; body size 27 bytes.
 #line 1 "ENTRY_117d0ce7"
-int FUN_117d0ce7(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0ce7(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205ff60
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0d1f; body size 27 bytes.
 #line 1 "ENTRY_117d0d1f"
-int FUN_117d0d1f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0d1f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f8ac
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0da4; body size 40 bytes.
@@ -2433,26 +3463,44 @@ int FUN_117d0da4(int a1) {
 
 // Reference entry 117d0dff; body size 27 bytes.
 #line 1 "ENTRY_117d0dff"
-int FUN_117d0dff(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0dff(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f7bc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0e3f; body size 27 bytes.
 #line 1 "ENTRY_117d0e3f"
-int FUN_117d0e3f(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0e3f(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-24]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f7ec
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0ea7; body size 27 bytes.
 #line 1 "ENTRY_117d0ea7"
-int FUN_117d0ea7(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d0ea7(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-32]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f91c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d0f0f; body size 37 bytes.
@@ -2493,10 +3541,16 @@ int FUN_117d108f(int a1) {
 
 // Reference entry 117d10df; body size 27 bytes.
 #line 1 "ENTRY_117d10df"
-int FUN_117d10df(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d10df(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205f980
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d113c; body size 40 bytes.
@@ -2510,10 +3564,16 @@ int FUN_117d113c(int a1) {
 
 // Reference entry 117d1182; body size 27 bytes.
 #line 1 "ENTRY_117d1182"
-int FUN_117d1182(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d1182(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205fc4c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d11c2; body size 40 bytes.
@@ -2572,34 +3632,58 @@ int FUN_117d12ff(int a1) {
 
 // Reference entry 117d135d; body size 27 bytes.
 #line 1 "ENTRY_117d135d"
-int FUN_117d135d(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d135d(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_12060134
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d13ad; body size 27 bytes.
 #line 1 "ENTRY_117d13ad"
-int FUN_117d13ad(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d13ad(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_120601c4
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d13e2; body size 27 bytes.
 #line 1 "ENTRY_117d13e2"
-int FUN_117d13e2(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d13e2(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset DAT_120601f0
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d1412; body size 27 bytes.
 #line 1 "ENTRY_117d1412"
-int FUN_117d1412(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d1412(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-8]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_12060220
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d1467; body size 37 bytes.
@@ -2613,34 +3697,58 @@ int FUN_117d1467(int a1) {
 
 // Reference entry 117d14b9; body size 27 bytes.
 #line 1 "ENTRY_117d14b9"
-int FUN_117d14b9(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d14b9(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-12]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_12060250
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d150d; body size 27 bytes.
 #line 1 "ENTRY_117d150d"
-int FUN_117d150d(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d150d(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_12060288
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d155d; body size 27 bytes.
 #line 1 "ENTRY_117d155d"
-int FUN_117d155d(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d155d(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1206034c
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d15af; body size 27 bytes.
 #line 1 "ENTRY_117d15af"
-int FUN_117d15af(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d15af(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-60]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_12060310
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117d15ff; body size 17 bytes.
@@ -2652,10 +3760,16 @@ int FUN_117d15ff(int a1) {
 
 // Reference entry 117d162a; body size 27 bytes.
 #line 1 "ENTRY_117d162a"
-int FUN_117d162a(int a1) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117d162a(int a1) {
+    __asm {
+        mov edx, [esp+8]
+        lea eax, [edx+12]
+        mov ecx, [edx-20]
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_120604bc
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117e96b0; body size 20 bytes.
