@@ -20413,6 +20413,7 @@ undefined4 __fastcall FUN_10001ebf(int param_1)
 {
 
 
+    return (undefined4)(0);
   }
 
 
@@ -28369,10 +28370,8 @@ int * __thiscall Recovered_Bulk::m_FUN_1000286a(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x28), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0))  {
-
-
-
-}
+  }
+  return (int *)(param_2);
 
 
 }
@@ -28943,10 +28942,11 @@ undefined1 * __fastcall FUN_10002964(int param_1)
   undefined1 *puVar1;
   
   puVar1 = (undefined1 *)(&DAT_1186d2ee);
-
-
+  if (*(undefined1 **)(param_1 + 0x6628) != (undefined1 *)((0x0))) {
     puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6628), 0);
   }
+  return (undefined1 *)(puVar1);
+}
 void FUN_10002946(void)
 
 {
@@ -30307,9 +30307,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002adb(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
   thunk_FUN_106de7d0();
   if ((param_2 & 1) != 0) {
-
-
-}
+    thunk_FUN_1148a50e(param_1,0xc);
+  }
+  return (undefined4 *)(param_1);
 }
 // Reference entry 10002ae0; body size 5 bytes.
 #line 1 "ENTRY_10002ae0"
@@ -31094,6 +31094,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002c34(byte param_2)
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
+  return (undefined4 *)(param_1);
 
 
 }
@@ -34657,6 +34658,7 @@ undefined4 __fastcall FUN_10003085(int param_1)
 {
 
 
+    return (undefined4)(0);
 }
 #line 1 "ENTRY_1000308f"
 
@@ -36831,8 +36833,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000330f(byte param_2)
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
-
-
+  if ((param_2 & 1) != 0) {
+    thunk_FUN_1148a50e(param_1,0xe0);
+  }
+  return (undefined4 *)(param_1);
 }
 
 
@@ -39611,9 +39615,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100035cb(byte param_2)
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
-}
-
-
+    thunk_FUN_1148a50e(param_1,0x34);
+  }
+  return (undefined4 *)(param_1);
 }
 // Reference entry 100035d0; body size 5 bytes.
 #line 1 "ENTRY_100035d0"
@@ -40543,10 +40547,11 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100036a2(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   DAT_121a29f0 = (int)(0);
-
-
+  if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
+  return (undefined4 *)(param_1);
+}
 
 
 // Reference entry 100036a7; body size 5 bytes.
@@ -42824,6 +42829,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000390e(undefined4 *param_2,int *
 
 
  } catch (...) { }
+  return (undefined4 *)(param_2);
 }
 
 
