@@ -761,3 +761,29 @@ compilation remains the pinned MSVC run 36803682931; this checkpoint changes
 verification and placement only. Older superseded `analysis/linked-placement-*`
 directories were removed locally to reclaim disk space; each is regenerable
 from the pinned artifacts and the documented commands.
+
+## Bulk-corpus fragment repair and full-corpus MSVC build
+
+Commits `49e28c3`, `b3287a6`, `dcfa9dd`, `e737a89` repair corrupted fragment
+splices across 15 bulk sources (duplicated heads, orphaned tails, eaten
+`try`/`}` contexts, truncated type names, missing locals) and fix pinned-MSVC
+diagnostics surfaced only by the real toolchain: file-scope `__thiscall`
+declarations (C3865), non-void fallthroughs in thunks/deleting-destructors
+(C4716), `undefined1[]` array-to-function-pointer casts (C2440, routed through
+`void *`), `void`-to-`int` casts on `_CxxThrowException`, and `__stdcall`
+mismatch on variadic template redeclarations (C2373).
+
+Pinned MSVC 14.28 run https://github.com/BookCatKid/sonos-window-attempt/actions/runs/37264749712
+compiles all 182 `src/generated/bulk/*.cpp` sources with zero failures —
+the retdec files that crash the local clang frontend under `/EHa`+`goto`
+(clang/LLVM 23 SEH-funclet bug, not a source defect) build cleanly on MSVC.
+
+The relocation-aware comparison over all 182 objects reports
+230,070 object-compiled functions: 28,816 exact bodies without relocations
+(268,674 bytes) and 104,698 exact bodies after known relocations
+(1,063,671 bytes). 391,451 relocations remain unresolved — dominated by
+structurally mismatched bodies whose reloc offsets do not align with the
+reference's call sites, plus `SCStr::int_release`/`int_allocRep` template
+members (38K+ relocs) lacking symbol-table VAs. This is object-body coverage;
+the whole-file identity gate still fails and the placement artifact remains
+partial and nonloadable.
