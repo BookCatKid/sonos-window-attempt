@@ -2962,6 +2962,9 @@ extern int __stdcall thunk_FUN_1127b030(int a1,int a2);
 extern int __stdcall thunk_FUN_1127b080(int a1,int a2,int a3);
 extern int __stdcall thunk_FUN_1127b0e0(int a1,int a2);
 extern int __stdcall thunk_FUN_1127c6d0(int a1);
+struct SCVtbl_1_2 { virtual void _p0(); virtual int v(int a1,int a2); };
+struct SCVtbl_17_2 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual int v(int a1,int a2); };
+struct SCVtbl_35_4 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual int v(int a1,int a2,int a3,int a4); };
 #line 1 "ENTRY_1111e150"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -14491,7 +14494,7 @@ void __fastcall FUN_11151ab0(int *param_1, unsigned int recovered_unused_stack_0
 
   uVar3 = (undefined4)(thunk_FUN_111a2df0(uStack_8), 0);
   uVar4 = (undefined4)(thunk_FUN_111a32a0(), 0);
-  (*(code ***)param_1)[35]((uint)&acStack_40c,0x401,uVar3,uVar4);
+  ((SCVtbl_35_4*)(param_1))->v((int)((uint)&acStack_40c),(int)(0x401),(int)(uVar3),(int)(uVar4));
   if (acStack_40c[0] == '\0') {
     puStack_41c = (undefined4 *)((undefined4 *)0x0);
   }
@@ -14546,7 +14549,7 @@ void __fastcall FUN_11151ab0(int *param_1, unsigned int recovered_unused_stack_0
   
   uVar2 = (undefined4)(thunk_FUN_111a2df0(), 0);
   uVar3 = (undefined4)(thunk_FUN_111a32a0(), 0);
-  sVar1 = (short)((*(code ***)param_1)[17](uVar2,uVar3), 0);
+  sVar1 = (short)(((SCVtbl_17_2*)(param_1))->v((int)(uVar2),(int)(uVar3)), 0);
   thunk_FUN_111a36f0();
   param_2[2] = (undefined4)((uint)(sVar1 == 0));
   *param_2 = (undefined4)(5);
@@ -21252,7 +21255,7 @@ undefined4 __fastcall FUN_1116f610(int param_1)
 {
   int *param_1 = (int *)this;
   for (param_2 = (int)(param_2 * 4); param_2 != 0; param_2 = param_2 + -1) {
-    (*(code ***)param_1)[1](&DAT_11882ff0,1);
+    ((SCVtbl_1_2*)(param_1))->v((int)(&DAT_11882ff0),(int)(1));
   }
   return;
 }
@@ -21266,7 +21269,7 @@ undefined4 __fastcall FUN_1116f610(int param_1)
 void __fastcall FUN_1116f950(int *param_1)
 
 {
-  (*(code ***)param_1)[1](&DAT_11881ac8,1);
+  ((SCVtbl_1_2*)(param_1))->v((int)(&DAT_11881ac8),(int)(1));
   return;
 }
 

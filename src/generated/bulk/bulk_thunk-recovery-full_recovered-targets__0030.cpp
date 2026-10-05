@@ -4125,6 +4125,8 @@ extern int __stdcall thunk_FUN_112ef380(int a1);
 extern int __stdcall thunk_FUN_112f1370(int a1);
 extern int __stdcall thunk_FUN_112f5000(int a1,int a2);
 extern int __stdcall thunk_FUN_1145a760(int a1,int a2);
+struct SCVtbl_1_1 { virtual void _p0(); virtual int v(int a1); };
+struct SCVtbl_4_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(int a1); };
 #line 1 "ENTRY_112ad270"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -11728,11 +11730,11 @@ void __stdcall FUN_112ee6b0(unsigned int recovered_unused_stack_0, unsigned int 
   piVar1 = (int *)((int *)param_2[9]);
   if ((int *)(piVar1) != (int *)(0x0)) {
     if ((int *)(piVar1) == (int *)(param_2)) {
-      uVar2 = (undefined4)((*(code ***)piVar1)[1](param_1), 0);
+      uVar2 = (undefined4)(((SCVtbl_1_1*)(piVar1))->v((int)(param_1)), 0);
       *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar2);
       piVar1 = (int *)((int *)param_2[9]);
       if ((int *)(piVar1) != (int *)(0x0)) {
-        (*(code ***)piVar1)[4]((int *)(piVar1) != (int *)(param_2));
+        ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_2)));
         param_2[9] = (int)(0);
         return;
       }
@@ -11758,11 +11760,11 @@ void __stdcall FUN_112ee6b0(unsigned int recovered_unused_stack_0, unsigned int 
   piVar1 = (int *)((int *)param_2[9]);
   if ((int *)(piVar1) != (int *)(0x0)) {
     if ((int *)(piVar1) == (int *)(param_2)) {
-      uVar2 = (undefined4)((*(code ***)piVar1)[1](param_1), 0);
+      uVar2 = (undefined4)(((SCVtbl_1_1*)(piVar1))->v((int)(param_1)), 0);
       *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar2);
       piVar1 = (int *)((int *)param_2[9]);
       if ((int *)(piVar1) != (int *)(0x0)) {
-        (*(code ***)piVar1)[4]((int *)(piVar1) != (int *)(param_2));
+        ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_2)));
         param_2[9] = (int)(0);
         return;
       }
@@ -11788,11 +11790,11 @@ void __stdcall FUN_112ee6b0(unsigned int recovered_unused_stack_0, unsigned int 
   piVar1 = (int *)((int *)param_2[9]);
   if ((int *)(piVar1) != (int *)(0x0)) {
     if ((int *)(piVar1) == (int *)(param_2)) {
-      uVar2 = (undefined4)((*(code ***)piVar1)[1](param_1), 0);
+      uVar2 = (undefined4)(((SCVtbl_1_1*)(piVar1))->v((int)(param_1)), 0);
       *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar2);
       piVar1 = (int *)((int *)param_2[9]);
       if ((int *)(piVar1) != (int *)(0x0)) {
-        (*(code ***)piVar1)[4]((int *)(piVar1) != (int *)(param_2));
+        ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_2)));
         param_2[9] = (int)(0);
         return;
       }
@@ -11818,11 +11820,11 @@ void __stdcall FUN_112ee6b0(unsigned int recovered_unused_stack_0, unsigned int 
   piVar1 = (int *)((int *)param_2[9]);
   if ((int *)(piVar1) != (int *)(0x0)) {
     if ((int *)(piVar1) == (int *)(param_2)) {
-      uVar2 = (undefined4)((*(code ***)piVar1)[1](param_1), 0);
+      uVar2 = (undefined4)(((SCVtbl_1_1*)(piVar1))->v((int)(param_1)), 0);
       *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar2);
       piVar1 = (int *)((int *)param_2[9]);
       if ((int *)(piVar1) != (int *)(0x0)) {
-        (*(code ***)piVar1)[4]((int *)(piVar1) != (int *)(param_2));
+        ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_2)));
         param_2[9] = (int)(0);
         return;
       }
@@ -11848,11 +11850,11 @@ void __stdcall FUN_112ee6b0(unsigned int recovered_unused_stack_0, unsigned int 
   piVar1 = (int *)((int *)param_2[9]);
   if ((int *)(piVar1) != (int *)(0x0)) {
     if ((int *)(piVar1) == (int *)(param_2)) {
-      uVar2 = (undefined4)((*(code ***)piVar1)[1](param_1), 0);
+      uVar2 = (undefined4)(((SCVtbl_1_1*)(piVar1))->v((int)(param_1)), 0);
       *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar2);
       piVar1 = (int *)((int *)param_2[9]);
       if ((int *)(piVar1) != (int *)(0x0)) {
-        (*(code ***)piVar1)[4]((int *)(piVar1) != (int *)(param_2));
+        ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_2)));
         param_2[9] = (int)(0);
         return;
       }

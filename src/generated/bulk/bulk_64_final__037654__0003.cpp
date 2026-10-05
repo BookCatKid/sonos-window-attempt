@@ -1944,6 +1944,7 @@ template<class... A> int FUN_1182e7a0(A...);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_1182e810(void);
 template<class... A> int FUN_1182e810(A...);
 // Reference entry 11822030; body size 76 bytes.
+struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1); };
 #line 1 "ENTRY_11822030"
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
@@ -9024,7 +9025,7 @@ void FUN_1182acc0(void)
   if ((int *)(DAT_121a4a2c) != (int *)(0x0)) {
     DAT_121a4a28 = (int)(0);
     DAT_121a4a2c = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;

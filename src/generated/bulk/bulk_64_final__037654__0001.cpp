@@ -6605,6 +6605,10 @@ extern int ghidra_vftable_Features;
 // Reference entry 11409bb0; body size 173 bytes.
 extern int __stdcall thunk_FUN_1145a760(int a1,int a2);
 extern int __stdcall thunk_FUN_1145a960(int a1);
+struct SCVtbl_1_2 { virtual void _p0(); virtual int v(int a1,int a2); };
+struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1); };
+struct SCVtbl_3_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual int v(int a1); };
+struct SCVtbl_7_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual int v(int a1); };
 #line 1 "ENTRY_11409bb0"
 
 void FUN_11409bb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
@@ -41609,7 +41613,7 @@ undefined2 __thiscall Recovered_Bulk::m_FUN_11459670(undefined4 param_2,undefine
     ppuStack_18 = (undefined **)((uint)&ghidra_vftable_sonos_SettingsFileCBWrapper);
     uStack_4 = (undefined1)(0);
     piStack_14 = (int *)(param_1);
-    (*(code ***)param_1)[3](&ppuStack_18);
+    ((SCVtbl_3_1*)(param_1))->v((int)(&ppuStack_18));
     if ((char)uStack_8 != '\0') {
       uVar2 = (undefined2)(0);
     }
@@ -42106,7 +42110,7 @@ LAB_11459eb9:
   local_1599 = (undefined1)(0);
   local_1594 = (uint)(0);
   local_1588 = (int *)(param_1);
-  uVar2 = (undefined4)((*(code ***)param_1)[7](&DAT_118a1488), 0);
+  uVar2 = (undefined4)(((SCVtbl_7_1*)(param_1))->v((int)(&DAT_118a1488)), 0);
   _File = (FILE *)((FILE *)thunk_FUN_1145cb70(uVar2), 0);
   pFStack_158c = (FILE *)(_File);
   if ((FILE *)(_File) == (FILE *)(0x0)) {
@@ -42165,7 +42169,7 @@ LAB_11459eb9:
                 thunk_FUN_1148bc65();
               }
               acStack_1004[uVar7] = (char)('\0');
-              (*(code ***)local_1590)[1]((uint)&acStack_1584,(uint)&acStack_1004);
+              ((SCVtbl_1_2*)(local_1590))->v((int)((uint)&acStack_1584),(int)((uint)&acStack_1004));
               uVar7 = (uint)(0);
               uVar9 = (undefined4)(0);
               local_1594 = (uint)(0);
@@ -67628,7 +67632,7 @@ void FUN_117e8ad0(void)
   if ((int *)(DAT_121a071c) != (int *)(0x0)) {
     DAT_121a0718 = (int)(0);
     DAT_121a071c = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -68532,7 +68536,7 @@ void FUN_117e9d10(void)
   if ((int *)(DAT_121a0834) != (int *)(0x0)) {
     DAT_121a0830 = (int)(0);
     DAT_121a0834 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -68846,7 +68850,7 @@ void FUN_117ea340(void)
   if ((int *)(DAT_121a08d8) != (int *)(0x0)) {
     DAT_121a08d4 = (int)(0);
     DAT_121a08d8 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -69136,7 +69140,7 @@ void FUN_117ea900(void)
   if ((int *)(DAT_121a08f8) != (int *)(0x0)) {
     DAT_121a08f4 = (int)(0);
     DAT_121a08f8 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -69712,7 +69716,7 @@ void FUN_117eb4b0(void)
   if ((int *)(DAT_121a097c) != (int *)(0x0)) {
     DAT_121a0978 = (int)(0);
     DAT_121a097c = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -69738,7 +69742,7 @@ void FUN_117eb530(void)
   if ((int *)(DAT_121a09c8) != (int *)(0x0)) {
     DAT_121a09c4 = (int)(0);
     DAT_121a09c8 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -70094,7 +70098,7 @@ void FUN_117ebc50(void)
   if ((int *)(DAT_121a0a1c) != (int *)(0x0)) {
     DAT_121a0a18 = (int)(0);
     DAT_121a0a1c = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -70538,7 +70542,7 @@ void FUN_117ec520(void)
   if ((int *)(DAT_121a0a84) != (int *)(0x0)) {
     DAT_121a0a80 = (int)(0);
     DAT_121a0a84 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -70862,7 +70866,7 @@ void FUN_117ecb50(void)
   if ((int *)(DAT_121a0ad8) != (int *)(0x0)) {
     DAT_121a0ad4 = (int)(0);
     DAT_121a0ad8 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -70910,7 +70914,7 @@ void FUN_117ecc40(void)
   if ((int *)(DAT_121a0a98) != (int *)(0x0)) {
     DAT_121a0a94 = (int)(0);
     DAT_121a0a98 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -70936,7 +70940,7 @@ void FUN_117eccc0(void)
   if ((int *)(DAT_121a0af4) != (int *)(0x0)) {
     DAT_121a0af0 = (int)(0);
     DAT_121a0af4 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -70962,7 +70966,7 @@ void FUN_117ecd40(void)
   if ((int *)(DAT_121a0ae8) != (int *)(0x0)) {
     DAT_121a0ae4 = (int)(0);
     DAT_121a0ae8 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -70988,7 +70992,7 @@ void FUN_117ecdc0(void)
   if ((int *)(DAT_121a0b04) != (int *)(0x0)) {
     DAT_121a0b00 = (int)(0);
     DAT_121a0b04 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -71092,7 +71096,7 @@ void FUN_117ecfd0(void)
   if ((int *)(DAT_121a0b28) != (int *)(0x0)) {
     DAT_121a0b24 = (int)(0);
     DAT_121a0b28 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -71624,7 +71628,7 @@ void FUN_117eda60(void)
   if ((int *)(DAT_121a0bb8) != (int *)(0x0)) {
     DAT_121a0bb4 = (int)(0);
     DAT_121a0bb8 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -72164,7 +72168,7 @@ void FUN_117ee570(void)
   if ((int *)(DAT_121a0c5c) != (int *)(0x0)) {
     DAT_121a0c58 = (int)(0);
     DAT_121a0c5c = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -72476,7 +72480,7 @@ void FUN_117eeba0(void)
   if ((int *)(DAT_121a0cac) != (int *)(0x0)) {
     DAT_121a0ca8 = (int)(0);
     DAT_121a0cac = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -73844,7 +73848,7 @@ void FUN_117f0730(void)
   if ((int *)(DAT_121a0dc4) != (int *)(0x0)) {
     DAT_121a0dc0 = (int)(0);
     DAT_121a0dc4 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -74136,7 +74140,7 @@ void FUN_117f0cf0(void)
   if ((int *)(DAT_121a0f74) != (int *)(0x0)) {
     _sm_pSCLibrary = (int)(0);
     DAT_121a0f74 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -76794,7 +76798,7 @@ void FUN_117f41e0(void)
   if ((int *)(DAT_121a11ac) != (int *)(0x0)) {
     DAT_121a11a8 = (int)(0);
     DAT_121a11ac = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -78358,7 +78362,7 @@ void FUN_117f61c0(void)
   if ((int *)(DAT_121a1364) != (int *)(0x0)) {
     DAT_121a1360 = (int)(0);
     DAT_121a1364 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -78924,7 +78928,7 @@ void FUN_117f6cc0(void)
   if ((int *)(DAT_121a13fc) != (int *)(0x0)) {
     DAT_121a13f8 = (int)(0);
     DAT_121a13fc = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -78950,7 +78954,7 @@ void FUN_117f6d40(void)
   if ((int *)(DAT_121a140c) != (int *)(0x0)) {
     DAT_121a1408 = (int)(0);
     DAT_121a140c = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -78976,7 +78980,7 @@ void FUN_117f6dc0(void)
   if ((int *)(DAT_121a13ec) != (int *)(0x0)) {
     DAT_121a13e8 = (int)(0);
     DAT_121a13ec = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -79574,7 +79578,7 @@ void FUN_117f7a10(void)
   if ((int *)(DAT_121a1538) != (int *)(0x0)) {
     DAT_121a1534 = (int)(0);
     DAT_121a1538 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -79600,7 +79604,7 @@ void FUN_117f7a90(void)
   if ((int *)(DAT_121a1528) != (int *)(0x0)) {
     DAT_121a1524 = (int)(0);
     DAT_121a1528 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -79626,7 +79630,7 @@ void FUN_117f7b10(void)
   if ((int *)(DAT_121a1548) != (int *)(0x0)) {
     DAT_121a1544 = (int)(0);
     DAT_121a1548 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -79982,7 +79986,7 @@ void FUN_117f8240(void)
   if ((int *)(DAT_121a15a0) != (int *)(0x0)) {
     DAT_121a159c = (int)(0);
     DAT_121a15a0 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;

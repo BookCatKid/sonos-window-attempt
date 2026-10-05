@@ -2770,6 +2770,7 @@ extern int __stdcall thunk_FUN_10c5e210(int a1,int a2);
 extern int __stdcall thunk_FUN_10d9ec90(int a1,int a2);
 extern int __stdcall thunk_FUN_10ed00f0(int a1,int a2);
 extern int __stdcall thunk_FUN_111a4830(int a1,int a2);
+struct SCVtbl_1_0 { virtual void _p0(); virtual int v(void); };
 #line 1 "ENTRY_117893b0"
 void FUN_117893b0(void){
   int unaff_EBP;
@@ -12786,7 +12787,7 @@ void FUN_11862620(void)
       if (iVar2 == 1) {
                     
                     
-        (*(code ***)piVar3)[1]();
+        ((SCVtbl_1_0*)(piVar3))->v();
         return;
       }
     }

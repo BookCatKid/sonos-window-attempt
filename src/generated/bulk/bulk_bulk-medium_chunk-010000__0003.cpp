@@ -758,6 +758,12 @@ extern int __stdcall thunk_FUN_1124ffa0(int a1,int a2);
 extern int __stdcall thunk_FUN_1127cc80(int a1,int a2,int a3);
 extern int __stdcall thunk_FUN_11458fa0(int a1);
 extern int __stdcall thunk_FUN_114595b0(int a1,int a2,int a3);
+struct SCVtbl_2_0 { virtual void _p0(); virtual void _p1(); virtual int v(void); };
+struct SCVtbl_9_2 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual int v(int a1,int a2); };
+struct SCVtbl_21_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual int v(void); };
+struct SCVtbl_23_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual int v(void); };
+struct SCVtbl_47_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual int v(int a1); };
+struct SCVtbl_57_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual int v(void); };
 #line 1 "ENTRY_110a1230"
 
 undefined4 __fastcall FUN_110a1230(int param_1)
@@ -1495,7 +1501,7 @@ void __fastcall FUN_110b51f0(undefined4 *param_1)
 void __thiscall Recovered_Bulk::m_FUN_110b5240(int *param_2)
 {
   int *param_1 = (int *)this;
-  (*(code ***)param_2)[2]();
+  ((SCVtbl_2_0*)(param_2))->v();
   thunk_FUN_112a7c70(*param_1 + 0x24);
   return;
 }
@@ -3426,7 +3432,7 @@ void __thiscall Recovered_Bulk::m_FUN_110cad70(undefined4 param_2)
     }
   }
   param_1[5] = (int)(0);
-  (*(code ***)param_1)[47](param_2);
+  ((SCVtbl_47_1*)(param_1))->v((int)(param_2));
   return;
 }
 
@@ -4573,9 +4579,9 @@ undefined4 __fastcall FUN_110db5c0(int *param_1)
 {
   int iVar1;
   
-  iVar1 = (int)((*(code ***)param_1)[21](), 0);
+  iVar1 = (int)(((SCVtbl_21_0*)(param_1))->v(), 0);
   if (iVar1 == 1) {
-    iVar1 = (int)((*(code ***)param_1)[23](), 0);
+    iVar1 = (int)(((SCVtbl_23_0*)(param_1))->v(), 0);
     if ((*(byte *)(iVar1 + 4) & 1) != 0) {
       return (undefined4)(1);
     }
@@ -4849,7 +4855,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_110e09c0(undefined4 param_2,short *p
   int *param_1 = (int *)this;
   param_1[0xb] = (int)(0);
   if (*param_3 == (short)((0))) {
-    (*(code ***)param_1)[9](param_1[10],param_1 + 8);
+    ((SCVtbl_9_2*)(param_1))->v((int)(param_1[10]),(int)(param_1 + 8));
   }
   return (undefined4)(1);
 }
@@ -5311,7 +5317,7 @@ undefined4 __fastcall FUN_110ecc20(int *param_1)
 int __fastcall FUN_110ecd80(int *param_1)
 
 {
-  (*(code ***)param_1)[57]();
+  ((SCVtbl_57_0*)(param_1))->v();
   return (int)(param_1[0x31]);
 }
 

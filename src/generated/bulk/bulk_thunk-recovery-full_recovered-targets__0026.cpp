@@ -3234,6 +3234,14 @@ extern int __stdcall thunk_FUN_11292e00(int a1);
 extern int __stdcall thunk_FUN_11458eb0(int a1,int a2);
 extern int __stdcall thunk_FUN_11458fa0(int a1);
 extern int __stdcall thunk_FUN_114595b0(int a1,int a2,int a3);
+struct SCVtbl_3_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual int v(void); };
+struct SCVtbl_3_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual int v(int a1); };
+struct SCVtbl_3_2 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual int v(int a1,int a2); };
+struct SCVtbl_4_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(void); };
+struct SCVtbl_7_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual int v(int a1); };
+struct SCVtbl_8_2 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual int v(int a1,int a2); };
+struct SCVtbl_10_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual int v(void); };
+struct SCVtbl_22_3 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual int v(int a1,int a2,int a3); };
 #line 1 "ENTRY_1109cf00"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -16672,7 +16680,7 @@ void FUN_110da1d0(undefined4 *param_1,int *param_2,undefined4 *param_3)
     puVar4 = (undefined1 *)((undefined1 *)*param_3);
   }
   puStack_9c = (undefined4 *)(param_1);
-  uVar2 = (undefined4)((*(code ***)param_2)[22](puVar4,(uint)&acStack_98,0x91), 0);
+  uVar2 = (undefined4)(((SCVtbl_22_3*)(param_2))->v((int)(puVar4),(int)((uint)&acStack_98),(int)(0x91)), 0);
   thunk_FUN_112584f0(uVar2);
   if (acStack_98[0] != '\0') {
     pcVar5 = (char *)((uint)&acStack_98);
@@ -17786,7 +17794,7 @@ undefined4 __fastcall FUN_110df010(int *param_1)
 {
   int iVar1;
   
-  iVar1 = (int)((*(code ***)param_1)[10](), 0);
+  iVar1 = (int)(((SCVtbl_10_0*)(param_1))->v(), 0);
   if (iVar1 != 0) {
     thunk_FUN_110c2c60();
     iVar1 = (int)(thunk_FUN_110c1f30((int)(*(int *)(iVar1 + 0x1674) << 8 | 7)), 0);
@@ -21687,7 +21695,7 @@ undefined4 FUN_111020a0(int param_1)
     thunk_FUN_112a8010(param_1 + 0x1c);
     if ((int *)(piVar1) != (int *)(0x0)) {
       thunk_FUN_110f9e80("RUpdateWorkerThread: starting doing work (pv=%p)\n",piVar1[2]);
-      (*(code ***)piVar1)[3]();
+      ((SCVtbl_3_0*)(piVar1))->v();
       thunk_FUN_110f9e80("RUpdateWorkerThread: work done (pv=%p)\n",piVar1[2]);
       thunk_FUN_1106b190(piVar1,0,0);
     }
@@ -21723,7 +21731,7 @@ void __fastcall FUN_11102180(int param_1)
     thunk_FUN_112a8010(param_1 + 0x1c);
     if ((int *)(piVar1) != (int *)(0x0)) {
       thunk_FUN_110f9e80("RUpdateWorkerThread: starting doing work (pv=%p)\n",piVar1[2]);
-      (*(code ***)piVar1)[3]();
+      ((SCVtbl_3_0*)(piVar1))->v();
       thunk_FUN_110f9e80("RUpdateWorkerThread: work done (pv=%p)\n",piVar1[2]);
       thunk_FUN_1106b190(piVar1,0,0);
     }
@@ -27078,7 +27086,7 @@ void __stdcall FUN_11117050(undefined4 param_1,undefined4 param_2,undefined4 *pa
       iVar4 = (int)(thunk_FUN_110cb560(), 0);
       if ((iVar4 != 0) && (piVar1 = (int *)(*(int **)(iVar4 + 0x2c), 0),(int *)( piVar1) != (int *)(0x0))) {
         thunk_FUN_111a2ec0();
-        uVar3 = (ushort)((*(code ***)piVar1)[8]((uint)&auStack_88,0x81), 0);
+        uVar3 = (ushort)(((SCVtbl_8_2*)(piVar1))->v((int)((uint)&auStack_88),(int)(0x81)), 0);
         if (uVar3 == 0) {
           thunk_FUN_111a67e0((int)("timeServer"),(int)((uint)&auStack_88));
         }
@@ -27377,7 +27385,7 @@ undefined4 __stdcall FUN_11118290(int param_1,undefined4 *param_2,undefined4 *pa
         else {
           pcVar6 = (char *)("0.sonostime.pool.ntp.org,1.sonostime.pool.ntp.org,2.sonostime.pool.ntp.org,3.sonostime.pool.ntp.org");
         }
-        uVar4 = (ushort)((*(code ***)piVar1)[7](pcVar6), 0);
+        uVar4 = (ushort)(((SCVtbl_7_1*)(piVar1))->v((int)(pcVar6)), 0);
         thunk_FUN_111a36f0();
         *param_2 = (undefined4)(4);
         *(double*)(param_2 + 2) = (double)((double)uVar4);
@@ -27427,7 +27435,7 @@ undefined4 __stdcall FUN_11118360(undefined4 param_1,undefined4 param_2,undefine
   else {
     uVar4 = (undefined4)(thunk_FUN_111a2df0(), 0);
     iVar3 = (int)(thunk_FUN_111a2bd0(), 0);
-    uVar2 = (ushort)((*(code ***)piStack_4)[3](uVar4,iVar3 != 0), 0);
+    uVar2 = (ushort)(((SCVtbl_3_2*)(piStack_4))->v((int)(uVar4),(int)(iVar3 != 0)), 0);
     thunk_FUN_111a36f0();
     dVar5 = (double)((double)uVar2);
   }
@@ -27752,7 +27760,7 @@ LAB_11119fc7:
 
             if ((int *)(piVar9) != (int *)(0x0)) {
               if (*(int *)(param_1 + 400) != 0) {
-                (*(code ***)piVar9)[4]();
+                ((SCVtbl_4_0*)(piVar9))->v();
                 piVar9 = (int *)(*(int **)(param_1 + 0x18c), 0);
               }
               if (((int *)(piVar9) != (int *)(0x0)) && (iVar5 = (int)(thunk_FUN_1123fcd0(piVar9 + 1), 0), iVar5 == 0)) {
@@ -27781,21 +27789,21 @@ LAB_11119fc7:
             thunk_FUN_1124ffa0((int)(&DAT_11910258),(int)(0));
             thunk_FUN_1124f350((int)(uVar7));
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("StartLocalTime"),(int)(0)), 0);
-            (*(code ***)piVar9)[3]((uint)&auStack_20);
+            ((SCVtbl_3_1*)(piVar9))->v((int)((uint)&auStack_20));
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("Duration"),(int)(0)), 0);
-            (*(code ***)piVar9)[3]((uint)&auStack_14);
+            ((SCVtbl_3_1*)(piVar9))->v((int)((uint)&auStack_14));
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("Recurrence"),(int)(0)), 0);
-            (*(code ***)piVar9)[3]((uint)&auStack_2c);
+            ((SCVtbl_3_1*)(piVar9))->v((int)((uint)&auStack_2c));
             thunk_FUN_1124ffa0((int)("Enabled"),(int)(0));
             thunk_FUN_1124f3c0((int)(uVar2));
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("RoomUUID"),(int)(0)), 0);
-            (*(code ***)piVar9)[3](param_2 + 0x33);
+            ((SCVtbl_3_1*)(piVar9))->v((int)(param_2 + 0x33));
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("ProgramURI"),(int)(0)), 0);
-            (*(code ***)piVar9)[3](param_2 + 0x7c);
+            ((SCVtbl_3_1*)(piVar9))->v((int)(param_2 + 0x7c));
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("ProgramMetaData"),(int)(0)), 0);
-            (*(code ***)piVar9)[3](param_2 + 0x47d);
+            ((SCVtbl_3_1*)(piVar9))->v((int)(param_2 + 0x47d));
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("PlayMode"),(int)(0)), 0);
-            (*(code ***)piVar9)[3](param_2 + 0xc90);
+            ((SCVtbl_3_1*)(piVar9))->v((int)(param_2 + 0xc90));
             thunk_FUN_1124ffa0((int)("Volume"),(int)(0));
             thunk_FUN_1124f2e0((int)(uVar3));
             thunk_FUN_1124ffa0((int)("IncludeLinkedZones"),(int)(0));
@@ -27833,7 +27841,7 @@ LAB_11119fc7:
 
       if ((int *)(piVar9) != (int *)(0x0)) {
         if (*(int *)(param_1 + 0x184) != 0) {
-          (*(code ***)piVar9)[4]();
+          ((SCVtbl_4_0*)(piVar9))->v();
           piVar9 = (int *)(*(int **)(param_1 + 0x180), 0);
         }
         if (((int *)(piVar9) != (int *)(0x0)) && (iVar5 = (int)(thunk_FUN_1123fcd0(piVar9 + 1), 0), iVar5 == 0)) {
@@ -27860,21 +27868,21 @@ LAB_11119fc7:
       uVar2 = (undefined1)(*(undefined1 *)(param_2 + 0x32));
       iVar5 = (int)(*(int *)(param_1 + 0x180));
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("StartLocalTime"),(int)(0)), 0);
-      (*(code ***)piVar9)[3]((uint)&auStack_20);
+      ((SCVtbl_3_1*)(piVar9))->v((int)((uint)&auStack_20));
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("Duration"),(int)(0)), 0);
-      (*(code ***)piVar9)[3]((uint)&auStack_14);
+      ((SCVtbl_3_1*)(piVar9))->v((int)((uint)&auStack_14));
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("Recurrence"),(int)(0)), 0);
-      (*(code ***)piVar9)[3]((uint)&auStack_2c);
+      ((SCVtbl_3_1*)(piVar9))->v((int)((uint)&auStack_2c));
       thunk_FUN_1124ffa0((int)("Enabled"),(int)(0));
       thunk_FUN_1124f3c0((int)(uVar2));
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("RoomUUID"),(int)(0)), 0);
-      (*(code ***)piVar9)[3](param_2 + 0x33);
+      ((SCVtbl_3_1*)(piVar9))->v((int)(param_2 + 0x33));
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("ProgramURI"),(int)(0)), 0);
-      (*(code ***)piVar9)[3](param_2 + 0x7c);
+      ((SCVtbl_3_1*)(piVar9))->v((int)(param_2 + 0x7c));
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("ProgramMetaData"),(int)(0)), 0);
-      (*(code ***)piVar9)[3](param_2 + 0x47d);
+      ((SCVtbl_3_1*)(piVar9))->v((int)(param_2 + 0x47d));
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0((int)("PlayMode"),(int)(0)), 0);
-      (*(code ***)piVar9)[3](param_2 + 0xc90);
+      ((SCVtbl_3_1*)(piVar9))->v((int)(param_2 + 0xc90));
       thunk_FUN_1124ffa0((int)("Volume"),(int)(0));
       thunk_FUN_1124f2e0((int)(uVar3));
       thunk_FUN_1124ffa0((int)("IncludeLinkedZones"),(int)(0));

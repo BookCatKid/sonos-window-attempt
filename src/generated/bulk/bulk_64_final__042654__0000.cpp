@@ -6145,6 +6145,7 @@ template<class... A> int FUN_11857d50(A...);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_11857dc0(void);
 template<class... A> int FUN_11857dc0(A...);
 // Reference entry 1182e880; body size 76 bytes.
+struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1); };
 #line 1 "ENTRY_1182e880"
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
@@ -7041,7 +7042,7 @@ void FUN_1182fa20(void)
   if ((int *)(DAT_121a5038) != (int *)(0x0)) {
     DAT_121a5034 = (int)(0);
     DAT_121a5038 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -7431,7 +7432,7 @@ void FUN_118301a0(void)
   if ((int *)(DAT_121a5090) != (int *)(0x0)) {
     DAT_121a508c = (int)(0);
     DAT_121a5090 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -7787,7 +7788,7 @@ void FUN_118308b0(void)
   if ((int *)(DAT_121a50e8) != (int *)(0x0)) {
     DAT_121a50e4 = (int)(0);
     DAT_121a50e8 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -7835,7 +7836,7 @@ void FUN_118309a0(void)
   if ((int *)(DAT_121a50f4) != (int *)(0x0)) {
     DAT_121a50f0 = (int)(0);
     DAT_121a50f4 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -8455,7 +8456,7 @@ void FUN_118316e0(void)
   if ((int *)(DAT_121a5298) != (int *)(0x0)) {
     DAT_121a5294 = (int)(0);
     DAT_121a5298 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -10197,7 +10198,7 @@ void FUN_11833980(void)
   if ((int *)(DAT_121a53d0) != (int *)(0x0)) {
     DAT_121a53cc = (int)(0);
     DAT_121a53d0 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -10773,7 +10774,7 @@ void FUN_11834500(void)
   if ((int *)(DAT_121a54c4) != (int *)(0x0)) {
     DAT_121a54c0 = (int)(0);
     DAT_121a54c4 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -10799,7 +10800,7 @@ void FUN_11834580(void)
   if ((int *)(DAT_121a54e8) != (int *)(0x0)) {
     DAT_121a54e4 = (int)(0);
     DAT_121a54e8 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -10825,7 +10826,7 @@ void FUN_11834600(void)
   if ((int *)(DAT_121a54d8) != (int *)(0x0)) {
     DAT_121a54d4 = (int)(0);
     DAT_121a54d8 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -11115,7 +11116,7 @@ void FUN_11834bf0(void)
   if ((int *)(DAT_121a55b0) != (int *)(0x0)) {
     DAT_121a55ac = (int)(0);
     DAT_121a55b0 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -11185,7 +11186,7 @@ void FUN_11834d60(void)
   if ((int *)(DAT_121a5690) != (int *)(0x0)) {
     DAT_121a568c = (int)(0);
     DAT_121a5690 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -22042,7 +22043,7 @@ void FUN_11842710(void)
   if ((int *)(DAT_121a628c) != (int *)(0x0)) {
     DAT_121a6288 = (int)(0);
     DAT_121a628c = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -23740,7 +23741,7 @@ void FUN_11844910(void)
   if ((int *)(DAT_121a6418) != (int *)(0x0)) {
     DAT_121a6414 = (int)(0);
     DAT_121a6418 = (int)((int *)0x0);
-    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
