@@ -8269,7 +8269,7 @@ void FUN_10001a3c(void)
 // Reference entry 10001a50; body size 5 bytes.
 #line 1 "ENTRY_10001a50"
 
-__declspec(naked) /* WARNING: Globals starting with 
+__declspec(naked) /* WARNING: Globals starting with _ overlap */
 void FUN_10001a4b(void)
 
 { __asm jmp FUN_107e81f0 }

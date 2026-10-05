@@ -40963,9 +40963,8 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
     public: class std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct
    std::_Tree_simple_types<unsigned int> >,struct std::_Iterator_base0> & __thiscall
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
-   int> >,struct std::_Iterator_base0>::operator++(void_)
-   
-{
+   int> >,struct std::_Iterator_base0>::operator++(void_) */
+/*{
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
   int iVar2;
@@ -41001,7 +41000,7 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
 *)(piVar3));
   return (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0>
           *)this_);
-}
+}*/
 
 
 // Reference entry 11181710; body size 83 bytes.
@@ -48671,9 +48670,8 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1118e1c0(uint *param_2)
     public: class std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct
    std::_Tree_simple_types<unsigned int> >,struct std::_Iterator_base0> & __thiscall
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
-   int> >,struct std::_Iterator_base0>::operator++(void_)
-   
-{
+   int> >,struct std::_Iterator_base0>::operator++(void_) */
+/*{
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
   int iVar2;
@@ -48709,7 +48707,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1118e1c0(uint *param_2)
 *)(piVar3));
   return (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0>
           *)this_);
-}
+}*/
 
 
 // Reference entry 1118e390; body size 83 bytes.
@@ -77658,9 +77656,8 @@ void __fastcall FUN_111c3b30(undefined4 *param_1)
     public: class std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct
    std::_Tree_simple_types<unsigned int> >,struct std::_Iterator_base0> & __thiscall
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
-   int> >,struct std::_Iterator_base0>::operator++(void_)
-   
-{
+   int> >,struct std::_Iterator_base0>::operator++(void_) */
+/*{
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
   int iVar2;
@@ -77696,7 +77693,7 @@ void __fastcall FUN_111c3b30(undefined4 *param_1)
 *)(piVar3));
   return (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0>
           *)this_);
-}
+}*/
 
 
 // Reference entry 111c3c70; body size 116 bytes.
@@ -86615,9 +86612,8 @@ void __fastcall FUN_111d4da0(undefined4 *param_1)
     public: class std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct
    std::_Tree_simple_types<unsigned int> >,struct std::_Iterator_base0> & __thiscall
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
-   int> >,struct std::_Iterator_base0>::operator++(void_)
-   
-{
+   int> >,struct std::_Iterator_base0>::operator++(void_) */
+/*{
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
   int iVar2;
@@ -86653,7 +86649,7 @@ void __fastcall FUN_111d4da0(undefined4 *param_1)
 *)(piVar3));
   return (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0>
           *)this_);
-}
+}*/
 
 
 // Reference entry 111d5470; body size 83 bytes.
