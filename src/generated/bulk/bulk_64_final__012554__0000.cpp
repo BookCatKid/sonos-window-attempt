@@ -758,6 +758,13 @@ extern int __stdcall thunk_FUN_10eced20(int a1);
 extern int __stdcall thunk_FUN_10ee3000(int a1);
 extern int __stdcall thunk_FUN_1109f100(int a1,int a2);
 extern int __stdcall thunk_FUN_11248b40(int a1);
+struct SCVtbl_0_0 { virtual int v(void); };
+struct SCVtbl_0_1 { virtual int v(int a1); };
+struct SCVtbl_0_2 { virtual int v(int a1,int a2); };
+struct SCVtbl_1_3 { virtual void _p0(); virtual int v(int a1,int a2,int a3); };
+struct SCVtbl_5_2 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual int v(int a1,int a2); };
+struct SCVtbl_15_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual int v(int a1); };
+struct SCVtbl_33_3 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual int v(int a1,int a2,int a3); };
 struct SCVtbl_1_0 { virtual void _p0(); virtual int v(void); };
 struct SCVtbl_1_1 { virtual void _p0(); virtual int v(int a1); };
 struct SCVtbl_1_2 { virtual void _p0(); virtual int v(int a1,int a2); };
@@ -931,7 +938,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060c450(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_c))->int_allocRep("layoutStyle");
   ppiVar12 = (int **)(&local_34);
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x17);
-  (**(code **)*puVar4)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar4))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x18);
   ((SCVtbl_10_2*)(local_34))->v((int)(&local_c),(int)(1));
@@ -946,7 +953,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060c450(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_14))->int_allocRep("headerStyle");
   ppiVar12 = (int **)(&local_38);
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x1b);
-  (**(code **)*puVar4)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar4))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x1c);
   cVar3 = (char)(((SCVtbl_29_1*)(local_38))->v((int)(&local_14)), 0);
@@ -963,7 +970,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060c450(undefined4 param_2)
     ((SCStr *)((SCStr *)&local_18))->int_allocRep("headerStyle");
     ppiVar12 = (int **)(&local_3c);
     *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x1f);
-    (**(code **)*puVar4)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar4))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x20);
     ((SCVtbl_10_2*)(local_3c))->v((int)(&local_18),(int)(1));
@@ -979,7 +986,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060c450(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_1c))->int_allocRep("canvasStyle");
   ppiVar12 = (int **)(&local_40);
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x23);
-  (**(code **)*puVar4)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar4))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x24);
   cVar3 = (char)(((SCVtbl_29_1*)(local_40))->v((int)(&local_1c)), 0);
@@ -996,7 +1003,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060c450(undefined4 param_2)
     ((SCStr *)((SCStr *)&local_20))->int_allocRep("canvasStyle");
     ppiVar12 = (int **)(&local_44);
     *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x27);
-    (**(code **)*puVar4)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar4))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x28);
     ((SCVtbl_10_2*)(local_44))->v((int)(&local_20),(int)(0));
@@ -1012,7 +1019,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060c450(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_24))->int_allocRep("footerStyle");
   ppiVar12 = (int **)(&local_48);
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x2b);
-  (**(code **)*puVar4)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar4))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x2c);
   cVar3 = (char)(((SCVtbl_29_1*)(local_48))->v((int)(&local_24)), 0);
@@ -1029,7 +1036,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060c450(undefined4 param_2)
     ((SCStr *)((SCStr *)&local_28))->int_allocRep("footerStyle");
     ppiVar12 = (int **)(&local_10);
     *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x2f);
-    (**(code **)*puVar4)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar4))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x30);
     ((SCVtbl_10_2*)(local_10))->v((int)(&local_28),(int)(0));
@@ -1042,7 +1049,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060c450(undefined4 param_2)
 
   }
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x16);
-  (**(code **)*puVar4)();
+  ((SCVtbl_0_0*)(puVar4))->v();
   iVar5 = (int)(thunk_FUN_1061c630((int)(0xc)), 0);
   thunk_FUN_105f6290((int)(iVar5 + 4));
   local_68 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
@@ -1080,7 +1087,7 @@ LAB_1060c9c8:
   puVar4 = (undefined4 *)(local_54);
   if ((undefined4 *)(local_54) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar4)) != (undefined4 *)(puVar2); puVar4 = puVar4 + 8) {
-      (**(code **)*puVar4)(0);
+      ((SCVtbl_0_1*)(puVar4))->v((int)(0));
     }
     uVar9 = (uint)(local_4c - (int)local_54 & 0xffffffe0);
     puVar4 = (undefined4 *)(local_54);
@@ -1358,7 +1365,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060cfc0(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_8))->int_allocRep("layoutStyle");
   ppiVar12 = (int **)(&local_30);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x13);
-  (**(code **)*puVar7)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x14);
   ((SCVtbl_10_2*)(local_30))->v((int)(&local_8),(int)(1));
@@ -1373,7 +1380,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060cfc0(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_10))->int_allocRep("headerStyle");
   ppiVar12 = (int **)(&local_34);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x17);
-  (**(code **)*puVar7)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x18);
   cVar3 = (char)(((SCVtbl_29_1*)(local_34))->v((int)(&local_10)), 0);
@@ -1389,7 +1396,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060cfc0(undefined4 param_2)
     ((SCStr *)((SCStr *)&local_14))->int_allocRep("headerStyle");
     ppiVar12 = (int **)(&local_38);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1b);
-    (**(code **)*puVar7)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1c);
     ((SCVtbl_10_2*)(local_38))->v((int)(&local_14),(int)(1));
@@ -1405,7 +1412,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060cfc0(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_18))->int_allocRep("canvasStyle");
   ppiVar12 = (int **)(&local_3c);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1f);
-  (**(code **)*puVar7)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x20);
   cVar3 = (char)(((SCVtbl_29_1*)(local_3c))->v((int)(&local_18)), 0);
@@ -1421,7 +1428,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060cfc0(undefined4 param_2)
     ((SCStr *)((SCStr *)&local_1c))->int_allocRep("canvasStyle");
     ppiVar12 = (int **)(&local_40);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x23);
-    (**(code **)*puVar7)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x24);
     ((SCVtbl_10_2*)(local_40))->v((int)(&local_1c),(int)(0));
@@ -1437,7 +1444,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060cfc0(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_20))->int_allocRep("footerStyle");
   ppiVar12 = (int **)(&local_44);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x27);
-  (**(code **)*puVar7)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x28);
   cVar3 = (char)(((SCVtbl_29_1*)(local_44))->v((int)(&local_20)), 0);
@@ -1453,7 +1460,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060cfc0(undefined4 param_2)
     ((SCStr *)((SCStr *)&local_24))->int_allocRep("footerStyle");
     ppiVar12 = (int **)(&local_c);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x2b);
-    (**(code **)*puVar7)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x2c);
     ((SCVtbl_10_2*)(local_c))->v((int)(&local_24),(int)(0));
@@ -1466,7 +1473,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060cfc0(undefined4 param_2)
 
   }
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x12);
-  iVar6 = (int)((**(code **)*puVar7)(), 0);
+  iVar6 = (int)(((SCVtbl_0_0*)(puVar7))->v(), 0);
   thunk_FUN_105f6290((int)(iVar6 + 4));
   local_64 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
 
@@ -1504,7 +1511,7 @@ LAB_1060d4d5:
   puVar7 = (undefined4 *)(local_50);
   if ((undefined4 *)(local_50) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar2); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar4 = (uint)(local_48 - (int)local_50 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_50);
@@ -1772,7 +1779,7 @@ undefined4 __stdcall FUN_1060dac0(undefined4 param_1)
   ((SCStr *)((SCStr *)&local_8))->int_allocRep("layoutStyle");
   ppiVar12 = (int **)(&local_28);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x11);
-  (**(code **)*puVar6)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar6))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x12);
   ((SCVtbl_10_2*)(local_28))->v((int)(&local_8),(int)(1));
@@ -1787,7 +1794,7 @@ undefined4 __stdcall FUN_1060dac0(undefined4 param_1)
   ((SCStr *)((SCStr *)&local_c))->int_allocRep("headerStyle");
   ppiVar12 = (int **)(&local_2c);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x15);
-  (**(code **)*puVar6)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar6))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x16);
   cVar3 = (char)(((SCVtbl_29_1*)(local_2c))->v((int)(&local_c)), 0);
@@ -1803,7 +1810,7 @@ undefined4 __stdcall FUN_1060dac0(undefined4 param_1)
     ((SCStr *)((SCStr *)&local_10))->int_allocRep("headerStyle");
     ppiVar12 = (int **)(&local_30);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x19);
-    (**(code **)*puVar6)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar6))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1a);
     ((SCVtbl_10_2*)(local_30))->v((int)(&local_10),(int)(1));
@@ -1819,7 +1826,7 @@ undefined4 __stdcall FUN_1060dac0(undefined4 param_1)
   ((SCStr *)((SCStr *)&local_14))->int_allocRep("canvasStyle");
   ppiVar12 = (int **)(&local_34);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1d);
-  (**(code **)*puVar6)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar6))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1e);
   cVar3 = (char)(((SCVtbl_29_1*)(local_34))->v((int)(&local_14)), 0);
@@ -1835,7 +1842,7 @@ undefined4 __stdcall FUN_1060dac0(undefined4 param_1)
     ((SCStr *)((SCStr *)&local_18))->int_allocRep("canvasStyle");
     ppiVar12 = (int **)(&local_38);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x21);
-    (**(code **)*puVar6)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar6))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x22);
     ((SCVtbl_10_2*)(local_38))->v((int)(&local_18),(int)(0));
@@ -1851,7 +1858,7 @@ undefined4 __stdcall FUN_1060dac0(undefined4 param_1)
   ((SCStr *)((SCStr *)&local_1c))->int_allocRep("footerStyle");
   ppiVar12 = (int **)(&local_3c);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x25);
-  (**(code **)*puVar6)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar6))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x26);
   cVar3 = (char)(((SCVtbl_29_1*)(local_3c))->v((int)(&local_1c)), 0);
@@ -1867,7 +1874,7 @@ undefined4 __stdcall FUN_1060dac0(undefined4 param_1)
     ((SCStr *)((SCStr *)&local_20))->int_allocRep("footerStyle");
     ppiVar12 = (int **)(&local_40);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x29);
-    (**(code **)*puVar6)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar6))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x2a);
     ((SCVtbl_10_2*)(local_40))->v((int)(&local_20),(int)(0));
@@ -1880,7 +1887,7 @@ undefined4 __stdcall FUN_1060dac0(undefined4 param_1)
 
   }
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x10);
-  (**(code **)*puVar6)();
+  ((SCVtbl_0_0*)(puVar6))->v();
   iVar5 = (int)(thunk_FUN_1061c630((int)(0xc)), 0);
   thunk_FUN_105f6290((int)(iVar5 + 4));
   local_60 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
@@ -1917,7 +1924,7 @@ undefined4 __stdcall FUN_1060dac0(undefined4 param_1)
   puVar6 = (undefined4 *)(local_4c);
   if ((undefined4 *)(local_4c) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar6)) != (undefined4 *)(puVar2); puVar6 = puVar6 + 8) {
-      (**(code **)*puVar6)(0);
+      ((SCVtbl_0_1*)(puVar6))->v((int)(0));
     }
     uVar9 = (uint)(local_44 - (int)local_4c & 0xffffffe0);
     puVar6 = (undefined4 *)(local_4c);
@@ -2167,7 +2174,7 @@ undefined4 __stdcall FUN_1060e600(undefined4 param_1)
   ((SCStr *)((SCStr *)&local_8))->int_allocRep("layoutStyle");
   ppiVar10 = (int **)(&local_28);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(10);
-  (**(code **)*puVar7)(ppiVar10);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar10));
   thunk_FUN_106d83f0((int)(ppiVar10));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0xb);
   ((SCVtbl_10_2*)(local_28))->v((int)(&local_8),(int)(1));
@@ -2182,7 +2189,7 @@ undefined4 __stdcall FUN_1060e600(undefined4 param_1)
   ((SCStr *)((SCStr *)&local_c))->int_allocRep("headerStyle");
   ppiVar10 = (int **)(&local_2c);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0xe);
-  (**(code **)*puVar7)(ppiVar10);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar10));
   thunk_FUN_106d83f0((int)(ppiVar10));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0xf);
   cVar3 = (char)(((SCVtbl_29_1*)(local_2c))->v((int)(&local_c)), 0);
@@ -2198,7 +2205,7 @@ undefined4 __stdcall FUN_1060e600(undefined4 param_1)
     ((SCStr *)((SCStr *)&local_10))->int_allocRep("headerStyle");
     ppiVar10 = (int **)(&local_30);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x12);
-    (**(code **)*puVar7)(ppiVar10);
+    ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar10));
     thunk_FUN_106d83f0((int)(ppiVar10));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x13);
     ((SCVtbl_10_2*)(local_30))->v((int)(&local_10),(int)(1));
@@ -2214,7 +2221,7 @@ undefined4 __stdcall FUN_1060e600(undefined4 param_1)
   ((SCStr *)((SCStr *)&local_14))->int_allocRep("canvasStyle");
   ppiVar10 = (int **)(&local_34);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x16);
-  (**(code **)*puVar7)(ppiVar10);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar10));
   thunk_FUN_106d83f0((int)(ppiVar10));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x17);
   cVar3 = (char)(((SCVtbl_29_1*)(local_34))->v((int)(&local_14)), 0);
@@ -2230,7 +2237,7 @@ undefined4 __stdcall FUN_1060e600(undefined4 param_1)
     ((SCStr *)((SCStr *)&local_18))->int_allocRep("canvasStyle");
     ppiVar10 = (int **)(&local_38);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1a);
-    (**(code **)*puVar7)(ppiVar10);
+    ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar10));
     thunk_FUN_106d83f0((int)(ppiVar10));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1b);
     ((SCVtbl_10_2*)(local_38))->v((int)(&local_18),(int)(0));
@@ -2246,7 +2253,7 @@ undefined4 __stdcall FUN_1060e600(undefined4 param_1)
   ((SCStr *)((SCStr *)&local_1c))->int_allocRep("footerStyle");
   ppiVar10 = (int **)(&local_3c);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1e);
-  (**(code **)*puVar7)(ppiVar10);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar10));
   thunk_FUN_106d83f0((int)(ppiVar10));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1f);
   cVar3 = (char)(((SCVtbl_29_1*)(local_3c))->v((int)(&local_1c)), 0);
@@ -2262,7 +2269,7 @@ undefined4 __stdcall FUN_1060e600(undefined4 param_1)
     ((SCStr *)((SCStr *)&local_20))->int_allocRep("footerStyle");
     ppiVar10 = (int **)(&local_40);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x22);
-    (**(code **)*puVar7)(ppiVar10);
+    ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar10));
     thunk_FUN_106d83f0((int)(ppiVar10));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x23);
     ((SCVtbl_10_2*)(local_40))->v((int)(&local_20),(int)(0));
@@ -2275,7 +2282,7 @@ undefined4 __stdcall FUN_1060e600(undefined4 param_1)
 
   }
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(9);
-  (**(code **)*puVar7)();
+  ((SCVtbl_0_0*)(puVar7))->v();
   iVar5 = (int)(thunk_FUN_1061c630((int)(0xc)), 0);
   thunk_FUN_105f6290((int)(iVar5 + 4));
   local_60 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
@@ -2304,7 +2311,7 @@ undefined4 __stdcall FUN_1060e600(undefined4 param_1)
   puVar7 = (undefined4 *)(local_4c);
   if ((undefined4 *)(local_4c) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar2); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar4 = (uint)(local_44 - (int)local_4c & 0xffffffe0);
     puVar7 = (undefined4 *)(local_4c);
@@ -2556,7 +2563,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060ef00(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_10))->int_allocRep("layoutStyle");
   ppiVar12 = (int **)(&local_30);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x11);
-  (**(code **)*puVar7)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x12);
   ((SCVtbl_10_2*)(local_30))->v((int)(&local_10),(int)(1));
@@ -2571,7 +2578,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060ef00(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_14))->int_allocRep("headerStyle");
   ppiVar12 = (int **)(&local_34);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x15);
-  (**(code **)*puVar7)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x16);
   cVar3 = (char)(((SCVtbl_29_1*)(local_34))->v((int)(&local_14)), 0);
@@ -2587,7 +2594,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060ef00(undefined4 param_2)
     ((SCStr *)((SCStr *)&local_18))->int_allocRep("headerStyle");
     ppiVar12 = (int **)(&local_38);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x19);
-    (**(code **)*puVar7)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1a);
     ((SCVtbl_10_2*)(local_38))->v((int)(&local_18),(int)(1));
@@ -2603,7 +2610,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060ef00(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_1c))->int_allocRep("canvasStyle");
   ppiVar12 = (int **)(&local_3c);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1d);
-  (**(code **)*puVar7)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x1e);
   cVar3 = (char)(((SCVtbl_29_1*)(local_3c))->v((int)(&local_1c)), 0);
@@ -2619,7 +2626,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060ef00(undefined4 param_2)
     ((SCStr *)((SCStr *)&local_20))->int_allocRep("canvasStyle");
     ppiVar12 = (int **)(&local_40);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x21);
-    (**(code **)*puVar7)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x22);
     ((SCVtbl_10_2*)(local_40))->v((int)(&local_20),(int)(0));
@@ -2635,7 +2642,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060ef00(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_24))->int_allocRep("footerStyle");
   ppiVar12 = (int **)(&local_44);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x25);
-  (**(code **)*puVar7)(ppiVar12);
+  ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
   thunk_FUN_106d83f0((int)(ppiVar12));
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x26);
   cVar3 = (char)(((SCVtbl_29_1*)(local_44))->v((int)(&local_24)), 0);
@@ -2651,7 +2658,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060ef00(undefined4 param_2)
     ((SCStr *)((SCStr *)&local_28))->int_allocRep("footerStyle");
     ppiVar12 = (int **)(&local_8);
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x29);
-    (**(code **)*puVar7)(ppiVar12);
+    ((SCVtbl_0_1*)(puVar7))->v((int)(ppiVar12));
     thunk_FUN_106d83f0((int)(ppiVar12));
     *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x2a);
     ((SCVtbl_10_2*)(local_8))->v((int)(&local_28),(int)(0));
@@ -2664,7 +2671,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1060ef00(undefined4 param_2)
 
   }
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x10);
-  (**(code **)*puVar7)();
+  ((SCVtbl_0_0*)(puVar7))->v();
   iVar5 = (int)(thunk_FUN_1061c630((int)(0xc)), 0);
   thunk_FUN_105f6290((int)(iVar5 + 4));
   local_68 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
@@ -2703,7 +2710,7 @@ LAB_1060f3e6:
   puVar7 = (undefined4 *)(local_54);
   if ((undefined4 *)(local_54) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar2); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar4 = (uint)(local_4c - (int)local_54 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_54);
@@ -3105,7 +3112,7 @@ undefined4 __stdcall FUN_1060fdb0(undefined4 param_1)
   puVar8 = (undefined4 *)(local_1c);
   if ((undefined4 *)(local_1c) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar8)) != (undefined4 *)(puVar2); puVar8 = puVar8 + 8) {
-      (**(code **)*puVar8)(0);
+      ((SCVtbl_0_1*)(puVar8))->v((int)(0));
     }
     uVar7 = (uint)(local_14 - (int)local_1c & 0xffffffe0);
     puVar8 = (undefined4 *)(local_1c);
@@ -3394,7 +3401,7 @@ undefined4 __stdcall FUN_106102b0(undefined4 param_1)
   puVar9 = (undefined4 *)(local_18);
   if ((undefined4 *)(local_18) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar9)) != (undefined4 *)(puVar2); puVar9 = puVar9 + 8) {
-      (**(code **)*puVar9)(0);
+      ((SCVtbl_0_1*)(puVar9))->v((int)(0));
     }
     uVar8 = (uint)(local_10 - (int)local_18 & 0xffffffe0);
     puVar9 = (undefined4 *)(local_18);
@@ -3585,7 +3592,7 @@ SCStr * __stdcall FUN_10610c60(SCStr *param_1)
   uVar2 = (uint)(DAT_12126b84);
 
   pSVar3 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
-  piVar4 = (int *)((int *)(**(code **)(**(int **)(*(int *)(pSVar3 + 0x4c) + 0xe8) + 4))(&local_20,0xd,uVar2), 0);
+  piVar4 = (int *)((int *)((SCVtbl_1_3*)(*(int **)(*(int *)(pSVar3 + 0x4c) + 0xe8)))->v((int)(&local_20),(int)(0xd),(int)(uVar2)), 0);
   piVar6 = (int *)((int *)*piVar4);
 
   *piVar4 = (int)(0);
@@ -3603,7 +3610,7 @@ SCStr * __stdcall FUN_10610c60(SCStr *param_1)
   else {
     ((SCStr *)((SCStr *)&local_14))->int_allocRep("SCIWifiDelegate");
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-    puVar5 = (undefined4 *)((undefined4 *)(**(code **)*piVar6)(&local_18,&local_14), 0);
+    puVar5 = (undefined4 *)((undefined4 *)((SCVtbl_0_2*)(piVar6))->v((int)(&local_18),(int)(&local_14)), 0);
     piVar6 = (int *)((int *)*puVar5);
     *puVar5 = (undefined4)(0);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
@@ -3836,7 +3843,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10610e90(undefined4 param_2)
   puVar9 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar9)) != (undefined4 *)(puVar2); puVar9 = puVar9 + 8) {
-      (**(code **)*puVar9)(0);
+      ((SCVtbl_0_1*)(puVar9))->v((int)(0));
     }
     uVar7 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar9 = (undefined4 *)(local_14);
@@ -3868,7 +3875,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10610e90(undefined4 param_2)
   puVar9 = (undefined4 *)(local_34);
   if ((undefined4 *)(local_34) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar9)) != (undefined4 *)(puVar2); puVar9 = puVar9 + 8) {
-      (**(code **)*puVar9)(0);
+      ((SCVtbl_0_1*)(puVar9))->v((int)(0));
     }
     uVar7 = (uint)(local_2c - (int)local_34 & 0xffffffe0);
     puVar9 = (undefined4 *)(local_34);
@@ -3900,7 +3907,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10610e90(undefined4 param_2)
   puVar9 = (undefined4 *)(local_54);
   if ((undefined4 *)(local_54) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar9)) != (undefined4 *)(puVar2); puVar9 = puVar9 + 8) {
-      (**(code **)*puVar9)(0);
+      ((SCVtbl_0_1*)(puVar9))->v((int)(0));
     }
     uVar7 = (uint)(local_4c - (int)local_54 & 0xffffffe0);
     puVar9 = (undefined4 *)(local_54);
@@ -3932,7 +3939,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10610e90(undefined4 param_2)
   puVar9 = (undefined4 *)(local_80);
   if ((undefined4 *)(local_80) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar9)) != (undefined4 *)(puVar2); puVar9 = puVar9 + 8) {
-      (**(code **)*puVar9)(0);
+      ((SCVtbl_0_1*)(puVar9))->v((int)(0));
     }
     uVar7 = (uint)(local_78 - (int)local_80 & 0xffffffe0);
     puVar9 = (undefined4 *)(local_80);
@@ -4018,7 +4025,7 @@ undefined4 __stdcall FUN_10611670(undefined4 param_1)
 
   puVar5 = (undefined4 *)((undefined4 *)thunk_FUN_101da4a0(&local_8,DAT_12126b84 ^ (uint)(uint)&local_6c), 0);
 
-  piVar6 = (int *)((int *)(**(code **)(*(int *)*puVar5 + 0x3c))(&local_c), 0);
+  piVar6 = (int *)((int *)((SCVtbl_15_1*)((int *)*puVar5))->v((int)(&local_c)), 0);
   iVar10 = (int)(*piVar6);
   local_70 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_70 + 1)) << 8 | (uint)(1)));
   if ((int *)(local_c) != (int *)(0x0)) {
@@ -4077,7 +4084,7 @@ undefined4 __stdcall FUN_10611670(undefined4 param_1)
   puVar5 = (undefined4 *)(local_18);
   if ((undefined4 *)(local_18) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar5)) != (undefined4 *)(puVar1); puVar5 = puVar5 + 8) {
-      (**(code **)*puVar5)(0);
+      ((SCVtbl_0_1*)(puVar5))->v((int)(0));
     }
     uVar9 = (uint)(local_10 - (int)local_18 & 0xffffffe0);
     puVar5 = (undefined4 *)(local_18);
@@ -4186,7 +4193,7 @@ undefined4 __stdcall FUN_106119c0(undefined4 param_1)
   puVar8 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar8)) != (undefined4 *)(puVar2); puVar8 = puVar8 + 8) {
-      (**(code **)*puVar8)(0);
+      ((SCVtbl_0_1*)(puVar8))->v((int)(0));
     }
     uVar4 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar8 = (undefined4 *)(local_14);
@@ -4286,7 +4293,7 @@ undefined4 __stdcall FUN_10611c20(undefined4 param_1)
   puVar8 = (undefined4 *)(local_20);
   if ((undefined4 *)(local_20) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar8)) != (undefined4 *)(puVar2); puVar8 = puVar8 + 8) {
-      (**(code **)*puVar8)(0);
+      ((SCVtbl_0_1*)(puVar8))->v((int)(0));
     }
     uVar4 = (uint)(local_18 - (int)local_20 & 0xffffffe0);
     puVar8 = (undefined4 *)(local_20);
@@ -4394,7 +4401,7 @@ undefined4 __stdcall FUN_10611e30(undefined4 param_1)
   puVar9 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar9)) != (undefined4 *)(puVar2); puVar9 = puVar9 + 8) {
-      (**(code **)*puVar9)(0);
+      ((SCVtbl_0_1*)(puVar9))->v((int)(0));
     }
     uVar5 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar9 = (undefined4 *)(local_14);
@@ -4502,7 +4509,7 @@ undefined4 __stdcall FUN_106120a0(undefined4 param_1)
   puVar8 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar8)) != (undefined4 *)(puVar2); puVar8 = puVar8 + 8) {
-      (**(code **)*puVar8)(0);
+      ((SCVtbl_0_1*)(puVar8))->v((int)(0));
     }
     uVar4 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar8 = (undefined4 *)(local_14);
@@ -4641,7 +4648,7 @@ LAB_1061240d:
   puVar9 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar9)) != (undefined4 *)(puVar2); puVar9 = puVar9 + 8) {
-      (**(code **)*puVar9)(0);
+      ((SCVtbl_0_1*)(puVar9))->v((int)(0));
     }
     uVar8 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar9 = (undefined4 *)(local_14);
@@ -4735,7 +4742,7 @@ undefined4 __stdcall FUN_106126c0(undefined4 param_1)
   puVar6 = (undefined4 *)(local_20);
   if ((undefined4 *)(local_20) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar6)) != (undefined4 *)(puVar1); puVar6 = puVar6 + 8) {
-      (**(code **)*puVar6)(0);
+      ((SCVtbl_0_1*)(puVar6))->v((int)(0));
     }
     uVar2 = (uint)(local_18 - (int)local_20 & 0xffffffe0);
     puVar6 = (undefined4 *)(local_20);
@@ -4902,7 +4909,7 @@ LAB_10612a0d:
   puVar13 = (undefined4 *)(local_1c);
   if ((undefined4 *)(local_1c) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar13)) != (undefined4 *)(puVar2); puVar13 = puVar13 + 8) {
-      (**(code **)*puVar13)(0);
+      ((SCVtbl_0_1*)(puVar13))->v((int)(0));
     }
     uVar9 = (uint)(local_14 - (int)local_1c & 0xffffffe0);
     puVar13 = (undefined4 *)(local_1c);
@@ -5005,7 +5012,7 @@ undefined4 __stdcall FUN_10612cd0(undefined4 param_1)
   puVar8 = (undefined4 *)(local_20);
   if ((undefined4 *)(local_20) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar8)) != (undefined4 *)(puVar2); puVar8 = puVar8 + 8) {
-      (**(code **)*puVar8)(0);
+      ((SCVtbl_0_1*)(puVar8))->v((int)(0));
     }
     uVar4 = (uint)(local_18 - (int)local_20 & 0xffffffe0);
     puVar8 = (undefined4 *)(local_20);
@@ -5117,7 +5124,7 @@ undefined4 __stdcall FUN_10612ee0(undefined4 param_1)
   puVar6 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar6)) != (undefined4 *)(puVar1); puVar6 = puVar6 + 8) {
-      (**(code **)*puVar6)(0);
+      ((SCVtbl_0_1*)(puVar6))->v((int)(0));
     }
     uVar5 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar6 = (undefined4 *)(local_14);
@@ -5358,7 +5365,7 @@ LAB_10613460:
   puVar8 = (undefined4 *)(local_5c);
   if ((undefined4 *)(local_5c) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar8)) != (undefined4 *)(puVar1); puVar8 = puVar8 + 8) {
-      (**(code **)*puVar8)(0);
+      ((SCVtbl_0_1*)(puVar8))->v((int)(0));
     }
     uVar7 = (uint)(local_54 - (int)local_5c & 0xffffffe0);
     puVar8 = (undefined4 *)(local_5c);
@@ -5472,7 +5479,7 @@ undefined4 __stdcall FUN_10613840(undefined4 param_1)
   puVar9 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar9)) != (undefined4 *)(puVar3); puVar9 = puVar9 + 8) {
-      (**(code **)*puVar9)(0);
+      ((SCVtbl_0_1*)(puVar9))->v((int)(0));
     }
     uVar7 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar9 = (undefined4 *)(local_14);
@@ -5561,7 +5568,7 @@ undefined4 __stdcall FUN_10613ac0(undefined4 param_1)
   puVar6 = (undefined4 *)(local_20);
   if ((undefined4 *)(local_20) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar6)) != (undefined4 *)(puVar1); puVar6 = puVar6 + 8) {
-      (**(code **)*puVar6)(0);
+      ((SCVtbl_0_1*)(puVar6))->v((int)(0));
     }
     uVar2 = (uint)(local_18 - (int)local_20 & 0xffffffe0);
     puVar6 = (undefined4 *)(local_20);
@@ -5707,7 +5714,7 @@ undefined4 __stdcall FUN_10613ca0(undefined4 param_1)
   puVar7 = (undefined4 *)(local_18);
   if ((undefined4 *)(local_18) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar2); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar6 = (uint)(local_10 - (int)local_18 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_18);
@@ -6058,7 +6065,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_106142d0(undefined4 param_2)
   puVar9 = (undefined4 *)(local_2c);
   if ((undefined4 *)(local_2c) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar9)) != (undefined4 *)(puVar1); puVar9 = puVar9 + 8) {
-      (**(code **)*puVar9)(0);
+      ((SCVtbl_0_1*)(puVar9))->v((int)(0));
     }
     uVar8 = (uint)(local_24 - (int)local_2c & 0xffffffe0);
     puVar9 = (undefined4 *)(local_2c);
@@ -6386,7 +6393,7 @@ undefined4 __stdcall FUN_10614ed0(undefined4 param_1)
   puVar7 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar3); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar6 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_14);
@@ -6600,7 +6607,7 @@ undefined4 __stdcall FUN_106151e0(undefined4 param_1)
 
   puVar6 = (undefined4 *)((undefined4 *)thunk_FUN_101da4a0(&local_90,DAT_12126b84 ^ (uint)&local_5c), 0);
 
-  piVar7 = (int *)((int *)(**(code **)(*(int *)*puVar6 + 0x3c))(&local_8c), 0);
+  piVar7 = (int *)((int *)((SCVtbl_15_1*)((int *)*puVar6))->v((int)(&local_8c)), 0);
   local_9c = (int *)((int *)*piVar7);
   *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(1);
   *piVar7 = (int)(0);
@@ -6777,7 +6784,7 @@ undefined4 __stdcall FUN_106151e0(undefined4 param_1)
   puVar6 = (undefined4 *)(local_74);
   if ((undefined4 *)(local_74) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar6)) != (undefined4 *)(puVar2); puVar6 = puVar6 + 8) {
-      (**(code **)*puVar6)(0);
+      ((SCVtbl_0_1*)(puVar6))->v((int)(0));
     }
     uVar11 = (uint)(local_6c - (int)local_74 & 0xffffffe0);
     puVar6 = (undefined4 *)(local_74);
@@ -6815,7 +6822,7 @@ undefined4 __stdcall FUN_106151e0(undefined4 param_1)
   puVar6 = (undefined4 *)(local_48);
   if ((undefined4 *)(local_48) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar6)) != (undefined4 *)(puVar2); puVar6 = puVar6 + 8) {
-      (**(code **)*puVar6)(0);
+      ((SCVtbl_0_1*)(puVar6))->v((int)(0));
     }
     uVar11 = (uint)(local_40 - (int)local_48 & 0xffffffe0);
     puVar6 = (undefined4 *)(local_48);
@@ -7229,7 +7236,7 @@ undefined4 __stdcall FUN_10616550(undefined4 param_1)
   puVar7 = (undefined4 *)(local_18);
   if ((undefined4 *)(local_18) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar2); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar3 = (uint)(local_10 - (int)local_18 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_18);
@@ -7409,7 +7416,7 @@ undefined4 __stdcall FUN_106169f0(undefined4 param_1)
   puVar7 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar3); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar6 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_14);
@@ -7552,7 +7559,7 @@ undefined4 __stdcall FUN_10616d00(undefined4 param_1)
   puVar7 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar3); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar6 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_14);
@@ -7720,7 +7727,7 @@ undefined4 __stdcall FUN_10617010(undefined4 param_1)
   puVar7 = (undefined4 *)(local_18);
   if ((undefined4 *)(local_18) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar2); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar3 = (uint)(local_10 - (int)local_18 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_18);
@@ -7900,7 +7907,7 @@ undefined4 __stdcall FUN_106174a0(undefined4 param_1)
   puVar7 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar3); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar6 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_14);
@@ -8043,7 +8050,7 @@ undefined4 __stdcall FUN_106177b0(undefined4 param_1)
   puVar7 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar3); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar6 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_14);
@@ -8254,7 +8261,7 @@ undefined4 __stdcall FUN_10617ac0(undefined4 param_1)
   puVar8 = (undefined4 *)(local_10);
   if ((undefined4 *)(local_10) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar8)) != (undefined4 *)(puVar2); puVar8 = puVar8 + 8) {
-      (**(code **)*puVar8)(0);
+      ((SCVtbl_0_1*)(puVar8))->v((int)(0));
     }
     uVar4 = (uint)(local_8 - (int)local_10 & 0xffffffe0);
     puVar8 = (undefined4 *)(local_10);
@@ -8499,7 +8506,7 @@ undefined4 __stdcall FUN_10618260(undefined4 param_1)
   puVar7 = (undefined4 *)(local_14);
   if ((undefined4 *)(local_14) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar3); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar4 = (uint)(local_c - (int)local_14 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_14);
@@ -8667,7 +8674,7 @@ undefined4 __stdcall FUN_10618570(undefined4 param_1)
   puVar7 = (undefined4 *)(local_18);
   if ((undefined4 *)(local_18) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar7)) != (undefined4 *)(puVar2); puVar7 = puVar7 + 8) {
-      (**(code **)*puVar7)(0);
+      ((SCVtbl_0_1*)(puVar7))->v((int)(0));
     }
     uVar3 = (uint)(local_10 - (int)local_18 & 0xffffffe0);
     puVar7 = (undefined4 *)(local_18);
@@ -8941,7 +8948,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10618a10(SCStr *param_2)
   puVar5 = (undefined4 *)(local_24);
   if ((undefined4 *)(local_24) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar5)) != (undefined4 *)(puVar2); puVar5 = puVar5 + 8) {
-      (**(code **)*puVar5)(0,uVar3);
+      ((SCVtbl_0_2*)(puVar5))->v((int)(0),(int)(uVar3));
     }
     uVar3 = (uint)(local_14 - (int)puVar1 & 0xffffffe0);
     puVar5 = (undefined4 *)(puVar1);
@@ -9043,7 +9050,7 @@ LAB_106191b7:
   puVar6 = (undefined4 *)(local_20);
   if ((undefined4 *)(local_20) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar6)) != (undefined4 *)(puVar4); puVar6 = puVar6 + 8) {
-      (**(code **)*puVar6)(0,uVar5);
+      ((SCVtbl_0_2*)(puVar6))->v((int)(0),(int)(uVar5));
     }
     uVar5 = (uint)(local_18 - (int)puVar3 & 0xffffffe0);
     puVar6 = (undefined4 *)(puVar3);
@@ -9153,7 +9160,7 @@ LAB_106193b2:
   puVar9 = (undefined4 *)(local_20);
   if ((undefined4 *)(local_20) != (undefined4 *)(0x0)) {
     for (;(undefined4 *)((puVar9)) != (undefined4 *)(puVar5); puVar9 = puVar9 + 8) {
-      (**(code **)*puVar9)(0,uVar7);
+      ((SCVtbl_0_2*)(puVar9))->v((int)(0),(int)(uVar7));
     }
     uVar7 = (uint)(local_18 - (int)puVar4 & 0xffffffe0);
     puVar9 = (undefined4 *)(puVar4);
@@ -10058,7 +10065,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061a9b0(int *param_2)
   thunk_FUN_10351370((int)(uVar6));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(9);
   if ((int *)(local_14) != (int *)(0x0)) {
-    (**(code **)(*local_14 + 8))();
+    ((SCVtbl_2_0*)(local_14))->v();
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
   uVar1 = (undefined1)((undefined1)local_8);
@@ -10069,7 +10076,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061a9b0(int *param_2)
   thunk_FUN_101b92f0((int)(uVar4));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xd);
   if ((int *)(param_2) != (int *)(0x0)) {
-    (**(code **)(*param_2 + 8))();
+    ((SCVtbl_2_0*)(param_2))->v();
   }
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0xc)));
   uVar3 = (uint)(local_18);
@@ -10111,11 +10118,11 @@ LAB_1061abd5:
   thunk_FUN_10ead9a0((int)(*puVar7),(int)(uVar4),(int)(param_2));
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x12)));
   if ((int *)(local_1c) != (int *)(0x0)) {
-    (**(code **)(*local_1c + 8))();
+    ((SCVtbl_2_0*)(local_1c))->v();
   }
 
   if ((int *)(local_24) != (int *)(0x0)) {
-    (**(code **)(*local_24 + 8))();
+    ((SCVtbl_2_0*)(local_24))->v();
   }
 
   return;
@@ -10269,7 +10276,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061ae30(SCStr *param_2)
         thunk_FUN_105f29d0((int)(uVar3));
 
         if ((SCStr *)(param_2) != (SCStr *)(0x0)) {
-          (**(code **)(*(int *)param_2 + 8))();
+          ((SCVtbl_2_0*)((int *)param_2))->v();
         }
 
         thunk_FUN_10ebb810((int)("appVersionCheck"),(int)(param_1[0x38]),(int)(0));
@@ -10341,7 +10348,7 @@ LAB_1061b497:
         thunk_FUN_105f29d0((int)(uVar3));
 
         if ((SCStr *)(param_2) != (SCStr *)(0x0)) {
-          (**(code **)(*(int *)param_2 + 8))();
+          ((SCVtbl_2_0*)((int *)param_2))->v();
         }
 
         thunk_FUN_10ebb810((int)("appVersionCheck"),(int)(param_1[0x38]),(int)(0));
@@ -10352,7 +10359,7 @@ LAB_1061b497:
 
     return;
   }
-  (**(code **)(*param_1 + 0xc))();
+  ((SCVtbl_3_0*)(param_1))->v();
   iVar4 = (int)(thunk_FUN_105ad8f0(), 0);
   thunk_FUN_10eb41b0();
   piVar5 = (int *)((int *)thunk_FUN_10cf34e0((int)(&param_2)), 0);
@@ -10369,7 +10376,7 @@ LAB_1061b497:
   uVar8 = (uint)(0);
 
   if ((SCStr *)(param_2) != (SCStr *)(0x0)) {
-    (**(code **)(*(int *)param_2 + 8))();
+    ((SCVtbl_2_0*)((int *)param_2))->v();
   }
 
   thunk_FUN_10eb41b0();
@@ -10394,7 +10401,7 @@ LAB_1061b497:
     puVar6 = (undefined4 *)((undefined4 *)thunk_FUN_101da4a0(&local_20), 0);
 
 
-    piVar5 = (int *)((int *)(**(code **)(*(int *)*puVar6 + 0x3c))(&local_1c), 0);
+    piVar5 = (int *)((int *)((SCVtbl_15_1*)((int *)*puVar6))->v((int)(&local_1c)), 0);
     uVar8 = (uint)(6);
     if ((*piVar5 != (int)((0))) && (*(uint *)((char *)&param_2 + 3) != '\0')) {
       uVar2 = (undefined1)(1);
@@ -10409,11 +10416,11 @@ LAB_1061afd6:
 
     local_14 = (uint)(uVar8);
     if ((int *)(local_1c) != (int *)(0x0)) {
-      (**(code **)(*local_1c + 8))();
+      ((SCVtbl_2_0*)(local_1c))->v();
     }
   }
   if (((uVar8 & 2) != 0) && (local_8 = (undefined4)(7),(int *)( local_20) != (int *)(0x0))) {
-    (**(code **)(*local_20 + 8))();
+    ((SCVtbl_2_0*)(local_20))->v();
   }
 
   if (*(char *)((int)param_1 + 0xe9) != '\0') {
@@ -10426,7 +10433,7 @@ LAB_1061afd6:
     thunk_FUN_105f29d0((int)(uVar3));
 
     if ((SCStr *)(param_2) != (SCStr *)(0x0)) {
-      (**(code **)(*(int *)param_2 + 8))();
+      ((SCVtbl_2_0*)((int *)param_2))->v();
     }
 
     thunk_FUN_10ebb810((int)("appVersionCheck"),(int)(param_1[0x38]),(int)(0));
@@ -10619,22 +10626,22 @@ void __stdcall FUN_1061ba40(int *param_1)
     if ((int *)(piVar5) != (int *)(0x0)) {
       piVar6 = (int *)(piVar5);
       if (*(code **)(*piVar5 + 0xc) != (code *)((thunk_FUN_101da390))) {
-        piVar6 = (int *)((int *)(**(code **)(*piVar5 + 0xc))(), 0);
+        piVar6 = (int *)((int *)((SCVtbl_3_0*)(piVar5))->v(), 0);
       }
       local_14 = (int *)(piVar6);
-      (**(code **)(*piVar6 + 4))();
+      ((SCVtbl_1_0*)(piVar6))->v();
     }
 
-    puVar4 = (undefined4 *)((undefined4 *)(**(code **)(*piVar5 + 0x34))(&param_1), 0);
+    puVar4 = (undefined4 *)((undefined4 *)((SCVtbl_13_1*)(piVar5))->v((int)(&param_1)), 0);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(10);
-    (**(code **)(*(int *)*puVar4 + 0x14))();
+    ((SCVtbl_5_0*)((int *)*puVar4))->v();
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0xb)));
     if ((int *)(param_1) != (int *)(0x0)) {
-      (**(code **)(*param_1 + 8))();
+      ((SCVtbl_2_0*)(param_1))->v();
     }
 
     if ((int *)(piVar6) != (int *)(0x0)) {
-      (**(code **)(*piVar6 + 8))();
+      ((SCVtbl_2_0*)(piVar6))->v();
     }
   }
 
@@ -10761,7 +10768,7 @@ void __stdcall FUN_1061bdf0(undefined4 param_1)
   thunk_FUN_10def0d0();
   if (cVar1 != '\0') {
     pSVar3 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
-    piVar4 = (int *)((int *)(**(code **)(**(int **)(*(int *)(pSVar3 + 0x4c) + 0xe8) + 4))(&local_1c,7), 0);
+    piVar4 = (int *)((int *)((SCVtbl_1_2*)(*(int **)(*(int *)(pSVar3 + 0x4c) + 0xe8)))->v((int)(&local_1c),(int)(7)), 0);
     piVar6 = (int *)((int *)*piVar4);
 
     *piVar4 = (int)(0);
@@ -10769,7 +10776,7 @@ void __stdcall FUN_1061bdf0(undefined4 param_1)
       piVar4 = (int *)((int *)0x0);
     }
     else {
-      piVar4 = (int *)((int *)(**(code **)(*piVar6 + 0xc))(), 0);
+      piVar4 = (int *)((int *)((SCVtbl_3_0*)(piVar6))->v(), 0);
     }
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
     if ((int *)(piVar6) == (int *)(0x0)) {
@@ -10779,13 +10786,13 @@ void __stdcall FUN_1061bdf0(undefined4 param_1)
     else {
       ((SCStr *)((SCStr *)&param_1))->int_allocRep("SCIHapticDelegate");
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
-      puVar5 = (undefined4 *)((undefined4 *)(**(code **)*piVar6)(&local_14,&param_1), 0);
+      puVar5 = (undefined4 *)((undefined4 *)((SCVtbl_0_2*)(piVar6))->v((int)(&local_14),(int)(&param_1)), 0);
       piVar6 = (int *)((int *)*puVar5);
       *puVar5 = (undefined4)(0);
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
       local_18 = (int *)(piVar6);
       if ((int *)(local_14) != (int *)(0x0)) {
-        (**(code **)(*local_14 + 8))();
+        ((SCVtbl_2_0*)(local_14))->v();
       }
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
       ((SCStr *)((SCStr *)&param_1))->int_release();
@@ -10793,19 +10800,19 @@ void __stdcall FUN_1061bdf0(undefined4 param_1)
     }
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(7);
     if ((int *)(piVar4) != (int *)(0x0)) {
-      (**(code **)(*piVar4 + 8))();
+      ((SCVtbl_2_0*)(piVar4))->v();
     }
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(10);
     if ((int *)(local_1c) != (int *)(0x0)) {
-      (**(code **)(*local_1c + 8))();
+      ((SCVtbl_2_0*)(local_1c))->v();
     }
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(9)));
     if ((int *)(piVar6) != (int *)(0x0)) {
-      (**(code **)(*piVar6 + 0x14))(0);
+      ((SCVtbl_5_1*)(piVar6))->v((int)(0));
     }
 
     if ((int *)(piVar6) != (int *)(0x0)) {
-      (**(code **)(*piVar6 + 8))();
+      ((SCVtbl_2_0*)(piVar6))->v();
     }
   }
 
@@ -10905,7 +10912,7 @@ void __fastcall FUN_1061c090(int param_1)
       thunk_FUN_10ead9a0((int)(*puVar2),(int)(2),(int)(1));
 
       if ((int *)(local_18) != (int *)(0x0)) {
-        (**(code **)(*local_18 + 8))();
+        ((SCVtbl_2_0*)(local_18))->v();
 
         return;
       }
@@ -10982,7 +10989,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061c630(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_14))->int_allocRep("canvasStyle");
   ppiVar2 = (int **)(&local_18);
 
-  (**(code **)*param_1)(ppiVar2,uVar1);
+  ((SCVtbl_0_2*)(param_1))->v((int)(ppiVar2),(int)(uVar1));
   thunk_FUN_106d83f0((int)(ppiVar2));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
   ((SCVtbl_10_2*)(local_18))->v((int)(&local_14),(int)(param_2));
@@ -10994,7 +11001,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061c630(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_14))->int_release();
 
 
-  (**(code **)*param_1)();
+  ((SCVtbl_0_0*)(param_1))->v();
 
   return;
 
@@ -11026,7 +11033,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061c700(int param_2)
   ((SCStr *)((SCStr *)&local_18))->int_allocRep("layoutStyle");
   ppiVar4 = (int **)(&local_14);
 
-  (**(code **)*param_1)(ppiVar4,uVar3);
+  ((SCVtbl_0_2*)(param_1))->v((int)(ppiVar4),(int)(uVar3));
   thunk_FUN_106d83f0((int)(ppiVar4));
   iVar1 = (int)(param_2);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
@@ -11041,7 +11048,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061c700(int param_2)
   ((SCStr *)((SCStr *)&local_14))->int_allocRep("headerStyle");
   ppiVar4 = (int **)(&local_18);
 
-  (**(code **)*param_1)(ppiVar4);
+  ((SCVtbl_0_1*)(param_1))->v((int)(ppiVar4));
   thunk_FUN_106d83f0((int)(ppiVar4));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
   cVar2 = (char)(((SCVtbl_29_1*)(local_18))->v((int)(&local_14)), 0);
@@ -11057,7 +11064,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061c700(int param_2)
     ((SCStr *)((SCStr *)&local_14))->int_allocRep("headerStyle");
     ppiVar4 = (int **)(&local_18);
 
-    (**(code **)*param_1)(ppiVar4);
+    ((SCVtbl_0_1*)(param_1))->v((int)(ppiVar4));
     thunk_FUN_106d83f0((int)(ppiVar4));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(9);
     ((SCVtbl_10_2*)(local_18))->v((int)(&local_14),(int)(iVar1 == 1));
@@ -11072,7 +11079,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061c700(int param_2)
   ((SCStr *)((SCStr *)&local_14))->int_allocRep("canvasStyle");
   ppiVar4 = (int **)(&local_18);
 
-  (**(code **)*param_1)(ppiVar4);
+  ((SCVtbl_0_1*)(param_1))->v((int)(ppiVar4));
   thunk_FUN_106d83f0((int)(ppiVar4));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xd);
   cVar2 = (char)(((SCVtbl_29_1*)(local_18))->v((int)(&local_14)), 0);
@@ -11087,7 +11094,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061c700(int param_2)
     ((SCStr *)((SCStr *)&local_14))->int_allocRep("canvasStyle");
     ppiVar4 = (int **)(&local_18);
 
-    (**(code **)*param_1)(ppiVar4);
+    ((SCVtbl_0_1*)(param_1))->v((int)(ppiVar4));
     thunk_FUN_106d83f0((int)(ppiVar4));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x11);
     ((SCVtbl_10_2*)(local_18))->v((int)(&local_14),(int)(0));
@@ -11102,7 +11109,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061c700(int param_2)
   ((SCStr *)((SCStr *)&local_14))->int_allocRep("footerStyle");
   ppiVar4 = (int **)(&local_18);
 
-  (**(code **)*param_1)(ppiVar4);
+  ((SCVtbl_0_1*)(param_1))->v((int)(ppiVar4));
   thunk_FUN_106d83f0((int)(ppiVar4));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x15);
   cVar2 = (char)(((SCVtbl_29_1*)(local_18))->v((int)(&local_14)), 0);
@@ -11117,7 +11124,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061c700(int param_2)
     ((SCStr *)((SCStr *)&param_2))->int_allocRep("footerStyle");
     ppiVar4 = (int **)(&local_1c);
 
-    (**(code **)*param_1)(ppiVar4);
+    ((SCVtbl_0_1*)(param_1))->v((int)(ppiVar4));
     thunk_FUN_106d83f0((int)(ppiVar4));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x19);
     ((SCVtbl_10_2*)(local_1c))->v((int)(&param_2),(int)(0));
@@ -11131,7 +11138,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061c700(int param_2)
     *(uint*)((char *)&param_2 + 3) = (uint)('\0');
   }
 
-  (**(code **)*param_1)();
+  ((SCVtbl_0_0*)(param_1))->v();
 
   return;
 
@@ -11426,7 +11433,7 @@ void __fastcall FUN_1061d120(int param_1)
 
   puVar2 = (undefined4 *)((undefined4 *)thunk_FUN_101da4a0(&local_1c,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
 
-  piVar3 = (int *)((int *)(**(code **)(*(int *)*puVar2 + 0x3c))(&local_18), 0);
+  piVar3 = (int *)((int *)((SCVtbl_15_1*)((int *)*puVar2))->v((int)(&local_18)), 0);
   piVar1 = (int *)((int *)*piVar3);
   *piVar3 = (int)(0);
   piVar3 = (int *)(*(int **)(param_1 + 0x30), 0);
@@ -11454,7 +11461,7 @@ void __fastcall FUN_1061d120(int param_1)
   }
 
   if (*(int **)(param_1 + 0x2c) != (int *)((0x0))) {
-    pSVar5 = (SCStr *)((SCStr *)(**(code **)(**(int **)(param_1 + 0x2c) + 0x84))(&local_14,0,0), 0);
+    pSVar5 = (SCStr *)((SCStr *)((SCVtbl_33_3*)(*(int **)(param_1 + 0x2c)))->v((int)(&local_14),(int)(0),(int)(0)), 0);
     this_ = (SCStr *)((SCStr *)(param_1 + 0x24));
 
     if ((SCStr *)((pSVar5)) != (SCStr *)(this_)) {
@@ -11507,7 +11514,7 @@ void __fastcall FUN_1061d290(int *param_1)
 
     return;
   }
-  piVar2 = (int *)((int *)(**(code **)(**(int **)(*(int *)(pSVar1 + 0x4c) + 0xe8) + 4))(), 0);
+  piVar2 = (int *)((int *)((SCVtbl_1_0*)(*(int **)(*(int *)(pSVar1 + 0x4c) + 0xe8)))->v(), 0);
   piVar3 = (int *)((int *)*piVar2);
 
   *piVar2 = (int)(0);
@@ -11529,7 +11536,7 @@ void __fastcall FUN_1061d290(int *param_1)
   else {
     ((SCStr *)((SCStr *)&local_18))->int_allocRep("SCIUrlSessionProvider");
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-    piVar3 = (int *)((int *)(**(code **)*piVar3)(), 0);
+    piVar3 = (int *)((int *)((SCVtbl_0_0*)(piVar3))->v(), 0);
     iVar5 = (int)(*piVar3);
     *piVar3 = (int)(0);
     piVar3 = (int *)((int *)param_1[10]);
@@ -11577,7 +11584,7 @@ void __fastcall FUN_1061d290(int *param_1)
 
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(10);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
-  piVar2 = (int *)((int *)(**(code **)(*(int *)param_1[5] + 0x14))(), 0);
+  piVar2 = (int *)((int *)((SCVtbl_5_0*)((int *)param_1[5]))->v(), 0);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0xb)));
   iVar5 = (int)(thunk_FUN_1109f7f0(), 0);
   iVar5 = (int)(*(int *)(iVar5 + 0xfc));
@@ -11625,7 +11632,7 @@ void __fastcall FUN_1061d290(int *param_1)
   if ((int *)((piVar3)) == (int *)(piVar2)) {
 LAB_1061d5d8:
     if ((int *)(piVar2) != (int *)(0x0)) {
-      (**(code **)(*(int *)param_1[10] + 0x14))();
+      ((SCVtbl_5_0*)((int *)param_1[10]))->v();
       goto LAB_1061d602;
     }
   }
@@ -11909,7 +11916,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1061dcf0(undefined4 *param_2,SCStr
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if ((int *)(param_1) != (int *)(0x0)) {
-      (**(code **)(*param_1 + 4))();
+      ((SCVtbl_1_0*)(param_1))->v();
       return (undefined4 *)(param_2);
     }
   }
@@ -11921,7 +11928,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1061dcf0(undefined4 *param_2,SCStr
     }
     *param_2 = (undefined4)(param_1);
     if ((int *)(param_1) != (int *)(0x0)) {
-      (**(code **)(*param_1 + 4))();
+      ((SCVtbl_1_0*)(param_1))->v();
     }
   }
   return (undefined4 *)(param_2);
@@ -11956,7 +11963,7 @@ void __thiscall Recovered_Bulk::m_FUN_1061dda0(int *param_2)
 
 
   local_14 = (int)(param_1);
-  puVar2 = (undefined4 *)((undefined4 *) (**(code **)(**(int **)(param_1 + 0x14) + 0x14)) (&local_1c,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
+  puVar2 = (undefined4 *)((undefined4 *) ((SCVtbl_5_2*)(*(int **)(param_1 + 0x14)))->v((int)(&local_1c),(int)(DAT_12126b84 ^ (uint)&stack0xfffffffc)), 0);
 
   iVar3 = (int)(thunk_FUN_1109f7f0(), 0);
   piVar7 = (int *)(*(int **)(iVar3 + 0xfc), 0);
@@ -12124,7 +12131,7 @@ int * __thiscall Recovered_Bulk::m_FUN_1061e120(int *param_2)
   else {
     ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCIClipboardDelegate");
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-    piVar4 = (int *)((int *)(**(code **)*piVar4)(&local_14,&param_2), 0);
+    piVar4 = (int *)((int *)((SCVtbl_0_2*)(piVar4))->v((int)(&local_14),(int)(&param_2)), 0);
     iVar1 = (int)(*piVar4);
     *piVar4 = (int)(0);
     piVar4 = (int *)((int *)*param_1);
@@ -12185,7 +12192,7 @@ int * __thiscall Recovered_Bulk::m_FUN_1061e250(undefined4 *param_2)
   else {
     ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCIClipboardDelegate");
 
-    piVar4 = (int *)((int *)(**(code **)*puVar2)(&local_14,&param_2), 0);
+    piVar4 = (int *)((int *)((SCVtbl_0_2*)(puVar2))->v((int)(&local_14),(int)(&param_2)), 0);
     iVar1 = (int)(*piVar4);
     *piVar4 = (int)(0);
     piVar4 = (int *)((int *)*param_1);
@@ -12656,14 +12663,14 @@ void __fastcall FUN_1061f220(int param_1)
   if ((int *)(piVar1) != (int *)(0x0)) {
     *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
     *(undefined4*)(param_1 + 0x18) = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
   }
   piVar1 = (int *)(*(int **)(param_1 + 0x10), 0);
 
   if ((int *)(piVar1) != (int *)(0x0)) {
     *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
     *(undefined4*)(param_1 + 0x10) = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
+    ((SCVtbl_2_0*)(piVar1))->v();
   }
 
   return;
@@ -12722,7 +12729,7 @@ void __fastcall FUN_1061f360(int param_1)
   if ((int *)(piVar1) != (int *)(0x0)) {
     *(undefined4*)(param_1 + 4) = (undefined4)(0);
     *(undefined4*)(param_1 + 8) = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
   }
 
   return;
@@ -12751,14 +12758,14 @@ void __fastcall FUN_1061f3f0(int param_1)
   if ((int *)(piVar1) != (int *)(0x0)) {
     *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
     *(undefined4*)(param_1 + 0x18) = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
   }
   piVar1 = (int *)(*(int **)(param_1 + 0x10), 0);
 
   if ((int *)(piVar1) != (int *)(0x0)) {
     *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
     *(undefined4*)(param_1 + 0x10) = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))();
+    ((SCVtbl_2_0*)(piVar1))->v();
   }
 
   return;
@@ -12789,7 +12796,7 @@ void __fastcall FUN_1061f490(int param_1)
   if ((int *)(piVar1) != (int *)(0x0)) {
     *(undefined4*)(param_1 + 4) = (undefined4)(0);
     *(undefined4*)(param_1 + 8) = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
   }
 
   return;
@@ -12820,7 +12827,7 @@ void __fastcall FUN_1061f520(int param_1)
   if ((int *)(piVar1) != (int *)(0x0)) {
     *(undefined4*)(param_1 + 4) = (undefined4)(0);
     *(undefined4*)(param_1 + 8) = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
+    ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
   }
 
   return;

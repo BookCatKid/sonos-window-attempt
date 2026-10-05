@@ -1686,7 +1686,9 @@ extern int __stdcall FUN_10099b48(int a1);
 extern int __stdcall FUN_10099d3c(int a1);
 extern int __stdcall FUN_1009a0c0(int a1);
 extern int __stdcall FUN_1009a723(int a1);
-extern int __stdcall FUN_1009a8c2(int a1);
+extern int __stdcall FUN_1009a8c2(int a1);struct SCVtbl_37_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual int v(void); };
+struct SCVtbl_78_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual void _p74(); virtual void _p75(); virtual void _p76(); virtual void _p77(); virtual int v(void); };
+
 #line 1 "ENTRY_1050475d"
 
 void __thiscall Recovered_Bulk::m_FUN_1050475d(void)
@@ -3612,7 +3614,7 @@ void FUN_10544050(void)
 void __thiscall Recovered_Bulk::m_FUN_10544060(void)
 {
   int param_1 = (int )this;
-  (**(code **)(*(int *)param_1 + 148))();
+  ((SCVtbl_37_0*)((int *)param_1))->v();
 }
 
 
@@ -3882,7 +3884,7 @@ undefined1 FUN_1054c0a0(void)
 void __thiscall Recovered_Bulk::m_FUN_1054c0b0(void)
 {
   int param_1 = (int )this;
-  (**(code **)(*(int *)param_1 + 312))();
+  ((SCVtbl_78_0*)((int *)param_1))->v();
 }
 
 

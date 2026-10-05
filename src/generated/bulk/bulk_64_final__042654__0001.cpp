@@ -1643,6 +1643,7 @@ template<class... A> int FUN_11862580(A...);
 void FUN_11862720(void);
 template<class... A> int FUN_11862720(A...);
 // Reference entry 11857e30; body size 76 bytes.
+struct SCVtbl_0_1 { virtual int v(int a1); };
 struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1); };
 #line 1 "ENTRY_11857e30"
 
@@ -9669,7 +9670,7 @@ void FUN_11861e20(void)
   if ((undefined4 *)(DAT_121a7ba0) != (undefined4 *)(0x0)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(DAT_121a7ba0 + 1,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
     if ((iVar2 == 0) && ((undefined4 *)(puVar1) != (undefined4 *)(0x0))) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
 
@@ -9697,7 +9698,7 @@ void FUN_11861fa0(void)
   if ((undefined4 *)(DAT_122e8730) != (undefined4 *)(0x0)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(DAT_122e8730 + 1,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
     if ((iVar2 == 0) && ((undefined4 *)(puVar1) != (undefined4 *)(0x0))) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
 
@@ -9725,7 +9726,7 @@ void FUN_11862020(void)
   if ((undefined4 *)(DAT_122e8750) != (undefined4 *)(0x0)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(DAT_122e8750 + 1,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
     if ((iVar2 == 0) && ((undefined4 *)(puVar1) != (undefined4 *)(0x0))) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
 
@@ -9753,7 +9754,7 @@ void FUN_118620d0(void)
   if ((undefined4 *)(DAT_122e8a14) != (undefined4 *)(0x0)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(DAT_122e8a14 + 1,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
     if ((iVar2 == 0) && ((undefined4 *)(puVar1) != (undefined4 *)(0x0))) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
 
@@ -9781,7 +9782,7 @@ void FUN_11862150(void)
   if ((undefined4 *)(DAT_122e8a20) != (undefined4 *)(0x0)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(DAT_122e8a20 + 1,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
     if ((iVar2 == 0) && ((undefined4 *)(puVar1) != (undefined4 *)(0x0))) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
 
@@ -9809,7 +9810,7 @@ void FUN_118621d0(void)
   if ((undefined4 *)(DAT_122e8a24) != (undefined4 *)(0x0)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(DAT_122e8a24 + 1,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
     if ((iVar2 == 0) && ((undefined4 *)(puVar1) != (undefined4 *)(0x0))) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
 
@@ -9903,7 +9904,7 @@ void FUN_11862390(void)
   if ((undefined4 *)(DAT_122e8a44) != (undefined4 *)(0x0)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(DAT_122e8a44 + 1,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
     if ((iVar2 == 0) && ((undefined4 *)(puVar1) != (undefined4 *)(0x0))) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
 
@@ -9931,7 +9932,7 @@ void FUN_11862410(void)
   if ((undefined4 *)(DAT_122e8a48) != (undefined4 *)(0x0)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(DAT_122e8a48 + 1,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
     if ((iVar2 == 0) && ((undefined4 *)(puVar1) != (undefined4 *)(0x0))) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
 

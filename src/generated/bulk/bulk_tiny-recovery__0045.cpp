@@ -1785,7 +1785,10 @@ extern int __stdcall FUN_1009a1fb(int a1);
 extern int __stdcall FUN_1009a205(int a1);
 extern int __stdcall FUN_1009a20a(int a1);
 extern int __stdcall FUN_1009a296(int a1);
-extern int __stdcall FUN_1009aa70(int a1);
+extern int __stdcall FUN_1009aa70(int a1);struct SCVtbl_1_0 { virtual void _p0(); virtual int v(void); };
+struct SCVtbl_4_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(void); };
+struct SCVtbl_6_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual int v(void); };
+
 #line 1 "ENTRY_110045ec"
 
 void __thiscall Recovered_Bulk::m_FUN_110045ec(void)
@@ -4270,7 +4273,7 @@ void __thiscall Recovered_Bulk::m_FUN_11064fa5(void)
 void __thiscall Recovered_Bulk::m_FUN_11065270(void)
 {
   int param_1 = (int )this;
-  (**(code **)(*(int *)param_1 + 24))();
+  ((SCVtbl_6_0*)((int *)param_1))->v();
 }
 
 
@@ -5098,7 +5101,7 @@ void __thiscall Recovered_Bulk::m_FUN_110b02f0(void)
 void __stdcall FUN_110b23e0(int param_1)
 
 {
-  (**(code **)(*(int *)param_1 + 4))();
+  ((SCVtbl_1_0*)((int *)param_1))->v();
 }
 
 
@@ -9706,7 +9709,7 @@ void __thiscall Recovered_Bulk::m_FUN_111d57d1(void)
 void __thiscall Recovered_Bulk::m_FUN_111db9b0(void)
 {
   int param_1 = (int )this;
-  (**(code **)(*(int *)param_1 + 16))();
+  ((SCVtbl_4_0*)((int *)param_1))->v();
 }
 
 
@@ -9755,7 +9758,7 @@ void FUN_111e0890(void)
 void __thiscall Recovered_Bulk::m_FUN_111e1f70(void)
 {
   int param_1 = (int )this;
-  (**(code **)(*(int *)param_1 + 24))();
+  ((SCVtbl_6_0*)((int *)param_1))->v();
 }
 
 
@@ -10576,7 +10579,7 @@ void __thiscall Recovered_Bulk::m_FUN_1123f531(void)
 void __thiscall Recovered_Bulk::m_FUN_112408cb(void)
 {
   int param_1 = (int )this;
-  (**(code **)(*(int *)param_1 + 4))();
+  ((SCVtbl_1_0*)((int *)param_1))->v();
 }
 
 
@@ -10829,7 +10832,7 @@ void __thiscall Recovered_Bulk::m_FUN_11253d80(int param_2)
 void __thiscall Recovered_Bulk::m_FUN_11254540(void)
 {
   int param_1 = (int )this;
-  (**(code **)(*(int *)param_1 + 4))();
+  ((SCVtbl_1_0*)((int *)param_1))->v();
 }
 
 

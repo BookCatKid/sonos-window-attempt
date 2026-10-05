@@ -1676,7 +1676,9 @@ extern int __stdcall FUN_10096f7e(int a1);
 extern int __stdcall FUN_1009710e(int a1);
 extern int __stdcall FUN_100983ba(int a1);
 extern int __stdcall FUN_10098a54(int a1);
-extern int __stdcall FUN_10098c2a(int a1);
+extern int __stdcall FUN_10098c2a(int a1);struct SCVtbl_9_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual int v(void); };
+struct SCVtbl_33_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual int v(void); };
+
 #line 1 "ENTRY_10b99c42"
 
 void __thiscall Recovered_Bulk::m_FUN_10b99c42(void)
@@ -3845,7 +3847,7 @@ void __thiscall Recovered_Bulk::m_FUN_10c4ba1b(void)
 void __thiscall Recovered_Bulk::m_FUN_10c4c480(void)
 {
   int param_1 = (int )this;
-  (**(code **)(*(int *)param_1 + 36))();
+  ((SCVtbl_9_0*)((int *)param_1))->v();
 }
 
 
@@ -6348,7 +6350,7 @@ void FUN_10cb37f0(void)
 void __thiscall Recovered_Bulk::m_FUN_10cb3840(void)
 {
   int param_1 = (int )this;
-  (**(code **)(*(int *)param_1 + 132))();
+  ((SCVtbl_33_0*)((int *)param_1))->v();
 }
 
 

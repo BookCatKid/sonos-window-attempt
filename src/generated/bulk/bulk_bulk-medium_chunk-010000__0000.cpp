@@ -2254,6 +2254,76 @@ extern int __stdcall thunk_FUN_1124ff50(int a1);
 extern int __stdcall thunk_FUN_1124ffa0(int a1,int a2);
 extern int __stdcall thunk_FUN_112503c0(int a1,int a2);
 extern int __stdcall thunk_FUN_1125cbb0(int a1);
+struct SCVtbl_0_1 { virtual int v(int a1); };
+struct SCVtbl_1_1 { virtual void _p0(); virtual int v(int a1); };
+struct SCVtbl_1_2 { virtual void _p0(); virtual int v(int a1,int a2); };
+struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1); };
+struct SCVtbl_4_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(void); };
+struct SCVtbl_7_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual int v(void); };
+struct SCVtbl_7_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual int v(int a1); };
+struct SCVtbl_8_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual int v(void); };
+struct SCVtbl_8_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual int v(int a1); };
+struct SCVtbl_9_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual int v(void); };
+struct SCVtbl_9_2 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual int v(int a1,int a2); };
+struct SCVtbl_10_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual int v(void); };
+struct SCVtbl_11_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual int v(void); };
+struct SCVtbl_11_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual int v(int a1); };
+struct SCVtbl_13_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual int v(void); };
+struct SCVtbl_13_2 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual int v(int a1,int a2); };
+struct SCVtbl_14_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual int v(void); };
+struct SCVtbl_14_3 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual int v(int a1,int a2,int a3); };
+struct SCVtbl_15_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual int v(void); };
+struct SCVtbl_16_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual int v(void); };
+struct SCVtbl_17_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual int v(void); };
+struct SCVtbl_17_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual int v(int a1); };
+struct SCVtbl_18_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual int v(void); };
+struct SCVtbl_18_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual int v(int a1); };
+struct SCVtbl_19_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual int v(void); };
+struct SCVtbl_20_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual int v(void); };
+struct SCVtbl_21_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual int v(void); };
+struct SCVtbl_21_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual int v(int a1); };
+struct SCVtbl_22_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual int v(void); };
+struct SCVtbl_24_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual int v(void); };
+struct SCVtbl_24_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual int v(int a1); };
+struct SCVtbl_26_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual int v(void); };
+struct SCVtbl_27_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual int v(void); };
+struct SCVtbl_27_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual int v(int a1); };
+struct SCVtbl_28_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual int v(void); };
+struct SCVtbl_30_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual int v(void); };
+struct SCVtbl_31_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual int v(int a1); };
+struct SCVtbl_32_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual int v(void); };
+struct SCVtbl_33_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual int v(void); };
+struct SCVtbl_33_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual int v(int a1); };
+struct SCVtbl_34_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual int v(void); };
+struct SCVtbl_39_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual int v(void); };
+struct SCVtbl_40_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual int v(int a1); };
+struct SCVtbl_45_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual int v(void); };
+struct SCVtbl_46_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual int v(void); };
+struct SCVtbl_47_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual int v(void); };
+struct SCVtbl_48_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual int v(void); };
+struct SCVtbl_49_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual int v(void); };
+struct SCVtbl_50_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual int v(void); };
+struct SCVtbl_51_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual int v(void); };
+struct SCVtbl_51_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual int v(int a1); };
+struct SCVtbl_52_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual int v(void); };
+struct SCVtbl_54_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual int v(void); };
+struct SCVtbl_55_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual int v(void); };
+struct SCVtbl_57_2 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual int v(int a1,int a2); };
+struct SCVtbl_58_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual int v(int a1); };
+struct SCVtbl_61_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual int v(void); };
+struct SCVtbl_62_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual int v(void); };
+struct SCVtbl_63_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual int v(void); };
+struct SCVtbl_64_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual int v(int a1); };
+struct SCVtbl_68_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual int v(void); };
+struct SCVtbl_73_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual int v(void); };
+struct SCVtbl_74_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual int v(int a1); };
+struct SCVtbl_79_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual void _p74(); virtual void _p75(); virtual void _p76(); virtual void _p77(); virtual void _p78(); virtual int v(void); };
+struct SCVtbl_87_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual void _p74(); virtual void _p75(); virtual void _p76(); virtual void _p77(); virtual void _p78(); virtual void _p79(); virtual void _p80(); virtual void _p81(); virtual void _p82(); virtual void _p83(); virtual void _p84(); virtual void _p85(); virtual void _p86(); virtual int v(void); };
+struct SCVtbl_88_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual void _p74(); virtual void _p75(); virtual void _p76(); virtual void _p77(); virtual void _p78(); virtual void _p79(); virtual void _p80(); virtual void _p81(); virtual void _p82(); virtual void _p83(); virtual void _p84(); virtual void _p85(); virtual void _p86(); virtual void _p87(); virtual int v(void); };
+struct SCVtbl_89_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual void _p74(); virtual void _p75(); virtual void _p76(); virtual void _p77(); virtual void _p78(); virtual void _p79(); virtual void _p80(); virtual void _p81(); virtual void _p82(); virtual void _p83(); virtual void _p84(); virtual void _p85(); virtual void _p86(); virtual void _p87(); virtual void _p88(); virtual int v(void); };
+struct SCVtbl_91_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual void _p74(); virtual void _p75(); virtual void _p76(); virtual void _p77(); virtual void _p78(); virtual void _p79(); virtual void _p80(); virtual void _p81(); virtual void _p82(); virtual void _p83(); virtual void _p84(); virtual void _p85(); virtual void _p86(); virtual void _p87(); virtual void _p88(); virtual void _p89(); virtual void _p90(); virtual int v(void); };
+struct SCVtbl_138_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual void _p74(); virtual void _p75(); virtual void _p76(); virtual void _p77(); virtual void _p78(); virtual void _p79(); virtual void _p80(); virtual void _p81(); virtual void _p82(); virtual void _p83(); virtual void _p84(); virtual void _p85(); virtual void _p86(); virtual void _p87(); virtual void _p88(); virtual void _p89(); virtual void _p90(); virtual void _p91(); virtual void _p92(); virtual void _p93(); virtual void _p94(); virtual void _p95(); virtual void _p96(); virtual void _p97(); virtual void _p98(); virtual void _p99(); virtual void _p100(); virtual void _p101(); virtual void _p102(); virtual void _p103(); virtual void _p104(); virtual void _p105(); virtual void _p106(); virtual void _p107(); virtual void _p108(); virtual void _p109(); virtual void _p110(); virtual void _p111(); virtual void _p112(); virtual void _p113(); virtual void _p114(); virtual void _p115(); virtual void _p116(); virtual void _p117(); virtual void _p118(); virtual void _p119(); virtual void _p120(); virtual void _p121(); virtual void _p122(); virtual void _p123(); virtual void _p124(); virtual void _p125(); virtual void _p126(); virtual void _p127(); virtual void _p128(); virtual void _p129(); virtual void _p130(); virtual void _p131(); virtual void _p132(); virtual void _p133(); virtual void _p134(); virtual void _p135(); virtual void _p136(); virtual void _p137(); virtual int v(int a1); };
+struct SCVtbl_140_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual void _p74(); virtual void _p75(); virtual void _p76(); virtual void _p77(); virtual void _p78(); virtual void _p79(); virtual void _p80(); virtual void _p81(); virtual void _p82(); virtual void _p83(); virtual void _p84(); virtual void _p85(); virtual void _p86(); virtual void _p87(); virtual void _p88(); virtual void _p89(); virtual void _p90(); virtual void _p91(); virtual void _p92(); virtual void _p93(); virtual void _p94(); virtual void _p95(); virtual void _p96(); virtual void _p97(); virtual void _p98(); virtual void _p99(); virtual void _p100(); virtual void _p101(); virtual void _p102(); virtual void _p103(); virtual void _p104(); virtual void _p105(); virtual void _p106(); virtual void _p107(); virtual void _p108(); virtual void _p109(); virtual void _p110(); virtual void _p111(); virtual void _p112(); virtual void _p113(); virtual void _p114(); virtual void _p115(); virtual void _p116(); virtual void _p117(); virtual void _p118(); virtual void _p119(); virtual void _p120(); virtual void _p121(); virtual void _p122(); virtual void _p123(); virtual void _p124(); virtual void _p125(); virtual void _p126(); virtual void _p127(); virtual void _p128(); virtual void _p129(); virtual void _p130(); virtual void _p131(); virtual void _p132(); virtual void _p133(); virtual void _p134(); virtual void _p135(); virtual void _p136(); virtual void _p137(); virtual void _p138(); virtual void _p139(); virtual int v(int a1); };
 struct SCVtbl_1_0 { virtual void _p0(); virtual int v(void); };
 struct SCVtbl_2_0 { virtual void _p0(); virtual void _p1(); virtual int v(void); };
 struct SCVtbl_3_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual int v(void); };
@@ -2325,7 +2395,7 @@ void __fastcall FUN_10bf00f0(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlConnection_Callback);
   piVar1 = (int *)((int *)param_1[0xd]);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 0x10))((int *)(piVar1) != (int *)(param_1) + 4);
+    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1) + 4));
     param_1[0xd] = (undefined4)(0);
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
@@ -2507,7 +2577,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10bf0e70(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x40), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -2524,7 +2594,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10bf0e90(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x1c), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -2552,7 +2622,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10bf0ed0(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x18), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -2580,7 +2650,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10bf1100(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x38), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -2597,7 +2667,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10bf1120(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x14), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -2614,7 +2684,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10bf11a0(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x10), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -2631,7 +2701,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10bf11c0(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x24), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -2661,7 +2731,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10bf1470(undefined4 *param_2,SCStr
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if ((int *)(param_1) != (int *)(0x0)) {
-      (**(code **)(*param_1 + 4))();
+      ((SCVtbl_1_0*)(param_1))->v();
     }
     return (undefined4 *)(param_2);
   }
@@ -2790,8 +2860,8 @@ int __fastcall FUN_10bf2460(int *param_1)
   
   iVar1 = (int)(SCThreadSafeInc(param_1 + 1), 0);
   if ((1 < iVar1) && (param_1[2] != 0)) {
-    piVar2 = (int *)((int *)(**(code **)(*param_1 + 0x20))(), 0);
-    (**(code **)(*piVar2 + 4))();
+    piVar2 = (int *)((int *)((SCVtbl_8_0*)(param_1))->v(), 0);
+    ((SCVtbl_1_0*)(piVar2))->v();
   }
   return (int)(iVar1);
 }
@@ -2808,8 +2878,8 @@ int __fastcall FUN_10bf24a0(int *param_1)
   
   iVar1 = (int)(SCThreadSafeInc(param_1 + 1), 0);
   if ((1 < iVar1) && (param_1[2] != 0)) {
-    piVar2 = (int *)((int *)(**(code **)(*param_1 + 0x20))(), 0);
-    (**(code **)(*piVar2 + 4))();
+    piVar2 = (int *)((int *)((SCVtbl_8_0*)(param_1))->v(), 0);
+    ((SCVtbl_1_0*)(piVar2))->v();
   }
   return (int)(iVar1);
 }
@@ -3285,7 +3355,7 @@ void __fastcall FUN_10bf8890(int param_1)
 
 {
   if (*(char *)(param_1 + 0x28) == '\0') {
-    (**(code **)(**(int **)(param_1 + 0x24) + 0xc))(param_1);
+    ((SCVtbl_3_1*)(*(int **)(param_1 + 0x24)))->v((int)(param_1));
     *(undefined1*)(param_1 + 0x28) = (undefined1)(1);
   }
   return;
@@ -3513,7 +3583,7 @@ void __fastcall FUN_10bfe9e0(int *param_1)
 
 
   if ((int *)*param_1 != (int *)((0x0))) {
-    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)((int *)*param_1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -3676,10 +3746,10 @@ undefined4 __fastcall FUN_10c00ae0(int param_1)
   int iVar2;
   
   if (*(int **)(param_1 + 8) != (int *)((0x0))) {
-    iVar1 = (int)((**(code **)(**(int **)(param_1 + 8) + 0x14))(), 0);
+    iVar1 = (int)(((SCVtbl_5_0*)(*(int **)(param_1 + 8)))->v(), 0);
     iVar2 = (int)(*(int *)(param_1 + 0x14) + 1);
     if ((iVar2 < iVar1) && (*(int *)(param_1 + 0x14) = iVar2, -1 < iVar2)) {
-      iVar1 = (int)((**(code **)(**(int **)(param_1 + 8) + 0x14))(), 0);
+      iVar1 = (int)(((SCVtbl_5_0*)(*(int **)(param_1 + 8)))->v(), 0);
       if (*(int *)(param_1 + 0x14) < (int)(iVar1)) {
         return (undefined4)(1);
       }
@@ -3864,7 +3934,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10c03220(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -4159,8 +4229,8 @@ int __fastcall FUN_10c070b0(int *param_1)
   
   iVar1 = (int)(SCThreadSafeInc(param_1 + 1), 0);
   if ((1 < iVar1) && (param_1[2] != 0)) {
-    piVar2 = (int *)((int *)(**(code **)(*param_1 + 0x70))(), 0);
-    (**(code **)(*piVar2 + 4))();
+    piVar2 = (int *)((int *)((SCVtbl_28_0*)(param_1))->v(), 0);
+    ((SCVtbl_1_0*)(piVar2))->v();
   }
   return (int)(iVar1);
 }
@@ -4212,7 +4282,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10c0f120(undefined4 param_2)
   
   pSVar2 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
   iVar1 = (int)(*param_1);
-  uVar3 = (undefined4)((**(code **)(*(int *)pSVar2 + 0x124))(), 0);
+  uVar3 = (undefined4)(((SCVtbl_73_0*)((int *)pSVar2))->v(), 0);
   (**(code **)(iVar1 + 0x80))(param_2,uVar3);
   return (undefined4)(unaff_EBX);
 }
@@ -4228,7 +4298,7 @@ undefined4 __stdcall FUN_10c0f160(undefined4 param_1)
   undefined4 uVar2;
   
   pSVar1 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
-  uVar2 = (undefined4)((**(code **)(*(int *)pSVar1 + 0x124))(), 0);
+  uVar2 = (undefined4)(((SCVtbl_73_0*)((int *)pSVar1))->v(), 0);
   thunk_FUN_10c11c30((int)(param_1),(int)(uVar2));
   return (undefined4)(param_1);
 }
@@ -4264,7 +4334,7 @@ undefined4 __fastcall FUN_10c14ab0(int *param_1)
   
   thunk_FUN_10c13d10();
   if ((char)param_1[0xc] == '\0') {
-    cVar1 = (char)((**(code **)(*param_1 + 0x14))(), 0);
+    cVar1 = (char)(((SCVtbl_5_0*)(param_1))->v(), 0);
     if (cVar1 == '\0') {
       return (undefined4)(1);
     }
@@ -4282,11 +4352,11 @@ undefined4 __fastcall FUN_10c16c60(int param_1)
   int iVar1;
   
   if ((*(int **)(param_1 + 0x20) != (int *)((0x0))) &&
-     (iVar1 = (int)((**(code **)(**(int **)(param_1 + 0x20) + 0x14))(), 0), iVar1 != 0)) {
+     (iVar1 = (int)(((SCVtbl_5_0*)(*(int **)(param_1 + 0x20)))->v(), 0), iVar1 != 0)) {
     return (undefined4)(0);
   }
   if ((*(int **)(param_1 + 0x18) != (int *)((0x0))) &&
-     (iVar1 = (int)((**(code **)(**(int **)(param_1 + 0x18) + 0x14))(), 0), iVar1 != 0)) {
+     (iVar1 = (int)(((SCVtbl_5_0*)(*(int **)(param_1 + 0x18)))->v(), 0), iVar1 != 0)) {
     return (undefined4)(0);
   }
   return (undefined4)(1);
@@ -4446,7 +4516,7 @@ undefined4 __fastcall FUN_10c17fd0(int *param_1)
   char cVar1;
   uint uVar2;
   
-  uVar2 = (uint)((**(code **)(*(int *)param_1[0x28] + 0x14))(), 0);
+  uVar2 = (uint)(((SCVtbl_5_0*)((int *)param_1[0x28]))->v(), 0);
   cVar1 = (char)(((SCVtbl_90_0*)(param_1))->v(), 0);
   if ((cVar1 != '\0') && (1 < uVar2)) {
     return (undefined4)(1);
@@ -4488,7 +4558,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10c18560(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x160), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -4505,7 +4575,7 @@ undefined4 __fastcall FUN_10c186b0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 4) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 4) + 0x38))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_14_0*)(*(int **)(param_1 + 4)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(7);
@@ -4523,7 +4593,7 @@ undefined4 __fastcall FUN_10c19540(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 4) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 4) + 0x18))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_6_0*)(*(int **)(param_1 + 4)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -4552,7 +4622,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10c1be40(int param_2)
   if (param_2 == 0) {
     uVar1 = (undefined4)(7);
     if (*(int **)(param_1 + 0xa8) != (int *)((0x0))) {
-      uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0xa8) + 0x30))(), 0);
+      uVar1 = (undefined4)(((SCVtbl_12_0*)(*(int **)(param_1 + 0xa8)))->v(), 0);
     }
     return (undefined4)(uVar1);
   }
@@ -4570,7 +4640,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10c1be40(int param_2)
 undefined4 __thiscall Recovered_Bulk::m_FUN_10c1c560(undefined4 param_2)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 0x3c) + 0x44))(param_2);
+  ((SCVtbl_17_1*)(*(int **)(param_1 + 0x3c)))->v((int)(param_2));
   return (undefined4)(0);
 }
 
@@ -4581,7 +4651,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10c1c560(undefined4 param_2)
 undefined4 __thiscall Recovered_Bulk::m_FUN_10c1c700(undefined4 param_2)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 0x3c) + 0x44))(param_2);
+  ((SCVtbl_17_1*)(*(int **)(param_1 + 0x3c)))->v((int)(param_2));
   return (undefined4)(0);
 }
 
@@ -4617,7 +4687,7 @@ SCStr * __stdcall FUN_10c1e790(SCStr *param_1)
 undefined4 __thiscall Recovered_Bulk::m_FUN_10c1e7b0(undefined4 param_2)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 0x3c) + 0x44))(param_2);
+  ((SCVtbl_17_1*)(*(int **)(param_1 + 0x3c)))->v((int)(param_2));
   return (undefined4)(1);
 }
 
@@ -4633,7 +4703,7 @@ undefined4 __fastcall FUN_10c1e7e0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 4) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 4) + 0x3c))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_15_0*)(*(int **)(param_1 + 4)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -4648,7 +4718,7 @@ void __fastcall FUN_10c1ebf0(int param_1)
 {
   undefined4 uVar1;
   
-  uVar1 = (undefined4)((**(code **)(*(int *)(param_1 + 0x38) + 0x14))(0), 0);
+  uVar1 = (undefined4)(((SCVtbl_5_1*)((int *)(param_1 + 0x38)))->v((int)(0)), 0);
   thunk_FUN_10509ca0(uVar1,0);
   return;
 }
@@ -4682,7 +4752,7 @@ bool __fastcall FUN_10c1ed60(int param_1)
   
   if (((*(int **)(param_1 + 0xa0) != (int *)((0x0))) && (*(int *)(param_1 + 0xa8) != 0)) &&
      (*(char *)(param_1 + 0x14d) == '\0')) {
-    in_EAX = (uint)((**(code **)(**(int **)(param_1 + 0xa0) + 0x1c))(), 0);
+    in_EAX = (uint)(((SCVtbl_7_0*)(*(int **)(param_1 + 0xa0)))->v(), 0);
     if (in_EAX == 3) {
       return (uint)(1);
     }
@@ -4702,7 +4772,7 @@ undefined4 __fastcall FUN_10c1edc0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 4) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 4) + 0x24))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_9_0*)(*(int **)(param_1 + 4)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(1);
@@ -4717,7 +4787,7 @@ void __fastcall FUN_10c208f0(int param_1)
 {
   thunk_FUN_104d9cc0();
   if (*(int **)(param_1 + 0xa0) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 0xa0) + 0x20))(0);
+    ((SCVtbl_8_1*)(*(int **)(param_1 + 0xa0)))->v((int)(0));
   }
   thunk_FUN_1106d920();
   return;
@@ -4736,7 +4806,7 @@ bool __fastcall FUN_10c20eb0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 4) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 4) + 0x28))(), 0);
+    uVar1 = (uint)(((SCVtbl_10_0*)(*(int **)(param_1 + 4)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -5078,7 +5148,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10c265e0(int *param_2,uint param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x14) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -5270,7 +5340,7 @@ void __thiscall Recovered_Bulk::m_FUN_10c2a8e0(int param_2)
   if (param_2 != 0) {
     cVar1 = (char)(thunk_FUN_103d6930((int)(param_2)), 0);
     if ((cVar1 != '\0') && (param_1[4] == 0)) {
-      (**(code **)(*param_1 + 0x34))();
+      ((SCVtbl_13_0*)(param_1))->v();
     }
   }
   return;
@@ -5325,7 +5395,7 @@ void __fastcall FUN_10c2bce0(undefined4 *param_1)
   
   puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
   for (param_1 = (undefined4 *)((undefined4 *)*param_1);(undefined4 *)((param_1)) != (undefined4 *)(puVar1); param_1 = param_1 + 4) {
-    (**(code **)*param_1)(0);
+    ((SCVtbl_0_1*)(param_1))->v((int)(0));
   }
   return;
 }
@@ -5449,7 +5519,7 @@ void __thiscall Recovered_Bulk::m_FUN_10c32580(undefined4 param_2)
   uVar1 = (uint)(0);
   if (*(int *)(param_1 + 0x30) - *(int *)(param_1 + 0x2c) >> 2 != 0) {
     do {
-      (**(code **)**(undefined4 **)(*(int *)(param_1 + 0x2c) + uVar1 * 4))(param_2);
+      ((SCVtbl_0_1*)(*(undefined4 **)(*(int *)(param_1 + 0x2c) + uVar1 * 4)))->v((int)(param_2));
       uVar1 = (uint)(uVar1 + 1);
     } while (uVar1 < (uint)(*(int *)(param_1 + 0x30) - *(int *)(param_1 + 0x2c) >> 2));
   }
@@ -5468,7 +5538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10c325d0(undefined4 param_2)
   uVar1 = (uint)(0);
   if (*(int *)(param_1 + 0x30) - *(int *)(param_1 + 0x2c) >> 2 != 0) {
     do {
-      (**(code **)(**(int **)(*(int *)(param_1 + 0x2c) + uVar1 * 4) + 4))(param_2);
+      ((SCVtbl_1_1*)(*(int **)(*(int *)(param_1 + 0x2c) + uVar1 * 4)))->v((int)(param_2));
       uVar1 = (uint)(uVar1 + 1);
     } while (uVar1 < (uint)(*(int *)(param_1 + 0x30) - *(int *)(param_1 + 0x2c) >> 2));
   }
@@ -5484,7 +5554,7 @@ void __fastcall FUN_10c32620(int param_1, unsigned int recovered_unused_stack_0,
 {
   char cVar1;
   
-  (**(code **)(*(int *)(param_1 + 0x18) + 8))();
+  ((SCVtbl_2_0*)((int *)(param_1 + 0x18)))->v();
   if (*(char *)(param_1 + 0x38) != '\0') {
     cVar1 = (char)(thunk_FUN_10c322c0(), 0);
     if (cVar1 != '\0') {
@@ -5818,7 +5888,7 @@ SCStr * __stdcall FUN_10c37ef0(SCStr *param_1)
 undefined4 __thiscall Recovered_Bulk::m_FUN_10c380f0(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 0x24) + 0x84))(param_2);
+  ((SCVtbl_33_1*)(*(int **)(param_1 + 0x24)))->v((int)(param_2));
   return (undefined4)(param_3);
 }
 
@@ -5904,7 +5974,7 @@ void __thiscall Recovered_Bulk::m_FUN_10c3a730(int *param_2)
 undefined4 __thiscall Recovered_Bulk::m_FUN_10c3ad50(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 0x34) + 0x84))(param_2);
+  ((SCVtbl_33_1*)(*(int **)(param_1 + 0x34)))->v((int)(param_2));
   return (undefined4)(param_3);
 }
 
@@ -5918,7 +5988,7 @@ void __fastcall FUN_10c3b1c0(int param_1)
   undefined4 uVar1;
   
   if (*(int **)(param_1 + 400) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 400) + 0x14))(*(undefined4 *)(param_1 + 0x3c));
+    ((SCVtbl_5_1*)(*(int **)(param_1 + 400)))->v((int)(*(undefined4 *)(param_1 + 0x3c)));
   }
   uVar1 = (undefined4)(thunk_FUN_1059d5a0<>(1000), 0);
   *(undefined4*)(param_1 + 0x198) = (undefined4)(uVar1);
@@ -5950,7 +6020,7 @@ void __thiscall Recovered_Bulk::m_FUN_10c3b200(int param_2)
 void __thiscall Recovered_Bulk::m_FUN_10c3b9f0(undefined4 param_2,undefined8 param_3, unsigned int recovered_unused_stack_0)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 0x34) + 0x34))(param_2,param_3);
+  ((SCVtbl_13_2*)(*(int **)(param_1 + 0x34)))->v((int)(param_2),(int)(param_3));
   return;
 }
 
@@ -6577,7 +6647,7 @@ void __fastcall FUN_10c47bc0(int param_1)
     if ((int *)(piVar1) != (int *)(0x0)) {
       *(undefined4*)(param_1 + 8) = (undefined4)(0);
       *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
-      (**(code **)(*piVar1 + 8))();
+      ((SCVtbl_2_0*)(piVar1))->v();
     }
     *(undefined4*)(param_1 + 8) = (undefined4)(0);
     *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
@@ -6830,11 +6900,11 @@ void __fastcall FUN_10c4c4a0(int param_1)
 {
   char cVar1;
   
-  cVar1 = (char)((**(code **)(**(int **)(param_1 + 0x14) + 0x1c))(), 0);
+  cVar1 = (char)(((SCVtbl_7_0*)(*(int **)(param_1 + 0x14)))->v(), 0);
   if (cVar1 != '\0') {
                     
                     
-    (**(code **)(**(int **)(param_1 + 0x14) + 0x18))();
+    ((SCVtbl_6_0*)(*(int **)(param_1 + 0x14)))->v();
     return;
   }
   return;
@@ -7649,8 +7719,8 @@ int __fastcall FUN_10c50ee0(int *param_1)
   
   iVar1 = (int)(SCThreadSafeInc(param_1 + 1), 0);
   if ((1 < iVar1) && (param_1[2] != 0)) {
-    piVar2 = (int *)((int *)(**(code **)(*param_1 + 0x3c))(), 0);
-    (**(code **)(*piVar2 + 4))();
+    piVar2 = (int *)((int *)((SCVtbl_15_0*)(param_1))->v(), 0);
+    ((SCVtbl_1_0*)(piVar2))->v();
   }
   return (int)(iVar1);
 }
@@ -8277,8 +8347,8 @@ int __fastcall FUN_10c56a20(int *param_1)
   
   iVar1 = (int)(SCThreadSafeInc(param_1 + 1), 0);
   if ((1 < iVar1) && (param_1[2] != 0)) {
-    piVar2 = (int *)((int *)(**(code **)(*param_1 + 0x30))(), 0);
-    (**(code **)(*piVar2 + 4))();
+    piVar2 = (int *)((int *)((SCVtbl_12_0*)(param_1))->v(), 0);
+    ((SCVtbl_1_0*)(piVar2))->v();
   }
   return (int)(iVar1);
 }
@@ -8587,8 +8657,8 @@ int __fastcall FUN_10c59da0(int *param_1)
   
   iVar1 = (int)(SCThreadSafeInc(param_1 + 1), 0);
   if ((1 < iVar1) && (param_1[2] != 0)) {
-    piVar2 = (int *)((int *)(**(code **)(*param_1 + 0x24))(), 0);
-    (**(code **)(*piVar2 + 4))();
+    piVar2 = (int *)((int *)((SCVtbl_9_0*)(param_1))->v(), 0);
+    ((SCVtbl_1_0*)(piVar2))->v();
   }
   return (int)(iVar1);
 }
@@ -8618,7 +8688,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10c5b250(int param_2)
   piVar1 = (int *)(*(int **)(param_2 + 8), 0);
   param_1[2] = (undefined4)(piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (undefined4 *)(param_1);
 }
@@ -8743,8 +8813,8 @@ int __fastcall FUN_10c5bb30(int *param_1)
   
   iVar1 = (int)(SCThreadSafeInc(param_1 + 1), 0);
   if ((1 < iVar1) && (param_1[2] != 0)) {
-    piVar2 = (int *)((int *)(**(code **)(*param_1 + 0xf8))(), 0);
-    (**(code **)(*piVar2 + 4))();
+    piVar2 = (int *)((int *)((SCVtbl_62_0*)(param_1))->v(), 0);
+    ((SCVtbl_1_0*)(piVar2))->v();
   }
   return (int)(iVar1);
 }
@@ -8761,8 +8831,8 @@ int __fastcall FUN_10c5bb70(int *param_1)
   
   iVar1 = (int)(SCThreadSafeInc(param_1 + 1), 0);
   if ((1 < iVar1) && (param_1[2] != 0)) {
-    piVar2 = (int *)((int *)(**(code **)(*param_1 + 0xf8))(), 0);
-    (**(code **)(*piVar2 + 4))();
+    piVar2 = (int *)((int *)((SCVtbl_62_0*)(param_1))->v(), 0);
+    ((SCVtbl_1_0*)(piVar2))->v();
   }
   return (int)(iVar1);
 }
@@ -8912,7 +8982,7 @@ bool __fastcall FUN_10c5cbb0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 8) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 8) + 0x4c))(), 0);
+    uVar1 = (uint)(((SCVtbl_19_0*)(*(int **)(param_1 + 8)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -9145,7 +9215,7 @@ void __fastcall FUN_10c5d3d0(int *param_1)
 {
                     
                     
-  (**(code **)(*param_1 + 0x68))();
+  ((SCVtbl_26_0*)(param_1))->v();
   return;
 }
 
@@ -9580,7 +9650,7 @@ void __thiscall Recovered_Bulk::m_FUN_10c5dba0(undefined4 param_2)
   thunk_FUN_103d6930((int)(param_2));
   if (((iVar1 != 0) && (*(int *)(param_1 + 0x18) == 0)) &&
      (*(undefined4 **)(param_1 + 0x74) != (undefined4 *)((0x0)))) {
-    (**(code **)**(undefined4 **)(param_1 + 0x74))(1);
+    ((SCVtbl_0_1*)(*(undefined4 **)(param_1 + 0x74)))->v((int)(1));
     *(undefined4*)(param_1 + 0x74) = (undefined4)(0);
   }
   return;
@@ -9972,13 +10042,13 @@ undefined4 __fastcall FUN_10c67700(int *param_1)
   if (cVar1 == '\0') {
     return (undefined4)(3);
   }
-  cVar1 = (char)((**(code **)(*param_1 + 0x18))(), 0);
+  cVar1 = (char)(((SCVtbl_6_0*)(param_1))->v(), 0);
   if (cVar1 != '\0') {
     return (undefined4)(2);
   }
                     
                     
-  uVar2 = (undefined4)((**(code **)(*param_1 + 0x28))(), 0);
+  uVar2 = (undefined4)(((SCVtbl_10_0*)(param_1))->v(), 0);
   return (undefined4)(uVar2);
 }
 
@@ -10298,7 +10368,7 @@ void __fastcall FUN_10c6a4c0(int param_1)
   if (*(int *)(param_1 + 0x60) != 0) {
     thunk_FUN_104dec20();
     if (*(undefined4 **)(param_1 + 0x60) != (undefined4 *)((0x0))) {
-      (**(code **)**(undefined4 **)(param_1 + 0x60))(1);
+      ((SCVtbl_0_1*)(*(undefined4 **)(param_1 + 0x60)))->v((int)(1));
     }
     *(undefined4*)(param_1 + 0x60) = (undefined4)(0);
   }
@@ -10420,7 +10490,7 @@ undefined4 __fastcall FUN_10c6ed50(int param_1)
 undefined4 __fastcall FUN_10c6ed70(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
-  (**(code **)(**(int **)(param_1 + 0xe8) + 0x2c))(0);
+  ((SCVtbl_11_1*)(*(int **)(param_1 + 0xe8)))->v((int)(0));
   return (undefined4)(1);
 }
 
@@ -10567,7 +10637,7 @@ void __fastcall FUN_10c760e0(undefined4 *param_1)
     while ((undefined4 *)(puVar2) != (undefined4 *)(0x0)) {
       puVar1 = (undefined4 *)((undefined4 *)puVar2[3]);
       puVar2[3] = (undefined4)(0);
-      (**(code **)*puVar2)(1);
+      ((SCVtbl_0_1*)(puVar2))->v((int)(1));
       puVar2 = (undefined4 *)(puVar1);
     }
     *param_1 = (undefined4)(0);
@@ -10586,9 +10656,9 @@ void __fastcall FUN_10c76170(int param_1)
   
   thunk_FUN_10c7d430();
   if (*(int **)(param_1 + 0x10) != (int *)((0x0))) {
-    puVar1 = (undefined4 *)((undefined4 *)(**(code **)(**(int **)(param_1 + 0x10) + 8))(), 0);
+    puVar1 = (undefined4 *)((undefined4 *)((SCVtbl_2_0*)(*(int **)(param_1 + 0x10)))->v(), 0);
     if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
   return;
@@ -10619,9 +10689,9 @@ void __fastcall FUN_10c761e0(int param_1)
   undefined4 *puVar1;
   
   if (*(int **)(param_1 + 0xc) != (int *)((0x0))) {
-    puVar1 = (undefined4 *)((undefined4 *)(**(code **)(**(int **)(param_1 + 0xc) + 8))(), 0);
+    puVar1 = (undefined4 *)((undefined4 *)((SCVtbl_2_0*)(*(int **)(param_1 + 0xc)))->v(), 0);
     if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
   return;
@@ -10642,7 +10712,7 @@ void __fastcall FUN_10c76540(undefined4 *param_1)
   while ((undefined4 *)(puVar2) != (undefined4 *)(0x0)) {
     puVar1 = (undefined4 *)((undefined4 *)puVar2[3]);
     puVar2[3] = (undefined4)(0);
-    (**(code **)*puVar2)(1);
+    ((SCVtbl_0_1*)(puVar2))->v((int)(1));
     puVar2 = (undefined4 *)(puVar1);
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_std_Node_base);
@@ -11038,7 +11108,7 @@ void __fastcall FUN_10c7d3b0(undefined4 *param_1)
   while ((undefined4 *)(puVar2) != (undefined4 *)(0x0)) {
     puVar1 = (undefined4 *)((undefined4 *)puVar2[3]);
     puVar2[3] = (undefined4)(0);
-    (**(code **)*puVar2)(1);
+    ((SCVtbl_0_1*)(puVar2))->v((int)(1));
     puVar2 = (undefined4 *)(puVar1);
   }
   *param_1 = (undefined4)(0);
@@ -11174,7 +11244,7 @@ undefined4 __fastcall FUN_10c7e5a0(int param_1)
 undefined4 __fastcall FUN_10c7e960(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
-  (**(code **)(**(int **)(param_1 + 0x178) + 0x14))();
+  ((SCVtbl_5_0*)(*(int **)(param_1 + 0x178)))->v();
   return (undefined4)(1);
 }
 
@@ -11437,7 +11507,7 @@ undefined4 __fastcall FUN_10c83f10(int param_1, unsigned int recovered_unused_st
   undefined4 uVar1;
   
   uVar1 = (undefined4)(thunk_FUN_111a2df0(), 0);
-  (**(code **)(**(int **)(param_1 + 0x18) + 0xc))(uVar1);
+  ((SCVtbl_3_1*)(*(int **)(param_1 + 0x18)))->v((int)(uVar1));
   return (undefined4)(0);
 }
 
@@ -11997,7 +12067,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10c92dc0(undefined4 *param_2,SCStr
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if ((int *)(param_1) != (int *)(0x0)) {
-      (**(code **)(*param_1 + 4))();
+      ((SCVtbl_1_0*)(param_1))->v();
     }
     return (undefined4 *)(param_2);
   }
@@ -12169,7 +12239,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10c97610(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x70), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -12363,7 +12433,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10c98cb0(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x44), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -12760,7 +12830,7 @@ void __fastcall FUN_10c9cf50(int param_1)
     if ((int *)(piVar1) != (int *)(0x0)) {
       *(undefined4*)(param_1 + 0x70) = (undefined4)(0);
       *(undefined4*)(param_1 + 0x74) = (undefined4)(0);
-      (**(code **)(*piVar1 + 8))();
+      ((SCVtbl_2_0*)(piVar1))->v();
     }
     *(undefined4*)(param_1 + 0x70) = (undefined4)(0);
     *(undefined4*)(param_1 + 0x74) = (undefined4)(0);
@@ -13193,7 +13263,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ca3b90(int param_2, unsigned int recover
     iVar1 = (int)(0);
   }
   else {
-    iVar1 = (int)((**(code **)(**(int **)(param_1 + 0x28) + 0x20))(), 0);
+    iVar1 = (int)(((SCVtbl_8_0*)(*(int **)(param_1 + 0x28)))->v(), 0);
   }
   if (iVar1 == param_2) {
     thunk_FUN_10cb1110();
@@ -13236,9 +13306,9 @@ undefined1 __fastcall FUN_10ca3ee0(int param_1)
 {
   char cVar1;
   
-  cVar1 = (char)((**(code **)(**(int **)(param_1 + 0xc) + 0x2c))(), 0);
+  cVar1 = (char)(((SCVtbl_11_0*)(*(int **)(param_1 + 0xc)))->v(), 0);
   if (cVar1 == '\0') {
-    cVar1 = (char)((**(code **)(**(int **)(param_1 + 0xc) + 0x58))(), 0);
+    cVar1 = (char)(((SCVtbl_22_0*)(*(int **)(param_1 + 0xc)))->v(), 0);
     if (cVar1 == '\0') {
       return (undefined1)(0);
     }
@@ -13255,9 +13325,9 @@ undefined1 __fastcall FUN_10ca3ff0(int param_1)
 {
   char cVar1;
   
-  cVar1 = (char)((**(code **)(**(int **)(param_1 + 0xc) + 0x2c))(), 0);
+  cVar1 = (char)(((SCVtbl_11_0*)(*(int **)(param_1 + 0xc)))->v(), 0);
   if (cVar1 == '\0') {
-    cVar1 = (char)((**(code **)(**(int **)(param_1 + 0xc) + 0x60))(), 0);
+    cVar1 = (char)(((SCVtbl_24_0*)(*(int **)(param_1 + 0xc)))->v(), 0);
     if (cVar1 == '\0') {
       return (undefined1)(0);
     }
@@ -13275,13 +13345,13 @@ void __fastcall FUN_10ca4250(int param_1)
   if (*(int *)(param_1 + 0x20) != 0) {
     thunk_FUN_10c83fc0();
     if (*(undefined4 **)(param_1 + 0x20) != (undefined4 *)((0x0))) {
-      (**(code **)**(undefined4 **)(param_1 + 0x20))(1);
+      ((SCVtbl_0_1*)(*(undefined4 **)(param_1 + 0x20)))->v((int)(1));
     }
     *(undefined4*)(param_1 + 0x20) = (undefined4)(0);
   }
                     
                     
-  (**(code **)(*(int *)(param_1 + 0x10) + 8))();
+  ((SCVtbl_2_0*)((int *)(param_1 + 0x10)))->v();
   return;
 }
 
@@ -13295,11 +13365,11 @@ void __fastcall FUN_10ca42b0(int param_1)
   char cVar1;
   
   if (*(int **)(param_1 + 0x54) != (int *)((0x0))) {
-    cVar1 = (char)((**(code **)(**(int **)(param_1 + 0x54) + 0x1c))(), 0);
+    cVar1 = (char)(((SCVtbl_7_0*)(*(int **)(param_1 + 0x54)))->v(), 0);
     if (cVar1 != '\0') {
                     
                     
-      (**(code **)(*(int *)(param_1 + 0x50) + 4))();
+      ((SCVtbl_1_0*)((int *)(param_1 + 0x50)))->v();
       return;
     }
   }
@@ -13571,7 +13641,7 @@ uint FUN_10ca7ef0(void)
   uVar2 = (uint)(0);
   if ((SCLibrary *)(pSVar1) != (SCLibrary *)(0x0)) {
     pSVar1 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
-    uVar2 = (uint)((**(code **)(*(int *)pSVar1 + 0xf4))(), 0);
+    uVar2 = (uint)(((SCVtbl_61_0*)((int *)pSVar1))->v(), 0);
     if (uVar2 == 0) {
       return (uint)(1);
     }
@@ -13601,11 +13671,11 @@ undefined4 __fastcall FUN_10ca8b40(int param_1)
   undefined4 uVar2;
   
   if (*(int **)(param_1 + 0xc) != (int *)((0x0))) {
-    cVar1 = (char)((**(code **)(**(int **)(param_1 + 0xc) + 0x2c))(), 0);
+    cVar1 = (char)(((SCVtbl_11_0*)(*(int **)(param_1 + 0xc)))->v(), 0);
     if (cVar1 == '\0') {
                     
                     
-      uVar2 = (undefined4)((**(code **)(**(int **)(param_1 + 0xc) + 0x14))(), 0);
+      uVar2 = (undefined4)(((SCVtbl_5_0*)(*(int **)(param_1 + 0xc)))->v(), 0);
       return (undefined4)(uVar2);
     }
   }
@@ -13886,7 +13956,7 @@ undefined4 __fastcall FUN_10ca92f0(int param_1)
   char cVar1;
   
   if (*(int **)(param_1 + 0xc) != (int *)((0x0))) {
-    cVar1 = (char)((**(code **)(**(int **)(param_1 + 0xc) + 0x2c))(), 0);
+    cVar1 = (char)(((SCVtbl_11_0*)(*(int **)(param_1 + 0xc)))->v(), 0);
     if (cVar1 == '\0') {
       return (undefined4)(*(undefined4 *)(param_1 + 0xc));
     }
@@ -13901,7 +13971,7 @@ undefined4 __fastcall FUN_10ca92f0(int param_1)
 undefined4 __thiscall Recovered_Bulk::m_FUN_10ca9450(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 0xc) + 0xa0))(param_2);
+  ((SCVtbl_40_1*)(*(int **)(param_1 + 0xc)))->v((int)(param_2));
   return (undefined4)(param_3);
 }
 
@@ -13912,7 +13982,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10ca9450(undefined4 param_2,undefine
 undefined4 __thiscall Recovered_Bulk::m_FUN_10ca9a70(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 0xc) + 0x7c))(param_2);
+  ((SCVtbl_31_1*)(*(int **)(param_1 + 0xc)))->v((int)(param_2));
   return (undefined4)(param_3);
 }
 
@@ -13937,13 +14007,13 @@ void __fastcall FUN_10cb1020(int param_1)
   if (*(int *)(param_1 + 0x20) != 0) {
     thunk_FUN_10c83fc0();
     if (*(undefined4 **)(param_1 + 0x20) != (undefined4 *)((0x0))) {
-      (**(code **)**(undefined4 **)(param_1 + 0x20))(1);
+      ((SCVtbl_0_1*)(*(undefined4 **)(param_1 + 0x20)))->v((int)(1));
     }
     *(undefined4*)(param_1 + 0x20) = (undefined4)(0);
   }
                     
                     
-  (**(code **)(*(int *)(param_1 + 0x10) + 8))();
+  ((SCVtbl_2_0*)((int *)(param_1 + 0x10)))->v();
   return;
 }
 
@@ -13957,7 +14027,7 @@ undefined4 __fastcall FUN_10cb1ab0(int param_1)
   char cVar1;
   
   if (*(int **)(param_1 + 0xc) != (int *)((0x0))) {
-    cVar1 = (char)((**(code **)(**(int **)(param_1 + 0xc) + 0x40))(), 0);
+    cVar1 = (char)(((SCVtbl_16_0*)(*(int **)(param_1 + 0xc)))->v(), 0);
     if (cVar1 != '\0') {
       return (undefined4)(1);
     }
@@ -13974,9 +14044,9 @@ undefined4 __fastcall FUN_10cb1c70(int *param_1)
 {
   char cVar1;
   
-  cVar1 = (char)((**(code **)(*param_1 + 0x9c))(), 0);
+  cVar1 = (char)(((SCVtbl_39_0*)(param_1))->v(), 0);
   if (cVar1 != '\0') {
-    cVar1 = (char)((**(code **)(*(int *)param_1[3] + 0x6c))(), 0);
+    cVar1 = (char)(((SCVtbl_27_0*)((int *)param_1[3]))->v(), 0);
     if (cVar1 != '\0') {
       return (undefined4)(1);
     }
@@ -14013,7 +14083,7 @@ void __fastcall FUN_10cb2f70(int param_1)
 {
   thunk_FUN_104dec20();
   if (*(undefined4 **)(param_1 + 0x14) != (undefined4 *)((0x0))) {
-    (**(code **)**(undefined4 **)(param_1 + 0x14))(1);
+    ((SCVtbl_0_1*)(*(undefined4 **)(param_1 + 0x14)))->v((int)(1));
   }
   *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
   thunk_FUN_10cb1110();
@@ -14030,8 +14100,8 @@ void __fastcall FUN_10cb3780(int *param_1)
   char cVar1;
   
   if ((int *)param_1[3] != (int *)(((0x0)))) {
-    (**(code **)(*(int *)param_1[3] + 0xcc))(param_1[5]);
-    cVar1 = (char)((**(code **)(*(int *)param_1[3] + 0x30))(), 0);
+    ((SCVtbl_51_1*)((int *)param_1[3]))->v((int)(param_1[5]));
+    cVar1 = (char)(((SCVtbl_12_0*)((int *)param_1[3]))->v(), 0);
     if (cVar1 == '\0') {
       cVar1 = (char)(((SCVtbl_37_0*)(param_1))->v(), 0);
       if (cVar1 == '\0') {
@@ -14053,13 +14123,13 @@ void __fastcall FUN_10cb3800(int param_1)
   if (*(int *)(param_1 + 0x20) != 0) {
     thunk_FUN_10c83fc0();
     if (*(undefined4 **)(param_1 + 0x20) != (undefined4 *)((0x0))) {
-      (**(code **)**(undefined4 **)(param_1 + 0x20))(1);
+      ((SCVtbl_0_1*)(*(undefined4 **)(param_1 + 0x20)))->v((int)(1));
     }
     *(undefined4*)(param_1 + 0x20) = (undefined4)(0);
   }
                     
                     
-  (**(code **)(*(int *)(param_1 + 0x10) + 8))();
+  ((SCVtbl_2_0*)((int *)(param_1 + 0x10)))->v();
   return;
 }
 
@@ -14074,7 +14144,7 @@ void __fastcall FUN_10cb57c0(int param_1)
   
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 8) + 0xd8), 0);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))(*(int *)(param_1 + 8));
+    ((SCVtbl_1_1*)(piVar1))->v((int)(*(int *)(param_1 + 8)));
   }
   return;
 }
@@ -14089,7 +14159,7 @@ void __fastcall FUN_10cb5cc0(int param_1)
   undefined1 uVar1;
   
   uVar1 = (undefined1)(thunk_FUN_111004d0(), 0);
-  (**(code **)(**(int **)(param_1 + 8) + 0x228))(uVar1);
+  ((SCVtbl_138_1*)(*(int **)(param_1 + 8)))->v((int)(uVar1));
   return;
 }
 
@@ -14118,8 +14188,8 @@ void __thiscall Recovered_Bulk::m_FUN_10cb68f0(int param_2, unsigned int recover
     FUN_1006aac8();
     return;
   }
-  (**(code **)(**(int **)(param_1 + 8) + 0x230))(0x44e);
-  (**(code **)(**(int **)(param_1 + 8) + 0xb4))();
+  ((SCVtbl_140_1*)(*(int **)(param_1 + 8)))->v((int)(0x44e));
+  ((SCVtbl_45_0*)(*(int **)(param_1 + 8)))->v();
   return;
 }
 
@@ -14467,7 +14537,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10cbd9d0(int *param_2,int param_3, unsign
   piVar1 = (int *)(*(int **)(param_1 + 0x54), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -15288,7 +15358,7 @@ void __fastcall FUN_10ccf340(int param_1)
   puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 0x20), 0);
   if ((undefined4 *)((puVar2)) != (undefined4 *)(puVar1)) {
     do {
-      (**(code **)(*(int *)*puVar2 + 0x18))();
+      ((SCVtbl_6_0*)((int *)*puVar2))->v();
       puVar2 = (undefined4 *)(puVar2 + 1);
     } while ((undefined4 *)((puVar2)) != (undefined4 *)(puVar1));
     *(undefined4*)(param_1 + 0x20) = (undefined4)(*(undefined4 *)(param_1 + 0x1c));
@@ -15390,7 +15460,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10cd37b0(int *param_2)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x18) + 0x6260), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -15429,7 +15499,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10cd3c40(int *param_2)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x18) + 0x6274), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -15546,7 +15616,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10cd4010(int *param_2,int param_3)
     piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x18) + 0x6164 + param_3 * 8), 0);
     *param_2 = (int)((int)piVar1);
     if ((int *)(piVar1) != (int *)(0x0)) {
-      (**(code **)(*piVar1 + 4))();
+      ((SCVtbl_1_0*)(piVar1))->v();
     }
     return (int *)(param_2);
   }
@@ -15579,10 +15649,10 @@ void __thiscall Recovered_Bulk::m_FUN_10cd9af0(undefined4 param_2)
   
   *(undefined4*)(param_1 + 0x34) = (undefined4)(param_2);
   if (*(int **)(param_1 + 0x2c) != (int *)((0x0))) {
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x2c) + 4))(param_1 + 8,param_2), 0);
+    uVar1 = (undefined4)(((SCVtbl_1_2*)(*(int **)(param_1 + 0x2c)))->v((int)(param_1 + 8),(int)(param_2)), 0);
     *(undefined4*)(param_1 + 0x30) = (undefined4)(uVar1);
   }
-  (**(code **)(*(int *)(param_1 + 0x44) + 0x14))();
+  ((SCVtbl_5_0*)((int *)(param_1 + 0x44)))->v();
   return;
 }
 
@@ -15600,7 +15670,7 @@ void __thiscall Recovered_Bulk::m_FUN_10cdaa70(undefined4 param_2)
   puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 0x20), 0);
   if ((undefined4 *)((puVar2)) != (undefined4 *)(puVar1)) {
     do {
-      (**(code **)(*(int *)*puVar2 + 4))(param_1 + 8,param_2);
+      ((SCVtbl_1_2*)((int *)*puVar2))->v((int)(param_1 + 8),(int)(param_2));
       puVar2 = (undefined4 *)(puVar2 + 1);
     } while ((undefined4 *)((puVar2)) != (undefined4 *)(puVar1));
   }
@@ -16054,11 +16124,11 @@ void __fastcall FUN_10cdd550(int param_1)
 {
   char cVar1;
   
-  cVar1 = (char)((**(code **)(**(int **)(param_1 + 0x24) + 0x1c))(), 0);
+  cVar1 = (char)(((SCVtbl_7_0*)(*(int **)(param_1 + 0x24)))->v(), 0);
   if (cVar1 != '\0') {
                     
                     
-    (**(code **)(**(int **)(param_1 + 0x24) + 0x18))();
+    ((SCVtbl_6_0*)(*(int **)(param_1 + 0x24)))->v();
     return;
   }
   return;
@@ -16328,7 +16398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10cdfda0(int param_2)
   if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(puVar1 + 1), 0);
     if (iVar2 == 0) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
   *param_1 = (int)(param_2);
@@ -16885,7 +16955,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10ce4000(int *param_2,uint param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x84) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -16997,11 +17067,11 @@ void __fastcall FUN_10ce4550(int param_1)
     piStack_50 = (int *)((int *)0x0);
   }
   else {
-    piStack_50 = (int *)((int *)(**(code **)(*piVar2 + 0xc))(ppiVar11), 0);
+    piStack_50 = (int *)((int *)((SCVtbl_3_1*)(piVar2))->v((int)(ppiVar11)), 0);
   }
   *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(5);
   if ((int *)(piStack_30) != (int *)(0x0)) {
-    (**(code **)(*piStack_30 + 8))();
+    ((SCVtbl_2_0*)(piStack_30))->v();
   }
   *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(4);
   piVar5 = (int *)((int *)thunk_FUN_102518f0(&piStack_28), 0);
@@ -17012,14 +17082,14 @@ void __fastcall FUN_10ce4550(int param_1)
     piStack_48 = (int *)((int *)0x0);
   }
   else {
-    piStack_48 = (int *)((int *)(**(code **)(*piVar2 + 0xc))(), 0);
+    piStack_48 = (int *)((int *)((SCVtbl_3_0*)(piVar2))->v(), 0);
   }
   *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(9);
   if ((int *)(piStack_28) != (int *)(0x0)) {
-    (**(code **)(*piStack_28 + 8))();
+    ((SCVtbl_2_0*)(piStack_28))->v();
   }
   *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(8);
-  iVar6 = (int)((**(code **)(*(int *)this_ + 0xf4))(), 0);
+  iVar6 = (int)(((SCVtbl_61_0*)((int *)this_))->v(), 0);
   cStack_15 = (char)(iVar6 == 0);
   thunk_FUN_1109f7f0();
   thunk_FUN_110a0140();
@@ -17102,24 +17172,24 @@ LAB_10ce4a35:
       if ((int *)(piVar10) != (int *)(0x0)) {
         piStack_44 = (int *)((int *)0x0);
         piStack_40 = (int *)((int *)0x0);
-        (**(code **)(*piVar10 + 8))();
+        ((SCVtbl_2_0*)(piVar10))->v();
       }
       piStack_44 = (int *)(piVar2);
       if ((int *)(piVar2) == (int *)(0x0)) {
         piVar10 = (int *)((int *)0x0);
       }
       else {
-        piVar10 = (int *)((int *)(**(code **)(*piVar2 + 0xc))(), 0);
+        piVar10 = (int *)((int *)((SCVtbl_3_0*)(piVar2))->v(), 0);
       }
       *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(0xe);
       piStack_40 = (int *)(piVar10);
       if ((int *)(piStack_3c) != (int *)(0x0)) {
-        (**(code **)(*piStack_3c + 8))();
+        ((SCVtbl_2_0*)(piStack_3c))->v();
       }
       *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(10);
       if ((int *)(piVar2) != (int *)(0x0)) {
         if (bStack_12 != false) {
-          (**(code **)(*piVar2 + 0xcc))(0);
+          ((SCVtbl_51_1*)(piVar2))->v((int)(0));
         }
         piVar5 = (int *)((int *)puStack_2c[1]);
         if ((int *)(piVar5) == (int *)puStack_2c[2]) {
@@ -17129,7 +17199,7 @@ LAB_10ce4a35:
           *piVar5 = (int)((int)piVar2);
           piVar5[1] = (int)((int)piVar10);
           if ((int *)(piVar10) != (int *)(0x0)) {
-            (**(code **)(*piVar10 + 4))();
+            ((SCVtbl_1_0*)(piVar10))->v();
           }
           puStack_2c[1] = (undefined4)(puStack_2c[1] + 8);
         }
@@ -17142,18 +17212,18 @@ LAB_10ce4ae5:
       thunk_FUN_11132140();
       *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(0xf);
       if ((int *)(piStack_48) != (int *)(0x0)) {
-        (**(code **)(*piStack_48 + 8))();
+        ((SCVtbl_2_0*)(piStack_48))->v();
       }
       *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(0x10);
       if ((int *)(piStack_50) != (int *)(0x0)) {
-        (**(code **)(*piStack_50 + 8))();
+        ((SCVtbl_2_0*)(piStack_50))->v();
       }
       uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(0x11)));
       ((SCStr *)((SCStr *)&uStack_34))->int_release();
 
 
       if ((int *)(piVar10) != (int *)(0x0)) {
-        (**(code **)(*piVar10 + 8))();
+        ((SCVtbl_2_0*)(piVar10))->v();
       }
 
       return;
@@ -17862,7 +17932,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10cefaa0(undefined4 *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x114), 0);
   param_2[1] = (undefined4)(piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (undefined4 *)(param_2);
 }
@@ -18079,7 +18149,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10cf34e0(int *param_2)
   piVar1 = (int *)(*(int **)(*param_1 + 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -18437,7 +18507,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10cf6150(SCStr *param_2)
   char *pcVar1;
   char *pcVar2;
   
-  pcVar1 = (char *)((char *)(**(code **)(**(int **)(param_1 + 0x18) + 0x2c))(), 0);
+  pcVar1 = (char *)((char *)((SCVtbl_11_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
   pcVar2 = (char *)("");
   if ((char *)(pcVar1) != (char *)(0x0)) {
     pcVar2 = (char *)(pcVar1);
@@ -18569,7 +18639,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10cf7ae0(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x5c), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -18657,7 +18727,7 @@ bool __fastcall FUN_10cf8b00(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 8) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 8) + 0x10))(), 0);
+    uVar1 = (uint)(((SCVtbl_4_0*)(*(int **)(param_1 + 8)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -18743,7 +18813,7 @@ undefined4 __fastcall FUN_10cf9740(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x38))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_14_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(7);
@@ -18761,7 +18831,7 @@ undefined4 __fastcall FUN_10cf9c70(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x18))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_6_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -18783,7 +18853,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10cf9c90(int *param_2,uint param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x88) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -18835,7 +18905,7 @@ undefined4 __fastcall FUN_10cfa090(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x3c))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_15_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -18853,7 +18923,7 @@ undefined4 __fastcall FUN_10cfa2c0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x24))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_9_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(1);
@@ -18872,7 +18942,7 @@ bool __fastcall FUN_10cfb1d0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x18) + 0x28))(), 0);
+    uVar1 = (uint)(((SCVtbl_10_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -18913,7 +18983,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10cfbc00(byte param_2)
 undefined4 __thiscall Recovered_Bulk::m_FUN_10cfbe60(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 8) + 0x60))(param_2);
+  ((SCVtbl_24_1*)(*(int **)(param_1 + 8)))->v((int)(param_2));
   return (undefined4)(param_3);
 }
 
@@ -18933,7 +19003,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10cfc100(int *param_2,uint param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x8c) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -18966,7 +19036,7 @@ int __fastcall FUN_10cfc1a0(int param_1)
 undefined4 __thiscall Recovered_Bulk::m_FUN_10cfc1c0(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 8) + 0x6c))(param_2);
+  ((SCVtbl_27_1*)(*(int **)(param_1 + 8)))->v((int)(param_2));
   return (undefined4)(param_3);
 }
 
@@ -18977,7 +19047,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10cfc1c0(undefined4 param_2,undefine
 undefined4 __thiscall Recovered_Bulk::m_FUN_10cfc400(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 8) + 0x48))(param_2);
+  ((SCVtbl_18_1*)(*(int **)(param_1 + 8)))->v((int)(param_2));
   return (undefined4)(param_3);
 }
 
@@ -18988,7 +19058,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10cfc400(undefined4 param_2,undefine
 undefined4 __thiscall Recovered_Bulk::m_FUN_10cfc440(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 8) + 0x84))(param_2);
+  ((SCVtbl_33_1*)(*(int **)(param_1 + 8)))->v((int)(param_2));
   return (undefined4)(param_3);
 }
 
@@ -19024,7 +19094,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10cfc4b0(SCStr *param_2)
 undefined4 __thiscall Recovered_Bulk::m_FUN_10cfc4e0(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 8) + 0x54))(param_2);
+  ((SCVtbl_21_1*)(*(int **)(param_1 + 8)))->v((int)(param_2));
   return (undefined4)(param_3);
 }
 
@@ -19035,7 +19105,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10cfc4e0(undefined4 param_2,undefine
 undefined4 __thiscall Recovered_Bulk::m_FUN_10cfc510(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 8) + 0x18))(param_2);
+  ((SCVtbl_6_1*)(*(int **)(param_1 + 8)))->v((int)(param_2));
   return (undefined4)(param_3);
 }
 
@@ -19060,7 +19130,7 @@ void __fastcall FUN_10cfdf80(int *param_1)
 void __thiscall Recovered_Bulk::m_FUN_10cfe140(undefined4 param_2,undefined8 param_3, unsigned int recovered_unused_stack_0)
 {
   int param_1 = (int )this;
-  (**(code **)(**(int **)(param_1 + 8) + 0x34))(param_2,param_3);
+  ((SCVtbl_13_2*)(*(int **)(param_1 + 8)))->v((int)(param_2),(int)(param_3));
   return;
 }
 
@@ -19363,7 +19433,7 @@ undefined4 __fastcall FUN_10d03290(int *param_1)
   
   cVar1 = (char)(thunk_FUN_10208940(), 0);
   if (cVar1 != '\0') {
-    cVar1 = (char)((**(code **)(*param_1 + 0x24))(), 0);
+    cVar1 = (char)(((SCVtbl_9_0*)(param_1))->v(), 0);
     if (cVar1 == '\0') {
       return (undefined4)(1);
     }
@@ -19682,8 +19752,8 @@ void __fastcall FUN_10d05f30(int param_1, unsigned int recovered_unused_stack_0,
 void __fastcall FUN_10d05f80(int param_1)
 
 {
-  (**(code **)(*(int *)(param_1 + -0x90) + 0x164))();
-  (**(code **)(*(int *)(param_1 + -0x90) + 0x110))(0);
+  ((SCVtbl_89_0*)((int *)(param_1 + -0x90)))->v();
+  ((SCVtbl_68_1*)((int *)(param_1 + -0x90)))->v((int)(0));
   return;
 }
 
@@ -19855,7 +19925,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10d0b910(int *param_2)
   piVar1 = (int *)(*(int **)(param_1 + 0x14c), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -20071,7 +20141,7 @@ undefined4 __fastcall FUN_10d130b0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x24) + 0x38))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_14_0*)(*(int **)(param_1 + 0x24)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(7);
@@ -20089,7 +20159,7 @@ undefined4 __fastcall FUN_10d13700(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x24) + 0x18))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_6_0*)(*(int **)(param_1 + 0x24)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -20124,7 +20194,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10d13740(int *param_2,uint param_3)
   piVar2 = (int *)(*(int **)(iVar1 + param_3 * 8), 0);
   *param_2 = (int)((int)piVar2);
   if ((int *)(piVar2) != (int *)(0x0)) {
-    (**(code **)(*piVar2 + 4))();
+    ((SCVtbl_1_0*)(piVar2))->v();
   }
   return (int *)(param_2);
 }
@@ -20187,7 +20257,7 @@ undefined4 __fastcall FUN_10d13d50(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x24) + 0x3c))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_15_0*)(*(int **)(param_1 + 0x24)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -20205,7 +20275,7 @@ undefined4 __fastcall FUN_10d13fd0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x24) + 0x24))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_9_0*)(*(int **)(param_1 + 0x24)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(1);
@@ -20230,7 +20300,7 @@ void __fastcall FUN_10d14290(int param_1)
 
 {
   thunk_FUN_10d142b0();
-  (**(code **)(*(int *)(param_1 + -0x80) + 0x110))(0);
+  ((SCVtbl_68_1*)((int *)(param_1 + -0x80)))->v((int)(0));
   return;
 }
 
@@ -20247,7 +20317,7 @@ bool __fastcall FUN_10d15320(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x24) + 0x28))(), 0);
+    uVar1 = (uint)(((SCVtbl_10_0*)(*(int **)(param_1 + 0x24)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -20494,13 +20564,13 @@ int __fastcall FUN_10d17d40(int *param_1)
   }
 
   pSVar4 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
-  (**(code **)(*(int *)pSVar4 + 0x88))();
+  ((SCVtbl_34_0*)((int *)pSVar4))->v();
 
   piStack_48 = (int *)((int *)0x1020fece);
   thunk_FUN_101e7e50<>();
   *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(3);
   if ((int *)(piStack_24) != (int *)(0x0)) {
-    (**(code **)(*piStack_24 + 8))();
+    ((SCVtbl_2_0*)(piStack_24))->v();
   }
   *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(2);
   piStack_48 = (int *)((int *)0x1020fef2);
@@ -20515,7 +20585,7 @@ int __fastcall FUN_10d17d40(int *param_1)
     *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(4);
 
     piStack_48 = (int *)((int *)0x1020ff34);
-    cVar3 = (char)((**(code **)(*piStack_2c + 0x14))(), 0);
+    cVar3 = (char)(((SCVtbl_5_0*)(piStack_2c))->v(), 0);
     if (cVar3 != '\0') goto LAB_1020ff3b;
 LAB_1020ff6a:
     cStack_11 = (char)('\x01');
@@ -20529,7 +20599,7 @@ LAB_1020ff3b:
 
       piStack_48 = (int *)((int *)0x1020ff66);
       uStack_18 = (uint)(uVar6);
-      cVar3 = (char)((**(code **)(*piStack_2c + 0x14))(), 0);
+      cVar3 = (char)(((SCVtbl_5_0*)(piStack_2c))->v(), 0);
       if (cVar3 == '\0') goto LAB_1020ff6a;
     }
     cStack_11 = (char)('\0');
@@ -20550,18 +20620,18 @@ LAB_1020ff3b:
   }
   if (cStack_11 == '\0') {
     if (*(char *)((int)param_1 + 0xc5) != '\0') {
-      (**(code **)(*param_1 + 0x94))();
+      ((SCVtbl_37_0*)(param_1))->v();
       piStack_48 = (int *)(param_1);
       ((SCStr *)((uint)&aSStack_4c))->int_allocRep("SCIBrowseDataSource:onInvalidation");
       thunk_FUN_103d63d0<>();
       *(undefined1*)((int)param_1 + 0x41) = (undefined1)(0);
     }
-    cVar3 = (char)((**(code **)(*param_1 + 0x13c))(), 0);
+    cVar3 = (char)(((SCVtbl_79_0*)(param_1))->v(), 0);
     if (cVar3 == '\0') {
       iVar5 = (int)(param_1[0x32]);
     }
     else {
-      iVar5 = (int)((**(code **)(*param_1 + 0xbc))(), 0);
+      iVar5 = (int)(((SCVtbl_47_0*)(param_1))->v(), 0);
       iVar5 = (int)(iVar5 + param_1[0x32]);
     }
     iVar1 = (int)(param_1[0x18]);
@@ -20574,7 +20644,7 @@ LAB_1020ff3b:
   }
 
   if ((int *)(piStack_28) != (int *)(0x0)) {
-    (**(code **)(*piStack_28 + 8))();
+    ((SCVtbl_2_0*)(piStack_28))->v();
   }
 
   return (int)(iVar5);
@@ -20629,9 +20699,9 @@ void __fastcall FUN_10d18670(int *param_1)
   char cVar1;
   
   thunk_FUN_1059d800();
-  cVar1 = (char)((**(code **)(*param_1 + 0xfc))(), 0);
+  cVar1 = (char)(((SCVtbl_63_0*)(param_1))->v(), 0);
   if (cVar1 != '\0') {
-    (**(code **)(*param_1 + 0x100))(0);
+    ((SCVtbl_64_1*)(param_1))->v((int)(0));
   }
   return;
 }
@@ -20679,7 +20749,7 @@ undefined1 __fastcall FUN_10d189f0(int *param_1)
   if ((*(char *)((int)param_1 + 0x299) != '\0') && ((char)param_1[0xa6] == '\0')) {
     if (*(char *)((int)param_1 + 0xc5) != '\0') {
       uStack_c = (undefined4)(0x1021b215);
-      (**(code **)(*param_1 + 0x94))();
+      ((SCVtbl_37_0*)(param_1))->v();
       uStack_c = (undefined4)(0);
       piStack_10 = (int *)(param_1);
       ((SCStr *)((uint)&aSStack_14))->int_allocRep("SCIBrowseDataSource:onInvalidation");
@@ -20714,7 +20784,7 @@ void __fastcall FUN_10d18a30(int param_1, unsigned int recovered_unused_stack_0,
   bVar1 = (bool)(*(int *)(param_1 + 0x34) == 0);
   if ((bool)*(char *)(param_1 + 0x30) != (char)(bVar1)) {
     *(bool*)(param_1 + 0x30) = (bool)(bVar1);
-    (**(code **)(*(int *)(param_1 + -0x268) + 0x110))(0);
+    ((SCVtbl_68_1*)((int *)(param_1 + -0x268)))->v((int)(0));
     thunk_FUN_1020a5b0((int)(0));
   }
   return;
@@ -20732,7 +20802,7 @@ void __fastcall FUN_10d18e50(int param_1, unsigned int recovered_unused_stack_0,
   bVar1 = (bool)(*(int *)(param_1 + 0x34) == 0);
   if ((bool)*(char *)(param_1 + 0x30) != (char)(bVar1)) {
     *(bool*)(param_1 + 0x30) = (bool)(bVar1);
-    (**(code **)(*(int *)(param_1 + -0x268) + 0x110))(0);
+    ((SCVtbl_68_1*)((int *)(param_1 + -0x268)))->v((int)(0));
     thunk_FUN_1020a5b0((int)(0));
   }
   return;
@@ -20764,9 +20834,9 @@ void __fastcall FUN_10d19370(int param_1)
   char cVar1;
   
   thunk_FUN_1059d800();
-  cVar1 = (char)((**(code **)(*(int *)(param_1 + -0x90) + 0xfc))(), 0);
+  cVar1 = (char)(((SCVtbl_63_0*)((int *)(param_1 + -0x90)))->v(), 0);
   if (cVar1 != '\0') {
-    (**(code **)(*(int *)(param_1 + -0x90) + 0x100))(0);
+    ((SCVtbl_64_1*)((int *)(param_1 + -0x90)))->v((int)(0));
   }
   return;
 }
@@ -20781,9 +20851,9 @@ void __fastcall FUN_10d193b0(int param_1, unsigned int recovered_unused_stack_0,
   char cVar1;
   
   thunk_FUN_1059d800();
-  cVar1 = (char)((**(code **)(*(int *)(param_1 + -0x278) + 0xfc))(), 0);
+  cVar1 = (char)(((SCVtbl_63_0*)((int *)(param_1 + -0x278)))->v(), 0);
   if (cVar1 != '\0') {
-    (**(code **)(*(int *)(param_1 + -0x278) + 0x100))(0);
+    ((SCVtbl_64_1*)((int *)(param_1 + -0x278)))->v((int)(0));
   }
   return;
 }
@@ -20992,7 +21062,7 @@ void __fastcall FUN_10d1a530(int *param_1)
 
 
   if ((int *)*param_1 != (int *)((0x0))) {
-    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)((int *)*param_1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -21067,7 +21137,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d1c3f0(undefined4 *param_2)
   piVar1 = (int *)((int *)__RTDynamicCast(*(undefined4 *)(param_1 + 8),0, &SCActionOnGroupDescriptorImpl::RTTI_Type_Descriptor, &SCPlayMenuPlayNowDescriptor::RTTI_Type_Descriptor,0), 0);
   *param_2 = (undefined4)(piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (undefined4 *)(param_2);
 }
@@ -21088,7 +21158,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10d1c4c0(int *param_2,uint param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x88) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -21169,7 +21239,7 @@ void __fastcall FUN_10d1ce70(int param_1)
 
 {
   thunk_FUN_10d1cf80();
-  (**(code **)(*(int *)(param_1 + -0x80) + 0x110))(0);
+  ((SCVtbl_68_1*)((int *)(param_1 + -0x80)))->v((int)(0));
   return;
 }
 
@@ -21181,7 +21251,7 @@ void __fastcall FUN_10d1cf60(int param_1)
 
 {
   thunk_FUN_10d1cf80();
-  (**(code **)(*(int *)(param_1 + -0x80) + 0x110))(0);
+  ((SCVtbl_68_1*)((int *)(param_1 + -0x80)))->v((int)(0));
   return;
 }
 
@@ -21302,7 +21372,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_10d1eb10(int param_2)
   if (*(int *)(param_1 + 0x20) == 0) {
                     
                     
-    (**(code **)(**(int **)(param_1 + 0x40) + 0x18))();
+    ((SCVtbl_6_0*)(*(int **)(param_1 + 0x40)))->v();
     return (undefined4 *)(param_2);
   }
   return (undefined4 *)(param_2);
@@ -21407,7 +21477,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10d20520(int *param_2,uint param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0xb4) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -21550,11 +21620,11 @@ void __thiscall Recovered_Bulk::m_FUN_10d23440(int param_2)
   char cVar1;
   
   if ((param_2 != 0) && (*(char *)(param_1 + 0x11) == '\0')) {
-    cVar1 = (char)((**(code **)(**(int **)(param_1 + 0x18) + 0x1c))(), 0);
+    cVar1 = (char)(((SCVtbl_7_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     if (cVar1 != '\0') {
                     
                     
-      (**(code **)(*(int *)(param_1 + -0x9c) + 0x110))();
+      ((SCVtbl_68_0*)((int *)(param_1 + -0x9c)))->v();
       return;
     }
   }
@@ -21571,7 +21641,7 @@ void __fastcall FUN_10d234b0(int param_1)
   thunk_FUN_104d9cc0();
   thunk_FUN_104dec20();
   if (*(undefined4 **)(param_1 + 0xbc) != (undefined4 *)((0x0))) {
-    (**(code **)**(undefined4 **)(param_1 + 0xbc))(1);
+    ((SCVtbl_0_1*)(*(undefined4 **)(param_1 + 0xbc)))->v((int)(1));
   }
   return;
 }
@@ -22029,7 +22099,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10d29c20(SCStr *param_2)
   int param_1 = (int )this;
   SCStr *pSVar1;
   
-  pSVar1 = (SCStr *)((SCStr *)(**(code **)(**(int **)(param_1 + 0x18) + 0x18))(), 0);
+  pSVar1 = (SCStr *)((SCStr *)((SCVtbl_6_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
   ((SCStr *)(param_2))->m_op_ctor(pSVar1);
   return (SCStr *)(param_2);
 }
@@ -22050,7 +22120,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10d29f40(int *param_2,uint param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0xb0) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -22067,7 +22137,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10d29f90(int *param_2,int param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0xb8) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -22084,7 +22154,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10d29fc0(int *param_2,int param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x90) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -22101,7 +22171,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10d29ff0(int *param_2,int param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x90) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -22194,7 +22264,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10d2a200(SCStr *param_2)
   int param_1 = (int )this;
   SCStr *pSVar1;
   
-  pSVar1 = (SCStr *)((SCStr *)(**(code **)(**(int **)(param_1 + 0x18) + 0x1c))(), 0);
+  pSVar1 = (SCStr *)((SCStr *)((SCVtbl_7_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
   ((SCStr *)(param_2))->m_op_ctor(pSVar1);
   return (SCStr *)(param_2);
 }
@@ -22258,7 +22328,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10d2a8f0(SCStr *param_2)
   int param_1 = (int )this;
   SCStr *pSVar1;
   
-  pSVar1 = (SCStr *)((SCStr *)(**(code **)(**(int **)(param_1 + 0x18) + 0x20))(), 0);
+  pSVar1 = (SCStr *)((SCStr *)((SCVtbl_8_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
   ((SCStr *)(param_2))->m_op_ctor(pSVar1);
   return (SCStr *)(param_2);
 }
@@ -22273,7 +22343,7 @@ void __fastcall FUN_10d2ae00(int param_1)
   undefined4 *puVar1;
   
   thunk_FUN_104d9cc0();
-  (**(code **)(**(int **)(param_1 + 0x8c) + 0x18))(param_1 + 0x80);
+  ((SCVtbl_6_1*)(*(int **)(param_1 + 0x8c)))->v((int)(param_1 + 0x80));
   puVar1 = (undefined4 *)((undefined4 *)(param_1 + 0xb0));
   thunk_FUN_10ce2c30(*puVar1,*(undefined4 *)(param_1 + 0xb4),puVar1);
   *(undefined4*)(param_1 + 0xb4) = (undefined4)(*puVar1);
@@ -22460,7 +22530,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_10d30b70(undefined4 param_2,undef
   if (cVar2 != '\0') {
     piVar1 = (int *)(*(int **)(param_1 + 4), 0);
     thunk_FUN_10d38af0();
-    (**(code **)(*piVar1 + 0x110))(0);
+    ((SCVtbl_68_1*)(piVar1))->v((int)(0));
   }
   return (undefined4 *)(param_2);
 }
@@ -22575,7 +22645,7 @@ undefined4 __fastcall FUN_10d35830(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0xc0) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0xc0) + 0x38))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_14_0*)(*(int **)(param_1 + 0xc0)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(7);
@@ -22604,7 +22674,7 @@ undefined4 __fastcall FUN_10d360e0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0xc0) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0xc0) + 0x18))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_6_0*)(*(int **)(param_1 + 0xc0)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -22644,7 +22714,7 @@ undefined4 __fastcall FUN_10d370c0(int param_1)
   if (*(int **)(param_1 + 0xc0) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0xc0) + 0x14))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_5_0*)(*(int **)(param_1 + 0xc0)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -22659,7 +22729,7 @@ int __fastcall FUN_10d370e0(int *param_1)
 {
   char cVar1;
   
-  cVar1 = (char)((**(code **)(*param_1 + 0x80))(), 0);
+  cVar1 = (char)(((SCVtbl_32_0*)(param_1))->v(), 0);
   if (cVar1 != '\0') {
     return (int)(param_1[0x3a] - param_1[0x39] >> 3);
   }
@@ -22678,7 +22748,7 @@ undefined4 __fastcall FUN_10d37d60(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0xc0) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0xc0) + 0x3c))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_15_0*)(*(int **)(param_1 + 0xc0)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -22696,7 +22766,7 @@ undefined4 __fastcall FUN_10d37fa0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0xc0) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0xc0) + 0x24))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_9_0*)(*(int **)(param_1 + 0xc0)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(1);
@@ -22711,11 +22781,11 @@ bool __fastcall FUN_10d381f0(int *param_1)
 {
   char cVar1;
   
-  cVar1 = (char)((**(code **)(*param_1 + 0x80))(), 0);
+  cVar1 = (char)(((SCVtbl_32_0*)(param_1))->v(), 0);
   if (cVar1 != '\0') {
     return (bool)(true);
   }
-  cVar1 = (char)((**(code **)(*param_1 + 0xfc))(), 0);
+  cVar1 = (char)(((SCVtbl_63_0*)(param_1))->v(), 0);
   return (bool)(cVar1 == '\0');
 }
 
@@ -22731,7 +22801,7 @@ void __fastcall FUN_10d38420(int param_1)
   cVar1 = (char)(thunk_FUN_10d34fd0(), 0);
   if (cVar1 != '\0') {
     thunk_FUN_10d38af0();
-    (**(code **)(*(int *)(param_1 + -0x88) + 0x110))(0);
+    ((SCVtbl_68_1*)((int *)(param_1 + -0x88)))->v((int)(0));
   }
   return;
 }
@@ -22744,7 +22814,7 @@ void __fastcall FUN_10d38450(int param_1, unsigned int recovered_unused_stack_0,
 
 {
   thunk_FUN_10d38af0();
-  (**(code **)(*(int *)(param_1 + -0x28) + 0x110))(0);
+  ((SCVtbl_68_1*)((int *)(param_1 + -0x28)))->v((int)(0));
   return;
 }
 
@@ -22756,7 +22826,7 @@ void __fastcall FUN_10d38510(int param_1, unsigned int recovered_unused_stack_0,
 
 {
   thunk_FUN_10d38af0();
-  (**(code **)(*(int *)(param_1 + -0x98) + 0x110))(0);
+  ((SCVtbl_68_1*)((int *)(param_1 + -0x98)))->v((int)(0));
   return;
 }
 
@@ -22768,7 +22838,7 @@ void __fastcall FUN_10d386f0(int param_1, unsigned int recovered_unused_stack_0,
 
 {
   thunk_FUN_10d38af0();
-  (**(code **)(*(int *)(param_1 + -0x8c) + 0x110))(0);
+  ((SCVtbl_68_1*)((int *)(param_1 + -0x8c)))->v((int)(0));
   return;
 }
 
@@ -22781,10 +22851,10 @@ void __fastcall FUN_10d389c0(int param_1)
 {
   *(undefined1*)(param_1 + 0x7a) = (undefined1)(1);
   if ((*(char *)(param_1 + 0x7a) != '\0') && (*(char *)(param_1 + 0x79) != '\0')) {
-    (**(code **)(*(int *)(param_1 + -0x88) + 0x100))(0);
+    ((SCVtbl_64_1*)((int *)(param_1 + -0x88)))->v((int)(0));
   }
   thunk_FUN_10d38af0();
-  (**(code **)(*(int *)(param_1 + -0x88) + 0x110))(0);
+  ((SCVtbl_68_1*)((int *)(param_1 + -0x88)))->v((int)(0));
   return;
 }
 
@@ -22795,8 +22865,8 @@ void __fastcall FUN_10d389c0(int param_1)
 void __fastcall FUN_10d38a10(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
-  (**(code **)(*(int *)(param_1 + -0xbc) + 0x100))(0);
-  (**(code **)(*(int *)(param_1 + -0xbc) + 0x110))(0);
+  ((SCVtbl_64_1*)((int *)(param_1 + -0xbc)))->v((int)(0));
+  ((SCVtbl_68_1*)((int *)(param_1 + -0xbc)))->v((int)(0));
   return;
 }
 
@@ -22808,7 +22878,7 @@ void __fastcall FUN_10d38a40(int param_1, unsigned int recovered_unused_stack_0,
 
 {
   thunk_FUN_10d38af0();
-  (**(code **)(*(int *)(param_1 + -0x8c) + 0x110))(0);
+  ((SCVtbl_68_1*)((int *)(param_1 + -0x8c)))->v((int)(0));
   return;
 }
 
@@ -22820,7 +22890,7 @@ void __fastcall FUN_10d38a70(int param_1, unsigned int recovered_unused_stack_0,
 
 {
   thunk_FUN_10d38af0();
-  (**(code **)(*(int *)(param_1 + -0x8c) + 0x110))(0);
+  ((SCVtbl_68_1*)((int *)(param_1 + -0x8c)))->v((int)(0));
   return;
 }
 
@@ -22840,7 +22910,7 @@ void __fastcall FUN_10d38aa0(int param_1)
   cVar3 = (char)(thunk_FUN_10d34dd0(), 0);
   if (cVar3 != '\0' || (cVar1 != '\0' || cVar2 != '\0')) {
     thunk_FUN_10d38af0();
-    (**(code **)(*(int *)(param_1 + -0x88) + 0x110))(0);
+    ((SCVtbl_68_1*)((int *)(param_1 + -0x88)))->v((int)(0));
   }
   return;
 }
@@ -22882,7 +22952,7 @@ bool __fastcall FUN_10d3a8f0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0xc0) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0xc0) + 0x28))(), 0);
+    uVar1 = (uint)(((SCVtbl_10_0*)(*(int **)(param_1 + 0xc0)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -22932,7 +23002,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d3b670(unsigned int recovered_unused_sta
   
   *(undefined2*)(param_1 + 0x20) = (undefined2)(in_stack_00000014);
   *(undefined1*)(param_1 + 0x18) = (undefined1)(1);
-  (**(code **)(*(int *)(param_1 + -0x80) + 0x114))(0);
+  ((SCVtbl_69_1*)((int *)(param_1 + -0x80)))->v((int)(0));
   return;
 }
 
@@ -22945,7 +23015,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d3b6a0(unsigned int recovered_unused_sta
   int param_1 = (int )this;
   undefined4 in_stack_00000014;
   
-  (**(code **)(**(int **)(param_1 + 0x10) + 0x128))(in_stack_00000014);
+  ((SCVtbl_74_1*)(*(int **)(param_1 + 0x10)))->v((int)(in_stack_00000014));
   return;
 }
 
@@ -22993,7 +23063,7 @@ undefined4 __fastcall FUN_10d3c470(int param_1)
     piVar1 = (int *)((int *)thunk_FUN_11093530((int)(puVar3),(int)(0)), 0);
                     
                     
-    uVar2 = (undefined4)((**(code **)(*piVar1 + 0x78))(), 0);
+    uVar2 = (undefined4)(((SCVtbl_30_0*)(piVar1))->v(), 0);
     return (undefined4)(uVar2);
   }
   return (undefined4)(*(undefined4 *)(param_1 + 0x9c));
@@ -23405,7 +23475,7 @@ undefined4 __fastcall FUN_10d3f250(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x28) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x28) + 0x38))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_14_0*)(*(int **)(param_1 + 0x28)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(7);
@@ -23423,7 +23493,7 @@ undefined4 __fastcall FUN_10d3f7a0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x28) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x28) + 0x18))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_6_0*)(*(int **)(param_1 + 0x28)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -23467,7 +23537,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10d3f800(int *param_2,uint param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x9c) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -23563,7 +23633,7 @@ undefined4 __fastcall FUN_10d3fd00(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x28) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x28) + 0x3c))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_15_0*)(*(int **)(param_1 + 0x28)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -23592,7 +23662,7 @@ undefined4 __fastcall FUN_10d3ff90(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x28) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x28) + 0x24))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_9_0*)(*(int **)(param_1 + 0x28)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(1);
@@ -23611,7 +23681,7 @@ bool __fastcall FUN_10d40010(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 8) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 8) + 0x1c))(), 0);
+    uVar1 = (uint)(((SCVtbl_7_0*)(*(int **)(param_1 + 8)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -23626,10 +23696,10 @@ void __fastcall FUN_10d40040(int param_1)
 {
   thunk_FUN_104d98f0();
   if (*(int **)(param_1 + 0xa8) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 0xa8) + 0x14))(*(undefined4 *)(param_1 + 0x90));
+    ((SCVtbl_5_1*)(*(int **)(param_1 + 0xa8)))->v((int)(*(undefined4 *)(param_1 + 0x90)));
   }
   if (*(int **)(param_1 + 0xb0) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 0xb0) + 0x14))(*(undefined4 *)(param_1 + 0x84));
+    ((SCVtbl_5_1*)(*(int **)(param_1 + 0xb0)))->v((int)(*(undefined4 *)(param_1 + 0x84)));
   }
   return;
 }
@@ -23643,7 +23713,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d40090(int param_2)
   int param_1 = (int )this;
   thunk_FUN_10d40300();
   if (param_2 != 0) {
-    (**(code **)(*(int *)(param_1 + -0x8c) + 0x110))(0);
+    ((SCVtbl_68_1*)((int *)(param_1 + -0x8c)))->v((int)(0));
   }
   return;
 }
@@ -23657,10 +23727,10 @@ void __fastcall FUN_10d40200(int param_1)
 {
   thunk_FUN_104d9cc0();
   if (*(int **)(param_1 + 0xb0) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 0xb0) + 0x18))(*(undefined4 *)(param_1 + 0x84));
+    ((SCVtbl_6_1*)(*(int **)(param_1 + 0xb0)))->v((int)(*(undefined4 *)(param_1 + 0x84)));
   }
   if (*(int **)(param_1 + 0xa8) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 0xa8) + 0x18))(*(undefined4 *)(param_1 + 0x90));
+    ((SCVtbl_6_1*)(*(int **)(param_1 + 0xa8)))->v((int)(*(undefined4 *)(param_1 + 0x90)));
   }
   return;
 }
@@ -23674,7 +23744,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d40250(int param_2)
   int param_1 = (int )this;
   thunk_FUN_10d40300();
   if (param_2 != 0) {
-    (**(code **)(*(int *)(param_1 + -0x80) + 0x110))(0);
+    ((SCVtbl_68_1*)((int *)(param_1 + -0x80)))->v((int)(0));
   }
   return;
 }
@@ -23688,7 +23758,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d40290(int param_2)
   int param_1 = (int )this;
   thunk_FUN_10d40300();
   if (param_2 != 0) {
-    (**(code **)(*(int *)(param_1 + -0x80) + 0x110))(0);
+    ((SCVtbl_68_1*)((int *)(param_1 + -0x80)))->v((int)(0));
   }
   return;
 }
@@ -23702,7 +23772,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d402c0(int param_2)
   int param_1 = (int )this;
   thunk_FUN_10d40300();
   if (param_2 != 0) {
-    (**(code **)(*(int *)(param_1 + -0x80) + 0x110))(0);
+    ((SCVtbl_68_1*)((int *)(param_1 + -0x80)))->v((int)(0));
   }
   return;
 }
@@ -23720,7 +23790,7 @@ bool __fastcall FUN_10d422d0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x28) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x28) + 0x28))(), 0);
+    uVar1 = (uint)(((SCVtbl_10_0*)(*(int **)(param_1 + 0x28)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -23789,8 +23859,8 @@ void __thiscall Recovered_Bulk::m_FUN_10d440e0(undefined4 param_2,SCStr *param_3
   
   bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIAlarmManager:onAlarmsChanged"), 0);
   if (bVar1) {
-    (**(code **)(*(int *)(param_1 + -0x80) + 0x16c))();
-    (**(code **)(*(int *)(param_1 + -0x80) + 0x110))(0);
+    ((SCVtbl_91_0*)((int *)(param_1 + -0x80)))->v();
+    ((SCVtbl_68_1*)((int *)(param_1 + -0x80)))->v((int)(0));
   }
   return;
 }
@@ -23807,7 +23877,7 @@ undefined4 __fastcall FUN_10d44fa0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x38))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_14_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(7);
@@ -23825,7 +23895,7 @@ undefined4 __fastcall FUN_10d44fc0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x10) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x10) + 0x38))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_14_0*)(*(int **)(param_1 + 0x10)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(7);
@@ -23843,7 +23913,7 @@ undefined4 __fastcall FUN_10d44fe0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x38))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_14_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(7);
@@ -23861,7 +23931,7 @@ undefined4 __fastcall FUN_10d45e50(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x18))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_6_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -23879,7 +23949,7 @@ undefined4 __fastcall FUN_10d45e70(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x10) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x10) + 0x18))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_6_0*)(*(int **)(param_1 + 0x10)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -23897,7 +23967,7 @@ undefined4 __fastcall FUN_10d45e90(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x18))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_6_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -23919,7 +23989,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10d45eb0(int *param_2,uint param_3)
   piVar1 = (int *)(*(int **)(*(int *)(param_1 + 0x84) + param_3 * 8), 0);
   *param_2 = (int)((int)piVar1);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
+    ((SCVtbl_1_0*)(piVar1))->v();
   }
   return (int *)(param_2);
 }
@@ -23985,7 +24055,7 @@ undefined4 __fastcall FUN_10d462d0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x3c))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_15_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -24003,7 +24073,7 @@ undefined4 __fastcall FUN_10d462f0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x10) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x10) + 0x3c))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_15_0*)(*(int **)(param_1 + 0x10)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -24021,7 +24091,7 @@ undefined4 __fastcall FUN_10d46310(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x3c))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_15_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -24050,7 +24120,7 @@ undefined4 __fastcall FUN_10d46760(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x24))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_9_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(1);
@@ -24068,7 +24138,7 @@ undefined4 __fastcall FUN_10d46780(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x10) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x10) + 0x24))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_9_0*)(*(int **)(param_1 + 0x10)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(1);
@@ -24086,7 +24156,7 @@ undefined4 __fastcall FUN_10d467a0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x18) + 0x24))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_9_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(1);
@@ -24113,15 +24183,15 @@ void __fastcall FUN_10d46830(int param_1)
   int iVar1;
   
   thunk_FUN_104d98f0();
-  iVar1 = (int)((**(code **)(**(int **)(param_1 + 0xb8) + 0x1c))(), 0);
+  iVar1 = (int)(((SCVtbl_7_0*)(*(int **)(param_1 + 0xb8)))->v(), 0);
   if (iVar1 == 5) {
                     
                     
-    (**(code **)(**(int **)(param_1 + 0xb8) + 100))();
+    ((SCVtbl_25_0*)(*(int **)(param_1 + 0xb8)))->v();
     return;
   }
   if (iVar1 == 0) {
-    (**(code **)(**(int **)(param_1 + 0xb8) + 0x14))(param_1 + 0x80);
+    ((SCVtbl_5_1*)(*(int **)(param_1 + 0xb8)))->v((int)(param_1 + 0x80));
   }
   return;
 }
@@ -24133,8 +24203,8 @@ void __fastcall FUN_10d46830(int param_1)
 void __fastcall FUN_10d468e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
-  (**(code **)(*(int *)(param_1 + -0xac) + 0x16c))();
-  (**(code **)(*(int *)(param_1 + -0xac) + 0x110))(0);
+  ((SCVtbl_91_0*)((int *)(param_1 + -0xac)))->v();
+  ((SCVtbl_68_1*)((int *)(param_1 + -0xac)))->v((int)(0));
   return;
 }
 
@@ -24171,7 +24241,7 @@ bool __fastcall FUN_10d49e90(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x18) + 0x28))(), 0);
+    uVar1 = (uint)(((SCVtbl_10_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -24190,7 +24260,7 @@ bool __fastcall FUN_10d49eb0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x10) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x10) + 0x28))(), 0);
+    uVar1 = (uint)(((SCVtbl_10_0*)(*(int **)(param_1 + 0x10)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -24209,7 +24279,7 @@ bool __fastcall FUN_10d49ed0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x18) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x18) + 0x28))(), 0);
+    uVar1 = (uint)(((SCVtbl_10_0*)(*(int **)(param_1 + 0x18)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -24323,7 +24393,7 @@ void __fastcall FUN_10d4b930(int *param_1)
 
 
   if ((int *)*param_1 != (int *)((0x0))) {
-    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    ((SCVtbl_2_1*)((int *)*param_1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
   }
 
   return;
@@ -24496,7 +24566,7 @@ undefined1 __fastcall FUN_10d507d0(int param_1)
   char cVar1;
   
   if (*(int **)(param_1 + 8) != (int *)((0x0))) {
-    cVar1 = (char)((**(code **)(**(int **)(param_1 + 8) + 0x28))(), 0);
+    cVar1 = (char)(((SCVtbl_10_0*)(*(int **)(param_1 + 8)))->v(), 0);
     if (cVar1 == '\0') {
       return (undefined1)(0);
     }
@@ -24514,7 +24584,7 @@ undefined4 __fastcall FUN_10d50800(int param_1)
   char cVar1;
   
   if (*(int **)(param_1 + 0x288) != (int *)((0x0))) {
-    cVar1 = (char)((**(code **)(**(int **)(param_1 + 0x288) + 0x24))(), 0);
+    cVar1 = (char)(((SCVtbl_9_0*)(*(int **)(param_1 + 0x288)))->v(), 0);
     if (cVar1 != '\0') {
       return (undefined4)(1);
     }
@@ -24533,7 +24603,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d50d00(undefined4 param_2)
   
   iVar1 = (int)(*(int *)(param_1 + 0x288));
   if ((iVar1 != 0) || (iVar1 = (int)(*(int *)(param_1 + 0x290)), iVar1 != 0)) {
-    (**(code **)(*(int *)(iVar1 + 8) + 0x14))(0);
+    ((SCVtbl_5_1*)((int *)(iVar1 + 8)))->v((int)(0));
   }
   *(undefined1*)(param_1 + 0x298) = (undefined1)(0);
   thunk_FUN_1021b750((int)(param_2));
@@ -24551,7 +24621,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d515e0(undefined4 param_2)
   if (*(int **)(param_1 + 0x288) != (int *)((0x0))) {
                     
                     
-    (**(code **)(**(int **)(param_1 + 0x288) + 0x2c))();
+    ((SCVtbl_11_0*)(*(int **)(param_1 + 0x288)))->v();
     return;
   }
   return;
@@ -24619,7 +24689,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_10d540a0(undefined4 param_2,SCStr
   
   bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIController:onConnectivityStateChanged"), 0);
   if (bVar1) {
-    (**(code **)(*(int *)*param_1 + 0x110))(0);
+    ((SCVtbl_68_1*)((int *)*param_1))->v((int)(0));
   }
   return (undefined4 *)(param_2);
 }
@@ -24739,7 +24809,7 @@ void __thiscall Recovered_Bulk::m_FUN_10d54440(undefined4 param_2,SCStr *param_3
   
   bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIController:onConnectivityStateChanged"), 0);
   if (bVar1) {
-    (**(code **)(**(int **)(param_1 + 4) + 0x110))(0);
+    ((SCVtbl_68_1*)(*(int **)(param_1 + 4)))->v((int)(0));
   }
   return;
 }
@@ -24828,7 +24898,7 @@ undefined4 __fastcall FUN_10d54d40(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x20) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x20) + 0x38))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_14_0*)(*(int **)(param_1 + 0x20)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(7);
@@ -24846,7 +24916,7 @@ undefined4 __fastcall FUN_10d553a0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x20) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x20) + 0x18))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_6_0*)(*(int **)(param_1 + 0x20)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -24906,7 +24976,7 @@ undefined4 __fastcall FUN_10d55ac0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x20) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x20) + 0x3c))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_15_0*)(*(int **)(param_1 + 0x20)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -24924,7 +24994,7 @@ undefined4 __fastcall FUN_10d56df0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x20) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x20) + 0x24))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_9_0*)(*(int **)(param_1 + 0x20)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(1);
@@ -24948,9 +25018,9 @@ undefined4 *  __stdcall FUN_10d57050(SCStr *param_1)
 void __fastcall FUN_10d57bf0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
-  (**(code **)(*(int *)(param_1 + -0x94) + 0x160))();
+  ((SCVtbl_88_0*)((int *)(param_1 + -0x94)))->v();
   thunk_FUN_10d55d20();
-  (**(code **)(*(int *)(param_1 + -0x94) + 0x15c))();
+  ((SCVtbl_87_0*)((int *)(param_1 + -0x94)))->v();
   return;
 }
 
@@ -24967,7 +25037,7 @@ bool __fastcall FUN_10d58c00(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x20) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x20) + 0x28))(), 0);
+    uVar1 = (uint)(((SCVtbl_10_0*)(*(int **)(param_1 + 0x20)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25042,7 +25112,7 @@ bool __fastcall FUN_10d59c40(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0xd8))(), 0);
+    uVar1 = (uint)(((SCVtbl_54_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25109,7 +25179,7 @@ void __fastcall FUN_10d59e20(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    (**(code **)(**(int **)(param_1 + 0x88) + 0xc4))();
+    ((SCVtbl_49_0*)(*(int **)(param_1 + 0x88)))->v();
     return;
   }
   return;
@@ -25123,7 +25193,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10d59ee0(undefined4 param_2)
 {
   int param_1 = (int )this;
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 0x88) + 0xe8))(param_2);
+    ((SCVtbl_58_1*)(*(int **)(param_1 + 0x88)))->v((int)(param_2));
     return (undefined4)(param_2);
   }
   createPropertyBag();
@@ -25142,7 +25212,7 @@ undefined4 __fastcall FUN_10d59f20(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x88) + 0x50))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_20_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(1);
@@ -25160,7 +25230,7 @@ undefined4 __fastcall FUN_10d59f40(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x88) + 0x54))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_21_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -25178,7 +25248,7 @@ undefined4 __fastcall FUN_10d5a0c0(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x88) + 100))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_25_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -25196,7 +25266,7 @@ undefined4 __fastcall FUN_10d5a1b0(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x88) + 0x30))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_12_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -25214,7 +25284,7 @@ undefined4 __fastcall FUN_10d5a1e0(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x88) + 0xb8))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_46_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -25232,7 +25302,7 @@ undefined4 __fastcall FUN_10d5a200(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x88) + 0xbc))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_47_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -25250,7 +25320,7 @@ undefined4 __fastcall FUN_10d5a220(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x88) + 0x40))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_16_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(7);
@@ -25264,7 +25334,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10d5a240(SCStr *param_2,undefined4 para
 {
   int param_1 = (int )this;
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 0x88) + 0x38))(param_2,param_3,param_4);
+    ((SCVtbl_14_3*)(*(int **)(param_1 + 0x88)))->v((int)(param_2),(int)(param_3),(int)(param_4));
     return (SCStr *)(param_2);
   }
   ((SCStr *)(param_2))->int_allocRep("");
@@ -25283,7 +25353,7 @@ undefined4 __fastcall FUN_10d5a300(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x88) + 0x4c))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_19_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -25301,7 +25371,7 @@ undefined4 __fastcall FUN_10d5a320(int param_1, unsigned int recovered_unused_st
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x88) + 0x48))(), 0);
+    uVar1 = (undefined4)(((SCVtbl_18_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (undefined4)(uVar1);
   }
   return (undefined4)(0);
@@ -25315,7 +25385,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10d5a340(SCStr *param_2,undefined4 para
 {
   int param_1 = (int )this;
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 0x88) + 0x24))(param_2,param_3);
+    ((SCVtbl_9_2*)(*(int **)(param_1 + 0x88)))->v((int)(param_2),(int)(param_3));
     return (SCStr *)(param_2);
   }
   ((SCStr *)(param_2))->int_allocRep("");
@@ -25330,7 +25400,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10d5a3b0(SCStr *param_2)
 {
   int param_1 = (int )this;
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 0x88) + 0x1c))(param_2);
+    ((SCVtbl_7_1*)(*(int **)(param_1 + 0x88)))->v((int)(param_2));
     return (SCStr *)(param_2);
   }
   ((SCStr *)(param_2))->int_allocRep("");
@@ -25345,7 +25415,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10d5a430(SCStr *param_2,undefined4 para
 {
   int param_1 = (int )this;
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
-    (**(code **)(**(int **)(param_1 + 0x88) + 0xe4))(param_2,param_3);
+    ((SCVtbl_57_2*)(*(int **)(param_1 + 0x88)))->v((int)(param_2),(int)(param_3));
     return (SCStr *)(param_2);
   }
   ((SCStr *)(param_2))->m_op_ctor((SCStr *)&DAT_121a07b0);
@@ -25366,7 +25436,7 @@ bool __fastcall FUN_10d5a4e0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0x44))(), 0);
+    uVar1 = (uint)(((SCVtbl_17_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25385,7 +25455,7 @@ bool __fastcall FUN_10d5a700(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0x84))(), 0);
+    uVar1 = (uint)(((SCVtbl_33_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25404,7 +25474,7 @@ bool __fastcall FUN_10d5a720(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0x90))(), 0);
+    uVar1 = (uint)(((SCVtbl_36_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25423,7 +25493,7 @@ bool __fastcall FUN_10d5a740(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0x6c))(), 0);
+    uVar1 = (uint)(((SCVtbl_27_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25442,7 +25512,7 @@ bool __fastcall FUN_10d5a760(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0x60))(), 0);
+    uVar1 = (uint)(((SCVtbl_24_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25463,7 +25533,7 @@ bool __fastcall FUN_10d5a780(int param_1)
     if (((char)uVar1 == '\0') && (*(int **)(param_1 + 0x88) != (int *)((0x0)))) {
                     
                     
-      uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0x80))(), 0);
+      uVar1 = (uint)(((SCVtbl_32_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
       return (uint)(uVar1);
     }
   }
@@ -25483,7 +25553,7 @@ bool __fastcall FUN_10d5a7e0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0x20))(), 0);
+    uVar1 = (uint)(((SCVtbl_8_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25502,7 +25572,7 @@ bool __fastcall FUN_10d5a800(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0x70))(), 0);
+    uVar1 = (uint)(((SCVtbl_28_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25525,7 +25595,7 @@ undefined4 __fastcall FUN_10d5a910(int param_1)
       if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-        uVar2 = (undefined4)((**(code **)(**(int **)(param_1 + 0x88) + 0x5c))(), 0);
+        uVar2 = (undefined4)(((SCVtbl_23_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
         return (undefined4)(uVar2);
       }
       return (undefined4)(0);
@@ -25544,7 +25614,7 @@ void __fastcall FUN_10d5a960(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int *)(param_1 + 8) != 0) {
                     
                     
-    (**(code **)(*(int *)(*(int *)(param_1 + 8) + 0x80) + 0x14))();
+    ((SCVtbl_5_0*)((int *)(*(int *)(param_1 + 8) + 0x80)))->v();
     return;
   }
   return;
@@ -25563,7 +25633,7 @@ bool __fastcall FUN_10d5aa70(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0x94))(), 0);
+    uVar1 = (uint)(((SCVtbl_37_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25579,7 +25649,7 @@ void __fastcall FUN_10d5add0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    (**(code **)(**(int **)(param_1 + 0x88) + 0xdc))();
+    ((SCVtbl_55_0*)(*(int **)(param_1 + 0x88)))->v();
     return;
   }
   return;
@@ -25595,7 +25665,7 @@ void __fastcall FUN_10d5adf0(int param_1, unsigned int recovered_unused_stack_0,
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    (**(code **)(**(int **)(param_1 + 0x88) + 200))();
+    ((SCVtbl_50_0*)(*(int **)(param_1 + 0x88)))->v();
     return;
   }
   return;
@@ -25614,7 +25684,7 @@ bool __fastcall FUN_10d5ae10(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0xcc))(), 0);
+    uVar1 = (uint)(((SCVtbl_51_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25633,7 +25703,7 @@ bool __fastcall FUN_10d5ae30(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0xd0))(), 0);
+    uVar1 = (uint)(((SCVtbl_52_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;
@@ -25652,7 +25722,7 @@ bool __fastcall FUN_10d5b120(int param_1)
   if (*(int **)(param_1 + 0x88) != (int *)((0x0))) {
                     
                     
-    uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0xc0))(), 0);
+    uVar1 = (uint)(((SCVtbl_48_0*)(*(int **)(param_1 + 0x88)))->v(), 0);
     return (uint)(uVar1);
   }
   return (bool)0;

@@ -2770,6 +2770,10 @@ extern int __stdcall thunk_FUN_10c5e210(int a1,int a2);
 extern int __stdcall thunk_FUN_10d9ec90(int a1,int a2);
 extern int __stdcall thunk_FUN_10ed00f0(int a1,int a2);
 extern int __stdcall thunk_FUN_111a4830(int a1,int a2);
+struct SCVtbl_0_0 { virtual int v(void); };
+struct SCVtbl_0_1 { virtual int v(int a1); };
+struct SCVtbl_2_0 { virtual void _p0(); virtual void _p1(); virtual int v(void); };
+struct SCVtbl_4_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(int a1); };
 struct SCVtbl_1_0 { virtual void _p0(); virtual int v(void); };
 #line 1 "ENTRY_117893b0"
 void FUN_117893b0(void){
@@ -12585,7 +12589,7 @@ void FUN_1180b290(void)
 
 {
   if ((int *)(PTR_PTR_12119b74) != (int *)(0x0)) {
-    (**(code **)(*(int *)PTR_PTR_12119b74 + 0x10)) ((undefined **)PTR_PTR_12119b74 != (undefined **)&PTR_vftable_12119b50);
+    ((SCVtbl_4_1*)((int *)PTR_PTR_12119b74))->v((int)((undefined **)PTR_PTR_12119b74 != (undefined **)&PTR_vftable_12119b50));
     PTR_PTR_12119b74 = (int *)((undefined *)0x0);
   }
   return;
@@ -12721,9 +12725,9 @@ void FUN_1185bd50(void)
   
   thunk_FUN_10c7d430();
   if ((int *)(DAT_121a75e4) != (int *)(0x0)) {
-    puVar1 = (undefined4 *)((undefined4 *)(**(code **)(*(int *)(uint)(DAT_121a75e4) + 8))(), 0);
+    puVar1 = (undefined4 *)((undefined4 *)((SCVtbl_2_0*)((int *)(uint)(DAT_121a75e4)))->v(), 0);
     if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
   return;
@@ -12740,9 +12744,9 @@ void FUN_1185bd80(void)
   
   thunk_FUN_10c7d430();
   if ((int *)(DAT_121a75c8) != (int *)(0x0)) {
-    puVar1 = (undefined4 *)((undefined4 *)(**(code **)(*(int *)(uint)(DAT_121a75c8) + 8))(), 0);
+    puVar1 = (undefined4 *)((undefined4 *)((SCVtbl_2_0*)((int *)(uint)(DAT_121a75c8)))->v(), 0);
     if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-      (**(code **)*puVar1)(1);
+      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
     }
   }
   return;
@@ -12778,7 +12782,7 @@ void FUN_11862620(void)
     ((int *)&DAT_122f5e0c)[1] = (int)(iVar2);
     UNLOCK();
     if (iVar2 == 0) {
-      (**(code **)*piVar3)();
+      ((SCVtbl_0_0*)(piVar3))->v();
       LOCK();
       piVar1 = (int *)(piVar3 + 2);
       iVar2 = (int)(*piVar1);
@@ -12815,7 +12819,7 @@ void FUN_118626e0(void)
 
 {
   if ((int *)(DAT_122f646c) != (int *)(0x0)) {
-    (**(code **)(*(int *)(uint)(DAT_122f646c) + 0x10))((int *)(DAT_122f646c) != (int *)&DAT_122f6448);
+    ((SCVtbl_4_1*)((int *)(uint)(DAT_122f646c)))->v((int)((int *)(DAT_122f646c) != (int *)&DAT_122f6448));
     DAT_122f646c = (int)((int *)0x0);
   }
   return;
