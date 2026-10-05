@@ -2819,6 +2819,8 @@ template<class... A> int FUN_10262f50(A...);
 template<class... A> int FUN_10263300(A...);
 extern void __fastcall FUN_1022df10(void *param_1);
 
+extern void __fastcall thunk_FUN_1022df10(void *param_1);
+
 // Reference entry 101fe5c0; body size 6 bytes.
 #line 1 "ENTRY_101fe5c0"
 
@@ -12962,7 +12964,7 @@ void __fastcall FUN_1022de30(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 
@@ -12992,7 +12994,7 @@ void __fastcall FUN_1022de60(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 
@@ -13007,7 +13009,7 @@ void __fastcall FUN_1022de70(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 
@@ -13022,7 +13024,7 @@ void __fastcall FUN_1022dee0(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 
@@ -13037,7 +13039,7 @@ void __fastcall FUN_1022def0(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 
@@ -13052,7 +13054,7 @@ void __fastcall FUN_1022df00(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 
@@ -13067,7 +13069,7 @@ void __fastcall FUN_1022e0c0(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 
@@ -13082,7 +13084,7 @@ void __fastcall FUN_1022e0d0(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 
@@ -13097,7 +13099,7 @@ void __fastcall FUN_1022e1d0(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 
@@ -13245,7 +13247,7 @@ void __fastcall FUN_1022ef80(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 
@@ -13260,7 +13262,7 @@ void __fastcall FUN_1022ef90(int *param_1)
 {
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
 
-  FUN_1022df10(param_1);
+  thunk_FUN_1022df10(param_1);
 
 }
 

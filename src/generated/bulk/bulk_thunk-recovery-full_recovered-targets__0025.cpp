@@ -2931,6 +2931,8 @@ template<class... A> int FUN_1109cee0(A...);
 template<class... A> int FUN_1109cef0(A...);
 extern void __fastcall FUN_101ba0d0(void *param_1);
 
+extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
+
 // Reference entry 10ff7000; body size 6 bytes.
 #line 1 "ENTRY_10ff7000"
 
@@ -5698,7 +5700,7 @@ void __fastcall FUN_11017c70(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -9874,7 +9876,7 @@ void __fastcall FUN_11026c20(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -15769,7 +15771,7 @@ void __fastcall FUN_1105f5d0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -16367,7 +16369,7 @@ void __fastcall FUN_11064c70(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -21590,7 +21592,7 @@ void __fastcall FUN_110786f0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 

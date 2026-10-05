@@ -2871,6 +2871,8 @@ extern void __fastcall FUN_101ba0d0(void *param_1);
 extern void __fastcall FUN_1049fae0(void *param_1);
 extern void __fastcall FUN_106de7d0(void *param_1);
 
+extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
+
 // Reference entry 10abdac0; body size 11 bytes.
 #line 1 "ENTRY_10abdac0"
 
@@ -25491,7 +25493,7 @@ void __fastcall FUN_10b6d370(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -28361,7 +28363,7 @@ void __fastcall FUN_10b7cb20(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 

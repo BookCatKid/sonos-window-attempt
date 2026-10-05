@@ -2528,6 +2528,8 @@ template<class... A> int FUN_10c35690(A...);
 template<class... A> int FUN_10c35c20(A...);
 extern void __fastcall FUN_106845c0(void *param_1);
 
+extern void __fastcall thunk_FUN_106845c0(void *param_1);
+
 // Reference entry 10bd1ae0; body size 5 bytes.
 #line 1 "ENTRY_10bd1ae0"
 
@@ -12966,7 +12968,7 @@ void __fastcall FUN_10bf0280(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
-  FUN_106845c0(param_1);
+  thunk_FUN_106845c0(param_1);
 
 }
 
@@ -12981,7 +12983,7 @@ void __fastcall FUN_10bf02a0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
-  FUN_106845c0(param_1);
+  thunk_FUN_106845c0(param_1);
 
 }
 
@@ -12996,7 +12998,7 @@ void __fastcall FUN_10bf02b0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
-  FUN_106845c0(param_1);
+  thunk_FUN_106845c0(param_1);
 
 }
 

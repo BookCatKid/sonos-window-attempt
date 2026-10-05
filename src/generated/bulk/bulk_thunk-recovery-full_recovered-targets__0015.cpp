@@ -2933,6 +2933,9 @@ extern void __fastcall FUN_101ba0d0(void *param_1);
 extern void __fastcall FUN_106de7d0(void *param_1);
 extern void __fastcall FUN_106de840(void *param_1);
 
+extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
+extern void __fastcall thunk_FUN_106de840(void *param_1);
+
 // Reference entry 109d8e50; body size 25 bytes.
 #line 1 "ENTRY_109d8e50"
 
@@ -6088,7 +6091,7 @@ void __fastcall FUN_109f7710(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -6106,7 +6109,7 @@ void __fastcall FUN_109f7720(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -6124,7 +6127,7 @@ void __fastcall FUN_109f7740(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -27816,7 +27819,7 @@ void __fastcall FUN_10ab6190(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizType);
 
-  FUN_106de840(param_1);
+  thunk_FUN_106de840(param_1);
 
 }
 

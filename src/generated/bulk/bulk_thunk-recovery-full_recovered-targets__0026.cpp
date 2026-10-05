@@ -3127,6 +3127,11 @@ extern void __fastcall FUN_11172910(void *param_1);
 extern void __fastcall FUN_111a4f00(void *param_1);
 extern void __fastcall FUN_111feb50(void *param_1);
 
+extern void __fastcall thunk_FUN_1113e6f0(void *param_1);
+extern void __fastcall thunk_FUN_11172910(void *param_1);
+extern void __fastcall thunk_FUN_111a4f00(void *param_1);
+extern void __fastcall thunk_FUN_111feb50(void *param_1);
+
 // Reference entry 1109cf00; body size 6 bytes.
 #line 1 "ENTRY_1109cf00"
 
@@ -12070,7 +12075,7 @@ void __fastcall FUN_110b6c30(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
 
-  FUN_1113e6f0(param_1);
+  thunk_FUN_1113e6f0(param_1);
 
 }
 
@@ -12952,7 +12957,7 @@ void __fastcall FUN_110c09c0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
 
-  FUN_1113e6f0(param_1);
+  thunk_FUN_1113e6f0(param_1);
 
 }
 
@@ -12967,7 +12972,7 @@ void __fastcall FUN_110c0b50(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RefCountBase);
 
-  FUN_111a4f00(param_1);
+  thunk_FUN_111a4f00(param_1);
 
 }
 
@@ -14549,7 +14554,7 @@ void __fastcall FUN_110c7e40(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCM);
 
-  FUN_11172910(param_1);
+  thunk_FUN_11172910(param_1);
 
 }
 
@@ -18638,7 +18643,7 @@ void __fastcall FUN_110e9000(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RContentProvider);
 
-  FUN_111feb50(param_1);
+  thunk_FUN_111feb50(param_1);
 
 }
 
@@ -24463,7 +24468,7 @@ void __fastcall FUN_1110b7c0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
 
-  FUN_1113e6f0(param_1);
+  thunk_FUN_1113e6f0(param_1);
 
 }
 

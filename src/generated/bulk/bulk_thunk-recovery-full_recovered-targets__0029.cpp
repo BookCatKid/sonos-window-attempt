@@ -3415,6 +3415,9 @@ template<class... A> int FUN_112ad1c0(A...);
 extern void __fastcall FUN_1003d5d7(void *param_1);
 extern void __fastcall FUN_112878e0(void *param_1);
 
+extern void __fastcall thunk_FUN_1003d5d7(void *param_1);
+extern void __fastcall thunk_FUN_112878e0(void *param_1);
+
 // Reference entry 11227a70; body size 11 bytes.
 #line 1 "ENTRY_11227a70"
 
@@ -5686,7 +5689,7 @@ void __fastcall FUN_11236090(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
 
-  FUN_1003d5d7(param_1);
+  thunk_FUN_1003d5d7(param_1);
 
 }
 
@@ -14227,7 +14230,7 @@ void __fastcall FUN_112664f0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RWritableStreamWithHeaders);
 
-  FUN_112878e0(param_1);
+  thunk_FUN_112878e0(param_1);
 
 }
 
@@ -18346,7 +18349,7 @@ void __fastcall FUN_112765f0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
 
-  FUN_1003d5d7(param_1);
+  thunk_FUN_1003d5d7(param_1);
 
 }
 

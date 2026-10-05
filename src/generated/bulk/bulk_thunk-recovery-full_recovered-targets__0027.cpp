@@ -2894,6 +2894,9 @@ template<class... A> int FUN_1117e980(A...);
 extern void __fastcall FUN_101ba0d0(void *param_1);
 extern void __fastcall FUN_1113e6f0(void *param_1);
 
+extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
+extern void __fastcall thunk_FUN_1113e6f0(void *param_1);
+
 // Reference entry 1111e150; body size 7 bytes.
 #line 1 "ENTRY_1111e150"
 
@@ -3934,7 +3937,7 @@ void __fastcall FUN_1111f2e0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -9679,7 +9682,7 @@ void __fastcall FUN_11135ff0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -9697,7 +9700,7 @@ void __fastcall FUN_11136000(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -9929,7 +9932,7 @@ void __fastcall FUN_111392a0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -10298,7 +10301,7 @@ void __fastcall FUN_1113bfe0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
 
-  FUN_1113e6f0(param_1);
+  thunk_FUN_1113e6f0(param_1);
 
 }
 
@@ -10832,7 +10835,7 @@ void __fastcall FUN_1113d050(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
 
-  FUN_1113e6f0(param_1);
+  thunk_FUN_1113e6f0(param_1);
 
 }
 
@@ -11845,7 +11848,7 @@ void __fastcall FUN_11142200(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -11877,7 +11880,7 @@ void __fastcall FUN_11142270(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -11895,7 +11898,7 @@ void __fastcall FUN_11142280(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
@@ -20064,7 +20067,7 @@ void __fastcall FUN_1116ae60(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
-  FUN_101ba0d0(param_1);
+  thunk_FUN_101ba0d0(param_1);
 
 }
 
