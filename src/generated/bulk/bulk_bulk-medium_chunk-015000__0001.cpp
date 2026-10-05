@@ -1510,7 +1510,7 @@ undefined4 FUN_112c4c80(undefined1 *param_1,int param_2,undefined4 param_3);
 template<class... A> int FUN_112c4c80(A...);
 undefined4 FUN_112c4db0(byte *param_1,int param_2);
 template<class... A> int FUN_112c4db0(A...);
-undefined4 *  FUN_112c6ba0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void  FUN_112c6ba0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5);
 template<class... A> int FUN_112c6ba0(A...);
 void FUN_112c6bd0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
@@ -1524,7 +1524,7 @@ FUN_112c7f50(int param_1,int *param_2,uint *param_3,undefined1 param_4,undefined
 template<class... A> int FUN_112c7f50(A...);
 uint FUN_112c7fa0(int param_1,uint param_2);
 template<class... A> int FUN_112c7fa0(A...);
-undefined4 *  FUN_112c8730(undefined4 param_1);
+void  FUN_112c8730(undefined4 param_1);
 template<class... A> int FUN_112c8730(A...);
 void FUN_112c8760(undefined4 param_1,undefined4 param_2,int param_3);
 template<class... A> int FUN_112c8760(A...);
@@ -1982,7 +1982,7 @@ undefined4 FUN_113b99b0(undefined4 param_1,undefined4 *param_2);
 template<class... A> int FUN_113b99b0(A...);
 undefined * FUN_113ba010(uint param_1);
 template<class... A> int FUN_113ba010(A...);
-undefined4 *  FUN_113ba9b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void  FUN_113ba9b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6);
 template<class... A> int FUN_113ba9b0(A...);
 undefined4 FUN_113bcb10(byte *param_1,int param_2,uint *param_3);
@@ -2523,7 +2523,7 @@ void FUN_11445e20(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10);
 template<class... A> int FUN_11445e20(A...);
-undefined4 *  FUN_11445f20(int param_1);
+void  FUN_11445f20(int param_1);
 template<class... A> int FUN_11445f20(A...);
 void FUN_11445f50(void *param_1);
 template<class... A> int FUN_11445f50(A...);
@@ -2541,7 +2541,7 @@ void FUN_11447710(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
 template<class... A> int FUN_11447710(A...);
 int FUN_11447750(int param_1,int param_2);
 template<class... A> int FUN_11447750(A...);
-undefined4 *  FUN_11447830(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void  FUN_11447830(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6);
 template<class... A> int FUN_11447830(A...);
 int FUN_11447da0(int *param_1);
@@ -2756,7 +2756,7 @@ void FUN_1146c740(int param_1,undefined4 param_2);
 template<class... A> int FUN_1146c740(A...);
 void FUN_1146c960(int param_1,uint param_2,uint param_3,char *param_4);
 template<class... A> int FUN_1146c960(A...);
-undefined4 *  FUN_1146c9b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
+void  FUN_1146c9b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 template<class... A> int FUN_1146c9b0(A...);
 undefined4 *  FUN_11472b30(int param_1);
 template<class... A> int FUN_11472b30(A...);
@@ -4879,12 +4879,11 @@ undefined4 FUN_112c4db0(byte *param_1,int param_2)
 // Reference entry 112c6ba0; body size 31 bytes.
 #line 1 "ENTRY_112c6ba0"
 
-undefined4 *  FUN_112c6ba0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void  FUN_112c6ba0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5)
 
 {
   FUN_112c4de0(0x14,param_1,param_2,param_3,param_4,param_5);
-  return (undefined4 *)(param_1);
 }
 
 
@@ -4946,12 +4945,11 @@ uint FUN_112c7fa0(int param_1,uint param_2)
 // Reference entry 112c8730; body size 31 bytes.
 #line 1 "ENTRY_112c8730"
 
-undefined4 *  FUN_112c8730(undefined4 param_1)
+void  FUN_112c8730(undefined4 param_1)
 
 {
   thunk_FUN_113d1ae0(param_1,2);
   thunk_FUN_113d1d90(param_1,&DAT_119e9b14,0x10);
-  return (undefined4 *)(param_1);
 }
 
 
@@ -9360,12 +9358,11 @@ undefined * FUN_113ba010(uint param_1)
 // Reference entry 113ba9b0; body size 37 bytes.
 #line 1 "ENTRY_113ba9b0"
 
-undefined4 *  FUN_113ba9b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void  FUN_113ba9b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6)
 
 {
   FUN_113ba9e0(2,0x34,param_1,param_2,param_3,param_4,param_5,param_6);
-  return (undefined4 *)(param_1);
 }
 
 
@@ -13543,14 +13540,13 @@ void FUN_11445e20(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
 // Reference entry 11445f20; body size 34 bytes.
 #line 1 "ENTRY_11445f20"
 
-undefined4 *  FUN_11445f20(int param_1)
+void  FUN_11445f20(int param_1)
 
 {
   if (param_1 != 0) {
     FUN_114125b0(param_1 + 0x38);
     thunk_FUN_11423ed0(param_1,0x80);
   }
-  return (undefined4 *)(param_1);
 }
 
 
@@ -13679,7 +13675,7 @@ int FUN_11447750(int param_1,int param_2)
 // Reference entry 11447830; body size 49 bytes.
 #line 1 "ENTRY_11447830"
 
-undefined4 *  FUN_11447830(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void  FUN_11447830(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6)
 
 {
@@ -13687,7 +13683,6 @@ undefined4 *  FUN_11447830(undefined4 param_1,undefined4 param_2,undefined4 para
   
   local_4 = (undefined4)(1);
   thunk_FUN_11447c10(param_1,param_2,&local_4,1,param_3,param_4,param_5,param_6);
-  return (undefined4 *)(param_1);
 }
 
 
@@ -15731,7 +15726,7 @@ void FUN_1146c960(int param_1,uint param_2,uint param_3,char *param_4)
 // Reference entry 1146c9b0; body size 30 bytes.
 #line 1 "ENTRY_1146c9b0"
 
-undefined4 *  FUN_1146c9b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+void  FUN_1146c9b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
   if (param_1 != 0) {
@@ -15739,7 +15734,6 @@ undefined4 *  FUN_1146c9b0(int param_1,undefined4 param_2,undefined4 param_3,und
     *(undefined4*)(param_1 + 0x4c) = (undefined4)(param_3);
     *(undefined4*)(param_1 + 0x50) = (undefined4)(param_4);
   }
-  return (undefined4 *)(param_1);
 }
 
 

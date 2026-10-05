@@ -3189,7 +3189,7 @@ template<class... A> int FUN_1129f3d0(A...);
 template<class... A> int FUN_1129f4c0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_1129f680(int param_1);
 template<class... A> int FUN_1129f680(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 *  FUN_1129f690(void *param_1,void *param_2);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void  FUN_1129f690(void *param_1,void *param_2);
 template<class... A> int FUN_1129f690(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool FUN_1129f750(int param_1);
 template<class... A> int FUN_1129f750(A...);
@@ -3298,7 +3298,7 @@ template<class... A> int FUN_112a6460(A...);
 template<class... A> int FUN_112a6490(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_112a64c0(ushort *param_1,ushort *param_2);
 template<class... A> int FUN_112a64c0(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 *  FUN_112a64f0(int *param_1);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void  FUN_112a64f0(int *param_1);
 template<class... A> int FUN_112a64f0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112a6520(void);
 template<class... A> int FUN_112a6520(A...);
@@ -31247,7 +31247,7 @@ undefined4 FUN_1129f680(int param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-undefined4 *  FUN_1129f690(void *param_1,void *param_2)
+void  FUN_1129f690(void *param_1,void *param_2)
 
 {
   memcpy(param_1,param_2,0x2130);
@@ -31269,7 +31269,6 @@ undefined4 *  FUN_1129f690(void *param_1,void *param_2)
   *(undefined4*)((int)param_2 + 0xc0) = (undefined4)(0);
   *(undefined4*)((int)param_2 + 0xc4) = (undefined4)(0);
   *(undefined4*)((int)param_2 + 0x24) = (undefined4)(0);
-  return (undefined4 *)(param_1);
 }
 
 
@@ -32807,14 +32806,13 @@ int FUN_112a64c0(ushort *param_1,ushort *param_2)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-undefined4 *  FUN_112a64f0(int *param_1)
+void  FUN_112a64f0(int *param_1)
 
 {
   *(int*)(*param_1 + 4) = (int)(param_1[1]);
   *(int*)param_1[1] = (int)((int)(*param_1));
   param_1[1] = (int)(0);
   *param_1 = (int)(0);
-  return (undefined4 *)(param_1);
 }
 
 

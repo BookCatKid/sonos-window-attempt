@@ -2404,7 +2404,7 @@ template<class... A> int FUN_10c7da90(A...);
 template<class... A> int FUN_10c7dd00(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void * FUN_10c7dd70(uint param_1);
 template<class... A> int FUN_10c7dd70(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 *  FUN_10c7dfa0(void *param_1,size_t param_2,char param_3);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void  FUN_10c7dfa0(void *param_1,size_t param_2,char param_3);
 template<class... A> int FUN_10c7dfa0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __fastcall FUN_10c7dfe0(int *param_1);
 template<class... A> int FUN_10c7dfe0(A...);
@@ -24290,11 +24290,10 @@ void * FUN_10c7dd70(uint param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-undefined4 *  FUN_10c7dfa0(void *param_1,size_t param_2,char param_3)
+void  FUN_10c7dfa0(void *param_1,size_t param_2,char param_3)
 
 {
   memset(param_1,(int)param_3,param_2);
-  return (undefined4 *)(param_1);
 }
 
 

@@ -3177,7 +3177,7 @@ template<class... A> int FUN_1142ef90(A...);
 template<class... A> int FUN_1142f120(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_1142f150(int *param_1,uint param_2);
 template<class... A> int FUN_1142f150(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 *  FUN_11430f40(undefined4 param_1,undefined4 param_2,undefined4 param_3);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void  FUN_11430f40(undefined4 param_1,undefined4 param_2,undefined4 param_3);
 template<class... A> int FUN_11430f40(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_11431290(undefined4 param_1,undefined4 param_2,undefined4 param_3);
 template<class... A> int FUN_11431290(A...);
@@ -26977,11 +26977,10 @@ undefined4 FUN_1142f150(int *param_1,uint param_2)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-undefined4 *  FUN_11430f40(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+void  FUN_11430f40(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
   func_0x11430bf0(param_1,param_2,param_3,1);
-  return (undefined4 *)(param_1);
 }
 
 

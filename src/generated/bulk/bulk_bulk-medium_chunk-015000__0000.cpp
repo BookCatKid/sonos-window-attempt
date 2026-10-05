@@ -2521,7 +2521,7 @@ undefined4 FUN_112a9120(int param_1,int param_2);
 template<class... A> int FUN_112a9120(A...);
 bool FUN_112a9160(int *param_1,undefined4 param_2);
 template<class... A> int FUN_112a9160(A...);
-undefined4 *  FUN_112a9380(undefined4 param_1,undefined4 param_2);
+void  FUN_112a9380(undefined4 param_1,undefined4 param_2);
 template<class... A> int FUN_112a9380(A...);
 void FUN_112a94d0(int param_1);
 template<class... A> int FUN_112a94d0(A...);
@@ -24906,11 +24906,10 @@ bool FUN_112a9160(int *param_1,undefined4 param_2)
 // Reference entry 112a9380; body size 21 bytes.
 #line 1 "ENTRY_112a9380"
 
-undefined4 *  FUN_112a9380(undefined4 param_1,undefined4 param_2)
+void  FUN_112a9380(undefined4 param_1,undefined4 param_2)
 
 {
   FUN_112a8970(0,0,param_1,param_2);
-  return (undefined4 *)(param_1);
 }
 
 
