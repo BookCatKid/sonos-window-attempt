@@ -251,6 +251,140 @@ extern "C" void LAB_122f124c(void);
 extern "C" void LAB_122f63b0(void);
 extern "C" void LAB_122f6418(void);
 
+extern "C" void LAB_1000d409(void);
+extern "C" void LAB_10013746(void);
+extern "C" void LAB_100238df(void);
+extern "C" void LAB_10023cf4(void);
+extern "C" void LAB_1002e5b9(void);
+extern "C" void LAB_10036c23(void);
+extern "C" void LAB_100382f3(void);
+extern "C" void LAB_100383f7(void);
+extern "C" void LAB_1004fff7(void);
+extern "C" void LAB_1005273e(void);
+extern "C" void LAB_10056497(void);
+extern "C" void LAB_100755e5(void);
+extern "C" void LAB_10081697(void);
+extern "C" void LAB_1008a634(void);
+extern "C" void LAB_10257e60(void);
+extern "C" void LAB_1148a05a(void);
+extern "C" void LAB_1183e7d0(void);
+extern "C" void LAB_118403a0(void);
+extern "C" void LAB_11840b80(void);
+extern "C" void LAB_11840bf0(void);
+extern "C" void LAB_11840c60(void);
+extern "C" void LAB_11840cd0(void);
+extern "C" void LAB_11840d40(void);
+extern "C" void LAB_11846f40(void);
+extern "C" void LAB_11847800(void);
+extern "C" void LAB_1184e0c0(void);
+extern "C" void LAB_1184ed60(void);
+extern "C" void LAB_11857b20(void);
+extern "C" void LAB_1185d240(void);
+extern "C" void LAB_1185e3c0(void);
+extern "C" void LAB_1185e6d0(void);
+extern "C" void LAB_1185f240(void);
+extern "C" void LAB_1185f2b0(void);
+extern "C" void LAB_1185f320(void);
+extern "C" void LAB_1185f390(void);
+extern "C" void LAB_1185f400(void);
+extern "C" void LAB_118620c0(void);
+extern "C" void LAB_11862530(void);
+extern "C" void LAB_11862680(void);
+extern "C" void LAB_118626c0(void);
+extern "C" void LAB_118626d0(void);
+extern "C" void LAB_1186d2ee(void);
+extern "C" void LAB_11878fbc(void);
+extern "C" void LAB_11881128(void);
+extern "C" void LAB_11881df0(void);
+extern "C" void LAB_11881dfc(void);
+extern "C" void LAB_11881e04(void);
+extern "C" void LAB_11881e14(void);
+extern "C" void LAB_11881e34(void);
+extern "C" void LAB_11881e40(void);
+extern "C" void LAB_11881f48(void);
+extern "C" void LAB_11881fb0(void);
+extern "C" void LAB_11881ff0(void);
+extern "C" void LAB_11884794(void);
+extern "C" void LAB_118847b8(void);
+extern "C" void LAB_11887dd8(void);
+extern "C" void LAB_118895c4(void);
+extern "C" void LAB_118895e8(void);
+extern "C" void LAB_11889630(void);
+extern "C" void LAB_1188969c(void);
+extern "C" void LAB_118896c0(void);
+extern "C" void LAB_118896e4(void);
+extern "C" void LAB_11889708(void);
+extern "C" void LAB_1188972c(void);
+extern "C" void LAB_11889ae8(void);
+extern "C" void LAB_1188bcbc(void);
+extern "C" void LAB_1188bcf0(void);
+extern "C" void LAB_1188bd5c(void);
+extern "C" void LAB_1188bd80(void);
+extern "C" void LAB_1188bff0(void);
+extern "C" void LAB_1188c014(void);
+extern "C" void LAB_1188c184(void);
+extern "C" void LAB_1188c1a8(void);
+extern "C" void LAB_11931ce0(void);
+extern "C" void LAB_11931cf4(void);
+extern "C" void LAB_11931d00(void);
+extern "C" void LAB_11931d10(void);
+extern "C" void LAB_11931d28(void);
+extern "C" void LAB_11931d38(void);
+extern "C" void LAB_11931d54(void);
+extern "C" void LAB_11931d68(void);
+extern "C" void LAB_11931d7c(void);
+extern "C" void LAB_11931d8c(void);
+extern "C" void LAB_11931da4(void);
+extern "C" void LAB_11931dbc(void);
+extern "C" void LAB_11931dc8(void);
+extern "C" void LAB_11931dd8(void);
+extern "C" void LAB_11931de8(void);
+extern "C" void LAB_11931e08(void);
+extern "C" void LAB_11931e20(void);
+extern "C" void LAB_11931e30(void);
+extern "C" void LAB_11931e44(void);
+extern "C" void LAB_11931e5c(void);
+extern "C" void LAB_11931e78(void);
+extern "C" void LAB_11931e88(void);
+extern "C" void LAB_11931e98(void);
+extern "C" void LAB_11931eb4(void);
+extern "C" void LAB_119e25b0(void);
+extern "C" void LAB_119e7420(void);
+extern "C" void LAB_119e7434(void);
+extern "C" void LAB_12120e94(void);
+extern "C" void LAB_12120fd8(void);
+extern "C" void LAB_12120fdc(void);
+extern "C" void LAB_12120fe0(void);
+extern "C" void LAB_12120fe4(void);
+extern "C" void LAB_12120fe8(void);
+extern "C" void LAB_12120fec(void);
+extern "C" void LAB_121a5d90(void);
+extern "C" void LAB_121a6150(void);
+extern "C" void LAB_121a615c(void);
+extern "C" void LAB_121a6164(void);
+extern "C" void LAB_121a6168(void);
+extern "C" void LAB_121a6170(void);
+extern "C" void LAB_121a670c(void);
+extern "C" void LAB_121a69d0(void);
+extern "C" void LAB_121a6a10(void);
+extern "C" void LAB_121a6a1c(void);
+extern "C" void LAB_121a6b1c(void);
+extern "C" void LAB_121a768c(void);
+extern "C" void LAB_121a7690(void);
+extern "C" void LAB_121a7734(void);
+extern "C" void LAB_121a77ec(void);
+extern "C" void LAB_121a7878(void);
+extern "C" void LAB_121a787c(void);
+extern "C" void LAB_121a7888(void);
+extern "C" void LAB_121a788c(void);
+extern "C" void LAB_121a7898(void);
+extern "C" void LAB_122e8890(void);
+extern "C" void LAB_122e8d40(void);
+extern "C" void LAB_122f1248(void);
+extern "C" void LAB_122f124c(void);
+extern "C" void LAB_122f63b0(void);
+extern "C" void LAB_122f6418(void);
+
 
 extern int FUN_10036c23(...);
 extern int FUN_1005273e(...);
@@ -5050,6 +5184,7 @@ __declspec(naked) int FUN_100d3bd0(void)
 }
 
 
+
 // Reference entry 100d3be2; body size 4 bytes.
 #line 1 "ENTRY_100d3be2"
 
@@ -5059,6 +5194,7 @@ __declspec(naked) int FUN_100d3be2(void)
   __asm adc dword ptr [ecx], -0x18
   __asm _emit 0x0e
 }
+
 
 
 // Reference entry 100d3c07; body size 8 bytes.
@@ -5073,6 +5209,7 @@ __declspec(naked) void FUN_100d3c07(void)
 }
 
 
+
 // Reference entry 100d3c12; body size 9 bytes.
 #line 1 "ENTRY_100d3c12"
 
@@ -5085,6 +5222,7 @@ __declspec(naked) void FUN_100d3c12(void)
   __asm pop ecx
   __asm ret
 }
+
 
 
 // Reference entry 100d47d7; body size 20 bytes.
@@ -5103,6 +5241,7 @@ __declspec(naked) void FUN_100d47d7(void)
 }
 
 
+
 // Reference entry 100d56f7; body size 20 bytes.
 #line 1 "ENTRY_100d56f7"
 
@@ -5119,6 +5258,7 @@ __declspec(naked) int FUN_100d56f7(void)
 }
 
 
+
 // Reference entry 100d5a50; body size 10 bytes.
 #line 1 "ENTRY_100d5a50"
 
@@ -5128,6 +5268,7 @@ __declspec(naked) int FUN_100d5a50(void)
   __asm push offset LAB_11881df0
   __asm mov ecx, offset LAB_121a6150
 }
+
 
 
 // Reference entry 100d5a5d; body size 14 bytes.
@@ -5144,6 +5285,7 @@ __declspec(naked) int FUN_100d5a5d(void)
 }
 
 
+
 // Reference entry 100d5a80; body size 10 bytes.
 #line 1 "ENTRY_100d5a80"
 
@@ -5153,6 +5295,7 @@ __declspec(naked) int FUN_100d5a80(void)
   __asm push offset LAB_11881f48
   __asm mov ecx, offset LAB_121a615c
 }
+
 
 
 // Reference entry 100d5a8d; body size 14 bytes.
@@ -5169,6 +5312,7 @@ __declspec(naked) int FUN_100d5a8d(void)
 }
 
 
+
 // Reference entry 100d5ab0; body size 10 bytes.
 #line 1 "ENTRY_100d5ab0"
 
@@ -5178,6 +5322,7 @@ __declspec(naked) int FUN_100d5ab0(void)
   __asm push offset LAB_11881e04
   __asm mov ecx, offset LAB_121a6168
 }
+
 
 
 // Reference entry 100d5abd; body size 14 bytes.
@@ -5194,6 +5339,7 @@ __declspec(naked) int FUN_100d5abd(void)
 }
 
 
+
 // Reference entry 100d5ae0; body size 10 bytes.
 #line 1 "ENTRY_100d5ae0"
 
@@ -5203,6 +5349,7 @@ __declspec(naked) int FUN_100d5ae0(void)
   __asm push offset LAB_11881fb0
   __asm mov ecx, offset LAB_121a6164
 }
+
 
 
 // Reference entry 100d5aed; body size 14 bytes.
@@ -5219,6 +5366,7 @@ __declspec(naked) int FUN_100d5aed(void)
 }
 
 
+
 // Reference entry 100d5b10; body size 10 bytes.
 #line 1 "ENTRY_100d5b10"
 
@@ -5228,6 +5376,7 @@ __declspec(naked) int FUN_100d5b10(void)
   __asm push offset LAB_11881dfc
   __asm mov ecx, offset LAB_121a6170
 }
+
 
 
 // Reference entry 100d5b1d; body size 14 bytes.
@@ -5244,6 +5393,7 @@ __declspec(naked) int FUN_100d5b1d(void)
 }
 
 
+
 // Reference entry 100d5c18; body size 16 bytes.
 #line 1 "ENTRY_100d5c18"
 
@@ -5257,6 +5407,7 @@ __declspec(naked) void FUN_100d5c18(void)
   __asm pop ecx
   __asm ret
 }
+
 
 
 // Reference entry 100d71ef; body size 636 bytes.
@@ -5391,13 +5542,14 @@ __declspec(naked) int FUN_100d71ef(void)
 }
 
 
+
 // Reference entry 100d8c62; body size 25 bytes.
 #line 1 "ENTRY_100d8c62"
 
 __declspec(naked) int FUN_100d8c62(void)
 
 {
-  __asm jnp 0x100d8bf7
+  __asm _emit 0x7b __asm _emit 0x93
   __asm adc dword ptr [ecx + LAB_121a670c], edi
   __asm call LAB_1005273e
   __asm push offset LAB_11846f40
@@ -5405,6 +5557,7 @@ __declspec(naked) int FUN_100d8c62(void)
   __asm pop ecx
   __asm ret
 }
+
 
 
 // Reference entry 100d9027; body size 20 bytes.
@@ -5422,6 +5575,7 @@ __declspec(naked) int FUN_100d9027(void)
 }
 
 
+
 // Reference entry 100da7c7; body size 10 bytes.
 #line 1 "ENTRY_100da7c7"
 
@@ -5429,9 +5583,10 @@ __declspec(naked) int FUN_100da7c7(void)
 
 {
   __asm push 0x6fe8121a
-  __asm jg 0x100da7c5
+  __asm _emit 0x7f __asm _emit 0xf7
   __asm jmp dword ptr [eax + 0x30]
 }
+
 
 
 // Reference entry 100db420; body size 15 bytes.
@@ -5444,6 +5599,7 @@ __declspec(naked) int FUN_100db420(void)
   __asm mov ecx, offset LAB_121a69d0
   __asm call LAB_1005273e
 }
+
 
 
 // Reference entry 100db432; body size 9 bytes.
@@ -5459,6 +5615,7 @@ __declspec(naked) void FUN_100db432(void)
 }
 
 
+
 // Reference entry 100db450; body size 15 bytes.
 #line 1 "ENTRY_100db450"
 
@@ -5469,6 +5626,7 @@ __declspec(naked) int FUN_100db450(void)
   __asm mov ecx, offset LAB_121a6a10
   __asm call LAB_1005273e
 }
+
 
 
 // Reference entry 100db462; body size 9 bytes.
@@ -5484,6 +5642,7 @@ __declspec(naked) void FUN_100db462(void)
 }
 
 
+
 // Reference entry 100db480; body size 15 bytes.
 #line 1 "ENTRY_100db480"
 
@@ -5494,6 +5653,7 @@ __declspec(naked) int FUN_100db480(void)
   __asm mov ecx, offset LAB_121a6a1c
   __asm call LAB_1005273e
 }
+
 
 
 // Reference entry 100db492; body size 9 bytes.
@@ -5507,6 +5667,7 @@ __declspec(naked) void FUN_100db492(void)
   __asm pop ecx
   __asm ret
 }
+
 
 
 // Reference entry 100dbe90; body size 24 bytes.
@@ -5525,6 +5686,7 @@ __declspec(naked) int FUN_100dbe90(void)
 }
 
 
+
 // Reference entry 100dc437; body size 20 bytes.
 #line 1 "ENTRY_100dc437"
 
@@ -5540,18 +5702,20 @@ __declspec(naked) int FUN_100dc437(void)
 }
 
 
+
 // Reference entry 100df6d7; body size 10 bytes.
 #line 1 "ENTRY_100df6d7"
 
 __declspec(naked) void FUN_100df6d7(void)
 
 {
-  __asm jo 0x100df6f3
+  __asm _emit 0x70 __asm _emit 0x1a
   __asm adc ch, al
   __asm pop edi
   __asm xor bh, dh
   __asm jmp dword ptr [eax - 0x80]
 }
+
 
 
 // Reference entry 100e00f7; body size 20 bytes.
@@ -5560,7 +5724,7 @@ __declspec(naked) void FUN_100df6d7(void)
 __declspec(naked) int FUN_100e00f7(void)
 
 {
-  __asm jno 0x100e0113
+  __asm _emit 0x71 __asm _emit 0x1a
   __asm adc ch, al
   __asm _emit 0x3f
   __asm idiv edi
@@ -5571,13 +5735,14 @@ __declspec(naked) int FUN_100e00f7(void)
 }
 
 
+
 // Reference entry 100e0997; body size 20 bytes.
 #line 1 "ENTRY_100e0997"
 
 __declspec(naked) void FUN_100e0997(void)
 
 {
-  __asm jb 0x100e09b3
+  __asm _emit 0x72 __asm _emit 0x1a
   __asm adc ch, al
   __asm lahf
   __asm _emit 0x1d __asm _emit 0xf7 __asm _emit 0xff __asm _emit 0x68 __asm _emit 0x40
@@ -5586,6 +5751,7 @@ __declspec(naked) void FUN_100e0997(void)
   __asm pop ecx
   __asm ret
 }
+
 
 
 // Reference entry 100e2290; body size 15 bytes.
@@ -5598,6 +5764,7 @@ __declspec(naked) int FUN_100e2290(void)
   __asm mov ecx, offset LAB_121a7690
   __asm call LAB_1005273e
 }
+
 
 
 // Reference entry 100e22a2; body size 9 bytes.
@@ -5613,6 +5780,7 @@ __declspec(naked) void FUN_100e22a2(void)
 }
 
 
+
 // Reference entry 100e22c0; body size 15 bytes.
 #line 1 "ENTRY_100e22c0"
 
@@ -5623,6 +5791,7 @@ __declspec(naked) int FUN_100e22c0(void)
   __asm mov ecx, offset LAB_121a768c
   __asm call LAB_1005273e
 }
+
 
 
 // Reference entry 100e22d2; body size 9 bytes.
@@ -5638,18 +5807,20 @@ __declspec(naked) void FUN_100e22d2(void)
 }
 
 
+
 // Reference entry 100e24d7; body size 10 bytes.
 #line 1 "ENTRY_100e24d7"
 
 __declspec(naked) void FUN_100e24d7(void)
 
 {
-  __asm jbe 0x100e24f3
+  __asm _emit 0x76 __asm _emit 0x1a
   __asm adc ch, al
   __asm pop edi
   __asm add dh, bh
   __asm jmp dword ptr [eax + 0x60]
 }
+
 
 
 // Reference entry 100e2533; body size 24 bytes.
@@ -5668,21 +5839,23 @@ __declspec(naked) int FUN_100e2533(void)
 }
 
 
+
 // Reference entry 100e2cb7; body size 20 bytes.
 #line 1 "ENTRY_100e2cb7"
 
 __declspec(naked) int FUN_100e2cb7(void)
 
 {
-  __asm ja 0x100e2cd3
+  __asm _emit 0x77 __asm _emit 0x1a
   __asm adc ch, al
-  __asm jg 0x100e2cb7
+  __asm _emit 0x7f __asm _emit 0xfa
   __asm idiv bh
   __asm push offset LAB_1185e3c0
   __asm call LAB_1004fff7
   __asm pop ecx
   __asm ret
 }
+
 
 
 // Reference entry 100e2e03; body size 24 bytes.
@@ -5701,6 +5874,7 @@ __declspec(naked) int FUN_100e2e03(void)
 }
 
 
+
 // Reference entry 100e3300; body size 20 bytes.
 #line 1 "ENTRY_100e3300"
 
@@ -5712,6 +5886,7 @@ __declspec(naked) int FUN_100e3300(void)
   __asm call LAB_1005273e
   __asm push offset LAB_1185f240
 }
+
 
 
 // Reference entry 100e3330; body size 20 bytes.
@@ -5727,6 +5902,7 @@ __declspec(naked) int FUN_100e3330(void)
 }
 
 
+
 // Reference entry 100e3360; body size 20 bytes.
 #line 1 "ENTRY_100e3360"
 
@@ -5738,6 +5914,7 @@ __declspec(naked) int FUN_100e3360(void)
   __asm call LAB_1005273e
   __asm push offset LAB_1185f320
 }
+
 
 
 // Reference entry 100e3390; body size 20 bytes.
@@ -5753,6 +5930,7 @@ __declspec(naked) int FUN_100e3390(void)
 }
 
 
+
 // Reference entry 100e33c0; body size 20 bytes.
 #line 1 "ENTRY_100e33c0"
 
@@ -5764,6 +5942,7 @@ __declspec(naked) int FUN_100e33c0(void)
   __asm call LAB_1005273e
   __asm push offset LAB_1185f400
 }
+
 
 
 // Reference entry 100e5b50; body size 22 bytes.
@@ -5781,6 +5960,7 @@ __declspec(naked) int FUN_100e5b50(void)
 }
 
 
+
 // Reference entry 100e5d80; body size 72 bytes.
 #line 1 "ENTRY_100e5d80"
 
@@ -5795,7 +5975,7 @@ __declspec(naked) int FUN_100e5d80(void)
   __asm mov dword ptr [LAB_122f1248], 0
   __asm mov dword ptr [LAB_122f124c], 0
   __asm test al, al
-  __asm je 0x100e5dbc
+  __asm _emit 0x74 __asm _emit 0x0d
   __asm push offset LAB_122e8d40
   __asm call LAB_10056497
   __asm add esp, 4
@@ -5804,6 +5984,7 @@ __declspec(naked) int FUN_100e5d80(void)
   __asm pop ecx
   __asm ret
 }
+
 
 
 // Reference entry 100e6040; body size 7 bytes.
@@ -5815,6 +5996,7 @@ __declspec(naked) int FUN_100e6040(void)
   __asm push 1
   __asm push offset LAB_119e25b0
 }
+
 
 
 // Reference entry 100e6049; body size 15 bytes.
@@ -5830,6 +6012,7 @@ __declspec(naked) void FUN_100e6049(void)
   __asm mov bl, 0x73
   __asm _emit 0xf2 __asm _emit 0xff __asm _emit 0x68 __asm _emit 0xf0
 }
+
 
 
 // Reference entry 100e6090; body size 119 bytes.
@@ -5861,6 +6044,7 @@ __declspec(naked) int FUN_100e6090(void)
 }
 
 
+
 // Reference entry 100e6130; body size 34 bytes.
 #line 1 "ENTRY_100e6130"
 
@@ -5879,6 +6063,7 @@ __declspec(naked) int FUN_100e6130(void)
 }
 
 
+
 // Reference entry 100e6160; body size 22 bytes.
 #line 1 "ENTRY_100e6160"
 
@@ -5894,6 +6079,7 @@ __declspec(naked) int FUN_100e6160(void)
 }
 
 
+
 // Reference entry 1015bc2c; body size 14 bytes.
 #line 1 "ENTRY_1015bc2c"
 
@@ -5904,6 +6090,7 @@ __declspec(naked) int FUN_1015bc2c(void)
   __asm _emit 0x10 __asm _emit 0x0e
   __asm mov esp, 0xbc151015
 }
+
 
 
 // Reference entry 101b4e45; body size 14 bytes.
@@ -5920,6 +6107,7 @@ __declspec(naked) int FUN_101b4e45(void)
   __asm sbb edx, dword ptr [eax]
   __asm or dword ptr [esi + 0x1b], ecx
 }
+
 
 
 // Reference entry 101b4f71; body size 43 bytes.
@@ -5950,6 +6138,7 @@ __declspec(naked) int FUN_101b4f71(void)
 }
 
 
+
 // Reference entry 101b67c0; body size 20 bytes.
 #line 1 "ENTRY_101b67c0"
 
@@ -5966,6 +6155,7 @@ __declspec(naked) int FUN_101b67c0(void)
   __asm _emit 0x7f __asm _emit 0x67
   __asm sbb edx, dword ptr [eax]
 }
+
 
 
 // Reference entry 101c1a15; body size 58 bytes.
@@ -5993,6 +6183,7 @@ __declspec(naked) void FUN_101c1a15(void)
 }
 
 
+
 // Reference entry 101cc640; body size 26 bytes.
 #line 1 "ENTRY_101cc640"
 
@@ -6011,6 +6202,7 @@ __declspec(naked) void FUN_101cc640(void)
 }
 
 
+
 // Reference entry 101cc680; body size 26 bytes.
 #line 1 "ENTRY_101cc680"
 
@@ -6027,6 +6219,7 @@ __declspec(naked) void FUN_101cc680(void)
   __asm pop ecx
   __asm ret 4
 }
+
 
 
 // Reference entry 101cf4d0; body size 24 bytes.
@@ -6048,6 +6241,7 @@ __declspec(naked) void FUN_101cf4d0(void)
 }
 
 
+
 // Reference entry 101cf4f0; body size 24 bytes.
 #line 1 "ENTRY_101cf4f0"
 
@@ -6065,6 +6259,7 @@ __declspec(naked) void FUN_101cf4f0(void)
   __asm pop ecx
   __asm ret 4
 }
+
 
 
 // Reference entry 101e292a; body size 33 bytes.
@@ -6085,6 +6280,7 @@ __declspec(naked) int FUN_101e292a(void)
 }
 
 
+
 // Reference entry 101f697a; body size 2 bytes.
 #line 1 "ENTRY_101f697a"
 
@@ -6093,6 +6289,7 @@ __declspec(naked) int FUN_101f697a(void)
 {
   __asm nop
 }
+
 
 
 // Reference entry 101facbd; body size 26 bytes.
@@ -6109,6 +6306,7 @@ __declspec(naked) void FUN_101facbd(void)
   __asm lodsb al, byte ptr [esi]
   __asm _emit 0x1f
 }
+
 
 
 // Reference entry 101fadc5; body size 30 bytes.
@@ -6130,6 +6328,7 @@ __declspec(naked) void FUN_101fadc5(void)
 }
 
 
+
 // Reference entry 10207bc7; body size 1 bytes.
 #line 1 "ENTRY_10207bc7"
 
@@ -6140,26 +6339,24 @@ __declspec(naked) int FUN_10207bc7(void)
 }
 
 
+
 // Reference entry 10207c40; body size 39 bytes.
 #line 1 "ENTRY_10207c40"
 
 __declspec(naked) int FUN_10207c40(void)
 
 {
-  __asm _emit 0x3f
-  __asm jl 0x10207c63
-  __asm _emit 0x10 __asm _emit 0x25 __asm _emit 0x7c __asm _emit 0x20 __asm _emit 0x10 __asm _emit 0x28
-  __asm jl 0x10207c6b
-  __asm _emit 0x10 __asm _emit 0x2e
-  __asm jl 0x10207c6f
+  __asm _emit 0x3f __asm _emit 0x7c __asm _emit 0x20
+  __asm _emit 0x10 __asm _emit 0x25 __asm _emit 0x7c __asm _emit 0x20 __asm _emit 0x10 __asm _emit 0x28 __asm _emit 0x7c __asm _emit 0x20
+  __asm _emit 0x10 __asm _emit 0x2e __asm _emit 0x7c __asm _emit 0x20
   __asm _emit 0x10 __asm _emit 0x34 __asm _emit 0x7c
   __asm and byte ptr [eax], dl
   __asm _emit 0x3a __asm _emit 0x7c __asm _emit 0x20 __asm _emit 0x10
   __asm _emit 0x3a __asm _emit 0x7c __asm _emit 0x20 __asm _emit 0x10
   __asm _emit 0x3a __asm _emit 0x7c __asm _emit 0x20 __asm _emit 0x10
-  __asm _emit 0x3a __asm _emit 0x7c __asm _emit 0x20 __asm _emit 0x10 __asm _emit 0x3f
-  __asm jl 0x10207c87
+  __asm _emit 0x3a __asm _emit 0x7c __asm _emit 0x20 __asm _emit 0x10 __asm _emit 0x3f __asm _emit 0x7c __asm _emit 0x20
 }
+
 
 
 // Reference entry 1020be24; body size 28 bytes.
@@ -6181,14 +6378,16 @@ __declspec(naked) void FUN_1020be24(void)
 }
 
 
+
 // Reference entry 10210765; body size 2 bytes.
 #line 1 "ENTRY_10210765"
 
 __declspec(naked) int FUN_10210765(void)
 
 {
-  __asm jle 0x10210757
+  __asm _emit 0x7e __asm _emit 0xf0
 }
+
 
 
 // Reference entry 10210e9d; body size 18 bytes.
@@ -6207,24 +6406,21 @@ __declspec(naked) int FUN_10210e9d(void)
 }
 
 
+
 // Reference entry 102179f8; body size 27 bytes.
 #line 1 "ENTRY_102179f8"
 
 __declspec(naked) int FUN_102179f8(void)
 
 {
-  __asm _emit 0x1e
-  __asm jns 0x10217a1c
-  __asm _emit 0x10 __asm _emit 0x28
-  __asm jns 0x10217a20
-  __asm _emit 0x10 __asm _emit 0x2f
-  __asm jns 0x10217a24
-  __asm _emit 0x10 __asm _emit 0x36
-  __asm jns 0x10217a28
-  __asm _emit 0x10 __asm _emit 0xa7 __asm _emit 0x79 __asm _emit 0x21 __asm _emit 0x10 __asm _emit 0x3d
-  __asm jns 0x10217a30
+  __asm _emit 0x1e __asm _emit 0x79 __asm _emit 0x21
+  __asm _emit 0x10 __asm _emit 0x28 __asm _emit 0x79 __asm _emit 0x21
+  __asm _emit 0x10 __asm _emit 0x2f __asm _emit 0x79 __asm _emit 0x21
+  __asm _emit 0x10 __asm _emit 0x36 __asm _emit 0x79 __asm _emit 0x21
+  __asm _emit 0x10 __asm _emit 0xa7 __asm _emit 0x79 __asm _emit 0x21 __asm _emit 0x10 __asm _emit 0x3d __asm _emit 0x79 __asm _emit 0x21
   __asm adc byte ptr [ecx + edi*2 + 0x21], dh
 }
+
 
 
 // Reference entry 10217aa4; body size 27 bytes.
@@ -6234,13 +6430,11 @@ __declspec(naked) int FUN_10217aa4(void)
 
 {
   __asm _emit 0x85 __asm _emit 0x7a __asm _emit 0x21
-  __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x7a __asm _emit 0x21 __asm _emit 0x10 __asm _emit 0x91
-  __asm jp 0x10217ad0
-  __asm _emit 0x10 __asm _emit 0x97 __asm _emit 0x7a __asm _emit 0x21 __asm _emit 0x10 __asm _emit 0x9d
-  __asm jp 0x10217ad8
-  __asm _emit 0x10 __asm _emit 0x82 __asm _emit 0x7a __asm _emit 0x21 __asm _emit 0x10 __asm _emit 0x9d
-  __asm jp 0x10217ae0
+  __asm _emit 0x10 __asm _emit 0x8b __asm _emit 0x7a __asm _emit 0x21 __asm _emit 0x10 __asm _emit 0x91 __asm _emit 0x7a __asm _emit 0x21
+  __asm _emit 0x10 __asm _emit 0x97 __asm _emit 0x7a __asm _emit 0x21 __asm _emit 0x10 __asm _emit 0x9d __asm _emit 0x7a __asm _emit 0x21
+  __asm _emit 0x10 __asm _emit 0x82 __asm _emit 0x7a __asm _emit 0x21 __asm _emit 0x10 __asm _emit 0x9d __asm _emit 0x7a __asm _emit 0x21
 }
+
 
 
 // Reference entry 1021aa2c; body size 13 bytes.
@@ -6258,6 +6452,7 @@ __declspec(naked) void FUN_1021aa2c(void)
   __asm pop ebx
   __asm ret 4
 }
+
 
 
 // Reference entry 10224770; body size 26 bytes.
@@ -6278,6 +6473,7 @@ __declspec(naked) void FUN_10224770(void)
 }
 
 
+
 // Reference entry 102247b0; body size 26 bytes.
 #line 1 "ENTRY_102247b0"
 
@@ -6296,6 +6492,7 @@ __declspec(naked) void FUN_102247b0(void)
 }
 
 
+
 // Reference entry 102247e0; body size 19 bytes.
 #line 1 "ENTRY_102247e0"
 
@@ -6310,6 +6507,7 @@ __declspec(naked) void FUN_102247e0(void)
   __asm pop ecx
   __asm ret 4
 }
+
 
 
 // Reference entry 102249c0; body size 26 bytes.
@@ -6330,6 +6528,7 @@ __declspec(naked) void FUN_102249c0(void)
 }
 
 
+
 // Reference entry 10224a00; body size 26 bytes.
 #line 1 "ENTRY_10224a00"
 
@@ -6348,6 +6547,7 @@ __declspec(naked) void FUN_10224a00(void)
 }
 
 
+
 // Reference entry 10224a30; body size 19 bytes.
 #line 1 "ENTRY_10224a30"
 
@@ -6364,6 +6564,7 @@ __declspec(naked) void FUN_10224a30(void)
 }
 
 
+
 // Reference entry 10224a60; body size 19 bytes.
 #line 1 "ENTRY_10224a60"
 
@@ -6378,6 +6579,7 @@ __declspec(naked) void FUN_10224a60(void)
   __asm pop ecx
   __asm ret 4
 }
+
 
 
 // Reference entry 10224aa0; body size 26 bytes.
@@ -6398,6 +6600,7 @@ __declspec(naked) void FUN_10224aa0(void)
 }
 
 
+
 // Reference entry 10225b10; body size 10 bytes.
 #line 1 "ENTRY_10225b10"
 
@@ -6412,19 +6615,21 @@ __declspec(naked) void FUN_10225b10(void)
 }
 
 
+
 // Reference entry 10225b24; body size 17 bytes.
 #line 1 "ENTRY_10225b24"
 
 __declspec(naked) void FUN_10225b24(void)
 
 {
-  __asm loop 0x10225b25
+  __asm _emit 0xe2 __asm _emit 0xff
   __asm mov ecx, dword ptr [esi]
   __asm mov ecx, dword ptr [ecx + 0x88]
   __asm call LAB_10013746
   __asm pop esi
   __asm ret
 }
+
 
 
 // Reference entry 10225b80; body size 57 bytes.
@@ -6446,7 +6651,7 @@ __declspec(naked) void FUN_10225b80(void)
   __asm mov dword ptr [esp + 8], eax
   __asm pop esi
   __asm test ecx, ecx
-  __asm je 0x10225bb4
+  __asm _emit 0x74 __asm _emit 0x10
   __asm mov eax, dword ptr [ecx]
   __asm lea edx, [esp + 8]
   __asm push edx
@@ -6456,6 +6661,7 @@ __declspec(naked) void FUN_10225b80(void)
   __asm ret
   __asm call LAB_1148a05a
 }
+
 
 
 // Reference entry 102282c0; body size 10 bytes.
@@ -6472,6 +6678,7 @@ __declspec(naked) void FUN_102282c0(void)
 }
 
 
+
 // Reference entry 102282cc; body size 25 bytes.
 #line 1 "ENTRY_102282cc"
 
@@ -6486,6 +6693,7 @@ __declspec(naked) int FUN_102282cc(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 // Reference entry 10228330; body size 57 bytes.
@@ -6507,7 +6715,7 @@ __declspec(naked) void FUN_10228330(void)
   __asm mov dword ptr [esp + 8], eax
   __asm pop esi
   __asm test ecx, ecx
-  __asm je 0x10228364
+  __asm _emit 0x74 __asm _emit 0x10
   __asm mov eax, dword ptr [ecx]
   __asm lea edx, [esp + 8]
   __asm push edx
@@ -6517,6 +6725,7 @@ __declspec(naked) void FUN_10228330(void)
   __asm ret
   __asm call LAB_1148a05a
 }
+
 
 
 // Reference entry 1022fb40; body size 9 bytes.
@@ -6532,6 +6741,7 @@ __declspec(naked) int FUN_1022fb40(void)
   __asm push dword ptr [esi]
   __asm push ecx
 }
+
 
 
 // Reference entry 1022fb4b; body size 28 bytes.
@@ -6551,17 +6761,19 @@ __declspec(naked) void FUN_1022fb4b(void)
 }
 
 
+
 // Reference entry 10235a48; body size 10 bytes.
 #line 1 "ENTRY_10235a48"
 
 __declspec(naked) int FUN_10235a48(void)
 
 {
-  __asm jge 0x102359d2
+  __asm _emit 0x7d __asm _emit 0x88
   __asm adc ebx, eax
   __asm mov eax, offset LAB_11887dd8
   __asm ret
 }
+
 
 
 // Reference entry 1023a851; body size 15 bytes.
@@ -6579,6 +6791,7 @@ __declspec(naked) int FUN_1023a851(void)
   __asm _emit 0x0f __asm _emit 0xa8
   __asm and edx, dword ptr [eax]
 }
+
 
 
 // Reference entry 1023e5a8; body size 21 bytes.
@@ -6599,6 +6812,7 @@ __declspec(naked) void FUN_1023e5a8(void)
 }
 
 
+
 // Reference entry 102488f5; body size 19 bytes.
 #line 1 "ENTRY_102488f5"
 
@@ -6615,6 +6829,7 @@ __declspec(naked) int FUN_102488f5(void)
 }
 
 
+
 // Reference entry 10249082; body size 13 bytes.
 #line 1 "ENTRY_10249082"
 
@@ -6623,8 +6838,9 @@ __declspec(naked) int FUN_10249082(void)
 {
   __asm _emit 0xd0 __asm _emit 0x9a __asm _emit 0x88 __asm _emit 0x11 __asm _emit 0xeb __asm _emit 0x13
   __asm mov eax, offset LAB_11889ae8
-  __asm jmp 0x1024909b
+  __asm _emit 0xeb __asm _emit 0x0c
 }
+
 
 
 // Reference entry 10249c36; body size 6 bytes.
@@ -6647,6 +6863,7 @@ __declspec(naked) void FUN_1024cdb6(void)
 }
 
 
+
 // Reference entry 10258680; body size 8 bytes.
 #line 1 "ENTRY_10258680"
 
@@ -6656,6 +6873,7 @@ __declspec(naked) int FUN_10258680(void)
   __asm add ecx, 8
   __asm jmp LAB_10257e60
 }
+
 
 
 
@@ -6678,6 +6896,7 @@ __declspec(naked) void FUN_102634a0(void)
 }
 
 
+
 // Reference entry 10263610; body size 26 bytes.
 #line 1 "ENTRY_10263610"
 
@@ -6696,6 +6915,7 @@ __declspec(naked) void FUN_10263610(void)
 }
 
 
+
 // Reference entry 10263900; body size 101 bytes.
 #line 1 "ENTRY_10263900"
 
@@ -6711,13 +6931,12 @@ __declspec(naked) void FUN_10263900(void)
   __asm mov esi, dword ptr [ebx]
   __asm mov ecx, dword ptr [esi + 0x70]
   __asm test ecx, ecx
-  __asm je 0x10263929
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x6c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x70 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x74 __asm _emit 0x13 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x6c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x70 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov eax, dword ptr [ecx]
   __asm call dword ptr [eax + 8]
   __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x6c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x70 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm test edi, edi
-  __asm jne 0x1026397d
+  __asm _emit 0x75 __asm _emit 0x42
   __asm mov eax, dword ptr [esp + 0x14]
   __asm mov ecx, offset LAB_1186d2ee
   __asm mov eax, dword ptr [eax]
@@ -6734,6 +6953,7 @@ __declspec(naked) void FUN_10263900(void)
   __asm push edi
   __asm push ecx
 }
+
 
 
 // Reference entry 10265510; body size 101 bytes.
@@ -6751,13 +6971,12 @@ __declspec(naked) void FUN_10265510(void)
   __asm mov esi, dword ptr [ebx]
   __asm mov ecx, dword ptr [esi + 0x70]
   __asm test ecx, ecx
-  __asm je 0x10265539
-  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x6c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x70 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x74 __asm _emit 0x13 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x6c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x70 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm mov eax, dword ptr [ecx]
   __asm call dword ptr [eax + 8]
   __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x6c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x70 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm test edi, edi
-  __asm jne 0x1026558d
+  __asm _emit 0x75 __asm _emit 0x42
   __asm mov eax, dword ptr [esp + 0x14]
   __asm mov ecx, offset LAB_1186d2ee
   __asm mov eax, dword ptr [eax]
@@ -6774,6 +6993,7 @@ __declspec(naked) void FUN_10265510(void)
   __asm push edi
   __asm push ecx
 }
+
 
 
 // Reference entry 1026e320; body size 26 bytes.
@@ -6794,6 +7014,7 @@ __declspec(naked) void FUN_1026e320(void)
 }
 
 
+
 // Reference entry 1026e360; body size 26 bytes.
 #line 1 "ENTRY_1026e360"
 
@@ -6812,6 +7033,7 @@ __declspec(naked) void FUN_1026e360(void)
 }
 
 
+
 // Reference entry 10271f80; body size 19 bytes.
 #line 1 "ENTRY_10271f80"
 
@@ -6826,6 +7048,7 @@ __declspec(naked) void FUN_10271f80(void)
   __asm pop ecx
   __asm ret 4
 }
+
 
 
 // Reference entry 10271fc0; body size 26 bytes.
@@ -6846,6 +7069,7 @@ __declspec(naked) void FUN_10271fc0(void)
 }
 
 
+
 // Reference entry 10274720; body size 24 bytes.
 #line 1 "ENTRY_10274720"
 
@@ -6863,4 +7087,5 @@ __declspec(naked) void FUN_10274720(void)
   __asm pop ecx
   __asm ret 4
 }
+
 

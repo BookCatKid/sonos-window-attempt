@@ -571,6 +571,14 @@ extern "C" void LAB_10cb1b60(void);
 extern "C" void LAB_10da6830(void);
 extern "C" void LAB_110dbdf0(void);
 
+extern "C" void LAB_10361670(void);
+extern "C" void LAB_10620390(void);
+extern "C" void LAB_10783270(void);
+extern "C" void LAB_107e81f0(void);
+extern "C" void LAB_10cb1b60(void);
+extern "C" void LAB_10da6830(void);
+extern "C" void LAB_110dbdf0(void);
+
 
 struct Recovered_Bulk { char _pad; undefined4 * __thiscall m_FUN_1000100a(byte param_2); template<class... A> int m_FUN_1000100a(A...); int __thiscall m_FUN_1000100f(int param_2); template<class... A> int m_FUN_1000100f(A...); undefined4 * __thiscall m_FUN_10001028(undefined4 param_2); template<class... A> int m_FUN_10001028(A...); undefined4 * __thiscall m_FUN_1000103c(byte param_2); template<class... A> int m_FUN_1000103c(A...); undefined4 __thiscall m_FUN_10001041(undefined4 param_2); template<class... A> int m_FUN_10001041(A...); void __thiscall m_FUN_10001073(SCIHousehold *param_1); template<class... A> int m_FUN_10001073(A...); undefined4 __thiscall m_FUN_10001078(undefined4 *param_2); template<class... A> int m_FUN_10001078(A...); undefined4 * __thiscall m_FUN_100010a5(byte param_2); template<class... A> int m_FUN_100010a5(A...); undefined4 * __thiscall m_FUN_100010b4(byte param_2); template<class... A> int m_FUN_100010b4(A...); undefined4 * __thiscall m_FUN_100010dc(byte param_2); template<class... A> int m_FUN_100010dc(A...); int * __thiscall m_FUN_1000110e(int *param_2,uint *param_3); template<class... A> int m_FUN_1000110e(A...); void __thiscall m_FUN_1000112c(undefined4 param_2,undefined8 param_3); template<class... A> int m_FUN_1000112c(A...); undefined4 __thiscall m_FUN_10001163(undefined4 param_2); template<class... A> int m_FUN_10001163(A...); undefined4 * __thiscall m_FUN_10001172(int *param_2); template<class... A> int m_FUN_10001172(A...); undefined4 __thiscall m_FUN_1000117c(undefined4 param_2); template<class... A> int m_FUN_1000117c(A...); undefined4 __thiscall m_FUN_10001186(byte param_2); template<class... A> int m_FUN_10001186(A...); undefined1 __thiscall m_FUN_1000118b(SCStr *param_2); template<class... A> int m_FUN_1000118b(A...); undefined4 * __thiscall m_FUN_100011db(undefined4 *param_2,undefined4 param_3,int param_4); template<class... A> int m_FUN_100011db(A...); undefined4 * __thiscall m_FUN_100011ea(byte param_2); template<class... A> int m_FUN_100011ea(A...); undefined4 * __thiscall m_FUN_100011fe(undefined4 *param_2); template<class... A> int m_FUN_100011fe(A...); int __thiscall m_FUN_10001221(int param_2,int *param_3); template<class... A> int m_FUN_10001221(A...); undefined4 __thiscall m_FUN_10001230(int *param_2,undefined4 param_3,undefined4 param_4); template<class... A> int m_FUN_10001230(A...); void __thiscall m_FUN_10001244(undefined4 param_2,undefined4 param_3,undefined4 param_4,
                   undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
@@ -6841,6 +6849,7 @@ __declspec(naked) undefined1 FUN_1000139d(void)
 
 
 
+
 // Reference entry 100013b1; body size 5 bytes.
 #line 1 "ENTRY_100013b1"
 
@@ -6990,6 +6999,7 @@ __declspec(naked) void FUN_10001460(void)
 {
   __asm jmp LAB_10620390
 }
+
 
 
 
@@ -7995,6 +8005,7 @@ __declspec(naked) void FUN_10001a50(void)
 {
   __asm jmp LAB_107e81f0
 }
+
 
 
 
@@ -9465,6 +9476,7 @@ __declspec(naked) void FUN_10002310(void)
 
 
 
+
 void FUN_100022f2(void)
 
 {
@@ -9696,6 +9708,7 @@ __declspec(naked) void FUN_10002450(void)
 {
   __asm jmp LAB_110dbdf0
 }
+
 
 
 
@@ -10219,6 +10232,7 @@ __declspec(naked) void FUN_10002720(void)
 }
 
 
+
 // Reference entry 100028d3; transcribed reference bytes.
 #line 1 "ENTRY_100028d3"
 
@@ -10227,6 +10241,7 @@ __declspec(naked) void FUN_100028d3(void)
 {
   __asm jmp LAB_10361670
 }
+
 
 void __fastcall FUN_10002720(int param_1);
 

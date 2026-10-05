@@ -181,6 +181,184 @@ extern "C" void LAB_10036e30(void);
 extern "C" void LAB_10037c95(void);
 extern "C" void LAB_1003a904(void);
 extern "C" void LAB_1003c691(void);
+extern "C" void LAB_1003ddb6(void);
+extern "C" void LAB_1003df55(void);
+extern "C" void LAB_1003f2ba(void);
+extern "C" void LAB_10041c59(void);
+extern "C" void LAB_10041e02(void);
+extern "C" void LAB_10042064(void);
+extern "C" void LAB_100437fc(void);
+extern "C" void LAB_10046425(void);
+extern "C" void LAB_10047b09(void);
+extern "C" void LAB_100480b8(void);
+extern "C" void LAB_10048252(void);
+extern "C" void LAB_1004a56b(void);
+extern "C" void LAB_1004ae94(void);
+extern "C" void LAB_1004b9b1(void);
+extern "C" void LAB_1004d6da(void);
+extern "C" void LAB_1004e904(void);
+extern "C" void LAB_1004ec47(void);
+extern "C" void LAB_10050e52(void);
+extern "C" void LAB_1005311b(void);
+extern "C" void LAB_10054999(void);
+extern "C" void LAB_10055466(void);
+extern "C" void LAB_10056497(void);
+extern "C" void LAB_1005907a(void);
+extern "C" void LAB_10059133(void);
+extern "C" void LAB_10059bb0(void);
+extern "C" void LAB_1005a128(void);
+extern "C" void LAB_1005a3ee(void);
+extern "C" void LAB_1005d56c(void);
+extern "C" void LAB_1005e0a2(void);
+extern "C" void LAB_1005e890(void);
+extern "C" void LAB_1005f2d1(void);
+extern "C" void LAB_1005f3fd(void);
+extern "C" void LAB_10060140(void);
+extern "C" void LAB_10060235(void);
+extern "C" void LAB_1006041a(void);
+extern "C" void LAB_10063d27(void);
+extern "C" void LAB_10066e8c(void);
+extern "C" void LAB_100672a1(void);
+extern "C" void LAB_1006adb1(void);
+extern "C" void LAB_1006cc4c(void);
+extern "C" void LAB_1006de49(void);
+extern "C" void LAB_1006f9dd(void);
+extern "C" void LAB_10070185(void);
+extern "C" void LAB_10070653(void);
+extern "C" void LAB_10070892(void);
+extern "C" void LAB_10070ced(void);
+extern "C" void LAB_10071b61(void);
+extern "C" void LAB_10072d77(void);
+extern "C" void LAB_100742c6(void);
+extern "C" void LAB_10075b7b(void);
+extern "C" void LAB_100769e5(void);
+extern "C" void LAB_10079820(void);
+extern "C" void LAB_1007c363(void);
+extern "C" void LAB_1007ca8e(void);
+extern "C" void LAB_1007fff4(void);
+extern "C" void LAB_10080c0b(void);
+extern "C" void LAB_10081697(void);
+extern "C" void LAB_10081787(void);
+extern "C" void LAB_100839f6(void);
+extern "C" void LAB_10084f13(void);
+extern "C" void LAB_10086cb9(void);
+extern "C" void LAB_10087137(void);
+extern "C" void LAB_10089f3b(void);
+extern "C" void LAB_1008aab2(void);
+extern "C" void LAB_1008b728(void);
+extern "C" void LAB_1008fc3d(void);
+extern "C" void LAB_1009070f(void);
+extern "C" void LAB_10091542(void);
+extern "C" void LAB_1009177c(void);
+extern "C" void LAB_100922b7(void);
+extern "C" void LAB_10093793(void);
+extern "C" void LAB_1009a598(void);
+extern "C" void LAB_1009a9cb(void);
+extern "C" void LAB_110befd0(void);
+extern "C" void LAB_110d8e40(void);
+extern "C" void LAB_110d8e48(void);
+extern "C" void LAB_110f53d0(void);
+extern "C" void LAB_1148cdf3(void);
+extern "C" void LAB_1186d2ee(void);
+extern "C" void LAB_118821c0(void);
+extern "C" void LAB_11887444(void);
+extern "C" void LAB_1189067c(void);
+extern "C" void LAB_118938e4(void);
+extern "C" void LAB_118af674(void);
+extern "C" void LAB_118b3210(void);
+extern "C" void LAB_118b4510(void);
+extern "C" void LAB_119c127c(void);
+extern "C" void LAB_119c1520(void);
+extern "C" void LAB_119c1b38(void);
+extern "C" void LAB_119c2924(void);
+extern "C" void LAB_119c2934(void);
+extern "C" void LAB_119c34b8(void);
+extern "C" void LAB_119c3570(void);
+extern "C" void LAB_119c35a4(void);
+extern "C" void LAB_119c35b8(void);
+extern "C" void LAB_119c35d0(void);
+extern "C" void LAB_119c35e4(void);
+extern "C" void LAB_119c3614(void);
+extern "C" void LAB_119c3674(void);
+extern "C" void LAB_119c3680(void);
+extern "C" void LAB_119c3694(void);
+extern "C" void LAB_119c36a4(void);
+extern "C" void LAB_119c36b0(void);
+extern "C" void LAB_119c36d0(void);
+extern "C" void LAB_119c3b78(void);
+extern "C" void LAB_119c41b0(void);
+extern "C" void LAB_119c50ec(void);
+extern "C" void LAB_119c5840(void);
+extern "C" void LAB_119c58ec(void);
+extern "C" void LAB_119c591c(void);
+extern "C" void LAB_119c592c(void);
+extern "C" void LAB_119c5a7c(void);
+extern "C" void LAB_119c5ad4(void);
+extern "C" void LAB_119c5b34(void);
+extern "C" void LAB_119c5c40(void);
+extern "C" void LAB_119c6480(void);
+extern "C" void LAB_119c64ac(void);
+extern "C" void LAB_119c64dc(void);
+extern "C" void LAB_119c6638(void);
+extern "C" void LAB_119c66e8(void);
+extern "C" void LAB_119c6714(void);
+extern "C" void LAB_119c76cc(void);
+extern "C" void LAB_119c76e0(void);
+extern "C" void LAB_119c76fc(void);
+extern "C" void LAB_119c7738(void);
+extern "C" void LAB_1211dae0(void);
+extern "C" void LAB_122e8d40(void);
+extern "C" void LAB_122fc19c(void);
+extern "C" void LAB_122fc4f8(void);
+extern "C" void LAB_122fca10(void);
+
+extern "C" void LAB_100015be(void);
+extern "C" void LAB_100025d1(void);
+extern "C" void LAB_10002a68(void);
+extern "C" void LAB_10002f90(void);
+extern "C" void LAB_10002ff4(void);
+extern "C" void LAB_10003d37(void);
+extern "C" void LAB_1000470a(void);
+extern "C" void LAB_10004a70(void);
+extern "C" void LAB_1000546b(void);
+extern "C" void LAB_100069c9(void);
+extern "C" void LAB_1000879c(void);
+extern "C" void LAB_1000c2b1(void);
+extern "C" void LAB_1000d0df(void);
+extern "C" void LAB_1000e23c(void);
+extern "C" void LAB_100109fb(void);
+extern "C" void LAB_100131d8(void);
+extern "C" void LAB_100162a2(void);
+extern "C" void LAB_10017017(void);
+extern "C" void LAB_1001718e(void);
+extern "C" void LAB_10019245(void);
+extern "C" void LAB_1001acad(void);
+extern "C" void LAB_1001b1f8(void);
+extern "C" void LAB_1001b667(void);
+extern "C" void LAB_1001c864(void);
+extern "C" void LAB_100208ab(void);
+extern "C" void LAB_10021a3f(void);
+extern "C" void LAB_1002267e(void);
+extern "C" void LAB_1002312d(void);
+extern "C" void LAB_10023277(void);
+extern "C" void LAB_100238df(void);
+extern "C" void LAB_10023a4c(void);
+extern "C" void LAB_10023bf0(void);
+extern "C" void LAB_10024f14(void);
+extern "C" void LAB_1002815a(void);
+extern "C" void LAB_1002cb4c(void);
+extern "C" void LAB_100310bb(void);
+extern "C" void LAB_1003125a(void);
+extern "C" void LAB_100318bd(void);
+extern "C" void LAB_1003214b(void);
+extern "C" void LAB_100327e5(void);
+extern "C" void LAB_10034e0f(void);
+extern "C" void LAB_10035891(void);
+extern "C" void LAB_1003675f(void);
+extern "C" void LAB_10036e30(void);
+extern "C" void LAB_10037c95(void);
+extern "C" void LAB_1003a904(void);
+extern "C" void LAB_1003c691(void);
 extern "C" void LAB_1003df55(void);
 extern "C" void LAB_1003f2ba(void);
 extern "C" void LAB_10041c59(void);
@@ -970,9 +1148,9 @@ __declspec(naked) void FUN_110a1230(void)
   __asm lea ecx, [esp + 0x10]
   __asm call LAB_100015be
   __asm test al, al
-  __asm je 0x110a1264
+  __asm _emit 0x74 __asm _emit 0x0c
   __asm cmp byte ptr [esp], 0x31
-  __asm jne 0x110a1264
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm add esp, 0x1c
   __asm ret
@@ -980,6 +1158,7 @@ __declspec(naked) void FUN_110a1230(void)
   __asm add esp, 0x1c
   __asm ret
 }
+
 
 
 
@@ -1010,9 +1189,9 @@ __declspec(naked) void FUN_110a12a0(void)
   __asm lea ecx, [esp + 0x10]
   __asm call LAB_100015be
   __asm test al, al
-  __asm je 0x110a12d4
+  __asm _emit 0x74 __asm _emit 0x0c
   __asm cmp byte ptr [esp], 0x31
-  __asm jne 0x110a12d4
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm add esp, 0x1c
   __asm ret
@@ -1020,6 +1199,7 @@ __declspec(naked) void FUN_110a12a0(void)
   __asm add esp, 0x1c
   __asm ret
 }
+
 
 
 
@@ -1042,6 +1222,7 @@ __declspec(naked) void FUN_110a3080(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -1139,6 +1320,7 @@ __declspec(naked) void FUN_110a4fa0(void)
 
 
 
+
 // Reference entry 110a5340; body size 59 bytes.
 #line 1 "ENTRY_110a5340"
 
@@ -1150,21 +1332,21 @@ __declspec(naked) void FUN_110a5340(void)
   __asm mov edi, ecx
   __asm mov esi, dword ptr [edi]
   __asm test esi, esi
-  __asm je 0x110a5374
+  __asm _emit 0x74 __asm _emit 0x2a
   __asm mov edx, dword ptr [esi - 0xc]
   __asm test edx, edx
-  __asm jne 0x110a5362
+  __asm _emit 0x75 __asm _emit 0x11
   __asm mov edx, esi
   __asm lea ecx, [edx + 1]
   __asm mov al, byte ptr [edx]
   __asm inc edx
   __asm test al, al
-  __asm jne 0x110a5356
+  __asm _emit 0x75 __asm _emit 0xf9
   __asm sub edx, ecx
   __asm mov dword ptr [esi - 0xc], edx
   __asm mov ecx, dword ptr [esp + 0xc]
   __asm cmp ecx, edx
-  __asm jae 0x110a5374
+  __asm _emit 0x73 __asm _emit 0x0a
   __asm mov eax, dword ptr [edi]
   __asm pop edi
   __asm pop esi
@@ -1175,6 +1357,7 @@ __declspec(naked) void FUN_110a5340(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -1194,12 +1377,13 @@ __declspec(naked) void FUN_110a6770(void)
   __asm call LAB_10034e0f
   __asm mov eax, dword ptr [eax + 4]
   __asm test eax, eax
-  __asm jne 0x110a6791
+  __asm _emit 0x75 __asm _emit 0x03
   __asm mov eax, dword ptr [esi + 0xc]
   __asm pop esi
   __asm add esp, 8
   __asm ret 8
 }
+
 
 
 
@@ -1219,12 +1403,13 @@ __declspec(naked) void FUN_110a67b0(void)
   __asm call LAB_1008fc3d
   __asm mov eax, dword ptr [eax + 4]
   __asm test eax, eax
-  __asm jne 0x110a67d1
+  __asm _emit 0x75 __asm _emit 0x03
   __asm mov eax, dword ptr [esi + 4]
   __asm pop esi
   __asm add esp, 8
   __asm ret 8
 }
+
 
 
 
@@ -1250,6 +1435,7 @@ __declspec(naked) void FUN_110a8600(void)
 
 
 
+
 // Reference entry 110a8630; body size 39 bytes.
 #line 1 "ENTRY_110a8630"
 
@@ -1269,6 +1455,7 @@ __declspec(naked) void FUN_110a8630(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -1294,6 +1481,7 @@ __declspec(naked) void FUN_110a8660(void)
 
 
 
+
 // Reference entry 110a8690; body size 37 bytes.
 #line 1 "ENTRY_110a8690"
 
@@ -1313,6 +1501,7 @@ __declspec(naked) void FUN_110a8690(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -1478,6 +1667,7 @@ __declspec(naked) void FUN_110aa6d0(void)
 
 
 
+
 // Reference entry 110aa700; body size 27 bytes.
 #line 1 "ENTRY_110aa700"
 
@@ -1494,6 +1684,7 @@ __declspec(naked) void FUN_110aa700(void)
   __asm add esp, 8
   __asm ret 4
 }
+
 
 
 
@@ -1544,6 +1735,7 @@ __declspec(naked) void FUN_110ab120(void)
 
 
 
+
 // Reference entry 110ab140; body size 25 bytes.
 #line 1 "ENTRY_110ab140"
 
@@ -1563,6 +1755,7 @@ __declspec(naked) void FUN_110ab140(void)
 
 
 
+
 // Reference entry 110ab160; body size 25 bytes.
 #line 1 "ENTRY_110ab160"
 
@@ -1579,6 +1772,7 @@ __declspec(naked) void FUN_110ab160(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -1619,6 +1813,7 @@ __declspec(naked) void FUN_110ac250(void)
 
 
 
+
 // Reference entry 110ac5f0; body size 25 bytes.
 #line 1 "ENTRY_110ac5f0"
 
@@ -1643,7 +1838,7 @@ __declspec(naked) void FUN_110add70(void)
   __asm cmp dword ptr [esi + 0x38], 0
   __asm setne bl
   __asm cmp byte ptr [esi + 0x31], 0
-  __asm jne 0x110add9c
+  __asm _emit 0x75 __asm _emit 0x1b
   __asm push 0
   __asm push 0
   __asm push 0x3ec
@@ -1657,6 +1852,7 @@ __declspec(naked) void FUN_110add70(void)
   __asm pop ebx
   __asm ret
 }
+
 
 
 
@@ -1705,6 +1901,7 @@ __declspec(naked) void FUN_110aea50(void)
 
 
 
+
 // Reference entry 110b0c50; body size 29 bytes.
 #line 1 "ENTRY_110b0c50"
 
@@ -1725,6 +1922,7 @@ __declspec(naked) void FUN_110b0c50(void)
 
 
 
+
 // Reference entry 110b23a0; body size 44 bytes.
 #line 1 "ENTRY_110b23a0"
 
@@ -1733,9 +1931,9 @@ __declspec(naked) void FUN_110b23a0(void)
 {
   __asm mov eax, dword ptr [esp + 4]
   __asm test eax, eax
-  __asm je 0x110b23c7
+  __asm _emit 0x74 __asm _emit 0x1f
   __asm cmp dword ptr [esp + 8], 0
-  __asm je 0x110b23c7
+  __asm _emit 0x74 __asm _emit 0x18
   __asm push 0
   __asm push eax
   __asm add ecx, 0x98
@@ -1746,6 +1944,7 @@ __declspec(naked) void FUN_110b23a0(void)
   __asm xor al, al
   __asm ret 8
 }
+
 
 
 
@@ -1764,7 +1963,7 @@ __declspec(naked) void FUN_110b43b0(void)
   __asm call LAB_1003675f
   __asm mov esi, eax
   __asm cmp byte ptr [esi], 0
-  __asm jne 0x110b43dc
+  __asm _emit 0x75 __asm _emit 0x0e
   __asm push dword ptr [esp + 0xc]
   __asm mov ecx, edi
   __asm call LAB_1002815a
@@ -1777,6 +1976,7 @@ __declspec(naked) void FUN_110b43b0(void)
 
 
 
+
 // Reference entry 110b4850; body size 54 bytes.
 #line 1 "ENTRY_110b4850"
 
@@ -1786,21 +1986,22 @@ __declspec(naked) void FUN_110b4850(void)
   __asm mov eax, dword ptr [ecx + 0x20]
   __asm lea edx, [ecx + 0x20]
   __asm test eax, eax
-  __asm je 0x110b4883
+  __asm _emit 0x74 __asm _emit 0x29
   __asm mov ecx, dword ptr [esp + 4]
   __asm nop
   __asm cmp eax, ecx
-  __asm je 0x110b4870
+  __asm _emit 0x74 __asm _emit 0x0c
   __asm lea edx, [eax + 0x10]
   __asm mov eax, dword ptr [edx]
   __asm test eax, eax
-  __asm jne 0x110b4860
+  __asm _emit 0x75 __asm _emit 0xf3
   __asm ret 4
   __asm mov eax, dword ptr [ecx + 0x10]
   __asm mov dword ptr [edx], eax
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm ret 4
 }
+
 
 
 
@@ -1816,7 +2017,7 @@ __declspec(naked) void FUN_110b4ef0(void)
   __asm mov ecx, dword ptr [esp + 4]
   __asm sar eax, 2
   __asm cmp ecx, eax
-  __asm jae 0x110b4f1c
+  __asm _emit 0x73 __asm _emit 0x13
   __asm mov eax, dword ptr [edx + ecx*4]
   __asm mov ecx, dword ptr [eax + 4]
   __asm test ecx, ecx
@@ -1829,6 +2030,7 @@ __declspec(naked) void FUN_110b4ef0(void)
 
 
 
+
 // Reference entry 110b51f0; body size 55 bytes.
 #line 1 "ENTRY_110b51f0"
 
@@ -1838,14 +2040,13 @@ __declspec(naked) void FUN_110b51f0(void)
   __asm mov edx, dword ptr [ecx + 0x18]
   __asm mov eax, dword ptr [edx]
   __asm test eax, eax
-  __asm je 0x110b5220
-  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x74 __asm _emit 0x27 __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm cmp eax, ecx
-  __asm je 0x110b5214
+  __asm _emit 0x74 __asm _emit 0x10
   __asm lea edx, [eax + 0x3c]
   __asm mov eax, dword ptr [edx]
   __asm test eax, eax
-  __asm jne 0x110b5200
+  __asm _emit 0x75 __asm _emit 0xf3
   __asm mov eax, dword ptr [ecx]
   __asm push 1
   __asm call dword ptr [eax]
@@ -1858,6 +2059,7 @@ __declspec(naked) void FUN_110b51f0(void)
   __asm call dword ptr [eax]
   __asm ret
 }
+
 
 
 
@@ -1889,10 +2091,10 @@ __declspec(naked) void FUN_110b5610(void)
   __asm mov eax, dword ptr [eax]
   __asm mov dword ptr [esi + 4], eax
   __asm test eax, eax
-  __asm je 0x110b563f
+  __asm _emit 0x74 __asm _emit 0x14
   __asm add eax, -0x10
   __asm cmp dword ptr [eax], 0xffff
-  __asm jge 0x110b563f
+  __asm _emit 0x7d __asm _emit 0x09
   __asm push eax
   __asm call LAB_10066e8c
   __asm add esp, 4
@@ -1901,6 +2103,7 @@ __declspec(naked) void FUN_110b5610(void)
   __asm pop ecx
   __asm ret 8
 }
+
 
 
 
@@ -1957,7 +2160,7 @@ __declspec(naked) void FUN_110b5890(void)
   __asm mov ecx, dword ptr [esi + 4]
   __asm mov dword ptr [esi], LAB_119c2934
   __asm test ecx, ecx
-  __asm je 0x110b58a6
+  __asm _emit 0x74 __asm _emit 0x06
   __asm mov eax, dword ptr [ecx]
   __asm push 1
   __asm call dword ptr [eax]
@@ -1965,6 +2168,7 @@ __declspec(naked) void FUN_110b5890(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -1992,13 +2196,13 @@ __declspec(naked) void FUN_110b5900(void)
   __asm mov ecx, dword ptr [esi + 4]
   __asm mov dword ptr [esi], LAB_119c2934
   __asm test ecx, ecx
-  __asm je 0x110b5916
+  __asm _emit 0x74 __asm _emit 0x06
   __asm mov eax, dword ptr [ecx]
   __asm push 1
   __asm call dword ptr [eax]
   __asm test byte ptr [esp + 8], 1
   __asm mov dword ptr [esi], LAB_119c2924
-  __asm je 0x110b592e
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm push 0xc
   __asm push esi
   __asm call LAB_100131d8
@@ -2007,6 +2211,7 @@ __declspec(naked) void FUN_110b5900(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -2041,6 +2246,7 @@ __declspec(naked) void FUN_110b5c70(void)
 
 
 
+
 // Reference entry 110b5e60; body size 23 bytes.
 #line 1 "ENTRY_110b5e60"
 
@@ -2057,6 +2263,7 @@ __declspec(naked) void FUN_110b5e60(void)
 
 
 
+
 // Reference entry 110b5f20; body size 27 bytes.
 #line 1 "ENTRY_110b5f20"
 
@@ -2067,7 +2274,7 @@ __declspec(naked) void FUN_110b5f20(void)
   __asm mov esi, ecx
   __asm mov ecx, dword ptr [esi + 8]
   __asm test ecx, ecx
-  __asm je 0x110b5f37
+  __asm _emit 0x74 __asm _emit 0x0d
   __asm mov eax, dword ptr [ecx]
   __asm push esi
   __asm call dword ptr [eax + 4]
@@ -2075,6 +2282,7 @@ __declspec(naked) void FUN_110b5f20(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -2090,6 +2298,7 @@ __declspec(naked) void FUN_110b60e0(void)
   __asm mov ecx, dword ptr [ecx + 4]
   __asm jmp LAB_1003c691
 }
+
 
 
 
@@ -2321,7 +2530,7 @@ __declspec(naked) void FUN_110b7de0(void)
   __asm push offset LAB_119c34b8
   __asm call LAB_10059bb0
   __asm cmp ax, 0x44
-  __asm jae 0x110b7dfb
+  __asm _emit 0x73 __asm _emit 0x0b
   __asm mov ecx, dword ptr [esp + 4]
   __asm mov dword ptr [ecx], eax
   __asm mov eax, ecx
@@ -2330,6 +2539,7 @@ __declspec(naked) void FUN_110b7de0(void)
   __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm ret 4
 }
+
 
 
 
@@ -2345,12 +2555,13 @@ __declspec(naked) void FUN_110b89b0(void)
   __asm mov ecx, eax
   __asm add esp, 8
   __asm test ecx, ecx
-  __asm je 0x110b89cb
+  __asm _emit 0x74 __asm _emit 0x05
   __asm mov eax, dword ptr [ecx]
   __asm jmp dword ptr [eax + 0x24]
   __asm mov eax, offset LAB_1186d2ee
   __asm ret
 }
+
 
 
 
@@ -2367,14 +2578,14 @@ __declspec(naked) void FUN_110b8e40(void)
   __asm call LAB_10002ff4
   __asm add esp, 8
   __asm cmp dword ptr [esp + 4], 0xf
-  __asm jne 0x110b8e78
+  __asm _emit 0x75 __asm _emit 0x1e
   __asm push 0xf
   __asm push offset LAB_119c35a4
   __asm push dword ptr [esp + 8]
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b8e78
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm add esp, 0x28
   __asm ret
@@ -2382,6 +2593,7 @@ __declspec(naked) void FUN_110b8e40(void)
   __asm add esp, 0x28
   __asm ret
 }
+
 
 
 
@@ -2398,14 +2610,14 @@ __declspec(naked) void FUN_110b8e90(void)
   __asm call LAB_10002ff4
   __asm add esp, 8
   __asm cmp dword ptr [esp + 4], 0xf
-  __asm jne 0x110b8ec8
+  __asm _emit 0x75 __asm _emit 0x1e
   __asm push 0xf
   __asm push offset LAB_119c35d0
   __asm push dword ptr [esp + 8]
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b8ec8
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm add esp, 0x28
   __asm ret
@@ -2413,6 +2625,7 @@ __declspec(naked) void FUN_110b8e90(void)
   __asm add esp, 0x28
   __asm ret
 }
+
 
 
 
@@ -2436,6 +2649,7 @@ __declspec(naked) void FUN_110b8ef0(void)
 
 
 
+
 // Reference entry 110b8fc0; body size 62 bytes.
 #line 1 "ENTRY_110b8fc0"
 
@@ -2449,14 +2663,14 @@ __declspec(naked) void FUN_110b8fc0(void)
   __asm call LAB_10002ff4
   __asm add esp, 8
   __asm cmp dword ptr [esp + 4], 0x11
-  __asm jne 0x110b8ff8
+  __asm _emit 0x75 __asm _emit 0x1e
   __asm push 0x11
   __asm push offset LAB_119c35b8
   __asm push dword ptr [esp + 8]
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b8ff8
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm add esp, 0x28
   __asm ret
@@ -2464,6 +2678,7 @@ __declspec(naked) void FUN_110b8fc0(void)
   __asm add esp, 0x28
   __asm ret
 }
+
 
 
 
@@ -2480,14 +2695,14 @@ __declspec(naked) void FUN_110b9130(void)
   __asm call LAB_10002ff4
   __asm add esp, 8
   __asm cmp dword ptr [esp + 4], 0xe
-  __asm jne 0x110b9168
+  __asm _emit 0x75 __asm _emit 0x1e
   __asm push 0xe
   __asm push offset LAB_119c36b0
   __asm push dword ptr [esp + 8]
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b9168
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm add esp, 0x28
   __asm ret
@@ -2495,6 +2710,7 @@ __declspec(naked) void FUN_110b9130(void)
   __asm add esp, 0x28
   __asm ret
 }
+
 
 
 
@@ -2506,19 +2722,20 @@ __declspec(naked) void FUN_110b9200(void)
 {
   __asm mov eax, dword ptr [esp + 4]
   __asm cmp dword ptr [eax + 4], 0x13
-  __asm jne 0x110b9223
+  __asm _emit 0x75 __asm _emit 0x19
   __asm push 0x13
   __asm push offset LAB_119c3614
   __asm push dword ptr [eax]
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b9223
+  __asm _emit 0x75 __asm _emit 0x03
   __asm mov al, 1
   __asm ret
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -2535,14 +2752,14 @@ __declspec(naked) void FUN_110b9230(void)
   __asm call LAB_10002ff4
   __asm add esp, 8
   __asm cmp dword ptr [esp + 4], 0x13
-  __asm jne 0x110b9268
+  __asm _emit 0x75 __asm _emit 0x1e
   __asm push 0x13
   __asm push offset LAB_119c3614
   __asm push dword ptr [esp + 8]
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b9268
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm add esp, 0x28
   __asm ret
@@ -2550,6 +2767,7 @@ __declspec(naked) void FUN_110b9230(void)
   __asm add esp, 0x28
   __asm ret
 }
+
 
 
 
@@ -2561,19 +2779,20 @@ __declspec(naked) void FUN_110b9280(void)
 {
   __asm mov eax, dword ptr [esp + 4]
   __asm cmp dword ptr [eax + 4], 0x11
-  __asm jne 0x110b92a3
+  __asm _emit 0x75 __asm _emit 0x19
   __asm push 0x11
   __asm push offset LAB_119c35e4
   __asm push dword ptr [eax]
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b92a3
+  __asm _emit 0x75 __asm _emit 0x03
   __asm mov al, 1
   __asm ret
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -2590,14 +2809,14 @@ __declspec(naked) void FUN_110b92b0(void)
   __asm call LAB_10002ff4
   __asm add esp, 8
   __asm cmp dword ptr [esp + 4], 0x11
-  __asm jne 0x110b92e8
+  __asm _emit 0x75 __asm _emit 0x1e
   __asm push 0x11
   __asm push offset LAB_119c35e4
   __asm push dword ptr [esp + 8]
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b92e8
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm add esp, 0x28
   __asm ret
@@ -2605,6 +2824,7 @@ __declspec(naked) void FUN_110b92b0(void)
   __asm add esp, 0x28
   __asm ret
 }
+
 
 
 
@@ -2622,7 +2842,7 @@ __declspec(naked) void FUN_110b93b0(void)
   __asm mov eax, dword ptr [esp + 8]
   __asm add esp, 8
   __asm test eax, eax
-  __asm jne 0x110b93d1
+  __asm _emit 0x75 __asm _emit 0x06
   __asm xor al, al
   __asm add esp, 0x28
   __asm ret
@@ -2636,6 +2856,7 @@ __declspec(naked) void FUN_110b93b0(void)
   __asm add esp, 0x28
   __asm ret
 }
+
 
 
 
@@ -2653,7 +2874,7 @@ __declspec(naked) void FUN_110b9430(void)
   __asm mov eax, dword ptr [esp + 8]
   __asm add esp, 8
   __asm test eax, eax
-  __asm jne 0x110b9451
+  __asm _emit 0x75 __asm _emit 0x06
   __asm xor al, al
   __asm add esp, 0x28
   __asm ret
@@ -2670,6 +2891,7 @@ __declspec(naked) void FUN_110b9430(void)
 
 
 
+
 // Reference entry 110b9590; body size 62 bytes.
 #line 1 "ENTRY_110b9590"
 
@@ -2683,14 +2905,14 @@ __declspec(naked) void FUN_110b9590(void)
   __asm call LAB_10002ff4
   __asm add esp, 8
   __asm cmp dword ptr [esp + 4], 0xb
-  __asm jne 0x110b95c8
+  __asm _emit 0x75 __asm _emit 0x1e
   __asm push 0xb
   __asm push offset LAB_119c36d0
   __asm push dword ptr [esp + 8]
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b95c8
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm add esp, 0x28
   __asm ret
@@ -2698,6 +2920,7 @@ __declspec(naked) void FUN_110b9590(void)
   __asm add esp, 0x28
   __asm ret
 }
+
 
 
 
@@ -2714,14 +2937,14 @@ __declspec(naked) void FUN_110b9610(void)
   __asm call LAB_10002ff4
   __asm add esp, 8
   __asm cmp dword ptr [esp + 4], 8
-  __asm jne 0x110b9648
+  __asm _emit 0x75 __asm _emit 0x1e
   __asm push 8
   __asm push offset LAB_119c36a4
   __asm push dword ptr [esp + 8]
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b9648
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm add esp, 0x28
   __asm ret
@@ -2729,6 +2952,7 @@ __declspec(naked) void FUN_110b9610(void)
   __asm add esp, 0x28
   __asm ret
 }
+
 
 
 
@@ -2741,21 +2965,22 @@ __declspec(naked) void FUN_110b9940(void)
   __asm mov eax, dword ptr [esp + 4]
   __asm mov ecx, dword ptr [eax]
   __asm test ecx, ecx
-  __asm je 0x110b9968
+  __asm _emit 0x74 __asm _emit 0x1e
   __asm cmp dword ptr [eax + 4], 7
-  __asm jb 0x110b9968
+  __asm _emit 0x72 __asm _emit 0x18
   __asm push 7
   __asm push offset LAB_119c3674
   __asm push ecx
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110b9968
+  __asm _emit 0x75 __asm _emit 0x03
   __asm mov al, 1
   __asm ret
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -2791,7 +3016,7 @@ __declspec(naked) void FUN_110bf1b0(void)
   __asm mov eax, dword ptr [esp + 4]
   __asm mov eax, dword ptr [eax]
   __asm test eax, eax
-  __asm jne 0x110bf1bd
+  __asm _emit 0x75 __asm _emit 0x03
   __asm xor al, al
   __asm ret
   __asm push 0x10
@@ -2803,6 +3028,7 @@ __declspec(naked) void FUN_110bf1b0(void)
   __asm sete al
   __asm ret
 }
+
 
 
 
@@ -2828,6 +3054,7 @@ __declspec(naked) void FUN_110bf210(void)
 
 
 
+
 // Reference entry 110bf3e0; body size 38 bytes.
 #line 1 "ENTRY_110bf3e0"
 
@@ -2847,6 +3074,7 @@ __declspec(naked) void FUN_110bf3e0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -2872,6 +3100,7 @@ __declspec(naked) void FUN_110bf600(void)
 
 
 
+
 // Reference entry 110bf630; body size 38 bytes.
 #line 1 "ENTRY_110bf630"
 
@@ -2891,6 +3120,7 @@ __declspec(naked) void FUN_110bf630(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -2916,6 +3146,7 @@ __declspec(naked) void FUN_110bf660(void)
 
 
 
+
 // Reference entry 110c0940; body size 25 bytes.
 #line 1 "ENTRY_110c0940"
 
@@ -2931,6 +3162,7 @@ __declspec(naked) void FUN_110c0940(void)
   __asm pop esi
   __asm jmp LAB_100025d1
 }
+
 
 
 
@@ -3007,7 +3239,7 @@ __declspec(naked) void FUN_110c0eb0(void)
   __asm mov ecx, esi
   __asm call LAB_100025d1
   __asm test byte ptr [esp + 8], 1
-  __asm je 0x110c0edd
+  __asm _emit 0x74 __asm _emit 0x0e
   __asm push 0x150
   __asm push esi
   __asm call LAB_100131d8
@@ -3016,6 +3248,7 @@ __declspec(naked) void FUN_110c0eb0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -3093,7 +3326,7 @@ __declspec(naked) void FUN_110c1190(void)
   __asm mov esi, ecx
   __asm push edi
   __asm cmp dword ptr [esi + 0x20], 0
-  __asm jne 0x110c11b1
+  __asm _emit 0x75 __asm _emit 0x17
   __asm call LAB_10080c0b
   __asm mov ecx, dword ptr [esi + 0x28]
   __asm push esi
@@ -3111,6 +3344,7 @@ __declspec(naked) void FUN_110c1190(void)
 
 
 
+
 // Reference entry 110c1920; body size 59 bytes.
 #line 1 "ENTRY_110c1920"
 
@@ -3122,13 +3356,13 @@ __declspec(naked) void FUN_110c1920(void)
   __asm mov edi, ecx
   __asm mov esi, dword ptr [edi]
   __asm test esi, esi
-  __asm je 0x110c1942
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [esi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c1942
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [esi]
   __asm mov ecx, esi
   __asm push 1
@@ -3138,13 +3372,14 @@ __declspec(naked) void FUN_110c1920(void)
   __asm pop edi
   __asm pop esi
   __asm test eax, eax
-  __asm je 0x110c1958
+  __asm _emit 0x74 __asm _emit 0x0a
   __asm add eax, 4
   __asm push eax
   __asm call LAB_10066e8c
   __asm pop ecx
   __asm ret 4
 }
+
 
 
 
@@ -3159,13 +3394,13 @@ __declspec(naked) void FUN_110c1970(void)
   __asm mov edi, ecx
   __asm mov esi, dword ptr [edi]
   __asm test esi, esi
-  __asm je 0x110c1992
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [esi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c1992
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [esi]
   __asm mov ecx, esi
   __asm push 1
@@ -3175,13 +3410,14 @@ __declspec(naked) void FUN_110c1970(void)
   __asm pop edi
   __asm pop esi
   __asm test eax, eax
-  __asm je 0x110c19a8
+  __asm _emit 0x74 __asm _emit 0x0a
   __asm add eax, 4
   __asm push eax
   __asm call LAB_10066e8c
   __asm pop ecx
   __asm ret 4
 }
+
 
 
 
@@ -3196,13 +3432,13 @@ __declspec(naked) void FUN_110c19c0(void)
   __asm mov edi, ecx
   __asm mov esi, dword ptr [edi]
   __asm test esi, esi
-  __asm je 0x110c19e2
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [esi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c19e2
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [esi]
   __asm mov ecx, esi
   __asm push 1
@@ -3212,13 +3448,14 @@ __declspec(naked) void FUN_110c19c0(void)
   __asm pop edi
   __asm pop esi
   __asm test eax, eax
-  __asm je 0x110c19f8
+  __asm _emit 0x74 __asm _emit 0x0a
   __asm add eax, 4
   __asm push eax
   __asm call LAB_10066e8c
   __asm pop ecx
   __asm ret 4
 }
+
 
 
 
@@ -3233,13 +3470,13 @@ __declspec(naked) void FUN_110c1a10(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c1a32
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c1a32
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -3250,6 +3487,7 @@ __declspec(naked) void FUN_110c1a10(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -3268,6 +3506,7 @@ __declspec(naked) void FUN_110c1a60(void)
 
 
 
+
 // Reference entry 110c1a90; body size 16 bytes.
 #line 1 "ENTRY_110c1a90"
 
@@ -3275,11 +3514,12 @@ __declspec(naked) void FUN_110c1a90(void)
 
 {
   __asm cmp dword ptr [ecx + 0x2c], 0
-  __asm jne 0x110c1a9b
+  __asm _emit 0x75 __asm _emit 0x05
   __asm xor eax, eax
   __asm ret 8
   __asm jmp LAB_10002a68
 }
+
 
 
 
@@ -3294,13 +3534,13 @@ __declspec(naked) void FUN_110c1e70(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c1e92
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c1e92
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -3313,6 +3553,7 @@ __declspec(naked) void FUN_110c1e70(void)
 
 
 
+
 // Reference entry 110c20d0; body size 24 bytes.
 #line 1 "ENTRY_110c20d0"
 
@@ -3322,12 +3563,13 @@ __declspec(naked) void FUN_110c20d0(void)
   __asm push dword ptr [esp + 4]
   __asm call LAB_1003f2ba
   __asm test eax, eax
-  __asm je 0x110c20e3
+  __asm _emit 0x74 __asm _emit 0x06
   __asm mov eax, dword ptr [eax + 4]
   __asm ret 4
   __asm xor eax, eax
   __asm ret 4
 }
+
 
 
 
@@ -3375,7 +3617,7 @@ __declspec(naked) void FUN_110c35b0(void)
   __asm mov esi, ecx
   __asm mov ecx, dword ptr [esi + 0x28]
   __asm test ecx, ecx
-  __asm je 0x110c35ca
+  __asm _emit 0x74 __asm _emit 0x10
   __asm mov eax, dword ptr [ecx + 0x1c]
   __asm add ecx, 0x1c
   __asm call dword ptr [eax]
@@ -3389,6 +3631,7 @@ __declspec(naked) void FUN_110c35b0(void)
 
 
 
+
 // Reference entry 110c3e90; body size 32 bytes.
 #line 1 "ENTRY_110c3e90"
 
@@ -3399,7 +3642,7 @@ __declspec(naked) void FUN_110c3e90(void)
   __asm mov esi, ecx
   __asm mov ecx, dword ptr [esi + 0x28]
   __asm test ecx, ecx
-  __asm je 0x110c3eaa
+  __asm _emit 0x74 __asm _emit 0x10
   __asm mov eax, dword ptr [ecx + 0x1c]
   __asm add ecx, 0x1c
   __asm call dword ptr [eax]
@@ -3413,6 +3656,7 @@ __declspec(naked) void FUN_110c3e90(void)
 
 
 
+
 // Reference entry 110c4940; body size 55 bytes.
 #line 1 "ENTRY_110c4940"
 
@@ -3423,7 +3667,7 @@ __declspec(naked) void FUN_110c4940(void)
   __asm mov esi, ecx
   __asm mov ecx, dword ptr [esi + 0x2c]
   __asm test ecx, ecx
-  __asm je 0x110c495e
+  __asm _emit 0x74 __asm _emit 0x14
   __asm push dword ptr [esp + 8]
   __asm mov edx, dword ptr [ecx]
   __asm lea eax, [esi + 8]
@@ -3441,6 +3685,7 @@ __declspec(naked) void FUN_110c4940(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -3496,7 +3741,7 @@ __declspec(naked) void FUN_110c4ac0(void)
 
 {
   __asm cmp dword ptr [ecx], 1
-  __asm jne 0x110c4ad1
+  __asm _emit 0x75 __asm _emit 0x0c
   __asm call LAB_10048252
   __asm cmp eax, 0xb
   __asm sete al
@@ -3504,6 +3749,7 @@ __declspec(naked) void FUN_110c4ac0(void)
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -3565,12 +3811,13 @@ __declspec(naked) void FUN_110c5770(void)
   __asm call LAB_100922b7
   __asm mov eax, dword ptr [eax + 4]
   __asm test eax, eax
-  __asm jne 0x110c5791
+  __asm _emit 0x75 __asm _emit 0x03
   __asm mov eax, dword ptr [esi + 4]
   __asm pop esi
   __asm add esp, 8
   __asm ret 8
 }
+
 
 
 
@@ -3590,20 +3837,21 @@ __declspec(naked) void FUN_110c57b0(void)
   __asm call LAB_1007c363
   __asm mov esi, dword ptr [esp + 0x10]
   __asm cmp byte ptr [esi + 0xd], 0
-  __asm jne 0x110c57e2
+  __asm _emit 0x75 __asm _emit 0x13
   __asm mov ecx, dword ptr [esp + 0x18]
   __asm lea edx, [esi + 0x10]
   __asm push edx
   __asm call LAB_10071b61
   __asm test al, al
   __asm mov eax, esi
-  __asm je 0x110c57e4
+  __asm _emit 0x74 __asm _emit 0x02
   __asm mov eax, dword ptr [edi]
   __asm pop edi
   __asm pop esi
   __asm add esp, 0xc
   __asm ret 4
 }
+
 
 
 
@@ -3628,6 +3876,7 @@ __declspec(naked) void FUN_110c65a0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -3698,6 +3947,7 @@ __declspec(naked) void FUN_110c7e50(void)
 
 
 
+
 // Reference entry 110c8bc0; body size 27 bytes.
 #line 1 "ENTRY_110c8bc0"
 
@@ -3714,6 +3964,7 @@ __declspec(naked) void FUN_110c8bc0(void)
   __asm add esp, 8
   __asm ret 4
 }
+
 
 
 
@@ -3759,7 +4010,7 @@ __declspec(naked) void FUN_110c9050(void)
   __asm mov ecx, esi
   __asm call LAB_10047b09
   __asm test byte ptr [esp + 8], 1
-  __asm je 0x110c9074
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm push 0x44
   __asm push esi
   __asm call LAB_100131d8
@@ -3768,6 +4019,7 @@ __declspec(naked) void FUN_110c9050(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -3804,6 +4056,7 @@ __declspec(naked) void FUN_110c9180(void)
 
 
 
+
 // Reference entry 110c9910; body size 31 bytes.
 #line 1 "ENTRY_110c9910"
 
@@ -3836,13 +4089,13 @@ __declspec(naked) void FUN_110c9cb0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9cd2
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9cd2
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -3853,6 +4106,7 @@ __declspec(naked) void FUN_110c9cb0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -3867,13 +4121,13 @@ __declspec(naked) void FUN_110c9cf0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9d12
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9d12
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -3884,6 +4138,7 @@ __declspec(naked) void FUN_110c9cf0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -3898,13 +4153,13 @@ __declspec(naked) void FUN_110c9d30(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9d52
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9d52
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -3915,6 +4170,7 @@ __declspec(naked) void FUN_110c9d30(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -3929,13 +4185,13 @@ __declspec(naked) void FUN_110c9d70(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9d92
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9d92
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -3946,6 +4202,7 @@ __declspec(naked) void FUN_110c9d70(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -3960,13 +4217,13 @@ __declspec(naked) void FUN_110c9db0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9dd2
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9dd2
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -3977,6 +4234,7 @@ __declspec(naked) void FUN_110c9db0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -3991,13 +4249,13 @@ __declspec(naked) void FUN_110c9df0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9e12
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9e12
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4008,6 +4266,7 @@ __declspec(naked) void FUN_110c9df0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -4022,13 +4281,13 @@ __declspec(naked) void FUN_110c9e30(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9e52
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9e52
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4039,6 +4298,7 @@ __declspec(naked) void FUN_110c9e30(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -4053,13 +4313,13 @@ __declspec(naked) void FUN_110c9e70(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9e92
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9e92
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4070,6 +4330,7 @@ __declspec(naked) void FUN_110c9e70(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -4084,13 +4345,13 @@ __declspec(naked) void FUN_110c9eb0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9ed2
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9ed2
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4101,6 +4362,7 @@ __declspec(naked) void FUN_110c9eb0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -4115,13 +4377,13 @@ __declspec(naked) void FUN_110c9ef0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9f12
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9f12
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4132,6 +4394,7 @@ __declspec(naked) void FUN_110c9ef0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -4146,13 +4409,13 @@ __declspec(naked) void FUN_110c9f30(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9f52
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9f52
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4163,6 +4426,7 @@ __declspec(naked) void FUN_110c9f30(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -4177,13 +4441,13 @@ __declspec(naked) void FUN_110c9f70(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9f92
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9f92
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4194,6 +4458,7 @@ __declspec(naked) void FUN_110c9f70(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -4208,13 +4473,13 @@ __declspec(naked) void FUN_110c9fb0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110c9fd2
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110c9fd2
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4225,6 +4490,7 @@ __declspec(naked) void FUN_110c9fb0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -4239,13 +4505,13 @@ __declspec(naked) void FUN_110c9ff0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110ca012
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110ca012
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4256,6 +4522,7 @@ __declspec(naked) void FUN_110c9ff0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -4285,15 +4552,15 @@ __declspec(naked) void FUN_110ca230(void)
   __asm push esi
   __asm mov esi, ecx
   __asm cmp dword ptr [esi + 0x1c], 0
-  __asm je 0x110ca258
+  __asm _emit 0x74 __asm _emit 0x1f
   __asm call LAB_1006f9dd
   __asm test al, al
-  __asm jne 0x110ca258
+  __asm _emit 0x75 __asm _emit 0x16
   __asm mov ecx, dword ptr [esi + 0x1c]
   __asm add ecx, 0x378
   __asm call LAB_100672a1
   __asm test al, al
-  __asm je 0x110ca258
+  __asm _emit 0x74 __asm _emit 0x04
   __asm mov al, 1
   __asm pop esi
   __asm ret
@@ -4301,6 +4568,7 @@ __declspec(naked) void FUN_110ca230(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4331,21 +4599,22 @@ __declspec(naked) void FUN_110ca780(void)
   __asm mov eax, dword ptr [esp + 4]
   __asm mov ecx, dword ptr [eax]
   __asm test ecx, ecx
-  __asm je 0x110ca7aa
+  __asm _emit 0x74 __asm _emit 0x20
   __asm cmp dword ptr [eax + 4], 0xb
-  __asm jne 0x110ca7aa
+  __asm _emit 0x75 __asm _emit 0x1a
   __asm push 0xb
   __asm push offset LAB_118af674
   __asm push ecx
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm jne 0x110ca7aa
+  __asm _emit 0x75 __asm _emit 0x05
   __asm mov al, 1
   __asm ret 4
   __asm xor al, al
   __asm ret 4
 }
+
 
 
 
@@ -4360,13 +4629,13 @@ __declspec(naked) void FUN_110cad70(void)
   __asm mov edi, ecx
   __asm mov esi, dword ptr [edi + 0x14]
   __asm test esi, esi
-  __asm je 0x110cad93
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [esi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cad93
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [esi]
   __asm mov ecx, esi
   __asm push 1
@@ -4383,6 +4652,7 @@ __declspec(naked) void FUN_110cad70(void)
 
 
 
+
 // Reference entry 110cadc0; body size 24 bytes.
 #line 1 "ENTRY_110cadc0"
 
@@ -4391,12 +4661,13 @@ __declspec(naked) void FUN_110cadc0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110cadd2
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1002312d
   __asm mov eax, 2
   __asm ret
 }
+
 
 
 
@@ -4411,13 +4682,13 @@ __declspec(naked) void FUN_110caef0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110caf12
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110caf12
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4427,6 +4698,7 @@ __declspec(naked) void FUN_110caef0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4441,13 +4713,13 @@ __declspec(naked) void FUN_110caf30(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110caf52
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110caf52
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4457,6 +4729,7 @@ __declspec(naked) void FUN_110caf30(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4471,13 +4744,13 @@ __declspec(naked) void FUN_110caf70(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110caf92
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110caf92
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4487,6 +4760,7 @@ __declspec(naked) void FUN_110caf70(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4501,13 +4775,13 @@ __declspec(naked) void FUN_110cafb0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cafd2
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cafd2
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4517,6 +4791,7 @@ __declspec(naked) void FUN_110cafb0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4531,13 +4806,13 @@ __declspec(naked) void FUN_110caff0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb012
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb012
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4547,6 +4822,7 @@ __declspec(naked) void FUN_110caff0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4561,13 +4837,13 @@ __declspec(naked) void FUN_110cb030(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb052
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb052
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4577,6 +4853,7 @@ __declspec(naked) void FUN_110cb030(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4591,13 +4868,13 @@ __declspec(naked) void FUN_110cb070(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb092
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb092
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4607,6 +4884,7 @@ __declspec(naked) void FUN_110cb070(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4621,13 +4899,13 @@ __declspec(naked) void FUN_110cb0b0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb0d2
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb0d2
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4637,6 +4915,7 @@ __declspec(naked) void FUN_110cb0b0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4651,13 +4930,13 @@ __declspec(naked) void FUN_110cb0f0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb112
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb112
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4667,6 +4946,7 @@ __declspec(naked) void FUN_110cb0f0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4681,13 +4961,13 @@ __declspec(naked) void FUN_110cb130(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb152
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb152
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4697,6 +4977,7 @@ __declspec(naked) void FUN_110cb130(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4711,13 +4992,13 @@ __declspec(naked) void FUN_110cb170(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb192
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb192
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4727,6 +5008,7 @@ __declspec(naked) void FUN_110cb170(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4741,13 +5023,13 @@ __declspec(naked) void FUN_110cb1b0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb1d2
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb1d2
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4757,6 +5039,7 @@ __declspec(naked) void FUN_110cb1b0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4771,13 +5054,13 @@ __declspec(naked) void FUN_110cb1f0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb212
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb212
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4787,6 +5070,7 @@ __declspec(naked) void FUN_110cb1f0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4801,13 +5085,13 @@ __declspec(naked) void FUN_110cb230(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb252
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb252
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4817,6 +5101,7 @@ __declspec(naked) void FUN_110cb230(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4831,13 +5116,13 @@ __declspec(naked) void FUN_110cb270(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110cb292
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110cb292
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -4847,6 +5132,7 @@ __declspec(naked) void FUN_110cb270(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4882,12 +5168,13 @@ __declspec(naked) void FUN_110ce370(void)
 {
   __asm mov eax, dword ptr [ecx + 0x1c]
   __asm test eax, eax
-  __asm je 0x110ce37f
+  __asm _emit 0x74 __asm _emit 0x08
   __asm movzx eax, word ptr [eax + 0x56a]
   __asm ret
   __asm xor eax, eax
   __asm ret
 }
+
 
 
 
@@ -4911,18 +5198,19 @@ __declspec(naked) void FUN_110cead0(void)
   __asm push esi
   __asm mov esi, ecx
   __asm cmp byte ptr [esi + 0x520], 0
-  __asm jne 0x110ceaf3
+  __asm _emit 0x75 __asm _emit 0x17
   __asm mov ecx, dword ptr [esi + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110ceaf3
+  __asm _emit 0x74 __asm _emit 0x10
   __asm add ecx, 0x378
   __asm call LAB_10075b7b
   __asm cmp byte ptr [eax], 0
-  __asm jne 0x110ceaf9
+  __asm _emit 0x75 __asm _emit 0x06
   __asm lea eax, [esi + 0xb8]
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -4945,12 +5233,13 @@ __declspec(naked) void FUN_110d2700(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d2712
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1000879c
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -4962,7 +5251,7 @@ __declspec(naked) void FUN_110d2720(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d273c
+  __asm _emit 0x74 __asm _emit 0x15
   __asm add ecx, 0x378
   __asm call LAB_1005e0a2
   __asm push eax
@@ -4972,6 +5261,7 @@ __declspec(naked) void FUN_110d2720(void)
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5013,6 +5303,7 @@ __declspec(naked) void FUN_110d2ec0(void)
 
 
 
+
 // Reference entry 110d3030; body size 43 bytes.
 #line 1 "ENTRY_110d3030"
 
@@ -5035,6 +5326,7 @@ __declspec(naked) void FUN_110d3030(void)
   __asm add esp, 0x30
   __asm ret 4
 }
+
 
 
 
@@ -5063,6 +5355,7 @@ __declspec(naked) void FUN_110d3070(void)
 
 
 
+
 // Reference entry 110d3140; body size 35 bytes.
 #line 1 "ENTRY_110d3140"
 
@@ -5074,9 +5367,9 @@ __declspec(naked) void FUN_110d3140(void)
   __asm lea ecx, [esi + 0x564]
   __asm call LAB_100310bb
   __asm test al, al
-  __asm je 0x110d315f
+  __asm _emit 0x74 __asm _emit 0x0d
   __asm cmp dword ptr [esi + 0x568], 1
-  __asm jbe 0x110d315f
+  __asm _emit 0x76 __asm _emit 0x04
   __asm mov al, 1
   __asm pop esi
   __asm ret
@@ -5084,6 +5377,7 @@ __declspec(naked) void FUN_110d3140(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -5097,17 +5391,17 @@ __declspec(naked) void FUN_110d4080(void)
   __asm mov esi, ecx
   __asm push edi
   __asm cmp byte ptr [esi + 0xa70], 0
-  __asm je 0x110d40b9
+  __asm _emit 0x74 __asm _emit 0x2c
   __asm lea ecx, [esi + 0x564]
   __asm call LAB_100310bb
   __asm test al, al
-  __asm je 0x110d40b4
+  __asm _emit 0x74 __asm _emit 0x18
   __asm cmp dword ptr [esi + 0x568], 1
-  __asm jbe 0x110d40b4
+  __asm _emit 0x76 __asm _emit 0x0f
   __asm lea ecx, [esi + 0x564]
   __asm call LAB_1001acad
   __asm test al, al
-  __asm jne 0x110d40b9
+  __asm _emit 0x75 __asm _emit 0x05
   __asm pop edi
   __asm mov al, 1
   __asm pop esi
@@ -5117,6 +5411,7 @@ __declspec(naked) void FUN_110d4080(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -5132,13 +5427,13 @@ __declspec(naked) void FUN_110d55a0(void)
   __asm lea ecx, [esi + 0x564]
   __asm call LAB_100310bb
   __asm test al, al
-  __asm je 0x110d55d0
+  __asm _emit 0x74 __asm _emit 0x1d
   __asm cmp dword ptr [esi + 0x568], 1
-  __asm jbe 0x110d55d0
+  __asm _emit 0x76 __asm _emit 0x14
   __asm lea ecx, [esi + 0x564]
   __asm call LAB_1001acad
   __asm test al, al
-  __asm je 0x110d55d0
+  __asm _emit 0x74 __asm _emit 0x05
   __asm pop edi
   __asm mov al, 1
   __asm pop esi
@@ -5148,6 +5443,7 @@ __declspec(naked) void FUN_110d55a0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -5167,6 +5463,7 @@ __declspec(naked) void FUN_110d5760(void)
 
 
 
+
 // Reference entry 110d5780; body size 40 bytes.
 #line 1 "ENTRY_110d5780"
 
@@ -5181,7 +5478,7 @@ __declspec(naked) void FUN_110d5780(void)
   __asm mov ecx, dword ptr [esi + 0x538]
   __asm pop esi
   __asm test al, al
-  __asm je 0x110d57a1
+  __asm _emit 0x74 __asm _emit 0x07
   __asm cmp ecx, 5
   __asm sete al
   __asm ret
@@ -5189,6 +5486,7 @@ __declspec(naked) void FUN_110d5780(void)
   __asm sete al
   __asm ret
 }
+
 
 
 
@@ -5223,6 +5521,7 @@ __declspec(naked) void FUN_110d67a0(void)
 
 
 
+
 // Reference entry 110d6ed0; body size 17 bytes.
 #line 1 "ENTRY_110d6ed0"
 
@@ -5251,6 +5550,7 @@ __declspec(naked) void FUN_110d7950(void)
   __asm call LAB_10060140
   __asm ret 4
 }
+
 
 
 
@@ -5295,12 +5595,13 @@ __declspec(naked) void FUN_110d88a0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d88b2
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1002cb4c
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5312,12 +5613,13 @@ __declspec(naked) void FUN_110d88c0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d88d2
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_10017017
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5329,12 +5631,13 @@ __declspec(naked) void FUN_110d88e0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d88f2
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1009070f
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5346,12 +5649,13 @@ __declspec(naked) void FUN_110d8900(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8912
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1000c2b1
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5363,12 +5667,13 @@ __declspec(naked) void FUN_110d8930(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8942
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_10023277
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5380,12 +5685,13 @@ __declspec(naked) void FUN_110d8950(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8962
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_100318bd
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5397,12 +5703,13 @@ __declspec(naked) void FUN_110d8970(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8982
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1006adb1
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5414,12 +5721,13 @@ __declspec(naked) void FUN_110d89b0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d89c2
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_100109fb
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5431,12 +5739,13 @@ __declspec(naked) void FUN_110d89d0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d89e2
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_10037c95
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5450,16 +5759,16 @@ __declspec(naked) void FUN_110d89f0(void)
   __asm mov esi, ecx
   __asm mov ecx, dword ptr [esi + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8a1f
+  __asm _emit 0x74 __asm _emit 0x25
   __asm add ecx, 0x378
   __asm call LAB_1001b1f8
   __asm test al, al
-  __asm jne 0x110d8a1b
+  __asm _emit 0x75 __asm _emit 0x12
   __asm mov ecx, dword ptr [esi + 0x1c]
   __asm add ecx, 0x378
   __asm call LAB_1006adb1
   __asm test al, al
-  __asm je 0x110d8a1f
+  __asm _emit 0x74 __asm _emit 0x04
   __asm mov al, 1
   __asm pop esi
   __asm ret
@@ -5467,6 +5776,7 @@ __declspec(naked) void FUN_110d89f0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -5478,12 +5788,13 @@ __declspec(naked) void FUN_110d8a30(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8a42
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_100742c6
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5495,12 +5806,13 @@ __declspec(naked) void FUN_110d8a50(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8a62
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_10035891
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5512,12 +5824,13 @@ __declspec(naked) void FUN_110d8c40(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8c52
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_10023bf0
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5529,12 +5842,13 @@ __declspec(naked) void FUN_110d8c60(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8c72
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_10042064
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5546,12 +5860,13 @@ __declspec(naked) void FUN_110d8c80(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8c92
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1006041a
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5563,12 +5878,13 @@ __declspec(naked) void FUN_110d8cb0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8cc2
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_10021a3f
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5580,12 +5896,13 @@ __declspec(naked) void FUN_110d8d00(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8d12
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1009a598
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5597,12 +5914,13 @@ __declspec(naked) void FUN_110d8d20(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8d32
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_10059133
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5614,12 +5932,13 @@ __declspec(naked) void FUN_110d8d40(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8d52
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1009a9cb
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5631,12 +5950,13 @@ __declspec(naked) void FUN_110d8d60(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8d72
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_10004a70
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5648,12 +5968,13 @@ __declspec(naked) void FUN_110d8d80(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8d92
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1000470a
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5665,12 +5986,13 @@ __declspec(naked) void FUN_110d8dc0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8dd2
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_100208ab
   __asm xor al, al
   __asm ret
 }
+
 
 
 
@@ -5682,7 +6004,7 @@ __declspec(naked) void FUN_110d8de0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8dfc
+  __asm _emit 0x74 __asm _emit 0x15
   __asm add ecx, 0x378
   __asm call LAB_1005e0a2
   __asm push eax
@@ -5695,6 +6017,7 @@ __declspec(naked) void FUN_110d8de0(void)
 
 
 
+
 // Reference entry 110d8e10; body size 46 bytes.
 #line 1 "ENTRY_110d8e10"
 
@@ -5703,12 +6026,12 @@ __declspec(naked) void FUN_110d8e10(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d8e3b
+  __asm _emit 0x74 __asm _emit 0x24
   __asm add ecx, 0x378
   __asm call LAB_1005e0a2
   __asm add eax, -4
   __asm cmp eax, 0x33
-  __asm ja 0x110d8e3b
+  __asm _emit 0x77 __asm _emit 0x11
   __asm movzx eax, byte ptr [eax + LAB_110d8e48]
   __asm jmp dword ptr [eax*4 + LAB_110d8e40]
   __asm xor al, al
@@ -5716,6 +6039,7 @@ __declspec(naked) void FUN_110d8e10(void)
   __asm mov al, 1
   __asm ret
 }
+
 
 
 
@@ -5727,12 +6051,13 @@ __declspec(naked) void FUN_110d9b30(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x1c]
   __asm test ecx, ecx
-  __asm je 0x110d9b42
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm add ecx, 0x378
   __asm jmp LAB_1005e0a2
   __asm xor eax, eax
   __asm ret
 }
+
 
 
 
@@ -5765,6 +6090,7 @@ __declspec(naked) void FUN_110d9bc0(void)
 
 
 
+
 // Reference entry 110da760; body size 45 bytes.
 #line 1 "ENTRY_110da760"
 
@@ -5775,7 +6101,7 @@ __declspec(naked) void FUN_110da760(void)
   __asm mov edi, ecx
   __asm mov ecx, dword ptr [edi + 0x20]
   __asm test ecx, ecx
-  __asm je 0x110da789
+  __asm _emit 0x74 __asm _emit 0x1f
   __asm mov eax, dword ptr [ecx]
   __asm push esi
   __asm call dword ptr [eax + 0x58]
@@ -5794,6 +6120,7 @@ __declspec(naked) void FUN_110da760(void)
   __asm pop edi
   __asm ret
 }
+
 
 
 
@@ -5825,12 +6152,12 @@ __declspec(naked) void FUN_110db5c0(void)
   __asm mov eax, dword ptr [esi]
   __asm call dword ptr [eax + 0x54]
   __asm cmp eax, 1
-  __asm jne 0x110db5de
+  __asm _emit 0x75 __asm _emit 0x11
   __asm mov eax, dword ptr [esi]
   __asm mov ecx, esi
   __asm call dword ptr [eax + 0x5c]
   __asm test byte ptr [eax + 4], 1
-  __asm je 0x110db5de
+  __asm _emit 0x74 __asm _emit 0x04
   __asm mov al, 1
   __asm pop esi
   __asm ret
@@ -5838,6 +6165,7 @@ __declspec(naked) void FUN_110db5c0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -5879,6 +6207,7 @@ __declspec(naked) void FUN_110dc760(void)
 
 
 
+
 // Reference entry 110dc880; body size 19 bytes.
 #line 1 "ENTRY_110dc880"
 
@@ -5893,6 +6222,7 @@ __declspec(naked) void FUN_110dc880(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -5912,6 +6242,7 @@ __declspec(naked) void FUN_110dc8a0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -5986,7 +6317,7 @@ __declspec(naked) void FUN_110dcd90(void)
   __asm call LAB_10041c59
   __asm test byte ptr [esp + 8], 1
   __asm mov dword ptr [esi], LAB_119c5840
-  __asm je 0x110dcdb3
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm push 0x64
   __asm push esi
   __asm call LAB_100131d8
@@ -5995,6 +6326,7 @@ __declspec(naked) void FUN_110dcd90(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -6012,7 +6344,7 @@ __declspec(naked) void FUN_110dcdd0(void)
   __asm call LAB_10072d77
   __asm test byte ptr [esp + 8], 1
   __asm mov dword ptr [esi], LAB_119c5a7c
-  __asm je 0x110dce05
+  __asm _emit 0x74 __asm _emit 0x0e
   __asm push 0x6020
   __asm push esi
   __asm call LAB_100131d8
@@ -6021,6 +6353,7 @@ __declspec(naked) void FUN_110dcdd0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -6063,24 +6396,25 @@ __declspec(naked) void FUN_110de320(void)
 {
   __asm mov eax, dword ptr [ecx + 0x1888]
   __asm test eax, eax
-  __asm je 0x110de337
+  __asm _emit 0x74 __asm _emit 0x0d
   __asm cmp eax, 0x1e
-  __asm jb 0x110de337
+  __asm _emit 0x72 __asm _emit 0x08
   __asm cmp eax, 0xe10
-  __asm ja 0x110de34e
+  __asm _emit 0x77 __asm _emit 0x18
   __asm ret
   __asm movzx eax, word ptr [ecx + 0x169a]
   __asm test eax, eax
-  __asm je 0x110de354
+  __asm _emit 0x74 __asm _emit 0x12
   __asm cmp eax, 0x1e
-  __asm jb 0x110de354
+  __asm _emit 0x72 __asm _emit 0x0d
   __asm cmp eax, 0xe10
-  __asm jbe 0x110de359
+  __asm _emit 0x76 __asm _emit 0x0b
   __asm mov eax, 0xe10
   __asm ret
   __asm mov eax, 0x1e
   __asm ret
 }
+
 
 
 
@@ -6092,7 +6426,7 @@ __declspec(naked) void FUN_110de640(void)
 {
   __asm mov eax, dword ptr [ecx + 0x6018]
   __asm test eax, eax
-  __asm je 0x110de656
+  __asm _emit 0x74 __asm _emit 0x0c
   __asm xor ecx, ecx
   __asm cmp byte ptr [eax + 0xb5], cl
   __asm cmovne eax, ecx
@@ -6105,6 +6439,7 @@ __declspec(naked) void FUN_110de640(void)
   __asm xor eax, eax
   __asm ret
 }
+
 
 
 
@@ -6121,6 +6456,7 @@ __declspec(naked) void FUN_110def50(void)
   __asm ret
   __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc
 }
+
 
 
 
@@ -6150,7 +6486,7 @@ __declspec(naked) void FUN_110e09c0(void)
   __asm mov eax, dword ptr [esp + 8]
   __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
   __asm cmp word ptr [eax], 0
-  __asm jne 0x110e09dd
+  __asm _emit 0x75 __asm _emit 0x0c
   __asm mov edx, dword ptr [ecx]
   __asm lea eax, [ecx + 0x20]
   __asm push eax
@@ -6159,6 +6495,7 @@ __declspec(naked) void FUN_110e09c0(void)
   __asm mov al, 1
   __asm ret 8
 }
+
 
 
 
@@ -6185,6 +6522,7 @@ __declspec(naked) void FUN_110e1d30(void)
 
 
 
+
 // Reference entry 110e20d0; body size 37 bytes.
 #line 1 "ENTRY_110e20d0"
 
@@ -6195,7 +6533,7 @@ __declspec(naked) void FUN_110e20d0(void)
   __asm mov esi, dword ptr [esp + 8]
   __asm mov eax, ecx
   __asm test esi, esi
-  __asm je 0x110e20f1
+  __asm _emit 0x74 __asm _emit 0x16
   __asm push edi
   __asm lea edi, [eax + 0x188c]
   __asm mov ecx, 0x40
@@ -6208,6 +6546,7 @@ __declspec(naked) void FUN_110e20d0(void)
 
 
 
+
 // Reference entry 110e28d0; body size 24 bytes.
 #line 1 "ENTRY_110e28d0"
 
@@ -6216,13 +6555,14 @@ __declspec(naked) void FUN_110e28d0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x198c]
   __asm test ecx, ecx
-  __asm je 0x110e28e3
+  __asm _emit 0x74 __asm _emit 0x09
   __asm mov eax, dword ptr [ecx + 8]
   __asm add ecx, 8
   __asm jmp dword ptr [eax + 4]
   __asm xor eax, eax
   __asm ret 0xc
 }
+
 
 
 
@@ -6235,7 +6575,7 @@ __declspec(naked) void FUN_110e2c60(void)
   __asm push esi
   __asm mov esi, ecx
   __asm cmp byte ptr [esi + 0x1964], 0
-  __asm jne 0x110e2c87
+  __asm _emit 0x75 __asm _emit 0x1b
   __asm mov byte ptr [esi + 0x1964], 1
   __asm call LAB_1000e23c
   __asm lea ecx, [esi - 0x2c]
@@ -6249,6 +6589,7 @@ __declspec(naked) void FUN_110e2c60(void)
 
 
 
+
 // Reference entry 110e3630; body size 30 bytes.
 #line 1 "ENTRY_110e3630"
 
@@ -6259,7 +6600,7 @@ __declspec(naked) void FUN_110e3630(void)
   __asm mov esi, ecx
   __asm mov ecx, dword ptr [esi + 0x28]
   __asm test ecx, ecx
-  __asm je 0x110e364a
+  __asm _emit 0x74 __asm _emit 0x10
   __asm push dword ptr [esp + 8]
   __asm mov edx, dword ptr [ecx]
   __asm lea eax, [esi + 8]
@@ -6269,6 +6610,7 @@ __declspec(naked) void FUN_110e3630(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -6294,6 +6636,7 @@ __declspec(naked) void FUN_110e3660(void)
   __asm call LAB_10093793
   __asm ret 4
 }
+
 
 
 
@@ -6407,6 +6750,7 @@ __declspec(naked) void FUN_110e70a0(void)
 
 
 
+
 // Reference entry 110e7d10; body size 45 bytes.
 #line 1 "ENTRY_110e7d10"
 
@@ -6418,13 +6762,13 @@ __declspec(naked) void FUN_110e7d10(void)
   __asm mov ecx, esi
   __asm call LAB_1001c864
   __asm test al, al
-  __asm jne 0x110e7d2a
+  __asm _emit 0x75 __asm _emit 0x0b
   __asm mov ecx, esi
   __asm call LAB_1004ae94
   __asm test al, al
-  __asm je 0x110e7d37
+  __asm _emit 0x74 __asm _emit 0x0d
   __asm cmp byte ptr [esp + 8], 0
-  __asm jne 0x110e7d37
+  __asm _emit 0x75 __asm _emit 0x06
   __asm mov al, 1
   __asm pop esi
   __asm ret 4
@@ -6432,6 +6776,7 @@ __declspec(naked) void FUN_110e7d10(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -6447,7 +6792,7 @@ __declspec(naked) void FUN_110e9120(void)
   __asm mov dword ptr [esi], LAB_119c66e8
   __asm mov dword ptr [esi + 0xc], LAB_119c6714
   __asm test ecx, ecx
-  __asm je 0x110e913d
+  __asm _emit 0x74 __asm _emit 0x06
   __asm mov eax, dword ptr [ecx]
   __asm push 1
   __asm call dword ptr [eax]
@@ -6456,6 +6801,7 @@ __declspec(naked) void FUN_110e9120(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -6473,7 +6819,7 @@ __declspec(naked) void FUN_110e9160(void)
   __asm mov dword ptr [esi], LAB_119c66e8
   __asm mov dword ptr [esi + 0xc], LAB_119c6714
   __asm test ecx, ecx
-  __asm je 0x110e9185
+  __asm _emit 0x74 __asm _emit 0x06
   __asm mov eax, dword ptr [ecx]
   __asm push 1
   __asm call dword ptr [eax]
@@ -6482,6 +6828,7 @@ __declspec(naked) void FUN_110e9160(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -6499,7 +6846,7 @@ __declspec(naked) void FUN_110e9320(void)
   __asm mov dword ptr [esi], LAB_119c66e8
   __asm mov dword ptr [esi + 0xc], LAB_119c6714
   __asm test ecx, ecx
-  __asm je 0x110e9345
+  __asm _emit 0x74 __asm _emit 0x06
   __asm mov eax, dword ptr [ecx]
   __asm push 1
   __asm call dword ptr [eax]
@@ -6508,6 +6855,7 @@ __declspec(naked) void FUN_110e9320(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -6522,7 +6870,7 @@ __declspec(naked) void FUN_110e9370(void)
   __asm mov ecx, dword ptr [esi + 0xc4]
   __asm mov dword ptr [esi], LAB_119c64dc
   __asm test ecx, ecx
-  __asm je 0x110e9393
+  __asm _emit 0x74 __asm _emit 0x10
   __asm mov eax, dword ptr [ecx]
   __asm push 1
   __asm call dword ptr [eax]
@@ -6534,6 +6882,7 @@ __declspec(naked) void FUN_110e9370(void)
   __asm pop esi
   __asm jmp LAB_10036e30
 }
+
 
 
 
@@ -6608,7 +6957,7 @@ __declspec(naked) void FUN_110ea940(void)
   __asm mov ecx, eax
   __asm call LAB_1003214b
   __asm test eax, eax
-  __asm jne 0x110ea95c
+  __asm _emit 0x75 __asm _emit 0x04
   __asm pop esi
   __asm ret 4
   __asm mov eax, dword ptr [esi]
@@ -6619,6 +6968,7 @@ __declspec(naked) void FUN_110ea940(void)
   __asm mov eax, dword ptr [ecx]
   __asm jmp dword ptr [eax + 0x40]
 }
+
 
 
 
@@ -6646,7 +6996,7 @@ __declspec(naked) void FUN_110ec740(void)
   __asm mov ecx, eax
   __asm call LAB_1003214b
   __asm test eax, eax
-  __asm jne 0x110ec75a
+  __asm _emit 0x75 __asm _emit 0x02
   __asm pop esi
   __asm ret
   __asm mov eax, dword ptr [esi]
@@ -6660,6 +7010,7 @@ __declspec(naked) void FUN_110ec740(void)
 
 
 
+
 // Reference entry 110ec780; body size 18 bytes.
 #line 1 "ENTRY_110ec780"
 
@@ -6668,12 +7019,13 @@ __declspec(naked) void FUN_110ec780(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x10]
   __asm test ecx, ecx
-  __asm je 0x110ec78c
+  __asm _emit 0x74 __asm _emit 0x05
   __asm mov eax, dword ptr [ecx]
   __asm jmp dword ptr [eax + 4]
   __asm mov eax, 1
   __asm ret
 }
+
 
 
 
@@ -6695,6 +7047,7 @@ __declspec(naked) void FUN_110ec7a0(void)
 
 
 
+
 // Reference entry 110ecc20; body size 50 bytes.
 #line 1 "ENTRY_110ecc20"
 
@@ -6708,7 +7061,7 @@ __declspec(naked) void FUN_110ecc20(void)
   __asm mov ecx, eax
   __asm call LAB_1003214b
   __asm test eax, eax
-  __asm jne 0x110ecc3a
+  __asm _emit 0x75 __asm _emit 0x02
   __asm pop esi
   __asm ret
   __asm mov eax, dword ptr [esi]
@@ -6719,6 +7072,7 @@ __declspec(naked) void FUN_110ecc20(void)
   __asm mov eax, dword ptr [eax + 0x1994]
   __asm ret
 }
+
 
 
 
@@ -6741,12 +7095,13 @@ __declspec(naked) void FUN_110ecda0(void)
 {
   __asm mov ecx, dword ptr [ecx + 0x10]
   __asm test ecx, ecx
-  __asm je 0x110ecdac
+  __asm _emit 0x74 __asm _emit 0x05
   __asm mov eax, dword ptr [ecx]
   __asm jmp dword ptr [eax + 8]
   __asm mov eax, 1
   __asm ret
 }
+
 
 
 
@@ -6765,6 +7120,7 @@ __declspec(naked) void FUN_110ecdc0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -6793,9 +7149,9 @@ __declspec(naked) void FUN_110ecfe0(void)
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm je 0x110ed01b
+  __asm _emit 0x74 __asm _emit 0x21
   __asm cmp byte ptr [esi], 0x48
-  __asm jne 0x110ed017
+  __asm _emit 0x75 __asm _emit 0x18
   __asm push 4
   __asm lea eax, [esi + 1]
   __asm push offset LAB_119c6638
@@ -6803,7 +7159,7 @@ __declspec(naked) void FUN_110ecfe0(void)
   __asm call dword ptr [LAB_122fca10]
   __asm add esp, 0xc
   __asm test eax, eax
-  __asm je 0x110ed01b
+  __asm _emit 0x74 __asm _emit 0x04
   __asm xor al, al
   __asm pop esi
   __asm ret
@@ -6811,6 +7167,7 @@ __declspec(naked) void FUN_110ecfe0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -6838,7 +7195,7 @@ __declspec(naked) void FUN_110ed2d0(void)
   __asm mov ecx, eax
   __asm call LAB_1003214b
   __asm test eax, eax
-  __asm jne 0x110ed2f3
+  __asm _emit 0x75 __asm _emit 0x0b
   __asm mov eax, dword ptr [esp + 8]
   __asm pop esi
   __asm mov byte ptr [eax], 0
@@ -6854,6 +7211,7 @@ __declspec(naked) void FUN_110ed2d0(void)
 
 
 
+
 // Reference entry 110ed320; body size 21 bytes.
 #line 1 "ENTRY_110ed320"
 
@@ -6863,12 +7221,13 @@ __declspec(naked) void FUN_110ed320(void)
   __asm mov edx, ecx
   __asm mov ecx, dword ptr [edx + 4]
   __asm test ecx, ecx
-  __asm je 0x110ed332
+  __asm _emit 0x74 __asm _emit 0x09
   __asm mov eax, dword ptr [ecx]
   __asm mov dword ptr [esp + 4], edx
   __asm jmp dword ptr [eax + 4]
   __asm ret 8
 }
+
 
 
 
@@ -6890,11 +7249,12 @@ __declspec(naked) void FUN_110ed980(void)
 
 {
   __asm cmp dword ptr [esp + 8], 0
-  __asm jbe 0x110ed98e
+  __asm _emit 0x76 __asm _emit 0x07
   __asm mov eax, dword ptr [esp + 4]
   __asm mov byte ptr [eax], 0
   __asm ret 8
 }
+
 
 
 
@@ -6915,6 +7275,7 @@ __declspec(naked) void FUN_110edc00(void)
   __asm mov dword ptr [esp + 4], eax
   __asm jmp dword ptr [edx + 0x10]
 }
+
 
 
 
@@ -6961,20 +7322,21 @@ __declspec(naked) void FUN_110ee0d0(void)
   __asm call LAB_1005a3ee
   __asm mov esi, dword ptr [esp + 0x10]
   __asm cmp byte ptr [esi + 0xd], 0
-  __asm jne 0x110ee102
+  __asm _emit 0x75 __asm _emit 0x13
   __asm mov ecx, dword ptr [esp + 0x18]
   __asm lea edx, [esi + 0x10]
   __asm push edx
   __asm call LAB_10071b61
   __asm test al, al
   __asm mov eax, esi
-  __asm je 0x110ee104
+  __asm _emit 0x74 __asm _emit 0x02
   __asm mov eax, dword ptr [edi]
   __asm pop edi
   __asm pop esi
   __asm add esp, 0xc
   __asm ret 4
 }
+
 
 
 
@@ -6999,6 +7361,7 @@ __declspec(naked) void FUN_110ee540(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -7037,19 +7400,20 @@ __declspec(naked) void FUN_110f0490(void)
   __asm mov esi, ecx
   __asm mov eax, dword ptr [esi + 4]
   __asm test eax, eax
-  __asm je 0x110f04a5
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm lea ecx, [eax + 0x10]
   __asm call LAB_10023a4c
   __asm mov eax, dword ptr [esi + 4]
   __asm pop esi
   __asm test eax, eax
-  __asm je 0x110f04b5
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm push 0x18
   __asm push eax
   __asm call LAB_100131d8
   __asm add esp, 8
   __asm ret
 }
+
 
 
 
@@ -7112,6 +7476,7 @@ __declspec(naked) void FUN_110f0df0(void)
 
 
 
+
 // Reference entry 110f1790; body size 59 bytes.
 #line 1 "ENTRY_110f1790"
 
@@ -7123,13 +7488,13 @@ __declspec(naked) void FUN_110f1790(void)
   __asm mov edi, ecx
   __asm mov esi, dword ptr [edi]
   __asm test esi, esi
-  __asm je 0x110f17b2
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [esi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110f17b2
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [esi]
   __asm mov ecx, esi
   __asm push 1
@@ -7139,13 +7504,14 @@ __declspec(naked) void FUN_110f1790(void)
   __asm pop edi
   __asm pop esi
   __asm test eax, eax
-  __asm je 0x110f17c8
+  __asm _emit 0x74 __asm _emit 0x0a
   __asm add eax, 4
   __asm push eax
   __asm call LAB_10066e8c
   __asm pop ecx
   __asm ret 4
 }
+
 
 
 
@@ -7160,13 +7526,13 @@ __declspec(naked) void FUN_110f24b0(void)
   __asm push edi
   __asm mov edi, dword ptr [esi]
   __asm test edi, edi
-  __asm je 0x110f24d2
+  __asm _emit 0x74 __asm _emit 0x18
   __asm lea eax, [edi + 4]
   __asm push eax
   __asm call LAB_1001718e
   __asm add esp, 4
   __asm test eax, eax
-  __asm jne 0x110f24d2
+  __asm _emit 0x75 __asm _emit 0x08
   __asm mov eax, dword ptr [edi]
   __asm mov ecx, edi
   __asm push 1
@@ -7176,6 +7542,7 @@ __declspec(naked) void FUN_110f24b0(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -7251,7 +7618,7 @@ __declspec(naked) void FUN_110f53b0(void)
 {
   __asm mov eax, dword ptr [esp + 4]
   __asm cmp eax, 3
-  __asm ja 0x110f53c9
+  __asm _emit 0x77 __asm _emit 0x10
   __asm jmp dword ptr [eax*4 + LAB_110f53d0]
   __asm mov eax, 1
   __asm ret
@@ -7260,6 +7627,7 @@ __declspec(naked) void FUN_110f53b0(void)
   __asm or eax, 0xffffffff
   __asm ret
 }
+
 
 
 
@@ -7273,17 +7641,17 @@ __declspec(naked) void FUN_110f6650(void)
   __asm mov esi, ecx
   __asm mov eax, dword ptr [esi + 0x24]
   __asm test eax, eax
-  __asm je 0x110f665d
+  __asm _emit 0x74 __asm _emit 0x03
   __asm pop esi
   __asm jmp eax
   __asm mov eax, dword ptr [esi + 0x1c]
   __asm cmp eax, -1
-  __asm je 0x110f666c
+  __asm _emit 0x74 __asm _emit 0x07
   __asm push eax
   __asm call dword ptr [LAB_122fc19c]
   __asm mov eax, dword ptr [esi + 0x20]
   __asm test eax, eax
-  __asm je 0x110f6682
+  __asm _emit 0x74 __asm _emit 0x0f
   __asm push esi
   __asm push 0
   __asm push 0x464
@@ -7292,6 +7660,7 @@ __declspec(naked) void FUN_110f6650(void)
   __asm pop esi
   __asm ret
 }
+
 
 
 
@@ -7317,6 +7686,7 @@ __declspec(naked) void FUN_110f66a0(void)
   __asm pop ecx
   __asm ret 4
 }
+
 
 
 
@@ -7357,7 +7727,7 @@ __declspec(naked) void FUN_110f6940(void)
   __asm mov eax, dword ptr [esi + 4]
   __asm mov dword ptr [esi], LAB_119c76e0
   __asm test eax, eax
-  __asm je 0x110f6959
+  __asm _emit 0x74 __asm _emit 0x09
   __asm push eax
   __asm call LAB_1001b667
   __asm add esp, 4
@@ -7365,6 +7735,7 @@ __declspec(naked) void FUN_110f6940(void)
   __asm pop esi
   __asm jmp LAB_1003125a
 }
+
 
 
 
@@ -7379,7 +7750,7 @@ __declspec(naked) void FUN_110f6970(void)
   __asm mov eax, dword ptr [esi + 4]
   __asm mov dword ptr [esi], LAB_119c7738
   __asm test eax, eax
-  __asm je 0x110f6989
+  __asm _emit 0x74 __asm _emit 0x09
   __asm push eax
   __asm call LAB_1001b667
   __asm add esp, 4
@@ -7387,6 +7758,7 @@ __declspec(naked) void FUN_110f6970(void)
   __asm pop esi
   __asm jmp LAB_100162a2
 }
+
 
 
 
@@ -7401,7 +7773,7 @@ __declspec(naked) void FUN_110f69a0(void)
   __asm mov eax, dword ptr [esi + 4]
   __asm mov dword ptr [esi], LAB_119c76cc
   __asm test eax, eax
-  __asm je 0x110f69b9
+  __asm _emit 0x74 __asm _emit 0x09
   __asm push eax
   __asm call LAB_1001b667
   __asm add esp, 4
@@ -7409,6 +7781,7 @@ __declspec(naked) void FUN_110f69a0(void)
   __asm pop esi
   __asm jmp LAB_10070185
 }
+
 
 
 
@@ -7421,12 +7794,13 @@ __declspec(naked) void FUN_110f69d0(void)
   __asm mov eax, dword ptr [ecx + 4]
   __asm mov dword ptr [ecx], LAB_119c76fc
   __asm test eax, eax
-  __asm je 0x110f69e4
+  __asm _emit 0x74 __asm _emit 0x07
   __asm push eax
   __asm call LAB_1001b667
   __asm pop ecx
   __asm ret
 }
+
 
 
 
@@ -7441,7 +7815,7 @@ __declspec(naked) void FUN_110f6ac0(void)
   __asm push edi
   __asm mov edi, ecx
   __asm cmp edi, esi
-  __asm je 0x110f6ad7
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm push dword ptr [esi + 4]
   __asm push dword ptr [esi + 8]
   __asm call LAB_1005a128
@@ -7452,12 +7826,13 @@ __declspec(naked) void FUN_110f6ac0(void)
   __asm lea eax, [eax + 1]
   __asm mov byte ptr [eax - 1], cl
   __asm sub edx, 1
-  __asm jne 0x110f6ae1
+  __asm _emit 0x75 __asm _emit 0xf2
   __asm mov eax, edi
   __asm pop edi
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -7516,14 +7891,14 @@ __declspec(naked) void FUN_110f6c10(void)
   __asm mov eax, dword ptr [esi + 4]
   __asm mov dword ptr [esi], LAB_119c76e0
   __asm test eax, eax
-  __asm je 0x110f6c29
+  __asm _emit 0x74 __asm _emit 0x09
   __asm push eax
   __asm call LAB_1001b667
   __asm add esp, 4
   __asm mov ecx, esi
   __asm call LAB_1003125a
   __asm test byte ptr [esp + 8], 1
-  __asm je 0x110f6c42
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm push 0xc
   __asm push esi
   __asm call LAB_100131d8
@@ -7532,6 +7907,7 @@ __declspec(naked) void FUN_110f6c10(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -7546,14 +7922,14 @@ __declspec(naked) void FUN_110f6c60(void)
   __asm mov eax, dword ptr [esi + 4]
   __asm mov dword ptr [esi], LAB_119c7738
   __asm test eax, eax
-  __asm je 0x110f6c79
+  __asm _emit 0x74 __asm _emit 0x09
   __asm push eax
   __asm call LAB_1001b667
   __asm add esp, 4
   __asm mov ecx, esi
   __asm call LAB_100162a2
   __asm test byte ptr [esp + 8], 1
-  __asm je 0x110f6c92
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm push 8
   __asm push esi
   __asm call LAB_100131d8
@@ -7562,6 +7938,7 @@ __declspec(naked) void FUN_110f6c60(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -7576,14 +7953,14 @@ __declspec(naked) void FUN_110f6cb0(void)
   __asm mov eax, dword ptr [esi + 4]
   __asm mov dword ptr [esi], LAB_119c76cc
   __asm test eax, eax
-  __asm je 0x110f6cc9
+  __asm _emit 0x74 __asm _emit 0x09
   __asm push eax
   __asm call LAB_1001b667
   __asm add esp, 4
   __asm mov ecx, esi
   __asm call LAB_10070185
   __asm test byte ptr [esp + 8], 1
-  __asm je 0x110f6ce2
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm push 0xc
   __asm push esi
   __asm call LAB_100131d8
@@ -7592,6 +7969,7 @@ __declspec(naked) void FUN_110f6cb0(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
@@ -7606,12 +7984,12 @@ __declspec(naked) void FUN_110f6d00(void)
   __asm mov eax, dword ptr [esi + 4]
   __asm mov dword ptr [esi], LAB_119c76fc
   __asm test eax, eax
-  __asm je 0x110f6d19
+  __asm _emit 0x74 __asm _emit 0x09
   __asm push eax
   __asm call LAB_1001b667
   __asm add esp, 4
   __asm test byte ptr [esp + 8], 1
-  __asm je 0x110f6d2b
+  __asm _emit 0x74 __asm _emit 0x0b
   __asm push 0x18
   __asm push esi
   __asm call LAB_100131d8
@@ -7620,6 +7998,7 @@ __declspec(naked) void FUN_110f6d00(void)
   __asm pop esi
   __asm ret 4
 }
+
 
 
 
