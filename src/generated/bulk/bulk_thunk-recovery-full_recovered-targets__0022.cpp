@@ -2708,6 +2708,15 @@ struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1
 struct SCVtbl_3_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual int v(void); };
 struct SCVtbl_4_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(int a1); };
 int FUN_10092686();
+int FUN_10068ce6(void);
+int FUN_1005c743(void);
+int FUN_1005bce9(void);
+int FUN_10068ce6(...);
+int FUN_1005c743(...);
+int FUN_1005bce9(...);
+template<class... A> int FUN_1005bce9(A...);
+template<class... A> int FUN_1005c743(A...);
+template<class... A> int FUN_10068ce6(A...);
 #line 1 "ENTRY_10e28de0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -7079,40 +7088,11 @@ void __fastcall FUN_10e5e4e0(int param_1)
 void __fastcall FUN_10e5e750(undefined4 *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAlexaAuthChecklistDownloadAlexaState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCAlexaAuthChecklistDownloadAlexaState);
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAlexaAuthReminderState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCAlexaAuthReminderState);
-
-  ((SCStr *)((SCStr *)(param_1 + 0x6e)))->int_release();
-  param_1[0x6e] = (undefined4)(0);
-  thunk_FUN_102c45c0(uVar2);
-  thunk_FUN_102cc870();
-  thunk_FUN_102cc870();
-  thunk_FUN_102cc870();
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  piVar1 = (int *)((int *)param_1[5]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[4] = (undefined4)(0);
-    param_1[5] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCWizardState);
-
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCAlexaAuthChecklistDownloadAlexaState);
+  pa_1[3] = (undefined4)((uint)&ghidra_vftable_SCAlexaAuthChecklistDownloadAlexaState);
+  FUN_10068ce6<>();
   return;
-
- } catch (...) { }
 }
 
 
@@ -11974,23 +11954,11 @@ void __fastcall FUN_10e92eb0(undefined4 *param_1)
 void __fastcall FUN_10e942f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpHTCGetLEDFeedbackStateAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpHTCGetLEDFeedbackStateAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpHTCGetLEDFeedbackStateAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
-  }
-  thunk_FUN_11249110();
-  thunk_FUN_1124d790();
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f060();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RUpnpHTCGetLEDFeedbackStateAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RUpnpHTCGetLEDFeedbackStateAIOOp);
+  pa_1[283] = (undefined4)((uint)&ghidra_vftable_RUpnpHTCGetLEDFeedbackStateAIOOp);
+  FUN_1005c743<>();
   return;
 }
 
@@ -27241,45 +27209,11 @@ void __fastcall FUN_10ef5140(undefined4 *param_1)
 void __fastcall FUN_10ef5310(undefined4 *param_1)
 
 {
- try {
-  int iVar1;
-  uint uVar2;
-  int iVar3;
-  undefined1 *puVar4;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_ExtractArchiveOp);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RITQHandler);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObj);
-  puVar4 = (undefined1 *)(&DAT_1186d2ee);
-  if ((undefined1 *)param_1[2] != (undefined1 *)(((0x0)))) {
-    puVar4 = (undefined1 *)((undefined1 *)param_1[2]);
-  }
-  thunk_FUN_111a74d0("FlashDebugObjects",10,"destroy instance 0x%p of class %s",param_1,puVar4,uVar2
-                    );
-  thunk_FUN_111a2140();
-  iVar1 = (int)(param_1[2]);
-
-  if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-    iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iVar1 + -0x10)), 0);
-    if (iVar3 == 0) {
-      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
-      free((char *)(iVar1 + -0x10));
-    }
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RefCountBase);
-
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_ExtractArchiveOp);
+  pa_1[5] = (undefined4)((uint)&ghidra_vftable_RITQHandler);
+  FUN_1005bce9<>();
   return;
-
- } catch (...) { }
 }
 
 

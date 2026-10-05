@@ -2703,6 +2703,9 @@ int FUN_1002b1a2();
 int FUN_10075f45();
 int FUN_10047681();
 int FUN_1003dbb8();
+int FUN_1006fe74(void);
+int FUN_1006fe74(...);
+template<class... A> int FUN_1006fe74(A...);
 #line 1 "ENTRY_102ab250"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -23259,16 +23262,10 @@ void __fastcall FUN_103062b0(int param_1)
 void __fastcall FUN_103062c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpPostNoRedirectAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RHttpPostNoRedirectAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp);
-  if ((undefined4 *)param_1[0x91f] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x91f])(1);
-  }
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RHttpPostNoRedirectAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RHttpPostNoRedirectAIOOp);
+  FUN_1006fe74<>();
   return;
 }
 

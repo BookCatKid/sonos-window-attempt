@@ -2772,6 +2772,19 @@ int FUN_100200ae();
 int FUN_1000e11a();
 int FUN_1148a279();
 int FUN_1148a27f();
+int FUN_1006fe74(void);
+int FUN_1005c743(void);
+int FUN_1006fe74(...);
+int FUN_1005c743(...);
+int FUN_1005c743(...);
+int FUN_1005c743(...);
+int FUN_1005c743(...);
+int FUN_1005c743(...);
+int FUN_1005c743(...);
+int FUN_1005c743(...);
+int FUN_1005c743(...);
+template<class... A> int FUN_1005c743(A...);
+template<class... A> int FUN_1006fe74(A...);
 #line 1 "ENTRY_10c35fe0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -12199,16 +12212,10 @@ void __fastcall FUN_10c4afc0(undefined4 *param_1)
 void __fastcall FUN_10c4b350(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpGetNoRedirectAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RHttpGetNoRedirectAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp);
-  if ((undefined4 *)param_1[0x91f] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x91f])(1);
-  }
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RHttpGetNoRedirectAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RHttpGetNoRedirectAIOOp);
+  FUN_1006fe74<>();
   return;
 }
 
@@ -13324,23 +13331,11 @@ void __fastcall FUN_10c4f370(undefined4 *param_1)
 void __fastcall FUN_10c4fc50(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayLinkedZonesAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayLinkedZonesAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayLinkedZonesAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
-  }
-  thunk_FUN_11249110();
-  thunk_FUN_1124d790();
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f060();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayLinkedZonesAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayLinkedZonesAIOOp);
+  pa_1[283] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayLinkedZonesAIOOp);
+  FUN_1005c743<>();
   return;
 }
 
@@ -13353,23 +13348,11 @@ void __fastcall FUN_10c4fc50(undefined4 *param_1)
 void __fastcall FUN_10c4fc80(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayRoomUUIDAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayRoomUUIDAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayRoomUUIDAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
-  }
-  thunk_FUN_11249110();
-  thunk_FUN_1124d790();
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f060();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayRoomUUIDAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayRoomUUIDAIOOp);
+  pa_1[283] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayRoomUUIDAIOOp);
+  FUN_1005c743<>();
   return;
 }
 
@@ -13382,23 +13365,11 @@ void __fastcall FUN_10c4fc80(undefined4 *param_1)
 void __fastcall FUN_10c4fcb0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayVolumeAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayVolumeAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayVolumeAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
-  }
-  thunk_FUN_11249110();
-  thunk_FUN_1124d790();
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f060();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayVolumeAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayVolumeAIOOp);
+  pa_1[283] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetAutoplayVolumeAIOOp);
+  FUN_1005c743<>();
   return;
 }
 
@@ -13411,23 +13382,11 @@ void __fastcall FUN_10c4fcb0(undefined4 *param_1)
 void __fastcall FUN_10c4fce0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetUseAutoplayVolumeAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetUseAutoplayVolumeAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetUseAutoplayVolumeAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
-  }
-  thunk_FUN_11249110();
-  thunk_FUN_1124d790();
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f060();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetUseAutoplayVolumeAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetUseAutoplayVolumeAIOOp);
+  pa_1[283] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetUseAutoplayVolumeAIOOp);
+  FUN_1005c743<>();
   return;
 }
 
@@ -13440,23 +13399,11 @@ void __fastcall FUN_10c4fce0(undefined4 *param_1)
 void __fastcall FUN_10c4fd10(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetAutoplayLinkedZonesAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetAutoplayLinkedZonesAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetAutoplayLinkedZonesAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
-  }
-  thunk_FUN_11249110();
-  thunk_FUN_1124d790();
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f060();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetAutoplayLinkedZonesAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetAutoplayLinkedZonesAIOOp);
+  pa_1[283] = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetAutoplayLinkedZonesAIOOp);
+  FUN_1005c743<>();
   return;
 }
 
@@ -14488,23 +14435,11 @@ void __fastcall FUN_10c555c0(undefined4 *param_1)
 void __fastcall FUN_10c55d00(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetAudioInputAttributesAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetAudioInputAttributesAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetAudioInputAttributesAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
-  }
-  thunk_FUN_11249110();
-  thunk_FUN_1124d790();
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f060();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetAudioInputAttributesAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetAudioInputAttributesAIOOp);
+  pa_1[283] = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetAudioInputAttributesAIOOp);
+  FUN_1005c743<>();
   return;
 }
 
@@ -14517,23 +14452,11 @@ void __fastcall FUN_10c55d00(undefined4 *param_1)
 void __fastcall FUN_10c55d30(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetLineInLevelAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetLineInLevelAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetLineInLevelAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
-  }
-  thunk_FUN_11249110();
-  thunk_FUN_1124d790();
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f060();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetLineInLevelAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetLineInLevelAIOOp);
+  pa_1[283] = (undefined4)((uint)&ghidra_vftable_RUpnpAIGetLineInLevelAIOOp);
+  FUN_1005c743<>();
   return;
 }
 
@@ -15294,23 +15217,11 @@ void __fastcall FUN_10c596e0(undefined4 *param_1)
 void __fastcall FUN_10c598c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpRCGetSupportsOutputFixedAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpRCGetSupportsOutputFixedAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpRCGetSupportsOutputFixedAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
-  }
-  thunk_FUN_11249110();
-  thunk_FUN_1124d790();
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f060();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RUpnpRCGetSupportsOutputFixedAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RUpnpRCGetSupportsOutputFixedAIOOp);
+  pa_1[283] = (undefined4)((uint)&ghidra_vftable_RUpnpRCGetSupportsOutputFixedAIOOp);
+  FUN_1005c743<>();
   return;
 }
 

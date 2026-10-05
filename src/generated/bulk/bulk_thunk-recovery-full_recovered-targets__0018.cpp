@@ -2565,8 +2565,10 @@ int FUN_10076ea4();
 int FUN_1000f56f();
 int FUN_10047a00();
 int FUN_100345d1();
-int FUN_1003ac6f();
+
 int FUN_10075ef0();
+int FUN_1003ac6f(...);
+template<class... A> int FUN_1003ac6f(A...);
 #line 1 "ENTRY_10bd1ae0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -20584,7 +20586,7 @@ __declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this
 
 void __fastcall FUN_10c17920(undefined4 *param_1)
 
-{ __asm jmp FUN_1003ac6f }
+{ __asm jmp thunk_FUN_10c17bb0 }
 
 
 // Reference entry 10c17ca0; body size 25 bytes.
@@ -20595,44 +20597,12 @@ void __fastcall FUN_10c17920(undefined4 *param_1)
 void __fastcall FUN_10c17ca0(undefined4 *param_1)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCLocalMusicShuffleAllNodeBrowseItem);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCLocalMusicShuffleAllNodeBrowseItem);
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCLocalMusicShuffleAllNodeBrowseItem);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCLocalMusicBrowseItem);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCLocalMusicBrowseItem);
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCLocalMusicBrowseItem);
-  if ((int *)param_1[0x11] != (int *)(((0x0)))) {
-    ((SCVtbl_2_1*)((int *)param_1[0x11]))->v((int)(uVar2));
-  }
-
-  ((SCStr *)((SCStr *)(param_1 + 0x3b)))->int_release();
-  param_1[0x3b] = (undefined4)(0);
-  thunk_FUN_10202e00();
-  piVar1 = (int *)((int *)param_1[0x10]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0xf] = (undefined4)(0);
-    param_1[0x10] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
-
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCLocalMusicShuffleAllNodeBrowseItem);
+  pa_1[6] = (undefined4)((uint)&ghidra_vftable_SCLocalMusicShuffleAllNodeBrowseItem);
+  pa_1[14] = (undefined4)((uint)&ghidra_vftable_SCLocalMusicShuffleAllNodeBrowseItem);
+  FUN_1003ac6f<>();
   return;
-
- } catch (...) { }
 }
 
 

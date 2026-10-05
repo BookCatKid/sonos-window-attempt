@@ -3536,6 +3536,9 @@ int FUN_100473bb();
 int FUN_1002a4f0();
 int FUN_1148ce1d();
 int FUN_1148a315();
+int FUN_1003d5d7(...);
+int FUN_1003d5d7(...);
+template<class... A> int FUN_1003d5d7(A...);
 #line 1 "ENTRY_11227a70"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_11227a70(undefined4 param_2)
@@ -5774,10 +5777,10 @@ void __fastcall FUN_11236080(undefined4 *param_1)
 void __fastcall FUN_11236090(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLRPCResultParser);
-
-  thunk_FUN_1003d5d7(param_1);
-
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RXMLRPCResultParser);
+  FUN_1003d5d7<>();
+  return;
 }
 
 
@@ -18281,10 +18284,10 @@ void __fastcall FUN_112765a0(undefined4 *param_1)
 void __fastcall FUN_112765f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportFileParser);
-
-  thunk_FUN_1003d5d7(param_1);
-
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RReportFileParser);
+  FUN_1003d5d7<>();
+  return;
 }
 
 

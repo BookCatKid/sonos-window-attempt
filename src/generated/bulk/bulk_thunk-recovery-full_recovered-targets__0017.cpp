@@ -2691,6 +2691,13 @@ int FUN_100186fb();
 int FUN_1006a64f();
 int FUN_10044c88();
 int FUN_10018b38();
+int FUN_1006fe74(void);
+int FUN_1005c743(void);
+int FUN_1006fe74(...);
+int FUN_1006fe74(...);
+int FUN_1005c743(...);
+template<class... A> int FUN_1005c743(A...);
+template<class... A> int FUN_1006fe74(A...);
 #line 1 "ENTRY_10b80320"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -3730,16 +3737,10 @@ void __fastcall FUN_10b879f0(undefined4 *param_1)
 void __fastcall FUN_10b88730(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpDeleteNoRedirectAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RHttpDeleteNoRedirectAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp);
-  if ((undefined4 *)param_1[0x91f] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x91f])(1);
-  }
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RHttpDeleteNoRedirectAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RHttpDeleteNoRedirectAIOOp);
+  FUN_1006fe74<>();
   return;
 }
 
@@ -3752,16 +3753,10 @@ void __fastcall FUN_10b88730(undefined4 *param_1)
 void __fastcall FUN_10b88750(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpPutNoRedirectAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RHttpPutNoRedirectAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp);
-  if ((undefined4 *)param_1[0x91f] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x91f])(1);
-  }
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RHttpPutNoRedirectAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RHttpPutNoRedirectAIOOp);
+  FUN_1006fe74<>();
   return;
 }
 
@@ -14631,23 +14626,11 @@ void __fastcall FUN_10ba6fb0(undefined4 *param_1)
 void __fastcall FUN_10ba7170(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpACDestroyAlarmAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpACDestroyAlarmAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpACDestroyAlarmAIOOp);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
-  }
-  thunk_FUN_11249110();
-  thunk_FUN_1124d790();
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f060();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
-  thunk_FUN_112407b0();
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_RUpnpACDestroyAlarmAIOOp);
+  pa_1[24] = (undefined4)((uint)&ghidra_vftable_RUpnpACDestroyAlarmAIOOp);
+  pa_1[283] = (undefined4)((uint)&ghidra_vftable_RUpnpACDestroyAlarmAIOOp);
+  FUN_1005c743<>();
   return;
 }
 
