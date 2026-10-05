@@ -28385,3 +28385,62 @@ undefined4 __fastcall FUN_108a2340(undefined4 *param_1)
   return (undefined4)(*param_1);
 }
 
+// Reference entry 10881e60; synthesized store+jump body.
+#line 1 "ENTRY_10881e60"
+void __fastcall FUN_10881e60(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  FUN_10024127<>();
+}
+
+// Reference entry 108a1a20; synthesized store+jump body.
+#line 1 "ENTRY_108a1a20"
+void __fastcall FUN_108a1a20(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  FUN_10024127<>();
+}
+
+// Reference entry 108a1e60; synthesized store+jump body.
+#line 1 "ENTRY_108a1e60"
+void __fastcall FUN_108a1e60(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  FUN_10024127<>();
+}
+
+// Reference entry 108a1eb0; synthesized store+jump body.
+#line 1 "ENTRY_108a1eb0"
+void __fastcall FUN_108a1eb0(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  FUN_1002d2b8<>();
+}
+
+// Reference entry 108a1fd0; synthesized store+jump body.
+#line 1 "ENTRY_108a1fd0"
+void __fastcall FUN_108a1fd0(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  FUN_1002d2b8<>();
+}

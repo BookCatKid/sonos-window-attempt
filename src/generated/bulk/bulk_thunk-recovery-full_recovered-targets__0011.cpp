@@ -24794,3 +24794,95 @@ void * FUN_106bcd20(uint param_1)
   thunk_FUN_1012a2a0();
 }
 
+// Reference entry 10655280; synthesized store+jump body.
+#line 1 "ENTRY_10655280"
+void __fastcall FUN_10655280(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  FUN_1002d2b8<>();
+}
+
+// Reference entry 10655a00; synthesized store+jump body.
+#line 1 "ENTRY_10655a00"
+void __fastcall FUN_10655a00(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  FUN_10024127<>();
+}
+
+// Reference entry 10655a50; synthesized store+jump body.
+#line 1 "ENTRY_10655a50"
+void __fastcall FUN_10655a50(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  FUN_1002d2b8<>();
+}
+
+// Reference entry 10655c30; synthesized store+jump body.
+#line 1 "ENTRY_10655c30"
+void __fastcall FUN_10655c30(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  FUN_10024127<>();
+}
+
+// Reference entry 10655d50; synthesized store+jump body.
+#line 1 "ENTRY_10655d50"
+void __fastcall FUN_10655d50(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  FUN_1002d2b8<>();
+}
+
+// Reference entry 106560b0; synthesized store+jump body.
+#line 1 "ENTRY_106560b0"
+void __fastcall FUN_106560b0(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  FUN_1002d2b8<>();
+}
+
+// Reference entry 10656100; synthesized store+jump body.
+#line 1 "ENTRY_10656100"
+void __fastcall FUN_10656100(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[35] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  pa_1[42] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  FUN_1002d2b8<>();
+}
+
+// Reference entry 1069c710; synthesized store+jump body.
+#line 1 "ENTRY_1069c710"
+void __fastcall FUN_1069c710(undefined4 *param_1)
+{
+  undefined4 *pa_1 = (undefined4 *)param_1;
+  *pa_1 = (undefined4)((uint)&ghidra_vftable_SCMusicServiceCatalogRequest);
+  FUN_10010267<>();
+}
