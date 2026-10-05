@@ -48,3 +48,15 @@ all 182 objects again compile under pinned MSVC 14.28. Corpus:
 **137,509 / 230,070 exact (59.8%)**, 1,936,546 exact reference bytes.
 Residual leaders: +2 (10.6K), +5 (5.7K), +41 (4.8K), +3 (4.7K).
 Whole-file identity not achieved.
+
+### Checkpoint — deref-style vtable calls (MSVC run 37292907870)
+
+36,463 additional call sites of the forms `(**(code **)E)(args)` and
+`(**(code **)(E + off))(args)` — where E is a dereference yielding the
+vtable pointer — rewritten to virtual-member calls on the same SCVtbl
+stub family (E stripped of one deref gives the object expression;
+`X[K]` becomes `&X[K]`). Verified: **+1,922 exact functions, +47,653
+exact bytes, zero regressions** across 85 objects. Also fixed three
+residual stdcall decl/def conflicts; all 451 objects compile. Corpus:
+**139,431 / 230,070 exact (60.6%)**, ~1.98M exact reference bytes.
+Whole-file identity not achieved.
