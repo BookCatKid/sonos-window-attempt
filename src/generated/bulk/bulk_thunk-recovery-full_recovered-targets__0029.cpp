@@ -3534,6 +3534,8 @@ int FUN_1004c7d0();
 int FUN_1003a87d();
 int FUN_100473bb();
 int FUN_1002a4f0();
+int FUN_1148ce1d();
+int FUN_1148a315();
 #line 1 "ENTRY_11227a70"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_11227a70(undefined4 param_2)
@@ -5685,14 +5687,7 @@ LAB_11235118:
 // Reference entry 11235530; body size 5 bytes.
 #line 1 "ENTRY_11235530"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */char * __cdecl FUN_11235530(char *_Str,int _Ch){
-  char *pcVar1;
-  
-                    
-                    
-  pcVar1 = (char *)(strrchr(_Str,_Ch), 0);
-  return (char *)(pcVar1);
-}
+__declspec(naked) int FUN_11235530(...){ __asm jmp FUN_1148ce1d }
 
 
 // Reference entry 11235940; body size 30 bytes.
@@ -17365,12 +17360,7 @@ void __fastcall FUN_11272c40(undefined4 *param_1)
 // Reference entry 11272c90; body size 5 bytes.
 #line 1 "ENTRY_11272c90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void FUN_11272c90(void){
-                    
-                    
-  _Unlock_shared_ptr_spin_lock();
-  return;
-}
+__declspec(naked) int FUN_11272c90(...){ __asm jmp FUN_1148a315 }
 
 
 // Reference entry 11272ca0; body size 85 bytes.

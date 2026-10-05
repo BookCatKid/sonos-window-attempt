@@ -2757,6 +2757,7 @@ struct SCVtbl_3_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); 
 struct SCVtbl_4_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(int a1); };
 int FUN_1005d201();
 int FUN_10093329();
+int FUN_1148a2f7();
 #line 1 "ENTRY_10ef5750"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10ef5750(int param_2)
@@ -9317,12 +9318,7 @@ undefined4 * __fastcall FUN_10f1a610(int param_1)
 // Reference entry 10f1a670; body size 5 bytes.
 #line 1 "ENTRY_10f1a670"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void FUN_10f1a670(void){
-                    
-                    
-  _Thrd_hardware_concurrency();
-  return;
-}
+__declspec(naked) int FUN_10f1a670(...){ __asm jmp FUN_1148a2f7 }
 
 
 // Reference entry 10f1a6e0; body size 8 bytes.

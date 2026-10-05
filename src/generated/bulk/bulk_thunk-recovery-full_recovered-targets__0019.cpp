@@ -2770,6 +2770,8 @@ int FUN_10076ea4();
 int FUN_100679f9();
 int FUN_100200ae();
 int FUN_1000e11a();
+int FUN_1148a279();
+int FUN_1148a27f();
 #line 1 "ENTRY_10c35fe0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -18789,27 +18791,13 @@ int FUN_10c71630(int *param_1,int *param_2)
 // Reference entry 10c716c0; body size 5 bytes.
 #line 1 "ENTRY_10c716c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */int __cdecl FUN_10c716c0(char *param_1,char *param_2,char *param_3,char *param_4,_Collvec *param_5){
-  int iVar1;
-  
-                    
-                    
-  iVar1 = (int)(_Strcoll(param_1,param_2,param_3,param_4,param_5), 0);
-  return (int)(iVar1);
-}
+__declspec(naked) int FUN_10c716c0(...){ __asm jmp FUN_1148a279 }
 
 
 // Reference entry 10c716d0; body size 5 bytes.
 #line 1 "ENTRY_10c716d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */size_t __cdecl FUN_10c716d0(char *_String1,char *_End1,char *param_3,char *param_4,_Collvec *param_5){
-  size_t sVar1;
-  
-                    
-                    
-  sVar1 = (size_t)(_Strxfrm(_String1,_End1,param_3,param_4,param_5), 0);
-  return (size_t)(sVar1);
-}
+__declspec(naked) int FUN_10c716d0(...){ __asm jmp FUN_1148a27f }
 
 
 // Reference entry 10c71f00; body size 26 bytes.

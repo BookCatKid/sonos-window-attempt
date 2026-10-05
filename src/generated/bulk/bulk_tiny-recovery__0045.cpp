@@ -12157,11 +12157,9 @@ void FUN_1148c6b6(void)
 // Reference entry 1148c970; body size 5 bytes.
 #line 1 "ENTRY_1148c970"
 
-void FUN_1148c970(void)
+__declspec(naked) int FUN_1148c970(...)
 
-{
-  FUN_1148ce83();
-}
+{ __asm jmp FUN_1148ce83 }
 
 
 // Reference entry 1148d1ec; body size 3 bytes.

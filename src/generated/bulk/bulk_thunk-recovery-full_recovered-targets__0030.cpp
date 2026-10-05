@@ -4164,6 +4164,7 @@ int FUN_100699e8();
 int FUN_10035b98();
 int FUN_10055376();
 int FUN_1000bf2d();
+int FUN_1148d135();
 #line 1 "ENTRY_112ad270"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -36615,12 +36616,7 @@ void FUN_1148a51f(void)
 // Reference entry 1148a584; body size 5 bytes.
 #line 1 "ENTRY_1148a584"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void __cdecl FUN_1148a584(void){
-                    
-                    
-  initialize_narrow_environment();
-  return;
-}
+__declspec(naked) int FUN_1148a584(...){ __asm jmp FUN_1148d135 }
 
 
 // Reference entry 1148ab66; body size 12 bytes.

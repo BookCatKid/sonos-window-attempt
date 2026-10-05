@@ -7171,6 +7171,10 @@ extern int __stdcall thunk_FUN_110f4420(int a1,int a2,int a3,int a4);
 extern int __stdcall thunk_FUN_111cfc00(int a1);
 extern int __stdcall thunk_FUN_1128cdb0(int a1,int a2);
 extern int __stdcall thunk_FUN_1128d1a0(int a1,int a2,int a3);
+int FUN_10c089a9();
+int FUN_10d7740f();
+int FUN_10f3ea66();
+int FUN_10f3ed90();
 #line 1 "ENTRY_10274740"
 int __stdcall FUN_10274740(int a1) {
 
@@ -13384,10 +13388,7 @@ char *v3 = (char *)((char)((char *)(v1 - 4))); // (int)&FUN_10c07dc8
 
 // Reference entry 10c07e4d; body size 5 bytes.
 #line 1 "ENTRY_10c07e4d"
-int FUN_10c07e4d(void) {
-
-    return (int)(function_10c089a9());
-}
+__declspec(naked) int FUN_10c07e4d(...){ __asm jmp FUN_10c089a9 }
 
 // Reference entry 10c07f35; body size 15 bytes.
 #line 1 "ENTRY_10c07f35"
@@ -15151,11 +15152,7 @@ int __stdcall FUN_10d639a0(int a1) {
 
 // Reference entry 10d7728f; body size 5 bytes.
 #line 1 "ENTRY_10d7728f"
-int FUN_10d7728f(void) {
-
-    int result; // (int)((int(*)(void))&FUN_10d7728f<>)
-    return (int)(result);
-}
+__declspec(naked) int FUN_10d7728f(...){ __asm jmp FUN_10d7740f }
 
 // Reference entry 10d772a1; body size 10 bytes.
 #line 1 "ENTRY_10d772a1"
@@ -16124,19 +16121,11 @@ char *v14 = (char *)((char)((char *)(v6 | (int)v13))); // (int)&FUN_10f3ba8a<>
 
 // Reference entry 10f3e8b2; body size 5 bytes.
 #line 1 "ENTRY_10f3e8b2"
-int FUN_10f3e8b2(void) {
-    int g1;
-
-    return (int)(function_10f3ea66((int)&g1, (int)&g1));
-}
+__declspec(naked) int FUN_10f3e8b2(...){ __asm jmp FUN_10f3ea66 }
 
 // Reference entry 10f3ebdc; body size 5 bytes.
 #line 1 "ENTRY_10f3ebdc"
-int FUN_10f3ebdc(void) {
-    int g1;
-
-    return (int)(function_10f3ed90((int)&g1, (int)&g1));
-}
+__declspec(naked) int FUN_10f3ebdc(...){ __asm jmp FUN_10f3ed90 }
 
 // Reference entry 10f53146; body size 24 bytes.
 #line 1 "ENTRY_10f53146"
