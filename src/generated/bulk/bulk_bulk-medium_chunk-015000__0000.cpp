@@ -2677,6 +2677,9 @@ extern int __stdcall thunk_FUN_1127fa70(int a1,int a2,int a3);
 extern int __stdcall thunk_FUN_11281f90(int a1);
 extern int __stdcall thunk_FUN_112942e0(int a1,int a2);
 extern int __stdcall thunk_FUN_112effc0(int a1,int a2);
+struct SCFp_0_1 { int (__thiscall *v)(int a1); };
+struct SCFp_4_0 { char _p[4]; int (__thiscall *v)(void); };
+struct SCFp_220_1 { char _p[220]; int (__thiscall *v)(int a1); };
 struct SCVtbl_0_0 { virtual int v(void); };
 struct SCVtbl_0_1 { virtual int v(int a1); };
 struct SCVtbl_1_3 { virtual void _p0(); virtual int v(int a1,int a2,int a3); };
@@ -4432,7 +4435,7 @@ void FUN_1111d490(void)
   }
   if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
     if ((undefined4 *)(DAT_122e8a2c) != (undefined4 *)(0x0)) {
-      (**(code **)DAT_122e8a2c)(1);
+      ((SCFp_0_1*)(DAT_122e8a2c))->v((int)(1));
     }
     DAT_122e8a2c = (int)((undefined4 *)0x0);
   }
@@ -4598,7 +4601,7 @@ void FUN_11121f80(void)
 
 {
   if ((undefined4 *)(DAT_122e8a34) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_122e8a34)(1);
+    ((SCFp_0_1*)(DAT_122e8a34))->v((int)(1));
   }
   DAT_122e8a34 = (int)((undefined4 *)0x0);
   return;
@@ -8300,7 +8303,7 @@ int * __fastcall FUN_11167970(int *param_1)
   piVar2 = (int *)((int *)((SCVtbl_38_0*)(param_1))->v(), 0);
   iVar1 = (int)(*piVar2);
   uVar3 = (undefined4)(((SCVtbl_56_0*)(param_1))->v(), 0);
-  (**(code **)(iVar1 + 0xdc))(uVar3);
+  ((SCFp_220_1*)(iVar1))->v((int)(uVar3));
   return (int *)(piVar2);
 }
 
@@ -10983,7 +10986,7 @@ void __fastcall FUN_111a0620(int param_1)
   while ((int *)(piVar1) != (int *)(0x0)) {
     iVar2 = (int)(*piVar1);
     piVar1 = (int *)((int *)piVar1[1]);
-    (**(code **)(iVar2 + 4))();
+    ((SCFp_4_0*)(iVar2))->v();
   }
   return;
 }

@@ -2750,6 +2750,9 @@ extern int __stdcall thunk_FUN_111ca9f0(int a1,int a2,int a3,int a4,int a5);
 extern int __stdcall thunk_FUN_111cd540(int a1,int a2,int a3);
 extern int __stdcall thunk_FUN_111d15e0(int a1,int a2,int a3,int a4);
 extern int __stdcall thunk_FUN_1124a160(int a1);
+struct SCFp_36_1 { char _p[36]; int (__thiscall *v)(int a1); };
+struct SCFp_72_0 { char _p[72]; int (__thiscall *v)(void); };
+struct SCFp_76_0 { char _p[76]; int (__thiscall *v)(void); };
 struct SCVtbl_0_0 { virtual int v(void); };
 struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1); };
 struct SCVtbl_2_2 { virtual void _p0(); virtual void _p1(); virtual int v(int a1,int a2); };
@@ -3081,10 +3084,10 @@ undefined4 * __fastcall FUN_1051b8c0(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("AddMultipleURIsToQueue"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -4381,10 +4384,10 @@ undefined4 * __fastcall FUN_10525d50(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:SystemProperties:1"),(int)("SetAccountNicknameX"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -5584,7 +5587,7 @@ void __stdcall FUN_10533bc0(undefined1 *param_1,undefined4 param_2)
     if ((iVar1 != 0) && (piVar2 = (int *)((int *)thunk_FUN_11082860(), 0),(int *)( piVar2) != (int *)(0x0))) {
       iVar1 = (int)(*piVar2);
       uVar3 = (undefined4)(thunk_FUN_10533e90(param_1,param_2), 0);
-      (**(code **)(iVar1 + 0x24))(uVar3);
+      ((SCFp_36_1*)(iVar1))->v((int)(uVar3));
     }
   }
   return;
@@ -11013,10 +11016,10 @@ undefined4 * __fastcall FUN_10563110(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)(&DAT_11884fb0),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11040,10 +11043,10 @@ undefined4 * __fastcall FUN_10563110(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("SetAVTransportURI"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -12613,10 +12616,10 @@ undefined4 * __fastcall FUN_105798d0(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("CreateSavedQueue"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -12646,10 +12649,10 @@ undefined4 * __fastcall FUN_105798d0(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   iVar1 = (int)(*(int *)(*(int *)(param_2 + 4) + 4));
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
@@ -12678,10 +12681,10 @@ undefined4 * __fastcall FUN_105798d0(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   iVar1 = (int)(*(int *)(*(int *)(param_2 + 4) + 4));
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);

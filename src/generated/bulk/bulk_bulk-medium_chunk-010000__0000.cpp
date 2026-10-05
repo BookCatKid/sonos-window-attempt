@@ -2254,6 +2254,8 @@ extern int __stdcall thunk_FUN_1124ff50(int a1);
 extern int __stdcall thunk_FUN_1124ffa0(int a1,int a2);
 extern int __stdcall thunk_FUN_112503c0(int a1,int a2);
 extern int __stdcall thunk_FUN_1125cbb0(int a1);
+struct SCFp_0_2 { int (__thiscall *v)(int a1,int a2); };
+struct SCFp_128_2 { char _p[128]; int (__thiscall *v)(int a1,int a2); };
 struct SCVtbl_0_1 { virtual int v(int a1); };
 struct SCVtbl_1_1 { virtual void _p0(); virtual int v(int a1); };
 struct SCVtbl_1_2 { virtual void _p0(); virtual int v(int a1,int a2); };
@@ -4283,7 +4285,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10c0f120(undefined4 param_2)
   pSVar2 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
   iVar1 = (int)(*param_1);
   uVar3 = (undefined4)(((SCVtbl_73_0*)((int *)pSVar2))->v(), 0);
-  (**(code **)(iVar1 + 0x80))(param_2,uVar3);
+  ((SCFp_128_2*)(iVar1))->v((int)(param_2),(int)(uVar3));
   return (undefined4)(unaff_EBX);
 }
 
@@ -17165,7 +17167,7 @@ LAB_10ce4a35:
           if (bStack_12 == false) goto LAB_10ce4ae5;
         }
       }
-      piVar5 = (int *)((int *)(**(code **)((int)&PTR_FUN_12119fa0 + uVar9))(&piStack_3c,iStack_1c), 0);
+      piVar5 = (int *)((int *)((SCFp_0_2*)((int)&PTR_FUN_12119fa0 + uVar9))->v((int)(&piStack_3c),(int)(iStack_1c)), 0);
       piVar2 = (int *)((int *)*piVar5);
       uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(0xd)));
       *piVar5 = (int)(0);

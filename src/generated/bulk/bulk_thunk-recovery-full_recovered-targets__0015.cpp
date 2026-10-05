@@ -3004,6 +3004,8 @@ extern int __stdcall thunk_FUN_10eb4e80(int a1,int a2);
 extern int __stdcall thunk_FUN_10eb64f0(int a1);
 extern int __stdcall thunk_FUN_111c0760(int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8);
 extern int __stdcall thunk_FUN_11262400(int a1);
+struct SCFp_72_0 { char _p[72]; int (__thiscall *v)(void); };
+struct SCFp_76_0 { char _p[76]; int (__thiscall *v)(void); };
 struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1); };
 struct SCVtbl_11_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual int v(int a1); };
 struct SCVtbl_11_2 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual int v(int a1,int a2); };
@@ -5902,10 +5904,10 @@ undefined4 * __fastcall FUN_109f5180(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:HTControl:1"),(int)("IdentifyIRRemote"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -5929,10 +5931,10 @@ undefined4 * __fastcall FUN_109f5180(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:HTControl:1"),(int)("LearnIRCode"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));

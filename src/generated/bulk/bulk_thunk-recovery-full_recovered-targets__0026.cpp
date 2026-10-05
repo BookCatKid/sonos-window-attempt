@@ -3234,6 +3234,11 @@ extern int __stdcall thunk_FUN_11292e00(int a1);
 extern int __stdcall thunk_FUN_11458eb0(int a1,int a2);
 extern int __stdcall thunk_FUN_11458fa0(int a1);
 extern int __stdcall thunk_FUN_114595b0(int a1,int a2,int a3);
+struct SCFp_0_1 { int (__thiscall *v)(int a1); };
+struct SCFp_72_0 { char _p[72]; int (__thiscall *v)(void); };
+struct SCFp_76_0 { char _p[76]; int (__thiscall *v)(void); };
+struct SCFp_524_1 { char _p[524]; int (__thiscall *v)(int a1); };
+struct SCFp_528_1 { char _p[528]; int (__thiscall *v)(int a1); };
 struct SCVtbl_0_0 { virtual int v(void); };
 struct SCVtbl_0_1 { virtual int v(int a1); };
 struct SCVtbl_1_0 { virtual void _p0(); virtual int v(void); };
@@ -3379,10 +3384,10 @@ undefined4 * __fastcall FUN_1109cfd0(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:SystemProperties:1"),(int)("EnableRDM"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11497,10 +11502,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("ConfigureSleepTimer"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11524,10 +11529,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("EndDirectControlSession"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11551,10 +11556,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("GetPositionInfo"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11586,10 +11591,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("GetRemainingSleepTimerDuration"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11615,10 +11620,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)(&DAT_11884fc8),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11642,10 +11647,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("Previous"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11669,10 +11674,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("RemoveAllTracksFromQueue"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11696,10 +11701,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("RemoveTrackFromQueue"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11723,10 +11728,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("RemoveTrackRangeFromQueue"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11751,10 +11756,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("ReorderTracksInQueue"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11778,10 +11783,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("SaveQueue"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -11806,10 +11811,10 @@ undefined4 FUN_110b6170(void)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)(&DAT_11884fc0),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -12931,10 +12936,10 @@ undefined4 * __fastcall FUN_110bfd10(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:MusicServices:1"),(int)("ListAvailableServices"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -12960,10 +12965,10 @@ undefined4 * __fastcall FUN_110bfd10(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:MusicServices:1"),(int)("UpdateAvailableServices"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -16993,10 +16998,10 @@ undefined4 * __fastcall FUN_110dbdb0(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("AddURIToQueue"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -18405,10 +18410,10 @@ undefined4 * __fastcall FUN_110e3ea0(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   iVar1 = (int)(*(int *)(*(int *)(param_2 + 4) + 4));
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
@@ -20976,10 +20981,10 @@ undefined4 * __fastcall FUN_110f8f60(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:ZoneGroupTopology:1"),(int)("CheckForUpdate"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -24143,10 +24148,10 @@ undefined4 * __fastcall FUN_11109e20(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AlarmClock:1"),(int)("GetFormat"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -24172,10 +24177,10 @@ undefined4 * __fastcall FUN_11109e20(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AlarmClock:1"),(int)("GetTimeNow"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -24203,10 +24208,10 @@ undefined4 * __fastcall FUN_11109e20(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AlarmClock:1"),(int)("GetTimeServer"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -24231,10 +24236,10 @@ undefined4 * __fastcall FUN_11109e20(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AlarmClock:1"),(int)("GetTimeZoneAndRule"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -24260,10 +24265,10 @@ undefined4 * __fastcall FUN_11109e20(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AlarmClock:1"),(int)("ListAlarms"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -24288,10 +24293,10 @@ undefined4 * __fastcall FUN_11109e20(undefined4 *param_1)
   
   iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
   if (param_7 == '\0') {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x48))(), 0);
+    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
   }
   else {
-    uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
+    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
   }
   uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
   thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:RenderingControl:1"),(int)("GetOutputFixed"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
@@ -25863,7 +25868,7 @@ int __fastcall FUN_1110f4e0(int *param_1)
   undefined4 uVar1;
   
   uVar1 = (undefined4)(0);
-  (**(code **)(param_1 + 0x20c))(param_2);
+  ((SCFp_524_1*)(param_1))->v((int)(param_2));
   if ((short)param_2 == 0) {
     uVar1 = (undefined4)(thunk_FUN_111a7100((int)("onAlarmsChanged"),(int)(0),(int)(0)), 0);
   }
@@ -25989,7 +25994,7 @@ void __stdcall FUN_1110fbd0(int param_1,int param_2)
   undefined4 uVar1;
   
   uVar1 = (undefined4)(0);
-  (**(code **)(param_1 + 0x210))(param_2);
+  ((SCFp_528_1*)(param_1))->v((int)(param_2));
   if ((short)param_2 == 0) {
     uVar1 = (undefined4)(thunk_FUN_111a7100((int)("onAlarmsChanged"),(int)(0),(int)(0)), 0);
   }
@@ -28187,7 +28192,7 @@ bool __fastcall FUN_1111c7a0(int param_1)
   undefined4 uVar1;
   
   uVar1 = (undefined4)(0);
-  (**(code **)(param_1 + 0x20c))(param_2);
+  ((SCFp_524_1*)(param_1))->v((int)(param_2));
   if ((short)param_2 == 0) {
     uVar1 = (undefined4)(thunk_FUN_111a7100((int)("onAlarmsChanged"),(int)(0),(int)(0)), 0);
   }
@@ -28318,7 +28323,7 @@ void FUN_1111d740(void)
 
 {
   if ((undefined4 *)(DAT_122e8a2c) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_122e8a2c)(1);
+    ((SCFp_0_1*)(DAT_122e8a2c))->v((int)(1));
   }
   DAT_122e8a2c = (int)((undefined4 *)0x0);
   return;

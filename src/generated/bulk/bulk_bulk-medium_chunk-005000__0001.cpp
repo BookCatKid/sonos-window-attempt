@@ -1858,6 +1858,7 @@ extern int __stdcall thunk_FUN_10f04dc0(int a1);
 extern int __stdcall thunk_FUN_11248b40(int a1);
 extern int __stdcall thunk_FUN_1124ffa0(int a1,int a2);
 extern int __stdcall thunk_FUN_1125b030(int a1,int a2);
+struct SCFp_0_1 { int (__thiscall *v)(int a1); };
 struct SCVtbl_0_0 { virtual int v(void); };
 struct SCVtbl_0_1 { virtual int v(int a1); };
 struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1); };
@@ -20235,7 +20236,7 @@ void __fastcall FUN_1074b740(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAmazonAlexaPreviewWizardType);
   if ((undefined4 *)(DAT_121a2a78) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2a78)(1);
+    ((SCFp_0_1*)(DAT_121a2a78))->v((int)(1));
   }
   thunk_FUN_106de840();
   return;
@@ -20281,7 +20282,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1074b9f0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAmazonAlexaPreviewWizardType);
   if ((undefined4 *)(DAT_121a2a78) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2a78)(1);
+    ((SCFp_0_1*)(DAT_121a2a78))->v((int)(1));
   }
   thunk_FUN_106de840();
   if ((param_2 & 1) != 0) {
@@ -20299,7 +20300,7 @@ void __fastcall FUN_1074d080(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAmazonAlexaSetupWizardType);
   if ((undefined4 *)(DAT_121a2ac4) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2ac4)(1);
+    ((SCFp_0_1*)(DAT_121a2ac4))->v((int)(1));
   }
   thunk_FUN_106de840();
   return;
@@ -20345,7 +20346,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1074d330(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAmazonAlexaSetupWizardType);
   if ((undefined4 *)(DAT_121a2ac4) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2ac4)(1);
+    ((SCFp_0_1*)(DAT_121a2ac4))->v((int)(1));
   }
   thunk_FUN_106de840();
   if ((param_2 & 1) != 0) {
@@ -21020,10 +21021,10 @@ void __fastcall FUN_10768300(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCApInstructionsWizardType);
   if ((undefined4 *)(DAT_121a2c38) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2c38)(1);
+    ((SCFp_0_1*)(DAT_121a2c38))->v((int)(1));
   }
   if ((undefined4 *)(DAT_121a2c3c) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2c3c)(1);
+    ((SCFp_0_1*)(DAT_121a2c3c))->v((int)(1));
   }
   thunk_FUN_106de840();
   return;
@@ -21450,7 +21451,7 @@ void __fastcall FUN_1077c380(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCBleConnectWizardType);
   if ((undefined4 *)(DAT_121a2d4c) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2d4c)(1);
+    ((SCFp_0_1*)(DAT_121a2d4c))->v((int)(1));
   }
   thunk_FUN_106de840();
   return;
@@ -21496,7 +21497,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1077c660(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCBleConnectWizardType);
   if ((undefined4 *)(DAT_121a2d4c) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2d4c)(1);
+    ((SCFp_0_1*)(DAT_121a2d4c))->v((int)(1));
   }
   thunk_FUN_106de840();
   if ((param_2 & 1) != 0) {
@@ -21620,7 +21621,7 @@ void __fastcall FUN_10783930(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCBluetoothOnlyWizardType);
   if ((undefined4 *)(DAT_121a2de8) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2de8)(1);
+    ((SCFp_0_1*)(DAT_121a2de8))->v((int)(1));
   }
   thunk_FUN_106de840();
   return;
@@ -21666,7 +21667,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10783bb0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCBluetoothOnlyWizardType);
   if ((undefined4 *)(DAT_121a2de8) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2de8)(1);
+    ((SCFp_0_1*)(DAT_121a2de8))->v((int)(1));
   }
   thunk_FUN_106de840();
   if ((param_2 & 1) != 0) {
@@ -23445,10 +23446,10 @@ void __fastcall FUN_107e6c70(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCBusinessWelcomeWizardType);
   if ((undefined4 *)(DAT_121a2f94) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2f94)(1);
+    ((SCFp_0_1*)(DAT_121a2f94))->v((int)(1));
   }
   if ((undefined4 *)(DAT_121a2f98) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_121a2f98)(1);
+    ((SCFp_0_1*)(DAT_121a2f98))->v((int)(1));
   }
   thunk_FUN_106de840();
   return;

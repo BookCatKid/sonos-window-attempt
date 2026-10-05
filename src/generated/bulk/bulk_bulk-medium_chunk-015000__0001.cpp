@@ -4383,6 +4383,23 @@ extern int ghidra_vftable__Func_impl_no_alloc_unsigned_short____cdecl___void_con
 extern int ghidra_vftable_sonos__SettingsFile;
 
 // Reference entry 112b08c0; body size 47 bytes.
+struct SCFp_0_1 { int (__thiscall *v)(int a1); };
+struct SCFp_4_1 { char _p[4]; int (__thiscall *v)(int a1); };
+struct SCFp_8_1 { char _p[8]; int (__thiscall *v)(int a1); };
+struct SCFp_32_2 { char _p[32]; int (__thiscall *v)(int a1,int a2); };
+struct SCFp_36_0 { char _p[36]; int (__thiscall *v)(void); };
+struct SCFp_56_4 { char _p[56]; int (__thiscall *v)(int a1,int a2,int a3,int a4); };
+struct SCFp_64_2 { char _p[64]; int (__thiscall *v)(int a1,int a2); };
+struct SCFp_76_2 { char _p[76]; int (__thiscall *v)(int a1,int a2); };
+struct SCFp_80_3 { char _p[80]; int (__thiscall *v)(int a1,int a2,int a3); };
+struct SCFp_88_0 { char _p[88]; int (__thiscall *v)(void); };
+struct SCFp_92_0 { char _p[92]; int (__thiscall *v)(void); };
+struct SCFp_92_1 { char _p[92]; int (__thiscall *v)(int a1); };
+struct SCFp_292_4 { char _p[292]; int (__thiscall *v)(int a1,int a2,int a3,int a4); };
+struct SCFp_376_0 { char _p[376]; int (__thiscall *v)(void); };
+struct SCFp_604_0 { char _p[604]; int (__thiscall *v)(void); };
+struct SCFp_608_0 { char _p[608]; int (__thiscall *v)(void); };
+struct SCFp_1648_4 { char _p[1648]; int (__thiscall *v)(int a1,int a2,int a3,int a4); };
 struct SCVtbl_1_0 { virtual void _p0(); virtual int v(void); };
 struct SCVtbl_1_2 { virtual void _p0(); virtual int v(int a1,int a2); };
 struct SCVtbl_2_0 { virtual void _p0(); virtual void _p1(); virtual int v(void); };
@@ -5615,7 +5632,7 @@ void __thiscall Recovered_Bulk::m_FUN_112e9730(char param_2)
 void __thiscall Recovered_Bulk::m_FUN_112e9750(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  (**(code **)(param_1 + 4))(*param_2);
+  ((SCFp_4_1*)(param_1))->v((int)(*param_2));
   return;
 }
 
@@ -5626,7 +5643,7 @@ void __thiscall Recovered_Bulk::m_FUN_112e9750(undefined4 *param_2)
 undefined4 *  __thiscall Recovered_Bulk::m_FUN_112e9780(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  (**(code **)(param_1 + 4))(*param_2);
+  ((SCFp_4_1*)(param_1))->v((int)(*param_2));
   return (undefined4 *)(param_2);
 }
 
@@ -6397,7 +6414,7 @@ void FUN_112f1710(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 { int stack0x00000014;
  try {
   if (*(code **)(param_1 + 0x124) != (code *)((0x0))) {
-    (**(code **)(param_1 + 0x124))(param_2,param_3,param_4,&stack0x00000014);
+    ((SCFp_292_4*)(param_1))->v((int)(param_2),(int)(param_3),(int)(param_4),(int)(&stack0x00000014));
   }
   return;
 
@@ -6413,7 +6430,7 @@ void FUN_112f1740(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 { int stack0x00000014;
  try {
   if (*(code **)(param_1 + 0x670) != (code *)((0x0))) {
-    (**(code **)(param_1 + 0x670))(param_2,param_3,param_4,&stack0x00000014);
+    ((SCFp_1648_4*)(param_1))->v((int)(param_2),(int)(param_3),(int)(param_4),(int)(&stack0x00000014));
   }
   return;
 
@@ -6574,7 +6591,7 @@ void FUN_112f4f20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 { int stack0x00000014;
  try {
   if (*(code **)(param_1 + 0x38) != (code *)((0x0))) {
-    (**(code **)(param_1 + 0x38))(param_2,param_3,param_4,&stack0x00000014);
+    ((SCFp_56_4*)(param_1))->v((int)(param_2),(int)(param_3),(int)(param_4),(int)(&stack0x00000014));
   }
   return;
 
@@ -6981,8 +6998,8 @@ void FUN_1131ce80(int param_1)
     iVar2 = (int)(*(int *)(param_1 + 0x74));
     *(byte*)(param_1 + 1) = (byte)(*(byte *)(param_1 + 1) | 2);
     uVar1 = (undefined2)(*(undefined2 *)(*(int *)(iVar2 + 0x40) + (uint)*(ushort *)(param_1 + 0x46) * 2));
-    (**(code **)(iVar2 + 0x50)) (iVar2,(uint)(((uint)((char)uVar1) << 8 | (uint)((char)((ushort)uVar1 >> 8))) &
-                           *(ushort *)(iVar2 + 0x1a)) + *(int *)(iVar2 + 0x38),param_1 + 0x20);
+    ((SCFp_80_3*)(iVar2))->v((int)(iVar2),(int)((uint)(((uint)((char)uVar1) << 8 | (uint)((char)((ushort)uVar1 >> 8))) &
+                           *(ushort *)(iVar2 + 0x1a)) + *(int *)(iVar2 + 0x38)),(int)(param_1 + 0x20));
   }
   return;
 }
@@ -7315,7 +7332,7 @@ undefined4 FUN_113262d0(int param_1,undefined4 param_2)
   iVar1 = (int)(**(int **)(param_1 + 0x3c), 0);
   if (iVar1 != 0) {
     if (*(char *)(param_1 + 0xd) == '\0') {
-      uVar2 = (undefined4)((**(code **)(iVar1 + 0x20))(*(int **)(param_1 + 0x3c),param_2), 0);
+      uVar2 = (undefined4)(((SCFp_32_2*)(iVar1))->v((int)(*(int **)(param_1 + 0x3c)),(int)(param_2)), 0);
     }
     if (*(char *)(param_1 + 0x11) != '\x05') {
       *(char*)(param_1 + 0x11) = (char)((char)param_2);
@@ -8492,7 +8509,7 @@ undefined4 __stdcall FUN_1136d580(int param_1)
 {
   undefined4 uVar1;
   
-  uVar1 = (undefined4)((**(code **)(param_1 + 8))(*(undefined4 *)(param_1 + 0xc)), 0);
+  uVar1 = (undefined4)(((SCFp_8_1*)(param_1))->v((int)(*(undefined4 *)(param_1 + 0xc))), 0);
   *(undefined4*)(param_1 + 0x10) = (undefined4)(uVar1);
   _endthreadex(0);
   return (undefined4)(0);
@@ -10706,7 +10723,7 @@ undefined4 FUN_113e3070(int param_1)
   int iVar1;
   
   if (*(code **)(param_1 + 0x5c) != (code *)((0x0))) {
-    iVar1 = (int)((**(code **)(param_1 + 0x5c))(*(undefined4 *)(param_1 + 0x54)), 0);
+    iVar1 = (int)(((SCFp_92_1*)(param_1))->v((int)(*(undefined4 *)(param_1 + 0x54))), 0);
     if (iVar1 == 2) {
       return (undefined4)(0xffffffff);
     }
@@ -11699,7 +11716,7 @@ undefined4 FUN_1140b690(int *param_1,int param_2)
   
   if ((param_2 != 0) && (*param_1 == (int)((0)))) {
     if (*(code **)(param_2 + 0x24) != (code *)((0x0))) {
-      iVar1 = (int)((**(code **)(param_2 + 0x24))(), 0);
+      iVar1 = (int)(((SCFp_36_0*)(param_2))->v(), 0);
       param_1[1] = (int)(iVar1);
       if (iVar1 == 0) {
         return (undefined4)(0xffffc080);
@@ -13979,7 +13996,7 @@ void FUN_11455330(void)
 
 {
   if ((undefined4 *)(DAT_122fab84) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_122fab84)(1);
+    ((SCFp_0_1*)(DAT_122fab84))->v((int)(1));
     DAT_122fab84 = (int)((undefined4 *)0x0);
   }
   return;
@@ -14982,7 +14999,7 @@ void FUN_1145a270(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 { int stack0x00000014;
  try {
   if (*(code **)(param_1 + 0x38) != (code *)((0x0))) {
-    (**(code **)(param_1 + 0x38))(param_2,param_3,param_4,&stack0x00000014);
+    ((SCFp_56_4*)(param_1))->v((int)(param_2),(int)(param_3),(int)(param_4),(int)(&stack0x00000014));
   }
   return;
 
@@ -15693,7 +15710,7 @@ void FUN_1146c180(int param_1,undefined4 param_2)
   code *pcVar1;
   
   if ((param_1 != 0) && (*(code **)(param_1 + 0x4c) != (code *)((0x0)))) {
-    (**(code **)(param_1 + 0x4c))(param_1,param_2);
+    ((SCFp_76_2*)(param_1))->v((int)(param_1),(int)(param_2));
   }
   FUN_1146c0d0(param_1,param_2);
   pcVar1 = (code *)((code *)swi(3), 0);
@@ -15710,7 +15727,7 @@ void FUN_1146c740(int param_1,undefined4 param_2)
 {
   if (((param_1 != 0) && (*(code **)(param_1 + 0x40) != (code *)((0x0)))) &&
      (*(int *)(param_1 + 0x44) != 0)) {
-    (**(code **)(param_1 + 0x40))(*(int *)(param_1 + 0x44),param_2);
+    ((SCFp_64_2*)(param_1))->v((int)(*(int *)(param_1 + 0x44)),(int)(param_2));
   }
                     
   ExitProcess(0);
@@ -16137,7 +16154,7 @@ void FUN_1147b2f0(int param_1,void *param_2)
     if (*(code **)(param_1 + 0x260) != (code *)((0x0))) {
                     
                     
-      (**(code **)(param_1 + 0x260))();
+      ((SCFp_608_0*)(param_1))->v();
       return;
     }
     free(param_2);
@@ -16160,7 +16177,7 @@ void * FUN_1147b4b0(int param_1,size_t param_2)
   if ((param_1 != 0) && (*(code **)(param_1 + 0x25c) != (code *)((0x0)))) {
                     
                     
-    pvVar1 = (char *)((char *)(**(code **)(param_1 + 0x25c))(), 0);
+    pvVar1 = (char *)((char *)((SCFp_604_0*)(param_1))->v(), 0);
     return (void *)(pvVar1);
   }
   pvVar1 = (void *)(malloc( (void *)(param_2) ), 0);
@@ -16228,7 +16245,7 @@ void FUN_11480a00(int param_1)
   if (*(code **)(param_1 + 0x5c) != (code *)((0x0))) {
                     
                     
-    (**(code **)(param_1 + 0x5c))();
+    ((SCFp_92_0*)(param_1))->v();
     return;
   }
                     
@@ -16413,7 +16430,7 @@ void FUN_11489290(int param_1)
   if (*(code **)(param_1 + 0x178) != (code *)((0x0))) {
                     
                     
-    (**(code **)(param_1 + 0x178))();
+    ((SCFp_376_0*)(param_1))->v();
     return;
   }
   return;
@@ -16429,7 +16446,7 @@ void FUN_11489320(int param_1)
   if (*(code **)(param_1 + 0x58) != (code *)((0x0))) {
                     
                     
-    (**(code **)(param_1 + 0x58))();
+    ((SCFp_88_0*)(param_1))->v();
     return;
   }
                     

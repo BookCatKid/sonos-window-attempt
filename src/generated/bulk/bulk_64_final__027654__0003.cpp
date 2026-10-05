@@ -1963,6 +1963,9 @@ extern int __stdcall thunk_FUN_11258490(int a1,int a2);
 extern int __stdcall thunk_FUN_11282f20(int a1);
 extern int __stdcall thunk_FUN_11458eb0(int a1,int a2);
 extern int __stdcall thunk_FUN_1145a960(int a1);
+struct SCFp_20_3 { char _p[20]; int (__thiscall *v)(int a1,int a2,int a3); };
+struct SCFp_52_3 { char _p[52]; int (__thiscall *v)(int a1,int a2,int a3); };
+struct SCFp_56_2 { char _p[56]; int (__thiscall *v)(int a1,int a2); };
 struct SCVtbl_0_0 { virtual int v(void); };
 struct SCVtbl_0_1 { virtual int v(int a1); };
 struct SCVtbl_0_2 { virtual int v(int a1,int a2); };
@@ -19843,8 +19846,8 @@ LAB_1105ff10:
 
   if (local_20 != 0) {
     iVar3 = (int)(*param_1);
-    uVar5 = (undefined4)((**(code **)(iVar3 + 0x34))(param_3,3,0), 0);
-    (**(code **)(iVar3 + 0x38))(&param_3,uVar5);
+    uVar5 = (undefined4)(((SCFp_52_3*)(iVar3))->v((int)(param_3),(int)(3),(int)(0)), 0);
+    ((SCFp_56_2*)(iVar3))->v((int)(&param_3),(int)(uVar5));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
     uVar5 = (undefined4)(createPropertyBag(), 0);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
@@ -36225,7 +36228,7 @@ undefined4 __stdcall FUN_1107f1e0(int param_1,undefined1 *param_2){
   uVar1 = (uint)(*(uint *)(param_1 + 0xc));
   if (((iVar2 != 0) && (*param_2 = 1, *(uint *)(iVar2 + 0xc) <= (uint)(uVar1))) &&
      ((uint)(uVar1) <= *(uint *)(iVar2 + 0x10))) {
-    uVar3 = (undefined4)((**(code **)(iVar2 + 0x14)) (*(undefined4 *)(param_1 + 0xc),*(undefined4 *)(param_1 + 0x10), *(undefined4 *)(param_1 + 8)), 0);
+    uVar3 = (undefined4)(((SCFp_20_3*)(iVar2))->v((int)(*(undefined4 *)(param_1 + 0xc)),(int)(*(undefined4 *)(param_1 + 0x10)),(int)(*(undefined4 *)(param_1 + 8))), 0);
     return (undefined4)(uVar3);
   }
   return (undefined4)(0);

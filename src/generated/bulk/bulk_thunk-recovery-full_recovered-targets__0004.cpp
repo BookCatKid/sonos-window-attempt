@@ -2683,6 +2683,7 @@ extern int __stdcall thunk_FUN_110f6450(int a1,int a2,int a3);
 extern int __stdcall thunk_FUN_111c05a0(int a1,int a2,int a3,int a4,int a5,int a6,int a7);
 extern int __stdcall thunk_FUN_11254de0(int a1);
 extern int __stdcall thunk_FUN_11278b20(int a1);
+struct SCFp_0_1 { int (__thiscall *v)(int a1); };
 struct SCVtbl_0_0 { virtual int v(void); };
 struct SCVtbl_0_1 { virtual int v(int a1); };
 struct SCVtbl_1_2 { virtual void _p0(); virtual int v(int a1,int a2); };
@@ -20434,7 +20435,7 @@ void FUN_102f1220(void)
 
 {
   if ((undefined4 *)(DAT_122e8a18) != (undefined4 *)(0x0)) {
-    (**(code **)DAT_122e8a18)(1);
+    ((SCFp_0_1*)(DAT_122e8a18))->v((int)(1));
   }
   return;
 }

@@ -2740,6 +2740,7 @@ extern int __stdcall thunk_FUN_1124a160(int a1);
 extern int __stdcall thunk_FUN_1125ba00(int a1,int a2);
 extern int __stdcall thunk_FUN_1125bbd0(int a1);
 extern int __stdcall thunk_FUN_1125bcf0(int a1);
+struct SCFp_44_4 { char _p[44]; int (__thiscall *v)(int a1,int a2,int a3,int a4); };
 struct SCVtbl_0_1 { virtual int v(int a1); };
 struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1); };
 struct SCVtbl_2_2 { virtual void _p0(); virtual void _p1(); virtual int v(int a1,int a2); };
@@ -20702,7 +20703,7 @@ void FUN_1029fa70(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
   piVar2 = (int *)((int *)thunk_FUN_102a0500(), 0);
   iVar1 = (int)(*piVar2);
   uVar3 = (undefined4)(thunk_FUN_1109ac80(param_4), 0);
-  (**(code **)(iVar1 + 0x2c))(param_1,param_2,param_3,uVar3);
+  ((SCFp_44_4*)(iVar1))->v((int)(param_1),(int)(param_2),(int)(param_3),(int)(uVar3));
   return;
 }
 

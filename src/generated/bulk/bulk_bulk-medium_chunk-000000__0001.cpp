@@ -2333,6 +2333,7 @@ extern int __stdcall thunk_FUN_1059d940(int a1);
 extern int __stdcall thunk_FUN_105b5360(int a1);
 extern int __stdcall thunk_FUN_1061c5e0(int a1);
 extern int __stdcall thunk_FUN_111a0940(int a1);
+struct SCFp_276_0 { char _p[276]; int (__thiscall *v)(void); };
 struct SCVtbl_0_0 { virtual int v(void); };
 struct SCVtbl_0_1 { virtual int v(int a1); };
 struct SCVtbl_1_1 { virtual void _p0(); virtual int v(int a1); };
@@ -18367,7 +18368,7 @@ void __fastcall FUN_1021e260(int param_1)
   }
   iVar1 = (int)(*piStack_10);
   piStack_10 = (int *)((int *)0x1021e29c);
-  (**(code **)(iVar1 + 0x114))();
+  ((SCFp_276_0*)(iVar1))->v();
   return;
 }
 
