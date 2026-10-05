@@ -2716,6 +2716,8 @@ extern void __fastcall FUN_101ba0d0(void *param_1);
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 extern void __fastcall thunk_FUN_1125bd20(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RLookupV1CertInfoAIOOp_;
+
 // Reference entry 102636d0; body size 26 bytes.
 #line 1 "ENTRY_102636d0"
 
@@ -10963,7 +10965,7 @@ void __fastcall FUN_1027f960(undefined4 *param_1)
 void __fastcall FUN_1027fb00(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_TestPointHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_TestPointHandlerSCLIB);
 
   thunk_FUN_1125bd20(param_1);
 
@@ -18543,7 +18545,7 @@ undefined4 * __fastcall FUN_102953c0(undefined4 *param_1)
 
   uStack_8 = (uint)(uVar2);
   thunk_FUN_1124a160(0);
-  param_1[0x1843] = (undefined4)((uint)&ghidra_vftable_RHTTPDataIO);
+  param_1[0x1843] = (undefined4)((uint)&ghidra_vftable_RLookupV1CertInfoRequest);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RLookupV1CertInfoRequest);
   param_1[0x1843] = (undefined4)((uint)&ghidra_vftable_RLookupV1CertInfoRequest);
   param_1[0x1844] = (undefined4)(0);
@@ -18723,7 +18725,7 @@ undefined4 * __fastcall FUN_10295960(undefined4 *param_1)
 void __fastcall FUN_10296300(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RLookupV1CertInfoAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

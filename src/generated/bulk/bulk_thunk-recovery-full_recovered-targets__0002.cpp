@@ -12962,7 +12962,7 @@ void __fastcall FUN_1022de00(int param_1)
 void __fastcall FUN_1022de30(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_BatteryWeakChargerData);
 
   thunk_FUN_1022df10(param_1);
 
@@ -12992,7 +12992,7 @@ void __fastcall FUN_1022de40(undefined4 *param_1)
 void __fastcall FUN_1022de60(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_FactoryResetData);
 
   thunk_FUN_1022df10(param_1);
 
@@ -13007,7 +13007,7 @@ void __fastcall FUN_1022de60(int *param_1)
 void __fastcall FUN_1022de70(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_ForgotHouseholdData);
 
   thunk_FUN_1022df10(param_1);
 
@@ -13022,7 +13022,7 @@ void __fastcall FUN_1022de70(int *param_1)
 void __fastcall FUN_1022dee0(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_InvalidOptimo2OrientationData);
 
   thunk_FUN_1022df10(param_1);
 
@@ -13037,7 +13037,7 @@ void __fastcall FUN_1022dee0(int *param_1)
 void __fastcall FUN_1022def0(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_LaunchWifiConfig);
 
   thunk_FUN_1022df10(param_1);
 
@@ -13052,7 +13052,7 @@ void __fastcall FUN_1022def0(int *param_1)
 void __fastcall FUN_1022df00(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_LegacyCRModernHHData);
 
   thunk_FUN_1022df10(param_1);
 
@@ -13067,7 +13067,7 @@ void __fastcall FUN_1022df00(int *param_1)
 void __fastcall FUN_1022e0c0(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_NoNetworkFoundData);
 
   thunk_FUN_1022df10(param_1);
 
@@ -13082,7 +13082,7 @@ void __fastcall FUN_1022e0c0(int *param_1)
 void __fastcall FUN_1022e0d0(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_OutdatedControllerData);
 
   thunk_FUN_1022df10(param_1);
 
@@ -13097,7 +13097,7 @@ void __fastcall FUN_1022e0d0(int *param_1)
 void __fastcall FUN_1022e1d0(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_RetailDemoData);
 
   thunk_FUN_1022df10(param_1);
 
@@ -13245,7 +13245,7 @@ void __fastcall FUN_1022eeb0(undefined4 *param_1)
 void __fastcall FUN_1022ef80(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_UnsupportedData);
 
   thunk_FUN_1022df10(param_1);
 
@@ -13260,7 +13260,7 @@ void __fastcall FUN_1022ef80(int *param_1)
 void __fastcall FUN_1022ef90(int *param_1)
 
 {
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_ZonePlayerUpdateData);
 
   thunk_FUN_1022df10(param_1);
 

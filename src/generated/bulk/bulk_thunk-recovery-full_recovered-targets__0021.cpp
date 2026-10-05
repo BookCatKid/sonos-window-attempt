@@ -2669,6 +2669,15 @@ extern void __fastcall thunk_FUN_106845c0(void *param_1);
 extern void __fastcall thunk_FUN_10d8ceb0(void *param_1);
 extern void __fastcall thunk_FUN_10dde6b0(void *param_1);
 
+extern int ghidra_vftable_HeaderMapping;
+extern int ghidra_vftable_MenuItemMapping;
+extern int ghidra_vftable_RControlAIOOpRef_RAccountCreateAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RAccountDeletionAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RAccountRefreshTokensAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpAVTAddURIToSavedQueueAIOOp_;
+extern int ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmailSubmit_;
+extern int ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmail_;
+
 // Reference entry 10d74640; body size 10 bytes.
 #line 1 "ENTRY_10d74640"
 
@@ -3569,7 +3578,7 @@ undefined4 * __fastcall FUN_10d7d080(undefined4 *param_1)
 void __fastcall FUN_10d80690(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RAccountCreateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -3587,7 +3596,7 @@ void __fastcall FUN_10d80690(undefined4 *param_1)
 void __fastcall FUN_10d806a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RAccountDeletionAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -3605,7 +3614,7 @@ void __fastcall FUN_10d806a0(undefined4 *param_1)
 void __fastcall FUN_10d806b0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RAccountRefreshTokensAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -3635,7 +3644,7 @@ void __fastcall FUN_10d81a60(undefined4 *param_1)
 void __fastcall FUN_10d81a80(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAccountDeletionRequest);
 
   thunk_FUN_106845c0(param_1);
 
@@ -3650,7 +3659,7 @@ void __fastcall FUN_10d81a80(undefined4 *param_1)
 void __fastcall FUN_10d81a90(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAccountRolePostRequest);
 
   thunk_FUN_106845c0(param_1);
 
@@ -3665,7 +3674,7 @@ void __fastcall FUN_10d81a90(undefined4 *param_1)
 void __fastcall FUN_10d81aa0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAuthorizeAccountGetRequest);
 
   thunk_FUN_106845c0(param_1);
 
@@ -3680,7 +3689,7 @@ void __fastcall FUN_10d81aa0(undefined4 *param_1)
 void __fastcall FUN_10d81ab0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAuthorizeRedirectGetRequest);
 
   thunk_FUN_106845c0(param_1);
 
@@ -3695,7 +3704,7 @@ void __fastcall FUN_10d81ab0(undefined4 *param_1)
 void __fastcall FUN_10d81bf0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOAuthTokenPostRequest);
 
   thunk_FUN_106845c0(param_1);
 
@@ -6279,7 +6288,7 @@ void __fastcall FUN_10d9bbd0(undefined4 *param_1)
 void __fastcall FUN_10d9bbe0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCMusicIndexUpdateTimeAction);
 
   thunk_FUN_10d8ceb0(param_1);
 
@@ -6360,7 +6369,7 @@ void __fastcall FUN_10d9bc10(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpSetViewContributingAsync);
   param_1[0x18] = (undefined4)((uint)&ghidra_vftable_SCOpSetViewContributingAsync);
   param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RNullAsyncIOOperation);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpSetViewContributingAsync);
   thunk_FUN_112407b0();
   return;
 }
@@ -6431,7 +6440,7 @@ void __fastcall FUN_10d9bc30(undefined4 *param_1)
 void __fastcall FUN_10d9bc50(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSelectAlbumsSelectAction);
 
   thunk_FUN_105d3a20(param_1);
 
@@ -9471,7 +9480,7 @@ void __fastcall FUN_10da8ce0(undefined4 *param_1)
 void __fastcall FUN_10da8e90(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCContentUrlGetRequest);
 
   thunk_FUN_106845c0(param_1);
 
@@ -9852,7 +9861,7 @@ undefined4 FUN_10daa100(undefined4 param_1)
 void __fastcall FUN_10daa6e0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSearchUrlGetRequest);
 
   thunk_FUN_106845c0(param_1);
 
@@ -12032,7 +12041,7 @@ undefined4 * __fastcall FUN_10db67b0(undefined4 *param_1)
   
   param_1[1] = (undefined4)(param_2);
   param_1[2] = (undefined4)(param_3);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCInfoviewViewBuilder_HeaderMapping);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_HeaderMapping);
   if ((char *)(param_4) != (char *)(0x0)) {
     pcVar1 = (char *)(_strdup(param_4), 0);
     param_1[3] = (undefined4)(pcVar1);
@@ -12052,7 +12061,7 @@ undefined4 * __fastcall FUN_10db67b0(undefined4 *param_1)
   char *pcVar1;
   
   param_1[1] = (undefined4)(param_3);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCInfoviewViewBuilder_MenuItemMapping);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_MenuItemMapping);
   if ((char *)(param_5) == (char *)(0x0)) {
     pcVar1 = (char *)((char *)0x0);
   }
@@ -17452,7 +17461,7 @@ undefined4 * __fastcall FUN_10dde040(undefined4 *param_1)
 void __fastcall FUN_10dde810(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCBrowsePageExtensionRootBrowseTuneInMigrationTile);
 
   thunk_FUN_10dde6b0(param_1);
 
@@ -17467,7 +17476,7 @@ void __fastcall FUN_10dde810(undefined4 *param_1)
 void __fastcall FUN_10dde820(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCBrowsePageExtensionServiceBrowseTuneInMigrationTile);
 
   thunk_FUN_10dde6b0(param_1);
 
@@ -17495,7 +17504,7 @@ void __fastcall FUN_10dde8c0(undefined4 *param_1)
 void __fastcall FUN_10dde8d0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCMySonosPageExtensionSonosRadioTile);
 
   thunk_FUN_10dde6b0(param_1);
 
@@ -17891,7 +17900,7 @@ undefined4 * __fastcall FUN_10de4bd0(undefined4 *param_1)
 void __fastcall FUN_10de4fb0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpAVTAddURIToSavedQueueAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -25891,7 +25900,7 @@ int __fastcall FUN_10e25690(int param_1, unsigned int recovered_unused_stack_0, 
   param_1[10] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
   param_1[0xd] = (undefined4)(0);
-  param_1[8] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
+  param_1[8] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmail_);
   param_1[0xb] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
   param_1[0x17] = (undefined4)(0);
   param_1[0x21] = (undefined4)(0);
@@ -25917,7 +25926,7 @@ int __fastcall FUN_10e25690(int param_1, unsigned int recovered_unused_stack_0, 
   param_1[8] = (undefined4)(0);
   param_1[10] = (undefined4)(0);
   param_1[0xb] = (undefined4)(0);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
+  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmailSubmit_);
   param_1[9] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
   param_1[0x15] = (undefined4)(0);
   param_1[0x1f] = (undefined4)(0);

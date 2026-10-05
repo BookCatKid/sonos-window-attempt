@@ -3418,6 +3418,8 @@ extern void __fastcall FUN_112878e0(void *param_1);
 extern void __fastcall thunk_FUN_1003d5d7(void *param_1);
 extern void __fastcall thunk_FUN_112878e0(void *param_1);
 
+extern int ghidra_vftable_exception;
+
 // Reference entry 11227a70; body size 11 bytes.
 #line 1 "ENTRY_11227a70"
 
@@ -4005,7 +4007,7 @@ void FUN_1122b7f0(void)
 void __fastcall FUN_1122b930(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   return;
 }
@@ -4019,7 +4021,7 @@ void __fastcall FUN_1122b930(undefined4 *param_1)
 void __fastcall FUN_1122b950(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   return;
 }
@@ -5667,7 +5669,7 @@ void __fastcall FUN_11236080(undefined4 *param_1)
 void __fastcall FUN_11236090(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLRPCResultParser);
 
   thunk_FUN_1003d5d7(param_1);
 
@@ -8043,7 +8045,7 @@ void FUN_11243510(void)
 void __fastcall FUN_11243530(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   return;
 }
@@ -9965,7 +9967,7 @@ void __fastcall FUN_1124eba0(undefined4 *param_1)
 void __fastcall FUN_1124ebc0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParamDeepCopy);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParam);
   return;
 }
 
@@ -14188,7 +14190,7 @@ undefined4 * __fastcall FUN_11266430(undefined4 *param_1)
 void __fastcall FUN_112664f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RWritableStreamWithHeaders);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCountWritableStream);
 
   thunk_FUN_112878e0(param_1);
 
@@ -18307,7 +18309,7 @@ void __fastcall FUN_112765a0(undefined4 *param_1)
 void __fastcall FUN_112765f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportFileParser);
 
   thunk_FUN_1003d5d7(param_1);
 
@@ -18745,7 +18747,7 @@ undefined4 * __fastcall FUN_11277e60(undefined4 *param_1)
 
 {
   param_1[1] = (undefined4)((uint)&ghidra_vftable_RReportEventInterface);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportManager);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportEventInterface);
   param_1[1] = (undefined4)((uint)&ghidra_vftable_RReportManager);
   *(undefined1*)(param_1 + 2) = (undefined1)(1);
   param_1[3] = (undefined4)(0x78);
@@ -23098,7 +23100,7 @@ undefined4 * __fastcall FUN_112878a0(undefined4 *param_1)
 void __fastcall FUN_112878f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RWritableStreamWithHeaders);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RWritableStream);
   return;
 }
 
@@ -24364,7 +24366,7 @@ LAB_1128a930:
 undefined4 * __fastcall FUN_1128aa20(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RJsonDataBindingInterface);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RJsonDataBinding);
   param_1[6] = (undefined4)(0);
   param_1[7] = (undefined4)(0);
   *(undefined2*)(param_1 + 8) = (undefined2)(0);

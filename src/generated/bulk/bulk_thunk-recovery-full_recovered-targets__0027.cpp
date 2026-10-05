@@ -2897,6 +2897,15 @@ extern void __fastcall FUN_1113e6f0(void *param_1);
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 extern void __fastcall thunk_FUN_1113e6f0(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RMSLogoImageFetchOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RReportUnresponsiveZPorMSAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RStringTableRequest_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpAVTAddURIToQueueAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpQAddMultipleURIsAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpQAddURIAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpSPGetRDMAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpSPGetStringAIOOp_;
+
 // Reference entry 1111e150; body size 7 bytes.
 #line 1 "ENTRY_1111e150"
 
@@ -3935,7 +3944,7 @@ int __fastcall FUN_1111f2b0(int param_1)
 void __fastcall FUN_1111f2e0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RMSLogoImageFetchOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9660,7 +9669,7 @@ undefined4 * __fastcall FUN_11135b90(undefined4 *param_1)
 void __fastcall FUN_11135ff0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpSPGetRDMAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9678,7 +9687,7 @@ void __fastcall FUN_11135ff0(undefined4 *param_1)
 void __fastcall FUN_11136000(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpSPGetStringAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9910,7 +9919,7 @@ undefined4 * __fastcall FUN_11139070(undefined4 *param_1)
 void __fastcall FUN_111392a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RStringTableRequest_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -10279,7 +10288,7 @@ undefined4 FUN_1113bf70(void)
 void __fastcall FUN_1113bfe0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCD);
 
   thunk_FUN_1113e6f0(param_1);
 
@@ -10813,7 +10822,7 @@ undefined4 FUN_1113cfe0(void)
 void __fastcall FUN_1113d050(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjAI);
 
   thunk_FUN_1113e6f0(param_1);
 
@@ -11821,7 +11830,7 @@ undefined4 * __fastcall FUN_11141580(undefined4 *param_1)
 void __fastcall FUN_11142200(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpAVTAddURIToQueueAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -11853,7 +11862,7 @@ void __fastcall FUN_11142260(undefined4 *param_1)
 void __fastcall FUN_11142270(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpQAddMultipleURIsAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -11871,7 +11880,7 @@ void __fastcall FUN_11142270(undefined4 *param_1)
 void __fastcall FUN_11142280(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpQAddURIAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -20040,7 +20049,7 @@ undefined4 __fastcall FUN_1116a8d0(undefined4 param_1)
 void __fastcall FUN_1116ae60(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RReportUnresponsiveZPorMSAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

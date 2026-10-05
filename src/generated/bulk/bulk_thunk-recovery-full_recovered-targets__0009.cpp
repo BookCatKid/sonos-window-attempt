@@ -2709,6 +2709,18 @@ extern void __fastcall FUN_1057b850(void *param_1);
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 extern void __fastcall thunk_FUN_1057b850(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RAddFavoritesAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RDownloadServiceManifestFilesAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RLookupMetadataAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSelectedItemsAddToQueueAtIdxOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSelectedItemsPlayNextOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSelectedItemsReplaceQueueOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSonosAppLinkOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSonosGetLinkCodeOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpCDUpdateObjectAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpReplaceQueueOp_;
+extern int ghidra_vftable_SCOpRef_SCIOp_;
+
 // Reference entry 10516e90; body size 7 bytes.
 #line 1 "ENTRY_10516e90"
 
@@ -3077,7 +3089,7 @@ undefined4 * __fastcall FUN_1051c780(undefined4 *param_1)
 void __fastcall FUN_1051c790(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSelectedItemsAddToQueueAtIdxOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -3095,7 +3107,7 @@ void __fastcall FUN_1051c790(undefined4 *param_1)
 void __fastcall FUN_1051c7a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSelectedItemsPlayNextOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -3113,7 +3125,7 @@ void __fastcall FUN_1051c7a0(undefined4 *param_1)
 void __fastcall FUN_1051c7c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSelectedItemsReplaceQueueOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -3131,7 +3143,7 @@ void __fastcall FUN_1051c7c0(undefined4 *param_1)
 void __fastcall FUN_1051c7f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpReplaceQueueOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4491,7 +4503,7 @@ undefined4 * __fastcall FUN_10525d50(undefined4 *param_1)
   param_1[8] = (undefined4)(0);
   param_1[10] = (undefined4)(0);
   param_1[0xb] = (undefined4)(0);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
+  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCIOp_);
   param_1[9] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
   param_1[0x15] = (undefined4)(0);
   param_1[0x1f] = (undefined4)(0);
@@ -4615,7 +4627,7 @@ undefined4 * __fastcall FUN_10525d50(undefined4 *param_1)
 void __fastcall FUN_10528d90(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSonosAppLinkOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4633,7 +4645,7 @@ void __fastcall FUN_10528d90(undefined4 *param_1)
 void __fastcall FUN_10528db0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSonosGetLinkCodeOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -8131,7 +8143,7 @@ undefined4 * __fastcall FUN_1054f470(undefined4 *param_1)
 void __fastcall FUN_1054f910(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RDownloadServiceManifestFilesAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -10150,7 +10162,7 @@ void __fastcall FUN_10559e70(undefined4 *param_1)
   param_1[0x10] = (undefined4)((uint)&ghidra_vftable_SCRadioPickCityBrowseItem);
   param_1[0x11] = (undefined4)((uint)&ghidra_vftable_SCRadioPickCityBrowseItem);
   param_1[0x46] = (undefined4)((uint)&ghidra_vftable_SCRadioPickCityBrowseItem);
-  param_1[0x46] = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);
+  param_1[0x46] = (undefined4)((uint)&ghidra_vftable_SCRadioPickCityBrowseItem);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);
   param_1[6] = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);
   param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);
@@ -11120,7 +11132,7 @@ undefined4 * __fastcall FUN_10563770(undefined4 *param_1)
 void __fastcall FUN_105650a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RLookupMetadataAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -12777,7 +12789,7 @@ void __fastcall FUN_1057b1b0(undefined4 *param_1)
 void __fastcall FUN_1057bd90(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCRenamePlaylistAction);
 
   thunk_FUN_1057b850(param_1);
 
@@ -13813,7 +13825,7 @@ undefined4 * __fastcall FUN_10587d50(undefined4 *param_1)
 void __fastcall FUN_10588050(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RAddFavoritesAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -13831,7 +13843,7 @@ void __fastcall FUN_10588050(undefined4 *param_1)
 void __fastcall FUN_10588060(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpCDUpdateObjectAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

@@ -19025,7 +19025,7 @@ void __fastcall FUN_104ed980(undefined4 *param_1)
 void __fastcall FUN_104ed990(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCInteractionActionContext);
 
   thunk_FUN_104ed870(param_1);
 

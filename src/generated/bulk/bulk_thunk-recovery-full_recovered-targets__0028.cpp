@@ -3097,6 +3097,11 @@ extern void __fastcall thunk_FUN_1003d5d7(void *param_1);
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 extern void __fastcall thunk_FUN_1113e6f0(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RGetExtendedMetadataAsSwfObjOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RPresentationMapRequest_;
+extern int ghidra_vftable_RControlAIOOpRef_RRestoreOneAVTStateAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpAVTSetCrossfadeModeAIOOp_;
+
 // Reference entry 1117e9a0; body size 23 bytes.
 #line 1 "ENTRY_1117e9a0"
 
@@ -7887,7 +7892,7 @@ undefined4 * __fastcall FUN_1118da60(undefined4 *param_1)
 void __fastcall FUN_1118dcb0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RPresentationMapRequest_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -8615,7 +8620,7 @@ undefined4 FUN_1118f740(void)
 void __fastcall FUN_1118f7b0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjDP);
 
   thunk_FUN_1113e6f0(param_1);
 
@@ -8935,7 +8940,7 @@ undefined4 FUN_11190230(void)
 void __fastcall FUN_111903b0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjRC);
 
   thunk_FUN_1113e6f0(param_1);
 
@@ -9778,7 +9783,7 @@ undefined4 * __fastcall FUN_11194e30(undefined4 *param_1)
 void __fastcall FUN_11195410(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RRestoreOneAVTStateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9796,7 +9801,7 @@ void __fastcall FUN_11195410(undefined4 *param_1)
 void __fastcall FUN_11195460(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpAVTSetCrossfadeModeAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -10514,7 +10519,7 @@ undefined4 * __fastcall FUN_11199930(undefined4 *param_1)
 void __fastcall FUN_11199b00(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RGetExtendedMetadataAsSwfObjOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -28366,7 +28371,7 @@ undefined4 FUN_112023f0(char *param_1)
 void __fastcall FUN_112025a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCDUpdateProcessor);
 
   thunk_FUN_1003d5d7(param_1);
 

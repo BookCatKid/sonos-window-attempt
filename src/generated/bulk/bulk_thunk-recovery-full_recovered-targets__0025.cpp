@@ -2933,6 +2933,13 @@ extern void __fastcall FUN_101ba0d0(void *param_1);
 
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RCheckForControllerUpdatesAsyncOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RControlAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RMuseRateItemAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpAVTGetRemainingSleepTimerDurationAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpCDRequestResortAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpQReplaceAllTracksAIOOp_;
+
 // Reference entry 10ff7000; body size 6 bytes.
 #line 1 "ENTRY_10ff7000"
 
@@ -5698,7 +5705,7 @@ undefined4 * __fastcall FUN_11017b00(undefined4 *param_1)
 void __fastcall FUN_11017c70(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RCheckForControllerUpdatesAsyncOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -6680,7 +6687,7 @@ void __fastcall FUN_1101b610(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingRatingsUnsupported);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCNowPlayingRatingsUnsupported);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_RTrackRatingsEventHandler);
+  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCNowPlayingRatingsUnsupported);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
@@ -9874,7 +9881,7 @@ undefined4 * __fastcall FUN_110267d0(undefined4 *param_1)
 void __fastcall FUN_11026c20(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpQReplaceAllTracksAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -11527,7 +11534,7 @@ undefined4 * __fastcall FUN_1102ec50(undefined4 *param_1)
   param_1[7] = (undefined4)(0);
   param_1[0xb] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RControlAIOOp_);
   param_1[0xe] = (undefined4)(0);
   param_1[0xf] = (undefined4)(0);
   param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
@@ -15110,7 +15117,7 @@ undefined4 * __fastcall FUN_11055fe0(undefined4 *param_1)
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RPrevTrackOrRewindToStart);
   param_1[9] = (undefined4)(0);
   param_1[10] = (undefined4)(0);
-  param_1[8] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[8] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RControlAIOOp_);
   param_1[0xb] = (undefined4)(param_2);
   *(undefined1*)(param_1 + 0xc) = (undefined1)(1);
   return (undefined4 *)(param_1);
@@ -15764,7 +15771,7 @@ undefined4 * __fastcall FUN_1105f410(undefined4 *param_1)
 void __fastcall FUN_1105f5d0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpAVTGetRemainingSleepTimerDurationAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -16362,7 +16369,7 @@ undefined4 * __fastcall FUN_11064960(undefined4 *param_1)
 void __fastcall FUN_11064c70(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RMuseRateItemAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -21585,7 +21592,7 @@ byte * __fastcall FUN_110786b0(byte *param_1)
 void __fastcall FUN_110786f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpCDRequestResortAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

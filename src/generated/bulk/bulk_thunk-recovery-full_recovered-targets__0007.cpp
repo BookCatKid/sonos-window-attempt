@@ -2706,6 +2706,24 @@ extern void __fastcall FUN_101ba0d0(void *param_1);
 
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RGetBetaSettingsAIOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegAccountLoginAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegAccountTransferAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegBeginSecureTransferAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegCreateIdentityAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegEmailHintAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegGetEmailAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegGetUserAccountRequestAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegPasswordSetAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegPrepTransferPlayerAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegRegisterPlayerAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegResetPasswordAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegUpdateUserAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegUserEmailAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegValidateEmailAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegVerifyEmailAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSecRegVerifyEmailSubmitAIOOp_;
+
 // Reference entry 103d1010; body size 6 bytes.
 #line 1 "ENTRY_103d1010"
 
@@ -4464,7 +4482,7 @@ undefined4 * __fastcall FUN_103dc9e0(undefined4 *param_1)
 void __fastcall FUN_103df5d0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RGetBetaSettingsAIOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4482,7 +4500,7 @@ void __fastcall FUN_103df5d0(undefined4 *param_1)
 void __fastcall FUN_103df5e0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegAccountLoginAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4500,7 +4518,7 @@ void __fastcall FUN_103df5e0(undefined4 *param_1)
 void __fastcall FUN_103df5f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegAccountTransferAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4518,7 +4536,7 @@ void __fastcall FUN_103df5f0(undefined4 *param_1)
 void __fastcall FUN_103df600(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegBeginSecureTransferAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4536,7 +4554,7 @@ void __fastcall FUN_103df600(undefined4 *param_1)
 void __fastcall FUN_103df610(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegCreateIdentityAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4554,7 +4572,7 @@ void __fastcall FUN_103df610(undefined4 *param_1)
 void __fastcall FUN_103df620(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegEmailHintAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4572,7 +4590,7 @@ void __fastcall FUN_103df620(undefined4 *param_1)
 void __fastcall FUN_103df630(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegGetEmailAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4590,7 +4608,7 @@ void __fastcall FUN_103df630(undefined4 *param_1)
 void __fastcall FUN_103df640(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegGetUserAccountRequestAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4608,7 +4626,7 @@ void __fastcall FUN_103df640(undefined4 *param_1)
 void __fastcall FUN_103df650(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegPasswordSetAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4626,7 +4644,7 @@ void __fastcall FUN_103df650(undefined4 *param_1)
 void __fastcall FUN_103df660(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegPrepTransferPlayerAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4644,7 +4662,7 @@ void __fastcall FUN_103df660(undefined4 *param_1)
 void __fastcall FUN_103df670(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegRegisterPlayerAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4662,7 +4680,7 @@ void __fastcall FUN_103df670(undefined4 *param_1)
 void __fastcall FUN_103df680(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegResetPasswordAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4680,7 +4698,7 @@ void __fastcall FUN_103df680(undefined4 *param_1)
 void __fastcall FUN_103df690(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegUpdateUserAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4698,7 +4716,7 @@ void __fastcall FUN_103df690(undefined4 *param_1)
 void __fastcall FUN_103df6a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegUserEmailAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4716,7 +4734,7 @@ void __fastcall FUN_103df6a0(undefined4 *param_1)
 void __fastcall FUN_103df6b0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegValidateEmailAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4734,7 +4752,7 @@ void __fastcall FUN_103df6b0(undefined4 *param_1)
 void __fastcall FUN_103df6c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegVerifyEmailAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4752,7 +4770,7 @@ void __fastcall FUN_103df6c0(undefined4 *param_1)
 void __fastcall FUN_103df6d0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSecRegVerifyEmailSubmitAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

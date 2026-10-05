@@ -12063,7 +12063,7 @@ void __fastcall FUN_110b6c00(undefined4 *param_1)
 void __fastcall FUN_110b6c30(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjAvt);
 
   thunk_FUN_1113e6f0(param_1);
 
@@ -12940,7 +12940,7 @@ void __fastcall FUN_110c0990(undefined4 *param_1)
 void __fastcall FUN_110c09c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjMSD);
 
   thunk_FUN_1113e6f0(param_1);
 
@@ -12955,7 +12955,7 @@ void __fastcall FUN_110c09c0(undefined4 *param_1)
 void __fastcall FUN_110c0b50(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RefCountBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjServiceDesc);
 
   thunk_FUN_111a4f00(param_1);
 
@@ -14537,7 +14537,7 @@ undefined4 * __fastcall FUN_110c67e0(undefined4 *param_1)
 void __fastcall FUN_110c7e40(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCM);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjZPCMR);
 
   thunk_FUN_11172910(param_1);
 
@@ -18606,7 +18606,7 @@ void __fastcall FUN_110e8fe0(undefined4 *param_1)
 void __fastcall FUN_110e9000(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RContentProvider);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RRadioTimeContentProvider);
 
   thunk_FUN_111feb50(param_1);
 
@@ -24431,7 +24431,7 @@ void __fastcall FUN_1110b790(undefined4 *param_1)
 void __fastcall FUN_1110b7c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjAC);
 
   thunk_FUN_1113e6f0(param_1);
 

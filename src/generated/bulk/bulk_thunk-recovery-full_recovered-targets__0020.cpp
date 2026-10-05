@@ -2763,6 +2763,21 @@ extern void __fastcall FUN_101ba0d0(void *param_1);
 
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RCPValidateOperation_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpACGetDailyIndexRefreshTimeAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpACSetDailyIndexRefreshTimeAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpCDRefreshShareIndexAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpGetMultiZoneInfoAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RVoiceAccountUpdateAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RVoiceServiceAlexaROWLocaleAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RVoiceServiceAmazonChallengeAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RVoiceServiceAmazonSkillAuthCodeAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RVoiceServiceAuthenticateAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RVoiceServiceGetAccountInfoAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RVoiceServiceNotifyInitiateOnboardingAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_SCOpVoiceAcctWakeWordCompoundSet_;
+extern int ghidra_vftable_RControlAIOOpRef_SCOpVoiceServiceCompoundDeleteAcct_;
+
 // Reference entry 10c8a110; body size 9 bytes.
 #line 1 "ENTRY_10c8a110"
 
@@ -7582,7 +7597,7 @@ undefined4 * __fastcall FUN_10cc0fe0(undefined4 *param_1)
 void __fastcall FUN_10cc1270(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpGetMultiZoneInfoAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9126,7 +9141,7 @@ void __fastcall FUN_10cc7d80(undefined4 *param_1)
 void __fastcall FUN_10cca400(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RVoiceAccountUpdateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9144,7 +9159,7 @@ void __fastcall FUN_10cca400(undefined4 *param_1)
 void __fastcall FUN_10cca410(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RVoiceServiceAlexaROWLocaleAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9162,7 +9177,7 @@ void __fastcall FUN_10cca410(undefined4 *param_1)
 void __fastcall FUN_10cca420(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RVoiceServiceAmazonChallengeAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9180,7 +9195,7 @@ void __fastcall FUN_10cca420(undefined4 *param_1)
 void __fastcall FUN_10cca430(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RVoiceServiceAmazonSkillAuthCodeAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9198,7 +9213,7 @@ void __fastcall FUN_10cca430(undefined4 *param_1)
 void __fastcall FUN_10cca440(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RVoiceServiceAuthenticateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9216,7 +9231,7 @@ void __fastcall FUN_10cca440(undefined4 *param_1)
 void __fastcall FUN_10cca450(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RVoiceServiceGetAccountInfoAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9234,7 +9249,7 @@ void __fastcall FUN_10cca450(undefined4 *param_1)
 void __fastcall FUN_10cca460(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RVoiceServiceNotifyInitiateOnboardingAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9252,7 +9267,7 @@ void __fastcall FUN_10cca460(undefined4 *param_1)
 void __fastcall FUN_10cca470(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_SCOpVoiceAcctWakeWordCompoundSet_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9270,7 +9285,7 @@ void __fastcall FUN_10cca470(undefined4 *param_1)
 void __fastcall FUN_10cca480(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_SCOpVoiceServiceCompoundDeleteAcct_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -11702,7 +11717,7 @@ undefined4 * __fastcall FUN_10cdb640(undefined4 *param_1)
 void __fastcall FUN_10cdbb00(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpACGetDailyIndexRefreshTimeAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -11720,7 +11735,7 @@ void __fastcall FUN_10cdbb00(undefined4 *param_1)
 void __fastcall FUN_10cdbb10(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpACSetDailyIndexRefreshTimeAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -11738,7 +11753,7 @@ void __fastcall FUN_10cdbb10(undefined4 *param_1)
 void __fastcall FUN_10cdbb20(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpCDRefreshShareIndexAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -16845,7 +16860,7 @@ undefined4 * __fastcall FUN_10cf5650(undefined4 *param_1)
 void __fastcall FUN_10cf58b0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RCPValidateOperation_);
 
   thunk_FUN_101ba0d0(param_1);
 

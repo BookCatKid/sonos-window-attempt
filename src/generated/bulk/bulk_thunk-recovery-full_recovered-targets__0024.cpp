@@ -2625,6 +2625,13 @@ extern void __fastcall FUN_11164740(void *param_1);
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 extern void __fastcall thunk_FUN_11164740(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RConnectedPartnerRemoveAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RConnectedPartnersGetAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RGetDeviceDescriptionAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RMuseGetPlayerInfoAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RMuseSetSettingsAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_SCOpDeviceVoiceSettingsCompoundSet_;
+
 // Reference entry 10f77360; body size 6 bytes.
 #line 1 "ENTRY_10f77360"
 
@@ -3634,7 +3641,7 @@ void __fastcall FUN_10f7d2c0(undefined4 *param_1)
 void __fastcall FUN_10f7d8a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RConnectedPartnerRemoveAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -3652,7 +3659,7 @@ void __fastcall FUN_10f7d8a0(undefined4 *param_1)
 void __fastcall FUN_10f7d8b0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RConnectedPartnersGetAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -4627,7 +4634,7 @@ undefined4 * __fastcall FUN_10f823e0(undefined4 *param_1)
 void __fastcall FUN_10f82740(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RGetDeviceDescriptionAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -7862,7 +7869,7 @@ undefined4 * __fastcall FUN_10f8a6c0(undefined4 *param_1)
 void __fastcall FUN_10f8b430(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RMuseGetPlayerInfoAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -7880,7 +7887,7 @@ void __fastcall FUN_10f8b430(undefined4 *param_1)
 void __fastcall FUN_10f8b440(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RMuseSetSettingsAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -7898,7 +7905,7 @@ void __fastcall FUN_10f8b440(undefined4 *param_1)
 void __fastcall FUN_10f8b450(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_SCOpDeviceVoiceSettingsCompoundSet_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -21439,7 +21446,7 @@ void __fastcall FUN_10fcceb0(undefined4 *param_1)
 void __fastcall FUN_10fccf10(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjIndexListener);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSwfObjIndexListener);
 
   thunk_FUN_11164740(param_1);
 

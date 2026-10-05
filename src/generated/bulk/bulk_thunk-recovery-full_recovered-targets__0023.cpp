@@ -2705,6 +2705,22 @@ extern void __fastcall FUN_111a4f00(void *param_1);
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 extern void __fastcall thunk_FUN_111a4f00(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RBondingOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RControllerOnlySubmitDirectDiagnosticsAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RGetEthernetStatusAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RGetNetworkConnectivityTestResultAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RMuseGetUserSettingsAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RStartNetworkConnectivityTestAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSubmitDiagnosticsAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSubmitDirectDiagnosticsAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RTempDisableNetworkAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpAsyncIOOperation_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpCDGetAlbumArtistDisplayOptionAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpHTCGetIRRepeaterStateAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpHTCSetIRRepeaterStateAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpHTCSetLEDFeedbackStateAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpRCGetRoomCalibrationStatusAIOOp_;
+
 // Reference entry 10ef5750; body size 30 bytes.
 #line 1 "ENTRY_10ef5750"
 
@@ -5940,7 +5956,7 @@ undefined4 * __fastcall FUN_10f0e990(undefined4 *param_1)
 void __fastcall FUN_10f0eec0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RControllerOnlySubmitDirectDiagnosticsAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -5958,7 +5974,7 @@ void __fastcall FUN_10f0eec0(undefined4 *param_1)
 void __fastcall FUN_10f0eee0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSubmitDiagnosticsAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -5976,7 +5992,7 @@ void __fastcall FUN_10f0eee0(undefined4 *param_1)
 void __fastcall FUN_10f0eef0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSubmitDirectDiagnosticsAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -13183,7 +13199,7 @@ undefined4 * __fastcall FUN_10f259c0(undefined4 *param_1)
 void __fastcall FUN_10f259e0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RBondingOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -14998,7 +15014,7 @@ undefined4 * __fastcall FUN_10f30bd0(undefined4 *param_1)
 void __fastcall FUN_10f317c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RGetEthernetStatusAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -15016,7 +15032,7 @@ void __fastcall FUN_10f317c0(undefined4 *param_1)
 void __fastcall FUN_10f317d0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RGetNetworkConnectivityTestResultAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -15034,7 +15050,7 @@ void __fastcall FUN_10f317d0(undefined4 *param_1)
 void __fastcall FUN_10f317e0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RStartNetworkConnectivityTestAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -15052,7 +15068,7 @@ void __fastcall FUN_10f317e0(undefined4 *param_1)
 void __fastcall FUN_10f317f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RTempDisableNetworkAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -17053,7 +17069,7 @@ undefined4 * __fastcall FUN_10f3f0e0(undefined4 *param_1)
 void __fastcall FUN_10f3f200(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpAsyncIOOperation_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -19146,7 +19162,7 @@ void __fastcall FUN_10f4aa30(undefined4 *param_1)
 void __fastcall FUN_10f4aad0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RefCountBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSwfListenerGroupVolume);
 
   thunk_FUN_111a4f00(param_1);
 
@@ -22060,7 +22076,7 @@ undefined4 * __fastcall FUN_10f56470(undefined4 *param_1)
 void __fastcall FUN_10f57000(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpHTCGetIRRepeaterStateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -22078,7 +22094,7 @@ void __fastcall FUN_10f57000(undefined4 *param_1)
 void __fastcall FUN_10f57010(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpHTCSetIRRepeaterStateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -22096,7 +22112,7 @@ void __fastcall FUN_10f57010(undefined4 *param_1)
 void __fastcall FUN_10f57020(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpHTCSetLEDFeedbackStateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -22114,7 +22130,7 @@ void __fastcall FUN_10f57020(undefined4 *param_1)
 void __fastcall FUN_10f57030(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpRCGetRoomCalibrationStatusAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -23486,7 +23502,7 @@ undefined4 * __fastcall FUN_10f65280(undefined4 *param_1)
 void __fastcall FUN_10f65b10(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpCDGetAlbumArtistDisplayOptionAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -25399,7 +25415,7 @@ int __fastcall FUN_10f6fed0(int param_1, unsigned int recovered_unused_stack_0, 
 void __fastcall FUN_10f708a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RMuseGetUserSettingsAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

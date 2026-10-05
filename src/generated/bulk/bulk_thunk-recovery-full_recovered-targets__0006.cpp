@@ -2721,6 +2721,11 @@ extern void __fastcall FUN_11132140(void *param_1);
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 extern void __fastcall thunk_FUN_11132140(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RFetchTokenAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpSPAddAccountXAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpSPAddOAuthAccountXAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpZGTGetZoneGroupStateAIOOp_;
+
 // Reference entry 103566b0; body size 3 bytes.
 #line 1 "ENTRY_103566b0"
 
@@ -6863,7 +6868,7 @@ undefined4 * __fastcall FUN_103600e0(undefined4 *param_1)
 void __fastcall FUN_10360310(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpZGTGetZoneGroupStateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -7539,7 +7544,7 @@ void __fastcall FUN_103635a0(undefined4 *param_1)
 void __fastcall FUN_103635c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCompatibleZPPairCandidateEnumerator);
 
   thunk_FUN_11132140(param_1);
 
@@ -7612,7 +7617,7 @@ void __fastcall FUN_10363600(undefined4 *param_1)
 void __fastcall FUN_10363630(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTPrimaryZPCandidateEnumerator);
 
   thunk_FUN_11132140(param_1);
 
@@ -7627,7 +7632,7 @@ void __fastcall FUN_10363630(undefined4 *param_1)
 void __fastcall FUN_10363900(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSubwooferPrimaryZPCandidateEnumerator);
 
   thunk_FUN_11132140(param_1);
 
@@ -7642,7 +7647,7 @@ void __fastcall FUN_10363900(undefined4 *param_1)
 void __fastcall FUN_10363910(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSubwooferZPCandidateEnumerator);
 
   thunk_FUN_11132140(param_1);
 
@@ -7715,7 +7720,7 @@ void __fastcall FUN_10363950(undefined4 *param_1)
 void __fastcall FUN_10363980(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZPAirPlayEnumerator);
 
   thunk_FUN_11132140(param_1);
 
@@ -7730,7 +7735,7 @@ void __fastcall FUN_10363980(undefined4 *param_1)
 void __fastcall FUN_103639c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZPIkeaLampEnumerator);
 
   thunk_FUN_11132140(param_1);
 
@@ -7745,7 +7750,7 @@ void __fastcall FUN_103639c0(undefined4 *param_1)
 void __fastcall FUN_103639d0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZPLineInEnumerator);
 
   thunk_FUN_11132140(param_1);
 
@@ -16286,7 +16291,7 @@ undefined4 * __fastcall FUN_1039f3c0(undefined4 *param_1)
 void __fastcall FUN_1039f830(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpSPAddAccountXAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -16304,7 +16309,7 @@ void __fastcall FUN_1039f830(undefined4 *param_1)
 void __fastcall FUN_1039f840(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpSPAddOAuthAccountXAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -23156,7 +23161,7 @@ int __fastcall FUN_103c1d90(int param_1)
 void __fastcall FUN_103c1dc0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RFetchTokenAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

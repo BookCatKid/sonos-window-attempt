@@ -2712,6 +2712,18 @@ extern void __fastcall FUN_101ba0d0(void *param_1);
 
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_DownloadCertBundleOp_;
+extern int ghidra_vftable_RControlAIOOpRef_GetCertBundleAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RGetHouseholdSettingAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RSetHouseholdSettingAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpAIGetAudioInputAttributesAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpAIGetLineInLevelAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpDPGetAutoplayLinkedZonesAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpDPGetAutoplayRoomUUIDAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpDPGetAutoplayVolumeAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpDPGetUseAutoplayVolumeAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpRCGetSupportsOutputFixedAIOOp_;
+
 // Reference entry 10c35fe0; body size 3 bytes.
 #line 1 "ENTRY_10c35fe0"
 
@@ -12193,7 +12205,7 @@ undefined4 * __fastcall FUN_10c4aa40(undefined4 *param_1)
 void __fastcall FUN_10c4afb0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_DownloadCertBundleOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -12211,7 +12223,7 @@ void __fastcall FUN_10c4afb0(undefined4 *param_1)
 void __fastcall FUN_10c4afc0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_GetCertBundleAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -13235,7 +13247,7 @@ undefined4 * __fastcall FUN_10c4eb10(undefined4 *param_1)
 void __fastcall FUN_10c4f250(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPGetAutoplayLinkedZonesAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -13253,7 +13265,7 @@ void __fastcall FUN_10c4f250(undefined4 *param_1)
 void __fastcall FUN_10c4f260(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPGetAutoplayRoomUUIDAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -13271,7 +13283,7 @@ void __fastcall FUN_10c4f260(undefined4 *param_1)
 void __fastcall FUN_10c4f270(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPGetAutoplayVolumeAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -13289,7 +13301,7 @@ void __fastcall FUN_10c4f270(undefined4 *param_1)
 void __fastcall FUN_10c4f280(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPGetUseAutoplayVolumeAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -14451,7 +14463,7 @@ undefined4 * __fastcall FUN_10c54f30(undefined4 *param_1)
 void __fastcall FUN_10c55500(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpAIGetAudioInputAttributesAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -14469,7 +14481,7 @@ void __fastcall FUN_10c55500(undefined4 *param_1)
 void __fastcall FUN_10c55510(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpAIGetLineInLevelAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -15259,7 +15271,7 @@ undefined4 * __fastcall FUN_10c594f0(undefined4 *param_1)
 void __fastcall FUN_10c59670(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpRCGetSupportsOutputFixedAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -24755,7 +24767,7 @@ undefined4 * __fastcall FUN_10c80850(undefined4 *param_1)
 void __fastcall FUN_10c80f70(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RGetHouseholdSettingAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -24773,7 +24785,7 @@ void __fastcall FUN_10c80f70(undefined4 *param_1)
 void __fastcall FUN_10c80f80(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RSetHouseholdSettingAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

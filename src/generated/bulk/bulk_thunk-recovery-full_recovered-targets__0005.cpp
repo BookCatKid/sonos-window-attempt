@@ -2609,6 +2609,11 @@ extern void __fastcall FUN_101ba0d0(void *param_1);
 
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpCMGetProtocolInfoAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpDPGetButtonLockStateAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpDPGetLEDStateAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpDPSetButtonLockStateAIOOp_;
+
 // Reference entry 1030d270; body size 3 bytes.
 #line 1 "ENTRY_1030d270"
 
@@ -9199,7 +9204,7 @@ undefined4 * __fastcall FUN_10317000(undefined4 *param_1)
 void __fastcall FUN_103177f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpCMGetProtocolInfoAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9217,7 +9222,7 @@ void __fastcall FUN_103177f0(undefined4 *param_1)
 void __fastcall FUN_10317800(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPGetButtonLockStateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9235,7 +9240,7 @@ void __fastcall FUN_10317800(undefined4 *param_1)
 void __fastcall FUN_10317810(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPGetLEDStateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -9253,7 +9258,7 @@ void __fastcall FUN_10317810(undefined4 *param_1)
 void __fastcall FUN_10317820(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPSetButtonLockStateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

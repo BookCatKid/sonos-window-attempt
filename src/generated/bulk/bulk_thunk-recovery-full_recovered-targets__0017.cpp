@@ -2655,6 +2655,10 @@ extern void __fastcall FUN_101ba0d0(void *param_1);
 
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RDeviceDeleteAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RDeviceGetAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RDevicePutAIOOp_;
+
 // Reference entry 10b80320; body size 16 bytes.
 #line 1 "ENTRY_10b80320"
 
@@ -3644,7 +3648,7 @@ undefined4 * __fastcall FUN_10b86d80(undefined4 *param_1)
 void __fastcall FUN_10b879c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RDeviceDeleteAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -3662,7 +3666,7 @@ void __fastcall FUN_10b879c0(undefined4 *param_1)
 void __fastcall FUN_10b879d0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RDeviceGetAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -3680,7 +3684,7 @@ void __fastcall FUN_10b879d0(undefined4 *param_1)
 void __fastcall FUN_10b879f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RDevicePutAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

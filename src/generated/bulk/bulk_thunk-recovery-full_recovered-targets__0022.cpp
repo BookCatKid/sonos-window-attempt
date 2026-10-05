@@ -2658,6 +2658,9 @@ extern void __fastcall FUN_101ba0d0(void *param_1);
 
 extern void __fastcall thunk_FUN_101ba0d0(void *param_1);
 
+extern int ghidra_vftable_RControlAIOOpRef_RHdmiGetInfoAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpHTCGetLEDFeedbackStateAIOOp_;
+
 // Reference entry 10e28de0; body size 4 bytes.
 #line 1 "ENTRY_10e28de0"
 
@@ -11912,7 +11915,7 @@ undefined4 * __fastcall FUN_10e8dc70(undefined4 *param_1)
 void __fastcall FUN_10e92eb0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpHTCGetLEDFeedbackStateAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 
@@ -26048,7 +26051,7 @@ undefined4 * __fastcall FUN_10ef1610(undefined4 *param_1)
 void __fastcall FUN_10ef1900(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHdmiGetInfoAIOOp_);
 
   thunk_FUN_101ba0d0(param_1);
 

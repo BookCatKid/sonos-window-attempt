@@ -12966,7 +12966,7 @@ void __fastcall FUN_10bf0150(undefined4 *param_1)
 void __fastcall FUN_10bf0280(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlDeleteRequest);
 
   thunk_FUN_106845c0(param_1);
 
@@ -12981,7 +12981,7 @@ void __fastcall FUN_10bf0280(undefined4 *param_1)
 void __fastcall FUN_10bf02a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlPostRequest);
 
   thunk_FUN_106845c0(param_1);
 
@@ -12996,7 +12996,7 @@ void __fastcall FUN_10bf02a0(undefined4 *param_1)
 void __fastcall FUN_10bf02b0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlPutRequest);
 
   thunk_FUN_106845c0(param_1);
 
