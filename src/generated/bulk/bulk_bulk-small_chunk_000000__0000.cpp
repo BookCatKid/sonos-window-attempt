@@ -10057,11 +10057,15 @@ __declspec(naked) void FUN_1000250e(void)
 // Reference entry 10002540; body size 5 bytes.
 #line 1 "ENTRY_10002540"
 
-__declspec(naked) int * FUN_10002540(int *param_1);
+__declspec(naked) int * FUN_10002540(int *param_1)
+{ __asm jmp FUN_10ba9fa0 }
 
 void FUN_10002518(void)
 
-{ __asm jmp FUN_10ba9fa0 }
+{
+  FUN_10e9e153();
+  return;
+}
 
 
 void FUN_10002527(void)
