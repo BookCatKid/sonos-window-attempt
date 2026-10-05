@@ -2405,7 +2405,7 @@ void __fastcall FUN_10266b20(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -2418,7 +2418,7 @@ void __fastcall FUN_10266b40(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -2431,7 +2431,7 @@ void __fastcall FUN_10266b60(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -2542,7 +2542,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10267ef0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -2558,7 +2558,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10267f30(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -2574,7 +2574,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10267f70(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -2588,7 +2588,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10267f70(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102681e0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -2602,7 +2602,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102681e0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10268210(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -2616,7 +2616,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10268210(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10268240(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -3355,7 +3355,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1026dbb0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -3369,7 +3369,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1026dbb0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1026dbf0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -3448,7 +3448,7 @@ void __fastcall FUN_1026f850(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -3651,7 +3651,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102707d0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -3667,7 +3667,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102708a0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -3681,7 +3681,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102708a0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102708e0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -4148,7 +4148,7 @@ void __fastcall FUN_10275450(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -4359,7 +4359,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102768e0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -4375,7 +4375,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10276b50(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -4389,7 +4389,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10276b50(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10276b90(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -4892,7 +4892,7 @@ void __fastcall FUN_1027f440(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -4905,7 +4905,7 @@ void __fastcall FUN_1027f460(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -4918,7 +4918,7 @@ void __fastcall FUN_1027f480(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -4985,7 +4985,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1027fff0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -5001,7 +5001,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10280030(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -5017,7 +5017,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10280070(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -5031,7 +5031,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10280070(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102801f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -5045,7 +5045,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102801f0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10280220(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -5059,7 +5059,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10280220(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10280250(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -5788,7 +5788,7 @@ void __fastcall FUN_10285950(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -5860,7 +5860,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102861c0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -5874,7 +5874,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102861c0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10286290(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -6287,7 +6287,7 @@ void __fastcall FUN_1028d6d0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -6300,7 +6300,7 @@ void __fastcall FUN_1028d6f0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -6486,7 +6486,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1028e3d0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -6502,7 +6502,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1028e410(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -6516,7 +6516,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1028e410(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1028e560(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -6530,7 +6530,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1028e560(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1028e590(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -7004,7 +7004,7 @@ void __fastcall FUN_10296310(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -7017,7 +7017,7 @@ void __fastcall FUN_10296330(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -7030,7 +7030,7 @@ void __fastcall FUN_10296350(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -7123,7 +7123,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10297340(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -7139,7 +7139,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10297380(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -7155,7 +7155,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102973c0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -7309,7 +7309,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10297720(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10297750(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -7323,7 +7323,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10297750(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10297780(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -7337,7 +7337,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10297780(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102977b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -7652,7 +7652,7 @@ void __fastcall FUN_1029d050(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -7665,7 +7665,7 @@ void __fastcall FUN_1029d110(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -7678,7 +7678,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1029d1b0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -7718,7 +7718,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1029d220(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1029d250(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -7734,7 +7734,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1029d280(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x28);
   }
@@ -7819,7 +7819,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1029e170(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -7833,7 +7833,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1029e170(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1029e1b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -7849,7 +7849,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1029e1e0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x10);
   }
@@ -7935,7 +7935,7 @@ void __fastcall FUN_1029f410(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -7974,7 +7974,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1029f8c0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -7988,7 +7988,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1029f8c0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1029f900(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -8480,7 +8480,7 @@ void __fastcall FUN_102a8ed0(undefined4 *param_1)
   thunk_FUN_102a9b00();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -8493,7 +8493,7 @@ void __fastcall FUN_102a8f20(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -8506,7 +8506,7 @@ void __fastcall FUN_102a8f40(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -8519,7 +8519,7 @@ void __fastcall FUN_102a8f60(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -8704,7 +8704,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102abbe0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -8720,7 +8720,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102abc20(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -8736,7 +8736,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102abc60(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -8752,7 +8752,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102abe50(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -8836,7 +8836,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_102ac0c0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102ac0f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -8850,7 +8850,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102ac0f0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102ac120(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -8864,7 +8864,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102ac120(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102ac150(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -8878,7 +8878,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102ac150(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102ac180(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -10016,7 +10016,7 @@ void __fastcall FUN_102bd9c0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -10116,7 +10116,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102bde40(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -10130,7 +10130,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102bde40(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102bdf00(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -10257,7 +10257,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c04e0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -10271,7 +10271,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c04e0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102c0520(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -10374,7 +10374,7 @@ void __fastcall FUN_102c15b0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -10387,7 +10387,7 @@ void __fastcall FUN_102c15d0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -10412,7 +10412,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c18f0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -10428,7 +10428,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c1930(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -10442,7 +10442,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c1930(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102c1a20(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -10771,7 +10771,7 @@ void __fastcall FUN_102c4450(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -10784,7 +10784,7 @@ void __fastcall FUN_102c4470(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -10797,7 +10797,7 @@ void __fastcall FUN_102c4490(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -10810,7 +10810,7 @@ void __fastcall FUN_102c44b0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -10959,7 +10959,7 @@ void __fastcall FUN_102c4d70(undefined4 *param_1)
   thunk_FUN_103d60a0();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -11006,7 +11006,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c55f0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -11022,7 +11022,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c5630(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -11038,7 +11038,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c5670(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -11054,7 +11054,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c56b0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -11096,7 +11096,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_102c5720(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102c57f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -11110,7 +11110,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c57f0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102c5820(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -11128,7 +11128,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c5850(byte param_2)
   thunk_FUN_103d60a0();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x28);
   }
@@ -11142,7 +11142,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c5850(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102c58a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -11156,7 +11156,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c58a0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102c58d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -11172,7 +11172,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c5900(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -11856,7 +11856,7 @@ void __fastcall FUN_102ccc00(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -12019,7 +12019,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102cd830(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -12035,7 +12035,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102cd870(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -12080,7 +12080,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102cd9a0(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -12094,7 +12094,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102cd9a0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102cda80(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -12108,7 +12108,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102cda80(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102cdab0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -12124,7 +12124,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102cdae0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -12465,7 +12465,7 @@ void __fastcall FUN_102d39e0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -12581,7 +12581,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102d45b0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -12611,7 +12611,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102d4620(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -12625,7 +12625,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102d4620(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102d4660(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -13020,7 +13020,7 @@ undefined4 * __fastcall FUN_102d9090(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCStringTemplate);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCStringTemplateNode);
   param_1[2] = (undefined4)(0);
   param_1[3] = (undefined4)(0);
   param_1[4] = (undefined4)(0);
@@ -13036,7 +13036,7 @@ void __fastcall FUN_102d9590(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -13071,7 +13071,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102da090(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -13085,7 +13085,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102da090(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102da0d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -13253,7 +13253,7 @@ void __fastcall FUN_102dcbd0(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -13367,7 +13367,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102dd260(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -13384,7 +13384,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102dd2a0(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -13401,7 +13401,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102dd2f0(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -13457,7 +13457,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102dd3a0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102dd3d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -13726,7 +13726,7 @@ void __fastcall FUN_102df6f0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -13761,7 +13761,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102df810(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -13775,7 +13775,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102df810(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102df850(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -14247,7 +14247,7 @@ void __fastcall FUN_102ebab0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -14260,7 +14260,7 @@ void __fastcall FUN_102ebaf0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -14273,7 +14273,7 @@ void __fastcall FUN_102ebb10(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -14615,7 +14615,7 @@ void __fastcall FUN_102ecb40(undefined4 *param_1)
   thunk_FUN_102ec3d0();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -14628,7 +14628,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102ee650(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -14644,7 +14644,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102ee690(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -14660,7 +14660,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102ee6d0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -14676,7 +14676,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102ee710(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -14706,7 +14706,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102eea00(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -14723,7 +14723,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102eebf0(byte param_2)
   thunk_FUN_102ec3d0();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x28);
   }
@@ -14739,7 +14739,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102eed40(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -14753,7 +14753,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102eed40(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102eed80(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -14767,7 +14767,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102eed80(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102eedb0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -14781,7 +14781,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102eedb0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102eede0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -14795,7 +14795,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102eede0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_102eee10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -16294,7 +16294,7 @@ void __fastcall FUN_10302630(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -16307,7 +16307,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103027b0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -16321,7 +16321,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103027b0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_103028b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -16982,7 +16982,6 @@ void __fastcall FUN_1030b1c0(int param_1, unsigned int recovered_unused_stack_0,
 // Reference entry 1030b770; body size 58 bytes.
 #line 1 "ENTRY_1030b770"
 
-void __this
 void __thiscall Recovered_Bulk::m_FUN_1030b770(undefined2 param_2)
 {
   int param_1 = (int )this;
@@ -17813,7 +17812,7 @@ void __fastcall FUN_10317860(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -17826,7 +17825,7 @@ void __fastcall FUN_10317880(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -17839,7 +17838,7 @@ void __fastcall FUN_103178a0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -17852,7 +17851,7 @@ void __fastcall FUN_103178c0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -17865,7 +17864,7 @@ void __fastcall FUN_103178e0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -17878,7 +17877,7 @@ void __fastcall FUN_10317900(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -18112,7 +18111,7 @@ void __fastcall FUN_103188b0(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -18211,7 +18210,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10319320(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -18227,7 +18226,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10319360(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -18243,7 +18242,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103193a0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -18259,7 +18258,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103193e0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -18275,7 +18274,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10319420(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -18291,7 +18290,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10319460(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -18307,7 +18306,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103194a0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -18394,7 +18393,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103195d0(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -18590,7 +18589,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10319920(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10319950(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -18604,7 +18603,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10319950(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10319980(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -18618,7 +18617,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10319980(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_103199b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -18632,7 +18631,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103199b0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_103199e0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -18646,7 +18645,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103199e0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10319a10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -18660,7 +18659,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10319a10(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10319a40(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -18674,7 +18673,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10319a40(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10319a70(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -18688,7 +18687,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10319a70(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10319aa0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -24403,7 +24402,7 @@ void __fastcall FUN_10360870(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -24416,7 +24415,7 @@ void __fastcall FUN_10360890(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -25332,7 +25331,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10368450(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -25348,7 +25347,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10368490(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -25426,7 +25425,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103690c0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -25442,7 +25441,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10369100(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -25780,7 +25779,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10369980(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -25796,7 +25795,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103699c0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -25812,7 +25811,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10369aa0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -25842,7 +25841,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10369bb0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -25856,7 +25855,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10369bb0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10369bf0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -25870,7 +25869,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10369bf0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10369c20(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -25886,7 +25885,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10369db0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -25902,7 +25901,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10369e90(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -25918,7 +25917,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1036a080(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -25950,7 +25949,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1036a210(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -25994,7 +25993,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1036a2b0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -26024,7 +26023,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1036a470(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }

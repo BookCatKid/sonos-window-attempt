@@ -3431,24 +3431,20 @@ void __fastcall FUN_10001177(int param_1);
 template<class... A> int FUN_10001177(A...);
 void FUN_10001195(undefined4 param_1);
 template<class... A> int FUN_10001195(A...);
-void 
 void FUN_100011a9(void);
 template<class... A> int FUN_100011a9(A...);
 undefined4 __fastcall FUN_100011b3(int *param_1);
 template<class... A> int FUN_100011b3(A...);
-void FUN_10
 void FUN_100011bd(void);
 template<class... A> int FUN_100011bd(A...);
 SCStr * FUN_100011c7(SCStr *param_1);
 template<class... A> int FUN_100011c7(A...);
-void FUN_100011cc
 void FUN_100011cc(void);
 template<class... A> int FUN_100011cc(A...);
 int __fastcall FUN_100011d1(int *param_1);
 template<class... A> int FUN_100011d1(A...);
 void FUN_100011e5(void);
 template<class... A> int FUN_100011e5(A...);
-void FUN_100011f9(void)
 void FUN_100011f9(void);
 template<class... A> int FUN_100011f9(A...);
 void FUN_10001203(void);
@@ -3633,10 +3629,8 @@ void FUN_100017bc(void);
 template<class... A> int FUN_100017bc(A...);
 void __fastcall FUN_100017cb(int *param_1);
 template<class... A> int FUN_100017cb(A...);
-int 
 void FUN_100017ee(void);
 template<class... A> int FUN_100017ee(A...);
-undefined4
 void FUN_10001802(void);
 template<class... A> int FUN_10001802(A...);
 undefined4 __fastcall FUN_10001816(undefined4 param_1);
@@ -3653,7 +3647,6 @@ void __fastcall FUN_10001848(int param_1);
 template<class... A> int FUN_10001848(A...);
 void FUN_10001889(void);
 template<class... A> int FUN_10001889(A...);
-void FUN_100018b
 void FUN_100018ac(void);
 template<class... A> int FUN_100018ac(A...);
 void FUN_100018b1(void);
@@ -3784,7 +3777,6 @@ void __fastcall FUN_10001c71(undefined4 *param_1);
 template<class... A> int FUN_10001c71(A...);
 undefined1 FUN_10001c85(void);
 template<class... A> int FUN_10001c85(A...);
-undefined4 * __thiscall Recovered_Bulk::m_FUN_10001c
 void FUN_10001c8f(void);
 template<class... A> int FUN_10001c8f(A...);
 void FUN_10001cb7(void);
@@ -3980,7 +3972,6 @@ void __fastcall FUN_100022d9(int param_1);
 template<class... A> int FUN_100022d9(A...);
 SCStr * FUN_100022de(SCStr *param_1);
 template<class... A> int FUN_100022de(A...);
-void FUN_
 void FUN_100022e3(void);
 template<class... A> int FUN_100022e3(A...);
 void FUN_100022f2(void);
@@ -4019,7 +4010,6 @@ void __fastcall FUN_10002419(int param_1);
 template<class... A> int FUN_10002419(A...);
 void __fastcall FUN_10002423(int param_1);
 template<class... A> int FUN_10002423(A...);
-undefined4 * __thisca
 void FUN_1000243c(void);
 template<class... A> int FUN_1000243c(A...);
 void FUN_10002446(void);
@@ -4048,7 +4038,7 @@ void FUN_10002518(void);
 template<class... A> int FUN_10002518(A...);
 void FUN_10002527(void);
 template<class... A> int FUN_10002527(A...);
-int * FUN_10002540(int *param_1)
+int * FUN_10002540(int *param_1);
 
 void FUN_10002518(void);
 template<class... A> int FUN_10002540(A...);
@@ -4727,7 +4717,7 @@ void FUN_10003981(undefined4 param_1,SCStr *param_2);
 template<class... A> int FUN_10003981(A...);
 void FUN_10003986(void);
 template<class... A> int FUN_10003986(A...);
-__time64_t FUN_1000398b(int *param_1,int param_2,int param_3);
+template<class... A> int FUN_1000398b(A...);
 template<class... A> int FUN_1000398b(A...);
 void __fastcall FUN_100039b8(int param_1);
 template<class... A> int FUN_100039b8(A...);
@@ -4775,6 +4765,56 @@ void __fastcall FUN_10003aad(int param_1);
 template<class... A> int FUN_10003aad(A...);
 void FUN_10003ab7(void);
 template<class... A> int FUN_10003ab7(A...);
+template<class... A> int FUN_10367bba(A...);
+template<class... A> int FUN_10444008(A...);
+template<class... A> int FUN_1046c6db(A...);
+template<class... A> int FUN_104bc86f(A...);
+template<class... A> int FUN_1057c136(A...);
+template<class... A> int FUN_105d4be4(A...);
+template<class... A> int FUN_1062e17e(A...);
+template<class... A> int FUN_106571a6(A...);
+template<class... A> int FUN_10703dab(A...);
+template<class... A> int FUN_10750d4d(A...);
+template<class... A> int FUN_10790343(A...);
+template<class... A> int FUN_107e6d15(A...);
+template<class... A> int FUN_10803243(A...);
+template<class... A> int FUN_1081ae98(A...);
+template<class... A> int FUN_10838995(A...);
+template<class... A> int FUN_10846e53(A...);
+template<class... A> int FUN_10893a68(A...);
+template<class... A> int FUN_108a25b6(A...);
+template<class... A> int FUN_10908737(A...);
+template<class... A> int FUN_1092f5d4(A...);
+template<class... A> int FUN_10975f71(A...);
+template<class... A> int FUN_10982d7b(A...);
+template<class... A> int FUN_1099f108(A...);
+template<class... A> int FUN_109da27b(A...);
+template<class... A> int FUN_109ef5d0(A...);
+template<class... A> int FUN_109f8eb2(A...);
+template<class... A> int FUN_10a67681(A...);
+template<class... A> int FUN_10ab61a7(A...);
+template<class... A> int FUN_10abee7d(A...);
+template<class... A> int FUN_10b559e8(A...);
+template<class... A> int FUN_10bcb570(A...);
+template<class... A> int FUN_10c6eb07(A...);
+template<class... A> int FUN_10ccc9ad(A...);
+template<class... A> int FUN_10cf5c33(A...);
+template<class... A> int FUN_10d024d9(A...);
+template<class... A> int FUN_10d19610(A...);
+template<class... A> int FUN_10d497b4(A...);
+template<class... A> int FUN_10d61239(A...);
+template<class... A> int FUN_10d61243(A...);
+template<class... A> int FUN_10dcaaad(A...);
+template<class... A> int FUN_10e9e153(A...);
+template<class... A> int FUN_10ea6543(A...);
+template<class... A> int FUN_10f44ec1(A...);
+template<class... A> int FUN_10f6c297(A...);
+template<class... A> int FUN_10f8bdc9(A...);
+template<class... A> int FUN_10fd9863(A...);
+template<class... A> int FUN_110dcaf9(A...);
+template<class... A> int FUN_1115e3ee(A...);
+template<class... A> int FUN_1122a8ba(A...);
+template<class... A> int FUN_103a93f7(A...);
 // Reference entry 1000100a; body size 5 bytes.
 #line 1 "ENTRY_1000100a"
 
@@ -5576,7 +5616,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100010dc(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -5968,7 +6008,7 @@ undefined4 FUN_1000114a(undefined4 param_1)
   *(unsigned char*)((char *)&uStack_68 + 0) = (unsigned char)(6);
   iVar3 = (int)(thunk_FUN_10eced20((uint)&auStack_2c), 0);
   thunk_FUN_105f6290(iVar3 + 4);
-  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_1c = (int *)((int *)0x0);
   piStack_18 = (int *)((int *)0x0);
@@ -6178,7 +6218,7 @@ LAB_106ede0c:
   }
   uStack_10 = (undefined4)(DAT_121a27ac);
   thunk_FUN_105f5920<>(&uStack_10);
-  ppuStack_30 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+  ppuStack_30 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTreeNoAppendInterface);
 
   iStack_28 = (int)(0);
 
@@ -6482,7 +6522,6 @@ void FUN_10001195(undefined4 param_1)
 // Reference entry 100011a9; body size 5 bytes.
 #line 1 "ENTRY_100011a9"
 
-void 
 void FUN_100011a9(void)
 
 {
@@ -6507,7 +6546,6 @@ undefined4 __fastcall FUN_100011b3(int *param_1)
 // Reference entry 100011bd; body size 5 bytes.
 #line 1 "ENTRY_100011bd"
 
-void FUN_10
 void FUN_100011bd(void)
 
 {
@@ -6530,7 +6568,6 @@ SCStr * FUN_100011c7(SCStr *param_1)
 // Reference entry 100011cc; body size 5 bytes.
 #line 1 "ENTRY_100011cc"
 
-void FUN_100011cc
 void FUN_100011cc(void)
 
 {
@@ -6756,13 +6793,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100011ea(byte param_2)
 // Reference entry 100011f9; body size 5 bytes.
 #line 1 "ENTRY_100011f9"
 
-void FUN_100011f9(void)
-void FUN_100011f9(void)
-
-{
-  FUN_10656c96();
-  return;
-}
 
 
 // Reference entry 100011fe; body size 5 bytes.
@@ -6815,10 +6845,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100011fe(undefined4 *param_2)
 // Reference entry 10001203; body size 5 bytes.
 #line 1 "ENTRY_10001203"
 
-void FUN_10001203(void)
-
-{
-  
 void FUN_10001203(void)
 
 {
@@ -7490,7 +7516,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10001258(uint param_2)
 
     return (int *)(piVar1);
   }
-  *param_1 = (int)((int)(uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0(uVar2);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -7549,7 +7575,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000125d(undefined4 *param_2)
             thunk_FUN_1123fce0(iVar3 + 4);
           }
           piVar4[7] = (int)(0);
-          piVar4[5] = (int)((int)(uint)&ghidra_vftable_RControlAIOOpRef);
+          piVar4[5] = (int)((int)(uint)&ghidra_vftable_RControlAIOOpRefBase);
           piVar4[8] = (int)(0);
           *(undefined2*)(piVar4 + 9) = (undefined2)(1000);
           piVar4[10] = (int)(0);
@@ -8078,10 +8104,6 @@ undefined1 FUN_100012a3(void)
 void FUN_100012b7(void)
 
 {
-  thunk_
-void FUN_100012b7(void)
-
-{
   FUN_1081ae98();
   return;
 }
@@ -8200,7 +8222,7 @@ undefined4 FUN_100012c1(undefined4 param_1)
   *(unsigned char*)((char *)&uStack_74 + 0) = (unsigned char)(0x10);
   iVar4 = (int)(thunk_FUN_1061c630<>(1), 0);
   thunk_FUN_105f6290(iVar4 + 4);
-  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_1c = (int *)((int *)0x0);
   piStack_18 = (int *)((int *)0x0);
@@ -8211,7 +8233,7 @@ undefined4 FUN_100012c1(undefined4 param_1)
   *(unsigned char*)((char *)&uStack_74 + 0) = (unsigned char)(0x12);
   iVar4 = (int)(thunk_FUN_10eb41c0(), 0);
   piVar5 = (int *)((int *)(*(code *)ppuStack_24[3])(*(char *)(iVar4 + 0x100) == '\0',(uint)&appuStack_124), 0);
-  ppuStack_44 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_44 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
   puStack_30 = (undefined4 *)((undefined4 *)0x0);
 
   piStack_3c = (int *)((int *)0x0);
@@ -8494,16 +8516,11 @@ void FUN_100012ee(int *param_1){
 void FUN_100012fd(void)
 
 {
-  thunk_FUN_10
-void FUN_100012fd(void)
-
-{
   FUN_10f8bdc9();
   return;
 }
 
 
-ytes.
 #line 1 "ENTRY_10001302"
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_10001302(undefined1 *param_2,short *param_3)
@@ -8837,10 +8854,6 @@ void __thiscall Recovered_Bulk::m_FUN_10001311(void *param_2)
 void FUN_1000131b(void)
 
 {
-  thunk_FUN_10d61460
-void FUN_1000131b(void)
-
-{
   FUN_10d61239();
   return;
 }
@@ -8996,7 +9009,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10001366(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -9098,23 +9111,12 @@ void FUN_1000137a(void){
 void FUN_1000138e(void)
 
 {
-  thunk_FUN_110dcca0<>();
-  
-void FUN_1000138e(void)
-
-{
   FUN_110dcaf9();
   return;
 }
 
 
-1 "ENTRY_10001393"
 
-void FUN_10001393(void)
-
-{
-  thunk_FUN_10f450b0();
-  return
 void FUN_10001393(void)
 
 {
@@ -9123,7 +9125,6 @@ void FUN_10001393(void)
 }
 
 
-RY_1000139d"
 
 undefined1 FUN_1000139d(void)
 
@@ -9276,7 +9277,7 @@ LAB_10a29b4d:
   thunk_FUN_1061c630<>(4);
   iVar5 = (int)(thunk_FUN_10ec7220<>(uVar6), 0);
   thunk_FUN_105f6290(iVar5 + 4);
-  ppuStack_30 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_30 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_28 = (int *)((int *)0x0);
   piStack_24 = (int *)((int *)0x0);
@@ -10112,7 +10113,7 @@ void __fastcall FUN_100013fc(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -10196,21 +10197,11 @@ undefined1 FUN_1000141f(void)
 void FUN_1000142e(void)
 
 {
-  thunk_FUN_10dcae90<>();
-  return;
-}
-
-
-
-void FUN_1000142e(void)
-
-{
   FUN_10dcaaad();
   return;
 }
 
 
-01438"
 
 void __thiscall Recovered_Bulk::m_FUN_10001438(undefined4 param_2)
 {
@@ -10284,15 +10275,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10001451(byte param_2)
 // Reference entry 10001456; body size 5 bytes.
 #line 1 "ENTRY_10001456"
 
-void FUN_10001456(void)
-
-{
-  thunk_FUN_107510e0<>();
-  return;
-}
-
-
-// Ref
 void FUN_10001456(void)
 
 {
@@ -10433,7 +10415,7 @@ undefined4 FUN_10001460(undefined4 param_1)
   thunk_FUN_10ec7220<>(uVar13);
   iVar3 = (int)(thunk_FUN_10ec6870<>(uVar4), 0);
   thunk_FUN_105f6290(iVar3 + 4);
-  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_24 = (int *)((int *)0x0);
   piStack_20 = (int *)((int *)0x0);
@@ -10640,7 +10622,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_1000146f(SCStr *param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10001488(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -10838,29 +10820,11 @@ bool __fastcall FUN_100014e2(int param_1)
 void FUN_100014e7(void)
 
 {
-  thunk_FUN_10d496f0<>();
-  return;
-}
-
-
-// Reference
-void FUN_100014e7(void)
-
-{
   FUN_10d497b4();
   return;
 }
 
 
- FUN_10001500(void)
-
-{
-  thunk_FUN_10ab61d0();
-  return;
-}
-
-
-// Reference entry
 void FUN_10001500(void)
 
 {
@@ -10869,7 +10833,7 @@ void FUN_10001500(void)
 }
 
 
- * __thiscall Recovered_Bulk::m_FUN_10001505(byte param_2)
+undefined4 * __thiscall Recovered_Bulk::m_FUN_10001505(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   DAT_121a483c = (int)(0);
@@ -10888,21 +10852,12 @@ void FUN_10001500(void)
 void FUN_1000150a(void)
 
 {
-  thunk_FUN_109091d0<>();
-  return;
-}
-
-
-// Reference entry 10001
-void FUN_1000150a(void)
-
-{
   FUN_10908737();
   return;
 }
 
 
-scall Recovered_Bulk::m_FUN_1000152d(undefined4 param_2,int *param_3)
+undefined4 __thiscall Recovered_Bulk::m_FUN_1000152d(undefined4 param_2,int *param_3)
 {
   int *param_1 = (int *)this; int stack0xfffffffc;
  try {
@@ -10930,7 +10885,7 @@ scall Recovered_Bulk::m_FUN_1000152d(undefined4 param_2,int *param_3)
 void __fastcall FUN_10001537(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   return;
 }
@@ -10995,21 +10950,12 @@ void FUN_10001573(void)
 void FUN_1000158c(void)
 
 {
-  thunk_FUN_10982f30<>();
-  return;
-}
-
-
-// Reference entry 10001591; b
-void FUN_1000158c(void)
-
-{
   FUN_10982d7b();
   return;
 }
 
 
-l Recovered_Bulk::m_FUN_10001591(byte param_2)
+undefined4 * __thiscall Recovered_Bulk::m_FUN_10001591(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTBecomeCoordinatorOfStandaloneGroupAIOOp);
@@ -11144,85 +11090,11 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_100015be(undefined4 param_2,undefine
 void FUN_100015c8(void)
 
 {
-  thunk_FUN_1046c6f0();
-  return;
-}
-
-
-// Reference entry 100015cd; body si
-void FUN_100015c8(void)
-
-{
   FUN_1046c6db();
   return;
 }
 
 
-int param_1)
-
-{ int stack0xffffffcc;
- try {
-  char cVar1;
-  SCLibrary *pSVar2;
-  undefined4 *puVar3;
-  int iVar4;
-  char *_Str;
-  int *piVar5;
-  int *piStack_20;
-  int *piStack_1c;
-  char *pcStack_18;
-  undefined4 uStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  pSVar2 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
-  piVar5 = (int *)((int *)0x0);
-  piStack_1c = (int *)((int *)0x0);
-  if ((SCLibrary *)(pSVar2) != (SCLibrary *)(0x0)) {
-    ((SCStr *)((SCStr *)&uStack_14))->int_allocRep("SCISystem");
-
-    puVar3 = (undefined4 *)((undefined4 *)(*(code *)**(undefined4 **)pSVar2)(&piStack_20), 0);
-    piVar5 = (int *)((int *)*puVar3);
-    *puVar3 = (undefined4)(0);
-    uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(2)));
-    piStack_1c = (int *)(piVar5);
-    if ((int *)(piStack_20) != (int *)(0x0)) {
-      (**(code **)(*piStack_20 + 8))();
-    }
-
-    ((SCStr *)((SCStr *)&uStack_14))->int_release();
-
-  }
-
-  if ((int *)(piVar5) != (int *)(0x0)) {
-    ((SCStr *)((SCStr *)&stack0xffffffcc))->int_allocRep("debugconnectivitystate");
-    cVar1 = (char)((**(code **)(*piVar5 + 0x60))(), 0);
-    if (cVar1 != '\0') {
-      ((SCStr *)((SCStr *)&stack0xffffffcc))->int_allocRep("debugconnectivitystate");
-      (**(code **)(*piVar5 + 100))(&pcStack_18);
-      _Str = (char *)("");
-      if ((char *)(pcStack_18) != (char *)(0x0)) {
-        _Str = (char *)(pcStack_18);
-      }
-      iVar4 = (int)(atoi(_Str), 0);
-      uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(5)));
-      ((SCStr *)((SCStr *)&pcStack_18))->int_release();
-      goto LAB_1031fd00;
-    }
-  }
-  iVar4 = (int)(*(int *)(param_1 + 0x28));
-LAB_1031fd00:
-
-  if ((int *)(piVar5) != (int *)(0x0)) {
-    (**(code **)(*piVar5 + 8))();
-  }
-
-  return (int)(iVar4);
-
- } catch (...) { }
-}
 
 
 // Reference entry 100015dc; body size 5 bytes.
@@ -11690,39 +11562,15 @@ void __thiscall Recovered_Bulk::m_FUN_1000161d(int *param_2,undefined4 param_3)
 void FUN_10001631(void)
 
 {
-  thunk_FUN_10ac02f0<>();
-  return;
-}
-
-
-// Reference entry 1000163b; body size 5 b
-void FUN_10001631(void)
-
-{
   FUN_10abee7d();
   return;
 }
 
 
-(int param_1)
-
-{
-  return (undefined2)(*(undefined2 *)(param_1 + 0x24));
-}
 
 
 // Reference entry 10001640; body size 5 bytes.
 #line 1 "ENTRY_10001640"
-
-void FUN_10001640(void)
-
-{
-  thunk_FUN_109761b0<>();
-  return;
-}
-
-
-// Reference entry 10001645; body size 5 bytes.
 
 void FUN_10001640(void)
 
@@ -11732,7 +11580,7 @@ void FUN_10001640(void)
 }
 
 
-m_FUN_10001645(undefined4 param_2,undefined4 param_3)
+undefined4 * __thiscall Recovered_Bulk::m_FUN_10001645(undefined4 param_2,undefined4 param_3)
 {
   undefined4 param_1 = (undefined4 )this;
  try {
@@ -12007,28 +11855,14 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_100016cc(undefined4 param_2,undefine
 void FUN_100016d6(void)
 
 {
-  thunk_FUN_10b55cd0();
-  return;
-}
-
-
-// Reference entry 100016e0; body size 5 bytes.
-#line 
-void FUN_100016d6(void)
-
-{
   FUN_10b559e8();
   return;
 }
 
 
-0();
-  return;
-}
 
 
 // Reference entry 100016e5; body size 5 bytes.
-#line 1 "ENT
 void FUN_100016e0(void)
 
 {
@@ -12037,8 +11871,6 @@ void FUN_100016e0(void)
 }
 
 
-1)(1);
-}
 
 
 // Reference entry 100016ea; body size 5 bytes.
@@ -12047,88 +11879,11 @@ void FUN_100016e0(void)
 void FUN_100016ea(void)
 
 {
-  thunk_FUN_10790880<>();
-  return;
-}
-
-
-// Reference entry 100016f4; body size 5 bytes.
-#line 1 "ENTRY_100
-void FUN_100016ea(void)
-
-{
   FUN_10790343();
   return;
 }
 
 
-param_2)
-{
-  int param_1 = (int )this; int stack0xfffffffc;
- try {
-  int iVar1;
-  undefined4 *puVar2;
-  undefined4 uVar3;
-  undefined4 uVar4;
-  int *piVar5;
-  undefined1 *puVar6;
-  undefined1 *puVar7;
-  undefined4 uVar8;
-  undefined4 uVar9;
-  undefined4 uVar10;
-  undefined4 uVar11;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  iVar1 = (int)(thunk_FUN_110828b0(DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
-  puVar7 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x28) != (undefined1 *)((0x0))) {
-    puVar7 = (undefined1 *)(*(undefined1 **)(param_1 + 0x28), 0);
-  }
-  iVar1 = (int)((**(code **)(*(int *)(iVar1 + 0x1c) + 4))(puVar7,1), 0);
-  if (iVar1 != 0) {
-    puVar2 = (undefined4 *)(operator_new(0xd7d0), 0);
-
-    if ((undefined4 *)(puVar2) == (undefined4 *)(0x0)) {
-      puVar2 = (undefined4 *)((undefined4 *)0x0);
-    }
-    else {
-      iVar1 = (int)(thunk_FUN_110cb6d0(), 0);
-      iVar1 = (int)(*(int *)(iVar1 + 0x2c));
-      uVar3 = (undefined4)((**(code **)(*(int *)(*(int *)(*(int *)(iVar1 + 4) + 4) + 4 + iVar1) + 0x48))(), 0);
-      uVar11 = (undefined4)(0);
-      uVar10 = (undefined4)(0);
-      uVar9 = (undefined4)(2000);
-      uVar8 = (undefined4)(2000);
-      uVar4 = (undefined4)((**(code **)(*(int *)(*(int *)(*(int *)(iVar1 + 4) + 4) + iVar1 + 4) + 0x50)) (2000,2000,0,0), 0);
-      thunk_FUN_111c0760<>(uVar3,"urn:schemas-upnp-org:service:AudioIn:1","SetAudioInputAttributes", uVar4,uVar8,uVar9,uVar10,uVar11);
-      *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpAISetAudioInputAttributesAIOOp);
-      puVar2[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAISetAudioInputAttributesAIOOp);
-      puVar2[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAISetAudioInputAttributesAIOOp);
-    }
-
-    puVar7 = (undefined1 *)(&DAT_1186d2ee);
-    if (*(undefined1 **)(param_1 + 0x20) != (undefined1 *)((0x0))) {
-      puVar7 = (undefined1 *)(*(undefined1 **)(param_1 + 0x20), 0);
-    }
-    puVar6 = (undefined1 *)(&DAT_1186d2ee);
-    if (*(undefined1 **)(param_1 + 0x1c) != (undefined1 *)((0x0))) {
-      puVar6 = (undefined1 *)(*(undefined1 **)(param_1 + 0x1c), 0);
-    }
-    piVar5 = (int *)((int *)thunk_FUN_1124ffa0("DesiredName",0), 0);
-    (**(code **)(*piVar5 + 0xc))(puVar6);
-    piVar5 = (int *)((int *)thunk_FUN_1124ffa0("DesiredIcon",0), 0);
-    (**(code **)(*piVar5 + 0xc))(puVar7);
-    thunk_FUN_102207b0(puVar2,param_1 + 8,param_2);
-    *(undefined4*)(param_1 + 0x6c) = (undefined4)(param_2);
-  }
-
-  return;
-
- } catch (...) { }
-}
 
 
 // Reference entry 100016f9; body size 5 bytes.
@@ -12137,7 +11892,7 @@ param_2)
 void __fastcall FUN_100016f9(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMap);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMapCB);
   if ((undefined4 *)param_1[1] != (undefined4 *)(((0x0)))) {
     (*(code *)**(undefined4 **)param_1[1])(1);
   }
@@ -12291,8 +12046,6 @@ void __thiscall Recovered_Bulk::m_FUN_10001730(undefined4 param_2,uint param_3,u
             if (piStack_18[0x37] == 3) {
               if (*(char *)((int)piStack_18 + 0xf) == '\0') {
                 if (cStack_11 == '\0') {
-                  piStack_18 = (int *)((int *)((uint)*(ushort *)(piStack_18 + 3) *
-                                      (uint)*(ushort *)(piStack_18 + 3)));
                   iStack_1c = (int)((int)piStack_18 >> 0x1f);
                   if ((-1 < iStack_1c) && (((int)piStack_18 < 0 || ((int *)(0x12b) < (int *)((piStack_18)))))) {
                     piStack_18 = (int *)((int *)0x12c);
@@ -12405,7 +12158,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000174e(byte param_2)
   thunk_FUN_1148a50e(param_1[0x36],0x1c);
   param_1[0x34] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  param_1[0x34] = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  param_1[0x34] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   thunk_FUN_10dd1440();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xf8);
@@ -12422,7 +12175,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10001758(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -12446,143 +12199,11 @@ void FUN_1000175d(void)
 void FUN_10001776(void)
 
 {
-  thunk_FUN_104bc8a0<>();
-  return;
-}
-
-
-// Reference entry 100017a3; body size 5 bytes.
-#line 1 "ENTRY_100017a3"
-void FUN_10001776(void)
-
-{
   FUN_104bc86f();
   return;
 }
 
 
-4 *param_2,SCStr *param_3)
-{
-  int param_1 = (int )this;
- try {
-  undefined4 **ppuVar1;
-  undefined4 *puVar2;
-  undefined4 *puVar3;
-  bool bVar4;
-  uint uVar5;
-  int *piVar6;
-  SCStr *this_;
-  int *piVar7;
-  undefined4 **ppuVar8;
-  undefined4 *puStack_3c;
-  undefined4 **ppuStack_38;
-  int *piStack_34;
-  int *piStack_30;
-  int *piStack_2c;
-  int *piStack_28;
-  int *piStack_24;
-  undefined4 **ppuStack_20;
-  int *piStack_1c;
-  undefined4 uStack_18;
-  SCStr aSStack_14 [4];
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar5 = (uint)(DAT_12126b84);
-
-  piVar6 = (int *)((int *)thunk_FUN_101dad50<>(&piStack_1c,param_3), 0);
-  piVar7 = (int *)((int *)*piVar6);
-
-  *piVar6 = (int)(0);
-  piStack_34 = (int *)(piVar7);
-  piStack_24 = (int *)(piVar7);
-  if ((int *)(piVar7) == (int *)(0x0)) {
-    piStack_30 = (int *)((int *)0x0);
-  }
-  else {
-    piStack_30 = (int *)((int *)(**(code **)(*piVar7 + 0xc))(uVar5), 0);
-  }
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(3);
-  if ((int *)(piStack_1c) != (int *)(0x0)) {
-    (**(code **)(*piStack_1c + 8))();
-  }
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(2);
-  ((SCStr *)((uint)&aSStack_14))->m_op_ctor(param_3);
-  ppuStack_38 = (undefined4 **)(&puStack_3c);
-  puStack_3c = (undefined4 *)((undefined4 *)0x0);
-  ppuStack_20 = (undefined4 **)(*(undefined4 ***)(param_1 + 0xa8), 0);
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(5);
-  ppuVar8 = (undefined4 **)((undefined4 **)*ppuStack_20);
-  puVar2 = (undefined4 *)(puStack_3c);
-  if ((undefined4 *)((*ppuStack_20)) != (undefined4 *)(((ppuStack_20)))) {
-    do {
-      piVar7 = (int *)(ppuVar8[3]);
-      piVar6 = (int *)(ppuVar8[2]);
-      ppuVar1 = (undefined4 **)((undefined4 **)*ppuVar8);
-      piStack_2c = (int *)(piVar6);
-      piStack_28 = (int *)(piVar7);
-      if ((int *)(piVar7) != (int *)(0x0)) {
-        (**(code **)(*piVar7 + 4))();
-      }
-      *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(6);
-      this_ = (SCStr *)((SCStr *)(**(code **)(*piVar6 + 0x1c))(&uStack_18), 0);
-      *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(7);
-      bVar4 = (bool)(((SCStr *)(this_))->op_eq((uint)&aSStack_14), 0);
-      *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(8);
-      ((SCStr *)((SCStr *)&uStack_18))->int_release();
-
-      *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(9);
-      if ((int *)(piVar7) != (int *)(0x0)) {
-        piStack_2c = (int *)((int *)0x0);
-        piStack_28 = (int *)((int *)0x0);
-        (**(code **)(*piVar7 + 8))();
-      }
-      *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(5);
-      if (bVar4) {
-        *(int*)(param_1 + 0xac) = (int)(*(int *)(param_1 + 0xac) + -1);
-        puVar2 = (undefined4 *)(*ppuVar8);
-        *ppuVar8 = (undefined4 *)((undefined4 *)0x0);
-        piVar7 = (int *)(ppuVar8[1]);
-        *piVar7 = (int)((int)puVar2);
-        puVar2[1] = (undefined4)(piVar7);
-        *ppuStack_38 = (undefined4 *)(ppuVar8);
-        ppuStack_38 = (undefined4 **)(ppuVar8);
-      }
-      ppuVar8 = (undefined4 **)(ppuVar1);
-      puVar2 = (undefined4 *)(puStack_3c);
-      piVar7 = (int *)(piStack_24);
-    } while ((undefined4 **)(ppuVar1) != (undefined4 **)(ppuStack_20));
-  }
-  while ((undefined4 *)(puVar2) != (undefined4 *)(0x0)) {
-    puVar3 = (undefined4 *)((undefined4 *)*puVar2);
-    piVar6 = (int *)((int *)puVar2[3]);
-    *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(10);
-    if ((int *)(piVar6) != (int *)(0x0)) {
-      puVar2[2] = (undefined4)(0);
-      puVar2[3] = (undefined4)(0);
-      (**(code **)(*piVar6 + 8))();
-    }
-    thunk_FUN_1148a50e(puVar2,0x10);
-    puVar2 = (undefined4 *)(puVar3);
-  }
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(0xb);
-  ((SCStr *)((uint)&aSStack_14))->int_release();
-  uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(2)));
-  *param_2 = (undefined4)(piVar7);
-  if ((int *)(piVar7) != (int *)(0x0)) {
-    (**(code **)(*piVar7 + 4))();
-  }
-
-  if ((int *)(piStack_30) != (int *)(0x0)) {
-    (**(code **)(*piStack_30 + 8))();
-  }
-
-  return (undefined4 *)(param_2);
-
- } catch (...) { }
-}
 
 
 // Reference entry 100017bc; body size 5 bytes.
@@ -12615,49 +12236,11 @@ void __fastcall FUN_100017cb(int *param_1)
 void FUN_100017ee(void)
 
 {
-  thunk_FUN_109ef900<>();
-  return;
-}
-
-
-// Reference entry 100017f3; body size 5 bytes.
-#line 1 "ENTRY_100017f3"
-
-int 
-void FUN_100017ee(void)
-
-{
   FUN_109ef5d0();
   return;
 }
 
 
-ram_1 = (int )this;
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)(*(int **)(param_1 + 0xec), 0);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *(undefined4*)(param_1 + 0xe8) = (undefined4)(0);
-    *(undefined4*)(param_1 + 0xec) = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  thunk_FUN_106da680();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0xf4);
-  }
-
-  return (int)(param_1);
-
- } catch (...) { }
-}
 
 
 // Reference entry 100017fd; body size 5 bytes.
@@ -12682,25 +12265,11 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100017fd(byte param_2)
 void FUN_10001802(void)
 
 {
-  thunk_FUN_1062f3b0<>();
-  return;
-}
-
-
-// Reference entry 10001816; body size 5 bytes.
-#line 1 "ENTRY_10001816"
-
-undefined4
-void FUN_10001802(void)
-
-{
   FUN_1062e17e();
   return;
 }
 
 
-d4)(param_1);
-}
 
 
 // Reference entry 1000181b; body size 5 bytes.
@@ -13147,7 +12716,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1000187a(undefined4 param_2)
   uStack_8 = (undefined4)(DAT_121a379c);
   *(unsigned char*)((char *)&uStack_6c + 0) = (unsigned char)(2);
   thunk_FUN_105f5920<>(&uStack_8);
-  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTreeNoAppendInterface);
 
   iStack_20 = (int)(0);
 
@@ -13267,24 +12836,11 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_1000189d(SCStr *param_2)
 void FUN_100018ac(void)
 
 {
-  thunk_FUN_10217af0();
-  return;
-}
-
-
-// Reference entry 100018b1; body size 5 bytes.
-#line 1 "ENTRY_100018b1"
-
-void FUN_100018b
-void FUN_100018ac(void)
-
-{
   FUN_102088f0();
   return;
 }
 
 
-bytes.
 #line 1 "ENTRY_100018b6"
 undefined1 FUN_100018b6(int *param_1){
   undefined1 uVar1;
@@ -13312,7 +12868,7 @@ undefined1 FUN_100018bb(int *param_1){
 void __fastcall FUN_100018c5(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   return;
 }
@@ -13785,7 +13341,7 @@ void __fastcall FUN_10001901(undefined4 *param_1)
   }
   param_1[9] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  param_1[9] = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  param_1[9] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[8] = (undefined4)((uint)&ghidra_vftable_SCLoggingHelper);
 
   param_1[1] = (undefined4)((uint)&ghidra_vftable_SCTimerUser);
@@ -13837,24 +13393,12 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000190b(undefined4 param_2,undefi
 void FUN_1000192e(void)
 
 {
-  thunk_FUN_10444110<>();
-  return;
-}
-
-
-// Reference entry 1000193d; body size 5 bytes.
-#line 1 "ENTRY_1000193d"
-
-/* private: void __thi
-void FUN_1000192e(void)
-
-{
   FUN_10444008();
   return;
 }
 
 
-covered_Bulk::m_FUN_1000193d(void)
+void __thiscall Recovered_Bulk::m_FUN_1000193d(void)
 {
   SCLibrary *this_ = (SCLibrary *)this;
   uint uVar1;
@@ -14695,7 +14239,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_100019ab(undefined4 param_2)
   (**(code **)*puVar7)();
   iVar5 = (int)(thunk_FUN_1061c630<>(0xc), 0);
   thunk_FUN_105f6290(iVar5 + 4);
-  ppuStack_68 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_68 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_60 = (int *)((int *)0x0);
   piStack_5c = (int *)((int *)0x0);
@@ -15501,21 +15045,6 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10001a23(byte param_2)
 void FUN_10001a3c(void)
 
 {
-  thunk_FUN_109f9f60<>();
-  return;
-}
-
-
-// Reference entry 10001a4b; body size 5 bytes.
-#line 1 "ENTRY_10001a4b"
-
-void FUN_10001a4b(void)
-
-{
- 
-void FUN_10001a3c(void)
-
-{
   FUN_109f8eb2();
   return;
 }
@@ -15533,7 +15062,7 @@ void FUN_10001a4b(void)
 }
 
 
-_10001a50(undefined4 param_1)
+undefined4 FUN_10001a50(undefined4 param_1)
 
 {
  try {
@@ -16754,12 +16283,6 @@ void __fastcall FUN_10001b86(int param_1)
 // Reference entry 10001b8b; body size 5 bytes.
 #line 1 "ENTRY_10001b8b"
 
-void FUN_10001b8b(void)
-
-{
-  thunk_FUN_10659230<>();
-  return;
-}
 
 
 // Reference entry 10001b90; body size 5 bytes.
@@ -16780,7 +16303,6 @@ void FUN_10001b8b(void)
 }
 
 
-001b95"
 
 void __thiscall Recovered_Bulk::m_FUN_10001b95(undefined4 param_2)
 {
@@ -17711,28 +17233,11 @@ void __thiscall Recovered_Bulk::m_FUN_10001bef(undefined4 param_2)
 void FUN_10001c03(void)
 
 {
-  thunk_FUN_107e6dd0<>();
-  return;
-}
-
-
-// Reference entry 10001c12; body size 5 bytes.
-#line 1 "ENTRY_10001c12"
-
-SCStr * FUN_10001c12(SCStr *param_1)
-
-{
-  ((SC
-void FUN_10001c03(void)
-
-{
   FUN_107e6d15();
   return;
 }
 
 
-Str *)(param_1);
-}
 
 
 // Reference entry 10001c1c; body size 5 bytes.
@@ -17844,8 +17349,6 @@ undefined4 FUN_10001c2b(uint *param_1)
     DAT_122faba0 = (int)(DAT_122faba0 + 1);
     QueryPerformanceCounter(&LStack_10);
     uVar4 = (undefined4)(DAT_122fabb0);
-    uVar9 = (ulonglong)(__aulldvrm((*(struct __RFLD *)&LStack_10).s.LowPart - DAT_122faba8, ((*(struct __RFLD *)&LStack_10).s.HighPart - DAT_122fabac) -
-                       (uint)((*(struct __RFLD *)&LStack_10).s.LowPart < DAT_122faba8),DAT_122fabb0,DAT_122fabb4), 0);
     lVar10 = (longlong)(__aulldiv((int)((ulonglong)extraout_ECX * 10000000), unaff_EBX * 10000000 + (int)((ulonglong)extraout_ECX * 10000000 >> 0x20), uVar4,DAT_122fabb4), 0);
     lVar1 = (longlong)((uVar9 & 0xffffffff) * 10000000);
     uVar9 = (ulonglong)(lVar10 + ((unsigned long long)((int)(uVar9 >> 0x20) * 10000000 + (int)((ulonglong)lVar1 >> 0x20)) << 32 | (unsigned long long)((int)lVar1)) + ((unsigned long long)(DAT_122fabbc) << 32 | (unsigned long long)(DAT_122fabb8)));
@@ -19330,31 +18833,11 @@ undefined1 FUN_10001c85(void)
 void FUN_10001c8f(void)
 
 {
-  thunk_FUN_10848070<>();
-  return;
-}
-
-
-// Reference entry 10001c99; body size 5 bytes.
-#line 1 "ENTRY_10001c99"
-
-undefined4 * __thiscall Recovered_Bulk::m_FUN_10001c
-void FUN_10001c8f(void)
-
-{
   FUN_10846e53();
   return;
 }
 
 
-AT_121a29c4 = (int)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  thunk_FUN_106de7d0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0xc);
-  }
-  return (undefined4 *)(param_1);
-}
 
 
 // Reference entry 10001cb2; body size 5 bytes.
@@ -19398,122 +18881,11 @@ void __thiscall Recovered_Bulk::m_FUN_10001cb2(int *param_2)
 void FUN_10001cb7(void)
 
 {
-  thunk_FUN_105d65d0<>();
-  return;
-}
-
-
-// Reference entry 10001ccb; body size 5 bytes.
-#line 1 "ENTRY_10001ccb"
-
-int * __thiscall Recovered_Bulk::m_FUN_10001ccb(int *param
-void FUN_10001cb7(void)
-
-{
   FUN_105d4be4();
   return;
 }
 
 
-r2;
-  undefined4 *puVar3;
-  SCLibrary *this_;
-  int *piVar4;
-  SCIAction *pSVar5;
-  int *piStack_18;
-  int iStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  int iStack_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  iStack_8 = (int)(0);
-  iStack_14 = (int)(param_1);
-  puVar3 = (undefined4 *)(operator_new(0xc0), 0);
-  *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(1);
-  if ((undefined4 *)(puVar3) == (undefined4 *)(0x0)) {
-    puVar3 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    piVar1 = (int *)(*(int **)(param_1 + 0x18), 0);
-    piStack_18 = (int *)(*(int **)(param_1 + 0x14), 0);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      (**(code **)(*piVar1 + 4))(uVar2);
-    }
-    *puVar3 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-    puVar3[1] = (undefined4)(0);
-    g_lSCObjCount = (int)(g_lSCObjCount + 1);
-    puVar3[2] = (undefined4)((uint)&ghidra_vftable_SCIActionDelegate);
-    *puVar3 = (undefined4)((uint)&ghidra_vftable_SCCompoundActionImpl);
-    puVar3[2] = (undefined4)((uint)&ghidra_vftable_SCCompoundActionImpl);
-    puVar3[3] = (undefined4)(0);
-    puVar3[4] = (undefined4)(0);
-    *(undefined1*)(puVar3 + 5) = (undefined1)(0);
-    *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(3);
-    thunk_FUN_103d5ff0();
-    param_1 = (int)(iStack_14);
-    puVar3[0xe] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-    puVar3[0xf] = (undefined4)(0);
-    puVar3[0x10] = (undefined4)(0);
-    *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(5);
-    *puVar3 = (undefined4)((uint)&ghidra_vftable_SCRemoveSSIDAction);
-    puVar3[2] = (undefined4)((uint)&ghidra_vftable_SCRemoveSSIDAction);
-    puVar3[6] = (undefined4)((uint)&ghidra_vftable_SCRemoveSSIDAction);
-    puVar3[0xe] = (undefined4)((uint)&ghidra_vftable_SCRemoveSSIDAction);
-    *(undefined1*)(puVar3 + 0x11) = (undefined1)(0);
-    ((SCStr *)((SCStr *)(puVar3 + 0x12)))->m_op_ctor((SCStr *)(iStack_14 + 8));
-    puVar3[0x15] = (undefined4)(0);
-    puVar3[0x16] = (undefined4)(0);
-    puVar3[0x18] = (undefined4)(0);
-    puVar3[0x19] = (undefined4)(0);
-    puVar3[0x14] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-    puVar3[0x17] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-    puVar3[0x23] = (undefined4)(0);
-    puVar3[0x2d] = (undefined4)(0);
-    *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(7);
-    puVar3[0x2e] = (undefined4)(piStack_18);
-    puVar3[0x2f] = (undefined4)(piVar1);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      (**(code **)(*piVar1 + 4))();
-    }
-    *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(8);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      (**(code **)(*piVar1 + 8))();
-    }
-  }
-  *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(0);
-  thunk_FUN_103d61d0(*(undefined4 *)(param_1 + 0xc),0);
-  pSVar5 = (SCIAction *)((SCIAction *)&piStack_18);
-  this_ = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
-  piVar4 = (int *)((int *)((SCLibrary *)(this_))->createActionContextForAction(pSVar5), 0);
-  piVar1 = (int *)((int *)*piVar4);
-  *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(9);
-  *piVar4 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar4 = (int *)((int *)0x0);
-  }
-  else {
-    piVar4 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(puVar3), 0);
-  }
-  *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(10);
-  if ((int *)(piStack_18) != (int *)(0x0)) {
-    (**(code **)(*piStack_18 + 8))();
-  }
-  iStack_8 = (int)((uint)*(unsigned short *)((char *)&iStack_8 + 1) << 8);
-  *param_2 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))();
-  }
-  iStack_8 = (int)(0xb);
-  if ((int *)(piVar4) != (int *)(0x0)) {
-    (**(code **)(*piVar4 + 8))();
-  }
-
-  return (int *)(param_2);
-
- } catch (...) { }
-}
 
 
 // Reference entry 10001ce9; body size 5 bytes.
@@ -19659,30 +19031,11 @@ int __fastcall FUN_10001d20(int param_1)
 void FUN_10001d25(void)
 
 {
-  thunk_FUN_10ea64a0();
-  return;
-}
-
-
-// Reference entry 10001d34; body size 5 bytes.
-#line 1 "ENTRY_10001d34"
-
-void __fastcall FUN_10001d34(int param_1)
-
-{
-  if (*(int *)(para
-void FUN_10001d25(void)
-
-{
   FUN_10ea6543();
   return;
 }
 
 
-);
-  }
-  return;
-}
 
 
 // Reference entry 10001d39; body size 5 bytes.
@@ -20706,7 +20059,7 @@ undefined4 FUN_10001e1a(undefined4 param_1)
   uVar5 = (undefined4)(thunk_FUN_10def290((uint)&auStack_78,iVar4 + 4), 0);
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(3);
   thunk_FUN_105f5d20<>(uVar5);
-  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   iStack_20 = (int)(0);
   iStack_1c = (int)(0);
@@ -20858,12 +20211,6 @@ void __thiscall Recovered_Bulk::m_FUN_10001e42(undefined4 param_2)
 // Reference entry 10001e47; body size 5 bytes.
 #line 1 "ENTRY_10001e47"
 
-void FUN_10001e47(void)
-
-{
-  thunk_FUN_10476630();
-  return;
-}
 
 
 // Reference entry 10001e4c; body size 5 bytes.
@@ -20872,14 +20219,9 @@ void FUN_10001e47(void)
 void __fastcall FUN_10001e4c(undefined4 *param_1)
 
 {
+  uint uVar2;
  try {
-  int *piV
-void FUN_10001e47(void)
-
-{
-  FUN_10476640();
-  return;
-}
+  int *piVar1;
 
 
 undefined4 uStack_8;
@@ -20946,7 +20288,7 @@ undefined4 uStack_8;
     param_1[0x27] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   thunk_FUN_101eb2b0();
 
   return;
@@ -21040,12 +20382,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10001e88(byte param_2)
 // Reference entry 10001e92; body size 5 bytes.
 #line 1 "ENTRY_10001e92"
 
-void FUN_10001e92(void)
-
-{
-  thunk_FUN_10d61460();
-  return;
-}
 
 
 // Reference entry 10001e97; body size 5 bytes.
@@ -21059,7 +20395,6 @@ void FUN_10001e97(void)
 }
 
 
-// Reference entr
 void FUN_10001e92(void)
 
 {
@@ -21068,12 +20403,6 @@ void FUN_10001e92(void)
 }
 
 
-10001eb5(void)
-
-{
-  thunk_FUN_10848920<>();
-  return;
-}
 
 
 // Reference entry 10001ebf; body size 5 bytes.
@@ -21082,19 +20411,9 @@ void FUN_10001e92(void)
 undefined4 __fastcall FUN_10001ebf(int param_1)
 
 {
-  if ((*(int *)(param_1 + 0xd0)
-void FUN_10001eb5(void)
-
-{
-  FUN_10846fdf();
-  return;
-}
 
 
-(0);
   }
-  return (undefined4)(*(undefined4 *)(*(int *)(param_1 + 0xd0) + -8));
-}
 
 
 // Reference entry 10001ec4; body size 5 bytes.
@@ -21212,7 +20531,7 @@ void __thiscall Recovered_Bulk::m_FUN_10001ee7(undefined4 *param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10001eec(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -21379,14 +20698,14 @@ void __fastcall FUN_10001f1e(undefined4 *param_1)
   }
   param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
 
   ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
   param_1[0xb] = (undefined4)(0);
 
   ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
   param_1[10] = (undefined4)(0);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   piVar1 = (int *)((int *)param_1[4]);
 
@@ -21399,7 +20718,7 @@ void __fastcall FUN_10001f1e(undefined4 *param_1)
   thunk_FUN_11240850();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
 
   return;
 
@@ -21423,32 +20742,11 @@ void FUN_10001f23(void)
 void FUN_10001f2d(void)
 
 {
-  thunk_FUN_1099f560<>();
-  return;
-}
-
-
-// Reference entry 10001f3c; body size 5 bytes.
-#line 1 "ENTRY_10001f3c"
-
-undefined4 * __thiscall Recovered_Bulk::m_FUN_10001f3c(byte param_2)
-{
-  undefined4 *par
-void FUN_10001f2d(void)
-
-{
   FUN_1099f108();
   return;
 }
 
 
-_vftable_SCNewWizStateTypeFor);
-  thunk_FUN_106de7d0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0xc);
-  }
-  return (undefined4 *)(param_1);
-}
 
 
 // Reference entry 10001f41; body size 5 bytes.
@@ -21457,32 +20755,11 @@ _vftable_SCNewWizStateTypeFor);
 void FUN_10001f41(void)
 
 {
-  thunk_FUN_10703fc0<>();
-  return;
-}
-
-
-// Reference entry 10001f4b; body size 5 bytes.
-#line 1 "ENTRY_10001f4b"
-
-undefined4 * __thiscall Recovered_Bulk::m_FUN_10001f4b(byte param_2)
-{
-  undefined4 *param_1 =
-void FUN_10001f41(void)
-
-{
   FUN_10703dab();
   return;
 }
 
 
-fined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  thunk_FUN_106de7d0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0xc);
-  }
-  return (undefined4 *)(param_1);
-}
 
 
 // Reference entry 10001f5a; body size 5 bytes.
@@ -21522,7 +20799,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10001f64(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -21631,12 +20908,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10001faa(byte param_2)
 // Reference entry 10001fb9; body size 5 bytes.
 #line 1 "ENTRY_10001fb9"
 
-void FUN_10001fb9(void)
-
-{
-  thunk_FUN_109ef9a0<>();
-  return;
-}
 
 
 // Reference entry 10001fc3; body size 5 bytes.
@@ -21645,19 +20916,18 @@ void FUN_10001fb9(void)
 undefined4 FUN_10001fc3(undefined4 param_1)
 
 {
+  int iVar4;
+  undefined4 * puVar3;
+  uint uVar5;
+  uint uVar6;
+  uint uVar7;
  try {
   int *piVar1;
   int iVar2;
-  undefined4 *puVa
-void FUN_10001fb9(void)
-
-{
-  FUN_109ef5ea();
-  return;
-}
+  undefined4 *puVa;
 
 
-uVar7;
+undefined4 * puVar7;
   undefined **appuStack_a4 [8];
   void *pvStack_84;
   undefined1 *puStack_80;
@@ -21691,7 +20961,7 @@ uVar7;
   uVar5 = (undefined4)(thunk_FUN_10def290((uint)&auStack_78,iVar4 + 4), 0);
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(3);
   thunk_FUN_105f5d20<>(uVar5);
-  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   iStack_20 = (int)(0);
   iStack_1c = (int)(0);
@@ -21800,12 +21070,6 @@ undefined4 FUN_10001fcd(void)
 // Reference entry 10001fdc; body size 5 bytes.
 #line 1 "ENTRY_10001fdc"
 
-void FUN_10001fdc(void)
-
-{
-  thunk_FUN_103c3c80<>();
-  return;
-}
 
 
 // Reference entry 10001feb; body size 5 bytes.
@@ -21817,13 +21081,6 @@ int FUN_10001feb(int param_1,int param_2,int param_3)
  try {
   void **ppvVar1;
   void *pvStack_10;
-  un
-void FUN_10001fdc(void)
-
-{
-  FUN_103c3b3c();
-  return;
-}
 
 
 (&pvStack_10);
@@ -22146,7 +21403,7 @@ undefined4 FUN_10002086(undefined4 param_1)
   uVar4 = (undefined4)(thunk_FUN_10def290((uint)&auStack_a4,iVar3 + 4), 0);
   *(unsigned char*)((char *)&uStack_68 + 0) = (unsigned char)(8);
   thunk_FUN_105f5d20<>(uVar4);
-  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   iStack_24 = (int)(0);
   iStack_20 = (int)(0);
@@ -22577,7 +21834,7 @@ undefined4 FUN_10002126(undefined4 param_1)
   uVar2 = (uint)(DAT_12126b84);
 
   uStack_14 = (undefined4)(DAT_121a4dbc);
-  ppuStack_54 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+  ppuStack_54 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTreeNoAppendInterface);
   uStack_50 = (undefined4)(DAT_118beee0);
   iStack_4c = (int)(_UNK_118beee4);
   uStack_48 = (undefined4)(_UNK_118beee8);
@@ -22587,7 +21844,7 @@ undefined4 FUN_10002126(undefined4 param_1)
   iStack_38 = (int)(0);
 
   thunk_FUN_1059ee10<>(0,&uStack_14);
-  ppuStack_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+  ppuStack_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTreeNoAppendInterface);
 
   iStack_2c = (int)(0);
 
@@ -22702,7 +21959,7 @@ undefined4 FUN_1000212b(undefined4 param_1)
 
   uStack_14 = (undefined4)(DAT_121a4b68);
   thunk_FUN_105f5920<>(&uStack_14);
-  ppuStack_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+  ppuStack_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTreeNoAppendInterface);
 
   iStack_2c = (int)(0);
 
@@ -22761,12 +22018,6 @@ LAB_10b1482f:
 // Reference entry 10002158; body size 5 bytes.
 #line 1 "ENTRY_10002158"
 
-void FUN_10002158(void)
-
-{
-  thunk_FUN_10689480<>();
-  return;
-}
 
 
 // Reference entry 1000215d; body size 5 bytes.
@@ -22777,15 +22028,9 @@ void __fastcall FUN_1000215d(int param_1)
 {
                     
                     
-  (**(code **)(**(int **)
-void FUN_10002158(void)
 
-{
-  FUN_106890e7();
-  return;
+
 }
-
-
 // Reference entry 10002167; body size 5 bytes.
 #line 1 "ENTRY_10002167"
 
@@ -22854,7 +22099,7 @@ void __fastcall FUN_10002171(undefined4 *param_1)
 
   ((SCStr *)((SCStr *)(param_1 + 0xf)))->int_release();
   param_1[0xf] = (undefined4)(0);
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   thunk_FUN_103d60a0();
   thunk_FUN_104da760();
 
@@ -22867,12 +22112,6 @@ void __fastcall FUN_10002171(undefined4 *param_1)
 // Reference entry 10002185; body size 5 bytes.
 #line 1 "ENTRY_10002185"
 
-void FUN_10002185(void)
-
-{
-  thunk_FUN_110b6fe0<>();
-  return;
-}
 
 
 // Reference entry 1000218a; body size 5 bytes.
@@ -22886,17 +22125,8 @@ undefined1 FUN_1000218a(void)
 
 
 // Reference entry 10002194; body size 5 bytes.
-#line 1
-void FUN_10002185(void)
-
-{
-  FUN_110b6d02();
-  return;
-}
 
 
-fined4)(9);
-}
 
 
 // Reference entry 1000219e; body size 5 bytes.
@@ -23062,103 +22292,11 @@ void FUN_100021f3(int param_1,undefined4 param_2){
 void FUN_100021fd(void)
 
 {
-  thunk_FUN_1122a8d0();
-  return;
-}
-
-
-// Reference entry 10002202; body size 5 bytes.
-#line 1 "ENTRY_10002202"
-
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::m_FUN_10002202
-void FUN_100021fd(void)
-
-{
   FUN_1122a8ba();
   return;
 }
 
 
-           undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8)
-{
-  int param_1 = (int )this;
- try {
-  bool bVar1;
-  int iVar2;
-  undefined4 ****ppppuVar3;
-  uint uVar4;
-  undefined1 auStack_c358 [42248];
-  undefined1 auStack_1e50 [7708];
-  undefined4 uStack_34;
-  undefined4 ***apppuStack_2c [4];
-  undefined4 uStack_1c;
-  uint uStack_18;
-  uint uStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uStack_14 = (uint)(DAT_12126b84);
-
-  if ((*(char *)(param_1 + 0x338) == '\0') || (*(char *)(param_1 + 0xcc) == '\0')) {
-    bVar1 = (bool)(false);
-  }
-  else {
-    bVar1 = (bool)(true);
-  }
-  iVar2 = (int)(0xcc);
-  if (!bVar1) {
-    iVar2 = (int)(0xc);
-  }
-  thunk_FUN_111c32e0<>(iVar2 + param_1,"urn:schemas-upnp-org:service:AVTransport:1", "GetDeviceCapabilities",param_1 + 0x18c,*(undefined4 *)(param_1 + 0x64c), *(undefined4 *)(param_1 + 0x650),0,0);
-
-  thunk_FUN_11204720((uint)&apppuStack_2c);
-  uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(1)));
-  ppppuVar3 = (undefined4 ****)((uint)&apppuStack_2c);
-  if (0xf < uStack_18) {
-    ppppuVar3 = (undefined4 ****)((undefined4 ****)apppuStack_2c[0]);
-  }
-  thunk_FUN_111c66d0(ppppuVar3);
-  thunk_FUN_11204570((uint)&auStack_1e50);
-  thunk_FUN_112045a0((uint)&auStack_c358);
-  thunk_FUN_11250000("InstanceID",0);
-  thunk_FUN_1124f350(param_2);
-  thunk_FUN_1124ff50("PlayMedia");
-  thunk_FUN_112503c0(param_3,param_4);
-  thunk_FUN_1124ff50("RecMedia");
-  thunk_FUN_112503c0(param_5,param_6);
-  thunk_FUN_1124ff50("RecQualityModes");
-  thunk_FUN_112503c0(param_7,param_8);
-  thunk_FUN_111c5fc0();
-  *(undefined4*)(param_1 + 0x66c) = (undefined4)(uStack_34);
-  if (0xf < uStack_18) {
-    uVar4 = (uint)(uStack_18 + 1);
-    ppppuVar3 = (undefined4 ****)((undefined4 ****)apppuStack_2c[0]);
-    if (0xfff < uVar4) {
-      ppppuVar3 = (undefined4 ****)((undefined4 ****)apppuStack_2c[0][-1]);
-      uVar4 = (uint)(uStack_18 + 0x24);
-      if (0x1f < (uint)((int)apppuStack_2c[0] + (-4 - (int)ppppuVar3))) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(ppppuVar3,uVar4);
-  }
-
-
-  apppuStack_2c[0] = (undefined4 ***)((undefined4 ***)((uint)apppuStack_2c[0] & 0xffffff00));
-  thunk_FUN_1124ef40();
-  thunk_FUN_1124f0e0();
-  thunk_FUN_1124d790();
-  thunk_FUN_1125acd0();
-  thunk_FUN_1124a3f0();
-
-  thunk_FUN_1148ac28();
-  return;
-
- } catch (...) { }
-}
 
 
 // Reference entry 10002207; body size 5 bytes.
@@ -23193,27 +22331,14 @@ void __fastcall FUN_1000221b(int param_1)
 // Reference entry 1000222f; body size 5 bytes.
 #line 1 "ENTRY_1000222f"
 
-void FUN_1000222f(void)
-
-{
-  thunk_FUN_10c6eb50();
-  return;
-}
 
 
 // Reference entry 10002243; body size 5 bytes.
 #line 1 "ENTRY_10002243"
 
-void FUN_10002243(void)
-
-{
-  thunk_FUN_109da510<>();
-  return;
-}
 
 
 // Reference entry 1000224d; body size 5 bytes.
-#line 1 "ENTRY_10
 void FUN_1000222f(void)
 
 {
@@ -23222,12 +22347,9 @@ void FUN_1000222f(void)
 }
 
 
-rn;
-}
 
 
 // Reference entry 10002257; body size 5 bytes.
-#line 1 "ENTRY_10002257
 void FUN_10002243(void)
 
 {
@@ -23236,11 +22358,6 @@ void FUN_10002243(void)
 }
 
 
-nt *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefi
 void FUN_1000224d(void)
 
 {
@@ -23249,17 +22366,6 @@ void FUN_1000224d(void)
 }
 
 
-*)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-
-  return;
-
- } catch (...) { }
-}
 
 
 // Reference entry 1000226b; body size 5 bytes.
@@ -23326,7 +22432,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000227f(byte param_2)
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x18);
   }
@@ -23615,29 +22721,16 @@ SCStr * FUN_100022de(SCStr *param_1)
 // Reference entry 100022e3; body size 5 bytes.
 #line 1 "ENTRY_100022e3"
 
-void FUN_100022e3(void)
-
-{
-  thunk_FUN_10def0d0();
-  return;
-}
 
 
 // Reference entry 100022f2; body size 5 bytes.
 #line 1 "ENTRY_100022f2"
 
-void FUN_100022f2(void)
-
-{
-  thunk_FUN_10cf5cc0();
-  return;
-}
 
 
 // Reference entry 10002310; body size 5 bytes.
 #line 1 "ENTRY_10002310"
 
-void FUN_
 void FUN_100022e3(void)
 
 {
@@ -23646,10 +22739,6 @@ void FUN_100022e3(void)
 }
 
 
-fined4 uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_
 void FUN_100022f2(void)
 
 {
@@ -23658,19 +22747,6 @@ void FUN_100022f2(void)
 }
 
 
-t)&stack0xfffffffc), 0);
-
-  cVar1 = (char)(thunk_FUN_10def450<>(uVar2), 0);
-
-  thunk_FUN_10def0d0();
-  if (cVar1 != '\0') {
-    thunk_FUN_10ebb8e0("afterGestureWait",15000);
-  }
-
-  return;
-
- } catch (...) { }
-}
 
 
 // Reference entry 10002315; body size 5 bytes.
@@ -24160,7 +23236,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000238d(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -24174,7 +23250,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000238d(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10002392(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -24442,7 +23518,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_100023b0(undefined4 param_2)
   uVar9 = (undefined4)(thunk_FUN_10def350((uint)&auStack_1ac,iVar8 + 4), 0);
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x1f);
   thunk_FUN_105f5d20<>(uVar9);
-  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   iStack_20 = (int)(0);
   iStack_1c = (int)(0);
@@ -24464,7 +23540,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_100023b0(undefined4 param_2)
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x22);
   bVar4 = (bool)(((SCStr *)((SCStr *)(param_1 + 0xe0)))->op_eq((SCStr *)&uStack_8), 0);
   piVar7 = (int *)((int *)(*(code *)ppuVar3[3])(bVar4,pppuVar13), 0);
-  ppuStack_48 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_48 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
   puStack_34 = (undefined4 *)((undefined4 *)0x0);
 
   iStack_40 = (int)(0);
@@ -24479,7 +23555,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_100023b0(undefined4 param_2)
   iVar8 = (int)(*piVar10);
   uVar9 = (undefined4)((**(code **)(*piVar7 + 0x14))((uint)&appuStack_274), 0);
   piVar7 = (int *)((int *)(**(code **)(iVar8 + 0x10))(*(undefined1 *)(iStack_70 + 0xe4),uVar9), 0);
-  ppuStack_68 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_68 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
   puStack_54 = (undefined4 *)((undefined4 *)0x0);
 
   iStack_60 = (int)(0);
@@ -25123,29 +24199,17 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002437(undefined4 param_2,undefi
 // Reference entry 1000243c; body size 5 bytes.
 #line 1 "ENTRY_1000243c"
 
-void FUN_1000243c(void)
-
-{
-  thunk_FUN_10803750<>();
-  return;
-}
 
 
 // Reference entry 10002446; body size 5 bytes.
 #line 1 "ENTRY_10002446"
 
-void FUN_10002446(void)
-
-{
-  thunk_FUN_106022d0<>();
-  return;
-}
 
 
 // Reference entry 10002450; body size 5 bytes.
 #line 1 "ENTRY_10002450"
 
-undefined4 * __thisca
+undefined4 * __thiscall m_FUN_10002450(undefined4 param_2,undefined4 param_3,undefined4 param_4);
 void FUN_1000243c(void)
 
 {
@@ -25154,26 +24218,18 @@ void FUN_1000243c(void)
 }
 
 
-ram_3,undefined4 param_4)
+undefined4 * __thiscall Recovered_Bulk::m_FUN_10002450(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  thunk
-void FUN_10002446(void)
-
-{
-  FUN_106015a6();
-  return;
-}
 
 
-_RAsyncBrowseCacheCB);
   param_1[8] = (undefined4)(param_2);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RLookupMetadataAIOOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RLookupMetadataAIOOp);
   param_1[7] = (undefined4)((uint)&ghidra_vftable_RLookupMetadataAIOOp);
   param_1[0x971] = (undefined4)(0);
   param_1[0x972] = (undefined4)(0);
-  param_1[0x970] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x970] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(undefined1*)((int)param_1 + 0xb5) = (undefined1)(0);
   *(undefined1*)((int)param_1 + 0x21bf) = (undefined1)(0);
   thunk_FUN_1106a8d0((int)param_1 + 0x20b6,param_4,0x109);
@@ -25555,11 +24611,11 @@ undefined4 * __fastcall FUN_100024c3(undefined4 *param_1)
   param_1[0xe] = (undefined4)(0);
   param_1[0x10] = (undefined4)(0);
   param_1[0x11] = (undefined4)(0);
-  param_1[0xf] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xf] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(undefined1*)(param_1 + 0x12) = (undefined1)(0);
   param_1[0x14] = (undefined4)(0);
   param_1[0x15] = (undefined4)(0);
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x16] = (undefined4)(0);
   thunk_FUN_112a9cf0(param_1 + 7);
   *(undefined1*)(param_1 + 0xc) = (undefined1)(0);
@@ -25576,7 +24632,7 @@ undefined4 * __fastcall FUN_100024c3(undefined4 *param_1)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_100024c8(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -25877,29 +24933,17 @@ void __thiscall Recovered_Bulk::m_FUN_1000250e(int param_2,undefined4 param_3)
 // Reference entry 10002518; body size 5 bytes.
 #line 1 "ENTRY_10002518"
 
-void FUN_10002518(void)
-
-{
-  thunk_FUN_10e9e150();
-  return;
-}
 
 
 // Reference entry 10002527; body size 5 bytes.
 #line 1 "ENTRY_10002527"
 
-void FUN_10002527(void)
-
-{
-  thunk_FUN_10ccd770<>();
-  return;
-}
 
 
 // Reference entry 10002540; body size 5 bytes.
 #line 1 "ENTRY_10002540"
 
-int * FUN_10002540(int *param_1)
+int * FUN_10002540(int *param_1);
 
 void FUN_10002518(void)
 
@@ -25909,9 +24953,6 @@ void FUN_10002518(void)
 }
 
 
-(*(char *)(*param_1 + 0xd));
-  piVar2 = (int *)((int *)*param_1);
-  while (piVa
 void FUN_10002527(void)
 
 {
@@ -25920,12 +24961,6 @@ void FUN_10002527(void)
 }
 
 
-)*piVar3);
-    cVar1 = (char)(*(char *)((int)piVar2 + 0xd));
-    param_1 = (int *)(piVar3);
-  }
-  return (int *)(param_1);
-}
 
 
 // Reference entry 1000254f; body size 5 bytes.
@@ -26025,7 +25060,7 @@ undefined4 FUN_10002554(undefined4 param_1)
   uVar7 = (undefined4)(thunk_FUN_10def290((uint)&auStack_ac,iVar6 + 4), 0);
   *(unsigned char*)((char *)&uStack_70 + 0) = (unsigned char)(10);
   thunk_FUN_105f5d20<>(uVar7);
-  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   iStack_24 = (int)(0);
   iStack_20 = (int)(0);
@@ -26249,18 +25284,6 @@ void FUN_10002590(void)
 {
   int iVar1;
   
-  iVar1 = (int)(thunk_FUN_10bcad90(), 0);
-  if ((iVar1 != 0) && (*(int *)(iVar1 + 0x3c) != 0)) {
-    thunk_FUN_104dec20();
-    if (*(undefined4 **)(iVar1 + 0x3c) != (undefined4 *)((0x0))) {
-      (**(code **)**(undefined4 **)(iVar1 + 0x3c))(1);
-    }
-    *(undefined4*)(iVar1 + 0x
-void FUN_10002590(void)
-
-{
-  int iVar1;
-  
   iVar1 = (int)(FUN_10bcb570(), 0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + 0x3c) != 0)) {
     thunk_FUN_104dec20();
@@ -26273,21 +25296,6 @@ void FUN_10002590(void)
 }
 
 
-efined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCActionContext);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  param_1[6] = (undefined4)(0);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[9] = (undefined4)(0);
-  *(undefined1*)(param_1 + 10) = (undefined1)(0);
-  return (undefined4 *)(param_1);
-}
 
 
 // Reference entry 100025a9; body size 5 bytes.
@@ -26364,12 +25372,6 @@ void __fastcall FUN_100025d1(undefined4 *param_1)
 // Reference entry 100025e0; body size 5 bytes.
 #line 1 "ENTRY_100025e0"
 
-void FUN_100025e0(void)
-
-{
-  thunk_FUN_10fd9a30<>();
-  return;
-}
 
 
 // Reference entry 100025ea; body size 5 bytes.
@@ -26377,18 +25379,16 @@ void FUN_100025e0(void)
 
 int * __thiscall Recovered_Bulk::m_FUN_100025ea(int *param_2,int param_3,int *param_4)
 {
+  int iVar5;
+  int * piVar6;
+  int * piVar7;
+  int * piVar8;
+  int * piVar9;
   int *param_1 = (int *)this;
   char cVar1;
   int *piVar2;
   int *piVar3;
   undefined4 *puVar4;
-  int
-void FUN_100025e0(void)
-
-{
-  FUN_10fd96e7();
-  return;
-}
 
 
 ;
@@ -26642,7 +25642,7 @@ LAB_107994cd:
     thunk_FUN_10ecbbd0<>(uVar6);
     iVar7 = (int)(thunk_FUN_10ec9fa0<>(uVar11), 0);
     thunk_FUN_105f6290(iVar7 + 4);
-    ppuStack_58 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+    ppuStack_58 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
     piStack_50 = (int *)((int *)0x0);
     piStack_4c = (int *)((int *)0x0);
@@ -26772,7 +25772,7 @@ void __fastcall FUN_10002621(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   return;
 }
 
@@ -27034,12 +26034,6 @@ int * __thiscall Recovered_Bulk::m_FUN_10002653(int *param_2)
 // Reference entry 1000265d; body size 5 bytes.
 #line 1 "ENTRY_1000265d"
 
-void FUN_1000265d(void)
-
-{
-  thunk_FUN_10e13a00<>();
-  return;
-}
 
 
 // Reference entry 10002662; body size 5 bytes.
@@ -27058,14 +26052,12 @@ undefined4 FUN_10002662(void)
 undefined4 FUN_10002671(undefined4 param_1)
 
 {
+  int iVar3;
+  int * piVar1;
+  undefined4 * puVar2;
+  uint uVar4;
  try {
   
-void FUN_1000265d(void)
-
-{
-  FUN_10e137a0();
-  return;
-}
 
 
 ;
@@ -27097,7 +26089,7 @@ void FUN_1000265d(void)
   *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(1);
   iVar3 = (int)(thunk_FUN_10eced20((uint)&aSStack_18), 0);
   thunk_FUN_105f6290(iVar3 + 4);
-  ppuStack_48 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_48 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_40 = (int *)((int *)0x0);
   piStack_3c = (int *)((int *)0x0);
@@ -27204,12 +26196,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000267b(byte param_2)
 // Reference entry 10002685; body size 5 bytes.
 #line 1 "ENTRY_10002685"
 
-void FUN_10002685(void)
-
-{
-  thunk_FUN_108e4a30<>();
-  return;
-}
 
 
 // Reference entry 1000268a; body size 5 bytes.
@@ -27218,6 +26204,7 @@ void FUN_10002685(void)
 undefined4 FUN_1000268a(undefined4 param_1)
 
 {
+  undefined **appuStack_a4[8];
  try {
   int *piVar1;
   int iVar2;
@@ -27226,16 +26213,10 @@ undefined4 FUN_1000268a(undefined4 param_1)
   int iVar5;
   undefined4 uVar6;
   undefined4 *puVar7;
-  undefined **appuStack_a4 [8
-void FUN_10002685(void)
-
-{
-  FUN_108e3f3d();
-  return;
-}
+  undefined **appuStack_a4 [8];
 
 
-ck_7c;
+undefined4 uStack_7c;
   undefined1 auStack_78 [36];
   undefined4 uStack_54;
   int *piStack_50;
@@ -27267,7 +26248,7 @@ ck_7c;
   uVar6 = (undefined4)(thunk_FUN_10def290((uint)&auStack_78,iVar5 + 4), 0);
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(3);
   thunk_FUN_105f5d20<>(uVar6);
-  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   iStack_20 = (int)(0);
   iStack_1c = (int)(0);
@@ -27651,12 +26632,6 @@ undefined4 FUN_100026c1(int *param_1){ int stack0xfffffffc;
 // Reference entry 100026c6; body size 5 bytes.
 #line 1 "ENTRY_100026c6"
 
-void FUN_100026c6(void)
-
-{
-  thunk_FUN_1011f5e0();
-  return;
-}
 
 
 // Reference entry 100026d5; body size 5 bytes.
@@ -27665,6 +26640,8 @@ void FUN_100026c6(void)
 void FUN_100026d5(char *param_1,int *param_2)
 
 {
+  int * piStack_2c;
+  struct tm tStack_28;
   char *pcVar1;
   int *piVar2;
   int *piVar3;
@@ -27675,16 +26652,8 @@ void FUN_100026d5(char *param_1,int *param_2)
   code *pcVar8;
   __time64_t _Var9;
   uint uStack_30;
-  i
-void FUN_100026c6(void)
-
-{
-  FUN_1011f800();
-  return;
-}
 
 
-uint)(DAT_12126b84 ^ (uint)&uStack_30);
   piStack_2c = (int *)(param_2);
   uStack_30 = (uint)(0);
   for (; (*param_1 == (char)((' ')) || (*param_1 == (char)(('\t')))); param_1 = param_1 + 1) {
@@ -27888,7 +26857,7 @@ void __thiscall Recovered_Bulk::m_FUN_100026ee(undefined4 param_2,undefined4 par
 undefined4 * __thiscall Recovered_Bulk::m_FUN_100026fd(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -27989,42 +26958,44 @@ undefined1 FUN_10002711(void)
 // Reference entry 10002716; body size 5 bytes.
 #line 1 "ENTRY_10002716"
 
-void FUN_10002716(void)
-
-{
-  thunk_FUN_10c69080<>();
-  return;
-}
 
 
 // Reference entry 10002720; body size 5 bytes.
 #line 1 "ENTRY_10002720"
 
-void __fastcall FUN_10002720(int param_1)
+
+
+void FUN_100028c9(void)
 
 {
-  *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
-  if (*(int *)(param_1 + 0x18) != 0) {
-    *(undefined4*)(*(int *)(param_1 + 0x18) + 0x1c) = (undefined4)(0);
-  }
-  re
-void FUN_10002716(void)
-
-{
-  FUN_10c68fae();
+  FUN_103a93f7();
   return;
 }
 
-
-"ENTRY_10002743"
-
-void FUN_10002743(void)
+void __fastcall FUN_100028d3(undefined4 *param_1)
 
 {
-  thunk_FUN_104864a0<>();
-  return;
-}
+ try {
+  int *piVar1;
+  uint uVar2;
+  void *pvStack_10;
+  undefined1 *puStack_c;
+  undefined4 uStack_8;
 
+
+  uVar2 = (uint)(DAT_12126b84);
+
+  piVar1 = (int *)((int *)param_1[1]);
+
+
+    (**(code **)(*piVar1 + 8))(uVar2);
+
+  return;
+
+ } catch (...) { }
+
+}
+void __fastcall FUN_10002720(int param_1);
 
 // Reference entry 10002748; body size 5 bytes.
 #line 1 "ENTRY_10002748"
@@ -28043,16 +27014,8 @@ void __fastcall FUN_10002748(int param_1)
   undefined4 uStack_8;
 
 
-  uVar2 = (uin
-void FUN_10002743(void)
-
-{
-  FUN_10485ea2();
-  return;
-}
 
 
-tSingleton(), 0);
   piVar4 = (int *)((int *)(**(code **)(*(int *)pSVar3 + 0x18))(&piStack_14,uVar2), 0);
   piVar1 = (int *)((int *)*piVar4);
 
@@ -28795,7 +27758,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100027c5(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -28895,7 +27858,7 @@ void __fastcall FUN_100027d4(undefined4 *param_1)
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
 
   return;
 
@@ -28976,7 +27939,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100027e3(byte param_2)
   thunk_FUN_1059c050();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x60);
   }
@@ -29058,12 +28021,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100027f2(byte param_2)
 // Reference entry 10002801; body size 5 bytes.
 #line 1 "ENTRY_10002801"
 
-void FUN_10002801(void)
-
-{
-  thunk_FUN_1049ceb0();
-  return;
-}
 
 
 // Reference entry 10002806; body size 5 bytes.
@@ -29082,16 +28039,8 @@ void FUN_10002806(void)
   int *piStack_18;
   undefined4 uStack_14;
   void *pvStack_10;
-  undefined1 *
-void FUN_10002801(void)
-
-{
-  FUN_1049cf49();
-  return;
-}
 
 
-Str *)((SCStr *)&stack0xffffffb4))->int_allocRep("durationSection");
   piVar3 = (int *)((int *)thunk_FUN_101f11d0(&piStack_18), 0);
   piVar4 = (int *)((int *)*piVar3);
 
@@ -29408,12 +28357,6 @@ void __fastcall FUN_1000285b(int *param_1)
 // Reference entry 10002865; body size 5 bytes.
 #line 1 "ENTRY_10002865"
 
-void FUN_10002865(void)
-
-{
-  thunk_FUN_10f92080<>();
-  return;
-}
 
 
 // Reference entry 1000286a; body size 5 bytes.
@@ -29426,19 +28369,14 @@ int * __thiscall Recovered_Bulk::m_FUN_1000286a(int *param_2)
   
   piVar1 = (int *)(*(int **)(param_1 + 0x28), 0);
   *param_2 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) 
-void FUN_10002865(void)
-
-{
-  FUN_10f91d3e();
-  return;
-}
+  if ((int *)(piVar1) != (int *)(0x0))  {
 
 
 
 }
 
 
+}
 // Reference entry 10002874; body size 5 bytes.
 #line 1 "ENTRY_10002874"
 
@@ -29473,12 +28411,6 @@ undefined1 FUN_10002892(void)
 // Reference entry 10002897; body size 5 bytes.
 #line 1 "ENTRY_10002897"
 
-void FUN_10002897(void)
-
-{
-  thunk_FUN_10962b70<>();
-  return;
-}
 
 
 // Reference entry 1000289c; body size 5 bytes.
@@ -29496,16 +28428,8 @@ void FUN_1000289c(void)
   undefined4 uStack_8;
 
 
-  uVar2 = (undefined4)(thunk_FUN_10dfbb10(DAT_12126b84 ^ (uint)&st
-void FUN_10002897(void)
-
-{
-  FUN_109629e7();
-  return;
-}
 
 
-);
 
   thunk_FUN_10def0d0();
   if (cVar1 != '\0') {
@@ -29533,12 +28457,6 @@ void FUN_10002897(void)
 // Reference entry 100028a6; body size 5 bytes.
 #line 1 "ENTRY_100028a6"
 
-void FUN_100028a6(void)
-
-{
-  thunk_FUN_107839d0<>();
-  return;
-}
 
 
 // Reference entry 100028bf; body size 5 bytes.
@@ -29555,55 +28473,11 @@ undefined4 FUN_100028bf(undefined4 param_1)
 // Reference entry 100028c9; body size 5 bytes.
 #line 1 "ENTRY_100028c9"
 
-void FUN_100028c9(void)
-
-{
-  thunk_FUN_103a9a30<>();
-  return;
-}
 
 
-void FUN_100028a6(void)
-
-{
-  FUN_10783963();
-  return;
-}
 
 
-0028d3"
 
-void __fastcall FUN_100028d3(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar
-void FUN_100028c9(void)
-
-{
-  FUN_103a93f7();
-  return;
-}
-
-
-1] = (undefined4)(0);
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-
-  return;
-
- } catch (...) { }
-}
 
 
 // Reference entry 100028e7; body size 5 bytes.
@@ -29810,12 +28684,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000292d(int *param_2)
 // Reference entry 10002932; body size 5 bytes.
 #line 1 "ENTRY_10002932"
 
-void FUN_10002932(void)
-
-{
-  thunk_FUN_10b36140<>();
-  return;
-}
 
 
 // Reference entry 10002937; body size 5 bytes.
@@ -29824,6 +28692,8 @@ void FUN_10002932(void)
 undefined4 FUN_10002937(undefined4 param_1)
 
 {
+  undefined **appuStack_90[8];
+  undefined **appuStack_b[8];
  try {
   int *piVar1;
   undefined4 *puVar2;
@@ -29835,16 +28705,10 @@ undefined4 FUN_10002937(undefined4 param_1)
   undefined4 uVar8;
   undefined4 uVar9;
   undefined4 uVar10;
-  undefined **appuStack_b
-void FUN_10002932(void)
-
-{
-  FUN_10b35625();
-  return;
-}
+  undefined **appuStack_b0[8];
 
 
-ined1 *puStack_6c;
+undefined1 *puStack_6c;
   undefined4 uStack_68;
   undefined1 auStack_64 [4];
   undefined4 uStack_60;
@@ -29893,7 +28757,7 @@ ined1 *puStack_6c;
   *(unsigned char*)((char *)&uStack_68 + 0) = (unsigned char)(5);
   iVar3 = (int)(thunk_FUN_10eced20((uint)&auStack_2c), 0);
   thunk_FUN_105f6290(iVar3 + 4);
-  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_1c = (int *)((int *)0x0);
   piStack_18 = (int *)((int *)0x0);
@@ -30064,23 +28928,11 @@ int __thiscall Recovered_Bulk::m_FUN_1000293c(byte param_2)
 // Reference entry 10002941; body size 5 bytes.
 #line 1 "ENTRY_10002941"
 
-void FUN_10002941(void)
-
-{
-  thunk_FUN_1091c4a0<>();
-  return;
-}
 
 
 // Reference entry 10002946; body size 5 bytes.
 #line 1 "ENTRY_10002946"
 
-void FUN_10002946(void)
-
-{
-  thunk_FUN_10894010<>();
-  return;
-}
 
 
 // Reference entry 10002964; body size 5 bytes.
@@ -30092,18 +28944,10 @@ undefined1 * __fastcall FUN_10002964(int param_1)
   undefined1 *puVar1;
   
   puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  i
-void FUN_10002941(void)
-
-{
-  FUN_1091b82f();
-  return;
-}
 
 
     puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6628), 0);
   }
-  retur
 void FUN_10002946(void)
 
 {
@@ -30559,7 +29403,7 @@ undefined4 FUN_100029eb(undefined4 param_1)
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0xe);
   iVar5 = (int)(thunk_FUN_1061c630<>(9), 0);
   thunk_FUN_105f6290(iVar5 + 4);
-  ppuStack_64 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_64 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_5c = (int *)((int *)0x0);
   piStack_58 = (int *)((int *)0x0);
@@ -30570,7 +29414,7 @@ undefined4 FUN_100029eb(undefined4 param_1)
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x10);
   piVar6 = (int *)((int *)thunk_FUN_106050a0((uint)&appuStack_174), 0);
   piStack_70 = (int *)((int *)(**(code **)(*piVar6 + 8))((uint)&auStack_1d4), 0);
-  ppuStack_44 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_44 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_3c = (int *)((int *)0x0);
   piStack_38 = (int *)((int *)0x0);
@@ -30581,7 +29425,7 @@ undefined4 FUN_100029eb(undefined4 param_1)
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x11);
   piVar6 = (int *)((int *)thunk_FUN_106050a0((uint)&appuStack_134), 0);
   piStack_68 = (int *)((int *)(**(code **)(*piVar6 + 8))((uint)&auStack_1d4), 0);
-  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_1c = (int *)((int *)0x0);
   piStack_18 = (int *)((int *)0x0);
@@ -30921,12 +29765,6 @@ void __thiscall Recovered_Bulk::m_FUN_10002a09(char *param_2,undefined4 param_3)
 // Reference entry 10002a18; body size 5 bytes.
 #line 1 "ENTRY_10002a18"
 
-void FUN_10002a18(void)
-
-{
-  thunk_FUN_1057cc60<>();
-  return;
-}
 
 
 // Reference entry 10002a1d; body size 5 bytes.
@@ -30946,16 +29784,8 @@ void __fastcall FUN_10002a1d(int param_1)
 
   thunk_FUN_101f6530(&piStack_18,DAT_12126b84 ^ (uint)&stack0xfffffffc);
 
-  (*
-void FUN_10002a18(void)
-
-{
-  FUN_1057c1ea();
-  return;
-}
 
 
-m_1 + 0x2c);
   piVar1 = (int *)(piStack_14);
 
   if ((int *)(piStack_14) != (int *)(0x0)) {
@@ -31466,12 +30296,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002ac7(undefined4 param_2,undefi
 // Reference entry 10002ad6; body size 5 bytes.
 #line 1 "ENTRY_10002ad6"
 
-void FUN_10002ad6(void)
-
-{
-  thunk_FUN_10791cf0<>();
-  return;
-}
 
 
 // Reference entry 10002adb; body size 5 bytes.
@@ -31484,15 +30308,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002adb(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
   thunk_FUN_106de7d0();
   if ((param_2 & 1) != 0) {
-    thunk_FUN_1
-void FUN_10002ad6(void)
 
-{
-  FUN_10790583();
-  return;
+
 }
-
-
+}
 // Reference entry 10002ae0; body size 5 bytes.
 #line 1 "ENTRY_10002ae0"
 
@@ -31547,7 +30366,7 @@ undefined4 FUN_10002aea(undefined4 param_1)
   uStack_14 = (undefined4)(DAT_121a22e8);
 
   thunk_FUN_105f5920<>(&uStack_14);
-  ppuStack_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+  ppuStack_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTreeNoAppendInterface);
 
   iStack_2c = (int)(0);
 
@@ -31874,12 +30693,6 @@ void FUN_10002b49(int param_1,int param_2)
 // Reference entry 10002b76; body size 5 bytes.
 #line 1 "ENTRY_10002b76"
 
-void FUN_10002b76(void)
-
-{
-  thunk_FUN_1077c420<>();
-  return;
-}
 
 
 // Reference entry 10002b85; body size 5 bytes.
@@ -31898,13 +30711,6 @@ void FUN_10002b85(SCStr *param_1,SCStr *param_2)
   uVar2 = (uint)(DAT_12126b84);
   ppvVar1 = (void **)(&pvStack_10);
 
-  for (; ExceptionList = (void *)((void *)(ppvVar1)),(SCS
-void FUN_10002b76(void)
-
-{
-  FUN_1077c3a9();
-  return;
-}
 
 
 
@@ -31916,7 +30722,6 @@ void FUN_10002b76(void)
     ((SCStr *)(param_1))->int_release();
     *(undefined4*)param_1 = (undefined4)((SCStr *)(0));
 
-  }
 
   return;
 
@@ -32277,12 +31082,6 @@ undefined1 FUN_10002c1b(void)
 // Reference entry 10002c2f; body size 5 bytes.
 #line 1 "ENTRY_10002c2f"
 
-void FUN_10002c2f(void)
-
-{
-  thunk_FUN_10bfbc80();
-  return;
-}
 
 
 // Reference entry 10002c34; body size 5 bytes.
@@ -32296,16 +31095,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002c34(byte param_2)
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
-  return (und
-void FUN_10002c2f(void)
 
-{
-  FUN_10bfbbd3();
-  return;
+
 }
-
-
-bytes.
 #line 1 "ENTRY_10002c39"
 
 void FUN_10002c39(void)
@@ -32369,12 +31161,6 @@ void FUN_10002c48(void)
 // Reference entry 10002c4d; body size 5 bytes.
 #line 1 "ENTRY_10002c4d"
 
-void FUN_10002c4d(void)
-
-{
-  thunk_FUN_1081b390<>();
-  return;
-}
 
 
 // Reference entry 10002c66; body size 5 bytes.
@@ -32393,16 +31179,9 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10002c66(undefined4 param_2,int *par
   undefined4 uStack_8;
 
 
-  uVar4 = (uint)(DAT_12126b84)
-void FUN_10002c4d(void)
-
-{
-  FUN_1081adfb();
-  return;
-}
+  uVar4 = (uint)(DAT_12126b84);
 
 
-id **)(&pvStack_10);
 
   while (ExceptionList = (void *)(ppvVar3), cVar1 == '\0') {
     thunk_FUN_105a52b0<>(param_2,param_3[2]);
@@ -32756,7 +31535,7 @@ undefined4 FUN_10002d01(undefined4 param_1)
   thunk_FUN_10647620<>(uVar4);
   iVar3 = (int)(thunk_FUN_1061c630<>(uVar9), 0);
   thunk_FUN_105f6290(iVar3 + 4);
-  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_1c = (int *)((int *)0x0);
   piStack_18 = (int *)((int *)0x0);
@@ -33043,7 +31822,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002d15(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10002d1a(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -33575,7 +32354,7 @@ undefined4 FUN_10002d9c(undefined4 param_1)
   uVar6 = (undefined4)(thunk_FUN_10def290((uint)&auStack_78,iVar5 + 4), 0);
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(3);
   thunk_FUN_105f5d20<>(uVar6);
-  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   iStack_20 = (int)(0);
   iStack_1c = (int)(0);
@@ -33817,12 +32596,6 @@ undefined4 FUN_10002ddd(void)
 // Reference entry 10002de2; body size 5 bytes.
 #line 1 "ENTRY_10002de2"
 
-void FUN_10002de2(void)
-
-{
-  thunk_FUN_10205c00<>();
-  return;
-}
 
 
 // Reference entry 10002de7; body size 5 bytes.
@@ -33843,21 +32616,9 @@ void __fastcall FUN_10002de7(int *param_1)
 
 
 // Reference entry 10002df1; body size 5 by
-void FUN_10002de2(void)
-
-{
-  FUN_102054e8();
-  return;
-}
 
 
                  
-  (**(code **)(*param_1 + 0x44))();
-                    
-                    
-  (*(code *)(uint)(DAT_121a06c8))();
-  return;
-}
 
 
 // Reference entry 10002e0f; body size 5 bytes.
@@ -33880,7 +32641,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002e0f(byte param_2)
   param_1[2] = (undefined4)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x10,uVar1);
   }
@@ -33958,7 +32719,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002e32(byte param_2)
 
   ((SCStr *)((SCStr *)(param_1 + 4)))->int_release();
   param_1[4] = (undefined4)(0);
-  param_1[1] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[1] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0(uVar1);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x28);
@@ -33978,7 +32739,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002e37(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -33989,12 +32750,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002e37(byte param_2)
 // Reference entry 10002e41; body size 5 bytes.
 #line 1 "ENTRY_10002e41"
 
-void FUN_10002e41(void)
-
-{
-  thunk_FUN_10b35ad0<>();
-  return;
-}
 
 
 // Reference entry 10002e46; body size 5 bytes.
@@ -34014,15 +32769,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002e46(undefined4 param_2,undefi
   puVar1 = (undefined4 *)(operator_new(0xe0), 0);
 
   
-void FUN_10002e41(void)
-
-{
-  FUN_10b35533();
-  return;
-}
 
 
-undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3), 0);
+extern int thunk_FUN_10eae120(...);
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVOTextOverridePage);
     puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVOTextOverridePage);
@@ -34030,7 +32779,6 @@ undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3), 0);
     puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVOTextOverridePage);
 
     return (undefined4 *)(puVar1);
-  }
 
   return (undefined4 *)((undefined4 *)0x0);
 
@@ -34057,12 +32805,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002e4b(byte param_2)
 // Reference entry 10002e50; body size 5 bytes.
 #line 1 "ENTRY_10002e50"
 
-void FUN_10002e50(void)
-
-{
-  thunk_FUN_10658200<>();
-  return;
-}
 
 
 // Reference entry 10002e55; body size 5 bytes.
@@ -34078,67 +32820,10 @@ undefined4 __fastcall FUN_10002e55(int param_1)
 // Reference entry 10002e5a; body size 5 bytes.
 #line 1 "ENTRY_10002e5a"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_10002e5a(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+undefined4 * __thiscall m_FUN_10002e5a(undefined4 param_2,undefined4 param_3,undefined4 param_4, int *param_5);
                   
-void FUN_10002e50(void)
+void FUN_10002e50(void);
 
-{
-  FUN_10656dd0();
-  return;
-}
-
-
-
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  undefined4 uVar4;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  thunk_FUN_10200aa0<>(param_2,param_3,param_4,param_5);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCRadioBrowseItem);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCRadioBrowseItem);
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCRadioBrowseItem);
-  param_1[0xf] = (undefined4)((uint)&ghidra_vftable_SCRadioBrowseItem);
-  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_SCRadioBrowseItem);
-  param_1[0x11] = (undefined4)((uint)&ghidra_vftable_SCRadioBrowseItem);
-  param_1[0x46] = (undefined4)((uint)&ghidra_vftable_SCRadioBrowseItem);
-  param_1[0x48] = (undefined4)(0);
-  param_1[0x49] = (undefined4)(0);
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(1);
-  *(unsigned short*)((char *)&uStack_8 + 1) = (unsigned short)(0);
-  piVar3 = (int *)((int *)createPropertyBag(), 0);
-  piVar1 = (int *)((int *)*piVar3);
-  *piVar3 = (int)(0);
-  piVar3 = (int *)((int *)param_1[0x49]);
-  uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(2)));
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    param_1[0x48] = (undefined4)(0);
-    param_1[0x49] = (undefined4)(0);
-    (**(code **)(*piVar3 + 8))(uVar2);
-  }
-  param_1[0x48] = (undefined4)(piVar1);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    uVar4 = (undefined4)(0);
-  }
-  else {
-    uVar4 = (undefined4)((**(code **)(*piVar1 + 0xc))(), 0);
-  }
-  param_1[0x49] = (undefined4)(uVar4);
-  uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(3)));
-  if ((int *)(param_5) != (int *)(0x0)) {
-    (**(code **)(*param_5 + 8))();
-  }
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
-}
 
 
 // Reference entry 10002e5f; body size 5 bytes.
@@ -34584,12 +33269,6 @@ uint FUN_10002ef5(undefined4 param_1)
 // Reference entry 10002efa; body size 5 bytes.
 #line 1 "ENTRY_10002efa"
 
-void FUN_10002efa(void)
-
-{
-  thunk_FUN_111865f0();
-  return;
-}
 
 
 // Reference entry 10002f09; body size 5 bytes.
@@ -34610,18 +33289,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10002f09(undefined4 *param_2)
   undefined4 uStack_14;
   void *pvStack_10;
   
-void FUN_10002efa(void)
-
-{
-  FUN_1119d310();
-  return;
-}
 
 
-ram_1 + 0xc) == (int *)((0x0))) {
     *param_2 = (undefined4)(0);
     return (undefined4 *)(param_2);
-  }
 
   uVar4 = (undefined4)((**(code **)(**(int **)(param_1 + 0xc) + 0x54)) (&piStack_1c,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
 
@@ -34794,23 +33465,11 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10002f13(undefined4 param_2,int *par
 // Reference entry 10002f27; body size 5 bytes.
 #line 1 "ENTRY_10002f27"
 
-void FUN_10002f27(void)
-
-{
-  thunk_FUN_10d5a390();
-  return;
-}
 
 
 // Reference entry 10002f2c; body size 5 bytes.
 #line 1 "ENTRY_10002f2c"
 
-void FUN_10002f2c(void)
-
-{
-  thunk_FUN_10d161f0<>();
-  return;
-}
 
 
 // Reference entry 10002f36; body size 5 bytes.
@@ -34821,31 +33480,26 @@ void FUN_10002f2c(void)
 undefined4 FUN_10002f36(undefined4 param_1)
 
 {
+  undefined4 iStack_44;
+  int iVar5;
+  int * piVar3;
+  undefined4 * puStack_40;
+  undefined4 * puVar6;
+  undefined4 uStack_;
+  uint uVar4;
  try {
   undefined4 *puVar1;
   uint uVar2;
-  int *piVar3
-void FUN_10002f27(void)
-
-{
-  FUN_10d5a3a0();
-  return;
-}
+  int *piVar3;
 
 
-ed **ppuStack_54;
+undefined **ppuStack_54;
   undefined4 uStack_50;
   int iStack_4c;
-  undefined4 uStack_
-void FUN_10002f2c(void)
-
-{
-  FUN_10d1614c();
-  return;
-}
+  undefined4 uStack_;
 
 
-ck_3c;
+undefined4 * puStack_3c;
   int iStack_38;
   undefined **ppuStack_34;
   undefined4 uStack_30;
@@ -34863,7 +33517,7 @@ ck_3c;
   uVar2 = (uint)(DAT_12126b84);
 
   uStack_14 = (undefined4)(DAT_121a4c0c);
-  ppuStack_54 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+  ppuStack_54 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTreeNoAppendInterface);
   uStack_50 = (undefined4)(DAT_118beee0);
   iStack_4c = (int)(_UNK_118beee4);
   uStack_48 = (undefined4)(_UNK_118beee8);
@@ -34873,7 +33527,7 @@ ck_3c;
   iStack_38 = (int)(0);
 
   thunk_FUN_1059ee10<>(0,&uStack_14);
-  ppuStack_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+  ppuStack_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTreeNoAppendInterface);
 
   iStack_2c = (int)(0);
 
@@ -35566,12 +34220,6 @@ undefined4 * __fastcall FUN_10002f9f(int param_1)
 // Reference entry 10002fb3; body size 5 bytes.
 #line 1 "ENTRY_10002fb3"
 
-void FUN_10002fb3(void)
-
-{
-  thunk_FUN_10d28120<>();
-  return;
-}
 
 
 // Reference entry 10002fcc; body size 5 bytes.
@@ -35591,13 +34239,6 @@ undefined4 __fastcall FUN_10002fcc(int param_1)
 
   piVar1 = (int *)(*(int **)(param_1 + 0x70), 0);
   if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 4))(DAT_12126b84 ^ (uin
-void FUN_10002fb3(void)
-
-{
-  FUN_10d27ffa();
-  return;
-}
 
 
 
@@ -35627,12 +34268,6 @@ void FUN_10002fb3(void)
 // Reference entry 10002fe5; body size 5 bytes.
 #line 1 "ENTRY_10002fe5"
 
-void FUN_10002fe5(void)
-
-{
-  thunk_FUN_1051d7c0<>();
-  return;
-}
 
 
 // Reference entry 10002ff4; body size 5 bytes.
@@ -35654,16 +34289,8 @@ void FUN_10002ff4(char *param_1,undefined4 *param_2)
   param_2[3] = (undefined4)(0);
   param_2[4] = (undefined4)(0);
   param_2[5] = (undefined4)(0);
-  param_
-void FUN_10002fe5(void)
-
-{
-  FUN_1051d575();
-  return;
-}
 
 
-8] = (undefined4)(0);
   param_2[9] = (undefined4)(0);
   pcVar2 = (char *)(param_1);
   do {
@@ -35780,12 +34407,6 @@ void FUN_10003012(int param_1,undefined4 param_2){
 // Reference entry 10003021; body size 5 bytes.
 #line 1 "ENTRY_10003021"
 
-void FUN_10003021(void)
-
-{
-  thunk_FUN_10fda6c0<>();
-  return;
-}
 
 
 // Reference entry 10003026; body size 5 bytes.
@@ -35805,18 +34426,15 @@ void __fastcall FUN_10003026(int param_1)
 #line 1 "ENTRY_1000302b"
 
 void __thiscall Recovered_Bulk::m_FUN_1000302b(int *param_2,int *param_3)
-{
+{ try {
+  char cVar2;
+  int * piVar3;
+  undefined4 * puVar1;
   int *param_1 = (int *)this; int stack0xfffffffc;
  
-void FUN_10003021(void)
-
-{
-  FUN_10fd989e();
-  return;
-}
 
 
-ed4 uVar4;
+undefined4 uVar4;
   int *piVar5;
   int iVar6;
   undefined **appuStack_70 [8];
@@ -36021,12 +34639,6 @@ undefined1 FUN_10003053(void)
 // Reference entry 1000306c; body size 5 bytes.
 #line 1 "ENTRY_1000306c"
 
-void FUN_1000306c(void)
-
-{
-  thunk_FUN_1043c9a0();
-  return;
-}
 
 
 // Reference entry 10003076; body size 5 bytes.
@@ -36045,55 +34657,10 @@ undefined4 __fastcall FUN_10003076(int param_1)
 undefined4 __fastcall FUN_10003085(int param_1)
 
 {
-  return (undefined4)(*(undefined4
-void FUN_1000306c(void)
 
-{
-  FUN_1043ca20();
-  return;
+
 }
-
-
- bytes.
 #line 1 "ENTRY_1000308f"
-_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_1000308f(void)
-{
-  _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
-  char cVar1;
-  int iVar2;
-  int *piVar3;
-  int *piVar4;
-  int iVar5;
-  
-  iVar2 = (int)(*(int *)this_);
-  piVar3 = (int *)(*(int **)(iVar2 + 8), 0);
-  if (*(char *)((int)piVar3 + 0xd) != '\0') {
-    cVar1 = (char)(*(char *)(*(int *)(iVar2 + 4) + 0xd));
-    iVar5 = (int)(*(int *)(iVar2 + 4));
-    while ((cVar1 == '\0' && ((int)(iVar2) == *(int *)(iVar5 + 8)))) {
-      *(int*)this_ = (int)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> 
-*)(iVar5));
-      cVar1 = (char)(*(char *)(*(int *)(iVar5 + 4) + 0xd));
-      iVar2 = (int)(iVar5);
-      iVar5 = (int)(*(int *)(iVar5 + 4));
-    }
-    *(int*)this_ = (int)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> 
-*)(iVar5));
-    return (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0>
-            *)this_);
-  }
-  cVar1 = (char)(*(char *)(*piVar3 + 0xd));
-  piVar4 = (int *)((int *)*piVar3);
-  while (cVar1 == '\0') {
-    cVar1 = (char)(*(char *)(*piVar4 + 0xd));
-    piVar3 = (int *)(piVar4);
-    piVar4 = (int *)((int *)*piVar4);
-  }
-  *(int**)this_ = (int *)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> 
-*)(piVar3));
-  return (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0>
-          *)this_);
-}
 
 
 // Reference entry 100030c1; body size 5 bytes.
@@ -36178,76 +34745,27 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100030c1(undefined4 *param_2)
 // Reference entry 100030cb; body size 5 bytes.
 #line 1 "ENTRY_100030cb"
 
-void FUN_100030cb(void)
-
-{
-  thunk_FUN_10c20d40();
-  return;
-}
 
 
 // Reference entry 100030d5; body size 5 bytes.
 #line 1 "ENTRY_100030d5"
 
-void FUN_100030d5(void)
-
-{
-  thunk_FUN_10a80ef0<>();
-  return;
-}
 
 
 // Reference entry 100030da; body size 5 bytes.
 #line 1 "ENTRY_100030da"
 
-void FUN_100030da(void)
-
-{
-  thunk_FUN_10a0a1f0<>();
-  return;
-}
 
 
 // Reference entry 100030df; body size 5 bytes.
 #line 1 "ENTRY_100030df"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_100030df(byte param_2)
-{
-  undefined4 *p
-void FUN_100030cb(void)
-
-{
-  FUN_10c20dd9();
-  return;
-}
-
-
-ra_vftable_SCNewWizStateTypeFor);
-  thunk_FUN_106de7d0();
-  if ((param_2 & 1) !
-void FUN_100030d5(void)
-
-{
-  FUN_10a80e5d();
-  return;
-}
-
-
-d4 *)(param_1);
-}
 
 
 // Reference entry 100030e4; body size 5 bytes.
-#line 1 "EN
-void FUN_100030da(void)
-
-{
-  FUN_10a09f31();
-  return;
-}
 
 
-0e4(byte param_2)
+undefined4 * __thiscall Recovered_Bulk::m_FUN_100030df(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -36265,23 +34783,11 @@ void FUN_100030da(void)
 // Reference entry 100030e9; body size 5 bytes.
 #line 1 "ENTRY_100030e9"
 
-void FUN_100030e9(void)
-
-{
-  thunk_FUN_1072c940<>();
-  return;
-}
 
 
 // Reference entry 100030f3; body size 5 bytes.
 #line 1 "ENTRY_100030f3"
 
-void FUN_100030f3(void)
-
-{
-  thunk_FUN_104a1af0();
-  return;
-}
 
 
 // Reference entry 10003107; body size 5 bytes.
@@ -36300,27 +34806,11 @@ undefined4 FUN_10003107(int param_1){
                     
 
 
-  uVar1 =
-void FUN_100030e9(void)
-
-{
-  FUN_1072c058();
-  return;
-}
 
 
-*)0x0);
   if ((SCStr *)((param_1 + 0x3c)) != (SCStr *)(&puStack_14)) {
-    ((SC
-void FUN_100030f3(void)
-
-{
-  FUN_104a1af3();
-  return;
-}
 
 
-defined1 *)(*(undefined1 **)(param_1 + 0x3c), 0);
     ((SCStr *)((SCStr *)&puStack_14))->int_addref();
     puVar4 = (undefined1 *)(puStack_14);
     if ((undefined1 *)(puStack_14) != (undefined1 *)(0x0)) goto LAB_101974a8;
@@ -36391,12 +34881,6 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10003116(byte param_2)
 // Reference entry 1000311b; body size 5 bytes.
 #line 1 "ENTRY_1000311b"
 
-void FUN_1000311b(void)
-
-{
-  thunk_FUN_11204620();
-  return;
-}
 
 
 // Reference entry 1000312a; body size 5 bytes.
@@ -36424,18 +34908,16 @@ undefined4 FUN_1000312f(void)
 
 int __thiscall Recovered_Bulk::m_FUN_10003139(SCStr *param_2)
 {
+  byte bVar4;
+  int * piVar;
+  undefined4 * puVar3;
+  undefined4 * puVar5;
   int *param_1 = (int *)this;
   char cVar1;
-  int *piVar
-void FUN_1000311b(void)
-
-{
-  FUN_112171c9();
-  return;
-}
+  int *piVar2;
 
 
-efined4 uVar6;
+undefined4 uVar6;
   undefined4 *puVar7;
   int iVar8;
   undefined4 *puVar9;
@@ -36537,7 +35019,7 @@ efined4 uVar6;
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10003148(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -36639,12 +35121,6 @@ void FUN_1000315c(void)
 // Reference entry 1000316b; body size 5 bytes.
 #line 1 "ENTRY_1000316b"
 
-void FUN_1000316b(void)
-
-{
-  thunk_FUN_109e41f0<>();
-  return;
-}
 
 
 // Reference entry 10003175; body size 5 bytes.
@@ -36664,13 +35140,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10003175(undefined4 param_2,undefi
   puVar1 = (undefined4 *)(operator_new(0xe4), 0);
 
   if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-    uVar2 = (undefined4)(thunk_FUN_10
-void FUN_1000316b(void)
-
-{
-  FUN_109e3daf();
-  return;
-}
 
 
 ;
@@ -36745,8 +35214,6 @@ void __thiscall Recovered_Bulk::m_FUN_10003189(int *param_2,float *param_3)
   fVar7 = (float)(param_1[2]);
 
   iVar1 = (int)((int)fVar7 + 1);
-  fVar9 = (float)((float)((double)iVar1 + (double)(uint)(&DAT_11880fb0)[-(iVar1 >> 0x1f)]) /
-          (float)((double)(int)param_1[7] + (double)(uint)(&DAT_11880fb0)[-((int)param_1[7] >> 0x1f)]));
   if (*param_1 <= (float)((fVar9)) && (float)(fVar9) != *param_1) {
     uVar5 = (undefined4)(thunk_FUN_104e5a60(iVar1), 0);
     thunk_FUN_104e5f10(uVar5);
@@ -36787,12 +35254,6 @@ LAB_104e134e:
 // Reference entry 10003193; body size 5 bytes.
 #line 1 "ENTRY_10003193"
 
-void FUN_10003193(void)
-
-{
-  FUN_10065348();
-  return;
-}
 
 
 // Reference entry 1000319d; body size 5 bytes.
@@ -36820,17 +35281,11 @@ undefined4 __fastcall FUN_100031ac(undefined4 param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_100031ca(int param_2)
 {
+  int iVar1;
   int param_1 = (int )this;
 
-void FUN_10003193(void)
-
-{
-  FUN_11095e10();
-  return;
-}
 
 
-(param_2);
     if (*(int *)(param_1 + 0x10) == 0) {
       iVar1 = (int)(*(int *)(param_1 + 0x48));
       if (iVar1 != 0) {
@@ -36850,8 +35305,6 @@ void FUN_10003193(void)
       }
     }
   }
-  return;
-}
 
 
 // Reference entry 100031d4; body size 5 bytes.
@@ -36932,7 +35385,7 @@ undefined4 FUN_100031de(undefined4 param_1)
   uVar6 = (undefined4)(thunk_FUN_10def290((uint)&auStack_78,iVar5 + 4), 0);
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(3);
   thunk_FUN_105f5d20<>(uVar6);
-  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_28 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   iStack_20 = (int)(0);
   iStack_1c = (int)(0);
@@ -37097,7 +35550,7 @@ undefined4 FUN_100031e3(undefined4 param_1)
   uVar4 = (undefined4)(thunk_FUN_10def290((uint)&auStack_a4,iVar3 + 4), 0);
   *(unsigned char*)((char *)&uStack_68 + 0) = (unsigned char)(8);
   thunk_FUN_105f5d20<>(uVar4);
-  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   iStack_24 = (int)(0);
   iStack_20 = (int)(0);
@@ -37500,12 +35953,6 @@ undefined1 FUN_10003210(void)
 // Reference entry 10003215; body size 5 bytes.
 #line 1 "ENTRY_10003215"
 
-void FUN_10003215(void)
-
-{
-  thunk_FUN_104bce60();
-  return;
-}
 
 
 // Reference entry 1000321a; body size 5 bytes.
@@ -37521,13 +35968,6 @@ void __fastcall FUN_1000321a(int param_1)
     (**(code **)(**(int **)(param_1 + 0x615c) + 0x10))();
     puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 0x615c), 0);
     if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-      iVar2 = (int)(thunk_FUN_1123fcd0(puVar1 
-void FUN_10003215(void)
-
-{
-  FUN_104bcee0();
-  return;
-}
 
 
 
@@ -37536,8 +35976,6 @@ void FUN_10003215(void)
     *(undefined4*)(param_1 + 0x615c) = (undefined4)(0);
     *(undefined4*)(param_1 + 0x6160) = (undefined4)(0);
   }
-  return;
-}
 
 
 // Reference entry 10003229; body size 5 bytes.
@@ -37818,12 +36256,6 @@ LAB_10fa9343:
 // Reference entry 10003297; body size 5 bytes.
 #line 1 "ENTRY_10003297"
 
-void FUN_10003297(void)
-
-{
-  thunk_FUN_10cbd320();
-  return;
-}
 
 
 // Reference entry 1000329c; body size 5 bytes.
@@ -37852,16 +36284,8 @@ void __fastcall FUN_1000329c(int param_1)
   uVar4 = (uint)(DAT_12126b84);
 
   if (*(int *)(param_1 + 8) != 0) {
-    piVar9 = (int *)((int *)**(int **)(pa
-void FUN_10003297(void)
-
-{
-  FUN_10cbd303();
-  return;
-}
 
 
-0x6c)) {
       do {
         if ((int *)piVar9[6] != (int *)(((0x0)))) {
           (**(code **)(*(int *)piVar9[6] + 0x18))(uVar4);
@@ -37939,7 +36363,6 @@ void FUN_10003297(void)
         uVar5 = (uint)((**(code **)(*(int *)(param_1 + 0xc) + 0x28))(9), 0);
       } while (uVar4 < uVar5);
     }
-  }
 
   return;
 
@@ -37960,12 +36383,6 @@ undefined1 FUN_100032a6(void)
 // Reference entry 100032ab; body size 5 bytes.
 #line 1 "ENTRY_100032ab"
 
-void FUN_100032ab(void)
-
-{
-  thunk_FUN_107eca70<>();
-  return;
-}
 
 
 // Reference entry 100032b0; body size 5 bytes.
@@ -37973,6 +36390,8 @@ void FUN_100032ab(void)
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_100032b0(undefined4 param_2)
 {
+  undefined **appuStack_134[8];
+  undefined **appuStack_154[8];
   int param_1 = (int )this;
  try {
   int *piVar1;
@@ -37990,16 +36409,10 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_100032b0(undefined4 param_2)
   undefined4 uVar13;
   undefined ***pppuVar14;
   undefined **appuStack_174 [8];
-  undefined **appuS
-void FUN_100032ab(void)
-
-{
-  FUN_107ec337();
-  return;
-}
+  undefined **appuS;
 
 
-tack_114 [8];
+undefined **appuStack_114[8];
   undefined **appuStack_f4 [8];
   undefined1 auStack_d4 [12];
   undefined4 uStack_c8;
@@ -38136,7 +36549,7 @@ LAB_107efe40:
   *(unsigned char*)((char *)&uStack_74 + 0) = (unsigned char)(0x15);
   iVar6 = (int)(thunk_FUN_10eced20((uint)&auStack_44), 0);
   thunk_FUN_105f6290(iVar6 + 4);
-  ppuStack_3c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_3c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_34 = (int *)((int *)0x0);
   piStack_30 = (int *)((int *)0x0);
@@ -38407,12 +36820,6 @@ void FUN_100032fb(void)
 // Reference entry 1000330a; body size 5 bytes.
 #line 1 "ENTRY_1000330a"
 
-void FUN_1000330a(void)
-
-{
-  thunk_FUN_10b5ef00<>();
-  return;
-}
 
 
 // Reference entry 1000330f; body size 5 bytes.
@@ -38426,16 +36833,8 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000330f(byte param_2)
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
-  if ((pa
-void FUN_1000330a(void)
-
-{
-  FUN_10b5e5b8();
-  return;
-}
 
 
-urn (undefined4 *)(param_1);
 }
 
 
@@ -38457,12 +36856,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10003323(byte param_2)
 // Reference entry 10003328; body size 5 bytes.
 #line 1 "ENTRY_10003328"
 
-void FUN_10003328(void)
-
-{
-  thunk_FUN_1074d1b0<>();
-  return;
-}
 
 
 // Reference entry 1000332d; body size 5 bytes.
@@ -38486,15 +36879,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000332d(byte param_2)
 SCStr * FUN_10003332(SCStr *param_1)
 
 {
-void FUN_10003328(void)
-
-{
-  FUN_1074d0e4();
-  return;
-}
+  char * pcVar1;
 
 
-(0x2a3,&DAT_11882ff0), 0);
   ((SCStr *)(param_1))->int_allocRep(pcVar1);
   return (SCStr *)(param_1);
 }
@@ -38812,12 +37199,6 @@ undefined4 FUN_10003391(undefined1 *param_1)
 // Reference entry 10003396; body size 5 bytes.
 #line 1 "ENTRY_10003396"
 
-void FUN_10003396(void)
-
-{
-  thunk_FUN_10d19550();
-  return;
-}
 
 
 // Reference entry 100033a5; body size 5 bytes.
@@ -38829,7 +37210,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100033a5(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -38846,10 +37227,10 @@ void FUN_10003396(void)
 }
 
 
-* __thiscall Recovered_Bulk::m_FUN_100033be(byte param_2)
+undefined4 * __thiscall Recovered_Bulk::m_FUN_100033be(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
@@ -38864,12 +37245,6 @@ void FUN_10003396(void)
 // Reference entry 100033c3; body size 5 bytes.
 #line 1 "ENTRY_100033c3"
 
-void FUN_100033c3(void)
-
-{
-  thunk_FUN_10368690<>();
-  return;
-}
 
 
 // Reference entry 100033d2; body size 5 bytes.
@@ -38880,7 +37255,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100033d2(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -38889,7 +37264,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100033d2(byte param_2)
 
 
 // Reference entry 100033e6; body size 5 bytes.
-#line 1 "EN
 void FUN_100033c3(void)
 
 {
@@ -38898,16 +37272,6 @@ void FUN_100033c3(void)
 }
 
 
-3e6(undefined4 *param_2)
-{
-  int param_1 = (int )this;
-  if (*(char *)(param_1 + 0x31) == '\0') {
-    *param_2 = (undefined4)(0);
-    return (undefined4 *)(param_2);
-  }
-  thunk_FUN_10697db0(param_2,*(undefined4 *)(param_1 + 0x34),0);
-  return (undefined4 *)(param_2);
-}
 
 
 // Reference entry 100033f5; body size 5 bytes.
@@ -38975,12 +37339,6 @@ void __thiscall Recovered_Bulk::m_FUN_10003404(undefined4 param_2)
 // Reference entry 1000340e; body size 5 bytes.
 #line 1 "ENTRY_1000340e"
 
-void FUN_1000340e(void)
-
-{
-  thunk_FUN_10fdae50();
-  return;
-}
 
 
 // Reference entry 10003418; body size 5 bytes.
@@ -38991,20 +37349,13 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10003418(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCDisplayWizardEventSink);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCDisplayWizardEventSink);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
-  thunk_FUN_11240850
-void FUN_1000340e(void)
-
-{
-  FUN_10fdae6a();
-  return;
-}
 
 
  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x24);
   }
@@ -39018,7 +37369,7 @@ void FUN_1000340e(void)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10003427(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -39058,12 +37409,6 @@ void __fastcall FUN_10003436(int *param_1)
 // Reference entry 1000343b; body size 5 bytes.
 #line 1 "ENTRY_1000343b"
 
-void FUN_1000343b(void)
-
-{
-  thunk_FUN_10a0e080<>();
-  return;
-}
 
 
 // Reference entry 10003440; body size 5 bytes.
@@ -39072,6 +37417,8 @@ void FUN_1000343b(void)
 undefined4 FUN_10003440(undefined4 param_1)
 
 {
+  undefined **appuStack_110[8];
+  undefined **appuStack_130[8];
  try {
   int *piVar1;
   undefined4 *puVar2;
@@ -39090,16 +37437,10 @@ undefined4 FUN_10003440(undefined4 param_1)
   undefined **appuStack_190 [8];
   undefined **appuStack_170 [8];
   undefined **appuStack_150 [8];
-  undefined **appuSta
-void FUN_1000343b(void)
-
-{
-  FUN_10a0dd1d();
-  return;
-}
+  undefined **appuSta;
 
 
-f0 [12];
+undefined1 auStack_f0[12];
   undefined4 uStack_e4;
   int *piStack_e0;
   undefined4 auStack_dc [2];
@@ -39250,7 +37591,7 @@ f0 [12];
   thunk_FUN_1061c630<>(1);
   iVar6 = (int)(thunk_FUN_10ec6870<>(uVar7), 0);
   thunk_FUN_105f6290(iVar6 + 4);
-  ppuStack_30 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_30 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_28 = (int *)((int *)0x0);
   piStack_24 = (int *)((int *)0x0);
@@ -39871,12 +38212,6 @@ void __fastcall FUN_10003490(int param_1)
 // Reference entry 10003495; body size 5 bytes.
 #line 1 "ENTRY_10003495"
 
-void FUN_10003495(void)
-
-{
-  thunk_FUN_10fb19e0<>();
-  return;
-}
 
 
 // Reference entry 1000349a; body size 5 bytes.
@@ -39894,12 +38229,6 @@ void __fastcall FUN_1000349a(int param_1)
     if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
       iVar2 = (int)(thunk_FUN_1123fcd0(puVar1 + 1), 0);
       if (iVar2 == 0) {
-        (**(code **)
-void FUN_10003495(void)
-
-{
-  FUN_10fb1530();
-  return;
 }
 
 
@@ -39910,6 +38239,7 @@ void FUN_10003495(void)
 }
 
 
+}
 // Reference entry 1000349f; body size 5 bytes.
 #line 1 "ENTRY_1000349f"
 
@@ -40804,7 +39134,7 @@ undefined4 FUN_1000353f(undefined4 param_1)
   uVar5 = (undefined4)(thunk_FUN_10def290((uint)&auStack_a4,iVar4 + 4), 0);
   *(unsigned char*)((char *)&uStack_68 + 0) = (unsigned char)(8);
   thunk_FUN_105f5d20<>(uVar5);
-  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   iStack_24 = (int)(0);
   iStack_20 = (int)(0);
@@ -41261,12 +39591,6 @@ void FUN_100035b2(undefined4 param_1,undefined4 param_2)
 // Reference entry 100035bc; body size 5 bytes.
 #line 1 "ENTRY_100035bc"
 
-void FUN_100035bc(void)
-
-{
-  thunk_FUN_10fde3b0();
-  return;
-}
 
 
 // Reference entry 100035c1; body size 5 bytes.
@@ -41287,17 +39611,12 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100035cb(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(
-void FUN_100035bc(void)
-
-{
-  FUN_10fde45d();
-  return;
 }
 
 
+}
 // Reference entry 100035d0; body size 5 bytes.
 #line 1 "ENTRY_100035d0"
 
@@ -41609,7 +39928,7 @@ undefined4 FUN_100035fd(undefined4 param_1)
   *(unsigned char*)((char *)&uStack_78 + 0) = (unsigned char)(4);
   iVar4 = (int)(thunk_FUN_10eced20(uVar5), 0);
   thunk_FUN_105f6290(iVar4 + 4);
-  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_1c = (int *)((int *)0x0);
   piStack_18 = (int *)((int *)0x0);
@@ -42202,12 +40521,6 @@ undefined2 __fastcall FUN_10003675(int param_1)
 // Reference entry 1000368e; body size 5 bytes.
 #line 1 "ENTRY_1000368e"
 
-void FUN_1000368e(void)
-
-{
-  thunk_FUN_10909090<>();
-  return;
-}
 
 
 // Reference entry 10003693; body size 5 bytes.
@@ -42223,12 +40536,6 @@ undefined1 FUN_10003693(void)
 // Reference entry 1000369d; body size 5 bytes.
 #line 1 "ENTRY_1000369d"
 
-void FUN_1000369d(void)
-
-{
-  thunk_FUN_10def0d0();
-  return;
-}
 
 
 // Reference entry 100036a2; body size 5 bytes.
@@ -42238,46 +40545,18 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100036a2(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   DAT_121a29f0 = (int)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewW
-void FUN_1000368e(void)
-
-{
-  FUN_109086e5();
-  return;
-}
 
 
- {
     thunk_FUN_1148a50e(param_1,0xc);
   }
-  return (undefined4 *)(param_1);
-}
 
 
 // Reference entry 100036a7; body size 5 bytes.
 #line 1 "ENTRY_100036a7"
 
-void FUN_100036a7(void)
-
-{
-  thunk_FUN_10568060<>();
-  return;
-void FUN_1000369d(void)
-
-{
-  FUN_107743f0();
-  return;
-}
 
 
-Y_100036b6"
 
-void FUN_100036b6(void)
-
-{
-  thunk_FUN_10444110<>();
-  return;
-}
 
 
 // Reference entry 100036bb; body size 5 bytes.
@@ -42297,34 +40576,31 @@ undefined4 FUN_100036bb(undefined1 *param_1)
 bool FUN_100036c5(int *param_1)
 
 { int stack0xffffff34; int stack0xffffff38;
+  SCStr * pSVar8;
+  int * piStack_90;
+  int * piStack_98;
+  int * piVar13;
+  int * piVar14;
+  int * piVar7;
+  undefined4 * puVar5;
+  void * pvVar9;
+  uint uVar6;
  try {
   char cVar1;
   undefined1 uVar2;
   bool bVar3;
   int iVar4;
-  undefined4 *puVa
-void FUN_100036a7(void)
-
-{
-  FUN_10566e82();
-  return;
-}
+  undefined4 *puVa;
 
 
   undefined4 *puVar10;
   char *pcVar11;
   size_t _Size;
   uint uVar12;
-  int *p
-void FUN_100036b6(void)
-
-{
-  FUN_10443ff4();
-  return;
-}
+  int *p;
 
 
-t *piStack_8c;
+int *piStack_8c;
   void *pvStack_7c;
   undefined1 *puStack_78;
   undefined4 uStack_74;
@@ -42796,12 +41072,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000371a(byte param_2)
 // Reference entry 1000372e; body size 5 bytes.
 #line 1 "ENTRY_1000372e"
 
-void FUN_1000372e(void)
-
-{
-  thunk_FUN_10792d60<>();
-  return;
-}
 
 
 // Reference entry 10003733; body size 5 bytes.
@@ -42825,63 +41095,8 @@ SCStr * FUN_10003733(SCStr *param_1,int param_2)
 
 
 // Reference entry 10003738; body s
-void FUN_1000372e(void)
-
-{
-  FUN_10790839();
-  return;
-}
 
 
-*param_1)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar3 = (int *)((int *)thunk_FUN_10c97560(&piStack_14), 0);
-  piVar1 = (int *)((int *)*piVar3);
-
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)(**(code **)(*piVar1 + 0xc))(uVar2), 0);
-  }
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(3);
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    (**(code **)(*piStack_14 + 8))();
-  }
-  uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(2)));
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    (**(code **)(*piVar1 + 0xe4))(param_1);
-
-    if ((int *)(piVar3) != (int *)(0x0)) {
-      (**(code **)(*piVar3 + 8))();
-    }
-
-    return (SCStr *)(param_1);
-  }
-  ((SCStr *)(param_1))->int_allocRep("");
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    (**(code **)(*piVar3 + 8))();
-  }
-
-  return (SCStr *)(param_1);
-
- } catch (...) { }
-}
 
 
 // Reference entry 1000373d; body size 5 bytes.
@@ -42925,9 +41140,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000373d(byte param_2)
     (**(code **)(*piVar1 + 8))();
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x30);
   }
@@ -43359,7 +41574,7 @@ LAB_1124ada0:
 void __fastcall FUN_10003779(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   return;
 }
@@ -43410,12 +41625,6 @@ undefined1 __fastcall FUN_1000378d(int param_1)
 // Reference entry 1000379c; body size 5 bytes.
 #line 1 "ENTRY_1000379c"
 
-void FUN_1000379c(void)
-
-{
-  thunk_FUN_10e9cb90();
-  return;
-}
 
 
 // Reference entry 100037ba; body size 5 bytes.
@@ -43444,15 +41653,10 @@ int __thiscall Recovered_Bulk::m_FUN_100037ba(undefined4 param_2)
   return (int)(param_1);
 
  
-void FUN_1000379c(void)
 
-{
-  FUN_10e9cba0();
-  return;
+
+} catch (...) { }
 }
-
-
-es.
 #line 1 "ENTRY_100037bf"
 
 undefined1 FUN_100037bf(void)
@@ -43475,12 +41679,6 @@ undefined1 FUN_100037c4(void)
 // Reference entry 100037c9; body size 5 bytes.
 #line 1 "ENTRY_100037c9"
 
-void FUN_100037c9(void)
-
-{
-  thunk_FUN_10603120<>();
-  return;
-}
 
 
 // Reference entry 100037ce; body size 5 bytes.
@@ -43511,6 +41709,11 @@ void FUN_100037d3(undefined4 *param_1)
 void FUN_100037dd(undefined4 *param_1,int param_2)
 
 {
+  size_t _Size;
+  byte bVar9;
+  char * pcVar8;
+  undefined4 * puVar6;
+  uint uVar7;
  try {
   undefined4 *_Dst;
   char cVar1;
@@ -43518,13 +41721,7 @@ void FUN_100037dd(undefined4 *param_1,int param_2)
   int *piVar3;
   undefined4 *puVar4;
   int iVar5;
-  uint *puVa
-void FUN_100037c9(void)
-
-{
-  FUN_1060191d();
-  return;
-}
+  uint *puVa;
 
 
 uint auStack_56c [322];
@@ -43954,12 +42151,6 @@ void __fastcall FUN_10003823(int param_1)
 // Reference entry 10003828; body size 5 bytes.
 #line 1 "ENTRY_10003828"
 
-void FUN_10003828(void)
-
-{
-  thunk_FUN_10def0d0();
-  return;
-}
 
 
 // Reference entry 1000382d; body size 5 bytes.
@@ -43990,16 +42181,8 @@ void __thiscall Recovered_Bulk::m_FUN_1000382d(undefined4 *param_2,int *param_3,
   undefined1 *puStack_c;
   int iStack_8;
 
-  uVar3 =
-void FUN_10003828(void)
-
-{
-  FUN_10dff270();
-  return;
-}
 
 
-ra_vftable_RBrowseNodeObj);
   uStack_24 = (undefined4)(param_2);
   iStack_8 = (int)(0);
   iStack_14 = (int)(param_1);
@@ -44194,7 +42377,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10003846(byte param_2)
   thunk_FUN_10b98a00();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x3c);
   }
@@ -44220,12 +42403,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10003850(byte param_2)
 // Reference entry 1000385f; body size 5 bytes.
 #line 1 "ENTRY_1000385f"
 
-void FUN_1000385f(void)
-
-{
-  thunk_FUN_106e6870<>();
-  return;
-}
 
 
 // Reference entry 10003869; body size 5 bytes.
@@ -44253,28 +42430,15 @@ undefined4 * __fastcall FUN_10003869(undefined4 *param_1)
   uVar3 = (undefined4)(thunk_FUN_10c5fc80(uVar2), 0);
   (**(code **)(iVar1 + 0x1c))(&puStack_14,uVar3);
 
-  ((SCStr *)((SCStr *)&puStack_14))
-void FUN_1000385f(void)
 
-{
-  FUN_106e5da0();
-  return;
+
+
+
+} catch (...) { }
 }
-
-
-) { }
-}
-
-
 // Reference entry 1000387d; body size 5 bytes.
 #line 1 "ENTRY_1000387d"
 
-void FUN_1000387d(void)
-
-{
-  thunk_FUN_10368770<>();
-  return;
-}
 
 
 // Reference entry 1000388c; body size 5 bytes.
@@ -44301,16 +42465,9 @@ void __thiscall Recovered_Bulk::m_FUN_10003896(int *param_2,char param_3)
   
   puVar1 = (undefined4 *)(param_1 + 4);
   thunk_FUN_112a7f50(puVar1);
-  piVar2 = (int *)((int *)param_1[0x126])
-void FUN_1000387d(void)
-
-{
-  FUN_10367c1e();
-  return;
-}
+  piVar2 = (int *)((int *)param_1[0x126]);
 
 
-), piVar4 = (int *)(piVar2),(int *)( piVar4) != (int *)(0x0)) {
     piVar2 = (int *)((int *)piVar4[0x36]);
     if ((int *)*piVar4 == (int *)(((param_2)))) {
       if ((int *)(piVar3) == (int *)(0x0)) {
@@ -44324,34 +42481,6 @@ void FUN_1000387d(void)
       return;
     }
   }
-  for (piVar2 = (int *)((int *)param_1[0x127]);(int *)( piVar2) != (int *)(0x0); piVar2 = (int *)piVar2[0x32]) {
-    if ((int *)*piVar2 == (int *)(((param_2)))) goto LAB_1123c06b;
-  }
-  puVar5 = (undefined4 *)(operator_new(0xcc), 0);
-  if ((undefined4 *)(puVar5) == (undefined4 *)(0x0)) {
-    puVar5 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    *(undefined1*)(puVar5 + 0x31) = (undefined1)(0);
-    puVar5[0x32] = (undefined4)(0);
-  }
-  *puVar5 = (undefined4)(param_2);
-  uVar6 = (undefined4)((**(code **)(*(int *)(*(int *)(*param_2 + 4) + (int)param_2) + 0x3c))(), 0);
-  thunk_FUN_1145c250(puVar5 + 1,uVar6,0xc0);
-  puVar5[0x32] = (undefined4)(0);
-  *(char*)(puVar5 + 0x31) = (char)(param_3);
-  puVar5[0x32] = (undefined4)(param_1[0x127]);
-  param_1[0x127] = (undefined4)(puVar5);
-LAB_1123c06b:
-  thunk_FUN_112a8010(puVar1);
-  if (param_3 == '\0') {
-    return;
-  }
-                    
-                    
-  (**(code **)(*(int *)param_1[1] + 4))();
-  return;
-}
 
 
 // Reference entry 100038a5; body size 5 bytes.
@@ -44379,12 +42508,6 @@ int __fastcall FUN_100038a5(int param_1)
 // Reference entry 100038c3; body size 5 bytes.
 #line 1 "ENTRY_100038c3"
 
-void FUN_100038c3(void)
-
-{
-  thunk_FUN_10c69080<>();
-  return;
-}
 
 
 // Reference entry 100038c8; body size 5 bytes.
@@ -44405,20 +42528,8 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_100038c8(byte param_2)
 
 
 // Reference entry 100038d7; body size 5 
-void FUN_100038c3(void)
-
-{
-  FUN_10c68f83();
-  return;
-}
 
 
-param_1)
-
-{
-  SCThreadSafeInc((long *)(param_1 + 4));
-  return;
-}
 
 
 // Reference entry 100038e6; body size 5 bytes.
@@ -44479,7 +42590,7 @@ undefined4 FUN_100038e6(undefined4 param_1)
   thunk_FUN_10ecb760<>(uVar6);
   uVar6 = (undefined4)(thunk_FUN_10eca460(uVar11), 0);
   thunk_FUN_105f6290(uVar6);
-  ppuStack_60 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_60 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_58 = (int *)((int *)0x0);
   piStack_54 = (int *)((int *)0x0);
@@ -44690,12 +42801,6 @@ LAB_106c86f9:
 // Reference entry 10003909; body size 5 bytes.
 #line 1 "ENTRY_10003909"
 
-void FUN_10003909(void)
-
-{
-  thunk_FUN_1062f600<>();
-  return;
-}
 
 
 // Reference entry 1000390e; body size 5 bytes.
@@ -44717,16 +42822,8 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1000390e(undefined4 *param_2,int *
   *puVar2 = (undefined4)(0);
   *param_2 = (undefined4)(uVar1);
 
-  if ((int *)(param_3) != (int 
-void FUN_10003909(void)
-
-{
-  FUN_1062e1ea();
-  return;
-}
 
 
-ined4 *)(param_2);
 
  } catch (...) { }
 }
@@ -44840,12 +42937,6 @@ void FUN_1000395e(void)
 // Reference entry 10003963; body size 5 bytes.
 #line 1 "ENTRY_10003963"
 
-void FUN_10003963(void)
-
-{
-  thunk_FUN_110f9de0();
-  return;
-}
 
 
 // Reference entry 1000396d; body size 5 bytes.
@@ -44873,15 +42964,8 @@ int * __thiscall Recovered_Bulk::m_FUN_1000396d(int *param_2,int param_3,int *pa
     piVar2[1] = (int)((int)param_4);
     piVar2[2] = (int)((int)param_4);
 
-void FUN_10003963(void)
-
-{
-  FUN_110f9a2e();
-  return;
-}
 
 
- *)(param_4);
   }
   if (param_3 == 0) {
     param_2[2] = (int)((int)param_4);
@@ -45053,18 +43137,12 @@ void FUN_10003981(undefined4 param_1,SCStr *param_2)
 // Reference entry 10003986; body size 5 bytes.
 #line 1 "ENTRY_10003986"
 
-void FUN_10003986(void)
-
-{
-  thunk_FUN_10c2c140();
-  return;
-}
 
 
 // Reference entry 1000398b; body size 5 bytes.
 #line 1 "ENTRY_1000398b"
 
-__time64_t FUN_1000398b(int *param_1,int param_2,int param_3)
+template<class... A> int FUN_1000398b(A...)
 
 {
   tm *_Tm;
@@ -45085,18 +43163,9 @@ __time64_t FUN_1000398b(int *param_1,int param_2,int param_3)
     if (6 < uVar2) {
 LAB_10f797ff:
                     
-      thunk_FUN_10baa6
-void FUN_10003986(void)
-
-{
-  FUN_10c2c12c();
-  return;
 }
 
 
-0x1f)) == 0) || (param_2 < _Tm->tm_hour)) ||
-        ((_Tm->tm_hour == param_2 && (param_3 <= _Tm->tm_min)))) &&
-       (uVar2 = (uint)((int)(uVar2 + 1) % 7), uVar2 != _Tm->tm_wday)) {
       do {
         if (6 < uVar2) goto LAB_10f797ff;
         if ((param_1[uVar2 >> 5] & 1 << ((byte)uVar2 & 0x1f)) != 0) {
@@ -45111,13 +43180,6 @@ void FUN_10003986(void)
       } while (uVar2 != _Tm->tm_wday);
     }
   }
-  _Tm->tm_hour = (int)(param_2);
-  _Tm->tm_min = (int)(param_3);
-  _Tm->tm_sec = (int)(0);
-  _Tm->tm_isdst = (int)(-1);
-  _Var3 = (__time64_t)(_mkgmtime64(_Tm), 0);
-  return _Var3;
-}
 
 
 // Reference entry 10003990; body size 5 bytes.
@@ -45966,7 +44028,7 @@ undefined4 FUN_10003a2b(undefined4 param_1)
   *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x11);
   iVar3 = (int)(thunk_FUN_1061c630<>(4), 0);
   thunk_FUN_105f6290(iVar3 + 4);
-  ppuStack_40 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+  ppuStack_40 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
 
   piStack_38 = (int *)((int *)0x0);
   piStack_34 = (int *)((int *)0x0);
@@ -46472,14 +44534,6 @@ void __fastcall FUN_10003aad(int param_1)
 
 // Reference entry 10003ab7; body size 5 bytes.
 #line 1 "ENTRY_10003ab7"
-
-void FUN_10003ab7(void)
-
-{
-  thunk_FUN_10f6c340();
-  return;
-}
-
 
 void FUN_10003ab7(void)
 

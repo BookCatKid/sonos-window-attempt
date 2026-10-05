@@ -1601,8 +1601,7 @@ template<class... A> int FUN_112467f0(A...);
 template<class... A> int FUN_11246800(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_11246960(char *param_1,int param_2,uint param_3,undefined1 *param_4,byte param_5);
 template<class... A> int FUN_11246960(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4
-FUN_11246ae0(char *param_1,undefined4 param_2,char *param_3,undefined1 *param_4,char *param_5);
+template<class... A> int FUN_11246ae0(A...);
 template<class... A> int FUN_11246ae0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_11247240(char *param_1,void *param_2,uint param_3);
 template<class... A> int FUN_11247240(A...);
@@ -2128,7 +2127,7 @@ template<class... A> int FUN_1126fd00(A...);
 template<class... A> int FUN_1126fd10(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_1126fd20(undefined4 param_1);
 template<class... A> int FUN_1126fd20(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ __time64_t FUN_112702a0(void);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ template<class... A> int FUN_112702a0(A...);
 template<class... A> int FUN_112702a0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_112702f0(void);
 template<class... A> int FUN_112702f0(A...);
@@ -2255,7 +2254,7 @@ template<class... A> int FUN_11275ec0(A...);
 template<class... A> int FUN_112762e0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112762f0(void);
 template<class... A> int FUN_112762f0(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ __time64_t FUN_11276300(void);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ template<class... A> int FUN_11276300(A...);
 template<class... A> int FUN_11276300(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __fastcall FUN_11276310(int param_1);
 template<class... A> int FUN_11276310(A...);
@@ -3209,7 +3208,7 @@ template<class... A> int FUN_1129fc00(A...);
 template<class... A> int FUN_1129ff40(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char FUN_1129ffe0(int param_1);
 template<class... A> int FUN_1129ffe0(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ __time64_t FUN_112a0020(void);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ template<class... A> int FUN_112a0020(A...);
 template<class... A> int FUN_112a0020(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112a0030(undefined4 param_1);
 template<class... A> int FUN_112a0030(A...);
@@ -7190,7 +7189,6 @@ void FUN_112406c0(void)
 // Reference entry 11240830; body size 8 bytes.
 #line 1 "ENTRY_11240830"
 
-/* Re
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_11240830(undefined4 param_1)
@@ -7588,7 +7586,6 @@ bool FUN_11241c90(uint param_1)
 // Reference entry 11241cf0; body size 11 bytes.
 #line 1 "ENTRY_11241cf0"
 
-/* Recovere
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_11241cf0(int param_1)
@@ -8721,7 +8718,6 @@ int FUN_11246800(char *param_1,char *param_2,char *param_3,uint param_4)
           else {
             iVar3 = (int)(strncmp(param_1,"&quot;",6), 0);
             if (iVar3 == 0) {
-              cVar1 = (char)('\"');
               iVar3 = (int)(6);
             }
             else {
@@ -8796,7 +8792,6 @@ LAB_11246a0a:
             goto LAB_11246a61;
           }
         }
-        else if (cVar2 == '\"') {
           if (iVar3 + 6U < param_3) {
             pcVar5 = (char *)("&quot;");
             goto LAB_11246a0a;
@@ -8816,6 +8811,7 @@ LAB_11246a0a:
 LAB_11246a75:
         uStack_1 = (undefined1)(1);
         goto LAB_11246a78;
+{
       }
       if (param_3 <= iVar3 + 4U) goto LAB_11246a75;
       puVar4 = (undefined1 *)(&DAT_1188d210);
@@ -8863,45 +8859,8 @@ FUN_11246ae0(char *param_1,undefined4 param_2,char *param_3,undefined1 *param_4,
     cVar1 = (char)(*pcVar5);
   }
   pcVar5 = (char *)(param_1 + 1);
-  if (cVar1 != '\"') {
     pcVar5 = (char *)(param_1);
   }
-  pcVar3 = (char *)(pcVar5);
-  do {
-    cVar2 = (char)(*pcVar3);
-    pcVar3 = (char *)(pcVar3 + 1);
-  } while (cVar2 != '\0');
-  for (iVar4 = (int)((int)pcVar3 - (int)(pcVar5 + 1)); (iVar4 != 0 && (pcVar5[iVar4 + -1] == ' '));
-      iVar4 = iVar4 + -1) {
-  }
-  if (cVar1 == '\"') {
-    if (pcVar5[iVar4 + -1] == '\"') {
-      iVar4 = (int)(iVar4 + -1);
-    }
-    else {
-      pcVar5 = (char *)(pcVar5 + -1);
-      iVar4 = (int)(iVar4 + 1);
-    }
-  }
-  pcVar3 = (char *)(strchr(pcVar5,0x23), 0);
-  if ((char *)(pcVar3) == (char *)(0x0)) {
-    if ((char *)((iVar4 + 1)) < (char *)(param_3)) {
-      param_3 = (char *)((char *)(iVar4 + 1));
-    }
-    thunk_FUN_1145c250(param_2,pcVar5,param_3);
-    *param_4 = (undefined1)(0);
-    return (undefined4)(1);
-  }
-  if (pcVar3 + (1 - (int)pcVar5) < param_3) {
-    param_3 = (char *)(pcVar3 + (1 - (int)pcVar5));
-  }
-  thunk_FUN_1145c250(param_2,pcVar5,param_3);
-  if (pcVar5 + (iVar4 - (int)(pcVar3 + 1)) + 1 < param_5) {
-    param_5 = (char *)(pcVar5 + (iVar4 - (int)(pcVar3 + 1)) + 1);
-  }
-  thunk_FUN_1145c250(param_4,pcVar3 + 1,param_5);
-  return (undefined4)(1);
-}
 
 
 // Reference entry 11247240; body size 129 bytes.
@@ -9221,7 +9180,7 @@ undefined4 * __fastcall FUN_11249020(undefined4 *param_1)
 
 {
   thunk_FUN_11273f80();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RKVReport);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RKVReportDataAppenderCB);
   param_1[4] = (undefined4)(0);
   param_1[5] = (undefined4)(0);
   thunk_FUN_1145c930(param_1 + 4,0);
@@ -9911,7 +9870,7 @@ undefined4 * __fastcall FUN_1124de30(undefined4 *param_1)
 undefined4 * __fastcall FUN_1124de90(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParam);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParamDeepCopy);
   param_1[1] = (undefined4)(0);
   *(undefined2*)(param_1 + 0xc) = (undefined2)(0);
   *(undefined1*)((int)param_1 + 0x32) = (undefined1)(0);
@@ -10027,7 +9986,7 @@ void __fastcall FUN_1124eba0(undefined4 *param_1)
 void __fastcall FUN_1124ebc0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParam);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParamDeepCopy);
   return;
 }
 
@@ -10799,7 +10758,6 @@ void __fastcall FUN_112534c0(int *param_1, unsigned int recovered_unused_stack_0
       }
     }
     pcVar6 = (char *)((char *)thunk_FUN_11252830(), 0);
-    pcVar6 = (char *)(strstr(pcVar6,"parentID=\""), 0);
     if ((char *)(pcVar6) == (char *)(0x0)) {
       acStack_408[0] = (char)('\0');
     }
@@ -10808,24 +10766,23 @@ void __fastcall FUN_112534c0(int *param_1, unsigned int recovered_unused_stack_0
       pcVar8 = (char *)(pcVar6 + 0xc);
       do {
         cVar1 = (char)(pcVar8[-2]);
-        if ((cVar1 == '\0') || (cVar1 == '\"')) break;
         acStack_408[uVar7] = (char)(cVar1);
         cVar1 = (char)(pcVar8[-1]);
-        if ((cVar1 == '\0') || (cVar1 == '\"')) {
           uVar7 = (uint)(uVar7 + 1);
           break;
+{
         }
         acStack_408[uVar7 + 1] = (char)(cVar1);
         cVar1 = (char)(*pcVar8);
-        if ((cVar1 == '\0') || (cVar1 == '\"')) {
           uVar7 = (uint)(uVar7 + 2);
           break;
+{
         }
         pcVar8[(int)((uint)&acStack_408 + -(int)(pcVar6 + 10))] = (char)(cVar1);
         cVar1 = (char)(pcVar8[1]);
-        if ((cVar1 == '\0') || (cVar1 == '\"')) {
           uVar7 = (uint)(uVar7 + 3);
           break;
+{
         }
         pcVar8[(int)((uint)&acStack_408 + (1 - (int)(pcVar6 + 10)))] = (char)(cVar1);
         uVar7 = (uint)(uVar7 + 4);
@@ -12689,7 +12646,6 @@ int FUN_1125ae30(char *param_1,char *param_2,int param_3)
     pcVar7 = (char *)(pcVar2 + 1);
     cVar3 = (char)(*param_1);
     if (cVar3 == '\0') goto LAB_1125aea2;
-    if ((cVar3 == '\"') || (cVar3 == '\\')) {
       if ((char *)((pcVar7)) == (char *)(pcVar6)) break;
       *param_2 = (char)('\\');
       pcVar7 = (char *)(pcVar2 + 2);
@@ -12700,28 +12656,9 @@ int FUN_1125ae30(char *param_1,char *param_2,int param_3)
     *param_2 = (char)(cVar3);
     iVar5 = (int)(iVar5 + 1);
     param_1 = (char *)(param_1 + 1);
+  LAB_1125aea2: ;
     pcVar2 = (char *)(pcVar7);
   }
-  cVar3 = (char)(*param_1);
-  while (cVar3 != '\0') {
-    if ((cVar3 == '\"') || (cVar3 == '\\')) {
-      bVar1 = (bool)(true);
-    }
-    else {
-      bVar1 = (bool)(false);
-    }
-    iVar4 = (int)(iVar5 + 1);
-    if (!bVar1) {
-      iVar4 = (int)(iVar5);
-    }
-    param_1 = (char *)(param_1 + 1);
-    iVar5 = (int)(iVar4 + 1);
-    cVar3 = (char)(*param_1);
-  }
-LAB_1125aea2:
-  *param_2 = (char)('\0');
-  return (int)(iVar5);
-}
 
 
 // Reference entry 1125b270; body size 53 bytes.
@@ -14287,7 +14224,7 @@ void __fastcall FUN_112664f0(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RCountWritableStream);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RWritableStream);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RWritableStreamWithHeaders);
   return;
 }
 
@@ -14804,8 +14741,6 @@ uint FUN_11269520(char *param_1,char *param_2)
         pcVar3 = (char *)(pcVar3 + 1);
       } while (cVar1 != '\0');
       if ((uint)((int)pcVar2 - (int)(param_2 + 1)) <= (uint)((int)pcVar3 - (int)(param_1 + 1))) {
-        in_EAX = (char *)((char *)thunk_FUN_113b9ec0(param_2,param_1 + (((int)pcVar3 - (int)(param_1 + 1)) -
-                                                              ((int)pcVar2 - (int)(param_2 + 1)))), 0);
         if ((char *)(in_EAX) == (char *)(0x0)) {
           return (uint)(1);
         }
@@ -16687,7 +16622,7 @@ undefined4 FUN_1126fd20(undefined4 param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-__time64_t FUN_112702a0(void)
+template<class... A> int FUN_112702a0(A...)
 
 {
   __time64_t _Var1;
@@ -18303,7 +18238,7 @@ void FUN_112762f0(void)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-__time64_t FUN_11276300(void)
+template<class... A> int FUN_11276300(A...)
 
 {
   __time64_t _Var1;
@@ -18348,7 +18283,7 @@ undefined4 * __fastcall FUN_11276400(undefined4 *param_1)
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b880(param_1,LAB_1005a4d9,LAB_1005a3da);
   param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportFileParser);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportFileParserCB);
   param_1[3] = (undefined4)(0);
   *(undefined1*)(param_1 + 4) = (undefined1)(0);
   return (undefined4 *)(param_1);
@@ -18406,7 +18341,7 @@ void __fastcall FUN_112765a0(undefined4 *param_1)
 void __fastcall FUN_112765f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportFileParser);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportFileParserCB);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
   thunk_FUN_112c8b80(param_1[1]);
   param_1[1] = (undefined4)(0);
@@ -21348,7 +21283,7 @@ char * FUN_1127cd30(undefined4 param_1)
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b7a0(param_1,0x7c,LAB_10032394,LAB_10041673);
   param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpdateItemParser);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpdateItemParserCallback);
   return (undefined4 *)(param_1);
 }
 
@@ -22948,7 +22883,6 @@ void FUN_112856a0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 }
 
 
-bytes.
 #line 1 "ENTRY_112859c0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_112859c0(undefined4 param_2,undefined4 param_3,undefined1 param_4)
@@ -23210,7 +23144,7 @@ undefined4 * __fastcall FUN_112878a0(undefined4 *param_1)
 void __fastcall FUN_112878f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RWritableStream);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RWritableStreamWithHeaders);
   return;
 }
 
@@ -24481,7 +24415,7 @@ LAB_1128a930:
 undefined4 * __fastcall FUN_1128aa20(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RJsonDataBinding);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RJsonDataBindingInterface);
   param_1[6] = (undefined4)(0);
   param_1[7] = (undefined4)(0);
   *(undefined2*)(param_1 + 8) = (undefined2)(0);
@@ -26209,7 +26143,6 @@ LAB_1128f75b:
     pcStack_10 = (char *)("<container");
   }
   (**(code **)(*param_1 + 4))();
-  (**(code **)(*param_1 + 4))(" id=\"",5);
   (**(code **)(*param_1 + 0xc))(unaff_EDI);
   (**(code **)(*param_1 + 4))("\" parentID=\"",0xc);
   (**(code **)(*param_1 + 0xc))(pcStack_10);
@@ -26774,7 +26707,6 @@ void __fastcall FUN_11292fc0(undefined4 *param_1)
 }
 
 
-1 "ENTRY_11292fe0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
@@ -31511,7 +31443,7 @@ char FUN_1129ffe0(int param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-__time64_t FUN_112a0020(void)
+template<class... A> int FUN_112a0020(A...)
 
 {
   __time64_t _Var1;

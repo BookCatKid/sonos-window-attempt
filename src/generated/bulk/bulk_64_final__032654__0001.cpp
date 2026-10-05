@@ -4079,7 +4079,6 @@ undefined4 FUN_1115c730(byte *param_1);
 template<class... A> int FUN_1115c730(A...);
 void __fastcall FUN_1115c860(undefined4 *param_1);
 template<class... A> int FUN_1115c860(A...);
-void __fastcall FUN_111
 void __fastcall FUN_1115ccd0(int param_1);
 template<class... A> int FUN_1115ccd0(A...);
 void FUN_1115cd70(int param_1);
@@ -4357,16 +4356,10 @@ int FUN_1117c770(int param_1,int param_2,int param_3,undefined4 param_4);
 template<class... A> int FUN_1117c770(A...);
 int * FUN_1117c810(int *param_1,int *param_2,int *param_3,undefined4 param_4);
 template<class... A> int FUN_1117c810(A...);
-undefined4 *
-FUN_1117c8d0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,undefined4 param_4);
 template<class... A> int FUN_1117c8d0(A...);
-undefined4 *
-FUN_1117ca20(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,undefined4 param_4);
 template<class... A> int FUN_1117ca20(A...);
 int * FUN_1117cb20(int *param_1,int *param_2,int *param_3,undefined4 param_4);
 template<class... A> int FUN_1117cb20(A...);
-undefined4 *
-FUN_1117cbe0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,undefined4 param_4);
 template<class... A> int FUN_1117cbe0(A...);
 void FUN_1117d180(undefined4 param_1,undefined4 *param_2,undefined4 *param_3);
 template<class... A> int FUN_1117d180(A...);
@@ -5185,11 +5178,7 @@ void FUN_111ddf90(int param_1,undefined4 param_2,int param_3,undefined4 param_4,
 template<class... A> int FUN_111ddf90(A...);
 undefined4 * __fastcall FUN_111de4f0(int param_1);
 template<class... A> int FUN_111de4f0(A...);
-undefined4
-FUN_111deb50(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
 template<class... A> int FUN_111deb50(A...);
-undefined4
-FUN_111dec00(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
 template<class... A> int FUN_111dec00(A...);
 void FUN_111df060(int param_1,int param_2,char *param_3);
 template<class... A> int FUN_111df060(A...);
@@ -5484,7 +5473,7 @@ void __fastcall FUN_1113f160(int param_1, unsigned int recovered_unused_stack_0,
     }
     else {
       thunk_FUN_111a4bc0(*(undefined4 *)(param_1 + 0xc),"Object");
-      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObjectIter);
     }
     local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
     thunk_FUN_111a44c0<>(puVar3);
@@ -5558,7 +5547,7 @@ void __fastcall FUN_1113f360(int *param_1, unsigned int recovered_unused_stack_0
     }
     else {
       thunk_FUN_111a4bc0(param_1[3],"Object");
-      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObjectIter);
     }
     local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
     thunk_FUN_111a44c0<>(puVar3);
@@ -6023,7 +6012,7 @@ void __thiscall Recovered_Bulk::m_FUN_1113fe70(int *param_2,undefined4 param_3,i
     }
     else {
       thunk_FUN_111a4bc0(local_14[3],"Object");
-      *puVar4 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
+      *puVar4 = (undefined4)((uint)&ghidra_vftable_SwfObjObjectIter);
     }
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0);
     thunk_FUN_111a44c0<>(puVar4);
@@ -6583,19 +6572,19 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11140fc0(int param_2,char *param_3
   param_1[7] = (undefined4)((uint)&ghidra_vftable_RAddQueueTracksHelper);
   param_1[9] = (undefined4)(0);
   param_1[10] = (undefined4)(0);
-  param_1[8] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[8] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xc] = (undefined4)(0);
   param_1[0xd] = (undefined4)(0);
-  param_1[0xb] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xb] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xf] = (undefined4)(0);
   param_1[0x10] = (undefined4)(0);
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x12] = (undefined4)(0);
   param_1[0x13] = (undefined4)(0);
-  param_1[0x11] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x11] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x15] = (undefined4)(0);
   param_1[0x16] = (undefined4)(0);
-  param_1[0x14] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x14] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x17] = (undefined4)(param_2);
   param_1[0x18] = (undefined4)(param_4);
   param_1[0x19] = (undefined4)(0);
@@ -6605,13 +6594,13 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11140fc0(int param_2,char *param_3
   param_1[0x1d] = (undefined4)(0);
   param_1[0x25] = (undefined4)(0);
   param_1[0x26] = (undefined4)(0);
-  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x28] = (undefined4)(0);
   param_1[0x29] = (undefined4)(0);
-  param_1[0x27] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x27] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x2b] = (undefined4)(0);
   param_1[0x2c] = (undefined4)(0);
-  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   param_1[0x31] = (undefined4)(0);
@@ -6784,10 +6773,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11141590(int param_2,char *param_3
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RUpnpPlaySourceOp);
   param_1[8] = (undefined4)(0);
   param_1[9] = (undefined4)(0);
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xb] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xe] = (undefined4)(0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
@@ -6937,19 +6926,19 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11141c10(int param_2)
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RUpnpReplaceQueueOp);
   param_1[8] = (undefined4)(0);
   param_1[9] = (undefined4)(0);
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xb] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xe] = (undefined4)(0);
   param_1[0xf] = (undefined4)(0);
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x11] = (undefined4)(0);
   param_1[0x12] = (undefined4)(0);
-  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x14] = (undefined4)(0);
   param_1[0x15] = (undefined4)(0);
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   param_1[0x16] = (undefined4)(param_2);
@@ -7205,15 +7194,15 @@ void __fastcall FUN_11142290(undefined4 *param_1)
       free((char *)(iVar1 + -0x10));
     }
   }
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[1] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[1] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
 
@@ -7265,11 +7254,11 @@ void __fastcall FUN_111424d0(undefined4 *param_1)
       free((char *)(iVar1 + -0x10));
     }
   }
-  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x27] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x27] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   thunk_FUN_11142290();
   thunk_FUN_11261f10();
@@ -7311,9 +7300,9 @@ void __fastcall FUN_11142640(undefined4 *param_1)
       free((char *)(iVar1 + -0x10));
     }
   }
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
 
@@ -7341,15 +7330,15 @@ void __fastcall FUN_111427b0(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpReplaceQueueOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RUpnpReplaceQueueOp);
   thunk_FUN_11143380(uVar1);
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
 
@@ -7384,7 +7373,7 @@ int * __thiscall Recovered_Bulk::m_FUN_111428e0(uint param_2)
 
     return (int *)(piVar1);
   }
-  *param_1 = (int)((int)(uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0(uVar2);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -7421,7 +7410,7 @@ int * __thiscall Recovered_Bulk::m_FUN_111429c0(uint param_2)
 
     return (int *)(piVar1);
   }
-  *param_1 = (int)((int)(uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0(uVar2);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -7474,11 +7463,11 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11142c80(byte param_2)
       free((char *)(iVar1 + -0x10));
     }
   }
-  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x27] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x27] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   thunk_FUN_11142290();
   thunk_FUN_11261f10();
@@ -7522,9 +7511,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11142e30(byte param_2)
       free((char *)(iVar1 + -0x10));
     }
   }
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
@@ -7554,15 +7543,15 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11143020(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpReplaceQueueOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RUpnpReplaceQueueOp);
   thunk_FUN_11143380(uVar1);
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
@@ -11644,7 +11633,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1114b0b0(byte param_2)
 // Reference entry 1114b1a0; body size 98 bytes.
 #line 1 "ENTRY_1114b1a0"
 
-undef
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1114b1a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
@@ -12955,7 +12943,6 @@ void __fastcall FUN_1114d550(int param_1)
 // Reference entry 1114d620; body size 65 bytes.
 #line 1 "ENTRY_1114d620"
 
-void __this
 void __thiscall Recovered_Bulk::m_FUN_1114d620(undefined4 param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
@@ -13853,7 +13840,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1114ee60(undefined4 param_2,int *p
   uVar2 = (uint)(DAT_12126b84);
 
   thunk_FUN_111a4bc0(param_2,"UPNPContentProvider");
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCP);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCPPerformActionOp);
   param_1[5] = (undefined4)(0);
 
   iVar1 = (int)(*param_3);
@@ -13895,7 +13882,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1114ef60(undefined4 param_2,int *p
   uVar2 = (uint)(DAT_12126b84);
 
   thunk_FUN_111a4bc0(param_2,"UPNPContentProvider");
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCP);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCPPerformActionOp);
   param_1[5] = (undefined4)(0);
 
   iVar1 = (int)(*param_3);
@@ -14101,7 +14088,7 @@ void __fastcall FUN_1114f3e0(undefined4 *param_1)
   uVar2 = (uint)(DAT_12126b84);
 
   puVar1 = (undefined4 *)((undefined4 *)param_1[5]);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCP);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCPPerformActionOp);
   if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
     iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2), 0);
     if (iVar3 == 0) {
@@ -15638,79 +15625,79 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11152460(int *param_2)
   }
   param_1[0xb] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xe] = (undefined4)(0);
   param_1[0xf] = (undefined4)(0);
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x14] = (undefined4)(0);
   param_1[0x15] = (undefined4)(0);
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x18] = (undefined4)(0);
   param_1[0x19] = (undefined4)(0);
-  param_1[0x17] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x17] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x1e] = (undefined4)(0);
   param_1[0x1f] = (undefined4)(0);
-  param_1[0x1d] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x1d] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x21] = (undefined4)(0);
   param_1[0x22] = (undefined4)(0);
-  param_1[0x20] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x20] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x26] = (undefined4)(0);
   param_1[0x27] = (undefined4)(0);
-  param_1[0x25] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x25] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x2b] = (undefined4)(0);
   param_1[0x2c] = (undefined4)(0);
-  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x30] = (undefined4)(0);
   param_1[0x31] = (undefined4)(0);
-  param_1[0x2f] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x2f] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x35] = (undefined4)(0);
   param_1[0x36] = (undefined4)(0);
-  param_1[0x34] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x34] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x3a] = (undefined4)(0);
   param_1[0x3b] = (undefined4)(0);
-  param_1[0x39] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x39] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x3f] = (undefined4)(0);
   param_1[0x40] = (undefined4)(0);
-  param_1[0x3e] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x3e] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x44] = (undefined4)(0);
   param_1[0x45] = (undefined4)(0);
-  param_1[0x43] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x43] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x49] = (undefined4)(0);
   param_1[0x4a] = (undefined4)(0);
-  param_1[0x48] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x48] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x4e] = (undefined4)(0);
   param_1[0x4f] = (undefined4)(0);
-  param_1[0x4d] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x4d] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x53] = (undefined4)(0);
   param_1[0x54] = (undefined4)(0);
-  param_1[0x52] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x52] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x58] = (undefined4)(0);
   param_1[0x59] = (undefined4)(0);
-  param_1[0x57] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x57] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x5d] = (undefined4)(0);
   param_1[0x5e] = (undefined4)(0);
-  param_1[0x5c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x5c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x62] = (undefined4)(0);
   param_1[99] = (undefined4)(0);
-  param_1[0x61] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x61] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x67] = (undefined4)(0);
   param_1[0x68] = (undefined4)(0);
-  param_1[0x66] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x66] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x6a] = (undefined4)(0);
   param_1[0x6b] = (undefined4)(0);
-  param_1[0x69] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x69] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x6d] = (undefined4)(0);
   param_1[0x6e] = (undefined4)(0);
-  param_1[0x6c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x6c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x70] = (undefined4)(0);
   param_1[0x71] = (undefined4)(0);
-  param_1[0x6f] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x6f] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x73] = (undefined4)(0);
   param_1[0x74] = (undefined4)(0);
-  param_1[0x72] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x72] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x76] = (undefined4)(0);
   param_1[0x77] = (undefined4)(0);
-  param_1[0x75] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x75] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x1b)));
   param_1[6] = (undefined4)(0);
   param_1[8] = (undefined4)(0xff38ff38);
@@ -15816,55 +15803,55 @@ void __fastcall FUN_11152e70(undefined4 *param_1)
     thunk_FUN_110cdcd0();
     thunk_FUN_11140c20(param_1,1);
   }
-  param_1[0x75] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x75] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x72] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x72] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x6f] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x6f] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x6c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x6c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x69] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x69] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x66] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x66] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x61] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x61] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x5c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x5c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x57] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x57] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x52] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x52] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x4d] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x4d] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x48] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x48] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x43] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x43] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x3e] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x3e] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x39] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x39] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x34] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x34] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x2f] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x2f] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x25] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x25] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x20] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x20] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x1d] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x1d] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x17] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x17] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   iVar2 = (int)(param_1[7]);
 
@@ -16980,14 +16967,10 @@ void __thiscall Recovered_Bulk::m_FUN_11155f40(int param_2)
       if (param_2 < 1) {
         if (param_2 < 0) {
           iVar3 = (int)((param_2 + 0x14) * 500);
-          *(short*)(param_1 + 0x26) = (short)(((short)(iVar3 / 100) + (short)(iVar3 >> 0x1f)) -
-               (short)((longlong)iVar3 * 0x51eb851f >> 0x3f));
         }
       }
       else {
         iVar3 = (int)((0x14 - param_2) * 500);
-        *(short*)(param_1 + 0x24) = (short)(((short)(iVar3 / 100) + (short)(iVar3 >> 0x1f)) -
-             (short)((longlong)iVar3 * 0x51eb851f >> 0x3f));
       }
       iVar3 = (int)(thunk_FUN_110cdcd0(), 0);
       uVar1 = (undefined4)(*(undefined4 *)(iVar3 + 0x2c));
@@ -20341,7 +20324,6 @@ void __thiscall Recovered_Bulk::m_FUN_1115cc00(int param_2)
 // Reference entry 1115ccd0; body size 73 bytes.
 #line 1 "ENTRY_1115ccd0"
 
-void __fastcall FUN_111
 void __fastcall FUN_1115ccd0(int param_1)
 
 {
@@ -20788,7 +20770,7 @@ undefined4 * __fastcall FUN_1115dd80(undefined4 *param_1)
   else {
     puVar2[1] = (undefined4)(0);
     puVar2[2] = (undefined4)(0);
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   }
   param_1[0x16] = (undefined4)(puVar2);
   param_1[0x17] = (undefined4)(0);
@@ -20799,7 +20781,7 @@ undefined4 * __fastcall FUN_1115dd80(undefined4 *param_1)
   else {
     puVar2[1] = (undefined4)(0);
     puVar2[2] = (undefined4)(0);
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   }
   param_1[0x18] = (undefined4)(puVar2);
   param_1[0x19] = (undefined4)(0);
@@ -20810,7 +20792,7 @@ undefined4 * __fastcall FUN_1115dd80(undefined4 *param_1)
   else {
     puVar2[1] = (undefined4)(0);
     puVar2[2] = (undefined4)(0);
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   }
   param_1[0x1a] = (undefined4)(puVar2);
   param_1[0x1b] = (undefined4)(0);
@@ -20821,7 +20803,7 @@ undefined4 * __fastcall FUN_1115dd80(undefined4 *param_1)
   else {
     puVar2[1] = (undefined4)(0);
     puVar2[2] = (undefined4)(0);
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   }
   param_1[0x1e] = (undefined4)(puVar2);
   param_1[0x1f] = (undefined4)(0);
@@ -25351,7 +25333,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11165b70(int *param_2,undefined4 *
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RSonosRateItemAndForcePollOp);
   param_1[8] = (undefined4)(0);
   param_1[9] = (undefined4)(0);
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[10] = (undefined4)(0);
 
   iVar2 = (int)((**(code **)(*param_2 + 0x28))(), 0);
@@ -25476,7 +25458,7 @@ void __fastcall FUN_11165e70(undefined4 *param_1)
       free((char *)(iVar1 + -0x10));
     }
   }
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
 
@@ -25515,7 +25497,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11165fc0(byte param_2)
       free((char *)(iVar1 + -0x10));
     }
   }
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
@@ -25676,7 +25658,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11166510(int param_2,char param_3,
   param_1[9] = (undefined4)(param_10);
   param_1[0xb] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   *(undefined1*)(param_1 + 0xd) = (undefined1)(0);
@@ -25833,7 +25815,7 @@ void __fastcall FUN_11166810(undefined4 *param_1)
       free((char *)(iVar4 + -0x10));
     }
   }
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   puVar1 = (undefined4 *)((undefined4 *)param_1[2]);
 
@@ -25902,7 +25884,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111669d0(byte param_2)
       free((char *)(iVar4 + -0x10));
     }
   }
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   puVar1 = (undefined4 *)((undefined4 *)param_1[2]);
 
@@ -26158,7 +26140,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11166fa0(undefined4 param_2,undefi
   uVar1 = (uint)(DAT_12126b84);
 
   thunk_FUN_110d9bc0(param_2,param_3);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvc);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvcCP);
   param_1[0x107] = (undefined4)(0);
 
   thunk_FUN_11255220(uVar1);
@@ -26191,7 +26173,7 @@ void __fastcall FUN_111670a0(undefined4 *param_1)
   uVar2 = (uint)(DAT_12126b84);
 
   puVar1 = (undefined4 *)((undefined4 *)param_1[0x107]);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvc);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvcCP);
   if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
     iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2), 0);
     if (iVar3 == 0) {
@@ -26278,7 +26260,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11167250(byte param_2)
 
   puVar1 = (undefined4 *)((undefined4 *)param_1[0x107]);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvc);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvcCP);
   if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
     iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2), 0);
     if (iVar3 == 0) {
@@ -28092,10 +28074,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1116a9e0(int *param_2,undefined4 p
   param_1[0xc] = (undefined4)(0);
   param_1[0xe] = (undefined4)(0);
   param_1[0xf] = (undefined4)(0);
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x11] = (undefined4)(0);
   param_1[0x12] = (undefined4)(0);
-  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(5)));
   _Src = (char *)((char *)thunk_FUN_11080f50(), 0);
   if (((char *)(_Src) == (char *)(0x0)) || (*_Src == (char)(('\0')))) {
@@ -28343,9 +28325,9 @@ void __fastcall FUN_1116b140(undefined4 *param_1)
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_RReportUnresponsiveZPorMSAIOOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RReportUnresponsiveZPorMSAIOOp);
-  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0(uVar2);
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   iVar1 = (int)(param_1[0xc]);
 
@@ -28549,9 +28531,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1116b7c0(byte param_2)
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_RReportUnresponsiveZPorMSAIOOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RReportUnresponsiveZPorMSAIOOp);
-  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0(uVar2);
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   iVar1 = (int)(param_1[0xc]);
 
@@ -28605,7 +28587,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1116b9d0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_ZPConnRec);
   free((void *)param_1[1]);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[6] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   thunk_FUN_11240850();
@@ -29344,7 +29326,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1116cc00(char *param_2)
       puVar6[5] = (undefined4)(0);
       puVar6[7] = (undefined4)(0);
       puVar6[8] = (undefined4)(0);
-      puVar6[6] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+      puVar6[6] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
       pcVar7 = (char *)(_strdup(pcVar7), 0);
       puVar6[1] = (undefined4)(pcVar7);
     }
@@ -30315,8 +30297,6 @@ void __thiscall Recovered_Bulk::m_FUN_1116e480(undefined4 param_2,undefined4 par
       return;
     }
     _Var8 = (__time64_t)(_time64((__time64_t *)0x0), 0);
-    iVar6 = (int)(((int)((ulonglong)_Var8 >> 0x20) - *(int *)(iVar3 + 0x14)) -
-            (uint)((uint)(uint)(_Var8) < *(uint *)(iVar3 + 0x10)));
     iVar7 = (int)((int)*(uint *)(iVar4 + 0x58) >> 0x1f);
     if ((iVar7 <= iVar6) &&
        ((iVar7 < iVar6 || (*(uint *)(iVar4 + 0x58) <= (uint)(_Var8) - *(uint *)(iVar3 + 0x10))))) {
@@ -31459,8 +31439,6 @@ int * __thiscall Recovered_Bulk::m_FUN_111707f0(int *param_2,int *param_3)
   }
   *(undefined1*)((int)pvVar3 + 0xc) = (undefined1)(0);
 
-  fVar6 = (float)((float)((double)((int)param_1[2] + 1) + (double)(uint)(&DAT_11880fb0)[-((int)param_1[2] + 1 >> 0x1f)]) /
-          (float)((double)(int)param_1[7] + (double)(uint)(&DAT_11880fb0)[-((int)param_1[7] >> 0x1f)]));
   if (*param_1 <= (float)((fVar6)) && (float)(fVar6) != *param_1) {
     thunk_FUN_11173870();
     puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_111704f0(&local_20,(int)pvVar3 + 8,uVar2), 0);
@@ -31722,8 +31700,6 @@ int * __thiscall Recovered_Bulk::m_FUN_11170f30(int *param_2,int *param_3)
   }
   *(char*)((int)pvVar3 + 0xc) = (char)((char)param_3[1]);
 
-  fVar6 = (float)((float)((double)((int)param_1[2] + 1) + (double)(uint)(&DAT_11880fb0)[-((int)param_1[2] + 1 >> 0x1f)]) /
-          (float)((double)(int)param_1[7] + (double)(uint)(&DAT_11880fb0)[-((int)param_1[7] >> 0x1f)]));
   if (*param_1 <= (float)((fVar6)) && (float)(fVar6) != *param_1) {
     thunk_FUN_11173870();
     puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_111704f0(&local_20,(int)pvVar3 + 8,uVar2), 0);
@@ -31828,8 +31804,6 @@ void __thiscall Recovered_Bulk::m_FUN_111712e0(int *param_2,int *param_3)
         *(char*)(piVar4 + 3) = (char)((char)param_2[3]);
 
         fVar7 = (float)(local_14[2]);
-        fVar8 = (float)((float)((double)((int)fVar7 + 1) + (double)(uint)(&DAT_11880fb0)[-((int)fVar7 + 1 >> 0x1f)]) /
-                (float)((double)(int)local_14[7] + (double)(uint)(&DAT_11880fb0)[-((int)local_14[7] >> 0x1f)]));
         if (*local_14 <= (float)((fVar8)) && (float)(fVar8) != *local_14) {
           thunk_FUN_11173870();
           piVar5 = (int *)((int *)thunk_FUN_111704f0((uint)&local_3c,piVar4 + 2,local_18), 0);
@@ -32787,8 +32761,6 @@ int __thiscall Recovered_Bulk::m_FUN_11172b40(int *param_2)
     }
     *(undefined1*)((int)pvVar4 + 0xc) = (undefined1)(0);
 
-    fVar6 = (float)((float)((double)((int)param_1[2] + 1) + (double)(uint)(&DAT_11880fb0)[-((int)param_1[2] + 1 >> 0x1f)]) /
-            (float)((double)(int)param_1[7] + (double)(uint)(&DAT_11880fb0)[-((int)param_1[7] >> 0x1f)]));
     if (*param_1 <= (float)((fVar6)) && (float)(fVar6) != *param_1) {
       thunk_FUN_11173870();
       puVar5 = (undefined4 *)((undefined4 *)thunk_FUN_111704f0(&local_20,(int)pvVar4 + 8,uVar3), 0);
@@ -39373,10 +39345,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1117f1c0(undefined4 param_2,int *p
   *piVar1 = (int)(0);
   param_1[0x14] = (undefined4)(0);
   param_1[0x15] = (undefined4)(0);
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x17] = (undefined4)(0);
   param_1[0x18] = (undefined4)(0);
-  param_1[0x16] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x16] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x19] = (undefined4)(param_5);
   param_1[0x10] = (undefined4)(param_2);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(10)));
@@ -39487,10 +39459,10 @@ undefined4 * __fastcall FUN_1117f4a0(undefined4 *param_1)
   param_1[0x12] = (undefined4)(0);
   param_1[0x14] = (undefined4)(0);
   param_1[0x15] = (undefined4)(0);
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x17] = (undefined4)(0);
   param_1[0x18] = (undefined4)(0);
-  param_1[0x16] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x16] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x19] = (undefined4)(0);
   *(undefined1*)(param_1 + 0x1a) = (undefined1)(0);
   *(undefined2*)((int)param_1 + 0x6a) = (undefined2)(0x101);
@@ -40263,9 +40235,9 @@ void __fastcall FUN_11180a30(undefined4 *param_1)
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMapImpl);
   thunk_FUN_11188990(uVar2);
-  param_1[0x16] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x16] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   iVar1 = (int)(param_1[0x12]);
 
@@ -40643,7 +40615,6 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_111816a0(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -40692,7 +40663,6 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_11181710(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -40741,7 +40711,6 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_11181780(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -40790,7 +40759,6 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_111817f0(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -40839,7 +40807,6 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_11181860(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -40888,7 +40855,6 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_111818d0(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -40937,7 +40903,6 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_11181940(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -40986,7 +40951,6 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_111819b0(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -41035,7 +40999,6 @@ int __thiscall Recovered_Bulk::m_FUN_11181460(int *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_11181a20(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -48487,7 +48450,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1118e1c0(uint *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_1118e320(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -48536,7 +48498,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1118e1c0(uint *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_1118e390(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -48585,7 +48546,6 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1118e1c0(uint *param_2)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_1118e400(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -54577,7 +54537,7 @@ void __fastcall FUN_11199df0(undefined4 *param_1)
       free((char *)(iVar5 + -0x10));
     }
   }
-  param_1[0x11] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x11] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   iVar5 = (int)(param_1[0xb]);
 
@@ -62982,7 +62942,7 @@ undefined4 * FUN_111a5830(undefined4 param_1)
     *(undefined1*)((int)puVar5 + 0x16) = (undefined1)(0);
     puVar3[2] = (undefined4)(puVar5 + 4);
     thunk_FUN_111a74d0("FlashDebugObjects",10,"creating instance 0x%p of class %s",puVar3,"Object");
-    *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObjectIter);
 
     return (undefined4 *)(puVar3);
   }
@@ -64202,7 +64162,7 @@ undefined4 * FUN_111a75d0(undefined4 param_1)
   puVar1 = (undefined4 *)(operator_new(0x20), 0);
   if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
     thunk_FUN_111a4bc0(param_1,"Array");
-    *puVar1 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
+    *puVar1 = (undefined4)((uint)&ghidra_vftable_SwfObjArrayIter);
     puVar1[5] = (undefined4)(0);
     puVar1[6] = (undefined4)(0);
     puVar1[7] = (undefined4)(0);
@@ -64604,7 +64564,7 @@ void __fastcall FUN_111a8370(undefined4 *param_1)
 
   uVar2 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjArrayIter);
   uVar5 = (uint)(0);
   uVar3 = (uint)((int)(param_1[6] - param_1[5]) >> 2);
   if (uVar3 != 0) {
@@ -64863,7 +64823,7 @@ undefined4 * FUN_111a8b80(undefined4 param_1,int param_2,undefined4 param_3)
   }
   else {
     thunk_FUN_111a4bc0(param_1,"Array");
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_SwfObjArrayIter);
     puVar2[5] = (undefined4)(0);
     puVar2[6] = (undefined4)(0);
     puVar2[7] = (undefined4)(0);
@@ -65917,7 +65877,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_111aa740(undefined4 param_2,undefine
   else {
     local_14 = (undefined4 *)(puVar3);
     thunk_FUN_111a4bc0(*(undefined4 *)(param_1 + 0xc),"Array");
-    *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjArrayIter);
     puVar3[5] = (undefined4)(0);
     puVar3[6] = (undefined4)(0);
     puVar3[7] = (undefined4)(0);
@@ -76080,9 +76040,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111c0760(undefined4 param_2,undefi
 
   thunk_FUN_111c3530<>(param_2,param_3,param_4,param_5,param_8);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
   param_1[0x2a5d] = (undefined4)(0);
   param_1[0x2a5e] = (undefined4)(0);
   thunk_FUN_1124e710((int)param_1 + 0x871,(int)param_1 + 0x971,0);
@@ -76148,9 +76108,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111c0900(undefined4 param_2,undefi
 void __fastcall FUN_111c0af0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
   if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
     (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
   }
@@ -76193,9 +76153,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111c0d00(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_111c0db0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
   if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)(((0x0)))) {
     (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
   }
@@ -77650,7 +77610,6 @@ void __fastcall FUN_111c3b30(undefined4 *param_1)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_111c3c00(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -80638,7 +80597,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111c9920(int param_2)
     thunk_FUN_1123fce0(param_2 + 4,uVar1);
   }
   param_1[2] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
   return (undefined4 *)(param_1);
 
@@ -80667,7 +80626,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111c99b0(int param_2)
     thunk_FUN_1123fce0(param_2 + 4,uVar1);
   }
   param_1[2] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
   return (undefined4 *)(param_1);
 
@@ -80696,7 +80655,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111c9a40(int param_2)
     thunk_FUN_1123fce0(param_2 + 4,uVar1);
   }
   param_1[2] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
   return (undefined4 *)(param_1);
 
@@ -80725,7 +80684,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111c9ad0(int param_2)
     thunk_FUN_1123fce0(param_2 + 4,uVar1);
   }
   param_1[2] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
 
   return (undefined4 *)(param_1);
 
@@ -81079,7 +81038,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111ca9f0(int param_2,int param_3,i
     thunk_FUN_1123fce0(param_2 + 4);
   }
   param_1[0xc] = (undefined4)(0);
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
   param_1[0xe] = (undefined4)(param_3);
@@ -81087,7 +81046,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111ca9f0(int param_2,int param_3,i
     thunk_FUN_1123fce0(param_3 + 4);
   }
   param_1[0xf] = (undefined4)(0);
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
   param_1[0x11] = (undefined4)(param_4);
@@ -81095,7 +81054,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111ca9f0(int param_2,int param_3,i
     thunk_FUN_1123fce0(param_4 + 4);
   }
   param_1[0x12] = (undefined4)(0);
-  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(7);
   param_1[0x14] = (undefined4)(param_5);
@@ -81103,7 +81062,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111ca9f0(int param_2,int param_3,i
     thunk_FUN_1123fce0(param_5 + 4);
   }
   param_1[0x15] = (undefined4)(0);
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
   *(undefined1*)(param_1 + 0x16) = (undefined1)(0);
   param_1[0x18] = (undefined4)(0);
@@ -83512,7 +83471,7 @@ void __thiscall Recovered_Bulk::m_FUN_111cf0a0(byte *param_2,undefined4 param_3,
   *(undefined1*)((int)param_1 + 0x222) = (undefined1)(0);
   param_1[0x8a] = (undefined4)(0);
   param_1[0x8b] = (undefined4)(0);
-  param_1[0x89] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x89] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   local_2b0 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_2b0 + 1)) << 8 | (uint)(2)));
   cVar2 = (char)(thunk_FUN_111f1980(param_2,0), 0);
 
@@ -83719,7 +83678,7 @@ void __thiscall Recovered_Bulk::m_FUN_111cf5c0(undefined4 param_2,undefined4 par
   *(undefined1*)((int)param_1 + 0x323) = (undefined1)(0);
   param_1[0xca] = (undefined4)(0);
   param_1[0xcb] = (undefined4)(0);
-  param_1[0xc9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xc9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_2a4 + 0) = (unsigned char)(2);
   *(undefined1*)((int)param_1 + 0x121) = (undefined1)(0);
   *(undefined1*)(param_1 + 8) = (undefined1)(0);
@@ -84331,7 +84290,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111d09c0(int param_2,int param_3,u
     thunk_FUN_1123fce0(param_2 + 4);
   }
   param_1[0xb] = (undefined4)(0);
-  param_1[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
   param_1[0xd] = (undefined4)(param_3);
@@ -84339,7 +84298,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111d09c0(int param_2,int param_3,u
     thunk_FUN_1123fce0(param_3 + 4);
   }
   param_1[0xe] = (undefined4)(0);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
   *(undefined1*)(param_1 + 0xf) = (undefined1)(0);
   pvVar1 = (void *)(operator_new(0x988), 0);
@@ -84384,10 +84343,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111d0b10(int param_2)
   param_1[9] = (undefined4)(*(undefined4 *)(param_2 + 0x151c));
   param_1[0xb] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xe] = (undefined4)(0);
   param_1[0xf] = (undefined4)(0);
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   *(undefined2*)(param_1 + 0x10) = (undefined2)(1);
@@ -84484,10 +84443,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111d0e10(int param_2,undefined4 pa
   param_1[9] = (undefined4)(param_4);
   param_1[0xb] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xe] = (undefined4)(0);
   param_1[0xf] = (undefined4)(0);
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   *(undefined2*)(param_1 + 0x10) = (undefined2)(0x100);
 
   if ((int *)param_1[0xb] != (int *)(((0x0)))) {
@@ -85406,13 +85365,13 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_111d2a50(int param_2,undefined4 pa
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RSonosV11ValidateOp);
   param_1[8] = (undefined4)(0);
   param_1[9] = (undefined4)(0);
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xb] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0xe] = (undefined4)(0);
   param_1[0xf] = (undefined4)(0);
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[0x10] = (undefined4)(param_2);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
@@ -85969,13 +85928,13 @@ void __fastcall FUN_111d38f0(undefined4 *param_1)
   if ((int *)(DAT_122e8d30) != (int *)(0x0)) {
     (**(code **)(*(int *)(uint)(DAT_122e8d30) + 8))(param_1 + 7);
   }
-  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x13] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
 
@@ -86463,9 +86422,9 @@ void __fastcall FUN_111d48a0(undefined4 *param_1)
     (*(code *)**(undefined4 **)param_1[7])(1);
     param_1[7] = (undefined4)(0);
   }
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   return;
@@ -86604,11 +86563,11 @@ void __fastcall FUN_111d4da0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosV11ValidateOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RSonosV11ValidateOp);
-  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RCPValidateOperation);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RCPValidateOperation);
@@ -86626,7 +86585,6 @@ void __fastcall FUN_111d4da0(undefined4 *param_1)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_111d5400(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -86675,7 +86633,6 @@ void __fastcall FUN_111d4da0(undefined4 *param_1)
    std::_Tree_unchecked_const_iterator<class std::_Tree_val<struct std::_Tree_simple_types<unsigned
    int> >,struct std::_Iterator_base0>::operator++(void_)
    
-*/_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> * __thiscall Recovered_Bulk::m_FUN_111d5470(void)
 {
   _Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *this_ = (_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0> *)this;
   char cVar1;
@@ -90923,7 +90880,7 @@ undefined4 * __fastcall FUN_111dd660(int *param_1)
       thunk_FUN_1123fce0(iVar3 + 4);
     }
     puVar5[0xb] = (undefined4)(0);
-    puVar5[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+    puVar5[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
     puVar5[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
     puVar5[0xd] = (undefined4)(iVar4);
@@ -90931,7 +90888,7 @@ undefined4 * __fastcall FUN_111dd660(int *param_1)
       thunk_FUN_1123fce0(iVar4 + 4);
     }
     puVar5[0xe] = (undefined4)(0);
-    puVar5[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+    puVar5[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
     *(undefined1*)(puVar5 + 0xf) = (undefined1)(0);
     pvVar2 = (void *)(operator_new(0x988), 0);
@@ -91348,7 +91305,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_111de2f0(undefined4 *param_2)
       thunk_FUN_1123fce0(iVar3 + 4);
     }
     puVar5[0xb] = (undefined4)(0);
-    puVar5[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+    puVar5[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
     puVar5[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
     puVar5[0xd] = (undefined4)(iVar4);
@@ -91356,7 +91313,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_111de2f0(undefined4 *param_2)
       thunk_FUN_1123fce0(iVar4 + 4);
     }
     puVar5[0xe] = (undefined4)(0);
-    puVar5[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+    puVar5[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
     *(undefined1*)(puVar5 + 0xf) = (undefined1)(0);
     pvVar2 = (void *)(operator_new(0x988), 0);
@@ -91427,10 +91384,10 @@ undefined4 * __fastcall FUN_111de4f0(int param_1)
       puVar6[9] = (undefined4)(uVar2);
       puVar6[0xb] = (undefined4)(0);
       puVar6[0xc] = (undefined4)(0);
-      puVar6[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+      puVar6[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
       puVar6[0xe] = (undefined4)(0);
       puVar6[0xf] = (undefined4)(0);
-      puVar6[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+      puVar6[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
       piVar1 = (int *)(puVar6 + 0xb);
       *(undefined2*)(puVar6 + 0x10) = (undefined2)(0x100);
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
