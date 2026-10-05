@@ -1677,7 +1677,7 @@ template<class... A> int FUN_101d6b00(A...);
 template<class... A> int FUN_101d6b10(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_101d6b20(int param_1);
 template<class... A> int FUN_101d6b20(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __fastcall FUN_101d6b30(int param_1);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_101d6b30(int param_1);
 template<class... A> int FUN_101d6b30(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_101d6b70(int param_1);
 template<class... A> int FUN_101d6b70(A...);
@@ -15396,7 +15396,7 @@ void __fastcall FUN_101d6b20(int param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-uint __fastcall FUN_101d6b30(int param_1)
+bool __fastcall FUN_101d6b30(int param_1)
 
 {
   int iVar1;
@@ -15406,7 +15406,7 @@ uint __fastcall FUN_101d6b30(int param_1)
   iVar1 = (int)(*(int *)(param_1 + 4));
   while( true ) {
     if (iVar1 == 0) {
-      return (uint)(in_EAX & 0xffffff00);
+      return (bool)0;
     }
     LOCK();
     iVar2 = (int)(*(int *)(param_1 + 4));

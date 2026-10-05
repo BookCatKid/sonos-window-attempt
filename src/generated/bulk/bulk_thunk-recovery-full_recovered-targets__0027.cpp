@@ -1076,7 +1076,7 @@ template<class... A> int FUN_111287a0(A...);
 template<class... A> int FUN_111287c0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __fastcall FUN_11128920(int param_1);
 template<class... A> int FUN_11128920(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __fastcall FUN_111289e0(int param_1);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_111289e0(int param_1);
 template<class... A> int FUN_111289e0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_11128fc0(int *param_1);
 template<class... A> int FUN_11128fc0(A...);
@@ -1902,7 +1902,7 @@ template<class... A> int FUN_1115e870(A...);
 template<class... A> int FUN_1115eb50(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __fastcall FUN_1115ed10(int *param_1);
 template<class... A> int FUN_1115ed10(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __fastcall FUN_1115f300(int param_1);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_1115f300(int param_1);
 template<class... A> int FUN_1115f300(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __fastcall FUN_1115f320(int param_1);
 template<class... A> int FUN_1115f320(A...);
@@ -7005,7 +7005,7 @@ LAB_1112897c:
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-uint __fastcall FUN_111289e0(int param_1)
+bool __fastcall FUN_111289e0(int param_1)
 
 {
   uint in_EAX;
@@ -7014,7 +7014,7 @@ uint __fastcall FUN_111289e0(int param_1)
      (in_EAX = (uint)(*(uint *)(param_1 + 0x14)), *(char *)(in_EAX + 0x7ac) == '\0')) {
     return (uint)(((uint)((int3)(in_EAX >> 8)) << 8 | (uint)(1)));
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 
@@ -18037,13 +18037,13 @@ int __fastcall FUN_1115ed10(int *param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-uint __fastcall FUN_1115f300(int param_1)
+bool __fastcall FUN_1115f300(int param_1)
 
 {
   uint in_EAX;
   
   if (*(int *)(param_1 + 0x3c) == -1) {
-    return (uint)(in_EAX & 0xffffff00);
+    return (bool)0;
   }
   return (uint)((uint)(*(int *)(param_1 + 0x3c) != 0));
 }

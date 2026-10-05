@@ -735,7 +735,7 @@ template<class... A> int FUN_10207a90(A...);
 template<class... A> int FUN_10207c80(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __fastcall FUN_10207cc0(int param_1);
 template<class... A> int FUN_10207cc0(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __fastcall FUN_10208910(uint *param_1);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_10208910(uint *param_1);
 template<class... A> int FUN_10208910(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __fastcall FUN_10208cc0(int *param_1);
 template<class... A> int FUN_10208cc0(A...);
@@ -5540,10 +5540,10 @@ int __fastcall FUN_10207cc0(int param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-uint __fastcall FUN_10208910(uint *param_1)
+bool __fastcall FUN_10208910(uint *param_1)
 
 {
-  return (uint)(*param_1 >> 2 & 0xffffff01);
+  return (bool)((*param_1 >> 2) & 1);
 }
 
 

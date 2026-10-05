@@ -4603,7 +4603,7 @@ void __fastcall FUN_104dc2c0(undefined4 *param_1);
 template<class... A> int FUN_104dc2c0(A...);
 void __fastcall FUN_104dc870(int *param_1);
 template<class... A> int FUN_104dc870(A...);
-uint __fastcall FUN_104dd440(int param_1);
+bool __fastcall FUN_104dd440(int param_1);
 template<class... A> int FUN_104dd440(A...);
 int __fastcall FUN_104dd7e0(int *param_1);
 template<class... A> int FUN_104dd7e0(A...);
@@ -114312,7 +114312,7 @@ void __thiscall Recovered_Bulk::m_FUN_104dd350(uint param_2,undefined4 *param_3)
 // Reference entry 104dd440; body size 71 bytes.
 #line 1 "ENTRY_104dd440"
 
-uint __fastcall FUN_104dd440(int param_1)
+bool __fastcall FUN_104dd440(int param_1)
 
 {
   int *piVar1;
@@ -114331,7 +114331,7 @@ uint __fastcall FUN_104dd440(int param_1)
     }
     return (uint)(0);
   }
-  return (uint)(uVar3 & 0xffffff00);
+  return (bool)0;
 }
 
 

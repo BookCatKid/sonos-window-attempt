@@ -2265,7 +2265,7 @@ template<class... A> int FUN_10d39ff0(A...);
 template<class... A> int FUN_10d3a910(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_10d3abf0(void);
 template<class... A> int FUN_10d3abf0(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __fastcall FUN_10d3ac20(int param_1);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_10d3ac20(int param_1);
 template<class... A> int FUN_10d3ac20(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __fastcall FUN_10d3ac40(int param_1);
 template<class... A> int FUN_10d3ac40(A...);
@@ -21862,7 +21862,7 @@ int FUN_10d3abf0(void)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-uint __fastcall FUN_10d3ac20(int param_1)
+bool __fastcall FUN_10d3ac20(int param_1)
 
 {
   uint in_EAX;
@@ -21874,7 +21874,7 @@ uint __fastcall FUN_10d3ac20(int param_1)
     uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x118) + 0x20))(), 0);
     return (uint)(uVar1);
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 

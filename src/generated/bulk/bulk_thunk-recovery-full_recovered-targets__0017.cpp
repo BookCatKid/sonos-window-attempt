@@ -430,13 +430,13 @@ template<class... A> int FUN_10b829f0(A...);
 template<class... A> int FUN_10b82a00(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_10b82a10(int *param_1);
 template<class... A> int FUN_10b82a10(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __fastcall FUN_10b82a80(int param_1);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_10b82a80(int param_1);
 template<class... A> int FUN_10b82a80(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __fastcall FUN_10b82ae0(int param_1);
 template<class... A> int FUN_10b82ae0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint FUN_10b82b00(void);
 template<class... A> int FUN_10b82b00(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __fastcall FUN_10b82b90(int param_1);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_10b82b90(int param_1);
 template<class... A> int FUN_10b82b90(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __fastcall FUN_10b82e30(undefined4 *param_1);
 template<class... A> int FUN_10b82e30(A...);
@@ -2995,7 +2995,7 @@ bool __fastcall FUN_10b82a10(int *param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-uint __fastcall FUN_10b82a80(int param_1)
+bool __fastcall FUN_10b82a80(int param_1)
 
 {
   uint in_EAX;
@@ -3016,7 +3016,7 @@ uint __fastcall FUN_10b82a80(int param_1)
       }
     }
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 
@@ -3065,7 +3065,7 @@ uint FUN_10b82b00(void)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-uint __fastcall FUN_10b82b90(int param_1)
+bool __fastcall FUN_10b82b90(int param_1)
 
 {
   uint uVar1;
@@ -3075,7 +3075,7 @@ uint __fastcall FUN_10b82b90(int param_1)
   if (((uVar1 != 0) && (in_EAX = (uint)(uVar1 & 0xffffff81), (char)in_EAX != -0x80)) && ((uVar1 & 1) == 0)) {
     return (uint)(((uint)((int3)(in_EAX >> 8)) << 8 | (uint)(1)));
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 

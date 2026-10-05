@@ -3397,7 +3397,7 @@ void FUN_10001032(void);
 template<class... A> int FUN_10001032(A...);
 undefined2 __fastcall FUN_10001050(int param_1);
 template<class... A> int FUN_10001050(A...);
-uint __fastcall FUN_10001055(int *param_1);
+bool __fastcall FUN_10001055(int *param_1);
 template<class... A> int FUN_10001055(A...);
 void __fastcall FUN_10001087(undefined4 *param_1);
 template<class... A> int FUN_10001087(A...);
@@ -3679,7 +3679,7 @@ SCIndexRange * FUN_1000195b(SCIndexRange *param_1,SCIndexRange *param_2);
 template<class... A> int FUN_1000195b(A...);
 undefined2 __fastcall FUN_10001988(int param_1);
 template<class... A> int FUN_10001988(A...);
-uint __fastcall FUN_1000198d(int param_1);
+bool __fastcall FUN_1000198d(int param_1);
 template<class... A> int FUN_1000198d(A...);
 void FUN_1000199c(void);
 template<class... A> int FUN_1000199c(A...);
@@ -4178,7 +4178,7 @@ undefined1 * __fastcall FUN_10002964(int param_1);
 template<class... A> int FUN_10002964(A...);
 undefined * FUN_1000296e(undefined *param_1);
 template<class... A> int FUN_1000296e(A...);
-uint __fastcall FUN_10002978(int param_1);
+bool __fastcall FUN_10002978(int param_1);
 template<class... A> int FUN_10002978(A...);
 undefined4 * FUN_10002982(undefined4 *param_1);
 template<class... A> int FUN_10002982(A...);
@@ -4611,7 +4611,7 @@ int * FUN_1000361b(int *param_1,undefined4 param_2,char *param_3);
 template<class... A> int FUN_1000361b(A...);
 undefined4 FUN_1000362f(int *param_1,ushort *param_2);
 template<class... A> int FUN_1000362f(A...);
-uint __fastcall FUN_1000366b(int param_1);
+bool __fastcall FUN_1000366b(int param_1);
 template<class... A> int FUN_1000366b(A...);
 undefined2 __fastcall FUN_10003675(int param_1);
 template<class... A> int FUN_10003675(A...);
@@ -5037,7 +5037,7 @@ undefined2 __fastcall FUN_10001050(int param_1)
 // Reference entry 10001055; body size 5 bytes.
 #line 1 "ENTRY_10001055"
 
-uint __fastcall FUN_10001055(int *param_1)
+bool __fastcall FUN_10001055(int *param_1)
 
 {
   uint in_EAX;
@@ -5045,7 +5045,7 @@ uint __fastcall FUN_10001055(int *param_1)
   if (((*param_1 == (int)((0))) && (in_EAX = (uint)(param_1[1]), in_EAX != 0)) && (*(char *)(in_EAX + 300) == '\x02') ) {
     return (uint)(((uint)((int3)(in_EAX >> 8)) << 8 | (uint)(1)));
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 
@@ -13798,7 +13798,7 @@ undefined2 __fastcall FUN_10001988(int param_1)
 // Reference entry 1000198d; body size 5 bytes.
 #line 1 "ENTRY_1000198d"
 
-uint __fastcall FUN_1000198d(int param_1)
+bool __fastcall FUN_1000198d(int param_1)
 
 {
   uint in_EAX;
@@ -13810,7 +13810,7 @@ uint __fastcall FUN_1000198d(int param_1)
     uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x88) + 0x70))(), 0);
     return (uint)(uVar1);
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 
@@ -28942,10 +28942,10 @@ undefined * FUN_1000296e(undefined *param_1)
 // Reference entry 10002978; body size 5 bytes.
 #line 1 "ENTRY_10002978"
 
-uint __fastcall FUN_10002978(int param_1)
+bool __fastcall FUN_10002978(int param_1)
 
 {
-  return (uint)(*(uint *)(param_1 + 0x14) >> 3 & 0xffffff01);
+  return (bool)((*(uint *)(param_1 + 0x14) >> 3) & 1);
 }
 
 
@@ -40449,7 +40449,7 @@ void __thiscall Recovered_Bulk::m_FUN_10003666(int param_2,ushort param_3)
 // Reference entry 1000366b; body size 5 bytes.
 #line 1 "ENTRY_1000366b"
 
-uint __fastcall FUN_1000366b(int param_1)
+bool __fastcall FUN_1000366b(int param_1)
 
 {
   uint in_EAX;
@@ -40461,7 +40461,7 @@ uint __fastcall FUN_1000366b(int param_1)
     uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x20) + 0x28))(), 0);
     return (uint)(uVar1);
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 

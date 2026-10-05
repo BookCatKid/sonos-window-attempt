@@ -846,7 +846,7 @@ void __fastcall FUN_10f459d0(undefined4 *param_1);
 template<class... A> int FUN_10f459d0(A...);
 SCStr * __stdcall FUN_10f45fa0(SCStr *param_1);
 template<class... A> int FUN_10f45fa0(A...);
-uint __fastcall FUN_10f46d90(int *param_1);
+bool __fastcall FUN_10f46d90(int *param_1);
 template<class... A> int FUN_10f46d90(A...);
 void __stdcall FUN_10f46df0(SCStr *param_1);
 template<class... A> int FUN_10f46df0(A...);
@@ -882,9 +882,9 @@ undefined4 __fastcall FUN_10f4c190(int param_1);
 template<class... A> int FUN_10f4c190(A...);
 void __fastcall FUN_10f4c1d0(int *param_1);
 template<class... A> int FUN_10f4c1d0(A...);
-uint __fastcall FUN_10f4c720(int param_1);
+bool __fastcall FUN_10f4c720(int param_1);
 template<class... A> int FUN_10f4c720(A...);
-uint __fastcall FUN_10f4c770(int param_1);
+bool __fastcall FUN_10f4c770(int param_1);
 template<class... A> int FUN_10f4c770(A...);
 undefined4 __fastcall FUN_10f4c7a0(int param_1);
 template<class... A> int FUN_10f4c7a0(A...);
@@ -1004,7 +1004,7 @@ undefined4 __fastcall FUN_10f790f0(int param_1);
 template<class... A> int FUN_10f790f0(A...);
 SCStr * __stdcall FUN_10f79a90(SCStr *param_1);
 template<class... A> int FUN_10f79a90(A...);
-uint __fastcall FUN_10f79c00(int param_1);
+bool __fastcall FUN_10f79c00(int param_1);
 template<class... A> int FUN_10f79c00(A...);
 bool __fastcall FUN_10f79c20(int param_1);
 template<class... A> int FUN_10f79c20(A...);
@@ -1228,7 +1228,7 @@ SCStr * __stdcall FUN_10f97c80(SCStr *param_1);
 template<class... A> int FUN_10f97c80(A...);
 SCStr * __stdcall FUN_10f98e70(SCStr *param_1);
 template<class... A> int FUN_10f98e70(A...);
-uint __fastcall FUN_10f98e90(int *param_1);
+bool __fastcall FUN_10f98e90(int *param_1);
 template<class... A> int FUN_10f98e90(A...);
 void __stdcall FUN_10f99360(int param_1, unsigned int recovered_unused_stack_0);
 template<class... A> int FUN_10f99360(A...);
@@ -2130,11 +2130,11 @@ void __fastcall FUN_1104f570(int param_1);
 template<class... A> int FUN_1104f570(A...);
 undefined1 __fastcall FUN_1104fdc0(int *param_1);
 template<class... A> int FUN_1104fdc0(A...);
-uint __fastcall FUN_110525b0(int param_1);
+bool __fastcall FUN_110525b0(int param_1);
 template<class... A> int FUN_110525b0(A...);
 byte FUN_11052840(void);
 template<class... A> int FUN_11052840(A...);
-uint __fastcall FUN_110533e0(int param_1);
+bool __fastcall FUN_110533e0(int param_1);
 template<class... A> int FUN_110533e0(A...);
 undefined1 FUN_110547c0(undefined4 param_1);
 template<class... A> int FUN_110547c0(A...);
@@ -2178,7 +2178,7 @@ SCStr * __stdcall FUN_11065310(SCStr *param_1);
 template<class... A> int FUN_11065310(A...);
 void __fastcall FUN_11066d60(undefined4 *param_1);
 template<class... A> int FUN_11066d60(A...);
-uint __fastcall FUN_11067070(int param_1);
+bool __fastcall FUN_11067070(int param_1);
 template<class... A> int FUN_11067070(A...);
 void __fastcall FUN_11067850(undefined4 *param_1);
 template<class... A> int FUN_11067850(A...);
@@ -2316,7 +2316,7 @@ void __stdcall FUN_11082ef0(undefined4 *param_1,undefined4 *param_2);
 template<class... A> int FUN_11082ef0(A...);
 void __stdcall FUN_11082f10(undefined4 *param_1,undefined4 *param_2);
 template<class... A> int FUN_11082f10(A...);
-uint __fastcall FUN_110833f0(int param_1);
+bool __fastcall FUN_110833f0(int param_1);
 template<class... A> int FUN_110833f0(A...);
 void FUN_11090e20(void);
 template<class... A> int FUN_11090e20(A...);
@@ -3961,7 +3961,7 @@ SCStr * __stdcall FUN_10f45fa0(SCStr *param_1)
 // Reference entry 10f46d90; body size 57 bytes.
 #line 1 "ENTRY_10f46d90"
 
-uint __fastcall FUN_10f46d90(int *param_1)
+bool __fastcall FUN_10f46d90(int *param_1)
 
 {
   int iVar1;
@@ -3976,7 +3976,7 @@ uint __fastcall FUN_10f46d90(int *param_1)
       return (uint)(((uint)((int3)((uint)pcVar2 >> 8)) << 8 | (uint)(1)));
     }
   }
-  return (uint)((uint)pcVar2 & 0xffffff00);
+  return (bool)0;
 }
 
 
@@ -4530,7 +4530,7 @@ void __fastcall FUN_10f4c1d0(int *param_1)
 // Reference entry 10f4c720; body size 32 bytes.
 #line 1 "ENTRY_10f4c720"
 
-uint __fastcall FUN_10f4c720(int param_1)
+bool __fastcall FUN_10f4c720(int param_1)
 
 {
   uint in_EAX;
@@ -4545,14 +4545,14 @@ uint __fastcall FUN_10f4c720(int param_1)
     uVar1 = (uint)(thunk_FUN_1115f360(puVar2), 0);
     return (uint)(uVar1);
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 
 // Reference entry 10f4c770; body size 32 bytes.
 #line 1 "ENTRY_10f4c770"
 
-uint __fastcall FUN_10f4c770(int param_1)
+bool __fastcall FUN_10f4c770(int param_1)
 
 {
   uint in_EAX;
@@ -4567,7 +4567,7 @@ uint __fastcall FUN_10f4c770(int param_1)
     uVar1 = (uint)(thunk_FUN_1115f330(puVar2), 0);
     return (uint)(uVar1);
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 
@@ -6963,7 +6963,7 @@ SCStr * __stdcall FUN_10f79a90(SCStr *param_1)
 // Reference entry 10f79c00; body size 25 bytes.
 #line 1 "ENTRY_10f79c00"
 
-uint __fastcall FUN_10f79c00(int param_1)
+bool __fastcall FUN_10f79c00(int param_1)
 
 {
   uint in_EAX;
@@ -6971,7 +6971,7 @@ uint __fastcall FUN_10f79c00(int param_1)
   uint uVar2;
   
   if (*(int *)(param_1 + 8) == 0) {
-    return (uint)(in_EAX & 0xffffff00);
+    return (bool)0;
   }
   uVar1 = (undefined4)(thunk_FUN_111123c0(), 0);
   uVar2 = (uint)(thunk_FUN_110b9840(uVar1), 0);
@@ -9419,14 +9419,14 @@ SCStr * __stdcall FUN_10f98e70(SCStr *param_1)
 // Reference entry 10f98e90; body size 16 bytes.
 #line 1 "ENTRY_10f98e90"
 
-uint __fastcall FUN_10f98e90(int *param_1)
+bool __fastcall FUN_10f98e90(int *param_1)
 
 {
   int iVar1;
   
   iVar1 = (int)((**(code **)(*param_1 + 0x14))(), 0);
   if (iVar1 - 2U != 0) {
-    return (uint)(iVar1 - 2U & 0xffffff00);
+    return (bool)0;
   }
   return (uint)(1);
 }
@@ -21283,7 +21283,7 @@ void __thiscall Recovered_Bulk::m_FUN_11052040(int *param_2)
 // Reference entry 110525b0; body size 20 bytes.
 #line 1 "ENTRY_110525b0"
 
-uint __fastcall FUN_110525b0(int param_1)
+bool __fastcall FUN_110525b0(int param_1)
 
 {
   uint in_EAX;
@@ -21295,7 +21295,7 @@ uint __fastcall FUN_110525b0(int param_1)
     uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x54) + 0xd4))(), 0);
     return (uint)(uVar1);
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 
@@ -21315,7 +21315,7 @@ byte FUN_11052840(void)
 // Reference entry 110533e0; body size 20 bytes.
 #line 1 "ENTRY_110533e0"
 
-uint __fastcall FUN_110533e0(int param_1)
+bool __fastcall FUN_110533e0(int param_1)
 
 {
   uint in_EAX;
@@ -21327,7 +21327,7 @@ uint __fastcall FUN_110533e0(int param_1)
     uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x54) + 0x94))(), 0);
     return (uint)(uVar1);
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 
@@ -22406,7 +22406,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_11067030(SCStr *param_2)
 // Reference entry 11067070; body size 41 bytes.
 #line 1 "ENTRY_11067070"
 
-uint __fastcall FUN_11067070(int param_1)
+bool __fastcall FUN_11067070(int param_1)
 
 {
   char *pcVar1;
@@ -22422,7 +22422,7 @@ LAB_11067096:
     else if (((char *)(pcVar1) != (char *)(0x1)) ||
             ((pcVar1 = (char *)(*(char **)(param_1 + 8), 0),(char *)( pcVar1) != (char *)(0x0) && (*pcVar1 != (char)(('\0')))))) goto LAB_11067096;
   }
-  return (uint)((uint)pcVar1 & 0xffffff00);
+  return (bool)0;
 }
 
 
@@ -24267,7 +24267,7 @@ void __stdcall FUN_11082f10(undefined4 *param_1,undefined4 *param_2)
 // Reference entry 110833f0; body size 38 bytes.
 #line 1 "ENTRY_110833f0"
 
-uint __fastcall FUN_110833f0(int param_1)
+bool __fastcall FUN_110833f0(int param_1)
 
 {
   uint uVar1;
@@ -24277,7 +24277,7 @@ uint __fastcall FUN_110833f0(int param_1)
      (uVar1 = (uint)(**(uint **)(param_1 + 0xa0), 0), *(char *)(uVar1 + 0x560) != '\0')) {
     return (uint)(((uint)((int3)(uVar1 >> 8)) << 8 | (uint)(1)));
   }
-  return (uint)(uVar1 & 0xffffff00);
+  return (bool)0;
 }
 
 

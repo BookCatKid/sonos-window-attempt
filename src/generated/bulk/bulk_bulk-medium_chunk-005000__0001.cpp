@@ -1260,7 +1260,7 @@ undefined4 __stdcall FUN_1068a750(undefined4 param_1,int param_2);
 template<class... A> int FUN_1068a750(A...);
 SCStr * __stdcall FUN_1068a780(SCStr *param_1);
 template<class... A> int FUN_1068a780(A...);
-uint __fastcall FUN_1068ad60(int param_1);
+bool __fastcall FUN_1068ad60(int param_1);
 template<class... A> int FUN_1068ad60(A...);
 void __fastcall FUN_1068c010(int param_1);
 template<class... A> int FUN_1068c010(A...);
@@ -1552,7 +1552,7 @@ SCStr * __stdcall FUN_106dc500(SCStr *param_1);
 template<class... A> int FUN_106dc500(A...);
 undefined4 __fastcall FUN_106dc540(int param_1);
 template<class... A> int FUN_106dc540(A...);
-uint __fastcall FUN_106dc570(undefined4 *param_1);
+bool __fastcall FUN_106dc570(undefined4 *param_1);
 template<class... A> int FUN_106dc570(A...);
 undefined4 __fastcall FUN_106dc5b0(int param_1);
 template<class... A> int FUN_106dc5b0(A...);
@@ -12241,7 +12241,7 @@ SCStr * __stdcall FUN_1068a780(SCStr *param_1)
 // Reference entry 1068ad60; body size 26 bytes.
 #line 1 "ENTRY_1068ad60"
 
-uint __fastcall FUN_1068ad60(int param_1)
+bool __fastcall FUN_1068ad60(int param_1)
 
 {
   uint in_EAX;
@@ -12255,7 +12255,7 @@ uint __fastcall FUN_1068ad60(int param_1)
       return (uint)(((uint)((int3)(iVar1 >> 0xb)) << 8 | (uint)(1)));
     }
   }
-  return (uint)(in_EAX & 0xffffff00);
+  return (bool)0;
 }
 
 
@@ -16671,7 +16671,7 @@ undefined4 __fastcall FUN_106dc540(int param_1)
 // Reference entry 106dc570; body size 49 bytes.
 #line 1 "ENTRY_106dc570"
 
-uint __fastcall FUN_106dc570(undefined4 *param_1)
+bool __fastcall FUN_106dc570(undefined4 *param_1)
 
 {
   int iVar1;
@@ -16685,7 +16685,7 @@ uint __fastcall FUN_106dc570(undefined4 *param_1)
       return (uint)(((uint)((int3)((uint)iVar1 >> 8)) << 8 | (uint)(1)));
     }
   }
-  return (uint)(uVar2 & 0xffffff00);
+  return (bool)0;
 }
 
 
