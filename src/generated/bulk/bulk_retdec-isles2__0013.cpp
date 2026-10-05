@@ -117,6 +117,8 @@ extern "C" int __except_handler3(void);
 extern "C" void __security_check_cookie(size_t);
 extern "C" int __security_cookie;
 using namespace std;
+extern "C" void FUN_10017003(void);
+
 extern int FUN_10006569(...);
 extern int FUN_100108bb(...);
 extern int FUN_10019835(...);
@@ -12225,10 +12227,13 @@ int __stdcall FUN_105ecf80(int a1) {
 
 // Reference entry 105eec00; body size 8 bytes.
 #line 1 "ENTRY_105eec00"
-int FUN_105eec00(void) {
 
-    return (int)(thunk_FUN_101a33f0());
-}
+__declspec(naked) int FUN_105eec00(void)
+
+{ __asm add ecx, 4
+  __asm jmp FUN_10017003 }
+
+
 
 // Reference entry 105ef960; body size 29 bytes.
 #line 1 "ENTRY_105ef960"

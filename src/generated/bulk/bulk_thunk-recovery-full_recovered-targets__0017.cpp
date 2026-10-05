@@ -174,6 +174,8 @@ typedef void *R;
 typedef void *WARNING;
 typedef void *_Ipfx;
 using namespace std;
+extern "C" void FUN_1006da57(void);
+
 struct Recovered_Bulk { char _pad; undefined4 * __thiscall m_FUN_10b84c00(undefined4 param_2); template<class... A> int m_FUN_10b84c00(A...); undefined4 * __thiscall m_FUN_10b84c20(undefined4 param_2); template<class... A> int m_FUN_10b84c20(A...); undefined4 * __thiscall m_FUN_10b84c40(undefined4 param_2); template<class... A> int m_FUN_10b84c40(A...); undefined4 * __thiscall m_FUN_10b84c60(undefined4 param_2); template<class... A> int m_FUN_10b84c60(A...); undefined4 * __thiscall m_FUN_10b85400(undefined4 param_2,undefined4 param_3,void *param_4,size_t param_5,
             void *param_6,size_t param_7); template<class... A> int m_FUN_10b85400(A...); undefined4 * __thiscall m_FUN_10b86c80(undefined4 param_2,undefined4 param_3); template<class... A> int m_FUN_10b86c80(A...); undefined4 * __thiscall m_FUN_10b86cb0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8); template<class... A> int m_FUN_10b86cb0(A...); undefined4 * __thiscall m_FUN_10b86d00(undefined4 param_2,undefined4 param_3,undefined4 param_4,
@@ -2816,21 +2818,12 @@ undefined4 __fastcall FUN_10b803c0(undefined4 *param_1)
 // Reference entry 10b80440; body size 8 bytes.
 #line 1 "ENTRY_10b80440"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10b80440(void)
 
-ulong __fastcall FUN_10b80440(int param_1)
+{ __asm add ecx, 8
+  __asm jmp FUN_1006da57 }
 
-{
-  char *pcVar1;
-  ulong uVar2;
-  
-  pcVar1 = (char *)(strchr((char *)(param_1 + 8),0x2d), 0);
-  if ((char *)(pcVar1) != (char *)(0x0)) {
-    uVar2 = (ulong)(strtoul(pcVar1 + 1,(char **)0x0,0x10), 0);
-    return (ulong)(uVar2);
-  }
-  return (ulong)(0);
-}
+
 
 
 // Reference entry 10b818e0; body size 7 bytes.

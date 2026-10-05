@@ -6112,10 +6112,13 @@ int FUN_1024cdb6(int a1) {
 
 // Reference entry 10258680; body size 8 bytes.
 #line 1 "ENTRY_10258680"
-int FUN_10258680(void) {
 
-    return (int)(FUN_10257e60());
-}
+__declspec(naked) int FUN_10258680(void)
+
+{ __asm add ecx, 8
+  __asm jmp FUN_10257e60 }
+
+
 
 // Reference entry 102634a0; body size 26 bytes.
 #line 1 "ENTRY_102634a0"
