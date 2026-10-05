@@ -809,3 +809,26 @@ non-exact (correct return shape but residual codegen differences) and
 ~250 non-transformed candidates still await other hypotheses. This
 remains object-body coverage only — the whole-file identity gate still
 fails.
+
+## Destructor chain + strlen + vftable corrections (runs 37270323191..37273370369)
+
+Three more systematic decompiler defects verified against pinned MSVC:
+
+- **Derived-dtor tail chains** (commit 1df5557, 5308652): 955 of 959
+  reference `mov [ecx],vftable; jmp base_dtor` bodies now exact. Source
+  had inlined member teardown inside an SEH wrapper; the correct body is
+  the final vftable store plus a call to the base destructor (ILT thunk
+  reloc for 170 of them).
+- **Inlined strlen** (commit ddd5ebf): 488 manual `do{ c=*p; p++; }while`
+  loops rewritten to `strlen()`; MSVC emits the reference idiom
+  (`lea r,[p+1]; byte scan; sub`) exactly.
+- **Wrong vftable names** (commits dd8949a, 1599f0d): the decompiler's
+  guessed class names stored the wrong `ghidra_vftable_*` symbol in
+  ~950 functions; each store renamed to the symbol whose recorded VA
+  equals the reference relocation field.
+
+Verified delta on the touched objects: **105,834 exact function bodies
+after known relocations / 1,078,093 exact reference bytes** (+988
+functions, +14,471 bytes over the 104,846 baseline). Whole-file identity
+still fails; ~124K object-level bodies remain non-exact, dominated by
+structural codegen differences rather than relocation gaps.
