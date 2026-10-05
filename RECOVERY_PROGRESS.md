@@ -787,3 +787,25 @@ reference's call sites, plus `SCStr::int_release`/`int_allocRep` template
 members (38K+ relocs) lacking symbol-table VAs. This is object-body coverage;
 the whole-file identity gate still fails and the placement artifact remains
 partial and nonloadable.
+
+## Out-param return-type recovery (runs 37267159817 + 37268735453)
+
+The `m_FUN_10232050` experiment proved a systematic decompiler defect:
+reference bodies keep the first stack argument in `eax` (the return
+register), so many Ghidra `void` members actually returned their
+out-parameter. A reference-byte scan found 588 same-length non-exact
+candidates whose tails match the return-value pattern; transforming the
+338 that had usable definitions (return type derived from the `[esp+4]`
+parameter, all redeclarations updated, interior bare returns converted)
+regressed 55 already-exact neighbors and was corrected in commit
+`a741182`.
+
+Authoritative result on the 42 affected objects (pinned MSVC run
+37268735453): net **+148 exact bodies / +2,882 verified bytes**, zero
+regressions. Corpus totals now stand at **104,846 exact function bodies
+after known relocations / 1,066,553 exact reference bytes** out of
+230,070 object-compiled functions. ~140 transformed functions remain
+non-exact (correct return shape but residual codegen differences) and
+~250 non-transformed candidates still await other hypotheses. This
+remains object-body coverage only — the whole-file identity gate still
+fails.
