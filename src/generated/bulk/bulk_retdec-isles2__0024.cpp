@@ -918,6 +918,7 @@ extern int FuncInfo_12060288;
 extern int FuncInfo_12060310;
 extern int FuncInfo_1206034c;
 extern int FuncInfo_120604bc;
+extern int FuncInfo_1205d2b4;
 #line 1 "ENTRY_117cd8c2"
 __declspec(naked) int FUN_117cd8c2(int a1) {
     __asm {
@@ -1108,10 +1109,13 @@ int FUN_117cdb4f(int a1) {
 
 // Reference entry 117cdb59; body size 17 bytes.
 #line 1 "ENTRY_117cdb59"
-int FUN_117cdb59(void) {
-
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
+__declspec(naked) int FUN_117cdb59(void) {
+    __asm {
+        xor ecx, eax
+        call thunk_FUN_1148ac28
+        mov eax, offset FuncInfo_1205d2b4
+        jmp FUN_1148cde7
+    }
 }
 
 // Reference entry 117cdb97; body size 27 bytes.
