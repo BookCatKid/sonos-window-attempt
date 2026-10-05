@@ -2755,6 +2755,8 @@ struct SCVtbl_1_1 { virtual void _p0(); virtual int v(int a1); };
 struct SCVtbl_2_0 { virtual void _p0(); virtual void _p1(); virtual int v(void); };
 struct SCVtbl_3_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual int v(void); };
 struct SCVtbl_4_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(int a1); };
+int FUN_1005d201();
+int FUN_10093329();
 #line 1 "ENTRY_10ef5750"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10ef5750(int param_2)
@@ -5640,16 +5642,11 @@ undefined4 FUN_10f04d20(undefined4 param_1)
 // Reference entry 10f04db0; body size 5 bytes.
 #line 1 "ENTRY_10f04db0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 FUN_10f04db0(int *param_1)
 
-{
-  if ((*param_1 == (int)((0))) && (param_1[1] == 0)) {
-    return (undefined4)(1);
-  }
-  return (undefined4)(0);
-}
+{ __asm jmp FUN_1005d201 }
 
 
 // Reference entry 10f05dd0; body size 15 bytes.
@@ -26056,19 +26053,11 @@ void __fastcall FUN_10f73700(undefined4 *param_1)
 // Reference entry 10f73790; body size 5 bytes.
 #line 1 "ENTRY_10f73790"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void FUN_10f73790(void)
 
-{
-  SCStr aSStack_14 [8];
-  undefined4 uStack_c;
-  
-  uStack_c = (undefined4)(0);
-  ((SCStr *)((uint)&aSStack_14))->int_allocRep("SCSettingsReplicator:onRefreshed");
-  thunk_FUN_103d65f0<>();
-  return;
-}
+{ __asm jmp FUN_10093329 }
 
 
 // Reference entry 10f741a0; body size 9 bytes.

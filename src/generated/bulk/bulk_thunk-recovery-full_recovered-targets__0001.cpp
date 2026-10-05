@@ -2611,6 +2611,7 @@ struct SCVtbl_3_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); 
 struct SCVtbl_4_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(int a1); };
 struct SCVtbl_19_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual int v(int a1); };
 struct SCVtbl_20_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual int v(int a1); };
+int FUN_10027714();
 #line 1 "ENTRY_101afc10"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_101afc10(int *param_2)
@@ -8698,36 +8699,11 @@ void FUN_101c69d0(void)
 // Reference entry 101c6ad0; body size 5 bytes.
 #line 1 "ENTRY_101c6ad0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_101c6ad0(int param_1)
 
-{
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  undefined4 *puVar4;
-  
-  iVar1 = (int)(*(int *)(param_1 + 0xc));
-  uVar3 = (uint)(*(int *)(param_1 + 0x10) - iVar1 & 0xfffffffc);
-  iVar2 = (int)(iVar1);
-  if (0xfff < uVar3) {
-    iVar2 = (int)(*(int *)(iVar1 + -4));
-    uVar3 = (uint)(uVar3 + 0x23);
-    if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar2,uVar3);
-  *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x10) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
-  puVar4 = (undefined4 *)((undefined4 *)(param_1 + 4));
-  thunk_FUN_101c4810(puVar4,*puVar4);
-  thunk_FUN_1148a50e(*puVar4,0x18);
-  return;
-}
+{ __asm jmp FUN_10027714 }
 
 
 // Reference entry 101c6bf0; body size 19 bytes.

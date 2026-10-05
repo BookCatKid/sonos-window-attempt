@@ -2682,6 +2682,16 @@ struct SCVtbl_36_1 { virtual void _p0(); virtual void _p1(); virtual void _p2();
 struct SCVtbl_51_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual int v(int a1); };
 struct SCVtbl_54_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual int v(void); };
 struct SCVtbl_110_2 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual void _p74(); virtual void _p75(); virtual void _p76(); virtual void _p77(); virtual void _p78(); virtual void _p79(); virtual void _p80(); virtual void _p81(); virtual void _p82(); virtual void _p83(); virtual void _p84(); virtual void _p85(); virtual void _p86(); virtual void _p87(); virtual void _p88(); virtual void _p89(); virtual void _p90(); virtual void _p91(); virtual void _p92(); virtual void _p93(); virtual void _p94(); virtual void _p95(); virtual void _p96(); virtual void _p97(); virtual void _p98(); virtual void _p99(); virtual void _p100(); virtual void _p101(); virtual void _p102(); virtual void _p103(); virtual void _p104(); virtual void _p105(); virtual void _p106(); virtual void _p107(); virtual void _p108(); virtual void _p109(); virtual int v(int a1,int a2); };
+int FUN_10012049();
+int FUN_1004a188();
+int FUN_100656e5();
+int FUN_100854c7();
+int FUN_1000e10b();
+int FUN_1005bece();
+int FUN_1007abee();
+int FUN_1000d58f();
+int FUN_100514f6();
+int FUN_1001b879();
 #line 1 "ENTRY_10f77360"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -4693,40 +4703,31 @@ void __fastcall FUN_10f82740(undefined4 *param_1)
 // Reference entry 10f82be0; body size 5 bytes.
 #line 1 "ENTRY_10f82be0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10f82be0(undefined4 *param_1)
 
-{
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RAlarmClock);
-  return;
-}
+{ __asm jmp FUN_10012049 }
 
 
 // Reference entry 10f82bf0; body size 5 bytes.
 #line 1 "ENTRY_10f82bf0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10f82bf0(undefined4 *param_1)
 
-{
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RAudioIn);
-  return;
-}
+{ __asm jmp FUN_1004a188 }
 
 
 // Reference entry 10f82c00; body size 5 bytes.
 #line 1 "ENTRY_10f82c00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10f82c00(undefined4 *param_1)
 
-{
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RConnectionManager);
-  return;
-}
+{ __asm jmp FUN_100656e5 }
 
 
 // Reference entry 10f82c10; body size 3 bytes.
@@ -4744,14 +4745,11 @@ void FUN_10f82c10(void)
 // Reference entry 10f82c40; body size 5 bytes.
 #line 1 "ENTRY_10f82c40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10f82c40(undefined4 *param_1)
 
-{
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RGroupRenderingControl);
-  return;
-}
+{ __asm jmp FUN_100854c7 }
 
 
 // Reference entry 10f82c50; body size 7 bytes.
@@ -6494,36 +6492,11 @@ void FUN_10f88830(void)
 // Reference entry 10f888c0; body size 5 bytes.
 #line 1 "ENTRY_10f888c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10f888c0(int param_1)
 
-{
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  undefined4 *puVar4;
-  
-  iVar1 = (int)(*(int *)(param_1 + 0xc));
-  uVar3 = (uint)(*(int *)(param_1 + 0x10) - iVar1 & 0xfffffffc);
-  iVar2 = (int)(iVar1);
-  if (0xfff < uVar3) {
-    iVar2 = (int)(*(int *)(iVar1 + -4));
-    uVar3 = (uint)(uVar3 + 0x23);
-    if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar2,uVar3);
-  *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x10) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
-  puVar4 = (undefined4 *)((undefined4 *)(param_1 + 4));
-  thunk_FUN_10f86c10(puVar4,*puVar4);
-  thunk_FUN_1148a50e(*puVar4,0x24);
-  return;
-}
+{ __asm jmp FUN_1000e10b }
 
 
 // Reference entry 10f888d0; body size 98 bytes.
@@ -9291,123 +9264,11 @@ void __fastcall FUN_10f91c40(undefined4 *param_1)
 // Reference entry 10f929b0; body size 5 bytes.
 #line 1 "ENTRY_10f929b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10f929b0(int param_1)
 
-{
- try {
-  char cVar1;
-  uint uVar2;
-  SCStr aSStack_1c [4];
-  SCStr aSStack_18 [4];
-  undefined4 uStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  ((SCStr *)((SCStr *)&uStack_14))->int_allocRep("CoderInitialized");
-
-  cVar1 = (char)(((SCVtbl_56_2*)(*(int **)(param_1 + 8)))->v((int)(&uStack_14),(int)(uVar2)), 0);
-
-  ((SCStr *)((SCStr *)&uStack_14))->int_release();
-
-  if (cVar1 != '\0') {
-    ((SCStr *)((SCStr *)&uStack_14))->int_allocRep("SuccessfullyTuned");
-
-    cVar1 = (char)(((SCVtbl_56_1*)(*(int **)(param_1 + 8)))->v((int)(&uStack_14)), 0);
-
-    ((SCStr *)((SCStr *)&uStack_14))->int_release();
-
-    if (cVar1 != '\0') {
-      *(undefined1*)(param_1 + 0xc) = (undefined1)(1);
-    }
-    ((SCStr *)((SCStr *)&uStack_14))->int_allocRep("CoderInitialized");
-
-    ((SCVtbl_57_2*)(*(int **)(param_1 + 8)))->v((int)(&uStack_14),(int)(0));
-
-    ((SCStr *)((SCStr *)&uStack_14))->int_release();
-  }
-
-  thunk_FUN_10f925d0();
-  ((SCStr *)((SCStr *)&uStack_14))->int_allocRep("Error");
-
-  ((SCVtbl_55_2*)(*(int **)(param_1 + 8)))->v((int)(&uStack_14),(int)(0));
-
-  ((SCStr *)((SCStr *)&uStack_14))->int_release();
-
-  ((SCStr *)((SCStr *)&uStack_14))->int_allocRep("ExtendedError");
-
-  ((SCVtbl_55_2*)(*(int **)(param_1 + 8)))->v((int)(&uStack_14),(int)(0));
-
-  ((SCStr *)((SCStr *)&uStack_14))->int_release();
-
-  ((SCStr *)((uint)&aSStack_18))->int_allocRep("");
-
-  ((SCStr *)((SCStr *)&uStack_14))->int_allocRep("ErrorString");
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(0xb);
-  ((SCVtbl_53_2*)(*(int **)(param_1 + 8)))->v((int)(&uStack_14),(int)((uint)&aSStack_18));
-  uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(0xc)));
-  ((SCStr *)((SCStr *)&uStack_14))->int_release();
-
-
-  ((SCStr *)((uint)&aSStack_18))->int_release();
-
-  ((SCStr *)((uint)&aSStack_18))->int_allocRep("CoderInitialized");
-
-  ((SCVtbl_57_2*)(*(int **)(param_1 + 8)))->v((int)((uint)&aSStack_18),(int)(0));
-
-  ((SCStr *)((uint)&aSStack_18))->int_release();
-
-  ((SCStr *)((uint)&aSStack_18))->int_allocRep("InConfigMode");
-
-  ((SCVtbl_57_2*)(*(int **)(param_1 + 8)))->v((int)((uint)&aSStack_18),(int)(0));
-
-  ((SCStr *)((uint)&aSStack_18))->int_release();
-
-  ((SCStr *)((uint)&aSStack_18))->int_allocRep("ConfigModeInitiated");
-
-  ((SCVtbl_57_2*)(*(int **)(param_1 + 8)))->v((int)((uint)&aSStack_18),(int)(0));
-
-  ((SCStr *)((uint)&aSStack_18))->int_release();
-
-  ((SCStr *)((uint)&aSStack_18))->int_allocRep("RetryAtNoiseOrRaiseDevice");
-
-  ((SCVtbl_57_2*)(*(int **)(param_1 + 8)))->v((int)((uint)&aSStack_18),(int)(0));
-
-  ((SCStr *)((uint)&aSStack_18))->int_release();
-
-  ((SCStr *)((uint)&aSStack_18))->int_allocRep("RetryAtLearnToTune");
-
-  ((SCVtbl_57_2*)(*(int **)(param_1 + 8)))->v((int)((uint)&aSStack_18),(int)(0));
-
-  ((SCStr *)((uint)&aSStack_18))->int_release();
-
-  ((SCStr *)((uint)&aSStack_18))->int_allocRep("SuccessfullyTuned");
-
-  ((SCVtbl_57_2*)(*(int **)(param_1 + 8)))->v((int)((uint)&aSStack_18),(int)(0));
-
-  ((SCStr *)((uint)&aSStack_18))->int_release();
-
-  ((SCStr *)((uint)&aSStack_18))->int_allocRep("ShowExtendedNoiseError");
-
-  ((SCVtbl_57_2*)(*(int **)(param_1 + 8)))->v((int)((uint)&aSStack_18),(int)(0));
-
-  ((SCStr *)((uint)&aSStack_18))->int_release();
-
-  ((SCStr *)((uint)&aSStack_1c))->int_allocRep("ReEnterConfigModeNeeded");
-
-  ((SCVtbl_57_2*)(*(int **)(param_1 + 8)))->v((int)((uint)&aSStack_1c),(int)(0));
-
-  ((SCStr *)((uint)&aSStack_1c))->int_release();
-
-  return;
-
- } catch (...) { }
-}
+{ __asm jmp FUN_1005bece }
 
 
 // Reference entry 10f93070; body size 45 bytes.
@@ -15069,36 +14930,11 @@ undefined4 * __fastcall FUN_10faea90(undefined4 *param_1)
 // Reference entry 10faf660; body size 5 bytes.
 #line 1 "ENTRY_10faf660"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10faf660(int param_1)
 
-{
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  undefined4 *puVar4;
-  
-  iVar1 = (int)(*(int *)(param_1 + 0x14));
-  uVar3 = (uint)(*(int *)(param_1 + 0x18) - iVar1 & 0xfffffffc);
-  iVar2 = (int)(iVar1);
-  if (0xfff < uVar3) {
-    iVar2 = (int)(*(int *)(iVar1 + -4));
-    uVar3 = (uint)(uVar3 + 0x23);
-    if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar2,uVar3);
-  *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x18) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x1c) = (undefined4)(0);
-  puVar4 = (undefined4 *)((undefined4 *)(param_1 + 0xc));
-  thunk_FUN_10fab810(puVar4,*puVar4);
-  thunk_FUN_1148a50e(*puVar4,0x1c);
-  return;
-}
+{ __asm jmp FUN_1007abee }
 
 
 // Reference entry 10faf7d0; body size 7 bytes.
@@ -15206,103 +15042,31 @@ void __fastcall FUN_10faffb0(int param_1)
 // Reference entry 10fb0060; body size 5 bytes.
 #line 1 "ENTRY_10fb0060"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10fb0060(int param_1)
 
-{
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  undefined4 *puVar4;
-  
-  iVar1 = (int)(*(int *)(param_1 + 0x14));
-  uVar3 = (uint)(*(int *)(param_1 + 0x18) - iVar1 & 0xfffffffc);
-  iVar2 = (int)(iVar1);
-  if (0xfff < uVar3) {
-    iVar2 = (int)(*(int *)(iVar1 + -4));
-    uVar3 = (uint)(uVar3 + 0x23);
-    if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar2,uVar3);
-  *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x18) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x1c) = (undefined4)(0);
-  puVar4 = (undefined4 *)((undefined4 *)(param_1 + 0xc));
-  thunk_FUN_10fab730(puVar4,*puVar4);
-  thunk_FUN_1148a50e(*puVar4,0x1c);
-  return;
-}
+{ __asm jmp FUN_1000d58f }
 
 
 // Reference entry 10fb0070; body size 5 bytes.
 #line 1 "ENTRY_10fb0070"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10fb0070(int param_1)
 
-{
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  undefined4 *puVar4;
-  
-  iVar1 = (int)(*(int *)(param_1 + 0x14));
-  uVar3 = (uint)(*(int *)(param_1 + 0x18) - iVar1 & 0xfffffffc);
-  iVar2 = (int)(iVar1);
-  if (0xfff < uVar3) {
-    iVar2 = (int)(*(int *)(iVar1 + -4));
-    uVar3 = (uint)(uVar3 + 0x23);
-    if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar2,uVar3);
-  *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x18) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x1c) = (undefined4)(0);
-  puVar4 = (undefined4 *)((undefined4 *)(param_1 + 0xc));
-  thunk_FUN_10fab810(puVar4,*puVar4);
-  thunk_FUN_1148a50e(*puVar4,0x1c);
-  return;
-}
+{ __asm jmp FUN_1007abee }
 
 
 // Reference entry 10fb0080; body size 5 bytes.
 #line 1 "ENTRY_10fb0080"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10fb0080(int param_1)
 
-{
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  
-  iVar1 = (int)(*(int *)(param_1 + 0x14));
-  uVar3 = (uint)(*(int *)(param_1 + 0x18) - iVar1 & 0xfffffffc);
-  iVar2 = (int)(iVar1);
-  if (0xfff < uVar3) {
-    iVar2 = (int)(*(int *)(iVar1 + -4));
-    uVar3 = (uint)(uVar3 + 0x23);
-    if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar2,uVar3);
-  *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x18) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x1c) = (undefined4)(0);
-  thunk_FUN_10fafe10();
-  return;
-}
+{ __asm jmp FUN_100514f6 }
 
 
 // Reference entry 10fb0410; body size 7 bytes.
@@ -19612,332 +19376,11 @@ void __fastcall FUN_10fbcf80(undefined4 *param_1)
 // Reference entry 10fbd300; body size 5 bytes.
 #line 1 "ENTRY_10fbd300"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10fbd300(int param_1)
 
-{
- try {
-  int iVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piVar4;
-  int *piVar5;
-  int *piVar6;
-  char *pcVar7;
-  undefined1 auStack_a8 [8];
-  int *piStack_a0;
-  void *pvStack_9c;
-  int *piStack_98;
-  int *piStack_94;
-  int *piStack_90;
-  int *piStack_8c;
-  void *pvStack_88;
-  undefined1 *puStack_84;
-  undefined4 uStack_80;
-  int *piStack_7c;
-  int *piStack_78;
-  int iStack_74;
-  undefined4 uStack_70;
-  int iStack_6c;
-  int *piStack_68;
-  int *piStack_64;
-  int *piStack_60;
-  int *piStack_5c;
-  int *piStack_58;
-  int *piStack_54;
-  int *piStack_50;
-  int *piStack_4c;
-  int iStack_48;
-  int *piStack_44;
-  int *piStack_40;
-  int *piStack_3c;
-  int *piStack_38;
-  int *piStack_34;
-  int *piStack_30;
-  char *pcStack_2c;
-  undefined4 uStack_28;
-  int *piStack_24;
-  undefined4 uStack_20;
-  undefined4 uStack_1c;
-  int *piStack_18;
-  int *piStack_14;
-  int iStack_10;
-  int *piStack_c;
-  int *piStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&piStack_7c);
-
-  iStack_10 = (int)(param_1);
-  ((SCStr *)((SCStr *)&piStack_8))->int_allocRep("LegacyPlayers");
-
-  ((SCVtbl_93_3*)(*(int **)(param_1 + 8)))->v((int)(&piStack_30),(int)(&piStack_8),(int)(uVar2));
-  *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(3);
-  ((SCStr *)((SCStr *)&piStack_8))->int_release();
-  piStack_8 = (int *)((int *)0x0);
-  *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(2);
-  piVar3 = (int *)((int *)((SCVtbl_36_1*)(piStack_30))->v((int)(&piStack_18)), 0);
-  piVar6 = (int *)((int *)*piVar3);
-  *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(4);
-  *piVar3 = (int)(0);
-  piStack_98 = (int *)(piVar6);
-  piStack_78 = (int *)(piVar6);
-  if ((int *)(piVar6) == (int *)(0x0)) {
-    piStack_94 = (int *)((int *)0x0);
-  }
-  else {
-    piStack_94 = (int *)((int *)((SCVtbl_3_0*)(piVar6))->v(), 0);
-  }
-  *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(7);
-  if ((int *)(piStack_18) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piStack_18))->v();
-  }
-  *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(6);
-  iStack_48 = (int)(((SCVtbl_5_0*)(piVar6))->v(), 0);
-  piVar4 = (int *)((int *)thunk_FUN_1037a2b0(&piStack_64), 0);
-  piVar3 = (int *)((int *)*piVar4);
-  *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(8);
-  *piVar4 = (int)(0);
-  piStack_90 = (int *)(piVar3);
-  piStack_7c = (int *)(piVar3);
-  if ((int *)(piVar3) == (int *)(0x0)) {
-    piStack_8c = (int *)((int *)0x0);
-  }
-  else {
-    piStack_8c = (int *)((int *)((SCVtbl_3_0*)(piVar3))->v(), 0);
-  }
-  *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0xb);
-  if ((int *)(piStack_64) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piStack_64))->v();
-  }
-  piStack_18 = (int *)((int *)0x0);
-  if (0 < iStack_48) {
-    iStack_6c = (int)(param_1 + 0xc);
-    iStack_74 = (int)(param_1 + 0x1c);
-    do {
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(10);
-      ((SCVtbl_7_2*)(piVar6))->v((int)(&pcStack_2c),(int)(piStack_18));
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0xc);
-      pcVar7 = (char *)("");
-      if ((char *)(pcStack_2c) != (char *)(0x0)) {
-        pcVar7 = (char *)(pcStack_2c);
-      }
-      ((SCStr *)((SCStr *)&uStack_1c))->int_allocRep(pcVar7);
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0xd);
-      ((SCVtbl_18_2*)(piStack_30))->v((int)(&piStack_44),(int)(&uStack_1c));
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x10);
-      ((SCStr *)((SCStr *)&uStack_1c))->int_release();
-
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0xf);
-      ((SCStr *)((SCStr *)&uStack_20))->int_allocRep("deviceID");
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x11);
-      ((SCVtbl_6_2*)(piStack_44))->v((int)(&uStack_28),(int)(&uStack_20));
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x14);
-      ((SCStr *)((SCStr *)&uStack_20))->int_release();
-
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x13);
-      piVar3 = (int *)((int *)((SCVtbl_110_2*)(piVar3))->v((int)(&piStack_68),(int)(&uStack_28)), 0);
-      piVar6 = (int *)((int *)*piVar3);
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x15);
-      *piVar3 = (int)(0);
-      piStack_60 = (int *)(piVar6);
-      piStack_14 = (int *)(piVar6);
-      if ((int *)(piVar6) == (int *)(0x0)) {
-        piVar3 = (int *)((int *)0x0);
-      }
-      else {
-        piVar3 = (int *)((int *)((SCVtbl_3_0*)(piVar6))->v(), 0);
-      }
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x18);
-      piStack_5c = (int *)(piVar3);
-      if ((int *)(piStack_68) != (int *)(0x0)) {
-        ((SCVtbl_2_0*)(piStack_68))->v();
-      }
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x17);
-      pvStack_9c = (void *)(operator_new(0x48), 0);
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x19);
-      if ((void *)(pvStack_9c) == (void *)(0x0)) {
-        piStack_c = (int *)((int *)0x0);
-      }
-      else {
-        piStack_c = (int *)((int *)thunk_FUN_10f30c90((int)(piVar6)), 0);
-      }
-      piVar6 = (int *)(piStack_c);
-      piVar4 = (int *)((int *)0x0);
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x17);
-      piStack_54 = (int *)((int *)0x0);
-      piStack_58 = (int *)(piStack_c);
-      if ((int *)(piStack_c) != (int *)(0x0)) {
-        piVar4 = (int *)((int *)((SCVtbl_3_0*)(piStack_c))->v(), 0);
-        piStack_54 = (int *)(piVar4);
-        ((SCVtbl_1_0*)(piVar4))->v();
-      }
-      piStack_40 = (int *)((int *)0x0);
-      piStack_3c = (int *)((int *)0x0);
-      piStack_38 = (int *)((int *)0x0);
-      piStack_34 = (int *)((int *)0x0);
-      uStack_80 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_80 + 1)) << 8 | (uint)(0x1b)));
-      if ((int *)(piStack_14) == (int *)(0x0)) {
-        piStack_24 = (int *)((int *)0x0);
-        piStack_14 = (int *)((int *)0x0);
-      }
-      else {
-        piStack_40 = (int *)(piStack_14);
-        piStack_3c = (int *)(piVar3);
-        piStack_24 = (int *)(piVar3);
-        if ((int *)(piVar3) != (int *)(0x0)) {
-          ((SCVtbl_1_0*)(piVar3))->v();
-        }
-      }
-      if ((int *)(piVar6) == (int *)(0x0)) {
-        piStack_8 = (int *)(piStack_34);
-      }
-      else {
-        piStack_38 = (int *)(piVar6);
-        piStack_34 = (int *)(piVar4);
-        piStack_8 = (int *)(piVar4);
-        if ((int *)(piVar4) != (int *)(0x0)) {
-          ((SCVtbl_1_0*)(piVar4))->v();
-        }
-      }
-      if (*(int *)(iStack_10 + 0x10) == 0) {
-        piStack_a0 = (int *)(operator_new(0xc), 0);
-        if ((int *)(piStack_a0) == (int *)(0x0)) {
-          piVar5 = (int *)((int *)0x0);
-        }
-        else {
-          *piStack_a0 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
-          piStack_a0[1] = (int)(0);
-          g_lSCObjCount = (int)(g_lSCObjCount + 1);
-          *piStack_a0 = (int)((int)(uint)&ghidra_vftable_SCOpCBProxy);
-          piStack_a0[2] = (int)(iStack_6c);
-          piVar5 = (int *)(piStack_a0);
-        }
-        piVar6 = (int *)(piStack_c);
-        if ((int *)(piVar5) != *(int **)(iStack_10 + 0x10)) {
-          piVar6 = (int *)(*(int **)(iStack_10 + 0x14), 0);
-          if ((int *)(piVar6) != (int *)(0x0)) {
-            *(undefined4*)(iStack_10 + 0x10) = (undefined4)(0);
-            *(undefined4*)(iStack_10 + 0x14) = (undefined4)(0);
-            ((SCVtbl_2_0*)(piVar6))->v();
-          }
-          *(int**)(iStack_10 + 0x10) = (int *)(piVar5);
-          if ((int *)(piVar5) == (int *)(0x0)) {
-            *(undefined4*)(iStack_10 + 0x14) = (undefined4)(0);
-            piVar6 = (int *)(piStack_c);
-          }
-          else {
-            if (*(code **)(*piVar5 + 0xc) != (code *)((thunk_FUN_101da3a0))) {
-              piVar5 = (int *)((int *)((SCVtbl_3_0*)(piVar5))->v(), 0);
-            }
-            *(int**)(iStack_10 + 0x14) = (int *)(piVar5);
-            ((SCVtbl_1_0*)(piVar5))->v();
-            piVar6 = (int *)(piStack_c);
-          }
-        }
-      }
-      piStack_50 = (int *)(*(int **)(iStack_10 + 0x10), 0);
-      piStack_4c = (int *)((int *)0x0);
-      piStack_c = (int *)(piStack_50);
-      if ((int *)(piStack_50) != (int *)(0x0)) {
-        piStack_4c = (int *)((int *)((SCVtbl_3_0*)(piStack_50))->v(), 0);
-        ((SCVtbl_1_0*)(piStack_4c))->v();
-      }
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x1c);
-      uStack_70 = (undefined4)(((SCVtbl_5_1*)(piVar6))->v((int)(piStack_c)), 0);
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x1d);
-      if ((int *)(piStack_4c) != (int *)(0x0)) {
-        iVar1 = (int)(*piStack_4c);
-        piStack_50 = (int *)((int *)0x0);
-        piStack_4c = (int *)((int *)0x0);
-        ((SCFp_8_0*)(iVar1))->v();
-      }
-      uStack_80 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_80 + 1)) << 8 | (uint)(0x1b)));
-      piVar6 = (int *)((int *)thunk_FUN_10fac550<>((uint)&auStack_a8,&uStack_70), 0);
-      iVar1 = (int)(*piVar6);
-      if ((int *)(piStack_14) != *(int **)(iVar1 + 0xc)) {
-        piVar6 = (int *)(*(int **)(iVar1 + 0x10), 0);
-        if ((int *)(piVar6) != (int *)(0x0)) {
-          *(undefined4*)(iVar1 + 0xc) = (undefined4)(0);
-          *(undefined4*)(iVar1 + 0x10) = (undefined4)(0);
-          ((SCVtbl_2_0*)(piVar6))->v();
-        }
-        *(int**)(iVar1 + 0xc) = (int *)(piStack_14);
-        *(int**)(iVar1 + 0x10) = (int *)(piStack_24);
-        if ((int *)(piStack_24) != (int *)(0x0)) {
-          ((SCVtbl_1_0*)(piStack_24))->v();
-        }
-      }
-      if ((int *)(piStack_38) != *(int **)(iVar1 + 0x14)) {
-        piVar6 = (int *)(*(int **)(iVar1 + 0x18), 0);
-        if ((int *)(piVar6) != (int *)(0x0)) {
-          *(undefined4*)(iVar1 + 0x14) = (undefined4)(0);
-          *(undefined4*)(iVar1 + 0x18) = (undefined4)(0);
-          ((SCVtbl_2_0*)(piVar6))->v();
-        }
-        *(int**)(iVar1 + 0x14) = (int *)(piStack_38);
-        *(int**)(iVar1 + 0x18) = (int *)(piStack_8);
-        if ((int *)(piStack_8) != (int *)(0x0)) {
-          ((SCVtbl_1_0*)(piStack_8))->v();
-        }
-      }
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x1e);
-      if ((int *)(piStack_8) != (int *)(0x0)) {
-        piStack_38 = (int *)((int *)0x0);
-        piStack_34 = (int *)((int *)0x0);
-        ((SCVtbl_2_0*)(piStack_8))->v();
-      }
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x1f);
-      if ((int *)(piStack_24) != (int *)(0x0)) {
-        piStack_40 = (int *)((int *)0x0);
-        piStack_3c = (int *)((int *)0x0);
-        ((SCVtbl_2_0*)(piStack_24))->v();
-      }
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x20);
-      if ((int *)(piVar4) != (int *)(0x0)) {
-        piStack_58 = (int *)((int *)0x0);
-        piStack_54 = (int *)((int *)0x0);
-        ((SCVtbl_2_0*)(piVar4))->v();
-      }
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x21);
-      if ((int *)(piVar3) != (int *)(0x0)) {
-        piStack_60 = (int *)((int *)0x0);
-        piStack_5c = (int *)((int *)0x0);
-        ((SCVtbl_2_0*)(piVar3))->v();
-      }
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x22);
-      ((SCStr *)((SCStr *)&uStack_28))->int_release();
-
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x23);
-      if ((int *)(piStack_44) != (int *)(0x0)) {
-        ((SCVtbl_2_0*)(piStack_44))->v();
-      }
-      *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x24);
-      ((SCStr *)((SCStr *)&pcStack_2c))->int_release();
-      piStack_18 = (int *)((int *)((int)piStack_18 + 1));
-      pcStack_2c = (char *)((char *)0x0);
-      piVar6 = (int *)(piStack_78);
-      piVar3 = (int *)(piStack_7c);
-    } while ((int)piStack_18 < iStack_48);
-  }
-  *(unsigned char*)((char *)&uStack_80 + 0) = (unsigned char)(0x25);
-  if ((int *)(piStack_8c) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piStack_8c))->v();
-  }
-  uStack_80 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_80 + 1)) << 8 | (uint)(0x26)));
-  if ((int *)(piStack_94) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piStack_94))->v();
-  }
-
-  if ((int *)(piStack_30) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piStack_30))->v();
-  }
-
-  return;
-
- } catch (...) { }
-}
+{ __asm jmp FUN_1001b879 }
 
 
 // Reference entry 10fc0740; body size 4 bytes.

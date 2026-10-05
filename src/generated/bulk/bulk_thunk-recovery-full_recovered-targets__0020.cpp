@@ -2823,6 +2823,10 @@ struct SCVtbl_22_0 { virtual void _p0(); virtual void _p1(); virtual void _p2();
 struct SCVtbl_64_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual int v(int a1); };
 struct SCVtbl_68_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual int v(int a1); };
 struct SCVtbl_91_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual void _p31(); virtual void _p32(); virtual void _p33(); virtual void _p34(); virtual void _p35(); virtual void _p36(); virtual void _p37(); virtual void _p38(); virtual void _p39(); virtual void _p40(); virtual void _p41(); virtual void _p42(); virtual void _p43(); virtual void _p44(); virtual void _p45(); virtual void _p46(); virtual void _p47(); virtual void _p48(); virtual void _p49(); virtual void _p50(); virtual void _p51(); virtual void _p52(); virtual void _p53(); virtual void _p54(); virtual void _p55(); virtual void _p56(); virtual void _p57(); virtual void _p58(); virtual void _p59(); virtual void _p60(); virtual void _p61(); virtual void _p62(); virtual void _p63(); virtual void _p64(); virtual void _p65(); virtual void _p66(); virtual void _p67(); virtual void _p68(); virtual void _p69(); virtual void _p70(); virtual void _p71(); virtual void _p72(); virtual void _p73(); virtual void _p74(); virtual void _p75(); virtual void _p76(); virtual void _p77(); virtual void _p78(); virtual void _p79(); virtual void _p80(); virtual void _p81(); virtual void _p82(); virtual void _p83(); virtual void _p84(); virtual void _p85(); virtual void _p86(); virtual void _p87(); virtual void _p88(); virtual void _p89(); virtual void _p90(); virtual int v(int a1); };
+int FUN_10093bc1();
+int FUN_1004075a();
+int FUN_10002171();
+int FUN_10048b08();
 #line 1 "ENTRY_10c8a110"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -12569,136 +12573,11 @@ void __fastcall FUN_10ce0330(int param_1)
 // Reference entry 10ce0a00; body size 5 bytes.
 #line 1 "ENTRY_10ce0a00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10ce0a00(int param_1)
 
-{
- try {
-  char cVar1;
-  uint uVar2;
-  int iVar3;
-  undefined4 uVar4;
-  undefined *puVar5;
-  char *pcVar6;
-  int iVar7;
-  undefined1 *puVar8;
-  char *pcStack_24;
-  undefined4 uStack_20;
-  int iStack_1c;
-  char *pcStack_18;
-  char cStack_11;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  int iStack_8;
-  
-  iStack_8 = (int)(0xffffffff);
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  ((SCStr *)((SCStr *)&pcStack_18))->int_allocRep("");
-  iVar7 = (int)(0);
-  iStack_8 = (int)(0);
-  iStack_1c = (int)(0);
-  cStack_11 = (char)('\0');
-  if ((*(int *)(param_1 + 0x24) != 0) && (iVar3 = (int)(thunk_FUN_10f42870(uVar2), 0), iVar3 != 0)) {
-    cStack_11 = (char)('\x01');
-    iVar7 = (int)(thunk_FUN_11138b60((int)(iVar3 + 0x44)), 0);
-    if (iVar7 == 0) {
-      pcVar6 = (char *)("");
-    }
-    else {
-      pcVar6 = (char *)("");
-      if (*(char **)(iVar7 + 0x5c) != (char *)((0x0))) {
-        pcVar6 = (char *)(*(char **)(iVar7 + 0x5c), 0);
-      }
-    }
-    ((SCStr *)((SCStr *)&pcStack_24))->int_allocRep(pcVar6);
-    *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(1);
-    ((SCStr *)((SCStr *)&pcStack_18))->int_release();
-    pcStack_18 = (char *)(pcStack_24);
-    ((SCStr *)((SCStr *)&pcStack_18))->int_addref();
-    *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(2);
-    ((SCStr *)((SCStr *)&pcStack_24))->int_release();
-    iStack_8 = (int)((uint)*(unsigned short *)((char *)&iStack_8 + 1) << 8);
-    if ((iVar7 == 0) || (cVar1 = (char)(thunk_FUN_110d3ac0(), 0), cVar1 == '\0')) {
-      iStack_1c = (int)(0);
-    }
-    else {
-      iStack_1c = (int)(thunk_FUN_110cb840(), 0);
-    }
-  }
-  pcVar6 = (char *)("");
-  if ((char *)(pcStack_18) != (char *)(0x0)) {
-    pcVar6 = (char *)(pcStack_18);
-  }
-  cVar1 = (char)(thunk_FUN_101a2c70(pcVar6,param_1 + 0x1c), 0);
-  if (((cVar1 == '\0') || ((iVar7 != 0 && (*(int *)((iVar7 + 0x524)) != *(int *)((param_1 + 0x20)))))) || ((*(int *)(param_1 + 0x34) == 0 && (iStack_1c != 0)))) {
-    thunk_FUN_10ce0370();
-    *(int*)(param_1 + 0x34) = (int)(iStack_1c);
-    puVar8 = (undefined1 *)(&DAT_1186d2ee);
-    if (iStack_1c == 0) {
-      if (cStack_11 == '\0') {
-        *(undefined4*)(param_1 + 0x24) = (undefined4)(0);
-        pcVar6 = (char *)("ZoneGroup %s no longer valid");
-      }
-      else {
-        pcVar6 = (char *)("Unsubscribed from AVT for %s");
-      }
-      if (*(undefined1 **)(param_1 + 0x1c) != (undefined1 *)((0x0))) {
-        puVar8 = (undefined1 *)(*(undefined1 **)(param_1 + 0x1c), 0);
-      }
-      uVar4 = (undefined4)(1);
-    }
-    else {
-      iVar3 = (int)(thunk_FUN_1113f590((int)(0)), 0);
-      if (iVar3 != 0) {
-        thunk_FUN_10ce00f0((int)(iStack_1c),(int)(iVar3),(int)(1),(int)(0),(int)(0));
-      }
-      thunk_FUN_1113f0e0((int)(param_1),(int)(0));
-      pcVar6 = (char *)("");
-      if ((char *)(pcStack_18) != (char *)(0x0)) {
-        pcVar6 = (char *)(pcStack_18);
-      }
-      ((SCStr *)((SCStr *)&uStack_20))->int_allocRep(pcVar6);
-      *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(3);
-      if ((SCStr *)&uStack_20 != (SCStr *)(((param_1 + 0x1c)))) {
-        ((SCStr *)((SCStr *)(param_1 + 0x1c)))->int_release();
-        *(undefined4*)(param_1 + 0x1c) = (undefined4)(uStack_20);
-        ((SCStr *)((SCStr *)(param_1 + 0x1c)))->int_addref();
-      }
-      *(unsigned char*)((char *)&iStack_8 + 0) = (unsigned char)(4);
-      ((SCStr *)((SCStr *)&uStack_20))->int_release();
-      iStack_8 = (int)((uint)*(unsigned short *)((char *)&iStack_8 + 1) << 8);
-      if (iVar7 == 0) {
-        uVar4 = (undefined4)(0);
-      }
-      else {
-        uVar4 = (undefined4)(*(undefined4 *)(iVar7 + 0x524));
-      }
-      *(undefined4*)(param_1 + 0x20) = (undefined4)(uVar4);
-      pcVar6 = (char *)("Subscribed to AVT for %s");
-      if (*(undefined1 **)(param_1 + 0x1c) != (undefined1 *)((0x0))) {
-        puVar8 = (undefined1 *)(*(undefined1 **)(param_1 + 0x1c), 0);
-      }
-      uVar4 = (undefined4)(5);
-    }
-    thunk_FUN_112af4e0("SwfObjAVTAdapter",uVar4,pcVar6,puVar8);
-    if (iVar7 == 0) {
-      puVar5 = (undefined *)(&DAT_11884820);
-    }
-    else {
-      puVar5 = (undefined *)((undefined *)thunk_FUN_110cead0(), 0);
-    }
-    thunk_FUN_112af4e0("SwfObjAVTAdapter",5,"AVT pointer updated (%s)\n",puVar5);
-  }
-  iStack_8 = (int)(5);
-  ((SCStr *)((SCStr *)&pcStack_18))->int_release();
-
-  return;
-
- } catch (...) { }
-}
+{ __asm jmp FUN_10093bc1 }
 
 
 // Reference entry 10ce0a10; body size 3 bytes.
@@ -14316,36 +14195,11 @@ void FUN_10ce73b0(void)
 // Reference entry 10ce74b0; body size 5 bytes.
 #line 1 "ENTRY_10ce74b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10ce74b0(int param_1)
 
-{
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  undefined4 *puVar4;
-  
-  iVar1 = (int)(*(int *)(param_1 + 0xc));
-  uVar3 = (uint)(*(int *)(param_1 + 0x10) - iVar1 & 0xfffffffc);
-  iVar2 = (int)(iVar1);
-  if (0xfff < uVar3) {
-    iVar2 = (int)(*(int *)(iVar1 + -4));
-    uVar3 = (uint)(uVar3 + 0x23);
-    if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar2,uVar3);
-  *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x10) = (undefined4)(0);
-  *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
-  puVar4 = (undefined4 *)((undefined4 *)(param_1 + 4));
-  thunk_FUN_10ce5db0(puVar4,*puVar4);
-  thunk_FUN_1148a50e(*puVar4,0x2c);
-  return;
-}
+{ __asm jmp FUN_1004075a }
 
 
 // Reference entry 10ce76d0; body size 7 bytes.
@@ -18237,44 +18091,11 @@ undefined4 * __fastcall FUN_10d085a0(undefined4 *param_1)
 // Reference entry 10d09160; body size 5 bytes.
 #line 1 "ENTRY_10d09160"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10d09160(undefined4 *param_1)
 
-{
- try {
-  uint uVar1;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar1 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAllNodeBrowseItemBase);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCAllNodeBrowseItemBase);
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCAllNodeBrowseItemBase);
-  thunk_FUN_10202e00(uVar1);
-
-  ((SCStr *)((SCStr *)(param_1 + 0x12)))->int_release();
-  param_1[0x12] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 0x11)))->int_release();
-  param_1[0x11] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 0x10)))->int_release();
-  param_1[0x10] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 0xf)))->int_release();
-  param_1[0xf] = (undefined4)(0);
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
-
-  return;
-
- } catch (...) { }
-}
+{ __asm jmp FUN_10002171 }
 
 
 // Reference entry 10d09900; body size 3 bytes.
@@ -24813,42 +24634,11 @@ undefined4 * __fastcall FUN_10d5dd60(undefined4 *param_1)
 // Reference entry 10d5e4d0; body size 5 bytes.
 #line 1 "ENTRY_10d5e4d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_10d5e4d0(undefined4 *param_1)
 
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAddPlaylistDescriptor);
-
-  ((SCStr *)((SCStr *)(param_1 + 7)))->int_release();
-  param_1[7] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 6)))->int_release();
-  param_1[6] = (undefined4)(0);
-  piVar1 = (int *)((int *)param_1[3]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[2] = (undefined4)(0);
-    param_1[3] = (undefined4)(0);
-    ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
-}
+{ __asm jmp FUN_10048b08 }
 
 
 // Reference entry 10d5e550; body size 3 bytes.

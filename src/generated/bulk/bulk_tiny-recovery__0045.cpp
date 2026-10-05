@@ -1789,6 +1789,9 @@ extern int __stdcall FUN_1009aa70(int a1);struct SCVtbl_1_0 { virtual void _p0()
 struct SCVtbl_4_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(void); };
 struct SCVtbl_6_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual int v(void); };
 
+int thunk_FUN_111a66c0();
+int thunk_FUN_1127a080();
+int thunk_FUN_112ef180();
 #line 1 "ENTRY_110045ec"
 
 void __thiscall Recovered_Bulk::m_FUN_110045ec(void)
@@ -5376,11 +5379,9 @@ void FUN_110bedd0(void)
 // Reference entry 110bf9e0; body size 5 bytes.
 #line 1 "ENTRY_110bf9e0"
 
-void FUN_110bf9e0(void)
+__declspec(naked) void FUN_110bf9e0(void)
 
-{
-  FUN_11140c50();
-}
+{ __asm jmp FUN_10051ea6 }
 
 
 // Reference entry 110c0c53; body size 8 bytes.
@@ -6690,11 +6691,9 @@ void FUN_1112c410(void)
 // Reference entry 1112d480; body size 5 bytes.
 #line 1 "ENTRY_1112d480"
 
-void FUN_1112d480(void)
+__declspec(naked) void FUN_1112d480(void)
 
-{
-  FUN_1127a080();
-}
+{ __asm jmp FUN_1002586a }
 
 
 // Reference entry 1112d66c; body size 8 bytes.
@@ -6988,11 +6987,9 @@ void FUN_1113d1a0(void)
 // Reference entry 1113da60; body size 5 bytes.
 #line 1 "ENTRY_1113da60"
 
-void FUN_1113da60(void)
+__declspec(naked) void FUN_1113da60(void)
 
-{
-  FUN_11140c50();
-}
+{ __asm jmp FUN_10051ea6 }
 
 
 // Reference entry 1113f4e0; body size 3 bytes.
@@ -7656,11 +7653,9 @@ void FUN_1115b2f0(void)
 // Reference entry 1115bf00; body size 5 bytes.
 #line 1 "ENTRY_1115bf00"
 
-void FUN_1115bf00(void)
+__declspec(naked) void FUN_1115bf00(void)
 
-{
-  FUN_11140c50();
-}
+{ __asm jmp FUN_10051ea6 }
 
 
 // Reference entry 1115e3e1; body size 11 bytes.
@@ -7786,11 +7781,9 @@ void FUN_11162340(void)
 // Reference entry 111626d0; body size 5 bytes.
 #line 1 "ENTRY_111626d0"
 
-void FUN_111626d0(void)
+__declspec(naked) void FUN_111626d0(void)
 
-{
-  FUN_11140c50();
-}
+{ __asm jmp FUN_10051ea6 }
 
 
 // Reference entry 11162e14; body size 8 bytes.
@@ -8066,11 +8059,9 @@ void FUN_1118f8b0(void)
 // Reference entry 11190170; body size 5 bytes.
 #line 1 "ENTRY_11190170"
 
-void FUN_11190170(void)
+__declspec(naked) void FUN_11190170(void)
 
-{
-  FUN_11140c50();
-}
+{ __asm jmp FUN_10051ea6 }
 
 
 // Reference entry 111903f0; body size 5 bytes.
@@ -8085,11 +8076,9 @@ void FUN_111903f0(void)
 // Reference entry 111918f0; body size 5 bytes.
 #line 1 "ENTRY_111918f0"
 
-void FUN_111918f0(void)
+__declspec(naked) void FUN_111918f0(void)
 
-{
-  FUN_11140c50();
-}
+{ __asm jmp FUN_10051ea6 }
 
 
 // Reference entry 11192150; body size 5 bytes.
@@ -11330,11 +11319,9 @@ undefined4 __stdcall FUN_11297f60(unsigned int recovered_unused_stack_0)
 // Reference entry 1129a920; body size 5 bytes.
 #line 1 "ENTRY_1129a920"
 
-void FUN_1129a920(void)
+__declspec(naked) void FUN_1129a920(void)
 
-{
-  FUN_112e9a70();
-}
+{ __asm jmp FUN_10010a87 }
 
 
 // Reference entry 1129f780; body size 3 bytes.

@@ -2891,6 +2891,16 @@ struct SCVtbl_2_0 { virtual void _p0(); virtual void _p1(); virtual int v(void);
 struct SCVtbl_3_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual int v(void); };
 struct SCVtbl_4_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(int a1); };
 struct SCVtbl_14_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual int v(void); };
+int thunk_FUN_106da350();
+int FUN_100911af();
+int FUN_100679f9();
+int FUN_10003d96();
+int FUN_10074c85();
+int FUN_10002e55();
+int FUN_10064623();
+int FUN_1008cfec();
+int FUN_1000d2bf();
+int FUN_1005f5e2();
 #line 1 "ENTRY_106bcd90"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -3490,25 +3500,21 @@ undefined1 __fastcall FUN_106c4480(int param_1)
 // Reference entry 106c6c00; body size 5 bytes.
 #line 1 "ENTRY_106c6c00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106c6c00(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0x54));
-}
+{ __asm jmp FUN_100911af }
 
 
 // Reference entry 106c6c10; body size 5 bytes.
 #line 1 "ENTRY_106c6c10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106c6c10(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0x54));
-}
+{ __asm jmp FUN_100911af }
 
 
 // Reference entry 106c7450; body size 8 bytes.
@@ -5726,101 +5732,21 @@ void FUN_106d7660(void)
 // Reference entry 106d7ac0; body size 5 bytes.
 #line 1 "ENTRY_106d7ac0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_106d7ac0(undefined4 *param_1)
 
-{
- try {
-  uint uVar1;
-  undefined4 *puStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar1 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCTestPoint);
-  puStack_14 = (undefined4 *)(param_1);
-  if (param_1[6] != 0) {
-    ((SCStr *)((SCStr *)&puStack_14))->m_op_ctor((SCStr *)(param_1 + 1));
-    thunk_FUN_103d3340((int)(&puStack_14));
-
-    ((SCStr *)((SCStr *)&puStack_14))->int_release();
-  }
-  param_1[6] = (undefined4)(0);
-  if ((undefined4 *)param_1[5] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[5])(1,uVar1);
-  }
-  param_1[5] = (undefined4)(0);
-  thunk_FUN_112a7f20(param_1 + 0xb);
-  thunk_FUN_112a7c30(param_1 + 0xd);
-  thunk_FUN_10246170((int)(param_1 + 9),(int)(*(undefined4 *)(param_1[9] + 4)));
-  thunk_FUN_1148a50e(param_1[9],0x28);
-  thunk_FUN_10246290((int)(param_1 + 7),(int)(*(undefined4 *)(param_1[7] + 4)));
-  thunk_FUN_1148a50e(param_1[7],0x18);
-
-  ((SCStr *)((SCStr *)(param_1 + 2)))->int_release();
-  param_1[2] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
-}
+{ __asm jmp FUN_100679f9 }
 
 
 // Reference entry 106d7ad0; body size 5 bytes.
 #line 1 "ENTRY_106d7ad0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_106d7ad0(undefined4 *param_1)
 
-{
- try {
-  uint uVar1;
-  undefined4 *puStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar1 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCTestPoint);
-  puStack_14 = (undefined4 *)(param_1);
-  if (param_1[6] != 0) {
-    ((SCStr *)((SCStr *)&puStack_14))->m_op_ctor((SCStr *)(param_1 + 1));
-    thunk_FUN_103d3340((int)(&puStack_14));
-
-    ((SCStr *)((SCStr *)&puStack_14))->int_release();
-  }
-  param_1[6] = (undefined4)(0);
-  if ((undefined4 *)param_1[5] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[5])(1,uVar1);
-  }
-  param_1[5] = (undefined4)(0);
-  thunk_FUN_112a7f20(param_1 + 0xb);
-  thunk_FUN_112a7c30(param_1 + 0xd);
-  thunk_FUN_10246170((int)(param_1 + 9),(int)(*(undefined4 *)(param_1[9] + 4)));
-  thunk_FUN_1148a50e(param_1[9],0x28);
-  thunk_FUN_10246290((int)(param_1 + 7),(int)(*(undefined4 *)(param_1[7] + 4)));
-  thunk_FUN_1148a50e(param_1[7],0x18);
-
-  ((SCStr *)((SCStr *)(param_1 + 2)))->int_release();
-  param_1[2] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
-  param_1[1] = (undefined4)(0);
-
-  return;
-
- } catch (...) { }
-}
+{ __asm jmp FUN_100679f9 }
 
 
 // Reference entry 106d7ae0; body size 21 bytes.
@@ -7669,62 +7595,17 @@ void FUN_106da4a0(void)
 // Reference entry 106da4e0; body size 5 bytes.
 #line 1 "ENTRY_106da4e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void __fastcall  FUN_106da4e0(int *param_1){
-  int *piVar1;
-  int iVar2;
-  int *piVar3;
-  
-  iVar2 = (int)(*param_1);
-  piVar3 = (int *)(*(int **)(iVar2 + 4), 0);
-  if (*(char *)((int)*(int **)(iVar2 + 4) + 0xd) == '\0') {
-    do {
-      thunk_FUN_106d9220((int)(param_1),(int)(piVar3[2]));
-      piVar1 = (int *)((int *)*piVar3);
-      thunk_FUN_1148a50e(piVar3,0x18);
-      piVar3 = (int *)(piVar1);
-    } while (*(char *)((int)piVar1 + 0xd) == '\0');
-    iVar2 = (int)(*param_1);
-  }
-  thunk_FUN_1148a50e(iVar2,0x18);
-  return;
-}
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */void __fastcall  FUN_106da4e0(int *param_1){ __asm jmp FUN_10003d96 }
 
 
 // Reference entry 106da530; body size 5 bytes.
 #line 1 "ENTRY_106da530"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_106da530(SCStr *param_1)
 
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  thunk_FUN_10dec580((int)(param_1 + 0x10),(int)(*(undefined4 *)(*(int *)(param_1 + 0x10) + 4)));
-  thunk_FUN_1148a50e(*(undefined4 *)(param_1 + 0x10),0x1c,uVar2);
-  piVar1 = (int *)(*(int **)(param_1 + 0xc), 0);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *(undefined4*)(param_1 + 8) = (undefined4)(0);
-    *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-
-  ((SCStr *)(param_1))->int_release();
-  *(undefined4*)param_1 = (undefined4)((SCStr *)(0));
-
-  return;
-
- } catch (...) { }
-}
+{ __asm jmp FUN_10074c85 }
 
 
 // Reference entry 106da990; body size 14 bytes.
@@ -14011,73 +13892,61 @@ undefined4 FUN_106f1f80(void)
 // Reference entry 106f1fb0; body size 5 bytes.
 #line 1 "ENTRY_106f1fb0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f1fb0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 106f1fc0; body size 5 bytes.
 #line 1 "ENTRY_106f1fc0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f1fc0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10064623 }
 
 
 // Reference entry 106f1fd0; body size 5 bytes.
 #line 1 "ENTRY_106f1fd0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f1fd0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 106f1fe0; body size 5 bytes.
 #line 1 "ENTRY_106f1fe0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f1fe0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10064623 }
 
 
 // Reference entry 106f1ff0; body size 5 bytes.
 #line 1 "ENTRY_106f1ff0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f1ff0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 106f2000; body size 5 bytes.
 #line 1 "ENTRY_106f2000"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f2000(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10064623 }
 
 
 // Reference entry 106f2120; body size 7 bytes.
@@ -14095,85 +13964,71 @@ undefined1 __fastcall FUN_106f2120(int param_1)
 // Reference entry 106f2130; body size 5 bytes.
 #line 1 "ENTRY_106f2130"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f2130(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 106f2140; body size 5 bytes.
 #line 1 "ENTRY_106f2140"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f2140(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 106f2150; body size 5 bytes.
 #line 1 "ENTRY_106f2150"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f2150(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 106f2160; body size 5 bytes.
 #line 1 "ENTRY_106f2160"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f2160(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 106f2170; body size 5 bytes.
 #line 1 "ENTRY_106f2170"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f2170(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 106f2180; body size 5 bytes.
 #line 1 "ENTRY_106f2180"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f2180(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 106f2190; body size 5 bytes.
 #line 1 "ENTRY_106f2190"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106f2190(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 106f2250; body size 11 bytes.
@@ -15021,61 +14876,51 @@ undefined4 FUN_106fcea0(void)
 // Reference entry 106fceb0; body size 5 bytes.
 #line 1 "ENTRY_106fceb0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106fceb0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 106fcec0; body size 5 bytes.
 #line 1 "ENTRY_106fcec0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106fcec0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10064623 }
 
 
 // Reference entry 106fcee0; body size 5 bytes.
 #line 1 "ENTRY_106fcee0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106fcee0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 106fcef0; body size 5 bytes.
 #line 1 "ENTRY_106fcef0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106fcef0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 106fcf00; body size 5 bytes.
 #line 1 "ENTRY_106fcf00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_106fcf00(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 106fcf10; body size 18 bytes.
@@ -15624,59 +15469,11 @@ void __fastcall FUN_106fe9a0(undefined4 *param_1)
 // Reference entry 106fe9c0; body size 5 bytes.
 #line 1 "ENTRY_106fe9c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_106fe9c0(undefined4 *param_1)
 
-{
- try {
-  int iVar1;
-  uint uVar2;
-  int iVar3;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWiz);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWiz);
-  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWiz);
-  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWiz);
-  iVar3 = (int)((int)(param_1[0x34] - param_1[0x33]) >> 0x1f);
-  if ((int)(param_1[0x34] - param_1[0x33]) / 0xc + iVar3 != iVar3) {
-    iVar3 = (int)(param_1[0x34]);
-    do {
-      if (*(int **)(iVar3 + -8) != (int *)((0x0))) {
-        ((SCVtbl_11_2*)(*(int **)(iVar3 + -8)))->v((int)(1),(int)(uVar2));
-      }
-      if (*(int **)(iVar3 + -4) != (int *)((0x0))) {
-        ((SCVtbl_15_0*)(*(int **)(iVar3 + -4)))->v();
-        if (*(int **)(iVar3 + -4) != (int *)((0x0))) {
-          ((SCVtbl_11_1*)(*(int **)(iVar3 + -4)))->v((int)(1));
-        }
-      }
-      param_1[0x34] = (undefined4)(param_1[0x34] + -0xc);
-      iVar3 = (int)(param_1[0x34]);
-      iVar1 = (int)(iVar3 - param_1[0x33] >> 0x1f);
-    } while ((iVar3 - param_1[0x33]) / 0xc + iVar1 != iVar1);
-  }
-  ((_Tree<> *)(0))->m_op_dtor();
-  ((_Tree<> *)(0))->m_op_dtor();
-  thunk_FUN_106da540();
-  param_1[0x2d] = (undefined4)((uint)&ghidra_vftable_SCNewWizParams);
-  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCLoggingHelper);
-  thunk_FUN_106da820();
-  thunk_FUN_105a0660();
-  thunk_FUN_106d91c0((int)(param_1 + 0x2b),(int)(*(undefined4 *)(param_1[0x2b] + 4)));
-  thunk_FUN_1148a50e(param_1[0x2b],0x2c);
-  thunk_FUN_105a05f0();
-
-  return;
-
- } catch (...) { }
-}
+{ __asm jmp FUN_1005f5e2 }
 
 
 // Reference entry 106fead0; body size 3 bytes.
@@ -15818,25 +15615,21 @@ undefined4 FUN_107025f0(void)
 // Reference entry 10702610; body size 5 bytes.
 #line 1 "ENTRY_10702610"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10702610(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10702620; body size 5 bytes.
 #line 1 "ENTRY_10702620"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10702620(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 10702ab0; body size 3 bytes.
@@ -16375,25 +16168,21 @@ undefined4 FUN_10707990(void)
 // Reference entry 107079b0; body size 5 bytes.
 #line 1 "ENTRY_107079b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107079b0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 107079c0; body size 5 bytes.
 #line 1 "ENTRY_107079c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107079c0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 107079d0; body size 18 bytes.
@@ -17076,61 +16865,51 @@ undefined4 FUN_107102c0(void)
 // Reference entry 107102d0; body size 5 bytes.
 #line 1 "ENTRY_107102d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107102d0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 107102e0; body size 5 bytes.
 #line 1 "ENTRY_107102e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107102e0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10064623 }
 
 
 // Reference entry 107104e0; body size 5 bytes.
 #line 1 "ENTRY_107104e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107104e0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 107104f0; body size 5 bytes.
 #line 1 "ENTRY_107104f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107104f0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 10710500; body size 5 bytes.
 #line 1 "ENTRY_10710500"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10710500(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 107105c0; body size 18 bytes.
@@ -17680,25 +17459,21 @@ undefined4 FUN_107172b0(void)
 // Reference entry 107172d0; body size 5 bytes.
 #line 1 "ENTRY_107172d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107172d0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 107172e0; body size 5 bytes.
 #line 1 "ENTRY_107172e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107172e0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 107172f0; body size 18 bytes.
@@ -18471,25 +18246,21 @@ undefined4 FUN_10721ab0(void)
 // Reference entry 10722000; body size 5 bytes.
 #line 1 "ENTRY_10722000"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10722000(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10722010; body size 5 bytes.
 #line 1 "ENTRY_10722010"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10722010(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 10722020; body size 18 bytes.
@@ -22310,289 +22081,241 @@ undefined4 FUN_107431c0(void)
 // Reference entry 107431d0; body size 5 bytes.
 #line 1 "ENTRY_107431d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107431d0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 107431e0; body size 5 bytes.
 #line 1 "ENTRY_107431e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107431e0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 107431f0; body size 5 bytes.
 #line 1 "ENTRY_107431f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107431f0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 10743200; body size 5 bytes.
 #line 1 "ENTRY_10743200"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743200(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 10743210; body size 5 bytes.
 #line 1 "ENTRY_10743210"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743210(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 10743220; body size 5 bytes.
 #line 1 "ENTRY_10743220"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743220(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 10743230; body size 5 bytes.
 #line 1 "ENTRY_10743230"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743230(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 10743240; body size 5 bytes.
 #line 1 "ENTRY_10743240"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743240(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 10743250; body size 5 bytes.
 #line 1 "ENTRY_10743250"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743250(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10064623 }
 
 
 // Reference entry 10743370; body size 5 bytes.
 #line 1 "ENTRY_10743370"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743370(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10743380; body size 5 bytes.
 #line 1 "ENTRY_10743380"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743380(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 10743390; body size 5 bytes.
 #line 1 "ENTRY_10743390"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743390(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 107433a0; body size 5 bytes.
 #line 1 "ENTRY_107433a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107433a0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 107433b0; body size 5 bytes.
 #line 1 "ENTRY_107433b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107433b0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 107433c0; body size 5 bytes.
 #line 1 "ENTRY_107433c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107433c0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 107433d0; body size 5 bytes.
 #line 1 "ENTRY_107433d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107433d0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 107433e0; body size 5 bytes.
 #line 1 "ENTRY_107433e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107433e0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 107433f0; body size 5 bytes.
 #line 1 "ENTRY_107433f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107433f0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10743400; body size 5 bytes.
 #line 1 "ENTRY_10743400"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743400(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10743410; body size 5 bytes.
 #line 1 "ENTRY_10743410"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743410(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 10743420; body size 5 bytes.
 #line 1 "ENTRY_10743420"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743420(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10743430; body size 5 bytes.
 #line 1 "ENTRY_10743430"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743430(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 10743440; body size 5 bytes.
 #line 1 "ENTRY_10743440"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743440(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10743450; body size 5 bytes.
 #line 1 "ENTRY_10743450"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10743450(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10748ac0; body size 7 bytes.
@@ -23036,25 +22759,21 @@ undefined4 FUN_1074e950(void)
 // Reference entry 1074e970; body size 5 bytes.
 #line 1 "ENTRY_1074e970"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_1074e970(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 1074e980; body size 5 bytes.
 #line 1 "ENTRY_1074e980"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_1074e980(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 1074ecc0; body size 6 bytes.
@@ -23875,97 +23594,81 @@ undefined4 FUN_10756f60(void)
 // Reference entry 10757390; body size 5 bytes.
 #line 1 "ENTRY_10757390"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10757390(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 107573a0; body size 5 bytes.
 #line 1 "ENTRY_107573a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107573a0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10064623 }
 
 
 // Reference entry 107573b0; body size 5 bytes.
 #line 1 "ENTRY_107573b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107573b0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 107573c0; body size 5 bytes.
 #line 1 "ENTRY_107573c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_107573c0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10064623 }
 
 
 // Reference entry 10757800; body size 5 bytes.
 #line 1 "ENTRY_10757800"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10757800(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10757810; body size 5 bytes.
 #line 1 "ENTRY_10757810"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10757810(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 10757820; body size 5 bytes.
 #line 1 "ENTRY_10757820"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10757820(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10757830; body size 5 bytes.
 #line 1 "ENTRY_10757830"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10757830(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 107581c0; body size 13 bytes.
@@ -24812,25 +24515,21 @@ undefined4 __fastcall FUN_10760b20(int param_1)
 // Reference entry 10760ea0; body size 5 bytes.
 #line 1 "ENTRY_10760ea0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10760ea0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10760eb0; body size 5 bytes.
 #line 1 "ENTRY_10760eb0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10760eb0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 10762610; body size 13 bytes.
@@ -25316,25 +25015,21 @@ undefined4 __fastcall FUN_10767040(int param_1)
 // Reference entry 10767060; body size 5 bytes.
 #line 1 "ENTRY_10767060"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10767060(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10767070; body size 5 bytes.
 #line 1 "ENTRY_10767070"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10767070(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 10767640; body size 3 bytes.
@@ -25707,13 +25402,11 @@ undefined4 FUN_1076b440(void)
 // Reference entry 1076beb0; body size 5 bytes.
 #line 1 "ENTRY_1076beb0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_1076beb0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 1076bfa0; body size 6 bytes.
@@ -26278,61 +25971,51 @@ undefined4 FUN_10771ce0(void)
 // Reference entry 10771cf0; body size 5 bytes.
 #line 1 "ENTRY_10771cf0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10771cf0(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10002e55 }
 
 
 // Reference entry 10771d00; body size 5 bytes.
 #line 1 "ENTRY_10771d00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10771d00(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xbc));
-}
+{ __asm jmp FUN_10064623 }
 
 
 // Reference entry 10771d20; body size 5 bytes.
 #line 1 "ENTRY_10771d20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10771d20(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10771d30; body size 5 bytes.
 #line 1 "ENTRY_10771d30"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10771d30(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1000d2bf }
 
 
 // Reference entry 10771d40; body size 5 bytes.
 #line 1 "ENTRY_10771d40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 __fastcall FUN_10771d40(int param_1)
 
-{
-  return (undefined4)(*(undefined4 *)(param_1 + 0xb8));
-}
+{ __asm jmp FUN_1008cfec }
 
 
 // Reference entry 10772ea0; body size 13 bytes.

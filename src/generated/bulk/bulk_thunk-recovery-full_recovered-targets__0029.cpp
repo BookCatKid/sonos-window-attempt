@@ -3526,6 +3526,14 @@ struct SCVtbl_25_2 { virtual void _p0(); virtual void _p1(); virtual void _p2();
 struct SCVtbl_29_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual int v(void); };
 struct SCVtbl_30_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual int v(void); };
 struct SCVtbl_31_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual void _p4(); virtual void _p5(); virtual void _p6(); virtual void _p7(); virtual void _p8(); virtual void _p9(); virtual void _p10(); virtual void _p11(); virtual void _p12(); virtual void _p13(); virtual void _p14(); virtual void _p15(); virtual void _p16(); virtual void _p17(); virtual void _p18(); virtual void _p19(); virtual void _p20(); virtual void _p21(); virtual void _p22(); virtual void _p23(); virtual void _p24(); virtual void _p25(); virtual void _p26(); virtual void _p27(); virtual void _p28(); virtual void _p29(); virtual void _p30(); virtual int v(void); };
+int FUN_1002ed4d();
+int FUN_10058a7b();
+int FUN_1000a25e();
+int FUN_10078dc6();
+int FUN_1004c7d0();
+int FUN_1003a87d();
+int FUN_100473bb();
+int FUN_1002a4f0();
 #line 1 "ENTRY_11227a70"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_11227a70(undefined4 param_2)
@@ -5607,14 +5615,11 @@ void __fastcall FUN_11234380(int param_1)
 // Reference entry 11234500; body size 5 bytes.
 #line 1 "ENTRY_11234500"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_11234500(undefined4 *param_1)
 
-{
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RMediaReceiverRegistrar);
-  return;
-}
+{ __asm jmp FUN_1002ed4d }
 
 
 // Reference entry 11235010; body size 295 bytes.
@@ -7806,16 +7811,11 @@ void __fastcall FUN_11242ce0(int param_1)
 // Reference entry 11242d00; body size 5 bytes.
 #line 1 "ENTRY_11242d00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 undefined4 FUN_11242d00(int *param_1)
 
-{
-  if ((*param_1 == (int)((0x7fffffff))) && (param_1[1] == 0)) {
-    return (undefined4)(1);
-  }
-  return (undefined4)(0);
-}
+{ __asm jmp FUN_10058a7b }
 
 
 // Reference entry 11242d10; body size 91 bytes.
@@ -9201,22 +9201,11 @@ LAB_11248a54:
 // Reference entry 11248b30; body size 5 bytes.
 #line 1 "ENTRY_11248b30"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 bool FUN_11248b30(int param_1,int param_2,uint param_3)
 
-{
-  uint uVar1;
-  
-  if ((uint)(param_2 * 8) <= param_3) {
-    return (bool)(false);
-  }
-  uVar1 = (uint)(param_3 & 0x80000007);
-  if ((int)uVar1 < 0) {
-    uVar1 = (uint)((uVar1 - 1 | 0xfffffff8) + 1);
-  }
-  return (bool)((*(byte *)((param_1 - ((int)(param_3 + ((int)param_3 >> 0x1f & 7U)) >> 3)) + -1 + param_2) & (byte)(1 << ((byte)uVar1 & 0x1f))) != 0);
-}
+{ __asm jmp FUN_1000a25e }
 
 
 // Reference entry 11248fc0; body size 23 bytes.
@@ -18002,109 +17991,8 @@ undefined4 __fastcall FUN_112755c0(int param_1)
 // Reference entry 11275870; body size 5 bytes.
 #line 1 "ENTRY_11275870"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __thiscall Recovered_Bulk::m_FUN_11275870(char *param_2,undefined4 *param_3,uint param_4)
-{
-  int param_1 = (int )this;
-  int iVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  undefined4 uVar4;
-  bool bVar5;
-  char cVar6;
-  char *pcVar7;
-  char *pcVar8;
-  char *pcVar9;
-  int iVar10;
-  char *pcVar11;
-  uint uVar12;
-  undefined4 *puVar13;
-  
-  thunk_FUN_11292b90();
-  if ((*(char *)(param_1 + 0x43) == '\0') && (cVar6 = (char)(thunk_FUN_11292d70(), 0), cVar6 == '\0')) {
-    return (undefined1)(0);
-  }
-  iVar1 = (int)(param_1 + 0x164);
-  cVar6 = (char)(thunk_FUN_112a7f50(iVar1), 0);
-  if ((*(uint *)(param_1 + 0x30) & param_4) == 0) {
-    pcVar11 = (char *)("(none)");
-    if (*param_2 != (char)(('\0'))) {
-      pcVar11 = (char *)(param_2);
-    }
-    thunk_FUN_112b0270("reporting",7,"%s: %s dropped",param_1 + 0x134,pcVar11);
-    if (cVar6 != '\0') {
-      thunk_FUN_112a8010(iVar1);
-    }
-    return (undefined1)(0);
-  }
-  if (cVar6 != '\0') {
-    thunk_FUN_112a8010(iVar1);
-  }
-  *(unsigned char*)((char *)&param_4 + 0) = (unsigned char)(0);
-  pcVar11 = (char *)("");
-  if ((char *)(param_2) != (char *)(0x0)) {
-    pcVar11 = (char *)(param_2);
-  }
-  bVar5 = (bool)(false);
-  pcVar8 = (char *)(pcVar11);
-  do {
-    cVar6 = (char)(*pcVar8);
-    pcVar8 = (char *)(pcVar8 + 1);
-  } while (cVar6 != '\0');
-  pcVar9 = (char *)(pcVar8 + (1 - (int)(pcVar11 + 1)) + param_3[1] + 0x1c);
-  uVar12 = (uint)((uint)(pcVar9 + 3) & 0xfffffffc);
-  thunk_FUN_112a7f50(iVar1);
-  pcVar7 = (char *)("(none)");
-  if (*pcVar11 != (char)(('\0'))) {
-    pcVar7 = (char *)(pcVar11);
-  }
-  thunk_FUN_112b0270("reporting",6,"%s: %s adding %zu bytes, %d free",param_1 + 0x134,pcVar7,uVar12, *(int *)(param_1 + 0x10) - *(int *)(param_1 + 0x14));
-  iVar10 = (int)(*(int *)(param_1 + 0x14));
-  if ((uint)(*(int *)(param_1 + 0x10) - iVar10) < uVar12) {
-    uVar12 = (uint)(*(int *)(param_1 + 0x28) + 1);
-    *(uint*)(param_1 + 0x28) = (uint)(uVar12);
-    if (uVar12 % 0x14 == 1) {
-      pcVar8 = (char *)("(none)");
-      if (*pcVar11 != (char)(('\0'))) {
-        pcVar8 = (char *)(pcVar11);
-      }
-      thunk_FUN_112b0270("reporting",5,"%s: Can\'t grow space. Losing event %s",param_1 + 0x134, pcVar8);
-      thunk_FUN_112a8010(iVar1);
-      return (undefined1)(0);
-    }
-  }
-  else {
-    if (uVar12 - (int)pcVar9 != 0) {
-      memset(pcVar9 + *(int *)(param_1 + 0xc) + iVar10,0,uVar12 - (int)pcVar9);
-      iVar10 = (int)(*(int *)(param_1 + 0x14));
-    }
-    *(uint*)(param_1 + 0x14) = (uint)(uVar12 + iVar10);
-    puVar13 = (undefined4 *)((undefined4 *)(*(int *)(param_1 + 0xc) + iVar10));
-    uVar2 = (undefined4)(param_3[1]);
-    uVar3 = (undefined4)(param_3[2]);
-    uVar4 = (undefined4)(param_3[3]);
-    *puVar13 = (undefined4)(*param_3);
-    puVar13[1] = (undefined4)(uVar2);
-    puVar13[2] = (undefined4)(uVar3);
-    puVar13[3] = (undefined4)(uVar4);
-    *(undefined8*)(puVar13 + 4) = (undefined8)(*(undefined8 *)(param_3 + 4));
-    memcpy(puVar13 + 7,(void *)param_3[3],param_3[1]);
-    puVar13[3] = (undefined4)(0);
-    thunk_FUN_1145c250(puVar13[1] + 0x1c + (int)puVar13,pcVar11,pcVar8 + (1 - (int)(pcVar11 + 1)));
-    puVar13[6] = (undefined4)(uVar12);
-    *(int*)(param_1 + 0x18) = (int)(*(int *)(param_1 + 0x18) + 1);
-    *(unsigned char*)((char *)&param_4 + 0) = (unsigned char)(1);
-    if ((((*(char *)(param_1 + 0x42) == '\0') && (*(uint *)(param_1 + 0x34) != 0)) &&
-        (*(uint *)(param_1 + 0x34) < (uint)((*(int *)(param_1 + 0x14) * 100)) / *(uint *)(param_1 + 0x10))) &&
-       (*(char *)(param_1 + 0x40) != '\0')) {
-      bVar5 = (bool)(true);
-    }
-  }
-  thunk_FUN_112a8010(iVar1);
-  if (((bVar5) && (*(int **)(param_1 + 0x38) != (int *)((0x0)))) && (*(int *)(param_1 + 0x3c) != 0)) {
-    ((SCVtbl_1_2*)(*(int **)(param_1 + 0x38)))->v((int)(*(int *)(param_1 + 0x3c)),(int)(0));
-  }
-  return (undefined1)((undefined1)param_4);
-}
+__declspec(naked) void FUN_11275870(void)
+{ __asm jmp FUN_10078dc6 }
 
 
 // Reference entry 11275c10; body size 412 bytes.
@@ -20778,29 +20666,18 @@ int __fastcall FUN_1127b8c0(int *param_1)
 // Reference entry 1127bba0; body size 5 bytes.
 #line 1 "ENTRY_1127bba0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_1127bba0(char *param_2)
-{
-  int *param_1 = (int *)this;
-  char cVar1;
-  char *pcVar2;
-  
-  ((SCVtbl_1_2*)(param_1))->v((int)(param_2),(int)((int)strlen((const char *)param_2)));
-  return;
-}
+__declspec(naked) void FUN_1127bba0(void)
+{ __asm jmp FUN_1004c7d0 }
 
 
 // Reference entry 1127bea0; body size 5 bytes.
 #line 1 "ENTRY_1127bea0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_1127bea0(undefined1 *param_1)
 
-{
-  *param_1 = (undefined1)(0);
-  *(undefined4*)(param_1 + 4) = (undefined4)(0);
-  return;
-}
+{ __asm jmp FUN_1003a87d }
 
 
 // Reference entry 1127bf40; body size 28 bytes.
@@ -29055,20 +28932,11 @@ undefined4 FUN_11299c70(void)
 // Reference entry 11299cb0; body size 5 bytes.
 #line 1 "ENTRY_11299cb0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void FUN_11299cb0(undefined4 param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
-{
-  int iVar1;
-  
-  iVar1 = (int)(param_2 + -3);
-  if (param_2 < 3) {
-    iVar1 = (int)(0);
-  }
-  thunk_FUN_112afbd0(param_1,iVar1,param_3,param_4);
-  return;
-}
+{ __asm jmp FUN_100473bb }
 
 
 // Reference entry 11299cc0; body size 16 bytes.
@@ -29385,20 +29253,11 @@ undefined4 FUN_1129a930(char *param_1,undefined4 param_2,undefined4 param_3,uint
 // Reference entry 1129ad30; body size 5 bytes.
 #line 1 "ENTRY_1129ad30"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void FUN_1129ad30(undefined4 param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
-{
-  int iVar1;
-  
-  iVar1 = (int)(param_2 + -3);
-  if (param_2 < 3) {
-    iVar1 = (int)(0);
-  }
-  thunk_FUN_112afbd0(param_1,iVar1,param_3,param_4);
-  return;
-}
+{ __asm jmp FUN_100473bb }
 
 
 // Reference entry 1129b350; body size 26 bytes.
@@ -33313,14 +33172,11 @@ char * FUN_112a9e30(char *param_1,int param_2,int param_3)
 // Reference entry 112aa040; body size 5 bytes.
 #line 1 "ENTRY_112aa040"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void FUN_112aa040(int param_1,undefined1 param_2)
 
-{
-  *(undefined1*)(param_1 + 0x60) = (undefined1)(param_2);
-  return;
-}
+{ __asm jmp FUN_1002a4f0 }
 
 
 // Reference entry 112aa050; body size 36 bytes.

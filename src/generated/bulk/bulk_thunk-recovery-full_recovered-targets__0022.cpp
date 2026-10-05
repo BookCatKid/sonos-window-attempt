@@ -2707,6 +2707,7 @@ struct SCVtbl_2_0 { virtual void _p0(); virtual void _p1(); virtual int v(void);
 struct SCVtbl_2_1 { virtual void _p0(); virtual void _p1(); virtual int v(int a1); };
 struct SCVtbl_3_0 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual int v(void); };
 struct SCVtbl_4_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(int a1); };
+int FUN_10092686();
 #line 1 "ENTRY_10e28de0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -21174,64 +21175,8 @@ LAB_1106a4e4:
 // Reference entry 10ecbed0; body size 5 bytes.
 #line 1 "ENTRY_10ecbed0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall Recovered_Bulk::m_FUN_10ecbed0(int param_2)
-{
-  int param_1 = (int )this;
- try {
-  int *piVar1;
-  uint uVar2;
-  int *piVar3;
-  int *piStack_1c;
-  SCStr aSStack_18 [4];
-  undefined4 uStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar3 = (int *)((int *)thunk_FUN_106d8410((int)(&piStack_1c)), 0);
-  piVar1 = (int *)((int *)*piVar3);
-
-  *piVar3 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar3 = (int *)((int *)0x0);
-  }
-  else {
-    piVar3 = (int *)((int *)((SCVtbl_3_1*)(piVar1))->v((int)(uVar2)), 0);
-  }
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(3);
-  if ((int *)(piStack_1c) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piStack_1c))->v();
-  }
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(2);
-  ((SCStr *)((SCStr *)&uStack_14))->int_allocRep("animation");
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(4);
-  ((SCVtbl_19_2*)(*(int **)(param_1 + 4)))->v((int)(&uStack_14),(int)(piVar1));
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(5);
-  ((SCStr *)((SCStr *)&uStack_14))->int_release();
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(2);
-  ((SCStr *)((uint)&aSStack_18))->int_allocRep("mediaId");
-  piVar1 = (int *)(*(int **)(param_1 + 4), 0);
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(6);
-  ((SCStr *)((SCStr *)&uStack_14))->m_op_ctor((SCStr *)(param_2 + 0xc));
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(7);
-  ((SCVtbl_7_2*)(piVar1))->v((int)((uint)&aSStack_18),(int)(&uStack_14));
-  *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(8);
-  ((SCStr *)((SCStr *)&uStack_14))->int_release();
-
-  uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(9)));
-  ((SCStr *)((uint)&aSStack_18))->int_release();
-
-  if ((int *)(piVar3) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piVar3))->v();
-  }
-
-  return (int)(param_1);
-
- } catch (...) { }
-}
+__declspec(naked) void FUN_10ecbed0(void)
+{ __asm jmp FUN_10092686 }
 
 
 // Reference entry 10ecfab0; body size 18 bytes.
