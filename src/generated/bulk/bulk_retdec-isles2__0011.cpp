@@ -4736,6 +4736,7 @@ template<class... A> int FUN_100d3420(A...);
 int FUN_100d3450(void);
 template<class... A> int FUN_100d3450(A...);
 // Reference entry 100be757; body size 20 bytes.
+extern int __stdcall FUN_1005273e(int a1);
 #line 1 "ENTRY_100be757"
 int FUN_100be757(void) {
 
@@ -4773,7 +4774,7 @@ int FUN_100c15b7(void) {
 #line 1 "ENTRY_100c2c60"
 int FUN_100c2c60(void) {
 
-    return (int)(FUN_1005273e((int)&s_product_11881df0));
+    return (int)(FUN_1005273e((int)((int)&s_product_11881df0)));
 }
 
 // Reference entry 100c2c72; body size 9 bytes.
@@ -4791,7 +4792,7 @@ int FUN_100c2c72(void) {
 #line 1 "ENTRY_100c2c90"
 int FUN_100c2c90(void) {
 
-    return (int)(FUN_1005273e((int)&s_The_selected_room_name_11881f48));
+    return (int)(FUN_1005273e((int)((int)&s_The_selected_room_name_11881f48)));
 }
 
 // Reference entry 100c2ca2; body size 9 bytes.
@@ -4809,35 +4810,35 @@ int FUN_100c2ca2(void) {
 #line 1 "ENTRY_100c32f0"
 int FUN_100c32f0(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881128));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881128)));
 }
 
 // Reference entry 100c3320; body size 20 bytes.
 #line 1 "ENTRY_100c3320"
 int FUN_100c3320(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881ff0));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881ff0)));
 }
 
 // Reference entry 100c3350; body size 20 bytes.
 #line 1 "ENTRY_100c3350"
 int FUN_100c3350(void) {
 
-    return (int)(FUN_1005273e((int)&s_locale_11881e34));
+    return (int)(FUN_1005273e((int)((int)&s_locale_11881e34)));
 }
 
 // Reference entry 100c3380; body size 20 bytes.
 #line 1 "ENTRY_100c3380"
 int FUN_100c3380(void) {
 
-    return (int)(FUN_1005273e((int)&s_nfcErrorMessage_1188d480));
+    return (int)(FUN_1005273e((int)((int)&s_nfcErrorMessage_1188d480)));
 }
 
 // Reference entry 100c33b0; body size 20 bytes.
 #line 1 "ENTRY_100c33b0"
 int FUN_100c33b0(void) {
 
-    return (int)(FUN_1005273e((int)&s_nfcScanData_1188d494));
+    return (int)(FUN_1005273e((int)((int)&s_nfcScanData_1188d494)));
 }
 
 // Reference entry 100c39b7; body size 10 bytes.
@@ -4989,14 +4990,14 @@ int FUN_100c9d27(void) {
 #line 1 "ENTRY_100ca2f0"
 int FUN_100ca2f0(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881e0c));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881e0c)));
 }
 
 // Reference entry 100ca320; body size 15 bytes.
 #line 1 "ENTRY_100ca320"
 int FUN_100ca320(void) {
 
-    return (int)(FUN_1005273e((int)&s_The_SSID_the_user_was_connected_t_11881f64));
+    return (int)(FUN_1005273e((int)((int)&s_The_SSID_the_user_was_connected_t_11881f64)));
 }
 
 // Reference entry 100ca332; body size 9 bytes.
@@ -5142,15 +5143,15 @@ char *v12 = (char *)((char)((char *)(v7 + 12))); // (int)&FUN_100caa4f
     *v8 = (char)(v9 + v5);
 char *v13 = (char *)((char)((char *)(v1 - 3))); // (int)&FUN_100ca9e3
     *v13 = (char)(13);
-    FUN_1005273e((int)&s_Playbase_Black_119091e0);
+    FUN_1005273e((int)((int)&s_Playbase_Black_119091e0));
     *(int*)(v1 + 173) = (int)(13);
     *(int*)(v1 + 177) = (int)(2);
     *v13 = (char)(14);
-    FUN_1005273e((int)&s_One_White_119091f4);
+    FUN_1005273e((int)((int)&s_One_White_119091f4));
     *(int*)(v1 + 185) = (int)(15);
     *(int*)(v1 + 189) = (int)(1);
     *v13 = (char)(15);
-    return (int)(FUN_1005273e((int)&s_One_Black_11909200));
+    return (int)(FUN_1005273e((int)((int)&s_One_Black_11909200)));
 }
 
 // Reference entry 100caa58; body size 852 bytes.
@@ -5164,87 +5165,87 @@ int FUN_100caa58(void) {
     *(int*)(v1 + 213) = (int)(8);
 char *v3 = (char *)((char)((char *)(v1 - 3))); // (int)&FUN_100caa83
     *v3 = (char)(17);
-    FUN_1005273e((int)&s_Beam_White_11909224);
+    FUN_1005273e((int)((int)&s_Beam_White_11909224));
     *(int*)(v1 + 221) = (int)(16);
     *(int*)(v1 + 225) = (int)(1);
     *v3 = (char)(18);
-    FUN_1005273e((int)&s_Beam_Black_11909234);
+    FUN_1005273e((int)((int)&s_Beam_Black_11909234));
     *(int*)(v1 + 233) = (int)(16);
     *(int*)(v1 + 237) = (int)(2);
     *v3 = (char)(19);
-    FUN_1005273e((int)&s_Beam_Shadow_11909244);
+    FUN_1005273e((int)((int)&s_Beam_Shadow_11909244));
     *(int*)(v1 + 245) = (int)(16);
     *(int*)(v1 + 249) = (int)(9);
     *v3 = (char)(20);
-    FUN_1005273e((int)&s_Connect_White_11909254);
+    FUN_1005273e((int)((int)&s_Connect_White_11909254));
     *(int*)(v1 + 257) = (int)(17);
     *(int*)(v1 + 261) = (int)(1);
     *v3 = (char)(21);
-    FUN_1005273e((int)&s_Amp_Black_11909264);
+    FUN_1005273e((int)((int)&s_Amp_Black_11909264));
     *(int*)(v1 + 269) = (int)(18);
     *(int*)(v1 + 273) = (int)(2);
     *v3 = (char)(22);
-    FUN_1005273e((int)&s_Move_Lunar_White_11909270);
+    FUN_1005273e((int)((int)&s_Move_Lunar_White_11909270));
     *(int*)(v1 + 281) = (int)(19);
     *(int*)(v1 + 285) = (int)(10);
     *v3 = (char)(23);
-    FUN_1005273e((int)&s_Move_Black_11909284);
+    FUN_1005273e((int)((int)&s_Move_Black_11909284));
     *(int*)(v1 + 293) = (int)(19);
     *(int*)(v1 + 297) = (int)(2);
     *v3 = (char)(24);
-    FUN_1005273e((int)&s_Arc_White_11909294);
+    FUN_1005273e((int)((int)&s_Arc_White_11909294));
     *(int*)(v1 + 305) = (int)(21);
     *(int*)(v1 + 309) = (int)(1);
     *v3 = (char)(25);
-    FUN_1005273e((int)&s_Arc_Black_119092a0);
+    FUN_1005273e((int)((int)&s_Arc_Black_119092a0));
     *(int*)(v1 + 317) = (int)(21);
     *(int*)(v1 + 321) = (int)(2);
     *v3 = (char)(26);
-    FUN_1005273e((int)&s_Symfonisk_Lamp_White_119092ac);
+    FUN_1005273e((int)((int)&s_Symfonisk_Lamp_White_119092ac));
     *(int*)(v1 + 329) = (int)(22);
     *(int*)(v1 + 333) = (int)(1);
     *v3 = (char)(27);
-    FUN_1005273e((int)&s_Symfonisk_Lamp_Black_119092c8);
+    FUN_1005273e((int)((int)&s_Symfonisk_Lamp_Black_119092c8));
     *(int*)(v1 + 341) = (int)(22);
     *(int*)(v1 + 345) = (int)(2);
     *v3 = (char)(28);
-    FUN_1005273e((int)&s_Symfonisk_Shelf_White_119092e4);
+    FUN_1005273e((int)((int)&s_Symfonisk_Shelf_White_119092e4));
     *(int*)(v1 + 353) = (int)(23);
     *(int*)(v1 + 357) = (int)(1);
     *v3 = (char)(29);
-    FUN_1005273e((int)&s_Symfonisk_Shelf_Black_11909300);
+    FUN_1005273e((int)((int)&s_Symfonisk_Shelf_Black_11909300));
     *(int*)(v1 + 365) = (int)(23);
     *(int*)(v1 + 369) = (int)(2);
     *v3 = (char)(30);
-    FUN_1005273e((int)&s_One_SL_White_1190931c);
+    FUN_1005273e((int)((int)&s_One_SL_White_1190931c));
     *(int*)(v1 + 377) = (int)(24);
     *(int*)(v1 + 381) = (int)(1);
     *v3 = (char)(31);
-    FUN_1005273e((int)&s_One_SL_Black_1190932c);
+    FUN_1005273e((int)((int)&s_One_SL_Black_1190932c));
     *(int*)(v1 + 389) = (int)(24);
     *(int*)(v1 + 393) = (int)(2);
     *v3 = (char)(32);
-    FUN_1005273e((int)&s_One_SL_Shadow_1190933c);
+    FUN_1005273e((int)((int)&s_One_SL_Shadow_1190933c));
     *(int*)(v1 + 401) = (int)(24);
     *(int*)(v1 + 405) = (int)(9);
     *v3 = (char)(33);
-    FUN_1005273e((int)&s_Optimo_1_Black_1190934c);
+    FUN_1005273e((int)((int)&s_Optimo_1_Black_1190934c));
     *(int*)(v1 + 413) = (int)(41);
     *(int*)(v1 + 417) = (int)(2);
     *v3 = (char)(34);
-    FUN_1005273e((int)&s_Optimo_1_White_11909360);
+    FUN_1005273e((int)((int)&s_Optimo_1_White_11909360));
     *(int*)(v1 + 425) = (int)(41);
     *(int*)(v1 + 429) = (int)(1);
     *v3 = (char)(35);
-    FUN_1005273e((int)&s_Optimo_2_Black_11909374);
+    FUN_1005273e((int)((int)&s_Optimo_2_Black_11909374));
     *(int*)(v1 + 437) = (int)(43);
     *(int*)(v1 + 441) = (int)(2);
     *v3 = (char)(36);
-    FUN_1005273e((int)&s_Optimo_2_White_11909388);
+    FUN_1005273e((int)((int)&s_Optimo_2_White_11909388));
     *(int*)(v1 + 449) = (int)(43);
     *(int*)(v1 + 453) = (int)(1);
     *v3 = (char)(37);
-    return (int)(FUN_1005273e((int)&s_Port_Black_1190939c));
+    return (int)(FUN_1005273e((int)((int)&s_Port_Black_1190939c)));
 }
 
 // Reference entry 100cadaf; body size 97 bytes.
@@ -5300,47 +5301,47 @@ char *v8 = (char *)((char)((char *)v5)); // (int)&FUN_100cae2c
     *(int*)(v1 + 501) = (int)(1);
 char *v9 = (char *)((char)((char *)(v1 - 3))); // (int)&FUN_100cae43
     *v9 = (char)(41);
-    FUN_1005273e((int)&s_SUB_Gen2_Black_119093e0);
+    FUN_1005273e((int)((int)&s_SUB_Gen2_Black_119093e0));
     *(int*)(v1 + 509) = (int)(28);
     *(int*)(v1 + 513) = (int)(2);
     *v9 = (char)(42);
-    FUN_1005273e((int)&s_Roam_Lunar_White_119093f4);
+    FUN_1005273e((int)((int)&s_Roam_Lunar_White_119093f4));
     *(int*)(v1 + 521) = (int)(29);
     *(int*)(v1 + 525) = (int)(10);
     *v9 = (char)(43);
-    FUN_1005273e((int)&s_Roam_Shadow_11909408);
+    FUN_1005273e((int)((int)&s_Roam_Shadow_11909408));
     *(int*)(v1 + 533) = (int)(29);
     *(int*)(v1 + 537) = (int)(9);
     *v9 = (char)(44);
-    FUN_1005273e((int)&s_Roam_Olive_11909418);
+    FUN_1005273e((int)((int)&s_Roam_Olive_11909418));
     *(int*)(v1 + 545) = (int)(29);
     *(int*)(v1 + 549) = (int)(12);
     *v9 = (char)(45);
-    FUN_1005273e((int)&s_Roam_Sunset_11909428);
+    FUN_1005273e((int)((int)&s_Roam_Sunset_11909428));
     *(int*)(v1 + 557) = (int)(29);
     *(int*)(v1 + 561) = (int)(14);
     *v9 = (char)(46);
-    FUN_1005273e((int)&s_Roam_Wave_11909438);
+    FUN_1005273e((int)((int)&s_Roam_Wave_11909438));
     *(int*)(v1 + 569) = (int)(29);
     *(int*)(v1 + 573) = (int)(13);
     *v9 = (char)(47);
-    FUN_1005273e((int)&s_Symfonisk_Panel_White_11909444);
+    FUN_1005273e((int)((int)&s_Symfonisk_Panel_White_11909444));
     *(int*)(v1 + 581) = (int)(31);
     *(int*)(v1 + 585) = (int)(1);
     *v9 = (char)(48);
-    FUN_1005273e((int)&s_Symfonisk_Panel_Black_11909460);
+    FUN_1005273e((int)((int)&s_Symfonisk_Panel_Black_11909460));
     *(int*)(v1 + 593) = (int)(31);
     *(int*)(v1 + 597) = (int)(2);
     *v9 = (char)(49);
-    FUN_1005273e((int)&s_Symfonisk_Lamp_Gen2_White_1190947c);
+    FUN_1005273e((int)((int)&s_Symfonisk_Lamp_Gen2_White_1190947c));
     *(int*)(v1 + 605) = (int)(32);
     *(int*)(v1 + 609) = (int)(1);
     *v9 = (char)(50);
-    FUN_1005273e((int)&s_Symfonisk_Lamp_Gen2_Black_1190949c);
+    FUN_1005273e((int)((int)&s_Symfonisk_Lamp_Gen2_Black_1190949c));
     *(int*)(v1 + 617) = (int)(32);
     *(int*)(v1 + 621) = (int)(2);
     *v9 = (char)(51);
-    int result = (int)(FUN_1005273e((int)&s_Bravo_White_119094bc), 0); // (int)&FUN_100cafd7
+    int result = (int)(FUN_1005273e((int)((int)&s_Bravo_White_119094bc)), 0); // (int)&FUN_100cafd7
     *(int*)(v1 + 629) = (int)(37);
     *(int*)(v1 + 633) = (int)(1);
     return (int)(result);
@@ -5425,23 +5426,23 @@ char *v20 = (char *)((char)((char *)v18)); // (int)&FUN_100cb12e
     *v20 = (char)(*v20 + v17);
 char *v21 = (char *)((char)((char *)(v4 - 3))); // (int)&FUN_100cb13b
     *v21 = (char)(60);
-    FUN_1005273e((int)&s_Roam_SL_Sunset_11909578);
+    FUN_1005273e((int)((int)&s_Roam_SL_Sunset_11909578));
     *(int*)(v4 + 737) = (int)(35);
     *(int*)(v4 + 741) = (int)(14);
     *v21 = (char)(61);
-    FUN_1005273e((int)&s_Roam_SL_Wave_1190958c);
+    FUN_1005273e((int)((int)&s_Roam_SL_Wave_1190958c));
     *(int*)(v4 + 749) = (int)(35);
     *(int*)(v4 + 753) = (int)(13);
     *v21 = (char)(62);
-    FUN_1005273e((int)&s_Fury_White_1190959c);
+    FUN_1005273e((int)((int)&s_Fury_White_1190959c));
     *(int*)(v4 + 761) = (int)(36);
     *(int*)(v4 + 765) = (int)(1);
     *v21 = (char)(63);
-    FUN_1005273e((int)&s_Fury_Black_119095ac);
+    FUN_1005273e((int)((int)&s_Fury_Black_119095ac));
     *(int*)(v4 + 773) = (int)(36);
     *(int*)(v4 + 777) = (int)(2);
     *v21 = (char)(64);
-    int result = (int)(FUN_1005273e((int)&s_Gravity_White_119095bc), 0); // (int)&FUN_100cb1df
+    int result = (int)(FUN_1005273e((int)((int)&s_Gravity_White_119095bc)), 0); // (int)&FUN_100cb1df
     *(int*)(v4 + 785) = (int)(39);
     *(int*)(v4 + 789) = (int)(1);
     return (int)(result);
@@ -5527,7 +5528,7 @@ int FUN_100cc347(void) {
 int FUN_100ccd97(void) {
 
     int v1; // (int)((int(*)(void))&FUN_100ccd97<>)
-    FUN_1005273e(v1);
+    FUN_1005273e((int)(v1));
     return (int)(_atexit((int)&FUN_11830680));
 }
 
@@ -5536,7 +5537,7 @@ int FUN_100ccd97(void) {
 int FUN_100cdaf7(void) {
 
     int v1; // (int)((int(*)(void))&FUN_100cdaf7<>)
-    FUN_1005273e(v1);
+    FUN_1005273e((int)(v1));
     return (int)(_atexit((int)&FUN_11831920));
 }
 
@@ -5592,7 +5593,7 @@ int FUN_100cf721(void) {
 int FUN_100d0057(void) {
 
     int v1; // (int)((int(*)(void))&FUN_100d0057<>)
-    FUN_1005273e(v1);
+    FUN_1005273e((int)(v1));
     return (int)(_atexit((int)&FUN_118352b0));
 }
 
@@ -5601,7 +5602,7 @@ int FUN_100d0057(void) {
 int FUN_100d0f07(void) {
 
     int v1; // (int)((int(*)(void))&FUN_100d0f07<>)
-    FUN_1005273e(v1);
+    FUN_1005273e((int)(v1));
     return (int)(_atexit((int)&FUN_11836610));
 }
 
@@ -5633,34 +5634,34 @@ int FUN_100d2ca7(int a1) {
 #line 1 "ENTRY_100d3300"
 int FUN_100d3300(void) {
 
-    return (int)(FUN_1005273e((int)&s_The_serial_number_of_the_product_11881e40));
+    return (int)(FUN_1005273e((int)((int)&s_The_serial_number_of_the_product_11881e40)));
 }
 
 // Reference entry 100d3330; body size 20 bytes.
 #line 1 "ENTRY_100d3330"
 int FUN_100d3330(void) {
 
-    return (int)(FUN_1005273e((int)&s_product_11881df0));
+    return (int)(FUN_1005273e((int)((int)&s_product_11881df0)));
 }
 
 // Reference entry 100d3360; body size 20 bytes.
 #line 1 "ENTRY_100d3360"
 int FUN_100d3360(void) {
 
-    return (int)(FUN_1005273e((int)&s_The_selected_room_name_11881f48));
+    return (int)(FUN_1005273e((int)((int)&s_The_selected_room_name_11881f48)));
 }
 
 // Reference entry 100d3390; body size 20 bytes.
 #line 1 "ENTRY_100d3390"
 int FUN_100d3390(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881e04));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881e04)));
 }
 
 // Reference entry 100d33c0; body size 20 bytes.
 #line 1 "ENTRY_100d33c0"
 int FUN_100d33c0(void) {
 
-    return (int)(FUN_1005273e((int)&s_The_SSID_the_user_selected_this_p_11881fb0));
+    return (int)(FUN_1005273e((int)((int)&s_The_SSID_the_user_selected_this_p_11881fb0)));
 }
 

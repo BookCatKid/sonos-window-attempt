@@ -5374,7 +5374,7 @@ void FUN_114898e0(int *param_1,undefined1 *param_2);
 template<class... A> int FUN_114898e0(A...);
 void FUN_11489a50(int param_1,int *param_2);
 template<class... A> int FUN_11489a50(A...);
-/* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ /* Library Function - Single Match void __stdcall `eh vector destructor iterator'(void *,unsigned int_,unsigned int_,void (__thiscall*)(void *)) Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void FUN_1148a33e(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4);
+/* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ /* Library Function - Single Match void __stdcall `eh vector destructor iterator'(void *,unsigned int_,unsigned int_,void (__thiscall*)(void *)) Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void __stdcall FUN_1148a33e(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4);
 /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ /* Library Function - Single Match void __stdcall __ArrayUnwind(void *,unsigned int_,unsigned int_,void (__thiscall*)(void *)) Library: Visual Studio 2019 Release */void FUN_1148a41e(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4);
 /* Library Function - Single Match struct _IMAGE_SECTION_HEADER * __cdecl find_pe_section(unsigned char * const_,unsigned int_) Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */_IMAGE_SECTION_HEADER * __cdecl FUN_1148a52f(uchar *param_1,uint param_2);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ undefined4 FUN_1148a74e(int param_1);
@@ -5397,24 +5397,24 @@ void __fastcall FUN_1148b050(uint param_1);
 template<class... A> int FUN_1148b050(A...);
 void __fastcall FUN_1148b0c0(uint param_1);
 template<class... A> int FUN_1148b0c0(A...);
-/* Library Function - Single Match int __stdcall dllmain_crt_dispatch(struct HINSTANCE__ * const_,unsigned long_,void * const_) Library: Visual Studio 2019 Release */int FUN_1148b143(HINSTANCE__ *param_1,ulong param_2,void *param_3);
+/* Library Function - Single Match int __stdcall dllmain_crt_dispatch(struct HINSTANCE__ * const_,unsigned long_,void * const_) Library: Visual Studio 2019 Release */int __stdcall FUN_1148b143(HINSTANCE__ *param_1,ulong param_2,void *param_3);
 /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ undefined4 FUN_1148b1aa(undefined4 param_1,undefined4 param_2);
 /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ byte FUN_1148b2f2(undefined4 param_1);
 /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ /* Library Function - Single Match int __cdecl dllmain_dispatch(struct HINSTANCE__ * const_,unsigned long_,void * const_) Library: Visual Studio 2019 Release */int __cdecl FUN_1148b3ce(HINSTANCE__ *param_1,ulong param_2,void *param_3);
-/* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ /* Library Function - Single Match void __stdcall `eh vector constructor iterator'(void *,unsigned int_,unsigned int_,void_1148b5ac (__thiscall*)(void *),void (__thiscall*)(void *)) Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void FUN_1148b5ac(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4, _func_void_void_ptr *param_5);
-/* Library Function - Single Match __alldiv Library: Visual Studio */undefined8 FUN_1148b9a0(uint param_1,uint param_2,uint param_3,uint param_4);
+/* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ /* Library Function - Single Match void __stdcall `eh vector constructor iterator'(void *,unsigned int_,unsigned int_,void_1148b5ac (__thiscall*)(void *),void (__thiscall*)(void *)) Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void __stdcall FUN_1148b5ac(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4, _func_void_void_ptr *param_5);
+/* Library Function - Single Match __alldiv Library: Visual Studio */undefined8 __stdcall FUN_1148b9a0(uint param_1,uint param_2,uint param_3,uint param_4);
 template<class... A> int FUN_1148b9a0(A...);
-/* Library Function - Single Match __allrem Library: Visual Studio */undefined8 FUN_1148bed0(uint param_1,uint param_2,uint param_3,uint param_4);
+/* Library Function - Single Match __allrem Library: Visual Studio */undefined8 __stdcall FUN_1148bed0(uint param_1,uint param_2,uint param_3,uint param_4);
 template<class... A> int FUN_1148bed0(A...);
-/* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ /* Library Function - Single Match void __stdcall `eh vector copy constructor iterator'(void *,void *,unsigned int_,unsigned int_,void_1148bfb3 (__thiscall*)(void *,void *),void (__thiscall*)(void *)) Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void FUN_1148bfb3(void *param_1,void *param_2,uint param_3,uint param_4, _func_void_void_ptr_void_ptr *param_5,_func_void_void_ptr *param_6);
+/* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ /* Library Function - Single Match void __stdcall `eh vector copy constructor iterator'(void *,void *,unsigned int_,unsigned int_,void_1148bfb3 (__thiscall*)(void *,void *),void (__thiscall*)(void *)) Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void __stdcall FUN_1148bfb3(void *param_1,void *param_2,uint param_3,uint param_4, _func_void_void_ptr_void_ptr *param_5,_func_void_void_ptr *param_6);
 /* WARNING: Removing unreachable block_1148c04b (ram,0x1148c0b9) */ undefined4 FUN_1148c04b(void);
-/* Library Function - Single Match __aullrem Library: Visual Studio */undefined8 FUN_1148c350(uint param_1,uint param_2,uint param_3,uint param_4);
+/* Library Function - Single Match __aullrem Library: Visual Studio */undefined8 __stdcall FUN_1148c350(uint param_1,uint param_2,uint param_3,uint param_4);
 template<class... A> int FUN_1148c350(A...);
-/* Library Function - Single Match __alldvrm Library: Visual Studio */undefined8 FUN_1148c3f0(uint param_1,uint param_2,uint param_3,uint param_4);
+/* Library Function - Single Match __alldvrm Library: Visual Studio */undefined8 __stdcall FUN_1148c3f0(uint param_1,uint param_2,uint param_3,uint param_4);
 template<class... A> int FUN_1148c3f0(A...);
-/* Library Function - Single Match __aulldiv Library: Visual Studio */undefined8 FUN_1148c540(uint param_1,uint param_2,uint param_3,uint param_4);
+/* Library Function - Single Match __aulldiv Library: Visual Studio */undefined8 __stdcall FUN_1148c540(uint param_1,uint param_2,uint param_3,uint param_4);
 template<class... A> int FUN_1148c540(A...);
-/* Library Function - Single Match __aulldvrm Library: Visual Studio */undefined8 FUN_1148c5d0(uint param_1,uint param_2,uint param_3,uint param_4);
+/* Library Function - Single Match __aulldvrm Library: Visual Studio */undefined8 __stdcall FUN_1148c5d0(uint param_1,uint param_2,uint param_3,uint param_4);
 template<class... A> int FUN_1148c5d0(A...);
 void FUN_1148c7fb(int param_1,int param_2,uint param_3);
 template<class... A> int FUN_1148c7fb(A...);
@@ -6603,6 +6603,8 @@ template<class... A> int FUN_117f8b80(A...);
 extern int ghidra_vftable_Features;
 
 // Reference entry 11409bb0; body size 173 bytes.
+extern int __stdcall thunk_FUN_1145a760(int a1,int a2);
+extern int __stdcall thunk_FUN_1145a960(int a1);
 #line 1 "ENTRY_11409bb0"
 
 void FUN_11409bb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
@@ -41337,7 +41339,7 @@ undefined4 FUN_11458220(int param_1)
 /* WARNING: Removing unreachable block (ram,0x11458412) */ void __thiscall Recovered_Bulk::m_FUN_114583d0(undefined4 param_2)
 {
   int param_1 = (int )this;
-  thunk_FUN_1145a960(param_2);
+  thunk_FUN_1145a960((int)(param_2));
   *(uint*)(param_1 + 0xdc) = (uint)(*(uint *)(param_1 + 0xdc) | 0x20);
   return;
 }
@@ -41944,7 +41946,7 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_11459ad0(int param_2,uint param_3,ch
               if ((*(char *)(iVar6 + 8 + local_34) == '\0') &&
                  (iVar2 = (int)(*(int *)(iVar6 + 4 + local_34)), iVar2 != 0)) {
                 if ((cVar5 == '\0') &&
-                   (cVar5 = (char)(thunk_FUN_1145a760(*(undefined4 *)(iVar6 + local_34),iVar2), 0), cVar5 != '\0')) {
+                   (cVar5 = (char)(thunk_FUN_1145a760((int)(*(undefined4 *)(iVar6 + local_34)),(int)(iVar2)), 0), cVar5 != '\0')) {
                   cVar5 = (char)('\0');
                   local_20 = (char)(cVar5);
                 }
@@ -42330,7 +42332,7 @@ undefined2 __thiscall Recovered_Bulk::m_FUN_1145a310(int param_2,undefined4 *par
               if ((*(char *)(iVar6 + 8 + (int)local_34) == '\0') &&
                  (iVar7 = (int)(*(int *)(iVar6 + 4 + (int)local_34)), iVar7 != 0)) {
                 if ((cVar4 == '\0') &&
-                   (cVar4 = (char)(thunk_FUN_1145a760(*(undefined4 *)(iVar6 + (int)local_34),iVar7), 0), cVar4 != '\0')) {
+                   (cVar4 = (char)(thunk_FUN_1145a760((int)(*(undefined4 *)(iVar6 + (int)local_34)),(int)(iVar7)), 0), cVar4 != '\0')) {
                   cVar4 = (char)('\0');
                   local_20 = (char)(cVar4);
                 }
@@ -42506,8 +42508,8 @@ bool __thiscall Recovered_Bulk::m_FUN_1145a960(char *param_2)
   local_10 = (uint)(local_10 & 0xfffffff8);
   *(uint*)((char *)&local_8 + 0) = (uint)((uint3)(byte)local_8);
   *(uint*)((char *)&local_10 + 0) = (uint)((uint3)(byte)local_10);
-  uVar1 = (uint)(thunk_FUN_1145a960(param_2), 0);
-  if (((char)uVar1 != '\0') && (uVar1 = (uint)(thunk_FUN_1145a960(param_3), 0), (char)uVar1 != '\0')) {
+  uVar1 = (uint)(thunk_FUN_1145a960((int)(param_2)), 0);
+  if (((char)uVar1 != '\0') && (uVar1 = (uint)(thunk_FUN_1145a960((int)(param_3)), 0), (char)uVar1 != '\0')) {
     *param_1 = (undefined4)(local_8);
     param_1[2] = (undefined4)(local_10);
     param_1[1] = (undefined4)(0);
@@ -66773,7 +66775,7 @@ byte FUN_1148b2f2(undefined4 param_1)
     void __stdcall `eh vector constructor iterator'(void *,unsigned int_,unsigned int_,void_1148b5ac
    (__thiscall*)(void *),void (__thiscall*)(void *))
    
-   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void FUN_1148b5ac(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4, _func_void_void_ptr *param_5){
+   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void FUN_1148b5ac(void *param_1,uint param_2,uint param_3,_func_void_void_ptr *param_4,_func_void_void_ptr *param_5){
  try {
   uint uVar1;
   void *pvVar2;
@@ -66944,7 +66946,7 @@ LAB_1148bf7d:
     void __stdcall `eh vector copy constructor iterator'(void *,void *,unsigned int_,unsigned
    int_,void_1148bfb3 (__thiscall*)(void *,void *),void (__thiscall*)(void *))
    
-   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void FUN_1148bfb3(void *param_1,void *param_2,uint param_3,uint param_4, _func_void_void_ptr_void_ptr *param_5,_func_void_void_ptr *param_6){
+   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void FUN_1148bfb3(void *param_1,void *param_2,uint param_3,uint param_4,_func_void_void_ptr_void_ptr *param_5,_func_void_void_ptr *param_6){
  try {
   uint uVar1;
   void *pvVar2;

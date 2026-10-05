@@ -3723,6 +3723,27 @@ template<class... A> int FUN_11440230(A...);
 int FUN_11440520(int a1);
 template<class... A> int FUN_11440520(A...);
 // Reference entry 10006601; body size 12 bytes.
+extern int __stdcall FUN_10049a94(int a1);
+extern int __stdcall FUN_1005273e(int a1);
+extern int __stdcall FUN_1008ca83(int a1);
+extern int __stdcall FUN_102703b0(int a1);
+extern int __stdcall FUN_103c3720(int a1,int a2);
+extern int __stdcall FUN_104ab710(int a1,int a2);
+extern int __stdcall FUN_10cbcff0(int a1,int a2);
+extern int __stdcall FUN_10cf1ee0(int a1);
+extern int __stdcall FUN_10cf2340(int a1);
+extern int __stdcall FUN_10ea7290(int a1);
+extern int __stdcall thunk_FUN_101ba530(int a1);
+extern int __stdcall thunk_FUN_103860f0(int a1,int a2);
+extern int __stdcall thunk_FUN_1061c5e0(int a1);
+extern int __stdcall thunk_FUN_10cf4ae0(int a1);
+extern int __stdcall thunk_FUN_10d9e6c0(int a1);
+extern int __stdcall thunk_FUN_10d9fde0(int a1);
+extern int __stdcall thunk_FUN_10eae090(int a1);
+extern int __stdcall thunk_FUN_11093530(int a1,int a2);
+extern int __stdcall thunk_FUN_11113c60(int a1,int a2);
+extern int __stdcall thunk_FUN_1118b510(int a1,int a2);
+extern int __stdcall thunk_FUN_11248b40(int a1);
 #line 1 "ENTRY_10006601"
 int FUN_10006601(void) {
 
@@ -5114,14 +5135,14 @@ int FUN_10225b40(int a1, int a2) {
 #line 1 "ENTRY_10225bd0"
 int FUN_10225bd0(int a1, int a2) {
 
-    return (int)(thunk_FUN_1061c5e0(*(int *)a1));
+    return (int)(thunk_FUN_1061c5e0((int)(*(int *)a1)));
 }
 
 // Reference entry 10225bf0; body size 18 bytes.
 #line 1 "ENTRY_10225bf0"
 int FUN_10225bf0(int a1, int a2) {
 
-    return (int)(thunk_FUN_1061c5e0(*(int *)a1));
+    return (int)(thunk_FUN_1061c5e0((int)(*(int *)a1)));
 }
 
 // Reference entry 10225c30; body size 11 bytes.
@@ -5228,14 +5249,14 @@ int FUN_102282f0(int a1, int a2) {
 #line 1 "ENTRY_10228380"
 int FUN_10228380(int a1, int a2) {
 
-    return (int)(thunk_FUN_1061c5e0(*(int *)a1));
+    return (int)(thunk_FUN_1061c5e0((int)(*(int *)a1)));
 }
 
 // Reference entry 102283a0; body size 18 bytes.
 #line 1 "ENTRY_102283a0"
 int FUN_102283a0(int a1, int a2) {
 
-    return (int)(thunk_FUN_1061c5e0(*(int *)a1));
+    return (int)(thunk_FUN_1061c5e0((int)(*(int *)a1)));
 }
 
 // Reference entry 102283e0; body size 11 bytes.
@@ -5307,7 +5328,7 @@ int FUN_1022f1f0(void) {
 int __stdcall FUN_1022fc00(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_1022fc00<>)
-    return (int)(thunk_FUN_1061c5e0(v1));
+    return (int)(thunk_FUN_1061c5e0((int)(v1)));
 }
 
 // Reference entry 1022fc20; body size 14 bytes.
@@ -5315,7 +5336,7 @@ int __stdcall FUN_1022fc00(int a1) {
 int __stdcall FUN_1022fc20(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_1022fc20<>)
-    return (int)(thunk_FUN_1061c5e0(v1));
+    return (int)(thunk_FUN_1061c5e0((int)(v1)));
 }
 
 // Reference entry 1022fc60; body size 10 bytes.
@@ -5444,7 +5465,7 @@ int __stdcall FUN_102635f0(int a1) {
 #line 1 "ENTRY_10263a00"
 int FUN_10263a00(int a1, int a2) {
 
-    return (int)(FUN_10267ce0(*(int *)a2));
+    return (int)(FUN_10267ce0((int)(*(int *)a2)));
 }
 
 // Reference entry 10264a40; body size 21 bytes.
@@ -5473,7 +5494,7 @@ int __stdcall FUN_10264b00(int a1) {
 #line 1 "ENTRY_10265610"
 int FUN_10265610(int a1, int a2) {
 
-    return (int)(FUN_10267ce0(*(int *)a2));
+    return (int)(FUN_10267ce0((int)(*(int *)a2)));
 }
 
 // Reference entry 10265680; body size 11 bytes.
@@ -5538,7 +5559,7 @@ int __stdcall FUN_1026e340(int a1) {
 #line 1 "ENTRY_1026e520"
 int FUN_1026e520(int a1, int a2) {
 
-    return (int)(FUN_102703b0(a2));
+    return (int)(FUN_102703b0((int)(a2)));
 }
 
 // Reference entry 1026e540; body size 11 bytes.
@@ -5574,7 +5595,7 @@ int __stdcall FUN_1026e980(int a1) {
 #line 1 "ENTRY_1026ed80"
 int FUN_1026ed80(int a1, int a2) {
 
-    return (int)(FUN_102703b0(a2));
+    return (int)(FUN_102703b0((int)(a2)));
 }
 
 // Reference entry 1026eda0; body size 11 bytes.
@@ -5823,7 +5844,7 @@ int __stdcall FUN_102dc020(int a1) {
 #line 1 "ENTRY_102dc4b0"
 int FUN_102dc4b0(int a1) {
 
-    return (int)(FUN_1008ca83((int)&DAT_1187aa88));
+    return (int)(FUN_1008ca83((int)((int)&DAT_1187aa88)));
 }
 
 // Reference entry 102dc530; body size 21 bytes.
@@ -5841,7 +5862,7 @@ int __stdcall FUN_102dc530(int a1) {
 #line 1 "ENTRY_102dc5d0"
 int FUN_102dc5d0(int a1) {
 
-    return (int)(FUN_1008ca83((int)&DAT_1187aa88));
+    return (int)(FUN_1008ca83((int)((int)&DAT_1187aa88)));
 }
 
 // Reference entry 102dc640; body size 11 bytes.
@@ -5857,7 +5878,7 @@ int __stdcall FUN_102dc640(int a1) {
 #line 1 "ENTRY_102dd220"
 int __stdcall FUN_102dd220(int a1, unsigned int recovered_unused_stack_0) {
 
-    return (int)(FUN_1008ca83((int)&DAT_1187aa88));
+    return (int)(FUN_1008ca83((int)((int)&DAT_1187aa88)));
 }
 
 // Reference entry 102f4800; body size 21 bytes.
@@ -6717,7 +6738,7 @@ int __stdcall FUN_103503b0(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_10352560"
 int __stdcall FUN_10352560(int a1) {
 
-    return (int)(thunk_FUN_10cf4ae0(0));
+    return (int)(thunk_FUN_10cf4ae0((int)(0)));
 }
 
 // Reference entry 10352580; body size 20 bytes.
@@ -6725,7 +6746,7 @@ int __stdcall FUN_10352560(int a1) {
 int __stdcall FUN_10352580(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_10352580<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 103525a0; body size 20 bytes.
@@ -6733,14 +6754,14 @@ int __stdcall FUN_10352580(int a1) {
 int __stdcall FUN_103525a0(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_103525a0<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 103526a0; body size 20 bytes.
 #line 1 "ENTRY_103526a0"
 int FUN_103526a0(int a1) {
 
-    return (int)(thunk_FUN_10cf4ae0(0));
+    return (int)(thunk_FUN_10cf4ae0((int)(0)));
 }
 
 // Reference entry 10352768; body size 20 bytes.
@@ -6761,7 +6782,7 @@ int *v1 = (int *)((int)((int *)(result - 0x3f7bfb3c))); // (int)((int(*)(int a1)
 #line 1 "ENTRY_10352790"
 int FUN_10352790(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 103527e0; body size 24 bytes.
@@ -6769,21 +6790,21 @@ int FUN_10352790(int a1, int a2) {
 int FUN_103527e0(int a1, int a2) {
 
     int v1 = (int)(*(int *)(*(int *)a1 + 0x10ec)); // (int)&FUN_103527ea
-    return (int)(thunk_FUN_103860f0(*(int *)a2, v1));
+    return (int)(thunk_FUN_103860f0((int)(*(int *)a2),(int)(v1)));
 }
 
 // Reference entry 10352800; body size 24 bytes.
 #line 1 "ENTRY_10352800"
 int FUN_10352800(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10352820; body size 24 bytes.
 #line 1 "ENTRY_10352820"
 int FUN_10352820(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10356ba0; body size 21 bytes.
@@ -6893,7 +6914,7 @@ int *v1 = (int *)((int)((int *)(result - 0x3f7bfb3c))); // (int)((int(*)(int a1)
 #line 1 "ENTRY_10359600"
 int FUN_10359600(int a1) {
 
-    return (int)(thunk_FUN_10cf4ae0(0));
+    return (int)(thunk_FUN_10cf4ae0((int)(0)));
 }
 
 // Reference entry 103596c8; body size 20 bytes.
@@ -6914,7 +6935,7 @@ int *v1 = (int *)((int)((int *)(result - 0x3f7bfb3c))); // (int)((int(*)(int a1)
 #line 1 "ENTRY_103596f0"
 int FUN_103596f0(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10359740; body size 24 bytes.
@@ -6922,21 +6943,21 @@ int FUN_103596f0(int a1, int a2) {
 int FUN_10359740(int a1, int a2) {
 
     int v1 = (int)(*(int *)(*(int *)a1 + 0x10ec)); // (int)&FUN_1035974a
-    return (int)(thunk_FUN_103860f0(*(int *)a2, v1));
+    return (int)(thunk_FUN_103860f0((int)(*(int *)a2),(int)(v1)));
 }
 
 // Reference entry 10359760; body size 24 bytes.
 #line 1 "ENTRY_10359760"
 int FUN_10359760(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10359780; body size 24 bytes.
 #line 1 "ENTRY_10359780"
 int FUN_10359780(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10359bd0; body size 11 bytes.
@@ -6980,7 +7001,7 @@ int __stdcall FUN_10359e40(int a1) {
 int __stdcall FUN_10367820(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_10367820<>)
-    return (int)(thunk_FUN_103860f0(a1, *(int *)(v1 + 0x10ec)));
+    return (int)(thunk_FUN_103860f0((int)(a1),(int)(*(int *)(v1 + 0x10ec))));
 }
 
 // Reference entry 10367840; body size 20 bytes.
@@ -6988,7 +7009,7 @@ int __stdcall FUN_10367820(int a1) {
 int __stdcall FUN_10367840(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_10367840<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 1039ebd0; body size 26 bytes.
@@ -7003,14 +7024,14 @@ int FUN_1039ebd0(int a1, int a2, int a3, int a4) {
 #line 1 "ENTRY_103bf770"
 int FUN_103bf770(int a1, int a2, int a3) {
 
-    return (int)(FUN_103c3720(*(int *)a2, a3));
+    return (int)(FUN_103c3720((int)(*(int *)a2),(int)(a3)));
 }
 
 // Reference entry 103c01e0; body size 20 bytes.
 #line 1 "ENTRY_103c01e0"
 int FUN_103c01e0(int a1, int a2, int a3) {
 
-    return (int)(FUN_103c3720(*(int *)a2, a3));
+    return (int)(FUN_103c3720((int)(*(int *)a2),(int)(a3)));
 }
 
 // Reference entry 103c0210; body size 11 bytes.
@@ -7619,21 +7640,21 @@ int __stdcall FUN_1042b210(unsigned int recovered_unused_stack_0) {
 int __stdcall FUN_10442c50(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_10442c50<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 10442c70; body size 24 bytes.
 #line 1 "ENTRY_10442c70"
 int FUN_10442c70(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10442ea0; body size 24 bytes.
 #line 1 "ENTRY_10442ea0"
 int FUN_10442ea0(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 1045ee40; body size 20 bytes.
@@ -7698,14 +7719,14 @@ int __stdcall FUN_10461040(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_104610e0"
 int __stdcall FUN_104610e0(int a1) {
 
-    return (int)(thunk_FUN_1061c5e0(5));
+    return (int)(thunk_FUN_1061c5e0((int)(5)));
 }
 
 // Reference entry 10461100; body size 14 bytes.
 #line 1 "ENTRY_10461100"
 int FUN_10461100(int a1) {
 
-    return (int)(thunk_FUN_1061c5e0(5));
+    return (int)(thunk_FUN_1061c5e0((int)(5)));
 }
 
 // Reference entry 104611c0; body size 12 bytes.
@@ -7721,7 +7742,7 @@ int __stdcall FUN_104611c0(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_104613b0"
 int FUN_104613b0(int a1) {
 
-    return (int)(thunk_FUN_1061c5e0(5));
+    return (int)(thunk_FUN_1061c5e0((int)(5)));
 }
 
 // Reference entry 1046bfa0; body size 20 bytes.
@@ -7809,21 +7830,21 @@ int __stdcall FUN_1046c250(int a1) {
 int __stdcall FUN_10471940(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_10471940<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 10471ab0; body size 24 bytes.
 #line 1 "ENTRY_10471ab0"
 int FUN_10471ab0(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10471cf0; body size 24 bytes.
 #line 1 "ENTRY_10471cf0"
 int FUN_10471cf0(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10478b90; body size 20 bytes.
@@ -8195,7 +8216,7 @@ int __stdcall FUN_1047eca0(int a1) {
 int __stdcall FUN_1047f420(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_1047f420<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 1047f760; body size 20 bytes.
@@ -8203,7 +8224,7 @@ int __stdcall FUN_1047f420(int a1) {
 int __stdcall FUN_1047f760(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_1047f760<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 1047f780; body size 20 bytes.
@@ -8211,7 +8232,7 @@ int __stdcall FUN_1047f760(int a1) {
 int __stdcall FUN_1047f780(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_1047f780<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 1047f7e0; body size 20 bytes.
@@ -8219,35 +8240,35 @@ int __stdcall FUN_1047f780(int a1) {
 int __stdcall FUN_1047f7e0(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_1047f7e0<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 1047f880; body size 24 bytes.
 #line 1 "ENTRY_1047f880"
 int FUN_1047f880(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 1047f8a0; body size 24 bytes.
 #line 1 "ENTRY_1047f8a0"
 int FUN_1047f8a0(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 1047f9b0; body size 24 bytes.
 #line 1 "ENTRY_1047f9b0"
 int FUN_1047f9b0(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 1047fab0; body size 24 bytes.
 #line 1 "ENTRY_1047fab0"
 int FUN_1047fab0(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10480f40; body size 21 bytes.
@@ -8276,28 +8297,28 @@ int __stdcall FUN_10481270(int a1) {
 #line 1 "ENTRY_10481910"
 int FUN_10481910(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10481930; body size 24 bytes.
 #line 1 "ENTRY_10481930"
 int FUN_10481930(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10481a40; body size 24 bytes.
 #line 1 "ENTRY_10481a40"
 int FUN_10481a40(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10481b40; body size 24 bytes.
 #line 1 "ENTRY_10481b40"
 int FUN_10481b40(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 104820b0; body size 11 bytes.
@@ -8350,21 +8371,21 @@ int __stdcall FUN_10497620(unsigned int recovered_unused_stack_0) {
 int __stdcall FUN_1049d360(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_1049d360<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 1049d380; body size 24 bytes.
 #line 1 "ENTRY_1049d380"
 int FUN_1049d380(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 1049d5b0; body size 24 bytes.
 #line 1 "ENTRY_1049d5b0"
 int FUN_1049d5b0(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 104ab040; body size 20 bytes.
@@ -8485,7 +8506,7 @@ int __stdcall FUN_104ab270(int a1) {
 #line 1 "ENTRY_104abf80"
 int FUN_104abf80(int a1) {
 
-    int result = (int)(FUN_1008ca83((int)&DAT_1187ae7c), 0); // (int)&FUN_104abf89
+    int result = (int)(FUN_1008ca83((int)((int)&DAT_1187ae7c)), 0); // (int)&FUN_104abf89
     if ((char)result == 0) {
         return (int)(result);
     }
@@ -8496,7 +8517,7 @@ int FUN_104abf80(int a1) {
 #line 1 "ENTRY_104ac010"
 int FUN_104ac010(int a1, int a2, int a3) {
 
-    return (int)(FUN_104ab710(*(int *)a2, (int)*(short *)a3));
+    return (int)(FUN_104ab710((int)(*(int *)a2),(int)((int)*(short *)a3)));
 }
 
 // Reference entry 104ac1a0; body size 21 bytes.
@@ -8563,7 +8584,7 @@ int __stdcall FUN_104ac210(int a1) {
 #line 1 "ENTRY_104ac7c0"
 int FUN_104ac7c0(int a1) {
 
-    int result = (int)(FUN_1008ca83((int)&DAT_1187ae7c), 0); // (int)&FUN_104ac7c9
+    int result = (int)(FUN_1008ca83((int)((int)&DAT_1187ae7c)), 0); // (int)&FUN_104ac7c9
     if ((char)result == 0) {
         return (int)(result);
     }
@@ -8574,7 +8595,7 @@ int FUN_104ac7c0(int a1) {
 #line 1 "ENTRY_104ac850"
 int FUN_104ac850(int a1, int a2, int a3) {
 
-    return (int)(FUN_104ab710(*(int *)a2, (int)*(short *)a3));
+    return (int)(FUN_104ab710((int)(*(int *)a2),(int)((int)*(short *)a3)));
 }
 
 // Reference entry 104ac940; body size 11 bytes.
@@ -8705,14 +8726,14 @@ int __stdcall FUN_104b4d40(int a1) {
 int __stdcall FUN_104b4e20(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_104b4e20<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 104b4e90; body size 24 bytes.
 #line 1 "ENTRY_104b4e90"
 int FUN_104b4e90(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 104b4f40; body size 11 bytes.
@@ -8777,7 +8798,7 @@ int __stdcall FUN_104b5170(int a1) {
 #line 1 "ENTRY_104b5380"
 int FUN_104b5380(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 104b5430; body size 11 bytes.
@@ -8846,7 +8867,7 @@ int __stdcall FUN_104bd3d0(int a1) {
 int __stdcall FUN_104bd410(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_104bd410<>)
-    return (int)(thunk_FUN_10d9e6c0(*(int *)(v1 + 148)));
+    return (int)(thunk_FUN_10d9e6c0((int)(*(int *)(v1 + 148))));
 }
 
 // Reference entry 104bd460; body size 21 bytes.
@@ -9140,7 +9161,7 @@ int __stdcall FUN_105c9cf0(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_105ca4d0"
 int FUN_105ca4d0(int a1) {
 
-    return (int)(thunk_FUN_10eae090(0));
+    return (int)(thunk_FUN_10eae090((int)(0)));
 }
 
 // Reference entry 105cca90; body size 12 bytes.
@@ -9156,7 +9177,7 @@ int __stdcall FUN_105cca90(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_105d4a00"
 int __stdcall FUN_105d4a00(int a1) {
 
-    return (int)(thunk_FUN_10eae090(0));
+    return (int)(thunk_FUN_10eae090((int)(0)));
 }
 
 // Reference entry 105e8c80; body size 11 bytes.
@@ -9601,7 +9622,7 @@ int __stdcall FUN_10699a10(int a1) {
 #line 1 "ENTRY_10699c20"
 int FUN_10699c20(int a1, int a2) {
 
-    return (int)(FUN_1069ccd0(*(int *)a2));
+    return (int)(FUN_1069ccd0((int)(*(int *)a2)));
 }
 
 // Reference entry 10699f40; body size 21 bytes.
@@ -9619,7 +9640,7 @@ int __stdcall FUN_10699f40(int a1) {
 #line 1 "ENTRY_1069a480"
 int FUN_1069a480(int a1, int a2) {
 
-    return (int)(FUN_1069ccd0(*(int *)a2));
+    return (int)(FUN_1069ccd0((int)(*(int *)a2)));
 }
 
 // Reference entry 1069a570; body size 11 bytes.
@@ -9737,7 +9758,7 @@ int __stdcall FUN_106a8e40(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_106a9a90"
 int FUN_106a9a90(int a1) {
 
-    return (int)(thunk_FUN_1061c5e0(4));
+    return (int)(thunk_FUN_1061c5e0((int)(4)));
 }
 
 // Reference entry 106a9b30; body size 17 bytes.
@@ -9801,7 +9822,7 @@ int __stdcall FUN_106ad7d0(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_106afe30"
 int FUN_106afe30(int a1) {
 
-    return (int)(thunk_FUN_1061c5e0(4));
+    return (int)(thunk_FUN_1061c5e0((int)(4)));
 }
 
 // Reference entry 106afed0; body size 17 bytes.
@@ -9851,7 +9872,7 @@ int FUN_106b6540(int a1) {
 #line 1 "ENTRY_106b6680"
 int __stdcall FUN_106b6680(int a1) {
 
-    return (int)(thunk_FUN_1061c5e0(4));
+    return (int)(thunk_FUN_1061c5e0((int)(4)));
 }
 
 // Reference entry 106b6720; body size 17 bytes.
@@ -9866,7 +9887,7 @@ int __stdcall FUN_106b6720(int a1) {
 #line 1 "ENTRY_106b6740"
 int __stdcall FUN_106b6740(int a1, int a2) {
 
-    return (int)(thunk_FUN_10d9fde0(a2));
+    return (int)(thunk_FUN_10d9fde0((int)(a2)));
 }
 
 // Reference entry 106d13f0; body size 26 bytes.
@@ -9935,7 +9956,7 @@ int __stdcall FUN_106d1640(int a1) {
 #line 1 "ENTRY_106d17d0"
 int FUN_106d17d0(int a1) {
 
-    return (int)(thunk_FUN_106d62c0<>((int)*(char *)(a1 + 4)));
+    return (int)(thunk_FUN_106d62c0((int)((int)*(char *)(a1 + 4))));
 }
 
 // Reference entry 106d17f0; body size 11 bytes.
@@ -9990,7 +10011,7 @@ int __stdcall FUN_106d1e30(int a1) {
 #line 1 "ENTRY_106d22d0"
 int FUN_106d22d0(int a1) {
 
-    return (int)(thunk_FUN_106d62c0<>((int)*(char *)(a1 + 4)));
+    return (int)(thunk_FUN_106d62c0((int)((int)*(char *)(a1 + 4))));
 }
 
 // Reference entry 106d22f0; body size 11 bytes.
@@ -10040,7 +10061,7 @@ int __stdcall FUN_106d2440(int a1) {
 int FUN_106d3360(void) {
 
     int v1; // (int)((int(*)(void))&FUN_106d3360<>)
-    return (int)(thunk_FUN_106d62c0<>((int)*(char *)(v1 + 4)));
+    return (int)(thunk_FUN_106d62c0((int)((int)*(char *)(v1 + 4))));
 }
 
 // Reference entry 1083f620; body size 20 bytes.
@@ -10507,14 +10528,14 @@ int __stdcall FUN_10bbf770(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_10bbf850"
 int __stdcall FUN_10bbf850(int a1) {
 
-    return (int)(thunk_FUN_10d9e6c0(3));
+    return (int)(thunk_FUN_10d9e6c0((int)(3)));
 }
 
 // Reference entry 10bbf8b0; body size 20 bytes.
 #line 1 "ENTRY_10bbf8b0"
 int FUN_10bbf8b0(int a1) {
 
-    return (int)(thunk_FUN_10d9e6c0(3));
+    return (int)(thunk_FUN_10d9e6c0((int)(3)));
 }
 
 // Reference entry 10bbfbd0; body size 12 bytes.
@@ -10539,7 +10560,7 @@ int __stdcall FUN_10bbfc80(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_10bbffc0"
 int FUN_10bbffc0(int a1) {
 
-    return (int)(thunk_FUN_10d9e6c0(3));
+    return (int)(thunk_FUN_10d9e6c0((int)(3)));
 }
 
 // Reference entry 10bc5240; body size 11 bytes.
@@ -10650,7 +10671,7 @@ int __stdcall FUN_10c04340(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_10c04570"
 int __stdcall FUN_10c04570(int a1) {
 
-    return (int)(thunk_FUN_10cf4ae0(0));
+    return (int)(thunk_FUN_10cf4ae0((int)(0)));
 }
 
 // Reference entry 10c04590; body size 20 bytes.
@@ -10658,21 +10679,21 @@ int __stdcall FUN_10c04570(int a1) {
 int __stdcall FUN_10c04590(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_10c04590<>)
-    return (int)(thunk_FUN_10cf3780<>(v1));
+    return (int)(thunk_FUN_10cf3780((int)(v1)));
 }
 
 // Reference entry 10c047b0; body size 24 bytes.
 #line 1 "ENTRY_10c047b0"
 int FUN_10c047b0(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10c047d0; body size 20 bytes.
 #line 1 "ENTRY_10c047d0"
 int FUN_10c047d0(int a1) {
 
-    return (int)(thunk_FUN_10cf4ae0(0));
+    return (int)(thunk_FUN_10cf4ae0((int)(0)));
 }
 
 // Reference entry 10c04de0; body size 12 bytes.
@@ -10688,14 +10709,14 @@ int __stdcall FUN_10c04de0(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_10c05040"
 int FUN_10c05040(int a1, int a2) {
 
-    return (int)(thunk_FUN_10cf3780<>(*(int *)a1));
+    return (int)(thunk_FUN_10cf3780((int)(*(int *)a1)));
 }
 
 // Reference entry 10c05060; body size 20 bytes.
 #line 1 "ENTRY_10c05060"
 int FUN_10c05060(int a1) {
 
-    return (int)(thunk_FUN_10cf4ae0(0));
+    return (int)(thunk_FUN_10cf4ae0((int)(0)));
 }
 
 // Reference entry 10c07d08; body size 13 bytes.
@@ -10773,7 +10794,7 @@ int FUN_10cacc92(void) {
 
     int v1; // (int)((int(*)(void))&FUN_10cacc92<>)
     int v2 = (int)(v1);
-    FUN_1005273e(v1);
+    FUN_1005273e((int)(v1));
 char *v3 = (char *)((char)((char *)(v2 - 4))); // (int)&FUN_10cacca4
     *v3 = (char)(68);
     FUN_1005c315();
@@ -10814,7 +10835,7 @@ int __stdcall FUN_10cbc9d0(int a1) {
 #line 1 "ENTRY_10cbca10"
 int FUN_10cbca10(int a1, int a2, int a3) {
 
-    return (int)(FUN_10cbcff0(*(int *)a2, a3));
+    return (int)(FUN_10cbcff0((int)(*(int *)a2),(int)(a3)));
 }
 
 // Reference entry 10cbca30; body size 21 bytes.
@@ -10832,7 +10853,7 @@ int __stdcall FUN_10cbca30(int a1) {
 #line 1 "ENTRY_10cbca90"
 int FUN_10cbca90(int a1, int a2, int a3) {
 
-    return (int)(FUN_10cbcff0(*(int *)a2, a3));
+    return (int)(FUN_10cbcff0((int)(*(int *)a2),(int)(a3)));
 }
 
 // Reference entry 10cbcac0; body size 11 bytes.
@@ -10896,14 +10917,14 @@ int __stdcall FUN_10cf1ea0(int a1) {
 #line 1 "ENTRY_10cf2b30"
 int FUN_10cf2b30(int a1, int a2) {
 
-    return (int)(FUN_10cf1ee0(*(int *)a2));
+    return (int)(FUN_10cf1ee0((int)(*(int *)a2)));
 }
 
 // Reference entry 10cf2b50; body size 16 bytes.
 #line 1 "ENTRY_10cf2b50"
 int FUN_10cf2b50(int a1, int a2) {
 
-    return (int)(FUN_10cf2340(*(int *)a2));
+    return (int)(FUN_10cf2340((int)(*(int *)a2)));
 }
 
 // Reference entry 10cf2b70; body size 21 bytes.
@@ -10932,14 +10953,14 @@ int __stdcall FUN_10cf2b90(int a1) {
 #line 1 "ENTRY_10cf2c40"
 int FUN_10cf2c40(int a1, int a2) {
 
-    return (int)(FUN_10cf1ee0(*(int *)a2));
+    return (int)(FUN_10cf1ee0((int)(*(int *)a2)));
 }
 
 // Reference entry 10cf2c60; body size 16 bytes.
 #line 1 "ENTRY_10cf2c60"
 int FUN_10cf2c60(int a1, int a2) {
 
-    return (int)(FUN_10cf2340(*(int *)a2));
+    return (int)(FUN_10cf2340((int)(*(int *)a2)));
 }
 
 // Reference entry 10cf2ca0; body size 11 bytes.
@@ -11968,7 +11989,7 @@ int __stdcall FUN_10d9e1c0(unsigned int recovered_unused_stack_0) {
 int FUN_10e2be94(void) {
 
     int v1; // (int)((int(*)(void))&FUN_10e2be94<>)
-    FUN_1005273e(v1);
+    FUN_1005273e((int)(v1));
     return (int)(thunk_FUN_10e458b0<>());
 }
 
@@ -12009,7 +12030,7 @@ int __stdcall FUN_10ea6ff0(int a1) {
 #line 1 "ENTRY_10ea77f0"
 int FUN_10ea77f0(int a1, int a2) {
 
-    return (int)(FUN_10ea7290(*(int *)a2));
+    return (int)(FUN_10ea7290((int)(*(int *)a2)));
 }
 
 // Reference entry 10ea9cd0; body size 21 bytes.
@@ -12027,7 +12048,7 @@ int __stdcall FUN_10ea9cd0(int a1) {
 #line 1 "ENTRY_10eaa340"
 int FUN_10eaa340(int a1, int a2) {
 
-    return (int)(FUN_10ea7290(*(int *)a2));
+    return (int)(FUN_10ea7290((int)(*(int *)a2)));
 }
 
 // Reference entry 10eaa510; body size 11 bytes.
@@ -12156,7 +12177,7 @@ int __stdcall FUN_10f24690(int a1) {
 int __stdcall FUN_10f26760(int a1) {
 
     int v1; // (int)((int(__stdcall*)(int a1))&FUN_10f26760<>)
-    return (int)(FUN_10049a94(v1));
+    return (int)(FUN_10049a94((int)(v1)));
 }
 
 // Reference entry 10f3a255; body size 80 bytes.
@@ -12165,7 +12186,7 @@ int FUN_10f3a255(void) {
 
     thunk_FUN_10ecdc30<>();
     thunk_FUN_10ecb570<>();
-    thunk_FUN_10b22ff0<>(thunk_FUN_10ecb410<>());
+    thunk_FUN_10b22ff0((int)(thunk_FUN_10ecb410<>()));
     thunk_FUN_105ffb30();
     int v1; // (int)((int(*)(void))&FUN_10f3a255<>)
     int v2 = (int)(v1 - 4); // (int)&FUN_10f3a281
@@ -12195,7 +12216,7 @@ char *v5 = (char *)((char)((char *)v3)); // (int)&FUN_10f3aca1
     int v6 = (int)(v1 + 12); // (int)&FUN_10f3acb2
     thunk_FUN_10ecdc30<>(v1 + 44, v6, v1 - 20);
     thunk_FUN_10ecb570<>();
-    thunk_FUN_10b22ff0<>(thunk_FUN_10ecb410<>());
+    thunk_FUN_10b22ff0((int)(thunk_FUN_10ecb410<>()));
     thunk_FUN_105ffb30();
     *v5 = (char)(98);
     FUN_1005c315();
@@ -12496,7 +12517,7 @@ int FUN_11005cb0(int a1) {
         return (int)(0);
     }
     int v1 = (int)(*(int *)a1); // (int)&FUN_11005cc6
-    int v2 = (int)(thunk_FUN_11093530<>(v1 != 0 ? v1 : (int)&DAT_1186d2ee, 1), 0); // (int)&FUN_11005cd0
+    int v2 = (int)(thunk_FUN_11093530((int)(v1 != 0 ? v1 : (int)&DAT_1186d2ee),(int)(1)), 0); // (int)&FUN_11005cd0
     if (v2 == 0) {
         return (int)(0);
     }
@@ -12670,7 +12691,7 @@ int FUN_11128930(int a1) {
     if (thunk_FUN_111134e0() == 0) {
         return (int)(0);
     }
-    return (int)(thunk_FUN_11113c60(a1, 0));
+    return (int)(thunk_FUN_11113c60((int)(a1),(int)(0)));
 }
 
 // Reference entry 1114c1d0; body size 12 bytes.
@@ -12695,7 +12716,7 @@ int FUN_1118c160(int a1, int a2, int a3) {
         int v1; // (int)((int(*)(int a1, int a2, int a3))&FUN_1118c160<>)
         return (int)(v1 & -256);
     }
-    int v2 = (int)(thunk_FUN_1118b510<>(a2, 2), 0); // (int)&FUN_1118c16d
+    int v2 = (int)(thunk_FUN_1118b510((int)(a2),(int)(2)), 0); // (int)&FUN_1118c16d
     if (v2 == 0) {
         return (int)(0);
     }
@@ -12703,7 +12724,7 @@ int FUN_1118c160(int a1, int a2, int a3) {
     if (v3 == 0) {
         return (int)(0);
     }
-    return (int)(thunk_FUN_101ba530(v3) & -256 | 1);
+    return (int)(thunk_FUN_101ba530((int)(v3)) & -256 | 1);
 }
 
 // Reference entry 1118c7e0; body size 16 bytes.
@@ -13061,7 +13082,7 @@ int FUN_11297670(int result, int a2) {
 #line 1 "ENTRY_1129aeb0"
 int FUN_1129aeb0(void) {
 
-    return (int)(thunk_FUN_11248b40(15));
+    return (int)(thunk_FUN_11248b40((int)(15)));
 }
 
 // Reference entry 1129b040; body size 11 bytes.

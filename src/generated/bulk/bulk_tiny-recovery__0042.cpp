@@ -677,7 +677,7 @@ template<class... A> int FUN_109ca320(A...);
 undefined1 FUN_109ca350(void);
 template<class... A> int FUN_109ca350(A...);
 undefined4 __stdcall FUN_109cce00(unsigned int recovered_unused_stack_0);
-template<class... A> int FUN_109cce00(A...);
+template<class... A> int __stdcall FUN_109cce00(A...);
 undefined1 FUN_109d7640(void);
 template<class... A> int FUN_109d7640(A...);
 undefined1 FUN_109e05f0(void);
@@ -793,12 +793,502 @@ template<class... A> int FUN_10b983b0(A...);
 void FUN_10b993d0(void);
 template<class... A> int FUN_10b993d0(A...);
 // Reference entry 10982ebf; body size 11 bytes.
+extern int __stdcall FUN_1000293c(int a1);
+extern int __stdcall FUN_1000330f(int a1);
+extern int __stdcall FUN_1000371a(int a1);
+extern int __stdcall FUN_10003bbb(int a1);
+extern int __stdcall FUN_10003d7d(int a1);
+extern int __stdcall FUN_10004156(int a1);
+extern int __stdcall FUN_1000420a(int a1);
+extern int __stdcall FUN_100043bd(int a1);
+extern int __stdcall FUN_10004cdc(int a1);
+extern int __stdcall FUN_100055c9(int a1);
+extern int __stdcall FUN_100059de(int a1);
+extern int __stdcall FUN_10005b8c(int a1);
+extern int __stdcall FUN_10005c59(int a1);
+extern int __stdcall FUN_10006523(int a1);
+extern int __stdcall FUN_1000664f(int a1);
+extern int __stdcall FUN_10006eb5(int a1);
+extern int __stdcall FUN_10006ec4(int a1);
+extern int __stdcall FUN_100071b7(int a1);
+extern int __stdcall FUN_1000743c(int a1);
+extern int __stdcall FUN_10007dec(int a1);
+extern int __stdcall FUN_1000821f(int a1);
+extern int __stdcall FUN_10008954(int a1);
+extern int __stdcall FUN_10008d37(int a1);
+extern int __stdcall FUN_1000984f(int a1);
+extern int __stdcall FUN_10009ed5(int a1);
+extern int __stdcall FUN_1000a49d(int a1);
+extern int __stdcall FUN_1000a556(int a1);
+extern int __stdcall FUN_1000ac8b(int a1);
+extern int __stdcall FUN_1000af10(int a1);
+extern int __stdcall FUN_1000b307(int a1);
+extern int __stdcall FUN_1000b839(int a1);
+extern int __stdcall FUN_1000bf78(int a1);
+extern int __stdcall FUN_1000c531(int a1);
+extern int __stdcall FUN_1000c64e(int a1);
+extern int __stdcall FUN_1000c789(int a1);
+extern int __stdcall FUN_1000c941(int a1);
+extern int __stdcall FUN_1000cb58(int a1);
+extern int __stdcall FUN_1000d16b(int a1);
+extern int __stdcall FUN_1000d201(int a1);
+extern int __stdcall FUN_1000d6b1(int a1);
+extern int __stdcall FUN_1000dcc4(int a1);
+extern int __stdcall FUN_1000dff8(int a1);
+extern int __stdcall FUN_1000ea7a(int a1);
+extern int __stdcall FUN_1000f038(int a1);
+extern int __stdcall FUN_1000f362(int a1);
+extern int __stdcall FUN_1000fac4(int a1);
+extern int __stdcall FUN_1000fda8(int a1);
+extern int __stdcall FUN_1000fdad(int a1);
+extern int __stdcall FUN_10010168(int a1);
+extern int __stdcall FUN_1001054b(int a1);
+extern int __stdcall FUN_100108fc(int a1);
+extern int __stdcall FUN_1001090b(int a1);
+extern int __stdcall FUN_100110a9(int a1);
+extern int __stdcall FUN_1001142d(int a1);
+extern int __stdcall FUN_10011630(int a1);
+extern int __stdcall FUN_1001185b(int a1);
+extern int __stdcall FUN_100118d3(int a1);
+extern int __stdcall FUN_10011982(int a1);
+extern int __stdcall FUN_10011cf7(int a1);
+extern int __stdcall FUN_1001212a(int a1);
+extern int __stdcall FUN_100121d4(int a1);
+extern int __stdcall FUN_100123dc(int a1);
+extern int __stdcall FUN_10013174(int a1);
+extern int __stdcall FUN_10013930(int a1);
+extern int __stdcall FUN_10013976(int a1);
+extern int __stdcall FUN_10013980(int a1);
+extern int __stdcall FUN_10013e76(int a1);
+extern int __stdcall FUN_100141cd(int a1);
+extern int __stdcall FUN_100149e3(int a1);
+extern int __stdcall FUN_1001528a(int a1);
+extern int __stdcall FUN_10016649(int a1);
+extern int __stdcall FUN_10016e37(int a1);
+extern int __stdcall FUN_10017959(int a1);
+extern int __stdcall FUN_10017b6b(int a1);
+extern int __stdcall FUN_10017f08(int a1);
+extern int __stdcall FUN_100181ba(int a1);
+extern int __stdcall FUN_100199b6(int a1);
+extern int __stdcall FUN_10019d9e(int a1);
+extern int __stdcall FUN_10019e48(int a1);
+extern int __stdcall FUN_1001a118(int a1);
+extern int __stdcall FUN_1001a9d8(int a1);
+extern int __stdcall FUN_1001b6f3(int a1);
+extern int __stdcall FUN_1001ba7c(int a1);
+extern int __stdcall FUN_1001bc25(int a1);
+extern int __stdcall FUN_1001c46d(int a1);
+extern int __stdcall FUN_1001c521(int a1);
+extern int __stdcall FUN_1001cd82(int a1);
+extern int __stdcall FUN_1001d0c0(int a1);
+extern int __stdcall FUN_1001d4f3(int a1);
+extern int __stdcall FUN_1001dc00(int a1);
+extern int __stdcall FUN_1001ecc7(int a1);
+extern int __stdcall FUN_1001fb95(int a1);
+extern int __stdcall FUN_10020171(int a1);
+extern int __stdcall FUN_1002032e(int a1);
+extern int __stdcall FUN_1002082e(int a1);
+extern int __stdcall FUN_10020964(int a1);
+extern int __stdcall FUN_1002110c(int a1);
+extern int __stdcall FUN_10022557(int a1);
+extern int __stdcall FUN_10022f89(int a1);
+extern int __stdcall FUN_10023038(int a1);
+extern int __stdcall FUN_100233cb(int a1);
+extern int __stdcall FUN_1002348e(int a1);
+extern int __stdcall FUN_10023a56(int a1);
+extern int __stdcall FUN_10023b05(int a1);
+extern int __stdcall FUN_1002467c(int a1);
+extern int __stdcall FUN_10024c3f(int a1);
+extern int __stdcall FUN_100264f4(int a1);
+extern int __stdcall FUN_10026bfc(int a1);
+extern int __stdcall FUN_10026d5f(int a1);
+extern int __stdcall FUN_10026fa8(int a1);
+extern int __stdcall FUN_10027025(int a1);
+extern int __stdcall FUN_1002798f(int a1);
+extern int __stdcall FUN_10027b5b(int a1);
+extern int __stdcall FUN_10027bec(int a1);
+extern int __stdcall FUN_1002803d(int a1);
+extern int __stdcall FUN_100282e0(int a1);
+extern int __stdcall FUN_10028f65(int a1);
+extern int __stdcall FUN_100291bd(int a1);
+extern int __stdcall FUN_10029316(int a1);
+extern int __stdcall FUN_10029686(int a1);
+extern int __stdcall FUN_10029c08(int a1);
+extern int __stdcall FUN_10029e01(int a1);
+extern int __stdcall FUN_1002a757(int a1);
+extern int __stdcall FUN_1002aa36(int a1);
+extern int __stdcall FUN_1002ab4e(int a1);
+extern int __stdcall FUN_1002ae7d(int a1);
+extern int __stdcall FUN_1002b8aa(int a1);
+extern int __stdcall FUN_1002bf44(int a1);
+extern int __stdcall FUN_1002c287(int a1);
+extern int __stdcall FUN_1002c39a(int a1);
+extern int __stdcall FUN_1002c818(int a1);
+extern int __stdcall FUN_1002c8b8(int a1);
+extern int __stdcall FUN_1002cb7e(int a1);
+extern int __stdcall FUN_1002cd54(int a1);
+extern int __stdcall FUN_1002cf70(int a1);
+extern int __stdcall FUN_1002d574(int a1);
+extern int __stdcall FUN_1002d7d1(int a1);
+extern int __stdcall FUN_1002da10(int a1);
+extern int __stdcall FUN_1002dbeb(int a1);
+extern int __stdcall FUN_1002e294(int a1);
+extern int __stdcall FUN_1002e483(int a1);
+extern int __stdcall FUN_1002e96f(int a1);
+extern int __stdcall FUN_1002ece9(int a1);
+extern int __stdcall FUN_1002ee42(int a1);
+extern int __stdcall FUN_1002ee4c(int a1);
+extern int __stdcall FUN_1002f30b(int a1);
+extern int __stdcall FUN_100300ad(int a1);
+extern int __stdcall FUN_1003015c(int a1);
+extern int __stdcall FUN_10030733(int a1);
+extern int __stdcall FUN_100307ce(int a1);
+extern int __stdcall FUN_10030f44(int a1);
+extern int __stdcall FUN_1003130e(int a1);
+extern int __stdcall FUN_10031db8(int a1);
+extern int __stdcall FUN_10032df8(int a1);
+extern int __stdcall FUN_100330a0(int a1);
+extern int __stdcall FUN_100333bb(int a1);
+extern int __stdcall FUN_10033ef6(int a1);
+extern int __stdcall FUN_10033ffa(int a1);
+extern int __stdcall FUN_1003436f(int a1);
+extern int __stdcall FUN_10034383(int a1);
+extern int __stdcall FUN_1003441e(int a1);
+extern int __stdcall FUN_10034dab(int a1);
+extern int __stdcall FUN_10034ed7(int a1);
+extern int __stdcall FUN_1003549a(int a1);
+extern int __stdcall FUN_100359f9(int a1);
+extern int __stdcall FUN_10035df5(int a1);
+extern int __stdcall FUN_10035fc1(int a1);
+extern int __stdcall FUN_10036151(int a1);
+extern int __stdcall FUN_10036331(int a1);
+extern int __stdcall FUN_10036665(int a1);
+extern int __stdcall FUN_10036985(int a1);
+extern int __stdcall FUN_10036d0e(int a1);
+extern int __stdcall FUN_1003756a(int a1);
+extern int __stdcall FUN_10037826(int a1);
+extern int __stdcall FUN_10037dad(int a1);
+extern int __stdcall FUN_10038325(int a1);
+extern int __stdcall FUN_10038451(int a1);
+extern int __stdcall FUN_10038e60(int a1);
+extern int __stdcall FUN_100396ee(int a1);
+extern int __stdcall FUN_10039838(int a1);
+extern int __stdcall FUN_10039f72(int a1);
+extern int __stdcall FUN_1003a21f(int a1);
+extern int __stdcall FUN_1003a8c8(int a1);
+extern int __stdcall FUN_1003ae1d(int a1);
+extern int __stdcall FUN_1003b07a(int a1);
+extern int __stdcall FUN_1003b63d(int a1);
+extern int __stdcall FUN_1003c925(int a1);
+extern int __stdcall FUN_1003cda8(int a1);
+extern int __stdcall FUN_1003cf79(int a1);
+extern int __stdcall FUN_1003d1b3(int a1);
+extern int __stdcall FUN_1003d271(int a1);
+extern int __stdcall FUN_1003dc03(int a1);
+extern int __stdcall FUN_1003e5f4(int a1);
+extern int __stdcall FUN_1003e716(int a1);
+extern int __stdcall FUN_1003ebda(int a1);
+extern int __stdcall FUN_1003ec4d(int a1);
+extern int __stdcall FUN_1003ecbb(int a1);
+extern int __stdcall FUN_1003ef4f(int a1);
+extern int __stdcall FUN_1003f3aa(int a1);
+extern int __stdcall FUN_1003fc15(int a1);
+extern int __stdcall FUN_1003fdb4(int a1);
+extern int __stdcall FUN_10040372(int a1);
+extern int __stdcall FUN_10040930(int a1);
+extern int __stdcall FUN_10040d77(int a1);
+extern int __stdcall FUN_10040e21(int a1);
+extern int __stdcall FUN_1004100b(int a1);
+extern int __stdcall FUN_1004125e(int a1);
+extern int __stdcall FUN_10041952(int a1);
+extern int __stdcall FUN_100425e6(int a1);
+extern int __stdcall FUN_10042dde(int a1);
+extern int __stdcall FUN_100435a9(int a1);
+extern int __stdcall FUN_10043a9f(int a1);
+extern int __stdcall FUN_10044602(int a1);
+extern int __stdcall FUN_10044693(int a1);
+extern int __stdcall FUN_1004490e(int a1);
+extern int __stdcall FUN_100449b8(int a1);
+extern int __stdcall FUN_10044b84(int a1);
+extern int __stdcall FUN_10044ed6(int a1);
+extern int __stdcall FUN_10044fd0(int a1);
+extern int __stdcall FUN_10045061(int a1);
+extern int __stdcall FUN_10045368(int a1);
+extern int __stdcall FUN_10045737(int a1);
+extern int __stdcall FUN_100459d5(int a1);
+extern int __stdcall FUN_100459e9(int a1);
+extern int __stdcall FUN_10046ff1(int a1);
+extern int __stdcall FUN_100472bc(int a1);
+extern int __stdcall FUN_100475aa(int a1);
+extern int __stdcall FUN_10047627(int a1);
+extern int __stdcall FUN_10047f6e(int a1);
+extern int __stdcall FUN_10048171(int a1);
+extern int __stdcall FUN_10048ad6(int a1);
+extern int __stdcall FUN_10048bc1(int a1);
+extern int __stdcall FUN_100493f5(int a1);
+extern int __stdcall FUN_10049c10(int a1);
+extern int __stdcall FUN_1004a0f7(int a1);
+extern int __stdcall FUN_1004bbeb(int a1);
+extern int __stdcall FUN_1004bca9(int a1);
+extern int __stdcall FUN_1004c294(int a1);
+extern int __stdcall FUN_1004c325(int a1);
+extern int __stdcall FUN_1004cb40(int a1);
+extern int __stdcall FUN_1004cbcc(int a1);
+extern int __stdcall FUN_1004cc8a(int a1);
+extern int __stdcall FUN_1004cf4b(int a1);
+extern int __stdcall FUN_1004d3c9(int a1);
+extern int __stdcall FUN_1004dca2(int a1);
+extern int __stdcall FUN_1004e341(int a1);
+extern int __stdcall FUN_1004e71a(int a1);
+extern int __stdcall FUN_1004ea17(int a1);
+extern int __stdcall FUN_1004eae9(int a1);
+extern int __stdcall FUN_1004eb98(int a1);
+extern int __stdcall FUN_1004ef35(int a1);
+extern int __stdcall FUN_1004f52a(int a1);
+extern int __stdcall FUN_10050169(int a1);
+extern int __stdcall FUN_10050669(int a1);
+extern int __stdcall FUN_100508f8(int a1);
+extern int __stdcall FUN_10050ac9(int a1);
+extern int __stdcall FUN_10050dd0(int a1);
+extern int __stdcall FUN_1005115e(int a1);
+extern int __stdcall FUN_10051825(int a1);
+extern int __stdcall FUN_1005182a(int a1);
+extern int __stdcall FUN_10051839(int a1);
+extern int __stdcall FUN_10051ad2(int a1);
+extern int __stdcall FUN_100520e5(int a1);
+extern int __stdcall FUN_10052abd(int a1);
+extern int __stdcall FUN_10053332(int a1);
+extern int __stdcall FUN_100539c2(int a1);
+extern int __stdcall FUN_10053cf6(int a1);
+extern int __stdcall FUN_10054129(int a1);
+extern int __stdcall FUN_100541ce(int a1);
+extern int __stdcall FUN_10054b1a(int a1);
+extern int __stdcall FUN_1005610e(int a1);
+extern int __stdcall FUN_100568bb(int a1);
+extern int __stdcall FUN_10057306(int a1);
+extern int __stdcall FUN_10057450(int a1);
+extern int __stdcall FUN_10057630(int a1);
+extern int __stdcall FUN_10057e32(int a1);
+extern int __stdcall FUN_10058378(int a1);
+extern int __stdcall FUN_10058913(int a1);
+extern int __stdcall FUN_10058f17(int a1);
+extern int __stdcall FUN_10059462(int a1);
+extern int __stdcall FUN_1005974b(int a1);
+extern int __stdcall FUN_1005997b(int a1);
+extern int __stdcall FUN_10059b65(int a1);
+extern int __stdcall FUN_10059f98(int a1);
+extern int __stdcall FUN_1005a2d6(int a1);
+extern int __stdcall FUN_1005a98e(int a1);
+extern int __stdcall FUN_1005aa74(int a1);
+extern int __stdcall FUN_1005b34d(int a1);
+extern int __stdcall FUN_1005b406(int a1);
+extern int __stdcall FUN_1005b8a7(int a1);
+extern int __stdcall FUN_1005bf96(int a1);
+extern int __stdcall FUN_1005c28e(int a1);
+extern int __stdcall FUN_1005c293(int a1);
+extern int __stdcall FUN_1005c586(int a1);
+extern int __stdcall FUN_1005c9af(int a1);
+extern int __stdcall FUN_1005cd65(int a1);
+extern int __stdcall FUN_1005cecd(int a1);
+extern int __stdcall FUN_1005d96d(int a1);
+extern int __stdcall FUN_1005e3c7(int a1);
+extern int __stdcall FUN_1005e5a7(int a1);
+extern int __stdcall FUN_1005f1dc(int a1);
+extern int __stdcall FUN_1005f4f7(int a1);
+extern int __stdcall FUN_1005fdb7(int a1);
+extern int __stdcall FUN_10060bcc(int a1);
+extern int __stdcall FUN_10060fc3(int a1);
+extern int __stdcall FUN_10061054(int a1);
+extern int __stdcall FUN_100616df(int a1);
+extern int __stdcall FUN_100618a6(int a1);
+extern int __stdcall FUN_10061928(int a1);
+extern int __stdcall FUN_10061a77(int a1);
+extern int __stdcall FUN_10061c48(int a1);
+extern int __stdcall FUN_1006212a(int a1);
+extern int __stdcall FUN_100622ce(int a1);
+extern int __stdcall FUN_100626cf(int a1);
+extern int __stdcall FUN_100637dc(int a1);
+extern int __stdcall FUN_10063921(int a1);
+extern int __stdcall FUN_10063a7a(int a1);
+extern int __stdcall FUN_10063d68(int a1);
+extern int __stdcall FUN_10063f57(int a1);
+extern int __stdcall FUN_1006410f(int a1);
+extern int __stdcall FUN_100641c3(int a1);
+extern int __stdcall FUN_10064619(int a1);
+extern int __stdcall FUN_1006482b(int a1);
+extern int __stdcall FUN_10064c7c(int a1);
+extern int __stdcall FUN_10064ef7(int a1);
+extern int __stdcall FUN_10065668(int a1);
+extern int __stdcall FUN_10065dfc(int a1);
+extern int __stdcall FUN_1006671b(int a1);
+extern int __stdcall FUN_10066a3b(int a1);
+extern int __stdcall FUN_10067111(int a1);
+extern int __stdcall FUN_100679bd(int a1);
+extern int __stdcall FUN_10067fa3(int a1);
+extern int __stdcall FUN_100680bb(int a1);
+extern int __stdcall FUN_100683ae(int a1);
+extern int __stdcall FUN_100684b7(int a1);
+extern int __stdcall FUN_10068561(int a1);
+extern int __stdcall FUN_10069498(int a1);
+extern int __stdcall FUN_10069641(int a1);
+extern int __stdcall FUN_1006979f(int a1);
+extern int __stdcall FUN_10069f88(int a1);
+extern int __stdcall FUN_1006a2c1(int a1);
+extern int __stdcall FUN_1006a366(int a1);
+extern int __stdcall FUN_1006a8cf(int a1);
+extern int __stdcall FUN_1006aee2(int a1);
+extern int __stdcall FUN_1006b72f(int a1);
+extern int __stdcall FUN_1006b9dc(int a1);
+extern int __stdcall FUN_1006c0fd(int a1);
+extern int __stdcall FUN_1006c4c7(int a1);
+extern int __stdcall FUN_1006c4d6(int a1);
+extern int __stdcall FUN_1006c715(int a1);
+extern int __stdcall FUN_1006c95e(int a1);
+extern int __stdcall FUN_1006d020(int a1);
+extern int __stdcall FUN_1006d02f(int a1);
+extern int __stdcall FUN_1006d3c2(int a1);
+extern int __stdcall FUN_1006d692(int a1);
+extern int __stdcall FUN_1006d93a(int a1);
+extern int __stdcall FUN_1006e169(int a1);
+extern int __stdcall FUN_1006e650(int a1);
+extern int __stdcall FUN_1006ea42(int a1);
+extern int __stdcall FUN_1006efa1(int a1);
+extern int __stdcall FUN_1006f14a(int a1);
+extern int __stdcall FUN_1006f5eb(int a1);
+extern int __stdcall FUN_1006f875(int a1);
+extern int __stdcall FUN_1006f90b(int a1);
+extern int __stdcall FUN_1006fd1b(int a1);
+extern int __stdcall FUN_1006fda7(int a1);
+extern int __stdcall FUN_10070072(int a1);
+extern int __stdcall FUN_100708ec(int a1);
+extern int __stdcall FUN_100709b4(int a1);
+extern int __stdcall FUN_10070c89(int a1);
+extern int __stdcall FUN_1007187d(int a1);
+extern int __stdcall FUN_10071c2e(int a1);
+extern int __stdcall FUN_10071cd8(int a1);
+extern int __stdcall FUN_10072700(int a1);
+extern int __stdcall FUN_10072e21(int a1);
+extern int __stdcall FUN_10073484(int a1);
+extern int __stdcall FUN_10073c72(int a1);
+extern int __stdcall FUN_10073f1f(int a1);
+extern int __stdcall FUN_100746a9(int a1);
+extern int __stdcall FUN_10074a87(int a1);
+extern int __stdcall FUN_10074b22(int a1);
+extern int __stdcall FUN_10075103(int a1);
+extern int __stdcall FUN_10075400(int a1);
+extern int __stdcall FUN_10075513(int a1);
+extern int __stdcall FUN_10075590(int a1);
+extern int __stdcall FUN_1007585b(int a1);
+extern int __stdcall FUN_10076611(int a1);
+extern int __stdcall FUN_10076c0b(int a1);
+extern int __stdcall FUN_10076fc6(int a1);
+extern int __stdcall FUN_10077480(int a1);
+extern int __stdcall FUN_1007806f(int a1);
+extern int __stdcall FUN_100785ce(int a1);
+extern int __stdcall FUN_10078786(int a1);
+extern int __stdcall FUN_10079276(int a1);
+extern int __stdcall FUN_100796a9(int a1);
+extern int __stdcall FUN_10079b2c(int a1);
+extern int __stdcall FUN_10079fd7(int a1);
+extern int __stdcall FUN_1007a608(int a1);
+extern int __stdcall FUN_1007b940(int a1);
+extern int __stdcall FUN_1007bd28(int a1);
+extern int __stdcall FUN_1007c548(int a1);
+extern int __stdcall FUN_1007d024(int a1);
+extern int __stdcall FUN_1007d029(int a1);
+extern int __stdcall FUN_1007d326(int a1);
+extern int __stdcall FUN_1007d8ad(int a1);
+extern int __stdcall FUN_1007dc27(int a1);
+extern int __stdcall FUN_1007e6f9(int a1);
+extern int __stdcall FUN_1007ebf4(int a1);
+extern int __stdcall FUN_1007ed9d(int a1);
+extern int __stdcall FUN_1007ee2e(int a1);
+extern int __stdcall FUN_1007f103(int a1);
+extern int __stdcall FUN_1007f3ce(int a1);
+extern int __stdcall FUN_1007fac7(int a1);
+extern int __stdcall FUN_1007fcac(int a1);
+extern int __stdcall FUN_10080364(int a1);
+extern int __stdcall FUN_10080ba7(int a1);
+extern int __stdcall FUN_1008103e(int a1);
+extern int __stdcall FUN_100810bb(int a1);
+extern int __stdcall FUN_1008179b(int a1);
+extern int __stdcall FUN_10081a61(int a1);
+extern int __stdcall FUN_10081b15(int a1);
+extern int __stdcall FUN_1008247a(int a1);
+extern int __stdcall FUN_10082565(int a1);
+extern int __stdcall FUN_100828da(int a1);
+extern int __stdcall FUN_100833de(int a1);
+extern int __stdcall FUN_100833e3(int a1);
+extern int __stdcall FUN_10083feb(int a1);
+extern int __stdcall FUN_100845f4(int a1);
+extern int __stdcall FUN_10084b3f(int a1);
+extern int __stdcall FUN_10084f54(int a1);
+extern int __stdcall FUN_100851d4(int a1);
+extern int __stdcall FUN_10085396(int a1);
+extern int __stdcall FUN_10085b8e(int a1);
+extern int __stdcall FUN_1008664c(int a1);
+extern int __stdcall FUN_10087be6(int a1);
+extern int __stdcall FUN_1008837f(int a1);
+extern int __stdcall FUN_100895c2(int a1);
+extern int __stdcall FUN_1008a053(int a1);
+extern int __stdcall FUN_1008a751(int a1);
+extern int __stdcall FUN_1008b804(int a1);
+extern int __stdcall FUN_1008bb24(int a1);
+extern int __stdcall FUN_1008cb28(int a1);
+extern int __stdcall FUN_1008ceca(int a1);
+extern int __stdcall FUN_1008d62c(int a1);
+extern int __stdcall FUN_1008e0b3(int a1);
+extern int __stdcall FUN_1008e14e(int a1);
+extern int __stdcall FUN_1008e41e(int a1);
+extern int __stdcall FUN_1008e428(int a1);
+extern int __stdcall FUN_1008e775(int a1);
+extern int __stdcall FUN_1008e8b5(int a1);
+extern int __stdcall FUN_1008e8c4(int a1);
+extern int __stdcall FUN_1008f251(int a1);
+extern int __stdcall FUN_1008fbb1(int a1);
+extern int __stdcall FUN_1009053e(int a1);
+extern int __stdcall FUN_100908fe(int a1);
+extern int __stdcall FUN_10090908(int a1);
+extern int __stdcall FUN_10090fbb(int a1);
+extern int __stdcall FUN_1009106a(int a1);
+extern int __stdcall FUN_10091169(int a1);
+extern int __stdcall FUN_100914e8(int a1);
+extern int __stdcall FUN_100922cb(int a1);
+extern int __stdcall FUN_100925fa(int a1);
+extern int __stdcall FUN_10092d57(int a1);
+extern int __stdcall FUN_100931e9(int a1);
+extern int __stdcall FUN_10093fef(int a1);
+extern int __stdcall FUN_10094170(int a1);
+extern int __stdcall FUN_100943dc(int a1);
+extern int __stdcall FUN_1009499a(int a1);
+extern int __stdcall FUN_1009577d(int a1);
+extern int __stdcall FUN_10095930(int a1);
+extern int __stdcall FUN_10095a70(int a1);
+extern int __stdcall FUN_10095c55(int a1);
+extern int __stdcall FUN_10095ea8(int a1);
+extern int __stdcall FUN_100961c3(int a1);
+extern int __stdcall FUN_100962e0(int a1);
+extern int __stdcall FUN_10096a15(int a1);
+extern int __stdcall FUN_10096b4b(int a1);
+extern int __stdcall FUN_10096de4(int a1);
+extern int __stdcall FUN_10097131(int a1);
+extern int __stdcall FUN_10097320(int a1);
+extern int __stdcall FUN_100977b2(int a1);
+extern int __stdcall FUN_10097956(int a1);
+extern int __stdcall FUN_10097b4a(int a1);
+extern int __stdcall FUN_10097ec4(int a1);
+extern int __stdcall FUN_10097ff5(int a1);
+extern int __stdcall FUN_100994d1(int a1);
+extern int __stdcall FUN_10099c60(int a1);
+extern int __stdcall FUN_1009a19c(int a1);
+extern int __stdcall FUN_1009a65b(int a1);
+extern int __stdcall FUN_1009a6fb(int a1);
 #line 1 "ENTRY_10982ebf"
 
 void __thiscall Recovered_Bulk::m_FUN_10982ebf(void)
 {
   int param_1 = (int )this;
-  FUN_1003d271(param_1 + -140);
+  FUN_1003d271((int)(param_1 + -140));
 }
 
 
@@ -808,7 +1298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10982ebf(void)
 void __thiscall Recovered_Bulk::m_FUN_10982ecc(void)
 {
   int param_1 = (int )this;
-  FUN_1003d271(param_1 + -168);
+  FUN_1003d271((int)(param_1 + -168));
 }
 
 
@@ -818,7 +1308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10982ecc(void)
 void __thiscall Recovered_Bulk::m_FUN_10982ed9(void)
 {
   int param_1 = (int )this;
-  FUN_10013930(param_1 + -16);
+  FUN_10013930((int)(param_1 + -16));
 }
 
 
@@ -828,7 +1318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10982ed9(void)
 void __thiscall Recovered_Bulk::m_FUN_10982ee3(void)
 {
   int param_1 = (int )this;
-  FUN_10013930(param_1 + -140);
+  FUN_10013930((int)(param_1 + -140));
 }
 
 
@@ -838,7 +1328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10982ee3(void)
 void __thiscall Recovered_Bulk::m_FUN_10982ef0(void)
 {
   int param_1 = (int )this;
-  FUN_10013930(param_1 + -168);
+  FUN_10013930((int)(param_1 + -168));
 }
 
 
@@ -848,7 +1338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10982ef0(void)
 void __thiscall Recovered_Bulk::m_FUN_10982efd(void)
 {
   int param_1 = (int )this;
-  FUN_100679bd(param_1 + -16);
+  FUN_100679bd((int)(param_1 + -16));
 }
 
 
@@ -858,7 +1348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10982efd(void)
 void __thiscall Recovered_Bulk::m_FUN_10982f07(void)
 {
   int param_1 = (int )this;
-  FUN_100679bd(param_1 + -140);
+  FUN_100679bd((int)(param_1 + -140));
 }
 
 
@@ -868,7 +1358,7 @@ void __thiscall Recovered_Bulk::m_FUN_10982f07(void)
 void __thiscall Recovered_Bulk::m_FUN_10982f14(void)
 {
   int param_1 = (int )this;
-  FUN_100679bd(param_1 + -168);
+  FUN_100679bd((int)(param_1 + -168));
 }
 
 
@@ -918,7 +1408,7 @@ undefined1 FUN_10988060(void)
 void __thiscall Recovered_Bulk::m_FUN_109899a3(void)
 {
   int param_1 = (int )this;
-  FUN_1000cb58(param_1 + -16);
+  FUN_1000cb58((int)(param_1 + -16));
 }
 
 
@@ -928,7 +1418,7 @@ void __thiscall Recovered_Bulk::m_FUN_109899a3(void)
 void __thiscall Recovered_Bulk::m_FUN_109899ad(void)
 {
   int param_1 = (int )this;
-  FUN_1000cb58(param_1 + -140);
+  FUN_1000cb58((int)(param_1 + -140));
 }
 
 
@@ -938,7 +1428,7 @@ void __thiscall Recovered_Bulk::m_FUN_109899ad(void)
 void __thiscall Recovered_Bulk::m_FUN_109899ba(void)
 {
   int param_1 = (int )this;
-  FUN_1000cb58(param_1 + -168);
+  FUN_1000cb58((int)(param_1 + -168));
 }
 
 
@@ -948,7 +1438,7 @@ void __thiscall Recovered_Bulk::m_FUN_109899ba(void)
 void __thiscall Recovered_Bulk::m_FUN_109899c7(void)
 {
   int param_1 = (int )this;
-  FUN_100684b7(param_1 + -16);
+  FUN_100684b7((int)(param_1 + -16));
 }
 
 
@@ -958,7 +1448,7 @@ void __thiscall Recovered_Bulk::m_FUN_109899c7(void)
 void __thiscall Recovered_Bulk::m_FUN_109899d1(void)
 {
   int param_1 = (int )this;
-  FUN_100684b7(param_1 + -140);
+  FUN_100684b7((int)(param_1 + -140));
 }
 
 
@@ -968,7 +1458,7 @@ void __thiscall Recovered_Bulk::m_FUN_109899d1(void)
 void __thiscall Recovered_Bulk::m_FUN_109899de(void)
 {
   int param_1 = (int )this;
-  FUN_100684b7(param_1 + -168);
+  FUN_100684b7((int)(param_1 + -168));
 }
 
 
@@ -978,7 +1468,7 @@ void __thiscall Recovered_Bulk::m_FUN_109899de(void)
 void __thiscall Recovered_Bulk::m_FUN_109899eb(void)
 {
   int param_1 = (int )this;
-  FUN_10029686(param_1 + -16);
+  FUN_10029686((int)(param_1 + -16));
 }
 
 
@@ -988,7 +1478,7 @@ void __thiscall Recovered_Bulk::m_FUN_109899eb(void)
 void __thiscall Recovered_Bulk::m_FUN_109899f5(void)
 {
   int param_1 = (int )this;
-  FUN_10029686(param_1 + -140);
+  FUN_10029686((int)(param_1 + -140));
 }
 
 
@@ -998,7 +1488,7 @@ void __thiscall Recovered_Bulk::m_FUN_109899f5(void)
 void __thiscall Recovered_Bulk::m_FUN_10989a02(void)
 {
   int param_1 = (int )this;
-  FUN_10029686(param_1 + -168);
+  FUN_10029686((int)(param_1 + -168));
 }
 
 
@@ -1008,7 +1498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10989a02(void)
 void __thiscall Recovered_Bulk::m_FUN_10989a0f(void)
 {
   int param_1 = (int )this;
-  FUN_1009a19c(param_1 + -16);
+  FUN_1009a19c((int)(param_1 + -16));
 }
 
 
@@ -1018,7 +1508,7 @@ void __thiscall Recovered_Bulk::m_FUN_10989a0f(void)
 void __thiscall Recovered_Bulk::m_FUN_10989a19(void)
 {
   int param_1 = (int )this;
-  FUN_1009a19c(param_1 + -140);
+  FUN_1009a19c((int)(param_1 + -140));
 }
 
 
@@ -1028,7 +1518,7 @@ void __thiscall Recovered_Bulk::m_FUN_10989a19(void)
 void __thiscall Recovered_Bulk::m_FUN_10989a26(void)
 {
   int param_1 = (int )this;
-  FUN_1009a19c(param_1 + -168);
+  FUN_1009a19c((int)(param_1 + -168));
 }
 
 
@@ -1048,7 +1538,7 @@ undefined1 FUN_1098cc40(void)
 void __thiscall Recovered_Bulk::m_FUN_109908b7(void)
 {
   int param_1 = (int )this;
-  FUN_1002082e(param_1 + -16);
+  FUN_1002082e((int)(param_1 + -16));
 }
 
 
@@ -1058,7 +1548,7 @@ void __thiscall Recovered_Bulk::m_FUN_109908b7(void)
 void __thiscall Recovered_Bulk::m_FUN_109908c1(void)
 {
   int param_1 = (int )this;
-  FUN_1002082e(param_1 + -140);
+  FUN_1002082e((int)(param_1 + -140));
 }
 
 
@@ -1068,7 +1558,7 @@ void __thiscall Recovered_Bulk::m_FUN_109908c1(void)
 void __thiscall Recovered_Bulk::m_FUN_109908ce(void)
 {
   int param_1 = (int )this;
-  FUN_1002082e(param_1 + -168);
+  FUN_1002082e((int)(param_1 + -168));
 }
 
 
@@ -1078,7 +1568,7 @@ void __thiscall Recovered_Bulk::m_FUN_109908ce(void)
 void __thiscall Recovered_Bulk::m_FUN_109908db(void)
 {
   int param_1 = (int )this;
-  FUN_1007fcac(param_1 + -16);
+  FUN_1007fcac((int)(param_1 + -16));
 }
 
 
@@ -1088,7 +1578,7 @@ void __thiscall Recovered_Bulk::m_FUN_109908db(void)
 void __thiscall Recovered_Bulk::m_FUN_109908e5(void)
 {
   int param_1 = (int )this;
-  FUN_1007fcac(param_1 + -140);
+  FUN_1007fcac((int)(param_1 + -140));
 }
 
 
@@ -1098,7 +1588,7 @@ void __thiscall Recovered_Bulk::m_FUN_109908e5(void)
 void __thiscall Recovered_Bulk::m_FUN_109908f2(void)
 {
   int param_1 = (int )this;
-  FUN_1007fcac(param_1 + -168);
+  FUN_1007fcac((int)(param_1 + -168));
 }
 
 
@@ -1108,7 +1598,7 @@ void __thiscall Recovered_Bulk::m_FUN_109908f2(void)
 void __thiscall Recovered_Bulk::m_FUN_109908ff(void)
 {
   int param_1 = (int )this;
-  FUN_1008d62c(param_1 + -16);
+  FUN_1008d62c((int)(param_1 + -16));
 }
 
 
@@ -1118,7 +1608,7 @@ void __thiscall Recovered_Bulk::m_FUN_109908ff(void)
 void __thiscall Recovered_Bulk::m_FUN_10990909(void)
 {
   int param_1 = (int )this;
-  FUN_1008d62c(param_1 + -140);
+  FUN_1008d62c((int)(param_1 + -140));
 }
 
 
@@ -1128,7 +1618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10990909(void)
 void __thiscall Recovered_Bulk::m_FUN_10990916(void)
 {
   int param_1 = (int )this;
-  FUN_1008d62c(param_1 + -168);
+  FUN_1008d62c((int)(param_1 + -168));
 }
 
 
@@ -1138,7 +1628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10990916(void)
 void __thiscall Recovered_Bulk::m_FUN_10990923(void)
 {
   int param_1 = (int )this;
-  FUN_1003756a(param_1 + -16);
+  FUN_1003756a((int)(param_1 + -16));
 }
 
 
@@ -1148,7 +1638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10990923(void)
 void __thiscall Recovered_Bulk::m_FUN_1099092d(void)
 {
   int param_1 = (int )this;
-  FUN_1003756a(param_1 + -140);
+  FUN_1003756a((int)(param_1 + -140));
 }
 
 
@@ -1158,7 +1648,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099092d(void)
 void __thiscall Recovered_Bulk::m_FUN_1099093a(void)
 {
   int param_1 = (int )this;
-  FUN_1003756a(param_1 + -168);
+  FUN_1003756a((int)(param_1 + -168));
 }
 
 
@@ -1168,7 +1658,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099093a(void)
 void __thiscall Recovered_Bulk::m_FUN_10990947(void)
 {
   int param_1 = (int )this;
-  FUN_1004ef35(param_1 + -16);
+  FUN_1004ef35((int)(param_1 + -16));
 }
 
 
@@ -1178,7 +1668,7 @@ void __thiscall Recovered_Bulk::m_FUN_10990947(void)
 void __thiscall Recovered_Bulk::m_FUN_10990951(void)
 {
   int param_1 = (int )this;
-  FUN_1004ef35(param_1 + -140);
+  FUN_1004ef35((int)(param_1 + -140));
 }
 
 
@@ -1188,7 +1678,7 @@ void __thiscall Recovered_Bulk::m_FUN_10990951(void)
 void __thiscall Recovered_Bulk::m_FUN_1099095e(void)
 {
   int param_1 = (int )this;
-  FUN_1004ef35(param_1 + -168);
+  FUN_1004ef35((int)(param_1 + -168));
 }
 
 
@@ -1198,7 +1688,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099095e(void)
 void __thiscall Recovered_Bulk::m_FUN_1099096b(void)
 {
   int param_1 = (int )this;
-  FUN_1004ef35(param_1 + -224);
+  FUN_1004ef35((int)(param_1 + -224));
 }
 
 
@@ -1208,7 +1698,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099096b(void)
 void __thiscall Recovered_Bulk::m_FUN_10990978(void)
 {
   int param_1 = (int )this;
-  FUN_1008ceca(param_1 + -16);
+  FUN_1008ceca((int)(param_1 + -16));
 }
 
 
@@ -1218,7 +1708,7 @@ void __thiscall Recovered_Bulk::m_FUN_10990978(void)
 void __thiscall Recovered_Bulk::m_FUN_10990982(void)
 {
   int param_1 = (int )this;
-  FUN_1008ceca(param_1 + -140);
+  FUN_1008ceca((int)(param_1 + -140));
 }
 
 
@@ -1228,7 +1718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10990982(void)
 void __thiscall Recovered_Bulk::m_FUN_1099098f(void)
 {
   int param_1 = (int )this;
-  FUN_1008ceca(param_1 + -168);
+  FUN_1008ceca((int)(param_1 + -168));
 }
 
 
@@ -1238,7 +1728,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099098f(void)
 void __thiscall Recovered_Bulk::m_FUN_1099099c(void)
 {
   int param_1 = (int )this;
-  FUN_1006fda7(param_1 + -16);
+  FUN_1006fda7((int)(param_1 + -16));
 }
 
 
@@ -1248,7 +1738,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099099c(void)
 void __thiscall Recovered_Bulk::m_FUN_109909a6(void)
 {
   int param_1 = (int )this;
-  FUN_1006fda7(param_1 + -140);
+  FUN_1006fda7((int)(param_1 + -140));
 }
 
 
@@ -1258,7 +1748,7 @@ void __thiscall Recovered_Bulk::m_FUN_109909a6(void)
 void __thiscall Recovered_Bulk::m_FUN_109909b3(void)
 {
   int param_1 = (int )this;
-  FUN_1006fda7(param_1 + -168);
+  FUN_1006fda7((int)(param_1 + -168));
 }
 
 
@@ -1268,7 +1758,7 @@ void __thiscall Recovered_Bulk::m_FUN_109909b3(void)
 void __thiscall Recovered_Bulk::m_FUN_109909c0(void)
 {
   int param_1 = (int )this;
-  FUN_10023b05(param_1 + -16);
+  FUN_10023b05((int)(param_1 + -16));
 }
 
 
@@ -1278,7 +1768,7 @@ void __thiscall Recovered_Bulk::m_FUN_109909c0(void)
 void __thiscall Recovered_Bulk::m_FUN_109909ca(void)
 {
   int param_1 = (int )this;
-  FUN_10023b05(param_1 + -140);
+  FUN_10023b05((int)(param_1 + -140));
 }
 
 
@@ -1288,7 +1778,7 @@ void __thiscall Recovered_Bulk::m_FUN_109909ca(void)
 void __thiscall Recovered_Bulk::m_FUN_109909d7(void)
 {
   int param_1 = (int )this;
-  FUN_10023b05(param_1 + -168);
+  FUN_10023b05((int)(param_1 + -168));
 }
 
 
@@ -1328,7 +1818,7 @@ undefined1 FUN_10998230(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d1d(void)
 {
   int param_1 = (int )this;
-  FUN_10057630(param_1 + -16);
+  FUN_10057630((int)(param_1 + -16));
 }
 
 
@@ -1338,7 +1828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d1d(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d27(void)
 {
   int param_1 = (int )this;
-  FUN_10057630(param_1 + -140);
+  FUN_10057630((int)(param_1 + -140));
 }
 
 
@@ -1348,7 +1838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d27(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d34(void)
 {
   int param_1 = (int )this;
-  FUN_10057630(param_1 + -168);
+  FUN_10057630((int)(param_1 + -168));
 }
 
 
@@ -1358,7 +1848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d34(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d41(void)
 {
   int param_1 = (int )this;
-  FUN_1000af10(param_1 + -16);
+  FUN_1000af10((int)(param_1 + -16));
 }
 
 
@@ -1368,7 +1858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d41(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d4b(void)
 {
   int param_1 = (int )this;
-  FUN_1000af10(param_1 + -140);
+  FUN_1000af10((int)(param_1 + -140));
 }
 
 
@@ -1378,7 +1868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d4b(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d58(void)
 {
   int param_1 = (int )this;
-  FUN_1000af10(param_1 + -168);
+  FUN_1000af10((int)(param_1 + -168));
 }
 
 
@@ -1388,7 +1878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d58(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d65(void)
 {
   int param_1 = (int )this;
-  FUN_1003c925(param_1 + -16);
+  FUN_1003c925((int)(param_1 + -16));
 }
 
 
@@ -1398,7 +1888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d65(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d6f(void)
 {
   int param_1 = (int )this;
-  FUN_1003c925(param_1 + -140);
+  FUN_1003c925((int)(param_1 + -140));
 }
 
 
@@ -1408,7 +1898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d6f(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d7c(void)
 {
   int param_1 = (int )this;
-  FUN_1003c925(param_1 + -168);
+  FUN_1003c925((int)(param_1 + -168));
 }
 
 
@@ -1418,7 +1908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d7c(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d89(void)
 {
   int param_1 = (int )this;
-  FUN_100931e9(param_1 + -16);
+  FUN_100931e9((int)(param_1 + -16));
 }
 
 
@@ -1428,7 +1918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d89(void)
 void __thiscall Recovered_Bulk::m_FUN_10999d93(void)
 {
   int param_1 = (int )this;
-  FUN_100931e9(param_1 + -140);
+  FUN_100931e9((int)(param_1 + -140));
 }
 
 
@@ -1438,7 +1928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999d93(void)
 void __thiscall Recovered_Bulk::m_FUN_10999da0(void)
 {
   int param_1 = (int )this;
-  FUN_100931e9(param_1 + -168);
+  FUN_100931e9((int)(param_1 + -168));
 }
 
 
@@ -1448,7 +1938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999da0(void)
 void __thiscall Recovered_Bulk::m_FUN_10999dad(void)
 {
   int param_1 = (int )this;
-  FUN_1008bb24(param_1 + -16);
+  FUN_1008bb24((int)(param_1 + -16));
 }
 
 
@@ -1458,7 +1948,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999dad(void)
 void __thiscall Recovered_Bulk::m_FUN_10999db7(void)
 {
   int param_1 = (int )this;
-  FUN_1008bb24(param_1 + -140);
+  FUN_1008bb24((int)(param_1 + -140));
 }
 
 
@@ -1468,7 +1958,7 @@ void __thiscall Recovered_Bulk::m_FUN_10999db7(void)
 void __thiscall Recovered_Bulk::m_FUN_10999dc4(void)
 {
   int param_1 = (int )this;
-  FUN_1008bb24(param_1 + -168);
+  FUN_1008bb24((int)(param_1 + -168));
 }
 
 
@@ -1498,7 +1988,7 @@ undefined1 FUN_1099c700(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f054(void)
 {
   int param_1 = (int )this;
-  FUN_10097b4a(param_1 + -16);
+  FUN_10097b4a((int)(param_1 + -16));
 }
 
 
@@ -1508,7 +1998,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f054(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f05e(void)
 {
   int param_1 = (int )this;
-  FUN_10097b4a(param_1 + -140);
+  FUN_10097b4a((int)(param_1 + -140));
 }
 
 
@@ -1518,7 +2008,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f05e(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f06b(void)
 {
   int param_1 = (int )this;
-  FUN_10097b4a(param_1 + -168);
+  FUN_10097b4a((int)(param_1 + -168));
 }
 
 
@@ -1528,7 +2018,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f06b(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f078(void)
 {
   int param_1 = (int )this;
-  FUN_100637dc(param_1 + -16);
+  FUN_100637dc((int)(param_1 + -16));
 }
 
 
@@ -1538,7 +2028,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f078(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f082(void)
 {
   int param_1 = (int )this;
-  FUN_100637dc(param_1 + -140);
+  FUN_100637dc((int)(param_1 + -140));
 }
 
 
@@ -1548,7 +2038,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f082(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f08f(void)
 {
   int param_1 = (int )this;
-  FUN_100637dc(param_1 + -168);
+  FUN_100637dc((int)(param_1 + -168));
 }
 
 
@@ -1558,7 +2048,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f08f(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f09c(void)
 {
   int param_1 = (int )this;
-  FUN_10059b65(param_1 + -16);
+  FUN_10059b65((int)(param_1 + -16));
 }
 
 
@@ -1568,7 +2058,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f09c(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f0a6(void)
 {
   int param_1 = (int )this;
-  FUN_10059b65(param_1 + -140);
+  FUN_10059b65((int)(param_1 + -140));
 }
 
 
@@ -1578,7 +2068,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f0a6(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f0b3(void)
 {
   int param_1 = (int )this;
-  FUN_10059b65(param_1 + -168);
+  FUN_10059b65((int)(param_1 + -168));
 }
 
 
@@ -1588,7 +2078,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f0b3(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f0c0(void)
 {
   int param_1 = (int )this;
-  FUN_10095c55(param_1 + -16);
+  FUN_10095c55((int)(param_1 + -16));
 }
 
 
@@ -1598,7 +2088,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f0c0(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f0ca(void)
 {
   int param_1 = (int )this;
-  FUN_10095c55(param_1 + -140);
+  FUN_10095c55((int)(param_1 + -140));
 }
 
 
@@ -1608,7 +2098,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f0ca(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f0d7(void)
 {
   int param_1 = (int )this;
-  FUN_10095c55(param_1 + -168);
+  FUN_10095c55((int)(param_1 + -168));
 }
 
 
@@ -1618,7 +2108,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f0d7(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f0e4(void)
 {
   int param_1 = (int )this;
-  FUN_10079fd7(param_1 + -16);
+  FUN_10079fd7((int)(param_1 + -16));
 }
 
 
@@ -1628,7 +2118,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f0e4(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f0ee(void)
 {
   int param_1 = (int )this;
-  FUN_10079fd7(param_1 + -140);
+  FUN_10079fd7((int)(param_1 + -140));
 }
 
 
@@ -1638,7 +2128,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f0ee(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f0fb(void)
 {
   int param_1 = (int )this;
-  FUN_10079fd7(param_1 + -168);
+  FUN_10079fd7((int)(param_1 + -168));
 }
 
 
@@ -1648,7 +2138,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f0fb(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f108(void)
 {
   int param_1 = (int )this;
-  FUN_1000c941(param_1 + -16);
+  FUN_1000c941((int)(param_1 + -16));
 }
 
 
@@ -1658,7 +2148,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f108(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f112(void)
 {
   int param_1 = (int )this;
-  FUN_1000c941(param_1 + -140);
+  FUN_1000c941((int)(param_1 + -140));
 }
 
 
@@ -1668,7 +2158,7 @@ void __thiscall Recovered_Bulk::m_FUN_1099f112(void)
 void __thiscall Recovered_Bulk::m_FUN_1099f11f(void)
 {
   int param_1 = (int )this;
-  FUN_1000c941(param_1 + -168);
+  FUN_1000c941((int)(param_1 + -168));
 }
 
 
@@ -1688,7 +2178,7 @@ undefined1 FUN_109a55b0(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9737(void)
 {
   int param_1 = (int )this;
-  FUN_100810bb(param_1 + -16);
+  FUN_100810bb((int)(param_1 + -16));
 }
 
 
@@ -1698,7 +2188,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9737(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9741(void)
 {
   int param_1 = (int )this;
-  FUN_100810bb(param_1 + -140);
+  FUN_100810bb((int)(param_1 + -140));
 }
 
 
@@ -1708,7 +2198,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9741(void)
 void __thiscall Recovered_Bulk::m_FUN_109a974e(void)
 {
   int param_1 = (int )this;
-  FUN_100810bb(param_1 + -168);
+  FUN_100810bb((int)(param_1 + -168));
 }
 
 
@@ -1718,7 +2208,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a974e(void)
 void __thiscall Recovered_Bulk::m_FUN_109a975b(void)
 {
   int param_1 = (int )this;
-  FUN_10072e21(param_1 + -16);
+  FUN_10072e21((int)(param_1 + -16));
 }
 
 
@@ -1728,7 +2218,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a975b(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9765(void)
 {
   int param_1 = (int )this;
-  FUN_10072e21(param_1 + -140);
+  FUN_10072e21((int)(param_1 + -140));
 }
 
 
@@ -1738,7 +2228,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9765(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9772(void)
 {
   int param_1 = (int )this;
-  FUN_10072e21(param_1 + -168);
+  FUN_10072e21((int)(param_1 + -168));
 }
 
 
@@ -1748,7 +2238,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9772(void)
 void __thiscall Recovered_Bulk::m_FUN_109a977f(void)
 {
   int param_1 = (int )this;
-  FUN_1008837f(param_1 + -16);
+  FUN_1008837f((int)(param_1 + -16));
 }
 
 
@@ -1758,7 +2248,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a977f(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9789(void)
 {
   int param_1 = (int )this;
-  FUN_1008837f(param_1 + -140);
+  FUN_1008837f((int)(param_1 + -140));
 }
 
 
@@ -1768,7 +2258,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9789(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9796(void)
 {
   int param_1 = (int )this;
-  FUN_1008837f(param_1 + -168);
+  FUN_1008837f((int)(param_1 + -168));
 }
 
 
@@ -1778,7 +2268,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9796(void)
 void __thiscall Recovered_Bulk::m_FUN_109a97a3(void)
 {
   int param_1 = (int )this;
-  FUN_1004cc8a(param_1 + -16);
+  FUN_1004cc8a((int)(param_1 + -16));
 }
 
 
@@ -1788,7 +2278,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a97a3(void)
 void __thiscall Recovered_Bulk::m_FUN_109a97ad(void)
 {
   int param_1 = (int )this;
-  FUN_1004cc8a(param_1 + -140);
+  FUN_1004cc8a((int)(param_1 + -140));
 }
 
 
@@ -1798,7 +2288,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a97ad(void)
 void __thiscall Recovered_Bulk::m_FUN_109a97ba(void)
 {
   int param_1 = (int )this;
-  FUN_1004cc8a(param_1 + -168);
+  FUN_1004cc8a((int)(param_1 + -168));
 }
 
 
@@ -1808,7 +2298,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a97ba(void)
 void __thiscall Recovered_Bulk::m_FUN_109a97c7(void)
 {
   int param_1 = (int )this;
-  FUN_1004490e(param_1 + -16);
+  FUN_1004490e((int)(param_1 + -16));
 }
 
 
@@ -1818,7 +2308,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a97c7(void)
 void __thiscall Recovered_Bulk::m_FUN_109a97d1(void)
 {
   int param_1 = (int )this;
-  FUN_1004490e(param_1 + -140);
+  FUN_1004490e((int)(param_1 + -140));
 }
 
 
@@ -1828,7 +2318,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a97d1(void)
 void __thiscall Recovered_Bulk::m_FUN_109a97de(void)
 {
   int param_1 = (int )this;
-  FUN_1004490e(param_1 + -168);
+  FUN_1004490e((int)(param_1 + -168));
 }
 
 
@@ -1838,7 +2328,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a97de(void)
 void __thiscall Recovered_Bulk::m_FUN_109a97eb(void)
 {
   int param_1 = (int )this;
-  FUN_1003ef4f(param_1 + -16);
+  FUN_1003ef4f((int)(param_1 + -16));
 }
 
 
@@ -1848,7 +2338,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a97eb(void)
 void __thiscall Recovered_Bulk::m_FUN_109a97f5(void)
 {
   int param_1 = (int )this;
-  FUN_1003ef4f(param_1 + -140);
+  FUN_1003ef4f((int)(param_1 + -140));
 }
 
 
@@ -1858,7 +2348,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a97f5(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9802(void)
 {
   int param_1 = (int )this;
-  FUN_1003ef4f(param_1 + -168);
+  FUN_1003ef4f((int)(param_1 + -168));
 }
 
 
@@ -1868,7 +2358,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9802(void)
 void __thiscall Recovered_Bulk::m_FUN_109a980f(void)
 {
   int param_1 = (int )this;
-  FUN_100307ce(param_1 + -16);
+  FUN_100307ce((int)(param_1 + -16));
 }
 
 
@@ -1878,7 +2368,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a980f(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9819(void)
 {
   int param_1 = (int )this;
-  FUN_100307ce(param_1 + -140);
+  FUN_100307ce((int)(param_1 + -140));
 }
 
 
@@ -1888,7 +2378,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9819(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9826(void)
 {
   int param_1 = (int )this;
-  FUN_100307ce(param_1 + -168);
+  FUN_100307ce((int)(param_1 + -168));
 }
 
 
@@ -1898,7 +2388,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9826(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9833(void)
 {
   int param_1 = (int )this;
-  FUN_10092d57(param_1 + -16);
+  FUN_10092d57((int)(param_1 + -16));
 }
 
 
@@ -1908,7 +2398,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9833(void)
 void __thiscall Recovered_Bulk::m_FUN_109a983d(void)
 {
   int param_1 = (int )this;
-  FUN_10092d57(param_1 + -140);
+  FUN_10092d57((int)(param_1 + -140));
 }
 
 
@@ -1918,7 +2408,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a983d(void)
 void __thiscall Recovered_Bulk::m_FUN_109a984a(void)
 {
   int param_1 = (int )this;
-  FUN_10092d57(param_1 + -168);
+  FUN_10092d57((int)(param_1 + -168));
 }
 
 
@@ -1928,7 +2418,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a984a(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9857(void)
 {
   int param_1 = (int )this;
-  FUN_1004d3c9(param_1 + -16);
+  FUN_1004d3c9((int)(param_1 + -16));
 }
 
 
@@ -1938,7 +2428,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9857(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9861(void)
 {
   int param_1 = (int )this;
-  FUN_1004d3c9(param_1 + -140);
+  FUN_1004d3c9((int)(param_1 + -140));
 }
 
 
@@ -1948,7 +2438,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9861(void)
 void __thiscall Recovered_Bulk::m_FUN_109a986e(void)
 {
   int param_1 = (int )this;
-  FUN_1004d3c9(param_1 + -168);
+  FUN_1004d3c9((int)(param_1 + -168));
 }
 
 
@@ -1958,7 +2448,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a986e(void)
 void __thiscall Recovered_Bulk::m_FUN_109a987b(void)
 {
   int param_1 = (int )this;
-  FUN_10005b8c(param_1 + -16);
+  FUN_10005b8c((int)(param_1 + -16));
 }
 
 
@@ -1968,7 +2458,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a987b(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9885(void)
 {
   int param_1 = (int )this;
-  FUN_10005b8c(param_1 + -140);
+  FUN_10005b8c((int)(param_1 + -140));
 }
 
 
@@ -1978,7 +2468,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9885(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9892(void)
 {
   int param_1 = (int )this;
-  FUN_10005b8c(param_1 + -168);
+  FUN_10005b8c((int)(param_1 + -168));
 }
 
 
@@ -1988,7 +2478,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9892(void)
 void __thiscall Recovered_Bulk::m_FUN_109a989f(void)
 {
   int param_1 = (int )this;
-  FUN_10069641(param_1 + -16);
+  FUN_10069641((int)(param_1 + -16));
 }
 
 
@@ -1998,7 +2488,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a989f(void)
 void __thiscall Recovered_Bulk::m_FUN_109a98a9(void)
 {
   int param_1 = (int )this;
-  FUN_10069641(param_1 + -140);
+  FUN_10069641((int)(param_1 + -140));
 }
 
 
@@ -2008,7 +2498,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a98a9(void)
 void __thiscall Recovered_Bulk::m_FUN_109a98b6(void)
 {
   int param_1 = (int )this;
-  FUN_10069641(param_1 + -168);
+  FUN_10069641((int)(param_1 + -168));
 }
 
 
@@ -2018,7 +2508,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a98b6(void)
 void __thiscall Recovered_Bulk::m_FUN_109a98c3(void)
 {
   int param_1 = (int )this;
-  FUN_100055c9(param_1 + -16);
+  FUN_100055c9((int)(param_1 + -16));
 }
 
 
@@ -2028,7 +2518,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a98c3(void)
 void __thiscall Recovered_Bulk::m_FUN_109a98cd(void)
 {
   int param_1 = (int )this;
-  FUN_100055c9(param_1 + -140);
+  FUN_100055c9((int)(param_1 + -140));
 }
 
 
@@ -2038,7 +2528,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a98cd(void)
 void __thiscall Recovered_Bulk::m_FUN_109a98da(void)
 {
   int param_1 = (int )this;
-  FUN_100055c9(param_1 + -168);
+  FUN_100055c9((int)(param_1 + -168));
 }
 
 
@@ -2048,7 +2538,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a98da(void)
 void __thiscall Recovered_Bulk::m_FUN_109a98e7(void)
 {
   int param_1 = (int )this;
-  FUN_1002ece9(param_1 + -16);
+  FUN_1002ece9((int)(param_1 + -16));
 }
 
 
@@ -2058,7 +2548,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a98e7(void)
 void __thiscall Recovered_Bulk::m_FUN_109a98f1(void)
 {
   int param_1 = (int )this;
-  FUN_1002ece9(param_1 + -140);
+  FUN_1002ece9((int)(param_1 + -140));
 }
 
 
@@ -2068,7 +2558,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a98f1(void)
 void __thiscall Recovered_Bulk::m_FUN_109a98fe(void)
 {
   int param_1 = (int )this;
-  FUN_1002ece9(param_1 + -168);
+  FUN_1002ece9((int)(param_1 + -168));
 }
 
 
@@ -2078,7 +2568,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a98fe(void)
 void __thiscall Recovered_Bulk::m_FUN_109a990b(void)
 {
   int param_1 = (int )this;
-  FUN_100475aa(param_1 + -16);
+  FUN_100475aa((int)(param_1 + -16));
 }
 
 
@@ -2088,7 +2578,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a990b(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9915(void)
 {
   int param_1 = (int )this;
-  FUN_100475aa(param_1 + -140);
+  FUN_100475aa((int)(param_1 + -140));
 }
 
 
@@ -2098,7 +2588,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9915(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9922(void)
 {
   int param_1 = (int )this;
-  FUN_100475aa(param_1 + -168);
+  FUN_100475aa((int)(param_1 + -168));
 }
 
 
@@ -2108,7 +2598,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9922(void)
 void __thiscall Recovered_Bulk::m_FUN_109a992f(void)
 {
   int param_1 = (int )this;
-  FUN_100291bd(param_1 + -16);
+  FUN_100291bd((int)(param_1 + -16));
 }
 
 
@@ -2118,7 +2608,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a992f(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9939(void)
 {
   int param_1 = (int )this;
-  FUN_100291bd(param_1 + -140);
+  FUN_100291bd((int)(param_1 + -140));
 }
 
 
@@ -2128,7 +2618,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9939(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9946(void)
 {
   int param_1 = (int )this;
-  FUN_100291bd(param_1 + -168);
+  FUN_100291bd((int)(param_1 + -168));
 }
 
 
@@ -2138,7 +2628,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9946(void)
 void __thiscall Recovered_Bulk::m_FUN_109a9953(void)
 {
   int param_1 = (int )this;
-  FUN_1008e8c4(param_1 + -16);
+  FUN_1008e8c4((int)(param_1 + -16));
 }
 
 
@@ -2148,7 +2638,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a9953(void)
 void __thiscall Recovered_Bulk::m_FUN_109a995d(void)
 {
   int param_1 = (int )this;
-  FUN_1008e8c4(param_1 + -140);
+  FUN_1008e8c4((int)(param_1 + -140));
 }
 
 
@@ -2158,7 +2648,7 @@ void __thiscall Recovered_Bulk::m_FUN_109a995d(void)
 void __thiscall Recovered_Bulk::m_FUN_109a996a(void)
 {
   int param_1 = (int )this;
-  FUN_1008e8c4(param_1 + -168);
+  FUN_1008e8c4((int)(param_1 + -168));
 }
 
 
@@ -2228,7 +2718,7 @@ undefined1 FUN_109b4320(void)
 void __thiscall Recovered_Bulk::m_FUN_109b8175(void)
 {
   int param_1 = (int )this;
-  FUN_10051839(param_1 + -16);
+  FUN_10051839((int)(param_1 + -16));
 }
 
 
@@ -2238,7 +2728,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b8175(void)
 void __thiscall Recovered_Bulk::m_FUN_109b817f(void)
 {
   int param_1 = (int )this;
-  FUN_10051839(param_1 + -140);
+  FUN_10051839((int)(param_1 + -140));
 }
 
 
@@ -2248,7 +2738,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b817f(void)
 void __thiscall Recovered_Bulk::m_FUN_109b818c(void)
 {
   int param_1 = (int )this;
-  FUN_10051839(param_1 + -168);
+  FUN_10051839((int)(param_1 + -168));
 }
 
 
@@ -2258,7 +2748,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b818c(void)
 void __thiscall Recovered_Bulk::m_FUN_109b8199(void)
 {
   int param_1 = (int )this;
-  FUN_1001b6f3(param_1 + -16);
+  FUN_1001b6f3((int)(param_1 + -16));
 }
 
 
@@ -2268,7 +2758,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b8199(void)
 void __thiscall Recovered_Bulk::m_FUN_109b81a3(void)
 {
   int param_1 = (int )this;
-  FUN_1001b6f3(param_1 + -140);
+  FUN_1001b6f3((int)(param_1 + -140));
 }
 
 
@@ -2278,7 +2768,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b81a3(void)
 void __thiscall Recovered_Bulk::m_FUN_109b81b0(void)
 {
   int param_1 = (int )this;
-  FUN_1001b6f3(param_1 + -168);
+  FUN_1001b6f3((int)(param_1 + -168));
 }
 
 
@@ -2288,7 +2778,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b81b0(void)
 void __thiscall Recovered_Bulk::m_FUN_109b81bd(void)
 {
   int param_1 = (int )this;
-  FUN_1001bc25(param_1 + -16);
+  FUN_1001bc25((int)(param_1 + -16));
 }
 
 
@@ -2298,7 +2788,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b81bd(void)
 void __thiscall Recovered_Bulk::m_FUN_109b81c7(void)
 {
   int param_1 = (int )this;
-  FUN_1001bc25(param_1 + -140);
+  FUN_1001bc25((int)(param_1 + -140));
 }
 
 
@@ -2308,7 +2798,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b81c7(void)
 void __thiscall Recovered_Bulk::m_FUN_109b81d4(void)
 {
   int param_1 = (int )this;
-  FUN_1001bc25(param_1 + -168);
+  FUN_1001bc25((int)(param_1 + -168));
 }
 
 
@@ -2318,7 +2808,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b81d4(void)
 void __thiscall Recovered_Bulk::m_FUN_109b81e1(void)
 {
   int param_1 = (int )this;
-  FUN_1002d7d1(param_1 + -16);
+  FUN_1002d7d1((int)(param_1 + -16));
 }
 
 
@@ -2328,7 +2818,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b81e1(void)
 void __thiscall Recovered_Bulk::m_FUN_109b81eb(void)
 {
   int param_1 = (int )this;
-  FUN_1002d7d1(param_1 + -140);
+  FUN_1002d7d1((int)(param_1 + -140));
 }
 
 
@@ -2338,7 +2828,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b81eb(void)
 void __thiscall Recovered_Bulk::m_FUN_109b81f8(void)
 {
   int param_1 = (int )this;
-  FUN_1002d7d1(param_1 + -168);
+  FUN_1002d7d1((int)(param_1 + -168));
 }
 
 
@@ -2348,7 +2838,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b81f8(void)
 void __thiscall Recovered_Bulk::m_FUN_109b8205(void)
 {
   int param_1 = (int )this;
-  FUN_1006f5eb(param_1 + -16);
+  FUN_1006f5eb((int)(param_1 + -16));
 }
 
 
@@ -2358,7 +2848,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b8205(void)
 void __thiscall Recovered_Bulk::m_FUN_109b820f(void)
 {
   int param_1 = (int )this;
-  FUN_1006f5eb(param_1 + -140);
+  FUN_1006f5eb((int)(param_1 + -140));
 }
 
 
@@ -2368,7 +2858,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b820f(void)
 void __thiscall Recovered_Bulk::m_FUN_109b821c(void)
 {
   int param_1 = (int )this;
-  FUN_1006f5eb(param_1 + -168);
+  FUN_1006f5eb((int)(param_1 + -168));
 }
 
 
@@ -2378,7 +2868,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b821c(void)
 void __thiscall Recovered_Bulk::m_FUN_109b8229(void)
 {
   int param_1 = (int )this;
-  FUN_1002cb7e(param_1 + -16);
+  FUN_1002cb7e((int)(param_1 + -16));
 }
 
 
@@ -2388,7 +2878,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b8229(void)
 void __thiscall Recovered_Bulk::m_FUN_109b8233(void)
 {
   int param_1 = (int )this;
-  FUN_1002cb7e(param_1 + -140);
+  FUN_1002cb7e((int)(param_1 + -140));
 }
 
 
@@ -2398,7 +2888,7 @@ void __thiscall Recovered_Bulk::m_FUN_109b8233(void)
 void __thiscall Recovered_Bulk::m_FUN_109b8240(void)
 {
   int param_1 = (int )this;
-  FUN_1002cb7e(param_1 + -168);
+  FUN_1002cb7e((int)(param_1 + -168));
 }
 
 
@@ -2418,7 +2908,7 @@ undefined1 FUN_109be280(void)
 void __thiscall Recovered_Bulk::m_FUN_109c07f5(void)
 {
   int param_1 = (int )this;
-  FUN_10013174(param_1 + -16);
+  FUN_10013174((int)(param_1 + -16));
 }
 
 
@@ -2428,7 +2918,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c07f5(void)
 void __thiscall Recovered_Bulk::m_FUN_109c07ff(void)
 {
   int param_1 = (int )this;
-  FUN_10013174(param_1 + -140);
+  FUN_10013174((int)(param_1 + -140));
 }
 
 
@@ -2438,7 +2928,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c07ff(void)
 void __thiscall Recovered_Bulk::m_FUN_109c080c(void)
 {
   int param_1 = (int )this;
-  FUN_10013174(param_1 + -168);
+  FUN_10013174((int)(param_1 + -168));
 }
 
 
@@ -2448,7 +2938,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c080c(void)
 void __thiscall Recovered_Bulk::m_FUN_109c0819(void)
 {
   int param_1 = (int )this;
-  FUN_1000821f(param_1 + -16);
+  FUN_1000821f((int)(param_1 + -16));
 }
 
 
@@ -2458,7 +2948,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c0819(void)
 void __thiscall Recovered_Bulk::m_FUN_109c0823(void)
 {
   int param_1 = (int )this;
-  FUN_1000821f(param_1 + -140);
+  FUN_1000821f((int)(param_1 + -140));
 }
 
 
@@ -2468,7 +2958,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c0823(void)
 void __thiscall Recovered_Bulk::m_FUN_109c0830(void)
 {
   int param_1 = (int )this;
-  FUN_1000821f(param_1 + -168);
+  FUN_1000821f((int)(param_1 + -168));
 }
 
 
@@ -2478,7 +2968,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c0830(void)
 void __thiscall Recovered_Bulk::m_FUN_109c083d(void)
 {
   int param_1 = (int )this;
-  FUN_10071cd8(param_1 + -16);
+  FUN_10071cd8((int)(param_1 + -16));
 }
 
 
@@ -2488,7 +2978,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c083d(void)
 void __thiscall Recovered_Bulk::m_FUN_109c0847(void)
 {
   int param_1 = (int )this;
-  FUN_10071cd8(param_1 + -140);
+  FUN_10071cd8((int)(param_1 + -140));
 }
 
 
@@ -2498,7 +2988,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c0847(void)
 void __thiscall Recovered_Bulk::m_FUN_109c0854(void)
 {
   int param_1 = (int )this;
-  FUN_10071cd8(param_1 + -168);
+  FUN_10071cd8((int)(param_1 + -168));
 }
 
 
@@ -2508,7 +2998,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c0854(void)
 void __thiscall Recovered_Bulk::m_FUN_109c0861(void)
 {
   int param_1 = (int )this;
-  FUN_1005974b(param_1 + -16);
+  FUN_1005974b((int)(param_1 + -16));
 }
 
 
@@ -2518,7 +3008,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c0861(void)
 void __thiscall Recovered_Bulk::m_FUN_109c086b(void)
 {
   int param_1 = (int )this;
-  FUN_1005974b(param_1 + -140);
+  FUN_1005974b((int)(param_1 + -140));
 }
 
 
@@ -2528,7 +3018,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c086b(void)
 void __thiscall Recovered_Bulk::m_FUN_109c0878(void)
 {
   int param_1 = (int )this;
-  FUN_1005974b(param_1 + -168);
+  FUN_1005974b((int)(param_1 + -168));
 }
 
 
@@ -2538,7 +3028,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c0878(void)
 void __thiscall Recovered_Bulk::m_FUN_109c0885(void)
 {
   int param_1 = (int )this;
-  FUN_1008664c(param_1 + -16);
+  FUN_1008664c((int)(param_1 + -16));
 }
 
 
@@ -2548,7 +3038,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c0885(void)
 void __thiscall Recovered_Bulk::m_FUN_109c088f(void)
 {
   int param_1 = (int )this;
-  FUN_1008664c(param_1 + -140);
+  FUN_1008664c((int)(param_1 + -140));
 }
 
 
@@ -2558,7 +3048,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c088f(void)
 void __thiscall Recovered_Bulk::m_FUN_109c089c(void)
 {
   int param_1 = (int )this;
-  FUN_1008664c(param_1 + -168);
+  FUN_1008664c((int)(param_1 + -168));
 }
 
 
@@ -2568,7 +3058,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c089c(void)
 void __thiscall Recovered_Bulk::m_FUN_109c08a9(void)
 {
   int param_1 = (int )this;
-  FUN_1002e483(param_1 + -16);
+  FUN_1002e483((int)(param_1 + -16));
 }
 
 
@@ -2578,7 +3068,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c08a9(void)
 void __thiscall Recovered_Bulk::m_FUN_109c08b3(void)
 {
   int param_1 = (int )this;
-  FUN_1002e483(param_1 + -140);
+  FUN_1002e483((int)(param_1 + -140));
 }
 
 
@@ -2588,7 +3078,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c08b3(void)
 void __thiscall Recovered_Bulk::m_FUN_109c08c0(void)
 {
   int param_1 = (int )this;
-  FUN_1002e483(param_1 + -168);
+  FUN_1002e483((int)(param_1 + -168));
 }
 
 
@@ -2598,7 +3088,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c08c0(void)
 void __thiscall Recovered_Bulk::m_FUN_109c08cd(void)
 {
   int param_1 = (int )this;
-  FUN_1006f90b(param_1 + -16);
+  FUN_1006f90b((int)(param_1 + -16));
 }
 
 
@@ -2608,7 +3098,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c08cd(void)
 void __thiscall Recovered_Bulk::m_FUN_109c08d7(void)
 {
   int param_1 = (int )this;
-  FUN_1006f90b(param_1 + -140);
+  FUN_1006f90b((int)(param_1 + -140));
 }
 
 
@@ -2618,7 +3108,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c08d7(void)
 void __thiscall Recovered_Bulk::m_FUN_109c08e4(void)
 {
   int param_1 = (int )this;
-  FUN_1006f90b(param_1 + -168);
+  FUN_1006f90b((int)(param_1 + -168));
 }
 
 
@@ -2628,7 +3118,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c08e4(void)
 void __thiscall Recovered_Bulk::m_FUN_109c08f1(void)
 {
   int param_1 = (int )this;
-  FUN_100977b2(param_1 + -16);
+  FUN_100977b2((int)(param_1 + -16));
 }
 
 
@@ -2638,7 +3128,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c08f1(void)
 void __thiscall Recovered_Bulk::m_FUN_109c08fb(void)
 {
   int param_1 = (int )this;
-  FUN_100977b2(param_1 + -140);
+  FUN_100977b2((int)(param_1 + -140));
 }
 
 
@@ -2648,7 +3138,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c08fb(void)
 void __thiscall Recovered_Bulk::m_FUN_109c0908(void)
 {
   int param_1 = (int )this;
-  FUN_100977b2(param_1 + -168);
+  FUN_100977b2((int)(param_1 + -168));
 }
 
 
@@ -2688,7 +3178,7 @@ undefined1 FUN_109c38f0(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4f45(void)
 {
   int param_1 = (int )this;
-  FUN_1008179b(param_1 + -16);
+  FUN_1008179b((int)(param_1 + -16));
 }
 
 
@@ -2698,7 +3188,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4f45(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4f4f(void)
 {
   int param_1 = (int )this;
-  FUN_1008179b(param_1 + -140);
+  FUN_1008179b((int)(param_1 + -140));
 }
 
 
@@ -2708,7 +3198,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4f4f(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4f5c(void)
 {
   int param_1 = (int )this;
-  FUN_1008179b(param_1 + -168);
+  FUN_1008179b((int)(param_1 + -168));
 }
 
 
@@ -2718,7 +3208,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4f5c(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4f69(void)
 {
   int param_1 = (int )this;
-  FUN_1000d6b1(param_1 + -16);
+  FUN_1000d6b1((int)(param_1 + -16));
 }
 
 
@@ -2728,7 +3218,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4f69(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4f73(void)
 {
   int param_1 = (int )this;
-  FUN_1000d6b1(param_1 + -140);
+  FUN_1000d6b1((int)(param_1 + -140));
 }
 
 
@@ -2738,7 +3228,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4f73(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4f80(void)
 {
   int param_1 = (int )this;
-  FUN_1000d6b1(param_1 + -168);
+  FUN_1000d6b1((int)(param_1 + -168));
 }
 
 
@@ -2748,7 +3238,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4f80(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4f8d(void)
 {
   int param_1 = (int )this;
-  FUN_1005c9af(param_1 + -16);
+  FUN_1005c9af((int)(param_1 + -16));
 }
 
 
@@ -2758,7 +3248,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4f8d(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4f97(void)
 {
   int param_1 = (int )this;
-  FUN_1005c9af(param_1 + -140);
+  FUN_1005c9af((int)(param_1 + -140));
 }
 
 
@@ -2768,7 +3258,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4f97(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4fa4(void)
 {
   int param_1 = (int )this;
-  FUN_1005c9af(param_1 + -168);
+  FUN_1005c9af((int)(param_1 + -168));
 }
 
 
@@ -2778,7 +3268,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4fa4(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4fb1(void)
 {
   int param_1 = (int )this;
-  FUN_10003d7d(param_1 + -16);
+  FUN_10003d7d((int)(param_1 + -16));
 }
 
 
@@ -2788,7 +3278,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4fb1(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4fbb(void)
 {
   int param_1 = (int )this;
-  FUN_10003d7d(param_1 + -140);
+  FUN_10003d7d((int)(param_1 + -140));
 }
 
 
@@ -2798,7 +3288,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4fbb(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4fc8(void)
 {
   int param_1 = (int )this;
-  FUN_10003d7d(param_1 + -168);
+  FUN_10003d7d((int)(param_1 + -168));
 }
 
 
@@ -2808,7 +3298,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4fc8(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4fd5(void)
 {
   int param_1 = (int )this;
-  FUN_10044fd0(param_1 + -16);
+  FUN_10044fd0((int)(param_1 + -16));
 }
 
 
@@ -2818,7 +3308,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4fd5(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4fdf(void)
 {
   int param_1 = (int )this;
-  FUN_10044fd0(param_1 + -140);
+  FUN_10044fd0((int)(param_1 + -140));
 }
 
 
@@ -2828,7 +3318,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4fdf(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4fec(void)
 {
   int param_1 = (int )this;
-  FUN_10044fd0(param_1 + -168);
+  FUN_10044fd0((int)(param_1 + -168));
 }
 
 
@@ -2838,7 +3328,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4fec(void)
 void __thiscall Recovered_Bulk::m_FUN_109c4ff9(void)
 {
   int param_1 = (int )this;
-  FUN_100961c3(param_1 + -16);
+  FUN_100961c3((int)(param_1 + -16));
 }
 
 
@@ -2848,7 +3338,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c4ff9(void)
 void __thiscall Recovered_Bulk::m_FUN_109c5003(void)
 {
   int param_1 = (int )this;
-  FUN_100961c3(param_1 + -140);
+  FUN_100961c3((int)(param_1 + -140));
 }
 
 
@@ -2858,7 +3348,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c5003(void)
 void __thiscall Recovered_Bulk::m_FUN_109c5010(void)
 {
   int param_1 = (int )this;
-  FUN_100961c3(param_1 + -168);
+  FUN_100961c3((int)(param_1 + -168));
 }
 
 
@@ -2868,7 +3358,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c5010(void)
 void __thiscall Recovered_Bulk::m_FUN_109c501d(void)
 {
   int param_1 = (int )this;
-  FUN_10003bbb(param_1 + -16);
+  FUN_10003bbb((int)(param_1 + -16));
 }
 
 
@@ -2878,7 +3368,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c501d(void)
 void __thiscall Recovered_Bulk::m_FUN_109c5027(void)
 {
   int param_1 = (int )this;
-  FUN_10003bbb(param_1 + -140);
+  FUN_10003bbb((int)(param_1 + -140));
 }
 
 
@@ -2888,7 +3378,7 @@ void __thiscall Recovered_Bulk::m_FUN_109c5027(void)
 void __thiscall Recovered_Bulk::m_FUN_109c5034(void)
 {
   int param_1 = (int )this;
-  FUN_10003bbb(param_1 + -168);
+  FUN_10003bbb((int)(param_1 + -168));
 }
 
 
@@ -2918,7 +3408,7 @@ undefined1 FUN_109ca350(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc726(void)
 {
   int param_1 = (int )this;
-  FUN_1004e71a(param_1 + -16);
+  FUN_1004e71a((int)(param_1 + -16));
 }
 
 
@@ -2928,7 +3418,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc726(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc730(void)
 {
   int param_1 = (int )this;
-  FUN_1004e71a(param_1 + -140);
+  FUN_1004e71a((int)(param_1 + -140));
 }
 
 
@@ -2938,7 +3428,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc730(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc73d(void)
 {
   int param_1 = (int )this;
-  FUN_1004e71a(param_1 + -168);
+  FUN_1004e71a((int)(param_1 + -168));
 }
 
 
@@ -2948,7 +3438,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc73d(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc74a(void)
 {
   int param_1 = (int )this;
-  FUN_10028f65(param_1 + -16);
+  FUN_10028f65((int)(param_1 + -16));
 }
 
 
@@ -2958,7 +3448,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc74a(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc754(void)
 {
   int param_1 = (int )this;
-  FUN_10028f65(param_1 + -140);
+  FUN_10028f65((int)(param_1 + -140));
 }
 
 
@@ -2968,7 +3458,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc754(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc761(void)
 {
   int param_1 = (int )this;
-  FUN_10028f65(param_1 + -168);
+  FUN_10028f65((int)(param_1 + -168));
 }
 
 
@@ -2978,7 +3468,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc761(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc76e(void)
 {
   int param_1 = (int )this;
-  FUN_100043bd(param_1 + -16);
+  FUN_100043bd((int)(param_1 + -16));
 }
 
 
@@ -2988,7 +3478,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc76e(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc778(void)
 {
   int param_1 = (int )this;
-  FUN_100043bd(param_1 + -140);
+  FUN_100043bd((int)(param_1 + -140));
 }
 
 
@@ -2998,7 +3488,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc778(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc785(void)
 {
   int param_1 = (int )this;
-  FUN_100043bd(param_1 + -168);
+  FUN_100043bd((int)(param_1 + -168));
 }
 
 
@@ -3008,7 +3498,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc785(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc792(void)
 {
   int param_1 = (int )this;
-  FUN_100925fa(param_1 + -16);
+  FUN_100925fa((int)(param_1 + -16));
 }
 
 
@@ -3018,7 +3508,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc792(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc79c(void)
 {
   int param_1 = (int )this;
-  FUN_100925fa(param_1 + -140);
+  FUN_100925fa((int)(param_1 + -140));
 }
 
 
@@ -3028,7 +3518,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc79c(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc7a9(void)
 {
   int param_1 = (int )this;
-  FUN_100925fa(param_1 + -168);
+  FUN_100925fa((int)(param_1 + -168));
 }
 
 
@@ -3038,7 +3528,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc7a9(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc7b6(void)
 {
   int param_1 = (int )this;
-  FUN_10050ac9(param_1 + -16);
+  FUN_10050ac9((int)(param_1 + -16));
 }
 
 
@@ -3048,7 +3538,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc7b6(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc7c0(void)
 {
   int param_1 = (int )this;
-  FUN_10050ac9(param_1 + -140);
+  FUN_10050ac9((int)(param_1 + -140));
 }
 
 
@@ -3058,7 +3548,7 @@ void __thiscall Recovered_Bulk::m_FUN_109cc7c0(void)
 void __thiscall Recovered_Bulk::m_FUN_109cc7cd(void)
 {
   int param_1 = (int )this;
-  FUN_10050ac9(param_1 + -168);
+  FUN_10050ac9((int)(param_1 + -168));
 }
 
 
@@ -3088,7 +3578,7 @@ undefined1 FUN_109d7640(void)
 void __thiscall Recovered_Bulk::m_FUN_109da233(void)
 {
   int param_1 = (int )this;
-  FUN_1007dc27(param_1 + -16);
+  FUN_1007dc27((int)(param_1 + -16));
 }
 
 
@@ -3098,7 +3588,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da233(void)
 void __thiscall Recovered_Bulk::m_FUN_109da23d(void)
 {
   int param_1 = (int )this;
-  FUN_1007dc27(param_1 + -140);
+  FUN_1007dc27((int)(param_1 + -140));
 }
 
 
@@ -3108,7 +3598,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da23d(void)
 void __thiscall Recovered_Bulk::m_FUN_109da24a(void)
 {
   int param_1 = (int )this;
-  FUN_1007dc27(param_1 + -168);
+  FUN_1007dc27((int)(param_1 + -168));
 }
 
 
@@ -3118,7 +3608,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da24a(void)
 void __thiscall Recovered_Bulk::m_FUN_109da257(void)
 {
   int param_1 = (int )this;
-  FUN_10060fc3(param_1 + -16);
+  FUN_10060fc3((int)(param_1 + -16));
 }
 
 
@@ -3128,7 +3618,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da257(void)
 void __thiscall Recovered_Bulk::m_FUN_109da261(void)
 {
   int param_1 = (int )this;
-  FUN_10060fc3(param_1 + -140);
+  FUN_10060fc3((int)(param_1 + -140));
 }
 
 
@@ -3138,7 +3628,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da261(void)
 void __thiscall Recovered_Bulk::m_FUN_109da26e(void)
 {
   int param_1 = (int )this;
-  FUN_10060fc3(param_1 + -168);
+  FUN_10060fc3((int)(param_1 + -168));
 }
 
 
@@ -3148,7 +3638,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da26e(void)
 void __thiscall Recovered_Bulk::m_FUN_109da27b(void)
 {
   int param_1 = (int )this;
-  FUN_100493f5(param_1 + -16);
+  FUN_100493f5((int)(param_1 + -16));
 }
 
 
@@ -3158,7 +3648,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da27b(void)
 void __thiscall Recovered_Bulk::m_FUN_109da285(void)
 {
   int param_1 = (int )this;
-  FUN_100493f5(param_1 + -140);
+  FUN_100493f5((int)(param_1 + -140));
 }
 
 
@@ -3168,7 +3658,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da285(void)
 void __thiscall Recovered_Bulk::m_FUN_109da292(void)
 {
   int param_1 = (int )this;
-  FUN_100493f5(param_1 + -168);
+  FUN_100493f5((int)(param_1 + -168));
 }
 
 
@@ -3178,7 +3668,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da292(void)
 void __thiscall Recovered_Bulk::m_FUN_109da29f(void)
 {
   int param_1 = (int )this;
-  FUN_100459e9(param_1 + -16);
+  FUN_100459e9((int)(param_1 + -16));
 }
 
 
@@ -3188,7 +3678,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da29f(void)
 void __thiscall Recovered_Bulk::m_FUN_109da2a9(void)
 {
   int param_1 = (int )this;
-  FUN_100459e9(param_1 + -140);
+  FUN_100459e9((int)(param_1 + -140));
 }
 
 
@@ -3198,7 +3688,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da2a9(void)
 void __thiscall Recovered_Bulk::m_FUN_109da2b6(void)
 {
   int param_1 = (int )this;
-  FUN_100459e9(param_1 + -168);
+  FUN_100459e9((int)(param_1 + -168));
 }
 
 
@@ -3208,7 +3698,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da2b6(void)
 void __thiscall Recovered_Bulk::m_FUN_109da2c3(void)
 {
   int param_1 = (int )this;
-  FUN_1003015c(param_1 + -16);
+  FUN_1003015c((int)(param_1 + -16));
 }
 
 
@@ -3218,7 +3708,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da2c3(void)
 void __thiscall Recovered_Bulk::m_FUN_109da2cd(void)
 {
   int param_1 = (int )this;
-  FUN_1003015c(param_1 + -140);
+  FUN_1003015c((int)(param_1 + -140));
 }
 
 
@@ -3228,7 +3718,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da2cd(void)
 void __thiscall Recovered_Bulk::m_FUN_109da2da(void)
 {
   int param_1 = (int )this;
-  FUN_1003015c(param_1 + -168);
+  FUN_1003015c((int)(param_1 + -168));
 }
 
 
@@ -3268,7 +3758,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da2fe(void)
 void __thiscall Recovered_Bulk::m_FUN_109da30b(void)
 {
   int param_1 = (int )this;
-  FUN_1001dc00(param_1 + -16);
+  FUN_1001dc00((int)(param_1 + -16));
 }
 
 
@@ -3278,7 +3768,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da30b(void)
 void __thiscall Recovered_Bulk::m_FUN_109da315(void)
 {
   int param_1 = (int )this;
-  FUN_1001dc00(param_1 + -140);
+  FUN_1001dc00((int)(param_1 + -140));
 }
 
 
@@ -3288,7 +3778,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da315(void)
 void __thiscall Recovered_Bulk::m_FUN_109da322(void)
 {
   int param_1 = (int )this;
-  FUN_1001dc00(param_1 + -168);
+  FUN_1001dc00((int)(param_1 + -168));
 }
 
 
@@ -3298,7 +3788,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da322(void)
 void __thiscall Recovered_Bulk::m_FUN_109da32f(void)
 {
   int param_1 = (int )this;
-  FUN_10010168(param_1 + -16);
+  FUN_10010168((int)(param_1 + -16));
 }
 
 
@@ -3308,7 +3798,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da32f(void)
 void __thiscall Recovered_Bulk::m_FUN_109da339(void)
 {
   int param_1 = (int )this;
-  FUN_10010168(param_1 + -140);
+  FUN_10010168((int)(param_1 + -140));
 }
 
 
@@ -3318,7 +3808,7 @@ void __thiscall Recovered_Bulk::m_FUN_109da339(void)
 void __thiscall Recovered_Bulk::m_FUN_109da346(void)
 {
   int param_1 = (int )this;
-  FUN_10010168(param_1 + -168);
+  FUN_10010168((int)(param_1 + -168));
 }
 
 
@@ -3348,7 +3838,7 @@ undefined1 FUN_109e0620(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d15(void)
 {
   int param_1 = (int )this;
-  FUN_1002dbeb(param_1 + -16);
+  FUN_1002dbeb((int)(param_1 + -16));
 }
 
 
@@ -3358,7 +3848,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d15(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d1f(void)
 {
   int param_1 = (int )this;
-  FUN_1002dbeb(param_1 + -140);
+  FUN_1002dbeb((int)(param_1 + -140));
 }
 
 
@@ -3368,7 +3858,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d1f(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d2c(void)
 {
   int param_1 = (int )this;
-  FUN_1002dbeb(param_1 + -168);
+  FUN_1002dbeb((int)(param_1 + -168));
 }
 
 
@@ -3378,7 +3868,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d2c(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d39(void)
 {
   int param_1 = (int )this;
-  FUN_10096de4(param_1 + -16);
+  FUN_10096de4((int)(param_1 + -16));
 }
 
 
@@ -3388,7 +3878,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d39(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d43(void)
 {
   int param_1 = (int )this;
-  FUN_10096de4(param_1 + -140);
+  FUN_10096de4((int)(param_1 + -140));
 }
 
 
@@ -3398,7 +3888,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d43(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d50(void)
 {
   int param_1 = (int )this;
-  FUN_10096de4(param_1 + -168);
+  FUN_10096de4((int)(param_1 + -168));
 }
 
 
@@ -3408,7 +3898,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d50(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d5d(void)
 {
   int param_1 = (int )this;
-  FUN_10051ad2(param_1 + -16);
+  FUN_10051ad2((int)(param_1 + -16));
 }
 
 
@@ -3418,7 +3908,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d5d(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d67(void)
 {
   int param_1 = (int )this;
-  FUN_10051ad2(param_1 + -140);
+  FUN_10051ad2((int)(param_1 + -140));
 }
 
 
@@ -3428,7 +3918,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d67(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d74(void)
 {
   int param_1 = (int )this;
-  FUN_10051ad2(param_1 + -168);
+  FUN_10051ad2((int)(param_1 + -168));
 }
 
 
@@ -3438,7 +3928,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d74(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d81(void)
 {
   int param_1 = (int )this;
-  FUN_1008fbb1(param_1 + -16);
+  FUN_1008fbb1((int)(param_1 + -16));
 }
 
 
@@ -3448,7 +3938,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d81(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d8b(void)
 {
   int param_1 = (int )this;
-  FUN_1008fbb1(param_1 + -140);
+  FUN_1008fbb1((int)(param_1 + -140));
 }
 
 
@@ -3458,7 +3948,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d8b(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3d98(void)
 {
   int param_1 = (int )this;
-  FUN_1008fbb1(param_1 + -168);
+  FUN_1008fbb1((int)(param_1 + -168));
 }
 
 
@@ -3468,7 +3958,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3d98(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3da5(void)
 {
   int param_1 = (int )this;
-  FUN_1003ebda(param_1 + -16);
+  FUN_1003ebda((int)(param_1 + -16));
 }
 
 
@@ -3478,7 +3968,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3da5(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3daf(void)
 {
   int param_1 = (int )this;
-  FUN_1003ebda(param_1 + -140);
+  FUN_1003ebda((int)(param_1 + -140));
 }
 
 
@@ -3488,7 +3978,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3daf(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3dbc(void)
 {
   int param_1 = (int )this;
-  FUN_1003ebda(param_1 + -168);
+  FUN_1003ebda((int)(param_1 + -168));
 }
 
 
@@ -3498,7 +3988,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3dbc(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3dc9(void)
 {
   int param_1 = (int )this;
-  FUN_10053cf6(param_1 + -16);
+  FUN_10053cf6((int)(param_1 + -16));
 }
 
 
@@ -3508,7 +3998,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3dc9(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3dd3(void)
 {
   int param_1 = (int )this;
-  FUN_10053cf6(param_1 + -140);
+  FUN_10053cf6((int)(param_1 + -140));
 }
 
 
@@ -3518,7 +4008,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3dd3(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3de0(void)
 {
   int param_1 = (int )this;
-  FUN_10053cf6(param_1 + -168);
+  FUN_10053cf6((int)(param_1 + -168));
 }
 
 
@@ -3528,7 +4018,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3de0(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3ded(void)
 {
   int param_1 = (int )this;
-  FUN_1005e3c7(param_1 + -16);
+  FUN_1005e3c7((int)(param_1 + -16));
 }
 
 
@@ -3538,7 +4028,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3ded(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3df7(void)
 {
   int param_1 = (int )this;
-  FUN_1005e3c7(param_1 + -140);
+  FUN_1005e3c7((int)(param_1 + -140));
 }
 
 
@@ -3548,7 +4038,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3df7(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e04(void)
 {
   int param_1 = (int )this;
-  FUN_1005e3c7(param_1 + -168);
+  FUN_1005e3c7((int)(param_1 + -168));
 }
 
 
@@ -3558,7 +4048,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e04(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e11(void)
 {
   int param_1 = (int )this;
-  FUN_1000dcc4(param_1 + -16);
+  FUN_1000dcc4((int)(param_1 + -16));
 }
 
 
@@ -3568,7 +4058,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e11(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e1b(void)
 {
   int param_1 = (int )this;
-  FUN_1000dcc4(param_1 + -140);
+  FUN_1000dcc4((int)(param_1 + -140));
 }
 
 
@@ -3578,7 +4068,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e1b(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e28(void)
 {
   int param_1 = (int )this;
-  FUN_1000dcc4(param_1 + -168);
+  FUN_1000dcc4((int)(param_1 + -168));
 }
 
 
@@ -3588,7 +4078,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e28(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e35(void)
 {
   int param_1 = (int )this;
-  FUN_10019e48(param_1 + -16);
+  FUN_10019e48((int)(param_1 + -16));
 }
 
 
@@ -3598,7 +4088,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e35(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e3f(void)
 {
   int param_1 = (int )this;
-  FUN_10019e48(param_1 + -140);
+  FUN_10019e48((int)(param_1 + -140));
 }
 
 
@@ -3608,7 +4098,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e3f(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e4c(void)
 {
   int param_1 = (int )this;
-  FUN_10019e48(param_1 + -168);
+  FUN_10019e48((int)(param_1 + -168));
 }
 
 
@@ -3618,7 +4108,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e4c(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e59(void)
 {
   int param_1 = (int )this;
-  FUN_1001ecc7(param_1 + -16);
+  FUN_1001ecc7((int)(param_1 + -16));
 }
 
 
@@ -3628,7 +4118,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e59(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e63(void)
 {
   int param_1 = (int )this;
-  FUN_1001ecc7(param_1 + -140);
+  FUN_1001ecc7((int)(param_1 + -140));
 }
 
 
@@ -3638,7 +4128,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e63(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e70(void)
 {
   int param_1 = (int )this;
-  FUN_1001ecc7(param_1 + -168);
+  FUN_1001ecc7((int)(param_1 + -168));
 }
 
 
@@ -3648,7 +4138,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e70(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e7d(void)
 {
   int param_1 = (int )this;
-  FUN_10027b5b(param_1 + -16);
+  FUN_10027b5b((int)(param_1 + -16));
 }
 
 
@@ -3658,7 +4148,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e7d(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e87(void)
 {
   int param_1 = (int )this;
-  FUN_10027b5b(param_1 + -140);
+  FUN_10027b5b((int)(param_1 + -140));
 }
 
 
@@ -3668,7 +4158,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e87(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3e94(void)
 {
   int param_1 = (int )this;
-  FUN_10027b5b(param_1 + -168);
+  FUN_10027b5b((int)(param_1 + -168));
 }
 
 
@@ -3678,7 +4168,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3e94(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3ea1(void)
 {
   int param_1 = (int )this;
-  FUN_100683ae(param_1 + -16);
+  FUN_100683ae((int)(param_1 + -16));
 }
 
 
@@ -3688,7 +4178,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3ea1(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3eab(void)
 {
   int param_1 = (int )this;
-  FUN_100683ae(param_1 + -140);
+  FUN_100683ae((int)(param_1 + -140));
 }
 
 
@@ -3698,7 +4188,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3eab(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3eb8(void)
 {
   int param_1 = (int )this;
-  FUN_100683ae(param_1 + -168);
+  FUN_100683ae((int)(param_1 + -168));
 }
 
 
@@ -3708,7 +4198,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3eb8(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3ec5(void)
 {
   int param_1 = (int )this;
-  FUN_100264f4(param_1 + -16);
+  FUN_100264f4((int)(param_1 + -16));
 }
 
 
@@ -3718,7 +4208,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3ec5(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3ecf(void)
 {
   int param_1 = (int )this;
-  FUN_100264f4(param_1 + -140);
+  FUN_100264f4((int)(param_1 + -140));
 }
 
 
@@ -3728,7 +4218,7 @@ void __thiscall Recovered_Bulk::m_FUN_109e3ecf(void)
 void __thiscall Recovered_Bulk::m_FUN_109e3edc(void)
 {
   int param_1 = (int )this;
-  FUN_100264f4(param_1 + -168);
+  FUN_100264f4((int)(param_1 + -168));
 }
 
 
@@ -3788,7 +4278,7 @@ void FUN_109ef0d0(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef536(void)
 {
   int param_1 = (int )this;
-  FUN_1006e650(param_1 + -16);
+  FUN_1006e650((int)(param_1 + -16));
 }
 
 
@@ -3798,7 +4288,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef536(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef540(void)
 {
   int param_1 = (int )this;
-  FUN_1006e650(param_1 + -140);
+  FUN_1006e650((int)(param_1 + -140));
 }
 
 
@@ -3808,7 +4298,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef540(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef54d(void)
 {
   int param_1 = (int )this;
-  FUN_1006e650(param_1 + -168);
+  FUN_1006e650((int)(param_1 + -168));
 }
 
 
@@ -3818,7 +4308,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef54d(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef55a(void)
 {
   int param_1 = (int )this;
-  FUN_100785ce(param_1 + -16);
+  FUN_100785ce((int)(param_1 + -16));
 }
 
 
@@ -3828,7 +4318,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef55a(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef564(void)
 {
   int param_1 = (int )this;
-  FUN_100785ce(param_1 + -140);
+  FUN_100785ce((int)(param_1 + -140));
 }
 
 
@@ -3838,7 +4328,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef564(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef571(void)
 {
   int param_1 = (int )this;
-  FUN_100785ce(param_1 + -168);
+  FUN_100785ce((int)(param_1 + -168));
 }
 
 
@@ -3848,7 +4338,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef571(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef57e(void)
 {
   int param_1 = (int )this;
-  FUN_10073484(param_1 + -16);
+  FUN_10073484((int)(param_1 + -16));
 }
 
 
@@ -3858,7 +4348,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef57e(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef588(void)
 {
   int param_1 = (int )this;
-  FUN_10073484(param_1 + -140);
+  FUN_10073484((int)(param_1 + -140));
 }
 
 
@@ -3868,7 +4358,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef588(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef595(void)
 {
   int param_1 = (int )this;
-  FUN_10073484(param_1 + -168);
+  FUN_10073484((int)(param_1 + -168));
 }
 
 
@@ -3878,7 +4368,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef595(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef5a2(void)
 {
   int param_1 = (int )this;
-  FUN_1003cda8(param_1 + -16);
+  FUN_1003cda8((int)(param_1 + -16));
 }
 
 
@@ -3888,7 +4378,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef5a2(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef5ac(void)
 {
   int param_1 = (int )this;
-  FUN_1003cda8(param_1 + -140);
+  FUN_1003cda8((int)(param_1 + -140));
 }
 
 
@@ -3898,7 +4388,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef5ac(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef5b9(void)
 {
   int param_1 = (int )this;
-  FUN_1003cda8(param_1 + -168);
+  FUN_1003cda8((int)(param_1 + -168));
 }
 
 
@@ -3908,7 +4398,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef5b9(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef5c6(void)
 {
   int param_1 = (int )this;
-  FUN_1003a8c8(param_1 + -16);
+  FUN_1003a8c8((int)(param_1 + -16));
 }
 
 
@@ -3918,7 +4408,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef5c6(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef5d0(void)
 {
   int param_1 = (int )this;
-  FUN_1003a8c8(param_1 + -140);
+  FUN_1003a8c8((int)(param_1 + -140));
 }
 
 
@@ -3928,7 +4418,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef5d0(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef5dd(void)
 {
   int param_1 = (int )this;
-  FUN_1003a8c8(param_1 + -168);
+  FUN_1003a8c8((int)(param_1 + -168));
 }
 
 
@@ -3938,7 +4428,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef5dd(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef5ea(void)
 {
   int param_1 = (int )this;
-  FUN_10038451(param_1 + -16);
+  FUN_10038451((int)(param_1 + -16));
 }
 
 
@@ -3948,7 +4438,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef5ea(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef5f4(void)
 {
   int param_1 = (int )this;
-  FUN_10038451(param_1 + -140);
+  FUN_10038451((int)(param_1 + -140));
 }
 
 
@@ -3958,7 +4448,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef5f4(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef601(void)
 {
   int param_1 = (int )this;
-  FUN_10038451(param_1 + -168);
+  FUN_10038451((int)(param_1 + -168));
 }
 
 
@@ -3968,7 +4458,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef601(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef60e(void)
 {
   int param_1 = (int )this;
-  FUN_100962e0(param_1 + -16);
+  FUN_100962e0((int)(param_1 + -16));
 }
 
 
@@ -3978,7 +4468,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef60e(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef618(void)
 {
   int param_1 = (int )this;
-  FUN_100962e0(param_1 + -140);
+  FUN_100962e0((int)(param_1 + -140));
 }
 
 
@@ -3988,7 +4478,7 @@ void __thiscall Recovered_Bulk::m_FUN_109ef618(void)
 void __thiscall Recovered_Bulk::m_FUN_109ef625(void)
 {
   int param_1 = (int )this;
-  FUN_100962e0(param_1 + -168);
+  FUN_100962e0((int)(param_1 + -168));
 }
 
 
@@ -4018,7 +4508,7 @@ undefined1 FUN_109f2f40(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8c63(void)
 {
   int param_1 = (int )this;
-  FUN_1005f1dc(param_1 + -16);
+  FUN_1005f1dc((int)(param_1 + -16));
 }
 
 
@@ -4028,7 +4518,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8c63(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8c6d(void)
 {
   int param_1 = (int )this;
-  FUN_1005f1dc(param_1 + -140);
+  FUN_1005f1dc((int)(param_1 + -140));
 }
 
 
@@ -4038,7 +4528,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8c6d(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8c7a(void)
 {
   int param_1 = (int )this;
-  FUN_1005f1dc(param_1 + -168);
+  FUN_1005f1dc((int)(param_1 + -168));
 }
 
 
@@ -4048,7 +4538,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8c7a(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8c87(void)
 {
   int param_1 = (int )this;
-  FUN_10081b15(param_1 + -8);
+  FUN_10081b15((int)(param_1 + -8));
 }
 
 
@@ -4058,7 +4548,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8c87(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8c91(void)
 {
   int param_1 = (int )this;
-  FUN_1002798f(param_1 + -8);
+  FUN_1002798f((int)(param_1 + -8));
 }
 
 
@@ -4068,7 +4558,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8c91(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8c9b(void)
 {
   int param_1 = (int )this;
-  FUN_10023038(param_1 + -8);
+  FUN_10023038((int)(param_1 + -8));
 }
 
 
@@ -4078,7 +4568,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8c9b(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8ca5(void)
 {
   int param_1 = (int )this;
-  FUN_1006a366(param_1 + -8);
+  FUN_1006a366((int)(param_1 + -8));
 }
 
 
@@ -4088,7 +4578,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8ca5(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8caf(void)
 {
   int param_1 = (int )this;
-  FUN_1007ebf4(param_1 + -1132);
+  FUN_1007ebf4((int)(param_1 + -1132));
 }
 
 
@@ -4098,7 +4588,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8caf(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8cbc(void)
 {
   int param_1 = (int )this;
-  FUN_1007ebf4(param_1 + -96);
+  FUN_1007ebf4((int)(param_1 + -96));
 }
 
 
@@ -4108,7 +4598,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8cbc(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8cc6(void)
 {
   int param_1 = (int )this;
-  FUN_10097131(param_1 + -1132);
+  FUN_10097131((int)(param_1 + -1132));
 }
 
 
@@ -4118,7 +4608,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8cc6(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8cd3(void)
 {
   int param_1 = (int )this;
-  FUN_10097131(param_1 + -96);
+  FUN_10097131((int)(param_1 + -96));
 }
 
 
@@ -4128,7 +4618,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8cd3(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8cdd(void)
 {
   int param_1 = (int )this;
-  FUN_10075400(param_1 + -1132);
+  FUN_10075400((int)(param_1 + -1132));
 }
 
 
@@ -4138,7 +4628,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8cdd(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8cea(void)
 {
   int param_1 = (int )this;
-  FUN_10075400(param_1 + -96);
+  FUN_10075400((int)(param_1 + -96));
 }
 
 
@@ -4148,7 +4638,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8cea(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8cf4(void)
 {
   int param_1 = (int )this;
-  FUN_1003e716(param_1 + -1132);
+  FUN_1003e716((int)(param_1 + -1132));
 }
 
 
@@ -4158,7 +4648,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8cf4(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d01(void)
 {
   int param_1 = (int )this;
-  FUN_1003e716(param_1 + -96);
+  FUN_1003e716((int)(param_1 + -96));
 }
 
 
@@ -4168,7 +4658,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d01(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d0b(void)
 {
   int param_1 = (int )this;
-  FUN_10073c72(param_1 + -8);
+  FUN_10073c72((int)(param_1 + -8));
 }
 
 
@@ -4178,7 +4668,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d0b(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d15(void)
 {
   int param_1 = (int )this;
-  FUN_1006c4d6(param_1 + -8);
+  FUN_1006c4d6((int)(param_1 + -8));
 }
 
 
@@ -4188,7 +4678,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d15(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d1f(void)
 {
   int param_1 = (int )this;
-  FUN_1000d16b(param_1 + -8);
+  FUN_1000d16b((int)(param_1 + -8));
 }
 
 
@@ -4198,7 +4688,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d1f(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d29(void)
 {
   int param_1 = (int )this;
-  FUN_10035fc1(param_1 + -8);
+  FUN_10035fc1((int)(param_1 + -8));
 }
 
 
@@ -4208,7 +4698,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d29(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d33(void)
 {
   int param_1 = (int )this;
-  FUN_10048ad6(param_1 + -16);
+  FUN_10048ad6((int)(param_1 + -16));
 }
 
 
@@ -4218,7 +4708,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d33(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d3d(void)
 {
   int param_1 = (int )this;
-  FUN_10048ad6(param_1 + -140);
+  FUN_10048ad6((int)(param_1 + -140));
 }
 
 
@@ -4228,7 +4718,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d3d(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d4a(void)
 {
   int param_1 = (int )this;
-  FUN_10048ad6(param_1 + -168);
+  FUN_10048ad6((int)(param_1 + -168));
 }
 
 
@@ -4238,7 +4728,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d4a(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d57(void)
 {
   int param_1 = (int )this;
-  FUN_1000c531(param_1 + -16);
+  FUN_1000c531((int)(param_1 + -16));
 }
 
 
@@ -4248,7 +4738,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d57(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d61(void)
 {
   int param_1 = (int )this;
-  FUN_1000c531(param_1 + -140);
+  FUN_1000c531((int)(param_1 + -140));
 }
 
 
@@ -4258,7 +4748,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d61(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d6e(void)
 {
   int param_1 = (int )this;
-  FUN_1000c531(param_1 + -168);
+  FUN_1000c531((int)(param_1 + -168));
 }
 
 
@@ -4268,7 +4758,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d6e(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d7b(void)
 {
   int param_1 = (int )this;
-  FUN_100914e8(param_1 + -16);
+  FUN_100914e8((int)(param_1 + -16));
 }
 
 
@@ -4278,7 +4768,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d7b(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d85(void)
 {
   int param_1 = (int )this;
-  FUN_100914e8(param_1 + -140);
+  FUN_100914e8((int)(param_1 + -140));
 }
 
 
@@ -4288,7 +4778,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d85(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d92(void)
 {
   int param_1 = (int )this;
-  FUN_100914e8(param_1 + -168);
+  FUN_100914e8((int)(param_1 + -168));
 }
 
 
@@ -4298,7 +4788,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d92(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8d9f(void)
 {
   int param_1 = (int )this;
-  FUN_10030733(param_1 + -16);
+  FUN_10030733((int)(param_1 + -16));
 }
 
 
@@ -4308,7 +4798,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8d9f(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8da9(void)
 {
   int param_1 = (int )this;
-  FUN_10030733(param_1 + -140);
+  FUN_10030733((int)(param_1 + -140));
 }
 
 
@@ -4318,7 +4808,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8da9(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8db6(void)
 {
   int param_1 = (int )this;
-  FUN_10030733(param_1 + -168);
+  FUN_10030733((int)(param_1 + -168));
 }
 
 
@@ -4328,7 +4818,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8db6(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8dc3(void)
 {
   int param_1 = (int )this;
-  FUN_1005997b(param_1 + -16);
+  FUN_1005997b((int)(param_1 + -16));
 }
 
 
@@ -4338,7 +4828,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8dc3(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8dcd(void)
 {
   int param_1 = (int )this;
-  FUN_1005997b(param_1 + -140);
+  FUN_1005997b((int)(param_1 + -140));
 }
 
 
@@ -4348,7 +4838,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8dcd(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8dda(void)
 {
   int param_1 = (int )this;
-  FUN_1005997b(param_1 + -168);
+  FUN_1005997b((int)(param_1 + -168));
 }
 
 
@@ -4358,7 +4848,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8dda(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8de7(void)
 {
   int param_1 = (int )this;
-  FUN_10057306(param_1 + -16);
+  FUN_10057306((int)(param_1 + -16));
 }
 
 
@@ -4368,7 +4858,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8de7(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8df1(void)
 {
   int param_1 = (int )this;
-  FUN_10057306(param_1 + -140);
+  FUN_10057306((int)(param_1 + -140));
 }
 
 
@@ -4378,7 +4868,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8df1(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8dfe(void)
 {
   int param_1 = (int )this;
-  FUN_10057306(param_1 + -168);
+  FUN_10057306((int)(param_1 + -168));
 }
 
 
@@ -4388,7 +4878,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8dfe(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e0b(void)
 {
   int param_1 = (int )this;
-  FUN_10096b4b(param_1 + -16);
+  FUN_10096b4b((int)(param_1 + -16));
 }
 
 
@@ -4398,7 +4888,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e0b(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e15(void)
 {
   int param_1 = (int )this;
-  FUN_10096b4b(param_1 + -140);
+  FUN_10096b4b((int)(param_1 + -140));
 }
 
 
@@ -4408,7 +4898,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e15(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e22(void)
 {
   int param_1 = (int )this;
-  FUN_10096b4b(param_1 + -168);
+  FUN_10096b4b((int)(param_1 + -168));
 }
 
 
@@ -4418,7 +4908,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e22(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e2f(void)
 {
   int param_1 = (int )this;
-  FUN_1004cb40(param_1 + -16);
+  FUN_1004cb40((int)(param_1 + -16));
 }
 
 
@@ -4428,7 +4918,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e2f(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e39(void)
 {
   int param_1 = (int )this;
-  FUN_1004cb40(param_1 + -140);
+  FUN_1004cb40((int)(param_1 + -140));
 }
 
 
@@ -4438,7 +4928,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e39(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e46(void)
 {
   int param_1 = (int )this;
-  FUN_1004cb40(param_1 + -168);
+  FUN_1004cb40((int)(param_1 + -168));
 }
 
 
@@ -4448,7 +4938,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e46(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e53(void)
 {
   int param_1 = (int )this;
-  FUN_100828da(param_1 + -16);
+  FUN_100828da((int)(param_1 + -16));
 }
 
 
@@ -4458,7 +4948,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e53(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e5d(void)
 {
   int param_1 = (int )this;
-  FUN_100828da(param_1 + -140);
+  FUN_100828da((int)(param_1 + -140));
 }
 
 
@@ -4468,7 +4958,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e5d(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e6a(void)
 {
   int param_1 = (int )this;
-  FUN_100828da(param_1 + -168);
+  FUN_100828da((int)(param_1 + -168));
 }
 
 
@@ -4478,7 +4968,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e6a(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e77(void)
 {
   int param_1 = (int )this;
-  FUN_10029316(param_1 + -16);
+  FUN_10029316((int)(param_1 + -16));
 }
 
 
@@ -4488,7 +4978,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e77(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e81(void)
 {
   int param_1 = (int )this;
-  FUN_10029316(param_1 + -140);
+  FUN_10029316((int)(param_1 + -140));
 }
 
 
@@ -4498,7 +4988,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e81(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e8e(void)
 {
   int param_1 = (int )this;
-  FUN_10029316(param_1 + -168);
+  FUN_10029316((int)(param_1 + -168));
 }
 
 
@@ -4508,7 +4998,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e8e(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8e9b(void)
 {
   int param_1 = (int )this;
-  FUN_100472bc(param_1 + -16);
+  FUN_100472bc((int)(param_1 + -16));
 }
 
 
@@ -4518,7 +5008,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8e9b(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8ea5(void)
 {
   int param_1 = (int )this;
-  FUN_100472bc(param_1 + -140);
+  FUN_100472bc((int)(param_1 + -140));
 }
 
 
@@ -4528,7 +5018,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8ea5(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8eb2(void)
 {
   int param_1 = (int )this;
-  FUN_100472bc(param_1 + -168);
+  FUN_100472bc((int)(param_1 + -168));
 }
 
 
@@ -4538,7 +5028,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8eb2(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8ebf(void)
 {
   int param_1 = (int )this;
-  FUN_10063a7a(param_1 + -16);
+  FUN_10063a7a((int)(param_1 + -16));
 }
 
 
@@ -4548,7 +5038,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8ebf(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8ec9(void)
 {
   int param_1 = (int )this;
-  FUN_10063a7a(param_1 + -140);
+  FUN_10063a7a((int)(param_1 + -140));
 }
 
 
@@ -4558,7 +5048,7 @@ void __thiscall Recovered_Bulk::m_FUN_109f8ec9(void)
 void __thiscall Recovered_Bulk::m_FUN_109f8ed6(void)
 {
   int param_1 = (int )this;
-  FUN_10063a7a(param_1 + -168);
+  FUN_10063a7a((int)(param_1 + -168));
 }
 
 
@@ -4658,7 +5148,7 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_10a05d70(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09ea1(void)
 {
   int param_1 = (int )this;
-  FUN_100709b4(param_1 + -16);
+  FUN_100709b4((int)(param_1 + -16));
 }
 
 
@@ -4668,7 +5158,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09ea1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09eab(void)
 {
   int param_1 = (int )this;
-  FUN_100709b4(param_1 + -140);
+  FUN_100709b4((int)(param_1 + -140));
 }
 
 
@@ -4678,7 +5168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09eab(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09eb8(void)
 {
   int param_1 = (int )this;
-  FUN_100709b4(param_1 + -168);
+  FUN_100709b4((int)(param_1 + -168));
 }
 
 
@@ -4688,7 +5178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09eb8(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09ec5(void)
 {
   int param_1 = (int )this;
-  FUN_1000743c(param_1 + -16);
+  FUN_1000743c((int)(param_1 + -16));
 }
 
 
@@ -4698,7 +5188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09ec5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09ecf(void)
 {
   int param_1 = (int )this;
-  FUN_1000743c(param_1 + -140);
+  FUN_1000743c((int)(param_1 + -140));
 }
 
 
@@ -4708,7 +5198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09ecf(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09edc(void)
 {
   int param_1 = (int )this;
-  FUN_1000743c(param_1 + -168);
+  FUN_1000743c((int)(param_1 + -168));
 }
 
 
@@ -4718,7 +5208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09edc(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09ee9(void)
 {
   int param_1 = (int )this;
-  FUN_10093fef(param_1 + -16);
+  FUN_10093fef((int)(param_1 + -16));
 }
 
 
@@ -4728,7 +5218,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09ee9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09ef3(void)
 {
   int param_1 = (int )this;
-  FUN_10093fef(param_1 + -140);
+  FUN_10093fef((int)(param_1 + -140));
 }
 
 
@@ -4738,7 +5228,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09ef3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f00(void)
 {
   int param_1 = (int )this;
-  FUN_10093fef(param_1 + -168);
+  FUN_10093fef((int)(param_1 + -168));
 }
 
 
@@ -4748,7 +5238,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f00(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f0d(void)
 {
   int param_1 = (int )this;
-  FUN_10044602(param_1 + -16);
+  FUN_10044602((int)(param_1 + -16));
 }
 
 
@@ -4758,7 +5248,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f0d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f17(void)
 {
   int param_1 = (int )this;
-  FUN_10044602(param_1 + -140);
+  FUN_10044602((int)(param_1 + -140));
 }
 
 
@@ -4768,7 +5258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f17(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f24(void)
 {
   int param_1 = (int )this;
-  FUN_10044602(param_1 + -168);
+  FUN_10044602((int)(param_1 + -168));
 }
 
 
@@ -4778,7 +5268,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f24(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f31(void)
 {
   int param_1 = (int )this;
-  FUN_1000371a(param_1 + -16);
+  FUN_1000371a((int)(param_1 + -16));
 }
 
 
@@ -4788,7 +5278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f31(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f3b(void)
 {
   int param_1 = (int )this;
-  FUN_1000371a(param_1 + -140);
+  FUN_1000371a((int)(param_1 + -140));
 }
 
 
@@ -4798,7 +5288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f3b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f48(void)
 {
   int param_1 = (int )this;
-  FUN_1000371a(param_1 + -168);
+  FUN_1000371a((int)(param_1 + -168));
 }
 
 
@@ -4808,7 +5298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f48(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f55(void)
 {
   int param_1 = (int )this;
-  FUN_1000fdad(param_1 + -16);
+  FUN_1000fdad((int)(param_1 + -16));
 }
 
 
@@ -4818,7 +5308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f55(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f5f(void)
 {
   int param_1 = (int )this;
-  FUN_1000fdad(param_1 + -140);
+  FUN_1000fdad((int)(param_1 + -140));
 }
 
 
@@ -4828,7 +5318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f5f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f6c(void)
 {
   int param_1 = (int )this;
-  FUN_1000fdad(param_1 + -168);
+  FUN_1000fdad((int)(param_1 + -168));
 }
 
 
@@ -4838,7 +5328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f6c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f79(void)
 {
   int param_1 = (int )this;
-  FUN_10073f1f(param_1 + -16);
+  FUN_10073f1f((int)(param_1 + -16));
 }
 
 
@@ -4848,7 +5338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f79(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f83(void)
 {
   int param_1 = (int )this;
-  FUN_10073f1f(param_1 + -140);
+  FUN_10073f1f((int)(param_1 + -140));
 }
 
 
@@ -4858,7 +5348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a09f83(void)
 void __thiscall Recovered_Bulk::m_FUN_10a09f90(void)
 {
   int param_1 = (int )this;
-  FUN_10073f1f(param_1 + -168);
+  FUN_10073f1f((int)(param_1 + -168));
 }
 
 
@@ -4898,7 +5388,7 @@ undefined1 FUN_10a0c4c0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dcb1(void)
 {
   int param_1 = (int )this;
-  FUN_1002ee4c(param_1 + -16);
+  FUN_1002ee4c((int)(param_1 + -16));
 }
 
 
@@ -4908,7 +5398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dcb1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dcbb(void)
 {
   int param_1 = (int )this;
-  FUN_1002ee4c(param_1 + -140);
+  FUN_1002ee4c((int)(param_1 + -140));
 }
 
 
@@ -4918,7 +5408,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dcbb(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dcc8(void)
 {
   int param_1 = (int )this;
-  FUN_1002ee4c(param_1 + -168);
+  FUN_1002ee4c((int)(param_1 + -168));
 }
 
 
@@ -4928,7 +5418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dcc8(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dcd5(void)
 {
   int param_1 = (int )this;
-  FUN_10013980(param_1 + -16);
+  FUN_10013980((int)(param_1 + -16));
 }
 
 
@@ -4938,7 +5428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dcd5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dcdf(void)
 {
   int param_1 = (int )this;
-  FUN_10013980(param_1 + -140);
+  FUN_10013980((int)(param_1 + -140));
 }
 
 
@@ -4948,7 +5438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dcdf(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dcec(void)
 {
   int param_1 = (int )this;
-  FUN_10013980(param_1 + -168);
+  FUN_10013980((int)(param_1 + -168));
 }
 
 
@@ -4958,7 +5448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dcec(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dcf9(void)
 {
   int param_1 = (int )this;
-  FUN_100300ad(param_1 + -16);
+  FUN_100300ad((int)(param_1 + -16));
 }
 
 
@@ -4968,7 +5458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dcf9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dd03(void)
 {
   int param_1 = (int )this;
-  FUN_100300ad(param_1 + -140);
+  FUN_100300ad((int)(param_1 + -140));
 }
 
 
@@ -4978,7 +5468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dd03(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dd10(void)
 {
   int param_1 = (int )this;
-  FUN_100300ad(param_1 + -168);
+  FUN_100300ad((int)(param_1 + -168));
 }
 
 
@@ -4988,7 +5478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dd10(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dd1d(void)
 {
   int param_1 = (int )this;
-  FUN_1009577d(param_1 + -16);
+  FUN_1009577d((int)(param_1 + -16));
 }
 
 
@@ -4998,7 +5488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dd1d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dd27(void)
 {
   int param_1 = (int )this;
-  FUN_1009577d(param_1 + -140);
+  FUN_1009577d((int)(param_1 + -140));
 }
 
 
@@ -5008,7 +5498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dd27(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dd34(void)
 {
   int param_1 = (int )this;
-  FUN_1009577d(param_1 + -168);
+  FUN_1009577d((int)(param_1 + -168));
 }
 
 
@@ -5018,7 +5508,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dd34(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dd41(void)
 {
   int param_1 = (int )this;
-  FUN_1000fda8(param_1 + -16);
+  FUN_1000fda8((int)(param_1 + -16));
 }
 
 
@@ -5028,7 +5518,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dd41(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dd4b(void)
 {
   int param_1 = (int )this;
-  FUN_1000fda8(param_1 + -140);
+  FUN_1000fda8((int)(param_1 + -140));
 }
 
 
@@ -5038,7 +5528,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a0dd4b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a0dd58(void)
 {
   int param_1 = (int )this;
-  FUN_1000fda8(param_1 + -168);
+  FUN_1000fda8((int)(param_1 + -168));
 }
 
 
@@ -5058,7 +5548,7 @@ undefined1 FUN_10a11de0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14c96(void)
 {
   int param_1 = (int )this;
-  FUN_10029c08(param_1 + -16);
+  FUN_10029c08((int)(param_1 + -16));
 }
 
 
@@ -5068,7 +5558,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14c96(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14ca0(void)
 {
   int param_1 = (int )this;
-  FUN_10029c08(param_1 + -140);
+  FUN_10029c08((int)(param_1 + -140));
 }
 
 
@@ -5078,7 +5568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14ca0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14cad(void)
 {
   int param_1 = (int )this;
-  FUN_10029c08(param_1 + -168);
+  FUN_10029c08((int)(param_1 + -168));
 }
 
 
@@ -5088,7 +5578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14cad(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14cba(void)
 {
   int param_1 = (int )this;
-  FUN_10085396(param_1 + -16);
+  FUN_10085396((int)(param_1 + -16));
 }
 
 
@@ -5098,7 +5588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14cba(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14cc4(void)
 {
   int param_1 = (int )this;
-  FUN_10085396(param_1 + -140);
+  FUN_10085396((int)(param_1 + -140));
 }
 
 
@@ -5108,7 +5598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14cc4(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14cd1(void)
 {
   int param_1 = (int )this;
-  FUN_10085396(param_1 + -168);
+  FUN_10085396((int)(param_1 + -168));
 }
 
 
@@ -5118,7 +5608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14cd1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14cde(void)
 {
   int param_1 = (int )this;
-  FUN_1001c521(param_1 + -16);
+  FUN_1001c521((int)(param_1 + -16));
 }
 
 
@@ -5128,7 +5618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14cde(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14ce8(void)
 {
   int param_1 = (int )this;
-  FUN_1001c521(param_1 + -140);
+  FUN_1001c521((int)(param_1 + -140));
 }
 
 
@@ -5138,7 +5628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14ce8(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14cf5(void)
 {
   int param_1 = (int )this;
-  FUN_1001c521(param_1 + -168);
+  FUN_1001c521((int)(param_1 + -168));
 }
 
 
@@ -5148,7 +5638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14cf5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d02(void)
 {
   int param_1 = (int )this;
-  FUN_1003b07a(param_1 + -16);
+  FUN_1003b07a((int)(param_1 + -16));
 }
 
 
@@ -5158,7 +5648,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d02(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d0c(void)
 {
   int param_1 = (int )this;
-  FUN_1003b07a(param_1 + -140);
+  FUN_1003b07a((int)(param_1 + -140));
 }
 
 
@@ -5168,7 +5658,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d0c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d19(void)
 {
   int param_1 = (int )this;
-  FUN_1003b07a(param_1 + -168);
+  FUN_1003b07a((int)(param_1 + -168));
 }
 
 
@@ -5178,7 +5668,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d19(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d26(void)
 {
   int param_1 = (int )this;
-  FUN_10027bec(param_1 + -16);
+  FUN_10027bec((int)(param_1 + -16));
 }
 
 
@@ -5188,7 +5678,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d26(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d30(void)
 {
   int param_1 = (int )this;
-  FUN_10027bec(param_1 + -140);
+  FUN_10027bec((int)(param_1 + -140));
 }
 
 
@@ -5198,7 +5688,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d30(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d3d(void)
 {
   int param_1 = (int )this;
-  FUN_10027bec(param_1 + -168);
+  FUN_10027bec((int)(param_1 + -168));
 }
 
 
@@ -5208,7 +5698,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d3d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d4a(void)
 {
   int param_1 = (int )this;
-  FUN_1008e428(param_1 + -16);
+  FUN_1008e428((int)(param_1 + -16));
 }
 
 
@@ -5218,7 +5708,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d4a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d54(void)
 {
   int param_1 = (int )this;
-  FUN_1008e428(param_1 + -140);
+  FUN_1008e428((int)(param_1 + -140));
 }
 
 
@@ -5228,7 +5718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d54(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d61(void)
 {
   int param_1 = (int )this;
-  FUN_1008e428(param_1 + -168);
+  FUN_1008e428((int)(param_1 + -168));
 }
 
 
@@ -5238,7 +5728,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d61(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d6e(void)
 {
   int param_1 = (int )this;
-  FUN_10061054(param_1 + -16);
+  FUN_10061054((int)(param_1 + -16));
 }
 
 
@@ -5248,7 +5738,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d6e(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d78(void)
 {
   int param_1 = (int )this;
-  FUN_10061054(param_1 + -140);
+  FUN_10061054((int)(param_1 + -140));
 }
 
 
@@ -5258,7 +5748,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a14d78(void)
 void __thiscall Recovered_Bulk::m_FUN_10a14d85(void)
 {
   int param_1 = (int )this;
-  FUN_10061054(param_1 + -168);
+  FUN_10061054((int)(param_1 + -168));
 }
 
 
@@ -5278,7 +5768,7 @@ undefined1 FUN_10a1cfe0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2277f(void)
 {
   int param_1 = (int )this;
-  FUN_10054b1a(param_1 + -16);
+  FUN_10054b1a((int)(param_1 + -16));
 }
 
 
@@ -5288,7 +5778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2277f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22789(void)
 {
   int param_1 = (int )this;
-  FUN_10054b1a(param_1 + -140);
+  FUN_10054b1a((int)(param_1 + -140));
 }
 
 
@@ -5298,7 +5788,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22789(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22796(void)
 {
   int param_1 = (int )this;
-  FUN_10054b1a(param_1 + -168);
+  FUN_10054b1a((int)(param_1 + -168));
 }
 
 
@@ -5308,7 +5798,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22796(void)
 void __thiscall Recovered_Bulk::m_FUN_10a227a3(void)
 {
   int param_1 = (int )this;
-  FUN_1004bbeb(param_1 + -16);
+  FUN_1004bbeb((int)(param_1 + -16));
 }
 
 
@@ -5318,7 +5808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a227a3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a227ad(void)
 {
   int param_1 = (int )this;
-  FUN_1004bbeb(param_1 + -140);
+  FUN_1004bbeb((int)(param_1 + -140));
 }
 
 
@@ -5328,7 +5818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a227ad(void)
 void __thiscall Recovered_Bulk::m_FUN_10a227ba(void)
 {
   int param_1 = (int )this;
-  FUN_1004bbeb(param_1 + -168);
+  FUN_1004bbeb((int)(param_1 + -168));
 }
 
 
@@ -5338,7 +5828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a227ba(void)
 void __thiscall Recovered_Bulk::m_FUN_10a227c7(void)
 {
   int param_1 = (int )this;
-  FUN_1002348e(param_1 + -16);
+  FUN_1002348e((int)(param_1 + -16));
 }
 
 
@@ -5348,7 +5838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a227c7(void)
 void __thiscall Recovered_Bulk::m_FUN_10a227d1(void)
 {
   int param_1 = (int )this;
-  FUN_1002348e(param_1 + -140);
+  FUN_1002348e((int)(param_1 + -140));
 }
 
 
@@ -5358,7 +5848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a227d1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a227de(void)
 {
   int param_1 = (int )this;
-  FUN_1002348e(param_1 + -168);
+  FUN_1002348e((int)(param_1 + -168));
 }
 
 
@@ -5368,7 +5858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a227de(void)
 void __thiscall Recovered_Bulk::m_FUN_10a227eb(void)
 {
   int param_1 = (int )this;
-  FUN_1000a556(param_1 + -16);
+  FUN_1000a556((int)(param_1 + -16));
 }
 
 
@@ -5378,7 +5868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a227eb(void)
 void __thiscall Recovered_Bulk::m_FUN_10a227f5(void)
 {
   int param_1 = (int )this;
-  FUN_1000a556(param_1 + -140);
+  FUN_1000a556((int)(param_1 + -140));
 }
 
 
@@ -5388,7 +5878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a227f5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22802(void)
 {
   int param_1 = (int )this;
-  FUN_1000a556(param_1 + -168);
+  FUN_1000a556((int)(param_1 + -168));
 }
 
 
@@ -5398,7 +5888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22802(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2280f(void)
 {
   int param_1 = (int )this;
-  FUN_10068561(param_1 + -16);
+  FUN_10068561((int)(param_1 + -16));
 }
 
 
@@ -5408,7 +5898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2280f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22819(void)
 {
   int param_1 = (int )this;
-  FUN_10068561(param_1 + -140);
+  FUN_10068561((int)(param_1 + -140));
 }
 
 
@@ -5418,7 +5908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22819(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22826(void)
 {
   int param_1 = (int )this;
-  FUN_10068561(param_1 + -168);
+  FUN_10068561((int)(param_1 + -168));
 }
 
 
@@ -5428,7 +5918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22826(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22833(void)
 {
   int param_1 = (int )this;
-  FUN_10034dab(param_1 + -16);
+  FUN_10034dab((int)(param_1 + -16));
 }
 
 
@@ -5438,7 +5928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22833(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2283d(void)
 {
   int param_1 = (int )this;
-  FUN_10034dab(param_1 + -140);
+  FUN_10034dab((int)(param_1 + -140));
 }
 
 
@@ -5448,7 +5938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2283d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2284a(void)
 {
   int param_1 = (int )this;
-  FUN_10034dab(param_1 + -168);
+  FUN_10034dab((int)(param_1 + -168));
 }
 
 
@@ -5458,7 +5948,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2284a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22857(void)
 {
   int param_1 = (int )this;
-  FUN_10005c59(param_1 + -16);
+  FUN_10005c59((int)(param_1 + -16));
 }
 
 
@@ -5468,7 +5958,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22857(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22861(void)
 {
   int param_1 = (int )this;
-  FUN_10005c59(param_1 + -140);
+  FUN_10005c59((int)(param_1 + -140));
 }
 
 
@@ -5478,7 +5968,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22861(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2286e(void)
 {
   int param_1 = (int )this;
-  FUN_10005c59(param_1 + -168);
+  FUN_10005c59((int)(param_1 + -168));
 }
 
 
@@ -5488,7 +5978,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2286e(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2287b(void)
 {
   int param_1 = (int )this;
-  FUN_100851d4(param_1 + -16);
+  FUN_100851d4((int)(param_1 + -16));
 }
 
 
@@ -5498,7 +5988,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2287b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22885(void)
 {
   int param_1 = (int )this;
-  FUN_100851d4(param_1 + -140);
+  FUN_100851d4((int)(param_1 + -140));
 }
 
 
@@ -5508,7 +5998,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22885(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22892(void)
 {
   int param_1 = (int )this;
-  FUN_100851d4(param_1 + -168);
+  FUN_100851d4((int)(param_1 + -168));
 }
 
 
@@ -5518,7 +6008,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22892(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2289f(void)
 {
   int param_1 = (int )this;
-  FUN_10069498(param_1 + -16);
+  FUN_10069498((int)(param_1 + -16));
 }
 
 
@@ -5528,7 +6018,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2289f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a228a9(void)
 {
   int param_1 = (int )this;
-  FUN_10069498(param_1 + -140);
+  FUN_10069498((int)(param_1 + -140));
 }
 
 
@@ -5538,7 +6028,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a228a9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a228b6(void)
 {
   int param_1 = (int )this;
-  FUN_10069498(param_1 + -168);
+  FUN_10069498((int)(param_1 + -168));
 }
 
 
@@ -5548,7 +6038,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a228b6(void)
 void __thiscall Recovered_Bulk::m_FUN_10a228c3(void)
 {
   int param_1 = (int )this;
-  FUN_1006a2c1(param_1 + -16);
+  FUN_1006a2c1((int)(param_1 + -16));
 }
 
 
@@ -5558,7 +6048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a228c3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a228cd(void)
 {
   int param_1 = (int )this;
-  FUN_1006a2c1(param_1 + -140);
+  FUN_1006a2c1((int)(param_1 + -140));
 }
 
 
@@ -5568,7 +6058,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a228cd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a228da(void)
 {
   int param_1 = (int )this;
-  FUN_1006a2c1(param_1 + -168);
+  FUN_1006a2c1((int)(param_1 + -168));
 }
 
 
@@ -5578,7 +6068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a228da(void)
 void __thiscall Recovered_Bulk::m_FUN_10a228e7(void)
 {
   int param_1 = (int )this;
-  FUN_10066a3b(param_1 + -16);
+  FUN_10066a3b((int)(param_1 + -16));
 }
 
 
@@ -5588,7 +6078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a228e7(void)
 void __thiscall Recovered_Bulk::m_FUN_10a228f1(void)
 {
   int param_1 = (int )this;
-  FUN_10066a3b(param_1 + -140);
+  FUN_10066a3b((int)(param_1 + -140));
 }
 
 
@@ -5598,7 +6088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a228f1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a228fe(void)
 {
   int param_1 = (int )this;
-  FUN_10066a3b(param_1 + -168);
+  FUN_10066a3b((int)(param_1 + -168));
 }
 
 
@@ -5608,7 +6098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a228fe(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2290b(void)
 {
   int param_1 = (int )this;
-  FUN_10036665(param_1 + -16);
+  FUN_10036665((int)(param_1 + -16));
 }
 
 
@@ -5618,7 +6108,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2290b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22915(void)
 {
   int param_1 = (int )this;
-  FUN_10036665(param_1 + -140);
+  FUN_10036665((int)(param_1 + -140));
 }
 
 
@@ -5628,7 +6118,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22915(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22922(void)
 {
   int param_1 = (int )this;
-  FUN_10036665(param_1 + -168);
+  FUN_10036665((int)(param_1 + -168));
 }
 
 
@@ -5638,7 +6128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22922(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2292f(void)
 {
   int param_1 = (int )this;
-  FUN_1007d029(param_1 + -16);
+  FUN_1007d029((int)(param_1 + -16));
 }
 
 
@@ -5648,7 +6138,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2292f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22939(void)
 {
   int param_1 = (int )this;
-  FUN_1007d029(param_1 + -140);
+  FUN_1007d029((int)(param_1 + -140));
 }
 
 
@@ -5658,7 +6148,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22939(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22946(void)
 {
   int param_1 = (int )this;
-  FUN_1007d029(param_1 + -168);
+  FUN_1007d029((int)(param_1 + -168));
 }
 
 
@@ -5668,7 +6158,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22946(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22953(void)
 {
   int param_1 = (int )this;
-  FUN_1001a118(param_1 + -16);
+  FUN_1001a118((int)(param_1 + -16));
 }
 
 
@@ -5678,7 +6168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22953(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2295d(void)
 {
   int param_1 = (int )this;
-  FUN_1001a118(param_1 + -140);
+  FUN_1001a118((int)(param_1 + -140));
 }
 
 
@@ -5688,7 +6178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2295d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2296a(void)
 {
   int param_1 = (int )this;
-  FUN_1001a118(param_1 + -168);
+  FUN_1001a118((int)(param_1 + -168));
 }
 
 
@@ -5698,7 +6188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a2296a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22977(void)
 {
   int param_1 = (int )this;
-  FUN_10064c7c(param_1 + -16);
+  FUN_10064c7c((int)(param_1 + -16));
 }
 
 
@@ -5708,7 +6198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22977(void)
 void __thiscall Recovered_Bulk::m_FUN_10a22981(void)
 {
   int param_1 = (int )this;
-  FUN_10064c7c(param_1 + -140);
+  FUN_10064c7c((int)(param_1 + -140));
 }
 
 
@@ -5718,7 +6208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a22981(void)
 void __thiscall Recovered_Bulk::m_FUN_10a2298e(void)
 {
   int param_1 = (int )this;
-  FUN_10064c7c(param_1 + -168);
+  FUN_10064c7c((int)(param_1 + -168));
 }
 
 
@@ -5748,7 +6238,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10a40740(void)
 void __thiscall Recovered_Bulk::m_FUN_10a418bd(void)
 {
   int param_1 = (int )this;
-  FUN_1001090b(param_1 + -16);
+  FUN_1001090b((int)(param_1 + -16));
 }
 
 
@@ -5758,7 +6248,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a418bd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a418c7(void)
 {
   int param_1 = (int )this;
-  FUN_1001090b(param_1 + -140);
+  FUN_1001090b((int)(param_1 + -140));
 }
 
 
@@ -5768,7 +6258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a418c7(void)
 void __thiscall Recovered_Bulk::m_FUN_10a418d4(void)
 {
   int param_1 = (int )this;
-  FUN_1001090b(param_1 + -168);
+  FUN_1001090b((int)(param_1 + -168));
 }
 
 
@@ -5778,7 +6268,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a418d4(void)
 void __thiscall Recovered_Bulk::m_FUN_10a418e1(void)
 {
   int param_1 = (int )this;
-  FUN_10058f17(param_1 + -16);
+  FUN_10058f17((int)(param_1 + -16));
 }
 
 
@@ -5788,7 +6278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a418e1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a418eb(void)
 {
   int param_1 = (int )this;
-  FUN_10058f17(param_1 + -140);
+  FUN_10058f17((int)(param_1 + -140));
 }
 
 
@@ -5798,7 +6288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a418eb(void)
 void __thiscall Recovered_Bulk::m_FUN_10a418f8(void)
 {
   int param_1 = (int )this;
-  FUN_10058f17(param_1 + -168);
+  FUN_10058f17((int)(param_1 + -168));
 }
 
 
@@ -5808,7 +6298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a418f8(void)
 void __thiscall Recovered_Bulk::m_FUN_10a41905(void)
 {
   int param_1 = (int )this;
-  FUN_1006410f(param_1 + -16);
+  FUN_1006410f((int)(param_1 + -16));
 }
 
 
@@ -5818,7 +6308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a41905(void)
 void __thiscall Recovered_Bulk::m_FUN_10a4190f(void)
 {
   int param_1 = (int )this;
-  FUN_1006410f(param_1 + -140);
+  FUN_1006410f((int)(param_1 + -140));
 }
 
 
@@ -5828,7 +6318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a4190f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a4191c(void)
 {
   int param_1 = (int )this;
-  FUN_1006410f(param_1 + -168);
+  FUN_1006410f((int)(param_1 + -168));
 }
 
 
@@ -5838,7 +6328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a4191c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a41929(void)
 {
   int param_1 = (int )this;
-  FUN_10058378(param_1 + -16);
+  FUN_10058378((int)(param_1 + -16));
 }
 
 
@@ -5848,7 +6338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a41929(void)
 void __thiscall Recovered_Bulk::m_FUN_10a41933(void)
 {
   int param_1 = (int )this;
-  FUN_10058378(param_1 + -140);
+  FUN_10058378((int)(param_1 + -140));
 }
 
 
@@ -5858,7 +6348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a41933(void)
 void __thiscall Recovered_Bulk::m_FUN_10a41940(void)
 {
   int param_1 = (int )this;
-  FUN_10058378(param_1 + -168);
+  FUN_10058378((int)(param_1 + -168));
 }
 
 
@@ -5928,7 +6418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a450a4(void)
 void __thiscall Recovered_Bulk::m_FUN_10a450b1(void)
 {
   int param_1 = (int )this;
-  FUN_1001142d(param_1 + -16);
+  FUN_1001142d((int)(param_1 + -16));
 }
 
 
@@ -5938,7 +6428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a450b1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a450bb(void)
 {
   int param_1 = (int )this;
-  FUN_1001142d(param_1 + -140);
+  FUN_1001142d((int)(param_1 + -140));
 }
 
 
@@ -5948,7 +6438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a450bb(void)
 void __thiscall Recovered_Bulk::m_FUN_10a450c8(void)
 {
   int param_1 = (int )this;
-  FUN_1001142d(param_1 + -168);
+  FUN_1001142d((int)(param_1 + -168));
 }
 
 
@@ -5958,7 +6448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a450c8(void)
 void __thiscall Recovered_Bulk::m_FUN_10a450d5(void)
 {
   int param_1 = (int )this;
-  FUN_10038e60(param_1 + -16);
+  FUN_10038e60((int)(param_1 + -16));
 }
 
 
@@ -5968,7 +6458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a450d5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a450df(void)
 {
   int param_1 = (int )this;
-  FUN_10038e60(param_1 + -140);
+  FUN_10038e60((int)(param_1 + -140));
 }
 
 
@@ -5978,7 +6468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a450df(void)
 void __thiscall Recovered_Bulk::m_FUN_10a450ec(void)
 {
   int param_1 = (int )this;
-  FUN_10038e60(param_1 + -168);
+  FUN_10038e60((int)(param_1 + -168));
 }
 
 
@@ -5988,7 +6478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a450ec(void)
 void __thiscall Recovered_Bulk::m_FUN_10a450f9(void)
 {
   int param_1 = (int )this;
-  FUN_1000293c(param_1 + -16);
+  FUN_1000293c((int)(param_1 + -16));
 }
 
 
@@ -5998,7 +6488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a450f9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a45103(void)
 {
   int param_1 = (int )this;
-  FUN_1000293c(param_1 + -140);
+  FUN_1000293c((int)(param_1 + -140));
 }
 
 
@@ -6008,7 +6498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a45103(void)
 void __thiscall Recovered_Bulk::m_FUN_10a45110(void)
 {
   int param_1 = (int )this;
-  FUN_1000293c(param_1 + -168);
+  FUN_1000293c((int)(param_1 + -168));
 }
 
 
@@ -6028,7 +6518,7 @@ undefined1 FUN_10a48820(void)
 void __thiscall Recovered_Bulk::m_FUN_10a497dd(void)
 {
   int param_1 = (int )this;
-  FUN_1000dff8(param_1 + -16);
+  FUN_1000dff8((int)(param_1 + -16));
 }
 
 
@@ -6038,7 +6528,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a497dd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a497e7(void)
 {
   int param_1 = (int )this;
-  FUN_1000dff8(param_1 + -140);
+  FUN_1000dff8((int)(param_1 + -140));
 }
 
 
@@ -6048,7 +6538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a497e7(void)
 void __thiscall Recovered_Bulk::m_FUN_10a497f4(void)
 {
   int param_1 = (int )this;
-  FUN_1000dff8(param_1 + -168);
+  FUN_1000dff8((int)(param_1 + -168));
 }
 
 
@@ -6058,7 +6548,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a497f4(void)
 void __thiscall Recovered_Bulk::m_FUN_10a49801(void)
 {
   int param_1 = (int )this;
-  FUN_10016649(param_1 + -16);
+  FUN_10016649((int)(param_1 + -16));
 }
 
 
@@ -6068,7 +6558,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a49801(void)
 void __thiscall Recovered_Bulk::m_FUN_10a4980b(void)
 {
   int param_1 = (int )this;
-  FUN_10016649(param_1 + -140);
+  FUN_10016649((int)(param_1 + -140));
 }
 
 
@@ -6078,7 +6568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a4980b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a49818(void)
 {
   int param_1 = (int )this;
-  FUN_10016649(param_1 + -168);
+  FUN_10016649((int)(param_1 + -168));
 }
 
 
@@ -6088,7 +6578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a49818(void)
 void __thiscall Recovered_Bulk::m_FUN_10a49825(void)
 {
   int param_1 = (int )this;
-  FUN_10085b8e(param_1 + -16);
+  FUN_10085b8e((int)(param_1 + -16));
 }
 
 
@@ -6098,7 +6588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a49825(void)
 void __thiscall Recovered_Bulk::m_FUN_10a4982f(void)
 {
   int param_1 = (int )this;
-  FUN_10085b8e(param_1 + -140);
+  FUN_10085b8e((int)(param_1 + -140));
 }
 
 
@@ -6108,7 +6598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a4982f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a4983c(void)
 {
   int param_1 = (int )this;
-  FUN_10085b8e(param_1 + -168);
+  FUN_10085b8e((int)(param_1 + -168));
 }
 
 
@@ -6118,7 +6608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a4983c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a49849(void)
 {
   int param_1 = (int )this;
-  FUN_1001185b(param_1 + -16);
+  FUN_1001185b((int)(param_1 + -16));
 }
 
 
@@ -6128,7 +6618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a49849(void)
 void __thiscall Recovered_Bulk::m_FUN_10a49853(void)
 {
   int param_1 = (int )this;
-  FUN_1001185b(param_1 + -140);
+  FUN_1001185b((int)(param_1 + -140));
 }
 
 
@@ -6138,7 +6628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a49853(void)
 void __thiscall Recovered_Bulk::m_FUN_10a49860(void)
 {
   int param_1 = (int )this;
-  FUN_1001185b(param_1 + -168);
+  FUN_1001185b((int)(param_1 + -168));
 }
 
 
@@ -6178,7 +6668,7 @@ void FUN_10a51500(void)
 void __thiscall Recovered_Bulk::m_FUN_10a523c6(void)
 {
   int param_1 = (int )this;
-  FUN_10006ec4(param_1 + -16);
+  FUN_10006ec4((int)(param_1 + -16));
 }
 
 
@@ -6188,7 +6678,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a523c6(void)
 void __thiscall Recovered_Bulk::m_FUN_10a523d0(void)
 {
   int param_1 = (int )this;
-  FUN_10006ec4(param_1 + -140);
+  FUN_10006ec4((int)(param_1 + -140));
 }
 
 
@@ -6198,7 +6688,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a523d0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a523dd(void)
 {
   int param_1 = (int )this;
-  FUN_10006ec4(param_1 + -168);
+  FUN_10006ec4((int)(param_1 + -168));
 }
 
 
@@ -6208,7 +6698,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a523dd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a523ea(void)
 {
   int param_1 = (int )this;
-  FUN_10040930(param_1 + -16);
+  FUN_10040930((int)(param_1 + -16));
 }
 
 
@@ -6218,7 +6708,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a523ea(void)
 void __thiscall Recovered_Bulk::m_FUN_10a523f4(void)
 {
   int param_1 = (int )this;
-  FUN_10040930(param_1 + -140);
+  FUN_10040930((int)(param_1 + -140));
 }
 
 
@@ -6228,7 +6718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a523f4(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52401(void)
 {
   int param_1 = (int )this;
-  FUN_10040930(param_1 + -168);
+  FUN_10040930((int)(param_1 + -168));
 }
 
 
@@ -6238,7 +6728,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52401(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5240e(void)
 {
   int param_1 = (int )this;
-  FUN_10074a87(param_1 + -16);
+  FUN_10074a87((int)(param_1 + -16));
 }
 
 
@@ -6248,7 +6738,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5240e(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52418(void)
 {
   int param_1 = (int )this;
-  FUN_10074a87(param_1 + -140);
+  FUN_10074a87((int)(param_1 + -140));
 }
 
 
@@ -6258,7 +6748,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52418(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52425(void)
 {
   int param_1 = (int )this;
-  FUN_10074a87(param_1 + -168);
+  FUN_10074a87((int)(param_1 + -168));
 }
 
 
@@ -6268,7 +6758,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52425(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52432(void)
 {
   int param_1 = (int )this;
-  FUN_1005b8a7(param_1 + -16);
+  FUN_1005b8a7((int)(param_1 + -16));
 }
 
 
@@ -6278,7 +6768,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52432(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5243c(void)
 {
   int param_1 = (int )this;
-  FUN_1005b8a7(param_1 + -140);
+  FUN_1005b8a7((int)(param_1 + -140));
 }
 
 
@@ -6288,7 +6778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5243c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52449(void)
 {
   int param_1 = (int )this;
-  FUN_1005b8a7(param_1 + -168);
+  FUN_1005b8a7((int)(param_1 + -168));
 }
 
 
@@ -6298,7 +6788,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52449(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52456(void)
 {
   int param_1 = (int )this;
-  FUN_1000a49d(param_1 + -16);
+  FUN_1000a49d((int)(param_1 + -16));
 }
 
 
@@ -6308,7 +6798,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52456(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52460(void)
 {
   int param_1 = (int )this;
-  FUN_1000a49d(param_1 + -140);
+  FUN_1000a49d((int)(param_1 + -140));
 }
 
 
@@ -6318,7 +6808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52460(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5246d(void)
 {
   int param_1 = (int )this;
-  FUN_1000a49d(param_1 + -168);
+  FUN_1000a49d((int)(param_1 + -168));
 }
 
 
@@ -6328,7 +6818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5246d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5247a(void)
 {
   int param_1 = (int )this;
-  FUN_1006979f(param_1 + -16);
+  FUN_1006979f((int)(param_1 + -16));
 }
 
 
@@ -6338,7 +6828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5247a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52484(void)
 {
   int param_1 = (int )this;
-  FUN_1006979f(param_1 + -140);
+  FUN_1006979f((int)(param_1 + -140));
 }
 
 
@@ -6348,7 +6838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52484(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52491(void)
 {
   int param_1 = (int )this;
-  FUN_1006979f(param_1 + -168);
+  FUN_1006979f((int)(param_1 + -168));
 }
 
 
@@ -6358,7 +6848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52491(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5249e(void)
 {
   int param_1 = (int )this;
-  FUN_1002f30b(param_1 + -16);
+  FUN_1002f30b((int)(param_1 + -16));
 }
 
 
@@ -6368,7 +6858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5249e(void)
 void __thiscall Recovered_Bulk::m_FUN_10a524a8(void)
 {
   int param_1 = (int )this;
-  FUN_1002f30b(param_1 + -140);
+  FUN_1002f30b((int)(param_1 + -140));
 }
 
 
@@ -6378,7 +6868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a524a8(void)
 void __thiscall Recovered_Bulk::m_FUN_10a524b5(void)
 {
   int param_1 = (int )this;
-  FUN_1002f30b(param_1 + -168);
+  FUN_1002f30b((int)(param_1 + -168));
 }
 
 
@@ -6388,7 +6878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a524b5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a524c2(void)
 {
   int param_1 = (int )this;
-  FUN_10017959(param_1 + -16);
+  FUN_10017959((int)(param_1 + -16));
 }
 
 
@@ -6398,7 +6888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a524c2(void)
 void __thiscall Recovered_Bulk::m_FUN_10a524cc(void)
 {
   int param_1 = (int )this;
-  FUN_10017959(param_1 + -140);
+  FUN_10017959((int)(param_1 + -140));
 }
 
 
@@ -6408,7 +6898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a524cc(void)
 void __thiscall Recovered_Bulk::m_FUN_10a524d9(void)
 {
   int param_1 = (int )this;
-  FUN_10017959(param_1 + -168);
+  FUN_10017959((int)(param_1 + -168));
 }
 
 
@@ -6418,7 +6908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a524d9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a524e6(void)
 {
   int param_1 = (int )this;
-  FUN_10017959(param_1 + -224);
+  FUN_10017959((int)(param_1 + -224));
 }
 
 
@@ -6428,7 +6918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a524e6(void)
 void __thiscall Recovered_Bulk::m_FUN_10a524f3(void)
 {
   int param_1 = (int )this;
-  FUN_1006efa1(param_1 + -16);
+  FUN_1006efa1((int)(param_1 + -16));
 }
 
 
@@ -6438,7 +6928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a524f3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a524fd(void)
 {
   int param_1 = (int )this;
-  FUN_1006efa1(param_1 + -140);
+  FUN_1006efa1((int)(param_1 + -140));
 }
 
 
@@ -6448,7 +6938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a524fd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5250a(void)
 {
   int param_1 = (int )this;
-  FUN_1006efa1(param_1 + -168);
+  FUN_1006efa1((int)(param_1 + -168));
 }
 
 
@@ -6458,7 +6948,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5250a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52517(void)
 {
   int param_1 = (int )this;
-  FUN_1006efa1(param_1 + -224);
+  FUN_1006efa1((int)(param_1 + -224));
 }
 
 
@@ -6468,7 +6958,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52517(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52524(void)
 {
   int param_1 = (int )this;
-  FUN_1005cecd(param_1 + -16);
+  FUN_1005cecd((int)(param_1 + -16));
 }
 
 
@@ -6478,7 +6968,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52524(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5252e(void)
 {
   int param_1 = (int )this;
-  FUN_1005cecd(param_1 + -140);
+  FUN_1005cecd((int)(param_1 + -140));
 }
 
 
@@ -6488,7 +6978,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5252e(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5253b(void)
 {
   int param_1 = (int )this;
-  FUN_1005cecd(param_1 + -168);
+  FUN_1005cecd((int)(param_1 + -168));
 }
 
 
@@ -6498,7 +6988,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5253b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52548(void)
 {
   int param_1 = (int )this;
-  FUN_1003f3aa(param_1 + -16);
+  FUN_1003f3aa((int)(param_1 + -16));
 }
 
 
@@ -6508,7 +6998,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52548(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52552(void)
 {
   int param_1 = (int )this;
-  FUN_1003f3aa(param_1 + -140);
+  FUN_1003f3aa((int)(param_1 + -140));
 }
 
 
@@ -6518,7 +7008,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52552(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5255f(void)
 {
   int param_1 = (int )this;
-  FUN_1003f3aa(param_1 + -168);
+  FUN_1003f3aa((int)(param_1 + -168));
 }
 
 
@@ -6528,7 +7018,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5255f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5256c(void)
 {
   int param_1 = (int )this;
-  FUN_10033ffa(param_1 + -16);
+  FUN_10033ffa((int)(param_1 + -16));
 }
 
 
@@ -6538,7 +7028,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5256c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52576(void)
 {
   int param_1 = (int )this;
-  FUN_10033ffa(param_1 + -140);
+  FUN_10033ffa((int)(param_1 + -140));
 }
 
 
@@ -6548,7 +7038,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52576(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52583(void)
 {
   int param_1 = (int )this;
-  FUN_10033ffa(param_1 + -168);
+  FUN_10033ffa((int)(param_1 + -168));
 }
 
 
@@ -6558,7 +7048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52583(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52590(void)
 {
   int param_1 = (int )this;
-  FUN_10075513(param_1 + -16);
+  FUN_10075513((int)(param_1 + -16));
 }
 
 
@@ -6568,7 +7058,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52590(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5259a(void)
 {
   int param_1 = (int )this;
-  FUN_10075513(param_1 + -140);
+  FUN_10075513((int)(param_1 + -140));
 }
 
 
@@ -6578,7 +7068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5259a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a525a7(void)
 {
   int param_1 = (int )this;
-  FUN_10075513(param_1 + -168);
+  FUN_10075513((int)(param_1 + -168));
 }
 
 
@@ -6588,7 +7078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a525a7(void)
 void __thiscall Recovered_Bulk::m_FUN_10a525b4(void)
 {
   int param_1 = (int )this;
-  FUN_1007ee2e(param_1 + -16);
+  FUN_1007ee2e((int)(param_1 + -16));
 }
 
 
@@ -6598,7 +7088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a525b4(void)
 void __thiscall Recovered_Bulk::m_FUN_10a525be(void)
 {
   int param_1 = (int )this;
-  FUN_1007ee2e(param_1 + -140);
+  FUN_1007ee2e((int)(param_1 + -140));
 }
 
 
@@ -6608,7 +7098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a525be(void)
 void __thiscall Recovered_Bulk::m_FUN_10a525cb(void)
 {
   int param_1 = (int )this;
-  FUN_1007ee2e(param_1 + -168);
+  FUN_1007ee2e((int)(param_1 + -168));
 }
 
 
@@ -6678,7 +7168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52613(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52620(void)
 {
   int param_1 = (int )this;
-  FUN_100425e6(param_1 + -16);
+  FUN_100425e6((int)(param_1 + -16));
 }
 
 
@@ -6688,7 +7178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a52620(void)
 void __thiscall Recovered_Bulk::m_FUN_10a5262a(void)
 {
   int param_1 = (int )this;
-  FUN_100425e6(param_1 + -140);
+  FUN_100425e6((int)(param_1 + -140));
 }
 
 
@@ -6698,7 +7188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a5262a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a52637(void)
 {
   int param_1 = (int )this;
-  FUN_100425e6(param_1 + -168);
+  FUN_100425e6((int)(param_1 + -168));
 }
 
 
@@ -6778,7 +7268,7 @@ undefined1 FUN_10a61a60(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67615(void)
 {
   int param_1 = (int )this;
-  FUN_1004eb98(param_1 + -16);
+  FUN_1004eb98((int)(param_1 + -16));
 }
 
 
@@ -6788,7 +7278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67615(void)
 void __thiscall Recovered_Bulk::m_FUN_10a6761f(void)
 {
   int param_1 = (int )this;
-  FUN_1004eb98(param_1 + -140);
+  FUN_1004eb98((int)(param_1 + -140));
 }
 
 
@@ -6798,7 +7288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a6761f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a6762c(void)
 {
   int param_1 = (int )this;
-  FUN_1004eb98(param_1 + -168);
+  FUN_1004eb98((int)(param_1 + -168));
 }
 
 
@@ -6808,7 +7298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a6762c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67639(void)
 {
   int param_1 = (int )this;
-  FUN_1000c789(param_1 + -16);
+  FUN_1000c789((int)(param_1 + -16));
 }
 
 
@@ -6818,7 +7308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67639(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67643(void)
 {
   int param_1 = (int )this;
-  FUN_1000c789(param_1 + -140);
+  FUN_1000c789((int)(param_1 + -140));
 }
 
 
@@ -6828,7 +7318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67643(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67650(void)
 {
   int param_1 = (int )this;
-  FUN_1000c789(param_1 + -168);
+  FUN_1000c789((int)(param_1 + -168));
 }
 
 
@@ -6838,7 +7328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67650(void)
 void __thiscall Recovered_Bulk::m_FUN_10a6765d(void)
 {
   int param_1 = (int )this;
-  FUN_1006c715(param_1 + -16);
+  FUN_1006c715((int)(param_1 + -16));
 }
 
 
@@ -6848,7 +7338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a6765d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67667(void)
 {
   int param_1 = (int )this;
-  FUN_1006c715(param_1 + -140);
+  FUN_1006c715((int)(param_1 + -140));
 }
 
 
@@ -6858,7 +7348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67667(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67674(void)
 {
   int param_1 = (int )this;
-  FUN_1006c715(param_1 + -168);
+  FUN_1006c715((int)(param_1 + -168));
 }
 
 
@@ -6868,7 +7358,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67674(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67681(void)
 {
   int param_1 = (int )this;
-  FUN_10047f6e(param_1 + -16);
+  FUN_10047f6e((int)(param_1 + -16));
 }
 
 
@@ -6878,7 +7368,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67681(void)
 void __thiscall Recovered_Bulk::m_FUN_10a6768b(void)
 {
   int param_1 = (int )this;
-  FUN_10047f6e(param_1 + -140);
+  FUN_10047f6e((int)(param_1 + -140));
 }
 
 
@@ -6888,7 +7378,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a6768b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67698(void)
 {
   int param_1 = (int )this;
-  FUN_10047f6e(param_1 + -168);
+  FUN_10047f6e((int)(param_1 + -168));
 }
 
 
@@ -6898,7 +7388,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67698(void)
 void __thiscall Recovered_Bulk::m_FUN_10a676a5(void)
 {
   int param_1 = (int )this;
-  FUN_1005610e(param_1 + -16);
+  FUN_1005610e((int)(param_1 + -16));
 }
 
 
@@ -6908,7 +7398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a676a5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a676af(void)
 {
   int param_1 = (int )this;
-  FUN_1005610e(param_1 + -140);
+  FUN_1005610e((int)(param_1 + -140));
 }
 
 
@@ -6918,7 +7408,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a676af(void)
 void __thiscall Recovered_Bulk::m_FUN_10a676bc(void)
 {
   int param_1 = (int )this;
-  FUN_1005610e(param_1 + -168);
+  FUN_1005610e((int)(param_1 + -168));
 }
 
 
@@ -6928,7 +7418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a676bc(void)
 void __thiscall Recovered_Bulk::m_FUN_10a676c9(void)
 {
   int param_1 = (int )this;
-  FUN_1006f14a(param_1 + -16);
+  FUN_1006f14a((int)(param_1 + -16));
 }
 
 
@@ -6938,7 +7428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a676c9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a676d3(void)
 {
   int param_1 = (int )this;
-  FUN_1006f14a(param_1 + -140);
+  FUN_1006f14a((int)(param_1 + -140));
 }
 
 
@@ -6948,7 +7438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a676d3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a676e0(void)
 {
   int param_1 = (int )this;
-  FUN_1006f14a(param_1 + -168);
+  FUN_1006f14a((int)(param_1 + -168));
 }
 
 
@@ -6958,7 +7448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a676e0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a676ed(void)
 {
   int param_1 = (int )this;
-  FUN_10090908(param_1 + -16);
+  FUN_10090908((int)(param_1 + -16));
 }
 
 
@@ -6968,7 +7458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a676ed(void)
 void __thiscall Recovered_Bulk::m_FUN_10a676f7(void)
 {
   int param_1 = (int )this;
-  FUN_10090908(param_1 + -140);
+  FUN_10090908((int)(param_1 + -140));
 }
 
 
@@ -6978,7 +7468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a676f7(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67704(void)
 {
   int param_1 = (int )this;
-  FUN_10090908(param_1 + -168);
+  FUN_10090908((int)(param_1 + -168));
 }
 
 
@@ -6988,7 +7478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67704(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67711(void)
 {
   int param_1 = (int )this;
-  FUN_100845f4(param_1 + -16);
+  FUN_100845f4((int)(param_1 + -16));
 }
 
 
@@ -6998,7 +7488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67711(void)
 void __thiscall Recovered_Bulk::m_FUN_10a6771b(void)
 {
   int param_1 = (int )this;
-  FUN_100845f4(param_1 + -140);
+  FUN_100845f4((int)(param_1 + -140));
 }
 
 
@@ -7008,7 +7498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a6771b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67728(void)
 {
   int param_1 = (int )this;
-  FUN_100845f4(param_1 + -168);
+  FUN_100845f4((int)(param_1 + -168));
 }
 
 
@@ -7018,7 +7508,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67728(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67735(void)
 {
   int param_1 = (int )this;
-  FUN_1005182a(param_1 + -16);
+  FUN_1005182a((int)(param_1 + -16));
 }
 
 
@@ -7028,7 +7518,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67735(void)
 void __thiscall Recovered_Bulk::m_FUN_10a6773f(void)
 {
   int param_1 = (int )this;
-  FUN_1005182a(param_1 + -140);
+  FUN_1005182a((int)(param_1 + -140));
 }
 
 
@@ -7038,7 +7528,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a6773f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a6774c(void)
 {
   int param_1 = (int )this;
-  FUN_1005182a(param_1 + -168);
+  FUN_1005182a((int)(param_1 + -168));
 }
 
 
@@ -7048,7 +7538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a6774c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67759(void)
 {
   int param_1 = (int )this;
-  FUN_1005b34d(param_1 + -16);
+  FUN_1005b34d((int)(param_1 + -16));
 }
 
 
@@ -7058,7 +7548,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67759(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67763(void)
 {
   int param_1 = (int )this;
-  FUN_1005b34d(param_1 + -140);
+  FUN_1005b34d((int)(param_1 + -140));
 }
 
 
@@ -7068,7 +7558,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67763(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67770(void)
 {
   int param_1 = (int )this;
-  FUN_1005b34d(param_1 + -168);
+  FUN_1005b34d((int)(param_1 + -168));
 }
 
 
@@ -7078,7 +7568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67770(void)
 void __thiscall Recovered_Bulk::m_FUN_10a6777d(void)
 {
   int param_1 = (int )this;
-  FUN_10079b2c(param_1 + -16);
+  FUN_10079b2c((int)(param_1 + -16));
 }
 
 
@@ -7088,7 +7578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a6777d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67787(void)
 {
   int param_1 = (int )this;
-  FUN_10079b2c(param_1 + -140);
+  FUN_10079b2c((int)(param_1 + -140));
 }
 
 
@@ -7098,7 +7588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67787(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67794(void)
 {
   int param_1 = (int )this;
-  FUN_10079b2c(param_1 + -168);
+  FUN_10079b2c((int)(param_1 + -168));
 }
 
 
@@ -7108,7 +7598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67794(void)
 void __thiscall Recovered_Bulk::m_FUN_10a677a1(void)
 {
   int param_1 = (int )this;
-  FUN_100618a6(param_1 + -16);
+  FUN_100618a6((int)(param_1 + -16));
 }
 
 
@@ -7118,7 +7608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a677a1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a677ab(void)
 {
   int param_1 = (int )this;
-  FUN_100618a6(param_1 + -140);
+  FUN_100618a6((int)(param_1 + -140));
 }
 
 
@@ -7128,7 +7618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a677ab(void)
 void __thiscall Recovered_Bulk::m_FUN_10a677b8(void)
 {
   int param_1 = (int )this;
-  FUN_100618a6(param_1 + -168);
+  FUN_100618a6((int)(param_1 + -168));
 }
 
 
@@ -7138,7 +7628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a677b8(void)
 void __thiscall Recovered_Bulk::m_FUN_10a677c5(void)
 {
   int param_1 = (int )this;
-  FUN_100539c2(param_1 + -16);
+  FUN_100539c2((int)(param_1 + -16));
 }
 
 
@@ -7148,7 +7638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a677c5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a677cf(void)
 {
   int param_1 = (int )this;
-  FUN_100539c2(param_1 + -140);
+  FUN_100539c2((int)(param_1 + -140));
 }
 
 
@@ -7158,7 +7648,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a677cf(void)
 void __thiscall Recovered_Bulk::m_FUN_10a677dc(void)
 {
   int param_1 = (int )this;
-  FUN_100539c2(param_1 + -168);
+  FUN_100539c2((int)(param_1 + -168));
 }
 
 
@@ -7168,7 +7658,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a677dc(void)
 void __thiscall Recovered_Bulk::m_FUN_10a677e9(void)
 {
   int param_1 = (int )this;
-  FUN_1005b406(param_1 + -16);
+  FUN_1005b406((int)(param_1 + -16));
 }
 
 
@@ -7178,7 +7668,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a677e9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a677f3(void)
 {
   int param_1 = (int )this;
-  FUN_1005b406(param_1 + -140);
+  FUN_1005b406((int)(param_1 + -140));
 }
 
 
@@ -7188,7 +7678,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a677f3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a67800(void)
 {
   int param_1 = (int )this;
-  FUN_1005b406(param_1 + -168);
+  FUN_1005b406((int)(param_1 + -168));
 }
 
 
@@ -7198,7 +7688,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a67800(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71e61(void)
 {
   int param_1 = (int )this;
-  FUN_1008cb28(param_1 + -16);
+  FUN_1008cb28((int)(param_1 + -16));
 }
 
 
@@ -7208,7 +7698,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71e61(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71e6b(void)
 {
   int param_1 = (int )this;
-  FUN_1008cb28(param_1 + -140);
+  FUN_1008cb28((int)(param_1 + -140));
 }
 
 
@@ -7218,7 +7708,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71e6b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71e78(void)
 {
   int param_1 = (int )this;
-  FUN_1008cb28(param_1 + -168);
+  FUN_1008cb28((int)(param_1 + -168));
 }
 
 
@@ -7228,7 +7718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71e78(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71e85(void)
 {
   int param_1 = (int )this;
-  FUN_1003441e(param_1 + -16);
+  FUN_1003441e((int)(param_1 + -16));
 }
 
 
@@ -7238,7 +7728,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71e85(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71e8f(void)
 {
   int param_1 = (int )this;
-  FUN_1003441e(param_1 + -140);
+  FUN_1003441e((int)(param_1 + -140));
 }
 
 
@@ -7248,7 +7738,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71e8f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71e9c(void)
 {
   int param_1 = (int )this;
-  FUN_1003441e(param_1 + -168);
+  FUN_1003441e((int)(param_1 + -168));
 }
 
 
@@ -7258,7 +7748,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71e9c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71ea9(void)
 {
   int param_1 = (int )this;
-  FUN_10020964(param_1 + -16);
+  FUN_10020964((int)(param_1 + -16));
 }
 
 
@@ -7268,7 +7758,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71ea9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71eb3(void)
 {
   int param_1 = (int )this;
-  FUN_10020964(param_1 + -140);
+  FUN_10020964((int)(param_1 + -140));
 }
 
 
@@ -7278,7 +7768,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71eb3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71ec0(void)
 {
   int param_1 = (int )this;
-  FUN_10020964(param_1 + -168);
+  FUN_10020964((int)(param_1 + -168));
 }
 
 
@@ -7288,7 +7778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71ec0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71ecd(void)
 {
   int param_1 = (int )this;
-  FUN_1002c8b8(param_1 + -16);
+  FUN_1002c8b8((int)(param_1 + -16));
 }
 
 
@@ -7298,7 +7788,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71ecd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71ed7(void)
 {
   int param_1 = (int )this;
-  FUN_1002c8b8(param_1 + -140);
+  FUN_1002c8b8((int)(param_1 + -140));
 }
 
 
@@ -7308,7 +7798,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71ed7(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71ee4(void)
 {
   int param_1 = (int )this;
-  FUN_1002c8b8(param_1 + -168);
+  FUN_1002c8b8((int)(param_1 + -168));
 }
 
 
@@ -7318,7 +7808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71ee4(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71ef1(void)
 {
   int param_1 = (int )this;
-  FUN_10013976(param_1 + -16);
+  FUN_10013976((int)(param_1 + -16));
 }
 
 
@@ -7328,7 +7818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71ef1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71efb(void)
 {
   int param_1 = (int )this;
-  FUN_10013976(param_1 + -140);
+  FUN_10013976((int)(param_1 + -140));
 }
 
 
@@ -7338,7 +7828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71efb(void)
 void __thiscall Recovered_Bulk::m_FUN_10a71f08(void)
 {
   int param_1 = (int )this;
-  FUN_10013976(param_1 + -168);
+  FUN_10013976((int)(param_1 + -168));
 }
 
 
@@ -7388,7 +7878,7 @@ void FUN_10a76fc0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a771b3(void)
 {
   int param_1 = (int )this;
-  FUN_10008d37(param_1 + -16);
+  FUN_10008d37((int)(param_1 + -16));
 }
 
 
@@ -7398,7 +7888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a771b3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a771bd(void)
 {
   int param_1 = (int )this;
-  FUN_10008d37(param_1 + -140);
+  FUN_10008d37((int)(param_1 + -140));
 }
 
 
@@ -7408,7 +7898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a771bd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a771ca(void)
 {
   int param_1 = (int )this;
-  FUN_10008d37(param_1 + -168);
+  FUN_10008d37((int)(param_1 + -168));
 }
 
 
@@ -7418,7 +7908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a771ca(void)
 void __thiscall Recovered_Bulk::m_FUN_10a771d7(void)
 {
   int param_1 = (int )this;
-  FUN_1004f52a(param_1 + -16);
+  FUN_1004f52a((int)(param_1 + -16));
 }
 
 
@@ -7428,7 +7918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a771d7(void)
 void __thiscall Recovered_Bulk::m_FUN_10a771e1(void)
 {
   int param_1 = (int )this;
-  FUN_1004f52a(param_1 + -140);
+  FUN_1004f52a((int)(param_1 + -140));
 }
 
 
@@ -7438,7 +7928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a771e1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a771ee(void)
 {
   int param_1 = (int )this;
-  FUN_1004f52a(param_1 + -168);
+  FUN_1004f52a((int)(param_1 + -168));
 }
 
 
@@ -7448,7 +7938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a771ee(void)
 void __thiscall Recovered_Bulk::m_FUN_10a771fb(void)
 {
   int param_1 = (int )this;
-  FUN_10026fa8(param_1 + -16);
+  FUN_10026fa8((int)(param_1 + -16));
 }
 
 
@@ -7458,7 +7948,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a771fb(void)
 void __thiscall Recovered_Bulk::m_FUN_10a77205(void)
 {
   int param_1 = (int )this;
-  FUN_10026fa8(param_1 + -140);
+  FUN_10026fa8((int)(param_1 + -140));
 }
 
 
@@ -7468,7 +7958,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a77205(void)
 void __thiscall Recovered_Bulk::m_FUN_10a77212(void)
 {
   int param_1 = (int )this;
-  FUN_10026fa8(param_1 + -168);
+  FUN_10026fa8((int)(param_1 + -168));
 }
 
 
@@ -7478,7 +7968,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a77212(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7721f(void)
 {
   int param_1 = (int )this;
-  FUN_100708ec(param_1 + -16);
+  FUN_100708ec((int)(param_1 + -16));
 }
 
 
@@ -7488,7 +7978,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7721f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a77229(void)
 {
   int param_1 = (int )this;
-  FUN_100708ec(param_1 + -140);
+  FUN_100708ec((int)(param_1 + -140));
 }
 
 
@@ -7498,7 +7988,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a77229(void)
 void __thiscall Recovered_Bulk::m_FUN_10a77236(void)
 {
   int param_1 = (int )this;
-  FUN_100708ec(param_1 + -168);
+  FUN_100708ec((int)(param_1 + -168));
 }
 
 
@@ -7508,7 +7998,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a77236(void)
 void __thiscall Recovered_Bulk::m_FUN_10a77243(void)
 {
   int param_1 = (int )this;
-  FUN_1000f362(param_1 + -16);
+  FUN_1000f362((int)(param_1 + -16));
 }
 
 
@@ -7518,7 +8008,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a77243(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7724d(void)
 {
   int param_1 = (int )this;
-  FUN_1000f362(param_1 + -140);
+  FUN_1000f362((int)(param_1 + -140));
 }
 
 
@@ -7528,7 +8018,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7724d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7725a(void)
 {
   int param_1 = (int )this;
-  FUN_1000f362(param_1 + -168);
+  FUN_1000f362((int)(param_1 + -168));
 }
 
 
@@ -7548,7 +8038,7 @@ void FUN_10a7ca80(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7db91(void)
 {
   int param_1 = (int )this;
-  FUN_10026d5f(param_1 + -16);
+  FUN_10026d5f((int)(param_1 + -16));
 }
 
 
@@ -7558,7 +8048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7db91(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7db9b(void)
 {
   int param_1 = (int )this;
-  FUN_10026d5f(param_1 + -140);
+  FUN_10026d5f((int)(param_1 + -140));
 }
 
 
@@ -7568,7 +8058,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7db9b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dba8(void)
 {
   int param_1 = (int )this;
-  FUN_10026d5f(param_1 + -168);
+  FUN_10026d5f((int)(param_1 + -168));
 }
 
 
@@ -7578,7 +8068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dba8(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dbb5(void)
 {
   int param_1 = (int )this;
-  FUN_100330a0(param_1 + -16);
+  FUN_100330a0((int)(param_1 + -16));
 }
 
 
@@ -7588,7 +8078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dbb5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dbbf(void)
 {
   int param_1 = (int )this;
-  FUN_100330a0(param_1 + -140);
+  FUN_100330a0((int)(param_1 + -140));
 }
 
 
@@ -7598,7 +8088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dbbf(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dbcc(void)
 {
   int param_1 = (int )this;
-  FUN_100330a0(param_1 + -168);
+  FUN_100330a0((int)(param_1 + -168));
 }
 
 
@@ -7608,7 +8098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dbcc(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dbd9(void)
 {
   int param_1 = (int )this;
-  FUN_1002d574(param_1 + -16);
+  FUN_1002d574((int)(param_1 + -16));
 }
 
 
@@ -7618,7 +8108,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dbd9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dbe3(void)
 {
   int param_1 = (int )this;
-  FUN_1002d574(param_1 + -140);
+  FUN_1002d574((int)(param_1 + -140));
 }
 
 
@@ -7628,7 +8118,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dbe3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dbf0(void)
 {
   int param_1 = (int )this;
-  FUN_1002d574(param_1 + -168);
+  FUN_1002d574((int)(param_1 + -168));
 }
 
 
@@ -7638,7 +8128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dbf0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dbfd(void)
 {
   int param_1 = (int )this;
-  FUN_1008e0b3(param_1 + -16);
+  FUN_1008e0b3((int)(param_1 + -16));
 }
 
 
@@ -7648,7 +8138,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dbfd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dc07(void)
 {
   int param_1 = (int )this;
-  FUN_1008e0b3(param_1 + -140);
+  FUN_1008e0b3((int)(param_1 + -140));
 }
 
 
@@ -7658,7 +8148,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dc07(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dc14(void)
 {
   int param_1 = (int )this;
-  FUN_1008e0b3(param_1 + -168);
+  FUN_1008e0b3((int)(param_1 + -168));
 }
 
 
@@ -7668,7 +8158,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dc14(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dc21(void)
 {
   int param_1 = (int )this;
-  FUN_10011630(param_1 + -16);
+  FUN_10011630((int)(param_1 + -16));
 }
 
 
@@ -7678,7 +8168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dc21(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dc2b(void)
 {
   int param_1 = (int )this;
-  FUN_10011630(param_1 + -140);
+  FUN_10011630((int)(param_1 + -140));
 }
 
 
@@ -7688,7 +8178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dc2b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a7dc38(void)
 {
   int param_1 = (int )this;
-  FUN_10011630(param_1 + -168);
+  FUN_10011630((int)(param_1 + -168));
 }
 
 
@@ -7698,7 +8188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a7dc38(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80e5d(void)
 {
   int param_1 = (int )this;
-  FUN_10022557(param_1 + -16);
+  FUN_10022557((int)(param_1 + -16));
 }
 
 
@@ -7708,7 +8198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80e5d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80e67(void)
 {
   int param_1 = (int )this;
-  FUN_10022557(param_1 + -140);
+  FUN_10022557((int)(param_1 + -140));
 }
 
 
@@ -7718,7 +8208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80e67(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80e74(void)
 {
   int param_1 = (int )this;
-  FUN_10022557(param_1 + -168);
+  FUN_10022557((int)(param_1 + -168));
 }
 
 
@@ -7728,7 +8218,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80e74(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80e81(void)
 {
   int param_1 = (int )this;
-  FUN_10048171(param_1 + -16);
+  FUN_10048171((int)(param_1 + -16));
 }
 
 
@@ -7738,7 +8228,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80e81(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80e8b(void)
 {
   int param_1 = (int )this;
-  FUN_10048171(param_1 + -140);
+  FUN_10048171((int)(param_1 + -140));
 }
 
 
@@ -7748,7 +8238,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80e8b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80e98(void)
 {
   int param_1 = (int )this;
-  FUN_10048171(param_1 + -168);
+  FUN_10048171((int)(param_1 + -168));
 }
 
 
@@ -7758,7 +8248,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80e98(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80ea5(void)
 {
   int param_1 = (int )this;
-  FUN_1005a2d6(param_1 + -16);
+  FUN_1005a2d6((int)(param_1 + -16));
 }
 
 
@@ -7768,7 +8258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80ea5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80eaf(void)
 {
   int param_1 = (int )this;
-  FUN_1005a2d6(param_1 + -140);
+  FUN_1005a2d6((int)(param_1 + -140));
 }
 
 
@@ -7778,7 +8268,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80eaf(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80ebc(void)
 {
   int param_1 = (int )this;
-  FUN_1005a2d6(param_1 + -168);
+  FUN_1005a2d6((int)(param_1 + -168));
 }
 
 
@@ -7788,7 +8278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80ebc(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80ec9(void)
 {
   int param_1 = (int )this;
-  FUN_1006aee2(param_1 + -16);
+  FUN_1006aee2((int)(param_1 + -16));
 }
 
 
@@ -7798,7 +8288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80ec9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80ed3(void)
 {
   int param_1 = (int )this;
-  FUN_1006aee2(param_1 + -140);
+  FUN_1006aee2((int)(param_1 + -140));
 }
 
 
@@ -7808,7 +8298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80ed3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a80ee0(void)
 {
   int param_1 = (int )this;
-  FUN_1006aee2(param_1 + -168);
+  FUN_1006aee2((int)(param_1 + -168));
 }
 
 
@@ -7818,7 +8308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a80ee0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a84891(void)
 {
   int param_1 = (int )this;
-  FUN_10058913(param_1 + -16);
+  FUN_10058913((int)(param_1 + -16));
 }
 
 
@@ -7828,7 +8318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a84891(void)
 void __thiscall Recovered_Bulk::m_FUN_10a8489b(void)
 {
   int param_1 = (int )this;
-  FUN_10058913(param_1 + -140);
+  FUN_10058913((int)(param_1 + -140));
 }
 
 
@@ -7838,7 +8328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a8489b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a848a8(void)
 {
   int param_1 = (int )this;
-  FUN_10058913(param_1 + -168);
+  FUN_10058913((int)(param_1 + -168));
 }
 
 
@@ -7848,7 +8338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a848a8(void)
 void __thiscall Recovered_Bulk::m_FUN_10a848b5(void)
 {
   int param_1 = (int )this;
-  FUN_1001054b(param_1 + -16);
+  FUN_1001054b((int)(param_1 + -16));
 }
 
 
@@ -7858,7 +8348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a848b5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a848bf(void)
 {
   int param_1 = (int )this;
-  FUN_1001054b(param_1 + -140);
+  FUN_1001054b((int)(param_1 + -140));
 }
 
 
@@ -7868,7 +8358,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a848bf(void)
 void __thiscall Recovered_Bulk::m_FUN_10a848cc(void)
 {
   int param_1 = (int )this;
-  FUN_1001054b(param_1 + -168);
+  FUN_1001054b((int)(param_1 + -168));
 }
 
 
@@ -7878,7 +8368,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a848cc(void)
 void __thiscall Recovered_Bulk::m_FUN_10a848d9(void)
 {
   int param_1 = (int )this;
-  FUN_1000ac8b(param_1 + -16);
+  FUN_1000ac8b((int)(param_1 + -16));
 }
 
 
@@ -7888,7 +8378,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a848d9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a848e3(void)
 {
   int param_1 = (int )this;
-  FUN_1000ac8b(param_1 + -140);
+  FUN_1000ac8b((int)(param_1 + -140));
 }
 
 
@@ -7898,7 +8388,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a848e3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a848f0(void)
 {
   int param_1 = (int )this;
-  FUN_1000ac8b(param_1 + -168);
+  FUN_1000ac8b((int)(param_1 + -168));
 }
 
 
@@ -7908,7 +8398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a848f0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a848fd(void)
 {
   int param_1 = (int )this;
-  FUN_1004a0f7(param_1 + -16);
+  FUN_1004a0f7((int)(param_1 + -16));
 }
 
 
@@ -7918,7 +8408,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a848fd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a84907(void)
 {
   int param_1 = (int )this;
-  FUN_1004a0f7(param_1 + -140);
+  FUN_1004a0f7((int)(param_1 + -140));
 }
 
 
@@ -7928,7 +8418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a84907(void)
 void __thiscall Recovered_Bulk::m_FUN_10a84914(void)
 {
   int param_1 = (int )this;
-  FUN_1004a0f7(param_1 + -168);
+  FUN_1004a0f7((int)(param_1 + -168));
 }
 
 
@@ -7938,7 +8428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a84914(void)
 void __thiscall Recovered_Bulk::m_FUN_10a84921(void)
 {
   int param_1 = (int )this;
-  FUN_10033ef6(param_1 + -16);
+  FUN_10033ef6((int)(param_1 + -16));
 }
 
 
@@ -7948,7 +8438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a84921(void)
 void __thiscall Recovered_Bulk::m_FUN_10a8492b(void)
 {
   int param_1 = (int )this;
-  FUN_10033ef6(param_1 + -140);
+  FUN_10033ef6((int)(param_1 + -140));
 }
 
 
@@ -7958,7 +8448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a8492b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a84938(void)
 {
   int param_1 = (int )this;
-  FUN_10033ef6(param_1 + -168);
+  FUN_10033ef6((int)(param_1 + -168));
 }
 
 
@@ -7968,7 +8458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a84938(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89ee6(void)
 {
   int param_1 = (int )this;
-  FUN_10063d68(param_1 + -16);
+  FUN_10063d68((int)(param_1 + -16));
 }
 
 
@@ -7978,7 +8468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89ee6(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89ef0(void)
 {
   int param_1 = (int )this;
-  FUN_10063d68(param_1 + -140);
+  FUN_10063d68((int)(param_1 + -140));
 }
 
 
@@ -7988,7 +8478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89ef0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89efd(void)
 {
   int param_1 = (int )this;
-  FUN_10063d68(param_1 + -168);
+  FUN_10063d68((int)(param_1 + -168));
 }
 
 
@@ -7998,7 +8488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89efd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f0a(void)
 {
   int param_1 = (int )this;
-  FUN_10096a15(param_1 + -16);
+  FUN_10096a15((int)(param_1 + -16));
 }
 
 
@@ -8008,7 +8498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f0a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f14(void)
 {
   int param_1 = (int )this;
-  FUN_10096a15(param_1 + -140);
+  FUN_10096a15((int)(param_1 + -140));
 }
 
 
@@ -8018,7 +8508,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f14(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f21(void)
 {
   int param_1 = (int )this;
-  FUN_10096a15(param_1 + -168);
+  FUN_10096a15((int)(param_1 + -168));
 }
 
 
@@ -8028,7 +8518,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f21(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f2e(void)
 {
   int param_1 = (int )this;
-  FUN_100541ce(param_1 + -16);
+  FUN_100541ce((int)(param_1 + -16));
 }
 
 
@@ -8038,7 +8528,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f2e(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f38(void)
 {
   int param_1 = (int )this;
-  FUN_100541ce(param_1 + -140);
+  FUN_100541ce((int)(param_1 + -140));
 }
 
 
@@ -8048,7 +8538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f38(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f45(void)
 {
   int param_1 = (int )this;
-  FUN_100541ce(param_1 + -168);
+  FUN_100541ce((int)(param_1 + -168));
 }
 
 
@@ -8058,7 +8548,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f45(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f52(void)
 {
   int param_1 = (int )this;
-  FUN_1001d4f3(param_1 + -16);
+  FUN_1001d4f3((int)(param_1 + -16));
 }
 
 
@@ -8068,7 +8558,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f52(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f5c(void)
 {
   int param_1 = (int )this;
-  FUN_1001d4f3(param_1 + -140);
+  FUN_1001d4f3((int)(param_1 + -140));
 }
 
 
@@ -8078,7 +8568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f5c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f69(void)
 {
   int param_1 = (int )this;
-  FUN_1001d4f3(param_1 + -168);
+  FUN_1001d4f3((int)(param_1 + -168));
 }
 
 
@@ -8088,7 +8578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f69(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f76(void)
 {
   int param_1 = (int )this;
-  FUN_10034ed7(param_1 + -16);
+  FUN_10034ed7((int)(param_1 + -16));
 }
 
 
@@ -8098,7 +8588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f76(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f80(void)
 {
   int param_1 = (int )this;
-  FUN_10034ed7(param_1 + -140);
+  FUN_10034ed7((int)(param_1 + -140));
 }
 
 
@@ -8108,7 +8598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f80(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f8d(void)
 {
   int param_1 = (int )this;
-  FUN_10034ed7(param_1 + -168);
+  FUN_10034ed7((int)(param_1 + -168));
 }
 
 
@@ -8118,7 +8608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f8d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89f9a(void)
 {
   int param_1 = (int )this;
-  FUN_10039f72(param_1 + -16);
+  FUN_10039f72((int)(param_1 + -16));
 }
 
 
@@ -8128,7 +8618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89f9a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89fa4(void)
 {
   int param_1 = (int )this;
-  FUN_10039f72(param_1 + -140);
+  FUN_10039f72((int)(param_1 + -140));
 }
 
 
@@ -8138,7 +8628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89fa4(void)
 void __thiscall Recovered_Bulk::m_FUN_10a89fb1(void)
 {
   int param_1 = (int )this;
-  FUN_10039f72(param_1 + -168);
+  FUN_10039f72((int)(param_1 + -168));
 }
 
 
@@ -8148,7 +8638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a89fb1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92c87(void)
 {
   int param_1 = (int )this;
-  FUN_10075590(param_1 + -16);
+  FUN_10075590((int)(param_1 + -16));
 }
 
 
@@ -8158,7 +8648,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92c87(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92c91(void)
 {
   int param_1 = (int )this;
-  FUN_10075590(param_1 + -140);
+  FUN_10075590((int)(param_1 + -140));
 }
 
 
@@ -8168,7 +8658,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92c91(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92c9e(void)
 {
   int param_1 = (int )this;
-  FUN_10075590(param_1 + -168);
+  FUN_10075590((int)(param_1 + -168));
 }
 
 
@@ -8178,7 +8668,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92c9e(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92cab(void)
 {
   int param_1 = (int )this;
-  FUN_1006f875(param_1 + -16);
+  FUN_1006f875((int)(param_1 + -16));
 }
 
 
@@ -8188,7 +8678,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92cab(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92cb5(void)
 {
   int param_1 = (int )this;
-  FUN_1006f875(param_1 + -140);
+  FUN_1006f875((int)(param_1 + -140));
 }
 
 
@@ -8198,7 +8688,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92cb5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92cc2(void)
 {
   int param_1 = (int )this;
-  FUN_1006f875(param_1 + -168);
+  FUN_1006f875((int)(param_1 + -168));
 }
 
 
@@ -8208,7 +8698,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92cc2(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92ccf(void)
 {
   int param_1 = (int )this;
-  FUN_1004c325(param_1 + -16);
+  FUN_1004c325((int)(param_1 + -16));
 }
 
 
@@ -8218,7 +8708,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92ccf(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92cd9(void)
 {
   int param_1 = (int )this;
-  FUN_1004c325(param_1 + -140);
+  FUN_1004c325((int)(param_1 + -140));
 }
 
 
@@ -8228,7 +8718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92cd9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92ce6(void)
 {
   int param_1 = (int )this;
-  FUN_1004c325(param_1 + -168);
+  FUN_1004c325((int)(param_1 + -168));
 }
 
 
@@ -8238,7 +8728,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92ce6(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92cf3(void)
 {
   int param_1 = (int )this;
-  FUN_1005a98e(param_1 + -16);
+  FUN_1005a98e((int)(param_1 + -16));
 }
 
 
@@ -8248,7 +8738,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92cf3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92cfd(void)
 {
   int param_1 = (int )this;
-  FUN_1005a98e(param_1 + -140);
+  FUN_1005a98e((int)(param_1 + -140));
 }
 
 
@@ -8258,7 +8748,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92cfd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d0a(void)
 {
   int param_1 = (int )this;
-  FUN_1005a98e(param_1 + -168);
+  FUN_1005a98e((int)(param_1 + -168));
 }
 
 
@@ -8268,7 +8758,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d0a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d17(void)
 {
   int param_1 = (int )this;
-  FUN_10036985(param_1 + -16);
+  FUN_10036985((int)(param_1 + -16));
 }
 
 
@@ -8278,7 +8768,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d17(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d21(void)
 {
   int param_1 = (int )this;
-  FUN_10036985(param_1 + -140);
+  FUN_10036985((int)(param_1 + -140));
 }
 
 
@@ -8288,7 +8778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d21(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d2e(void)
 {
   int param_1 = (int )this;
-  FUN_10036985(param_1 + -168);
+  FUN_10036985((int)(param_1 + -168));
 }
 
 
@@ -8298,7 +8788,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d2e(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d3b(void)
 {
   int param_1 = (int )this;
-  FUN_100520e5(param_1 + -16);
+  FUN_100520e5((int)(param_1 + -16));
 }
 
 
@@ -8308,7 +8798,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d3b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d45(void)
 {
   int param_1 = (int )this;
-  FUN_100520e5(param_1 + -140);
+  FUN_100520e5((int)(param_1 + -140));
 }
 
 
@@ -8318,7 +8808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d45(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d52(void)
 {
   int param_1 = (int )this;
-  FUN_100520e5(param_1 + -168);
+  FUN_100520e5((int)(param_1 + -168));
 }
 
 
@@ -8328,7 +8818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d52(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d5f(void)
 {
   int param_1 = (int )this;
-  FUN_1002c287(param_1 + -16);
+  FUN_1002c287((int)(param_1 + -16));
 }
 
 
@@ -8338,7 +8828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d5f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d69(void)
 {
   int param_1 = (int )this;
-  FUN_1002c287(param_1 + -140);
+  FUN_1002c287((int)(param_1 + -140));
 }
 
 
@@ -8348,7 +8838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d69(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d76(void)
 {
   int param_1 = (int )this;
-  FUN_1002c287(param_1 + -168);
+  FUN_1002c287((int)(param_1 + -168));
 }
 
 
@@ -8358,7 +8848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d76(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d83(void)
 {
   int param_1 = (int )this;
-  FUN_10061a77(param_1 + -16);
+  FUN_10061a77((int)(param_1 + -16));
 }
 
 
@@ -8368,7 +8858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d83(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d8d(void)
 {
   int param_1 = (int )this;
-  FUN_10061a77(param_1 + -140);
+  FUN_10061a77((int)(param_1 + -140));
 }
 
 
@@ -8378,7 +8868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d8d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92d9a(void)
 {
   int param_1 = (int )this;
-  FUN_10061a77(param_1 + -168);
+  FUN_10061a77((int)(param_1 + -168));
 }
 
 
@@ -8388,7 +8878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92d9a(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92da7(void)
 {
   int param_1 = (int )this;
-  FUN_1004c294(param_1 + -16);
+  FUN_1004c294((int)(param_1 + -16));
 }
 
 
@@ -8398,7 +8888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92da7(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92db1(void)
 {
   int param_1 = (int )this;
-  FUN_1004c294(param_1 + -140);
+  FUN_1004c294((int)(param_1 + -140));
 }
 
 
@@ -8408,7 +8898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a92db1(void)
 void __thiscall Recovered_Bulk::m_FUN_10a92dbe(void)
 {
   int param_1 = (int )this;
-  FUN_1004c294(param_1 + -168);
+  FUN_1004c294((int)(param_1 + -168));
 }
 
 
@@ -8448,7 +8938,7 @@ void FUN_10a9bbe0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc01(void)
 {
   int param_1 = (int )this;
-  FUN_1003fdb4(param_1 + -16);
+  FUN_1003fdb4((int)(param_1 + -16));
 }
 
 
@@ -8458,7 +8948,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc01(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc0b(void)
 {
   int param_1 = (int )this;
-  FUN_1003fdb4(param_1 + -140);
+  FUN_1003fdb4((int)(param_1 + -140));
 }
 
 
@@ -8468,7 +8958,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc0b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc18(void)
 {
   int param_1 = (int )this;
-  FUN_1003fdb4(param_1 + -168);
+  FUN_1003fdb4((int)(param_1 + -168));
 }
 
 
@@ -8478,7 +8968,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc18(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc25(void)
 {
   int param_1 = (int )this;
-  FUN_10023a56(param_1 + -16);
+  FUN_10023a56((int)(param_1 + -16));
 }
 
 
@@ -8488,7 +8978,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc25(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc2f(void)
 {
   int param_1 = (int )this;
-  FUN_10023a56(param_1 + -140);
+  FUN_10023a56((int)(param_1 + -140));
 }
 
 
@@ -8498,7 +8988,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc2f(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc3c(void)
 {
   int param_1 = (int )this;
-  FUN_10023a56(param_1 + -168);
+  FUN_10023a56((int)(param_1 + -168));
 }
 
 
@@ -8508,7 +8998,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc3c(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc49(void)
 {
   int param_1 = (int )this;
-  FUN_10082565(param_1 + -16);
+  FUN_10082565((int)(param_1 + -16));
 }
 
 
@@ -8518,7 +9008,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc49(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc53(void)
 {
   int param_1 = (int )this;
-  FUN_10082565(param_1 + -140);
+  FUN_10082565((int)(param_1 + -140));
 }
 
 
@@ -8528,7 +9018,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc53(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc60(void)
 {
   int param_1 = (int )this;
-  FUN_10082565(param_1 + -168);
+  FUN_10082565((int)(param_1 + -168));
 }
 
 
@@ -8538,7 +9028,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc60(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc6d(void)
 {
   int param_1 = (int )this;
-  FUN_1002da10(param_1 + -16);
+  FUN_1002da10((int)(param_1 + -16));
 }
 
 
@@ -8548,7 +9038,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc6d(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc77(void)
 {
   int param_1 = (int )this;
-  FUN_1002da10(param_1 + -140);
+  FUN_1002da10((int)(param_1 + -140));
 }
 
 
@@ -8558,7 +9048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc77(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc84(void)
 {
   int param_1 = (int )this;
-  FUN_1002da10(param_1 + -168);
+  FUN_1002da10((int)(param_1 + -168));
 }
 
 
@@ -8568,7 +9058,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc84(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc91(void)
 {
   int param_1 = (int )this;
-  FUN_10011cf7(param_1 + -16);
+  FUN_10011cf7((int)(param_1 + -16));
 }
 
 
@@ -8578,7 +9068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc91(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bc9b(void)
 {
   int param_1 = (int )this;
-  FUN_10011cf7(param_1 + -140);
+  FUN_10011cf7((int)(param_1 + -140));
 }
 
 
@@ -8588,7 +9078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bc9b(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bca8(void)
 {
   int param_1 = (int )this;
-  FUN_10011cf7(param_1 + -168);
+  FUN_10011cf7((int)(param_1 + -168));
 }
 
 
@@ -8598,7 +9088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bca8(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bcb5(void)
 {
   int param_1 = (int )this;
-  FUN_1003ec4d(param_1 + -16);
+  FUN_1003ec4d((int)(param_1 + -16));
 }
 
 
@@ -8608,7 +9098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bcb5(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bcbf(void)
 {
   int param_1 = (int )this;
-  FUN_1003ec4d(param_1 + -140);
+  FUN_1003ec4d((int)(param_1 + -140));
 }
 
 
@@ -8618,7 +9108,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bcbf(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bccc(void)
 {
   int param_1 = (int )this;
-  FUN_1003ec4d(param_1 + -168);
+  FUN_1003ec4d((int)(param_1 + -168));
 }
 
 
@@ -8628,7 +9118,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bccc(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bcd9(void)
 {
   int param_1 = (int )this;
-  FUN_10022f89(param_1 + -16);
+  FUN_10022f89((int)(param_1 + -16));
 }
 
 
@@ -8638,7 +9128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bcd9(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bce3(void)
 {
   int param_1 = (int )this;
-  FUN_10022f89(param_1 + -140);
+  FUN_10022f89((int)(param_1 + -140));
 }
 
 
@@ -8648,7 +9138,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bce3(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bcf0(void)
 {
   int param_1 = (int )this;
-  FUN_10022f89(param_1 + -168);
+  FUN_10022f89((int)(param_1 + -168));
 }
 
 
@@ -8658,7 +9148,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bcf0(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bcfd(void)
 {
   int param_1 = (int )this;
-  FUN_1002c39a(param_1 + -16);
+  FUN_1002c39a((int)(param_1 + -16));
 }
 
 
@@ -8668,7 +9158,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bcfd(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bd07(void)
 {
   int param_1 = (int )this;
-  FUN_1002c39a(param_1 + -140);
+  FUN_1002c39a((int)(param_1 + -140));
 }
 
 
@@ -8678,7 +9168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bd07(void)
 void __thiscall Recovered_Bulk::m_FUN_10a9bd14(void)
 {
   int param_1 = (int )this;
-  FUN_1002c39a(param_1 + -168);
+  FUN_1002c39a((int)(param_1 + -168));
 }
 
 
@@ -8688,7 +9178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a9bd14(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa65a5(void)
 {
   int param_1 = (int )this;
-  FUN_10087be6(param_1 + -16);
+  FUN_10087be6((int)(param_1 + -16));
 }
 
 
@@ -8698,7 +9188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa65a5(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa65af(void)
 {
   int param_1 = (int )this;
-  FUN_10087be6(param_1 + -140);
+  FUN_10087be6((int)(param_1 + -140));
 }
 
 
@@ -8708,7 +9198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa65af(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa65bc(void)
 {
   int param_1 = (int )this;
-  FUN_10087be6(param_1 + -168);
+  FUN_10087be6((int)(param_1 + -168));
 }
 
 
@@ -8718,7 +9208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa65bc(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa65c9(void)
 {
   int param_1 = (int )this;
-  FUN_10039838(param_1 + -16);
+  FUN_10039838((int)(param_1 + -16));
 }
 
 
@@ -8728,7 +9218,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa65c9(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa65d3(void)
 {
   int param_1 = (int )this;
-  FUN_10039838(param_1 + -140);
+  FUN_10039838((int)(param_1 + -140));
 }
 
 
@@ -8738,7 +9228,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa65d3(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa65e0(void)
 {
   int param_1 = (int )this;
-  FUN_10039838(param_1 + -168);
+  FUN_10039838((int)(param_1 + -168));
 }
 
 
@@ -8748,7 +9238,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa65e0(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa65ed(void)
 {
   int param_1 = (int )this;
-  FUN_10067fa3(param_1 + -16);
+  FUN_10067fa3((int)(param_1 + -16));
 }
 
 
@@ -8758,7 +9248,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa65ed(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa65f7(void)
 {
   int param_1 = (int )this;
-  FUN_10067fa3(param_1 + -140);
+  FUN_10067fa3((int)(param_1 + -140));
 }
 
 
@@ -8768,7 +9258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa65f7(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6604(void)
 {
   int param_1 = (int )this;
-  FUN_10067fa3(param_1 + -168);
+  FUN_10067fa3((int)(param_1 + -168));
 }
 
 
@@ -8778,7 +9268,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6604(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6611(void)
 {
   int param_1 = (int )this;
-  FUN_100121d4(param_1 + -16);
+  FUN_100121d4((int)(param_1 + -16));
 }
 
 
@@ -8788,7 +9278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6611(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa661b(void)
 {
   int param_1 = (int )this;
-  FUN_100121d4(param_1 + -140);
+  FUN_100121d4((int)(param_1 + -140));
 }
 
 
@@ -8798,7 +9288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa661b(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6628(void)
 {
   int param_1 = (int )this;
-  FUN_100121d4(param_1 + -168);
+  FUN_100121d4((int)(param_1 + -168));
 }
 
 
@@ -8808,7 +9298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6628(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6635(void)
 {
   int param_1 = (int )this;
-  FUN_10052abd(param_1 + -16);
+  FUN_10052abd((int)(param_1 + -16));
 }
 
 
@@ -8818,7 +9308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6635(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa663f(void)
 {
   int param_1 = (int )this;
-  FUN_10052abd(param_1 + -140);
+  FUN_10052abd((int)(param_1 + -140));
 }
 
 
@@ -8828,7 +9318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa663f(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa664c(void)
 {
   int param_1 = (int )this;
-  FUN_10052abd(param_1 + -168);
+  FUN_10052abd((int)(param_1 + -168));
 }
 
 
@@ -8838,7 +9328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa664c(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6659(void)
 {
   int param_1 = (int )this;
-  FUN_1004e341(param_1 + -16);
+  FUN_1004e341((int)(param_1 + -16));
 }
 
 
@@ -8848,7 +9338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6659(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6663(void)
 {
   int param_1 = (int )this;
-  FUN_1004e341(param_1 + -140);
+  FUN_1004e341((int)(param_1 + -140));
 }
 
 
@@ -8858,7 +9348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6663(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6670(void)
 {
   int param_1 = (int )this;
-  FUN_1004e341(param_1 + -168);
+  FUN_1004e341((int)(param_1 + -168));
 }
 
 
@@ -8868,7 +9358,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6670(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa667d(void)
 {
   int param_1 = (int )this;
-  FUN_1002ee42(param_1 + -16);
+  FUN_1002ee42((int)(param_1 + -16));
 }
 
 
@@ -8878,7 +9368,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa667d(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6687(void)
 {
   int param_1 = (int )this;
-  FUN_1002ee42(param_1 + -140);
+  FUN_1002ee42((int)(param_1 + -140));
 }
 
 
@@ -8888,7 +9378,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6687(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6694(void)
 {
   int param_1 = (int )this;
-  FUN_1002ee42(param_1 + -168);
+  FUN_1002ee42((int)(param_1 + -168));
 }
 
 
@@ -8898,7 +9388,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6694(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa66a1(void)
 {
   int param_1 = (int )this;
-  FUN_1009053e(param_1 + -16);
+  FUN_1009053e((int)(param_1 + -16));
 }
 
 
@@ -8908,7 +9398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa66a1(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa66ab(void)
 {
   int param_1 = (int )this;
-  FUN_1009053e(param_1 + -140);
+  FUN_1009053e((int)(param_1 + -140));
 }
 
 
@@ -8918,7 +9408,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa66ab(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa66b8(void)
 {
   int param_1 = (int )this;
-  FUN_1009053e(param_1 + -168);
+  FUN_1009053e((int)(param_1 + -168));
 }
 
 
@@ -8928,7 +9418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa66b8(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa66c5(void)
 {
   int param_1 = (int )this;
-  FUN_1003d1b3(param_1 + -16);
+  FUN_1003d1b3((int)(param_1 + -16));
 }
 
 
@@ -8938,7 +9428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa66c5(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa66cf(void)
 {
   int param_1 = (int )this;
-  FUN_1003d1b3(param_1 + -140);
+  FUN_1003d1b3((int)(param_1 + -140));
 }
 
 
@@ -8948,7 +9438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa66cf(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa66dc(void)
 {
   int param_1 = (int )this;
-  FUN_1003d1b3(param_1 + -168);
+  FUN_1003d1b3((int)(param_1 + -168));
 }
 
 
@@ -8958,7 +9448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa66dc(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa66e9(void)
 {
   int param_1 = (int )this;
-  FUN_1006ea42(param_1 + -16);
+  FUN_1006ea42((int)(param_1 + -16));
 }
 
 
@@ -8968,7 +9458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa66e9(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa66f3(void)
 {
   int param_1 = (int )this;
-  FUN_1006ea42(param_1 + -140);
+  FUN_1006ea42((int)(param_1 + -140));
 }
 
 
@@ -8978,7 +9468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa66f3(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6700(void)
 {
   int param_1 = (int )this;
-  FUN_1006ea42(param_1 + -168);
+  FUN_1006ea42((int)(param_1 + -168));
 }
 
 
@@ -8988,7 +9478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6700(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa670d(void)
 {
   int param_1 = (int )this;
-  FUN_1007e6f9(param_1 + -16);
+  FUN_1007e6f9((int)(param_1 + -16));
 }
 
 
@@ -8998,7 +9488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa670d(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6717(void)
 {
   int param_1 = (int )this;
-  FUN_1007e6f9(param_1 + -140);
+  FUN_1007e6f9((int)(param_1 + -140));
 }
 
 
@@ -9008,7 +9498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6717(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6724(void)
 {
   int param_1 = (int )this;
-  FUN_1007e6f9(param_1 + -168);
+  FUN_1007e6f9((int)(param_1 + -168));
 }
 
 
@@ -9018,7 +9508,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6724(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6731(void)
 {
   int param_1 = (int )this;
-  FUN_10027025(param_1 + -16);
+  FUN_10027025((int)(param_1 + -16));
 }
 
 
@@ -9028,7 +9518,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6731(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa673b(void)
 {
   int param_1 = (int )this;
-  FUN_10027025(param_1 + -140);
+  FUN_10027025((int)(param_1 + -140));
 }
 
 
@@ -9038,7 +9528,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa673b(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6748(void)
 {
   int param_1 = (int )this;
-  FUN_10027025(param_1 + -168);
+  FUN_10027025((int)(param_1 + -168));
 }
 
 
@@ -9048,7 +9538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6748(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6755(void)
 {
   int param_1 = (int )this;
-  FUN_10034383(param_1 + -16);
+  FUN_10034383((int)(param_1 + -16));
 }
 
 
@@ -9058,7 +9548,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6755(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa675f(void)
 {
   int param_1 = (int )this;
-  FUN_10034383(param_1 + -140);
+  FUN_10034383((int)(param_1 + -140));
 }
 
 
@@ -9068,7 +9558,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa675f(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa676c(void)
 {
   int param_1 = (int )this;
-  FUN_10034383(param_1 + -168);
+  FUN_10034383((int)(param_1 + -168));
 }
 
 
@@ -9078,7 +9568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa676c(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6779(void)
 {
   int param_1 = (int )this;
-  FUN_10017b6b(param_1 + -16);
+  FUN_10017b6b((int)(param_1 + -16));
 }
 
 
@@ -9088,7 +9578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6779(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6783(void)
 {
   int param_1 = (int )this;
-  FUN_10017b6b(param_1 + -140);
+  FUN_10017b6b((int)(param_1 + -140));
 }
 
 
@@ -9098,7 +9588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6783(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6790(void)
 {
   int param_1 = (int )this;
-  FUN_10017b6b(param_1 + -168);
+  FUN_10017b6b((int)(param_1 + -168));
 }
 
 
@@ -9108,7 +9598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6790(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa679d(void)
 {
   int param_1 = (int )this;
-  FUN_10047627(param_1 + -16);
+  FUN_10047627((int)(param_1 + -16));
 }
 
 
@@ -9118,7 +9608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa679d(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa67a7(void)
 {
   int param_1 = (int )this;
-  FUN_10047627(param_1 + -140);
+  FUN_10047627((int)(param_1 + -140));
 }
 
 
@@ -9128,7 +9618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa67a7(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa67b4(void)
 {
   int param_1 = (int )this;
-  FUN_10047627(param_1 + -168);
+  FUN_10047627((int)(param_1 + -168));
 }
 
 
@@ -9138,7 +9628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa67b4(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa67c1(void)
 {
   int param_1 = (int )this;
-  FUN_1004eae9(param_1 + -16);
+  FUN_1004eae9((int)(param_1 + -16));
 }
 
 
@@ -9148,7 +9638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa67c1(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa67cb(void)
 {
   int param_1 = (int )this;
-  FUN_1004eae9(param_1 + -140);
+  FUN_1004eae9((int)(param_1 + -140));
 }
 
 
@@ -9158,7 +9648,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa67cb(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa67d8(void)
 {
   int param_1 = (int )this;
-  FUN_1004eae9(param_1 + -168);
+  FUN_1004eae9((int)(param_1 + -168));
 }
 
 
@@ -9168,7 +9658,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa67d8(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa67e5(void)
 {
   int param_1 = (int )this;
-  FUN_1008a053(param_1 + -16);
+  FUN_1008a053((int)(param_1 + -16));
 }
 
 
@@ -9178,7 +9668,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa67e5(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa67ef(void)
 {
   int param_1 = (int )this;
-  FUN_1008a053(param_1 + -140);
+  FUN_1008a053((int)(param_1 + -140));
 }
 
 
@@ -9188,7 +9678,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa67ef(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa67fc(void)
 {
   int param_1 = (int )this;
-  FUN_1008a053(param_1 + -168);
+  FUN_1008a053((int)(param_1 + -168));
 }
 
 
@@ -9198,7 +9688,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa67fc(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6809(void)
 {
   int param_1 = (int )this;
-  FUN_1002cd54(param_1 + -16);
+  FUN_1002cd54((int)(param_1 + -16));
 }
 
 
@@ -9208,7 +9698,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6809(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6813(void)
 {
   int param_1 = (int )this;
-  FUN_1002cd54(param_1 + -140);
+  FUN_1002cd54((int)(param_1 + -140));
 }
 
 
@@ -9218,7 +9708,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6813(void)
 void __thiscall Recovered_Bulk::m_FUN_10aa6820(void)
 {
   int param_1 = (int )this;
-  FUN_1002cd54(param_1 + -168);
+  FUN_1002cd54((int)(param_1 + -168));
 }
 
 
@@ -9228,7 +9718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aa6820(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab3429(void)
 {
   int param_1 = (int )this;
-  FUN_1005115e(param_1 + -16);
+  FUN_1005115e((int)(param_1 + -16));
 }
 
 
@@ -9238,7 +9728,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab3429(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab3433(void)
 {
   int param_1 = (int )this;
-  FUN_1005115e(param_1 + -140);
+  FUN_1005115e((int)(param_1 + -140));
 }
 
 
@@ -9248,7 +9738,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab3433(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab3440(void)
 {
   int param_1 = (int )this;
-  FUN_1005115e(param_1 + -168);
+  FUN_1005115e((int)(param_1 + -168));
 }
 
 
@@ -9258,7 +9748,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab3440(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab344d(void)
 {
   int param_1 = (int )this;
-  FUN_100149e3(param_1 + -16);
+  FUN_100149e3((int)(param_1 + -16));
 }
 
 
@@ -9268,7 +9758,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab344d(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab3457(void)
 {
   int param_1 = (int )this;
-  FUN_100149e3(param_1 + -140);
+  FUN_100149e3((int)(param_1 + -140));
 }
 
 
@@ -9278,7 +9768,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab3457(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab3464(void)
 {
   int param_1 = (int )this;
-  FUN_100149e3(param_1 + -168);
+  FUN_100149e3((int)(param_1 + -168));
 }
 
 
@@ -9288,7 +9778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab3464(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab3471(void)
 {
   int param_1 = (int )this;
-  FUN_10036331(param_1 + -16);
+  FUN_10036331((int)(param_1 + -16));
 }
 
 
@@ -9298,7 +9788,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab3471(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab347b(void)
 {
   int param_1 = (int )this;
-  FUN_10036331(param_1 + -140);
+  FUN_10036331((int)(param_1 + -140));
 }
 
 
@@ -9308,7 +9798,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab347b(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab3488(void)
 {
   int param_1 = (int )this;
-  FUN_10036331(param_1 + -168);
+  FUN_10036331((int)(param_1 + -168));
 }
 
 
@@ -9318,7 +9808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab3488(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab48bd(void)
 {
   int param_1 = (int )this;
-  FUN_1008103e(param_1 + -16);
+  FUN_1008103e((int)(param_1 + -16));
 }
 
 
@@ -9328,7 +9818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab48bd(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab48c7(void)
 {
   int param_1 = (int )this;
-  FUN_1008103e(param_1 + -140);
+  FUN_1008103e((int)(param_1 + -140));
 }
 
 
@@ -9338,7 +9828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab48c7(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab48d4(void)
 {
   int param_1 = (int )this;
-  FUN_1008103e(param_1 + -168);
+  FUN_1008103e((int)(param_1 + -168));
 }
 
 
@@ -9348,7 +9838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab48d4(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab48e1(void)
 {
   int param_1 = (int )this;
-  FUN_10051825(param_1 + -16);
+  FUN_10051825((int)(param_1 + -16));
 }
 
 
@@ -9358,7 +9848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab48e1(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab48eb(void)
 {
   int param_1 = (int )this;
-  FUN_10051825(param_1 + -140);
+  FUN_10051825((int)(param_1 + -140));
 }
 
 
@@ -9368,7 +9858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab48eb(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab48f8(void)
 {
   int param_1 = (int )this;
-  FUN_10051825(param_1 + -168);
+  FUN_10051825((int)(param_1 + -168));
 }
 
 
@@ -9378,7 +9868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab48f8(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab4905(void)
 {
   int param_1 = (int )this;
-  FUN_1000ea7a(param_1 + -16);
+  FUN_1000ea7a((int)(param_1 + -16));
 }
 
 
@@ -9388,7 +9878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab4905(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab490f(void)
 {
   int param_1 = (int )this;
-  FUN_1000ea7a(param_1 + -140);
+  FUN_1000ea7a((int)(param_1 + -140));
 }
 
 
@@ -9398,7 +9888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab490f(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab491c(void)
 {
   int param_1 = (int )this;
-  FUN_1000ea7a(param_1 + -168);
+  FUN_1000ea7a((int)(param_1 + -168));
 }
 
 
@@ -9408,7 +9898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab491c(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab4929(void)
 {
   int param_1 = (int )this;
-  FUN_10008954(param_1 + -16);
+  FUN_10008954((int)(param_1 + -16));
 }
 
 
@@ -9418,7 +9908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab4929(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab4933(void)
 {
   int param_1 = (int )this;
-  FUN_10008954(param_1 + -140);
+  FUN_10008954((int)(param_1 + -140));
 }
 
 
@@ -9428,7 +9918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab4933(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab4940(void)
 {
   int param_1 = (int )this;
-  FUN_10008954(param_1 + -168);
+  FUN_10008954((int)(param_1 + -168));
 }
 
 
@@ -9438,7 +9928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab4940(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab619d(void)
 {
   int param_1 = (int )this;
-  FUN_10006523(param_1 + -16);
+  FUN_10006523((int)(param_1 + -16));
 }
 
 
@@ -9448,7 +9938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab619d(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab61a7(void)
 {
   int param_1 = (int )this;
-  FUN_10006523(param_1 + -140);
+  FUN_10006523((int)(param_1 + -140));
 }
 
 
@@ -9458,7 +9948,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab61a7(void)
 void __thiscall Recovered_Bulk::m_FUN_10ab61b4(void)
 {
   int param_1 = (int )this;
-  FUN_10006523(param_1 + -168);
+  FUN_10006523((int)(param_1 + -168));
 }
 
 
@@ -9468,7 +9958,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ab61b4(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec19(void)
 {
   int param_1 = (int )this;
-  FUN_100449b8(param_1 + -16);
+  FUN_100449b8((int)(param_1 + -16));
 }
 
 
@@ -9478,7 +9968,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec19(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec23(void)
 {
   int param_1 = (int )this;
-  FUN_100449b8(param_1 + -140);
+  FUN_100449b8((int)(param_1 + -140));
 }
 
 
@@ -9488,7 +9978,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec23(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec30(void)
 {
   int param_1 = (int )this;
-  FUN_100449b8(param_1 + -168);
+  FUN_100449b8((int)(param_1 + -168));
 }
 
 
@@ -9498,7 +9988,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec30(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec3d(void)
 {
   int param_1 = (int )this;
-  FUN_100199b6(param_1 + -16);
+  FUN_100199b6((int)(param_1 + -16));
 }
 
 
@@ -9508,7 +9998,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec3d(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec47(void)
 {
   int param_1 = (int )this;
-  FUN_100199b6(param_1 + -140);
+  FUN_100199b6((int)(param_1 + -140));
 }
 
 
@@ -9518,7 +10008,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec47(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec54(void)
 {
   int param_1 = (int )this;
-  FUN_100199b6(param_1 + -168);
+  FUN_100199b6((int)(param_1 + -168));
 }
 
 
@@ -9528,7 +10018,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec54(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec61(void)
 {
   int param_1 = (int )this;
-  FUN_100568bb(param_1 + -16);
+  FUN_100568bb((int)(param_1 + -16));
 }
 
 
@@ -9538,7 +10028,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec61(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec6b(void)
 {
   int param_1 = (int )this;
-  FUN_100568bb(param_1 + -140);
+  FUN_100568bb((int)(param_1 + -140));
 }
 
 
@@ -9548,7 +10038,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec6b(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec78(void)
 {
   int param_1 = (int )this;
-  FUN_100568bb(param_1 + -168);
+  FUN_100568bb((int)(param_1 + -168));
 }
 
 
@@ -9558,7 +10048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec78(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec85(void)
 {
   int param_1 = (int )this;
-  FUN_100796a9(param_1 + -16);
+  FUN_100796a9((int)(param_1 + -16));
 }
 
 
@@ -9568,7 +10058,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec85(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec8f(void)
 {
   int param_1 = (int )this;
-  FUN_100796a9(param_1 + -140);
+  FUN_100796a9((int)(param_1 + -140));
 }
 
 
@@ -9578,7 +10068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec8f(void)
 void __thiscall Recovered_Bulk::m_FUN_10abec9c(void)
 {
   int param_1 = (int )this;
-  FUN_100796a9(param_1 + -168);
+  FUN_100796a9((int)(param_1 + -168));
 }
 
 
@@ -9588,7 +10078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abec9c(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeca9(void)
 {
   int param_1 = (int )this;
-  FUN_10077480(param_1 + -16);
+  FUN_10077480((int)(param_1 + -16));
 }
 
 
@@ -9598,7 +10088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeca9(void)
 void __thiscall Recovered_Bulk::m_FUN_10abecb3(void)
 {
   int param_1 = (int )this;
-  FUN_10077480(param_1 + -140);
+  FUN_10077480((int)(param_1 + -140));
 }
 
 
@@ -9608,7 +10098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abecb3(void)
 void __thiscall Recovered_Bulk::m_FUN_10abecc0(void)
 {
   int param_1 = (int )this;
-  FUN_10077480(param_1 + -168);
+  FUN_10077480((int)(param_1 + -168));
 }
 
 
@@ -9618,7 +10108,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abecc0(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeccd(void)
 {
   int param_1 = (int )this;
-  FUN_1006d02f(param_1 + -16);
+  FUN_1006d02f((int)(param_1 + -16));
 }
 
 
@@ -9628,7 +10118,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeccd(void)
 void __thiscall Recovered_Bulk::m_FUN_10abecd7(void)
 {
   int param_1 = (int )this;
-  FUN_1006d02f(param_1 + -140);
+  FUN_1006d02f((int)(param_1 + -140));
 }
 
 
@@ -9638,7 +10128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abecd7(void)
 void __thiscall Recovered_Bulk::m_FUN_10abece4(void)
 {
   int param_1 = (int )this;
-  FUN_1006d02f(param_1 + -168);
+  FUN_1006d02f((int)(param_1 + -168));
 }
 
 
@@ -9648,7 +10138,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abece4(void)
 void __thiscall Recovered_Bulk::m_FUN_10abecf1(void)
 {
   int param_1 = (int )this;
-  FUN_10037dad(param_1 + -16);
+  FUN_10037dad((int)(param_1 + -16));
 }
 
 
@@ -9658,7 +10148,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abecf1(void)
 void __thiscall Recovered_Bulk::m_FUN_10abecfb(void)
 {
   int param_1 = (int )this;
-  FUN_10037dad(param_1 + -140);
+  FUN_10037dad((int)(param_1 + -140));
 }
 
 
@@ -9668,7 +10158,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abecfb(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed08(void)
 {
   int param_1 = (int )this;
-  FUN_10037dad(param_1 + -168);
+  FUN_10037dad((int)(param_1 + -168));
 }
 
 
@@ -9678,7 +10168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed08(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed15(void)
 {
   int param_1 = (int )this;
-  FUN_1006c95e(param_1 + -16);
+  FUN_1006c95e((int)(param_1 + -16));
 }
 
 
@@ -9688,7 +10178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed15(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed1f(void)
 {
   int param_1 = (int )this;
-  FUN_1006c95e(param_1 + -140);
+  FUN_1006c95e((int)(param_1 + -140));
 }
 
 
@@ -9698,7 +10188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed1f(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed2c(void)
 {
   int param_1 = (int )this;
-  FUN_1006c95e(param_1 + -168);
+  FUN_1006c95e((int)(param_1 + -168));
 }
 
 
@@ -9708,7 +10198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed2c(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed39(void)
 {
   int param_1 = (int )this;
-  FUN_100895c2(param_1 + -16);
+  FUN_100895c2((int)(param_1 + -16));
 }
 
 
@@ -9718,7 +10208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed39(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed43(void)
 {
   int param_1 = (int )this;
-  FUN_100895c2(param_1 + -140);
+  FUN_100895c2((int)(param_1 + -140));
 }
 
 
@@ -9728,7 +10218,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed43(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed50(void)
 {
   int param_1 = (int )this;
-  FUN_100895c2(param_1 + -168);
+  FUN_100895c2((int)(param_1 + -168));
 }
 
 
@@ -9738,7 +10228,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed50(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed5d(void)
 {
   int param_1 = (int )this;
-  FUN_10080ba7(param_1 + -16);
+  FUN_10080ba7((int)(param_1 + -16));
 }
 
 
@@ -9748,7 +10238,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed5d(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed67(void)
 {
   int param_1 = (int )this;
-  FUN_10080ba7(param_1 + -140);
+  FUN_10080ba7((int)(param_1 + -140));
 }
 
 
@@ -9758,7 +10248,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed67(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed74(void)
 {
   int param_1 = (int )this;
-  FUN_10080ba7(param_1 + -168);
+  FUN_10080ba7((int)(param_1 + -168));
 }
 
 
@@ -9768,7 +10258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed74(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed81(void)
 {
   int param_1 = (int )this;
-  FUN_1006671b(param_1 + -16);
+  FUN_1006671b((int)(param_1 + -16));
 }
 
 
@@ -9778,7 +10268,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed81(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed8b(void)
 {
   int param_1 = (int )this;
-  FUN_1006671b(param_1 + -140);
+  FUN_1006671b((int)(param_1 + -140));
 }
 
 
@@ -9788,7 +10278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed8b(void)
 void __thiscall Recovered_Bulk::m_FUN_10abed98(void)
 {
   int param_1 = (int )this;
-  FUN_1006671b(param_1 + -168);
+  FUN_1006671b((int)(param_1 + -168));
 }
 
 
@@ -9798,7 +10288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abed98(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeda5(void)
 {
   int param_1 = (int )this;
-  FUN_10095930(param_1 + -16);
+  FUN_10095930((int)(param_1 + -16));
 }
 
 
@@ -9808,7 +10298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeda5(void)
 void __thiscall Recovered_Bulk::m_FUN_10abedaf(void)
 {
   int param_1 = (int )this;
-  FUN_10095930(param_1 + -140);
+  FUN_10095930((int)(param_1 + -140));
 }
 
 
@@ -9818,7 +10308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abedaf(void)
 void __thiscall Recovered_Bulk::m_FUN_10abedbc(void)
 {
   int param_1 = (int )this;
-  FUN_10095930(param_1 + -168);
+  FUN_10095930((int)(param_1 + -168));
 }
 
 
@@ -9828,7 +10318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abedbc(void)
 void __thiscall Recovered_Bulk::m_FUN_10abedc9(void)
 {
   int param_1 = (int )this;
-  FUN_1006e169(param_1 + -16);
+  FUN_1006e169((int)(param_1 + -16));
 }
 
 
@@ -9838,7 +10328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abedc9(void)
 void __thiscall Recovered_Bulk::m_FUN_10abedd3(void)
 {
   int param_1 = (int )this;
-  FUN_1006e169(param_1 + -140);
+  FUN_1006e169((int)(param_1 + -140));
 }
 
 
@@ -9848,7 +10338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abedd3(void)
 void __thiscall Recovered_Bulk::m_FUN_10abede0(void)
 {
   int param_1 = (int )this;
-  FUN_1006e169(param_1 + -168);
+  FUN_1006e169((int)(param_1 + -168));
 }
 
 
@@ -9858,7 +10348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abede0(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeded(void)
 {
   int param_1 = (int )this;
-  FUN_10081a61(param_1 + -16);
+  FUN_10081a61((int)(param_1 + -16));
 }
 
 
@@ -9868,7 +10358,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeded(void)
 void __thiscall Recovered_Bulk::m_FUN_10abedf7(void)
 {
   int param_1 = (int )this;
-  FUN_10081a61(param_1 + -140);
+  FUN_10081a61((int)(param_1 + -140));
 }
 
 
@@ -9878,7 +10368,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abedf7(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee04(void)
 {
   int param_1 = (int )this;
-  FUN_10081a61(param_1 + -168);
+  FUN_10081a61((int)(param_1 + -168));
 }
 
 
@@ -9888,7 +10378,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee04(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee11(void)
 {
   int param_1 = (int )this;
-  FUN_10099c60(param_1 + -16);
+  FUN_10099c60((int)(param_1 + -16));
 }
 
 
@@ -9898,7 +10388,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee11(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee1b(void)
 {
   int param_1 = (int )this;
-  FUN_10099c60(param_1 + -140);
+  FUN_10099c60((int)(param_1 + -140));
 }
 
 
@@ -9908,7 +10398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee1b(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee28(void)
 {
   int param_1 = (int )this;
-  FUN_10099c60(param_1 + -168);
+  FUN_10099c60((int)(param_1 + -168));
 }
 
 
@@ -9918,7 +10408,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee28(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee35(void)
 {
   int param_1 = (int )this;
-  FUN_10070c89(param_1 + -16);
+  FUN_10070c89((int)(param_1 + -16));
 }
 
 
@@ -9928,7 +10418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee35(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee3f(void)
 {
   int param_1 = (int )this;
-  FUN_10070c89(param_1 + -140);
+  FUN_10070c89((int)(param_1 + -140));
 }
 
 
@@ -9938,7 +10428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee3f(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee4c(void)
 {
   int param_1 = (int )this;
-  FUN_10070c89(param_1 + -168);
+  FUN_10070c89((int)(param_1 + -168));
 }
 
 
@@ -9948,7 +10438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee4c(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee59(void)
 {
   int param_1 = (int )this;
-  FUN_100282e0(param_1 + -16);
+  FUN_100282e0((int)(param_1 + -16));
 }
 
 
@@ -9958,7 +10448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee59(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee63(void)
 {
   int param_1 = (int )this;
-  FUN_100282e0(param_1 + -140);
+  FUN_100282e0((int)(param_1 + -140));
 }
 
 
@@ -9968,7 +10458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee63(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee70(void)
 {
   int param_1 = (int )this;
-  FUN_100282e0(param_1 + -168);
+  FUN_100282e0((int)(param_1 + -168));
 }
 
 
@@ -9978,7 +10468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee70(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee7d(void)
 {
   int param_1 = (int )this;
-  FUN_1000d201(param_1 + -16);
+  FUN_1000d201((int)(param_1 + -16));
 }
 
 
@@ -9988,7 +10478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee7d(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee87(void)
 {
   int param_1 = (int )this;
-  FUN_1000d201(param_1 + -140);
+  FUN_1000d201((int)(param_1 + -140));
 }
 
 
@@ -9998,7 +10488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee87(void)
 void __thiscall Recovered_Bulk::m_FUN_10abee94(void)
 {
   int param_1 = (int )this;
-  FUN_1000d201(param_1 + -168);
+  FUN_1000d201((int)(param_1 + -168));
 }
 
 
@@ -10008,7 +10498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abee94(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeea1(void)
 {
   int param_1 = (int )this;
-  FUN_1002aa36(param_1 + -16);
+  FUN_1002aa36((int)(param_1 + -16));
 }
 
 
@@ -10018,7 +10508,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeea1(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeeab(void)
 {
   int param_1 = (int )this;
-  FUN_1002aa36(param_1 + -140);
+  FUN_1002aa36((int)(param_1 + -140));
 }
 
 
@@ -10028,7 +10518,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeeab(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeeb8(void)
 {
   int param_1 = (int )this;
-  FUN_1002aa36(param_1 + -168);
+  FUN_1002aa36((int)(param_1 + -168));
 }
 
 
@@ -10038,7 +10528,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeeb8(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeec5(void)
 {
   int param_1 = (int )this;
-  FUN_1004cf4b(param_1 + -16);
+  FUN_1004cf4b((int)(param_1 + -16));
 }
 
 
@@ -10048,7 +10538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeec5(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeecf(void)
 {
   int param_1 = (int )this;
-  FUN_1004cf4b(param_1 + -140);
+  FUN_1004cf4b((int)(param_1 + -140));
 }
 
 
@@ -10058,7 +10548,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeecf(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeedc(void)
 {
   int param_1 = (int )this;
-  FUN_1004cf4b(param_1 + -168);
+  FUN_1004cf4b((int)(param_1 + -168));
 }
 
 
@@ -10068,7 +10558,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeedc(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeee9(void)
 {
   int param_1 = (int )this;
-  FUN_10061928(param_1 + -16);
+  FUN_10061928((int)(param_1 + -16));
 }
 
 
@@ -10078,7 +10568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeee9(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeef3(void)
 {
   int param_1 = (int )this;
-  FUN_10061928(param_1 + -140);
+  FUN_10061928((int)(param_1 + -140));
 }
 
 
@@ -10088,7 +10578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeef3(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef00(void)
 {
   int param_1 = (int )this;
-  FUN_10061928(param_1 + -168);
+  FUN_10061928((int)(param_1 + -168));
 }
 
 
@@ -10098,7 +10588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef00(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef0d(void)
 {
   int param_1 = (int )this;
-  FUN_1002c818(param_1 + -16);
+  FUN_1002c818((int)(param_1 + -16));
 }
 
 
@@ -10108,7 +10598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef0d(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef17(void)
 {
   int param_1 = (int )this;
-  FUN_1002c818(param_1 + -140);
+  FUN_1002c818((int)(param_1 + -140));
 }
 
 
@@ -10118,7 +10608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef17(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef24(void)
 {
   int param_1 = (int )this;
-  FUN_1002c818(param_1 + -168);
+  FUN_1002c818((int)(param_1 + -168));
 }
 
 
@@ -10128,7 +10618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef24(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef31(void)
 {
   int param_1 = (int )this;
-  FUN_10050669(param_1 + -16);
+  FUN_10050669((int)(param_1 + -16));
 }
 
 
@@ -10138,7 +10628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef31(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef3b(void)
 {
   int param_1 = (int )this;
-  FUN_10050669(param_1 + -140);
+  FUN_10050669((int)(param_1 + -140));
 }
 
 
@@ -10148,7 +10638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef3b(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef48(void)
 {
   int param_1 = (int )this;
-  FUN_10050669(param_1 + -168);
+  FUN_10050669((int)(param_1 + -168));
 }
 
 
@@ -10158,7 +10648,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef48(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef55(void)
 {
   int param_1 = (int )this;
-  FUN_1008e14e(param_1 + -16);
+  FUN_1008e14e((int)(param_1 + -16));
 }
 
 
@@ -10168,7 +10658,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef55(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef5f(void)
 {
   int param_1 = (int )this;
-  FUN_1008e14e(param_1 + -140);
+  FUN_1008e14e((int)(param_1 + -140));
 }
 
 
@@ -10178,7 +10668,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef5f(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef6c(void)
 {
   int param_1 = (int )this;
-  FUN_1008e14e(param_1 + -168);
+  FUN_1008e14e((int)(param_1 + -168));
 }
 
 
@@ -10188,7 +10678,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef6c(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef79(void)
 {
   int param_1 = (int )this;
-  FUN_10026bfc(param_1 + -16);
+  FUN_10026bfc((int)(param_1 + -16));
 }
 
 
@@ -10198,7 +10688,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef79(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef83(void)
 {
   int param_1 = (int )this;
-  FUN_10026bfc(param_1 + -140);
+  FUN_10026bfc((int)(param_1 + -140));
 }
 
 
@@ -10208,7 +10698,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef83(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef90(void)
 {
   int param_1 = (int )this;
-  FUN_10026bfc(param_1 + -168);
+  FUN_10026bfc((int)(param_1 + -168));
 }
 
 
@@ -10218,7 +10708,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef90(void)
 void __thiscall Recovered_Bulk::m_FUN_10abef9d(void)
 {
   int param_1 = (int )this;
-  FUN_1003130e(param_1 + -16);
+  FUN_1003130e((int)(param_1 + -16));
 }
 
 
@@ -10228,7 +10718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abef9d(void)
 void __thiscall Recovered_Bulk::m_FUN_10abefa7(void)
 {
   int param_1 = (int )this;
-  FUN_1003130e(param_1 + -140);
+  FUN_1003130e((int)(param_1 + -140));
 }
 
 
@@ -10238,7 +10728,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abefa7(void)
 void __thiscall Recovered_Bulk::m_FUN_10abefb4(void)
 {
   int param_1 = (int )this;
-  FUN_1003130e(param_1 + -168);
+  FUN_1003130e((int)(param_1 + -168));
 }
 
 
@@ -10248,7 +10738,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abefb4(void)
 void __thiscall Recovered_Bulk::m_FUN_10abefc1(void)
 {
   int param_1 = (int )this;
-  FUN_1008f251(param_1 + -16);
+  FUN_1008f251((int)(param_1 + -16));
 }
 
 
@@ -10258,7 +10748,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abefc1(void)
 void __thiscall Recovered_Bulk::m_FUN_10abefcb(void)
 {
   int param_1 = (int )this;
-  FUN_1008f251(param_1 + -140);
+  FUN_1008f251((int)(param_1 + -140));
 }
 
 
@@ -10268,7 +10758,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abefcb(void)
 void __thiscall Recovered_Bulk::m_FUN_10abefd8(void)
 {
   int param_1 = (int )this;
-  FUN_1008f251(param_1 + -168);
+  FUN_1008f251((int)(param_1 + -168));
 }
 
 
@@ -10278,7 +10768,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abefd8(void)
 void __thiscall Recovered_Bulk::m_FUN_10abefe5(void)
 {
   int param_1 = (int )this;
-  FUN_10090fbb(param_1 + -16);
+  FUN_10090fbb((int)(param_1 + -16));
 }
 
 
@@ -10288,7 +10778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abefe5(void)
 void __thiscall Recovered_Bulk::m_FUN_10abefef(void)
 {
   int param_1 = (int )this;
-  FUN_10090fbb(param_1 + -140);
+  FUN_10090fbb((int)(param_1 + -140));
 }
 
 
@@ -10298,7 +10788,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abefef(void)
 void __thiscall Recovered_Bulk::m_FUN_10abeffc(void)
 {
   int param_1 = (int )this;
-  FUN_10090fbb(param_1 + -168);
+  FUN_10090fbb((int)(param_1 + -168));
 }
 
 
@@ -10308,7 +10798,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abeffc(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf009(void)
 {
   int param_1 = (int )this;
-  FUN_1006a8cf(param_1 + -16);
+  FUN_1006a8cf((int)(param_1 + -16));
 }
 
 
@@ -10318,7 +10808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf009(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf013(void)
 {
   int param_1 = (int )this;
-  FUN_1006a8cf(param_1 + -140);
+  FUN_1006a8cf((int)(param_1 + -140));
 }
 
 
@@ -10328,7 +10818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf013(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf020(void)
 {
   int param_1 = (int )this;
-  FUN_1006a8cf(param_1 + -168);
+  FUN_1006a8cf((int)(param_1 + -168));
 }
 
 
@@ -10338,7 +10828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf020(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf02d(void)
 {
   int param_1 = (int )this;
-  FUN_10040d77(param_1 + -16);
+  FUN_10040d77((int)(param_1 + -16));
 }
 
 
@@ -10348,7 +10838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf02d(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf037(void)
 {
   int param_1 = (int )this;
-  FUN_10040d77(param_1 + -140);
+  FUN_10040d77((int)(param_1 + -140));
 }
 
 
@@ -10358,7 +10848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf037(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf044(void)
 {
   int param_1 = (int )this;
-  FUN_10040d77(param_1 + -168);
+  FUN_10040d77((int)(param_1 + -168));
 }
 
 
@@ -10368,7 +10858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf044(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf051(void)
 {
   int param_1 = (int )this;
-  FUN_10020171(param_1 + -16);
+  FUN_10020171((int)(param_1 + -16));
 }
 
 
@@ -10378,7 +10868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf051(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf05b(void)
 {
   int param_1 = (int )this;
-  FUN_10020171(param_1 + -140);
+  FUN_10020171((int)(param_1 + -140));
 }
 
 
@@ -10388,7 +10878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf05b(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf068(void)
 {
   int param_1 = (int )this;
-  FUN_10020171(param_1 + -168);
+  FUN_10020171((int)(param_1 + -168));
 }
 
 
@@ -10398,7 +10888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf068(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf075(void)
 {
   int param_1 = (int )this;
-  FUN_100626cf(param_1 + -16);
+  FUN_100626cf((int)(param_1 + -16));
 }
 
 
@@ -10408,7 +10898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf075(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf07f(void)
 {
   int param_1 = (int )this;
-  FUN_100626cf(param_1 + -140);
+  FUN_100626cf((int)(param_1 + -140));
 }
 
 
@@ -10418,7 +10908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf07f(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf08c(void)
 {
   int param_1 = (int )this;
-  FUN_100626cf(param_1 + -168);
+  FUN_100626cf((int)(param_1 + -168));
 }
 
 
@@ -10428,7 +10918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf08c(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf099(void)
 {
   int param_1 = (int )this;
-  FUN_1007c548(param_1 + -16);
+  FUN_1007c548((int)(param_1 + -16));
 }
 
 
@@ -10438,7 +10928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf099(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf0a3(void)
 {
   int param_1 = (int )this;
-  FUN_1007c548(param_1 + -140);
+  FUN_1007c548((int)(param_1 + -140));
 }
 
 
@@ -10448,7 +10938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf0a3(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf0b0(void)
 {
   int param_1 = (int )this;
-  FUN_1007c548(param_1 + -168);
+  FUN_1007c548((int)(param_1 + -168));
 }
 
 
@@ -10458,7 +10948,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf0b0(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf0bd(void)
 {
   int param_1 = (int )this;
-  FUN_10078786(param_1 + -16);
+  FUN_10078786((int)(param_1 + -16));
 }
 
 
@@ -10468,7 +10958,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf0bd(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf0c7(void)
 {
   int param_1 = (int )this;
-  FUN_10078786(param_1 + -140);
+  FUN_10078786((int)(param_1 + -140));
 }
 
 
@@ -10478,7 +10968,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf0c7(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf0d4(void)
 {
   int param_1 = (int )this;
-  FUN_10078786(param_1 + -168);
+  FUN_10078786((int)(param_1 + -168));
 }
 
 
@@ -10488,7 +10978,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf0d4(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf0e1(void)
 {
   int param_1 = (int )this;
-  FUN_1000420a(param_1 + -16);
+  FUN_1000420a((int)(param_1 + -16));
 }
 
 
@@ -10498,7 +10988,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf0e1(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf0eb(void)
 {
   int param_1 = (int )this;
-  FUN_1000420a(param_1 + -140);
+  FUN_1000420a((int)(param_1 + -140));
 }
 
 
@@ -10508,7 +10998,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf0eb(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf0f8(void)
 {
   int param_1 = (int )this;
-  FUN_1000420a(param_1 + -168);
+  FUN_1000420a((int)(param_1 + -168));
 }
 
 
@@ -10518,7 +11008,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf0f8(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf105(void)
 {
   int param_1 = (int )this;
-  FUN_10040372(param_1 + -16);
+  FUN_10040372((int)(param_1 + -16));
 }
 
 
@@ -10528,7 +11018,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf105(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf10f(void)
 {
   int param_1 = (int )this;
-  FUN_10040372(param_1 + -140);
+  FUN_10040372((int)(param_1 + -140));
 }
 
 
@@ -10538,7 +11028,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf10f(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf11c(void)
 {
   int param_1 = (int )this;
-  FUN_10040372(param_1 + -168);
+  FUN_10040372((int)(param_1 + -168));
 }
 
 
@@ -10548,7 +11038,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf11c(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf129(void)
 {
   int param_1 = (int )this;
-  FUN_10019d9e(param_1 + -16);
+  FUN_10019d9e((int)(param_1 + -16));
 }
 
 
@@ -10558,7 +11048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf129(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf133(void)
 {
   int param_1 = (int )this;
-  FUN_10019d9e(param_1 + -140);
+  FUN_10019d9e((int)(param_1 + -140));
 }
 
 
@@ -10568,7 +11058,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf133(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf140(void)
 {
   int param_1 = (int )this;
-  FUN_10019d9e(param_1 + -168);
+  FUN_10019d9e((int)(param_1 + -168));
 }
 
 
@@ -10578,7 +11068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf140(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf14d(void)
 {
   int param_1 = (int )this;
-  FUN_100181ba(param_1 + -16);
+  FUN_100181ba((int)(param_1 + -16));
 }
 
 
@@ -10588,7 +11078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf14d(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf157(void)
 {
   int param_1 = (int )this;
-  FUN_100181ba(param_1 + -140);
+  FUN_100181ba((int)(param_1 + -140));
 }
 
 
@@ -10598,7 +11088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf157(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf164(void)
 {
   int param_1 = (int )this;
-  FUN_100181ba(param_1 + -168);
+  FUN_100181ba((int)(param_1 + -168));
 }
 
 
@@ -10608,7 +11098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf164(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf171(void)
 {
   int param_1 = (int )this;
-  FUN_1005fdb7(param_1 + -16);
+  FUN_1005fdb7((int)(param_1 + -16));
 }
 
 
@@ -10618,7 +11108,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf171(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf17b(void)
 {
   int param_1 = (int )this;
-  FUN_1005fdb7(param_1 + -140);
+  FUN_1005fdb7((int)(param_1 + -140));
 }
 
 
@@ -10628,7 +11118,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf17b(void)
 void __thiscall Recovered_Bulk::m_FUN_10abf188(void)
 {
   int param_1 = (int )this;
-  FUN_1005fdb7(param_1 + -168);
+  FUN_1005fdb7((int)(param_1 + -168));
 }
 
 
@@ -10638,7 +11128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10abf188(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6c71(void)
 {
   int param_1 = (int )this;
-  FUN_10045061(param_1 + -16);
+  FUN_10045061((int)(param_1 + -16));
 }
 
 
@@ -10648,7 +11138,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6c71(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6c7b(void)
 {
   int param_1 = (int )this;
-  FUN_10045061(param_1 + -140);
+  FUN_10045061((int)(param_1 + -140));
 }
 
 
@@ -10658,7 +11148,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6c7b(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6c88(void)
 {
   int param_1 = (int )this;
-  FUN_10045061(param_1 + -168);
+  FUN_10045061((int)(param_1 + -168));
 }
 
 
@@ -10668,7 +11158,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6c88(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6c95(void)
 {
   int param_1 = (int )this;
-  FUN_1000330f(param_1 + -16);
+  FUN_1000330f((int)(param_1 + -16));
 }
 
 
@@ -10678,7 +11168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6c95(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6c9f(void)
 {
   int param_1 = (int )this;
-  FUN_1000330f(param_1 + -140);
+  FUN_1000330f((int)(param_1 + -140));
 }
 
 
@@ -10688,7 +11178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6c9f(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6cac(void)
 {
   int param_1 = (int )this;
-  FUN_1000330f(param_1 + -168);
+  FUN_1000330f((int)(param_1 + -168));
 }
 
 
@@ -10698,7 +11188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6cac(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6cb9(void)
 {
   int param_1 = (int )this;
-  FUN_10042dde(param_1 + -16);
+  FUN_10042dde((int)(param_1 + -16));
 }
 
 
@@ -10708,7 +11198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6cb9(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6cc3(void)
 {
   int param_1 = (int )this;
-  FUN_10042dde(param_1 + -140);
+  FUN_10042dde((int)(param_1 + -140));
 }
 
 
@@ -10718,7 +11208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6cc3(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6cd0(void)
 {
   int param_1 = (int )this;
-  FUN_10042dde(param_1 + -168);
+  FUN_10042dde((int)(param_1 + -168));
 }
 
 
@@ -10728,7 +11218,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6cd0(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6cdd(void)
 {
   int param_1 = (int )this;
-  FUN_1001d0c0(param_1 + -16);
+  FUN_1001d0c0((int)(param_1 + -16));
 }
 
 
@@ -10738,7 +11228,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6cdd(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6ce7(void)
 {
   int param_1 = (int )this;
-  FUN_1001d0c0(param_1 + -140);
+  FUN_1001d0c0((int)(param_1 + -140));
 }
 
 
@@ -10748,7 +11238,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6ce7(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6cf4(void)
 {
   int param_1 = (int )this;
-  FUN_1001d0c0(param_1 + -168);
+  FUN_1001d0c0((int)(param_1 + -168));
 }
 
 
@@ -10758,7 +11248,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6cf4(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6d01(void)
 {
   int param_1 = (int )this;
-  FUN_100508f8(param_1 + -16);
+  FUN_100508f8((int)(param_1 + -16));
 }
 
 
@@ -10768,7 +11258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6d01(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6d0b(void)
 {
   int param_1 = (int )this;
-  FUN_100508f8(param_1 + -140);
+  FUN_100508f8((int)(param_1 + -140));
 }
 
 
@@ -10778,7 +11268,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6d0b(void)
 void __thiscall Recovered_Bulk::m_FUN_10ae6d18(void)
 {
   int param_1 = (int )this;
-  FUN_100508f8(param_1 + -168);
+  FUN_100508f8((int)(param_1 + -168));
 }
 
 
@@ -10788,7 +11278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10ae6d18(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeae45(void)
 {
   int param_1 = (int )this;
-  FUN_10045368(param_1 + -16);
+  FUN_10045368((int)(param_1 + -16));
 }
 
 
@@ -10798,7 +11288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeae45(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeae4f(void)
 {
   int param_1 = (int )this;
-  FUN_10045368(param_1 + -140);
+  FUN_10045368((int)(param_1 + -140));
 }
 
 
@@ -10808,7 +11298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeae4f(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeae5c(void)
 {
   int param_1 = (int )this;
-  FUN_10045368(param_1 + -168);
+  FUN_10045368((int)(param_1 + -168));
 }
 
 
@@ -10818,7 +11308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeae5c(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeae69(void)
 {
   int param_1 = (int )this;
-  FUN_10013e76(param_1 + -16);
+  FUN_10013e76((int)(param_1 + -16));
 }
 
 
@@ -10828,7 +11318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeae69(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeae73(void)
 {
   int param_1 = (int )this;
-  FUN_10013e76(param_1 + -140);
+  FUN_10013e76((int)(param_1 + -140));
 }
 
 
@@ -10838,7 +11328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeae73(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeae80(void)
 {
   int param_1 = (int )this;
-  FUN_10013e76(param_1 + -168);
+  FUN_10013e76((int)(param_1 + -168));
 }
 
 
@@ -10848,7 +11338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeae80(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeae8d(void)
 {
   int param_1 = (int )this;
-  FUN_1002ae7d(param_1 + -16);
+  FUN_1002ae7d((int)(param_1 + -16));
 }
 
 
@@ -10858,7 +11348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeae8d(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeae97(void)
 {
   int param_1 = (int )this;
-  FUN_1002ae7d(param_1 + -140);
+  FUN_1002ae7d((int)(param_1 + -140));
 }
 
 
@@ -10868,7 +11358,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeae97(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaea4(void)
 {
   int param_1 = (int )this;
-  FUN_1002ae7d(param_1 + -168);
+  FUN_1002ae7d((int)(param_1 + -168));
 }
 
 
@@ -10878,7 +11368,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaea4(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaeb1(void)
 {
   int param_1 = (int )this;
-  FUN_100680bb(param_1 + -16);
+  FUN_100680bb((int)(param_1 + -16));
 }
 
 
@@ -10888,7 +11378,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaeb1(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaebb(void)
 {
   int param_1 = (int )this;
-  FUN_100680bb(param_1 + -140);
+  FUN_100680bb((int)(param_1 + -140));
 }
 
 
@@ -10898,7 +11388,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaebb(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaec8(void)
 {
   int param_1 = (int )this;
-  FUN_100680bb(param_1 + -168);
+  FUN_100680bb((int)(param_1 + -168));
 }
 
 
@@ -10908,7 +11398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaec8(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaed5(void)
 {
   int param_1 = (int )this;
-  FUN_100641c3(param_1 + -16);
+  FUN_100641c3((int)(param_1 + -16));
 }
 
 
@@ -10918,7 +11408,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaed5(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaedf(void)
 {
   int param_1 = (int )this;
-  FUN_100641c3(param_1 + -140);
+  FUN_100641c3((int)(param_1 + -140));
 }
 
 
@@ -10928,7 +11418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaedf(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaeec(void)
 {
   int param_1 = (int )this;
-  FUN_100641c3(param_1 + -168);
+  FUN_100641c3((int)(param_1 + -168));
 }
 
 
@@ -10938,7 +11428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaeec(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaef9(void)
 {
   int param_1 = (int )this;
-  FUN_10024c3f(param_1 + -16);
+  FUN_10024c3f((int)(param_1 + -16));
 }
 
 
@@ -10948,7 +11438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaef9(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf03(void)
 {
   int param_1 = (int )this;
-  FUN_10024c3f(param_1 + -140);
+  FUN_10024c3f((int)(param_1 + -140));
 }
 
 
@@ -10958,7 +11448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf03(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf10(void)
 {
   int param_1 = (int )this;
-  FUN_10024c3f(param_1 + -168);
+  FUN_10024c3f((int)(param_1 + -168));
 }
 
 
@@ -10968,7 +11458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf10(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf1d(void)
 {
   int param_1 = (int )this;
-  FUN_1005c293(param_1 + -16);
+  FUN_1005c293((int)(param_1 + -16));
 }
 
 
@@ -10978,7 +11468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf1d(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf27(void)
 {
   int param_1 = (int )this;
-  FUN_1005c293(param_1 + -140);
+  FUN_1005c293((int)(param_1 + -140));
 }
 
 
@@ -10988,7 +11478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf27(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf34(void)
 {
   int param_1 = (int )this;
-  FUN_1005c293(param_1 + -168);
+  FUN_1005c293((int)(param_1 + -168));
 }
 
 
@@ -10998,7 +11488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf34(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf41(void)
 {
   int param_1 = (int )this;
-  FUN_100616df(param_1 + -16);
+  FUN_100616df((int)(param_1 + -16));
 }
 
 
@@ -11008,7 +11498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf41(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf4b(void)
 {
   int param_1 = (int )this;
-  FUN_100616df(param_1 + -140);
+  FUN_100616df((int)(param_1 + -140));
 }
 
 
@@ -11018,7 +11508,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf4b(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf58(void)
 {
   int param_1 = (int )this;
-  FUN_100616df(param_1 + -168);
+  FUN_100616df((int)(param_1 + -168));
 }
 
 
@@ -11028,7 +11518,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf58(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf65(void)
 {
   int param_1 = (int )this;
-  FUN_1001fb95(param_1 + -16);
+  FUN_1001fb95((int)(param_1 + -16));
 }
 
 
@@ -11038,7 +11528,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf65(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf6f(void)
 {
   int param_1 = (int )this;
-  FUN_1001fb95(param_1 + -140);
+  FUN_1001fb95((int)(param_1 + -140));
 }
 
 
@@ -11048,7 +11538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf6f(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf7c(void)
 {
   int param_1 = (int )this;
-  FUN_1001fb95(param_1 + -168);
+  FUN_1001fb95((int)(param_1 + -168));
 }
 
 
@@ -11058,7 +11548,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf7c(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf89(void)
 {
   int param_1 = (int )this;
-  FUN_1008b804(param_1 + -16);
+  FUN_1008b804((int)(param_1 + -16));
 }
 
 
@@ -11068,7 +11558,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf89(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeaf93(void)
 {
   int param_1 = (int )this;
-  FUN_1008b804(param_1 + -140);
+  FUN_1008b804((int)(param_1 + -140));
 }
 
 
@@ -11078,7 +11568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeaf93(void)
 void __thiscall Recovered_Bulk::m_FUN_10aeafa0(void)
 {
   int param_1 = (int )this;
-  FUN_1008b804(param_1 + -168);
+  FUN_1008b804((int)(param_1 + -168));
 }
 
 
@@ -11088,7 +11578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10aeafa0(void)
 void __thiscall Recovered_Bulk::m_FUN_10af7316(void)
 {
   int param_1 = (int )this;
-  FUN_1003cf79(param_1 + -16);
+  FUN_1003cf79((int)(param_1 + -16));
 }
 
 
@@ -11098,7 +11588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af7316(void)
 void __thiscall Recovered_Bulk::m_FUN_10af7320(void)
 {
   int param_1 = (int )this;
-  FUN_1003cf79(param_1 + -140);
+  FUN_1003cf79((int)(param_1 + -140));
 }
 
 
@@ -11108,7 +11598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af7320(void)
 void __thiscall Recovered_Bulk::m_FUN_10af732d(void)
 {
   int param_1 = (int )this;
-  FUN_1003cf79(param_1 + -168);
+  FUN_1003cf79((int)(param_1 + -168));
 }
 
 
@@ -11118,7 +11608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af732d(void)
 void __thiscall Recovered_Bulk::m_FUN_10af733a(void)
 {
   int param_1 = (int )this;
-  FUN_1007f3ce(param_1 + -16);
+  FUN_1007f3ce((int)(param_1 + -16));
 }
 
 
@@ -11128,7 +11618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af733a(void)
 void __thiscall Recovered_Bulk::m_FUN_10af7344(void)
 {
   int param_1 = (int )this;
-  FUN_1007f3ce(param_1 + -140);
+  FUN_1007f3ce((int)(param_1 + -140));
 }
 
 
@@ -11138,7 +11628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af7344(void)
 void __thiscall Recovered_Bulk::m_FUN_10af7351(void)
 {
   int param_1 = (int )this;
-  FUN_1007f3ce(param_1 + -168);
+  FUN_1007f3ce((int)(param_1 + -168));
 }
 
 
@@ -11148,7 +11638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af7351(void)
 void __thiscall Recovered_Bulk::m_FUN_10af735e(void)
 {
   int param_1 = (int )this;
-  FUN_1002e96f(param_1 + -16);
+  FUN_1002e96f((int)(param_1 + -16));
 }
 
 
@@ -11158,7 +11648,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af735e(void)
 void __thiscall Recovered_Bulk::m_FUN_10af7368(void)
 {
   int param_1 = (int )this;
-  FUN_1002e96f(param_1 + -140);
+  FUN_1002e96f((int)(param_1 + -140));
 }
 
 
@@ -11168,7 +11658,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af7368(void)
 void __thiscall Recovered_Bulk::m_FUN_10af7375(void)
 {
   int param_1 = (int )this;
-  FUN_1002e96f(param_1 + -168);
+  FUN_1002e96f((int)(param_1 + -168));
 }
 
 
@@ -11178,7 +11668,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af7375(void)
 void __thiscall Recovered_Bulk::m_FUN_10af7382(void)
 {
   int param_1 = (int )this;
-  FUN_1007f103(param_1 + -16);
+  FUN_1007f103((int)(param_1 + -16));
 }
 
 
@@ -11188,7 +11678,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af7382(void)
 void __thiscall Recovered_Bulk::m_FUN_10af738c(void)
 {
   int param_1 = (int )this;
-  FUN_1007f103(param_1 + -140);
+  FUN_1007f103((int)(param_1 + -140));
 }
 
 
@@ -11198,7 +11688,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af738c(void)
 void __thiscall Recovered_Bulk::m_FUN_10af7399(void)
 {
   int param_1 = (int )this;
-  FUN_1007f103(param_1 + -168);
+  FUN_1007f103((int)(param_1 + -168));
 }
 
 
@@ -11208,7 +11698,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af7399(void)
 void __thiscall Recovered_Bulk::m_FUN_10af73a6(void)
 {
   int param_1 = (int )this;
-  FUN_10063f57(param_1 + -16);
+  FUN_10063f57((int)(param_1 + -16));
 }
 
 
@@ -11218,7 +11708,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af73a6(void)
 void __thiscall Recovered_Bulk::m_FUN_10af73b0(void)
 {
   int param_1 = (int )this;
-  FUN_10063f57(param_1 + -140);
+  FUN_10063f57((int)(param_1 + -140));
 }
 
 
@@ -11228,7 +11718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af73b0(void)
 void __thiscall Recovered_Bulk::m_FUN_10af73bd(void)
 {
   int param_1 = (int )this;
-  FUN_10063f57(param_1 + -168);
+  FUN_10063f57((int)(param_1 + -168));
 }
 
 
@@ -11238,7 +11728,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af73bd(void)
 void __thiscall Recovered_Bulk::m_FUN_10af73ca(void)
 {
   int param_1 = (int )this;
-  FUN_10070072(param_1 + -16);
+  FUN_10070072((int)(param_1 + -16));
 }
 
 
@@ -11248,7 +11738,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af73ca(void)
 void __thiscall Recovered_Bulk::m_FUN_10af73d4(void)
 {
   int param_1 = (int )this;
-  FUN_10070072(param_1 + -140);
+  FUN_10070072((int)(param_1 + -140));
 }
 
 
@@ -11258,7 +11748,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af73d4(void)
 void __thiscall Recovered_Bulk::m_FUN_10af73e1(void)
 {
   int param_1 = (int )this;
-  FUN_10070072(param_1 + -168);
+  FUN_10070072((int)(param_1 + -168));
 }
 
 
@@ -11268,7 +11758,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af73e1(void)
 void __thiscall Recovered_Bulk::m_FUN_10af73ee(void)
 {
   int param_1 = (int )this;
-  FUN_100833e3(param_1 + -16);
+  FUN_100833e3((int)(param_1 + -16));
 }
 
 
@@ -11278,7 +11768,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af73ee(void)
 void __thiscall Recovered_Bulk::m_FUN_10af73f8(void)
 {
   int param_1 = (int )this;
-  FUN_100833e3(param_1 + -140);
+  FUN_100833e3((int)(param_1 + -140));
 }
 
 
@@ -11288,7 +11778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10af73f8(void)
 void __thiscall Recovered_Bulk::m_FUN_10af7405(void)
 {
   int param_1 = (int )this;
-  FUN_100833e3(param_1 + -168);
+  FUN_100833e3((int)(param_1 + -168));
 }
 
 
@@ -11308,7 +11798,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_10af7c10(void)
 void __thiscall Recovered_Bulk::m_FUN_10afffd1(void)
 {
   int param_1 = (int )this;
-  FUN_1006b9dc(param_1 + -16);
+  FUN_1006b9dc((int)(param_1 + -16));
 }
 
 
@@ -11318,7 +11808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10afffd1(void)
 void __thiscall Recovered_Bulk::m_FUN_10afffdb(void)
 {
   int param_1 = (int )this;
-  FUN_1006b9dc(param_1 + -140);
+  FUN_1006b9dc((int)(param_1 + -140));
 }
 
 
@@ -11328,7 +11818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10afffdb(void)
 void __thiscall Recovered_Bulk::m_FUN_10afffe8(void)
 {
   int param_1 = (int )this;
-  FUN_1006b9dc(param_1 + -168);
+  FUN_1006b9dc((int)(param_1 + -168));
 }
 
 
@@ -11338,7 +11828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10afffe8(void)
 void __thiscall Recovered_Bulk::m_FUN_10affff5(void)
 {
   int param_1 = (int )this;
-  FUN_1002bf44(param_1 + -16);
+  FUN_1002bf44((int)(param_1 + -16));
 }
 
 
@@ -11348,7 +11838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10affff5(void)
 void __thiscall Recovered_Bulk::m_FUN_10afffff(void)
 {
   int param_1 = (int )this;
-  FUN_1002bf44(param_1 + -140);
+  FUN_1002bf44((int)(param_1 + -140));
 }
 
 
@@ -11358,7 +11848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10afffff(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0000c(void)
 {
   int param_1 = (int )this;
-  FUN_1002bf44(param_1 + -168);
+  FUN_1002bf44((int)(param_1 + -168));
 }
 
 
@@ -11368,7 +11858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0000c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b00019(void)
 {
   int param_1 = (int )this;
-  FUN_10057e32(param_1 + -16);
+  FUN_10057e32((int)(param_1 + -16));
 }
 
 
@@ -11378,7 +11868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b00019(void)
 void __thiscall Recovered_Bulk::m_FUN_10b00023(void)
 {
   int param_1 = (int )this;
-  FUN_10057e32(param_1 + -140);
+  FUN_10057e32((int)(param_1 + -140));
 }
 
 
@@ -11388,7 +11878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b00023(void)
 void __thiscall Recovered_Bulk::m_FUN_10b00030(void)
 {
   int param_1 = (int )this;
-  FUN_10057e32(param_1 + -168);
+  FUN_10057e32((int)(param_1 + -168));
 }
 
 
@@ -11398,7 +11888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b00030(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0003d(void)
 {
   int param_1 = (int )this;
-  FUN_1001c46d(param_1 + -16);
+  FUN_1001c46d((int)(param_1 + -16));
 }
 
 
@@ -11408,7 +11898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0003d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b00047(void)
 {
   int param_1 = (int )this;
-  FUN_1001c46d(param_1 + -140);
+  FUN_1001c46d((int)(param_1 + -140));
 }
 
 
@@ -11418,7 +11908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b00047(void)
 void __thiscall Recovered_Bulk::m_FUN_10b00054(void)
 {
   int param_1 = (int )this;
-  FUN_1001c46d(param_1 + -168);
+  FUN_1001c46d((int)(param_1 + -168));
 }
 
 
@@ -11428,7 +11918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b00054(void)
 void __thiscall Recovered_Bulk::m_FUN_10b00061(void)
 {
   int param_1 = (int )this;
-  FUN_1000c64e(param_1 + -16);
+  FUN_1000c64e((int)(param_1 + -16));
 }
 
 
@@ -11438,7 +11928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b00061(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0006b(void)
 {
   int param_1 = (int )this;
-  FUN_1000c64e(param_1 + -140);
+  FUN_1000c64e((int)(param_1 + -140));
 }
 
 
@@ -11448,7 +11938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0006b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b00078(void)
 {
   int param_1 = (int )this;
-  FUN_1000c64e(param_1 + -168);
+  FUN_1000c64e((int)(param_1 + -168));
 }
 
 
@@ -11468,7 +11958,7 @@ void FUN_10b04ee0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b05192(void)
 {
   int param_1 = (int )this;
-  FUN_10046ff1(param_1 + -16);
+  FUN_10046ff1((int)(param_1 + -16));
 }
 
 
@@ -11478,7 +11968,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b05192(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0519c(void)
 {
   int param_1 = (int )this;
-  FUN_10046ff1(param_1 + -140);
+  FUN_10046ff1((int)(param_1 + -140));
 }
 
 
@@ -11488,7 +11978,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0519c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b051a9(void)
 {
   int param_1 = (int )this;
-  FUN_10046ff1(param_1 + -168);
+  FUN_10046ff1((int)(param_1 + -168));
 }
 
 
@@ -11498,7 +11988,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b051a9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b051b6(void)
 {
   int param_1 = (int )this;
-  FUN_1003436f(param_1 + -16);
+  FUN_1003436f((int)(param_1 + -16));
 }
 
 
@@ -11508,7 +11998,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b051b6(void)
 void __thiscall Recovered_Bulk::m_FUN_10b051c0(void)
 {
   int param_1 = (int )this;
-  FUN_1003436f(param_1 + -140);
+  FUN_1003436f((int)(param_1 + -140));
 }
 
 
@@ -11518,7 +12008,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b051c0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b051cd(void)
 {
   int param_1 = (int )this;
-  FUN_1003436f(param_1 + -168);
+  FUN_1003436f((int)(param_1 + -168));
 }
 
 
@@ -11528,7 +12018,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b051cd(void)
 void __thiscall Recovered_Bulk::m_FUN_10b051da(void)
 {
   int param_1 = (int )this;
-  FUN_1003e5f4(param_1 + -16);
+  FUN_1003e5f4((int)(param_1 + -16));
 }
 
 
@@ -11538,7 +12028,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b051da(void)
 void __thiscall Recovered_Bulk::m_FUN_10b051e4(void)
 {
   int param_1 = (int )this;
-  FUN_1003e5f4(param_1 + -140);
+  FUN_1003e5f4((int)(param_1 + -140));
 }
 
 
@@ -11548,7 +12038,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b051e4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b051f1(void)
 {
   int param_1 = (int )this;
-  FUN_1003e5f4(param_1 + -168);
+  FUN_1003e5f4((int)(param_1 + -168));
 }
 
 
@@ -11558,7 +12048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b051f1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b051fe(void)
 {
   int param_1 = (int )this;
-  FUN_10091169(param_1 + -16);
+  FUN_10091169((int)(param_1 + -16));
 }
 
 
@@ -11568,7 +12058,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b051fe(void)
 void __thiscall Recovered_Bulk::m_FUN_10b05208(void)
 {
   int param_1 = (int )this;
-  FUN_10091169(param_1 + -140);
+  FUN_10091169((int)(param_1 + -140));
 }
 
 
@@ -11578,7 +12068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b05208(void)
 void __thiscall Recovered_Bulk::m_FUN_10b05215(void)
 {
   int param_1 = (int )this;
-  FUN_10091169(param_1 + -168);
+  FUN_10091169((int)(param_1 + -168));
 }
 
 
@@ -11588,7 +12078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b05215(void)
 void __thiscall Recovered_Bulk::m_FUN_10b05222(void)
 {
   int param_1 = (int )this;
-  FUN_1006d692(param_1 + -16);
+  FUN_1006d692((int)(param_1 + -16));
 }
 
 
@@ -11598,7 +12088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b05222(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0522c(void)
 {
   int param_1 = (int )this;
-  FUN_1006d692(param_1 + -140);
+  FUN_1006d692((int)(param_1 + -140));
 }
 
 
@@ -11608,7 +12098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0522c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b05239(void)
 {
   int param_1 = (int )this;
-  FUN_1006d692(param_1 + -168);
+  FUN_1006d692((int)(param_1 + -168));
 }
 
 
@@ -11618,7 +12108,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b05239(void)
 void __thiscall Recovered_Bulk::m_FUN_10b05246(void)
 {
   int param_1 = (int )this;
-  FUN_1005c586(param_1 + -16);
+  FUN_1005c586((int)(param_1 + -16));
 }
 
 
@@ -11628,7 +12118,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b05246(void)
 void __thiscall Recovered_Bulk::m_FUN_10b05250(void)
 {
   int param_1 = (int )this;
-  FUN_1005c586(param_1 + -140);
+  FUN_1005c586((int)(param_1 + -140));
 }
 
 
@@ -11638,7 +12128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b05250(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0525d(void)
 {
   int param_1 = (int )this;
-  FUN_1005c586(param_1 + -168);
+  FUN_1005c586((int)(param_1 + -168));
 }
 
 
@@ -11668,7 +12158,7 @@ undefined1 FUN_10b08be0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0dfd1(void)
 {
   int param_1 = (int )this;
-  FUN_100922cb(param_1 + -16);
+  FUN_100922cb((int)(param_1 + -16));
 }
 
 
@@ -11678,7 +12168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0dfd1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0dfdb(void)
 {
   int param_1 = (int )this;
-  FUN_100922cb(param_1 + -140);
+  FUN_100922cb((int)(param_1 + -140));
 }
 
 
@@ -11688,7 +12178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0dfdb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0dfe8(void)
 {
   int param_1 = (int )this;
-  FUN_100922cb(param_1 + -168);
+  FUN_100922cb((int)(param_1 + -168));
 }
 
 
@@ -11698,7 +12188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0dfe8(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0dff5(void)
 {
   int param_1 = (int )this;
-  FUN_1002803d(param_1 + -16);
+  FUN_1002803d((int)(param_1 + -16));
 }
 
 
@@ -11708,7 +12198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0dff5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0dfff(void)
 {
   int param_1 = (int )this;
-  FUN_1002803d(param_1 + -140);
+  FUN_1002803d((int)(param_1 + -140));
 }
 
 
@@ -11718,7 +12208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0dfff(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e00c(void)
 {
   int param_1 = (int )this;
-  FUN_1002803d(param_1 + -168);
+  FUN_1002803d((int)(param_1 + -168));
 }
 
 
@@ -11728,7 +12218,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e00c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e019(void)
 {
   int param_1 = (int )this;
-  FUN_1007187d(param_1 + -16);
+  FUN_1007187d((int)(param_1 + -16));
 }
 
 
@@ -11738,7 +12228,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e019(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e023(void)
 {
   int param_1 = (int )this;
-  FUN_1007187d(param_1 + -140);
+  FUN_1007187d((int)(param_1 + -140));
 }
 
 
@@ -11748,7 +12238,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e023(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e030(void)
 {
   int param_1 = (int )this;
-  FUN_1007187d(param_1 + -168);
+  FUN_1007187d((int)(param_1 + -168));
 }
 
 
@@ -11758,7 +12248,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e030(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e03d(void)
 {
   int param_1 = (int )this;
-  FUN_1009106a(param_1 + -16);
+  FUN_1009106a((int)(param_1 + -16));
 }
 
 
@@ -11768,7 +12258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e03d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e047(void)
 {
   int param_1 = (int )this;
-  FUN_1009106a(param_1 + -140);
+  FUN_1009106a((int)(param_1 + -140));
 }
 
 
@@ -11778,7 +12268,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e047(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e054(void)
 {
   int param_1 = (int )this;
-  FUN_1009106a(param_1 + -168);
+  FUN_1009106a((int)(param_1 + -168));
 }
 
 
@@ -11788,7 +12278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e054(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e061(void)
 {
   int param_1 = (int )this;
-  FUN_1002a757(param_1 + -16);
+  FUN_1002a757((int)(param_1 + -16));
 }
 
 
@@ -11798,7 +12288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e061(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e06b(void)
 {
   int param_1 = (int )this;
-  FUN_1002a757(param_1 + -140);
+  FUN_1002a757((int)(param_1 + -140));
 }
 
 
@@ -11808,7 +12298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e06b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e078(void)
 {
   int param_1 = (int )this;
-  FUN_1002a757(param_1 + -168);
+  FUN_1002a757((int)(param_1 + -168));
 }
 
 
@@ -11818,7 +12308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e078(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e085(void)
 {
   int param_1 = (int )this;
-  FUN_1007bd28(param_1 + -16);
+  FUN_1007bd28((int)(param_1 + -16));
 }
 
 
@@ -11828,7 +12318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e085(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e08f(void)
 {
   int param_1 = (int )this;
-  FUN_1007bd28(param_1 + -140);
+  FUN_1007bd28((int)(param_1 + -140));
 }
 
 
@@ -11838,7 +12328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e08f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e09c(void)
 {
   int param_1 = (int )this;
-  FUN_1007bd28(param_1 + -168);
+  FUN_1007bd28((int)(param_1 + -168));
 }
 
 
@@ -11848,7 +12338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e09c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e0a9(void)
 {
   int param_1 = (int )this;
-  FUN_100110a9(param_1 + -16);
+  FUN_100110a9((int)(param_1 + -16));
 }
 
 
@@ -11858,7 +12348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e0a9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e0b3(void)
 {
   int param_1 = (int )this;
-  FUN_100110a9(param_1 + -140);
+  FUN_100110a9((int)(param_1 + -140));
 }
 
 
@@ -11868,7 +12358,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e0b3(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e0c0(void)
 {
   int param_1 = (int )this;
-  FUN_100110a9(param_1 + -168);
+  FUN_100110a9((int)(param_1 + -168));
 }
 
 
@@ -11878,7 +12368,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e0c0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e0cd(void)
 {
   int param_1 = (int )this;
-  FUN_100141cd(param_1 + -16);
+  FUN_100141cd((int)(param_1 + -16));
 }
 
 
@@ -11888,7 +12378,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e0cd(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e0d7(void)
 {
   int param_1 = (int )this;
-  FUN_100141cd(param_1 + -140);
+  FUN_100141cd((int)(param_1 + -140));
 }
 
 
@@ -11898,7 +12388,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e0d7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e0e4(void)
 {
   int param_1 = (int )this;
-  FUN_100141cd(param_1 + -168);
+  FUN_100141cd((int)(param_1 + -168));
 }
 
 
@@ -11908,7 +12398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e0e4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e0f1(void)
 {
   int param_1 = (int )this;
-  FUN_1005aa74(param_1 + -16);
+  FUN_1005aa74((int)(param_1 + -16));
 }
 
 
@@ -11918,7 +12408,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e0f1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e0fb(void)
 {
   int param_1 = (int )this;
-  FUN_1005aa74(param_1 + -140);
+  FUN_1005aa74((int)(param_1 + -140));
 }
 
 
@@ -11928,7 +12418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e0fb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e108(void)
 {
   int param_1 = (int )this;
-  FUN_1005aa74(param_1 + -168);
+  FUN_1005aa74((int)(param_1 + -168));
 }
 
 
@@ -11938,7 +12428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e108(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e115(void)
 {
   int param_1 = (int )this;
-  FUN_1008a751(param_1 + -16);
+  FUN_1008a751((int)(param_1 + -16));
 }
 
 
@@ -11948,7 +12438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e115(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e11f(void)
 {
   int param_1 = (int )this;
-  FUN_1008a751(param_1 + -140);
+  FUN_1008a751((int)(param_1 + -140));
 }
 
 
@@ -11958,7 +12448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e11f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e12c(void)
 {
   int param_1 = (int )this;
-  FUN_1008a751(param_1 + -168);
+  FUN_1008a751((int)(param_1 + -168));
 }
 
 
@@ -11968,7 +12458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e12c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e139(void)
 {
   int param_1 = (int )this;
-  FUN_100059de(param_1 + -16);
+  FUN_100059de((int)(param_1 + -16));
 }
 
 
@@ -11978,7 +12468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e139(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e143(void)
 {
   int param_1 = (int )this;
-  FUN_100059de(param_1 + -140);
+  FUN_100059de((int)(param_1 + -140));
 }
 
 
@@ -11988,7 +12478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e143(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e150(void)
 {
   int param_1 = (int )this;
-  FUN_100059de(param_1 + -168);
+  FUN_100059de((int)(param_1 + -168));
 }
 
 
@@ -11998,7 +12488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e150(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e15d(void)
 {
   int param_1 = (int )this;
-  FUN_10016e37(param_1 + -16);
+  FUN_10016e37((int)(param_1 + -16));
 }
 
 
@@ -12008,7 +12498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e15d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e167(void)
 {
   int param_1 = (int )this;
-  FUN_10016e37(param_1 + -140);
+  FUN_10016e37((int)(param_1 + -140));
 }
 
 
@@ -12018,7 +12508,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e167(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e174(void)
 {
   int param_1 = (int )this;
-  FUN_10016e37(param_1 + -168);
+  FUN_10016e37((int)(param_1 + -168));
 }
 
 
@@ -12028,7 +12518,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e174(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e181(void)
 {
   int param_1 = (int )this;
-  FUN_10094170(param_1 + -16);
+  FUN_10094170((int)(param_1 + -16));
 }
 
 
@@ -12038,7 +12528,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e181(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e18b(void)
 {
   int param_1 = (int )this;
-  FUN_10094170(param_1 + -140);
+  FUN_10094170((int)(param_1 + -140));
 }
 
 
@@ -12048,7 +12538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e18b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e198(void)
 {
   int param_1 = (int )this;
-  FUN_10094170(param_1 + -168);
+  FUN_10094170((int)(param_1 + -168));
 }
 
 
@@ -12058,7 +12548,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e198(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e1a5(void)
 {
   int param_1 = (int )this;
-  FUN_1004125e(param_1 + -16);
+  FUN_1004125e((int)(param_1 + -16));
 }
 
 
@@ -12068,7 +12558,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e1a5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e1af(void)
 {
   int param_1 = (int )this;
-  FUN_1004125e(param_1 + -140);
+  FUN_1004125e((int)(param_1 + -140));
 }
 
 
@@ -12078,7 +12568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e1af(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e1bc(void)
 {
   int param_1 = (int )this;
-  FUN_1004125e(param_1 + -168);
+  FUN_1004125e((int)(param_1 + -168));
 }
 
 
@@ -12088,7 +12578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e1bc(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e1c9(void)
 {
   int param_1 = (int )this;
-  FUN_100123dc(param_1 + -16);
+  FUN_100123dc((int)(param_1 + -16));
 }
 
 
@@ -12098,7 +12588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e1c9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e1d3(void)
 {
   int param_1 = (int )this;
-  FUN_100123dc(param_1 + -140);
+  FUN_100123dc((int)(param_1 + -140));
 }
 
 
@@ -12108,7 +12598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e1d3(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e1e0(void)
 {
   int param_1 = (int )this;
-  FUN_100123dc(param_1 + -168);
+  FUN_100123dc((int)(param_1 + -168));
 }
 
 
@@ -12118,7 +12608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e1e0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e1ed(void)
 {
   int param_1 = (int )this;
-  FUN_10095a70(param_1 + -16);
+  FUN_10095a70((int)(param_1 + -16));
 }
 
 
@@ -12128,7 +12618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e1ed(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e1f7(void)
 {
   int param_1 = (int )this;
-  FUN_10095a70(param_1 + -140);
+  FUN_10095a70((int)(param_1 + -140));
 }
 
 
@@ -12138,7 +12628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e1f7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e204(void)
 {
   int param_1 = (int )this;
-  FUN_10095a70(param_1 + -168);
+  FUN_10095a70((int)(param_1 + -168));
 }
 
 
@@ -12148,7 +12638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e204(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e211(void)
 {
   int param_1 = (int )this;
-  FUN_1000bf78(param_1 + -16);
+  FUN_1000bf78((int)(param_1 + -16));
 }
 
 
@@ -12158,7 +12648,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e211(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e21b(void)
 {
   int param_1 = (int )this;
-  FUN_1000bf78(param_1 + -140);
+  FUN_1000bf78((int)(param_1 + -140));
 }
 
 
@@ -12168,7 +12658,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e21b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e228(void)
 {
   int param_1 = (int )this;
-  FUN_1000bf78(param_1 + -168);
+  FUN_1000bf78((int)(param_1 + -168));
 }
 
 
@@ -12178,7 +12668,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e228(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e235(void)
 {
   int param_1 = (int )this;
-  FUN_10074b22(param_1 + -16);
+  FUN_10074b22((int)(param_1 + -16));
 }
 
 
@@ -12188,7 +12678,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e235(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e23f(void)
 {
   int param_1 = (int )this;
-  FUN_10074b22(param_1 + -140);
+  FUN_10074b22((int)(param_1 + -140));
 }
 
 
@@ -12198,7 +12688,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e23f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e24c(void)
 {
   int param_1 = (int )this;
-  FUN_10074b22(param_1 + -168);
+  FUN_10074b22((int)(param_1 + -168));
 }
 
 
@@ -12208,7 +12698,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e24c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e259(void)
 {
   int param_1 = (int )this;
-  FUN_1007ed9d(param_1 + -16);
+  FUN_1007ed9d((int)(param_1 + -16));
 }
 
 
@@ -12218,7 +12708,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e259(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e263(void)
 {
   int param_1 = (int )this;
-  FUN_1007ed9d(param_1 + -140);
+  FUN_1007ed9d((int)(param_1 + -140));
 }
 
 
@@ -12228,7 +12718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b0e263(void)
 void __thiscall Recovered_Bulk::m_FUN_10b0e270(void)
 {
   int param_1 = (int )this;
-  FUN_1007ed9d(param_1 + -168);
+  FUN_1007ed9d((int)(param_1 + -168));
 }
 
 
@@ -12268,7 +12758,7 @@ undefined1 FUN_10b18f70(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c133(void)
 {
   int param_1 = (int )this;
-  FUN_1007d326(param_1 + -16);
+  FUN_1007d326((int)(param_1 + -16));
 }
 
 
@@ -12278,7 +12768,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c133(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c13d(void)
 {
   int param_1 = (int )this;
-  FUN_1007d326(param_1 + -140);
+  FUN_1007d326((int)(param_1 + -140));
 }
 
 
@@ -12288,7 +12778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c13d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c14a(void)
 {
   int param_1 = (int )this;
-  FUN_1007d326(param_1 + -168);
+  FUN_1007d326((int)(param_1 + -168));
 }
 
 
@@ -12298,7 +12788,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c14a(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c157(void)
 {
   int param_1 = (int )this;
-  FUN_10059f98(param_1 + -8);
+  FUN_10059f98((int)(param_1 + -8));
 }
 
 
@@ -12308,7 +12798,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c157(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c161(void)
 {
   int param_1 = (int )this;
-  FUN_1003ae1d(param_1 + -16);
+  FUN_1003ae1d((int)(param_1 + -16));
 }
 
 
@@ -12318,7 +12808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c161(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c16b(void)
 {
   int param_1 = (int )this;
-  FUN_1003ae1d(param_1 + -140);
+  FUN_1003ae1d((int)(param_1 + -140));
 }
 
 
@@ -12328,7 +12818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c16b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c178(void)
 {
   int param_1 = (int )this;
-  FUN_1003ae1d(param_1 + -168);
+  FUN_1003ae1d((int)(param_1 + -168));
 }
 
 
@@ -12338,7 +12828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c178(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c185(void)
 {
   int param_1 = (int )this;
-  FUN_1000b839(param_1 + -16);
+  FUN_1000b839((int)(param_1 + -16));
 }
 
 
@@ -12348,7 +12838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c185(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c18f(void)
 {
   int param_1 = (int )this;
-  FUN_1000b839(param_1 + -140);
+  FUN_1000b839((int)(param_1 + -140));
 }
 
 
@@ -12358,7 +12848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c18f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c19c(void)
 {
   int param_1 = (int )this;
-  FUN_1000b839(param_1 + -168);
+  FUN_1000b839((int)(param_1 + -168));
 }
 
 
@@ -12368,7 +12858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c19c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c1a9(void)
 {
   int param_1 = (int )this;
-  FUN_1003549a(param_1 + -16);
+  FUN_1003549a((int)(param_1 + -16));
 }
 
 
@@ -12378,7 +12868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c1a9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c1b3(void)
 {
   int param_1 = (int )this;
-  FUN_1003549a(param_1 + -140);
+  FUN_1003549a((int)(param_1 + -140));
 }
 
 
@@ -12388,7 +12878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c1b3(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c1c0(void)
 {
   int param_1 = (int )this;
-  FUN_1003549a(param_1 + -168);
+  FUN_1003549a((int)(param_1 + -168));
 }
 
 
@@ -12398,7 +12888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c1c0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c1cd(void)
 {
   int param_1 = (int )this;
-  FUN_10057450(param_1 + -16);
+  FUN_10057450((int)(param_1 + -16));
 }
 
 
@@ -12408,7 +12898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c1cd(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c1d7(void)
 {
   int param_1 = (int )this;
-  FUN_10057450(param_1 + -140);
+  FUN_10057450((int)(param_1 + -140));
 }
 
 
@@ -12418,7 +12908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c1d7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c1e4(void)
 {
   int param_1 = (int )this;
-  FUN_10057450(param_1 + -168);
+  FUN_10057450((int)(param_1 + -168));
 }
 
 
@@ -12428,7 +12918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c1e4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c1f1(void)
 {
   int param_1 = (int )this;
-  FUN_10049c10(param_1 + -16);
+  FUN_10049c10((int)(param_1 + -16));
 }
 
 
@@ -12438,7 +12928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c1f1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c1fb(void)
 {
   int param_1 = (int )this;
-  FUN_10049c10(param_1 + -140);
+  FUN_10049c10((int)(param_1 + -140));
 }
 
 
@@ -12448,7 +12938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c1fb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c208(void)
 {
   int param_1 = (int )this;
-  FUN_10049c10(param_1 + -168);
+  FUN_10049c10((int)(param_1 + -168));
 }
 
 
@@ -12458,7 +12948,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c208(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c215(void)
 {
   int param_1 = (int )this;
-  FUN_10065dfc(param_1 + -16);
+  FUN_10065dfc((int)(param_1 + -16));
 }
 
 
@@ -12468,7 +12958,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c215(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c21f(void)
 {
   int param_1 = (int )this;
-  FUN_10065dfc(param_1 + -140);
+  FUN_10065dfc((int)(param_1 + -140));
 }
 
 
@@ -12478,7 +12968,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c21f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c22c(void)
 {
   int param_1 = (int )this;
-  FUN_10065dfc(param_1 + -168);
+  FUN_10065dfc((int)(param_1 + -168));
 }
 
 
@@ -12488,7 +12978,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c22c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b1c239(void)
 {
   int param_1 = (int )this;
-  FUN_10053332(param_1 + -8);
+  FUN_10053332((int)(param_1 + -8));
 }
 
 
@@ -12498,7 +12988,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b1c239(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24e91(void)
 {
   int param_1 = (int )this;
-  FUN_10044b84(param_1 + -16);
+  FUN_10044b84((int)(param_1 + -16));
 }
 
 
@@ -12508,7 +12998,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24e91(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24e9b(void)
 {
   int param_1 = (int )this;
-  FUN_10044b84(param_1 + -140);
+  FUN_10044b84((int)(param_1 + -140));
 }
 
 
@@ -12518,7 +13008,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24e9b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24ea8(void)
 {
   int param_1 = (int )this;
-  FUN_10044b84(param_1 + -168);
+  FUN_10044b84((int)(param_1 + -168));
 }
 
 
@@ -12528,7 +13018,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24ea8(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24eb5(void)
 {
   int param_1 = (int )this;
-  FUN_100071b7(param_1 + -16);
+  FUN_100071b7((int)(param_1 + -16));
 }
 
 
@@ -12538,7 +13028,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24eb5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24ebf(void)
 {
   int param_1 = (int )this;
-  FUN_100071b7(param_1 + -140);
+  FUN_100071b7((int)(param_1 + -140));
 }
 
 
@@ -12548,7 +13038,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24ebf(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24ecc(void)
 {
   int param_1 = (int )this;
-  FUN_100071b7(param_1 + -168);
+  FUN_100071b7((int)(param_1 + -168));
 }
 
 
@@ -12558,7 +13048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24ecc(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24ed9(void)
 {
   int param_1 = (int )this;
-  FUN_10054129(param_1 + -16);
+  FUN_10054129((int)(param_1 + -16));
 }
 
 
@@ -12568,7 +13058,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24ed9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24ee3(void)
 {
   int param_1 = (int )this;
-  FUN_10054129(param_1 + -140);
+  FUN_10054129((int)(param_1 + -140));
 }
 
 
@@ -12578,7 +13068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24ee3(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24ef0(void)
 {
   int param_1 = (int )this;
-  FUN_10054129(param_1 + -168);
+  FUN_10054129((int)(param_1 + -168));
 }
 
 
@@ -12588,7 +13078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24ef0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24efd(void)
 {
   int param_1 = (int )this;
-  FUN_1005cd65(param_1 + -16);
+  FUN_1005cd65((int)(param_1 + -16));
 }
 
 
@@ -12598,7 +13088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24efd(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f07(void)
 {
   int param_1 = (int )this;
-  FUN_1005cd65(param_1 + -140);
+  FUN_1005cd65((int)(param_1 + -140));
 }
 
 
@@ -12608,7 +13098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f07(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f14(void)
 {
   int param_1 = (int )this;
-  FUN_1005cd65(param_1 + -168);
+  FUN_1005cd65((int)(param_1 + -168));
 }
 
 
@@ -12618,7 +13108,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f14(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f21(void)
 {
   int param_1 = (int )this;
-  FUN_10044ed6(param_1 + -16);
+  FUN_10044ed6((int)(param_1 + -16));
 }
 
 
@@ -12628,7 +13118,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f21(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f2b(void)
 {
   int param_1 = (int )this;
-  FUN_10044ed6(param_1 + -140);
+  FUN_10044ed6((int)(param_1 + -140));
 }
 
 
@@ -12638,7 +13128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f2b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f38(void)
 {
   int param_1 = (int )this;
-  FUN_10044ed6(param_1 + -168);
+  FUN_10044ed6((int)(param_1 + -168));
 }
 
 
@@ -12648,7 +13138,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f38(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f45(void)
 {
   int param_1 = (int )this;
-  FUN_10004156(param_1 + -16);
+  FUN_10004156((int)(param_1 + -16));
 }
 
 
@@ -12658,7 +13148,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f45(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f4f(void)
 {
   int param_1 = (int )this;
-  FUN_10004156(param_1 + -140);
+  FUN_10004156((int)(param_1 + -140));
 }
 
 
@@ -12668,7 +13158,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f4f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f5c(void)
 {
   int param_1 = (int )this;
-  FUN_10004156(param_1 + -168);
+  FUN_10004156((int)(param_1 + -168));
 }
 
 
@@ -12678,7 +13168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f5c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f69(void)
 {
   int param_1 = (int )this;
-  FUN_1005e5a7(param_1 + -16);
+  FUN_1005e5a7((int)(param_1 + -16));
 }
 
 
@@ -12688,7 +13178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f69(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f73(void)
 {
   int param_1 = (int )this;
-  FUN_1005e5a7(param_1 + -140);
+  FUN_1005e5a7((int)(param_1 + -140));
 }
 
 
@@ -12698,7 +13188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f73(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f80(void)
 {
   int param_1 = (int )this;
-  FUN_1005e5a7(param_1 + -168);
+  FUN_1005e5a7((int)(param_1 + -168));
 }
 
 
@@ -12708,7 +13198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f80(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f8d(void)
 {
   int param_1 = (int )this;
-  FUN_1003dc03(param_1 + -16);
+  FUN_1003dc03((int)(param_1 + -16));
 }
 
 
@@ -12718,7 +13208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f8d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24f97(void)
 {
   int param_1 = (int )this;
-  FUN_1003dc03(param_1 + -140);
+  FUN_1003dc03((int)(param_1 + -140));
 }
 
 
@@ -12728,7 +13218,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24f97(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24fa4(void)
 {
   int param_1 = (int )this;
-  FUN_1003dc03(param_1 + -168);
+  FUN_1003dc03((int)(param_1 + -168));
 }
 
 
@@ -12738,7 +13228,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24fa4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24fb1(void)
 {
   int param_1 = (int )this;
-  FUN_1000664f(param_1 + -16);
+  FUN_1000664f((int)(param_1 + -16));
 }
 
 
@@ -12748,7 +13238,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24fb1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24fbb(void)
 {
   int param_1 = (int )this;
-  FUN_1000664f(param_1 + -140);
+  FUN_1000664f((int)(param_1 + -140));
 }
 
 
@@ -12758,7 +13248,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24fbb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24fc8(void)
 {
   int param_1 = (int )this;
-  FUN_1000664f(param_1 + -168);
+  FUN_1000664f((int)(param_1 + -168));
 }
 
 
@@ -12768,7 +13258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24fc8(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24fd5(void)
 {
   int param_1 = (int )this;
-  FUN_10064ef7(param_1 + -16);
+  FUN_10064ef7((int)(param_1 + -16));
 }
 
 
@@ -12778,7 +13268,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24fd5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24fdf(void)
 {
   int param_1 = (int )this;
-  FUN_10064ef7(param_1 + -140);
+  FUN_10064ef7((int)(param_1 + -140));
 }
 
 
@@ -12788,7 +13278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24fdf(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24fec(void)
 {
   int param_1 = (int )this;
-  FUN_10064ef7(param_1 + -168);
+  FUN_10064ef7((int)(param_1 + -168));
 }
 
 
@@ -12798,7 +13288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24fec(void)
 void __thiscall Recovered_Bulk::m_FUN_10b24ff9(void)
 {
   int param_1 = (int )this;
-  FUN_10050169(param_1 + -16);
+  FUN_10050169((int)(param_1 + -16));
 }
 
 
@@ -12808,7 +13298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b24ff9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b25003(void)
 {
   int param_1 = (int )this;
-  FUN_10050169(param_1 + -140);
+  FUN_10050169((int)(param_1 + -140));
 }
 
 
@@ -12818,7 +13308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b25003(void)
 void __thiscall Recovered_Bulk::m_FUN_10b25010(void)
 {
   int param_1 = (int )this;
-  FUN_10050169(param_1 + -168);
+  FUN_10050169((int)(param_1 + -168));
 }
 
 
@@ -12828,7 +13318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b25010(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2501d(void)
 {
   int param_1 = (int )this;
-  FUN_10084b3f(param_1 + -16);
+  FUN_10084b3f((int)(param_1 + -16));
 }
 
 
@@ -12838,7 +13328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2501d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b25027(void)
 {
   int param_1 = (int )this;
-  FUN_10084b3f(param_1 + -140);
+  FUN_10084b3f((int)(param_1 + -140));
 }
 
 
@@ -12848,7 +13338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b25027(void)
 void __thiscall Recovered_Bulk::m_FUN_10b25034(void)
 {
   int param_1 = (int )this;
-  FUN_10084b3f(param_1 + -168);
+  FUN_10084b3f((int)(param_1 + -168));
 }
 
 
@@ -12858,7 +13348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b25034(void)
 void __thiscall Recovered_Bulk::m_FUN_10b25041(void)
 {
   int param_1 = (int )this;
-  FUN_1002110c(param_1 + -16);
+  FUN_1002110c((int)(param_1 + -16));
 }
 
 
@@ -12868,7 +13358,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b25041(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2504b(void)
 {
   int param_1 = (int )this;
-  FUN_1002110c(param_1 + -140);
+  FUN_1002110c((int)(param_1 + -140));
 }
 
 
@@ -12878,7 +13368,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2504b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b25058(void)
 {
   int param_1 = (int )this;
-  FUN_1002110c(param_1 + -168);
+  FUN_1002110c((int)(param_1 + -168));
 }
 
 
@@ -12888,7 +13378,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b25058(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f1f1(void)
 {
   int param_1 = (int )this;
-  FUN_100396ee(param_1 + -16);
+  FUN_100396ee((int)(param_1 + -16));
 }
 
 
@@ -12898,7 +13388,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f1f1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f1fb(void)
 {
   int param_1 = (int )this;
-  FUN_100396ee(param_1 + -140);
+  FUN_100396ee((int)(param_1 + -140));
 }
 
 
@@ -12908,7 +13398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f1fb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f208(void)
 {
   int param_1 = (int )this;
-  FUN_100396ee(param_1 + -168);
+  FUN_100396ee((int)(param_1 + -168));
 }
 
 
@@ -12918,7 +13408,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f208(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f215(void)
 {
   int param_1 = (int )this;
-  FUN_1007585b(param_1 + -16);
+  FUN_1007585b((int)(param_1 + -16));
 }
 
 
@@ -12928,7 +13418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f215(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f21f(void)
 {
   int param_1 = (int )this;
-  FUN_1007585b(param_1 + -140);
+  FUN_1007585b((int)(param_1 + -140));
 }
 
 
@@ -12938,7 +13428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f21f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f22c(void)
 {
   int param_1 = (int )this;
-  FUN_1007585b(param_1 + -168);
+  FUN_1007585b((int)(param_1 + -168));
 }
 
 
@@ -12948,7 +13438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f22c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f239(void)
 {
   int param_1 = (int )this;
-  FUN_1004dca2(param_1 + -16);
+  FUN_1004dca2((int)(param_1 + -16));
 }
 
 
@@ -12958,7 +13448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f239(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f243(void)
 {
   int param_1 = (int )this;
-  FUN_1004dca2(param_1 + -140);
+  FUN_1004dca2((int)(param_1 + -140));
 }
 
 
@@ -12968,7 +13458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f243(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f250(void)
 {
   int param_1 = (int )this;
-  FUN_1004dca2(param_1 + -168);
+  FUN_1004dca2((int)(param_1 + -168));
 }
 
 
@@ -12978,7 +13468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f250(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f25d(void)
 {
   int param_1 = (int )this;
-  FUN_1005bf96(param_1 + -16);
+  FUN_1005bf96((int)(param_1 + -16));
 }
 
 
@@ -12988,7 +13478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f25d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f267(void)
 {
   int param_1 = (int )this;
-  FUN_1005bf96(param_1 + -140);
+  FUN_1005bf96((int)(param_1 + -140));
 }
 
 
@@ -12998,7 +13488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f267(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f274(void)
 {
   int param_1 = (int )this;
-  FUN_1005bf96(param_1 + -168);
+  FUN_1005bf96((int)(param_1 + -168));
 }
 
 
@@ -13008,7 +13498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f274(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f281(void)
 {
   int param_1 = (int )this;
-  FUN_1006b72f(param_1 + -16);
+  FUN_1006b72f((int)(param_1 + -16));
 }
 
 
@@ -13018,7 +13508,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f281(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f28b(void)
 {
   int param_1 = (int )this;
-  FUN_1006b72f(param_1 + -140);
+  FUN_1006b72f((int)(param_1 + -140));
 }
 
 
@@ -13028,7 +13518,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f28b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b2f298(void)
 {
   int param_1 = (int )this;
-  FUN_1006b72f(param_1 + -168);
+  FUN_1006b72f((int)(param_1 + -168));
 }
 
 
@@ -13038,7 +13528,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b2f298(void)
 void __thiscall Recovered_Bulk::m_FUN_10b354b3(void)
 {
   int param_1 = (int )this;
-  FUN_1002ab4e(param_1 + -16);
+  FUN_1002ab4e((int)(param_1 + -16));
 }
 
 
@@ -13048,7 +13538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b354b3(void)
 void __thiscall Recovered_Bulk::m_FUN_10b354bd(void)
 {
   int param_1 = (int )this;
-  FUN_1002ab4e(param_1 + -140);
+  FUN_1002ab4e((int)(param_1 + -140));
 }
 
 
@@ -13058,7 +13548,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b354bd(void)
 void __thiscall Recovered_Bulk::m_FUN_10b354ca(void)
 {
   int param_1 = (int )this;
-  FUN_1002ab4e(param_1 + -168);
+  FUN_1002ab4e((int)(param_1 + -168));
 }
 
 
@@ -13068,7 +13558,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b354ca(void)
 void __thiscall Recovered_Bulk::m_FUN_10b354d7(void)
 {
   int param_1 = (int )this;
-  FUN_1002cf70(param_1 + -16);
+  FUN_1002cf70((int)(param_1 + -16));
 }
 
 
@@ -13078,7 +13568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b354d7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b354e1(void)
 {
   int param_1 = (int )this;
-  FUN_1002cf70(param_1 + -140);
+  FUN_1002cf70((int)(param_1 + -140));
 }
 
 
@@ -13088,7 +13578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b354e1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b354ee(void)
 {
   int param_1 = (int )this;
-  FUN_1002cf70(param_1 + -168);
+  FUN_1002cf70((int)(param_1 + -168));
 }
 
 
@@ -13098,7 +13588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b354ee(void)
 void __thiscall Recovered_Bulk::m_FUN_10b354fb(void)
 {
   int param_1 = (int )this;
-  FUN_10069f88(param_1 + -1132);
+  FUN_10069f88((int)(param_1 + -1132));
 }
 
 
@@ -13108,7 +13598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b354fb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35508(void)
 {
   int param_1 = (int )this;
-  FUN_10069f88(param_1 + -96);
+  FUN_10069f88((int)(param_1 + -96));
 }
 
 
@@ -13118,7 +13608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35508(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35512(void)
 {
   int param_1 = (int )this;
-  FUN_1007a608(param_1 + -1132);
+  FUN_1007a608((int)(param_1 + -1132));
 }
 
 
@@ -13128,7 +13618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35512(void)
 void __thiscall Recovered_Bulk::m_FUN_10b3551f(void)
 {
   int param_1 = (int )this;
-  FUN_1007a608(param_1 + -96);
+  FUN_1007a608((int)(param_1 + -96));
 }
 
 
@@ -13138,7 +13628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b3551f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35529(void)
 {
   int param_1 = (int )this;
-  FUN_10097320(param_1 + -16);
+  FUN_10097320((int)(param_1 + -16));
 }
 
 
@@ -13148,7 +13638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35529(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35533(void)
 {
   int param_1 = (int )this;
-  FUN_10097320(param_1 + -140);
+  FUN_10097320((int)(param_1 + -140));
 }
 
 
@@ -13158,7 +13648,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35533(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35540(void)
 {
   int param_1 = (int )this;
-  FUN_10097320(param_1 + -168);
+  FUN_10097320((int)(param_1 + -168));
 }
 
 
@@ -13168,7 +13658,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35540(void)
 void __thiscall Recovered_Bulk::m_FUN_10b3554d(void)
 {
   int param_1 = (int )this;
-  FUN_100908fe(param_1 + -16);
+  FUN_100908fe((int)(param_1 + -16));
 }
 
 
@@ -13178,7 +13668,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b3554d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35557(void)
 {
   int param_1 = (int )this;
-  FUN_100908fe(param_1 + -140);
+  FUN_100908fe((int)(param_1 + -140));
 }
 
 
@@ -13188,7 +13678,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35557(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35564(void)
 {
   int param_1 = (int )this;
-  FUN_100908fe(param_1 + -168);
+  FUN_100908fe((int)(param_1 + -168));
 }
 
 
@@ -13198,7 +13688,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35564(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35571(void)
 {
   int param_1 = (int )this;
-  FUN_10072700(param_1 + -16);
+  FUN_10072700((int)(param_1 + -16));
 }
 
 
@@ -13208,7 +13698,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35571(void)
 void __thiscall Recovered_Bulk::m_FUN_10b3557b(void)
 {
   int param_1 = (int )this;
-  FUN_10072700(param_1 + -140);
+  FUN_10072700((int)(param_1 + -140));
 }
 
 
@@ -13218,7 +13708,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b3557b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35588(void)
 {
   int param_1 = (int )this;
-  FUN_10072700(param_1 + -168);
+  FUN_10072700((int)(param_1 + -168));
 }
 
 
@@ -13228,7 +13718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35588(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35595(void)
 {
   int param_1 = (int )this;
-  FUN_10095ea8(param_1 + -16);
+  FUN_10095ea8((int)(param_1 + -16));
 }
 
 
@@ -13238,7 +13728,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35595(void)
 void __thiscall Recovered_Bulk::m_FUN_10b3559f(void)
 {
   int param_1 = (int )this;
-  FUN_10095ea8(param_1 + -140);
+  FUN_10095ea8((int)(param_1 + -140));
 }
 
 
@@ -13248,7 +13738,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b3559f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b355ac(void)
 {
   int param_1 = (int )this;
-  FUN_10095ea8(param_1 + -168);
+  FUN_10095ea8((int)(param_1 + -168));
 }
 
 
@@ -13258,7 +13748,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b355ac(void)
 void __thiscall Recovered_Bulk::m_FUN_10b355b9(void)
 {
   int param_1 = (int )this;
-  FUN_10017f08(param_1 + -16);
+  FUN_10017f08((int)(param_1 + -16));
 }
 
 
@@ -13268,7 +13758,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b355b9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b355c3(void)
 {
   int param_1 = (int )this;
-  FUN_10017f08(param_1 + -140);
+  FUN_10017f08((int)(param_1 + -140));
 }
 
 
@@ -13278,7 +13768,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b355c3(void)
 void __thiscall Recovered_Bulk::m_FUN_10b355d0(void)
 {
   int param_1 = (int )this;
-  FUN_10017f08(param_1 + -168);
+  FUN_10017f08((int)(param_1 + -168));
 }
 
 
@@ -13288,7 +13778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b355d0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b355dd(void)
 {
   int param_1 = (int )this;
-  FUN_1005c28e(param_1 + -16);
+  FUN_1005c28e((int)(param_1 + -16));
 }
 
 
@@ -13298,7 +13788,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b355dd(void)
 void __thiscall Recovered_Bulk::m_FUN_10b355e7(void)
 {
   int param_1 = (int )this;
-  FUN_1005c28e(param_1 + -140);
+  FUN_1005c28e((int)(param_1 + -140));
 }
 
 
@@ -13308,7 +13798,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b355e7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b355f4(void)
 {
   int param_1 = (int )this;
-  FUN_1005c28e(param_1 + -168);
+  FUN_1005c28e((int)(param_1 + -168));
 }
 
 
@@ -13318,7 +13808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b355f4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35601(void)
 {
   int param_1 = (int )this;
-  FUN_100118d3(param_1 + -16);
+  FUN_100118d3((int)(param_1 + -16));
 }
 
 
@@ -13328,7 +13818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35601(void)
 void __thiscall Recovered_Bulk::m_FUN_10b3560b(void)
 {
   int param_1 = (int )this;
-  FUN_100118d3(param_1 + -140);
+  FUN_100118d3((int)(param_1 + -140));
 }
 
 
@@ -13338,7 +13828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b3560b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35618(void)
 {
   int param_1 = (int )this;
-  FUN_100118d3(param_1 + -168);
+  FUN_100118d3((int)(param_1 + -168));
 }
 
 
@@ -13348,7 +13838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35618(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35625(void)
 {
   int param_1 = (int )this;
-  FUN_100108fc(param_1 + -16);
+  FUN_100108fc((int)(param_1 + -16));
 }
 
 
@@ -13358,7 +13848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35625(void)
 void __thiscall Recovered_Bulk::m_FUN_10b3562f(void)
 {
   int param_1 = (int )this;
-  FUN_100108fc(param_1 + -140);
+  FUN_100108fc((int)(param_1 + -140));
 }
 
 
@@ -13368,7 +13858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b3562f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b3563c(void)
 {
   int param_1 = (int )this;
-  FUN_100108fc(param_1 + -168);
+  FUN_100108fc((int)(param_1 + -168));
 }
 
 
@@ -13378,7 +13868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b3563c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35649(void)
 {
   int param_1 = (int )this;
-  FUN_1002b8aa(param_1 + -16);
+  FUN_1002b8aa((int)(param_1 + -16));
 }
 
 
@@ -13388,7 +13878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35649(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35653(void)
 {
   int param_1 = (int )this;
-  FUN_1002b8aa(param_1 + -140);
+  FUN_1002b8aa((int)(param_1 + -140));
 }
 
 
@@ -13398,7 +13888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35653(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35660(void)
 {
   int param_1 = (int )this;
-  FUN_1002b8aa(param_1 + -168);
+  FUN_1002b8aa((int)(param_1 + -168));
 }
 
 
@@ -13408,7 +13898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35660(void)
 void __thiscall Recovered_Bulk::m_FUN_10b3566d(void)
 {
   int param_1 = (int )this;
-  FUN_10009ed5(param_1 + -16);
+  FUN_10009ed5((int)(param_1 + -16));
 }
 
 
@@ -13418,7 +13908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b3566d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35677(void)
 {
   int param_1 = (int )this;
-  FUN_10009ed5(param_1 + -140);
+  FUN_10009ed5((int)(param_1 + -140));
 }
 
 
@@ -13428,7 +13918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35677(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35684(void)
 {
   int param_1 = (int )this;
-  FUN_10009ed5(param_1 + -168);
+  FUN_10009ed5((int)(param_1 + -168));
 }
 
 
@@ -13438,7 +13928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35684(void)
 void __thiscall Recovered_Bulk::m_FUN_10b35691(void)
 {
   int param_1 = (int )this;
-  FUN_1006d93a(param_1 + -16);
+  FUN_1006d93a((int)(param_1 + -16));
 }
 
 
@@ -13448,7 +13938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b35691(void)
 void __thiscall Recovered_Bulk::m_FUN_10b3569b(void)
 {
   int param_1 = (int )this;
-  FUN_1006d93a(param_1 + -140);
+  FUN_1006d93a((int)(param_1 + -140));
 }
 
 
@@ -13458,7 +13948,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b3569b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b356a8(void)
 {
   int param_1 = (int )this;
-  FUN_1006d93a(param_1 + -168);
+  FUN_1006d93a((int)(param_1 + -168));
 }
 
 
@@ -13468,7 +13958,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b356a8(void)
 void __thiscall Recovered_Bulk::m_FUN_10b356b5(void)
 {
   int param_1 = (int )this;
-  FUN_10050dd0(param_1 + -16);
+  FUN_10050dd0((int)(param_1 + -16));
 }
 
 
@@ -13478,7 +13968,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b356b5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b356bf(void)
 {
   int param_1 = (int )this;
-  FUN_10050dd0(param_1 + -140);
+  FUN_10050dd0((int)(param_1 + -140));
 }
 
 
@@ -13488,7 +13978,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b356bf(void)
 void __thiscall Recovered_Bulk::m_FUN_10b356cc(void)
 {
   int param_1 = (int )this;
-  FUN_10050dd0(param_1 + -168);
+  FUN_10050dd0((int)(param_1 + -168));
 }
 
 
@@ -13498,7 +13988,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b356cc(void)
 void __thiscall Recovered_Bulk::m_FUN_10b356d9(void)
 {
   int param_1 = (int )this;
-  FUN_1008e41e(param_1 + -16);
+  FUN_1008e41e((int)(param_1 + -16));
 }
 
 
@@ -13508,7 +13998,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b356d9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b356e3(void)
 {
   int param_1 = (int )this;
-  FUN_1008e41e(param_1 + -140);
+  FUN_1008e41e((int)(param_1 + -140));
 }
 
 
@@ -13518,7 +14008,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b356e3(void)
 void __thiscall Recovered_Bulk::m_FUN_10b356f0(void)
 {
   int param_1 = (int )this;
-  FUN_1008e41e(param_1 + -168);
+  FUN_1008e41e((int)(param_1 + -168));
 }
 
 
@@ -13538,7 +14028,7 @@ undefined1 FUN_10b46090(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a745(void)
 {
   int param_1 = (int )this;
-  FUN_1003fc15(param_1 + -16);
+  FUN_1003fc15((int)(param_1 + -16));
 }
 
 
@@ -13548,7 +14038,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a745(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a74f(void)
 {
   int param_1 = (int )this;
-  FUN_1003fc15(param_1 + -140);
+  FUN_1003fc15((int)(param_1 + -140));
 }
 
 
@@ -13558,7 +14048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a74f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a75c(void)
 {
   int param_1 = (int )this;
-  FUN_1003fc15(param_1 + -168);
+  FUN_1003fc15((int)(param_1 + -168));
 }
 
 
@@ -13568,7 +14058,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a75c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a769(void)
 {
   int param_1 = (int )this;
-  FUN_1006482b(param_1 + -16);
+  FUN_1006482b((int)(param_1 + -16));
 }
 
 
@@ -13578,7 +14068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a769(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a773(void)
 {
   int param_1 = (int )this;
-  FUN_1006482b(param_1 + -140);
+  FUN_1006482b((int)(param_1 + -140));
 }
 
 
@@ -13588,7 +14078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a773(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a780(void)
 {
   int param_1 = (int )this;
-  FUN_1006482b(param_1 + -168);
+  FUN_1006482b((int)(param_1 + -168));
 }
 
 
@@ -13598,7 +14088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a780(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a78d(void)
 {
   int param_1 = (int )this;
-  FUN_10076fc6(param_1 + -16);
+  FUN_10076fc6((int)(param_1 + -16));
 }
 
 
@@ -13608,7 +14098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a78d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a797(void)
 {
   int param_1 = (int )this;
-  FUN_10076fc6(param_1 + -140);
+  FUN_10076fc6((int)(param_1 + -140));
 }
 
 
@@ -13618,7 +14108,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a797(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a7a4(void)
 {
   int param_1 = (int )this;
-  FUN_10076fc6(param_1 + -168);
+  FUN_10076fc6((int)(param_1 + -168));
 }
 
 
@@ -13628,7 +14118,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a7a4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a7b1(void)
 {
   int param_1 = (int )this;
-  FUN_10045737(param_1 + -16);
+  FUN_10045737((int)(param_1 + -16));
 }
 
 
@@ -13638,7 +14128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a7b1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a7bb(void)
 {
   int param_1 = (int )this;
-  FUN_10045737(param_1 + -140);
+  FUN_10045737((int)(param_1 + -140));
 }
 
 
@@ -13648,7 +14138,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a7bb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a7c8(void)
 {
   int param_1 = (int )this;
-  FUN_10045737(param_1 + -168);
+  FUN_10045737((int)(param_1 + -168));
 }
 
 
@@ -13658,7 +14148,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a7c8(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a7d5(void)
 {
   int param_1 = (int )this;
-  FUN_1006c4c7(param_1 + -16);
+  FUN_1006c4c7((int)(param_1 + -16));
 }
 
 
@@ -13668,7 +14158,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a7d5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a7df(void)
 {
   int param_1 = (int )this;
-  FUN_1006c4c7(param_1 + -140);
+  FUN_1006c4c7((int)(param_1 + -140));
 }
 
 
@@ -13678,7 +14168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a7df(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a7ec(void)
 {
   int param_1 = (int )this;
-  FUN_1006c4c7(param_1 + -168);
+  FUN_1006c4c7((int)(param_1 + -168));
 }
 
 
@@ -13688,7 +14178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a7ec(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a7f9(void)
 {
   int param_1 = (int )this;
-  FUN_1008247a(param_1 + -16);
+  FUN_1008247a((int)(param_1 + -16));
 }
 
 
@@ -13698,7 +14188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a7f9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a803(void)
 {
   int param_1 = (int )this;
-  FUN_1008247a(param_1 + -140);
+  FUN_1008247a((int)(param_1 + -140));
 }
 
 
@@ -13708,7 +14198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a803(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a810(void)
 {
   int param_1 = (int )this;
-  FUN_1008247a(param_1 + -168);
+  FUN_1008247a((int)(param_1 + -168));
 }
 
 
@@ -13718,7 +14208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a810(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a81d(void)
 {
   int param_1 = (int )this;
-  FUN_10038325(param_1 + -16);
+  FUN_10038325((int)(param_1 + -16));
 }
 
 
@@ -13728,7 +14218,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a81d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a827(void)
 {
   int param_1 = (int )this;
-  FUN_10038325(param_1 + -140);
+  FUN_10038325((int)(param_1 + -140));
 }
 
 
@@ -13738,7 +14228,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a827(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a834(void)
 {
   int param_1 = (int )this;
-  FUN_10038325(param_1 + -168);
+  FUN_10038325((int)(param_1 + -168));
 }
 
 
@@ -13748,7 +14238,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a834(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a841(void)
 {
   int param_1 = (int )this;
-  FUN_1000f038(param_1 + -16);
+  FUN_1000f038((int)(param_1 + -16));
 }
 
 
@@ -13758,7 +14248,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a841(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a84b(void)
 {
   int param_1 = (int )this;
-  FUN_1000f038(param_1 + -140);
+  FUN_1000f038((int)(param_1 + -140));
 }
 
 
@@ -13768,7 +14258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a84b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a858(void)
 {
   int param_1 = (int )this;
-  FUN_1000f038(param_1 + -168);
+  FUN_1000f038((int)(param_1 + -168));
 }
 
 
@@ -13778,7 +14268,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a858(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a865(void)
 {
   int param_1 = (int )this;
-  FUN_100833de(param_1 + -16);
+  FUN_100833de((int)(param_1 + -16));
 }
 
 
@@ -13788,7 +14278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a865(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a86f(void)
 {
   int param_1 = (int )this;
-  FUN_100833de(param_1 + -140);
+  FUN_100833de((int)(param_1 + -140));
 }
 
 
@@ -13798,7 +14288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a86f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a87c(void)
 {
   int param_1 = (int )this;
-  FUN_100833de(param_1 + -168);
+  FUN_100833de((int)(param_1 + -168));
 }
 
 
@@ -13808,7 +14298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a87c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a889(void)
 {
   int param_1 = (int )this;
-  FUN_10036151(param_1 + -16);
+  FUN_10036151((int)(param_1 + -16));
 }
 
 
@@ -13818,7 +14308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a889(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a893(void)
 {
   int param_1 = (int )this;
-  FUN_10036151(param_1 + -140);
+  FUN_10036151((int)(param_1 + -140));
 }
 
 
@@ -13828,7 +14318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a893(void)
 void __thiscall Recovered_Bulk::m_FUN_10b4a8a0(void)
 {
   int param_1 = (int )this;
-  FUN_10036151(param_1 + -168);
+  FUN_10036151((int)(param_1 + -168));
 }
 
 
@@ -13838,7 +14328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b4a8a0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5198d(void)
 {
   int param_1 = (int )this;
-  FUN_1001ba7c(param_1 + -16);
+  FUN_1001ba7c((int)(param_1 + -16));
 }
 
 
@@ -13848,7 +14338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5198d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51997(void)
 {
   int param_1 = (int )this;
-  FUN_1001ba7c(param_1 + -140);
+  FUN_1001ba7c((int)(param_1 + -140));
 }
 
 
@@ -13858,7 +14348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51997(void)
 void __thiscall Recovered_Bulk::m_FUN_10b519a4(void)
 {
   int param_1 = (int )this;
-  FUN_1001ba7c(param_1 + -168);
+  FUN_1001ba7c((int)(param_1 + -168));
 }
 
 
@@ -13868,7 +14358,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b519a4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b519b1(void)
 {
   int param_1 = (int )this;
-  FUN_1004bca9(param_1 + -16);
+  FUN_1004bca9((int)(param_1 + -16));
 }
 
 
@@ -13878,7 +14368,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b519b1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b519bb(void)
 {
   int param_1 = (int )this;
-  FUN_1004bca9(param_1 + -140);
+  FUN_1004bca9((int)(param_1 + -140));
 }
 
 
@@ -13888,7 +14378,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b519bb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b519c8(void)
 {
   int param_1 = (int )this;
-  FUN_1004bca9(param_1 + -168);
+  FUN_1004bca9((int)(param_1 + -168));
 }
 
 
@@ -13898,7 +14388,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b519c8(void)
 void __thiscall Recovered_Bulk::m_FUN_10b519d5(void)
 {
   int param_1 = (int )this;
-  FUN_1000b307(param_1 + -16);
+  FUN_1000b307((int)(param_1 + -16));
 }
 
 
@@ -13908,7 +14398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b519d5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b519df(void)
 {
   int param_1 = (int )this;
-  FUN_1000b307(param_1 + -140);
+  FUN_1000b307((int)(param_1 + -140));
 }
 
 
@@ -13918,7 +14408,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b519df(void)
 void __thiscall Recovered_Bulk::m_FUN_10b519ec(void)
 {
   int param_1 = (int )this;
-  FUN_1000b307(param_1 + -168);
+  FUN_1000b307((int)(param_1 + -168));
 }
 
 
@@ -13928,7 +14418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b519ec(void)
 void __thiscall Recovered_Bulk::m_FUN_10b519f9(void)
 {
   int param_1 = (int )this;
-  FUN_1001212a(param_1 + -16);
+  FUN_1001212a((int)(param_1 + -16));
 }
 
 
@@ -13938,7 +14428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b519f9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a03(void)
 {
   int param_1 = (int )this;
-  FUN_1001212a(param_1 + -140);
+  FUN_1001212a((int)(param_1 + -140));
 }
 
 
@@ -13948,7 +14438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a03(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a10(void)
 {
   int param_1 = (int )this;
-  FUN_1001212a(param_1 + -168);
+  FUN_1001212a((int)(param_1 + -168));
 }
 
 
@@ -13958,7 +14448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a10(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a1d(void)
 {
   int param_1 = (int )this;
-  FUN_10071c2e(param_1 + -16);
+  FUN_10071c2e((int)(param_1 + -16));
 }
 
 
@@ -13968,7 +14458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a1d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a27(void)
 {
   int param_1 = (int )this;
-  FUN_10071c2e(param_1 + -140);
+  FUN_10071c2e((int)(param_1 + -140));
 }
 
 
@@ -13978,7 +14468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a27(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a34(void)
 {
   int param_1 = (int )this;
-  FUN_10071c2e(param_1 + -168);
+  FUN_10071c2e((int)(param_1 + -168));
 }
 
 
@@ -13988,7 +14478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a34(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a41(void)
 {
   int param_1 = (int )this;
-  FUN_10060bcc(param_1 + -16);
+  FUN_10060bcc((int)(param_1 + -16));
 }
 
 
@@ -13998,7 +14488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a41(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a4b(void)
 {
   int param_1 = (int )this;
-  FUN_10060bcc(param_1 + -140);
+  FUN_10060bcc((int)(param_1 + -140));
 }
 
 
@@ -14008,7 +14498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a4b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a58(void)
 {
   int param_1 = (int )this;
-  FUN_10060bcc(param_1 + -168);
+  FUN_10060bcc((int)(param_1 + -168));
 }
 
 
@@ -14018,7 +14508,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a58(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a65(void)
 {
   int param_1 = (int )this;
-  FUN_10076c0b(param_1 + -16);
+  FUN_10076c0b((int)(param_1 + -16));
 }
 
 
@@ -14028,7 +14518,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a65(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a6f(void)
 {
   int param_1 = (int )this;
-  FUN_10076c0b(param_1 + -140);
+  FUN_10076c0b((int)(param_1 + -140));
 }
 
 
@@ -14038,7 +14528,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a6f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a7c(void)
 {
   int param_1 = (int )this;
-  FUN_10076c0b(param_1 + -168);
+  FUN_10076c0b((int)(param_1 + -168));
 }
 
 
@@ -14048,7 +14538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a7c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a89(void)
 {
   int param_1 = (int )this;
-  FUN_10048bc1(param_1 + -16);
+  FUN_10048bc1((int)(param_1 + -16));
 }
 
 
@@ -14058,7 +14548,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a89(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51a93(void)
 {
   int param_1 = (int )this;
-  FUN_10048bc1(param_1 + -140);
+  FUN_10048bc1((int)(param_1 + -140));
 }
 
 
@@ -14068,7 +14558,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51a93(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51aa0(void)
 {
   int param_1 = (int )this;
-  FUN_10048bc1(param_1 + -168);
+  FUN_10048bc1((int)(param_1 + -168));
 }
 
 
@@ -14078,7 +14568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51aa0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51aad(void)
 {
   int param_1 = (int )this;
-  FUN_1007b940(param_1 + -16);
+  FUN_1007b940((int)(param_1 + -16));
 }
 
 
@@ -14088,7 +14578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51aad(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51ab7(void)
 {
   int param_1 = (int )this;
-  FUN_1007b940(param_1 + -140);
+  FUN_1007b940((int)(param_1 + -140));
 }
 
 
@@ -14098,7 +14588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51ab7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51ac4(void)
 {
   int param_1 = (int )this;
-  FUN_1007b940(param_1 + -168);
+  FUN_1007b940((int)(param_1 + -168));
 }
 
 
@@ -14108,7 +14598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51ac4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51ad1(void)
 {
   int param_1 = (int )this;
-  FUN_1003b63d(param_1 + -16);
+  FUN_1003b63d((int)(param_1 + -16));
 }
 
 
@@ -14118,7 +14608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51ad1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51adb(void)
 {
   int param_1 = (int )this;
-  FUN_1003b63d(param_1 + -140);
+  FUN_1003b63d((int)(param_1 + -140));
 }
 
 
@@ -14128,7 +14618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51adb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51ae8(void)
 {
   int param_1 = (int )this;
-  FUN_1003b63d(param_1 + -168);
+  FUN_1003b63d((int)(param_1 + -168));
 }
 
 
@@ -14138,7 +14628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51ae8(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51af5(void)
 {
   int param_1 = (int )this;
-  FUN_1002467c(param_1 + -16);
+  FUN_1002467c((int)(param_1 + -16));
 }
 
 
@@ -14148,7 +14638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51af5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51aff(void)
 {
   int param_1 = (int )this;
-  FUN_1002467c(param_1 + -140);
+  FUN_1002467c((int)(param_1 + -140));
 }
 
 
@@ -14158,7 +14648,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b51aff(void)
 void __thiscall Recovered_Bulk::m_FUN_10b51b0c(void)
 {
   int param_1 = (int )this;
-  FUN_1002467c(param_1 + -168);
+  FUN_1002467c((int)(param_1 + -168));
 }
 
 
@@ -14218,7 +14708,7 @@ undefined1 FUN_10b54c90(void)
 void __thiscall Recovered_Bulk::m_FUN_10b55941(void)
 {
   int param_1 = (int )this;
-  FUN_1009499a(param_1 + -16);
+  FUN_1009499a((int)(param_1 + -16));
 }
 
 
@@ -14228,7 +14718,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b55941(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5594b(void)
 {
   int param_1 = (int )this;
-  FUN_1009499a(param_1 + -140);
+  FUN_1009499a((int)(param_1 + -140));
 }
 
 
@@ -14238,7 +14728,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5594b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b55958(void)
 {
   int param_1 = (int )this;
-  FUN_1009499a(param_1 + -168);
+  FUN_1009499a((int)(param_1 + -168));
 }
 
 
@@ -14248,7 +14738,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b55958(void)
 void __thiscall Recovered_Bulk::m_FUN_10b55965(void)
 {
   int param_1 = (int )this;
-  FUN_1007d024(param_1 + -16);
+  FUN_1007d024((int)(param_1 + -16));
 }
 
 
@@ -14258,7 +14748,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b55965(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5596f(void)
 {
   int param_1 = (int )this;
-  FUN_1007d024(param_1 + -140);
+  FUN_1007d024((int)(param_1 + -140));
 }
 
 
@@ -14268,7 +14758,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5596f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5597c(void)
 {
   int param_1 = (int )this;
-  FUN_1007d024(param_1 + -168);
+  FUN_1007d024((int)(param_1 + -168));
 }
 
 
@@ -14278,7 +14768,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5597c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b55989(void)
 {
   int param_1 = (int )this;
-  FUN_100333bb(param_1 + -16);
+  FUN_100333bb((int)(param_1 + -16));
 }
 
 
@@ -14288,7 +14778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b55989(void)
 void __thiscall Recovered_Bulk::m_FUN_10b55993(void)
 {
   int param_1 = (int )this;
-  FUN_100333bb(param_1 + -140);
+  FUN_100333bb((int)(param_1 + -140));
 }
 
 
@@ -14298,7 +14788,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b55993(void)
 void __thiscall Recovered_Bulk::m_FUN_10b559a0(void)
 {
   int param_1 = (int )this;
-  FUN_100333bb(param_1 + -168);
+  FUN_100333bb((int)(param_1 + -168));
 }
 
 
@@ -14308,7 +14798,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b559a0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b559ad(void)
 {
   int param_1 = (int )this;
-  FUN_10011982(param_1 + -16);
+  FUN_10011982((int)(param_1 + -16));
 }
 
 
@@ -14318,7 +14808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b559ad(void)
 void __thiscall Recovered_Bulk::m_FUN_10b559b7(void)
 {
   int param_1 = (int )this;
-  FUN_10011982(param_1 + -140);
+  FUN_10011982((int)(param_1 + -140));
 }
 
 
@@ -14328,7 +14818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b559b7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b559c4(void)
 {
   int param_1 = (int )this;
-  FUN_10011982(param_1 + -168);
+  FUN_10011982((int)(param_1 + -168));
 }
 
 
@@ -14338,7 +14828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b559c4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b559d1(void)
 {
   int param_1 = (int )this;
-  FUN_10044693(param_1 + -16);
+  FUN_10044693((int)(param_1 + -16));
 }
 
 
@@ -14348,7 +14838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b559d1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b559db(void)
 {
   int param_1 = (int )this;
-  FUN_10044693(param_1 + -140);
+  FUN_10044693((int)(param_1 + -140));
 }
 
 
@@ -14358,7 +14848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b559db(void)
 void __thiscall Recovered_Bulk::m_FUN_10b559e8(void)
 {
   int param_1 = (int )this;
-  FUN_10044693(param_1 + -168);
+  FUN_10044693((int)(param_1 + -168));
 }
 
 
@@ -14368,7 +14858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b559e8(void)
 void __thiscall Recovered_Bulk::m_FUN_10b58c89(void)
 {
   int param_1 = (int )this;
-  FUN_100459d5(param_1 + -16);
+  FUN_100459d5((int)(param_1 + -16));
 }
 
 
@@ -14378,7 +14868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b58c89(void)
 void __thiscall Recovered_Bulk::m_FUN_10b58c93(void)
 {
   int param_1 = (int )this;
-  FUN_100459d5(param_1 + -140);
+  FUN_100459d5((int)(param_1 + -140));
 }
 
 
@@ -14388,7 +14878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b58c93(void)
 void __thiscall Recovered_Bulk::m_FUN_10b58ca0(void)
 {
   int param_1 = (int )this;
-  FUN_100459d5(param_1 + -168);
+  FUN_100459d5((int)(param_1 + -168));
 }
 
 
@@ -14398,7 +14888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b58ca0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b58cad(void)
 {
   int param_1 = (int )this;
-  FUN_1008e775(param_1 + -16);
+  FUN_1008e775((int)(param_1 + -16));
 }
 
 
@@ -14408,7 +14898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b58cad(void)
 void __thiscall Recovered_Bulk::m_FUN_10b58cb7(void)
 {
   int param_1 = (int )this;
-  FUN_1008e775(param_1 + -140);
+  FUN_1008e775((int)(param_1 + -140));
 }
 
 
@@ -14418,7 +14908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b58cb7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b58cc4(void)
 {
   int param_1 = (int )this;
-  FUN_1008e775(param_1 + -168);
+  FUN_1008e775((int)(param_1 + -168));
 }
 
 
@@ -14428,7 +14918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b58cc4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b58cd1(void)
 {
   int param_1 = (int )this;
-  FUN_10031db8(param_1 + -16);
+  FUN_10031db8((int)(param_1 + -16));
 }
 
 
@@ -14438,7 +14928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b58cd1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b58cdb(void)
 {
   int param_1 = (int )this;
-  FUN_10031db8(param_1 + -140);
+  FUN_10031db8((int)(param_1 + -140));
 }
 
 
@@ -14448,7 +14938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b58cdb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b58ce8(void)
 {
   int param_1 = (int )this;
-  FUN_10031db8(param_1 + -168);
+  FUN_10031db8((int)(param_1 + -168));
 }
 
 
@@ -14478,7 +14968,7 @@ undefined1 FUN_10b59440(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e481(void)
 {
   int param_1 = (int )this;
-  FUN_1007806f(param_1 + -16);
+  FUN_1007806f((int)(param_1 + -16));
 }
 
 
@@ -14488,7 +14978,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e481(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e48b(void)
 {
   int param_1 = (int )this;
-  FUN_1007806f(param_1 + -140);
+  FUN_1007806f((int)(param_1 + -140));
 }
 
 
@@ -14498,7 +14988,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e48b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e498(void)
 {
   int param_1 = (int )this;
-  FUN_1007806f(param_1 + -168);
+  FUN_1007806f((int)(param_1 + -168));
 }
 
 
@@ -14508,7 +14998,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e498(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e4a5(void)
 {
   int param_1 = (int )this;
-  FUN_1004cbcc(param_1 + -16);
+  FUN_1004cbcc((int)(param_1 + -16));
 }
 
 
@@ -14518,7 +15008,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e4a5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e4af(void)
 {
   int param_1 = (int )this;
-  FUN_1004cbcc(param_1 + -140);
+  FUN_1004cbcc((int)(param_1 + -140));
 }
 
 
@@ -14528,7 +15018,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e4af(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e4bc(void)
 {
   int param_1 = (int )this;
-  FUN_1004cbcc(param_1 + -168);
+  FUN_1004cbcc((int)(param_1 + -168));
 }
 
 
@@ -14538,7 +15028,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e4bc(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e4c9(void)
 {
   int param_1 = (int )this;
-  FUN_1000984f(param_1 + -16);
+  FUN_1000984f((int)(param_1 + -16));
 }
 
 
@@ -14548,7 +15038,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e4c9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e4d3(void)
 {
   int param_1 = (int )this;
-  FUN_1000984f(param_1 + -140);
+  FUN_1000984f((int)(param_1 + -140));
 }
 
 
@@ -14558,7 +15048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e4d3(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e4e0(void)
 {
   int param_1 = (int )this;
-  FUN_1000984f(param_1 + -168);
+  FUN_1000984f((int)(param_1 + -168));
 }
 
 
@@ -14568,7 +15058,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e4e0(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e4ed(void)
 {
   int param_1 = (int )this;
-  FUN_10079276(param_1 + -16);
+  FUN_10079276((int)(param_1 + -16));
 }
 
 
@@ -14578,7 +15068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e4ed(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e4f7(void)
 {
   int param_1 = (int )this;
-  FUN_10079276(param_1 + -140);
+  FUN_10079276((int)(param_1 + -140));
 }
 
 
@@ -14588,7 +15078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e4f7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e504(void)
 {
   int param_1 = (int )this;
-  FUN_10079276(param_1 + -168);
+  FUN_10079276((int)(param_1 + -168));
 }
 
 
@@ -14598,7 +15088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e504(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e511(void)
 {
   int param_1 = (int )this;
-  FUN_1006212a(param_1 + -16);
+  FUN_1006212a((int)(param_1 + -16));
 }
 
 
@@ -14608,7 +15098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e511(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e51b(void)
 {
   int param_1 = (int )this;
-  FUN_1006212a(param_1 + -140);
+  FUN_1006212a((int)(param_1 + -140));
 }
 
 
@@ -14618,7 +15108,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e51b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e528(void)
 {
   int param_1 = (int )this;
-  FUN_1006212a(param_1 + -168);
+  FUN_1006212a((int)(param_1 + -168));
 }
 
 
@@ -14628,7 +15118,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e528(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e535(void)
 {
   int param_1 = (int )this;
-  FUN_10059462(param_1 + -16);
+  FUN_10059462((int)(param_1 + -16));
 }
 
 
@@ -14638,7 +15128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e535(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e53f(void)
 {
   int param_1 = (int )this;
-  FUN_10059462(param_1 + -140);
+  FUN_10059462((int)(param_1 + -140));
 }
 
 
@@ -14648,7 +15138,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e53f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e54c(void)
 {
   int param_1 = (int )this;
-  FUN_10059462(param_1 + -168);
+  FUN_10059462((int)(param_1 + -168));
 }
 
 
@@ -14658,7 +15148,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e54c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e559(void)
 {
   int param_1 = (int )this;
-  FUN_1006d3c2(param_1 + -16);
+  FUN_1006d3c2((int)(param_1 + -16));
 }
 
 
@@ -14668,7 +15158,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e559(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e563(void)
 {
   int param_1 = (int )this;
-  FUN_1006d3c2(param_1 + -140);
+  FUN_1006d3c2((int)(param_1 + -140));
 }
 
 
@@ -14678,7 +15168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e563(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e570(void)
 {
   int param_1 = (int )this;
-  FUN_1006d3c2(param_1 + -168);
+  FUN_1006d3c2((int)(param_1 + -168));
 }
 
 
@@ -14688,7 +15178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e570(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e57d(void)
 {
   int param_1 = (int )this;
-  FUN_10080364(param_1 + -16);
+  FUN_10080364((int)(param_1 + -16));
 }
 
 
@@ -14698,7 +15188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e57d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e587(void)
 {
   int param_1 = (int )this;
-  FUN_10080364(param_1 + -140);
+  FUN_10080364((int)(param_1 + -140));
 }
 
 
@@ -14708,7 +15198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e587(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e594(void)
 {
   int param_1 = (int )this;
-  FUN_10080364(param_1 + -168);
+  FUN_10080364((int)(param_1 + -168));
 }
 
 
@@ -14718,7 +15208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e594(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e5a1(void)
 {
   int param_1 = (int )this;
-  FUN_10076611(param_1 + -16);
+  FUN_10076611((int)(param_1 + -16));
 }
 
 
@@ -14728,7 +15218,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e5a1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e5ab(void)
 {
   int param_1 = (int )this;
-  FUN_10076611(param_1 + -140);
+  FUN_10076611((int)(param_1 + -140));
 }
 
 
@@ -14738,7 +15228,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e5ab(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e5b8(void)
 {
   int param_1 = (int )this;
-  FUN_10076611(param_1 + -168);
+  FUN_10076611((int)(param_1 + -168));
 }
 
 
@@ -14748,7 +15238,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e5b8(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e5c5(void)
 {
   int param_1 = (int )this;
-  FUN_100943dc(param_1 + -16);
+  FUN_100943dc((int)(param_1 + -16));
 }
 
 
@@ -14758,7 +15248,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e5c5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e5cf(void)
 {
   int param_1 = (int )this;
-  FUN_100943dc(param_1 + -140);
+  FUN_100943dc((int)(param_1 + -140));
 }
 
 
@@ -14768,7 +15258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e5cf(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e5dc(void)
 {
   int param_1 = (int )this;
-  FUN_100943dc(param_1 + -168);
+  FUN_100943dc((int)(param_1 + -168));
 }
 
 
@@ -14778,7 +15268,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e5dc(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e5e9(void)
 {
   int param_1 = (int )this;
-  FUN_10029e01(param_1 + -16);
+  FUN_10029e01((int)(param_1 + -16));
 }
 
 
@@ -14788,7 +15278,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e5e9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e5f3(void)
 {
   int param_1 = (int )this;
-  FUN_10029e01(param_1 + -140);
+  FUN_10029e01((int)(param_1 + -140));
 }
 
 
@@ -14798,7 +15288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e5f3(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e600(void)
 {
   int param_1 = (int )this;
-  FUN_10029e01(param_1 + -168);
+  FUN_10029e01((int)(param_1 + -168));
 }
 
 
@@ -14808,7 +15298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e600(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e60d(void)
 {
   int param_1 = (int )this;
-  FUN_1003a21f(param_1 + -16);
+  FUN_1003a21f((int)(param_1 + -16));
 }
 
 
@@ -14818,7 +15308,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e60d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e617(void)
 {
   int param_1 = (int )this;
-  FUN_1003a21f(param_1 + -140);
+  FUN_1003a21f((int)(param_1 + -140));
 }
 
 
@@ -14828,7 +15318,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e617(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e624(void)
 {
   int param_1 = (int )this;
-  FUN_1003a21f(param_1 + -168);
+  FUN_1003a21f((int)(param_1 + -168));
 }
 
 
@@ -14838,7 +15328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e624(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e631(void)
 {
   int param_1 = (int )this;
-  FUN_10036d0e(param_1 + -16);
+  FUN_10036d0e((int)(param_1 + -16));
 }
 
 
@@ -14848,7 +15338,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e631(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e63b(void)
 {
   int param_1 = (int )this;
-  FUN_10036d0e(param_1 + -140);
+  FUN_10036d0e((int)(param_1 + -140));
 }
 
 
@@ -14858,7 +15348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e63b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e648(void)
 {
   int param_1 = (int )this;
-  FUN_10036d0e(param_1 + -168);
+  FUN_10036d0e((int)(param_1 + -168));
 }
 
 
@@ -14868,7 +15358,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e648(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e655(void)
 {
   int param_1 = (int )this;
-  FUN_1005d96d(param_1 + -16);
+  FUN_1005d96d((int)(param_1 + -16));
 }
 
 
@@ -14878,7 +15368,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e655(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e65f(void)
 {
   int param_1 = (int )this;
-  FUN_1005d96d(param_1 + -140);
+  FUN_1005d96d((int)(param_1 + -140));
 }
 
 
@@ -14888,7 +15378,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e65f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e66c(void)
 {
   int param_1 = (int )this;
-  FUN_1005d96d(param_1 + -168);
+  FUN_1005d96d((int)(param_1 + -168));
 }
 
 
@@ -14898,7 +15388,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e66c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e679(void)
 {
   int param_1 = (int )this;
-  FUN_1004ea17(param_1 + -16);
+  FUN_1004ea17((int)(param_1 + -16));
 }
 
 
@@ -14908,7 +15398,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e679(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e683(void)
 {
   int param_1 = (int )this;
-  FUN_1004ea17(param_1 + -140);
+  FUN_1004ea17((int)(param_1 + -140));
 }
 
 
@@ -14918,7 +15408,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e683(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e690(void)
 {
   int param_1 = (int )this;
-  FUN_1004ea17(param_1 + -168);
+  FUN_1004ea17((int)(param_1 + -168));
 }
 
 
@@ -14928,7 +15418,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e690(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e69d(void)
 {
   int param_1 = (int )this;
-  FUN_1008e8b5(param_1 + -16);
+  FUN_1008e8b5((int)(param_1 + -16));
 }
 
 
@@ -14938,7 +15428,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e69d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e6a7(void)
 {
   int param_1 = (int )this;
-  FUN_1008e8b5(param_1 + -140);
+  FUN_1008e8b5((int)(param_1 + -140));
 }
 
 
@@ -14948,7 +15438,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e6a7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e6b4(void)
 {
   int param_1 = (int )this;
-  FUN_1008e8b5(param_1 + -168);
+  FUN_1008e8b5((int)(param_1 + -168));
 }
 
 
@@ -14958,7 +15448,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e6b4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e6c1(void)
 {
   int param_1 = (int )this;
-  FUN_1002032e(param_1 + -16);
+  FUN_1002032e((int)(param_1 + -16));
 }
 
 
@@ -14968,7 +15458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e6c1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e6cb(void)
 {
   int param_1 = (int )this;
-  FUN_1002032e(param_1 + -140);
+  FUN_1002032e((int)(param_1 + -140));
 }
 
 
@@ -14978,7 +15468,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e6cb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b5e6d8(void)
 {
   int param_1 = (int )this;
-  FUN_1002032e(param_1 + -168);
+  FUN_1002032e((int)(param_1 + -168));
 }
 
 
@@ -14988,7 +15478,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b5e6d8(void)
 void __thiscall Recovered_Bulk::m_FUN_10b6db53(void)
 {
   int param_1 = (int )this;
-  FUN_10007dec(param_1 + -8);
+  FUN_10007dec((int)(param_1 + -8));
 }
 
 
@@ -14998,7 +15488,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b6db53(void)
 void __thiscall Recovered_Bulk::m_FUN_10b6db5d(void)
 {
   int param_1 = (int )this;
-  FUN_100622ce(param_1 + -8);
+  FUN_100622ce((int)(param_1 + -8));
 }
 
 
@@ -15068,7 +15558,7 @@ void FUN_10b72060(void)
 void __thiscall Recovered_Bulk::m_FUN_10b7d853(void)
 {
   int param_1 = (int )this;
-  FUN_10063921(param_1 + -8);
+  FUN_10063921((int)(param_1 + -8));
 }
 
 
@@ -15078,7 +15568,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b7d853(void)
 void __thiscall Recovered_Bulk::m_FUN_10b7d85d(void)
 {
   int param_1 = (int )this;
-  FUN_1006d020(param_1 + -1132);
+  FUN_1006d020((int)(param_1 + -1132));
 }
 
 
@@ -15088,7 +15578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b7d85d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b7d86a(void)
 {
   int param_1 = (int )this;
-  FUN_1006d020(param_1 + -96);
+  FUN_1006d020((int)(param_1 + -96));
 }
 
 
@@ -15098,7 +15588,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b7d86a(void)
 void __thiscall Recovered_Bulk::m_FUN_10b7d874(void)
 {
   int param_1 = (int )this;
-  FUN_1001528a(param_1 + -1132);
+  FUN_1001528a((int)(param_1 + -1132));
 }
 
 
@@ -15108,7 +15598,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b7d874(void)
 void __thiscall Recovered_Bulk::m_FUN_10b7d881(void)
 {
   int param_1 = (int )this;
-  FUN_1001528a(param_1 + -96);
+  FUN_1001528a((int)(param_1 + -96));
 }
 
 
@@ -15118,7 +15608,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b7d881(void)
 void __thiscall Recovered_Bulk::m_FUN_10b7d88b(void)
 {
   int param_1 = (int )this;
-  FUN_10084f54(param_1 + -1132);
+  FUN_10084f54((int)(param_1 + -1132));
 }
 
 
@@ -15128,7 +15618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b7d88b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b7d898(void)
 {
   int param_1 = (int )this;
-  FUN_10084f54(param_1 + -96);
+  FUN_10084f54((int)(param_1 + -96));
 }
 
 
@@ -15138,7 +15628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b7d898(void)
 void __thiscall Recovered_Bulk::m_FUN_10b7d8a2(void)
 {
   int param_1 = (int )this;
-  FUN_10037826(param_1 + -8);
+  FUN_10037826((int)(param_1 + -8));
 }
 
 
@@ -15248,7 +15738,7 @@ void FUN_10b88720(void)
 void __thiscall Recovered_Bulk::m_FUN_10b88870(void)
 {
   int param_1 = (int )this;
-  FUN_10097956(param_1 + -8);
+  FUN_10097956((int)(param_1 + -8));
 }
 
 
@@ -15258,7 +15748,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b88870(void)
 void __thiscall Recovered_Bulk::m_FUN_10b8887a(void)
 {
   int param_1 = (int )this;
-  FUN_1003ecbb(param_1 + -8);
+  FUN_1003ecbb((int)(param_1 + -8));
 }
 
 
@@ -15268,7 +15758,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b8887a(void)
 void __thiscall Recovered_Bulk::m_FUN_10b88884(void)
 {
   int param_1 = (int )this;
-  FUN_10083feb(param_1 + -8);
+  FUN_10083feb((int)(param_1 + -8));
 }
 
 
@@ -15278,7 +15768,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b88884(void)
 void __thiscall Recovered_Bulk::m_FUN_10b8888e(void)
 {
   int param_1 = (int )this;
-  FUN_10040e21(param_1 + -8);
+  FUN_10040e21((int)(param_1 + -8));
 }
 
 
@@ -15288,7 +15778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b8888e(void)
 void __thiscall Recovered_Bulk::m_FUN_10b88898(void)
 {
   int param_1 = (int )this;
-  FUN_1007fac7(param_1 + -8);
+  FUN_1007fac7((int)(param_1 + -8));
 }
 
 
@@ -15298,7 +15788,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b88898(void)
 void __thiscall Recovered_Bulk::m_FUN_10b888a2(void)
 {
   int param_1 = (int )this;
-  FUN_1007fac7(param_1 + -104);
+  FUN_1007fac7((int)(param_1 + -104));
 }
 
 
@@ -15308,7 +15798,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b888a2(void)
 void __thiscall Recovered_Bulk::m_FUN_10b888ac(void)
 {
   int param_1 = (int )this;
-  FUN_10032df8(param_1 + -25100);
+  FUN_10032df8((int)(param_1 + -25100));
 }
 
 
@@ -15318,7 +15808,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b888ac(void)
 void __thiscall Recovered_Bulk::m_FUN_10b888b9(void)
 {
   int param_1 = (int )this;
-  FUN_1006c0fd(param_1 + -8);
+  FUN_1006c0fd((int)(param_1 + -8));
 }
 
 
@@ -15328,7 +15818,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b888b9(void)
 void __thiscall Recovered_Bulk::m_FUN_10b888c3(void)
 {
   int param_1 = (int )this;
-  FUN_1006c0fd(param_1 + -104);
+  FUN_1006c0fd((int)(param_1 + -104));
 }
 
 
@@ -15338,7 +15828,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b888c3(void)
 void __thiscall Recovered_Bulk::m_FUN_10b888cd(void)
 {
   int param_1 = (int )this;
-  FUN_100994d1(param_1 + -24844);
+  FUN_100994d1((int)(param_1 + -24844));
 }
 
 
@@ -15348,7 +15838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b888cd(void)
 void __thiscall Recovered_Bulk::m_FUN_10b888da(void)
 {
   int param_1 = (int )this;
-  FUN_10097ff5(param_1 + -8);
+  FUN_10097ff5((int)(param_1 + -8));
 }
 
 
@@ -15358,7 +15848,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b888da(void)
 void __thiscall Recovered_Bulk::m_FUN_10b888e4(void)
 {
   int param_1 = (int )this;
-  FUN_10097ff5(param_1 + -104);
+  FUN_10097ff5((int)(param_1 + -104));
 }
 
 
@@ -15368,7 +15858,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b888e4(void)
 void __thiscall Recovered_Bulk::m_FUN_10b888ee(void)
 {
   int param_1 = (int )this;
-  FUN_10043a9f(param_1 + -25100);
+  FUN_10043a9f((int)(param_1 + -25100));
 }
 
 
@@ -15378,7 +15868,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b888ee(void)
 void __thiscall Recovered_Bulk::m_FUN_10b888fb(void)
 {
   int param_1 = (int )this;
-  FUN_10067111(param_1 + -8);
+  FUN_10067111((int)(param_1 + -8));
 }
 
 
@@ -15388,7 +15878,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b888fb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b88905(void)
 {
   int param_1 = (int )this;
-  FUN_10067111(param_1 + -104);
+  FUN_10067111((int)(param_1 + -104));
 }
 
 
@@ -15398,7 +15888,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b88905(void)
 void __thiscall Recovered_Bulk::m_FUN_10b8890f(void)
 {
   int param_1 = (int )this;
-  FUN_1001a9d8(param_1 + -25100);
+  FUN_1001a9d8((int)(param_1 + -25100));
 }
 
 
@@ -15408,7 +15898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b8890f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b8891c(void)
 {
   int param_1 = (int )this;
-  FUN_1005f4f7(param_1 + -96);
+  FUN_1005f4f7((int)(param_1 + -96));
 }
 
 
@@ -15418,7 +15908,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b8891c(void)
 void __thiscall Recovered_Bulk::m_FUN_10b88926(void)
 {
   int param_1 = (int )this;
-  FUN_100435a9(param_1 + -96);
+  FUN_100435a9((int)(param_1 + -96));
 }
 
 
@@ -15428,7 +15918,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b88926(void)
 void __thiscall Recovered_Bulk::m_FUN_10b88930(void)
 {
   int param_1 = (int )this;
-  FUN_1009a65b(param_1 + -8);
+  FUN_1009a65b((int)(param_1 + -8));
 }
 
 
@@ -15438,7 +15928,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b88930(void)
 void __thiscall Recovered_Bulk::m_FUN_10b8893a(void)
 {
   int param_1 = (int )this;
-  FUN_10004cdc(param_1 + -8);
+  FUN_10004cdc((int)(param_1 + -8));
 }
 
 
@@ -15448,7 +15938,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b8893a(void)
 void __thiscall Recovered_Bulk::m_FUN_10b88944(void)
 {
   int param_1 = (int )this;
-  FUN_100233cb(param_1 + -8);
+  FUN_100233cb((int)(param_1 + -8));
 }
 
 
@@ -15458,7 +15948,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b88944(void)
 void __thiscall Recovered_Bulk::m_FUN_10b8894e(void)
 {
   int param_1 = (int )this;
-  FUN_10097ec4(param_1 + -8);
+  FUN_10097ec4((int)(param_1 + -8));
 }
 
 
@@ -15548,7 +16038,7 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_10b8ce60(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e25(void)
 {
   int param_1 = (int )this;
-  FUN_10041952(param_1 + -16);
+  FUN_10041952((int)(param_1 + -16));
 }
 
 
@@ -15558,7 +16048,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e25(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e2f(void)
 {
   int param_1 = (int )this;
-  FUN_10006eb5(param_1 + -16);
+  FUN_10006eb5((int)(param_1 + -16));
 }
 
 
@@ -15578,7 +16068,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e39(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e43(void)
 {
   int param_1 = (int )this;
-  FUN_100746a9(param_1 + -16);
+  FUN_100746a9((int)(param_1 + -16));
 }
 
 
@@ -15588,7 +16078,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e43(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e4d(void)
 {
   int param_1 = (int )this;
-  FUN_10075103(param_1 + -16);
+  FUN_10075103((int)(param_1 + -16));
 }
 
 
@@ -15598,7 +16088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e4d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e57(void)
 {
   int param_1 = (int )this;
-  FUN_1009a6fb(param_1 + -16);
+  FUN_1009a6fb((int)(param_1 + -16));
 }
 
 
@@ -15608,7 +16098,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e57(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e61(void)
 {
   int param_1 = (int )this;
-  FUN_10035df5(param_1 + -16);
+  FUN_10035df5((int)(param_1 + -16));
 }
 
 
@@ -15618,7 +16108,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e61(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e6b(void)
 {
   int param_1 = (int )this;
-  FUN_10030f44(param_1 + -16);
+  FUN_10030f44((int)(param_1 + -16));
 }
 
 
@@ -15628,7 +16118,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e6b(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e75(void)
 {
   int param_1 = (int )this;
-  FUN_1000fac4(param_1 + -16);
+  FUN_1000fac4((int)(param_1 + -16));
 }
 
 
@@ -15638,7 +16128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e75(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e7f(void)
 {
   int param_1 = (int )this;
-  FUN_10061c48(param_1 + -16);
+  FUN_10061c48((int)(param_1 + -16));
 }
 
 
@@ -15648,7 +16138,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e7f(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e89(void)
 {
   int param_1 = (int )this;
-  FUN_1006fd1b(param_1 + -16);
+  FUN_1006fd1b((int)(param_1 + -16));
 }
 
 
@@ -15658,7 +16148,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e89(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e93(void)
 {
   int param_1 = (int )this;
-  FUN_100359f9(param_1 + -16);
+  FUN_100359f9((int)(param_1 + -16));
 }
 
 
@@ -15668,7 +16158,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e93(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91e9d(void)
 {
   int param_1 = (int )this;
-  FUN_10064619(param_1 + -16);
+  FUN_10064619((int)(param_1 + -16));
 }
 
 
@@ -15678,7 +16168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91e9d(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91ea7(void)
 {
   int param_1 = (int )this;
-  FUN_1004100b(param_1 + -16);
+  FUN_1004100b((int)(param_1 + -16));
 }
 
 
@@ -15688,7 +16178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91ea7(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91eb1(void)
 {
   int param_1 = (int )this;
-  FUN_1002e294(param_1 + -16);
+  FUN_1002e294((int)(param_1 + -16));
 }
 
 
@@ -15698,7 +16188,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91eb1(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91ebb(void)
 {
   int param_1 = (int )this;
-  FUN_1001cd82(param_1 + -16);
+  FUN_1001cd82((int)(param_1 + -16));
 }
 
 
@@ -15708,7 +16198,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91ebb(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91ec5(void)
 {
   int param_1 = (int )this;
-  FUN_10065668(param_1 + -16);
+  FUN_10065668((int)(param_1 + -16));
 }
 
 
@@ -15718,7 +16208,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b91ec5(void)
 void __thiscall Recovered_Bulk::m_FUN_10b91ecf(void)
 {
   int param_1 = (int )this;
-  FUN_1007d8ad(param_1 + -16);
+  FUN_1007d8ad((int)(param_1 + -16));
 }
 
 

@@ -2122,6 +2122,12 @@ template<class... A> int FUN_11861f20(A...);
 int FUN_11861f60(void);
 template<class... A> int FUN_11861f60(A...);
 // Reference entry 113ed220; body size 121 bytes.
+extern int __stdcall thunk_FUN_10264380(int a1,int a2);
+extern int __stdcall thunk_FUN_103f6950(int a1,int a2);
+extern int __stdcall thunk_FUN_108288d0(int a1,int a2);
+extern int __stdcall thunk_FUN_10af43b0(int a1,int a2);
+extern int __stdcall thunk_FUN_10c5e210(int a1,int a2);
+extern int __stdcall thunk_FUN_11098770(int a1,int a2);
 #line 1 "ENTRY_113ed220"
 int FUN_113ed220(int a1, int a2, int a3) {
 
@@ -11861,7 +11867,7 @@ int FUN_117ce149(void) {
 #line 1 "ENTRY_117f6180"
 int FUN_117f6180(void) {
 
-    thunk_FUN_103f6950((int)&DAT_121a1348, *(int *)(*(int *)&DAT_121a1348 + 4));
+    thunk_FUN_103f6950((int)((int)&DAT_121a1348),(int)(*(int *)(*(int *)&DAT_121a1348 + 4)));
     return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a1348, 24));
 }
 
@@ -11899,7 +11905,7 @@ int FUN_117f6ee2(void) {
 #line 1 "ENTRY_1182b5d0"
 int FUN_1182b5d0(void) {
 
-    thunk_FUN_10af43b0((int)&DAT_121a4ad8, *(int *)(*(int *)&DAT_121a4ad8 + 4));
+    thunk_FUN_10af43b0((int)((int)&DAT_121a4ad8),(int)(*(int *)(*(int *)&DAT_121a4ad8 + 4)));
     return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a4ad8, 24));
 }
 
@@ -11936,7 +11942,7 @@ int FUN_11831535(void) {
 #line 1 "ENTRY_11835470"
 int FUN_11835470(void) {
 
-    thunk_FUN_108288d0((int)&DAT_121a56fc, *(int *)(*(int *)&DAT_121a56fc + 4));
+    thunk_FUN_108288d0((int)((int)&DAT_121a56fc),(int)(*(int *)(*(int *)&DAT_121a56fc + 4)));
     return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a56fc, 28));
 }
 
@@ -11944,7 +11950,7 @@ int FUN_11835470(void) {
 #line 1 "ENTRY_11835560"
 int FUN_11835560(void) {
 
-    thunk_FUN_10c5e210((int)&DAT_121a56a8, *(int *)(*(int *)&DAT_121a56a8 + 4));
+    thunk_FUN_10c5e210((int)((int)&DAT_121a56a8),(int)(*(int *)(*(int *)&DAT_121a56a8 + 4)));
     return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a56a8, 24));
 }
 
@@ -11952,7 +11958,7 @@ int FUN_11835560(void) {
 #line 1 "ENTRY_118355a0"
 int FUN_118355a0(void) {
 
-    thunk_FUN_10c5e210(*(int *)(*(int *)&DAT_121a56d0 + 4), (int)&DAT_121a56d0);
+    thunk_FUN_10c5e210((int)(*(int *)(*(int *)&DAT_121a56d0 + 4)),(int)((int)&DAT_121a56d0));
     return (int)(thunk_FUN_1148a50e(24, *(int *)&DAT_121a56d0));
 }
 
@@ -11974,7 +11980,7 @@ int FUN_11840f7e(void) {
 #line 1 "ENTRY_11846210"
 int FUN_11846210(void) {
 
-    thunk_FUN_10264380((int)&DAT_121a652c, *(int *)(*(int *)&DAT_121a652c + 4));
+    thunk_FUN_10264380((int)((int)&DAT_121a652c),(int)(*(int *)(*(int *)&DAT_121a652c + 4)));
     return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a652c, 24));
 }
 
@@ -11982,7 +11988,7 @@ int FUN_11846210(void) {
 #line 1 "ENTRY_11846250"
 int FUN_11846250(void) {
 
-    thunk_FUN_10264380((int)&DAT_121a6524, *(int *)(*(int *)&DAT_121a6524 + 4));
+    thunk_FUN_10264380((int)((int)&DAT_121a6524),(int)(*(int *)(*(int *)&DAT_121a6524 + 4)));
     return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a6524, 24));
 }
 
@@ -11990,7 +11996,7 @@ int FUN_11846250(void) {
 #line 1 "ENTRY_11861ee0"
 int FUN_11861ee0(void) {
 
-    thunk_FUN_11098770((int)&DAT_121a7bb8, *(int *)(*(int *)&DAT_121a7bb8 + 4));
+    thunk_FUN_11098770((int)((int)&DAT_121a7bb8),(int)(*(int *)(*(int *)&DAT_121a7bb8 + 4)));
     return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a7bb8, 24));
 }
 
@@ -11998,7 +12004,7 @@ int FUN_11861ee0(void) {
 #line 1 "ENTRY_11861f20"
 int FUN_11861f20(void) {
 
-    thunk_FUN_11098770(*(int *)(*(int *)&DAT_121a7bb0 + 4), (int)&DAT_121a7bb0);
+    thunk_FUN_11098770((int)(*(int *)(*(int *)&DAT_121a7bb0 + 4)),(int)((int)&DAT_121a7bb0));
     return (int)(thunk_FUN_1148a50e(24, *(int *)&DAT_121a7bb0));
 }
 
@@ -12006,6 +12012,6 @@ int FUN_11861f20(void) {
 #line 1 "ENTRY_11861f60"
 int FUN_11861f60(void) {
 
-    thunk_FUN_11098770(*(int *)(*(int *)&DAT_121a7bc0 + 4), (int)&DAT_121a7bc0);
+    thunk_FUN_11098770((int)(*(int *)(*(int *)&DAT_121a7bc0 + 4)),(int)((int)&DAT_121a7bc0));
     return (int)(thunk_FUN_1148a50e(24, *(int *)&DAT_121a7bc0));
 }

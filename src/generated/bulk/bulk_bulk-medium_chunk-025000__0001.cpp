@@ -2755,6 +2755,21 @@ template<class... A> int FUN_11862680(A...);
 void FUN_118626e0(void);
 template<class... A> int FUN_118626e0(A...);
 // Reference entry 117893b0; body size 25 bytes.
+extern int __stdcall thunk_FUN_101fdb50(int a1,int a2);
+extern int __stdcall thunk_FUN_10246290(int a1,int a2);
+extern int __stdcall thunk_FUN_10264380(int a1,int a2);
+extern int __stdcall thunk_FUN_102e6ba0(int a1,int a2);
+extern int __stdcall thunk_FUN_10681f80(int a1,int a2);
+extern int __stdcall thunk_FUN_106ab4f0(int a1,int a2);
+extern int __stdcall thunk_FUN_106dd300(int a1,int a2);
+extern int __stdcall thunk_FUN_106dd3c0(int a1,int a2);
+extern int __stdcall thunk_FUN_10af42f0(int a1,int a2);
+extern int __stdcall thunk_FUN_10b59b80(int a1,int a2);
+extern int __stdcall thunk_FUN_10bcf100(int a1,int a2);
+extern int __stdcall thunk_FUN_10c5e210(int a1,int a2);
+extern int __stdcall thunk_FUN_10d9ec90(int a1,int a2);
+extern int __stdcall thunk_FUN_10ed00f0(int a1,int a2);
+extern int __stdcall thunk_FUN_111a4830(int a1,int a2);
 #line 1 "ENTRY_117893b0"
 void FUN_117893b0(void){
   int unaff_EBP;
@@ -12478,7 +12493,7 @@ void FUN_117d14a0(void){
 void FUN_117eaec0(void)
 
 {
-  thunk_FUN_101fdb50(&DAT_121a0938,*(undefined4 *)(DAT_121a0938 + 4));
+  thunk_FUN_101fdb50((int)(&DAT_121a0938),(int)(*(undefined4 *)(DAT_121a0938 + 4)));
   thunk_FUN_1148a50e(DAT_121a0938,0x18);
   return;
 }
@@ -12490,7 +12505,7 @@ void FUN_117eaec0(void)
 void FUN_117ecf20(void)
 
 {
-  thunk_FUN_10264380(&DAT_121a0b18,*(undefined4 *)(DAT_121a0b18 + 4));
+  thunk_FUN_10264380((int)(&DAT_121a0b18),(int)(*(undefined4 *)(DAT_121a0b18 + 4)));
   thunk_FUN_1148a50e(DAT_121a0b18,0x18);
   return;
 }
@@ -12502,7 +12517,7 @@ void FUN_117ecf20(void)
 void FUN_117ef170(void)
 
 {
-  thunk_FUN_10246290(&DAT_121a0cf0,*(undefined4 *)(DAT_121a0cf0 + 4));
+  thunk_FUN_10246290((int)(&DAT_121a0cf0),(int)(*(undefined4 *)(DAT_121a0cf0 + 4)));
   thunk_FUN_1148a50e(DAT_121a0cf0,0x18);
   return;
 }
@@ -12525,7 +12540,7 @@ void FUN_117f1860(void)
 void FUN_117f1880(void)
 
 {
-  thunk_FUN_102e6ba0(&DAT_121a0f38,*(undefined4 *)(DAT_121a0f38 + 4));
+  thunk_FUN_102e6ba0((int)(&DAT_121a0f38),(int)(*(undefined4 *)(DAT_121a0f38 + 4)));
   thunk_FUN_1148a50e(DAT_121a0f38,0x18);
   return;
 }
@@ -12556,7 +12571,7 @@ void FUN_117f18d0(void)
 void FUN_11809710(void)
 
 {
-  thunk_FUN_10681f80(&DAT_121a24d8,*(undefined4 *)(DAT_121a24d8 + 4));
+  thunk_FUN_10681f80((int)(&DAT_121a24d8),(int)(*(undefined4 *)(DAT_121a24d8 + 4)));
   thunk_FUN_1148a50e(DAT_121a24d8,0x18);
   return;
 }
@@ -12582,7 +12597,7 @@ void FUN_1180b290(void)
 void FUN_1180c230(void)
 
 {
-  thunk_FUN_106dd300<>(&DAT_121a279c,*(undefined4 *)(DAT_121a279c + 4));
+  thunk_FUN_106dd300((int)(&DAT_121a279c),(int)(*(undefined4 *)(DAT_121a279c + 4)));
   thunk_FUN_1148a50e(DAT_121a279c,0x18);
   return;
 }
@@ -12594,7 +12609,7 @@ void FUN_1180c230(void)
 void FUN_1180c270(void)
 
 {
-  thunk_FUN_106dd3c0(&DAT_121a2794,*(undefined4 *)(DAT_121a2794 + 4));
+  thunk_FUN_106dd3c0((int)(&DAT_121a2794),(int)(*(undefined4 *)(DAT_121a2794 + 4)));
   thunk_FUN_1148a50e(DAT_121a2794,0x18);
   return;
 }
@@ -12606,7 +12621,7 @@ void FUN_1180c270(void)
 void FUN_11817a90(void)
 
 {
-  thunk_FUN_106ab4f0<>(&DAT_121a3524,*(undefined4 *)(DAT_121a3524 + 4));
+  thunk_FUN_106ab4f0((int)(&DAT_121a3524),(int)(*(undefined4 *)(DAT_121a3524 + 4)));
   thunk_FUN_1148a50e(DAT_121a3524,0x20);
   return;
 }
@@ -12618,7 +12633,7 @@ void FUN_11817a90(void)
 void FUN_1182b520(void)
 
 {
-  thunk_FUN_10af42f0<>(&DAT_121a4a8c,*(undefined4 *)(DAT_121a4a8c + 4));
+  thunk_FUN_10af42f0((int)(&DAT_121a4a8c),(int)(*(undefined4 *)(DAT_121a4a8c + 4)));
   thunk_FUN_1148a50e(DAT_121a4a8c,0x18);
   return;
 }
@@ -12630,7 +12645,7 @@ void FUN_1182b520(void)
 void FUN_1182d790(void)
 
 {
-  thunk_FUN_10b59b80(&DAT_121a4e48,*(undefined4 *)(DAT_121a4e48 + 4));
+  thunk_FUN_10b59b80((int)(&DAT_121a4e48),(int)(*(undefined4 *)(DAT_121a4e48 + 4)));
   thunk_FUN_1148a50e(DAT_121a4e48,0x1c);
   return;
 }
@@ -12642,7 +12657,7 @@ void FUN_1182d790(void)
 void FUN_11830f70(void)
 
 {
-  thunk_FUN_10bcf100<>(&DAT_121a5138,*(undefined4 *)(DAT_121a5138 + 4));
+  thunk_FUN_10bcf100((int)(&DAT_121a5138),(int)(*(undefined4 *)(DAT_121a5138 + 4)));
   thunk_FUN_1148a50e(DAT_121a5138,0x30);
   return;
 }
@@ -12654,7 +12669,7 @@ void FUN_11830f70(void)
 void FUN_11835520(void)
 
 {
-  thunk_FUN_10c5e210(&DAT_121a56e4,*(undefined4 *)(DAT_121a56e4 + 4));
+  thunk_FUN_10c5e210((int)(&DAT_121a56e4),(int)(*(undefined4 *)(DAT_121a56e4 + 4)));
   thunk_FUN_1148a50e(DAT_121a56e4,0x18);
   return;
 }
@@ -12666,7 +12681,7 @@ void FUN_11835520(void)
 void FUN_118442b0(void)
 
 {
-  thunk_FUN_10d9ec90(&DAT_121a63bc,*(undefined4 *)(DAT_121a63bc + 4));
+  thunk_FUN_10d9ec90((int)(&DAT_121a63bc),(int)(*(undefined4 *)(DAT_121a63bc + 4)));
   thunk_FUN_1148a50e(DAT_121a63bc,0x18);
   return;
 }
@@ -12689,7 +12704,7 @@ void FUN_1184e0c0(void)
 void FUN_1184ebd0(void)
 
 {
-  thunk_FUN_10ed00f0(&DAT_121a6bac,*(undefined4 *)(DAT_121a6bac + 4));
+  thunk_FUN_10ed00f0((int)(&DAT_121a6bac),(int)(*(undefined4 *)(DAT_121a6bac + 4)));
   thunk_FUN_1148a50e(DAT_121a6bac,0x30);
   return;
 }
@@ -12739,7 +12754,7 @@ void FUN_1185bd80(void)
 void FUN_118624f0(void)
 
 {
-  thunk_FUN_111a4830(&DAT_122e8ab0,*(undefined4 *)(DAT_122e8ab0 + 4));
+  thunk_FUN_111a4830((int)(&DAT_122e8ab0),(int)(*(undefined4 *)(DAT_122e8ab0 + 4)));
   thunk_FUN_1148a50e(DAT_122e8ab0,0x18);
   return;
 }

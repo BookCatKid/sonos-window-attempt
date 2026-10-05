@@ -4901,10 +4901,13 @@ template<class... A> int FUN_10271fe0(A...);
 int __stdcall FUN_10274720(int a1);
 template<class... A> int FUN_10274720(A...);
 // Reference entry 100d3bd0; body size 15 bytes.
+extern int __stdcall FUN_1005273e(int a1);
+extern int __stdcall thunk_FUN_112429a0(int a1,int a2,int a3);
+extern int __stdcall thunk_FUN_11283480(int a1,int a2,int a3,int a4,int a5,int a6);
 #line 1 "ENTRY_100d3bd0"
 int FUN_100d3bd0(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881128));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881128)));
 }
 
 // Reference entry 100d3be2; body size 4 bytes.
@@ -4922,7 +4925,7 @@ int FUN_100d3be2(void) {
 #line 1 "ENTRY_100d3c07"
 int FUN_100d3c07(int a1) {
 
-    return (int)(FUN_1005273e(a1));
+    return (int)(FUN_1005273e((int)(a1)));
 }
 
 // Reference entry 100d3c12; body size 9 bytes.
@@ -5166,7 +5169,7 @@ int FUN_100da7c7(void) {
 #line 1 "ENTRY_100db420"
 int FUN_100db420(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881128));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881128)));
 }
 
 // Reference entry 100db432; body size 9 bytes.
@@ -5180,7 +5183,7 @@ int FUN_100db432(int a1) {
 #line 1 "ENTRY_100db450"
 int FUN_100db450(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881128));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881128)));
 }
 
 // Reference entry 100db462; body size 9 bytes.
@@ -5194,7 +5197,7 @@ int FUN_100db462(int a1) {
 #line 1 "ENTRY_100db480"
 int FUN_100db480(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881ff0));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881ff0)));
 }
 
 // Reference entry 100db492; body size 9 bytes.
@@ -5208,7 +5211,7 @@ int FUN_100db492(int a1) {
 #line 1 "ENTRY_100dbe90"
 int FUN_100dbe90(void) {
 
-    FUN_1005273e(0);
+    FUN_1005273e((int)(0));
     return (int)(_atexit((int)&FUN_1184e0c0));
 }
 
@@ -5265,7 +5268,7 @@ int FUN_100e0997(int a1, int a2) {
 #line 1 "ENTRY_100e2290"
 int FUN_100e2290(void) {
 
-    return (int)(FUN_1005273e((int)&s_TagLifecycleSettingsStatus_11881e14));
+    return (int)(FUN_1005273e((int)((int)&s_TagLifecycleSettingsStatus_11881e14)));
 }
 
 // Reference entry 100e22a2; body size 9 bytes.
@@ -5279,7 +5282,7 @@ int FUN_100e22a2(int a1) {
 #line 1 "ENTRY_100e22c0"
 int FUN_100e22c0(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881128));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881128)));
 }
 
 // Reference entry 100e22d2; body size 9 bytes.
@@ -5337,35 +5340,35 @@ int FUN_100e2e03(void) {
 #line 1 "ENTRY_100e3300"
 int FUN_100e3300(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881ff0));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881ff0)));
 }
 
 // Reference entry 100e3330; body size 20 bytes.
 #line 1 "ENTRY_100e3330"
 int FUN_100e3330(void) {
 
-    return (int)(FUN_1005273e((int)&s_locale_11881e34));
+    return (int)(FUN_1005273e((int)((int)&s_locale_11881e34)));
 }
 
 // Reference entry 100e3360; body size 20 bytes.
 #line 1 "ENTRY_100e3360"
 int FUN_100e3360(void) {
 
-    return (int)(FUN_1005273e((int)&s_The_serial_number_of_the_product_11881e40));
+    return (int)(FUN_1005273e((int)((int)&s_The_serial_number_of_the_product_11881e40)));
 }
 
 // Reference entry 100e3390; body size 20 bytes.
 #line 1 "ENTRY_100e3390"
 int FUN_100e3390(void) {
 
-    return (int)(FUN_1005273e((int)&s_product_11881df0));
+    return (int)(FUN_1005273e((int)((int)&s_product_11881df0)));
 }
 
 // Reference entry 100e33c0; body size 20 bytes.
 #line 1 "ENTRY_100e33c0"
 int FUN_100e33c0(void) {
 
-    return (int)(FUN_1005273e((int)&s_The_selected_room_name_11881f48));
+    return (int)(FUN_1005273e((int)((int)&s_The_selected_room_name_11881f48)));
 }
 
 // Reference entry 100e5b50; body size 22 bytes.
@@ -5417,7 +5420,7 @@ int FUN_100e6049(int a1) {
 #line 1 "ENTRY_100e6090"
 int FUN_100e6090(void) {
 
-    thunk_FUN_11283480<>(255, (int)&DAT_1186d2ee, (int)&DAT_1186d2ee, (int)&DAT_1186d2ee, (int)&DAT_1186d2ee, 0);
+    thunk_FUN_11283480((int)(255),(int)((int)&DAT_1186d2ee),(int)((int)&DAT_1186d2ee),(int)((int)&DAT_1186d2ee),(int)((int)&DAT_1186d2ee),(int)(0));
     thunk_FUN_11282620();
     *(int *)&DAT_12120fd8 = 0;
     *(int *)&DAT_12120fdc = 0;
@@ -5432,7 +5435,7 @@ int FUN_100e6090(void) {
 #line 1 "ENTRY_100e6130"
 int FUN_100e6130(void) {
 
-    thunk_FUN_112429a0((int)&s_rwlW_ssl_config_119e7434, (int)&s_rwlR_ssl_config_119e7420, 1);
+    thunk_FUN_112429a0((int)((int)&s_rwlW_ssl_config_119e7434),(int)((int)&s_rwlR_ssl_config_119e7420),(int)(1));
     return (int)(_atexit((int)&FUN_118626c0));
 }
 
@@ -6007,7 +6010,7 @@ int FUN_102282c0(int a1) {
 #line 1 "ENTRY_102282cc"
 int FUN_102282cc(void) {
 
-    FUN_1005273e((int)&DAT_11878fbc);
+    FUN_1005273e((int)((int)&DAT_11878fbc));
     return (int)(thunk_FUN_103d63d0<>());
 }
 
@@ -6035,7 +6038,7 @@ int FUN_1022fb40(void) {
 #line 1 "ENTRY_1022fb4b"
 int __stdcall FUN_1022fb4b(int a1) {
 
-    FUN_1005273e((int)&DAT_11878fbc);
+    FUN_1005273e((int)((int)&DAT_11878fbc));
     return (int)(thunk_FUN_103d63d0<>());
 }
 

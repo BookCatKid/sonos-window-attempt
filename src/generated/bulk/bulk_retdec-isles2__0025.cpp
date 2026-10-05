@@ -4676,6 +4676,7 @@ template<class... A> int FUN_117d0126(A...);
 int FUN_117d0198(int a1);
 template<class... A> int FUN_117d0198(A...);
 // Reference entry 100dec52; body size 25 bytes.
+extern int __stdcall FUN_1008ca83(int a1);
 #line 1 "ENTRY_100dec52"
 int FUN_100dec52(void) {
 
@@ -4738,7 +4739,7 @@ int FUN_102d5c20(int a1, int a2) {
             return (int)(5);
         }
         case 3: {
-            if ((char)FUN_1008ca83((int)&s_explicitContentFiltering_1189065c) != 0 || (char)FUN_1008ca83((int)&s_recentlyPlayed_1189067c) != 0 || (char)FUN_1008ca83((int)&s_userMetricsTracking_11890690) != 0) {
+            if ((char)FUN_1008ca83((int)((int)&s_explicitContentFiltering_1189065c)) != 0 || (char)FUN_1008ca83((int)((int)&s_recentlyPlayed_1189067c)) != 0 || (char)FUN_1008ca83((int)((int)&s_userMetricsTracking_11890690)) != 0) {
                 return (int)(2);
             }
             break;
@@ -4750,10 +4751,10 @@ int FUN_102d5c20(int a1, int a2) {
             return (int)(0);
         }
     }
-    if ((char)FUN_1008ca83((int)&s_museHHName_118906a8) != 0) {
+    if ((char)FUN_1008ca83((int)((int)&s_museHHName_118906a8)) != 0) {
         return (int)(2);
     }
-    if ((char)FUN_1008ca83((int)&s_autoUpdatesEnabled_118906b8) == 0) {
+    if ((char)FUN_1008ca83((int)((int)&s_autoUpdatesEnabled_118906b8)) == 0) {
         return (int)(0);
     }
     return (int)(1);

@@ -4723,6 +4723,8 @@ template<class... A> int FUN_100be420(A...);
 int FUN_100be450(void);
 template<class... A> int FUN_100be450(A...);
 // Reference entry 100acd23; body size 9 bytes.
+extern int __stdcall FUN_10035b98(int a1,int a2,int a3,int a4,int a5);
+extern int __stdcall FUN_1005273e(int a1);
 #line 1 "ENTRY_100acd23"
 int FUN_100acd23(int a1) {
 
@@ -4821,10 +4823,10 @@ int *v2 = (int *)((int)((int *)(v1 + 0xf88d))); // (int)&FUN_100ad12e
     bool v3; // (int)((int(*)(void))&FUN_100ad12c<>)
     *v2 = (int)(v1 + (int)v3 + *v2);
     short v4; // (int)((int(*)(void))&FUN_100ad12c<>)
-    FUN_1005273e(v4);
+    FUN_1005273e((int)(v4));
     *(int*)(v1 + 253) = (int)(0x2bcb);
     *(char*)(v1 - 3) = (char)(31);
-    return (int)(FUN_1005273e(-0x48fc));
+    return (int)(FUN_1005273e((int)(-0x48fc)));
 }
 
 // Reference entry 100ad163; body size 85 bytes.
@@ -4869,7 +4871,7 @@ int FUN_100aeaf7(void) {
 #line 1 "ENTRY_100af520"
 int FUN_100af520(void) {
 
-    FUN_10035b98((int)&DAT_121a0e80, 4, 43, (int)&FUN_10012620, (int)&FUN_1008c50b);
+    FUN_10035b98((int)((int)&DAT_121a0e80),(int)(4),(int)(43),(int)((int)&FUN_10012620),(int)((int)&FUN_1008c50b));
     return (int)(_atexit((int)&FUN_117f1860));
 }
 
@@ -4911,42 +4913,42 @@ int FUN_100b3017(void) {
 #line 1 "ENTRY_100b32e0"
 int FUN_100b32e0(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881128));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881128)));
 }
 
 // Reference entry 100b3310; body size 20 bytes.
 #line 1 "ENTRY_100b3310"
 int FUN_100b3310(void) {
 
-    return (int)(FUN_1005273e((int)&s_HistoryHideSwimlane_118a3ce0));
+    return (int)(FUN_1005273e((int)((int)&s_HistoryHideSwimlane_118a3ce0)));
 }
 
 // Reference entry 100b3340; body size 20 bytes.
 #line 1 "ENTRY_100b3340"
 int FUN_100b3340(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881128));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881128)));
 }
 
 // Reference entry 100b3370; body size 20 bytes.
 #line 1 "ENTRY_100b3370"
 int FUN_100b3370(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881ff0));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881ff0)));
 }
 
 // Reference entry 100b33a0; body size 20 bytes.
 #line 1 "ENTRY_100b33a0"
 int FUN_100b33a0(void) {
 
-    return (int)(FUN_1005273e((int)&s_locale_11881e34));
+    return (int)(FUN_1005273e((int)((int)&s_locale_11881e34)));
 }
 
 // Reference entry 100b33d0; body size 20 bytes.
 #line 1 "ENTRY_100b33d0"
 int FUN_100b33d0(void) {
 
-    return (int)(FUN_1005273e((int)&s_The_serial_number_of_the_product_11881e40));
+    return (int)(FUN_1005273e((int)((int)&s_The_serial_number_of_the_product_11881e40)));
 }
 
 // Reference entry 100b3d67; body size 20 bytes.
@@ -4961,7 +4963,7 @@ int FUN_100b3d67(short a1) {
 #line 1 "ENTRY_100b4a80"
 int FUN_100b4a80(void) {
 
-    return (int)(FUN_1005273e((int)&DAT_11881e04));
+    return (int)(FUN_1005273e((int)((int)&DAT_11881e04)));
 }
 
 // Reference entry 100b4a92; body size 9 bytes.
@@ -4980,7 +4982,7 @@ int FUN_100b4a92(int a1) {
 #line 1 "ENTRY_100b4ab0"
 int FUN_100b4ab0(void) {
 
-    return (int)(FUN_1005273e((int)&s_The_SSID_the_user_selected_this_p_11881fb0));
+    return (int)(FUN_1005273e((int)((int)&s_The_SSID_the_user_selected_this_p_11881fb0)));
 }
 
 // Reference entry 100b4ac2; body size 9 bytes.
@@ -5097,7 +5099,7 @@ int FUN_100b7407(void) {
 int FUN_100b7df7(void) {
 
     short v1; // (int)((int(*)(void))&FUN_100b7df7<>)
-    FUN_1005273e(v1);
+    FUN_1005273e((int)(v1));
     return (int)(_atexit((int)&FUN_11804340));
 }
 
@@ -5144,7 +5146,7 @@ int FUN_100bb6a0(void) {
 #line 1 "ENTRY_100bbf00"
 int FUN_100bbf00(void) {
 
-    return (int)(FUN_1005273e((int)&s_nfcErrorMessage_1188d480));
+    return (int)(FUN_1005273e((int)((int)&s_nfcErrorMessage_1188d480)));
 }
 
 // Reference entry 100bbf12; body size 9 bytes.
@@ -5162,7 +5164,7 @@ int FUN_100bbf12(void) {
 #line 1 "ENTRY_100bbf30"
 int FUN_100bbf30(void) {
 
-    return (int)(FUN_1005273e((int)&s_nfcScanData_1188d494));
+    return (int)(FUN_1005273e((int)((int)&s_nfcScanData_1188d494)));
 }
 
 // Reference entry 100bbf42; body size 9 bytes.

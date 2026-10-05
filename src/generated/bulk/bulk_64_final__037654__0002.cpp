@@ -6155,6 +6155,9 @@ template<class... A> int FUN_11821f50(A...);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_11821fc0(void);
 template<class... A> int FUN_11821fc0(A...);
 // Reference entry 117f8bf0; body size 76 bytes.
+extern int __stdcall thunk_FUN_10246290(int a1,int a2);
+extern int __stdcall thunk_FUN_105b6da0(int a1,int a2);
+extern int __stdcall thunk_FUN_10723b00(int a1,int a2);
 #line 1 "ENTRY_117f8bf0"
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
@@ -17062,9 +17065,9 @@ void FUN_11806420(void)
 void FUN_118064a0(void)
 
 {
-  thunk_FUN_10246290(&DAT_121a2020,*(undefined4 *)(DAT_121a2020 + 4));
+  thunk_FUN_10246290((int)(&DAT_121a2020),(int)(*(undefined4 *)(DAT_121a2020 + 4)));
   thunk_FUN_1148a50e(DAT_121a2020,0x18);
-  thunk_FUN_105b6da0(&DAT_121a2018,*(undefined4 *)(DAT_121a2018 + 4));
+  thunk_FUN_105b6da0((int)(&DAT_121a2018),(int)(*(undefined4 *)(DAT_121a2018 + 4)));
   thunk_FUN_1148a50e(DAT_121a2018,0x18);
   thunk_FUN_105ba370();
   return;
@@ -23347,9 +23350,9 @@ void FUN_1180e310(void)
 void FUN_1180e380(void)
 
 {
-  thunk_FUN_10246290(&DAT_121a2a64,*(undefined4 *)(DAT_121a2a64 + 4));
+  thunk_FUN_10246290((int)(&DAT_121a2a64),(int)(*(undefined4 *)(DAT_121a2a64 + 4)));
   thunk_FUN_1148a50e(DAT_121a2a64,0x18);
-  thunk_FUN_10723b00(&DAT_121a2a5c,*(undefined4 *)(DAT_121a2a5c + 4));
+  thunk_FUN_10723b00((int)(&DAT_121a2a5c),(int)(*(undefined4 *)(DAT_121a2a5c + 4)));
   thunk_FUN_1148a50e(DAT_121a2a5c,0x18);
   DAT_121a2a58 = (int)((uint)&ghidra_vftable_SCLoggingHelper);
   thunk_FUN_105ba370();

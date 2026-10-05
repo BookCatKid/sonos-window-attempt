@@ -2516,32 +2516,32 @@ __stdcall FUN_1014cf50(int *param_1,ushort *param_2,ushort *param_3,ushort *para
 template<class... A> int FUN_1014cf50(A...);
 undefined4 __stdcall FUN_1014d0f0(int *param_1,ushort *param_2);
 template<class... A> int FUN_1014d0f0(A...);
-undefined4 FUN_1014d210(int *param_1);
-template<class... A> int FUN_1014d210(A...);
-undefined4 FUN_1014d2b0(int *param_1);
-template<class... A> int FUN_1014d2b0(A...);
-undefined4 FUN_1014d350(int *param_1);
-template<class... A> int FUN_1014d350(A...);
+undefined4 __stdcall FUN_1014d210(int *param_1);
+template<class... A> int __stdcall FUN_1014d210(A...);
+undefined4 __stdcall FUN_1014d2b0(int *param_1);
+template<class... A> int __stdcall FUN_1014d2b0(A...);
+undefined4 __stdcall FUN_1014d350(int *param_1);
+template<class... A> int __stdcall FUN_1014d350(A...);
 undefined4 __stdcall FUN_1014d3f0(int *param_1,undefined4 param_2);
 template<class... A> int FUN_1014d3f0(A...);
 undefined4 FUN_1014d4e0(void);
 template<class... A> int FUN_1014d4e0(A...);
 void __stdcall FUN_1014d5a0(int *param_1,ushort *param_2);
 template<class... A> int FUN_1014d5a0(A...);
-undefined4 FUN_1014d690(int *param_1);
-template<class... A> int FUN_1014d690(A...);
+undefined4 __stdcall FUN_1014d690(int *param_1);
+template<class... A> int __stdcall FUN_1014d690(A...);
 undefined4 __stdcall FUN_1014d7f0(int *param_1);
-template<class... A> int FUN_1014d7f0(A...);
+template<class... A> int __stdcall FUN_1014d7f0(A...);
 undefined4 __stdcall FUN_1014d8e0(int *param_1);
-template<class... A> int FUN_1014d8e0(A...);
+template<class... A> int __stdcall FUN_1014d8e0(A...);
 undefined4 __stdcall FUN_1014d9d0(int *param_1);
-template<class... A> int FUN_1014d9d0(A...);
+template<class... A> int __stdcall FUN_1014d9d0(A...);
 SCStr * __stdcall FUN_1014dac0(int *param_1);
-template<class... A> int FUN_1014dac0(A...);
+template<class... A> int __stdcall FUN_1014dac0(A...);
 undefined4 __stdcall FUN_1014dc10(int *param_1);
-template<class... A> int FUN_1014dc10(A...);
+template<class... A> int __stdcall FUN_1014dc10(A...);
 undefined4 __stdcall FUN_1014dd00(int *param_1);
-template<class... A> int FUN_1014dd00(A...);
+template<class... A> int __stdcall FUN_1014dd00(A...);
 void __stdcall FUN_1014de40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
@@ -2555,9 +2555,9 @@ undefined4 __stdcall FUN_1014df80(int *param_1,undefined4 param_2,ushort *param_
 template<class... A> int FUN_1014df80(A...);
 undefined4 __stdcall FUN_1014e030(int *param_1,ushort *param_2,ushort *param_3);
 template<class... A> int FUN_1014e030(A...);
-undefined4 FUN_1014e120(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_1014e120(int *param_1,undefined4 param_2);
 template<class... A> int FUN_1014e120(A...);
-undefined4 FUN_1014e1c0(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_1014e1c0(int *param_1,undefined4 param_2);
 template<class... A> int FUN_1014e1c0(A...);
 undefined4 __stdcall FUN_1014e260(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
 template<class... A> int FUN_1014e260(A...);
@@ -2595,105 +2595,105 @@ undefined4 __stdcall FUN_1014eda0(int *param_1,ushort *param_2,ushort *param_3,u
 template<class... A> int FUN_1014eda0(A...);
 undefined4 __stdcall FUN_1014ee90(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
 template<class... A> int FUN_1014ee90(A...);
-undefined4 FUN_1014ef80(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_1014ef80(int *param_1,undefined4 param_2);
 template<class... A> int FUN_1014ef80(A...);
 undefined4 __stdcall FUN_1014f020(int *param_1,ushort *param_2,ushort *param_3);
 template<class... A> int FUN_1014f020(A...);
 undefined4 __stdcall FUN_1014f110(int *param_1,ushort *param_2);
 template<class... A> int FUN_1014f110(A...);
-undefined4 FUN_1014f1c0(int *param_1,undefined4 param_2,undefined4 param_3);
+undefined4 __stdcall FUN_1014f1c0(int *param_1,undefined4 param_2,undefined4 param_3);
 template<class... A> int FUN_1014f1c0(A...);
 undefined4 __stdcall FUN_1014f260(int *param_1,ushort *param_2,ushort *param_3);
 template<class... A> int FUN_1014f260(A...);
-undefined4 FUN_1014f350(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_1014f350(int *param_1,undefined4 param_2);
 template<class... A> int FUN_1014f350(A...);
-undefined4 FUN_1014f3f0(int *param_1,undefined4 param_2,undefined4 param_3);
+undefined4 __stdcall FUN_1014f3f0(int *param_1,undefined4 param_2,undefined4 param_3);
 template<class... A> int FUN_1014f3f0(A...);
 undefined4 __stdcall FUN_1014f490(int *param_1,ushort *param_2,ushort *param_3,int param_4);
 template<class... A> int FUN_1014f490(A...);
-undefined4 FUN_1014f580(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_1014f580(int *param_1,undefined4 param_2);
 template<class... A> int FUN_1014f580(A...);
 undefined4 __stdcall FUN_1014f620(int *param_1,undefined4 param_2,ushort *param_3);
 template<class... A> int FUN_1014f620(A...);
 undefined4
 __stdcall FUN_1014f6e0(int *param_1,int param_2,ushort *param_3,undefined4 param_4,undefined4 param_5);
 template<class... A> int FUN_1014f6e0(A...);
-undefined4 FUN_1014f7a0(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_1014f7a0(int *param_1,undefined4 param_2);
 template<class... A> int FUN_1014f7a0(A...);
-undefined4 FUN_1014f8d0(int *param_1,undefined4 param_2,undefined4 param_3);
+undefined4 __stdcall FUN_1014f8d0(int *param_1,undefined4 param_2,undefined4 param_3);
 template<class... A> int FUN_1014f8d0(A...);
-undefined4 FUN_1014f980(int *param_1);
-template<class... A> int FUN_1014f980(A...);
-undefined4 FUN_1014fa30(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_1014f980(int *param_1);
+template<class... A> int __stdcall FUN_1014f980(A...);
+undefined4 __stdcall FUN_1014fa30(int *param_1,undefined4 param_2);
 template<class... A> int FUN_1014fa30(A...);
 undefined4 __stdcall FUN_1014fae0(int *param_1,ushort *param_2);
 template<class... A> int FUN_1014fae0(A...);
-undefined4 FUN_1014fc20(int *param_1,int *param_2);
+undefined4 __stdcall FUN_1014fc20(int *param_1,int *param_2);
 template<class... A> int FUN_1014fc20(A...);
-undefined4 FUN_1014fce0(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_1014fce0(int *param_1,undefined4 param_2);
 template<class... A> int FUN_1014fce0(A...);
 undefined4 __stdcall FUN_1014fd90(int *param_1,ushort *param_2);
 template<class... A> int FUN_1014fd90(A...);
 undefined4 __stdcall FUN_1014fe80(int *param_1,ushort *param_2,undefined4 param_3);
 template<class... A> int FUN_1014fe80(A...);
-undefined4 FUN_1014ffb0(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_1014ffb0(int *param_1,undefined4 param_2);
 template<class... A> int FUN_1014ffb0(A...);
-undefined4 FUN_10150050(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_10150050(int *param_1,undefined4 param_2);
 template<class... A> int FUN_10150050(A...);
-undefined4 FUN_101500f0(int *param_1);
-template<class... A> int FUN_101500f0(A...);
-undefined4 FUN_101501a0(int *param_1);
-template<class... A> int FUN_101501a0(A...);
+undefined4 __stdcall FUN_101500f0(int *param_1);
+template<class... A> int __stdcall FUN_101500f0(A...);
+undefined4 __stdcall FUN_101501a0(int *param_1);
+template<class... A> int __stdcall FUN_101501a0(A...);
 undefined4 __stdcall FUN_10150240(int *param_1);
-template<class... A> int FUN_10150240(A...);
-undefined4 FUN_10150330(int *param_1,undefined4 param_2);
+template<class... A> int __stdcall FUN_10150240(A...);
+undefined4 __stdcall FUN_10150330(int *param_1,undefined4 param_2);
 template<class... A> int FUN_10150330(A...);
-undefined4 FUN_101503d0(int *param_1);
-template<class... A> int FUN_101503d0(A...);
-undefined4 FUN_10150470(int *param_1);
-template<class... A> int FUN_10150470(A...);
-undefined4 FUN_10150510(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_101503d0(int *param_1);
+template<class... A> int __stdcall FUN_101503d0(A...);
+undefined4 __stdcall FUN_10150470(int *param_1);
+template<class... A> int __stdcall FUN_10150470(A...);
+undefined4 __stdcall FUN_10150510(int *param_1,undefined4 param_2);
 template<class... A> int FUN_10150510(A...);
-undefined4 FUN_101505b0(int *param_1,undefined4 param_2,undefined4 param_3);
+undefined4 __stdcall FUN_101505b0(int *param_1,undefined4 param_2,undefined4 param_3);
 template<class... A> int FUN_101505b0(A...);
-undefined4 FUN_10150690(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_10150690(int *param_1,undefined4 param_2);
 template<class... A> int FUN_10150690(A...);
-undefined4 FUN_101507c0(int *param_1);
-template<class... A> int FUN_101507c0(A...);
+undefined4 __stdcall FUN_101507c0(int *param_1);
+template<class... A> int __stdcall FUN_101507c0(A...);
 undefined4 __stdcall FUN_10150860(int *param_1);
-template<class... A> int FUN_10150860(A...);
+template<class... A> int __stdcall FUN_10150860(A...);
 undefined4 __stdcall FUN_10150960(int *param_1);
-template<class... A> int FUN_10150960(A...);
+template<class... A> int __stdcall FUN_10150960(A...);
 undefined4 __stdcall FUN_10150a50(int *param_1);
-template<class... A> int FUN_10150a50(A...);
-undefined4 FUN_10150b50(int *param_1);
-template<class... A> int FUN_10150b50(A...);
-undefined4 FUN_10150bf0(int *param_1);
-template<class... A> int FUN_10150bf0(A...);
-undefined4 FUN_10150c90(int *param_1);
-template<class... A> int FUN_10150c90(A...);
-undefined4 FUN_10150d30(int *param_1);
-template<class... A> int FUN_10150d30(A...);
+template<class... A> int __stdcall FUN_10150a50(A...);
+undefined4 __stdcall FUN_10150b50(int *param_1);
+template<class... A> int __stdcall FUN_10150b50(A...);
+undefined4 __stdcall FUN_10150bf0(int *param_1);
+template<class... A> int __stdcall FUN_10150bf0(A...);
+undefined4 __stdcall FUN_10150c90(int *param_1);
+template<class... A> int __stdcall FUN_10150c90(A...);
+undefined4 __stdcall FUN_10150d30(int *param_1);
+template<class... A> int __stdcall FUN_10150d30(A...);
 undefined4 __stdcall FUN_10150dd0(int *param_1);
-template<class... A> int FUN_10150dd0(A...);
-undefined4 FUN_10150ec0(int *param_1);
-template<class... A> int FUN_10150ec0(A...);
+template<class... A> int __stdcall FUN_10150dd0(A...);
+undefined4 __stdcall FUN_10150ec0(int *param_1);
+template<class... A> int __stdcall FUN_10150ec0(A...);
 undefined4 __stdcall FUN_10150f80(int *param_1);
-template<class... A> int FUN_10150f80(A...);
+template<class... A> int __stdcall FUN_10150f80(A...);
 undefined4 __stdcall FUN_10151070(int *param_1);
-template<class... A> int FUN_10151070(A...);
+template<class... A> int __stdcall FUN_10151070(A...);
 undefined4 __stdcall FUN_10151190(int *param_1);
-template<class... A> int FUN_10151190(A...);
-undefined4 FUN_10151280(int *param_1);
-template<class... A> int FUN_10151280(A...);
+template<class... A> int __stdcall FUN_10151190(A...);
+undefined4 __stdcall FUN_10151280(int *param_1);
+template<class... A> int __stdcall FUN_10151280(A...);
 undefined4 __stdcall FUN_10151320(int *param_1);
-template<class... A> int FUN_10151320(A...);
+template<class... A> int __stdcall FUN_10151320(A...);
 undefined4 __stdcall FUN_10151410(int *param_1,undefined4 param_2);
 template<class... A> int FUN_10151410(A...);
 undefined4 __stdcall FUN_10151500(int *param_1);
-template<class... A> int FUN_10151500(A...);
-undefined4 FUN_10151670(int *param_1);
-template<class... A> int FUN_10151670(A...);
+template<class... A> int __stdcall FUN_10151500(A...);
+undefined4 __stdcall FUN_10151670(int *param_1);
+template<class... A> int __stdcall FUN_10151670(A...);
 void __stdcall FUN_10151790(int *param_1,ushort *param_2);
 template<class... A> int FUN_10151790(A...);
 void __stdcall FUN_101519e0(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
@@ -2701,7 +2701,7 @@ template<class... A> int FUN_101519e0(A...);
 void __stdcall FUN_10151ac0(int *param_1,ushort *param_2);
 template<class... A> int FUN_10151ac0(A...);
 void __stdcall FUN_10151b50(int *param_1);
-template<class... A> int FUN_10151b50(A...);
+template<class... A> int __stdcall FUN_10151b50(A...);
 void __stdcall FUN_10151bd0(int *param_1,int param_2,ushort *param_3);
 template<class... A> int FUN_10151bd0(A...);
 void __stdcall FUN_10151c60(int *param_1,int param_2);
@@ -2709,9 +2709,9 @@ template<class... A> int FUN_10151c60(A...);
 undefined4 __stdcall FUN_10151d10(int *param_1,undefined4 param_2,ushort *param_3,ushort *param_4);
 template<class... A> int FUN_10151d10(A...);
 undefined4 __stdcall FUN_10151e10(int *param_1);
-template<class... A> int FUN_10151e10(A...);
+template<class... A> int __stdcall FUN_10151e10(A...);
 undefined4 __stdcall FUN_10151f00(int *param_1);
-template<class... A> int FUN_10151f00(A...);
+template<class... A> int __stdcall FUN_10151f00(A...);
 undefined4 __stdcall FUN_10152050(int *param_1,undefined4 param_2);
 template<class... A> int FUN_10152050(A...);
 void __stdcall FUN_10152180(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
@@ -2727,19 +2727,19 @@ template<class... A> int FUN_101524a0(A...);
 void __stdcall FUN_10152530(int *param_1,undefined4 param_2,ushort *param_3,undefined4 param_4);
 template<class... A> int FUN_10152530(A...);
 undefined4 __stdcall FUN_10152650(int *param_1);
-template<class... A> int FUN_10152650(A...);
+template<class... A> int __stdcall FUN_10152650(A...);
 undefined1 __stdcall FUN_101527d0(int *param_1,ushort *param_2,undefined4 param_3,int param_4);
 template<class... A> int FUN_101527d0(A...);
 undefined1 __stdcall FUN_10152870(int *param_1,ushort *param_2,undefined4 param_3);
 template<class... A> int FUN_10152870(A...);
 undefined4 * __stdcall FUN_10152910(int *param_1,ushort *param_2);
 template<class... A> int FUN_10152910(A...);
-undefined4 FUN_10152bc0(int *param_1,int *param_2);
+undefined4 __stdcall FUN_10152bc0(int *param_1,int *param_2);
 template<class... A> int FUN_10152bc0(A...);
-undefined4 FUN_10152c70(int *param_1);
-template<class... A> int FUN_10152c70(A...);
-undefined4 FUN_10152d10(int *param_1);
-template<class... A> int FUN_10152d10(A...);
+undefined4 __stdcall FUN_10152c70(int *param_1);
+template<class... A> int __stdcall FUN_10152c70(A...);
+undefined4 __stdcall FUN_10152d10(int *param_1);
+template<class... A> int __stdcall FUN_10152d10(A...);
 undefined4 __stdcall FUN_10152db0(int *param_1,ushort *param_2);
 template<class... A> int FUN_10152db0(A...);
 undefined1 __stdcall FUN_10152e60(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
@@ -2748,44 +2748,44 @@ undefined1 __stdcall FUN_10152f30(int *param_1,ushort *param_2,int param_3);
 template<class... A> int FUN_10152f30(A...);
 undefined1 __stdcall FUN_10152fd0(int *param_1,ushort *param_2);
 template<class... A> int FUN_10152fd0(A...);
-undefined4 FUN_10153070(int *param_1);
-template<class... A> int FUN_10153070(A...);
+undefined4 __stdcall FUN_10153070(int *param_1);
+template<class... A> int __stdcall FUN_10153070(A...);
 undefined4 __stdcall FUN_10153110(int *param_1);
-template<class... A> int FUN_10153110(A...);
+template<class... A> int __stdcall FUN_10153110(A...);
 undefined4 __stdcall FUN_10153200(int *param_1);
-template<class... A> int FUN_10153200(A...);
+template<class... A> int __stdcall FUN_10153200(A...);
 void __stdcall FUN_10153330(int *param_1,ushort *param_2);
 template<class... A> int FUN_10153330(A...);
-undefined4 FUN_101533d0(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_101533d0(int *param_1,undefined4 param_2);
 template<class... A> int FUN_101533d0(A...);
-undefined4 FUN_101534a0(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_101534a0(int *param_1,undefined4 param_2);
 template<class... A> int FUN_101534a0(A...);
-undefined4 FUN_10153540(int *param_1);
-template<class... A> int FUN_10153540(A...);
-undefined4 FUN_101535e0(int *param_1,undefined4 param_2);
+undefined4 __stdcall FUN_10153540(int *param_1);
+template<class... A> int __stdcall FUN_10153540(A...);
+undefined4 __stdcall FUN_101535e0(int *param_1,undefined4 param_2);
 template<class... A> int FUN_101535e0(A...);
-undefined4 FUN_10153680(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
+undefined4 __stdcall FUN_10153680(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 template<class... A> int FUN_10153680(A...);
-undefined4 FUN_10153720(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
+undefined4 __stdcall FUN_10153720(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 template<class... A> int FUN_10153720(A...);
-undefined4 FUN_10153810(int *param_1,int *param_2);
+undefined4 __stdcall FUN_10153810(int *param_1,int *param_2);
 template<class... A> int FUN_10153810(A...);
 undefined4 __stdcall FUN_101538c0(int *param_1,ushort *param_2,undefined4 param_3);
 template<class... A> int FUN_101538c0(A...);
 SCStr * __stdcall FUN_101539f0(int *param_1);
-template<class... A> int FUN_101539f0(A...);
+template<class... A> int __stdcall FUN_101539f0(A...);
 undefined4 __stdcall FUN_10153b70(int *param_1);
-template<class... A> int FUN_10153b70(A...);
+template<class... A> int __stdcall FUN_10153b70(A...);
 undefined4 __stdcall FUN_10153da0(int *param_1);
-template<class... A> int FUN_10153da0(A...);
+template<class... A> int __stdcall FUN_10153da0(A...);
 undefined4 __stdcall FUN_10153e90(int *param_1);
-template<class... A> int FUN_10153e90(A...);
+template<class... A> int __stdcall FUN_10153e90(A...);
 void __stdcall FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10);
 template<class... A> int FUN_101541e0(A...);
-undefined4 FUN_10154270(int *param_1);
-template<class... A> int FUN_10154270(A...);
+undefined4 __stdcall FUN_10154270(int *param_1);
+template<class... A> int __stdcall FUN_10154270(A...);
 undefined1 __stdcall FUN_10154310(int *param_1,ushort *param_2);
 template<class... A> int FUN_10154310(A...);
 void __stdcall FUN_101543d0(int *param_1,ushort *param_2);
@@ -2797,25 +2797,25 @@ template<class... A> int FUN_10154560(A...);
 void __stdcall FUN_10154630(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
 template<class... A> int FUN_10154630(A...);
 undefined4 __stdcall FUN_10154820(int *param_1);
-template<class... A> int FUN_10154820(A...);
+template<class... A> int __stdcall FUN_10154820(A...);
 undefined4 __stdcall FUN_10154910(int *param_1);
-template<class... A> int FUN_10154910(A...);
+template<class... A> int __stdcall FUN_10154910(A...);
 undefined1 __stdcall FUN_10154a20(int *param_1,ushort *param_2,ushort *param_3);
 template<class... A> int FUN_10154a20(A...);
 undefined1 __stdcall FUN_10154af0(int *param_1,ushort *param_2);
 template<class... A> int FUN_10154af0(A...);
 undefined4 __stdcall FUN_10154c80(int *param_1);
-template<class... A> int FUN_10154c80(A...);
+template<class... A> int __stdcall FUN_10154c80(A...);
 undefined4 __stdcall FUN_10154d70(int *param_1);
-template<class... A> int FUN_10154d70(A...);
+template<class... A> int __stdcall FUN_10154d70(A...);
 undefined4 __stdcall FUN_10154e60(int *param_1);
-template<class... A> int FUN_10154e60(A...);
+template<class... A> int __stdcall FUN_10154e60(A...);
 undefined4 __stdcall FUN_10154ff0(int *param_1);
-template<class... A> int FUN_10154ff0(A...);
+template<class... A> int __stdcall FUN_10154ff0(A...);
 SCStr * __stdcall FUN_101550e0(int *param_1);
-template<class... A> int FUN_101550e0(A...);
+template<class... A> int __stdcall FUN_101550e0(A...);
 undefined4 __stdcall FUN_10155230(int *param_1);
-template<class... A> int FUN_10155230(A...);
+template<class... A> int __stdcall FUN_10155230(A...);
 void __stdcall FUN_10155360(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
@@ -2837,6 +2837,16 @@ template<class... A> int FUN_101559c0(A...);
 extern int ghidra_vftable_DirectorException;
 
 // Reference entry 100ab330; body size 137 bytes.
+extern int __stdcall thunk_FUN_10117000(int a1,int a2,int a3);
+extern int __stdcall thunk_FUN_10118fc0(int a1);
+extern int __stdcall thunk_FUN_101a1ea0(int a1);
+extern int __stdcall thunk_FUN_101b9190(int a1);
+extern int __stdcall thunk_FUN_103f6b60(int a1,int a2,int a3);
+extern int __stdcall thunk_FUN_103fcb50(int a1,int a2,int a3);
+extern int __stdcall thunk_FUN_1059bd30(int a1);
+extern int __stdcall thunk_FUN_106a2610(int a1,int a2);
+extern int __stdcall thunk_FUN_10eb2610(int a1);
+extern int __stdcall thunk_FUN_1114a7f0(int a1);
 #line 1 "ENTRY_100ab330"
 
 void FUN_100ab330(void)
@@ -3110,7 +3120,7 @@ void FUN_100ada80(void)
 
   ((SCStr *)((uint)&local_14))->m_op_ctor((SCStr *)&DAT_121a0c3c);
 
-  thunk_FUN_106a2610<>((uint)&local_14,&local_10);
+  thunk_FUN_106a2610((int)((uint)&local_14),(int)(&local_10));
 
   _eh_vector_destructor_iterator_((uint)&local_14,4,1,((int (*)())&SCStr::op_dtor));
   _atexit((_func_4879 *)LAB_117edc30);
@@ -3260,7 +3270,7 @@ void FUN_100afe80(void)
   if ((undefined4 *)(puVar2) != (undefined4 *)(0x0)) {
     ((SCStr *)((SCStr *)&local_14))->int_allocRep("scan");
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-    thunk_FUN_103d0280<>(&local_14);
+    thunk_FUN_103d0280((int)(&local_14));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
     ((SCStr *)((SCStr *)&local_14))->int_release();
 
@@ -3269,7 +3279,7 @@ void FUN_100afe80(void)
     puVar1 = (undefined4 *)(puVar2 + 0x1e);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCTimerUser);
-    thunk_FUN_1059bd30(puVar1);
+    thunk_FUN_1059bd30((int)(puVar1));
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFoundProductManager);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCFoundProductManager);
     puVar2[0x1c] = (undefined4)((uint)&ghidra_vftable_SCFoundProductManager);
@@ -3527,7 +3537,7 @@ void FUN_100b1d40(void)
   local_14 = (void *)(DAT_121a1348);
   if ((undefined4 *)(puVar4) != (undefined4 *)((uint)&local_34)) {
     do {
-      puVar2 = (undefined8 *)((undefined8 *)thunk_FUN_103f6b60<>((uint)&local_34,local_14,puVar4), 0);
+      puVar2 = (undefined8 *)((undefined8 *)thunk_FUN_103f6b60((int)((uint)&local_34),(int)(local_14),(int)(puVar4)), 0);
       pvVar1 = (void *)(DAT_121a1348);
       local_28 = (undefined8)(*puVar2);
       local_20 = (undefined4)(*(undefined4 *)(puVar2 + 1));
@@ -3550,7 +3560,7 @@ void FUN_100b1d40(void)
         *(undefined2*)(puVar3 + 3) = (undefined2)(0);
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
         local_18 = (undefined4 *)((undefined4 *)0x0);
-        thunk_FUN_103fcb50<>((undefined4)local_28,*(uint *)((char *)&local_28 + 4),puVar3);
+        thunk_FUN_103fcb50((int)((undefined4)local_28),(int)(*(uint *)((char *)&local_28 + 4)),(int)(puVar3));
       }
       puVar4 = (undefined4 *)(puVar4 + 2);
     } while ((undefined4 *)(puVar4) != (undefined4 *)((uint)&local_34));
@@ -3714,12 +3724,12 @@ void FUN_100bb530(void)
   puVar2 = (undefined4 *)(operator_new(0x54), 0);
 
   if ((undefined4 *)(puVar2) != (undefined4 *)(0x0)) {
-    thunk_FUN_1114a7f0(puVar2);
+    thunk_FUN_1114a7f0((int)(puVar2));
     puVar2[1] = (undefined4)((uint)&ghidra_vftable_RITQHandler);
     puVar1 = (undefined4 *)(puVar2 + 2);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCTimerUser);
-    thunk_FUN_1059bd30(puVar1);
+    thunk_FUN_1059bd30((int)(puVar1));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCUpnpSubscriptionManager);
     puVar2[1] = (undefined4)((uint)&ghidra_vftable_SCUpnpSubscriptionManager);
@@ -3772,7 +3782,7 @@ void FUN_100bb6f0(void)
   if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
     ((SCStr *)((uint)&local_14))->int_allocRep("root");
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-    thunk_FUN_103d0280<>((uint)&local_14);
+    thunk_FUN_103d0280((int)((uint)&local_14));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     ((SCStr *)((uint)&local_14))->int_release();
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCTestPointManager);
@@ -3832,7 +3842,7 @@ void FUN_100c8d30(void)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  puVar2 = (undefined4 *)((undefined4 *)thunk_FUN_10eb2610(2000), 0);
+  puVar2 = (undefined4 *)((undefined4 *)thunk_FUN_10eb2610((int)(2000)), 0);
   DAT_121a4a28 = (int)(*puVar2);
   DAT_121a4a2c = (int)((int *)puVar2[1]);
 
@@ -6495,7 +6505,7 @@ void __thiscall Recovered_Bulk::m_FUN_101176e0(int *param_2,SCStr *param_3)
 
 
   uVar2 = (uint)(((SCStr *)(param_3))->hash(), 0);
-  thunk_FUN_10117000(&local_20,param_3,uVar2);
+  thunk_FUN_10117000((int)(&local_20),(int)(param_3),(int)(uVar2));
   if (*(uint *)((char *)&local_20 + 4) != 0) {
     *param_2 = (int)(*(uint *)((char *)&local_20 + 4));
     *(undefined1*)(param_2 + 1) = (undefined1)(0);
@@ -6520,7 +6530,7 @@ void __thiscall Recovered_Bulk::m_FUN_101176e0(int *param_2,SCStr *param_3)
     local_20 = (undefined8)(ceil(local_20), 0);
     thunk_FUN_1148ac80();
     thunk_FUN_10129af0<>();
-    pfVar4 = (float *)((float *)thunk_FUN_10117000(&local_20,pfVar3 + 2,uVar2), 0);
+    pfVar4 = (float *)((float *)thunk_FUN_10117000((int)(&local_20),(int)(pfVar3 + 2),(int)(uVar2)), 0);
     fVar5 = (float)(param_1[2]);
     *(uint*)((char *)&local_20 + 0) = (uint)(*pfVar4);
   }
@@ -6618,7 +6628,7 @@ void __thiscall Recovered_Bulk::m_FUN_10117ac0(int *param_2,int *param_3)
   if ((int *)(param_2) != (int *)(param_3)) {
     do {
       local_18 = (uint)(((SCStr *)((SCStr *)(param_2 + 2)))->hash(), 0);
-      thunk_FUN_10117000(&local_30,param_2 + 2,local_18);
+      thunk_FUN_10117000((int)(&local_30),(int)(param_2 + 2),(int)(local_18));
       if (local_2c == 0.0) {
         if (param_1[2] == 4.3082323e-26) {
                     
@@ -6638,7 +6648,7 @@ void __thiscall Recovered_Bulk::m_FUN_10117ac0(int *param_2,int *param_3)
           local_20 = (undefined8)(ceil(local_20), 0);
           thunk_FUN_1148ac80();
           thunk_FUN_10129af0<>();
-          pfVar3 = (float *)((float *)thunk_FUN_10117000((uint)&local_40,pfVar2 + 2,local_18), 0);
+          pfVar3 = (float *)((float *)thunk_FUN_10117000((int)((uint)&local_40),(int)(pfVar2 + 2),(int)(local_18)), 0);
           local_30 = (float)(*pfVar3);
           local_2c = (float)(pfVar3[1]);
         }
@@ -6877,7 +6887,7 @@ void __thiscall Recovered_Bulk::m_FUN_10118fc0(undefined4 param_2)
   uVar4 = (undefined4)(thunk_FUN_10116b10((uint)&local_44,(uint)&local_2c,param_2,uVar3), 0);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
   *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorException);
-  thunk_FUN_10118c40<>(uVar4);
+  thunk_FUN_10118c40((int)(uVar4));
   if (0xf < local_30) {
     uVar6 = (uint)(local_30 + 1);
     uVar3 = (uint)(local_44[0]);
@@ -9688,7 +9698,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10124590(SCStr *param_2)
   *(undefined4*)(param_1 + 0x60) = (undefined4)(*(undefined4 *)(param_2 + 0x60));
   *(undefined4*)(param_1 + 100) = (undefined4)(*(undefined4 *)(param_2 + 100));
   *(undefined4*)(param_1 + 0x68) = (undefined4)(*(undefined4 *)(param_2 + 0x68));
-  thunk_FUN_10124c80<>(param_2 + 0x6c);
+  thunk_FUN_10124c80((int)(param_2 + 0x6c));
   *(undefined4*)(param_1 + 0xb4) = (undefined4)(*(undefined4 *)(param_2 + 0xb4));
   pSVar1 = (SCStr *)(param_1 + 0xd8);
   *(undefined4*)(param_1 + 0xb8) = (undefined4)(*(undefined4 *)(param_2 + 0xb8));
@@ -12139,14 +12149,14 @@ void __thiscall Recovered_Bulk::m_FUN_10129550(undefined4 *param_2,undefined4 pa
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 8))(uVar2,param_3,uVar3);
@@ -12156,7 +12166,7 @@ void __thiscall Recovered_Bulk::m_FUN_10129550(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibLogCallback::LogDebugMessage");
+  thunk_FUN_10118fc0((int)("SCLibLogCallback::LogDebugMessage"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -12509,7 +12519,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012a4d0(undefined4 param_2,undefined4 par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIOpCBSwigBase::_operationComplete");
+  thunk_FUN_10118fc0((int)("SCIOpCBSwigBase::_operationComplete"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12536,7 +12546,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012a540(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFilterSwigBase::acceptsAction");
+  thunk_FUN_10118fc0((int)("SCIActionFilterSwigBase::acceptsAction"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12563,7 +12573,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012a5c0(int *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::addAndRemoveClientTags");
+  thunk_FUN_10118fc0((int)("SCIUrbanAirshipDelegateSwigBase::addAndRemoveClientTags"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12590,7 +12600,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012a650(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::addClientTags");
+  thunk_FUN_10118fc0((int)("SCIUrbanAirshipDelegateSwigBase::addClientTags"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12622,14 +12632,14 @@ void __thiscall Recovered_Bulk::m_FUN_1012b750(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x18))(uVar2,uVar3);
@@ -12639,7 +12649,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012b750(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::addTagToGroup");
+  thunk_FUN_10118fc0((int)("SCIInAppMessagingProviderSwigBase::addTagToGroup"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -12781,14 +12791,14 @@ void __thiscall Recovered_Bulk::m_FUN_1012cfb0(undefined4 *param_2,undefined4 pa
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 8))(uVar2,param_3,uVar3);
@@ -12798,7 +12808,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012cfb0(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibAssertionFailureCallback::assertionFailed");
+  thunk_FUN_10118fc0((int)("SCLibAssertionFailureCallback::assertionFailed"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -12895,7 +12905,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012d250(int *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionDelegateSwigBase::asyncActionHasCompleted");
+  thunk_FUN_10118fc0((int)("SCIActionDelegateSwigBase::asyncActionHasCompleted"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12916,7 +12926,7 @@ void __fastcall FUN_1012d310(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibCallUIThreadCallback::callSCLibOnUIThread");
+  thunk_FUN_10118fc0((int)("SCLibCallUIThreadCallback::callSCLibOnUIThread"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12937,7 +12947,7 @@ void __fastcall FUN_1012d370(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::canActOn");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::canActOn"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12958,7 +12968,7 @@ void __fastcall FUN_1012d3d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::canClientCancelWizard");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::canClientCancelWizard"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12979,7 +12989,7 @@ void __fastcall FUN_1012d430(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::canClientTransitionToNextState");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::canClientTransitionToNextState"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13000,7 +13010,7 @@ void __fastcall FUN_1012d490(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::canClientTransitionToPreviousState");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::canClientTransitionToPreviousState"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13021,7 +13031,7 @@ void __fastcall FUN_1012d4f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::canConfigureAccessories");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::canConfigureAccessories"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13042,7 +13052,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012d550(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::canDeviceSetupVoice");
+  thunk_FUN_10118fc0((int)("SCIVoiceServiceDelegateSwigBase::canDeviceSetupVoice"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13063,7 +13073,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012d5c0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::canEnablePrereq");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::canEnablePrereq"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13084,7 +13094,7 @@ void __fastcall FUN_1012d630(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::canHardwareGainBeSet");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::canHardwareGainBeSet"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13105,7 +13115,7 @@ void __fastcall FUN_1012d690(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::canJoinSSIDs");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::canJoinSSIDs"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13126,7 +13136,7 @@ void __fastcall FUN_1012d6f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::canMakePurchases");
+  thunk_FUN_10118fc0((int)("SCIInAppPurchaseManagerProviderSwigBase::canMakePurchases"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13147,7 +13157,7 @@ void __fastcall FUN_1012d750(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVpnDelegate::canOpenVPNSettings");
+  thunk_FUN_10118fc0((int)("SCIVpnDelegate::canOpenVPNSettings"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13168,7 +13178,7 @@ void __fastcall FUN_1012d7b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVpnDelegateSwigBase::canOpenVPNSettings");
+  thunk_FUN_10118fc0((int)("SCIVpnDelegateSwigBase::canOpenVPNSettings"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13189,7 +13199,7 @@ void __fastcall FUN_1012d810(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::canPush");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::canPush"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13210,7 +13220,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012d870(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::canRequestPrereq");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::canRequestPrereq"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13231,7 +13241,7 @@ void __fastcall FUN_1012d8e0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::canStartScan");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::canStartScan"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13252,7 +13262,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012d940(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::canSuggestPrereq");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::canSuggestPrereq"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13279,7 +13289,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012d9b0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrlSessionProviderSwigBase::cancelURLConnection");
+  thunk_FUN_10118fc0((int)("SCIUrlSessionProviderSwigBase::cancelURLConnection"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13300,7 +13310,7 @@ void __fastcall FUN_1012da30(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::cleanupRecording");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::cleanupRecording"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13321,7 +13331,7 @@ void __fastcall FUN_1012db20(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrlSessionProviderSwigBase::clearCache");
+  thunk_FUN_10118fc0((int)("SCIUrlSessionProviderSwigBase::clearCache"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13342,7 +13352,7 @@ void __fastcall FUN_1012db80(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::clearPacketQueue");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::clearPacketQueue"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13363,7 +13373,7 @@ void __fastcall FUN_1012dbe0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibTruncatedStringsCallback::clearTruncatedStrings");
+  thunk_FUN_10118fc0((int)("SCLibTruncatedStringsCallback::clearTruncatedStrings"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13390,7 +13400,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012dc40(int *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::connect");
+  thunk_FUN_10118fc0((int)("SCIWebsocketDelegateSwigBase::connect"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13411,7 +13421,7 @@ void __fastcall FUN_1012dcd0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTClassicConnectionCallbackSwigBase::connectedToDevice");
+  thunk_FUN_10118fc0((int)("SCIBTClassicConnectionCallbackSwigBase::connectedToDevice"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13445,7 +13455,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012ddd0(undefined4 *param_2,int *param_3,
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar1 = (undefined4)(thunk_FUN_101a2160(), 0);
     piVar2 = (int *)((int *)(**(code **)(param_1 + 0x2c))(param_3,uVar1), 0);
@@ -13458,7 +13468,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012ddd0(undefined4 *param_2,int *param_3,
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createBrowsePickerAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createBrowsePickerAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -13493,7 +13503,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012df20(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0xc))(uVar2), 0);
@@ -13506,7 +13516,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012df20(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibCustomSubWizardCallback::createCustomSubWizard");
+  thunk_FUN_10118fc0((int)("SCLibCustomSubWizardCallback::createCustomSubWizard"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -13542,14 +13552,14 @@ void __thiscall Recovered_Bulk::m_FUN_1012e040(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar4 = (int *)((int *)(**(code **)(param_1 + 0x5c))(uVar2,uVar3), 0);
@@ -13563,7 +13573,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012e040(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createCustomUIAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createCustomUIAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -13605,7 +13615,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012e1d0(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayBrowseStackAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayBrowseStackAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -13641,7 +13651,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012e2b0(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayCustomControlAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayCustomControlAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -13678,14 +13688,14 @@ void __thiscall Recovered_Bulk::m_FUN_1012e380(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_838 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_838 + 1)) << 8 | (uint)(2)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     if ((int *)(param_5) != (int *)(0x0)) {
@@ -13702,7 +13712,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012e380(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayDatePickerAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayDatePickerAction"));
                     
   _CxxThrowException((uint)&local_24,(ThrowInfo *)&DAT_11d33164);
 
@@ -13745,28 +13755,28 @@ void __thiscall Recovered_Bulk::m_FUN_1012e380(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar9 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar9);
+    thunk_FUN_101a1ea0((int)(puVar9));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar9 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar9 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar9);
+    thunk_FUN_101a1ea0((int)(puVar9));
     *(unsigned char*)((char *)&local_1858 + 0) = (unsigned char)(2);
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar9 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_5 != (undefined1 *)((0x0))) {
       puVar9 = (undefined1 *)((undefined1 *)*param_5);
     }
-    thunk_FUN_101a1ea0(puVar9);
+    thunk_FUN_101a1ea0((int)(puVar9));
     *(unsigned char*)((char *)&local_1858 + 0) = (unsigned char)(3);
     uVar4 = (undefined4)(thunk_FUN_101a2160(), 0);
     puVar9 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_6 != (undefined1 *)((0x0))) {
       puVar9 = (undefined1 *)((undefined1 *)*param_6);
     }
-    thunk_FUN_101a1ea0(puVar9);
+    thunk_FUN_101a1ea0((int)(puVar9));
     local_1858 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_1858 + 1)) << 8 | (uint)(4)));
     uVar5 = (undefined4)(thunk_FUN_101a2160(), 0);
     if ((int *)(param_7) != (int *)(0x0)) {
@@ -13776,14 +13786,14 @@ void __thiscall Recovered_Bulk::m_FUN_1012e380(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_8 != (undefined1 *)((0x0))) {
       puVar9 = (undefined1 *)((undefined1 *)*param_8);
     }
-    thunk_FUN_101a1ea0(puVar9);
+    thunk_FUN_101a1ea0((int)(puVar9));
     *(unsigned char*)((char *)&local_1858 + 0) = (unsigned char)(5);
     uVar6 = (undefined4)(thunk_FUN_101a2160(), 0);
     puVar9 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_9 != (undefined1 *)((0x0))) {
       puVar9 = (undefined1 *)((undefined1 *)*param_9);
     }
-    thunk_FUN_101a1ea0(puVar9);
+    thunk_FUN_101a1ea0((int)(puVar9));
     local_1858 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_1858 + 1)) << 8 | (uint)(6)));
     uVar7 = (undefined4)(thunk_FUN_101a2160(), 0);
     if ((int *)(param_10) != (int *)(0x0)) {
@@ -13804,7 +13814,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012e380(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayDualTextInputAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayDualTextInputAction"));
                     
   _CxxThrowException((uint)&local_24,(ThrowInfo *)&DAT_11d33164);
 
@@ -13839,7 +13849,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012e850(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x74))(uVar2), 0);
@@ -13852,7 +13862,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012e850(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayHelpSheetAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayHelpSheetAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -13888,14 +13898,14 @@ void __thiscall Recovered_Bulk::m_FUN_1012e970(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar4 = (int *)((int *)(**(code **)(param_1 + 0x24))(uVar2,uVar3), 0);
@@ -13909,7 +13919,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012e970(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayInfoViewAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayInfoViewAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -13947,21 +13957,21 @@ void __thiscall Recovered_Bulk::m_FUN_1012eb00(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar6 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar6);
+    thunk_FUN_101a1ea0((int)(puVar6));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar6 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar6 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar6);
+    thunk_FUN_101a1ea0((int)(puVar6));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar6 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_5 != (undefined1 *)((0x0))) {
       puVar6 = (undefined1 *)((undefined1 *)*param_5);
     }
-    thunk_FUN_101a1ea0(puVar6);
+    thunk_FUN_101a1ea0((int)(puVar6));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
     uVar4 = (undefined4)(thunk_FUN_101a2160(), 0);
     piVar5 = (int *)((int *)(**(code **)(param_1 + 0x48))(uVar2,uVar3,uVar4,param_6,param_7,param_8), 0);
@@ -13976,7 +13986,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012eb00(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayIntegerInputAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayIntegerInputAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14016,28 +14026,28 @@ void __thiscall Recovered_Bulk::m_FUN_1012eb00(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar7 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar7);
+    thunk_FUN_101a1ea0((int)(puVar7));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar7 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar7 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar7);
+    thunk_FUN_101a1ea0((int)(puVar7));
     *(unsigned char*)((char *)&local_1048 + 0) = (unsigned char)(2);
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar7 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_5 != (undefined1 *)((0x0))) {
       puVar7 = (undefined1 *)((undefined1 *)*param_5);
     }
-    thunk_FUN_101a1ea0(puVar7);
+    thunk_FUN_101a1ea0((int)(puVar7));
     *(unsigned char*)((char *)&local_1048 + 0) = (unsigned char)(3);
     uVar4 = (undefined4)(thunk_FUN_101a2160(), 0);
     puVar7 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_6 != (undefined1 *)((0x0))) {
       puVar7 = (undefined1 *)((undefined1 *)*param_6);
     }
-    thunk_FUN_101a1ea0(puVar7);
+    thunk_FUN_101a1ea0((int)(puVar7));
     local_1048 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_1048 + 1)) << 8 | (uint)(4)));
     uVar5 = (undefined4)(thunk_FUN_101a2160(), 0);
     if ((int *)(param_7) != (int *)(0x0)) {
@@ -14059,7 +14069,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012eb00(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMenuAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayMenuAction"));
                     
   _CxxThrowException((uint)&local_24,(ThrowInfo *)&DAT_11d33164);
 
@@ -14100,21 +14110,21 @@ void __thiscall Recovered_Bulk::m_FUN_1012eb00(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar7 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar7);
+    thunk_FUN_101a1ea0((int)(puVar7));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar7 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar7 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar7);
+    thunk_FUN_101a1ea0((int)(puVar7));
     *(unsigned char*)((char *)&local_1048 + 0) = (unsigned char)(2);
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar7 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_5 != (undefined1 *)((0x0))) {
       puVar7 = (undefined1 *)((undefined1 *)*param_5);
     }
-    thunk_FUN_101a1ea0(puVar7);
+    thunk_FUN_101a1ea0((int)(puVar7));
     local_1048 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_1048 + 1)) << 8 | (uint)(3)));
     uVar4 = (undefined4)(thunk_FUN_101a2160(), 0);
     if ((int *)(param_7) != (int *)(0x0)) {
@@ -14127,7 +14137,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012eb00(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_11 != (undefined1 *)((0x0))) {
       puVar7 = (undefined1 *)((undefined1 *)*param_11);
     }
-    thunk_FUN_101a1ea0(puVar7);
+    thunk_FUN_101a1ea0((int)(puVar7));
     local_1048 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_1048 + 1)) << 8 | (uint)(4)));
     uVar5 = (undefined4)(thunk_FUN_101a2160(), 0);
     piVar6 = (int *)((int *)(**(code **)(param_1 + 0x3c)) (uVar2,uVar3,uVar4,param_6,param_7,param_8,param_9,param_10,uVar5), 0);
@@ -14143,7 +14153,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012eb00(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMenuAndTextInputAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayMenuAndTextInputAction"));
                     
   _CxxThrowException((uint)&local_24,(ThrowInfo *)&DAT_11d33164);
 
@@ -14181,7 +14191,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012f1f0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     if ((int *)(param_4) != (int *)(0x0)) {
@@ -14191,7 +14201,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012f1f0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_8 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_8);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar4 = (int *)((int *)(**(code **)(param_1 + 0x18)) (uVar2,param_4,param_5,param_6,param_7,uVar3,param_9,param_10), 0);
@@ -14205,7 +14215,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012f1f0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMenuPopupAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayMenuPopupAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14240,7 +14250,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012f3b0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x1c))(uVar2,param_4), 0);
@@ -14253,7 +14263,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012f3b0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMessagePopupAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayMessagePopupAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14292,21 +14302,21 @@ void __thiscall Recovered_Bulk::m_FUN_1012f4e0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar6 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar6);
+    thunk_FUN_101a1ea0((int)(puVar6));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar6 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar6 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar6);
+    thunk_FUN_101a1ea0((int)(puVar6));
     *(unsigned char*)((char *)&local_c40 + 0) = (unsigned char)(2);
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar6 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_5 != (undefined1 *)((0x0))) {
       puVar6 = (undefined1 *)((undefined1 *)*param_5);
     }
-    thunk_FUN_101a1ea0(puVar6);
+    thunk_FUN_101a1ea0((int)(puVar6));
     local_c40 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_c40 + 1)) << 8 | (uint)(3)));
     uVar4 = (undefined4)(thunk_FUN_101a2160(), 0);
     if ((int *)(param_6) != (int *)(0x0)) {
@@ -14324,7 +14334,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012f4e0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayTextInputAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayTextInputAction"));
                     
   _CxxThrowException((uint)&local_24,(ThrowInfo *)&DAT_11d33164);
 
@@ -14361,14 +14371,14 @@ void __thiscall Recovered_Bulk::m_FUN_1012f6e0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_838 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_838 + 1)) << 8 | (uint)(2)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     if ((int *)(param_5) != (int *)(0x0)) {
@@ -14385,7 +14395,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012f6e0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayTextPaneAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayTextPaneAction"));
                     
   _CxxThrowException((uint)&local_24,(ThrowInfo *)&DAT_11d33164);
 
@@ -14422,14 +14432,14 @@ void __thiscall Recovered_Bulk::m_FUN_1012f890(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_838 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_838 + 1)) << 8 | (uint)(2)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     if ((int *)(param_5) != (int *)(0x0)) {
@@ -14446,7 +14456,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012f890(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayTimePickerAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayTimePickerAction"));
                     
   _CxxThrowException((uint)&local_24,(ThrowInfo *)&DAT_11d33164);
 
@@ -14488,7 +14498,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012fa40(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayWizardAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createDisplayWizardAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14524,14 +14534,14 @@ void __thiscall Recovered_Bulk::m_FUN_1012fb20(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar4 = (int *)((int *)(**(code **)(param_1 + 0x70))(uVar2,uVar3), 0);
@@ -14545,7 +14555,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012fb20(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createInlineControllerUpdateAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createInlineControllerUpdateAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14580,7 +14590,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012fcb0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x78))(uVar2), 0);
@@ -14593,7 +14603,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012fcb0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createModalSettingsMenuAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createModalSettingsMenuAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14635,7 +14645,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012fdd0(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createNavigationAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createNavigationAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14671,14 +14681,14 @@ void __thiscall Recovered_Bulk::m_FUN_1012fec0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar4 = (int *)((int *)(**(code **)(param_1 + 0x6c))(uVar2,uVar3), 0);
@@ -14692,7 +14702,7 @@ void __thiscall Recovered_Bulk::m_FUN_1012fec0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createOpenURIAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createOpenURIAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14728,7 +14738,7 @@ void __thiscall Recovered_Bulk::m_FUN_10130050(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createPopBrowseAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createPopBrowseAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14764,7 +14774,7 @@ void __thiscall Recovered_Bulk::m_FUN_10130120(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createPresentAlarmInterfaceAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createPresentAlarmInterfaceAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14801,14 +14811,14 @@ void __thiscall Recovered_Bulk::m_FUN_101301f0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar4 = (int *)((int *)(**(code **)(param_1 + 0x20))(uVar2,uVar3,param_5), 0);
@@ -14822,7 +14832,7 @@ void __thiscall Recovered_Bulk::m_FUN_101301f0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createPushSCUriAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createPushSCUriAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14864,7 +14874,7 @@ void __thiscall Recovered_Bulk::m_FUN_10130380(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createRunAsyncIOOperationAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createRunAsyncIOOperationAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14899,7 +14909,7 @@ void __thiscall Recovered_Bulk::m_FUN_10130460(undefined4 *param_2,int *param_3,
     if ((undefined1 *)(param_4) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_4);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar1 = (undefined4)(thunk_FUN_101a2160(), 0);
     piVar2 = (int *)((int *)(**(code **)(param_1 + 0x14))(param_3,uVar1), 0);
@@ -14914,7 +14924,7 @@ void __thiscall Recovered_Bulk::m_FUN_10130460(undefined4 *param_2,int *param_3,
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createRunAsyncIOOperationActionWithMessage");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createRunAsyncIOOperationActionWithMessage"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -14950,7 +14960,7 @@ void __thiscall Recovered_Bulk::m_FUN_101305b0(undefined4 *param_2,undefined1 pa
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x60))(param_3,uVar2,param_5,param_6), 0);
@@ -14963,7 +14973,7 @@ void __thiscall Recovered_Bulk::m_FUN_101305b0(undefined4 *param_2,undefined1 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createScheduleAlarmMonitorAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createScheduleAlarmMonitorAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15005,7 +15015,7 @@ void __thiscall Recovered_Bulk::m_FUN_101306e0(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createSummonNewWizAction");
+  thunk_FUN_10118fc0((int)("SCIActionFactorySwigBase::createSummonNewWizAction"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15028,7 +15038,7 @@ void __fastcall FUN_10130900(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::destroy");
+  thunk_FUN_10118fc0((int)("SCIWebsocketDelegateSwigBase::destroy"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15049,7 +15059,7 @@ void __fastcall FUN_10131230(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTClassicConnectionCallbackSwigBase::deviceInfoChanged");
+  thunk_FUN_10118fc0((int)("SCIBTClassicConnectionCallbackSwigBase::deviceInfoChanged"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15070,7 +15080,7 @@ void __fastcall FUN_10131290(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::disconnect");
+  thunk_FUN_10118fc0((int)("SCIWebsocketDelegateSwigBase::disconnect"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15091,7 +15101,7 @@ void __fastcall FUN_101312f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTClassicConnectionCallbackSwigBase::disconnectedFromDevice");
+  thunk_FUN_10118fc0((int)("SCIBTClassicConnectionCallbackSwigBase::disconnectedFromDevice"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15123,7 +15133,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131350(int *param_2,undefined4 *param_3)
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar2 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar2);
+    thunk_FUN_101a1ea0((int)(puVar2));
 
     uVar1 = (undefined4)(thunk_FUN_101a2160(), 0);
     (**(code **)(param_1 + 0xc))(param_2,uVar1);
@@ -15132,7 +15142,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131350(int *param_2,undefined4 *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIEventSinkSwigBase::dispatchEvent");
+  thunk_FUN_10118fc0((int)("SCIEventSinkSwigBase::dispatchEvent"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15161,7 +15171,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131440(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIPlatformDateTimeProvider::doesPlatformTimeZoneMatch");
+  thunk_FUN_10118fc0((int)("SCIPlatformDateTimeProvider::doesPlatformTimeZoneMatch"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15182,7 +15192,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131500(undefined1 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::enableLogging");
+  thunk_FUN_10118fc0((int)("SCICrashReportProviderSwigBase::enableLogging"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15203,7 +15213,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131560(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::enablePrereq");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::enablePrereq"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15224,7 +15234,7 @@ void __fastcall FUN_101315d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrlSessionProviderSwigBase::endURLSession");
+  thunk_FUN_10118fc0((int)("SCIUrlSessionProviderSwigBase::endURLSession"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15251,7 +15261,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131630(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::enter");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::enter"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15272,7 +15282,7 @@ void __fastcall FUN_101316b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::exit");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::exit"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15299,7 +15309,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131710(int *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::fetchProducts");
+  thunk_FUN_10118fc0((int)("SCIInAppPurchaseManagerProviderSwigBase::fetchProducts"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15330,7 +15340,7 @@ void __thiscall Recovered_Bulk::m_FUN_101317a0(int *param_2,undefined1 *param_3)
     if ((undefined1 *)(param_3) != (undefined1 *)(0x0)) {
       puVar2 = (undefined1 *)(param_3);
     }
-    thunk_FUN_101a1ea0(puVar2);
+    thunk_FUN_101a1ea0((int)(puVar2));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar1 = (undefined4)(thunk_FUN_101a2160(), 0);
     (**(code **)(param_1 + 0x10))(param_2,uVar1);
@@ -15341,7 +15351,7 @@ void __thiscall Recovered_Bulk::m_FUN_101317a0(int *param_2,undefined1 *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::fillImageBytes");
+  thunk_FUN_10118fc0((int)("SCIMusicServerDelegateSwigBase::fillImageBytes"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15381,7 +15391,7 @@ void __thiscall Recovered_Bulk::m_FUN_101318a0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAccessibleSubtitle");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getAccessibleSubtitle"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15421,7 +15431,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131970(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getActions");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getActions"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15461,7 +15471,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131a30(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getAlbum");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getAlbum"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15501,7 +15511,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131b00(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCITrackInfoSwigBase::getAlbum");
+  thunk_FUN_10118fc0((int)("SCITrackInfoSwigBase::getAlbum"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15567,7 +15577,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131bd0(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAlbumArt");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getAlbumArt"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15633,7 +15643,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131d60(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAlbumArt");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getAlbumArt"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15699,7 +15709,7 @@ void __thiscall Recovered_Bulk::m_FUN_10131f00(SCStr *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAlbumArtAdornmentImageResource");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getAlbumArtAdornmentImageResource"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15722,7 +15732,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132090(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAlbumArtType");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getAlbumArtType"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15743,7 +15753,7 @@ void __fastcall FUN_101320f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAlbumArtType");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getAlbumArtType"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15777,7 +15787,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132150(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAlbumArtURL");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getAlbumArtURL"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15813,7 +15823,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132220(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAlbumArtURL");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getAlbumArtURL"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15853,7 +15863,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132300(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAlbumArtURL");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getAlbumArtURL"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15876,7 +15886,7 @@ void __fastcall FUN_101323d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getAllNodeType");
+  thunk_FUN_10118fc0((int)("SCILocalMediaCollectionSwigBase::getAllNodeType"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15907,7 +15917,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132430(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0xc))(uVar2);
@@ -15916,7 +15926,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132430(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIServiceAppInteropSwigBase::getAppInstallState");
+  thunk_FUN_10118fc0((int)("SCIServiceAppInteropSwigBase::getAppInstallState"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -15939,7 +15949,7 @@ void __fastcall FUN_10132510(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILoggingProviderSwigBase::getAppLevel");
+  thunk_FUN_10118fc0((int)("SCILoggingProviderSwigBase::getAppLevel"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15977,7 +15987,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132570(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getArtMimeType");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getArtMimeType"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16000,7 +16010,7 @@ void __fastcall FUN_10132640(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getArtType");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getArtType"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -16038,7 +16048,7 @@ void __thiscall Recovered_Bulk::m_FUN_101326a0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getArtUri");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getArtUri"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16078,7 +16088,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132770(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getArtist");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getArtist"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16118,7 +16128,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132840(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCITrackInfoSwigBase::getArtist");
+  thunk_FUN_10118fc0((int)("SCITrackInfoSwigBase::getArtist"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16158,7 +16168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132910(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::getAssociatedProject");
+  thunk_FUN_10118fc0((int)("SCIInAppMessagingProviderSwigBase::getAssociatedProject"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16198,7 +16208,7 @@ void __thiscall Recovered_Bulk::m_FUN_101329e0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAttributes");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getAttributes"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16221,7 +16231,7 @@ void __fastcall FUN_10132ab0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getAuthorization");
+  thunk_FUN_10118fc0((int)("SCIMusicServerBrowseDelegateSwigBase::getAuthorization"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -16242,7 +16252,7 @@ void __fastcall FUN_10132b10(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::getBitsPerSample");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::getBitsPerSample"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -16275,7 +16285,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132b70(SCStr *param_2,undefined4 *param_
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     pv = (ushort *)((ushort *)(**(code **)(param_1 + 0x10))(uVar2), 0);
@@ -16288,7 +16298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132b70(SCStr *param_2,undefined4 *param_
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecureStoreSwigBase::getBlob");
+  thunk_FUN_10118fc0((int)("SCISecureStoreSwigBase::getBlob"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16321,7 +16331,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132ca0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0xc))(uVar2);
@@ -16330,7 +16340,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132ca0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::getBoolValue");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::getBoolValue"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16366,7 +16376,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132d80(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getBrowseItemText");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getBrowseItemText"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16389,7 +16399,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132e60(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getByteOffsetForTime");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getByteOffsetForTime"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -16427,7 +16437,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132ec0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::getCallback");
+  thunk_FUN_10118fc0((int)("SCIUrlConnectionSwigBase::getCallback"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16467,7 +16477,7 @@ void __thiscall Recovered_Bulk::m_FUN_10132f80(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicSearchableDelegateSwigBase::getCategoryIDs");
+  thunk_FUN_10118fc0((int)("SCILocalMusicSearchableDelegateSwigBase::getCategoryIDs"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16507,7 +16517,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133040(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::getChannelID");
+  thunk_FUN_10118fc0((int)("SCIInAppMessagingProviderSwigBase::getChannelID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16530,7 +16540,7 @@ void __fastcall FUN_10133110(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::getChannels");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::getChannels"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -16568,7 +16578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133170(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getChildDataSource");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getChildDataSource"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16608,7 +16618,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133240(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIClipboardDelegateSwigBase::getClipboardData");
+  thunk_FUN_10118fc0((int)("SCIClipboardDelegateSwigBase::getClipboardData"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16648,7 +16658,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133310(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::getConnectedDevices");
+  thunk_FUN_10118fc0((int)("SCIBTAccessoryDelegateSwigBase::getConnectedDevices"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16671,7 +16681,7 @@ void __fastcall FUN_101333d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::getConnectionOpen");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::getConnectionOpen"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -16692,7 +16702,7 @@ void __fastcall FUN_10133440(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getCount");
+  thunk_FUN_10118fc0((int)("SCILocalMediaCollectionSwigBase::getCount"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -16730,7 +16740,7 @@ void __thiscall Recovered_Bulk::m_FUN_101334a0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::getCurrentBSSID");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::getCurrentBSSID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16770,7 +16780,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133570(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::getCurrentSSID");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::getCurrentSSID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16810,7 +16820,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133640(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::getCustomerID");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::getCustomerID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16850,7 +16860,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133710(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBTClassicConnectionProviderSwigBase::getDeviceName");
+  thunk_FUN_10118fc0((int)("SCIBTClassicConnectionProviderSwigBase::getDeviceName"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16890,7 +16900,7 @@ void __thiscall Recovered_Bulk::m_FUN_101337e0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::getDeviceToken");
+  thunk_FUN_10118fc0((int)("SCIInAppMessagingProviderSwigBase::getDeviceToken"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16930,7 +16940,7 @@ void __thiscall Recovered_Bulk::m_FUN_101338b0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBTClassicConnectionProviderSwigBase::getDeviceUID");
+  thunk_FUN_10118fc0((int)("SCIBTClassicConnectionProviderSwigBase::getDeviceUID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -16966,7 +16976,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133980(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::getDeviceVoiceSetupErrorMessage");
+  thunk_FUN_10118fc0((int)("SCIVoiceServiceDelegateSwigBase::getDeviceVoiceSetupErrorMessage"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17006,7 +17016,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133a50(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCLibDiagnosticConsoleLogCallback::getDiagnosticConsoleLog");
+  thunk_FUN_10118fc0((int)("SCLibDiagnosticConsoleLogCallback::getDiagnosticConsoleLog"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17046,7 +17056,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133b20(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCLibDiagnosticExtraInfoCallback::getDiagnosticExtraInfo");
+  thunk_FUN_10118fc0((int)("SCLibDiagnosticExtraInfoCallback::getDiagnosticExtraInfo"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17082,7 +17092,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133bf0(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getDisplayString");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getDisplayString"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17115,7 +17125,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133cc0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x24))(uVar2);
@@ -17124,7 +17134,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133cc0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::getDoubleValue");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::getDoubleValue"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17147,7 +17157,7 @@ void __fastcall FUN_10133db0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getDuration");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getDuration"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -17168,7 +17178,7 @@ void __fastcall FUN_10133e10(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCITrackInfoSwigBase::getDuration");
+  thunk_FUN_10118fc0((int)("SCITrackInfoSwigBase::getDuration"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -17189,7 +17199,7 @@ void __fastcall FUN_10133e70(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getDurationMillis");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getDurationMillis"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -17210,7 +17220,7 @@ void __fastcall FUN_10133ee0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::getEnvironment");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::getEnvironment"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -17248,7 +17258,7 @@ void __thiscall Recovered_Bulk::m_FUN_10133f40(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getExperiments");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::getExperiments"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17288,7 +17298,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134000(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getExtension");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getExtension"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17324,21 +17334,21 @@ void __thiscall Recovered_Bulk::m_FUN_101340d0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     *(unsigned char*)((char *)&local_c40 + 0) = (unsigned char)(1);
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_c40 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_c40 + 1)) << 8 | (uint)(2)));
     uVar4 = (undefined4)(thunk_FUN_101a2160(), 0);
     if ((int *)(param_5) != (int *)(0x0)) {
@@ -17352,7 +17362,7 @@ void __thiscall Recovered_Bulk::m_FUN_101340d0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getFeatureVariableDouble");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::getFeatureVariableDouble"));
                     
   _CxxThrowException((uint)&local_24,(ThrowInfo *)&DAT_11d33164);
 
@@ -17387,21 +17397,21 @@ void __thiscall Recovered_Bulk::m_FUN_10134290(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar4 = (undefined4)(thunk_FUN_101a2160(), 0);
     if ((int *)(param_5) != (int *)(0x0)) {
@@ -17415,7 +17425,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134290(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getFeatureVariableInteger");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::getFeatureVariableInteger"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17454,21 +17464,21 @@ void __thiscall Recovered_Bulk::m_FUN_10134450(SCStr *param_2,undefined4 *param_
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     *(unsigned char*)((char *)&local_c40 + 0) = (unsigned char)(2);
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_5 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_5);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_c40 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_c40 + 1)) << 8 | (uint)(3)));
     uVar4 = (undefined4)(thunk_FUN_101a2160(), 0);
     if ((int *)(param_6) != (int *)(0x0)) {
@@ -17486,7 +17496,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134450(SCStr *param_2,undefined4 *param_
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getFeatureVariableString");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::getFeatureVariableString"));
                     
   _CxxThrowException((uint)&local_24,(ThrowInfo *)&DAT_11d33164);
 
@@ -17526,7 +17536,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134660(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getFeatures");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::getFeatures"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17568,7 +17578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134720(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getFilteredActions");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getFilteredActions"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17591,7 +17601,7 @@ void __fastcall FUN_10134800(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILoggingProviderSwigBase::getFlutterLevel");
+  thunk_FUN_10118fc0((int)("SCILoggingProviderSwigBase::getFlutterLevel"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -17631,7 +17641,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134860(SCStr *param_2,int *param_3,undef
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIPlatformDateTimeProvider::getFormattedSystemTime");
+  thunk_FUN_10118fc0((int)("SCIPlatformDateTimeProvider::getFormattedSystemTime"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17667,7 +17677,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134950(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIPlatformDateTimeProvider::getFormattedTimeInterval");
+  thunk_FUN_10118fc0((int)("SCIPlatformDateTimeProvider::getFormattedTimeInterval"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17707,7 +17717,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134a30(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::getHHID");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::getHHID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17730,7 +17740,7 @@ void __fastcall FUN_10134b00(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::getHoldStyle");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::getHoldStyle"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -17751,7 +17761,7 @@ void __fastcall FUN_10134b60(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::getIOSControlPanelSwipeDirection");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::getIOSControlPanelSwipeDirection"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -17789,7 +17799,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134bc0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getId");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getId"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17829,7 +17839,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134c90(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCITrackInfoSwigBase::getId");
+  thunk_FUN_10118fc0((int)("SCITrackInfoSwigBase::getId"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -17862,7 +17872,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134d60(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x18))(uVar2);
@@ -17871,7 +17881,7 @@ void __thiscall Recovered_Bulk::m_FUN_10134d60(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::getIntegerValue");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::getIntegerValue"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18073,7 +18083,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135140(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIStringInputSwigBase::getInterfaceID");
+  thunk_FUN_10118fc0((int)("SCIStringInputSwigBase::getInterfaceID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18109,7 +18119,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135210(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getItemAt");
+  thunk_FUN_10118fc0((int)("SCILocalMediaCollectionSwigBase::getItemAt"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18132,7 +18142,7 @@ void __fastcall FUN_101352e0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getItemThumbnailsPresentationType");
+  thunk_FUN_10118fc0((int)("SCILocalMediaCollectionSwigBase::getItemThumbnailsPresentationType"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -18153,7 +18163,7 @@ void __fastcall FUN_10135340(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getItemType");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getItemType"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -18185,7 +18195,7 @@ void __thiscall Recovered_Bulk::m_FUN_101353a0(undefined4 *param_2,undefined1 *p
     if ((undefined1 *)(param_3) != (undefined1 *)(0x0)) {
       puVar4 = (undefined1 *)(param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x14))(uVar2), 0);
@@ -18200,7 +18210,7 @@ void __thiscall Recovered_Bulk::m_FUN_101353a0(undefined4 *param_2,undefined1 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getLocalMediaCollectionForId");
+  thunk_FUN_10118fc0((int)("SCIMusicServerBrowseDelegateSwigBase::getLocalMediaCollectionForId"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18234,7 +18244,7 @@ void __thiscall Recovered_Bulk::m_FUN_101354d0(undefined4 *param_2,undefined1 *p
     if ((undefined1 *)(param_3) != (undefined1 *)(0x0)) {
       puVar4 = (undefined1 *)(param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x10))(uVar2), 0);
@@ -18249,7 +18259,7 @@ void __thiscall Recovered_Bulk::m_FUN_101354d0(undefined4 *param_2,undefined1 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getLocalMusicItemInfoForId");
+  thunk_FUN_10118fc0((int)("SCIMusicServerBrowseDelegateSwigBase::getLocalMusicItemInfoForId"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18289,7 +18299,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135600(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getLocalMusicSearchableDelegate");
+  thunk_FUN_10118fc0((int)("SCIMusicServerBrowseDelegateSwigBase::getLocalMusicSearchableDelegate"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18329,7 +18339,7 @@ void __thiscall Recovered_Bulk::m_FUN_101356c0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicSearchableDelegateSwigBase::getLogoURI");
+  thunk_FUN_10118fc0((int)("SCILocalMusicSearchableDelegateSwigBase::getLogoURI"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18352,7 +18362,7 @@ void __fastcall FUN_10135790(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIStringInputSwigBase::getMaxNumChars");
+  thunk_FUN_10118fc0((int)("SCIStringInputSwigBase::getMaxNumChars"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -18390,7 +18400,7 @@ void __thiscall Recovered_Bulk::m_FUN_101357f0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::getMicCalibrationId");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::getMicCalibrationId"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18430,7 +18440,7 @@ void __thiscall Recovered_Bulk::m_FUN_101358c0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::getMicGainId");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::getMicGainId"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18470,7 +18480,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135990(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::getMicNameList");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::getMicNameList"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18510,7 +18520,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135a60(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getMimeType");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getMimeType"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18550,7 +18560,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135b30(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getMoreMenuDataSource");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getMoreMenuDataSource"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18590,7 +18600,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135bf0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::getMusicServerBrowseDelegate");
+  thunk_FUN_10118fc0((int)("SCIMusicServerDelegateSwigBase::getMusicServerBrowseDelegate"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18630,7 +18640,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135cb0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::getNamedUser");
+  thunk_FUN_10118fc0((int)("SCIInAppMessagingProviderSwigBase::getNamedUser"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18653,7 +18663,7 @@ void __fastcall FUN_10135d80(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINetworkManagementDelegateSwigBase::getNetworkType");
+  thunk_FUN_10118fc0((int)("SCINetworkManagementDelegateSwigBase::getNetworkType"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -18674,7 +18684,7 @@ void __fastcall FUN_10135de0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getNextStateID");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::getNextStateID"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -18695,7 +18705,7 @@ void __fastcall FUN_10135e40(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getNumberOfAlbumArtURLs");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getNumberOfAlbumArtURLs"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -18727,7 +18737,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135ea0(SCStr *param_2,undefined1 *param_
     if ((undefined1 *)(param_3) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_3);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     pv = (ushort *)((ushort *)(**(code **)(param_1 + 0x1c))(uVar2,param_4), 0);
@@ -18742,7 +18752,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135ea0(SCStr *param_2,undefined1 *param_
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getObjectIdForAssociationType");
+  thunk_FUN_10118fc0((int)("SCIMusicServerBrowseDelegateSwigBase::getObjectIdForAssociationType"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18782,7 +18792,7 @@ void __thiscall Recovered_Bulk::m_FUN_10135fe0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getOrdinal");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getOrdinal"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18805,7 +18815,7 @@ void __fastcall FUN_101360b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::getPacketQueueLength");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::getPacketQueueLength"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -18837,7 +18847,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136110(SCStr *param_2,undefined4 param_3
     if ((undefined1 *)(param_4) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_4);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     pv = (ushort *)((ushort *)(**(code **)(param_1 + 0x1c))(param_3,uVar2), 0);
@@ -18852,7 +18862,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136110(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::getPartnerAppDeepLinkForCloudIntegration");
+  thunk_FUN_10118fc0((int)("SCIVoiceServiceDelegateSwigBase::getPartnerAppDeepLinkForCloudIntegration"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18888,7 +18898,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136250(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::getPartnerAppDeepLinkForMSP");
+  thunk_FUN_10118fc0((int)("SCIVoiceServiceDelegateSwigBase::getPartnerAppDeepLinkForMSP"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18923,14 +18933,14 @@ void __thiscall Recovered_Bulk::m_FUN_10136320(SCStr *param_2,undefined4 param_3
     if ((undefined1 *)(param_4) != (undefined1 *)(0x0)) {
       puVar4 = (undefined1 *)(param_4);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)(param_5) != (undefined1 *)(0x0)) {
       puVar4 = (undefined1 *)(param_5);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     pv = (ushort *)((ushort *)(**(code **)(param_1 + 0x20))(param_3,uVar2,uVar3), 0);
@@ -18949,7 +18959,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136320(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::getPartnerAppDeepLinkForSettings");
+  thunk_FUN_10118fc0((int)("SCIVoiceServiceDelegateSwigBase::getPartnerAppDeepLinkForSettings"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -18983,7 +18993,7 @@ void __thiscall Recovered_Bulk::m_FUN_101364d0(SCStr *param_2,undefined4 param_3
     if ((undefined1 *)(param_4) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_4);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     pv = (ushort *)((ushort *)(**(code **)(param_1 + 0x18))(param_3,uVar2), 0);
@@ -18998,7 +19008,7 @@ void __thiscall Recovered_Bulk::m_FUN_101364d0(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::getPartnerAppDeepLinkForSetup");
+  thunk_FUN_10118fc0((int)("SCIVoiceServiceDelegateSwigBase::getPartnerAppDeepLinkForSetup"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19034,7 +19044,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136610(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::getPartnerAppDetectionScheme");
+  thunk_FUN_10118fc0((int)("SCIVoiceServiceDelegateSwigBase::getPartnerAppDetectionScheme"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19070,7 +19080,7 @@ void __thiscall Recovered_Bulk::m_FUN_101366e0(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::getPartnerAppStoreLink");
+  thunk_FUN_10118fc0((int)("SCIVoiceServiceDelegateSwigBase::getPartnerAppStoreLink"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19110,7 +19120,7 @@ void __thiscall Recovered_Bulk::m_FUN_101367b0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIPlatformDateTimeProvider::getPlatformDateTime");
+  thunk_FUN_10118fc0((int)("SCIPlatformDateTimeProvider::getPlatformDateTime"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19145,7 +19155,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136870(SCStr *param_2,undefined4 *param_
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     pv = (ushort *)((ushort *)(**(code **)(param_1 + 8))(uVar2), 0);
@@ -19158,7 +19168,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136870(SCStr *param_2,undefined4 *param_
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibPlatformStringCallback::getPlatformString");
+  thunk_FUN_10118fc0((int)("SCLibPlatformStringCallback::getPlatformString"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19198,7 +19208,7 @@ void __thiscall Recovered_Bulk::m_FUN_101369a0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getPowerscrollCSV");
+  thunk_FUN_10118fc0((int)("SCILocalMediaCollectionSwigBase::getPowerscrollCSV"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19221,7 +19231,7 @@ void __fastcall FUN_10136a70(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getPresentationType");
+  thunk_FUN_10118fc0((int)("SCILocalMediaCollectionSwigBase::getPresentationType"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -19259,7 +19269,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136ad0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getPrimaryAdornedTitle");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getPrimaryAdornedTitle"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19299,7 +19309,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136ba0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getPrimaryTitle");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getPrimaryTitle"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19339,7 +19349,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136c70(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getPropertyBag");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::getPropertyBag"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19362,7 +19372,7 @@ void __fastcall FUN_10136d30(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIStringInputSwigBase::getRecommendedInputMethodType");
+  thunk_FUN_10118fc0((int)("SCIStringInputSwigBase::getRecommendedInputMethodType"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -19400,7 +19410,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136d90(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::getRequest");
+  thunk_FUN_10118fc0((int)("SCIUrlConnectionSwigBase::getRequest"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19423,7 +19433,7 @@ void __fastcall FUN_10136e50(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::getRequireSecurePairing");
+  thunk_FUN_10118fc0((int)("SCIBlePeripheralDelegateSwigBase::getRequireSecurePairing"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -19461,7 +19471,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136eb0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getResUri");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getResUri"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19501,7 +19511,7 @@ void __thiscall Recovered_Bulk::m_FUN_10136f80(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCITrackInfoSwigBase::getResUri");
+  thunk_FUN_10118fc0((int)("SCITrackInfoSwigBase::getResUri"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19524,7 +19534,7 @@ void __fastcall FUN_10137050(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getResumeOffsetMillis");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getResumeOffsetMillis"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -19562,7 +19572,7 @@ void __thiscall Recovered_Bulk::m_FUN_101370b0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getRootItem");
+  thunk_FUN_10118fc0((int)("SCIMusicServerBrowseDelegateSwigBase::getRootItem"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19589,7 +19599,7 @@ void __fastcall FUN_101377b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVpnDelegate::getRootObject");
+  thunk_FUN_10118fc0((int)("SCIVpnDelegate::getRootObject"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -19623,7 +19633,7 @@ void __thiscall Recovered_Bulk::m_FUN_10137860(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibDelegateFactory::getSCLibDelegate");
+  thunk_FUN_10118fc0((int)("SCLibDelegateFactory::getSCLibDelegate"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19663,7 +19673,7 @@ void __thiscall Recovered_Bulk::m_FUN_10137930(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getSCUri");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getSCUri"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19686,7 +19696,7 @@ void __fastcall FUN_10137a00(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::getSampleRate");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::getSampleRate"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -19724,7 +19734,7 @@ void __thiscall Recovered_Bulk::m_FUN_10137a60(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getSecondaryTitle");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getSecondaryTitle"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19764,7 +19774,7 @@ void __thiscall Recovered_Bulk::m_FUN_10137b30(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::getSerialNumber");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::getSerialNumber"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19830,7 +19840,7 @@ void __thiscall Recovered_Bulk::m_FUN_10137c00(SCStr *param_2,undefined4 param_3
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getServiceAttributionLogo");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::getServiceAttributionLogo"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19853,7 +19863,7 @@ void __fastcall FUN_10137da0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIGetSonosPlaylistsCBSwigBase::getSonosPlaylistsFailed");
+  thunk_FUN_10118fc0((int)("SCIGetSonosPlaylistsCBSwigBase::getSonosPlaylistsFailed"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -19884,7 +19894,7 @@ void __thiscall Recovered_Bulk::m_FUN_10137e00(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0xc))(uVar2);
@@ -19893,7 +19903,7 @@ void __thiscall Recovered_Bulk::m_FUN_10137e00(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIGetSonosPlaylistsCBSwigBase::getSonosPlaylistsSucceeded");
+  thunk_FUN_10118fc0((int)("SCIGetSonosPlaylistsCBSwigBase::getSonosPlaylistsSucceeded"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19933,7 +19943,7 @@ void __thiscall Recovered_Bulk::m_FUN_10137ee0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBTClassicConnectionProviderSwigBase::getSourceDeviceName");
+  thunk_FUN_10118fc0((int)("SCIBTClassicConnectionProviderSwigBase::getSourceDeviceName"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -19973,7 +19983,7 @@ void __thiscall Recovered_Bulk::m_FUN_10137fc0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::getStoragePath");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::getStoragePath"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20013,7 +20023,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138090(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIStringInputSwigBase::getString");
+  thunk_FUN_10118fc0((int)("SCIStringInputSwigBase::getString"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20049,7 +20059,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138160(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getStringInput");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::getStringInput"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20084,7 +20094,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138230(SCStr *param_2,undefined4 *param_
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     pv = (ushort *)((ushort *)(**(code **)(param_1 + 0x30))(uVar2), 0);
@@ -20097,7 +20107,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138230(SCStr *param_2,undefined4 *param_
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::getStringValue");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::getStringValue"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20137,7 +20147,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138360(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getTitle");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getTitle"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20177,7 +20187,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138430(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicSearchableDelegateSwigBase::getTitle");
+  thunk_FUN_10118fc0((int)("SCILocalMusicSearchableDelegateSwigBase::getTitle"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20217,7 +20227,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138500(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCITrackInfoSwigBase::getTitle");
+  thunk_FUN_10118fc0((int)("SCITrackInfoSwigBase::getTitle"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20240,7 +20250,7 @@ void __fastcall FUN_101385d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getTrackNumber");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::getTrackNumber"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20278,7 +20288,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138630(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCLibTruncatedStringsCallback::getTruncatedStrings");
+  thunk_FUN_10118fc0((int)("SCLibTruncatedStringsCallback::getTruncatedStrings"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20318,7 +20328,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138700(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getUUID");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::getUUID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20358,7 +20368,7 @@ void __thiscall Recovered_Bulk::m_FUN_101387d0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIStringInputSwigBase::getValidationMessage");
+  thunk_FUN_10118fc0((int)("SCIStringInputSwigBase::getValidationMessage"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20381,7 +20391,7 @@ void __fastcall FUN_101388a0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIStringInputSwigBase::getValidationStatus");
+  thunk_FUN_10118fc0((int)("SCIStringInputSwigBase::getValidationStatus"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20416,14 +20426,14 @@ void __thiscall Recovered_Bulk::m_FUN_10138900(SCStr *param_2,undefined4 *param_
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_838 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_838 + 1)) << 8 | (uint)(2)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     if ((int *)(param_5) != (int *)(0x0)) {
@@ -20440,7 +20450,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138900(SCStr *param_2,undefined4 *param_
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getVariation");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::getVariation"));
                     
   _CxxThrowException((uint)&local_24,(ThrowInfo *)&DAT_11d33164);
 
@@ -20475,7 +20485,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138ab0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x30))(uVar2), 0);
@@ -20488,7 +20498,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138ab0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getVariations");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::getVariations"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20528,7 +20538,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138bd0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getWizardComponents");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::getWizardComponents"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20568,7 +20578,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138c90(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getWizardPageProperties");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::getWizardPageProperties"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20601,7 +20611,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138d50(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 8))(uVar2);
@@ -20610,7 +20620,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138d50(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibCustomSubWizardCallback::hasCustomSubWizard");
+  thunk_FUN_10118fc0((int)("SCLibCustomSubWizardCallback::hasCustomSubWizard"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20633,7 +20643,7 @@ void __fastcall FUN_10138e30(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::hasDeviceToken");
+  thunk_FUN_10118fc0((int)("SCIInAppMessagingProviderSwigBase::hasDeviceToken"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20654,7 +20664,7 @@ void __fastcall FUN_10138e90(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::hasLimitedVerticalSpace");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::hasLimitedVerticalSpace"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20675,7 +20685,7 @@ void __fastcall FUN_10138ef0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::hasMoreMenu");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::hasMoreMenu"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20696,7 +20706,7 @@ void __fastcall FUN_10138f50(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::hasOrdinal");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::hasOrdinal"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20717,7 +20727,7 @@ void __thiscall Recovered_Bulk::m_FUN_10138fb0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibDelegateFactory::hasSCLibDelegate");
+  thunk_FUN_10118fc0((int)("SCLibDelegateFactory::hasSCLibDelegate"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20738,7 +20748,7 @@ void __fastcall FUN_10139020(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::hasUnreadMessages");
+  thunk_FUN_10118fc0((int)("SCIUrbanAirshipDelegateSwigBase::hasUnreadMessages"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20759,7 +20769,7 @@ void __fastcall FUN_10139090(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAutomationDelegateSwigBase::hhidUpdated");
+  thunk_FUN_10118fc0((int)("SCIAutomationDelegateSwigBase::hhidUpdated"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20780,7 +20790,7 @@ void __fastcall FUN_101390f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::initPeripheral");
+  thunk_FUN_10118fc0((int)("SCIBlePeripheralDelegateSwigBase::initPeripheral"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20807,7 +20817,7 @@ void __thiscall Recovered_Bulk::m_FUN_10139150(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::initialize");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::initialize"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20838,7 +20848,7 @@ void __thiscall Recovered_Bulk::m_FUN_101391d0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0xc))(uVar2);
@@ -20847,7 +20857,7 @@ void __thiscall Recovered_Bulk::m_FUN_101391d0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::initialize");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::initialize"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -20870,7 +20880,7 @@ void __fastcall FUN_101392b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::initialize");
+  thunk_FUN_10118fc0((int)("SCIInAppPurchaseManagerProviderSwigBase::initialize"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20891,7 +20901,7 @@ void __fastcall FUN_10139310(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAutomationDelegateSwigBase::initializeFlutterAutomation");
+  thunk_FUN_10118fc0((int)("SCIAutomationDelegateSwigBase::initializeFlutterAutomation"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20912,7 +20922,7 @@ void __thiscall Recovered_Bulk::m_FUN_101393a0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::isAlwaysAvailable");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::isAlwaysAvailable"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20933,7 +20943,7 @@ void __thiscall Recovered_Bulk::m_FUN_10139410(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::isAlwaysDisallowed");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::isAlwaysDisallowed"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20954,7 +20964,7 @@ void __thiscall Recovered_Bulk::m_FUN_10139480(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILifecycleAppProviderSwigBase::isAppWithSWGenInstalled");
+  thunk_FUN_10118fc0((int)("SCILifecycleAppProviderSwigBase::isAppWithSWGenInstalled"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20975,7 +20985,7 @@ void __thiscall Recovered_Bulk::m_FUN_101394f0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isBrowseItemTextAvailable");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::isBrowseItemTextAvailable"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -20996,7 +21006,7 @@ void __fastcall FUN_10139560(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isCompletelyPlayed");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::isCompletelyPlayed"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21017,7 +21027,7 @@ void __fastcall FUN_101395c0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTClassicConnectionProviderSwigBase::isConnectedToSonosDevice");
+  thunk_FUN_10118fc0((int)("SCIBTClassicConnectionProviderSwigBase::isConnectedToSonosDevice"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21038,7 +21048,7 @@ void __fastcall FUN_10139620(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::isContainer");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::isContainer"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21059,7 +21069,7 @@ void __fastcall FUN_10139680(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isDataAvailable");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::isDataAvailable"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21090,7 +21100,7 @@ void __thiscall Recovered_Bulk::m_FUN_101396e0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x10))(uVar2);
@@ -21099,7 +21109,7 @@ void __thiscall Recovered_Bulk::m_FUN_101396e0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::isDeviceBonded");
+  thunk_FUN_10118fc0((int)("SCIBTAccessoryDelegateSwigBase::isDeviceBonded"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -21133,14 +21143,14 @@ void __thiscall Recovered_Bulk::m_FUN_10139830(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     if ((int *)(param_4) != (int *)(0x0)) {
@@ -21153,7 +21163,7 @@ void __thiscall Recovered_Bulk::m_FUN_10139830(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::isFeatureEnabled");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::isFeatureEnabled"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -21176,7 +21186,7 @@ void __fastcall FUN_101399a0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::isInitialized");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::isInitialized"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21197,7 +21207,7 @@ void __fastcall FUN_10139a00(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isLoading");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::isLoading"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21218,7 +21228,7 @@ void __fastcall FUN_10139a60(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIStringInputSwigBase::isLocked");
+  thunk_FUN_10118fc0((int)("SCIStringInputSwigBase::isLocked"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21239,7 +21249,7 @@ void __fastcall FUN_10139ac0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTClassicConnectionCallbackSwigBase::isMobConnected");
+  thunk_FUN_10118fc0((int)("SCIBTClassicConnectionCallbackSwigBase::isMobConnected"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21260,7 +21270,7 @@ void __fastcall FUN_10139b50(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isParentOfSearch");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::isParentOfSearch"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21281,7 +21291,7 @@ void __fastcall FUN_10139bb0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::isPlayable");
+  thunk_FUN_10118fc0((int)("SCILocalMusicBrowseItemInfoSwigBase::isPlayable"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21302,7 +21312,7 @@ void __fastcall FUN_10139c10(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTClassicConnectionProviderSwigBase::isPlaying");
+  thunk_FUN_10118fc0((int)("SCIBTClassicConnectionProviderSwigBase::isPlaying"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21323,7 +21333,7 @@ void __fastcall FUN_10139c70(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isPlaying");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::isPlaying"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21344,7 +21354,7 @@ void __thiscall Recovered_Bulk::m_FUN_10139cd0(undefined4 param_2,undefined4 par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::isPrereq");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::isPrereq"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21365,7 +21375,7 @@ void __fastcall FUN_10139d40(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isSecondaryTitleValid");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::isSecondaryTitleValid"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21386,7 +21396,7 @@ void __fastcall FUN_10139da0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecureStoreSwigBase::isSecure");
+  thunk_FUN_10118fc0((int)("SCISecureStoreSwigBase::isSecure"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21407,7 +21417,7 @@ void __fastcall FUN_10139e00(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isSonosRadio");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::isSonosRadio"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21428,7 +21438,7 @@ void __fastcall FUN_10139e60(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::isStateDone");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::isStateDone"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21449,7 +21459,7 @@ void __fastcall FUN_10139ec0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isUnavailable");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::isUnavailable"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21480,7 +21490,7 @@ void __thiscall Recovered_Bulk::m_FUN_10139f20(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x28))(uVar2);
@@ -21489,7 +21499,7 @@ void __thiscall Recovered_Bulk::m_FUN_10139f20(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIStringInputSwigBase::isValid");
+  thunk_FUN_10118fc0((int)("SCIStringInputSwigBase::isValid"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -21512,7 +21522,7 @@ void __fastcall FUN_1013a000(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIStringInputSwigBase::isValid");
+  thunk_FUN_10118fc0((int)("SCIStringInputSwigBase::isValid"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21544,14 +21554,14 @@ void __thiscall Recovered_Bulk::m_FUN_1013a060(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x38))(uVar2,uVar3);
@@ -21561,7 +21571,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a060(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::isVariationForced");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::isVariationForced"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -21584,7 +21594,7 @@ void __fastcall FUN_1013a1a0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::isWifiConnected");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::isWifiConnected"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21616,14 +21626,14 @@ void __thiscall Recovered_Bulk::m_FUN_1013a200(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x10))(uVar2,uVar3,param_4);
@@ -21633,7 +21643,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a200(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::joinSSID");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::joinSSID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -21666,7 +21676,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a340(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x48))(uVar2);
@@ -21675,7 +21685,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a340(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::launchAccessoryConfiguration");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::launchAccessoryConfiguration"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -21708,7 +21718,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a420(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x18))(uVar2);
@@ -21717,7 +21727,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a420(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::leaveSSID");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::leaveSSID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -21747,7 +21757,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a530(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x10))(uVar2);
@@ -21793,7 +21803,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a5f0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::loadFeaturesJson");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::loadFeaturesJson"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -21833,7 +21843,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a6c0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::loadVariationsJson");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::loadVariationsJson"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -21862,7 +21872,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a790(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::logCertificateData");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::logCertificateData"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21883,7 +21893,7 @@ void __fastcall FUN_1013a8b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUINotificationsDelegate::notificationsEnabled");
+  thunk_FUN_10118fc0((int)("SCIUINotificationsDelegate::notificationsEnabled"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21916,14 +21926,14 @@ void __thiscall Recovered_Bulk::m_FUN_1013a910(SCStr *param_2,undefined1 *param_
     if ((undefined1 *)(param_3) != (undefined1 *)(0x0)) {
       puVar4 = (undefined1 *)(param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)(param_4) != (undefined1 *)(0x0)) {
       puVar4 = (undefined1 *)(param_4);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     pv = (ushort *)((ushort *)(**(code **)(param_1 + 0x18))(uVar2,uVar3), 0);
@@ -21942,7 +21952,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013a910(SCStr *param_2,undefined1 *param_
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMusicSearchableDelegateSwigBase::objectIdForSearch");
+  thunk_FUN_10118fc0((int)("SCILocalMusicSearchableDelegateSwigBase::objectIdForSearch"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -21965,7 +21975,7 @@ void __fastcall FUN_1013aad0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::onBeginStreaming");
+  thunk_FUN_10118fc0((int)("SCIMusicServerDelegateSwigBase::onBeginStreaming"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -21986,7 +21996,7 @@ void __fastcall FUN_1013ab30(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINetstartListenerSwigBase::onDeviceDiscoveryWaiting");
+  thunk_FUN_10118fc0((int)("SCINetstartListenerSwigBase::onDeviceDiscoveryWaiting"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22007,7 +22017,7 @@ void __fastcall FUN_1013ab90(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::onEndStreaming");
+  thunk_FUN_10118fc0((int)("SCIMusicServerDelegateSwigBase::onEndStreaming"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22028,7 +22038,7 @@ void __fastcall FUN_1013abf0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINetstartListenerSwigBase::onJoinComplete");
+  thunk_FUN_10118fc0((int)("SCINetstartListenerSwigBase::onJoinComplete"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22049,7 +22059,7 @@ void __fastcall FUN_1013ac50(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINetstartListenerSwigBase::onJoinFail");
+  thunk_FUN_10118fc0((int)("SCINetstartListenerSwigBase::onJoinFail"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22079,7 +22089,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013acb0(undefined1 *param_2,undefined4 pa
     if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x18))(uVar2,param_3);
@@ -22090,7 +22100,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013acb0(undefined1 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINetstartListenerSwigBase::onNetParamsAcquired");
+  thunk_FUN_10118fc0((int)("SCINetstartListenerSwigBase::onNetParamsAcquired"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -22113,7 +22123,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013ada0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::onSubWizardStateTransition");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::onSubWizardStateTransition"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22140,7 +22150,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013ae00(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::onWebsocketConnected");
+  thunk_FUN_10118fc0((int)("SCIWebsocketCallbackSwigBase::onWebsocketConnected"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22167,7 +22177,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013ae80(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::onWebsocketDisconnected");
+  thunk_FUN_10118fc0((int)("SCIWebsocketCallbackSwigBase::onWebsocketDisconnected"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22194,7 +22204,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013af00(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::onWebsocketError");
+  thunk_FUN_10118fc0((int)("SCIWebsocketCallbackSwigBase::onWebsocketError"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22225,7 +22235,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013af80(undefined4 *param_2,int *param_3)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     if ((int *)(param_3) != (int *)(0x0)) {
@@ -22237,7 +22247,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013af80(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIServiceAppInteropSwigBase::openApp");
+  thunk_FUN_10118fc0((int)("SCIServiceAppInteropSwigBase::openApp"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -22269,7 +22279,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013b080(undefined1 *param_2)
     if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0xc))(uVar2);
@@ -22280,7 +22290,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013b080(undefined1 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::openFileDescriptor");
+  thunk_FUN_10118fc0((int)("SCIMusicServerDelegateSwigBase::openFileDescriptor"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -22303,7 +22313,7 @@ void __fastcall FUN_1013b170(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVpnDelegate::openVPNSettings");
+  thunk_FUN_10118fc0((int)("SCIVpnDelegate::openVPNSettings"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22324,7 +22334,7 @@ void __fastcall FUN_1013b1d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVpnDelegateSwigBase::openVPNSettings");
+  thunk_FUN_10118fc0((int)("SCIVpnDelegateSwigBase::openVPNSettings"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22351,7 +22361,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013b230(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIActionSwigBase::perform");
+  thunk_FUN_10118fc0((int)("SCIActionSwigBase::perform"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22382,7 +22392,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013b2b0(undefined4 *param_2,int *param_3)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     if ((int *)(param_3) != (int *)(0x0)) {
@@ -22394,7 +22404,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013b2b0(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINewWizDelegateSwigBase::performUpdate");
+  thunk_FUN_10118fc0((int)("SCINewWizDelegateSwigBase::performUpdate"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -22426,7 +22436,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013b3a0(undefined1 *param_2)
     if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x14))(uVar2);
@@ -22437,7 +22447,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013b3a0(undefined1 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::postCustomEvent");
+  thunk_FUN_10118fc0((int)("SCIUrbanAirshipDelegateSwigBase::postCustomEvent"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -22466,7 +22476,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013b490(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::prepareForRecording");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::prepareForRecording"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -22497,7 +22507,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013b5a0(undefined4 *param_2,int *param_3,
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     if ((int *)(param_3) != (int *)(0x0)) {
@@ -22512,7 +22522,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013b5a0(undefined4 *param_2,int *param_3,
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::purchaseProduct");
+  thunk_FUN_10118fc0((int)("SCIInAppPurchaseManagerProviderSwigBase::purchaseProduct"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -25311,7 +25321,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013e5b0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     piVar3 = (int *)((int *)(**(code **)(param_1 + 8))(uVar2), 0);
@@ -25324,7 +25334,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013e5b0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVpnDelegate::queryInterface");
+  thunk_FUN_10118fc0((int)("SCIVpnDelegate::queryInterface"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -25444,7 +25454,7 @@ void __fastcall FUN_1013e890(int param_1, unsigned int recovered_unused_stack_0,
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::queuePacketForSend");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::queuePacketForSend"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 
@@ -25476,7 +25486,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013e8f0(undefined1 *param_2)
     if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x38))(uVar2);
@@ -25487,7 +25497,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013e8f0(undefined1 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::raiseEvent");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::raiseEvent"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -25518,7 +25528,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013e9e0(undefined4 param_2,undefined4 par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::receivedData");
+  thunk_FUN_10118fc0((int)("SCIWebsocketCallbackSwigBase::receivedData"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -25549,7 +25559,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013ea70(undefined4 *param_2,int *param_3)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     if ((int *)(param_3) != (int *)(0x0)) {
@@ -25561,7 +25571,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013ea70(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::receivedString");
+  thunk_FUN_10118fc0((int)("SCIWebsocketCallbackSwigBase::receivedString"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -25584,7 +25594,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013eb60(undefined1 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINetworkManagementDelegateSwigBase::refreshSSID");
+  thunk_FUN_10118fc0((int)("SCINetworkManagementDelegateSwigBase::refreshSSID"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -25615,7 +25625,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013ebc0(undefined4 *param_2,undefined1 pa
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x14))(uVar2,param_3);
@@ -25624,7 +25634,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013ebc0(undefined4 *param_2,undefined1 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::registerDefaultBoolValue");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::registerDefaultBoolValue"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -25694,7 +25704,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013ed90(undefined4 *param_2,undefined4 pa
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x20))(uVar2,param_3);
@@ -25703,7 +25713,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013ed90(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::registerDefaultIntegerValue");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::registerDefaultIntegerValue"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -25737,14 +25747,14 @@ void __thiscall Recovered_Bulk::m_FUN_1013ee70(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x38))(uVar2,uVar3);
@@ -25754,7 +25764,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013ee70(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::registerDefaultStringValue");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::registerDefaultStringValue"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -25783,7 +25793,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013efa0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::registerListener");
+  thunk_FUN_10118fc0((int)("SCIBTAccessoryDelegateSwigBase::registerListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -25810,7 +25820,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013f020(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::registerListener");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::registerListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -25837,7 +25847,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013f0a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::registerListener");
+  thunk_FUN_10118fc0((int)("SCIBlePeripheralDelegateSwigBase::registerListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -25864,7 +25874,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013f120(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::registerListener");
+  thunk_FUN_10118fc0((int)("SCIChirpDelegateSwigBase::registerListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -25891,7 +25901,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013f1a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMdnsDelegateSwigBase::registerListener");
+  thunk_FUN_10118fc0((int)("SCIMdnsDelegateSwigBase::registerListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -25918,7 +25928,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013f220(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::registerListener");
+  thunk_FUN_10118fc0((int)("SCINfcDelegateSwigBase::registerListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -25945,7 +25955,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013f2a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::registerListener");
+  thunk_FUN_10118fc0((int)("SCIUrbanAirshipDelegateSwigBase::registerListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -25972,7 +25982,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013f320(undefined4 param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::registerListener");
+  thunk_FUN_10118fc0((int)("SCIVoiceServiceDelegateSwigBase::registerListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -25999,7 +26009,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013f3a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::registerListener");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::registerListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -26026,7 +26036,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013f420(int *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUINotificationsDelegate::registerLocalNotification");
+  thunk_FUN_10118fc0((int)("SCIUINotificationsDelegate::registerLocalNotification"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -26053,7 +26063,7 @@ void __thiscall Recovered_Bulk::m_FUN_1013f4c0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::registerMediaCollectionListener");
+  thunk_FUN_10118fc0((int)("SCILocalMediaCollectionSwigBase::registerMediaCollectionListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -26075,7 +26085,7 @@ int __fastcall FUN_1013f630(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26108,7 +26118,7 @@ int __fastcall FUN_1013f6d0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26141,7 +26151,7 @@ int __fastcall FUN_1013f770(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26174,7 +26184,7 @@ int __fastcall FUN_1013f810(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26207,7 +26217,7 @@ int __fastcall FUN_1013f8b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26240,7 +26250,7 @@ int __fastcall FUN_1013f950(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26273,7 +26283,7 @@ int __fastcall FUN_1013f9f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26306,7 +26316,7 @@ int __fastcall FUN_1013fa90(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26339,7 +26349,7 @@ int __fastcall FUN_1013fb30(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26372,7 +26382,7 @@ int __fastcall FUN_1013fbd0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26405,7 +26415,7 @@ int __fastcall FUN_1013fc70(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26438,7 +26448,7 @@ int __fastcall FUN_1013fd10(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26471,7 +26481,7 @@ int __fastcall FUN_1013fdb0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26504,7 +26514,7 @@ int __fastcall FUN_1013fe50(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26537,7 +26547,7 @@ int __fastcall FUN_1013fef0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26570,7 +26580,7 @@ int __fastcall FUN_1013ff90(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26603,7 +26613,7 @@ int __fastcall FUN_10140030(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26636,7 +26646,7 @@ int __fastcall FUN_101400d0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26669,7 +26679,7 @@ int __fastcall FUN_10140170(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26702,7 +26712,7 @@ int __fastcall FUN_10140210(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26735,7 +26745,7 @@ int __fastcall FUN_101402b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26768,7 +26778,7 @@ int __fastcall FUN_10140350(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26801,7 +26811,7 @@ int __fastcall FUN_101403f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26834,7 +26844,7 @@ int __fastcall FUN_10140490(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26867,7 +26877,7 @@ int __fastcall FUN_10140530(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26900,7 +26910,7 @@ int __fastcall FUN_101405d0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26933,7 +26943,7 @@ int __fastcall FUN_10140670(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26966,7 +26976,7 @@ int __fastcall FUN_10140710(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -26999,7 +27009,7 @@ int __fastcall FUN_101407b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27032,7 +27042,7 @@ int __fastcall FUN_10140850(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27065,7 +27075,7 @@ int __fastcall FUN_101408f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27098,7 +27108,7 @@ int __fastcall FUN_10140990(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27131,7 +27141,7 @@ int __fastcall FUN_10140a30(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27164,7 +27174,7 @@ int __fastcall FUN_10140ad0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27197,7 +27207,7 @@ int __fastcall FUN_10140b70(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27230,7 +27240,7 @@ int __fastcall FUN_10140c10(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27263,7 +27273,7 @@ int __fastcall FUN_10140cb0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27296,7 +27306,7 @@ int __fastcall FUN_10140d50(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27329,7 +27339,7 @@ int __fastcall FUN_10140df0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27362,7 +27372,7 @@ int __fastcall FUN_10140e90(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27395,7 +27405,7 @@ int __fastcall FUN_10140f30(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27428,7 +27438,7 @@ int __fastcall FUN_10140fd0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27461,7 +27471,7 @@ int __fastcall FUN_10141070(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27494,7 +27504,7 @@ int __fastcall FUN_10141110(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27527,7 +27537,7 @@ int __fastcall FUN_101411b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27560,7 +27570,7 @@ int __fastcall FUN_10141250(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27593,7 +27603,7 @@ int __fastcall FUN_101412f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27626,7 +27636,7 @@ int __fastcall FUN_10141390(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27659,7 +27669,7 @@ int __fastcall FUN_10141430(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27692,7 +27702,7 @@ int __fastcall FUN_101414d0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27725,7 +27735,7 @@ int __fastcall FUN_10141570(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27758,7 +27768,7 @@ int __fastcall FUN_10141610(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27792,7 +27802,7 @@ int __fastcall FUN_101416b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27831,7 +27841,7 @@ int __fastcall FUN_10141770(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27870,7 +27880,7 @@ int __fastcall FUN_10141830(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27909,7 +27919,7 @@ int __fastcall FUN_101418f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27948,7 +27958,7 @@ int __fastcall FUN_101419b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -27987,7 +27997,7 @@ int __fastcall FUN_10141a70(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28026,7 +28036,7 @@ int __fastcall FUN_10141b30(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28065,7 +28075,7 @@ int __fastcall FUN_10141bf0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28104,7 +28114,7 @@ int __fastcall FUN_10141cb0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28143,7 +28153,7 @@ int __fastcall FUN_10141d70(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28182,7 +28192,7 @@ int __fastcall FUN_10141e30(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28221,7 +28231,7 @@ int __fastcall FUN_10141ef0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28260,7 +28270,7 @@ int __fastcall FUN_10141fb0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28299,7 +28309,7 @@ int __fastcall FUN_10142070(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28338,7 +28348,7 @@ int __fastcall FUN_10142130(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28377,7 +28387,7 @@ int __fastcall FUN_101421f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28416,7 +28426,7 @@ int __fastcall FUN_101422b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28455,7 +28465,7 @@ int __fastcall FUN_10142370(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28494,7 +28504,7 @@ int __fastcall FUN_10142430(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28533,7 +28543,7 @@ int __fastcall FUN_101424f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28572,7 +28582,7 @@ int __fastcall FUN_101425b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28611,7 +28621,7 @@ int __fastcall FUN_10142670(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28650,7 +28660,7 @@ int __fastcall FUN_10142730(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28689,7 +28699,7 @@ int __fastcall FUN_101427f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28728,7 +28738,7 @@ int __fastcall FUN_101428b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28767,7 +28777,7 @@ int __fastcall FUN_10142970(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28806,7 +28816,7 @@ int __fastcall FUN_10142a30(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28845,7 +28855,7 @@ int __fastcall FUN_10142af0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28884,7 +28894,7 @@ int __fastcall FUN_10142bb0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28923,7 +28933,7 @@ int __fastcall FUN_10142c70(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -28962,7 +28972,7 @@ int __fastcall FUN_10142d30(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29001,7 +29011,7 @@ int __fastcall FUN_10142df0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29040,7 +29050,7 @@ int __fastcall FUN_10142eb0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29079,7 +29089,7 @@ int __fastcall FUN_10142f70(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29118,7 +29128,7 @@ int __fastcall FUN_10143030(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29157,7 +29167,7 @@ int __fastcall FUN_101430f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29196,7 +29206,7 @@ int __fastcall FUN_101431b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29235,7 +29245,7 @@ int __fastcall FUN_10143270(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29274,7 +29284,7 @@ int __fastcall FUN_10143330(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29313,7 +29323,7 @@ int __fastcall FUN_101433f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29352,7 +29362,7 @@ int __fastcall FUN_101434b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29391,7 +29401,7 @@ int __fastcall FUN_10143570(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29430,7 +29440,7 @@ int __fastcall FUN_10143630(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29469,7 +29479,7 @@ int __fastcall FUN_101436f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29508,7 +29518,7 @@ int __fastcall FUN_101437b0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29547,7 +29557,7 @@ int __fastcall FUN_10143870(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29586,7 +29596,7 @@ int __fastcall FUN_10143930(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29625,7 +29635,7 @@ int __fastcall FUN_101439f0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29664,7 +29674,7 @@ int __fastcall FUN_10143af0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29703,7 +29713,7 @@ int __fastcall FUN_10143bb0(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29742,7 +29752,7 @@ int __fastcall FUN_10143c70(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29781,7 +29791,7 @@ int __fastcall FUN_10143d30(int *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  thunk_FUN_101b9190(param_1);
+  thunk_FUN_101b9190((int)(param_1));
 
   iVar2 = (int)(SCThreadSafeDec(param_1 + 1), 0);
   if (iVar2 == 0) {
@@ -29828,7 +29838,7 @@ void __thiscall Recovered_Bulk::m_FUN_10143df0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x3c))(uVar2);
@@ -29837,7 +29847,7 @@ void __thiscall Recovered_Bulk::m_FUN_10143df0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::remove");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::remove"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -29870,7 +29880,7 @@ void __thiscall Recovered_Bulk::m_FUN_10143ed0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x14))(uVar2);
@@ -29879,7 +29889,7 @@ void __thiscall Recovered_Bulk::m_FUN_10143ed0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecureStoreSwigBase::removeBlob");
+  thunk_FUN_10118fc0((int)("SCISecureStoreSwigBase::removeBlob"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -29913,14 +29923,14 @@ void __thiscall Recovered_Bulk::m_FUN_10143fb0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x1c))(uVar2,uVar3);
@@ -29930,7 +29940,7 @@ void __thiscall Recovered_Bulk::m_FUN_10143fb0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::removeTagFromGroup");
+  thunk_FUN_10118fc0((int)("SCIInAppMessagingProviderSwigBase::removeTagFromGroup"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -29959,7 +29969,7 @@ void __thiscall Recovered_Bulk::m_FUN_101440e0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUINotificationsDelegate::requestNotificationsPermissions");
+  thunk_FUN_10118fc0((int)("SCIUINotificationsDelegate::requestNotificationsPermissions"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -29980,7 +29990,7 @@ void __fastcall FUN_10144160(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::requestOSPairing");
+  thunk_FUN_10118fc0((int)("SCIBTAccessoryDelegateSwigBase::requestOSPairing"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30011,7 +30021,7 @@ void __thiscall Recovered_Bulk::m_FUN_101441c0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x1c))(uVar2);
@@ -30020,7 +30030,7 @@ void __thiscall Recovered_Bulk::m_FUN_101441c0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::requestPairing");
+  thunk_FUN_10118fc0((int)("SCIBTAccessoryDelegateSwigBase::requestPairing"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30043,7 +30053,7 @@ void __thiscall Recovered_Bulk::m_FUN_101442a0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::requestPrereq");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::requestPrereq"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30064,7 +30074,7 @@ void __fastcall FUN_10144310(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVpnDelegate::requestVPN");
+  thunk_FUN_10118fc0((int)("SCIVpnDelegate::requestVPN"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30085,7 +30095,7 @@ void __fastcall FUN_10144370(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVpnDelegateSwigBase::requestVPN");
+  thunk_FUN_10118fc0((int)("SCIVpnDelegateSwigBase::requestVPN"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30106,7 +30116,7 @@ void __fastcall FUN_101443d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::requireFineLocationPermission");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::requireFineLocationPermission"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30127,7 +30137,7 @@ void __fastcall FUN_10144430(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::requireInputToChangeHoldStyle");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::requireInputToChangeHoldStyle"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30148,7 +30158,7 @@ void __fastcall FUN_10144490(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::resolveArtworkUrls");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::resolveArtworkUrls"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30178,7 +30188,7 @@ void __thiscall Recovered_Bulk::m_FUN_101444f0(undefined1 *param_2)
     if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x4c))(uVar2);
@@ -30189,7 +30199,7 @@ void __thiscall Recovered_Bulk::m_FUN_101444f0(undefined1 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::saveFeaturesJson");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::saveFeaturesJson"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30221,7 +30231,7 @@ void __thiscall Recovered_Bulk::m_FUN_101445e0(undefined1 *param_2)
     if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x44))(uVar2);
@@ -30232,7 +30242,7 @@ void __thiscall Recovered_Bulk::m_FUN_101445e0(undefined1 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::saveVariationsJson");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::saveVariationsJson"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30255,7 +30265,7 @@ void __fastcall FUN_101446f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::sendQueuedPackets");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::sendQueuedPackets"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30276,7 +30286,7 @@ void __fastcall FUN_10144750(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::serialNum");
+  thunk_FUN_10118fc0((int)("SCIUrlConnectionSwigBase::serialNum"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30303,7 +30313,7 @@ void __thiscall Recovered_Bulk::m_FUN_101447b0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrlSessionCallbackSwigBase::sessionComplete");
+  thunk_FUN_10118fc0((int)("SCIUrlSessionCallbackSwigBase::sessionComplete"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30324,7 +30334,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144860(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILoggingProviderSwigBase::setAppLevel");
+  thunk_FUN_10118fc0((int)("SCILoggingProviderSwigBase::setAppLevel"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30356,14 +30366,14 @@ void __thiscall Recovered_Bulk::m_FUN_101448c0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0xc))(uVar2,uVar3);
@@ -30373,7 +30383,7 @@ void __thiscall Recovered_Bulk::m_FUN_101448c0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecureStoreSwigBase::setBlob");
+  thunk_FUN_10118fc0((int)("SCISecureStoreSwigBase::setBlob"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30406,7 +30416,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144a00(undefined4 *param_2,undefined1 pa
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x10))(uVar2,param_3);
@@ -30415,7 +30425,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144a00(undefined4 *param_2,undefined1 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setBoolValue");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::setBoolValue"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30444,7 +30454,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144ae0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTClassicConnectionProviderSwigBase::setCallback");
+  thunk_FUN_10118fc0((int)("SCIBTClassicConnectionProviderSwigBase::setCallback"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30471,7 +30481,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144b60(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::setCallback");
+  thunk_FUN_10118fc0((int)("SCIWebsocketDelegateSwigBase::setCallback"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30501,7 +30511,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144be0(undefined1 *param_2)
     if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x28))(uVar2);
@@ -30512,7 +30522,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144be0(undefined1 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setCertificateEnvironment");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::setCertificateEnvironment"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30545,7 +30555,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144cd0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0xc))(uVar2);
@@ -30554,7 +30564,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144cd0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIClipboardDelegateSwigBase::setClipboardData");
+  thunk_FUN_10118fc0((int)("SCIClipboardDelegateSwigBase::setClipboardData"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30586,7 +30596,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144db0(undefined1 *param_2)
     if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x18))(uVar2);
@@ -30597,7 +30607,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144db0(undefined1 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setCustomerID");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::setCustomerID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30657,7 +30667,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144f90(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCILoggingProviderSwigBase::setFlutterLevel");
+  thunk_FUN_10118fc0((int)("SCILoggingProviderSwigBase::setFlutterLevel"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30690,21 +30700,21 @@ void __thiscall Recovered_Bulk::m_FUN_10144ff0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
       puVar5 = (undefined1 *)((undefined1 *)*param_4);
     }
-    thunk_FUN_101a1ea0(puVar5);
+    thunk_FUN_101a1ea0((int)(puVar5));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     uVar4 = (undefined4)(thunk_FUN_101a2160(), 0);
     (**(code **)(param_1 + 0x34))(uVar2,uVar3,uVar4);
@@ -30715,7 +30725,7 @@ void __thiscall Recovered_Bulk::m_FUN_10144ff0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::setForcedVariation");
+  thunk_FUN_10118fc0((int)("SCIExperimentManagerProviderSwigBase::setForcedVariation"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30747,7 +30757,7 @@ void __thiscall Recovered_Bulk::m_FUN_101451a0(undefined1 *param_2)
     if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x10))(uVar2);
@@ -30758,7 +30768,7 @@ void __thiscall Recovered_Bulk::m_FUN_101451a0(undefined1 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setHHID");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::setHHID"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30791,7 +30801,7 @@ void __thiscall Recovered_Bulk::m_FUN_10145290(undefined4 *param_2,undefined4 pa
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x1c))(uVar2,param_3);
@@ -30800,7 +30810,7 @@ void __thiscall Recovered_Bulk::m_FUN_10145290(undefined4 *param_2,undefined4 pa
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setIntegerValue");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::setIntegerValue"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30823,7 +30833,7 @@ void __thiscall Recovered_Bulk::m_FUN_10145370(undefined1 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::setRequireSecurePairing");
+  thunk_FUN_10118fc0((int)("SCIBlePeripheralDelegateSwigBase::setRequireSecurePairing"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30850,7 +30860,7 @@ void __thiscall Recovered_Bulk::m_FUN_101453d0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::setResponse");
+  thunk_FUN_10118fc0((int)("SCIUrlConnectionSwigBase::setResponse"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30871,7 +30881,7 @@ void __thiscall Recovered_Bulk::m_FUN_10145450(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::setResult");
+  thunk_FUN_10118fc0((int)("SCIUrlConnectionSwigBase::setResult"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -30901,7 +30911,7 @@ void __thiscall Recovered_Bulk::m_FUN_101454b0(undefined1 *param_2)
     if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
       puVar3 = (undefined1 *)(param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x20))(uVar2);
@@ -30912,7 +30922,7 @@ void __thiscall Recovered_Bulk::m_FUN_101454b0(undefined1 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setSerialNumber");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::setSerialNumber"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30945,7 +30955,7 @@ void __thiscall Recovered_Bulk::m_FUN_101455a0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x14))(uVar2);
@@ -30954,7 +30964,7 @@ void __thiscall Recovered_Bulk::m_FUN_101455a0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIStringInputSwigBase::setString");
+  thunk_FUN_10118fc0((int)("SCIStringInputSwigBase::setString"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -30988,14 +30998,14 @@ void __thiscall Recovered_Bulk::m_FUN_10145680(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x34))(uVar2,uVar3);
@@ -31005,7 +31015,7 @@ void __thiscall Recovered_Bulk::m_FUN_10145680(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setStringValue");
+  thunk_FUN_10118fc0((int)("SCISavedDataProviderSwigBase::setStringValue"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -31039,14 +31049,14 @@ void __thiscall Recovered_Bulk::m_FUN_101457b0(undefined4 *param_2,undefined4 *p
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
-    thunk_FUN_101a1ea0(puVar4);
+    thunk_FUN_101a1ea0((int)(puVar4));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x14))(uVar2,uVar3);
@@ -31056,7 +31066,7 @@ void __thiscall Recovered_Bulk::m_FUN_101457b0(undefined4 *param_2,undefined4 *p
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::setTag");
+  thunk_FUN_10118fc0((int)("SCICrashReportProviderSwigBase::setTag"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -31080,7 +31090,7 @@ void __fastcall FUN_101458e0(int param_1, unsigned int recovered_unused_stack_0,
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::setTransferTestPacket");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::setTransferTestPacket"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 
@@ -31103,7 +31113,7 @@ void __fastcall FUN_10145940(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::showExplicitBadge");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::showExplicitBadge"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31124,7 +31134,7 @@ void __fastcall FUN_101459a0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::showProgressInfo");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::showProgressInfo"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31145,7 +31155,7 @@ void __fastcall FUN_10145a00(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::shutdown");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::shutdown"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31166,7 +31176,7 @@ void __fastcall FUN_10145a60(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::shutdown");
+  thunk_FUN_10118fc0((int)("SCIBTAccessoryDelegateSwigBase::shutdown"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31187,7 +31197,7 @@ void __fastcall FUN_10145ac0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::shutdown");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::shutdown"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31208,7 +31218,7 @@ void __fastcall FUN_10145b20(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::shutdown");
+  thunk_FUN_10118fc0((int)("SCIBlePeripheralDelegateSwigBase::shutdown"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31229,7 +31239,7 @@ void __fastcall FUN_10145b80(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::shutdown");
+  thunk_FUN_10118fc0((int)("SCIChirpDelegateSwigBase::shutdown"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31250,7 +31260,7 @@ void __fastcall FUN_10145be0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::shutdown");
+  thunk_FUN_10118fc0((int)("SCIInAppPurchaseManagerProviderSwigBase::shutdown"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31271,7 +31281,7 @@ void __fastcall FUN_10145c40(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::shutdown");
+  thunk_FUN_10118fc0((int)("SCINfcDelegateSwigBase::shutdown"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31292,7 +31302,7 @@ void __fastcall FUN_10145cb0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::skipStateOnBacktracking");
+  thunk_FUN_10118fc0((int)("SCICustomSubWizardSwigBase::skipStateOnBacktracking"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31313,7 +31323,7 @@ void __fastcall FUN_10145d10(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::sonarBegin");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::sonarBegin"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31334,7 +31344,7 @@ void __fastcall FUN_10145d70(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::sonarEnd");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::sonarEnd"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31365,7 +31375,7 @@ void __thiscall Recovered_Bulk::m_FUN_10145dd0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0xc))(uVar2);
@@ -31374,7 +31384,7 @@ void __thiscall Recovered_Bulk::m_FUN_10145dd0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIStackTraceCaptureDelegateSwigBase::stackTraceCaptured");
+  thunk_FUN_10118fc0((int)("SCIStackTraceCaptureDelegateSwigBase::stackTraceCaptured"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -31403,7 +31413,7 @@ void __thiscall Recovered_Bulk::m_FUN_10145eb0(undefined4 param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::startAuthentication");
+  thunk_FUN_10118fc0((int)("SCIVoiceServiceDelegateSwigBase::startAuthentication"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31424,7 +31434,7 @@ void __thiscall Recovered_Bulk::m_FUN_10145f30(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::startChirpReceiving");
+  thunk_FUN_10118fc0((int)("SCIChirpDelegateSwigBase::startChirpReceiving"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31445,7 +31455,7 @@ void __thiscall Recovered_Bulk::m_FUN_10145f90(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::startCrashReporter");
+  thunk_FUN_10118fc0((int)("SCICrashReportProviderSwigBase::startCrashReporter"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31466,7 +31476,7 @@ void __fastcall FUN_10145ff0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::startDiscoveryScan");
+  thunk_FUN_10118fc0((int)("SCIBTAccessoryDelegateSwigBase::startDiscoveryScan"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31493,7 +31503,7 @@ void __thiscall Recovered_Bulk::m_FUN_10146050(undefined4 param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::startMotionData");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::startMotionData"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31514,7 +31524,7 @@ void __fastcall FUN_101460d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMdnsDelegateSwigBase::startPlayerDiscovery");
+  thunk_FUN_10118fc0((int)("SCIMdnsDelegateSwigBase::startPlayerDiscovery"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31541,7 +31551,7 @@ void __thiscall Recovered_Bulk::m_FUN_10146130(undefined4 param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::startRawMotionData");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::startRawMotionData"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31573,7 +31583,7 @@ void __thiscall Recovered_Bulk::m_FUN_101461b0(undefined4 param_2,int *param_3,u
     if ((undefined1 *)(param_8) != (undefined1 *)(0x0)) {
       puVar2 = (undefined1 *)(param_8);
     }
-    thunk_FUN_101a1ea0(puVar2);
+    thunk_FUN_101a1ea0((int)(puVar2));
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     uVar1 = (undefined4)(thunk_FUN_101a2160(), 0);
     (**(code **)(param_1 + 0x14))(param_2,param_3,param_4,param_5,param_6,param_7,uVar1);
@@ -31584,7 +31594,7 @@ void __thiscall Recovered_Bulk::m_FUN_101461b0(undefined4 param_2,int *param_3,u
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::startRecording");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::startRecording"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -31607,7 +31617,7 @@ void __fastcall FUN_101462e0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::startScan");
+  thunk_FUN_10118fc0((int)("SCINfcDelegateSwigBase::startScan"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31628,7 +31638,7 @@ void __thiscall Recovered_Bulk::m_FUN_10146340(undefined1 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::startScan");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::startScan"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31655,7 +31665,7 @@ void __thiscall Recovered_Bulk::m_FUN_101463b0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrlSessionProviderSwigBase::startURLSession");
+  thunk_FUN_10118fc0((int)("SCIUrlSessionProviderSwigBase::startURLSession"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31676,7 +31686,7 @@ void __fastcall FUN_10146430(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::stopChirpReceiving");
+  thunk_FUN_10118fc0((int)("SCIChirpDelegateSwigBase::stopChirpReceiving"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31697,7 +31707,7 @@ void __fastcall FUN_10146490(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::stopDiscoveryScan");
+  thunk_FUN_10118fc0((int)("SCIBTAccessoryDelegateSwigBase::stopDiscoveryScan"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31718,7 +31728,7 @@ void __fastcall FUN_101464f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::stopMotionData");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::stopMotionData"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31739,7 +31749,7 @@ void __fastcall FUN_10146550(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMdnsDelegateSwigBase::stopPlayerDiscovery");
+  thunk_FUN_10118fc0((int)("SCIMdnsDelegateSwigBase::stopPlayerDiscovery"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31760,7 +31770,7 @@ void __fastcall FUN_101465b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::stopRawMotionData");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::stopRawMotionData"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31781,7 +31791,7 @@ void __fastcall FUN_10146610(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCLibSonarCallback::stopRecording");
+  thunk_FUN_10118fc0((int)("SCLibSonarCallback::stopRecording"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31802,7 +31812,7 @@ void __fastcall FUN_10146670(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::stopScan");
+  thunk_FUN_10118fc0((int)("SCINfcDelegateSwigBase::stopScan"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31823,7 +31833,7 @@ void __fastcall FUN_101466d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::stopScan");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::stopScan"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31850,7 +31860,7 @@ void __thiscall Recovered_Bulk::m_FUN_10146770(int *param_2,undefined1 param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::subscribe");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::subscribe"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31871,7 +31881,7 @@ void __thiscall Recovered_Bulk::m_FUN_101467f0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::suggestPrereq");
+  thunk_FUN_10118fc0((int)("SCIAbilityDelegateSwigBase::suggestPrereq"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31902,7 +31912,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148a00(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x14))(uVar2);
@@ -31911,7 +31921,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148a00(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryConnect");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::tryConnect"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -31934,7 +31944,7 @@ void __fastcall FUN_10148ae0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryDisconnect");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::tryDisconnect"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31955,7 +31965,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148b40(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryFlushTransferTestBurst");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::tryFlushTransferTestBurst"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -31986,7 +31996,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148ba0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x10))(uVar2);
@@ -31995,7 +32005,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148ba0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::tryStartAdvertising");
+  thunk_FUN_10118fc0((int)("SCIBlePeripheralDelegateSwigBase::tryStartAdvertising"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -32018,7 +32028,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148c80(undefined1 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryStartScan");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::tryStartScan"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32039,7 +32049,7 @@ void __fastcall FUN_10148ce0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::tryStopAdvertising");
+  thunk_FUN_10118fc0((int)("SCIBlePeripheralDelegateSwigBase::tryStopAdvertising"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32060,7 +32070,7 @@ void __fastcall FUN_10148d40(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryStopScan");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::tryStopScan"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32087,7 +32097,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148da0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::unregisterListener");
+  thunk_FUN_10118fc0((int)("SCIBTAccessoryDelegateSwigBase::unregisterListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32114,7 +32124,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148e20(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::unregisterListener");
+  thunk_FUN_10118fc0((int)("SCIBleDelegateSwigBase::unregisterListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32141,7 +32151,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148ea0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::unregisterListener");
+  thunk_FUN_10118fc0((int)("SCIBlePeripheralDelegateSwigBase::unregisterListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32168,7 +32178,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148f20(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::unregisterListener");
+  thunk_FUN_10118fc0((int)("SCIChirpDelegateSwigBase::unregisterListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32195,7 +32205,7 @@ void __thiscall Recovered_Bulk::m_FUN_10148fa0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIMdnsDelegateSwigBase::unregisterListener");
+  thunk_FUN_10118fc0((int)("SCIMdnsDelegateSwigBase::unregisterListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32222,7 +32232,7 @@ void __thiscall Recovered_Bulk::m_FUN_10149020(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::unregisterListener");
+  thunk_FUN_10118fc0((int)("SCINfcDelegateSwigBase::unregisterListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32249,7 +32259,7 @@ void __thiscall Recovered_Bulk::m_FUN_101490a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::unregisterListener");
+  thunk_FUN_10118fc0((int)("SCIUrbanAirshipDelegateSwigBase::unregisterListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32276,7 +32286,7 @@ void __thiscall Recovered_Bulk::m_FUN_10149120(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::unregisterListener");
+  thunk_FUN_10118fc0((int)("SCIWifiDelegateSwigBase::unregisterListener"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32303,7 +32313,7 @@ void __thiscall Recovered_Bulk::m_FUN_101491a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::unsubscribe");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::unsubscribe"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32334,7 +32344,7 @@ void __thiscall Recovered_Bulk::m_FUN_10149220(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0xc))(uVar2);
@@ -32343,7 +32353,7 @@ void __thiscall Recovered_Bulk::m_FUN_10149220(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIGetAboutSonosStringCBSwigBase::updateGetAboutSonosString");
+  thunk_FUN_10118fc0((int)("SCIGetAboutSonosStringCBSwigBase::updateGetAboutSonosString"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -32376,7 +32386,7 @@ void __thiscall Recovered_Bulk::m_FUN_10149300(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x14))(uVar2);
@@ -32385,7 +32395,7 @@ void __thiscall Recovered_Bulk::m_FUN_10149300(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::updateNfcCardMessage");
+  thunk_FUN_10118fc0((int)("SCINfcDelegateSwigBase::updateNfcCardMessage"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -32408,7 +32418,7 @@ void __fastcall FUN_101493e0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::updateRegistration");
+  thunk_FUN_10118fc0((int)("SCIInAppMessagingProviderSwigBase::updateRegistration"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32435,7 +32445,7 @@ void __thiscall Recovered_Bulk::m_FUN_10149440(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::updateUser");
+  thunk_FUN_10118fc0((int)("SCICrashReportProviderSwigBase::updateUser"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32473,7 +32483,7 @@ void __thiscall Recovered_Bulk::m_FUN_101494c0(SCStr *param_2)
     thunk_FUN_1148ac28(pSVar1,uVar2);
     return;
   }
-  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::upnpClass");
+  thunk_FUN_10118fc0((int)("SCIBrowseItemSwigBase::upnpClass"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -32502,7 +32512,7 @@ void __thiscall Recovered_Bulk::m_FUN_101495b0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::validateCertificateChain");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::validateCertificateChain"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32529,7 +32539,7 @@ void __thiscall Recovered_Bulk::m_FUN_10149630(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCISecurityContextSwigBase::validateCertificateData");
+  thunk_FUN_10118fc0((int)("SCISecurityContextSwigBase::validateCertificateData"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32550,7 +32560,7 @@ void __thiscall Recovered_Bulk::m_FUN_101496b0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIHapticDelegateSwigBase::vibrate");
+  thunk_FUN_10118fc0((int)("SCIHapticDelegateSwigBase::vibrate"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -32572,7 +32582,7 @@ void __fastcall FUN_10149740(int param_1, unsigned int recovered_unused_stack_0,
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::writeData");
+  thunk_FUN_10118fc0((int)("SCIWebsocketDelegateSwigBase::writeData"));
                     
   _CxxThrowException((uint)&local_20,(ThrowInfo *)&DAT_11d33164);
 
@@ -32605,7 +32615,7 @@ void __thiscall Recovered_Bulk::m_FUN_101497b0(undefined4 *param_2)
     if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
-    thunk_FUN_101a1ea0(puVar3);
+    thunk_FUN_101a1ea0((int)(puVar3));
 
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1), 0);
     (**(code **)(param_1 + 0x18))(uVar2);
@@ -32614,7 +32624,7 @@ void __thiscall Recovered_Bulk::m_FUN_101497b0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::writeString");
+  thunk_FUN_10118fc0((int)("SCIWebsocketDelegateSwigBase::writeString"));
                     
   _CxxThrowException((uint)&local_30,(ThrowInfo *)&DAT_11d33164);
 
@@ -33124,8 +33134,7 @@ void __stdcall FUN_1014cce0(int param_1,undefined4 param_2,undefined4 param_3,un
 #line 1 "ENTRY_1014cf50"
 
 undefined4
-__stdcall FUN_1014cf50(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,ushort *param_5,
-            ushort *param_6,undefined4 param_7,undefined4 param_8)
+__stdcall FUN_1014cf50(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,ushort *param_5,ushort *param_6,undefined4 param_7,undefined4 param_8)
 
 {
  try {
@@ -33231,9 +33240,7 @@ undefined4 __stdcall FUN_1014d0f0(int *param_1,ushort *param_2)
 // Reference entry 1014d210; body size 114 bytes.
 #line 1 "ENTRY_1014d210"
 
-undefined4 FUN_1014d210(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014d210(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33261,9 +33268,7 @@ undefined4 FUN_1014d210(int *param_1)
 // Reference entry 1014d2b0; body size 114 bytes.
 #line 1 "ENTRY_1014d2b0"
 
-undefined4 FUN_1014d2b0(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014d2b0(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33291,9 +33296,7 @@ undefined4 FUN_1014d2b0(int *param_1)
 // Reference entry 1014d350; body size 114 bytes.
 #line 1 "ENTRY_1014d350"
 
-undefined4 FUN_1014d350(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014d350(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33422,9 +33425,7 @@ void __stdcall FUN_1014d5a0(int *param_1,ushort *param_2)
 // Reference entry 1014d690; body size 114 bytes.
 #line 1 "ENTRY_1014d690"
 
-undefined4 FUN_1014d690(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014d690(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33845,9 +33846,7 @@ undefined4 __stdcall FUN_1014e030(int *param_1,ushort *param_2,ushort *param_3)
 // Reference entry 1014e120; body size 117 bytes.
 #line 1 "ENTRY_1014e120"
 
-undefined4 FUN_1014e120(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014e120(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33875,9 +33874,7 @@ undefined4 FUN_1014e120(int *param_1,undefined4 param_2)
 // Reference entry 1014e1c0; body size 117 bytes.
 #line 1 "ENTRY_1014e1c0"
 
-undefined4 FUN_1014e1c0(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014e1c0(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33946,8 +33943,7 @@ undefined4 __stdcall FUN_1014e260(int *param_1,ushort *param_2,ushort *param_3,u
 #line 1 "ENTRY_1014e350"
 
 undefined4
-__stdcall FUN_1014e350(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,ushort *param_5,
-            undefined4 param_6,ushort *param_7,ushort *param_8,undefined4 param_9)
+__stdcall FUN_1014e350(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,ushort *param_5,undefined4 param_6,ushort *param_7,ushort *param_8,undefined4 param_9)
 
 {
  try {
@@ -34084,8 +34080,7 @@ undefined4 __stdcall FUN_1014e5d0(int *param_1,ushort *param_2,ushort *param_3)
 #line 1 "ENTRY_1014e6c0"
 
 undefined4
-__stdcall FUN_1014e6c0(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,undefined4 param_5,
-            undefined4 param_6,undefined4 param_7)
+__stdcall FUN_1014e6c0(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,undefined4 param_5,undefined4 param_6,undefined4 param_7)
 
 {
  try {
@@ -34132,8 +34127,7 @@ __stdcall FUN_1014e6c0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
 #line 1 "ENTRY_1014e7f0"
 
 undefined4
-__stdcall FUN_1014e7f0(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,ushort *param_5,
-            undefined4 param_6,undefined4 param_7,undefined4 param_8)
+__stdcall FUN_1014e7f0(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,ushort *param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8)
 
 {
  try {
@@ -34186,9 +34180,7 @@ __stdcall FUN_1014e7f0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
 #line 1 "ENTRY_1014e950"
 
 undefined4
-__stdcall FUN_1014e950(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,int param_5,
-            undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            ushort *param_10)
+__stdcall FUN_1014e950(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,int param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,ushort *param_10)
 
 {
  try {
@@ -34243,8 +34235,7 @@ __stdcall FUN_1014e950(int *param_1,ushort *param_2,ushort *param_3,ushort *para
 #line 1 "ENTRY_1014eac0"
 
 undefined4
-__stdcall FUN_1014eac0(int *param_1,ushort *param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
-            undefined4 param_6,ushort *param_7,int param_8,int param_9)
+__stdcall FUN_1014eac0(int *param_1,ushort *param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,undefined4 param_6,ushort *param_7,int param_8,int param_9)
 
 {
  try {
@@ -34448,9 +34439,7 @@ undefined4 __stdcall FUN_1014ee90(int *param_1,ushort *param_2,ushort *param_3,u
 // Reference entry 1014ef80; body size 117 bytes.
 #line 1 "ENTRY_1014ef80"
 
-undefined4 FUN_1014ef80(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014ef80(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34553,9 +34542,7 @@ undefined4 __stdcall FUN_1014f110(int *param_1,ushort *param_2)
 // Reference entry 1014f1c0; body size 120 bytes.
 #line 1 "ENTRY_1014f1c0"
 
-undefined4 FUN_1014f1c0(int *param_1,undefined4 param_2,undefined4 param_3)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014f1c0(int *param_1,undefined4 param_2,undefined4 param_3){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34623,9 +34610,7 @@ undefined4 __stdcall FUN_1014f260(int *param_1,ushort *param_2,ushort *param_3)
 // Reference entry 1014f350; body size 117 bytes.
 #line 1 "ENTRY_1014f350"
 
-undefined4 FUN_1014f350(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014f350(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34653,9 +34638,7 @@ undefined4 FUN_1014f350(int *param_1,undefined4 param_2)
 // Reference entry 1014f3f0; body size 120 bytes.
 #line 1 "ENTRY_1014f3f0"
 
-undefined4 FUN_1014f3f0(int *param_1,undefined4 param_2,undefined4 param_3)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014f3f0(int *param_1,undefined4 param_2,undefined4 param_3){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34724,9 +34707,7 @@ undefined4 __stdcall FUN_1014f490(int *param_1,ushort *param_2,ushort *param_3,i
 // Reference entry 1014f580; body size 117 bytes.
 #line 1 "ENTRY_1014f580"
 
-undefined4 FUN_1014f580(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014f580(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34825,9 +34806,7 @@ __stdcall FUN_1014f6e0(int *param_1,int param_2,ushort *param_3,undefined4 param
 // Reference entry 1014f7a0; body size 117 bytes.
 #line 1 "ENTRY_1014f7a0"
 
-undefined4 FUN_1014f7a0(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014f7a0(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34855,9 +34834,7 @@ undefined4 FUN_1014f7a0(int *param_1,undefined4 param_2)
 // Reference entry 1014f8d0; body size 120 bytes.
 #line 1 "ENTRY_1014f8d0"
 
-undefined4 FUN_1014f8d0(int *param_1,undefined4 param_2,undefined4 param_3)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014f8d0(int *param_1,undefined4 param_2,undefined4 param_3){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34885,9 +34862,7 @@ undefined4 FUN_1014f8d0(int *param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1014f980; body size 114 bytes.
 #line 1 "ENTRY_1014f980"
 
-undefined4 FUN_1014f980(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014f980(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34915,9 +34890,7 @@ undefined4 FUN_1014f980(int *param_1)
 // Reference entry 1014fa30; body size 117 bytes.
 #line 1 "ENTRY_1014fa30"
 
-undefined4 FUN_1014fa30(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014fa30(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34980,9 +34953,7 @@ undefined4 __stdcall FUN_1014fae0(int *param_1,ushort *param_2)
 // Reference entry 1014fc20; body size 125 bytes.
 #line 1 "ENTRY_1014fc20"
 
-undefined4 FUN_1014fc20(int *param_1,int *param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014fc20(int *param_1,int *param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35011,9 +34982,7 @@ undefined4 FUN_1014fc20(int *param_1,int *param_2)
 // Reference entry 1014fce0; body size 117 bytes.
 #line 1 "ENTRY_1014fce0"
 
-undefined4 FUN_1014fce0(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014fce0(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35111,9 +35080,7 @@ undefined4 __stdcall FUN_1014fe80(int *param_1,ushort *param_2,undefined4 param_
 // Reference entry 1014ffb0; body size 117 bytes.
 #line 1 "ENTRY_1014ffb0"
 
-undefined4 FUN_1014ffb0(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_1014ffb0(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35141,9 +35108,7 @@ undefined4 FUN_1014ffb0(int *param_1,undefined4 param_2)
 // Reference entry 10150050; body size 117 bytes.
 #line 1 "ENTRY_10150050"
 
-undefined4 FUN_10150050(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10150050(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35171,9 +35136,7 @@ undefined4 FUN_10150050(int *param_1,undefined4 param_2)
 // Reference entry 101500f0; body size 114 bytes.
 #line 1 "ENTRY_101500f0"
 
-undefined4 FUN_101500f0(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_101500f0(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35201,9 +35164,7 @@ undefined4 FUN_101500f0(int *param_1)
 // Reference entry 101501a0; body size 114 bytes.
 #line 1 "ENTRY_101501a0"
 
-undefined4 FUN_101501a0(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_101501a0(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35274,9 +35235,7 @@ undefined4 __stdcall FUN_10150240(int *param_1)
 // Reference entry 10150330; body size 117 bytes.
 #line 1 "ENTRY_10150330"
 
-undefined4 FUN_10150330(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10150330(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35304,9 +35263,7 @@ undefined4 FUN_10150330(int *param_1,undefined4 param_2)
 // Reference entry 101503d0; body size 114 bytes.
 #line 1 "ENTRY_101503d0"
 
-undefined4 FUN_101503d0(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_101503d0(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35334,9 +35291,7 @@ undefined4 FUN_101503d0(int *param_1)
 // Reference entry 10150470; body size 114 bytes.
 #line 1 "ENTRY_10150470"
 
-undefined4 FUN_10150470(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10150470(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35364,9 +35319,7 @@ undefined4 FUN_10150470(int *param_1)
 // Reference entry 10150510; body size 117 bytes.
 #line 1 "ENTRY_10150510"
 
-undefined4 FUN_10150510(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10150510(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35394,9 +35347,7 @@ undefined4 FUN_10150510(int *param_1,undefined4 param_2)
 // Reference entry 101505b0; body size 120 bytes.
 #line 1 "ENTRY_101505b0"
 
-undefined4 FUN_101505b0(int *param_1,undefined4 param_2,undefined4 param_3)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_101505b0(int *param_1,undefined4 param_2,undefined4 param_3){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35424,9 +35375,7 @@ undefined4 FUN_101505b0(int *param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 10150690; body size 117 bytes.
 #line 1 "ENTRY_10150690"
 
-undefined4 FUN_10150690(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10150690(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35454,9 +35403,7 @@ undefined4 FUN_10150690(int *param_1,undefined4 param_2)
 // Reference entry 101507c0; body size 114 bytes.
 #line 1 "ENTRY_101507c0"
 
-undefined4 FUN_101507c0(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_101507c0(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35613,9 +35560,7 @@ undefined4 __stdcall FUN_10150a50(int *param_1)
 // Reference entry 10150b50; body size 117 bytes.
 #line 1 "ENTRY_10150b50"
 
-undefined4 FUN_10150b50(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10150b50(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35643,9 +35588,7 @@ undefined4 FUN_10150b50(int *param_1)
 // Reference entry 10150bf0; body size 114 bytes.
 #line 1 "ENTRY_10150bf0"
 
-undefined4 FUN_10150bf0(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10150bf0(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35673,9 +35616,7 @@ undefined4 FUN_10150bf0(int *param_1)
 // Reference entry 10150c90; body size 114 bytes.
 #line 1 "ENTRY_10150c90"
 
-undefined4 FUN_10150c90(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10150c90(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35703,9 +35644,7 @@ undefined4 FUN_10150c90(int *param_1)
 // Reference entry 10150d30; body size 114 bytes.
 #line 1 "ENTRY_10150d30"
 
-undefined4 FUN_10150d30(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10150d30(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35776,9 +35715,7 @@ undefined4 __stdcall FUN_10150dd0(int *param_1)
 // Reference entry 10150ec0; body size 114 bytes.
 #line 1 "ENTRY_10150ec0"
 
-undefined4 FUN_10150ec0(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10150ec0(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35935,9 +35872,7 @@ undefined4 __stdcall FUN_10151190(int *param_1)
 // Reference entry 10151280; body size 114 bytes.
 #line 1 "ENTRY_10151280"
 
-undefined4 FUN_10151280(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10151280(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -36094,9 +36029,7 @@ undefined4 __stdcall FUN_10151500(int *param_1)
 // Reference entry 10151670; body size 114 bytes.
 #line 1 "ENTRY_10151670"
 
-undefined4 FUN_10151670(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10151670(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -36849,9 +36782,7 @@ undefined4 * __stdcall FUN_10152910(int *param_1,ushort *param_2)
 // Reference entry 10152bc0; body size 125 bytes.
 #line 1 "ENTRY_10152bc0"
 
-undefined4 FUN_10152bc0(int *param_1,int *param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10152bc0(int *param_1,int *param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -36880,9 +36811,7 @@ undefined4 FUN_10152bc0(int *param_1,int *param_2)
 // Reference entry 10152c70; body size 116 bytes.
 #line 1 "ENTRY_10152c70"
 
-undefined4 FUN_10152c70(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10152c70(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -36910,9 +36839,7 @@ undefined4 FUN_10152c70(int *param_1)
 // Reference entry 10152d10; body size 114 bytes.
 #line 1 "ENTRY_10152d10"
 
-undefined4 FUN_10152d10(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10152d10(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37064,9 +36991,7 @@ undefined1 __stdcall FUN_10152fd0(int *param_1,ushort *param_2)
 // Reference entry 10153070; body size 114 bytes.
 #line 1 "ENTRY_10153070"
 
-undefined4 FUN_10153070(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10153070(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37205,9 +37130,7 @@ void __stdcall FUN_10153330(int *param_1,ushort *param_2)
 // Reference entry 101533d0; body size 117 bytes.
 #line 1 "ENTRY_101533d0"
 
-undefined4 FUN_101533d0(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_101533d0(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37235,9 +37158,7 @@ undefined4 FUN_101533d0(int *param_1,undefined4 param_2)
 // Reference entry 101534a0; body size 117 bytes.
 #line 1 "ENTRY_101534a0"
 
-undefined4 FUN_101534a0(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_101534a0(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37265,9 +37186,7 @@ undefined4 FUN_101534a0(int *param_1,undefined4 param_2)
 // Reference entry 10153540; body size 114 bytes.
 #line 1 "ENTRY_10153540"
 
-undefined4 FUN_10153540(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10153540(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37295,9 +37214,7 @@ undefined4 FUN_10153540(int *param_1)
 // Reference entry 101535e0; body size 117 bytes.
 #line 1 "ENTRY_101535e0"
 
-undefined4 FUN_101535e0(int *param_1,undefined4 param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_101535e0(int *param_1,undefined4 param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37325,9 +37242,7 @@ undefined4 FUN_101535e0(int *param_1,undefined4 param_2)
 // Reference entry 10153680; body size 123 bytes.
 #line 1 "ENTRY_10153680"
 
-undefined4 FUN_10153680(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10153680(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37355,9 +37270,7 @@ undefined4 FUN_10153680(int *param_1,undefined4 param_2,undefined4 param_3,undef
 // Reference entry 10153720; body size 123 bytes.
 #line 1 "ENTRY_10153720"
 
-undefined4 FUN_10153720(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10153720(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37385,9 +37298,7 @@ undefined4 FUN_10153720(int *param_1,undefined4 param_2,undefined4 param_3,undef
 // Reference entry 10153810; body size 134 bytes.
 #line 1 "ENTRY_10153810"
 
-undefined4 FUN_10153810(int *param_1,int *param_2)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10153810(int *param_1,int *param_2){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37661,9 +37572,7 @@ void __stdcall FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,un
 // Reference entry 10154270; body size 114 bytes.
 #line 1 "ENTRY_10154270"
 
-undefined4 FUN_10154270(int *param_1)
-
-{ int stack0xfffffffc;
+undefined4 __stdcall FUN_10154270(int *param_1){ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -38314,8 +38223,7 @@ void __stdcall FUN_101554f0(int *param_1,ushort *param_2)
 // Reference entry 10155600; body size 181 bytes.
 #line 1 "ENTRY_10155600"
 
-void __stdcall FUN_10155600(int *param_1,ushort *param_2,ushort *param_3,undefined4 *param_4,int param_5,
-                 undefined4 param_6)
+void __stdcall FUN_10155600(int *param_1,ushort *param_2,ushort *param_3,undefined4 *param_4,int param_5,undefined4 param_6)
 
 {
  try {

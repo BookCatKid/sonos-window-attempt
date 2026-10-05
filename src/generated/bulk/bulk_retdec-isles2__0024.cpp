@@ -919,6 +919,7 @@ extern int FuncInfo_12060310;
 extern int FuncInfo_1206034c;
 extern int FuncInfo_120604bc;
 extern int FuncInfo_1205d2b4;
+extern int __stdcall FUN_100699e8(int a1,int a2,int a3,int a4);
 #line 1 "ENTRY_117cd8c2"
 __declspec(naked) int FUN_117cd8c2(int a1) {
     __asm {
@@ -3780,14 +3781,14 @@ __declspec(naked) int FUN_117d162a(int a1) {
 #line 1 "ENTRY_117e96b0"
 int FUN_117e96b0(void) {
 
-    return (int)(FUN_100699e8((int)&DAT_121a07bc, 4, 10, (int)&FUN_1008c50b));
+    return (int)(FUN_100699e8((int)((int)&DAT_121a07bc),(int)(4),(int)(10),(int)((int)&FUN_1008c50b)));
 }
 
 // Reference entry 117e9740; body size 20 bytes.
 #line 1 "ENTRY_117e9740"
 int FUN_117e9740(void) {
 
-    return (int)(FUN_100699e8((int)&DAT_121a07f0, 4, 11, (int)&FUN_1008c50b));
+    return (int)(FUN_100699e8((int)((int)&DAT_121a07f0),(int)(4),(int)(11),(int)((int)&FUN_1008c50b)));
 }
 
 // Reference entry 117eb690; body size 10 bytes.
@@ -3822,7 +3823,7 @@ int FUN_117f33d0(void) {
 #line 1 "ENTRY_117f7c00"
 int FUN_117f7c00(void) {
 
-    return (int)(FUN_100699e8((int)&DAT_121a1490, 16, 7, (int)&FUN_100116ee));
+    return (int)(FUN_100699e8((int)((int)&DAT_121a1490),(int)(16),(int)(7),(int)((int)&FUN_100116ee)));
 }
 
 // Reference entry 11806490; body size 10 bytes.
@@ -3843,7 +3844,7 @@ int FUN_1180bb90(void) {
 #line 1 "ENTRY_1182aca0"
 int FUN_1182aca0(void) {
 
-    return (int)(FUN_100699e8((int)&DAT_121a49a0, 4, 3, (int)&FUN_1008c50b));
+    return (int)(FUN_100699e8((int)((int)&DAT_121a49a0),(int)(4),(int)(3),(int)((int)&FUN_1008c50b)));
 }
 
 // Reference entry 1182ded0; body size 10 bytes.
@@ -3920,7 +3921,7 @@ int FUN_11834d50(void) {
 #line 1 "ENTRY_1183a740"
 int FUN_1183a740(void) {
 
-    return (int)(FUN_100699e8((int)&PTR_FUN_12119fa0, 48, 3, (int)&FUN_100474fb));
+    return (int)(FUN_100699e8((int)((int)&PTR_FUN_12119fa0),(int)(48),(int)(3),(int)((int)&FUN_100474fb)));
 }
 
 // Reference entry 1183b100; body size 10 bytes.
@@ -3934,7 +3935,7 @@ int FUN_1183b100(void) {
 #line 1 "ENTRY_1183f350"
 int FUN_1183f350(void) {
 
-    return (int)(FUN_100699e8((int)&DAT_121a5f78, 16, 9, (int)&FUN_10030021));
+    return (int)(FUN_100699e8((int)((int)&DAT_121a5f78),(int)(16),(int)(9),(int)((int)&FUN_10030021)));
 }
 
 // Reference entry 11840f70; body size 11 bytes.
@@ -3949,7 +3950,7 @@ int FUN_11840f70(void) {
 #line 1 "ENTRY_1184e030"
 int FUN_1184e030(void) {
 
-    return (int)(FUN_100699e8((int)&DAT_121a6ab8, 4, 14, (int)&FUN_1008c50b));
+    return (int)(FUN_100699e8((int)((int)&DAT_121a6ab8),(int)(4),(int)(14),(int)((int)&FUN_1008c50b)));
 }
 
 // Reference entry 11859b90; body size 10 bytes.
@@ -4010,7 +4011,7 @@ int FUN_11861ea2(void) {
 #line 1 "ENTRY_118620a0"
 int FUN_118620a0(void) {
 
-    return (int)(FUN_100699e8((int)&DAT_1211dbf8, 16, 34, (int)&FUN_10013f39));
+    return (int)(FUN_100699e8((int)((int)&DAT_1211dbf8),(int)(16),(int)(34),(int)((int)&FUN_10013f39)));
 }
 
 // Reference entry 11862550; body size 10 bytes.
@@ -4031,6 +4032,6 @@ int FUN_118625f0(void) {
 #line 1 "ENTRY_11862600"
 int FUN_11862600(void) {
 
-    return (int)(FUN_100699e8((int)&DAT_121205b0, 20, 68, (int)&FUN_100606e5));
+    return (int)(FUN_100699e8((int)((int)&DAT_121205b0),(int)(20),(int)(68),(int)((int)&FUN_100606e5)));
 }
 
