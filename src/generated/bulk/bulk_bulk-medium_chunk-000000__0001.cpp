@@ -2292,6 +2292,10 @@ SCStr * __stdcall FUN_10260ff0(SCStr *param_1);
 template<class... A> int FUN_10260ff0(A...);
 char __fastcall FUN_10261170(int param_1);
 template<class... A> int FUN_10261170(A...);
+extern int ghidra_vftable_SCArray_SCPtr_SCIInAppProduct___;
+extern int ghidra_vftable_SCIObjImpl_SCIData_;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_f1b03cd88703527eb728312bbd92f82b__void_SCStr_const__;
+
 // Reference entry 1019c9f0; body size 16 bytes.
 #line 1 "ENTRY_1019c9f0"
 
@@ -18532,7 +18536,7 @@ void __fastcall FUN_10221eb0(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCData);
   free((void *)param_1[2]);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIData_);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   return;
@@ -18580,7 +18584,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10221fa0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCData);
   free((void *)param_1[2]);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIData_);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   if ((param_2 & 1) != 0) {
@@ -20891,7 +20895,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_102336d0(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_10233710(undefined4 *param_2)
 {
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_f1b03cd88703527eb728312bbd92f82b__void_SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
@@ -24085,7 +24089,7 @@ void __fastcall FUN_10257f50(undefined4 *param_1)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCPtr_SCIInAppProduct___);
   thunk_FUN_10254af0(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_102589b0();

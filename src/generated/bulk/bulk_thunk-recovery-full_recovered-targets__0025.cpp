@@ -2940,6 +2940,8 @@ extern int ghidra_vftable_RControlAIOOpRef_RUpnpAVTGetRemainingSleepTimerDuratio
 extern int ghidra_vftable_RControlAIOOpRef_RUpnpCDRequestResortAIOOp_;
 extern int ghidra_vftable_RControlAIOOpRef_RUpnpQReplaceAllTracksAIOOp_;
 
+extern int ghidra_vftable_RControlAIOOpRef_RControlAIOOp__RControlAIOOp_;
+
 // Reference entry 10ff7000; body size 6 bytes.
 #line 1 "ENTRY_10ff7000"
 
@@ -6686,7 +6688,7 @@ void __fastcall FUN_1101b610(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingRatingsUnsupported);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCNowPlayingRatingsUnsupported);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingRatingsUnsupported);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCNowPlayingRatingsUnsupported);
   param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
@@ -11534,7 +11536,7 @@ undefined4 * __fastcall FUN_1102ec50(undefined4 *param_1)
   param_1[7] = (undefined4)(0);
   param_1[0xb] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RControlAIOOp_);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RControlAIOOp__RControlAIOOp_);
   param_1[0xe] = (undefined4)(0);
   param_1[0xf] = (undefined4)(0);
   param_1[0xd] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);

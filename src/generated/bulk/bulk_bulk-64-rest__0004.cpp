@@ -4627,6 +4627,10 @@ void __fastcall FUN_1042ae90(undefined4 *param_1);
 template<class... A> int FUN_1042ae90(A...);
 void __fastcall FUN_1042af50(undefined4 *param_1);
 template<class... A> int FUN_1042af50(A...);
+extern int ghidra_vftable_RControlAIOOpRef_RHttpGetNoRedirectAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RHttpPostNoRedirectAIOOp_;
+extern int ghidra_vftable_SCIObjImpl_SCIElapsedTimeMeasurement_;
+
 // Reference entry 103825d0; body size 434 bytes.
 #line 1 "ENTRY_103825d0"
 
@@ -41074,7 +41078,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103c1540(undefined4 param_2,undefi
   param_1[0xf] = (undefined4)(0);
   param_1[0x10] = (undefined4)(0);
   param_1[0x11] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpFetchToken);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIElapsedTimeMeasurement_);
   *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOpFetchToken);
 
   return (undefined4 *)(param_1);
@@ -57546,7 +57550,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103dc9f0(SCStr *param_2,SCStr *par
 
   thunk_FUN_11240650();
   *puVar1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetBetaSettingsAIOp);
   *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[3] = (undefined4)(0);
   param_1[4] = (undefined4)(0);
@@ -57728,7 +57732,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103dcff0(undefined4 param_2,undefi
 
   thunk_FUN_11240650();
   *puVar1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSecRegAccountTransferAIOOp);
   *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[3] = (undefined4)(0);
   param_1[4] = (undefined4)(0);
@@ -58354,7 +58358,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103de320(undefined4 param_2,undefi
   else {
     iVar4 = (int)(thunk_FUN_103daf00(param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9, param_10,param_11,param_12,param_13), 0);
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   puVar1 = (undefined4 *)(param_1 + 2);
@@ -60018,7 +60022,7 @@ void __fastcall FUN_103e0dd0(undefined4 *param_1)
 
   ((SCStr *)((SCStr *)(param_1 + 0x185a)))->int_release();
   param_1[0x185a] = (undefined4)(0);
-  param_1[0x1856] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x1856] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHttpGetNoRedirectAIOOp_);
   thunk_FUN_101ba0d0();
   thunk_FUN_103e0ee0();
   thunk_FUN_11261f10();
@@ -60786,7 +60790,7 @@ void __fastcall FUN_103e2380(undefined4 *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RSecRegPrepTransferPlayerAIOOp);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHttpPostNoRedirectAIOOp_);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RSecRegPrepTransferPlayerAIOOp);
   thunk_FUN_103e6cd0(uVar1);
   param_1[0x1897] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
@@ -60908,7 +60912,7 @@ void __fastcall FUN_103e2700(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RSecRegRegisterPlayerAIOOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RSecRegRegisterPlayerAIOOp);
   thunk_FUN_103e6d40(uVar1);
-  param_1[0x312c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x312c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHttpPostNoRedirectAIOOp_);
   thunk_FUN_101ba0d0();
   param_1[0x3129] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();
@@ -74886,7 +74890,7 @@ void __fastcall FUN_103fb0f0(undefined4 *param_1)
     param_1[7] = (undefined4)(0);
     (**(code **)(*piVar2 + 8))();
   }
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCTokenManagerEventSink);
+  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCIActionDelegateCB);
   piVar2 = (int *)((int *)param_1[4]);
 
   if ((int *)(piVar2) != (int *)(0x0)) {

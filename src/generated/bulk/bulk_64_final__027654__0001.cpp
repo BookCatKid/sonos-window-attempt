@@ -4777,6 +4777,18 @@ void __fastcall FUN_10f8ebb0(int param_1, unsigned int recovered_unused_stack_0,
 template<class... A> int FUN_10f8ebb0(A...);
 void __fastcall FUN_10f8f140(undefined4 *param_1);
 template<class... A> int FUN_10f8f140(A...);
+extern int ghidra_vftable_RControlAIOOpRef_RControlAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RHttpGetNoRedirectAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RHttpPostNoRedirectAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RHttpPutNoRedirectAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpAsyncIOOperation_;
+extern int ghidra_vftable_SCIObjImpl_SCIObj_;
+extern int ghidra_vftable_SCITearOffObjImpl_SCZoneGroup_SCIPlayQueue_;
+extern int ghidra_vftable_SCOpRef_SCIOp_;
+
+extern int ghidra_vftable_SCIObjUPnPString;
+extern int ghidra_vftable_SCSettingsReplicatorImpl;
+
 // Reference entry 10ef13f0; body size 424 bytes.
 #line 1 "ENTRY_10ef13f0"
 
@@ -23066,7 +23078,7 @@ undefined4 * __fastcall FUN_10f0db80(undefined4 *param_1)
   thunk_FUN_1128da40();
   param_1[0x31] = (undefined4)(0);
   param_1[0x32] = (undefined4)(0);
-  param_1[0x30] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x30] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHttpPutNoRedirectAIOOp_);
   param_1[0x33] = (undefined4)(0);
   param_1[0x35] = (undefined4)(0);
   param_1[0x36] = (undefined4)(0);
@@ -23478,7 +23490,7 @@ undefined4 * __fastcall FUN_10f0e9a0(undefined4 *param_1)
   *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[3] = (undefined4)(0);
   param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
   param_1[6] = (undefined4)(iVar4);
   if (iVar4 != 0) {
@@ -23535,7 +23547,7 @@ undefined4 * __fastcall FUN_10f0eb40(undefined4 *param_1)
     puVar3[2] = (undefined4)((uint)&ghidra_vftable_RSubmitDiagnosticsAIOOp);
     puVar3[8] = (undefined4)(0);
     puVar3[9] = (undefined4)(0);
-    puVar3[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+    puVar3[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[1] = (undefined4)(0);
@@ -31000,7 +31012,7 @@ void __fastcall FUN_10f1ca30(undefined4 *param_1)
   thunk_FUN_1148a50e(param_1[0xb],0x20,uVar1);
   thunk_FUN_10f1b340<>(param_1 + 9,*(undefined4 *)(param_1[9] + 4));
   thunk_FUN_1148a50e(param_1[9],0x1c);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
@@ -31303,7 +31315,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f1d050(byte param_2)
   thunk_FUN_1148a50e(param_1[0xb],0x20,uVar1);
   thunk_FUN_10f1b340<>(param_1 + 9,*(undefined4 *)(param_1[9] + 4));
   thunk_FUN_1148a50e(param_1[9],0x1c);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
@@ -33752,7 +33764,7 @@ void __fastcall FUN_10f219f0(undefined4 *param_1)
     param_1[0x13] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))(uVar2);
   }
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RNetstartOpCallback);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_SCTimerUser);
 
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCTimerUser);
   thunk_FUN_1059d800();
@@ -33794,7 +33806,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f21b30(byte param_2)
     param_1[0x13] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))(uVar2);
   }
-  param_1[10] = (undefined4)((uint)&ghidra_vftable_RNetstartOpCallback);
+  param_1[10] = (undefined4)((uint)&ghidra_vftable_SCTimerUser);
 
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCTimerUser);
   thunk_FUN_1059d800();
@@ -36027,7 +36039,7 @@ void __fastcall FUN_10f25fd0(undefined4 *param_1)
   ((SCStr *)((SCStr *)(param_1 + 0x168)))->int_release();
   param_1[0x168] = (undefined4)(0);
   thunk_FUN_10f25cd0();
-  param_1[0x15e] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x15e] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RControlAIOOp_);
   thunk_FUN_101ba0d0();
   param_1[0x15b] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();
@@ -42256,7 +42268,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f30ed0(undefined4 param_2,undefi
   *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[3] = (undefined4)(0);
   param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  param_1[5] = (undefined4)((uint)&ghidra_vftable_RHTTPBufferedDataIO);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0xe)));
   param_1[6] = (undefined4)(puVar3);
   if ((undefined4 *)(puVar3) != (undefined4 *)(0x0)) {
@@ -42744,7 +42756,7 @@ void __fastcall FUN_10f31dd0(undefined4 *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetEthernetStatusAIOOp);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHttpGetNoRedirectAIOOp_);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RGetEthernetStatusAIOOp);
   thunk_FUN_10f33200(uVar1);
   param_1[0x185a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
@@ -42836,7 +42848,7 @@ void __fastcall FUN_10f32040(undefined4 *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetNetworkConnectivityTestResultAIOOp);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHttpGetNoRedirectAIOOp_);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RGetNetworkConnectivityTestResultAIOOp);
   thunk_FUN_10f33270(uVar1);
   param_1[0x185a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
@@ -42928,7 +42940,7 @@ void __fastcall FUN_10f322b0(undefined4 *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RStartNetworkConnectivityTestAIOOp);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHttpPostNoRedirectAIOOp_);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RStartNetworkConnectivityTestAIOOp);
   thunk_FUN_10f332e0(uVar1);
   param_1[0x189f] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
@@ -43030,7 +43042,7 @@ void __fastcall FUN_10f32570(undefined4 *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RTempDisableNetworkAIOOp);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHttpPostNoRedirectAIOOp_);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RTempDisableNetworkAIOOp);
   thunk_FUN_10f33350(uVar1);
   param_1[0x1897] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
@@ -49010,7 +49022,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f3ca70(int *param_2,undefined4 p
   param_1[0x14] = (undefined4)(0);
   param_1[0x16] = (undefined4)(0);
   param_1[0x17] = (undefined4)(0);
-  param_1[0x12] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
+  param_1[0x12] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCIOp_);
   param_1[0x15] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
   param_1[0x21] = (undefined4)(0);
   param_1[0x2b] = (undefined4)(0);
@@ -49085,7 +49097,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f3cc50(int *param_2,SCStr *param
   param_1[0x12] = (undefined4)(0);
   param_1[0x14] = (undefined4)(0);
   param_1[0x15] = (undefined4)(0);
-  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
+  param_1[0x10] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCIOp_);
   param_1[0x13] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
   param_1[0x1f] = (undefined4)(0);
   param_1[0x29] = (undefined4)(0);
@@ -50470,7 +50482,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f3f110(undefined4 param_2,undefi
   param_1[0x48] = (undefined4)(0);
   param_1[0x4a] = (undefined4)(0);
   param_1[0x4b] = (undefined4)(0);
-  param_1[0x49] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x49] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpAsyncIOOperation_);
 
   return (undefined4 *)(param_1);
 
@@ -53341,7 +53353,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f43e90(undefined4 param_2,undefi
 
   uVar1 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCITearOffObjImpl_SCZoneGroup_SCIPlayQueue_);
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   param_1[2] = (undefined4)(param_2);
@@ -55911,7 +55923,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f48160(undefined4 param_2,undefi
 
   uVar3 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArea);
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCArea);
@@ -59966,7 +59978,7 @@ void __fastcall FUN_10f4e870(int *param_1)
       }
     }
   }
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl_SCIObj_);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObj);
 
@@ -64602,7 +64614,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f56a40(int *param_2)
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[5] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCOpCB);
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorCustom);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorCustom);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorCustom);
   param_1[7] = (undefined4)(0);
@@ -65181,7 +65193,7 @@ void __fastcall FUN_10f578e0(undefined4 *param_1)
 
   uVar4 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorUPnPString);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjUPnPString);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorUPnPString);
   thunk_FUN_102cc870(uVar4);
   thunk_FUN_102cc960();
@@ -65261,7 +65273,7 @@ void __fastcall FUN_10f57a30(undefined4 *param_1)
 
   ((SCStr *)((SCStr *)(param_1 + 6)))->int_release();
   param_1[6] = (undefined4)(0);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicator);
@@ -65619,7 +65631,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f587e0(byte param_2)
 
   uVar4 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorUPnPString);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjUPnPString);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorUPnPString);
   thunk_FUN_102cc870(uVar4);
   thunk_FUN_102cc960();
@@ -65702,7 +65714,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f58950(byte param_2)
 
   ((SCStr *)((SCStr *)(param_1 + 6)))->int_release();
   param_1[6] = (undefined4)(0);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicator);
@@ -75431,7 +75443,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f664f0(byte param_2)
     param_1[7] = (undefined4)(0);
     (**(code **)(*piVar2 + 8))();
   }
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicator);
@@ -84564,7 +84576,7 @@ void __fastcall FUN_10f74b20(undefined4 *param_1)
 
   uVar2 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCBitmapLoadAsyncIOOperation);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RServiceAuthHeaderBuilderFactory);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCBitmapLoadAsyncIOOperation);
   param_1[0x3027] = (undefined4)((uint)&ghidra_vftable_RServiceAuthHeaderBuilderFactory);
   piVar1 = (int *)((int *)param_1[0x3026]);
@@ -92632,7 +92644,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10f82410(undefined4 param_2,int *p
   param_1[0x3c] = (undefined4)(0);
   param_1[0x3d] = (undefined4)(0);
   param_1[0x3e] = (undefined4)((uint)&ghidra_vftable_RITQHandler);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCLanScanner);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCLanScanner);
   param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCLanScanner);
   param_1[0x1f] = (undefined4)((uint)&ghidra_vftable_SCLanScanner);

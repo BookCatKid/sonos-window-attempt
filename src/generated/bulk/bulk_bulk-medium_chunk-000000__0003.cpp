@@ -781,6 +781,8 @@ undefined1 * __fastcall FUN_103eaa30(int param_1);
 template<class... A> int FUN_103eaa30(A...);
 undefined1 * __fastcall FUN_103eaa50(int param_1);
 template<class... A> int FUN_103eaa50(A...);
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_198ef1bf99411092060a7b4526c1ff25__void_SCUserAccount_const__SCStr_const__;
+
 // Reference entry 1036b220; body size 21 bytes.
 #line 1 "ENTRY_1036b220"
 
@@ -5626,7 +5628,7 @@ undefined4 *  __stdcall FUN_103c42a0(undefined4 *param_1,undefined4 param_2)
 void __thiscall Recovered_Bulk::m_FUN_103c4c20(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_198ef1bf99411092060a7b4526c1ff25__void_SCUserAccount_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }

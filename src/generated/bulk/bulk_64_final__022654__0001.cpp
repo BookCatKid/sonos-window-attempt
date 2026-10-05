@@ -4555,6 +4555,13 @@ int * FUN_10d5b840(int *param_1,int *param_2);
 template<class... A> int FUN_10d5b840(A...);
 void FUN_10d5bbc0(int param_1,int param_2,undefined4 param_3);
 template<class... A> int FUN_10d5bbc0(A...);
+extern int ghidra_vftable_RControlAIOOpRef_RNullAsyncIOOperation_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpCDRefreshShareIndexAIOOp_;
+extern int ghidra_vftable_SCArray_SCPtr_SCIBrowseItem___;
+extern int ghidra_vftable_SCArray_SCPtr_SCIPropertyBag___;
+extern int ghidra_vftable_SCIObjImpl_SCIElapsedTimeMeasurement_;
+extern int ghidra_vftable_SCIObjImpl_SCIUrlSessionCallback_;
+
 // Reference entry 10cb6480; body size 152 bytes.
 #line 1 "ENTRY_10cb6480"
 
@@ -9916,7 +9923,7 @@ void __fastcall FUN_10cbe630(undefined4 *param_1)
     param_1[4] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIUrlSessionCallback_);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
@@ -9996,7 +10003,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10cbe7d0(byte param_2)
     param_1[4] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIUrlSessionCallback_);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   if ((param_2 & 1) != 0) {
@@ -16256,7 +16263,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10cc9930(undefined4 param_2,undefi
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpVoiceServiceCompoundDeleteAcct);
   param_1[8] = (undefined4)(0);
   param_1[9] = (undefined4)(0);
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RNullAsyncIOOperation_);
   param_1[10] = (undefined4)(0);
   param_1[0xb] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
@@ -16484,7 +16491,7 @@ undefined4 * __fastcall FUN_10cc9e80(undefined4 *param_1, unsigned int recovered
   param_1[0x10] = (undefined4)(0);
   param_1[0x11] = (undefined4)(0);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(6)));
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpVoiceServiceGetAccountInfo);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIElapsedTimeMeasurement_);
   *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOpVoiceServiceGetAccountInfo);
   ((SCStr *)((SCStr *)(param_1 + 0x12)))->m_op_ctor((SCStr *)&stack0x00000004);
 
@@ -18146,7 +18153,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10ccd2a0(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RVoiceServiceDeleteAccountAIOOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RVoiceServiceDeleteAccountAIOOp);
   thunk_FUN_10cce440(uVar1);
-  param_1[0x30f9] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[0x30f9] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0x30f9] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
@@ -18238,7 +18245,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10ccd520(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RVoiceServiceNotifyInitiateOnboardingAIOOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RVoiceServiceNotifyInitiateOnboardingAIOOp);
   thunk_FUN_10cce6d0(uVar1);
-  param_1[0x189e] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[0x189e] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0x189e] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
@@ -27193,7 +27200,7 @@ void __fastcall FUN_10cdc160(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCCreateUpdateMusicIndexOp);
   param_1[1] = (undefined4)((uint)&ghidra_vftable_SCCreateUpdateMusicIndexOp);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCCreateUpdateMusicIndexOp);
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpCDRefreshShareIndexAIOOp_);
   thunk_FUN_101ba0d0(uVar1);
   param_1[0xb] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();
@@ -27312,7 +27319,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10cdc860(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCCreateUpdateMusicIndexOp);
   param_1[1] = (undefined4)((uint)&ghidra_vftable_SCCreateUpdateMusicIndexOp);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCCreateUpdateMusicIndexOp);
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpCDRefreshShareIndexAIOOp_);
   thunk_FUN_101ba0d0(uVar1);
   param_1[0xb] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();
@@ -38610,7 +38617,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10ceed00(byte param_2)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCPtr_SCIPropertyBag___);
   thunk_FUN_10c21f70(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_10c24160();
@@ -41219,7 +41226,7 @@ void __fastcall FUN_10cf3060(undefined4 *param_1)
   ((SCStr *)((SCStr *)(param_1 + 5)))->int_release();
   param_1[5] = (undefined4)(0);
   thunk_FUN_1036e480(uVar1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
@@ -42526,7 +42533,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10cf5660(SCStr *param_2,undefined4
 
   uVar2 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIElapsedTimeMeasurement_);
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   puVar3 = (undefined4 *)(param_1 + 2);
@@ -46305,7 +46312,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10cfb200(undefined4 param_2,undefi
   uVar2 = (uint)(DAT_12126b84);
 
   thunk_FUN_104d6ff0(param_2);
-  param_1[0x20] = (undefined4)((uint)&ghidra_vftable_SCIDeviceSettingsDataSource);
+  param_1[0x20] = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListener);
   param_1[0x21] = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListener);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCDeviceSettingsDataSource);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCDeviceSettingsDataSource);
@@ -50631,7 +50638,7 @@ void __fastcall FUN_10d01e40(undefined4 *param_1)
     (**(code **)(*piVar1 + 8))(uVar2);
   }
   param_1[0x4b] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  param_1[0x48] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[0x48] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0x48] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   thunk_FUN_10203d60();
@@ -50846,7 +50853,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d025c0(byte param_2)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCPtr_SCIBrowseItem___);
   thunk_FUN_10ce2c30(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_10ce3510();
@@ -89977,7 +89984,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d42850(int *param_2)
 
   thunk_FUN_104d6ff0(param_2);
   puVar1 = (undefined4 *)(param_1 + 0x20);
-  *puVar1 = (undefined4)((uint)&ghidra_vftable_SCIEventSink);
+  *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAlarmsDataSource);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAlarmsDataSource);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCAlarmsDataSource);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCAlarmsDataSource);
@@ -90070,7 +90077,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d42a70(int *param_2,int *param_3
   uVar2 = (uint)(DAT_12126b84);
 
   thunk_FUN_10d42850<>(param_2);
-  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCIBrowseGroupsInfo);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAlarmsSettingsDataSource);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAlarmsSettingsDataSource);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCAlarmsSettingsDataSource);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCAlarmsSettingsDataSource);
@@ -90255,7 +90262,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d42eb0(int *param_2,int *param_3
   uVar2 = (uint)(DAT_12126b84);
 
   thunk_FUN_10d42850<>(param_2);
-  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCIBrowseGroupsInfo);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAlarmsSettingsZonesDataSource);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAlarmsSettingsZonesDataSource);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCAlarmsSettingsZonesDataSource);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCAlarmsSettingsZonesDataSource);

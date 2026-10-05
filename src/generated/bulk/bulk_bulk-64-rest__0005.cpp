@@ -4794,6 +4794,13 @@ void __fastcall FUN_104ef120(int *param_1);
 template<class... A> int FUN_104ef120(A...);
 void * FUN_104ef420(short *param_1);
 template<class... A> int FUN_104ef420(A...);
+extern int ghidra_vftable_SCArray_SCIndexRange_;
+extern int ghidra_vftable_SCIObjImpl_SCIAction_;
+extern int ghidra_vftable_allocator_char___;
+
+extern int ghidra_vftable_SCIObjImpl_SCIAction_Impl;
+extern int ghidra_vftable_SCSwfObjHHListenerImpl;
+
 // Reference entry 1042bf10; body size 117 bytes.
 #line 1 "ENTRY_1042bf10"
 
@@ -10290,7 +10297,7 @@ void __fastcall FUN_10433e70(undefined4 *param_1)
   param_1[10] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   thunk_FUN_11240850();
   thunk_FUN_103d60a0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
@@ -39263,7 +39270,7 @@ void __fastcall FUN_104621c0(undefined4 *param_1)
     param_1[4] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIAction_Impl);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
@@ -39451,7 +39458,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10462820(byte param_2)
     param_1[4] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIAction_Impl);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
@@ -42617,7 +42624,7 @@ void __fastcall FUN_10467d30(undefined4 *param_1)
     param_1[0x26] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
@@ -42716,7 +42723,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10468050(byte param_2)
     param_1[0x26] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCIObj);
+  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCRemoveMeSettingsMenu);
@@ -49095,7 +49102,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10472080(int *param_2)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
   ((SCStr *)((SCStr *)&local_14))->int_release();
   param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCIEventSink);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuRoomName);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIEventSink);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuRoomName);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuRoomName);
   param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuRoomName);
@@ -113704,7 +113711,7 @@ void __fastcall FUN_104dc060(undefined4 *param_1)
   int iVar2;
   uint uVar3;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCIndexRange_);
   iVar1 = (int)(param_1[2]);
   param_1[3] = (undefined4)(iVar1);
   if (iVar1 != 0) {
@@ -118072,7 +118079,7 @@ void __fastcall FUN_104e41c0(undefined4 *param_1)
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListener);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSwfObjBCListener);
   thunk_FUN_110a9ef0();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListenerImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
@@ -123898,7 +123905,7 @@ void __fastcall FUN_104eeff0(basic_streambuf<char,std::char_traits<char>> *param
   int iVar2;
   uint uVar3;
   
-  *(undefined***)param_1 = (undefined **)((basic_streambuf<char,std::char_traits<char>> *)((uint)&ghidra_vftable_std_basic_stringbuf));
+  *(undefined***)param_1 = (undefined **)((basic_streambuf<char,std::char_traits<char>> *)((uint)&ghidra_vftable_allocator_char___));
   if (((byte)param_1[0x3c] & 1) != 0) {
     if (**(int **)(param_1 + 0x20) == 0) {
       iVar2 = (int)(**(int **)(param_1 + 0x2c) + **(int **)(param_1 + 0x1c), 0);

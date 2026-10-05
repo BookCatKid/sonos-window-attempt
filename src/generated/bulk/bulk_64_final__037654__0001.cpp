@@ -6600,6 +6600,8 @@ template<class... A> int FUN_117f8aa0(A...);
 template<class... A> int FUN_117f8b10(A...);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_117f8b80(void);
 template<class... A> int FUN_117f8b80(A...);
+extern int ghidra_vftable_Features;
+
 // Reference entry 11409bb0; body size 173 bytes.
 #line 1 "ENTRY_11409bb0"
 
@@ -40563,7 +40565,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11455610(undefined4 param_2,uint par
 undefined4 * __fastcall FUN_11455d80(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_model_Features);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_Features);
   thunk_FUN_1145c250(param_1 + 2,"(Unknown)",0x41);
   thunk_FUN_1145c250((int)param_1 + 0x49,&DAT_1186d2ee,0x41);
   thunk_FUN_1145c250((int)param_1 + 0x8a,&DAT_1186d2ee,0x41);
@@ -40592,7 +40594,7 @@ undefined4 * __fastcall FUN_11455d80(undefined4 *param_1)
 undefined4 * __fastcall FUN_11455ea0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_model_Features);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_Features);
   thunk_FUN_1145c250(param_1 + 2,"(Unknown)",0x41);
   thunk_FUN_1145c250((int)param_1 + 0x49,&DAT_1186d2ee,0x41);
   thunk_FUN_1145c250((int)param_1 + 0x8a,&DAT_1186d2ee,0x41);

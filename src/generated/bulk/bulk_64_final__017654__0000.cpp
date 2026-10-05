@@ -4837,6 +4837,10 @@ void __fastcall FUN_10a222a0(int param_1);
 template<class... A> int FUN_10a222a0(A...);
 void __fastcall FUN_10a22370(undefined4 *param_1);
 template<class... A> int FUN_10a22370(A...);
+extern int ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_;
+extern int ghidra_vftable_SCConditionalVectorBuilderTree_SCNewWizComponent_;
+extern int ghidra_vftable_pair_SCNewWizEventFilter_SCNewWizResponse___;
+
 // Reference entry 1092fdf0; body size 68 bytes.
 #line 1 "ENTRY_1092fdf0"
 
@@ -30208,7 +30212,7 @@ LAB_10959c2a:
     piStack_ac = (int *)((int *)0x0);
     iStack_a8 = (int)(0);
   }
-  local_b8 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_b8 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_);
   thunk_FUN_10604790();
   thunk_FUN_10604820();
   local_1dc[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
@@ -33008,7 +33012,7 @@ LAB_1095ee42:
   thunk_FUN_10604790();
   thunk_FUN_10604820();
   puVar2 = (undefined4 *)(local_20);
-  local_140[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_140[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x11);
   puVar11 = (undefined4 *)(local_24);
   if ((undefined4 *)(local_24) != (undefined4 *)(0x0)) {
@@ -97074,7 +97078,7 @@ LAB_109c7a0d:
   thunk_FUN_10604790();
   thunk_FUN_10604820();
   puVar2 = (undefined4 *)(local_18);
-  local_1b0[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_1b0[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x16);
   puVar12 = (undefined4 *)(local_1c);
   if ((undefined4 *)(local_1c) != (undefined4 *)(0x0)) {
@@ -132377,7 +132381,7 @@ LAB_10a01edc:
     iStack_2c = (int)(0);
     iStack_28 = (int)(0);
   }
-  local_38 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_38 = (undefined **)((uint)&ghidra_vftable_pair_SCNewWizEventFilter_SCNewWizResponse___);
   thunk_FUN_10604700();
   thunk_FUN_106045d0();
   piVar6 = (int *)(local_e0);
@@ -145438,7 +145442,7 @@ void __stdcall FUN_10a17410(int *param_1)
     iStack_52c = (int)(0);
   }
   puVar2 = (undefined4 *)(local_550);
-  local_53c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_53c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree_SCNewWizComponent_);
   *(unsigned char*)((char *)&local_4e0 + 0) = (unsigned char)(0x31);
   puVar10 = (undefined4 *)(local_554);
   if ((undefined4 *)(local_554) != (undefined4 *)(0x0)) {

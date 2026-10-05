@@ -4738,6 +4738,12 @@ void FUN_10bcffb0(undefined4 param_1,int param_2);
 template<class... A> int FUN_10bcffb0(A...);
 void FUN_10bd0030(undefined4 param_1,int param_2);
 template<class... A> int FUN_10bd0030(A...);
+extern int ghidra_vftable_RControlAIOOpRef_RControlAIOOp_;
+extern int ghidra_vftable_SCAbilityManager__Listener;
+extern int ghidra_vftable_SCConditionalVectorBuilderTree_SCNewWizComponent_;
+extern int ghidra_vftable_SCIObjImpl_SCIUrlSessionCallback_;
+extern int ghidra_vftable_std__basic_istringstream_char_std__char_traits_char__std__allocator_char___;
+
 // Reference entry 10b149f0; body size 513 bytes.
 #line 1 "ENTRY_10b149f0"
 
@@ -30444,7 +30450,7 @@ undefined4 __stdcall FUN_10b3f6e0(undefined4 param_1)
     iStack_50 = (int)(0);
   }
   puVar2 = (undefined4 *)(local_28);
-  local_60 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_60 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree_SCNewWizComponent_);
   *(unsigned char*)((char *)&local_64 + 0) = (unsigned char)(0x28);
   puVar11 = (undefined4 *)(local_2c);
   if ((undefined4 *)(local_2c) != (undefined4 *)(0x0)) {
@@ -62916,7 +62922,7 @@ void __fastcall FUN_10b766e0(undefined4 *param_1)
     param_1[3] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIUrlSessionCallback_);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
@@ -81857,7 +81863,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10b97c30(SCStr *param_2,undefined4
   *(undefined2*)(param_1 + 0x16) = (undefined2)(0);
   param_1[0x18] = (undefined4)(0);
   param_1[0x19] = (undefined4)(0);
-  param_1[0x17] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x17] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RControlAIOOp_);
   param_1[0x1b] = (undefined4)(0);
   param_1[0x1c] = (undefined4)(0);
   param_1[0x1a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
@@ -82714,7 +82720,7 @@ void __fastcall FUN_10b99010(undefined4 *param_1)
     (**(code **)(*piVar1 + 8))();
   }
   thunk_FUN_10b98980();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
@@ -82751,7 +82757,7 @@ void __fastcall FUN_10b990f0(undefined4 *param_1)
     param_1[0x20] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))(uVar2);
   }
-  param_1[0x1a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x1a] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RControlAIOOp_);
   thunk_FUN_101ba0d0();
   param_1[0x17] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();
@@ -89010,7 +89016,7 @@ basic_istream<char,std::char_traits<char>> * __thiscall Recovered_Bulk::m_FUN_10
   *(undefined***)(param_1 + *(int *)(*(int *)param_1 + 4)) = (undefined **)((uint)&ghidra_vftable_std_basic_istringstream);
   *(int*)(param_1 + *(int *)(*(int *)param_1 + 4) + -4) = (int)(*(int *)(*(int *)param_1 + 4) + -0x60);
   ((std::basic_streambuf<> *)(this_))->m_op_ctor();
-  *(undefined***)this_ = (undefined **)((basic_streambuf<char,std::char_traits<char>> *)((uint)&ghidra_vftable_std_basic_stringbuf));
+  *(undefined***)this_ = (undefined **)((basic_streambuf<char,std::char_traits<char>> *)((uint)&ghidra_vftable_std__basic_istringstream_char_std__char_traits_char__std__allocator_char___));
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
   uVar4 = (uint)(~(uint)param_3 & 2 | 8);
   if (((uint)param_3 & 8) == 0) {
@@ -108486,7 +108492,7 @@ undefined4 * __fastcall FUN_10bc63a0(undefined4 *param_1)
   *puVar1 = (undefined4)((uint)&ghidra_vftable_SCTimerUser);
   thunk_FUN_1059bd30(puVar1);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCAbilityManager_Listener);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCBTClassicConnectionManager);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAbilityManager__Listener);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCBTClassicConnectionManager);
   *puVar1 = (undefined4)((uint)&ghidra_vftable_SCBTClassicConnectionManager);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCBTClassicConnectionManager);

@@ -2723,6 +2723,8 @@ void __stdcall FUN_1019c9b0(int *param_1);
 template<class... A> int FUN_1019c9b0(A...);
 void __stdcall FUN_1019c9d0(int *param_1);
 template<class... A> int FUN_1019c9d0(A...);
+extern int ghidra_vftable_exception;
+
 // Reference entry 100e5c50; body size 56 bytes.
 #line 1 "ENTRY_100e5c50"
 
@@ -8273,7 +8275,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_101269c0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10129350(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -8288,7 +8290,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10129350(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10129390(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -8303,7 +8305,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10129390(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_101293d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);

@@ -4454,6 +4454,9 @@ template<class... A> int FUN_102e4df0(A...);
 template<class... A> int FUN_102e4eb0(A...);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_102e4f40(int *param_1,float param_2);
 template<class... A> int FUN_102e4f40(A...);
+extern int ghidra_vftable_SCArray_SCPtr_SCIInAppProduct___;
+extern int ghidra_vftable_SCArray_SCPtr_SCIObj___;
+
 // Reference entry 10255930; body size 116 bytes.
 #line 1 "ENTRY_10255930"
 
@@ -6708,7 +6711,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10259860(byte param_2)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCPtr_SCIInAppProduct___);
   thunk_FUN_10254af0(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_102589b0();
@@ -29462,7 +29465,7 @@ void __fastcall FUN_10285c70(undefined4 *param_1)
     param_1[4] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCLoggingHelper);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
@@ -40019,7 +40022,7 @@ void __fastcall FUN_10296c90(undefined4 *param_1)
     param_1[4] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RNetstartOpCallback);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RNetstartOpCallback);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
@@ -40503,7 +40506,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10297bc0(byte param_2)
     param_1[4] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RNetstartOpCallback);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RNetstartOpCallback);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
@@ -52432,7 +52435,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102abb70(byte param_2)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCPtr_SCIObj___);
   thunk_FUN_102a30a0(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_102a9b00();
@@ -67264,7 +67267,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_102c3f10(int param_2)
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   puVar1 = (undefined4 *)(param_1 + 2);
   param_1[6] = (undefined4)(param_2);
-  *puVar1 = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListener);
+  *puVar1 = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
   param_1[4] = (undefined4)(0);
   param_1[5] = (undefined4)(0);

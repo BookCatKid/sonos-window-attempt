@@ -4515,6 +4515,10 @@ undefined4 __stdcall FUN_10381d20(undefined4 param_1, char *param_2, unsigned in
 template<class... A> int FUN_10381d20(A...);
 bool __fastcall FUN_10382140(int param_1);
 template<class... A> int FUN_10382140(A...);
+extern int ghidra_vftable_RControlAIOOpRef_RCustRegQueryCountryAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RHttpPostNoRedirectAIOOp_;
+extern int ghidra_vftable_std___Func_impl_no_alloc__lambda_d8d1850706f7973af71cc18192bfabae__void_SCFoundProductManager__Listener__;
+
 // Reference entry 102e6470; body size 242 bytes.
 #line 1 "ENTRY_102e6470"
 
@@ -22546,7 +22550,7 @@ void __fastcall FUN_10306530(undefined4 *param_1)
   param_1[1] = (undefined4)((uint)&ghidra_vftable_SCReportUploaderAIOClient);
   thunk_FUN_112a7c30(param_1 + 8);
   thunk_FUN_112a7f20(param_1 + 6);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[3] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHttpPostNoRedirectAIOOp_);
   thunk_FUN_101ba0d0();
   param_1[1] = (undefined4)((uint)&ghidra_vftable_RReportUploaderClient);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
@@ -22783,7 +22787,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10306da0(byte param_2)
   param_1[1] = (undefined4)((uint)&ghidra_vftable_SCReportUploaderAIOClient);
   thunk_FUN_112a7c30(param_1 + 8);
   thunk_FUN_112a7f20(param_1 + 6);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[3] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RHttpPostNoRedirectAIOOp_);
   thunk_FUN_101ba0d0();
   param_1[1] = (undefined4)((uint)&ghidra_vftable_RReportUploaderClient);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
@@ -30217,7 +30221,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10316a40(int param_2)
 
   uVar6 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIPortableDevice);
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   param_1[2] = (undefined4)(param_2);
@@ -44236,7 +44240,7 @@ int __thiscall Recovered_Bulk::m_FUN_1032db10(undefined4 param_2,undefined4 para
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   puVar1 = (undefined4 *)(operator_new(0xc), 0);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
-  *puVar1 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *puVar1 = (undefined4)((uint)&ghidra_vftable_std___Func_impl_no_alloc__lambda_d8d1850706f7973af71cc18192bfabae__void_SCFoundProductManager__Listener__);
   ((SCStr *)((SCStr *)(puVar1 + 1)))->m_op_ctor((SCStr *)&param_2);
   puVar1[2] = (undefined4)(param_3);
   *(undefined4**)(param_1 + 0x24) = (undefined4 *)(puVar1);
@@ -69493,7 +69497,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1035dac0(int *param_2)
   param_1[0x5e] = (undefined4)(0);
   param_1[0x60] = (undefined4)(0);
   param_1[0x61] = (undefined4)(0);
-  param_1[0x5c] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
+  param_1[0x5c] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RCustRegQueryCountryAIOOp_);
   param_1[0x5f] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
   param_1[0x6b] = (undefined4)(0);
   param_1[0x75] = (undefined4)(0);

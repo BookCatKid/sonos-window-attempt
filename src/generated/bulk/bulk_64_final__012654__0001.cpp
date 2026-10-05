@@ -4820,6 +4820,12 @@ void FUN_107cb930(void);
 template<class... A> int FUN_107cb930(A...);
 void __fastcall FUN_107cbff0(int param_1);
 template<class... A> int FUN_107cbff0(A...);
+extern int ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_;
+extern int ghidra_vftable_SCNewWizPageFor_SCAccountLoginWizard_;
+extern int ghidra_vftable_SCNewWizPageFor_SCAddVoiceServiceWizard_;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_b57cc3a13e93af20c075adaa620dc357__void_SCAddVoiceServiceWizard__;
+extern int ghidra_vftable_pair_SCNewWizEventFilter_SCNewWizResponse___;
+
 // Reference entry 106d2ec0; body size 193 bytes.
 #line 1 "ENTRY_106d2ec0"
 
@@ -8798,7 +8804,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_106da030(int param_2)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   thunk_FUN_10eae920<>(param_1);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCLoggingHelper);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWiz);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizParams);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWiz);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWiz);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWiz);
@@ -36225,7 +36231,7 @@ void __fastcall FUN_1070a520(undefined4 *param_1)
     param_1[0x3a] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAccountLoginWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -36480,7 +36486,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1070adf0(byte param_2)
     param_1[0x3a] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAccountLoginWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -51423,7 +51429,7 @@ void __thiscall Recovered_Bulk::m_FUN_107242b0(undefined4 *param_2)
 
 
   puVar1 = (undefined4 *)(operator_new(0xc), 0);
-  *puVar1 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *puVar1 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_b57cc3a13e93af20c075adaa620dc357__void_SCAddVoiceServiceWizard__);
 
   puVar1[1] = (undefined4)(*param_2);
   ((SCStr *)((SCStr *)(puVar1 + 2)))->m_op_ctor((SCStr *)(param_2 + 1));
@@ -55275,7 +55281,7 @@ void __fastcall FUN_1072b600(undefined4 *param_1)
 {
   ((_Tree<> *)(0))->m_op_dtor();
   ((_Tree<> *)(0))->m_op_dtor();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddVoiceServiceWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -56239,7 +56245,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1072d860(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   ((_Tree<> *)(0))->m_op_dtor();
   ((_Tree<> *)(0))->m_op_dtor();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddVoiceServiceWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -58712,7 +58718,7 @@ undefined4 __stdcall FUN_10731480(undefined4 param_1)
     iStack_1c = (int)(0);
   }
   puVar2 = (undefined4 *)(local_34);
-  local_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_);
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x1e);
   puVar8 = (undefined4 *)(local_38);
   if ((undefined4 *)(local_38) != (undefined4 *)(0x0)) {
@@ -66259,7 +66265,7 @@ LAB_1073df15:
     iStack_34 = (int)(0);
     iStack_30 = (int)(0);
   }
-  local_40 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_40 = (undefined **)((uint)&ghidra_vftable_pair_SCNewWizEventFilter_SCNewWizResponse___);
   thunk_FUN_10604700();
   thunk_FUN_106045d0();
   piVar8 = (int *)(local_100);
@@ -130974,7 +130980,7 @@ LAB_107ac705:
     piStack_44 = (int *)((int *)0x0);
     iStack_40 = (int)(0);
   }
-  local_50 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_50 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_);
   thunk_FUN_10604790();
   thunk_FUN_10604820();
   local_170[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);

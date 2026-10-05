@@ -4590,6 +4590,8 @@ SCStr * FUN_101bb1c0(SCStr *param_1);
 template<class... A> int FUN_101bb1c0(A...);
 undefined4 FUN_101bb3b0(char *param_1);
 template<class... A> int FUN_101bb3b0(A...);
+extern int ghidra_vftable_SCArray_unsigned_int_;
+
 // Reference entry 10155a50; body size 117 bytes.
 #line 1 "ENTRY_10155a50"
 
@@ -52126,7 +52128,7 @@ void __fastcall FUN_101a8f30(undefined4 *param_1)
   int iVar2;
   uint uVar3;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_unsigned_int_);
   iVar1 = (int)(param_1[2]);
   param_1[3] = (undefined4)(iVar1);
   if (iVar1 != 0) {

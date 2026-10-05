@@ -3169,6 +3169,12 @@ undefined4 __stdcall FUN_106091b0(undefined4 param_1);
 template<class... A> int FUN_106091b0(A...);
 undefined4 __stdcall FUN_1060b510(undefined4 param_1);
 template<class... A> int FUN_1060b510(A...);
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpAISetLineInLevelAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpDPGetZoneAttributesAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpDPSetAutoplayRoomUUIDAIOOp_;
+extern int ghidra_vftable_SCArray_AutoplayZoneItem_;
+extern int ghidra_vftable_SCIObjImpl_SCIAction_;
+
 // Reference entry 105a96c0; body size 88 bytes.
 #line 1 "ENTRY_105a96c0"
 
@@ -12451,7 +12457,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_105b88a0(char *param_2,char *param
   thunk_FUN_1124a200(puVar6,0);
   param_1[0x1883] = (int)((int)(uint)&ghidra_vftable_RHTTPDataIO);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCSetupFileUploadHelper_MultipartUploader);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_RHTTPDataIO);
   param_1[0x1883] = (int)((int)(uint)&ghidra_vftable_SCSetupFileUploadHelper_MultipartUploader);
   param_1[0x1886] = (int)(0);
   ((SCStr *)((SCStr *)(param_1 + 0x1887)))->int_allocRep((char *)local_4c);
@@ -27134,7 +27140,7 @@ undefined4 * __fastcall FUN_105d10c0(undefined4 *param_1, unsigned int recovered
   param_1[8] = (undefined4)(0);
   param_1[10] = (undefined4)(0);
   param_1[0xb] = (undefined4)(0);
-  param_1[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPGetZoneAttributesAIOOp_);
   param_1[0xd] = (undefined4)(0);
   param_1[0xe] = (undefined4)(0);
   param_1[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
@@ -29127,7 +29133,7 @@ void __fastcall FUN_105d3f10(undefined4 *param_1)
   uVar3 = (uint)(DAT_12126b84);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSeparateStereoPairAction);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPGetZoneAttributesAIOOp_);
   thunk_FUN_101ba0d0(uVar3);
   param_1[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();
@@ -29436,7 +29442,7 @@ void __fastcall FUN_105d44d0(undefined4 *param_1)
     param_1[4] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIAction_);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
@@ -29623,7 +29629,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_105d4df0(byte param_2)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_AutoplayZoneItem_);
   thunk_FUN_105ca4f0(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_105d2c90();
@@ -29683,7 +29689,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_105d4fb0(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RSetDealerModeAttributesOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RSetDealerModeAttributesOp);
   thunk_FUN_105d8bf0(uVar1);
-  param_1[0x17] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x17] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpAISetLineInLevelAIOOp_);
   thunk_FUN_101ba0d0();
   param_1[0x14] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();
@@ -29726,7 +29732,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_105d50c0(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RSetLineInNameAndAssociatedAttributesOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RSetLineInNameAndAssociatedAttributesOp);
   thunk_FUN_105d8de0(uVar1);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPSetAutoplayRoomUUIDAIOOp_);
   thunk_FUN_101ba0d0();
   param_1[0x15] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();
@@ -30382,7 +30388,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_105d6440(byte param_2)
   uVar3 = (uint)(DAT_12126b84);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSeparateStereoPairAction);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpDPGetZoneAttributesAIOOp_);
   thunk_FUN_101ba0d0(uVar3);
   param_1[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();

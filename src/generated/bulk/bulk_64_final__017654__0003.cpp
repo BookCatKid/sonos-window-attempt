@@ -1660,6 +1660,11 @@ undefined4 * FUN_10c04a30(undefined4 *param_1);
 template<class... A> int FUN_10c04a30(A...);
 undefined4 * FUN_10c04ac0(undefined4 *param_1);
 template<class... A> int FUN_10c04ac0(A...);
+extern int ghidra_vftable_Callback;
+extern int ghidra_vftable_SCIObjImpl_SCIObj_;
+
+extern int ghidra_vftable_SCIObjImpl_SCIObj_Impl;
+
 // Reference entry 10bd0c60; body size 221 bytes.
 #line 1 "ENTRY_10bd0c60"
 
@@ -18750,7 +18755,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10beec60(void)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrlConnection_Callback);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_Callback);
   param_1[2] = (undefined4)(0);
   param_1[0xd] = (undefined4)(0);
 
@@ -19773,7 +19778,7 @@ void __fastcall FUN_10bf02c0(undefined4 *param_1)
 
   ((SCStr *)((SCStr *)(param_1 + 3)))->int_release();
   param_1[3] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIObj_Impl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
@@ -19913,7 +19918,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10bf0830(byte param_2)
 
   ((SCStr *)((SCStr *)(param_1 + 3)))->int_release();
   param_1[3] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIObj_Impl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   if ((param_2 & 1) != 0) {

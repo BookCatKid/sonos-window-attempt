@@ -2721,6 +2721,8 @@ extern int ghidra_vftable_RControlAIOOpRef_RUpnpCDUpdateObjectAIOOp_;
 extern int ghidra_vftable_RControlAIOOpRef_RUpnpReplaceQueueOp_;
 extern int ghidra_vftable_SCOpRef_SCIOp_;
 
+extern int ghidra_vftable_SCOpRef_SCIOp__SCIOp_;
+
 // Reference entry 10516e90; body size 7 bytes.
 #line 1 "ENTRY_10516e90"
 
@@ -4503,7 +4505,7 @@ undefined4 * __fastcall FUN_10525d50(undefined4 *param_1)
   param_1[8] = (undefined4)(0);
   param_1[10] = (undefined4)(0);
   param_1[0xb] = (undefined4)(0);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCIOp_);
+  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCIOp__SCIOp_);
   param_1[9] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
   param_1[0x15] = (undefined4)(0);
   param_1[0x1f] = (undefined4)(0);
@@ -10163,7 +10165,7 @@ void __fastcall FUN_10559e70(undefined4 *param_1)
   param_1[0x11] = (undefined4)((uint)&ghidra_vftable_SCRadioPickCityBrowseItem);
   param_1[0x46] = (undefined4)((uint)&ghidra_vftable_SCRadioPickCityBrowseItem);
   param_1[0x46] = (undefined4)((uint)&ghidra_vftable_SCRadioPickCityBrowseItem);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCRadioPickCityBrowseItem);
   param_1[6] = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);
   param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);
   param_1[0xf] = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);

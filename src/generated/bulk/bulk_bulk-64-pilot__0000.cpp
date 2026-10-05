@@ -2834,6 +2834,8 @@ void __stdcall FUN_101558b0(int *param_1,ushort *param_2);
 template<class... A> int FUN_101558b0(A...);
 void __stdcall FUN_101559c0(int *param_1,ushort *param_2);
 template<class... A> int FUN_101559c0(A...);
+extern int ghidra_vftable_DirectorException;
+
 // Reference entry 100ab330; body size 137 bytes.
 #line 1 "ENTRY_100ab330"
 
@@ -7488,7 +7490,7 @@ void __fastcall FUN_1011f870(undefined4 *param_1)
   int iVar3;
   uint uVar4;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorException);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_DirectorException);
   uVar1 = (uint)(param_1[6]);
   if (0xf < uVar1) {
     iVar2 = (int)(param_1[1]);

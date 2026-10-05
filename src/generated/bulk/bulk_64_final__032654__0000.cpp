@@ -5906,6 +5906,14 @@ void FUN_1113e450(undefined1 *param_1,int param_2);
 template<class... A> int FUN_1113e450(A...);
 void __fastcall FUN_1113e6f0(undefined4 *param_1);
 template<class... A> int FUN_1113e6f0(A...);
+extern int ghidra_vftable_RControlAIOOpRef_RCPSonosGenericOperation_;
+extern int ghidra_vftable_RControlAIOOpRef_RGetDeviceDescriptionAIOOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RNullAsyncIOOperation_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpdManifestRequestOp_;
+extern int ghidra_vftable_RControlAIOOpRef_RUpnpACSetFormatAIOOp_;
+extern int ghidra_vftable_RGetFormattedMetadataOperationImpl_RCPSonosGenericOperation_;
+extern int ghidra_vftable_SwfWrappedObj_SwfObjServiceAccount_;
+
 // Reference entry 11081150; body size 109 bytes.
 #line 1 "ENTRY_11081150"
 
@@ -21253,7 +21261,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1109d080(undefined4 param_2,undefi
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   thunk_FUN_11240650(uVar2);
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_SwfObjSystem);
   param_1[7] = (undefined4)((uint)&ghidra_vftable_SwfObjSystem);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjSystem);
@@ -34691,7 +34699,7 @@ undefined4 * __fastcall FUN_110b57c0(undefined4 *param_1)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMapCB);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMap);
   param_1[1] = (undefined4)(0);
   param_1[2] = (undefined4)(0);
   pvVar2 = (void *)(operator_new(0x70), 0);
@@ -43117,7 +43125,7 @@ void __fastcall FUN_110c7c10(undefined4 *param_1)
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_RZPConnectAIOOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RZPConnectAIOOp);
-  param_1[0x19] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  param_1[0x19] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RGetDeviceDescriptionAIOOp_);
   thunk_FUN_101ba0d0(uVar2);
   param_1[0x16] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
@@ -53687,7 +53695,7 @@ void __fastcall FUN_110d9e40(undefined4 *param_1)
     }
   }
 
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_SwfWrappedObj);
+  param_1[5] = (undefined4)((uint)&ghidra_vftable_SwfWrappedObj_SwfObjServiceAccount_);
   if ((int *)param_1[6] != (int *)(((0x0)))) {
     (**(code **)(*(int *)param_1[6] + 8))();
     if ((undefined4 *)param_1[6] != (undefined4 *)(((0x0)))) {
@@ -53804,7 +53812,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_110da0c0(byte param_2)
     }
   }
 
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_SwfWrappedObj);
+  param_1[5] = (undefined4)((uint)&ghidra_vftable_SwfWrappedObj_SwfObjServiceAccount_);
   if ((int *)param_1[6] != (int *)(((0x0)))) {
     (**(code **)(*(int *)param_1[6] + 8))();
     if ((undefined4 *)param_1[6] != (undefined4 *)(((0x0)))) {
@@ -54698,7 +54706,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_110dbea0(undefined4 param_2,undefi
 
 
   thunk_FUN_11261e50(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RCPMetadataFormatter);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_RGetFormattedMetadataOperationImpl_RCPSonosGenericOperation_);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RGetFormattedMetadataOperationImpl);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RGetFormattedMetadataOperationImpl);
   param_1[7] = (undefined4)((uint)&ghidra_vftable_RGetFormattedMetadataOperationImpl);
@@ -54916,7 +54924,7 @@ void __fastcall FUN_110dc560(undefined4 *param_1)
 
   uVar2 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetFormattedMetadataOperationImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RCPSonosGenericOperation_);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RGetFormattedMetadataOperationImpl);
   param_1[7] = (undefined4)((uint)&ghidra_vftable_RGetFormattedMetadataOperationImpl);
   param_1[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
@@ -61601,7 +61609,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_110e9880(byte param_2)
   if ((undefined4 *)param_1[4] != (undefined4 *)(((0x0)))) {
     (*(code *)**(undefined4 **)param_1[4])(1);
   }
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_RCPBrowseOperationCB);
+  param_1[3] = (undefined4)((uint)&ghidra_vftable_RCPBrowseOperation);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RCPBrowseOperationCB);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x1700);
@@ -69937,7 +69945,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_110f9190(undefined4 param_2)
   param_1[0x6a2] = (undefined4)(0);
   param_1[0x6a4] = (undefined4)(0);
   param_1[0x6a5] = (undefined4)(0);
-  param_1[0x6a3] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  param_1[0x6a3] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpdManifestRequestOp_);
   param_1[0x6a7] = (undefined4)(0);
   param_1[0x6a8] = (undefined4)(0);
   param_1[0x6a6] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
@@ -78955,7 +78963,7 @@ void __fastcall FUN_1110b940(undefined4 *param_1)
   param_1[5] = (undefined4)((uint)&ghidra_vftable_SwfObjAlarmClock);
   param_1[6] = (undefined4)((uint)&ghidra_vftable_SwfObjAlarmClock);
   param_1[7] = (undefined4)((uint)&ghidra_vftable_SwfObjAlarmClock);
-  param_1[0x80] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  param_1[0x80] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RUpnpACSetFormatAIOOp_);
   thunk_FUN_101ba0d0(uVar1);
   param_1[0x7d] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();
@@ -96229,7 +96237,7 @@ void __fastcall FUN_1112d490(undefined4 *param_1)
       free((char *)(iVar1 + -0x10));
     }
   }
-  param_1[0x12] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
+  param_1[0x12] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RNullAsyncIOOperation_);
   thunk_FUN_101ba0d0();
   param_1[0xf] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   thunk_FUN_101ba0d0();

@@ -690,6 +690,9 @@ void __fastcall FUN_1061f730(undefined4 *param_1);
 template<class... A> int FUN_1061f730(A...);
 void __fastcall FUN_1061f800(undefined4 *param_1);
 template<class... A> int FUN_1061f800(A...);
+extern int ghidra_vftable_SCConditionalElementTree_SCNewWizStateType_const__;
+extern int ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_;
+
 // Reference entry 1060c450; body size 2331 bytes.
 #line 1 "ENTRY_1060c450"
 
@@ -986,7 +989,7 @@ LAB_1060c9c8:
   thunk_FUN_10604790();
   thunk_FUN_10604820();
   puVar2 = (undefined4 *)(local_50);
-  local_1b4[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_1b4[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_);
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x33);
   puVar4 = (undefined4 *)(local_54);
   if ((undefined4 *)(local_54) != (undefined4 *)(0x0)) {
@@ -4789,7 +4792,7 @@ LAB_10612a0d:
   }
   local_10 = (undefined4)(DAT_121a2158);
   thunk_FUN_105f5920<>(&local_10);
-  local_30 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+  local_30 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree_SCNewWizStateType_const__);
 
   iStack_28 = (int)(0);
 

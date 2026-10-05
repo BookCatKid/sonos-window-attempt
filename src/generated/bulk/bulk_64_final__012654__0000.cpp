@@ -79543,7 +79543,7 @@ void __fastcall FUN_1069c5b0(undefined4 *param_1)
 
   ((SCStr *)((SCStr *)(param_1 + 2)))->int_release();
   param_1[2] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
 
@@ -92352,7 +92352,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_106b2e00(int *param_2)
   param_1[1] = (undefined4)(0);
   param_1[2] = (undefined4)(0);
   param_1[3] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCTrueplayLaunchable);
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCLoggingHelper);

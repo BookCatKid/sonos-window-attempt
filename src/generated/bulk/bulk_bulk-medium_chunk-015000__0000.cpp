@@ -2577,6 +2577,8 @@ uint FUN_112b04b0(byte *param_1);
 template<class... A> int FUN_112b04b0(A...);
 void FUN_112b0880(undefined4 *param_1);
 template<class... A> int FUN_112b0880(A...);
+extern int ghidra_vftable_exception;
+
 // Reference entry 110f6f60; body size 50 bytes.
 #line 1 "ENTRY_110f6f60"
 
@@ -13138,7 +13140,7 @@ void __fastcall FUN_111d4600(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForAlbumAIOOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForAlbumAIOOp);
   param_1[7] = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForAlbumAIOOp);
-  param_1[0x89] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x89] = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForAlbumAIOOp);
   thunk_FUN_101ba0d0();
   thunk_FUN_11202570();
   thunk_FUN_11261f10();
@@ -13155,7 +13157,7 @@ void __fastcall FUN_111d4650(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForTrackAIOOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForTrackAIOOp);
   param_1[7] = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForTrackAIOOp);
-  param_1[0xc9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0xc9] = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForTrackAIOOp);
   thunk_FUN_101ba0d0();
   thunk_FUN_11202570();
   thunk_FUN_11261f10();
@@ -16266,7 +16268,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1122b690(int param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1122bbf0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -16281,7 +16283,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1122bbf0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1122bc30(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -16613,7 +16615,7 @@ void __fastcall FUN_112338b0(int *param_1)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11234160(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RStringTableParserCB);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RStringTable);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -17458,7 +17460,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11243380(int param_2)
 void __fastcall FUN_11243480(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   return;
 }
@@ -17470,7 +17472,7 @@ void __fastcall FUN_11243480(undefined4 *param_1)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11243600(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -17499,7 +17501,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11243640(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11243670(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
@@ -18013,7 +18015,7 @@ void __thiscall Recovered_Bulk::m_FUN_11249e30(undefined4 param_2,undefined4 par
 undefined4 * __fastcall FUN_1124a2d0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPRequestHeadersBuilder);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPRequest);
   *(undefined2*)(param_1 + 2) = (undefined2)(0);
   *(undefined1*)((int)param_1 + 0x40b) = (undefined1)(0);
   *(undefined1*)((int)param_1 + 10) = (undefined1)(0);
@@ -18099,7 +18101,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1124a520(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1124a550(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPRequestHeadersBuilder);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPRequest);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x40c);
   }
@@ -18348,7 +18350,7 @@ undefined4 * __fastcall FUN_1124dee0(undefined4 *param_1)
 void __fastcall FUN_1124eb60(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCRInParamDeepCopy);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCRInParam);
   free((void *)param_1[0x16]);
   free((void *)param_1[0x17]);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RCRInParamDeepCopy);
@@ -18576,7 +18578,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1124f5e0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1124f620(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParamShallowCopy);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParam);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x34);
   }
@@ -18604,7 +18606,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1124f650(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1124f680(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParamShallowCopy);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParam);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x38);
   }
@@ -20222,7 +20224,7 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_11262af0(char *param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11262bc0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RAlarmClockListAlarms);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAlarmClock);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,4);
   }
@@ -22038,7 +22040,7 @@ undefined4 * __fastcall FUN_1127d050(undefined4 *param_1)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1127d300(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpdateItemParserCallback);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpdateItemParser);
   FUN_1125b8f0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);

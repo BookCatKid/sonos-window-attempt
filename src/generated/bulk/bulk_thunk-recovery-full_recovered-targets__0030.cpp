@@ -4112,6 +4112,8 @@ template<class... A> int FUN_11816e40(A...);
 template<class... A> int FUN_1182c330(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_11849f60(void);
 template<class... A> int FUN_11849f60(A...);
+extern int ghidra_vftable_Info;
+
 // Reference entry 112ad270; body size 107 bytes.
 #line 1 "ENTRY_112ad270"
 
@@ -29354,7 +29356,7 @@ undefined4 FUN_11454b40(int *param_1)
 {
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_11455d80();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_model_Info);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_Info);
   memset(param_1 + 0x44,0,0x200);
   param_1[0x46] = (undefined4)(param_2);
   if (-1 < param_3) {

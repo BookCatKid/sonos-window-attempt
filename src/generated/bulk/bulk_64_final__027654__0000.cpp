@@ -4869,6 +4869,11 @@ undefined4 __stdcall FUN_10ef0850(undefined4 param_1);
 template<class... A> int FUN_10ef0850(A...);
 void __fastcall FUN_10ef0a90(undefined4 param_1);
 template<class... A> int FUN_10ef0a90(A...);
+extern int ghidra_vftable_SCIObjImpl_SCIOpCB_;
+extern int ghidra_vftable_SCOpRef_SCIOp_;
+
+extern int ghidra_vftable_SCSettingsItemBaseImpl;
+
 // Reference entry 10e3fc80; body size 544 bytes.
 #line 1 "ENTRY_10e3fc80"
 
@@ -14990,7 +14995,7 @@ void __fastcall FUN_10e51270(undefined4 *param_1)
     param_1[6] = (undefined4)(0);
     (**(code **)(*piVar1 + 8))();
   }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCWizardState);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListener);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListener);
 
   return;
@@ -49202,7 +49207,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e8d110(undefined4 *param_2,int *
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCOpCB);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAutoplayZoneSettingItem);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIOpCB_);
   param_1[6] = (undefined4)((uint)&ghidra_vftable_SCAutoplayZoneSettingItem);
   param_1[0x1a] = (undefined4)((uint)&ghidra_vftable_SCAutoplayZoneSettingItem);
   param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCAutoplayZoneSettingItem);
@@ -49737,7 +49742,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e8dfb0(undefined4 *param_2,int *
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCOpCB);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCLineInSourceLevelSettingItem);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpCB);
   param_1[6] = (undefined4)((uint)&ghidra_vftable_SCLineInSourceLevelSettingItem);
   param_1[0x1a] = (undefined4)((uint)&ghidra_vftable_SCLineInSourceLevelSettingItem);
   param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCLineInSourceLevelSettingItem);
@@ -51015,7 +51020,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e900f0(undefined4 param_2,undefi
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCToggleBooleanSettingActionDescriptorBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSearchHistoryToggleActionDescriptor);
   ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor((uint)&local_14);
   param_1[3] = (undefined4)(param_3);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
@@ -51095,7 +51100,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e902d0(undefined4 param_2,undefi
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCToggleBooleanSettingActionDescriptorBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCShowMediaServersToggleActionDescriptor);
   ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor((uint)&local_14);
   param_1[3] = (undefined4)(param_3);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
@@ -51127,7 +51132,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e903a0(undefined4 param_2,undefi
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCToggleBooleanSettingActionDescriptorBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCShowUPnPToggleActionDescriptor);
   ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor((uint)&local_14);
   param_1[3] = (undefined4)(param_3);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
@@ -51224,7 +51229,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e90500(undefined4 param_2,SCStr 
   param_1[0x26] = (undefined4)(0);
   param_1[0x28] = (undefined4)(0);
   param_1[0x29] = (undefined4)(0);
-  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
+  param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCIOp_);
   param_1[0x27] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
   param_1[0x33] = (undefined4)(0);
   param_1[0x3d] = (undefined4)(0);
@@ -51493,7 +51498,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e90ac0(int *param_2,int *param_3
   param_1[0x1f] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOpCB);
-  *puVar1 = (undefined4)((uint)&ghidra_vftable_SCSortFoldersBySettingItem);
+  *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOpCB);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSortFoldersBySettingItem);
   param_1[6] = (undefined4)((uint)&ghidra_vftable_SCSortFoldersBySettingItem);
   param_1[0x1a] = (undefined4)((uint)&ghidra_vftable_SCSortFoldersBySettingItem);
@@ -51811,7 +51816,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e912b0(undefined4 param_2,undefi
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCToggleBooleanSettingActionDescriptorBase);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCStaleSessionToggleActionDescriptor);
   ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor((uint)&local_14);
   param_1[3] = (undefined4)(param_3);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
@@ -52587,7 +52592,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e92430(SCStr *param_2,undefined4
   param_1[0x1f] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOpCB);
-  *puVar1 = (undefined4)((uint)&ghidra_vftable_SCWirelessChannelSettingItem);
+  *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOpCB);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCWirelessChannelSettingItem);
   param_1[6] = (undefined4)((uint)&ghidra_vftable_SCWirelessChannelSettingItem);
   param_1[0x1a] = (undefined4)((uint)&ghidra_vftable_SCWirelessChannelSettingItem);
@@ -55259,7 +55264,7 @@ void __fastcall FUN_10e964f0(undefined4 *param_1)
     (**(code **)(*piVar1 + 8))();
   }
   thunk_FUN_10e93540();
-  param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCSettingsItemBaseImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsItemBase);
@@ -57131,7 +57136,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e99810(byte param_2)
     (**(code **)(*piVar1 + 8))();
   }
   thunk_FUN_10e93540();
-  param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCSettingsItemBaseImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0x1e] = (undefined4)((uint)&ghidra_vftable_SCIObj);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsItemBase);

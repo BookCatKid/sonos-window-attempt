@@ -4584,7 +4584,7 @@ void __fastcall FUN_110dc760(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RLookupMetadataAIOOp);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_RLookupMetadataAIOOp);
   param_1[7] = (undefined4)((uint)&ghidra_vftable_RLookupMetadataAIOOp);
-  param_1[0x970] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x970] = (undefined4)((uint)&ghidra_vftable_RLookupMetadataAIOOp);
   thunk_FUN_101ba0d0();
   thunk_FUN_110a9ef0();
   thunk_FUN_11261f10();

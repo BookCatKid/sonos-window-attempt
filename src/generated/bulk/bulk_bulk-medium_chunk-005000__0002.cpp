@@ -1345,6 +1345,11 @@ undefined4 __fastcall FUN_10b8b590(int param_1);
 template<class... A> int FUN_10b8b590(A...);
 undefined4 __stdcall FUN_10b8b750(undefined4 param_1);
 template<class... A> int FUN_10b8b750(A...);
+extern int ghidra_vftable_RDeviceOpRequest_RDeviceDeleteRequest_;
+extern int ghidra_vftable_RDeviceOpRequest_RDeviceGetRequest_;
+extern int ghidra_vftable_RDeviceOpRequest_RDevicePostRequest_;
+extern int ghidra_vftable_RDeviceOpRequest_RDevicePutRequest_;
+
 // Reference entry 10847350; body size 38 bytes.
 #line 1 "ENTRY_10847350"
 
@@ -24252,7 +24257,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10b853c0(int *param_2)
 void __fastcall FUN_10b87a00(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RDeviceOpRequest);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RDeviceOpRequest_RDeviceDeleteRequest_);
   if ((undefined4 *)param_1[1] != (undefined4 *)(((0x0)))) {
     (*(code *)**(undefined4 **)param_1[1])(1);
   }
@@ -24266,7 +24271,7 @@ void __fastcall FUN_10b87a00(undefined4 *param_1)
 void __fastcall FUN_10b87a20(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RDeviceOpRequest);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RDeviceOpRequest_RDeviceGetRequest_);
   if ((undefined4 *)param_1[1] != (undefined4 *)(((0x0)))) {
     (*(code *)**(undefined4 **)param_1[1])(1);
   }
@@ -24280,7 +24285,7 @@ void __fastcall FUN_10b87a20(undefined4 *param_1)
 void __fastcall FUN_10b87a40(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RDeviceOpRequest);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RDeviceOpRequest_RDevicePostRequest_);
   if ((undefined4 *)param_1[1] != (undefined4 *)(((0x0)))) {
     (*(code *)**(undefined4 **)param_1[1])(1);
   }
@@ -24294,7 +24299,7 @@ void __fastcall FUN_10b87a40(undefined4 *param_1)
 void __fastcall FUN_10b87a60(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RDeviceOpRequest);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RDeviceOpRequest_RDevicePutRequest_);
   if ((undefined4 *)param_1[1] != (undefined4 *)(((0x0)))) {
     (*(code *)**(undefined4 **)param_1[1])(1);
   }

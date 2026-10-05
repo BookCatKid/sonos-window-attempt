@@ -4378,6 +4378,10 @@ void FUN_11534c49(void);
 template<class... A> int FUN_11534c49(A...);
 void FUN_11534c62(void);
 template<class... A> int FUN_11534c62(A...);
+extern int ghidra_vftable__Func_impl_no_alloc_enum_SonosRcbStatus_t____cdecl___unsigned_short_unsigned_short_unsigned_short_SonosRcb_const__mbedtls_x509_crt__unsigned_int__unsigned_int___SonosRcbStatus_t_unsigned_short_unsigned_short_unsigned_short_SonosRcb_const__mbedtls_x509_crt__unsigned_int__unsigned_int__;
+extern int ghidra_vftable__Func_impl_no_alloc_unsigned_short____cdecl___void_const___unsigned_short_void_const__;
+extern int ghidra_vftable_sonos__SettingsFile;
+
 // Reference entry 112b08c0; body size 47 bytes.
 #line 1 "ENTRY_112b08c0"
 
@@ -5618,7 +5622,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_112e9780(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_112e98b0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc_unsigned_short____cdecl___void_const___unsigned_short_void_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -6213,7 +6217,7 @@ undefined4 *  __fastcall FUN_112ee480(int param_1, unsigned int recovered_unused
 void __thiscall Recovered_Bulk::m_FUN_112ee620(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc_enum_SonosRcbStatus_t____cdecl___unsigned_short_unsigned_short_unsigned_short_SonosRcb_const__mbedtls_x509_crt__unsigned_int__unsigned_int___SonosRcbStatus_t_unsigned_short_unsigned_short_unsigned_short_SonosRcb_const__mbedtls_x509_crt__unsigned_int__unsigned_int__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -14810,7 +14814,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11458fa0(undefined4 param_2)
 void __fastcall FUN_114591a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_SettingsFile);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_sonos__SettingsFile);
   _Mtx_destroy_in_situ(param_1 + 2);
   if ((void *)param_1[1] != (void *)(((0x0)))) {
     free((void *)param_1[1]);
@@ -14838,7 +14842,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11459250(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11459280(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_SettingsFile);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_sonos__SettingsFile);
   _Mtx_destroy_in_situ(param_1 + 2);
   if ((void *)param_1[1] != (void *)(((0x0)))) {
     free((void *)param_1[1]);

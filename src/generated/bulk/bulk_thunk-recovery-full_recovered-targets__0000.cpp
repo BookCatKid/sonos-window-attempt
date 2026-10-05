@@ -2706,6 +2706,8 @@ template<class... A> int FUN_101aefc0(A...);
 template<class... A> int FUN_101aefe0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_101af010(undefined4 *param_1);
 template<class... A> int FUN_101af010(A...);
+extern int ghidra_vftable_exception;
+
 // Reference entry 10116540; body size 19 bytes.
 #line 1 "ENTRY_10116540"
 
@@ -11332,7 +11334,7 @@ void FUN_10122480(void)
 void __fastcall FUN_101224f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   return;
 }
@@ -11346,7 +11348,7 @@ void __fastcall FUN_101224f0(undefined4 *param_1)
 void __fastcall FUN_10122510(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   return;
 }
@@ -11360,7 +11362,7 @@ void __fastcall FUN_10122510(undefined4 *param_1)
 void __fastcall FUN_10122530(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_exception);
   __std_exception_destroy(param_1 + 1);
   return;
 }
@@ -25648,7 +25650,7 @@ undefined4 * __fastcall FUN_101accf0(undefined4 *param_1)
   iVar1 = (int)(0);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCLoggingHelper);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_RITQHandler);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAbilityManager);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RITQHandler);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCAbilityManager);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCAbilityManager);
   param_1[0x1c] = (undefined4)(0);

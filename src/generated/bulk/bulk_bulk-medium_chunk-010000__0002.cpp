@@ -2402,6 +2402,10 @@ void FUN_1109f820(undefined4 *param_1,undefined4 *param_2);
 template<class... A> int FUN_1109f820(A...);
 bool __fastcall FUN_110a0fd0(int param_1);
 template<class... A> int FUN_110a0fd0(A...);
+extern int ghidra_vftable_SCArray_SCPtr_SCDataRow___;
+extern int ghidra_vftable_SCArray_SCPtr_SCIOp___;
+extern int ghidra_vftable_SCArray_SCPtr_SCSonosPlaylist___;
+
 // Reference entry 10f33000; body size 45 bytes.
 #line 1 "ENTRY_10f33000"
 
@@ -13849,7 +13853,7 @@ void __fastcall FUN_10fe0720(undefined4 *param_1)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCPtr_SCDataRow___);
   thunk_FUN_10fde940(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_10fe0880();
@@ -18754,7 +18758,7 @@ void __fastcall FUN_11026c30(undefined4 *param_1)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCPtr_SCSonosPlaylist___);
   thunk_FUN_110232f0(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_110271f0();
@@ -21355,7 +21359,7 @@ void __fastcall FUN_110564a0(undefined4 *param_1)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCPtr_SCIOp___);
   thunk_FUN_105b6490(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_10655080();

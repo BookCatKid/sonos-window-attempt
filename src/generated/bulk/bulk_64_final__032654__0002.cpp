@@ -6776,6 +6776,8 @@ void FUN_112ac530(int *param_1);
 template<class... A> int FUN_112ac530(A...);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ int * FUN_112ac610(void);
 template<class... A> int FUN_112ac610(A...);
+extern int ghidra_vftable_RControlAIOOpRef_RControlAIOOp_;
+
 // Reference entry 111e7df0; body size 243 bytes.
 #line 1 "ENTRY_111e7df0"
 
@@ -17832,7 +17834,7 @@ void __fastcall FUN_111fc270(undefined4 *param_1)
     (*(code *)**(undefined4 **)param_1[0x301f])(1);
   }
   param_1[0x301f] = (undefined4)(0);
-  param_1[0x11] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
+  param_1[0x11] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef_RControlAIOOp_);
   thunk_FUN_101ba0d0();
   param_1[0xe] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();
@@ -26678,7 +26680,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1120c9f0(undefined4 param_2,int pa
   if (param_3 != 0) {
     param_1[1] = (undefined4)(&DAT_119da220);
     param_1[2] = (undefined4)(&DAT_119da22c);
-    param_1[0x1a2] = (undefined4)((uint)&ghidra_vftable_RClient);
+    param_1[0x1a2] = (undefined4)((uint)&ghidra_vftable_AVTransportClient);
   }
   thunk_FUN_1128f090(uVar1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_AVTransportClient);
@@ -32287,7 +32289,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11217e10(undefined4 param_2,int pa
   if (param_3 != 0) {
     param_1[1] = (undefined4)(&DAT_119dac34);
     param_1[2] = (undefined4)(&DAT_119dac40);
-    param_1[0x1a2] = (undefined4)((uint)&ghidra_vftable_RClient);
+    param_1[0x1a2] = (undefined4)((uint)&ghidra_vftable_GroupManagementClient);
   }
   thunk_FUN_1128f1a0(uVar1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_GroupManagementClient);
@@ -35251,7 +35253,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1121da30(undefined4 param_2,int pa
   if (param_3 != 0) {
     param_1[1] = (undefined4)(&DAT_119db650);
     param_1[2] = (undefined4)(&DAT_119db65c);
-    param_1[0x1a2] = (undefined4)((uint)&ghidra_vftable_RClient);
+    param_1[0x1a2] = (undefined4)((uint)&ghidra_vftable_RenderingControlClient);
   }
   thunk_FUN_1128f240(uVar1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RenderingControlClient);
@@ -72099,7 +72101,7 @@ void __fastcall FUN_112665b0(undefined4 *param_1)
   thunk_FUN_1126b1d0(uVar1);
   param_1[0x2155] = (undefined4)((uint)&ghidra_vftable_RChunkedSocketWriter);
   thunk_FUN_112878e0();
-  param_1[0x114d] = (undefined4)((uint)&ghidra_vftable_RSocketWriter);
+  param_1[0x114d] = (undefined4)((uint)&ghidra_vftable_ChunkLengthParser);
   thunk_FUN_112878e0();
   param_1[0x1130] = (undefined4)((uint)&ghidra_vftable_ChunkLengthParser);
   thunk_FUN_11286500();

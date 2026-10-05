@@ -2461,6 +2461,10 @@ SCStr * __stdcall FUN_10f2a950(SCStr *param_1);
 template<class... A> int FUN_10f2a950(A...);
 void __fastcall FUN_10f2f730(int param_1);
 template<class... A> int FUN_10f2f730(A...);
+extern int ghidra_vftable_HeaderMapping;
+extern int ghidra_vftable_MenuItemMapping;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_0041d045c92224eff26fbfd4655b7c4d__void_SCNewWizAnalyticsRecorder__;
+
 // Reference entry 10d5e6a0; body size 32 bytes.
 #line 1 "ENTRY_10d5e6a0"
 
@@ -7336,7 +7340,7 @@ void __fastcall FUN_10db7ff0(undefined4 *param_1)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10db9020(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCInfoviewViewBuilder_HeaderMapping);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_HeaderMapping);
   free((void *)param_1[3]);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x10);
@@ -7351,7 +7355,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10db9020(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10db9060(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCInfoviewViewBuilder_MenuItemMapping);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_MenuItemMapping);
   free((void *)param_1[4]);
   free((void *)param_1[2]);
   if ((param_2 & 1) != 0) {
@@ -20275,7 +20279,7 @@ undefined4 *  __stdcall FUN_10eabe20(undefined4 *param_1)
 void __thiscall Recovered_Bulk::m_FUN_10eabf30(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_0041d045c92224eff26fbfd4655b7c4d__void_SCNewWizAnalyticsRecorder__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }

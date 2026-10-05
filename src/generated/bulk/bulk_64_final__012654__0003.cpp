@@ -1918,6 +1918,8 @@ void __fastcall FUN_1092f2a0(int param_1);
 template<class... A> int FUN_1092f2a0(A...);
 void __fastcall FUN_1092f390(undefined4 *param_1);
 template<class... A> int FUN_1092f390(A...);
+extern int ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_;
+
 // Reference entry 108d6560; body size 1278 bytes.
 #line 1 "ENTRY_108d6560"
 
@@ -25758,7 +25760,7 @@ LAB_108fe877:
   thunk_FUN_10604790();
   thunk_FUN_10604820();
   puVar2 = (undefined4 *)(local_28);
-  local_150[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  local_150[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface_SCNewWizComponent_);
   *(unsigned char*)((char *)&local_78 + 0) = (unsigned char)(0x15);
   puVar11 = (undefined4 *)(local_2c);
   if ((undefined4 *)(local_2c) != (undefined4 *)(0x0)) {

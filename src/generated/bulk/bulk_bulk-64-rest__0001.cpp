@@ -19071,7 +19071,7 @@ int * __thiscall Recovered_Bulk::m_FUN_101d5000(uint param_2)
 
     return (int *)(piVar1);
   }
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObj);
   param_1[2] = (int)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObj);
@@ -19111,7 +19111,7 @@ int * __thiscall Recovered_Bulk::m_FUN_101d50f0(uint param_2)
 
     return (int *)(piVar1);
   }
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObj);
   param_1[2] = (int)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObj);
@@ -68459,7 +68459,7 @@ undefined4 * __fastcall FUN_1022b360(undefined4 *param_1)
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(10);
   ((SCSystemEventSink *)((SCSystemEventSink *)(param_1 + 0x17)))->m_op_ctor();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCController);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCBTClassicConnectionManagerEventSink);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCController);
   param_1[9] = (undefined4)((uint)&ghidra_vftable_SCController);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCController);

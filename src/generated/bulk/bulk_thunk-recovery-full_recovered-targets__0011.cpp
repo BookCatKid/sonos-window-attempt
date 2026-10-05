@@ -2660,6 +2660,8 @@ extern void __fastcall FUN_106de7d0(void *param_1);
 extern int ghidra_vftable_SCNewWizPageFor_SCAddProductWizard_;
 extern int ghidra_vftable_exception;
 
+extern int ghidra_vftable_SCNewWizPageFor_SCAddProductWizard__SCAddProductWizard_;
+
 // Reference entry 10654700; body size 11 bytes.
 #line 1 "ENTRY_10654700"
 
@@ -3493,7 +3495,7 @@ void __fastcall FUN_106552d0(undefined4 *param_1)
 {
   int *piVar1;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard_);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard__SCAddProductWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -3840,7 +3842,7 @@ void __fastcall FUN_106555c0(undefined4 *param_1)
 {
   int *piVar1;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard_);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard__SCAddProductWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -3899,7 +3901,7 @@ void __fastcall FUN_10655610(undefined4 *param_1)
 {
   int *piVar1;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard_);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard__SCAddProductWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -3958,7 +3960,7 @@ void __fastcall FUN_10655660(undefined4 *param_1)
 {
   int *piVar1;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard_);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard__SCAddProductWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -4087,7 +4089,7 @@ void __fastcall FUN_106557d0(undefined4 *param_1)
 {
   int *piVar1;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard_);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard__SCAddProductWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -4146,7 +4148,7 @@ void __fastcall FUN_10655820(undefined4 *param_1)
 {
   int *piVar1;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard_);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard__SCAddProductWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -4391,7 +4393,7 @@ void __fastcall FUN_10655fc0(undefined4 *param_1)
 {
   int *piVar1;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard_);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard__SCAddProductWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -4457,7 +4459,7 @@ void __fastcall FUN_10656060(undefined4 *param_1)
 {
   int *piVar1;
   
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard_);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor_SCAddProductWizard__SCAddProductWizard_);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
@@ -10054,7 +10056,7 @@ void __fastcall FUN_10688c90(undefined4 *param_1)
   param_1[0x11] = (undefined4)((uint)&ghidra_vftable_SCShareBrowseItem);
   param_1[0x46] = (undefined4)((uint)&ghidra_vftable_SCShareBrowseItem);
   param_1[0x46] = (undefined4)((uint)&ghidra_vftable_SCShareBrowseItem);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCShareBrowseItem);
   param_1[6] = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);
   param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);
   param_1[0xf] = (undefined4)((uint)&ghidra_vftable_SCAsyncBrowseItem);

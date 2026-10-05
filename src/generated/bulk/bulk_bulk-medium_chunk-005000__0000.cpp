@@ -2250,6 +2250,29 @@ void __fastcall FUN_105a2ca0(int *param_1, unsigned int recovered_unused_stack_0
 template<class... A> int FUN_105a2ca0(A...);
 undefined4 FUN_105a3210(void);
 template<class... A> int FUN_105a3210(A...);
+extern int ghidra_vftable_SCArray_SCPtr_SCIActionDescriptor___;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_172b2c05f892882e8608afe6a235cd04__void_SCDateTimeManager_const__SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_19bdeef203780de5e604a90ce4be9e81__void_SCSetting__SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_1c21c4e3f9899b9cd3f537ee036eaed4__void_SCHousehold_const__SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_2d92c8bfb5f566b09cfe8eeec578b1fb__void_SCAddVoiceServiceWizard__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_37ba46da54180a76f324095b3b3387e7__void_SCAddVoiceServiceWizard__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_5668acf38edaa419075f5a002a2b1b9d__void_SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_6643794ac1fdc83a6a35adc0fc16fa10__void_SCHousehold_const__SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_711b61b9355f09fc7ded9be40dbc904b__void_SCHousehold_const__SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_a9c217ea519d133fedc047d2675c092c__void_SCHousehold_const__SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_b40d2cb89d82ec368335e9e2aa9cd77f__void_SCAlarmManager_const__SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_bae15aa7d879f1f9bcbf0af0cd67b4ed__void_SCController_const__SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_baeef59acb6c62fca0b98fba24bc0402__void_;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_bdb4926a07395fd04542a4130dedac13__void_SCSetting__SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_d07c1d4f2481252533e80cc0f09a54c9__void_SCIOpGetAboutSonosString__unsigned_short_;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_f255800ffad6a7a5ed4e3b4b6463d721__void_SCStr_const__;
+extern int ghidra_vftable__Func_impl_no_alloc__lambda_f2b3e15fe7ee076ed0c875f474fc9748__void_SCHousehold_const__SCStr_const__;
+extern int ghidra_vftable_std___Func_impl_no_alloc__lambda_5af8eb5354b3c86e46e4d5b7165303b9__void_SCIController__ViewId_SCIController__ViewMode_;
+extern int ghidra_vftable_std___Func_impl_no_alloc__lambda_63432ce2fb66b9ed36bba9d30d396e0c__void_SCIController__ViewId_SCIController__ViewMode_;
+extern int ghidra_vftable_std___Func_impl_no_alloc__lambda_9c17ed55ef8614195be9dc70d51f8ea9__void_SCIController__ViewId_SCIController__ViewMode_;
+extern int ghidra_vftable_std___Func_impl_no_alloc__lambda_af691c8564d15ff5374f5c3659c7a43d__void_SCIController__ViewId_SCIController__ViewMode_;
+extern int ghidra_vftable_std___Func_impl_no_alloc__lambda_f022ad69723ba7f93d5debe7a6c277bc__void_SCIController__ViewId_SCIController__ViewMode_;
+
 // Reference entry 103eb060; body size 16 bytes.
 #line 1 "ENTRY_103eb060"
 
@@ -6062,7 +6085,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_10422b40(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_10422b70(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_baeef59acb6c62fca0b98fba24bc0402__void_);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -6566,7 +6589,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_1042bc60(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1042bc80(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_5668acf38edaa419075f5a002a2b1b9d__void_SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -6578,7 +6601,7 @@ void __thiscall Recovered_Bulk::m_FUN_1042bc80(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1042bca0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_b40d2cb89d82ec368335e9e2aa9cd77f__void_SCAlarmManager_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -8473,7 +8496,7 @@ void __stdcall FUN_1045f950(undefined4 *param_1,undefined4 param_2)
 void __thiscall Recovered_Bulk::m_FUN_1045f9b0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_19bdeef203780de5e604a90ce4be9e81__void_SCSetting__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -9010,7 +9033,7 @@ void __stdcall FUN_1046c660(undefined4 param_1,SCStr *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1046c810(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_6643794ac1fdc83a6a35adc0fc16fa10__void_SCHousehold_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -9022,7 +9045,7 @@ void __thiscall Recovered_Bulk::m_FUN_1046c810(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1046c830(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable_std___Func_impl_no_alloc__lambda_9c17ed55ef8614195be9dc70d51f8ea9__void_SCIController__ViewId_SCIController__ViewMode_);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -9092,7 +9115,7 @@ void __stdcall FUN_1046c8e0(unsigned int recovered_unused_stack_0, unsigned int 
 void __thiscall Recovered_Bulk::m_FUN_1046c930(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_6643794ac1fdc83a6a35adc0fc16fa10__void_SCHousehold_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -9104,7 +9127,7 @@ void __thiscall Recovered_Bulk::m_FUN_1046c930(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1046c950(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable_std___Func_impl_no_alloc__lambda_9c17ed55ef8614195be9dc70d51f8ea9__void_SCIController__ViewId_SCIController__ViewMode_);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -9697,7 +9720,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_1047a290(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1047a2b0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable_std___Func_impl_no_alloc__lambda_f022ad69723ba7f93d5debe7a6c277bc__void_SCIController__ViewId_SCIController__ViewMode_);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -9709,7 +9732,7 @@ void __thiscall Recovered_Bulk::m_FUN_1047a2b0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1047a2d0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_f2b3e15fe7ee076ed0c875f474fc9748__void_SCHousehold_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -9856,7 +9879,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_1047a5c0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1047a5e0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable_std___Func_impl_no_alloc__lambda_63432ce2fb66b9ed36bba9d30d396e0c__void_SCIController__ViewId_SCIController__ViewMode_);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -9868,7 +9891,7 @@ void __thiscall Recovered_Bulk::m_FUN_1047a5e0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1047a600(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_bae15aa7d879f1f9bcbf0af0cd67b4ed__void_SCController_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -9880,7 +9903,7 @@ void __thiscall Recovered_Bulk::m_FUN_1047a600(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1047a620(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable_std___Func_impl_no_alloc__lambda_f022ad69723ba7f93d5debe7a6c277bc__void_SCIController__ViewId_SCIController__ViewMode_);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -9892,7 +9915,7 @@ void __thiscall Recovered_Bulk::m_FUN_1047a620(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_1047a640(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_f2b3e15fe7ee076ed0c875f474fc9748__void_SCHousehold_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -10658,7 +10681,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_10486f40(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_10487270(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_bdb4926a07395fd04542a4130dedac13__void_SCSetting__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -10793,7 +10816,7 @@ void __stdcall FUN_10487dc0(undefined4 param_1,undefined4 param_2)
 void __thiscall Recovered_Bulk::m_FUN_104881d0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_37ba46da54180a76f324095b3b3387e7__void_SCAddVoiceServiceWizard__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -10805,7 +10828,7 @@ void __thiscall Recovered_Bulk::m_FUN_104881d0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_10488240(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_bdb4926a07395fd04542a4130dedac13__void_SCSetting__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -11924,7 +11947,7 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_104adbb0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_104adbe0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_d07c1d4f2481252533e80cc0f09a54c9__void_SCIOpGetAboutSonosString__unsigned_short_);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12092,7 +12115,7 @@ void __thiscall Recovered_Bulk::m_FUN_104ade60(undefined4 *param_2,ushort *param
 void __thiscall Recovered_Bulk::m_FUN_104adfb0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_1c21c4e3f9899b9cd3f537ee036eaed4__void_SCHousehold_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12104,7 +12127,7 @@ void __thiscall Recovered_Bulk::m_FUN_104adfb0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_104adff0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable_std___Func_impl_no_alloc__lambda_af691c8564d15ff5374f5c3659c7a43d__void_SCIController__ViewId_SCIController__ViewMode_);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12116,7 +12139,7 @@ void __thiscall Recovered_Bulk::m_FUN_104adff0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_104ae020(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_d07c1d4f2481252533e80cc0f09a54c9__void_SCIOpGetAboutSonosString__unsigned_short_);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12401,7 +12424,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104b8bf0(byte param_2)
 void __thiscall Recovered_Bulk::m_FUN_104b8d90(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_172b2c05f892882e8608afe6a235cd04__void_SCDateTimeManager_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12413,7 +12436,7 @@ void __thiscall Recovered_Bulk::m_FUN_104b8d90(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_104b8e70(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_a9c217ea519d133fedc047d2675c092c__void_SCHousehold_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12425,7 +12448,7 @@ void __thiscall Recovered_Bulk::m_FUN_104b8e70(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_104b8e90(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_f255800ffad6a7a5ed4e3b4b6463d721__void_SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12528,7 +12551,7 @@ void __fastcall FUN_104b9030(int param_1, unsigned int recovered_unused_stack_0,
 void __thiscall Recovered_Bulk::m_FUN_104b91b0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_172b2c05f892882e8608afe6a235cd04__void_SCDateTimeManager_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12540,7 +12563,7 @@ void __thiscall Recovered_Bulk::m_FUN_104b91b0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_104b9200(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_a9c217ea519d133fedc047d2675c092c__void_SCHousehold_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12552,7 +12575,7 @@ void __thiscall Recovered_Bulk::m_FUN_104b9200(undefined4 *param_2)
 void __thiscall Recovered_Bulk::m_FUN_104b9220(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_f255800ffad6a7a5ed4e3b4b6463d721__void_SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12726,7 +12749,7 @@ void __fastcall FUN_104bcd90(int param_1)
 void __thiscall Recovered_Bulk::m_FUN_104bdde0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_2d92c8bfb5f566b09cfe8eeec578b1fb__void_SCAddVoiceServiceWizard__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12762,7 +12785,7 @@ void __fastcall FUN_104bde20(int param_1, unsigned int recovered_unused_stack_0,
 void __thiscall Recovered_Bulk::m_FUN_104bde60(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_2d92c8bfb5f566b09cfe8eeec578b1fb__void_SCAddVoiceServiceWizard__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12910,7 +12933,7 @@ SCStr * __stdcall FUN_104c6f70(SCStr *param_1)
 void __thiscall Recovered_Bulk::m_FUN_104c9d30(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_711b61b9355f09fc7ded9be40dbc904b__void_SCHousehold_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -12951,7 +12974,7 @@ void __stdcall FUN_104c9d70(undefined4 param_1,undefined4 param_2)
 void __thiscall Recovered_Bulk::m_FUN_104c9db0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_711b61b9355f09fc7ded9be40dbc904b__void_SCHousehold_const__SCStr_const__);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -13730,7 +13753,7 @@ void __fastcall FUN_104d7e60(int param_1, unsigned int recovered_unused_stack_0,
 void __thiscall Recovered_Bulk::m_FUN_104d7ed0(undefined4 *param_2)
 {
   int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  *param_2 = (undefined4)((uint)&ghidra_vftable_std___Func_impl_no_alloc__lambda_5af8eb5354b3c86e46e4d5b7165303b9__void_SCIController__ViewId_SCIController__ViewMode_);
   param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
@@ -17692,7 +17715,7 @@ void __fastcall FUN_1050fcf0(undefined4 *param_1)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCPtr_SCIActionDescriptor___);
   thunk_FUN_101c42f0(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_101c6ae0();

@@ -2678,6 +2678,9 @@ extern int ghidra_vftable_RControlAIOOpRef_RUpnpAVTAddURIToSavedQueueAIOOp_;
 extern int ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmailSubmit_;
 extern int ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmail_;
 
+extern int ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmailSubmit__SCOpSecRegVerifyEmailSubmit_;
+extern int ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmail__SCOpSecRegVerifyEmail_;
+
 // Reference entry 10d74640; body size 10 bytes.
 #line 1 "ENTRY_10d74640"
 
@@ -25900,7 +25903,7 @@ int __fastcall FUN_10e25690(int param_1, unsigned int recovered_unused_stack_0, 
   param_1[10] = (undefined4)(0);
   param_1[0xc] = (undefined4)(0);
   param_1[0xd] = (undefined4)(0);
-  param_1[8] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmail_);
+  param_1[8] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmail__SCOpSecRegVerifyEmail_);
   param_1[0xb] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
   param_1[0x17] = (undefined4)(0);
   param_1[0x21] = (undefined4)(0);
@@ -25926,7 +25929,7 @@ int __fastcall FUN_10e25690(int param_1, unsigned int recovered_unused_stack_0, 
   param_1[8] = (undefined4)(0);
   param_1[10] = (undefined4)(0);
   param_1[0xb] = (undefined4)(0);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmailSubmit_);
+  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmailSubmit__SCOpSecRegVerifyEmailSubmit_);
   param_1[9] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
   param_1[0x15] = (undefined4)(0);
   param_1[0x1f] = (undefined4)(0);

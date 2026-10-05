@@ -1802,6 +1802,9 @@ undefined4 * __fastcall FUN_1107fdd0(int param_1);
 template<class... A> int FUN_1107fdd0(A...);
 undefined4 __fastcall FUN_1107ff20(int param_1);
 template<class... A> int FUN_1107ff20(A...);
+extern int ghidra_vftable_SCArray_SCPtr_SCIOp___;
+extern int ghidra_vftable_SCIObjImpl_SCIOpCB_;
+
 // Reference entry 11043490; body size 231 bytes.
 #line 1 "ENTRY_11043490"
 
@@ -13243,7 +13246,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11056190(undefined4 param_2)
 
   uVar1 = (uint)(DAT_12126b84);
 
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl_SCIOpCB_);
   param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   param_1[2] = (undefined4)(param_2);
@@ -13541,7 +13544,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11056b20(byte param_2)
   undefined4 *puVar1;
   
   puVar1 = (undefined4 *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray_SCPtr_SCIOp___);
   thunk_FUN_105b6490(*puVar1,param_1[3],puVar1);
   param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_10655080();
