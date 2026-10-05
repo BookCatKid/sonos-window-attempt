@@ -158,6 +158,299 @@ typedef void *R;
 typedef void *WARNING;
 typedef void (*_func_4879)(...);
 using namespace std;
+extern "C" void LAB_1000259a(void);
+extern "C" void LAB_10002eeb(void);
+extern "C" void LAB_10005f9c(void);
+extern "C" void LAB_10009ab6(void);
+extern "C" void LAB_1000d29c(void);
+extern "C" void LAB_1000d4ae(void);
+extern "C" void LAB_1000e23c(void);
+extern "C" void LAB_100131d8(void);
+extern "C" void LAB_10013336(void);
+extern "C" void LAB_10013543(void);
+extern "C" void LAB_10017003(void);
+extern "C" void LAB_1001718e(void);
+extern "C" void LAB_10019957(void);
+extern "C" void LAB_1001a7f3(void);
+extern "C" void LAB_1001e0b5(void);
+extern "C" void LAB_10020d0b(void);
+extern "C" void LAB_100238df(void);
+extern "C" void LAB_10024c85(void);
+extern "C" void LAB_10024f14(void);
+extern "C" void LAB_1002a973(void);
+extern "C" void LAB_1002d664(void);
+extern "C" void LAB_1002ed7f(void);
+extern "C" void LAB_100351fc(void);
+extern "C" void LAB_10036c23(void);
+extern "C" void LAB_100382f3(void);
+extern "C" void LAB_100399be(void);
+extern "C" void LAB_1003a1de(void);
+extern "C" void LAB_1003bedf(void);
+extern "C" void LAB_1003d802(void);
+extern "C" void LAB_1003dcd5(void);
+extern "C" void LAB_1003e973(void);
+extern "C" void LAB_1003f102(void);
+extern "C" void LAB_10040fe3(void);
+extern "C" void LAB_1004609c(void);
+extern "C" void LAB_1004813a(void);
+extern "C" void LAB_1004854f(void);
+extern "C" void LAB_100485ae(void);
+extern "C" void LAB_1004968e(void);
+extern "C" void LAB_1004a52a(void);
+extern "C" void LAB_1004efb7(void);
+extern "C" void LAB_10051c6c(void);
+extern "C" void LAB_1005273e(void);
+extern "C" void LAB_10055141(void);
+extern "C" void LAB_10056d52(void);
+extern "C" void LAB_10059bbf(void);
+extern "C" void LAB_1005a36c(void);
+extern "C" void LAB_1005a632(void);
+extern "C" void LAB_1005af92(void);
+extern "C" void LAB_1005c315(void);
+extern "C" void LAB_1005de7c(void);
+extern "C" void LAB_1005e133(void);
+extern "C" void LAB_1006039d(void);
+extern "C" void LAB_10060cdf(void);
+extern "C" void LAB_10061d97(void);
+extern "C" void LAB_10066e8c(void);
+extern "C" void LAB_1006c189(void);
+extern "C" void LAB_1006e092(void);
+extern "C" void LAB_10070f3b(void);
+extern "C" void LAB_10070fbd(void);
+extern "C" void LAB_10073dda(void);
+extern "C" void LAB_10076319(void);
+extern "C" void LAB_10077dea(void);
+extern "C" void LAB_10078ea2(void);
+extern "C" void LAB_1007a568(void);
+extern "C" void LAB_1007a7a2(void);
+extern "C" void LAB_1008033c(void);
+extern "C" void LAB_10082ed9(void);
+extern "C" void LAB_10087529(void);
+extern "C" void LAB_10088113(void);
+extern "C" void LAB_10088622(void);
+extern "C" void LAB_1008ad00(void);
+extern "C" void LAB_10091b82(void);
+extern "C" void LAB_10093793(void);
+extern "C" void LAB_100948c8(void);
+extern "C" void LAB_10095c14(void);
+extern "C" void LAB_10da1a9e(void);
+extern "C" void LAB_10da1b16(void);
+extern "C" void LAB_10db4cd8(void);
+extern "C" void LAB_10dba3be(void);
+extern "C" void LAB_10dd65a7(void);
+extern "C" void LAB_10dd6fd7(void);
+extern "C" void LAB_10dd9147(void);
+extern "C" void LAB_10ded535(void);
+extern "C" void LAB_10ded5c7(void);
+extern "C" void LAB_1148a05a(void);
+extern "C" void LAB_1148cdf3(void);
+extern "C" void LAB_1186d2ee(void);
+extern "C" void LAB_1186d6c8(void);
+extern "C" void LAB_118781cc(void);
+extern "C" void LAB_1187e854(void);
+extern "C" void LAB_1187e8f0(void);
+extern "C" void LAB_11881068(void);
+extern "C" void LAB_11881488(void);
+extern "C" void LAB_11881498(void);
+extern "C" void LAB_118821c0(void);
+extern "C" void LAB_11883764(void);
+extern "C" void LAB_11883984(void);
+extern "C" void LAB_11883b7c(void);
+extern "C" void LAB_11883dbc(void);
+extern "C" void LAB_11883f44(void);
+extern "C" void LAB_11883f54(void);
+extern "C" void LAB_11885328(void);
+extern "C" void LAB_11885d88(void);
+extern "C" void LAB_11886d8c(void);
+extern "C" void LAB_118900d8(void);
+extern "C" void LAB_118900e8(void);
+extern "C" void LAB_118912f0(void);
+extern "C" void LAB_118938f4(void);
+extern "C" void LAB_118a0b20(void);
+extern "C" void LAB_118a0b30(void);
+extern "C" void LAB_118a0b44(void);
+extern "C" void LAB_118a0b54(void);
+extern "C" void LAB_118abe0c(void);
+extern "C" void LAB_118afb08(void);
+extern "C" void LAB_11910224(void);
+extern "C" void LAB_1192e7d8(void);
+extern "C" void LAB_1192e8ec(void);
+extern "C" void LAB_1192e9a4(void);
+extern "C" void LAB_1192e9b4(void);
+extern "C" void LAB_1192e9c4(void);
+extern "C" void LAB_1192e9d8(void);
+extern "C" void LAB_1192e9e8(void);
+extern "C" void LAB_1192ecf0(void);
+extern "C" void LAB_1192ed00(void);
+extern "C" void LAB_1192efa0(void);
+extern "C" void LAB_1192f058(void);
+extern "C" void LAB_1192f13c(void);
+extern "C" void LAB_1192f1bc(void);
+extern "C" void LAB_1192f204(void);
+extern "C" void LAB_1192f278(void);
+extern "C" void LAB_1192f2c0(void);
+extern "C" void LAB_1192f334(void);
+extern "C" void LAB_1192f37c(void);
+extern "C" void LAB_1192f3f0(void);
+extern "C" void LAB_1192f438(void);
+extern "C" void LAB_119305b8(void);
+extern "C" void LAB_119305ec(void);
+extern "C" void LAB_119307c8(void);
+extern "C" void LAB_119308a0(void);
+extern "C" void LAB_11930964(void);
+extern "C" void LAB_11930998(void);
+extern "C" void LAB_11930b5c(void);
+extern "C" void LAB_11931050(void);
+extern "C" void LAB_11931328(void);
+extern "C" void LAB_11931354(void);
+extern "C" void LAB_119315e8(void);
+extern "C" void LAB_1193163c(void);
+extern "C" void LAB_11931990(void);
+extern "C" void LAB_11931a28(void);
+extern "C" void LAB_11931a70(void);
+extern "C" void LAB_11931a80(void);
+extern "C" void LAB_11931ab0(void);
+extern "C" void LAB_11931b20(void);
+extern "C" void LAB_11931b68(void);
+extern "C" void LAB_11931b8c(void);
+extern "C" void LAB_11931bc8(void);
+extern "C" void LAB_11931bec(void);
+extern "C" void LAB_11931c28(void);
+extern "C" void LAB_11931c7c(void);
+extern "C" void LAB_11931f68(void);
+extern "C" void LAB_11932084(void);
+extern "C" void LAB_119320cc(void);
+extern "C" void LAB_11932108(void);
+extern "C" void LAB_11932114(void);
+extern "C" void LAB_11932154(void);
+extern "C" void LAB_1193219c(void);
+extern "C" void LAB_119321d8(void);
+extern "C" void LAB_119321e4(void);
+extern "C" void LAB_11932210(void);
+extern "C" void LAB_11932258(void);
+extern "C" void LAB_11932294(void);
+extern "C" void LAB_119322a0(void);
+extern "C" void LAB_119322cc(void);
+extern "C" void LAB_11932314(void);
+extern "C" void LAB_11932350(void);
+extern "C" void LAB_1193235c(void);
+extern "C" void LAB_119324d4(void);
+extern "C" void LAB_11932744(void);
+extern "C" void LAB_1193276c(void);
+extern "C" void LAB_11933388(void);
+extern "C" void LAB_11933394(void);
+extern "C" void LAB_119333a0(void);
+extern "C" void LAB_1193436c(void);
+extern "C" void LAB_119346a4(void);
+extern "C" void LAB_11934b84(void);
+extern "C" void LAB_119352e0(void);
+extern "C" void LAB_11935874(void);
+extern "C" void LAB_11935e30(void);
+extern "C" void LAB_11935e78(void);
+extern "C" void LAB_11935eb4(void);
+extern "C" void LAB_11935ec0(void);
+extern "C" void LAB_11935f64(void);
+extern "C" void LAB_11936024(void);
+extern "C" void LAB_1193607c(void);
+extern "C" void LAB_119362cc(void);
+extern "C" void LAB_119366dc(void);
+extern "C" void LAB_11936700(void);
+extern "C" void LAB_11936710(void);
+extern "C" void LAB_119384fc(void);
+extern "C" void LAB_11938730(void);
+extern "C" void LAB_11938740(void);
+extern "C" void LAB_1193874c(void);
+extern "C" void LAB_1193875c(void);
+extern "C" void LAB_119387ec(void);
+extern "C" void LAB_11938808(void);
+extern "C" void LAB_119388c0(void);
+extern "C" void LAB_119389a4(void);
+extern "C" void LAB_11938abc(void);
+extern "C" void LAB_11938be4(void);
+extern "C" void LAB_11938ccc(void);
+extern "C" void LAB_11938fac(void);
+extern "C" void LAB_11939064(void);
+extern "C" void LAB_11939368(void);
+extern "C" void LAB_1193955c(void);
+extern "C" void LAB_11939614(void);
+extern "C" void LAB_119397f8(void);
+extern "C" void LAB_119398f0(void);
+extern "C" void LAB_119399a8(void);
+extern "C" void LAB_11939a1c(void);
+extern "C" void LAB_11939ad0(void);
+extern "C" void LAB_11939b88(void);
+extern "C" void LAB_11939bfc(void);
+extern "C" void LAB_11939d64(void);
+extern "C" void LAB_11939e1c(void);
+extern "C" void LAB_11939e90(void);
+extern "C" void LAB_11939eec(void);
+extern "C" void LAB_11939fe8(void);
+extern "C" void LAB_1193a5b8(void);
+extern "C" void LAB_1193a7ec(void);
+extern "C" void LAB_1193a7fc(void);
+extern "C" void LAB_1193a808(void);
+extern "C" void LAB_1193a818(void);
+extern "C" void LAB_1193a8d8(void);
+extern "C" void LAB_1193a990(void);
+extern "C" void LAB_1193aa48(void);
+extern "C" void LAB_1193ace4(void);
+extern "C" void LAB_1193ae18(void);
+extern "C" void LAB_1193b05c(void);
+extern "C" void LAB_1193b06c(void);
+extern "C" void LAB_1193b078(void);
+extern "C" void LAB_1193b088(void);
+extern "C" void LAB_1193b11c(void);
+extern "C" void LAB_1193b1d4(void);
+extern "C" void LAB_1193b230(void);
+extern "C" void LAB_1193b318(void);
+extern "C" void LAB_1193b3d0(void);
+extern "C" void LAB_1193b550(void);
+extern "C" void LAB_1193b608(void);
+extern "C" void LAB_1193b6c0(void);
+extern "C" void LAB_1193b8ec(void);
+extern "C" void LAB_1193b9a4(void);
+extern "C" void LAB_1193ba74(void);
+extern "C" void LAB_1193bb60(void);
+extern "C" void LAB_1193bbbc(void);
+extern "C" void LAB_1193bbcc(void);
+extern "C" void LAB_1193bbe0(void);
+extern "C" void LAB_1193bbf0(void);
+extern "C" void LAB_1193bf8c(void);
+extern "C" void LAB_1193c044(void);
+extern "C" void LAB_1193c13c(void);
+extern "C" void LAB_1193c14c(void);
+extern "C" void LAB_1193c334(void);
+extern "C" void LAB_1193c3ec(void);
+extern "C" void LAB_1193c4a4(void);
+extern "C" void LAB_1193c588(void);
+extern "C" void LAB_1193c63c(void);
+extern "C" void LAB_1193c6f4(void);
+extern "C" void LAB_1193c808(void);
+extern "C" void LAB_1193c818(void);
+extern "C" void LAB_1193c82c(void);
+extern "C" void LAB_1193c8e4(void);
+extern "C" void LAB_1193c970(void);
+extern "C" void LAB_1193ca28(void);
+extern "C" void LAB_1193cae4(void);
+extern "C" void LAB_1193cb9c(void);
+extern "C" void LAB_1193cc28(void);
+extern "C" void LAB_1193cd34(void);
+extern "C" void LAB_1193d0b4(void);
+extern "C" void LAB_1193d16c(void);
+extern "C" void LAB_1193d224(void);
+extern "C" void LAB_1193d2dc(void);
+extern "C" void LAB_1193d3a4(void);
+extern "C" void LAB_1193d46c(void);
+extern "C" void LAB_1193d538(void);
+extern "C" void LAB_1193d5f0(void);
+extern "C" void LAB_12126b6c(void);
+extern "C" void LAB_12126b84(void);
+extern "C" void LAB_121a0e68(void);
+extern "C" void LAB_122fc7ac(void);
+extern "C" void LAB_122fc888(void);
+extern "C" void LAB_122fc9c0(void);
+
+
 extern "C" void FUN_10017003(void);
 extern "C" void FUN_1004efb7(void);
 
@@ -2835,50 +3128,72 @@ int __fastcall FUN_10d74790(int param_1, unsigned int recovered_unused_stack_0, 
 // Reference entry 10d74820; body size 54 bytes.
 #line 1 "ENTRY_10d74820"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d74820(undefined4 param_2)
+__declspec(naked) void FUN_10d74820(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIActionDelegateCB);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAccountSignInCompleteState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCAccountSignInCompleteState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11883dbc
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1192efa0
+  __asm mov dword ptr [ecx + 0xc], LAB_1192f058
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d74f20; body size 54 bytes.
 #line 1 "ENTRY_10d74f20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d74f20(undefined4 param_2)
+__declspec(naked) void FUN_10d74f20(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIActionDelegateCB);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAccountSignInState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCAccountSignInState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11883dbc
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1192e8ec
+  __asm mov dword ptr [ecx + 0xc], LAB_1192e9a4
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d75190; body size 52 bytes.
 #line 1 "ENTRY_10d75190"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d75190(undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6)
+__declspec(naked) void FUN_10d75190(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_1025f580((int)(param_2),(int)(param_3),(int)(param_6));
-  param_1[6] = (undefined4)(param_4);
-  param_1[7] = (undefined4)(param_5);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSimpleStringInput);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0x1c]
+  __asm mov esi, ecx
+  __asm push dword ptr [esp + 0x14]
+  __asm mov dword ptr [esp + 0xc], esi
+  __asm push dword ptr [esp + 0x14]
+  __asm call LAB_10056d52
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm mov dword ptr [esi + 0x18], eax
+  __asm mov eax, dword ptr [esp + 0x18]
+  __asm mov dword ptr [esi + 0x1c], eax
+  __asm mov eax, esi
+  __asm mov dword ptr [esi], LAB_1192e7d8
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 0x14
 }
+
 
 
 // Reference entry 10d751e0; body size 9 bytes.
@@ -3162,49 +3477,67 @@ bool __fastcall FUN_10d76640(int param_1)
 // Reference entry 10d76650; body size 26 bytes.
 #line 1 "ENTRY_10d76650"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10d76650(int param_2)
+__declspec(naked) void FUN_10d76650(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 uVar1;
-  
-  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)((0x0))) {
-    uVar1 = (undefined4)(((SCVtbl_0_1*)(*(undefined4 **)(param_2 + 0x24)))->v((int)(param_1)), 0);
-    *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar1);
-  }
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10d76666
+  __asm mov eax, dword ptr [ecx]
+  __asm push esi
+  __asm call dword ptr [eax]
+  __asm mov dword ptr [esi + 0x24], eax
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d76670; body size 26 bytes.
 #line 1 "ENTRY_10d76670"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10d76670(int param_2)
+__declspec(naked) void FUN_10d76670(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 uVar1;
-  
-  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)((0x0))) {
-    uVar1 = (undefined4)(((SCVtbl_0_1*)(*(undefined4 **)(param_2 + 0x24)))->v((int)(param_1)), 0);
-    *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar1);
-  }
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10d76686
+  __asm mov eax, dword ptr [ecx]
+  __asm push esi
+  __asm call dword ptr [eax]
+  __asm mov dword ptr [esi + 0x24], eax
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d76690; body size 26 bytes.
 #line 1 "ENTRY_10d76690"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10d76690(int param_2)
+__declspec(naked) void FUN_10d76690(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 uVar1;
-  
-  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)((0x0))) {
-    uVar1 = (undefined4)(((SCVtbl_0_1*)(*(undefined4 **)(param_2 + 0x24)))->v((int)(param_1)), 0);
-    *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar1);
-  }
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10d766a6
+  __asm mov eax, dword ptr [ecx]
+  __asm push esi
+  __asm call dword ptr [eax]
+  __asm mov dword ptr [esi + 0x24], eax
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d766b0; body size 10 bytes.
@@ -3330,14 +3663,15 @@ undefined4 __fastcall FUN_10d77f10(int param_1)
 // Reference entry 10d798e0; body size 11 bytes.
 #line 1 "ENTRY_10d798e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 __fastcall FUN_10d798e0(int *param_1)
+__declspec(naked) void FUN_10d798e0(void)
 
 {
-  ((SCVtbl_45_0*)(param_1))->v();
-  return (undefined4)(1);
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xb4]
+  __asm mov al, 1
+  __asm ret
 }
+
 
 
 // Reference entry 10d7a3b0; body size 3 bytes.
@@ -3401,181 +3735,244 @@ void __fastcall FUN_10d7a470(undefined4 *param_1)
 // Reference entry 10d7c050; body size 43 bytes.
 #line 1 "ENTRY_10d7c050"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d7c050(int *param_2)
+__declspec(naked) void FUN_10d7c050(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10d7c075
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d7c090; body size 43 bytes.
 #line 1 "ENTRY_10d7c090"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d7c090(int *param_2)
+__declspec(naked) void FUN_10d7c090(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10d7c0b5
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d7c0d0; body size 43 bytes.
 #line 1 "ENTRY_10d7c0d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d7c0d0(int *param_2)
+__declspec(naked) void FUN_10d7c0d0(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10d7c0f5
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d7c110; body size 43 bytes.
 #line 1 "ENTRY_10d7c110"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d7c110(int *param_2)
+__declspec(naked) void FUN_10d7c110(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10d7c135
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d7c150; body size 43 bytes.
 #line 1 "ENTRY_10d7c150"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d7c150(int *param_2)
+__declspec(naked) void FUN_10d7c150(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10d7c175
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d7c190; body size 43 bytes.
 #line 1 "ENTRY_10d7c190"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d7c190(int *param_2)
+__declspec(naked) void FUN_10d7c190(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10d7c1b5
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d7c1d0; body size 43 bytes.
 #line 1 "ENTRY_10d7c1d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d7c1d0(int *param_2)
+__declspec(naked) void FUN_10d7c1d0(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10d7c1f5
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d7c210; body size 43 bytes.
 #line 1 "ENTRY_10d7c210"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d7c210(int *param_2)
+__declspec(naked) void FUN_10d7c210(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10d7c235
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d7c250; body size 43 bytes.
 #line 1 "ENTRY_10d7c250"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d7c250(int *param_2)
+__declspec(naked) void FUN_10d7c250(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10d7c275
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d7ca50; body size 16 bytes.
@@ -3609,38 +4006,48 @@ undefined4 * __fastcall FUN_10d7ca70(undefined4 *param_1)
 // Reference entry 10d7d080; body size 80 bytes.
 #line 1 "ENTRY_10d7d080"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10d7d080(undefined4 *param_1)
+__declspec(naked) void FUN_10d7d080(void)
 
 {
-  thunk_FUN_10d7cc90();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RAccountDeletionAIOOp);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_RAccountDeletionAIOOp);
-  param_1[0xd] = (undefined4)(0xfffffffe);
-  param_1[0xf] = (undefined4)(0);
-  param_1[0x10] = (undefined4)(0);
-  param_1[0xe] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  param_1[0x11] = (undefined4)(0);
-  param_1[0x12] = (undefined4)(0);
-  param_1[0x13] = (undefined4)(0xffffffff);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 4], esi
+  __asm call LAB_1002ed7f
+  __asm mov dword ptr [esi], LAB_119305b8
+  __asm mov eax, esi
+  __asm mov dword ptr [esi + 8], LAB_119305ec
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x34 __asm _emit 0xfe __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x3c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46
+  __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esi + 0x38], LAB_118821c0
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x48 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46
+  __asm _emit 0x4c __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10d7d390; body size 42 bytes.
 #line 1 "ENTRY_10d7d390"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d7d390(undefined4 param_2)
+__declspec(naked) void FUN_10d7d390(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAccountCallback);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx], LAB_118abe0c
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1192f13c
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d80690; body size 11 bytes.
@@ -3790,253 +4197,53 @@ void __fastcall FUN_10d81bf0(undefined4 *param_1)
 // Reference entry 10d81c00; body size 18 bytes.
 #line 1 "ENTRY_10d81c00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10d81c00(undefined4 *param_1)
+__declspec(naked) void FUN_10d81c00(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpAccountCreate);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpAccountCreate);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  if (param_1[3] != 0) {
-    piVar1 = (int *)((int *)param_1[4]);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      param_1[3] = (undefined4)(0);
-      param_1[4] = (undefined4)(0);
-      ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
-    }
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-  }
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
-  param_1[0xb] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
-  param_1[10] = (undefined4)(0);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  thunk_FUN_101ba0d0();
-  piVar1 = (int *)((int *)param_1[4]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
-  thunk_FUN_11240850();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_1192f278
+  __asm mov dword ptr [ecx + 8], LAB_1192f2c0
+  __asm jmp LAB_100948c8
 }
+
 
 
 // Reference entry 10d81c20; body size 18 bytes.
 #line 1 "ENTRY_10d81c20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10d81c20(undefined4 *param_1)
+__declspec(naked) void FUN_10d81c20(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpAccountDeletion);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpAccountDeletion);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  if (param_1[3] != 0) {
-    piVar1 = (int *)((int *)param_1[4]);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      param_1[3] = (undefined4)(0);
-      param_1[4] = (undefined4)(0);
-      ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
-    }
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-  }
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
-  param_1[0xb] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
-  param_1[10] = (undefined4)(0);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  thunk_FUN_101ba0d0();
-  piVar1 = (int *)((int *)param_1[4]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
-  thunk_FUN_11240850();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_1192f3f0
+  __asm mov dword ptr [ecx + 8], LAB_1192f438
+  __asm jmp LAB_1006c189
 }
+
 
 
 // Reference entry 10d81c40; body size 18 bytes.
 #line 1 "ENTRY_10d81c40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10d81c40(undefined4 *param_1)
+__declspec(naked) void FUN_10d81c40(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpAccountLogin);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpAccountLogin);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  if (param_1[3] != 0) {
-    piVar1 = (int *)((int *)param_1[4]);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      param_1[3] = (undefined4)(0);
-      param_1[4] = (undefined4)(0);
-      ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
-    }
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-  }
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
-  param_1[0xb] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
-  param_1[10] = (undefined4)(0);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  thunk_FUN_101ba0d0();
-  piVar1 = (int *)((int *)param_1[4]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
-  thunk_FUN_11240850();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_1192f1bc
+  __asm mov dword ptr [ecx + 8], LAB_1192f204
+  __asm jmp LAB_1002d664
 }
+
 
 
 // Reference entry 10d81c60; body size 18 bytes.
 #line 1 "ENTRY_10d81c60"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10d81c60(undefined4 *param_1)
+__declspec(naked) void FUN_10d81c60(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpAccountRefreshTokens);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpAccountRefreshTokens);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  if (param_1[3] != 0) {
-    piVar1 = (int *)((int *)param_1[4]);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      param_1[3] = (undefined4)(0);
-      param_1[4] = (undefined4)(0);
-      ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
-    }
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-  }
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
-  param_1[0xb] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
-  param_1[10] = (undefined4)(0);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  thunk_FUN_101ba0d0();
-  piVar1 = (int *)((int *)param_1[4]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
-  thunk_FUN_11240850();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_1192f334
+  __asm mov dword ptr [ecx + 8], LAB_1192f37c
+  __asm jmp LAB_10009ab6
 }
+
 
 
 // Reference entry 10d821c0; body size 51 bytes.
@@ -4970,50 +5177,70 @@ undefined4 __fastcall FUN_10d87ea0(int param_1, unsigned int recovered_unused_st
 // Reference entry 10d87f90; body size 43 bytes.
 #line 1 "ENTRY_10d87f90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d87f90(int *param_2)
+__declspec(naked) void FUN_10d87f90(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10d87fb5
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d87fd0; body size 83 bytes.
 #line 1 "ENTRY_10d87fd0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d87fd0(int *param_2)
+__declspec(naked) void FUN_10d87fd0(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  if ((int *)(param_2) != (int *)((int *)*param_1)) {
-    piVar1 = (int *)((int *)param_1[1]);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      *param_1 = (int)(0);
-      param_1[1] = (int)(0);
-      ((SCVtbl_2_0*)(piVar1))->v();
-    }
-    *param_1 = (int)((int)param_2);
-    if ((int *)(param_2) != (int *)(0x0)) {
-      piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-      param_1[1] = (int)((int)piVar1);
-      ((SCVtbl_1_0*)(piVar1))->v();
-      return (int *)(param_1);
-    }
-    param_1[1] = (int)(0);
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [eax]
+  __asm cmp edi, dword ptr [esi]
+  __asm je 0x10d8801c
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10d87ff7
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov dword ptr [esi], edi
+  __asm test edi, edi
+  __asm je 0x10d88015
+  __asm mov eax, dword ptr [edi]
+  __asm mov ecx, edi
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm pop edi
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop edi
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d88040; body size 16 bytes.
@@ -5047,16 +5274,22 @@ undefined4 * __fastcall FUN_10d880a0(undefined4 *param_1)
 // Reference entry 10d880c0; body size 42 bytes.
 #line 1 "ENTRY_10d880c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d880c0(undefined4 param_2)
+__declspec(naked) void FUN_10d880c0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuBrowse_EventSink);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx], LAB_11881498
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_119307c8
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d889a0; body size 19 bytes.
@@ -5125,49 +5358,64 @@ undefined4 __fastcall FUN_10d88cb0(undefined4 *param_1)
 // Reference entry 10d88f50; body size 25 bytes.
 #line 1 "ENTRY_10d88f50"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d88f50(int *param_2)
+__declspec(naked) void FUN_10d88f50(void)
+
 {
-  int param_1 = (int )this;
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0x28), 0);
-  *param_2 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_2);
+  __asm mov ecx, dword ptr [ecx + 0x28]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x10d88f63
+  __asm mov edx, dword ptr [ecx]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d89120; body size 87 bytes.
 #line 1 "ENTRY_10d89120"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10d89120(int param_1)
+__declspec(naked) void FUN_10d89120(void)
 
 {
-  char cVar1;
-  SCStr aSStack_1c [4];
-  int iStack_18;
-  undefined4 uStack_14;
-  
-  cVar1 = (char)(*(char *)(param_1 + 0x88));
-  *(undefined1*)(param_1 + 0x88) = (undefined1)(0);
-  uStack_14 = (undefined4)(0x10d8913e);
-  thunk_FUN_10d89400();
-  uStack_14 = (undefined4)(0);
-  iStack_18 = (int)(param_1);
-  ((SCStr *)((uint)&aSStack_1c))->int_allocRep("SCISettingsMenu:onContentsChanged");
-  thunk_FUN_103d65f0<>();
-  if (cVar1 != '\0') {
-    uStack_14 = (undefined4)(0);
-    iStack_18 = (int)(param_1);
-    ((SCStr *)((uint)&aSStack_1c))->int_allocRep("SCISettingsMenu:onMenuLoaded");
-    thunk_FUN_103d65f0<>();
-  }
-  return;
+  __asm push ecx
+  __asm push ebx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov bl, byte ptr [esi + 0x88]
+  __asm mov ecx, dword ptr [esi + 0x98]
+  __asm mov byte ptr [esi + 0x88], 0
+  __asm call LAB_10040fe3
+  __asm push 0
+  __asm push esi
+  __asm push ecx
+  __asm mov ecx, esp
+  __asm push offset LAB_1187e854
+  __asm call LAB_1005273e
+  __asm lea ecx, [esi + 8]
+  __asm call LAB_10013543
+  __asm test bl, bl
+  __asm je 0x10d89172
+  __asm push 0
+  __asm push esi
+  __asm push ecx
+  __asm mov ecx, esp
+  __asm push offset LAB_1187e8f0
+  __asm call LAB_1005273e
+  __asm lea ecx, [esi + 8]
+  __asm call LAB_10013543
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10d892d0; body size 3 bytes.
@@ -5255,56 +5503,64 @@ void __fastcall FUN_10d893b0(undefined4 *param_1)
 // Reference entry 10d89620; body size 79 bytes.
 #line 1 "ENTRY_10d89620"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10d89620(undefined4 *param_1)
+__declspec(naked) void FUN_10d89620(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCShowUpdateMessageActionFactory);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  param_1[6] = (undefined4)(0);
-  param_1[7] = (undefined4)(0);
-  *(undefined1*)(param_1 + 8) = (undefined1)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_11886d8c
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_119308a0
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm mov byte ptr [ecx + 0x20], 0
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10d8ada0; body size 24 bytes.
 #line 1 "ENTRY_10d8ada0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10d8ada0(undefined4 *param_1)
+__declspec(naked) void FUN_10d8ada0(void)
 
 {
-  thunk_FUN_104ed740();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCResetPasswordAction);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 4], esi
+  __asm call LAB_1000259a
+  __asm mov dword ptr [esi], LAB_11930964
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10d8adc0; body size 47 bytes.
 #line 1 "ENTRY_10d8adc0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10d8adc0(undefined4 *param_1)
+__declspec(naked) void FUN_10d8adc0(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSignOutActionFactory);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_11886d8c
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11930998
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10d8ae00; body size 5 bytes.
@@ -5320,30 +5576,39 @@ void __fastcall FUN_10d8ae00(undefined4 *param_1)
 // Reference entry 10d8be20; body size 78 bytes.
 #line 1 "ENTRY_10d8be20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d8be20(int *param_2)
+__declspec(naked) void FUN_10d8be20(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  int iVar3;
-  
-  piVar1 = (int *)((int *)*param_2);
-  *param_2 = (int)(0);
-  piVar2 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar2) != (int *)(0x0)) {
-    *param_1 = (int)(0);
-    param_1[1] = (int)(0);
-    ((SCVtbl_2_0*)(piVar2))->v();
-  }
-  *param_1 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    iVar3 = (int)(((SCVtbl_3_0*)(piVar1))->v(), 0);
-    param_1[1] = (int)(iVar3);
-    return (int *)(param_1);
-  }
-  param_1[1] = (int)(0);
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [eax]
+  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10d8be49
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov dword ptr [esi], edi
+  __asm test edi, edi
+  __asm je 0x10d8be60
+  __asm mov eax, dword ptr [edi]
+  __asm mov ecx, edi
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, esi
+  __asm pop edi
+  __asm pop esi
+  __asm ret 4
+  __asm pop edi
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d8bef0; body size 6 bytes.
@@ -5361,18 +5626,23 @@ char * FUN_10d8bef0(void)
 // Reference entry 10d8c2a0; body size 56 bytes.
 #line 1 "ENTRY_10d8c2a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d8c2a0(undefined4 param_2)
+__declspec(naked) void FUN_10d8c2a0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  param_1[4] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCAlarmSettingsFrequencyAction);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx], LAB_11886d8c
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x10], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11930b5c
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d8cd60; body size 5 bytes.
@@ -5458,18 +5728,22 @@ undefined4 __fastcall FUN_10d8d160(undefined4 *param_1)
 // Reference entry 10d8fa00; body size 25 bytes.
 #line 1 "ENTRY_10d8fa00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d8fa00(int *param_2)
+__declspec(naked) void FUN_10d8fa00(void)
+
 {
-  int param_1 = (int )this;
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0xc), 0);
-  *param_2 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_2);
+  __asm mov ecx, dword ptr [ecx + 0xc]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x10d8fa13
+  __asm mov edx, dword ptr [ecx]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d8fa30; body size 19 bytes.
@@ -5581,15 +5855,29 @@ undefined4 __fastcall FUN_10d90a00(undefined4 *param_1)
 // Reference entry 10d91560; body size 54 bytes.
 #line 1 "ENTRY_10d91560"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10d91560(undefined4 param_2,SCStr *param_3)
+__declspec(naked) void FUN_10d91560(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  if ((*(char **)(param_1 + 0xc) == (char *)((0x0))) || (**(char **)(param_1 + 0xc) == '\0')) {
-    ((SCStr *)(param_1))->format((char *)(param_1 + 0xc));
-  }
-  ((SCStr *)(param_3))->m_op_ctor(param_1 + 0xc);
-  return (SCStr *)(param_3);
+  __asm mov eax, dword ptr [ecx + 0xc]
+  __asm push esi
+  __asm lea esi, [ecx + 0xc]
+  __asm test eax, eax
+  __asm je 0x10d91570
+  __asm cmp byte ptr [eax], 0
+  __asm jne 0x10d91584
+  __asm push dword ptr [LAB_12126b6c]
+  __asm push offset LAB_11931050
+  __asm push esi
+  __asm call LAB_1003a1de
+  __asm add esp, 0xc
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm push esi
+  __asm call LAB_10036c23
+  __asm mov eax, dword ptr [esp + 8]
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d91bc0; body size 3 bytes.
@@ -5642,57 +5930,70 @@ undefined4 __fastcall FUN_10d91bc0(undefined4 *param_1)
 // Reference entry 10d941d0; body size 54 bytes.
 #line 1 "ENTRY_10d941d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10d941d0(undefined4 *param_1)
+__declspec(naked) void FUN_10d941d0(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCHistoryDeleteAllActionFactory);
-  param_1[4] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_11886d8c
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11931328
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10d94220; body size 42 bytes.
 #line 1 "ENTRY_10d94220"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d94220(undefined4 param_2)
+__declspec(naked) void FUN_10d94220(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCHistoryHideAction);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx], LAB_11883764
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_119315e8
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d94260; body size 88 bytes.
 #line 1 "ENTRY_10d94260"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d94260(undefined1 param_2,undefined1 param_3)
+__declspec(naked) void FUN_10d94260(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  *(undefined1*)(param_1 + 5) = (undefined1)(param_2);
-  *(undefined1*)((int)param_1 + 0x15) = (undefined1)(param_3);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCRecentlyPlayedToggleActionFactory);
-  param_1[4] = (undefined4)(0);
-  *(undefined1*)((int)param_1 + 0x16) = (undefined1)(0);
-  param_1[6] = (undefined4)(0);
-  param_1[7] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov al, byte ptr [esp + 8]
+  __asm mov dword ptr [ecx], LAB_11886d8c
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov byte ptr [ecx + 0x14], al
+  __asm mov al, byte ptr [esp + 0xc]
+  __asm mov byte ptr [ecx + 0x15], al
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx], LAB_11931354
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov byte ptr [ecx + 0x16], 0
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d94560; body size 19 bytes.
@@ -5910,25 +6211,24 @@ undefined4 * __fastcall FUN_10d97360(undefined4 *param_1)
 // Reference entry 10d974a0; body size 89 bytes.
 #line 1 "ENTRY_10d974a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10d974a0(undefined4 *param_1)
+__declspec(naked) void FUN_10d974a0(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpSsidResponseObj);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  param_1[6] = (undefined4)(0);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[9] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_11881068
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx], LAB_1193163c
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10d97720; body size 7 bytes.
@@ -6044,30 +6344,39 @@ undefined4 __fastcall FUN_10d9a3f0(undefined4 *param_1)
 // Reference entry 10d9a9d0; body size 78 bytes.
 #line 1 "ENTRY_10d9a9d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10d9a9d0(int *param_2)
+__declspec(naked) void FUN_10d9a9d0(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  int iVar3;
-  
-  piVar1 = (int *)((int *)*param_2);
-  *param_2 = (int)(0);
-  piVar2 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar2) != (int *)(0x0)) {
-    *param_1 = (int)(0);
-    param_1[1] = (int)(0);
-    ((SCVtbl_2_0*)(piVar2))->v();
-  }
-  *param_1 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    iVar3 = (int)(((SCVtbl_3_0*)(piVar1))->v(), 0);
-    param_1[1] = (int)(iVar3);
-    return (int *)(param_1);
-  }
-  param_1[1] = (int)(0);
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [eax]
+  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10d9a9f9
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov dword ptr [esi], edi
+  __asm test edi, edi
+  __asm je 0x10d9aa10
+  __asm mov eax, dword ptr [edi]
+  __asm mov ecx, edi
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, esi
+  __asm pop edi
+  __asm pop esi
+  __asm ret 4
+  __asm pop edi
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d9aa70; body size 6 bytes.
@@ -6097,16 +6406,19 @@ char * FUN_10d9aa80(void)
 // Reference entry 10d9ab20; body size 27 bytes.
 #line 1 "ENTRY_10d9ab20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10d9ab20(undefined4 *param_1)
+__declspec(naked) void FUN_10d9ab20(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_11931990
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [esp], ecx
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10d9acf0; body size 16 bytes.
@@ -6153,38 +6465,50 @@ undefined4 * __fastcall FUN_10d9ad50(undefined4 *param_1)
 // Reference entry 10d9b210; body size 42 bytes.
 #line 1 "ENTRY_10d9b210"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9b210(undefined1 param_2)
+__declspec(naked) void FUN_10d9b210(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_111c06e0((int)(0));
-  *(undefined1*)(param_1 + 0x1b) = (undefined1)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpSetViewContributingAsync);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_SCOpSetViewContributingAsync);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0
+  __asm mov dword ptr [esp + 8], esi
+  __asm call LAB_10073dda
+  __asm mov al, byte ptr [esp + 0xc]
+  __asm mov byte ptr [esi + 0x6c], al
+  __asm mov eax, esi
+  __asm mov dword ptr [esi], LAB_11931b20
+  __asm mov dword ptr [esi + 0x60], LAB_11931b68
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d9b7c0; body size 76 bytes.
 #line 1 "ENTRY_10d9b7c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10d9b7c0(undefined4 *param_1)
+__declspec(naked) void FUN_10d9b7c0(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCIActionDelegate);
-  param_1[3] = (undefined4)(0);
-  param_1[4] = (undefined4)(0);
-  *(undefined1*)(param_1 + 5) = (undefined1)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUpdateMusicIndexAction);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCUpdateMusicIndexAction);
-  *(undefined1*)(param_1 + 6) = (undefined1)(0);
-  param_1[7] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_11883764
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx + 8], LAB_1186d6c8
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov byte ptr [ecx + 0x14], 0
+  __asm mov dword ptr [ecx], LAB_11931a80
+  __asm mov dword ptr [ecx + 8], LAB_11931ab0
+  __asm mov byte ptr [ecx + 0x18], 0
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10d9bbd0; body size 7 bytes.
@@ -6218,64 +6542,14 @@ void __fastcall FUN_10d9bbe0(undefined4 *param_1)
 // Reference entry 10d9bbf0; body size 18 bytes.
 #line 1 "ENTRY_10d9bbf0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10d9bbf0(undefined4 *param_1)
+__declspec(naked) void FUN_10d9bbf0(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpContentDirectoryRefreshShareIndex);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpContentDirectoryRefreshShareIndex);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  if (param_1[3] != 0) {
-    piVar1 = (int *)((int *)param_1[4]);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      param_1[3] = (undefined4)(0);
-      param_1[4] = (undefined4)(0);
-      ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
-    }
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-  }
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
-  param_1[0xb] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
-  param_1[10] = (undefined4)(0);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  thunk_FUN_101ba0d0();
-  piVar1 = (int *)((int *)param_1[4]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
-  thunk_FUN_11240850();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_11931a28
+  __asm mov dword ptr [ecx + 8], LAB_11931a70
+  __asm jmp LAB_1005a36c
 }
+
 
 
 // Reference entry 10d9bc10; body size 18 bytes.
@@ -6297,58 +6571,14 @@ void __fastcall FUN_10d9bc10(undefined4 *param_1)
 // Reference entry 10d9bc30; body size 18 bytes.
 #line 1 "ENTRY_10d9bc30"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10d9bc30(undefined4 *param_1)
+__declspec(naked) void FUN_10d9bc30(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCScheduleIndexUpdateToggleAction);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCScheduleIndexUpdateToggleAction);
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCToggleBooleanSettingActionBase);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCToggleBooleanSettingActionBase);
-  piVar1 = (int *)((int *)param_1[0xb]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[10] = (undefined4)(0);
-    param_1[0xb] = (undefined4)(0);
-    ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
-  }
-  piVar1 = (int *)((int *)param_1[9]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[8] = (undefined4)(0);
-    param_1[9] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-
-  ((SCStr *)((SCStr *)(param_1 + 6)))->int_release();
-  param_1[6] = (undefined4)(0);
-  piVar1 = (int *)((int *)param_1[4]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_11931bec
+  __asm mov dword ptr [ecx + 8], LAB_11931c28
+  __asm jmp LAB_10082ed9
 }
+
 
 
 // Reference entry 10d9bc50; body size 11 bytes.
@@ -6369,58 +6599,14 @@ void __fastcall FUN_10d9bc50(undefined4 *param_1)
 // Reference entry 10d9bd20; body size 18 bytes.
 #line 1 "ENTRY_10d9bd20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10d9bd20(undefined4 *param_1)
+__declspec(naked) void FUN_10d9bd20(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCViewContributingArtistsToggleAction);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCViewContributingArtistsToggleAction);
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCToggleBooleanSettingActionBase);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCToggleBooleanSettingActionBase);
-  piVar1 = (int *)((int *)param_1[0xb]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[10] = (undefined4)(0);
-    param_1[0xb] = (undefined4)(0);
-    ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
-  }
-  piVar1 = (int *)((int *)param_1[9]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[8] = (undefined4)(0);
-    param_1[9] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-
-  ((SCStr *)((SCStr *)(param_1 + 6)))->int_release();
-  param_1[6] = (undefined4)(0);
-  piVar1 = (int *)((int *)param_1[4]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_11931b8c
+  __asm mov dword ptr [ecx + 8], LAB_11931bc8
+  __asm jmp LAB_10082ed9
 }
+
 
 
 // Reference entry 10d9bdb0; body size 3 bytes.
@@ -6582,19 +6768,22 @@ void __fastcall FUN_10d9e0d0(int *param_1)
 // Reference entry 10d9e270; body size 47 bytes.
 #line 1 "ENTRY_10d9e270"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10d9e270(undefined4 *param_1)
+__declspec(naked) void FUN_10d9e270(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceSetupWizardData_Data);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_11881068
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx], LAB_11931c7c
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10d9e440; body size 65 bytes.
@@ -6641,13 +6830,26 @@ undefined4 __fastcall FUN_10d9e4a0(undefined4 *param_1)
 // Reference entry 10d9e700; body size 35 bytes.
 #line 1 "ENTRY_10d9e700"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e700(undefined4 *param_2)
+__declspec(naked) void FUN_10d9e700(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->m_op_ctor((SCStr *)(param_2 + 1));
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov edx, dword ptr [esp + 8]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 4], esi
+  __asm mov eax, dword ptr [edx]
+  __asm mov dword ptr [esi], eax
+  __asm lea ecx, [esi + 4]
+  __asm lea eax, [edx + 4]
+  __asm push eax
+  __asm call LAB_10036c23
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d9e730; body size 18 bytes.
@@ -6681,169 +6883,337 @@ undefined4 * __fastcall FUN_10d9e750(undefined4 *param_1, unsigned int recovered
 // Reference entry 10d9e830; body size 35 bytes.
 #line 1 "ENTRY_10d9e830"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e830(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9e830(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9e860; body size 35 bytes.
 #line 1 "ENTRY_10d9e860"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e860(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9e860(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9e890; body size 35 bytes.
 #line 1 "ENTRY_10d9e890"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e890(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9e890(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9e8c0; body size 35 bytes.
 #line 1 "ENTRY_10d9e8c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e8c0(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9e8c0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9e8f0; body size 35 bytes.
 #line 1 "ENTRY_10d9e8f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e8f0(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9e8f0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9e920; body size 35 bytes.
 #line 1 "ENTRY_10d9e920"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e920(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9e920(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9e950; body size 35 bytes.
 #line 1 "ENTRY_10d9e950"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e950(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9e950(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9e980; body size 35 bytes.
 #line 1 "ENTRY_10d9e980"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e980(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9e980(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9e9b0; body size 35 bytes.
 #line 1 "ENTRY_10d9e9b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e9b0(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9e9b0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9e9e0; body size 35 bytes.
 #line 1 "ENTRY_10d9e9e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9e9e0(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9e9e0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9ea10; body size 35 bytes.
 #line 1 "ENTRY_10d9ea10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9ea10(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9ea10(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9ea40; body size 35 bytes.
 #line 1 "ENTRY_10d9ea40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9ea40(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9ea40(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9ea70; body size 35 bytes.
 #line 1 "ENTRY_10d9ea70"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9ea70(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9ea70(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9eaa0; body size 35 bytes.
 #line 1 "ENTRY_10d9eaa0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9eaa0(undefined4 *param_2,char *param_3)
+__declspec(naked) void FUN_10d9eaa0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->int_allocRep(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], esi
+  __asm lea ecx, [esi + 4]
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1005273e
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9ead0; body size 3 bytes.
@@ -6873,20 +7243,19 @@ void FUN_10d9eae0(void)
 // Reference entry 10d9eaf0; body size 25 bytes.
 #line 1 "ENTRY_10d9eaf0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10d9eaf0(void)
+__declspec(naked) void FUN_10d9eaf0(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x18), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  return;
+  __asm push 0x18
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm ret
 }
+
 
 
 // Reference entry 10d9eb10; body size 13 bytes.
@@ -6993,17 +7362,22 @@ undefined4 FUN_10d9f100(undefined4 param_1)
 // Reference entry 10d9f110; body size 31 bytes.
 #line 1 "ENTRY_10d9f110"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10d9f110(void)
 
-uint __stdcall FUN_10d9f110(int param_1,uint *param_2){
-  uint in_EAX;
-  
-  if ((*(char *)(param_1 + 0xd) == '\0') &&
-     (in_EAX = (uint)(*param_2), *(int *)(param_1 + 0x10) <= (int)(in_EAX))) {
-    return (uint)(((uint)((int3)(in_EAX >> 8)) << 8 | (uint)(1)));
-  }
-  return (uint)(in_EAX & 0xffffff00);
+{
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm cmp byte ptr [ecx + 0xd], 0
+  __asm jne 0x10d9f12a
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [eax]
+  __asm cmp eax, dword ptr [ecx + 0x10]
+  __asm jl 0x10d9f12a
+  __asm mov al, 1
+  __asm ret 8
+  __asm xor al, al
+  __asm ret 8
 }
+
 
 
 // Reference entry 10d9f140; body size 13 bytes.
@@ -7282,13 +7656,26 @@ undefined4 __fastcall FUN_10d9f650(undefined4 param_1)
 // Reference entry 10d9f800; body size 35 bytes.
 #line 1 "ENTRY_10d9f800"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d9f800(undefined4 *param_2)
+__declspec(naked) void FUN_10d9f800(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_2);
-  ((SCStr *)((SCStr *)(param_1 + 1)))->m_op_ctor((SCStr *)(param_2 + 1));
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov edx, dword ptr [esp + 8]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 4], esi
+  __asm mov eax, dword ptr [edx]
+  __asm mov dword ptr [esi], eax
+  __asm lea ecx, [esi + 4]
+  __asm lea eax, [edx + 4]
+  __asm push eax
+  __asm call LAB_10036c23
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10d9fbf0; body size 14 bytes.
@@ -7394,37 +7781,36 @@ int __fastcall FUN_10d9fcb0(int *param_1)
 // Reference entry 10da0080; body size 31 bytes.
 #line 1 "ENTRY_10da0080"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10da0080(undefined4 *param_1)
+__declspec(naked) void FUN_10da0080(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x18), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return;
+  __asm push esi
+  __asm push 0x18
+  __asm mov esi, ecx
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10da00d0; body size 14 bytes.
 #line 1 "ENTRY_10da00d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10da00d0(int param_1)
+__declspec(naked) void FUN_10da00d0(void)
 
 {
-  if (*(int *)(param_1 + 4) != 0xaaaaaaa) {
-    return;
-  }
-                    
-  std::_Xlength_error("map/set too long");
+  __asm cmp dword ptr [ecx + 4], 0xaaaaaaa
+  __asm je LAB_1000d4ae
+  __asm ret
 }
+
 
 
 // Reference entry 10da00f0; body size 5 bytes.
@@ -7538,59 +7924,64 @@ undefined4 __fastcall FUN_10da0170(undefined4 param_1)
 // Reference entry 10da0410; body size 79 bytes.
 #line 1 "ENTRY_10da0410"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10da0410(int param_2)
+__declspec(naked) void FUN_10da0410(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  
-  piVar1 = (int *)(*(int **)(param_2 + 8), 0);
-  *(int*)(param_2 + 8) = (int)(*piVar1);
-  if (*(char *)(*piVar1 + 0xd) == '\0') {
-    *(int*)(*piVar1 + 4) = (int)(param_2);
-  }
-  piVar1[1] = (int)(*(int *)(param_2 + 4));
-  if ((int)(param_2) == *(int *)(*param_1 + 4)) {
-    *(int**)(*param_1 + 4) = (int *)(piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2 = (int *)(*(int **)(param_2 + 4), 0);
-  if ((int)(param_2) == *piVar2) {
-    *piVar2 = (int)((int)piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2[2] = (int)((int)piVar1);
-  *piVar1 = (int)(param_2);
-  *(int**)(param_2 + 4) = (int *)(piVar1);
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [edx + 8]
+  __asm mov eax, dword ptr [esi]
+  __asm mov dword ptr [edx + 8], eax
+  __asm mov eax, dword ptr [esi]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10da0428
+  __asm mov dword ptr [eax + 4], edx
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm cmp edx, dword ptr [eax + 4]
+  __asm jne 0x10da0441
+  __asm mov dword ptr [eax + 4], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov eax, dword ptr [edx + 4]
+  __asm cmp edx, dword ptr [eax]
+  __asm jne 0x10da0453
+  __asm mov dword ptr [eax], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov dword ptr [eax + 8], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10da0480; body size 30 bytes.
 #line 1 "ENTRY_10da0480"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-int FUN_10da0480(int param_1)
+__declspec(naked) void FUN_10da0480(void)
 
 {
-  char cVar1;
-  int iVar2;
-  int iVar3;
-  
-  cVar1 = (char)(*(char *)(*(int *)(param_1 + 8) + 0xd));
-  iVar2 = (int)(*(int *)(param_1 + 8));
-  while (iVar3 = (int)(iVar2), cVar1 == '\0') {
-    iVar2 = (int)(*(int *)(iVar3 + 8));
-    cVar1 = (char)(*(char *)(iVar2 + 0xd));
-    param_1 = (int)(iVar3);
-  }
-  return (int)(param_1);
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10da049b
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
+  __asm mov ecx, eax
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm je 0x10da0490
+  __asm mov eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10da04b0; body size 31 bytes.
@@ -7692,37 +8083,41 @@ undefined4 __fastcall FUN_10da04e0(int param_1)
 // Reference entry 10da0580; body size 90 bytes.
 #line 1 "ENTRY_10da0580"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10da0580(uint param_1)
+__declspec(naked) void FUN_10da0580(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0xaaaaaab) {
-    param_1 = (uint)(param_1 * 0x18);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp eax, 0xaaaaaaa
+  __asm ja 0x10da05d5
+  __asm lea eax, [eax + eax*2]
+  __asm shl eax, 3
+  __asm cmp eax, 0x1000
+  __asm jb 0x10da05c0
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10da05d5
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10da05ba
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10da05d0
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10da06e0; body size 13 bytes.
@@ -7751,56 +8146,60 @@ undefined4 __fastcall FUN_10da06f0(undefined4 *param_1)
 // Reference entry 10da0710; body size 57 bytes.
 #line 1 "ENTRY_10da0710"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10da0710(undefined4 param_1,int param_2,int param_3)
+__declspec(naked) void FUN_10da0710(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_3 * 0x18);
-  iVar1 = (int)(param_2);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_2 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_2 - iVar1) - 4U) {
-                    
-                    
-                    
-      _invalid_parameter_noinfo_noreturn();
-      return;
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm lea ecx, [eax + eax*2]
+  __asm mov eax, dword ptr [esp + 8]
+  __asm shl ecx, 3
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10da0738
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10da0743
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
+  __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 // Reference entry 10da0760; body size 60 bytes.
 #line 1 "ENTRY_10da0760"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10da0760(int param_1,int param_2)
+__declspec(naked) void FUN_10da0760(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 0x18);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm lea ecx, [eax + eax*2]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm shl ecx, 3
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10da0788
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10da0795
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10da07c0; body size 11 bytes.
@@ -7829,157 +8228,288 @@ undefined4 __fastcall FUN_10da07d0(int param_1)
 // Reference entry 10da1860; body size 748 bytes.
 #line 1 "ENTRY_10da1860"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10da1860(void)
+__declspec(naked) void FUN_10da1860(void)
 
 {
- try {
-  void *pvVar1;
-  char cVar2;
-  int iVar3;
-  int iVar4;
-  int *_Memory;
-  int iStack_510;
-  int iStack_50c;
-  char *pcStack_508;
-  int iStack_504;
-  int iStack_500;
-  char *pcStack_4fc;
-  void *pvStack_4f8;
-  undefined1 *puStack_4f4;
-  undefined4 uStack_4f0;
-  undefined1 auStack_4ec [1252];
-  uint uStack_8;
-
-  uStack_8 = (uint)(DAT_12126b84 ^ (uint)(uint)&auStack_4ec);
-
-  pcStack_4fc = (char *)((char *)0x0);
-
-  iVar3 = (int)(thunk_FUN_101b5540(uStack_8), 0);
-  if (((iVar3 != 0) && (cVar2 = (char)(thunk_FUN_101b5de0((int)(2)), 0), cVar2 != '\0')) &&
-     (iVar3 = (int)(thunk_FUN_110828b0(), 0), iVar3 != 0)) {
-    iStack_50c = (int)(*(int *)(iVar3 + 0x2d43c));
-    if ((iStack_50c != 0) && (*(int *)(iStack_50c + -0x10) < 0xffff)) {
-      thunk_FUN_1123fce0((int *)(iStack_50c + -0x10));
-    }
-    *(unsigned char*)((char *)&uStack_4f0 + 0) = (unsigned char)(1);
-    ((SCStr *)((SCStr *)&pcStack_508))->m_op_ctor((SwfStr *)&iStack_50c);
-    *(unsigned char*)((char *)&uStack_4f0 + 0) = (unsigned char)(2);
-    ((SCStr *)((SCStr *)&pcStack_4fc))->int_release();
-    pcStack_4fc = (char *)(pcStack_508);
-    ((SCStr *)((SCStr *)&pcStack_4fc))->int_addref();
-    uStack_4f0 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_4f0 + 1)) << 8 | (uint)(3)));
-    ((SCStr *)((SCStr *)&pcStack_508))->int_release();
-    pcStack_508 = (char *)((char *)0x0);
-    thunk_FUN_101ba300();
-  }
-  if (((char *)(pcStack_4fc) != (char *)(0x0)) && (*pcStack_4fc != (char)(('\0')))) {
-    iStack_504 = (int)(0);
-    iStack_500 = (int)(0);
-    *(unsigned char*)((char *)&uStack_4f0 + 0) = (unsigned char)(4);
-    thunk_FUN_101a2b90((int)(&pcStack_4fc));
-    iVar3 = (int)(iStack_500);
-    uStack_4f0 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_4f0 + 1)) << 8 | (uint)(5)));
-    if ((iStack_500 != 0) &&
-       ((_Memory = (int *)((int *)(iStack_500 + -0x10)), *_Memory < (int)((0xffff)) &&
-        (iVar4 = (int)(thunk_FUN_1123fcd0(_Memory), 0), iVar4 == 0)))) {
-      *(undefined4*)(iVar3 + -8) = (undefined4)(0);
-      *(undefined4*)(iVar3 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iVar3,*(undefined4 *)(iVar3 + -4));
-      free(_Memory);
-    }
-    iStack_500 = (int)(iStack_510);
-    if ((iStack_510 != 0) && (*(int *)(iStack_510 + -0x10) < 0xffff)) {
-      thunk_FUN_1123fce0(iStack_510 + -0x10);
-    }
-    *(unsigned char*)((char *)&uStack_4f0 + 0) = (unsigned char)(6);
-    if (((iStack_510 != 0) && (*(int *)(iStack_510 + -0x10) < 0xffff)) &&
-       (iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iStack_510 + -0x10)), 0), iVar3 == 0)) {
-      *(undefined4*)(iStack_510 + -8) = (undefined4)(0);
-      *(undefined4*)(iStack_510 + -0xc) = (undefined4)(0);
-      thunk_FUN_113cfb70(iStack_510,*(undefined4 *)(iStack_510 + -4));
-      free((char *)(iStack_510 + -0x10));
-    }
-    *(unsigned char*)((char *)&uStack_4f0 + 0) = (unsigned char)(4);
-    iVar3 = (int)(thunk_FUN_110f2980(), 0);
-    if ((iVar3 == 0) || (iVar3 = (int)(thunk_FUN_110f4420((int)(&iStack_504),(int)(2),(int)((uint)&auStack_4ec),(int)(1)), 0), iVar3 == 0)) {
-      *(unsigned char*)((char *)&uStack_4f0 + 0) = (unsigned char)(10);
-      if (((iStack_500 != 0) && (*(int *)(iStack_500 + -0x10) < 0xffff)) &&
-         (iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iStack_500 + -0x10)), 0), iVar3 == 0)) {
-        *(undefined4*)(iStack_500 + -8) = (undefined4)(0);
-        *(undefined4*)(iStack_500 + -0xc) = (undefined4)(0);
-        thunk_FUN_113cfb70(iStack_500,*(undefined4 *)(iStack_500 + -4));
-        free((char *)(iStack_500 + -0x10));
-      }
-      iVar3 = (int)(iStack_504);
-      uStack_4f0 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_4f0 + 1)) << 8 | (uint)(0xb)));
-      if (((iStack_504 != 0) &&
-          (pvVar1 = (char *)((char *)(iStack_504 + -0x10)), *(int *)(iStack_504 + -0x10) < 0xffff)) &&
-         (iVar4 = (int)(thunk_FUN_1123fcd0(pvVar1), 0), iVar4 == 0)) {
-        *(undefined4*)(iVar3 + -8) = (undefined4)(0);
-        *(undefined4*)(iVar3 + -0xc) = (undefined4)(0);
-        thunk_FUN_113cfb70(iVar3,*(undefined4 *)(iVar3 + -4));
-        free(pvVar1);
-      }
-    }
-    else {
-      *(unsigned char*)((char *)&uStack_4f0 + 0) = (unsigned char)(7);
-      if ((iStack_500 != 0) &&
-         ((*(int *)(iStack_500 + -0x10) < 0xffff &&
-          (iVar3 = (int)(thunk_FUN_1123fcd0((char *)(iStack_500 + -0x10)), 0), iVar3 == 0)))) {
-        *(undefined4*)(iStack_500 + -8) = (undefined4)(0);
-        *(undefined4*)(iStack_500 + -0xc) = (undefined4)(0);
-        thunk_FUN_113cfb70(iStack_500,*(undefined4 *)(iStack_500 + -4));
-        free((char *)(iStack_500 + -0x10));
-      }
-      iVar3 = (int)(iStack_504);
-      uStack_4f0 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_4f0 + 1)) << 8 | (uint)(8)));
-      if (((iStack_504 != 0) &&
-          (pvVar1 = (char *)((char *)(iStack_504 + -0x10)), *(int *)(iStack_504 + -0x10) < 0xffff)) &&
-         (iVar4 = (int)(thunk_FUN_1123fcd0(pvVar1), 0), iVar4 == 0)) {
-        *(undefined4*)(iVar3 + -8) = (undefined4)(0);
-        *(undefined4*)(iVar3 + -0xc) = (undefined4)(0);
-        thunk_FUN_113cfb70(iVar3,*(undefined4 *)(iVar3 + -4));
-        free(pvVar1);
-      }
-    }
-  }
-
-  ((SCStr *)((SCStr *)&pcStack_4fc))->int_release();
-
-  thunk_FUN_1148ac28();
-  return;
-
- } catch (...) { }
+  __asm push ebp
+  __asm lea ebp, [esp - 0x4e8]
+  __asm sub esp, 0x4e8
+  __asm push -1
+  __asm push offset LAB_117205cd
+  __asm _emit 0x64 __asm _emit 0xa1 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm push eax
+  __asm sub esp, 0x18
+  __asm mov eax, dword ptr [LAB_12126b84]
+  __asm xor eax, ebp
+  __asm mov dword ptr [ebp + 0x4e4], eax
+  __asm push ebx
+  __asm push esi
+  __asm push edi
+  __asm push eax
+  __asm lea eax, [ebp - 0xc]
+  __asm _emit 0x64 __asm _emit 0xa3 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x45 __asm _emit 0xf0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x45 __asm _emit 0xfc
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_1007a7a2
+  __asm test eax, eax
+  __asm je 0x10da192c
+  __asm push 2
+  __asm mov ecx, eax
+  __asm call LAB_10002eeb
+  __asm test al, al
+  __asm je 0x10da192c
+  __asm call LAB_1000e23c
+  __asm test eax, eax
+  __asm je 0x10da192c
+  __asm mov eax, dword ptr [eax + 0x2d43c]
+  __asm mov dword ptr [ebp - 0x20], eax
+  __asm test eax, eax
+  __asm je 0x10da18e7
+  __asm add eax, -0x10
+  __asm cmp dword ptr [eax], 0xffff
+  __asm jge 0x10da18e7
+  __asm push eax
+  __asm call LAB_10066e8c
+  __asm add esp, 4
+  __asm lea eax, [ebp - 0x20]
+  __asm mov byte ptr [ebp - 4], 1
+  __asm push eax
+  __asm lea ecx, [ebp - 0x1c]
+  __asm call LAB_1001e0b5
+  __asm lea ecx, [ebp - 0x10]
+  __asm mov byte ptr [ebp - 4], 2
+  __asm call LAB_1005c315
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm lea ecx, [ebp - 0x10]
+  __asm mov dword ptr [ebp - 0x10], eax
+  __asm call LAB_1002a973
+  __asm lea ecx, [ebp - 0x1c]
+  __asm mov byte ptr [ebp - 4], 3
+  __asm call LAB_1005c315
+  __asm lea ecx, [ebp - 0x20]
+  __asm _emit 0xc7 __asm _emit 0x45 __asm _emit 0xe4 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_1003f102
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm test eax, eax
+  __asm je LAB_10da1b16
+  __asm cmp byte ptr [eax], 0
+  __asm je LAB_10da1b16
+  __asm _emit 0xc7 __asm _emit 0x45 __asm _emit 0xe8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x45 __asm _emit 0xec __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm lea eax, [ebp - 0x10]
+  __asm mov byte ptr [ebp - 4], 4
+  __asm push eax
+  __asm lea ecx, [ebp - 0x24]
+  __asm call LAB_1001a7f3
+  __asm mov esi, dword ptr [ebp - 0x14]
+  __asm mov byte ptr [ebp - 4], 5
+  __asm test esi, esi
+  __asm je 0x10da199c
+  __asm add esi, -0x10
+  __asm cmp dword ptr [esi], 0xffff
+  __asm jge 0x10da199c
+  __asm push esi
+  __asm call LAB_1001718e
+  __asm add esp, 4
+  __asm test eax, eax
+  __asm jne 0x10da199c
+  __asm push dword ptr [esi + 0xc]
+  __asm mov dword ptr [esi + 8], eax
+  __asm mov dword ptr [esi + 4], eax
+  __asm lea eax, [esi + 0x10]
+  __asm push eax
+  __asm call LAB_10087529
+  __asm push esi
+  __asm call LAB_1005e133
+  __asm add esp, 0xc
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm mov dword ptr [ebp - 0x14], eax
+  __asm test eax, eax
+  __asm je 0x10da19be
+  __asm cmp dword ptr [eax - 0x10], 0xffff
+  __asm lea ecx, [eax - 0x10]
+  __asm jge 0x10da19be
+  __asm push ecx
+  __asm call LAB_10066e8c
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm add esp, 4
+  __asm mov byte ptr [ebp - 4], 6
+  __asm test eax, eax
+  __asm je 0x10da19fa
+  __asm cmp dword ptr [eax - 0x10], 0xffff
+  __asm lea esi, [eax - 0x10]
+  __asm jge 0x10da19fa
+  __asm push esi
+  __asm call LAB_1001718e
+  __asm add esp, 4
+  __asm test eax, eax
+  __asm jne 0x10da19fa
+  __asm push dword ptr [esi + 0xc]
+  __asm mov dword ptr [esi + 8], eax
+  __asm mov dword ptr [esi + 4], eax
+  __asm lea eax, [esi + 0x10]
+  __asm push eax
+  __asm call LAB_10087529
+  __asm push esi
+  __asm call LAB_1005e133
+  __asm add esp, 0xc
+  __asm mov byte ptr [ebp - 4], 4
+  __asm call LAB_1004a52a
+  __asm test eax, eax
+  __asm je LAB_10da1a9e
+  __asm push 1
+  __asm lea ecx, [ebp]
+  __asm push ecx
+  __asm push 2
+  __asm lea ecx, [ebp - 0x18]
+  __asm push ecx
+  __asm mov ecx, eax
+  __asm call LAB_10088113
+  __asm test eax, eax
+  __asm je 0x10da1a9e
+  __asm mov edi, dword ptr [ebp - 0x14]
+  __asm mov byte ptr [ebp - 4], 7
+  __asm test edi, edi
+  __asm je 0x10da1a5e
+  __asm cmp dword ptr [edi - 0x10], 0xffff
+  __asm lea esi, [edi - 0x10]
+  __asm jge 0x10da1a5e
+  __asm push esi
+  __asm call LAB_1001718e
+  __asm add esp, 4
+  __asm test eax, eax
+  __asm jne 0x10da1a5e
+  __asm push dword ptr [esi + 0xc]
+  __asm mov dword ptr [esi + 8], eax
+  __asm push edi
+  __asm mov dword ptr [esi + 4], eax
+  __asm call LAB_10087529
+  __asm push esi
+  __asm call LAB_1005e133
+  __asm add esp, 0xc
+  __asm mov edi, dword ptr [ebp - 0x18]
+  __asm mov byte ptr [ebp - 4], 8
+  __asm test edi, edi
+  __asm je 0x10da1a9a
+  __asm cmp dword ptr [edi - 0x10], 0xffff
+  __asm lea esi, [edi - 0x10]
+  __asm jge 0x10da1a9a
+  __asm push esi
+  __asm call LAB_1001718e
+  __asm add esp, 4
+  __asm test eax, eax
+  __asm jne 0x10da1a9a
+  __asm push dword ptr [esi + 0xc]
+  __asm mov dword ptr [esi + 8], eax
+  __asm push edi
+  __asm mov dword ptr [esi + 4], eax
+  __asm call LAB_10087529
+  __asm push esi
+  __asm call LAB_1005e133
+  __asm add esp, 0xc
+  __asm mov bl, 1
+  __asm jmp 0x10da1b18
+  __asm mov edi, dword ptr [ebp - 0x14]
+  __asm mov byte ptr [ebp - 4], 0xa
+  __asm test edi, edi
+  __asm je 0x10da1ada
+  __asm cmp dword ptr [edi - 0x10], 0xffff
+  __asm lea esi, [edi - 0x10]
+  __asm jge 0x10da1ada
+  __asm push esi
+  __asm call LAB_1001718e
+  __asm add esp, 4
+  __asm test eax, eax
+  __asm jne 0x10da1ada
+  __asm push dword ptr [esi + 0xc]
+  __asm mov dword ptr [esi + 8], eax
+  __asm push edi
+  __asm mov dword ptr [esi + 4], eax
+  __asm call LAB_10087529
+  __asm push esi
+  __asm call LAB_1005e133
+  __asm add esp, 0xc
+  __asm mov edi, dword ptr [ebp - 0x18]
+  __asm mov byte ptr [ebp - 4], 0xb
+  __asm test edi, edi
+  __asm je 0x10da1b16
+  __asm cmp dword ptr [edi - 0x10], 0xffff
+  __asm lea esi, [edi - 0x10]
+  __asm jge 0x10da1b16
+  __asm push esi
+  __asm call LAB_1001718e
+  __asm add esp, 4
+  __asm test eax, eax
+  __asm jne 0x10da1b16
+  __asm push dword ptr [esi + 0xc]
+  __asm mov dword ptr [esi + 8], eax
+  __asm push edi
+  __asm mov dword ptr [esi + 4], eax
+  __asm call LAB_10087529
+  __asm push esi
+  __asm call LAB_1005e133
+  __asm add esp, 0xc
+  __asm xor bl, bl
+  __asm lea ecx, [ebp - 0x10]
+  __asm _emit 0xc7 __asm _emit 0x45 __asm _emit 0xfc __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_1005c315
+  __asm mov al, bl
+  __asm mov ecx, dword ptr [ebp - 0xc]
+  __asm _emit 0x64 __asm _emit 0x89 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm mov ecx, dword ptr [ebp + 0x4e4]
+  __asm xor ecx, ebp
+  __asm call LAB_100382f3
+  __asm lea esp, [ebp + 0x4e8]
+  __asm pop ebp
+  __asm ret
 }
+
 
 
 // Reference entry 10da1c10; body size 73 bytes.
 #line 1 "ENTRY_10da1c10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10da1c10(void)
 
-undefined4 __stdcall FUN_10da1c10(int *param_1){
-  char cVar1;
-  
-  if ((int *)(param_1) != (int *)(0x0)) {
-    cVar1 = (char)(((SCVtbl_7_0*)(param_1))->v(), 0);
-    if (cVar1 == '\0') {
-      cVar1 = (char)(((SCVtbl_10_0*)(param_1))->v(), 0);
-      if (cVar1 != '\0') {
-        cVar1 = (char)(((SCVtbl_14_0*)(param_1))->v(), 0);
-        if (cVar1 != '\0') {
-          cVar1 = (char)(((SCVtbl_15_0*)(param_1))->v(), 0);
-          if (cVar1 != '\0') {
-            return (undefined4)(1);
-          }
-        }
-      }
-    }
-  }
-  return (undefined4)(0);
+{
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm test esi, esi
+  __asm je 0x10da1c53
+  __asm mov eax, dword ptr [esi]
+  __asm mov ecx, esi
+  __asm mov eax, dword ptr [eax + 0x1c]
+  __asm call eax
+  __asm test al, al
+  __asm jne 0x10da1c53
+  __asm mov eax, dword ptr [esi]
+  __asm mov ecx, esi
+  __asm mov eax, dword ptr [eax + 0x28]
+  __asm call eax
+  __asm test al, al
+  __asm je 0x10da1c53
+  __asm mov eax, dword ptr [esi]
+  __asm mov ecx, esi
+  __asm mov eax, dword ptr [eax + 0x38]
+  __asm call eax
+  __asm test al, al
+  __asm je 0x10da1c53
+  __asm mov eax, dword ptr [esi]
+  __asm mov ecx, esi
+  __asm mov eax, dword ptr [eax + 0x3c]
+  __asm call eax
+  __asm test al, al
+  __asm je 0x10da1c53
+  __asm mov al, 1
+  __asm pop esi
+  __asm ret 4
+  __asm xor al, al
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10da1f20; body size 6 bytes.
@@ -8036,21 +8566,28 @@ undefined4 * __fastcall FUN_10da1f50(undefined4 *param_1, unsigned int recovered
 // Reference entry 10da1f70; body size 43 bytes.
 #line 1 "ENTRY_10da1f70"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10da1f70(int *param_2)
+__declspec(naked) void FUN_10da1f70(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  *param_1 = (int)((int)param_2);
-  param_1[1] = (int)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (int)((int)piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x10da1f95
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10da1fb0; body size 26 bytes.
@@ -8142,16 +8679,22 @@ undefined4 * __fastcall FUN_10da2080(undefined4 *param_1)
 // Reference entry 10da20a0; body size 42 bytes.
 #line 1 "ENTRY_10da20a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10da20a0(undefined4 param_2)
+__declspec(naked) void FUN_10da20a0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceStatusManager_EventSink);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx], LAB_11881498
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11931f68
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10da20e0; body size 9 bytes.
@@ -8293,33 +8836,54 @@ void __fastcall FUN_10da3ee0(int param_1)
 // Reference entry 10da3f90; body size 106 bytes.
 #line 1 "ENTRY_10da3f90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10da3f90(int *param_2)
+__declspec(naked) void FUN_10da3f90(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_1[0xb] = (undefined4)(0);
-  piVar1 = (int *)((int *)param_2[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    if ((int *)(piVar1) == (int *)(param_2)) {
-      uVar2 = (undefined4)(((SCVtbl_1_1*)(piVar1))->v((int)(param_1 + 2)), 0);
-      param_1[0xb] = (undefined4)(uVar2);
-      piVar1 = (int *)((int *)param_2[9]);
-      if ((int *)(piVar1) != (int *)(0x0)) {
-        ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_2)));
-        param_2[9] = (int)(0);
-        return (undefined4 *)(param_1);
-      }
-    }
-    else {
-      param_1[0xb] = (undefined4)(piVar1);
-      param_2[9] = (int)(0);
-    }
-  }
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push ebx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x14]
+  __asm lea ebx, [esi + 8]
+  __asm mov dword ptr [esp + 0xc], esi
+  __asm mov dword ptr [esi], LAB_1193276c
+  __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov ecx, dword ptr [edi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da3ff1
+  __asm cmp ecx, edi
+  __asm jne 0x10da3fe7
+  __asm mov eax, dword ptr [ecx]
+  __asm push ebx
+  __asm call dword ptr [eax + 4]
+  __asm mov dword ptr [ebx + 0x24], eax
+  __asm mov ecx, dword ptr [edi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da3ff1
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, edi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop ecx
+  __asm ret 4
+  __asm mov dword ptr [ebx + 0x24], ecx
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop edi
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10da4130; body size 26 bytes.
@@ -8352,60 +8916,82 @@ bool FUN_10da4150(int param_1)
 // Reference entry 10da4160; body size 40 bytes.
 #line 1 "ENTRY_10da4160"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10da4160(int param_1,undefined4 *param_2,undefined4 param_3)
+__declspec(naked) void FUN_10da4160(void)
 
 {
-  param_2 = (undefined4 *)((undefined4 *)*param_2);
-  if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
-    ((SCVtbl_2_2*)(*(int **)(param_1 + 0x24)))->v((int)(&param_2),(int)(param_3));
-    return;
-  }
-                    
-                    
-                    
-  std::_Xbad_function_call();
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], eax
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov ecx, dword ptr [eax + 0x24]
+  __asm test ecx, ecx
+  __asm je LAB_1148a05a
+  __asm push dword ptr [esp + 0xc]
+  __asm mov eax, dword ptr [ecx]
+  __asm lea edx, [esp + 0xc]
+  __asm push edx
+  __asm call dword ptr [eax + 8]
+  __asm ret
 }
+
 
 
 // Reference entry 10da42c0; body size 122 bytes.
 #line 1 "ENTRY_10da42c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10da42c0(int *param_2)
+__declspec(naked) void FUN_10da42c0(void)
+
 {
-  int param_1 = (int )this;
-  int *piVar1;
-  undefined4 *puVar2;
-  undefined4 uVar3;
-  
-  if (param_2[9] != 0) {
-    puVar2 = (undefined4 *)(operator_new(0x30), 0);
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-    puVar2[0xb] = (undefined4)(0);
-    piVar1 = (int *)((int *)param_2[9]);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      if ((int *)(piVar1) == (int *)(param_2)) {
-        uVar3 = (undefined4)(((SCVtbl_1_1*)(piVar1))->v((int)(puVar2 + 2)), 0);
-        puVar2[0xb] = (undefined4)(uVar3);
-        piVar1 = (int *)((int *)param_2[9]);
-        if ((int *)(piVar1) != (int *)(0x0)) {
-          ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_2)));
-          param_2[9] = (int)(0);
-          *(undefined4**)(param_1 + 0x24) = (undefined4 *)(puVar2);
-          return;
-        }
-      }
-      else {
-        puVar2[0xb] = (undefined4)(piVar1);
-        param_2[9] = (int)(0);
-      }
-    }
-    *(undefined4**)(param_1 + 0x24) = (undefined4 *)(puVar2);
-  }
-  return;
+  __asm push ebp
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0xc]
+  __asm mov ebp, ecx
+  __asm cmp dword ptr [edi + 0x24], 0
+  __asm je 0x10da4335
+  __asm push ebx
+  __asm push esi
+  __asm push 0x30
+  __asm call LAB_10024f14
+  __asm mov esi, eax
+  __asm add esp, 4
+  __asm lea ebx, [esi + 8]
+  __asm mov dword ptr [esi], LAB_1193276c
+  __asm _emit 0xc7 __asm _emit 0x43 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov ecx, dword ptr [edi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da4330
+  __asm cmp ecx, edi
+  __asm jne 0x10da4326
+  __asm mov eax, dword ptr [ecx]
+  __asm push ebx
+  __asm call dword ptr [eax + 4]
+  __asm mov dword ptr [ebx + 0x24], eax
+  __asm mov ecx, dword ptr [edi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da4330
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, edi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ebp + 0x24], esi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop edi
+  __asm pop ebp
+  __asm ret 4
+  __asm mov dword ptr [ebx + 0x24], ecx
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ebp + 0x24], esi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop edi
+  __asm pop ebp
+  __asm ret 4
 }
+
 
 
 // Reference entry 10da4360; body size 12 bytes.
@@ -8507,22 +9093,24 @@ char * FUN_10da43d0(void)
 // Reference entry 10da43e0; body size 40 bytes.
 #line 1 "ENTRY_10da43e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10da43e0(int param_1,undefined4 *param_2,undefined4 param_3)
+__declspec(naked) void FUN_10da43e0(void)
 
 {
-  param_2 = (undefined4 *)((undefined4 *)*param_2);
-  if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
-    ((SCVtbl_2_2*)(*(int **)(param_1 + 0x24)))->v((int)(&param_2),(int)(param_3));
-    return;
-  }
-                    
-                    
-                    
-  std::_Xbad_function_call();
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 8], eax
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov ecx, dword ptr [eax + 0x24]
+  __asm test ecx, ecx
+  __asm je LAB_1148a05a
+  __asm push dword ptr [esp + 0xc]
+  __asm mov eax, dword ptr [ecx]
+  __asm lea edx, [esp + 0xc]
+  __asm push edx
+  __asm call dword ptr [eax + 8]
+  __asm ret
 }
+
 
 
 // Reference entry 10da4420; body size 5 bytes.
@@ -8540,16 +9128,19 @@ undefined4 FUN_10da4420(undefined4 param_1)
 // Reference entry 10da46d0; body size 27 bytes.
 #line 1 "ENTRY_10da46d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10da46d0(undefined4 *param_1)
+__declspec(naked) void FUN_10da46d0(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_119324d4
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [esp], ecx
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10da47f0; body size 3 bytes.
@@ -8580,139 +9171,250 @@ int __fastcall FUN_10da4800(int param_1)
 // Reference entry 10da4980; body size 42 bytes.
 #line 1 "ENTRY_10da4980"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10da4980(undefined4 param_2)
+__declspec(naked) void FUN_10da4980(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCEventSubscriptionImpl_EventSink);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx], LAB_11881498
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11932744
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10da49c0; body size 23 bytes.
 #line 1 "ENTRY_10da49c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined8 * __fastcall FUN_10da49c0(undefined8 *param_1)
+__declspec(naked) void FUN_10da49c0(void)
 
 {
-  *param_1 = (undefined8)(0);
-  *(undefined4*)(param_1 + 1) = (undefined4)(0);
-  *(undefined2*)((int)param_1 + 0xc) = (undefined2)(0);
-  return (undefined8 *)(param_1);
+  __asm xorps xmm0, xmm0
+  __asm mov eax, ecx
+  __asm movq qword ptr [ecx], xmm0
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov word ptr [ecx + 0xc], 0
+  __asm ret
 }
+
 
 
 // Reference entry 10da49e0; body size 127 bytes.
 #line 1 "ENTRY_10da49e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10da49e0(int param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6,char param_7)
+__declspec(naked) void FUN_10da49e0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int iVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  
-  iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
-  if (param_7 == '\0') {
-    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
-  }
-  else {
-    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
-  }
-  uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
-  thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AlarmClock:1"),(int)("SetFormat"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpACSetFormatAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpACSetFormatAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpACSetFormatAIOOp);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push ebx
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, ecx
+  __asm mov dword ptr [esp + 0xc], edi
+  __asm mov eax, dword ptr [esi + 4]
+  __asm mov ecx, dword ptr [eax + 4]
+  __asm add ecx, 4
+  __asm add ecx, esi
+  __asm cmp byte ptr [esp + 0x28], 0
+  __asm mov eax, dword ptr [ecx]
+  __asm je 0x10da4a07
+  __asm call dword ptr [eax + 0x4c]
+  __asm jmp 0x10da4a0a
+  __asm call dword ptr [eax + 0x48]
+  __asm push dword ptr [esp + 0x24]
+  __asm mov ebx, eax
+  __asm lea ecx, [esi + 4]
+  __asm mov eax, dword ptr [esi + 4]
+  __asm push dword ptr [esp + 0x24]
+  __asm push dword ptr [esp + 0x24]
+  __asm mov eax, dword ptr [eax + 4]
+  __asm add ecx, eax
+  __asm push dword ptr [esp + 0x24]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x50]
+  __asm push eax
+  __asm push offset LAB_11932114
+  __asm push offset LAB_11910224
+  __asm push ebx
+  __asm mov ecx, edi
+  __asm call LAB_10013336
+  __asm mov dword ptr [edi], LAB_11932084
+  __asm mov eax, edi
+  __asm mov dword ptr [edi + 0x60], LAB_119320cc
+  __asm mov dword ptr [edi + 0x46c], LAB_11932108
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop ecx
+  __asm ret 0x18
 }
+
 
 
 // Reference entry 10da4a80; body size 127 bytes.
 #line 1 "ENTRY_10da4a80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10da4a80(int param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6,char param_7)
+__declspec(naked) void FUN_10da4a80(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int iVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  
-  iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
-  if (param_7 == '\0') {
-    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
-  }
-  else {
-    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
-  }
-  uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
-  thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AlarmClock:1"),(int)("SetTimeNow"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpACSetTimeNowAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpACSetTimeNowAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpACSetTimeNowAIOOp);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push ebx
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, ecx
+  __asm mov dword ptr [esp + 0xc], edi
+  __asm mov eax, dword ptr [esi + 4]
+  __asm mov ecx, dword ptr [eax + 4]
+  __asm add ecx, 4
+  __asm add ecx, esi
+  __asm cmp byte ptr [esp + 0x28], 0
+  __asm mov eax, dword ptr [ecx]
+  __asm je 0x10da4aa7
+  __asm call dword ptr [eax + 0x4c]
+  __asm jmp 0x10da4aaa
+  __asm call dword ptr [eax + 0x48]
+  __asm push dword ptr [esp + 0x24]
+  __asm mov ebx, eax
+  __asm lea ecx, [esi + 4]
+  __asm mov eax, dword ptr [esi + 4]
+  __asm push dword ptr [esp + 0x24]
+  __asm push dword ptr [esp + 0x24]
+  __asm mov eax, dword ptr [eax + 4]
+  __asm add ecx, eax
+  __asm push dword ptr [esp + 0x24]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x50]
+  __asm push eax
+  __asm push offset LAB_1193235c
+  __asm push offset LAB_11910224
+  __asm push ebx
+  __asm mov ecx, edi
+  __asm call LAB_10013336
+  __asm mov dword ptr [edi], LAB_119322cc
+  __asm mov eax, edi
+  __asm mov dword ptr [edi + 0x60], LAB_11932314
+  __asm mov dword ptr [edi + 0x46c], LAB_11932350
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop ecx
+  __asm ret 0x18
 }
+
 
 
 // Reference entry 10da4b20; body size 127 bytes.
 #line 1 "ENTRY_10da4b20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10da4b20(int param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6,char param_7)
+__declspec(naked) void FUN_10da4b20(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int iVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  
-  iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
-  if (param_7 == '\0') {
-    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
-  }
-  else {
-    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
-  }
-  uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
-  thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AlarmClock:1"),(int)("SetTimeServer"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpACSetTimeServerAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpACSetTimeServerAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpACSetTimeServerAIOOp);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push ebx
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, ecx
+  __asm mov dword ptr [esp + 0xc], edi
+  __asm mov eax, dword ptr [esi + 4]
+  __asm mov ecx, dword ptr [eax + 4]
+  __asm add ecx, 4
+  __asm add ecx, esi
+  __asm cmp byte ptr [esp + 0x28], 0
+  __asm mov eax, dword ptr [ecx]
+  __asm je 0x10da4b47
+  __asm call dword ptr [eax + 0x4c]
+  __asm jmp 0x10da4b4a
+  __asm call dword ptr [eax + 0x48]
+  __asm push dword ptr [esp + 0x24]
+  __asm mov ebx, eax
+  __asm lea ecx, [esi + 4]
+  __asm mov eax, dword ptr [esi + 4]
+  __asm push dword ptr [esp + 0x24]
+  __asm push dword ptr [esp + 0x24]
+  __asm mov eax, dword ptr [eax + 4]
+  __asm add ecx, eax
+  __asm push dword ptr [esp + 0x24]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x50]
+  __asm push eax
+  __asm push offset LAB_119322a0
+  __asm push offset LAB_11910224
+  __asm push ebx
+  __asm mov ecx, edi
+  __asm call LAB_10013336
+  __asm mov dword ptr [edi], LAB_11932210
+  __asm mov eax, edi
+  __asm mov dword ptr [edi + 0x60], LAB_11932258
+  __asm mov dword ptr [edi + 0x46c], LAB_11932294
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop ecx
+  __asm ret 0x18
 }
+
 
 
 // Reference entry 10da4bc0; body size 127 bytes.
 #line 1 "ENTRY_10da4bc0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10da4bc0(int param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6,char param_7)
+__declspec(naked) void FUN_10da4bc0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int iVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  
-  iVar1 = (int)(*(int *)(*(int *)(*(int *)(param_2 + 4) + 4) + 4 + param_2));
-  if (param_7 == '\0') {
-    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
-  }
-  else {
-    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
-  }
-  uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
-  thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AlarmClock:1"),(int)("SetTimeZone"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpACSetTimeZoneAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpACSetTimeZoneAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpACSetTimeZoneAIOOp);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push ebx
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, ecx
+  __asm mov dword ptr [esp + 0xc], edi
+  __asm mov eax, dword ptr [esi + 4]
+  __asm mov ecx, dword ptr [eax + 4]
+  __asm add ecx, 4
+  __asm add ecx, esi
+  __asm cmp byte ptr [esp + 0x28], 0
+  __asm mov eax, dword ptr [ecx]
+  __asm je 0x10da4be7
+  __asm call dword ptr [eax + 0x4c]
+  __asm jmp 0x10da4bea
+  __asm call dword ptr [eax + 0x48]
+  __asm push dword ptr [esp + 0x24]
+  __asm mov ebx, eax
+  __asm lea ecx, [esi + 4]
+  __asm mov eax, dword ptr [esi + 4]
+  __asm push dword ptr [esp + 0x24]
+  __asm push dword ptr [esp + 0x24]
+  __asm mov eax, dword ptr [eax + 4]
+  __asm add ecx, eax
+  __asm push dword ptr [esp + 0x24]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x50]
+  __asm push eax
+  __asm push offset LAB_119321e4
+  __asm push offset LAB_11910224
+  __asm push ebx
+  __asm mov ecx, edi
+  __asm call LAB_10013336
+  __asm mov dword ptr [edi], LAB_11932154
+  __asm mov eax, edi
+  __asm mov dword ptr [edi + 0x60], LAB_1193219c
+  __asm mov dword ptr [edi + 0x46c], LAB_119321d8
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop ecx
+  __asm ret 0x18
 }
+
 
 
 // Reference entry 10da4dc0; body size 9 bytes.
@@ -8757,20 +9459,25 @@ undefined4 * __fastcall FUN_10da4de0(undefined4 *param_1)
 // Reference entry 10da5070; body size 34 bytes.
 #line 1 "ENTRY_10da5070"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10da5070(int param_1)
+__declspec(naked) void FUN_10da5070(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0x2c), 0);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1 + 8)));
-    *(undefined4*)(param_1 + 0x2c) = (undefined4)(0);
-  }
-  return;
+  __asm push esi
+  __asm lea esi, [ecx + 8]
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da5090
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10da50d0; body size 19 bytes.
@@ -8960,31 +9667,41 @@ bool __fastcall FUN_10da5490(int param_1)
 // Reference entry 10da54a0; body size 29 bytes.
 #line 1 "ENTRY_10da54a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10da54a0(undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10da54a0(void)
+
 {
-  int param_1 = (int )this;
-  if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
-    ((SCVtbl_2_2*)(*(int **)(param_1 + 0x24)))->v((int)(&param_2),(int)(param_3));
-    return;
-  }
-                    
-  std::_Xbad_function_call();
+  __asm mov ecx, dword ptr [ecx + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da54b8
+  __asm push dword ptr [esp + 8]
+  __asm mov eax, dword ptr [ecx]
+  __asm lea edx, [esp + 8]
+  __asm push edx
+  __asm call dword ptr [eax + 8]
+  __asm ret 8
+  __asm call LAB_1148a05a
 }
+
 
 
 // Reference entry 10da54d0; body size 29 bytes.
 #line 1 "ENTRY_10da54d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10da54d0(undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10da54d0(void)
+
 {
-  int param_1 = (int )this;
-  if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
-    ((SCVtbl_2_2*)(*(int **)(param_1 + 0x24)))->v((int)(&param_2),(int)(param_3));
-    return;
-  }
-                    
-  std::_Xbad_function_call();
+  __asm mov ecx, dword ptr [ecx + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da54e8
+  __asm push dword ptr [esp + 8]
+  __asm mov eax, dword ptr [ecx]
+  __asm lea edx, [esp + 8]
+  __asm push edx
+  __asm call dword ptr [eax + 8]
+  __asm ret 8
+  __asm call LAB_1148a05a
 }
+
 
 
 // Reference entry 10da5b40; body size 6 bytes.
@@ -9038,63 +9755,86 @@ bool __fastcall FUN_10da5cb0(int param_1)
 // Reference entry 10da5cd0; body size 26 bytes.
 #line 1 "ENTRY_10da5cd0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10da5cd0(int param_2)
+__declspec(naked) void FUN_10da5cd0(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 uVar1;
-  
-  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)((0x0))) {
-    uVar1 = (undefined4)(((SCVtbl_0_1*)(*(undefined4 **)(param_2 + 0x24)))->v((int)(param_1)), 0);
-    *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar1);
-  }
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da5ce6
+  __asm mov eax, dword ptr [ecx]
+  __asm push esi
+  __asm call dword ptr [eax]
+  __asm mov dword ptr [esi + 0x24], eax
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10da5cf0; body size 26 bytes.
 #line 1 "ENTRY_10da5cf0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10da5cf0(int param_2)
+__declspec(naked) void FUN_10da5cf0(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 uVar1;
-  
-  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)((0x0))) {
-    uVar1 = (undefined4)(((SCVtbl_0_1*)(*(undefined4 **)(param_2 + 0x24)))->v((int)(param_1)), 0);
-    *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar1);
-  }
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [eax + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da5d06
+  __asm mov eax, dword ptr [ecx]
+  __asm push esi
+  __asm call dword ptr [eax]
+  __asm mov dword ptr [esi + 0x24], eax
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10da5d10; body size 76 bytes.
 #line 1 "ENTRY_10da5d10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10da5d10(int *param_2)
+__declspec(naked) void FUN_10da5d10(void)
+
 {
-  int param_1 = (int )this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_2[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    if ((int *)(piVar1) == (int *)(param_2)) {
-      uVar2 = (undefined4)(((SCVtbl_1_1*)(piVar1))->v((int)(param_1)), 0);
-      *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar2);
-      piVar1 = (int *)((int *)param_2[9]);
-      if ((int *)(piVar1) != (int *)(0x0)) {
-        ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_2)));
-        param_2[9] = (int)(0);
-        return;
-      }
-    }
-    else {
-      *(int**)(param_1 + 0x24) = (int *)(piVar1);
-      param_2[9] = (int)(0);
-    }
-  }
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm push edi
+  __asm mov edi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da5d57
+  __asm cmp ecx, esi
+  __asm jne 0x10da5d4d
+  __asm mov eax, dword ptr [ecx]
+  __asm push edi
+  __asm call dword ptr [eax + 4]
+  __asm mov dword ptr [edi + 0x24], eax
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x10da5d57
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm pop edi
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
+  __asm mov dword ptr [edi + 0x24], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop edi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10da5d70; body size 10 bytes.
@@ -9111,14 +9851,22 @@ bool __fastcall FUN_10da5cb0(int param_1)
 // Reference entry 10da6850; body size 32 bytes.
 #line 1 "ENTRY_10da6850"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10da6850(undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10da6850(void)
+
 {
-  int param_1 = (int )this;
-  if (*(int **)(param_1 + 0x3c) != (int *)((0x0))) {
-    ((SCVtbl_2_2*)(*(int **)(param_1 + 0x3c)))->v((int)(&param_2),(int)(param_3));
-  }
-  return;
+  __asm mov ecx, dword ptr [ecx + 0x3c]
+  __asm test ecx, ecx
+  __asm je 0x10da686d
+  __asm mov eax, dword ptr [esp + 4]
+  __asm lea edx, [esp + 4]
+  __asm push dword ptr [esp + 8]
+  __asm mov dword ptr [esp + 8], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm push edx
+  __asm call dword ptr [eax + 8]
+  __asm ret 8
 }
+
 
 
 // Reference entry 10da68b0; body size 21 bytes.
@@ -9137,27 +9885,31 @@ SCStr * __stdcall FUN_10da68b0(SCStr *param_1)
 // Reference entry 10da68d0; body size 17 bytes.
 #line 1 "ENTRY_10da68d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10da68d0(int param_1)
+__declspec(naked) void FUN_10da68d0(void)
 
 {
-  thunk_FUN_1115c530(*(undefined1 *)(param_1 + 0x14d));
-  return;
+  __asm movzx eax, byte ptr [ecx + 0x14d]
+  __asm push eax
+  __asm call LAB_10061d97
+  __asm add esp, 4
+  __asm ret
 }
+
 
 
 // Reference entry 10da6b60; body size 17 bytes.
 #line 1 "ENTRY_10da6b60"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10da6b60(int param_1)
+__declspec(naked) void FUN_10da6b60(void)
 
 {
-  thunk_FUN_1115c560(*(undefined1 *)(param_1 + 0x14c));
-  return;
+  __asm movzx eax, byte ptr [ecx + 0x14c]
+  __asm push eax
+  __asm call LAB_1008033c
+  __asm add esp, 4
+  __asm ret
 }
+
 
 
 // Reference entry 10da73c0; body size 6 bytes.
@@ -9247,8 +9999,11 @@ void __fastcall FUN_10da7830(undefined4 *param_1)
 
 __declspec(naked) void FUN_10da7860(void)
 
-{ __asm add ecx, 290
-  __asm jmp FUN_1004efb7 }
+{
+  __asm add ecx, 0x122
+  __asm jmp LAB_1004efb7
+}
+
 
 
 
@@ -9404,82 +10159,13 @@ int __fastcall FUN_10da94f0(int param_1)
 // Reference entry 10da9500; body size 11 bytes.
 #line 1 "ENTRY_10da9500"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall Recovered_Bulk::m_FUN_10da9500(undefined4 *param_2)
+__declspec(naked) void FUN_10da9500(void)
+
 {
-  int param_1 = (int )this;
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvVar3;
-  int iVar4;
-  int iVar5;
-  undefined4 *puVar6;
-  undefined4 uVar7;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0x1688), 0);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  pvVar3 = (void *)(operator_new(0x13790), 0);
-
-  if ((void *)(pvVar3) == (void *)(0x0)) {
-    iVar4 = (int)(0);
-  }
-  else {
-    iVar4 = (int)(piVar1[2]);
-    iVar4 = (int)(thunk_FUN_111d0560((int)(iVar4 + 0x1528),(int)(iVar4 + 0x1453),(int)(iVar4 + 0x124),(int)(iVar4 + 0x925),(int)(iVar4 + 0x104),(int)(iVar4 + 0x1494)), 0);
-  }
-
-  iVar5 = (int)(((SCVtbl_3_1*)(piVar1))->v((int)(uVar2)), 0);
-  puVar6 = (undefined4 *)(operator_new(0x40), 0);
-
-  if ((undefined4 *)(puVar6) == (undefined4 *)(0x0)) {
-    puVar6 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    thunk_FUN_11261e50();
-    *puVar6 = (undefined4)((uint)&ghidra_vftable_RSonosRefreshAuthTokenOp);
-    puVar6[2] = (undefined4)((uint)&ghidra_vftable_RSonosRefreshAuthTokenOp);
-    puVar6[7] = (undefined4)(0);
-    puVar6[8] = (undefined4)(&DAT_122f1250);
-    puVar6[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
-    *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(3);
-    puVar6[10] = (undefined4)(iVar4);
-    if (iVar4 != 0) {
-      thunk_FUN_1123fce0(iVar4 + 4);
-    }
-    puVar6[0xb] = (undefined4)(0);
-    puVar6[9] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-    puVar6[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
-    *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(5);
-    puVar6[0xd] = (undefined4)(iVar5);
-    if (iVar5 != 0) {
-      thunk_FUN_1123fce0(iVar5 + 4);
-    }
-    puVar6[0xe] = (undefined4)(0);
-    puVar6[0xc] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-    *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(6);
-    *(undefined1*)(puVar6 + 0xf) = (undefined1)(0);
-    pvVar3 = (void *)(operator_new(0x988), 0);
-    uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(7)));
-    if ((void *)(pvVar3) == (void *)(0x0)) {
-      puVar6[7] = (undefined4)(0);
-    }
-    else {
-      uVar7 = (undefined4)(thunk_FUN_1124e200(), 0);
-      puVar6[7] = (undefined4)(uVar7);
-    }
-  }
-  *param_2 = (undefined4)(puVar6);
-
-  return (undefined4)(0);
-
- } catch (...) { }
+  __asm mov ecx, dword ptr [ecx + 0x1688]
+  __asm jmp LAB_100485ae
 }
+
 
 
 // Reference entry 10da97a0; body size 6 bytes.
@@ -9545,14 +10231,26 @@ byte __fastcall FUN_10da9a70(int param_1)
 // Reference entry 10da9de0; body size 33 bytes.
 #line 1 "ENTRY_10da9de0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-int FUN_10da9de0(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10da9de0(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return (int)((param_2 - (int)param_1) + (int)param_3);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm sub edi, eax
+  __asm push edi
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm lea eax, [edi + esi]
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10da9e10; body size 18 bytes.
@@ -9582,14 +10280,26 @@ undefined4 FUN_10da9fe0(undefined4 *param_1)
 // Reference entry 10da9ff0; body size 33 bytes.
 #line 1 "ENTRY_10da9ff0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-int FUN_10da9ff0(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10da9ff0(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return (int)((param_2 - (int)param_1) + (int)param_3);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm sub edi, eax
+  __asm push edi
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm lea eax, [edi + esi]
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10daa020; body size 5 bytes.
@@ -9607,14 +10317,27 @@ undefined4 FUN_10daa020(undefined4 param_1)
 // Reference entry 10daa030; body size 36 bytes.
 #line 1 "ENTRY_10daa030"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10daa030(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10daa030(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return (void *)((char *)((int)param_3 + (param_2 - (int)param_1 >> 2) * 4));
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm sub edi, eax
+  __asm push edi
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm sar edi, 2
+  __asm add esp, 0xc
+  __asm lea eax, [esi + edi*4]
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10daa060; body size 5 bytes.
@@ -9657,20 +10380,23 @@ void FUN_10daa0b0(void)
 // Reference entry 10daa0c0; body size 36 bytes.
 #line 1 "ENTRY_10daa0c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10daa0c0(undefined4 *param_2)
+__declspec(naked) void FUN_10daa0c0(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  if ((undefined4 *)(puVar1) != *(undefined4 **)(param_1 + 8)) {
-    *puVar1 = (undefined4)(*param_2);
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 4);
-    return;
-  }
-  thunk_FUN_10da9e30(puVar1,param_2);
-  return;
+  __asm mov edx, dword ptr [ecx + 4]
+  __asm cmp edx, dword ptr [ecx + 8]
+  __asm je 0x10daa0d7
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [edx], eax
+  __asm add dword ptr [ecx + 4], 4
+  __asm ret 4
+  __asm push dword ptr [esp + 4]
+  __asm push edx
+  __asm call LAB_1008ad00
+  __asm ret 4
 }
+
 
 
 // Reference entry 10daa0f0; body size 5 bytes.
@@ -9843,21 +10569,29 @@ int * __fastcall FUN_10daa790(int *param_1)
 // Reference entry 10daa7d0; body size 49 bytes.
 #line 1 "ENTRY_10daa7d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall Recovered_Bulk::m_FUN_10daa7d0(uint param_2)
+__declspec(naked) void FUN_10daa7d0(void)
+
 {
-  int *param_1 = (int *)this;
-  uint uVar1;
-  
-  uVar1 = (uint)(param_1[2] - *param_1 >> 2);
-  if (0x3fffffff - (uVar1 >> 1) < uVar1) {
-    return (uint)(0x3fffffff);
-  }
-  uVar1 = (uint)((uVar1 >> 1) + uVar1);
-  if (uVar1 < param_2) {
-    uVar1 = (uint)(param_2);
-  }
-  return (uint)(uVar1);
+  __asm mov edx, dword ptr [ecx + 8]
+  __asm sub edx, dword ptr [ecx]
+  __asm mov ecx, 0x3fffffff
+  __asm sar edx, 2
+  __asm push esi
+  __asm mov esi, edx
+  __asm _emit 0xd1 __asm _emit 0xee
+  __asm sub ecx, esi
+  __asm cmp edx, ecx
+  __asm jbe 0x10daa7f1
+  __asm mov eax, 0x3fffffff
+  __asm pop esi
+  __asm ret 4
+  __asm lea eax, [esi + edx]
+  __asm cmp eax, dword ptr [esp + 8]
+  __asm pop esi
+  __asm cmovb eax, dword ptr [esp + 4]
+  __asm ret 4
 }
+
 
 
 // Reference entry 10daa880; body size 3 bytes.
@@ -9911,40 +10645,65 @@ void __stdcall FUN_10daa8b0(unsigned int recovered_unused_stack_0, unsigned int 
 // Reference entry 10daa8c0; body size 38 bytes.
 #line 1 "ENTRY_10daa8c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * __stdcall FUN_10daa8c0(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10daa8c0(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return (void *)((char *)((int)param_3 + (param_2 - (int)param_1 >> 2) * 4));
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm sub edi, eax
+  __asm push edi
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm sar edi, 2
+  __asm add esp, 0xc
+  __asm lea eax, [esi + edi*4]
+  __asm pop edi
+  __asm pop esi
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10daa8f0; body size 27 bytes.
 #line 1 "ENTRY_10daa8f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10daa8f0(void *param_1,int param_2,void *param_3,unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10daa8f0(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return;
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [esp + 8]
+  __asm sub eax, ecx
+  __asm push eax
+  __asm push ecx
+  __asm push dword ptr [esp + 0x14]
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10daa920; body size 27 bytes.
 #line 1 "ENTRY_10daa920"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10daa920(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10daa920(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return;
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [esp + 8]
+  __asm sub eax, ecx
+  __asm push eax
+  __asm push ecx
+  __asm push dword ptr [esp + 0x14]
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10daa960; body size 7 bytes.
@@ -9974,37 +10733,40 @@ undefined4 __fastcall FUN_10daa970(int param_1)
 // Reference entry 10daa9c0; body size 87 bytes.
 #line 1 "ENTRY_10daa9c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10daa9c0(uint param_1)
+__declspec(naked) void FUN_10daa9c0(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0x40000000) {
-    param_1 = (uint)(param_1 * 4);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp eax, 0x3fffffff
+  __asm ja 0x10daaa12
+  __asm shl eax, 2
+  __asm cmp eax, 0x1000
+  __asm jb 0x10daa9fd
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10daaa12
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10daa9f7
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10daaa0d
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10daaa30; body size 11 bytes.
@@ -10048,13 +10810,15 @@ void __fastcall FUN_10daaba0(int param_1)
 // Reference entry 10dab3d0; body size 9 bytes.
 #line 1 "ENTRY_10dab3d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 __fastcall FUN_10dab3d0(int *param_1)
+__declspec(naked) void FUN_10dab3d0(void)
 
 {
-  return (undefined4)(((uint)((int3)((uint)*param_1 >> 8)) << 8 | (uint)(*param_1 == (int)((param_1))[1])));
+  __asm mov eax, dword ptr [ecx]
+  __asm cmp eax, dword ptr [ecx + 4]
+  __asm sete al
+  __asm ret
 }
+
 
 
 // Reference entry 10dab3e0; body size 12 bytes.
@@ -10071,29 +10835,45 @@ undefined4 __fastcall FUN_10dab3d0(int *param_1)
 // Reference entry 10dab3f0; body size 42 bytes.
 #line 1 "ENTRY_10dab3f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dab3f0(undefined4 *param_2,void *param_3)
+__declspec(naked) void FUN_10dab3f0(void)
+
 {
-  int param_1 = (int )this;
-  memmove(param_3,(char *)((int)param_3 + 4),*(int *)(param_1 + 4) - ((int)param_3 + 4));
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + -4);
-  *param_2 = (undefined4)(param_3);
-  return;
+  __asm push esi
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 4]
+  __asm lea edx, [edi + 4]
+  __asm sub eax, edx
+  __asm push eax
+  __asm push edx
+  __asm push edi
+  __asm call LAB_1148cdf3
+  __asm mov eax, dword ptr [esp + 0x18]
+  __asm add esp, 0xc
+  __asm add dword ptr [esi + 4], -4
+  __asm mov dword ptr [eax], edi
+  __asm pop edi
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 10dab490; body size 24 bytes.
 #line 1 "ENTRY_10dab490"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-bool __stdcall FUN_10dab490(undefined4 param_1)
+__declspec(naked) void FUN_10dab490(void)
 
 {
-  short sVar1;
-  
-  sVar1 = (short)(thunk_FUN_111e3f80((int)(param_1)), 0);
-  return (bool)(sVar1 == 0);
+  __asm push dword ptr [esp + 4]
+  __asm mov ecx, dword ptr [ecx + 0x1688]
+  __asm call LAB_1004609c
+  __asm test ax, ax
+  __asm sete al
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dac930; body size 6 bytes.
@@ -10135,20 +10915,23 @@ undefined4 __fastcall FUN_10dadc30(undefined4 *param_1)
 // Reference entry 10dadc40; body size 36 bytes.
 #line 1 "ENTRY_10dadc40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dadc40(undefined4 *param_2)
+__declspec(naked) void FUN_10dadc40(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  if ((undefined4 *)(puVar1) != *(undefined4 **)(param_1 + 8)) {
-    *puVar1 = (undefined4)(*param_2);
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 4);
-    return;
-  }
-  thunk_FUN_10da9e30(puVar1,param_2);
-  return;
+  __asm mov edx, dword ptr [ecx + 4]
+  __asm cmp edx, dword ptr [ecx + 8]
+  __asm je 0x10dadc57
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [edx], eax
+  __asm add dword ptr [ecx + 4], 4
+  __asm ret 4
+  __asm push dword ptr [esp + 4]
+  __asm push edx
+  __asm call LAB_1008ad00
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dadc70; body size 20 bytes.
@@ -10195,74 +10978,82 @@ __declspec(naked) void FUN_10dae360(void)
 // Reference entry 10db1dc0; body size 16 bytes.
 #line 1 "ENTRY_10db1dc0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10db1dc0(uint param_2)
+__declspec(naked) void FUN_10db1dc0(void)
+
 {
-  int param_1 = (int )this;
-  *(uint*)(param_1 + 4) = (uint)(*(uint *)(param_1 + 4) & ~(1 << (param_2 & 0x1f)));
-  return;
+  __asm mov edx, dword ptr [ecx + 4]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm btr edx, eax
+  __asm mov dword ptr [ecx + 4], edx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10db1de0; body size 48 bytes.
 #line 1 "ENTRY_10db1de0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10db1de0(uint param_2)
+__declspec(naked) void FUN_10db1de0(void)
+
 {
-  int param_1 = (int )this;
-  uint uVar1;
-  uint uVar2;
-  uint uVar3;
-  uint uVar4;
-  
-  uVar3 = (uint)(*(uint *)(param_1 + 4) & 1);
-  uVar2 = (uint)(0);
-  uVar4 = (uint)(1);
-  do {
-    if (param_2 < uVar3) {
-      return;
-    }
-    uVar4 = (uint)(uVar4 * 2);
-    uVar2 = (uint)(uVar2 + 1);
-    uVar1 = (uint)(uVar3 + 1);
-    if ((*(uint *)(param_1 + 4) & uVar4) == 0) {
-      uVar1 = (uint)(uVar3);
-    }
-    uVar3 = (uint)(uVar1);
-  } while (uVar2 < 0x20);
-  return;
+  __asm push ebx
+  __asm mov ebx, dword ptr [ecx + 4]
+  __asm mov ecx, ebx
+  __asm and ecx, 1
+  __asm xor eax, eax
+  __asm push esi
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm lea esi, [eax + 1]
+  __asm cmp ecx, edi
+  __asm ja 0x10db1e0a
+  __asm add esi, esi
+  __asm lea edx, [ecx + 1]
+  __asm inc eax
+  __asm test ebx, esi
+  __asm cmove edx, ecx
+  __asm mov ecx, edx
+  __asm cmp eax, 0x20
+  __asm jb 0x10db1df4
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10db1e20; body size 47 bytes.
 #line 1 "ENTRY_10db1e20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10db1e20(uint param_1,uint param_2)
+__declspec(naked) void FUN_10db1e20(void)
 
 {
-  uint uVar1;
-  uint uVar2;
-  uint uVar3;
-  uint uVar4;
-  
-  uVar3 = (uint)(param_2 & 1);
-  uVar2 = (uint)(0);
-  uVar4 = (uint)(1);
-  do {
-    if (param_1 < uVar3) {
-      return;
-    }
-    uVar4 = (uint)(uVar4 * 2);
-    uVar2 = (uint)(uVar2 + 1);
-    uVar1 = (uint)(uVar3 + 1);
-    if ((param_2 & uVar4) == 0) {
-      uVar1 = (uint)(uVar3);
-    }
-    uVar3 = (uint)(uVar1);
-  } while (uVar2 < 0x20);
-  return;
+  __asm push ebx
+  __asm mov ebx, dword ptr [esp + 0xc]
+  __asm mov ecx, ebx
+  __asm and ecx, 1
+  __asm xor eax, eax
+  __asm push esi
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm lea esi, [eax + 1]
+  __asm cmp ecx, edi
+  __asm ja 0x10db1e4b
+  __asm add esi, esi
+  __asm lea edx, [ecx + 1]
+  __asm inc eax
+  __asm test ebx, esi
+  __asm cmove edx, ecx
+  __asm mov ecx, edx
+  __asm cmp eax, 0x20
+  __asm jb 0x10db1e35
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm ret
 }
+
 
 
 // Reference entry 10db1fe0; body size 4 bytes.
@@ -10297,27 +11088,33 @@ int __fastcall FUN_10db1fe0(int param_1)
 // Reference entry 10db21e0; body size 56 bytes.
 #line 1 "ENTRY_10db21e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10db21e0(undefined4 *param_2)
+__declspec(naked) void FUN_10db21e0(void)
+
 {
-  int param_1 = (int )this;
-  char *pcVar1;
-  
-  pcVar1 = (char *)(*(char **)(param_1 + 0x38), 0);
-  if (((char *)(pcVar1) == (char *)(0x0)) || (*pcVar1 == (char)(('\0')))) {
-    pcVar1 = (char *)(*(char **)(param_1 + 0xc), 0);
-    *param_2 = (undefined4)(pcVar1);
-    if ((char *)(pcVar1) == (char *)(0x0)) {
-      return (undefined4 *)(param_2);
-    }
-  }
-  else {
-    *param_2 = (undefined4)(pcVar1);
-  }
-  if (*(int *)(pcVar1 + -0x10) < 0xffff) {
-    thunk_FUN_1123fce0(pcVar1 + -0x10);
-  }
-  return (undefined4 *)(param_2);
+  __asm mov eax, dword ptr [ecx + 0x38]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm test eax, eax
+  __asm je 0x10db21f5
+  __asm cmp byte ptr [eax], 0
+  __asm je 0x10db21f5
+  __asm mov dword ptr [esi], eax
+  __asm jmp 0x10db21fe
+  __asm mov eax, dword ptr [ecx + 0xc]
+  __asm mov dword ptr [esi], eax
+  __asm test eax, eax
+  __asm je 0x10db2212
+  __asm add eax, -0x10
+  __asm cmp dword ptr [eax], 0xffff
+  __asm jge 0x10db2212
+  __asm push eax
+  __asm call LAB_10066e8c
+  __asm add esp, 4
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10db2480; body size 20 bytes.
@@ -10335,13 +11132,20 @@ int __fastcall FUN_10db1fe0(int param_1)
 // Reference entry 10db24a0; body size 25 bytes.
 #line 1 "ENTRY_10db24a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10db24a0(undefined4 param_2,undefined4 *param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10db24a0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_3);
-  param_1[1] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10db24c0; body size 22 bytes.
@@ -10383,13 +11187,20 @@ int __fastcall FUN_10db1fe0(int param_1)
 // Reference entry 10db2820; body size 25 bytes.
 #line 1 "ENTRY_10db2820"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10db2820(undefined4 param_2,undefined4 *param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10db2820(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_3);
-  param_1[1] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10db2840; body size 11 bytes.
@@ -10475,13 +11286,21 @@ int __fastcall FUN_10db1fe0(int param_1)
 // Reference entry 10db28e0; body size 27 bytes.
 #line 1 "ENTRY_10db28e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10db28e0(undefined4 *param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_10db28e0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*(undefined4 *)*param_2);
-  param_1[1] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10db2910; body size 22 bytes.
@@ -10499,13 +11318,21 @@ int __fastcall FUN_10db1fe0(int param_1)
 // Reference entry 10db2930; body size 27 bytes.
 #line 1 "ENTRY_10db2930"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10db2930(undefined4 *param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_10db2930(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*(undefined4 *)*param_2);
-  param_1[1] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10db2960; body size 11 bytes.
@@ -10583,33 +11410,43 @@ undefined4 FUN_10db2a70(undefined4 param_1)
 // Reference entry 10db2a80; body size 31 bytes.
 #line 1 "ENTRY_10db2a80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10db2a80(void)
 
-uint __stdcall FUN_10db2a80(int param_1,uint *param_2){
-  uint in_EAX;
-  
-  if ((*(char *)(param_1 + 0xd) == '\0') &&
-     (in_EAX = (uint)(*param_2), *(int *)(param_1 + 0x10) <= (int)(in_EAX))) {
-    return (uint)(((uint)((int3)(in_EAX >> 8)) << 8 | (uint)(1)));
-  }
-  return (uint)(in_EAX & 0xffffff00);
+{
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm cmp byte ptr [ecx + 0xd], 0
+  __asm jne 0x10db2a9a
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [eax]
+  __asm cmp eax, dword ptr [ecx + 0x10]
+  __asm jl 0x10db2a9a
+  __asm mov al, 1
+  __asm ret 8
+  __asm xor al, al
+  __asm ret 8
 }
+
 
 
 // Reference entry 10db2ab0; body size 31 bytes.
 #line 1 "ENTRY_10db2ab0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10db2ab0(void)
 
-uint __stdcall FUN_10db2ab0(int param_1,uint *param_2){
-  uint in_EAX;
-  
-  if ((*(char *)(param_1 + 0xd) == '\0') &&
-     (in_EAX = (uint)(*param_2), *(int *)(param_1 + 0x10) <= (int)(in_EAX))) {
-    return (uint)(((uint)((int3)(in_EAX >> 8)) << 8 | (uint)(1)));
-  }
-  return (uint)(in_EAX & 0xffffff00);
+{
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm cmp byte ptr [ecx + 0xd], 0
+  __asm jne 0x10db2aca
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [eax]
+  __asm cmp eax, dword ptr [ecx + 0x10]
+  __asm jl 0x10db2aca
+  __asm mov al, 1
+  __asm ret 8
+  __asm xor al, al
+  __asm ret 8
 }
+
 
 
 // Reference entry 10db2f20; body size 7 bytes.
@@ -11012,33 +11849,27 @@ bool __stdcall FUN_10db3740(int *param_1,int *param_2)
 // Reference entry 10db37a0; body size 14 bytes.
 #line 1 "ENTRY_10db37a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10db37a0(int param_1)
+__declspec(naked) void FUN_10db37a0(void)
 
 {
-  if (*(int *)(param_1 + 4) != 0xaaaaaaa) {
-    return;
-  }
-                    
-  std::_Xlength_error("map/set too long");
+  __asm cmp dword ptr [ecx + 4], 0xaaaaaaa
+  __asm je LAB_1000d4ae
+  __asm ret
 }
+
 
 
 // Reference entry 10db37c0; body size 14 bytes.
 #line 1 "ENTRY_10db37c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10db37c0(int param_1)
+__declspec(naked) void FUN_10db37c0(void)
 
 {
-  if (*(int *)(param_1 + 4) != 0xaaaaaaa) {
-    return;
-  }
-                    
-  std::_Xlength_error("map/set too long");
+  __asm cmp dword ptr [ecx + 4], 0xaaaaaaa
+  __asm je LAB_1000d4ae
+  __asm ret
 }
+
 
 
 // Reference entry 10db37e0; body size 3 bytes.
@@ -11164,71 +11995,85 @@ undefined4 __fastcall FUN_10db3870(undefined4 param_1)
 // Reference entry 10db3da0; body size 79 bytes.
 #line 1 "ENTRY_10db3da0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10db3da0(int param_2)
+__declspec(naked) void FUN_10db3da0(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  
-  piVar1 = (int *)(*(int **)(param_2 + 8), 0);
-  *(int*)(param_2 + 8) = (int)(*piVar1);
-  if (*(char *)(*piVar1 + 0xd) == '\0') {
-    *(int*)(*piVar1 + 4) = (int)(param_2);
-  }
-  piVar1[1] = (int)(*(int *)(param_2 + 4));
-  if ((int)(param_2) == *(int *)(*param_1 + 4)) {
-    *(int**)(*param_1 + 4) = (int *)(piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2 = (int *)(*(int **)(param_2 + 4), 0);
-  if ((int)(param_2) == *piVar2) {
-    *piVar2 = (int)((int)piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2[2] = (int)((int)piVar1);
-  *piVar1 = (int)(param_2);
-  *(int**)(param_2 + 4) = (int *)(piVar1);
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [edx + 8]
+  __asm mov eax, dword ptr [esi]
+  __asm mov dword ptr [edx + 8], eax
+  __asm mov eax, dword ptr [esi]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10db3db8
+  __asm mov dword ptr [eax + 4], edx
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm cmp edx, dword ptr [eax + 4]
+  __asm jne 0x10db3dd1
+  __asm mov dword ptr [eax + 4], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov eax, dword ptr [edx + 4]
+  __asm cmp edx, dword ptr [eax]
+  __asm jne 0x10db3de3
+  __asm mov dword ptr [eax], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov dword ptr [eax + 8], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10db3e10; body size 79 bytes.
 #line 1 "ENTRY_10db3e10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10db3e10(int param_2)
+__declspec(naked) void FUN_10db3e10(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  
-  piVar1 = (int *)(*(int **)(param_2 + 8), 0);
-  *(int*)(param_2 + 8) = (int)(*piVar1);
-  if (*(char *)(*piVar1 + 0xd) == '\0') {
-    *(int*)(*piVar1 + 4) = (int)(param_2);
-  }
-  piVar1[1] = (int)(*(int *)(param_2 + 4));
-  if ((int)(param_2) == *(int *)(*param_1 + 4)) {
-    *(int**)(*param_1 + 4) = (int *)(piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2 = (int *)(*(int **)(param_2 + 4), 0);
-  if ((int)(param_2) == *piVar2) {
-    *piVar2 = (int)((int)piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2[2] = (int)((int)piVar1);
-  *piVar1 = (int)(param_2);
-  *(int**)(param_2 + 4) = (int *)(piVar1);
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [edx + 8]
+  __asm mov eax, dword ptr [esi]
+  __asm mov dword ptr [edx + 8], eax
+  __asm mov eax, dword ptr [esi]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10db3e28
+  __asm mov dword ptr [eax + 4], edx
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm cmp edx, dword ptr [eax + 4]
+  __asm jne 0x10db3e41
+  __asm mov dword ptr [eax + 4], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov eax, dword ptr [edx + 4]
+  __asm cmp edx, dword ptr [eax]
+  __asm jne 0x10db3e53
+  __asm mov dword ptr [eax], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov dword ptr [eax + 8], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10db3e80; body size 11 bytes.
@@ -11349,81 +12194,82 @@ void __fastcall FUN_10db4870(int param_1)
 // Reference entry 10db4880; body size 60 bytes.
 #line 1 "ENTRY_10db4880"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10db4880(int param_1,int param_2)
+__declspec(naked) void FUN_10db4880(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 0x18);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm lea ecx, [eax + eax*2]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm shl ecx, 3
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10db48a8
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10db48b5
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10db48d0; body size 60 bytes.
 #line 1 "ENTRY_10db48d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10db48d0(int param_1,int param_2)
+__declspec(naked) void FUN_10db48d0(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 0x18);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm lea ecx, [eax + eax*2]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm shl ecx, 3
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10db48f8
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10db4905
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10db4c60; body size 37 bytes.
 #line 1 "ENTRY_10db4c60"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-SCStr * FUN_10db4c60(SCStr *param_1,undefined4 param_2)
+__declspec(naked) void FUN_10db4c60(void)
 
 {
-  switch(param_2) {
-  case 0:
-    ((SCStr *)(param_1))->int_allocRep("album");
-    return (SCStr *)(param_1);
-  case 1:
-    ((SCStr *)(param_1))->int_allocRep("artist");
-    return (SCStr *)(param_1);
-  case 2:
-    ((SCStr *)(param_1))->int_allocRep("track");
-    return (SCStr *)(param_1);
-  case 3:
-    ((SCStr *)(param_1))->int_allocRep("podcast");
-    return (SCStr *)(param_1);
-  default:
-    ((SCStr *)(param_1))->int_allocRep("other");
-    return (SCStr *)(param_1);
-  }
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm cmp eax, 3
+  __asm ja 0x10db4cc1
+  __asm jmp dword ptr [eax*4 + LAB_10db4cd8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm push offset LAB_118781cc
+  __asm call LAB_1005273e
+  __asm mov eax, dword ptr [esp + 8]
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10db5610; body size 7 bytes.
@@ -11500,12 +12346,16 @@ undefined4 FUN_10db5660(void)
 // Reference entry 10db5670; body size 16 bytes.
 #line 1 "ENTRY_10db5670"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10db5670(uint param_2)
+__declspec(naked) void FUN_10db5670(void)
+
 {
-  int param_1 = (int )this;
-  *(uint*)(param_1 + 4) = (uint)(*(uint *)(param_1 + 4) | 1 << (param_2 & 0x1f));
-  return;
+  __asm mov edx, dword ptr [ecx + 4]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm bts edx, eax
+  __asm mov dword ptr [ecx + 4], edx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10db5690; body size 25 bytes.
@@ -11550,98 +12400,128 @@ undefined4 FUN_10db5d70(undefined4 *param_1)
 // Reference entry 10db5d80; body size 138 bytes.
 #line 1 "ENTRY_10db5d80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-SCStr * FUN_10db5d80(SCStr *param_1,SCStr *param_2,SCStr *param_3)
+__declspec(naked) void FUN_10db5d80(void)
 
 {
-  int *piVar1;
-  int iVar2;
-  SCStr *this_;
-  SCStr *pSVar3;
-  
-  if ((SCStr *)((param_2)) == (SCStr *)(param_1)) {
-    return (SCStr *)(param_3);
-  }
-  do {
-    pSVar3 = (SCStr *)(param_2 + -0x14);
-    this_ = (SCStr *)(param_3 + -0x14);
-    if ((SCStr *)((pSVar3)) != (SCStr *)(this_)) {
-      ((SCStr *)(this_))->int_release();
-      *(undefined4*)this_ = (undefined4)((SCStr *)(*(undefined4 *)pSVar3));
-      ((SCStr *)(this_))->int_addref();
-    }
-    iVar2 = (int)(*(int *)(param_2 + -0x10));
-    if ((int)(iVar2) != *(int *)(param_3 + -0x10)) {
-      piVar1 = (int *)(*(int **)(param_3 + -0xc), 0);
-      if ((int *)(piVar1) != (int *)(0x0)) {
-        *(undefined4*)(param_3 + -0x10) = (undefined4)(0);
-        *(undefined4*)(param_3 + -0xc) = (undefined4)(0);
-        ((SCVtbl_2_0*)(piVar1))->v();
-        iVar2 = (int)(*(int *)(param_2 + -0x10));
-      }
-      *(int*)(param_3 + -0x10) = (int)(iVar2);
-      piVar1 = (int *)(*(int **)(param_2 + -0xc), 0);
-      *(int**)(param_3 + -0xc) = (int *)(piVar1);
-      if ((int *)(piVar1) != (int *)(0x0)) {
-        ((SCVtbl_1_0*)(piVar1))->v();
-      }
-    }
-    *(undefined4*)(param_3 + -8) = (undefined4)(*(undefined4 *)(param_2 + -8));
-    param_3[-4] = (SCStr)(param_2[-4]);
-    param_3 = (SCStr *)(this_);
-    param_2 = (SCStr *)(pSVar3);
-  } while ((SCStr *)(pSVar3) != (SCStr *)(param_1));
-  return (SCStr *)(this_);
+  __asm push ebp
+  __asm mov ebp, dword ptr [esp + 8]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm cmp edi, ebp
+  __asm je 0x10db5e03
+  __asm push ebx
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x1c]
+  __asm add edi, -0x14
+  __asm sub esi, 0x14
+  __asm mov ebx, edi
+  __asm cmp edi, esi
+  __asm je 0x10db5db2
+  __asm mov ecx, esi
+  __asm call LAB_1005c315
+  __asm mov eax, dword ptr [edi]
+  __asm mov ecx, esi
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1002a973
+  __asm mov eax, dword ptr [edi + 4]
+  __asm cmp eax, dword ptr [esi + 4]
+  __asm je 0x10db5de9
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x10db5dd7
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov eax, dword ptr [edi + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, dword ptr [edi + 8]
+  __asm mov dword ptr [esi + 8], ecx
+  __asm test ecx, ecx
+  __asm je 0x10db5de9
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 4]
+  __asm mov eax, dword ptr [edi + 0xc]
+  __asm mov dword ptr [esi + 0xc], eax
+  __asm mov al, byte ptr [edi + 0x10]
+  __asm sub edi, 0x14
+  __asm mov byte ptr [esi + 0x10], al
+  __asm cmp ebx, ebp
+  __asm jne 0x10db5d97
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop edi
+  __asm pop ebp
+  __asm ret
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm pop edi
+  __asm pop ebp
+  __asm ret
 }
+
 
 
 // Reference entry 10db5e30; body size 139 bytes.
 #line 1 "ENTRY_10db5e30"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-SCStr * FUN_10db5e30(int *param_1,int *param_2,SCStr *param_3)
+__declspec(naked) void FUN_10db5e30(void)
 
 {
-  int *piVar1;
-  int iVar2;
-  int *piVar3;
-  
-  if ((int *)(param_1) != (int *)(param_2)) {
-    piVar3 = (int *)(param_1 + 1);
-    do {
-      if ((SCStr *)((piVar3 + -1)) != (SCStr *)(param_3)) {
-        ((SCStr *)(param_3))->int_release();
-        *(int*)param_3 = (int)((SCStr *)(piVar3[-1]));
-        ((SCStr *)(param_3))->int_addref();
-      }
-      iVar2 = (int)(*piVar3);
-      if ((int)(iVar2) != *(int *)(param_3 + 4)) {
-        piVar1 = (int *)(*(int **)(param_3 + 8), 0);
-        if ((int *)(piVar1) != (int *)(0x0)) {
-          *(undefined4*)(param_3 + 4) = (undefined4)(0);
-          *(undefined4*)(param_3 + 8) = (undefined4)(0);
-          ((SCVtbl_2_0*)(piVar1))->v();
-          iVar2 = (int)(*piVar3);
-        }
-        *(int*)(param_3 + 4) = (int)(iVar2);
-        piVar1 = (int *)((int *)piVar3[1]);
-        *(int**)(param_3 + 8) = (int *)(piVar1);
-        if ((int *)(piVar1) != (int *)(0x0)) {
-          ((SCVtbl_1_0*)(piVar1))->v();
-        }
-      }
-      *(int*)(param_3 + 0xc) = (int)(piVar3[2]);
-      param_3[0x10] = (SCStr)(*(SCStr *)(piVar3 + 3));
-      param_3 = (SCStr *)(param_3 + 0x14);
-      piVar1 = (int *)(piVar3 + 4);
-      piVar3 = (int *)(piVar3 + 5);
-    } while ((int *)(piVar1) != (int *)(param_2));
-    return (SCStr *)(param_3);
-  }
-  return (SCStr *)(param_3);
+  __asm push ebx
+  __asm mov ebx, dword ptr [esp + 0xc]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0xc]
+  __asm cmp edi, ebx
+  __asm je 0x10db5eb4
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x18]
+  __asm add edi, 4
+  __asm lea eax, [edi - 4]
+  __asm cmp eax, esi
+  __asm je 0x10db5e60
+  __asm mov ecx, esi
+  __asm call LAB_1005c315
+  __asm mov eax, dword ptr [edi - 4]
+  __asm mov ecx, esi
+  __asm mov dword ptr [esi], eax
+  __asm call LAB_1002a973
+  __asm mov eax, dword ptr [edi]
+  __asm cmp eax, dword ptr [esi + 4]
+  __asm je 0x10db5e95
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x10db5e83
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov eax, dword ptr [edi]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, dword ptr [edi + 4]
+  __asm mov dword ptr [esi + 8], ecx
+  __asm test ecx, ecx
+  __asm je 0x10db5e95
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 4]
+  __asm mov eax, dword ptr [edi + 8]
+  __asm mov dword ptr [esi + 0xc], eax
+  __asm mov al, byte ptr [edi + 0xc]
+  __asm add edi, 0x14
+  __asm mov byte ptr [esi + 0x10], al
+  __asm add esi, 0x14
+  __asm lea eax, [edi - 4]
+  __asm cmp eax, ebx
+  __asm jne 0x10db5e46
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop edi
+  __asm pop ebx
+  __asm ret
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm pop edi
+  __asm pop ebx
+  __asm ret
 }
+
 
 
 // Reference entry 10db5ee0; body size 5 bytes.
@@ -11731,14 +12611,17 @@ undefined4 FUN_10db6690(undefined4 param_1)
 // Reference entry 10db66a0; body size 14 bytes.
 #line 1 "ENTRY_10db66a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10db66a0(undefined4 *param_1)
+__declspec(naked) void FUN_10db66a0(void)
 
 {
-  *param_1 = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10db66c0; body size 16 bytes.
@@ -11861,51 +12744,75 @@ undefined4 * __fastcall FUN_10db67b0(undefined4 *param_1)
 // Reference entry 10db67d0; body size 63 bytes.
 #line 1 "ENTRY_10db67d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10db67d0(undefined4 param_2,undefined4 param_3,char *param_4)
+__declspec(naked) void FUN_10db67d0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  char *pcVar1;
-  
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_3);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_HeaderMapping);
-  if ((char *)(param_4) != (char *)(0x0)) {
-    pcVar1 = (char *)(_strdup(param_4), 0);
-    param_1[3] = (undefined4)(pcVar1);
-    return (undefined4 *)(param_1);
-  }
-  param_1[3] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm mov dword ptr [esi + 8], eax
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm mov dword ptr [esi], LAB_11933388
+  __asm test eax, eax
+  __asm je 0x10db6802
+  __asm push eax
+  __asm call dword ptr [LAB_122fc9c0]
+  __asm add esp, 4
+  __asm mov dword ptr [esi + 0xc], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 0xc
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10db6820; body size 93 bytes.
 #line 1 "ENTRY_10db6820"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10db6820(char *param_2,undefined4 param_3,undefined4 param_4,char *param_5)
+__declspec(naked) void FUN_10db6820(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  char *pcVar1;
-  
-  param_1[1] = (undefined4)(param_3);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_MenuItemMapping);
-  if ((char *)(param_5) == (char *)(0x0)) {
-    pcVar1 = (char *)((char *)0x0);
-  }
-  else {
-    pcVar1 = (char *)(_strdup(param_5), 0);
-  }
-  param_1[4] = (undefined4)(pcVar1);
-  if ((char *)(param_2) != (char *)(0x0)) {
-    pcVar1 = (char *)(_strdup(param_2), 0);
-    param_1[2] = (undefined4)(pcVar1);
-    param_1[3] = (undefined4)(param_4);
-    return (undefined4 *)(param_1);
-  }
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(param_4);
-  return (undefined4 *)(param_1);
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm mov dword ptr [esi], LAB_11933394
+  __asm test eax, eax
+  __asm je 0x10db6844
+  __asm push eax
+  __asm call dword ptr [LAB_122fc9c0]
+  __asm add esp, 4
+  __asm jmp 0x10db6846
+  __asm xor eax, eax
+  __asm mov dword ptr [esi + 0x10], eax
+  __asm mov eax, dword ptr [esp + 8]
+  __asm test eax, eax
+  __asm je 0x10db686b
+  __asm push eax
+  __asm call dword ptr [LAB_122fc9c0]
+  __asm mov dword ptr [esi + 8], eax
+  __asm add esp, 4
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm mov dword ptr [esi + 0xc], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 0x10
+  __asm xor eax, eax
+  __asm mov dword ptr [esi + 8], eax
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm mov dword ptr [esi + 0xc], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10db69e0; body size 9 bytes.
@@ -11924,63 +12831,72 @@ undefined4 * __fastcall FUN_10db69e0(undefined4 *param_1)
 // Reference entry 10db6b10; body size 28 bytes.
 #line 1 "ENTRY_10db6b10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10db6b10(undefined4 *param_1)
+__declspec(naked) void FUN_10db6b10(void)
 
 {
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10db6c40; body size 46 bytes.
 #line 1 "ENTRY_10db6c40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10db6c40(undefined4 *param_1)
+__declspec(naked) void FUN_10db6c40(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCInfoviewMenuInfo);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  param_1[4] = (undefined4)(0);
-  *(undefined1*)(param_1 + 5) = (undefined1)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_119333a0
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm mov byte ptr [ecx + 0x14], 0
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10db80b0; body size 17 bytes.
 #line 1 "ENTRY_10db80b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10db80b0(undefined4 *param_1)
+__declspec(naked) void FUN_10db80b0(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCInfoviewViewBuilder_HeaderMapping);
-  free((void *)param_1[3]);
-  return;
+  __asm push dword ptr [ecx + 0xc]
+  __asm mov dword ptr [ecx], LAB_11933388
+  __asm call dword ptr [LAB_122fc7ac]
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10db80d0; body size 32 bytes.
 #line 1 "ENTRY_10db80d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10db80d0(undefined4 *param_1)
+__declspec(naked) void FUN_10db80d0(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCInfoviewViewBuilder_MenuItemMapping);
-  free((void *)param_1[4]);
-  free((void *)param_1[2]);
-  return;
+  __asm push edi
+  __asm mov edi, ecx
+  __asm push dword ptr [edi + 0x10]
+  __asm mov dword ptr [edi], LAB_11933394
+  __asm call dword ptr [LAB_122fc7ac]
+  __asm push dword ptr [edi + 8]
+  __asm call dword ptr [LAB_122fc7ac]
+  __asm add esp, 8
+  __asm pop edi
+  __asm ret
 }
+
 
 
 // Reference entry 10db8ec0; body size 14 bytes.
@@ -12159,21 +13075,34 @@ int * __fastcall FUN_10db8fa0(int *param_1)
 // Reference entry 10db98b0; body size 63 bytes.
 #line 1 "ENTRY_10db98b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall Recovered_Bulk::m_FUN_10db98b0(uint param_2)
+__declspec(naked) void FUN_10db98b0(void)
+
 {
-  int *param_1 = (int *)this;
-  uint uVar1;
-  
-  uVar1 = (uint)((param_1[2] - *param_1) / 0x14);
-  if (0xccccccc - (uVar1 >> 1) < uVar1) {
-    return (uint)(0xccccccc);
-  }
-  uVar1 = (uint)((uVar1 >> 1) + uVar1);
-  if (uVar1 < param_2) {
-    uVar1 = (uint)(param_2);
-  }
-  return (uint)(uVar1);
+  __asm mov edx, dword ptr [ecx + 8]
+  __asm mov eax, 0x66666667
+  __asm sub edx, dword ptr [ecx]
+  __asm mov ecx, 0xccccccc
+  __asm imul edx
+  __asm push esi
+  __asm sar edx, 3
+  __asm mov esi, edx
+  __asm shr esi, 0x1f
+  __asm add esi, edx
+  __asm mov edx, esi
+  __asm _emit 0xd1 __asm _emit 0xea
+  __asm sub ecx, edx
+  __asm cmp esi, ecx
+  __asm jbe 0x10db98df
+  __asm mov eax, 0xccccccc
+  __asm pop esi
+  __asm ret 4
+  __asm lea eax, [edx + esi]
+  __asm cmp eax, dword ptr [esp + 8]
+  __asm pop esi
+  __asm cmovb eax, dword ptr [esp + 4]
+  __asm ret 4
 }
+
 
 
 // Reference entry 10db99b0; body size 3 bytes.
@@ -12289,113 +13218,170 @@ void __stdcall FUN_10db9dc0(unsigned int recovered_unused_stack_0)
 // Reference entry 10db9f40; body size 127 bytes.
 #line 1 "ENTRY_10db9f40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10db9f40(undefined4 param_2,undefined4 param_3,char *param_4)
+__declspec(naked) void FUN_10db9f40(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  char *pcVar2;
-  
-  if (*(uint *)(param_1 + 0x1c) < 0x12) {
-    puVar1 = (undefined4 *)(operator_new(0x10), 0);
-    if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-      puVar1[1] = (undefined4)(param_2);
-      puVar1[2] = (undefined4)(param_3);
-      *puVar1 = (undefined4)((uint)&ghidra_vftable_SCInfoviewViewBuilder_HeaderMapping);
-      if ((char *)(param_4) != (char *)(0x0)) {
-        pcVar2 = (char *)(_strdup(param_4), 0);
-        puVar1[3] = (undefined4)(pcVar2);
-        *(undefined4**)(param_1 + 0x20 + *(int *)(param_1 + 0x1c) * 4) = (undefined4 *)(puVar1);
-        *(int*)(param_1 + 0x1c) = (int)(*(int *)(param_1 + 0x1c) + 1);
-        return;
-      }
-      puVar1[3] = (undefined4)(0);
-      *(undefined4**)(param_1 + 0x20 + *(int *)(param_1 + 0x1c) * 4) = (undefined4 *)(puVar1);
-      *(int*)(param_1 + 0x1c) = (int)(*(int *)(param_1 + 0x1c) + 1);
-      return;
-    }
-    *(undefined4*)(param_1 + 0x20 + *(int *)(param_1 + 0x1c) * 4) = (undefined4)(0);
-    *(int*)(param_1 + 0x1c) = (int)(*(int *)(param_1 + 0x1c) + 1);
-  }
-  return;
+  __asm push ecx
+  __asm push edi
+  __asm mov edi, ecx
+  __asm cmp dword ptr [edi + 0x1c], 0x12
+  __asm jae 0x10db9fba
+  __asm push esi
+  __asm push 0x10
+  __asm call LAB_10024f14
+  __asm mov esi, eax
+  __asm add esp, 4
+  __asm mov dword ptr [esp + 8], esi
+  __asm test esi, esi
+  __asm je 0x10db9fad
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm mov dword ptr [esi + 8], eax
+  __asm mov eax, dword ptr [esp + 0x18]
+  __asm mov dword ptr [esi], LAB_11933388
+  __asm test eax, eax
+  __asm je 0x10db9f98
+  __asm push eax
+  __asm call dword ptr [LAB_122fc9c0]
+  __asm mov dword ptr [esi + 0xc], eax
+  __asm add esp, 4
+  __asm mov eax, dword ptr [edi + 0x1c]
+  __asm mov dword ptr [edi + eax*4 + 0x20], esi
+  __asm inc dword ptr [edi + 0x1c]
+  __asm pop esi
+  __asm pop edi
+  __asm pop ecx
+  __asm ret 0xc
+  __asm xor eax, eax
+  __asm mov dword ptr [esi + 0xc], eax
+  __asm mov eax, dword ptr [edi + 0x1c]
+  __asm mov dword ptr [edi + eax*4 + 0x20], esi
+  __asm inc dword ptr [edi + 0x1c]
+  __asm pop esi
+  __asm pop edi
+  __asm pop ecx
+  __asm ret 0xc
+  __asm mov eax, dword ptr [edi + 0x1c]
+  __asm xor esi, esi
+  __asm mov dword ptr [edi + eax*4 + 0x20], esi
+  __asm inc dword ptr [edi + 0x1c]
+  __asm pop esi
+  __asm pop edi
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10dba320; body size 163 bytes.
 #line 1 "ENTRY_10dba320"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dba320(char *param_2,undefined4 param_3,undefined4 param_4,char *param_5)
+__declspec(naked) void FUN_10dba320(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  char *pcVar2;
-  
-  if (*(uint *)(param_1 + 0x68) < 0x16) {
-    puVar1 = (undefined4 *)(operator_new(0x14), 0);
-    if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-      puVar1[1] = (undefined4)(param_3);
-      *puVar1 = (undefined4)((uint)&ghidra_vftable_SCInfoviewViewBuilder_MenuItemMapping);
-      if ((char *)(param_5) == (char *)(0x0)) {
-        pcVar2 = (char *)((char *)0x0);
-      }
-      else {
-        pcVar2 = (char *)(_strdup(param_5), 0);
-      }
-      puVar1[4] = (undefined4)(pcVar2);
-      if ((char *)(param_2) != (char *)(0x0)) {
-        pcVar2 = (char *)(_strdup(param_2), 0);
-        puVar1[2] = (undefined4)(pcVar2);
-        puVar1[3] = (undefined4)(param_4);
-        *(undefined4**)(param_1 + 0x6c + *(int *)(param_1 + 0x68) * 4) = (undefined4 *)(puVar1);
-        *(int*)(param_1 + 0x68) = (int)(*(int *)(param_1 + 0x68) + 1);
-        return;
-      }
-      puVar1[2] = (undefined4)(0);
-      puVar1[3] = (undefined4)(param_4);
-      *(undefined4**)(param_1 + 0x6c + *(int *)(param_1 + 0x68) * 4) = (undefined4 *)(puVar1);
-      *(int*)(param_1 + 0x68) = (int)(*(int *)(param_1 + 0x68) + 1);
-      return;
-    }
-    *(undefined4*)(param_1 + 0x6c + *(int *)(param_1 + 0x68) * 4) = (undefined4)(0);
-    *(int*)(param_1 + 0x68) = (int)(*(int *)(param_1 + 0x68) + 1);
-  }
-  return;
+  __asm push ecx
+  __asm push edi
+  __asm mov edi, ecx
+  __asm cmp dword ptr [edi + 0x68], 0x16
+  __asm jae LAB_10dba3be
+  __asm push esi
+  __asm push 0x14
+  __asm call LAB_10024f14
+  __asm mov esi, eax
+  __asm add esp, 4
+  __asm mov dword ptr [esp + 8], esi
+  __asm test esi, esi
+  __asm je 0x10dba3b1
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [esp + 0x1c]
+  __asm mov dword ptr [esi], LAB_11933394
+  __asm test eax, eax
+  __asm je 0x10dba364
+  __asm push eax
+  __asm call dword ptr [LAB_122fc9c0]
+  __asm add esp, 4
+  __asm jmp 0x10dba366
+  __asm xor eax, eax
+  __asm mov dword ptr [esi + 0x10], eax
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm test eax, eax
+  __asm je 0x10dba395
+  __asm push eax
+  __asm call dword ptr [LAB_122fc9c0]
+  __asm mov dword ptr [esi + 8], eax
+  __asm add esp, 4
+  __asm mov eax, dword ptr [esp + 0x18]
+  __asm mov dword ptr [esi + 0xc], eax
+  __asm mov eax, dword ptr [edi + 0x68]
+  __asm mov dword ptr [edi + eax*4 + 0x6c], esi
+  __asm inc dword ptr [edi + 0x68]
+  __asm pop esi
+  __asm pop edi
+  __asm pop ecx
+  __asm ret 0x10
+  __asm xor eax, eax
+  __asm mov dword ptr [esi + 8], eax
+  __asm mov eax, dword ptr [esp + 0x18]
+  __asm mov dword ptr [esi + 0xc], eax
+  __asm mov eax, dword ptr [edi + 0x68]
+  __asm mov dword ptr [edi + eax*4 + 0x6c], esi
+  __asm inc dword ptr [edi + 0x68]
+  __asm pop esi
+  __asm pop edi
+  __asm pop ecx
+  __asm ret 0x10
+  __asm mov eax, dword ptr [edi + 0x68]
+  __asm xor esi, esi
+  __asm mov dword ptr [edi + eax*4 + 0x6c], esi
+  __asm inc dword ptr [edi + 0x68]
+  __asm pop esi
+  __asm pop edi
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10dba3f0; body size 90 bytes.
 #line 1 "ENTRY_10dba3f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10dba3f0(uint param_1)
+__declspec(naked) void FUN_10dba3f0(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0xccccccd) {
-    param_1 = (uint)(param_1 * 0x14);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp eax, 0xccccccc
+  __asm ja 0x10dba445
+  __asm lea eax, [eax + eax*4]
+  __asm shl eax, 2
+  __asm cmp eax, 0x1000
+  __asm jb 0x10dba430
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10dba445
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10dba42a
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10dba440
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10dbb6c0; body size 11 bytes.
@@ -12448,69 +13434,13 @@ int __fastcall FUN_10dbc220(int *param_1)
 // Reference entry 10dbc9b0; body size 11 bytes.
 #line 1 "ENTRY_10dbc9b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall Recovered_Bulk::m_FUN_10dbc9b0(undefined4 *param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5)
+__declspec(naked) void FUN_10dbc9b0(void)
+
 {
-  int param_1 = (int )this;
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvVar3;
-  undefined4 uVar4;
-  undefined4 uVar5;
-  undefined4 uVar6;
-  undefined4 uVar7;
-  int iVar8;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0x1688), 0);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  pvVar3 = (void *)(operator_new(0x27f68), 0);
-
-  if ((void *)(pvVar3) == (void *)(0x0)) {
-    uVar5 = (undefined4)(0);
-  }
-  else {
-    iVar8 = (int)(piVar1[2]);
-    uVar5 = (undefined4)(param_4);
-    uVar6 = (undefined4)(param_3);
-    uVar7 = (undefined4)(param_5);
-    uVar4 = (undefined4)(((SCVtbl_2_5*)(piVar1))->v((int)(iVar8),(int)(param_4),(int)(param_3),(int)(param_5),(int)(uVar2)), 0);
-    uVar5 = (undefined4)(thunk_FUN_111ce020((int)(uVar4),(int)(iVar8),(int)(uVar5),(int)(uVar6),(int)(uVar7)), 0);
-  }
-
-  pvVar3 = (void *)(operator_new(0x27f68), 0);
-
-  if ((void *)(pvVar3) == (void *)(0x0)) {
-    uVar6 = (undefined4)(0);
-  }
-  else {
-    iVar8 = (int)(piVar1[2]);
-    uVar6 = (undefined4)(((SCVtbl_2_4*)(piVar1))->v((int)(iVar8),(int)(param_4),(int)(param_3),(int)(param_5)), 0);
-    uVar6 = (undefined4)(thunk_FUN_111ce020((int)(uVar6),(int)(iVar8),(int)(param_4),(int)(param_3),(int)(param_5)), 0);
-  }
-
-  uVar7 = (undefined4)(thunk_FUN_111dd660(), 0);
-  uVar4 = (undefined4)(((SCVtbl_3_0*)(piVar1))->v(), 0);
-  pvVar3 = (void *)(operator_new(100), 0);
-
-  if ((void *)(pvVar3) == (void *)(0x0)) {
-    uVar5 = (undefined4)(0);
-  }
-  else {
-    uVar5 = (undefined4)(thunk_FUN_111ca9f0((int)(uVar5),(int)(uVar6),(int)(uVar7),(int)(uVar4),(int)(&DAT_122f1250)), 0);
-  }
-  *param_2 = (undefined4)(uVar5);
-
-  return (undefined4)(0);
-
- } catch (...) { }
+  __asm mov ecx, dword ptr [ecx + 0x1688]
+  __asm jmp LAB_10078ea2
 }
+
 
 
 // Reference entry 10dbda00; body size 12 bytes.
@@ -12669,22 +13599,21 @@ undefined4 __fastcall FUN_10dc5c10(int param_1)
 // Reference entry 10dc5c80; body size 31 bytes.
 #line 1 "ENTRY_10dc5c80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 * __thiscall Recovered_Bulk::m_FUN_10dc5c80(uint param_2)
+__declspec(naked) void FUN_10dc5c80(void)
+
 {
-  int param_1 = (int )this;
-  undefined1 *puVar1;
-  undefined1 *puVar2;
-  
-  if ((uint)(param_2) < *(uint *)(param_1 + 4)) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 8 + param_2 * 4), 0);
-    puVar2 = (undefined1 *)(&DAT_1186d2ee);
-    if ((undefined1 *)(puVar1) != (undefined1 *)(0x0)) {
-      puVar2 = (undefined1 *)(puVar1);
-    }
-    return (undefined1 *)(puVar2);
-  }
-  return (undefined1 *)((undefined1 *)0x0);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp eax, dword ptr [ecx + 4]
+  __asm jae 0x10dc5c9a
+  __asm mov ecx, dword ptr [ecx + eax*4 + 8]
+  __asm test ecx, ecx
+  __asm mov eax, offset LAB_1186d2ee
+  __asm cmovne eax, ecx
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dc5cb0; body size 40 bytes.
@@ -12772,18 +13701,22 @@ undefined4 __fastcall FUN_10dc5d30(int param_1)
 // Reference entry 10dc5da0; body size 25 bytes.
 #line 1 "ENTRY_10dc5da0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10dc5da0(int *param_2)
+__declspec(naked) void FUN_10dc5da0(void)
+
 {
-  int param_1 = (int )this;
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0x7c), 0);
-  *param_2 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_2);
+  __asm mov ecx, dword ptr [ecx + 0x7c]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x10dc5db3
+  __asm mov edx, dword ptr [ecx]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dc5dc0; body size 5 bytes.
@@ -12830,42 +13763,42 @@ undefined1 __fastcall FUN_10dc5f20(int param_1)
 // Reference entry 10dc68b0; body size 31 bytes.
 #line 1 "ENTRY_10dc68b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 * __thiscall Recovered_Bulk::m_FUN_10dc68b0(uint param_2)
+__declspec(naked) void FUN_10dc68b0(void)
+
 {
-  int param_1 = (int )this;
-  undefined1 *puVar1;
-  undefined1 *puVar2;
-  
-  if ((uint)(param_2) < *(uint *)(param_1 + 4)) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x18 + param_2 * 4), 0);
-    puVar2 = (undefined1 *)(&DAT_1186d2ee);
-    if ((undefined1 *)(puVar1) != (undefined1 *)(0x0)) {
-      puVar2 = (undefined1 *)(puVar1);
-    }
-    return (undefined1 *)(puVar2);
-  }
-  return (undefined1 *)((undefined1 *)0x0);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp eax, dword ptr [ecx + 4]
+  __asm jae 0x10dc68ca
+  __asm mov ecx, dword ptr [ecx + eax*4 + 0x18]
+  __asm test ecx, ecx
+  __asm mov eax, offset LAB_1186d2ee
+  __asm cmovne eax, ecx
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dc73c0; body size 25 bytes.
 #line 1 "ENTRY_10dc73c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 __fastcall FUN_10dc73c0(int param_1)
+__declspec(naked) void FUN_10dc73c0(void)
 
 {
-  int iVar1;
-  
-  if (*(int **)(param_1 + 0xcc) != (int *)((0x0))) {
-    iVar1 = (int)(((SCVtbl_5_0*)(*(int **)(param_1 + 0xcc)))->v(), 0);
-    if (0 < iVar1) {
-      return (undefined4)(1);
-    }
-  }
-  return (undefined4)(0);
+  __asm mov ecx, dword ptr [ecx + 0xcc]
+  __asm test ecx, ecx
+  __asm je 0x10dc73d6
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x14]
+  __asm test eax, eax
+  __asm jle 0x10dc73d6
+  __asm mov al, 1
+  __asm ret
+  __asm xor al, al
+  __asm ret
 }
+
 
 
 // Reference entry 10dc73e0; body size 24 bytes.
@@ -12884,40 +13817,38 @@ undefined4 __stdcall FUN_10dc73e0(undefined4 param_1,undefined4 param_2,undefine
 // Reference entry 10dc74c0; body size 67 bytes.
 #line 1 "ENTRY_10dc74c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __thiscall Recovered_Bulk::m_FUN_10dc74c0(byte *param_2)
+__declspec(naked) void FUN_10dc74c0(void)
+
 {
-  int param_1 = (int )this;
-  byte bVar1;
-  byte *pbVar2;
-  uint uVar3;
-  bool bVar4;
-  
-  pbVar2 = (byte *)(*(byte **)(param_1 + 0x10), 0);
-  uVar3 = (uint)(0);
-  if ((byte *)(pbVar2) != (byte *)(0x0)) {
-    do {
-      bVar1 = (byte)(*pbVar2);
-      bVar4 = (bool)((byte)(bVar1) < *param_2);
-      if ((byte)(bVar1) != *param_2) {
-LAB_10dc74f0:
-        uVar3 = (uint)(-(uint)bVar4 | 1);
-        goto LAB_10dc74f5;
-      }
-      if (bVar1 == 0) break;
-      bVar1 = (byte)(pbVar2[1]);
-      bVar4 = (bool)((byte)((bVar1)) < param_2[1]);
-      if ((byte)((bVar1)) != param_2[1]) goto LAB_10dc74f0;
-      pbVar2 = (byte *)(pbVar2 + 2);
-      param_2 = (byte *)(param_2 + 2);
-    } while (bVar1 != 0);
-    uVar3 = (uint)(0);
-LAB_10dc74f5:
-    if (uVar3 == 0) {
-      return (uint)(1);
-    }
-  }
-  return (bool)0;
+  __asm mov eax, dword ptr [ecx + 0x10]
+  __asm test eax, eax
+  __asm je 0x10dc74fe
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dl, byte ptr [eax]
+  __asm cmp dl, byte ptr [ecx]
+  __asm jne 0x10dc74f0
+  __asm test dl, dl
+  __asm je 0x10dc74ec
+  __asm mov dl, byte ptr [eax + 1]
+  __asm cmp dl, byte ptr [ecx + 1]
+  __asm jne 0x10dc74f0
+  __asm add eax, 2
+  __asm add ecx, 2
+  __asm test dl, dl
+  __asm jne 0x10dc74d0
+  __asm xor eax, eax
+  __asm jmp 0x10dc74f5
+  __asm sbb eax, eax
+  __asm or eax, 1
+  __asm test eax, eax
+  __asm jne 0x10dc74fe
+  __asm mov al, 1
+  __asm ret 4
+  __asm xor al, al
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dc7520; body size 6 bytes.
@@ -13100,58 +14031,65 @@ bool __fastcall FUN_10dc9790(int param_1)
 // Reference entry 10dcbdb0; body size 47 bytes.
 #line 1 "ENTRY_10dcbdb0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 __fastcall FUN_10dcbdb0(int param_1)
+__declspec(naked) void FUN_10dcbdb0(void)
 
 {
-  char cVar1;
-  undefined1 *puVar2;
-  
-  if ((*(char **)(param_1 + 0xb0) != (char *)((0x0))) && (**(char **)(param_1 + 0xb0) != '\0')) {
-    puVar2 = (undefined1 *)(&DAT_1186d2ee);
-    if (*(undefined1 **)(param_1 + 0x28) != (undefined1 *)((0x0))) {
-      puVar2 = (undefined1 *)(*(undefined1 **)(param_1 + 0x28), 0);
-    }
-    cVar1 = (char)(thunk_FUN_110b8ef0(puVar2), 0);
-    if (cVar1 == '\0') {
-      return (undefined4)(1);
-    }
-  }
-  return (undefined4)(0);
+  __asm mov eax, dword ptr [ecx + 0xb0]
+  __asm test eax, eax
+  __asm je 0x10dcbddc
+  __asm cmp byte ptr [eax], 0
+  __asm je 0x10dcbddc
+  __asm mov eax, dword ptr [ecx + 0x28]
+  __asm test eax, eax
+  __asm mov ecx, offset LAB_1186d2ee
+  __asm cmovne ecx, eax
+  __asm push ecx
+  __asm call LAB_1007a568
+  __asm add esp, 4
+  __asm test al, al
+  __asm jne 0x10dcbddc
+  __asm mov al, 1
+  __asm ret
+  __asm xor al, al
+  __asm ret
 }
+
 
 
 // Reference entry 10dcbdf0; body size 23 bytes.
 #line 1 "ENTRY_10dcbdf0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10dcbdf0(int param_1)
+__declspec(naked) void FUN_10dcbdf0(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x28) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x28), 0);
-  }
-  thunk_FUN_110b9180(puVar1);
-  return;
+  __asm mov eax, dword ptr [ecx + 0x28]
+  __asm test eax, eax
+  __asm mov ecx, offset LAB_1186d2ee
+  __asm cmovne ecx, eax
+  __asm push ecx
+  __asm call LAB_1006e092
+  __asm add esp, 4
+  __asm ret
 }
+
 
 
 // Reference entry 10dcbe10; body size 29 bytes.
 #line 1 "ENTRY_10dcbe10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __thiscall Recovered_Bulk::m_FUN_10dcbe10(int param_2)
+__declspec(naked) void FUN_10dcbe10(void)
+
 {
-  int param_1 = (int )this;
-  if (param_2 != 0) {
-    return (undefined1)(2);
-  }
-  return (undefined1)(*(char *)(param_1 + 0xa8) != '\0');
+  __asm cmp dword ptr [esp + 4], 0
+  __asm je 0x10dcbe1f
+  __asm mov eax, 2
+  __asm ret 4
+  __asm xor eax, eax
+  __asm cmp byte ptr [ecx + 0xa8], al
+  __asm setne al
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dcdee0; body size 5 bytes.
@@ -13179,30 +14117,36 @@ char * FUN_10dcdef0(void)
 // Reference entry 10dcdf00; body size 27 bytes.
 #line 1 "ENTRY_10dcdf00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10dcdf00(undefined4 *param_1)
+__declspec(naked) void FUN_10dcdf00(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_1193436c
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [esp], ecx
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10dce020; body size 21 bytes.
 #line 1 "ENTRY_10dce020"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10dce020(undefined4 *param_1)
+__declspec(naked) void FUN_10dce020(void)
 
 {
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10dce040; body size 9 bytes.
@@ -13324,32 +14268,40 @@ undefined4 __fastcall FUN_10dcfbb0(undefined4 param_1, unsigned int recovered_un
 // Reference entry 10dcfbc0; body size 91 bytes.
 #line 1 "ENTRY_10dcfbc0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10dcfbc0(int *param_2)
+__declspec(naked) void FUN_10dcfbc0(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  int iVar3;
-  
-  param_1[1] = (int)(0);
-  *param_1 = (int)(0);
-  piVar1 = (int *)((int *)*param_2);
-  *param_2 = (int)(0);
-  piVar2 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar2) != (int *)(0x0)) {
-    *param_1 = (int)(0);
-    param_1[1] = (int)(0);
-    ((SCVtbl_2_0*)(piVar2))->v();
-  }
-  *param_1 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    iVar3 = (int)(((SCVtbl_3_0*)(piVar1))->v(), 0);
-    param_1[1] = (int)(iVar3);
-    return (int *)(param_1);
-  }
-  param_1[1] = (int)(0);
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov edi, dword ptr [eax]
+  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10dcfbf6
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov dword ptr [esi], edi
+  __asm test edi, edi
+  __asm je 0x10dcfc0d
+  __asm mov eax, dword ptr [edi]
+  __asm mov ecx, edi
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, esi
+  __asm pop edi
+  __asm pop esi
+  __asm ret 4
+  __asm pop edi
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dcfc40; body size 3 bytes.
@@ -13367,27 +14319,51 @@ void FUN_10dcfc40(void)
 // Reference entry 10dcfc50; body size 33 bytes.
 #line 1 "ENTRY_10dcfc50"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-int FUN_10dcfc50(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10dcfc50(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return (int)((param_2 - (int)param_1) + (int)param_3);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm sub edi, eax
+  __asm push edi
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm lea eax, [edi + esi]
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dcfc80; body size 33 bytes.
 #line 1 "ENTRY_10dcfc80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-int FUN_10dcfc80(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10dcfc80(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return (int)((param_2 - (int)param_1) + (int)param_3);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm sub edi, eax
+  __asm push edi
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm lea eax, [edi + esi]
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dcfcb0; body size 3 bytes.
@@ -13429,19 +14405,21 @@ void FUN_10dcfcd0(void)
 // Reference entry 10dcfd90; body size 26 bytes.
 #line 1 "ENTRY_10dcfd90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dcfd90(undefined4 *param_2)
+__declspec(naked) void FUN_10dcfd90(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 uVar1;
-  undefined4 *puVar2;
-  
-  uVar1 = (undefined4)(param_2[1]);
-  puVar2 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  *puVar2 = (undefined4)(*param_2);
-  puVar2[1] = (undefined4)(uVar1);
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 8);
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [eax + 4]
+  __asm mov edx, dword ptr [eax]
+  __asm mov eax, dword ptr [ecx + 4]
+  __asm mov dword ptr [eax], edx
+  __asm mov dword ptr [eax + 4], esi
+  __asm add dword ptr [ecx + 4], 8
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dcff70; body size 7 bytes.
@@ -13495,28 +14473,43 @@ int FUN_10dcffa0(int *param_1,int *param_2)
 // Reference entry 10dcffc0; body size 33 bytes.
 #line 1 "ENTRY_10dcffc0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-int FUN_10dcffc0(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10dcffc0(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return (int)((param_2 - (int)param_1) + (int)param_3);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm sub edi, eax
+  __asm push edi
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm lea eax, [edi + esi]
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dcfff0; body size 19 bytes.
 #line 1 "ENTRY_10dcfff0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 *  FUN_10dcfff0(undefined4 *param_1,undefined4 param_2,int param_3)
+__declspec(naked) void FUN_10dcfff0(void)
 
 {
-  *param_1 = (undefined4)(param_2);
-  param_1[1] = (undefined4)(param_3 + -1);
-  return (undefined4 *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov edx, dword ptr [esp + 0xc]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm dec edx
+  __asm mov dword ptr [eax], ecx
+  __asm mov dword ptr [eax + 4], edx
+  __asm ret
 }
+
 
 
 // Reference entry 10dd0010; body size 13 bytes.
@@ -13559,14 +14552,27 @@ undefined4 FUN_10dd0030(undefined4 param_1)
 // Reference entry 10dd0040; body size 36 bytes.
 #line 1 "ENTRY_10dd0040"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10dd0040(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10dd0040(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return (void *)((char *)((int)param_3 + (param_2 - (int)param_1 >> 3) * 8));
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm sub edi, eax
+  __asm push edi
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm sar edi, 3
+  __asm add esp, 0xc
+  __asm lea eax, [esi + edi*8]
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dd0070; body size 35 bytes.
@@ -13635,18 +14641,18 @@ void FUN_10dd00f0(undefined4 param_1,undefined4 *param_2,undefined4 *param_3)
 // Reference entry 10dd0100; body size 19 bytes.
 #line 1 "ENTRY_10dd0100"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dd0100(undefined4 param_1,undefined4 *param_2,undefined4 *param_3)
+__declspec(naked) void FUN_10dd0100(void)
 
 {
-  undefined4 uVar1;
-  
-  uVar1 = (undefined4)(param_3[1]);
-  *param_2 = (undefined4)(*param_3);
-  param_2[1] = (undefined4)(uVar1);
-  return;
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm mov ecx, dword ptr [eax]
+  __asm mov edx, dword ptr [eax + 4]
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [eax], ecx
+  __asm mov dword ptr [eax + 4], edx
+  __asm ret
 }
+
 
 
 // Reference entry 10dd0120; body size 3 bytes.
@@ -13676,23 +14682,28 @@ void FUN_10dd0130(void)
 // Reference entry 10dd0140; body size 45 bytes.
 #line 1 "ENTRY_10dd0140"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd0140(undefined4 *param_2)
+__declspec(naked) void FUN_10dd0140(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  undefined4 uVar2;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  if ((undefined4 *)(puVar1) != *(undefined4 **)(param_1 + 8)) {
-    uVar2 = (undefined4)(param_2[1]);
-    *puVar1 = (undefined4)(*param_2);
-    puVar1[1] = (undefined4)(uVar2);
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 8);
-    return;
-  }
-  thunk_FUN_10dcfdb0(puVar1,param_2);
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [ecx + 4]
+  __asm cmp esi, dword ptr [ecx + 8]
+  __asm je 0x10dd015f
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov edx, dword ptr [eax]
+  __asm mov eax, dword ptr [eax + 4]
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [esi + 4], eax
+  __asm add dword ptr [ecx + 4], 8
+  __asm pop esi
+  __asm ret 4
+  __asm push dword ptr [esp + 8]
+  __asm push esi
+  __asm call LAB_1003d802
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dd0180; body size 5 bytes.
@@ -13746,48 +14757,65 @@ undefined4 FUN_10dd01b0(undefined4 param_1)
 // Reference entry 10dd01c0; body size 33 bytes.
 #line 1 "ENTRY_10dd01c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-int FUN_10dd01c0(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10dd01c0(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return (int)((param_2 - (int)param_1) + (int)param_3);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm sub edi, eax
+  __asm push edi
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm lea eax, [edi + esi]
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dd01f0; body size 54 bytes.
 #line 1 "ENTRY_10dd01f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10dd01f0(undefined4 *param_1)
+__declspec(naked) void FUN_10dd01f0(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  param_1[4] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_11881068
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx], LAB_11934b84
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10dd0240; body size 27 bytes.
 #line 1 "ENTRY_10dd0240"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10dd0240(undefined4 *param_1)
+__declspec(naked) void FUN_10dd0240(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_119346a4
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [esp], ecx
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10dd0270; body size 16 bytes.
@@ -14018,14 +15046,25 @@ undefined4 __fastcall FUN_10dd1880(undefined4 *param_1)
 // Reference entry 10dd1890; body size 31 bytes.
 #line 1 "ENTRY_10dd1890"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-int __fastcall FUN_10dd1890(int *param_1)
+__declspec(naked) void FUN_10dd1890(void)
 
 {
-  return (int)(*(int *)(*(int *)(*param_1 + 4) + (*(int *)(*param_1 + 8) - 1U & (uint)param_1[1] >> 2) * 4
-                 ) + (param_1[1] & 3U) * 4);
+  __asm push esi
+  __asm mov esi, dword ptr [ecx + 4]
+  __asm mov eax, esi
+  __asm mov ecx, dword ptr [ecx]
+  __asm and esi, 3
+  __asm shr eax, 2
+  __asm mov edx, dword ptr [ecx + 8]
+  __asm dec edx
+  __asm and edx, eax
+  __asm mov eax, dword ptr [ecx + 4]
+  __asm mov eax, dword ptr [eax + edx*4]
+  __asm lea eax, [eax + esi*4]
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dd18c0; body size 6 bytes.
@@ -14044,12 +15083,17 @@ int __fastcall FUN_10dd18c0(int param_1)
 // Reference entry 10dd18d0; body size 18 bytes.
 #line 1 "ENTRY_10dd18d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd18d0(int *param_2,int param_3)
+__declspec(naked) void FUN_10dd18d0(void)
+
 {
-  int *param_1 = (int *)this;
-  *param_2 = (int)(*param_1 + param_3 * 8);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov ecx, dword ptr [ecx]
+  __asm lea ecx, [ecx + eax*8]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov dword ptr [eax], ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10dd18f0; body size 14 bytes.
@@ -14077,21 +15121,29 @@ int __fastcall FUN_10dd18c0(int param_1)
 // Reference entry 10dd1ac0; body size 49 bytes.
 #line 1 "ENTRY_10dd1ac0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall Recovered_Bulk::m_FUN_10dd1ac0(uint param_2)
+__declspec(naked) void FUN_10dd1ac0(void)
+
 {
-  int *param_1 = (int *)this;
-  uint uVar1;
-  
-  uVar1 = (uint)(param_1[2] - *param_1 >> 3);
-  if (0x1fffffff - (uVar1 >> 1) < uVar1) {
-    return (uint)(0x1fffffff);
-  }
-  uVar1 = (uint)((uVar1 >> 1) + uVar1);
-  if (uVar1 < param_2) {
-    uVar1 = (uint)(param_2);
-  }
-  return (uint)(uVar1);
+  __asm mov edx, dword ptr [ecx + 8]
+  __asm sub edx, dword ptr [ecx]
+  __asm mov ecx, 0x1fffffff
+  __asm sar edx, 3
+  __asm push esi
+  __asm mov esi, edx
+  __asm _emit 0xd1 __asm _emit 0xee
+  __asm sub ecx, esi
+  __asm cmp edx, ecx
+  __asm jbe 0x10dd1ae1
+  __asm mov eax, 0x1fffffff
+  __asm pop esi
+  __asm ret 4
+  __asm lea eax, [esi + edx]
+  __asm cmp eax, dword ptr [esp + 8]
+  __asm pop esi
+  __asm cmovb eax, dword ptr [esp + 4]
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dd1b70; body size 3 bytes.
@@ -14298,105 +15350,142 @@ void __stdcall FUN_10dd1e80(unsigned int recovered_unused_stack_0, unsigned int 
 // Reference entry 10dd1e90; body size 138 bytes.
 #line 1 "ENTRY_10dd1e90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10dd1e90(int param_1)
+__declspec(naked) void FUN_10dd1e90(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = (int)(*(int *)(param_1 + 0x10));
-  if (iVar3 != 0) {
-    do {
-      iVar3 = (int)(iVar3 + -1);
-      *(int*)(param_1 + 0x10) = (int)(iVar3);
-    } while (iVar3 != 0);
-    *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
-  }
-  iVar3 = (int)(*(int *)(param_1 + 8));
-  while (iVar3 != 0) {
-    iVar3 = (int)(iVar3 + -1);
-    iVar1 = (int)(*(int *)(*(int *)(param_1 + 4) + iVar3 * 4));
-    if (iVar1 != 0) {
-      thunk_FUN_1148a50e(iVar1,0x10);
-    }
-  }
-  iVar3 = (int)(*(int *)(param_1 + 4));
-  if (iVar3 != 0) {
-    uVar2 = (uint)(*(int *)(param_1 + 8) * 4);
-    iVar1 = (int)(iVar3);
-    if (0xfff < uVar2) {
-      iVar1 = (int)(*(int *)(iVar3 + -4));
-      uVar2 = (uint)(uVar2 + 0x23);
-      if (0x1f < (iVar3 - iVar1) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar1,uVar2);
-  }
-  *(undefined4*)(param_1 + 8) = (undefined4)(0);
-  *(undefined4*)(param_1 + 4) = (undefined4)(0);
-  return;
+  __asm push edi
+  __asm mov edi, ecx
+  __asm mov ecx, dword ptr [edi + 0x10]
+  __asm test ecx, ecx
+  __asm je 0x10dd1eaf
+  __asm nop word ptr [eax + eax]
+  __asm lea eax, [ecx - 1]
+  __asm mov dword ptr [edi + 0x10], eax
+  __asm mov ecx, eax
+  __asm test eax, eax
+  __asm jne 0x10dd1ea0
+  __asm mov dword ptr [edi + 0xc], eax
+  __asm push esi
+  __asm mov esi, dword ptr [edi + 8]
+  __asm test esi, esi
+  __asm je 0x10dd1ed1
+  __asm mov eax, dword ptr [edi + 4]
+  __asm dec esi
+  __asm mov eax, dword ptr [eax + esi*4]
+  __asm test eax, eax
+  __asm je 0x10dd1ecd
+  __asm push 0x10
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm test esi, esi
+  __asm jne 0x10dd1eb7
+  __asm mov eax, dword ptr [edi + 4]
+  __asm pop esi
+  __asm test eax, eax
+  __asm je 0x10dd1f03
+  __asm mov ecx, dword ptr [edi + 8]
+  __asm shl ecx, 2
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dd1ef9
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dd1f13
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop edi
+  __asm ret
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10dd1fb0; body size 38 bytes.
 #line 1 "ENTRY_10dd1fb0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * __stdcall FUN_10dd1fb0(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10dd1fb0(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return (void *)((char *)((int)param_3 + (param_2 - (int)param_1 >> 3) * 8));
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm sub edi, eax
+  __asm push edi
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm sar edi, 3
+  __asm add esp, 0xc
+  __asm lea eax, [esi + edi*8]
+  __asm pop edi
+  __asm pop esi
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10dd1fe0; body size 27 bytes.
 #line 1 "ENTRY_10dd1fe0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10dd1fe0(void *param_1,int param_2,void *param_3,unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10dd1fe0(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return;
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [esp + 8]
+  __asm sub eax, ecx
+  __asm push eax
+  __asm push ecx
+  __asm push dword ptr [esp + 0x14]
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10dd2010; body size 27 bytes.
 #line 1 "ENTRY_10dd2010"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10dd2010(void *param_1,int param_2,void *param_3)
+__declspec(naked) void FUN_10dd2010(void)
 
 {
-  memmove(param_3,param_1,param_2 - (int)param_1);
-  return;
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [esp + 8]
+  __asm sub eax, ecx
+  __asm push eax
+  __asm push ecx
+  __asm push dword ptr [esp + 0x14]
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10dd2040; body size 18 bytes.
 #line 1 "ENTRY_10dd2040"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd2040(int *param_2)
+__declspec(naked) void FUN_10dd2040(void)
+
 {
-  int param_1 = (int )this;
-  int iVar1;
-  int iVar2;
-  
-  iVar1 = (int)(*(int *)(param_1 + 0x10));
-  iVar2 = (int)(*(int *)(param_1 + 0xc));
-  *param_2 = (int)(param_1);
-  param_2[1] = (int)(iVar1 + iVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov edx, dword ptr [ecx + 0x10]
+  __asm add edx, dword ptr [ecx + 0xc]
+  __asm mov dword ptr [eax], ecx
+  __asm mov dword ptr [eax + 4], edx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dd2060; body size 3 bytes.
@@ -14414,109 +15503,118 @@ void __stdcall FUN_10dd2060(unsigned int recovered_unused_stack_0)
 // Reference entry 10dd20e0; body size 87 bytes.
 #line 1 "ENTRY_10dd20e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10dd20e0(uint param_1)
+__declspec(naked) void FUN_10dd20e0(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0x40000000) {
-    param_1 = (uint)(param_1 * 4);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp eax, 0x3fffffff
+  __asm ja 0x10dd2132
+  __asm shl eax, 2
+  __asm cmp eax, 0x1000
+  __asm jb 0x10dd211d
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10dd2132
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10dd2117
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10dd212d
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10dd2150; body size 87 bytes.
 #line 1 "ENTRY_10dd2150"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10dd2150(uint param_1)
+__declspec(naked) void FUN_10dd2150(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0x40000000) {
-    param_1 = (uint)(param_1 * 4);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp eax, 0x3fffffff
+  __asm ja 0x10dd21a2
+  __asm shl eax, 2
+  __asm cmp eax, 0x1000
+  __asm jb 0x10dd218d
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10dd21a2
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10dd2187
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10dd219d
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10dd21c0; body size 87 bytes.
 #line 1 "ENTRY_10dd21c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10dd21c0(uint param_1)
+__declspec(naked) void FUN_10dd21c0(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0x20000000) {
-    param_1 = (uint)(param_1 * 8);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp eax, 0x1fffffff
+  __asm ja 0x10dd2212
+  __asm shl eax, 3
+  __asm cmp eax, 0x1000
+  __asm jb 0x10dd21fd
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10dd2212
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10dd21f7
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10dd220d
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10dd22c0; body size 11 bytes.
@@ -14571,92 +15669,116 @@ void __fastcall FUN_10dd2330(undefined4 *param_1)
 // Reference entry 10dd2560; body size 61 bytes.
 #line 1 "ENTRY_10dd2560"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10dd2560(int param_1,int param_2)
+__declspec(naked) void FUN_10dd2560(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 4);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dd2589
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dd2596
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10dd25b0; body size 61 bytes.
 #line 1 "ENTRY_10dd25b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10dd25b0(int param_1,int param_2)
+__declspec(naked) void FUN_10dd25b0(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 4);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dd25d9
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dd25e6
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10dd2600; body size 61 bytes.
 #line 1 "ENTRY_10dd2600"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10dd2600(int param_1,int param_2)
+__declspec(naked) void FUN_10dd2600(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 8);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dd2629
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dd2636
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10dd2690; body size 42 bytes.
 #line 1 "ENTRY_10dd2690"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd2690(undefined4 *param_2,void *param_3)
+__declspec(naked) void FUN_10dd2690(void)
+
 {
-  int param_1 = (int )this;
-  memmove(param_3,(char *)((int)param_3 + 8),*(int *)(param_1 + 4) - ((int)param_3 + 8));
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + -8);
-  *param_2 = (undefined4)(param_3);
-  return;
+  __asm push esi
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 4]
+  __asm lea edx, [edi + 8]
+  __asm sub eax, edx
+  __asm push eax
+  __asm push edx
+  __asm push edi
+  __asm call LAB_1148cdf3
+  __asm mov eax, dword ptr [esp + 0x18]
+  __asm add esp, 0xc
+  __asm add dword ptr [esi + 4], -8
+  __asm mov dword ptr [eax], edi
+  __asm pop edi
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 10dd26d0; body size 13 bytes.
@@ -14828,23 +15950,28 @@ undefined4 __fastcall FUN_10dd5940(undefined4 *param_1)
 // Reference entry 10dd5b60; body size 45 bytes.
 #line 1 "ENTRY_10dd5b60"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd5b60(undefined4 *param_2)
+__declspec(naked) void FUN_10dd5b60(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  undefined4 uVar2;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  if ((undefined4 *)(puVar1) != *(undefined4 **)(param_1 + 8)) {
-    uVar2 = (undefined4)(param_2[1]);
-    *puVar1 = (undefined4)(*param_2);
-    puVar1[1] = (undefined4)(uVar2);
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 8);
-    return;
-  }
-  thunk_FUN_10dcfdb0(puVar1,param_2);
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [ecx + 4]
+  __asm cmp esi, dword ptr [ecx + 8]
+  __asm je 0x10dd5b7f
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov edx, dword ptr [eax]
+  __asm mov eax, dword ptr [eax + 4]
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [esi + 4], eax
+  __asm add dword ptr [ecx + 4], 8
+  __asm pop esi
+  __asm ret 4
+  __asm push dword ptr [esp + 8]
+  __asm push esi
+  __asm call LAB_1003d802
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dd5c20; body size 28 bytes.
@@ -14980,29 +16107,41 @@ int __fastcall FUN_10dd5de0(int *param_1)
 // Reference entry 10dd5ef0; body size 39 bytes.
 #line 1 "ENTRY_10dd5ef0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10dd5ef0(undefined4 param_2,undefined4 *param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10dd5ef0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_3);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10dd5f20; body size 39 bytes.
 #line 1 "ENTRY_10dd5f20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10dd5f20(undefined4 param_2,undefined4 *param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10dd5f20(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_3);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10dd5f50; body size 18 bytes.
@@ -15036,29 +16175,41 @@ undefined4 * __fastcall FUN_10dd5f70(undefined4 *param_1, unsigned int recovered
 // Reference entry 10dd5f90; body size 39 bytes.
 #line 1 "ENTRY_10dd5f90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10dd5f90(undefined4 param_2,undefined4 *param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10dd5f90(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_3);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10dd5fc0; body size 39 bytes.
 #line 1 "ENTRY_10dd5fc0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10dd5fc0(undefined4 param_2,undefined4 *param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10dd5fc0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_3);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10dd5ff0; body size 22 bytes.
@@ -15140,151 +16291,197 @@ undefined4 * __fastcall FUN_10dd6050(undefined4 *param_1, unsigned int recovered
 // Reference entry 10dd63f0; body size 41 bytes.
 #line 1 "ENTRY_10dd63f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10dd63f0(undefined4 *param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_10dd63f0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*(undefined4 *)*param_2);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10dd6430; body size 41 bytes.
 #line 1 "ENTRY_10dd6430"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10dd6430(undefined4 *param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_10dd6430(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*(undefined4 *)*param_2);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10dd6470; body size 41 bytes.
 #line 1 "ENTRY_10dd6470"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10dd6470(undefined4 *param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_10dd6470(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*(undefined4 *)*param_2);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10dd64b0; body size 41 bytes.
 #line 1 "ENTRY_10dd64b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10dd64b0(undefined4 *param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_10dd64b0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*(undefined4 *)*param_2);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10dd64f0; body size 188 bytes.
 #line 1 "ENTRY_10dd64f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd64f0(void *param_2,int param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10dd64f0(void)
+
 {
-  int *param_1 = (int *)this;
-  uint uVar1;
-  uint uVar2;
-  size_t _Size;
-  uint uVar3;
-  void *pvVar4;
-  void *_Dst;
-  
-  _Size = (size_t)(param_3 - (int)param_2);
-  uVar2 = (uint)((int)_Size >> 2);
-  _Dst = (void *)((void *)*param_1);
-  uVar1 = (uint)(param_1[2] - (int)_Dst >> 2);
-  if (uVar1 < uVar2) {
-    if (0x3fffffff < uVar2) {
-                    
-      thunk_FUN_101a9bd0();
-    }
-    if (0x3fffffff - (uVar1 >> 1) < uVar1) {
-      uVar3 = (uint)(0x3fffffff);
-    }
-    else {
-      uVar3 = (uint)((uVar1 >> 1) + uVar1);
-      if (uVar3 < uVar2) {
-        uVar3 = (uint)(uVar2);
-      }
-    }
-    if ((void *)(_Dst) != (void *)(0x0)) {
-      uVar1 = (uint)(uVar1 * 4);
-      pvVar4 = (void *)(_Dst);
-      if (0xfff < uVar1) {
-        pvVar4 = (char *)(*(void **)((int)_Dst + -4), 0);
-        uVar1 = (uint)(uVar1 + 0x23);
-        if (0x1f < (uint)((int)_Dst + (-4 - (int)pvVar4))) {
-                    
-          _invalid_parameter_noinfo_noreturn();
-        }
-      }
-      thunk_FUN_1148a50e(pvVar4,uVar1);
-      *param_1 = (int)(0);
-      param_1[1] = (int)(0);
-      param_1[2] = (int)(0);
-    }
-    thunk_FUN_10bd9600((int)(uVar3));
-    _Dst = (void *)((void *)*param_1);
-  }
-  memmove(_Dst,param_2,_Size);
-  param_1[1] = (int)(_Size + (int)_Dst);
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push ebx
+  __asm mov ebx, dword ptr [esp + 0xc]
+  __asm push ebp
+  __asm push esi
+  __asm push edi
+  __asm mov edi, ecx
+  __asm sub ebx, eax
+  __asm mov edx, ebx
+  __asm sar edx, 2
+  __asm mov ecx, dword ptr [edi + 8]
+  __asm mov esi, dword ptr [edi]
+  __asm sub ecx, esi
+  __asm sar ecx, 2
+  __asm cmp edx, ecx
+  __asm jbe 0x10dd6589
+  __asm cmp edx, 0x3fffffff
+  __asm ja LAB_10dd65a7
+  __asm mov ebp, ecx
+  __asm mov eax, 0x3fffffff
+  __asm _emit 0xd1 __asm _emit 0xed
+  __asm sub eax, ebp
+  __asm cmp ecx, eax
+  __asm jbe 0x10dd6535
+  __asm mov ebp, 0x3fffffff
+  __asm jmp 0x10dd653c
+  __asm add ebp, ecx
+  __asm cmp ebp, edx
+  __asm cmovb ebp, edx
+  __asm test esi, esi
+  __asm je 0x10dd657b
+  __asm shl ecx, 2
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dd655d
+  __asm mov edx, dword ptr [esi - 4]
+  __asm add ecx, 0x23
+  __asm sub esi, edx
+  __asm lea eax, [esi - 4]
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dd65a1
+  __asm mov esi, edx
+  __asm push ecx
+  __asm push esi
+  __asm call LAB_100131d8
+  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm add esp, 8
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm push ebp
+  __asm mov ecx, edi
+  __asm call LAB_1004968e
+  __asm mov esi, dword ptr [edi]
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm push ebx
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm lea eax, [ebx + esi]
+  __asm mov dword ptr [edi + 4], eax
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebp
+  __asm pop ebx
+  __asm ret 0xc
+  __asm call dword ptr [LAB_122fc888]
+  __asm call LAB_1005af92
 }
+
 
 
 // Reference entry 10dd65e0; body size 25 bytes.
 #line 1 "ENTRY_10dd65e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dd65e0(void)
+__declspec(naked) void FUN_10dd65e0(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x20), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  return;
+  __asm push 0x20
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm ret
 }
+
 
 
 // Reference entry 10dd6600; body size 25 bytes.
 #line 1 "ENTRY_10dd6600"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dd6600(void)
+__declspec(naked) void FUN_10dd6600(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x20), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  return;
+  __asm push 0x20
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm ret
 }
+
 
 
 // Reference entry 10dd6620; body size 13 bytes.
@@ -15392,29 +16589,41 @@ void FUN_10dd6900(undefined4 param_1,undefined4 param_2)
 // Reference entry 10dd6920; body size 26 bytes.
 #line 1 "ENTRY_10dd6920"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dd6920(undefined4 param_1,undefined4 param_2)
+__declspec(naked) void FUN_10dd6920(void)
 
 {
-  ((pair<> *)(0))->m_op_dtor();
-  thunk_FUN_1148a50e(param_2,0x20);
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0xc]
+  __asm lea ecx, [esi + 0x10]
+  __asm call LAB_1004813a
+  __asm push 0x20
+  __asm push esi
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dd6940; body size 26 bytes.
 #line 1 "ENTRY_10dd6940"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dd6940(undefined4 param_1,undefined4 param_2)
+__declspec(naked) void FUN_10dd6940(void)
 
 {
-  thunk_FUN_101a33f0();
-  thunk_FUN_1148a50e(param_2,0x20);
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0xc]
+  __asm lea ecx, [esi + 0x14]
+  __asm call LAB_10017003
+  __asm push 0x20
+  __asm push esi
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dd6960; body size 5 bytes.
@@ -15444,31 +16653,43 @@ undefined4 FUN_10dd6970(undefined4 param_1)
 // Reference entry 10dd6980; body size 31 bytes.
 #line 1 "ENTRY_10dd6980"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10dd6980(void)
 
-uint __stdcall FUN_10dd6980(int param_1,uint *param_2){
-  uint in_EAX;
-  
-  if ((*(char *)(param_1 + 0xd) == '\0') && (in_EAX = (uint)(*param_2), *(uint *)(param_1 + 0x10) <= (uint)(in_EAX)) ) {
-    return (uint)(((uint)((int3)(in_EAX >> 8)) << 8 | (uint)(1)));
-  }
-  return (uint)(in_EAX & 0xffffff00);
+{
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm cmp byte ptr [ecx + 0xd], 0
+  __asm jne 0x10dd699a
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [eax]
+  __asm cmp eax, dword ptr [ecx + 0x10]
+  __asm jb 0x10dd699a
+  __asm mov al, 1
+  __asm ret 8
+  __asm xor al, al
+  __asm ret 8
 }
+
 
 
 // Reference entry 10dd69b0; body size 31 bytes.
 #line 1 "ENTRY_10dd69b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10dd69b0(void)
 
-uint __stdcall FUN_10dd69b0(int param_1,uint *param_2){
-  uint in_EAX;
-  
-  if ((*(char *)(param_1 + 0xd) == '\0') && (in_EAX = (uint)(*param_2), *(uint *)(param_1 + 0x10) <= (uint)(in_EAX)) ) {
-    return (uint)(((uint)((int3)(in_EAX >> 8)) << 8 | (uint)(1)));
-  }
-  return (uint)(in_EAX & 0xffffff00);
+{
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm cmp byte ptr [ecx + 0xd], 0
+  __asm jne 0x10dd69ca
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [eax]
+  __asm cmp eax, dword ptr [ecx + 0x10]
+  __asm jb 0x10dd69ca
+  __asm mov al, 1
+  __asm ret 8
+  __asm xor al, al
+  __asm ret 8
 }
+
 
 
 // Reference entry 10dd69e0; body size 3 bytes.
@@ -15618,57 +16839,77 @@ undefined4 FUN_10dd6f10(undefined4 param_1)
 // Reference entry 10dd6f20; body size 188 bytes.
 #line 1 "ENTRY_10dd6f20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd6f20(void *param_2,int param_3)
+__declspec(naked) void FUN_10dd6f20(void)
+
 {
-  int *param_1 = (int *)this;
-  uint uVar1;
-  uint uVar2;
-  size_t _Size;
-  uint uVar3;
-  void *pvVar4;
-  void *_Dst;
-  
-  _Size = (size_t)(param_3 - (int)param_2);
-  uVar2 = (uint)((int)_Size >> 2);
-  _Dst = (void *)((void *)*param_1);
-  uVar1 = (uint)(param_1[2] - (int)_Dst >> 2);
-  if (uVar1 < uVar2) {
-    if (0x3fffffff < uVar2) {
-                    
-      thunk_FUN_101a9bd0();
-    }
-    if (0x3fffffff - (uVar1 >> 1) < uVar1) {
-      uVar3 = (uint)(0x3fffffff);
-    }
-    else {
-      uVar3 = (uint)((uVar1 >> 1) + uVar1);
-      if (uVar3 < uVar2) {
-        uVar3 = (uint)(uVar2);
-      }
-    }
-    if ((void *)(_Dst) != (void *)(0x0)) {
-      uVar1 = (uint)(uVar1 * 4);
-      pvVar4 = (void *)(_Dst);
-      if (0xfff < uVar1) {
-        pvVar4 = (char *)(*(void **)((int)_Dst + -4), 0);
-        uVar1 = (uint)(uVar1 + 0x23);
-        if (0x1f < (uint)((int)_Dst + (-4 - (int)pvVar4))) {
-                    
-          _invalid_parameter_noinfo_noreturn();
-        }
-      }
-      thunk_FUN_1148a50e(pvVar4,uVar1);
-      *param_1 = (int)(0);
-      param_1[1] = (int)(0);
-      param_1[2] = (int)(0);
-    }
-    thunk_FUN_10bd9600((int)(uVar3));
-    _Dst = (void *)((void *)*param_1);
-  }
-  memmove(_Dst,param_2,_Size);
-  param_1[1] = (int)(_Size + (int)_Dst);
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push ebx
+  __asm mov ebx, dword ptr [esp + 0xc]
+  __asm push ebp
+  __asm push esi
+  __asm push edi
+  __asm mov edi, ecx
+  __asm sub ebx, eax
+  __asm mov edx, ebx
+  __asm sar edx, 2
+  __asm mov ecx, dword ptr [edi + 8]
+  __asm mov esi, dword ptr [edi]
+  __asm sub ecx, esi
+  __asm sar ecx, 2
+  __asm cmp edx, ecx
+  __asm jbe 0x10dd6fb9
+  __asm cmp edx, 0x3fffffff
+  __asm ja LAB_10dd6fd7
+  __asm mov ebp, ecx
+  __asm mov eax, 0x3fffffff
+  __asm _emit 0xd1 __asm _emit 0xed
+  __asm sub eax, ebp
+  __asm cmp ecx, eax
+  __asm jbe 0x10dd6f65
+  __asm mov ebp, 0x3fffffff
+  __asm jmp 0x10dd6f6c
+  __asm add ebp, ecx
+  __asm cmp ebp, edx
+  __asm cmovb ebp, edx
+  __asm test esi, esi
+  __asm je 0x10dd6fab
+  __asm shl ecx, 2
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dd6f8d
+  __asm mov edx, dword ptr [esi - 4]
+  __asm add ecx, 0x23
+  __asm sub esi, edx
+  __asm lea eax, [esi - 4]
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dd6fd1
+  __asm mov esi, edx
+  __asm push ecx
+  __asm push esi
+  __asm call LAB_100131d8
+  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm add esp, 8
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm push ebp
+  __asm mov ecx, edi
+  __asm call LAB_1004968e
+  __asm mov esi, dword ptr [edi]
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm push ebx
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm lea eax, [ebx + esi]
+  __asm mov dword ptr [edi + 4], eax
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebp
+  __asm pop ebx
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm call LAB_1005af92
 }
+
 
 
 // Reference entry 10dd7010; body size 36 bytes.
@@ -15738,70 +16979,26 @@ void FUN_10dd70a0(undefined4 param_1,undefined4 *param_2,undefined4 param_3,unde
 // Reference entry 10dd70d0; body size 9 bytes.
 #line 1 "ENTRY_10dd70d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dd70d0(undefined4 param_1,int param_2)
+__declspec(naked) void FUN_10dd70d0(void)
 
 {
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  
-  iVar1 = (int)(*(int *)(param_2 + 4));
-  if (iVar1 != 0) {
-    uVar3 = (uint)(*(int *)(param_2 + 0xc) - iVar1 & 0xfffffffc);
-    iVar2 = (int)(iVar1);
-    if (0xfff < uVar3) {
-      iVar2 = (int)(*(int *)(iVar1 + -4));
-      uVar3 = (uint)(uVar3 + 0x23);
-      if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar2,uVar3);
-    *(undefined4*)(param_2 + 4) = (undefined4)(0);
-    *(undefined4*)(param_2 + 8) = (undefined4)(0);
-    *(undefined4*)(param_2 + 0xc) = (undefined4)(0);
-  }
-  return;
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm jmp LAB_1004813a
 }
+
 
 
 // Reference entry 10dd70e0; body size 12 bytes.
 #line 1 "ENTRY_10dd70e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dd70e0(undefined4 param_1,int param_2)
+__declspec(naked) void FUN_10dd70e0(void)
 
 {
-  int *piVar1;
-  int iVar2;
-  int iVar3;
-  uint uVar4;
-  
-  piVar1 = (int *)((int *)(param_2 + 4));
-  if (*piVar1 != (int)((0))) {
-    thunk_FUN_101a2210(*piVar1,*(undefined4 *)(param_2 + 8),piVar1);
-    iVar2 = (int)(*piVar1);
-    uVar4 = (uint)(*(int *)(param_2 + 0xc) - iVar2 & 0xfffffffc);
-    iVar3 = (int)(iVar2);
-    if (0xfff < uVar4) {
-      iVar3 = (int)(*(int *)(iVar2 + -4));
-      uVar4 = (uint)(uVar4 + 0x23);
-      if (0x1f < (iVar2 - iVar3) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar3,uVar4);
-    *piVar1 = (int)(0);
-    *(undefined4*)(param_2 + 8) = (undefined4)(0);
-    *(undefined4*)(param_2 + 0xc) = (undefined4)(0);
-  }
-  return;
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm lea ecx, [ecx + 4]
+  __asm jmp LAB_10017003
 }
+
 
 
 // Reference entry 10dd70f0; body size 12 bytes.
@@ -16097,45 +17294,55 @@ undefined4 __fastcall FUN_10dd7450(undefined4 param_1)
 // Reference entry 10dd7460; body size 52 bytes.
 #line 1 "ENTRY_10dd7460"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10dd7460(undefined4 *param_1)
+__declspec(naked) void FUN_10dd7460(void)
 
 {
-  void *pvVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x20), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x20
+  __asm mov dword ptr [esp + 8], esi
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10dd74b0; body size 52 bytes.
 #line 1 "ENTRY_10dd74b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10dd74b0(undefined4 *param_1)
+__declspec(naked) void FUN_10dd74b0(void)
 
 {
-  void *pvVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x20), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x20
+  __asm mov dword ptr [esp + 8], esi
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10dd7fc0; body size 19 bytes.
@@ -16173,8 +17380,11 @@ void __fastcall FUN_10dd7fe0(int param_1)
 
 __declspec(naked) void FUN_10dd80d0(void)
 
-{ __asm add ecx, 4
-  __asm jmp FUN_10017003 }
+{
+  __asm add ecx, 4
+  __asm jmp LAB_10017003
+}
+
 
 
 
@@ -16212,178 +17422,212 @@ __declspec(naked) void FUN_10dd80d0(void)
 // Reference entry 10dd8ee0; body size 31 bytes.
 #line 1 "ENTRY_10dd8ee0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10dd8ee0(undefined4 *param_1)
+__declspec(naked) void FUN_10dd8ee0(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x20), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return;
+  __asm push esi
+  __asm push 0x20
+  __asm mov esi, ecx
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dd8f10; body size 31 bytes.
 #line 1 "ENTRY_10dd8f10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10dd8f10(undefined4 *param_1)
+__declspec(naked) void FUN_10dd8f10(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x20), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return;
+  __asm push esi
+  __asm push 0x20
+  __asm mov esi, ecx
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dd8f80; body size 14 bytes.
 #line 1 "ENTRY_10dd8f80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10dd8f80(int param_1)
+__declspec(naked) void FUN_10dd8f80(void)
 
 {
-  if (*(int *)(param_1 + 4) != 0x7ffffff) {
-    return;
-  }
-                    
-  std::_Xlength_error("map/set too long");
+  __asm cmp dword ptr [ecx + 4], 0x7ffffff
+  __asm je LAB_1000d4ae
+  __asm ret
 }
+
 
 
 // Reference entry 10dd8fa0; body size 14 bytes.
 #line 1 "ENTRY_10dd8fa0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10dd8fa0(int param_1)
+__declspec(naked) void FUN_10dd8fa0(void)
 
 {
-  if (*(int *)(param_1 + 4) != 0x7ffffff) {
-    return;
-  }
-                    
-  std::_Xlength_error("map/set too long");
+  __asm cmp dword ptr [ecx + 4], 0x7ffffff
+  __asm je LAB_1000d4ae
+  __asm ret
 }
+
 
 
 // Reference entry 10dd8fc0; body size 144 bytes.
 #line 1 "ENTRY_10dd8fc0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd8fc0(uint param_2)
+__declspec(naked) void FUN_10dd8fc0(void)
+
 {
-  int *param_1 = (int *)this;
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  uint uVar4;
-  
-  if (0x3fffffff < param_2) {
-                    
-    thunk_FUN_101a9bd0();
-  }
-  iVar1 = (int)(*param_1);
-  uVar3 = (uint)(param_1[2] - iVar1 >> 2);
-  if (0x3fffffff - (uVar3 >> 1) < uVar3) {
-    uVar4 = (uint)(0x3fffffff);
-  }
-  else {
-    uVar4 = (uint)((uVar3 >> 1) + uVar3);
-    if (uVar4 < param_2) {
-      uVar4 = (uint)(param_2);
-    }
-  }
-  if (iVar1 != 0) {
-    uVar3 = (uint)(uVar3 * 4);
-    iVar2 = (int)(iVar1);
-    if (0xfff < uVar3) {
-      iVar2 = (int)(*(int *)(iVar1 + -4));
-      uVar3 = (uint)(uVar3 + 0x23);
-      if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar2,uVar3);
-    *param_1 = (int)(0);
-    param_1[1] = (int)(0);
-    param_1[2] = (int)(0);
-  }
-  thunk_FUN_10bd9600((int)(uVar4));
-  return;
+  __asm push ebx
+  __asm mov ebx, dword ptr [esp + 8]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm cmp ebx, 0x3fffffff
+  __asm ja 0x10dd904b
+  __asm mov edx, dword ptr [esi + 8]
+  __asm mov eax, 0x3fffffff
+  __asm mov ecx, dword ptr [esi]
+  __asm sub edx, ecx
+  __asm sar edx, 2
+  __asm push edi
+  __asm mov edi, edx
+  __asm _emit 0xd1 __asm _emit 0xef
+  __asm sub eax, edi
+  __asm cmp edx, eax
+  __asm jbe 0x10dd8ff1
+  __asm mov edi, 0x3fffffff
+  __asm jmp 0x10dd8ff8
+  __asm add edi, edx
+  __asm cmp edi, ebx
+  __asm cmovb edi, ebx
+  __asm test ecx, ecx
+  __asm je 0x10dd9037
+  __asm shl edx, 2
+  __asm cmp edx, 0x1000
+  __asm jb 0x10dd9019
+  __asm mov ebx, dword ptr [ecx - 4]
+  __asm add edx, 0x23
+  __asm sub ecx, ebx
+  __asm lea eax, [ecx - 4]
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dd9045
+  __asm mov ecx, ebx
+  __asm push edx
+  __asm push ecx
+  __asm call LAB_100131d8
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm add esp, 8
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm push edi
+  __asm mov ecx, esi
+  __asm call LAB_1004968e
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm call LAB_1005af92
 }
+
 
 
 // Reference entry 10dd9080; body size 204 bytes.
 #line 1 "ENTRY_10dd9080"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd9080(undefined4 *param_2, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10dd9080(void)
+
 {
-  int *param_1 = (int *)this;
-  void *_Src;
-  uint uVar1;
-  size_t _Size;
-  uint uVar2;
-  uint uVar3;
-  void *pvVar4;
-  void *_Dst;
-  
-  _Src = (void *)((void *)*param_2);
-  _Size = (size_t)(param_2[1] - (int)_Src);
-  uVar3 = (uint)((int)_Size >> 2);
-  _Dst = (void *)((void *)*param_1);
-  uVar1 = (uint)(param_1[2] - (int)_Dst >> 2);
-  if (uVar1 < uVar3) {
-    if (0x3fffffff < uVar3) {
-                    
-      thunk_FUN_101a9bd0();
-    }
-    if (0x3fffffff - (uVar1 >> 1) < uVar1) {
-      uVar2 = (uint)(0x3fffffff);
-    }
-    else {
-      uVar2 = (uint)((uVar1 >> 1) + uVar1);
-      if (uVar2 < uVar3) {
-        uVar2 = (uint)(uVar3);
-      }
-    }
-    if ((void *)(_Dst) != (void *)(0x0)) {
-      uVar1 = (uint)(uVar1 * 4);
-      pvVar4 = (void *)(_Dst);
-      if (0xfff < uVar1) {
-        pvVar4 = (char *)(*(void **)((int)_Dst + -4), 0);
-        uVar1 = (uint)(uVar1 + 0x23);
-        if (0x1f < (uint)((int)_Dst + (-4 - (int)pvVar4))) {
-                    
-          _invalid_parameter_noinfo_noreturn();
-        }
-      }
-      thunk_FUN_1148a50e(pvVar4,uVar1);
-      *param_1 = (int)(0);
-      param_1[1] = (int)(0);
-      param_1[2] = (int)(0);
-    }
-    thunk_FUN_10bd9600((int)(uVar2));
-    _Dst = (void *)((void *)*param_1);
-  }
-  memmove(_Dst,_Src,_Size);
-  param_1[1] = (int)(_Size + (int)_Dst);
-  return;
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push ebx
+  __asm push ebp
+  __asm push esi
+  __asm mov ebx, dword ptr [eax + 4]
+  __asm mov eax, dword ptr [eax]
+  __asm sub ebx, eax
+  __asm push edi
+  __asm mov edi, ecx
+  __asm mov dword ptr [esp + 0x10], eax
+  __asm mov ebp, ebx
+  __asm mov dword ptr [esp + 0x18], ebx
+  __asm sar ebp, 2
+  __asm mov ecx, dword ptr [edi + 8]
+  __asm mov esi, dword ptr [edi]
+  __asm sub ecx, esi
+  __asm sar ecx, 2
+  __asm cmp ebp, ecx
+  __asm jbe 0x10dd9128
+  __asm cmp ebp, 0x3fffffff
+  __asm ja LAB_10dd9147
+  __asm mov edx, ecx
+  __asm mov eax, 0x3fffffff
+  __asm _emit 0xd1 __asm _emit 0xea
+  __asm sub eax, edx
+  __asm cmp ecx, eax
+  __asm jbe 0x10dd90cf
+  __asm mov ebx, 0x3fffffff
+  __asm jmp 0x10dd90d7
+  __asm lea ebx, [edx + ecx]
+  __asm cmp ebx, ebp
+  __asm cmovb ebx, ebp
+  __asm test esi, esi
+  __asm je 0x10dd9116
+  __asm shl ecx, 2
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dd90f8
+  __asm mov edx, dword ptr [esi - 4]
+  __asm add ecx, 0x23
+  __asm sub esi, edx
+  __asm lea eax, [esi - 4]
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dd9141
+  __asm mov esi, edx
+  __asm push ecx
+  __asm push esi
+  __asm call LAB_100131d8
+  __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm add esp, 8
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm push ebx
+  __asm mov ecx, edi
+  __asm call LAB_1004968e
+  __asm mov esi, dword ptr [edi]
+  __asm mov ebx, dword ptr [esp + 0x18]
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm push ebx
+  __asm push eax
+  __asm push esi
+  __asm call LAB_1148cdf3
+  __asm add esp, 0xc
+  __asm lea eax, [ebx + esi]
+  __asm mov dword ptr [edi + 4], eax
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebp
+  __asm pop ebx
+  __asm pop ecx
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm call LAB_1005af92
 }
+
 
 
 // Reference entry 10dd9180; body size 3 bytes.
@@ -16581,71 +17825,85 @@ undefined4 __fastcall FUN_10dd9270(undefined4 param_1)
 // Reference entry 10dd97a0; body size 79 bytes.
 #line 1 "ENTRY_10dd97a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd97a0(int param_2)
+__declspec(naked) void FUN_10dd97a0(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  
-  piVar1 = (int *)(*(int **)(param_2 + 8), 0);
-  *(int*)(param_2 + 8) = (int)(*piVar1);
-  if (*(char *)(*piVar1 + 0xd) == '\0') {
-    *(int*)(*piVar1 + 4) = (int)(param_2);
-  }
-  piVar1[1] = (int)(*(int *)(param_2 + 4));
-  if ((int)(param_2) == *(int *)(*param_1 + 4)) {
-    *(int**)(*param_1 + 4) = (int *)(piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2 = (int *)(*(int **)(param_2 + 4), 0);
-  if ((int)(param_2) == *piVar2) {
-    *piVar2 = (int)((int)piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2[2] = (int)((int)piVar1);
-  *piVar1 = (int)(param_2);
-  *(int**)(param_2 + 4) = (int *)(piVar1);
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [edx + 8]
+  __asm mov eax, dword ptr [esi]
+  __asm mov dword ptr [edx + 8], eax
+  __asm mov eax, dword ptr [esi]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10dd97b8
+  __asm mov dword ptr [eax + 4], edx
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm cmp edx, dword ptr [eax + 4]
+  __asm jne 0x10dd97d1
+  __asm mov dword ptr [eax + 4], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov eax, dword ptr [edx + 4]
+  __asm cmp edx, dword ptr [eax]
+  __asm jne 0x10dd97e3
+  __asm mov dword ptr [eax], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov dword ptr [eax + 8], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dd9810; body size 79 bytes.
 #line 1 "ENTRY_10dd9810"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dd9810(int param_2)
+__declspec(naked) void FUN_10dd9810(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  
-  piVar1 = (int *)(*(int **)(param_2 + 8), 0);
-  *(int*)(param_2 + 8) = (int)(*piVar1);
-  if (*(char *)(*piVar1 + 0xd) == '\0') {
-    *(int*)(*piVar1 + 4) = (int)(param_2);
-  }
-  piVar1[1] = (int)(*(int *)(param_2 + 4));
-  if ((int)(param_2) == *(int *)(*param_1 + 4)) {
-    *(int**)(*param_1 + 4) = (int *)(piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2 = (int *)(*(int **)(param_2 + 4), 0);
-  if ((int)(param_2) == *piVar2) {
-    *piVar2 = (int)((int)piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2[2] = (int)((int)piVar1);
-  *piVar1 = (int)(param_2);
-  *(int**)(param_2 + 4) = (int *)(piVar1);
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [edx + 8]
+  __asm mov eax, dword ptr [esi]
+  __asm mov dword ptr [edx + 8], eax
+  __asm mov eax, dword ptr [esi]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10dd9828
+  __asm mov dword ptr [eax + 4], edx
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm cmp edx, dword ptr [eax + 4]
+  __asm jne 0x10dd9841
+  __asm mov dword ptr [eax + 4], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov eax, dword ptr [edx + 4]
+  __asm cmp edx, dword ptr [eax]
+  __asm jne 0x10dd9853
+  __asm mov dword ptr [eax], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov dword ptr [eax + 8], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dd9880; body size 11 bytes.
@@ -16753,183 +18011,193 @@ undefined4 __fastcall FUN_10dd9890(int param_1)
 // Reference entry 10dd9b00; body size 87 bytes.
 #line 1 "ENTRY_10dd9b00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10dd9b00(uint param_1)
+__declspec(naked) void FUN_10dd9b00(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0x8000000) {
-    param_1 = (uint)(param_1 * 0x20);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp eax, 0x7ffffff
+  __asm ja 0x10dd9b52
+  __asm shl eax, 5
+  __asm cmp eax, 0x1000
+  __asm jb 0x10dd9b3d
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10dd9b52
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10dd9b37
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10dd9b4d
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10dd9b70; body size 87 bytes.
 #line 1 "ENTRY_10dd9b70"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10dd9b70(uint param_1)
+__declspec(naked) void FUN_10dd9b70(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0x8000000) {
-    param_1 = (uint)(param_1 * 0x20);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp eax, 0x7ffffff
+  __asm ja 0x10dd9bc2
+  __asm shl eax, 5
+  __asm cmp eax, 0x1000
+  __asm jb 0x10dd9bad
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10dd9bc2
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10dd9ba7
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10dd9bbd
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10dda540; body size 54 bytes.
 #line 1 "ENTRY_10dda540"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dda540(undefined4 param_1,int param_2,int param_3)
+__declspec(naked) void FUN_10dda540(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_3 * 0x20);
-  iVar1 = (int)(param_2);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_2 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_2 - iVar1) - 4U) {
-                    
-                    
-                    
-      _invalid_parameter_noinfo_noreturn();
-      return;
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm mov eax, dword ptr [esp + 8]
+  __asm shl ecx, 5
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dda565
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dda570
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
+  __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 // Reference entry 10dda590; body size 54 bytes.
 #line 1 "ENTRY_10dda590"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dda590(undefined4 param_1,int param_2,int param_3)
+__declspec(naked) void FUN_10dda590(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_3 * 0x20);
-  iVar1 = (int)(param_2);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_2 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_2 - iVar1) - 4U) {
-                    
-                    
-                    
-      _invalid_parameter_noinfo_noreturn();
-      return;
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm mov eax, dword ptr [esp + 8]
+  __asm shl ecx, 5
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dda5b5
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dda5c0
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
+  __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 // Reference entry 10dda5e0; body size 57 bytes.
 #line 1 "ENTRY_10dda5e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10dda5e0(int param_1,int param_2)
+__declspec(naked) void FUN_10dda5e0(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 0x20);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm shl ecx, 5
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dda605
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dda612
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10dda630; body size 57 bytes.
 #line 1 "ENTRY_10dda630"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10dda630(int param_1,int param_2)
+__declspec(naked) void FUN_10dda630(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 0x20);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm shl ecx, 5
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10dda655
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10dda662
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10dda680; body size 11 bytes.
@@ -16957,21 +18225,37 @@ void __stdcall FUN_10dda630(int param_1,int param_2)
 // Reference entry 10ddba30; body size 67 bytes.
 #line 1 "ENTRY_10ddba30"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 __fastcall FUN_10ddba30(int param_1)
+__declspec(naked) void FUN_10ddba30(void)
 
 {
-  undefined1 *puVar1;
-  
-  thunk_FUN_110b0460(1);
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0xbc) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0xbc), 0);
-  }
-  thunk_FUN_110b3620((int)(-(uint)(param_1 != 0) & param_1 + 0x18U),(int)(puVar1),(int)(&DAT_119352e0),(int)(0),(int)(0));
-  return (undefined4)(1);
+  __asm push esi
+  __asm push edi
+  __asm push 1
+  __asm mov esi, ecx
+  __asm call LAB_10095c14
+  __asm mov ecx, dword ptr [esi + 0xbc]
+  __asm lea edx, [esi + 0x18]
+  __asm add esp, 4
+  __asm mov edi, esi
+  __asm neg edi
+  __asm sbb edi, edi
+  __asm and edi, edx
+  __asm mov edx, offset LAB_1186d2ee
+  __asm push 0
+  __asm test ecx, ecx
+  __asm push 0
+  __asm cmovne edx, ecx
+  __asm mov ecx, eax
+  __asm push offset LAB_119352e0
+  __asm push edx
+  __asm push edi
+  __asm call LAB_10093793
+  __asm pop edi
+  __asm mov eax, 1
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10ddbb10; body size 6 bytes.
@@ -17037,61 +18321,116 @@ undefined4 __fastcall FUN_10ddbb50(int param_1)
 // Reference entry 10ddcfc0; body size 33 bytes.
 #line 1 "ENTRY_10ddcfc0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10ddcfc0(char *param_2,undefined4 *param_3)
+__declspec(naked) void FUN_10ddcfc0(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  ((SCStr *)(param_1))->int_allocRep(param_2);
-  *(undefined4*)(param_1 + 4) = (undefined4)(*param_3);
-  return (SCStr *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0xc]
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 8], esi
+  __asm call LAB_1005273e
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10ddcff0; body size 33 bytes.
 #line 1 "ENTRY_10ddcff0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10ddcff0(char *param_2,undefined4 *param_3)
+__declspec(naked) void FUN_10ddcff0(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  ((SCStr *)(param_1))->int_allocRep(param_2);
-  *(undefined4*)(param_1 + 4) = (undefined4)(*param_3);
-  return (SCStr *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0xc]
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 8], esi
+  __asm call LAB_1005273e
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10ddd020; body size 33 bytes.
 #line 1 "ENTRY_10ddd020"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10ddd020(char *param_2,undefined4 *param_3)
+__declspec(naked) void FUN_10ddd020(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  ((SCStr *)(param_1))->int_allocRep(param_2);
-  *(undefined4*)(param_1 + 4) = (undefined4)(*param_3);
-  return (SCStr *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0xc]
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 8], esi
+  __asm call LAB_1005273e
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10ddd050; body size 33 bytes.
 #line 1 "ENTRY_10ddd050"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10ddd050(char *param_2,undefined4 *param_3)
+__declspec(naked) void FUN_10ddd050(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  ((SCStr *)(param_1))->int_allocRep(param_2);
-  *(undefined4*)(param_1 + 4) = (undefined4)(*param_3);
-  return (SCStr *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0xc]
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 8], esi
+  __asm call LAB_1005273e
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10ddd080; body size 33 bytes.
 #line 1 "ENTRY_10ddd080"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10ddd080(char *param_2,undefined4 *param_3)
+__declspec(naked) void FUN_10ddd080(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  ((SCStr *)(param_1))->int_allocRep(param_2);
-  *(undefined4*)(param_1 + 4) = (undefined4)(*param_3);
-  return (SCStr *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0xc]
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 8], esi
+  __asm call LAB_1005273e
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10ddd0b0; body size 26 bytes.
@@ -17148,16 +18487,19 @@ char * FUN_10ddd0f0(void)
 // Reference entry 10ddd100; body size 27 bytes.
 #line 1 "ENTRY_10ddd100"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10ddd100(undefined4 *param_1)
+__declspec(naked) void FUN_10ddd100(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_11935874
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [esp], ecx
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10ddd130; body size 16 bytes.
@@ -17296,33 +18638,37 @@ undefined4 __fastcall FUN_10dde980(undefined4 *param_1)
 // Reference entry 10dde990; body size 17 bytes.
 #line 1 "ENTRY_10dde990"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-bool __stdcall FUN_10dde990(undefined4 param_1)
+__declspec(naked) void FUN_10dde990(void)
 
 {
-  int iVar1;
-  
-  iVar1 = (int)(thunk_FUN_1029d970((int)(param_1)), 0);
-  return (bool)(0 < iVar1);
+  __asm push dword ptr [esp + 4]
+  __asm call LAB_10019957
+  __asm test eax, eax
+  __asm setg al
+  __asm ret 4
 }
+
 
 
 // Reference entry 10ddef30; body size 25 bytes.
 #line 1 "ENTRY_10ddef30"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10ddef30(int *param_2)
+__declspec(naked) void FUN_10ddef30(void)
+
 {
-  int param_1 = (int )this;
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0x3c), 0);
-  *param_2 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_2);
+  __asm mov ecx, dword ptr [ecx + 0x3c]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x10ddef43
+  __asm mov edx, dword ptr [ecx]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10de20f0; body size 4 bytes.
@@ -17523,20 +18869,20 @@ void __fastcall FUN_10de2a10(undefined4 *param_1)
 // Reference entry 10de4610; body size 40 bytes.
 #line 1 "ENTRY_10de4610"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10de4610(undefined4 *param_1,undefined4 param_2)
+__declspec(naked) void FUN_10de4610(void)
 
 {
-  undefined4 uVar1;
-  
-  uVar1 = (undefined4)(*param_1);
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  param_1 = (undefined4 *)((undefined4 *)uVar1);
-  thunk_FUN_103beae0((int)(&param_1),(int)(param_2));
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push dword ptr [esp + 8]
+  __asm mov edx, dword ptr [eax]
+  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm lea eax, [esp + 8]
+  __asm push eax
+  __asm mov dword ptr [esp + 0xc], edx
+  __asm call LAB_100399be
+  __asm ret 8
 }
+
 
 
 // Reference entry 10de4650; body size 6 bytes.
@@ -17554,16 +18900,19 @@ char * FUN_10de4650(void)
 // Reference entry 10de46f0; body size 27 bytes.
 #line 1 "ENTRY_10de46f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10de46f0(undefined4 *param_1)
+__declspec(naked) void FUN_10de46f0(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [ecx], LAB_11935f64
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [esp], ecx
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10de4940; body size 16 bytes.
@@ -17583,31 +18932,56 @@ undefined4 * __fastcall FUN_10de4940(undefined4 *param_1)
 // Reference entry 10de4960; body size 157 bytes.
 #line 1 "ENTRY_10de4960"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10de4960(int param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6,char param_7)
+__declspec(naked) void FUN_10de4960(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int iVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  
-  iVar1 = (int)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)));
-  if (param_7 == '\0') {
-    uVar2 = (undefined4)(((SCFp_72_0*)(iVar1))->v(), 0);
-  }
-  else {
-    uVar2 = (undefined4)(((SCFp_76_0*)(iVar1))->v(), 0);
-  }
-  uVar3 = (undefined4)(((SCVtbl_20_4*)((int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4))))->v((int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6)), 0);
-  thunk_FUN_111c0760((int)(uVar2),(int)("urn:schemas-upnp-org:service:AVTransport:1"),(int)("AddURIToSavedQueue"),(int)(uVar3),(int)(param_3),(int)(param_4),(int)(param_5),(int)(param_6));
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTAddURIToSavedQueueAIOOp);
-  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAVTAddURIToSavedQueueAIOOp);
-  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAVTAddURIToSavedQueueAIOOp);
-  param_1[0x35f4] = (undefined4)(0);
-  param_1[0x35f5] = (undefined4)(0);
-  param_1[0x35f6] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push ebx
+  __asm push esi
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x14]
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 0xc], esi
+  __asm mov eax, dword ptr [edi + 4]
+  __asm lea ecx, [edi + 4]
+  __asm mov eax, dword ptr [eax + 4]
+  __asm add ecx, eax
+  __asm cmp byte ptr [esp + 0x28], 0
+  __asm mov eax, dword ptr [ecx]
+  __asm je 0x10de4987
+  __asm call dword ptr [eax + 0x4c]
+  __asm jmp 0x10de498a
+  __asm call dword ptr [eax + 0x48]
+  __asm push dword ptr [esp + 0x24]
+  __asm mov ebx, eax
+  __asm lea ecx, [edi + 4]
+  __asm mov eax, dword ptr [edi + 4]
+  __asm push dword ptr [esp + 0x24]
+  __asm push dword ptr [esp + 0x24]
+  __asm mov eax, dword ptr [eax + 4]
+  __asm add ecx, eax
+  __asm push dword ptr [esp + 0x24]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x50]
+  __asm push eax
+  __asm push offset LAB_11935ec0
+  __asm push offset LAB_118938f4
+  __asm push ebx
+  __asm mov ecx, esi
+  __asm call LAB_10013336
+  __asm pop edi
+  __asm mov dword ptr [esi], LAB_11935e30
+  __asm mov eax, esi
+  __asm mov dword ptr [esi + 0x60], LAB_11935e78
+  __asm mov dword ptr [esi + 0x46c], LAB_11935eb4
+  __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0xd0 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0xd4 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0xd8 __asm _emit 0xd7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm pop ebx
+  __asm pop ecx
+  __asm ret 0x18
 }
+
 
 
 // Reference entry 10de4bd0; body size 9 bytes.
@@ -17674,64 +19048,14 @@ void __fastcall FUN_10de5510(undefined4 *param_1)
 // Reference entry 10de5640; body size 18 bytes.
 #line 1 "ENTRY_10de5640"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10de5640(undefined4 *param_1)
+__declspec(naked) void FUN_10de5640(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpAVTransportAddURIToSavedQueue);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpAVTransportAddURIToSavedQueue);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
-  if (param_1[3] != 0) {
-    piVar1 = (int *)((int *)param_1[4]);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      param_1[3] = (undefined4)(0);
-      param_1[4] = (undefined4)(0);
-      ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
-    }
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-  }
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
-  param_1[0xb] = (undefined4)(0);
-
-  ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
-  param_1[10] = (undefined4)(0);
-  param_1[5] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  thunk_FUN_101ba0d0();
-  piVar1 = (int *)((int *)param_1[4]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[3] = (undefined4)(0);
-    param_1[4] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
-  thunk_FUN_11240850();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_11936024
+  __asm mov dword ptr [ecx + 8], LAB_1193607c
+  __asm jmp LAB_10059bbf
 }
+
 
 
 // Reference entry 10de5730; body size 3 bytes.
@@ -17785,71 +19109,13 @@ undefined4 __fastcall FUN_10de5760(undefined4 *param_1)
 // Reference entry 10de5ff0; body size 11 bytes.
 #line 1 "ENTRY_10de5ff0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall Recovered_Bulk::m_FUN_10de5ff0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 *param_6)
+__declspec(naked) void FUN_10de5ff0(void)
+
 {
-  int param_1 = (int )this;
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvVar3;
-  undefined4 uVar4;
-  undefined4 uVar5;
-  undefined4 uVar6;
-  undefined4 uVar7;
-  undefined4 uVar8;
-  int iVar9;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0x1688), 0);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  pvVar3 = (void *)(operator_new(0x11c38), 0);
-
-  if ((void *)(pvVar3) == (void *)(0x0)) {
-    uVar5 = (undefined4)(0);
-  }
-  else {
-    iVar9 = (int)(piVar1[2]);
-    uVar5 = (undefined4)(param_2);
-    uVar6 = (undefined4)(param_3);
-    uVar7 = (undefined4)(param_4);
-    uVar8 = (undefined4)(param_5);
-    uVar4 = (undefined4)(((SCVtbl_2_6*)(piVar1))->v((int)(param_2),(int)(param_3),(int)(param_4),(int)(param_5),(int)(iVar9),(int)(uVar2)), 0);
-    uVar5 = (undefined4)(thunk_FUN_111cb060((int)(uVar4),(int)(uVar5),(int)(uVar6),(int)(uVar7),(int)(uVar8),(int)(iVar9)), 0);
-  }
-
-  pvVar3 = (void *)(operator_new(0x11c38), 0);
-
-  if ((void *)(pvVar3) == (void *)(0x0)) {
-    uVar6 = (undefined4)(0);
-  }
-  else {
-    iVar9 = (int)(piVar1[2]);
-    uVar6 = (undefined4)(((SCVtbl_2_5*)(piVar1))->v((int)(param_2),(int)(param_3),(int)(param_4),(int)(param_5),(int)(iVar9)), 0);
-    uVar6 = (undefined4)(thunk_FUN_111cb060((int)(uVar6),(int)(param_2),(int)(param_3),(int)(param_4),(int)(param_5),(int)(iVar9)), 0);
-  }
-
-  uVar7 = (undefined4)(thunk_FUN_111dd660(), 0);
-  uVar8 = (undefined4)(((SCVtbl_3_0*)(piVar1))->v(), 0);
-  pvVar3 = (void *)(operator_new(100), 0);
-
-  if ((void *)(pvVar3) == (void *)(0x0)) {
-    uVar5 = (undefined4)(0);
-  }
-  else {
-    uVar5 = (undefined4)(thunk_FUN_111ca9f0((int)(uVar5),(int)(uVar6),(int)(uVar7),(int)(uVar8),(int)(&DAT_122f1250)), 0);
-  }
-  *param_6 = (undefined4)(uVar5);
-
-  return (undefined4)(0);
-
- } catch (...) { }
+  __asm mov ecx, dword ptr [ecx + 0x1688]
+  __asm jmp LAB_1003bedf
 }
+
 
 
 // Reference entry 10de66f0; body size 16 bytes.
@@ -18051,67 +19317,90 @@ undefined4 * __fastcall FUN_10de9050(undefined4 *param_1, unsigned int recovered
 // Reference entry 10de9110; body size 23 bytes.
 #line 1 "ENTRY_10de9110"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10de9110(undefined4 param_2)
+__declspec(naked) void FUN_10de9110(void)
+
 {
-  int param_1 = (int )this;
-  thunk_FUN_10594e60((int)(param_2));
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x1c);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_10024c85
+  __asm add dword ptr [esi + 4], 0x1c
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10de91d0; body size 23 bytes.
 #line 1 "ENTRY_10de91d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10de91d0(undefined4 param_2)
+__declspec(naked) void FUN_10de91d0(void)
+
 {
-  int param_1 = (int )this;
-  thunk_FUN_10594e60((int)(param_2));
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x1c);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_10024c85
+  __asm add dword ptr [esi + 4], 0x1c
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10de9b00; body size 14 bytes.
 #line 1 "ENTRY_10de9b00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10de9b00(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10de9b00(void)
 
 {
-  thunk_FUN_10594e60((int)(param_3));
-  return;
+  __asm push dword ptr [esp + 0xc]
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm call LAB_10024c85
+  __asm ret
 }
+
 
 
 // Reference entry 10de9b20; body size 14 bytes.
 #line 1 "ENTRY_10de9b20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10de9b20(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10de9b20(void)
 
 {
-  thunk_FUN_10594e60((int)(param_3));
-  return;
+  __asm push dword ptr [esp + 0xc]
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm call LAB_10024c85
+  __asm ret
 }
+
 
 
 // Reference entry 10de9c00; body size 40 bytes.
 #line 1 "ENTRY_10de9c00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10de9c00(undefined4 param_2)
+__declspec(naked) void FUN_10de9c00(void)
+
 {
-  int param_1 = (int )this;
-  if (*(int *)((param_1 + 4)) != *(int *)((param_1 + 8))) {
-    thunk_FUN_10594e60((int)(param_2));
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x1c);
-    return;
-  }
-  thunk_FUN_10de9550(*(int *)(param_1 + 4),param_2);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 4]
+  __asm cmp eax, dword ptr [esi + 8]
+  __asm je 0x10de9c1e
+  __asm mov ecx, eax
+  __asm call LAB_10024c85
+  __asm add dword ptr [esi + 4], 0x1c
+  __asm pop esi
+  __asm ret 4
+  __asm push eax
+  __asm call LAB_1004854f
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10de9c40; body size 5 bytes.
@@ -18216,36 +19505,53 @@ undefined4 * __fastcall FUN_10de9cb0(undefined4 *param_1)
 // Reference entry 10de9da0; body size 28 bytes.
 #line 1 "ENTRY_10de9da0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10de9da0(undefined4 *param_1)
+__declspec(naked) void FUN_10de9da0(void)
 
 {
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10de9df0; body size 65 bytes.
 #line 1 "ENTRY_10de9df0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall Recovered_Bulk::m_FUN_10de9df0(uint param_2)
+__declspec(naked) void FUN_10de9df0(void)
+
 {
-  int *param_1 = (int *)this;
-  uint uVar1;
-  
-  uVar1 = (uint)((param_1[2] - *param_1) / 0x1c);
-  if (0x9249249 - (uVar1 >> 1) < uVar1) {
-    return (uint)(0x9249249);
-  }
-  uVar1 = (uint)((uVar1 >> 1) + uVar1);
-  if (uVar1 < param_2) {
-    uVar1 = (uint)(param_2);
-  }
-  return (uint)(uVar1);
+  __asm push esi
+  __asm mov esi, dword ptr [ecx + 8]
+  __asm mov eax, 0x92492493
+  __asm sub esi, dword ptr [ecx]
+  __asm mov ecx, 0x9249249
+  __asm imul esi
+  __asm add edx, esi
+  __asm sar edx, 4
+  __asm mov esi, edx
+  __asm shr esi, 0x1f
+  __asm add esi, edx
+  __asm mov edx, esi
+  __asm _emit 0xd1 __asm _emit 0xea
+  __asm sub ecx, edx
+  __asm cmp esi, ecx
+  __asm jbe 0x10de9e21
+  __asm mov eax, 0x9249249
+  __asm pop esi
+  __asm ret 4
+  __asm lea eax, [edx + esi]
+  __asm cmp eax, dword ptr [esp + 8]
+  __asm pop esi
+  __asm cmovb eax, dword ptr [esp + 4]
+  __asm ret 4
 }
+
 
 
 // Reference entry 10de9fd0; body size 3 bytes.
@@ -18311,17 +19617,26 @@ undefined4 FUN_10dea500(void)
 // Reference entry 10deb680; body size 40 bytes.
 #line 1 "ENTRY_10deb680"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10deb680(undefined4 param_2)
+__declspec(naked) void FUN_10deb680(void)
+
 {
-  int param_1 = (int )this;
-  if (*(int *)((param_1 + 4)) != *(int *)((param_1 + 8))) {
-    thunk_FUN_10594e60((int)(param_2));
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x1c);
-    return;
-  }
-  thunk_FUN_10de9550(*(int *)(param_1 + 4),param_2);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 4]
+  __asm cmp eax, dword ptr [esi + 8]
+  __asm je 0x10deb69e
+  __asm mov ecx, eax
+  __asm call LAB_10024c85
+  __asm add dword ptr [esi + 4], 0x1c
+  __asm pop esi
+  __asm ret 4
+  __asm push eax
+  __asm call LAB_1004854f
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10deb6c0; body size 18 bytes.
@@ -18421,13 +19736,22 @@ undefined4 * __fastcall FUN_10deb780(undefined4 *param_1, unsigned int recovered
 // Reference entry 10deb870; body size 31 bytes.
 #line 1 "ENTRY_10deb870"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall Recovered_Bulk::m_FUN_10deb870(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10deb870(void)
+
 {
-  int param_1 = (int )this;
-  thunk_FUN_10deea50((int)(param_3));
-  *(undefined4*)(param_1 + 0x18) = (undefined4)(0);
-  return (int)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 8], esi
+  __asm call LAB_1003dcd5
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10deb8a0; body size 11 bytes.
@@ -18506,13 +19830,23 @@ undefined4 * __fastcall FUN_10deb9d0(undefined4 *param_1, unsigned int recovered
 // Reference entry 10debb10; body size 33 bytes.
 #line 1 "ENTRY_10debb10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall Recovered_Bulk::m_FUN_10debb10(undefined4 *param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_10debb10(void)
+
 {
-  int param_1 = (int )this;
-  thunk_FUN_10deea50((int)(*param_2));
-  *(undefined4*)(param_1 + 0x18) = (undefined4)(0);
-  return (int)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 4], esi
+  __asm push dword ptr [eax]
+  __asm call LAB_1003dcd5
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10debc00; body size 24 bytes.
@@ -18554,20 +19888,19 @@ void FUN_10debc30(void)
 // Reference entry 10debc40; body size 25 bytes.
 #line 1 "ENTRY_10debc40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10debc40(void)
+__declspec(naked) void FUN_10debc40(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  return;
+  __asm push 0x1c
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm ret
 }
+
 
 
 // Reference entry 10debdc0; body size 13 bytes.
@@ -18612,46 +19945,56 @@ void FUN_10debde0(undefined4 *param_1,undefined4 *param_2)
 // Reference entry 10debdf0; body size 113 bytes.
 #line 1 "ENTRY_10debdf0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10debdf0(int *param_2,undefined4 param_3)
+__declspec(naked) void FUN_10debdf0(void)
+
 {
-  int *param_1 = (int *)this;
-  char cVar1;
-  int *piVar2;
-  int *piVar3;
-  int iVar4;
-  int iVar5;
-  int *piVar6;
-  undefined4 uVar7;
-  
-  uVar7 = (undefined4)(thunk_FUN_10debe80((int)(*(undefined4 *)(*param_2 + 4)),(int)(*param_1),(int)(param_3)), 0);
-  *(undefined4*)(*param_1 + 4) = (undefined4)(uVar7);
-  piVar2 = (int *)((int *)*param_1);
-  param_1[1] = (int)(param_2[1]);
-  piVar3 = (int *)((int *)piVar2[1]);
-  if (*(char *)((int)piVar3 + 0xd) != '\0') {
-    *piVar2 = (int)((int)piVar2);
-    *(int*)(*param_1 + 8) = (int)(*param_1);
-    return;
-  }
-  cVar1 = (char)(*(char *)(*piVar3 + 0xd));
-  piVar6 = (int *)((int *)*piVar3);
-  while (cVar1 == '\0') {
-    cVar1 = (char)(*(char *)(*piVar6 + 0xd));
-    piVar3 = (int *)(piVar6);
-    piVar6 = (int *)((int *)*piVar6);
-  }
-  *piVar2 = (int)((int)piVar3);
-  iVar4 = (int)(*(int *)(*param_1 + 4));
-  iVar5 = (int)(*(int *)(iVar4 + 8));
-  cVar1 = (char)(*(char *)(iVar5 + 0xd));
-  while (cVar1 == '\0') {
-    cVar1 = (char)(*(char *)(*(int *)(iVar5 + 8) + 0xd));
-    iVar4 = (int)(iVar5);
-    iVar5 = (int)(*(int *)(iVar5 + 8));
-  }
-  *(int*)(*param_1 + 8) = (int)(iVar4);
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm push edi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov edi, ecx
+  __asm mov eax, dword ptr [esi]
+  __asm push dword ptr [edi]
+  __asm push dword ptr [eax + 4]
+  __asm call LAB_1006039d
+  __asm mov ecx, dword ptr [edi]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov eax, dword ptr [esi + 4]
+  __asm mov esi, dword ptr [edi]
+  __asm mov dword ptr [edi + 4], eax
+  __asm mov edx, dword ptr [esi + 4]
+  __asm cmp byte ptr [edx + 0xd], 0
+  __asm jne 0x10debe55
+  __asm mov ecx, dword ptr [edx]
+  __asm cmp byte ptr [ecx + 0xd], 0
+  __asm jne 0x10debe32
+  __asm mov eax, dword ptr [ecx]
+  __asm mov edx, ecx
+  __asm mov ecx, eax
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm je 0x10debe26
+  __asm mov dword ptr [esi], edx
+  __asm mov edx, dword ptr [edi]
+  __asm mov ecx, dword ptr [edx + 4]
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10debe4d
+  __asm mov ecx, eax
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm je 0x10debe42
+  __asm pop edi
+  __asm mov dword ptr [edx + 8], ecx
+  __asm pop esi
+  __asm ret 8
+  __asm mov dword ptr [esi], esi
+  __asm mov eax, dword ptr [edi]
+  __asm pop edi
+  __asm pop esi
+  __asm mov dword ptr [eax + 8], eax
+  __asm ret 8
 }
+
 
 
 // Reference entry 10dec080; body size 3 bytes.
@@ -18669,131 +20012,179 @@ void FUN_10dec080(void)
 // Reference entry 10dec090; body size 23 bytes.
 #line 1 "ENTRY_10dec090"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dec090(undefined4 param_2)
+__declspec(naked) void FUN_10dec090(void)
+
 {
-  int param_1 = (int )this;
-  thunk_FUN_10deea50((int)(param_2));
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x18);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_1003dcd5
+  __asm add dword ptr [esi + 4], 0x18
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dec0b0; body size 23 bytes.
 #line 1 "ENTRY_10dec0b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dec0b0(undefined4 param_2)
+__declspec(naked) void FUN_10dec0b0(void)
+
 {
-  int param_1 = (int )this;
-  thunk_FUN_105f9e40(param_2);
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x1c);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_10076319
+  __asm add dword ptr [esi + 4], 0x1c
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dec0d0; body size 23 bytes.
 #line 1 "ENTRY_10dec0d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dec0d0(undefined4 param_2)
+__declspec(naked) void FUN_10dec0d0(void)
+
 {
-  int param_1 = (int )this;
-  thunk_FUN_10deea50((int)(param_2));
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x18);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_1003dcd5
+  __asm add dword ptr [esi + 4], 0x18
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dec180; body size 23 bytes.
 #line 1 "ENTRY_10dec180"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dec180(undefined4 param_2)
+__declspec(naked) void FUN_10dec180(void)
+
 {
-  int param_1 = (int )this;
-  thunk_FUN_10deea50((int)(param_2));
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x18);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_1003dcd5
+  __asm add dword ptr [esi + 4], 0x18
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dec1a0; body size 23 bytes.
 #line 1 "ENTRY_10dec1a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dec1a0(undefined4 param_2)
+__declspec(naked) void FUN_10dec1a0(void)
+
 {
-  int param_1 = (int )this;
-  thunk_FUN_105f9e40(param_2);
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x1c);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_10076319
+  __asm add dword ptr [esi + 4], 0x1c
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dec750; body size 83 bytes.
 #line 1 "ENTRY_10dec750"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10dec750(SCStr *param_2)
+__declspec(naked) void FUN_10dec750(void)
+
 {
-  int *param_1 = (int *)this;
-  char cVar1;
-  bool bVar2;
-  undefined4 *puVar3;
-  undefined4 *puVar4;
-  undefined4 *puVar5;
-  
-  puVar5 = (undefined4 *)((undefined4 *)((undefined4 *)*param_1)[1]);
-  cVar1 = (char)(*(char *)((int)puVar5 + 0xd));
-  puVar3 = (undefined4 *)((undefined4 *)*param_1);
-  while (cVar1 == '\0') {
-    bVar2 = (bool)(((SCStr *)((SCStr *)(puVar5 + 4)))->op_lt(param_2), 0);
-    if (bVar2) {
-      puVar4 = (undefined4 *)((undefined4 *)puVar5[2]);
-      puVar5 = (undefined4 *)(puVar3);
-    }
-    else {
-      puVar4 = (undefined4 *)((undefined4 *)*puVar5);
-    }
-    puVar3 = (undefined4 *)(puVar5);
-    puVar5 = (undefined4 *)(puVar4);
-    cVar1 = (char)(*(char *)((int)puVar4 + 0xd));
-  }
-  if ((*(char *)((int)puVar3 + 0xd) != '\0') ||
-     (bVar2 = (bool)(((SCStr *)(param_2))->op_lt((SCStr *)(puVar3 + 4)), 0), bVar2)) {
-    puVar3 = (undefined4 *)((undefined4 *)*param_1);
-  }
-  return (undefined4 *)(puVar3);
+  __asm push ebx
+  __asm mov ebx, dword ptr [esp + 8]
+  __asm push ebp
+  __asm mov ebp, ecx
+  __asm push esi
+  __asm push edi
+  __asm mov edi, dword ptr [ebp]
+  __asm mov esi, dword ptr [edi + 4]
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm jne 0x10dec782
+  __asm push ebx
+  __asm lea ecx, [esi + 0x10]
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm je 0x10dec778
+  __asm mov esi, dword ptr [esi + 8]
+  __asm jmp 0x10dec77c
+  __asm mov edi, esi
+  __asm mov esi, dword ptr [esi]
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm je 0x10dec766
+  __asm cmp byte ptr [edi + 0xd], 0
+  __asm jne 0x10dec799
+  __asm lea edx, [edi + 0x10]
+  __asm mov ecx, ebx
+  __asm push edx
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm mov eax, edi
+  __asm je 0x10dec79c
+  __asm mov eax, dword ptr [ebp]
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebp
+  __asm pop ebx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dec8e0; body size 83 bytes.
 #line 1 "ENTRY_10dec8e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10dec8e0(int *param_2,SCStr *param_3)
+__declspec(naked) void FUN_10dec8e0(void)
+
 {
-  int *param_1 = (int *)this;
-  char cVar1;
-  int iVar2;
-  bool bVar3;
-  undefined4 *puVar4;
-  
-  iVar2 = (int)(*param_1);
-  puVar4 = (undefined4 *)(*(undefined4 **)(iVar2 + 4), 0);
-  *param_2 = (int)((int)puVar4);
-  cVar1 = (char)(*(char *)((int)puVar4 + 0xd));
-  param_2[1] = (int)(0);
-  param_2[2] = (int)(iVar2);
-  while (cVar1 == '\0') {
-    *param_2 = (int)((int)puVar4);
-    bVar3 = (bool)(((SCStr *)((SCStr *)(puVar4 + 4)))->op_lt(param_3), 0);
-    if (!bVar3) {
-      param_2[2] = (int)((int)puVar4);
-      puVar4 = (undefined4 *)((undefined4 *)*puVar4);
-    }
-    else {
-      puVar4 = (undefined4 *)((undefined4 *)puVar4[2]);
-    }
-    param_2[1] = (int)((uint)!bVar3);
-    cVar1 = (char)(*(char *)((int)puVar4 + 0xd));
-  }
-  return (int *)(param_2);
+  __asm mov eax, dword ptr [ecx]
+  __asm push esi
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0xc]
+  __asm mov esi, dword ptr [eax + 4]
+  __asm mov dword ptr [edi], esi
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [edi + 8], eax
+  __asm jne 0x10dec92c
+  __asm push ebx
+  __asm mov ebx, dword ptr [esp + 0x14]
+  __asm push ebx
+  __asm lea ecx, [esi + 0x10]
+  __asm mov dword ptr [edi], esi
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm je 0x10dec918
+  __asm mov esi, dword ptr [esi + 8]
+  __asm xor eax, eax
+  __asm jmp 0x10dec922
+  __asm mov dword ptr [edi + 8], esi
+  __asm mov eax, 1
+  __asm mov esi, dword ptr [esi]
+  __asm mov dword ptr [edi + 4], eax
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm je 0x10dec902
+  __asm pop ebx
+  __asm mov eax, edi
+  __asm pop edi
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 10dec950; body size 15 bytes.
@@ -18884,138 +20275,176 @@ undefined4 FUN_10ded3f0(undefined4 param_1)
 // Reference entry 10ded400; body size 37 bytes.
 #line 1 "ENTRY_10ded400"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10ded400(void)
 
-undefined4 __stdcall FUN_10ded400(int param_1,undefined4 param_2){
-  char cVar1;
-  
-  if (*(char *)(param_1 + 0xd) == '\0') {
-    cVar1 = (char)(thunk_FUN_10defa10((int)(param_2),(int)(param_1 + 0x10)), 0);
-    if (cVar1 == '\0') {
-      return (undefined4)(1);
-    }
-  }
-  return (undefined4)(0);
+{
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10ded420
+  __asm add eax, 0x10
+  __asm push eax
+  __asm push dword ptr [esp + 0xc]
+  __asm call LAB_10060cdf
+  __asm test al, al
+  __asm jne 0x10ded420
+  __asm mov al, 1
+  __asm ret 8
+  __asm xor al, al
+  __asm ret 8
 }
+
 
 
 // Reference entry 10ded430; body size 37 bytes.
 #line 1 "ENTRY_10ded430"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10ded430(void)
 
-undefined4 __stdcall FUN_10ded430(int param_1,SCStr *param_2){
-  bool bVar1;
-  
-  if (*(char *)(param_1 + 0xd) == '\0') {
-    bVar1 = (bool)(((SCStr *)(param_2))->op_lt((SCStr *)(param_1 + 0x10)), 0);
-    if (!bVar1) {
-      return (undefined4)(1);
-    }
-  }
-  return (undefined4)(0);
+{
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10ded450
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm add eax, 0x10
+  __asm push eax
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm jne 0x10ded450
+  __asm mov al, 1
+  __asm ret 8
+  __asm xor al, al
+  __asm ret 8
 }
+
 
 
 // Reference entry 10ded460; body size 134 bytes.
 #line 1 "ENTRY_10ded460"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-SCStr * FUN_10ded460(SCStr *param_1,SCStr *param_2,SCStr *param_3)
+__declspec(naked) void FUN_10ded460(void)
 
 {
-  SCStr *pSVar1;
-  int *piVar2;
-  int iVar3;
-  SCStr *pSVar4;
-  SCStr *pSVar5;
-  
-  if ((SCStr *)((param_2)) != (SCStr *)(param_1)) {
-    pSVar5 = (SCStr *)(param_3 + 0xc);
-    do {
-      pSVar4 = (SCStr *)(param_2 + -0x18);
-      param_3 = (SCStr *)(param_3 + -0x18);
-      pSVar1 = (SCStr *)(pSVar5 + -0x18);
-      if ((SCStr *)((param_3)) != (SCStr *)(pSVar4)) {
-        ((SCStr *)(param_3))->int_release();
-        *(undefined4*)param_3 = (undefined4)((SCStr *)(*(undefined4 *)pSVar4));
-        ((SCStr *)(param_3))->int_addref();
-        *(int*)(pSVar5 + -0x20) = (int)(*(int *)(param_2 + -0x14));
-        iVar3 = (int)(*(int *)(param_2 + -0x10));
-        if ((int)(iVar3) != *(int *)(pSVar5 + -0x1c)) {
-          piVar2 = (int *)(*(int **)pSVar1);
-          if ((int *)(piVar2) != (int *)(0x0)) {
-            *(int*)(pSVar5 + -0x1c) = (int)(0);
-            *(int*)pSVar1 = (int)((SCStr *)(0));
-            ((SCVtbl_2_0*)(piVar2))->v();
-            iVar3 = (int)(*(int *)(param_2 + -0x10));
-          }
-          *(int*)(pSVar5 + -0x1c) = (int)(iVar3);
-          piVar2 = (int *)(*(int **)(param_2 + -0xc), 0);
-          *(int**)pSVar1 = (int *)((SCStr *)(piVar2));
-          if ((int *)(piVar2) != (int *)(0x0)) {
-            ((SCVtbl_1_0*)(piVar2))->v();
-          }
-        }
-      }
-      pSVar5 = (SCStr *)(pSVar1);
-      param_2 = (SCStr *)(pSVar4);
-    } while ((SCStr *)(pSVar4) != (SCStr *)(param_1));
-    return (SCStr *)(param_3);
-  }
-  return (SCStr *)(param_3);
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0xc]
+  __asm cmp esi, dword ptr [esp + 8]
+  __asm je 0x10ded4e0
+  __asm push ebx
+  __asm mov ebx, dword ptr [esp + 0x14]
+  __asm add esi, -0x18
+  __asm push ebp
+  __asm push edi
+  __asm lea edi, [ebx + 0xc]
+  __asm sub ebx, 0x18
+  __asm lea edi, [edi - 0x18]
+  __asm mov ebp, esi
+  __asm cmp ebx, esi
+  __asm je 0x10ded4d0
+  __asm mov ecx, ebx
+  __asm call LAB_1005c315
+  __asm mov eax, dword ptr [esi]
+  __asm mov ecx, ebx
+  __asm mov dword ptr [ebx], eax
+  __asm call LAB_1002a973
+  __asm mov eax, dword ptr [esi + 4]
+  __asm mov dword ptr [edi - 8], eax
+  __asm mov eax, dword ptr [esi + 8]
+  __asm cmp eax, dword ptr [edi - 4]
+  __asm je 0x10ded4d0
+  __asm mov ecx, dword ptr [edi]
+  __asm test ecx, ecx
+  __asm je 0x10ded4bf
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0xfc __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov eax, dword ptr [esi + 8]
+  __asm mov dword ptr [edi - 4], eax
+  __asm mov ecx, dword ptr [esi + 0xc]
+  __asm mov dword ptr [edi], ecx
+  __asm test ecx, ecx
+  __asm je 0x10ded4d0
+  __asm mov edx, dword ptr [ecx]
+  __asm call dword ptr [edx + 4]
+  __asm sub esi, 0x18
+  __asm cmp ebp, dword ptr [esp + 0x14]
+  __asm jne 0x10ded478
+  __asm pop edi
+  __asm pop ebp
+  __asm mov eax, ebx
+  __asm pop ebx
+  __asm pop esi
+  __asm ret
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10ded510; body size 188 bytes.
 #line 1 "ENTRY_10ded510"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined1 * FUN_10ded510(int param_1,int param_2,undefined1 *param_3)
+__declspec(naked) void FUN_10ded510(void)
 
 {
-  int iVar1;
-  undefined4 *puVar2;
-  undefined4 *puVar3;
-  undefined4 *puVar4;
-  undefined4 *puVar5;
-  
-  if (param_2 != param_1) {
-    iVar1 = (int)(param_2 - (int)param_3);
-    puVar2 = (undefined4 *)((undefined4 *)(param_3 + 0xc));
-    puVar4 = (undefined4 *)((undefined4 *)(param_2 + 0xc));
-    do {
-      puVar3 = (undefined4 *)(puVar2 + -7);
-      param_3 = (undefined1 *)(param_3 + -0x1c);
-      puVar5 = (undefined4 *)(puVar4 + -7);
-      *param_3 = (undefined1)(*(undefined1 *)(iVar1 + -0x28 + (int)puVar2));
-      if ((undefined4 *)(puVar3) != (undefined4 *)(puVar5)) {
-        thunk_FUN_105a1c80();
-        puVar2[-9] = (undefined4)(puVar4[-9]);
-        puVar2[-8] = (undefined4)(puVar4[-8]);
-        *puVar3 = (undefined4)(*puVar5);
-        puVar4[-9] = (undefined4)(0);
-        puVar4[-8] = (undefined4)(0);
-        *puVar5 = (undefined4)(0);
-      }
-      if (puVar2 + -6 != (undefined4 *)(puVar4) + -6) {
-        thunk_FUN_105a1d20();
-        puVar2[-6] = (undefined4)(puVar4[-6]);
-        puVar2[-5] = (undefined4)(puVar4[-5]);
-        puVar2[-4] = (undefined4)(puVar4[-4]);
-        puVar4[-6] = (undefined4)(0);
-        puVar4[-5] = (undefined4)(0);
-        puVar4[-4] = (undefined4)(0);
-      }
-      puVar2 = (undefined4 *)(puVar3);
-      puVar4 = (undefined4 *)(puVar5);
-    } while (iVar1 + -0xc + (int)puVar3 != param_1);
-    return (undefined1 *)(param_3);
-  }
-  return (undefined1 *)(param_3);
+  __asm mov eax, dword ptr [esp + 8]
+  __asm cmp eax, dword ptr [esp + 4]
+  __asm je LAB_10ded5c7
+  __asm push ebx
+  __asm push ebp
+  __asm mov ebp, dword ptr [esp + 0x14]
+  __asm push esi
+  __asm lea esi, [eax + 0xc]
+  __asm sub eax, ebp
+  __asm sub eax, 0xc
+  __asm push edi
+  __asm lea ebx, [ebp + 0xc]
+  __asm mov dword ptr [esp + 0x18], eax
+  __asm mov al, byte ptr [eax + ebx - 0x1c]
+  __asm sub ebx, 0x1c
+  __asm sub ebp, 0x1c
+  __asm sub esi, 0x1c
+  __asm mov byte ptr [ebp], al
+  __asm cmp ebx, esi
+  __asm je 0x10ded575
+  __asm lea ecx, [ebx - 8]
+  __asm call LAB_1005de7c
+  __asm mov eax, dword ptr [esi - 8]
+  __asm mov dword ptr [ebx - 8], eax
+  __asm mov eax, dword ptr [esi - 4]
+  __asm mov dword ptr [ebx - 4], eax
+  __asm mov eax, dword ptr [esi]
+  __asm mov dword ptr [ebx], eax
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0xf8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0xfc __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x06
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm lea edi, [ebx + 4]
+  __asm lea eax, [esi + 4]
+  __asm cmp edi, eax
+  __asm je 0x10ded5ac
+  __asm mov ecx, edi
+  __asm call LAB_10005f9c
+  __asm mov eax, dword ptr [esi + 4]
+  __asm mov dword ptr [edi], eax
+  __asm mov eax, dword ptr [esi + 8]
+  __asm mov dword ptr [ebx + 8], eax
+  __asm mov eax, dword ptr [esi + 0xc]
+  __asm mov dword ptr [ebx + 0xc], eax
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46
+  __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [esp + 0x18]
+  __asm add eax, ebx
+  __asm cmp eax, dword ptr [esp + 0x14]
+  __asm mov eax, dword ptr [esp + 0x18]
+  __asm jne LAB_10ded535
+  __asm pop edi
+  __asm pop esi
+  __asm mov eax, ebp
+  __asm pop ebp
+  __asm pop ebx
+  __asm ret
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm ret
 }
+
 
 
 // Reference entry 10ded8f0; body size 7 bytes.
@@ -19177,72 +20606,86 @@ undefined4 FUN_10dedd70(undefined4 param_1)
 // Reference entry 10dedd80; body size 27 bytes.
 #line 1 "ENTRY_10dedd80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dedd80(undefined4 param_1,int param_2,undefined4 param_3,undefined4 *param_4)
+__declspec(naked) void FUN_10dedd80(void)
 
 {
-  thunk_FUN_10deea50((int)(*param_4));
-  *(undefined4*)(param_2 + 0x18) = (undefined4)(0);
-  return;
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0xc]
+  __asm mov ecx, esi
+  __asm push dword ptr [eax]
+  __asm call LAB_1003dcd5
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10deddb0; body size 33 bytes.
 #line 1 "ENTRY_10deddb0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10deddb0(undefined4 param_1,SCStr *param_2,SCStr *param_3)
+__declspec(naked) void FUN_10deddb0(void)
 
 {
-  undefined4 uVar1;
-  
-  ((SCStr *)(param_2))->m_op_ctor(param_3);
-  uVar1 = (undefined4)(*(undefined4 *)(param_3 + 8));
-  *(undefined4*)(param_2 + 4) = (undefined4)(*(undefined4 *)(param_3 + 4));
-  *(undefined4*)(param_2 + 8) = (undefined4)(uVar1);
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm mov ecx, edi
+  __asm push esi
+  __asm call LAB_10036c23
+  __asm mov eax, dword ptr [esi + 4]
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm mov dword ptr [edi + 4], eax
+  __asm mov dword ptr [edi + 8], ecx
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10dedde0; body size 14 bytes.
 #line 1 "ENTRY_10dedde0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dedde0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10dedde0(void)
 
 {
-  thunk_FUN_10deea50((int)(param_3));
-  return;
+  __asm push dword ptr [esp + 0xc]
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm call LAB_1003dcd5
+  __asm ret
 }
+
 
 
 // Reference entry 10dede00; body size 14 bytes.
 #line 1 "ENTRY_10dede00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dede00(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10dede00(void)
 
 {
-  thunk_FUN_10deea50((int)(param_3));
-  return;
+  __asm push dword ptr [esp + 0xc]
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm call LAB_1003dcd5
+  __asm ret
 }
+
 
 
 // Reference entry 10dede20; body size 14 bytes.
 #line 1 "ENTRY_10dede20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10dede20(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10dede20(void)
 
 {
-  thunk_FUN_105f9e40(param_3);
-  return;
+  __asm push dword ptr [esp + 0xc]
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm call LAB_10076319
+  __asm ret
 }
+
 
 
 // Reference entry 10dede40; body size 95 bytes.
@@ -19307,33 +20750,51 @@ int FUN_10dedf50(int param_1,int param_2)
 // Reference entry 10dedf80; body size 40 bytes.
 #line 1 "ENTRY_10dedf80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dedf80(undefined4 param_2)
+__declspec(naked) void FUN_10dedf80(void)
+
 {
-  int param_1 = (int )this;
-  if (*(int *)((param_1 + 4)) != *(int *)((param_1 + 8))) {
-    thunk_FUN_10deea50((int)(param_2));
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x18);
-    return;
-  }
-  thunk_FUN_10dec1c0<>(*(int *)(param_1 + 4),param_2);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 4]
+  __asm cmp eax, dword ptr [esi + 8]
+  __asm je 0x10dedf9e
+  __asm mov ecx, eax
+  __asm call LAB_1003dcd5
+  __asm add dword ptr [esi + 4], 0x18
+  __asm pop esi
+  __asm ret 4
+  __asm push eax
+  __asm call LAB_1003e973
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dedfc0; body size 40 bytes.
 #line 1 "ENTRY_10dedfc0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dedfc0(undefined4 param_2)
+__declspec(naked) void FUN_10dedfc0(void)
+
 {
-  int param_1 = (int )this;
-  if (*(int *)((param_1 + 4)) != *(int *)((param_1 + 8))) {
-    thunk_FUN_105f9e40(param_2);
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x1c);
-    return;
-  }
-  thunk_FUN_10dec390(*(int *)(param_1 + 4),param_2);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 4]
+  __asm cmp eax, dword ptr [esi + 8]
+  __asm je 0x10dedfde
+  __asm mov ecx, eax
+  __asm call LAB_10076319
+  __asm add dword ptr [esi + 4], 0x1c
+  __asm pop esi
+  __asm ret 4
+  __asm push eax
+  __asm call LAB_10020d0b
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dee000; body size 15 bytes.
@@ -19544,31 +21005,71 @@ void FUN_10dee120(undefined4 *param_1,undefined4 param_2)
 // Reference entry 10dee130; body size 67 bytes.
 #line 1 "ENTRY_10dee130"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dee130(int *param_2,int param_3,undefined4 param_4,undefined4 param_5)
+__declspec(naked) void FUN_10dee130(void)
+
 {
-  int *param_1 = (int *)this;
-  int iVar1;
-  
-  iVar1 = (int)(*param_1);
-  thunk_FUN_10deca30<>(param_3,param_4,param_5,param_3);
-  *param_2 = (int)(*param_1 + ((param_3 - iVar1) / 0x18) * 0x18);
-  return;
+  __asm mov edx, dword ptr [esp + 8]
+  __asm mov eax, 0x2aaaaaab
+  __asm push ebx
+  __asm mov ebx, ecx
+  __asm push edi
+  __asm push dword ptr [esp + 0x10]
+  __asm sub edx, dword ptr [ebx]
+  __asm push dword ptr [esp + 0x1c]
+  __asm imul edx
+  __asm push dword ptr [esp + 0x1c]
+  __asm sar edx, 2
+  __asm push dword ptr [esp + 0x1c]
+  __asm mov edi, edx
+  __asm shr edi, 0x1f
+  __asm add edi, edx
+  __asm call LAB_1005a632
+  __asm mov eax, dword ptr [ebx]
+  __asm lea ecx, [edi + edi*2]
+  __asm pop edi
+  __asm pop ebx
+  __asm lea ecx, [eax + ecx*8]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov dword ptr [eax], ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10dee190; body size 75 bytes.
 #line 1 "ENTRY_10dee190"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10dee190(int *param_2,int param_3,undefined4 param_4,undefined4 param_5)
+__declspec(naked) void FUN_10dee190(void)
+
 {
-  int *param_1 = (int *)this;
-  int iVar1;
-  
-  iVar1 = (int)(*param_1);
-  thunk_FUN_10decf00<>(param_3,param_4,param_5,param_3);
-  *param_2 = (int)(*param_1 + ((param_3 - iVar1) / 0x1c) * 0x1c);
-  return;
+  __asm push ebx
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm mov ebx, ecx
+  __asm push dword ptr [esp + 0x10]
+  __asm mov eax, 0x92492493
+  __asm push dword ptr [esp + 0x1c]
+  __asm sub edi, dword ptr [ebx]
+  __asm push dword ptr [esp + 0x1c]
+  __asm imul edi
+  __asm push dword ptr [esp + 0x1c]
+  __asm add edx, edi
+  __asm sar edx, 4
+  __asm mov edi, edx
+  __asm shr edi, 0x1f
+  __asm add edi, edx
+  __asm call LAB_10077dea
+  __asm mov eax, dword ptr [ebx]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xfd __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm sub ecx, edi
+  __asm pop edi
+  __asm pop ebx
+  __asm lea ecx, [eax + ecx*4]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov dword ptr [eax], ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10dee1f0; body size 5 bytes.
@@ -19656,21 +21157,29 @@ undefined4 FUN_10dee210(undefined4 param_1)
 // Reference entry 10dee2c0; body size 51 bytes.
 #line 1 "ENTRY_10dee2c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10dee2c0(undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10dee2c0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  void *pvVar1;
-  
-  *param_1 = (undefined4)(param_2);
-  param_1[1] = (undefined4)(param_3);
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *(void**)param_1[1] = (void *)((undefined4)(pvVar1));
-  return (undefined4 *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x1c
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm mov dword ptr [esi + 4], eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 10dee380; body size 11 bytes.
@@ -19792,39 +21301,55 @@ undefined4 __fastcall FUN_10dee420(undefined4 param_1)
 // Reference entry 10dee550; body size 52 bytes.
 #line 1 "ENTRY_10dee550"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10dee550(undefined4 *param_1)
+__declspec(naked) void FUN_10dee550(void)
 
 {
-  void *pvVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x1c
+  __asm mov dword ptr [esp + 8], esi
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10dee5a0; body size 39 bytes.
 #line 1 "ENTRY_10dee5a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10dee5a0(SCStr *param_2)
+__declspec(naked) void FUN_10dee5a0(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  undefined4 uVar1;
-  
-  ((SCStr *)(param_1))->m_op_ctor(param_2);
-  uVar1 = (undefined4)(*(undefined4 *)(param_2 + 8));
-  *(undefined4*)(param_1 + 4) = (undefined4)(*(undefined4 *)(param_2 + 4));
-  *(undefined4*)(param_1 + 8) = (undefined4)(uVar1);
-  return (SCStr *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0xc]
+  __asm push edi
+  __asm mov edi, ecx
+  __asm push esi
+  __asm mov dword ptr [esp + 0xc], edi
+  __asm call LAB_10036c23
+  __asm mov eax, dword ptr [esi + 4]
+  __asm mov edx, dword ptr [esi + 8]
+  __asm mov dword ptr [edi + 4], eax
+  __asm mov eax, edi
+  __asm mov dword ptr [edi + 8], edx
+  __asm pop edi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10dee5d0; body size 13 bytes.
@@ -19891,16 +21416,16 @@ undefined4 * __fastcall FUN_10dee600(undefined4 *param_1)
 // Reference entry 10def710; body size 17 bytes.
 #line 1 "ENTRY_10def710"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-bool __stdcall FUN_10def710(undefined4 param_1)
+__declspec(naked) void FUN_10def710(void)
 
 {
-  char cVar1;
-  
-  cVar1 = (char)(thunk_FUN_10def4a0((int)(param_1)), 0);
-  return (bool)(cVar1 == '\0');
+  __asm push dword ptr [esp + 4]
+  __asm call LAB_10091b82
+  __asm test al, al
+  __asm sete al
+  __asm ret 4
 }
+
 
 
 // Reference entry 10def840; body size 15 bytes.
@@ -19974,37 +21499,36 @@ int __fastcall FUN_10def8b0(int *param_1)
 // Reference entry 10defc80; body size 31 bytes.
 #line 1 "ENTRY_10defc80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10defc80(undefined4 *param_1)
+__declspec(naked) void FUN_10defc80(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return;
+  __asm push esi
+  __asm push 0x1c
+  __asm mov esi, ecx
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10defee0; body size 14 bytes.
 #line 1 "ENTRY_10defee0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10defee0(int param_1)
+__declspec(naked) void FUN_10defee0(void)
 
 {
-  if (*(int *)(param_1 + 4) != 0x5d1745d) {
-    return;
-  }
-                    
-  std::_Xlength_error("map/set too long");
+  __asm cmp dword ptr [ecx + 4], 0x5d1745d
+  __asm je LAB_1000d4ae
+  __asm ret
 }
+
 
 
 // Reference entry 10deff00; body size 3 bytes.
@@ -20154,36 +21678,43 @@ undefined4 __fastcall FUN_10deffc0(undefined4 param_1)
 // Reference entry 10df0260; body size 79 bytes.
 #line 1 "ENTRY_10df0260"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10df0260(int param_2)
+__declspec(naked) void FUN_10df0260(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  
-  piVar1 = (int *)(*(int **)(param_2 + 8), 0);
-  *(int*)(param_2 + 8) = (int)(*piVar1);
-  if (*(char *)(*piVar1 + 0xd) == '\0') {
-    *(int*)(*piVar1 + 4) = (int)(param_2);
-  }
-  piVar1[1] = (int)(*(int *)(param_2 + 4));
-  if ((int)(param_2) == *(int *)(*param_1 + 4)) {
-    *(int**)(*param_1 + 4) = (int *)(piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2 = (int *)(*(int **)(param_2 + 4), 0);
-  if ((int)(param_2) == *piVar2) {
-    *piVar2 = (int)((int)piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2[2] = (int)((int)piVar1);
-  *piVar1 = (int)(param_2);
-  *(int**)(param_2 + 4) = (int *)(piVar1);
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [edx + 8]
+  __asm mov eax, dword ptr [esi]
+  __asm mov dword ptr [edx + 8], eax
+  __asm mov eax, dword ptr [esi]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10df0278
+  __asm mov dword ptr [eax + 4], edx
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm cmp edx, dword ptr [eax + 4]
+  __asm jne 0x10df0291
+  __asm mov dword ptr [eax + 4], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov eax, dword ptr [edx + 4]
+  __asm cmp edx, dword ptr [eax]
+  __asm jne 0x10df02a3
+  __asm mov dword ptr [eax], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov dword ptr [eax + 8], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10df02d0; body size 21 bytes.
@@ -20211,24 +21742,22 @@ undefined4 __fastcall FUN_10deffc0(undefined4 param_1)
 // Reference entry 10df0320; body size 30 bytes.
 #line 1 "ENTRY_10df0320"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-int FUN_10df0320(int param_1)
+__declspec(naked) void FUN_10df0320(void)
 
 {
-  char cVar1;
-  int iVar2;
-  int iVar3;
-  
-  cVar1 = (char)(*(char *)(*(int *)(param_1 + 8) + 0xd));
-  iVar2 = (int)(*(int *)(param_1 + 8));
-  while (iVar3 = (int)(iVar2), cVar1 == '\0') {
-    iVar2 = (int)(*(int *)(iVar3 + 8));
-    cVar1 = (char)(*(char *)(iVar2 + 0xd));
-    param_1 = (int)(iVar3);
-  }
-  return (int)(param_1);
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10df033b
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
+  __asm mov ecx, eax
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm je 0x10df0330
+  __asm mov eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10df0350; body size 31 bytes.
@@ -20441,37 +21970,42 @@ undefined4 __fastcall FUN_10df05b0(undefined4 *param_1)
 // Reference entry 10df05d0; body size 97 bytes.
 #line 1 "ENTRY_10df05d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10df05d0(uint param_1)
+__declspec(naked) void FUN_10df05d0(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0x924924a) {
-    param_1 = (uint)(param_1 * 0x1c);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm cmp ecx, 0x9249249
+  __asm ja 0x10df062c
+  __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xcd __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm sub eax, ecx
+  __asm shl eax, 2
+  __asm cmp eax, 0x1000
+  __asm jb 0x10df0617
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10df062c
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10df0611
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10df0627
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10df0650; body size 11 bytes.
@@ -20511,82 +22045,90 @@ int __fastcall FUN_10df0670(int *param_1)
 // Reference entry 10df09c0; body size 63 bytes.
 #line 1 "ENTRY_10df09c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10df09c0(undefined4 param_1,int param_2,int param_3)
+__declspec(naked) void FUN_10df09c0(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_3 * 0x1c);
-  iVar1 = (int)(param_2);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_2 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_2 - iVar1) - 4U) {
-                    
-                    
-                    
-      _invalid_parameter_noinfo_noreturn();
-      return;
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm sub ecx, eax
+  __asm mov eax, dword ptr [esp + 8]
+  __asm shl ecx, 2
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10df09ee
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10df09f9
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
+  __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 // Reference entry 10df0a10; body size 55 bytes.
 #line 1 "ENTRY_10df0a10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10df0a10(int param_1,int param_2)
+__declspec(naked) void FUN_10df0a10(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 0x2c);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm imul ecx, dword ptr [esp + 8], 0x2c
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10df0a33
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10df0a40
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10df0a60; body size 66 bytes.
 #line 1 "ENTRY_10df0a60"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10df0a60(int param_1,int param_2)
+__declspec(naked) void FUN_10df0a60(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 0x1c);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm sub ecx, eax
+  __asm mov eax, dword ptr [esp + 4]
+  __asm shl ecx, 2
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10df0a8e
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10df0a9b
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10df0ac0; body size 11 bytes.
@@ -20658,81 +22200,114 @@ void __stdcall FUN_10df0a60(int param_1,int param_2)
 // Reference entry 10df0b90; body size 100 bytes.
 #line 1 "ENTRY_10df0b90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10df0b90(int *param_2,SCStr *param_3)
+__declspec(naked) void FUN_10df0b90(void)
+
 {
-  int *param_1 = (int *)this;
-  char cVar1;
-  undefined4 *puVar2;
-  bool bVar3;
-  undefined4 *puVar4;
-  undefined4 *puVar5;
-  
-  puVar5 = (undefined4 *)((undefined4 *)((undefined4 *)*param_1)[1]);
-  cVar1 = (char)(*(char *)((int)puVar5 + 0xd));
-  puVar2 = (undefined4 *)((undefined4 *)*param_1);
-  while (cVar1 == '\0') {
-    bVar3 = (bool)(((SCStr *)((SCStr *)(puVar5 + 4)))->op_lt(param_3), 0);
-    if (bVar3) {
-      puVar4 = (undefined4 *)((undefined4 *)puVar5[2]);
-      puVar5 = (undefined4 *)(puVar2);
-    }
-    else {
-      puVar4 = (undefined4 *)((undefined4 *)*puVar5);
-    }
-    puVar2 = (undefined4 *)(puVar5);
-    puVar5 = (undefined4 *)(puVar4);
-    cVar1 = (char)(*(char *)((int)puVar4 + 0xd));
-  }
-  if ((*(char *)((int)puVar2 + 0xd) == '\0') &&
-     (bVar3 = (bool)(((SCStr *)(param_3))->op_lt((SCStr *)(puVar2 + 4)), 0), !bVar3)) {
-    *param_2 = (int)((int)puVar2);
-    return;
-  }
-  *param_2 = (int)(*param_1);
-  return;
+  __asm push ebx
+  __asm mov ebx, dword ptr [esp + 0xc]
+  __asm push ebp
+  __asm mov ebp, ecx
+  __asm push esi
+  __asm push edi
+  __asm mov edi, dword ptr [ebp]
+  __asm mov esi, dword ptr [edi + 4]
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm jne 0x10df0bc2
+  __asm push ebx
+  __asm lea ecx, [esi + 0x10]
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm je 0x10df0bb8
+  __asm mov esi, dword ptr [esi + 8]
+  __asm jmp 0x10df0bbc
+  __asm mov edi, esi
+  __asm mov esi, dword ptr [esi]
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm je 0x10df0ba6
+  __asm cmp byte ptr [edi + 0xd], 0
+  __asm jne 0x10df0be4
+  __asm lea eax, [edi + 0x10]
+  __asm mov ecx, ebx
+  __asm push eax
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm jne 0x10df0be4
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm mov dword ptr [eax], edi
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebp
+  __asm pop ebx
+  __asm ret 8
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm mov ecx, dword ptr [ebp]
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebp
+  __asm mov dword ptr [eax], ecx
+  __asm pop ebx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10df0d00; body size 116 bytes.
 #line 1 "ENTRY_10df0d00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10df0d00(undefined8 *param_2,SCStr *param_3)
+__declspec(naked) void FUN_10df0d00(void)
+
 {
-  int param_1 = (int )this;
-  char cVar1;
-  undefined4 uVar2;
-  undefined4 *puVar3;
-  bool bVar4;
-  undefined4 *puVar5;
-  undefined4 *puVar6;
-  
-  puVar6 = (undefined4 *)((undefined4 *)(*(undefined4 **)(param_1 + 0x10))[1], 0);
-  cVar1 = (char)(*(char *)((int)puVar6 + 0xd));
-  puVar3 = (undefined4 *)(*(undefined4 **)(param_1 + 0x10), 0);
-  while (cVar1 == '\0') {
-    bVar4 = (bool)(((SCStr *)((SCStr *)(puVar6 + 4)))->op_lt(param_3), 0);
-    if (bVar4) {
-      puVar5 = (undefined4 *)((undefined4 *)puVar6[2]);
-      puVar6 = (undefined4 *)(puVar3);
-    }
-    else {
-      puVar5 = (undefined4 *)((undefined4 *)*puVar6);
-    }
-    puVar3 = (undefined4 *)(puVar6);
-    puVar6 = (undefined4 *)(puVar5);
-    cVar1 = (char)(*(char *)((int)puVar5 + 0xd));
-  }
-  if (((*(char *)((int)puVar3 + 0xd) == '\0') &&
-      (bVar4 = (bool)(((SCStr *)(param_3))->op_lt((SCStr *)(puVar3 + 4)), 0), !bVar4)) &&
-     ((undefined4 *)(puVar3) != *(undefined4 **)(param_1 + 0x10))) {
-    uVar2 = (undefined4)(puVar3[6]);
-    *(undefined4*)param_2 = (undefined4)((undefined8 *)(puVar3[5]));
-    *(undefined4*)((int)param_2 + 4) = (undefined4)(uVar2);
-    return;
-  }
-  *param_2 = (undefined8)(0);
-  return;
+  __asm push ebx
+  __asm mov ebx, dword ptr [esp + 0xc]
+  __asm push ebp
+  __asm mov ebp, ecx
+  __asm push esi
+  __asm push edi
+  __asm mov edi, dword ptr [ebp + 0x10]
+  __asm mov esi, dword ptr [edi + 4]
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm jne 0x10df0d32
+  __asm push ebx
+  __asm lea ecx, [esi + 0x10]
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm je 0x10df0d28
+  __asm mov esi, dword ptr [esi + 8]
+  __asm jmp 0x10df0d2c
+  __asm mov edi, esi
+  __asm mov esi, dword ptr [esi]
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm je 0x10df0d16
+  __asm cmp byte ptr [edi + 0xd], 0
+  __asm jne 0x10df0d62
+  __asm lea eax, [edi + 0x10]
+  __asm mov ecx, ebx
+  __asm push eax
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm jne 0x10df0d62
+  __asm cmp edi, dword ptr [ebp + 0x10]
+  __asm je 0x10df0d62
+  __asm mov ecx, dword ptr [edi + 0x14]
+  __asm mov edx, dword ptr [edi + 0x18]
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebp
+  __asm mov dword ptr [eax], ecx
+  __asm mov dword ptr [eax + 4], edx
+  __asm pop ebx
+  __asm ret 8
+  __asm mov eax, dword ptr [esp + 0x14]
+  __asm xorps xmm0, xmm0
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebp
+  __asm movq qword ptr [eax], xmm0
+  __asm pop ebx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10df16e0; body size 7 bytes.
@@ -20834,33 +22409,51 @@ undefined4 FUN_10df1800(undefined4 param_1)
 // Reference entry 10df1810; body size 40 bytes.
 #line 1 "ENTRY_10df1810"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10df1810(undefined4 param_2)
+__declspec(naked) void FUN_10df1810(void)
+
 {
-  int param_1 = (int )this;
-  if (*(int *)((param_1 + 4)) != *(int *)((param_1 + 8))) {
-    thunk_FUN_10deea50((int)(param_2));
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x18);
-    return;
-  }
-  thunk_FUN_10dec1c0<>(*(int *)(param_1 + 4),param_2);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 4]
+  __asm cmp eax, dword ptr [esi + 8]
+  __asm je 0x10df182e
+  __asm mov ecx, eax
+  __asm call LAB_1003dcd5
+  __asm add dword ptr [esi + 4], 0x18
+  __asm pop esi
+  __asm ret 4
+  __asm push eax
+  __asm call LAB_1003e973
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10df1850; body size 40 bytes.
 #line 1 "ENTRY_10df1850"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10df1850(undefined4 param_2)
+__declspec(naked) void FUN_10df1850(void)
+
 {
-  int param_1 = (int )this;
-  if (*(int *)((param_1 + 4)) != *(int *)((param_1 + 8))) {
-    thunk_FUN_105f9e40(param_2);
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x1c);
-    return;
-  }
-  thunk_FUN_10dec390(*(int *)(param_1 + 4),param_2);
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 4]
+  __asm cmp eax, dword ptr [esi + 8]
+  __asm je 0x10df186e
+  __asm mov ecx, eax
+  __asm call LAB_10076319
+  __asm add dword ptr [esi + 4], 0x1c
+  __asm pop esi
+  __asm ret 4
+  __asm push eax
+  __asm call LAB_10020d0b
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10df1b40; body size 5 bytes.
@@ -20917,49 +22510,33 @@ undefined4 * __fastcall FUN_10df2100(undefined4 *param_1, unsigned int recovered
 // Reference entry 10df2120; body size 20 bytes.
 #line 1 "ENTRY_10df2120"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10df2120(undefined4 *param_2)
+__declspec(naked) void FUN_10df2120(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  undefined4 uVar4;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  uVar2 = (undefined4)(param_2[1]);
-  uVar3 = (undefined4)(param_2[2]);
-  uVar4 = (undefined4)(param_2[3]);
-  *puVar1 = (undefined4)(*param_2);
-  puVar1[1] = (undefined4)(uVar2);
-  puVar1[2] = (undefined4)(uVar3);
-  puVar1[3] = (undefined4)(uVar4);
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x10);
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov edx, dword ptr [ecx + 4]
+  __asm movups xmm0, xmmword ptr [eax]
+  __asm movups xmmword ptr [edx], xmm0
+  __asm add dword ptr [ecx + 4], 0x10
+  __asm ret 4
 }
+
 
 
 // Reference entry 10df2140; body size 20 bytes.
 #line 1 "ENTRY_10df2140"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10df2140(undefined4 *param_2)
+__declspec(naked) void FUN_10df2140(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  undefined4 uVar4;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  uVar2 = (undefined4)(param_2[1]);
-  uVar3 = (undefined4)(param_2[2]);
-  uVar4 = (undefined4)(param_2[3]);
-  *puVar1 = (undefined4)(*param_2);
-  puVar1[1] = (undefined4)(uVar2);
-  puVar1[2] = (undefined4)(uVar3);
-  puVar1[3] = (undefined4)(uVar4);
-  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x10);
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov edx, dword ptr [ecx + 4]
+  __asm movups xmm0, xmmword ptr [eax]
+  __asm movups xmmword ptr [edx], xmm0
+  __asm add dword ptr [ecx + 4], 0x10
+  __asm ret 4
 }
+
 
 
 // Reference entry 10df2340; body size 7 bytes.
@@ -20977,78 +22554,60 @@ undefined4 FUN_10df2340(undefined4 *param_1)
 // Reference entry 10df2350; body size 33 bytes.
 #line 1 "ENTRY_10df2350"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10df2350(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+__declspec(naked) void FUN_10df2350(void)
 
 {
-  undefined4 uVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  
-  for (;(undefined4 *)( param_1) != (undefined4 *)(param_2); param_1 = param_1 + 4) {
-    uVar1 = (undefined4)(param_1[1]);
-    uVar2 = (undefined4)(param_1[2]);
-    uVar3 = (undefined4)(param_1[3]);
-    *param_3 = (undefined4)(*param_1);
-    param_3[1] = (undefined4)(uVar1);
-    param_3[2] = (undefined4)(uVar2);
-    param_3[3] = (undefined4)(uVar3);
-    param_3 = (undefined4 *)(param_3 + 4);
-  }
-  return;
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm mov edx, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm cmp ecx, edx
+  __asm je 0x10df2370
+  __asm movups xmm0, xmmword ptr [ecx]
+  __asm add ecx, 0x10
+  __asm movups xmmword ptr [eax], xmm0
+  __asm add eax, 0x10
+  __asm cmp ecx, edx
+  __asm jne 0x10df2360
+  __asm ret
 }
+
 
 
 // Reference entry 10df2380; body size 15 bytes.
 #line 1 "ENTRY_10df2380"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10df2380(undefined4 param_1,undefined4 *param_2,undefined4 *param_3)
+__declspec(naked) void FUN_10df2380(void)
 
 {
-  undefined4 uVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  
-  uVar1 = (undefined4)(param_3[1]);
-  uVar2 = (undefined4)(param_3[2]);
-  uVar3 = (undefined4)(param_3[3]);
-  *param_2 = (undefined4)(*param_3);
-  param_2[1] = (undefined4)(uVar1);
-  param_2[2] = (undefined4)(uVar2);
-  param_2[3] = (undefined4)(uVar3);
-  return;
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm movups xmm0, xmmword ptr [eax]
+  __asm mov eax, dword ptr [esp + 8]
+  __asm movups xmmword ptr [eax], xmm0
+  __asm ret
 }
+
 
 
 // Reference entry 10df23a0; body size 38 bytes.
 #line 1 "ENTRY_10df23a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10df23a0(undefined4 *param_2)
+__declspec(naked) void FUN_10df23a0(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  undefined4 uVar4;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  if ((undefined4 *)(puVar1) != *(undefined4 **)(param_1 + 8)) {
-    uVar2 = (undefined4)(param_2[1]);
-    uVar3 = (undefined4)(param_2[2]);
-    uVar4 = (undefined4)(param_2[3]);
-    *puVar1 = (undefined4)(*param_2);
-    puVar1[1] = (undefined4)(uVar2);
-    puVar1[2] = (undefined4)(uVar3);
-    puVar1[3] = (undefined4)(uVar4);
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x10);
-    return;
-  }
-  thunk_FUN_10df2160(puVar1,param_2);
-  return;
+  __asm mov edx, dword ptr [ecx + 4]
+  __asm cmp edx, dword ptr [ecx + 8]
+  __asm je 0x10df23b9
+  __asm mov eax, dword ptr [esp + 4]
+  __asm movups xmm0, xmmword ptr [eax]
+  __asm movups xmmword ptr [edx], xmm0
+  __asm add dword ptr [ecx + 4], 0x10
+  __asm ret 4
+  __asm push dword ptr [esp + 4]
+  __asm push edx
+  __asm call LAB_10055141
+  __asm ret 4
 }
+
 
 
 // Reference entry 10df23d0; body size 5 bytes.
@@ -21224,89 +22783,67 @@ void __fastcall FUN_10df2be0(undefined4 *param_1)
 // Reference entry 10df2bf0; body size 35 bytes.
 #line 1 "ENTRY_10df2bf0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10df2bf0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+__declspec(naked) void FUN_10df2bf0(void)
 
 {
-  undefined4 uVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  
-  for (;(undefined4 *)( param_1) != (undefined4 *)(param_2); param_1 = param_1 + 4) {
-    uVar1 = (undefined4)(param_1[1]);
-    uVar2 = (undefined4)(param_1[2]);
-    uVar3 = (undefined4)(param_1[3]);
-    *param_3 = (undefined4)(*param_1);
-    param_3[1] = (undefined4)(uVar1);
-    param_3[2] = (undefined4)(uVar2);
-    param_3[3] = (undefined4)(uVar3);
-    param_3 = (undefined4 *)(param_3 + 4);
-  }
-  return;
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm mov edx, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm cmp ecx, edx
+  __asm je 0x10df2c10
+  __asm movups xmm0, xmmword ptr [ecx]
+  __asm add ecx, 0x10
+  __asm movups xmmword ptr [eax], xmm0
+  __asm add eax, 0x10
+  __asm cmp ecx, edx
+  __asm jne 0x10df2c00
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10df2c20; body size 35 bytes.
 #line 1 "ENTRY_10df2c20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10df2c20(undefined4 *param_1,undefined4 *param_2,int param_3,unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10df2c20(void)
 
 {
-  undefined4 *puVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  undefined4 uVar4;
-  
-  if ((undefined4 *)(param_1) != (undefined4 *)(param_2)) {
-    param_3 = (int)(param_3 - (int)param_1);
-    do {
-      uVar2 = (undefined4)(param_1[1]);
-      uVar3 = (undefined4)(param_1[2]);
-      uVar4 = (undefined4)(param_1[3]);
-      puVar1 = (undefined4 *)((undefined4 *)(param_3 + (int)param_1));
-      *puVar1 = (undefined4)(*param_1);
-      puVar1[1] = (undefined4)(uVar2);
-      puVar1[2] = (undefined4)(uVar3);
-      puVar1[3] = (undefined4)(uVar4);
-      param_1 = (undefined4 *)(param_1 + 4);
-    } while ((undefined4 *)(param_1) != (undefined4 *)(param_2));
-  }
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov edx, dword ptr [esp + 8]
+  __asm cmp eax, edx
+  __asm je 0x10df2c40
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm sub ecx, eax
+  __asm movups xmm0, xmmword ptr [eax]
+  __asm movups xmmword ptr [ecx + eax], xmm0
+  __asm add eax, 0x10
+  __asm cmp eax, edx
+  __asm jne 0x10df2c32
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10df2c50; body size 35 bytes.
 #line 1 "ENTRY_10df2c50"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10df2c50(undefined4 *param_1,undefined4 *param_2,int param_3)
+__declspec(naked) void FUN_10df2c50(void)
 
 {
-  undefined4 *puVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  undefined4 uVar4;
-  
-  if ((undefined4 *)(param_1) != (undefined4 *)(param_2)) {
-    param_3 = (int)(param_3 - (int)param_1);
-    do {
-      uVar2 = (undefined4)(param_1[1]);
-      uVar3 = (undefined4)(param_1[2]);
-      uVar4 = (undefined4)(param_1[3]);
-      puVar1 = (undefined4 *)((undefined4 *)(param_3 + (int)param_1));
-      *puVar1 = (undefined4)(*param_1);
-      puVar1[1] = (undefined4)(uVar2);
-      puVar1[2] = (undefined4)(uVar3);
-      puVar1[3] = (undefined4)(uVar4);
-      param_1 = (undefined4 *)(param_1 + 4);
-    } while ((undefined4 *)(param_1) != (undefined4 *)(param_2));
-  }
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov edx, dword ptr [esp + 8]
+  __asm cmp eax, edx
+  __asm je 0x10df2c70
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm sub ecx, eax
+  __asm movups xmm0, xmmword ptr [eax]
+  __asm movups xmmword ptr [ecx + eax], xmm0
+  __asm add eax, 0x10
+  __asm cmp eax, edx
+  __asm jne 0x10df2c62
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10df2c80; body size 7 bytes.
@@ -21372,29 +22909,23 @@ undefined4 __fastcall FUN_10df2d80(undefined4 *param_1)
 // Reference entry 10df3ef0; body size 38 bytes.
 #line 1 "ENTRY_10df3ef0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10df3ef0(undefined4 *param_2)
+__declspec(naked) void FUN_10df3ef0(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  undefined4 uVar4;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  if ((undefined4 *)(puVar1) != *(undefined4 **)(param_1 + 8)) {
-    uVar2 = (undefined4)(param_2[1]);
-    uVar3 = (undefined4)(param_2[2]);
-    uVar4 = (undefined4)(param_2[3]);
-    *puVar1 = (undefined4)(*param_2);
-    puVar1[1] = (undefined4)(uVar2);
-    puVar1[2] = (undefined4)(uVar3);
-    puVar1[3] = (undefined4)(uVar4);
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x10);
-    return;
-  }
-  thunk_FUN_10df2160(puVar1,param_2);
-  return;
+  __asm mov edx, dword ptr [ecx + 4]
+  __asm cmp edx, dword ptr [ecx + 8]
+  __asm je 0x10df3f09
+  __asm mov eax, dword ptr [esp + 4]
+  __asm movups xmm0, xmmword ptr [eax]
+  __asm movups xmmword ptr [edx], xmm0
+  __asm add dword ptr [ecx + 4], 0x10
+  __asm ret 4
+  __asm push dword ptr [esp + 4]
+  __asm push edx
+  __asm call LAB_10055141
+  __asm ret 4
 }
+
 
 
 // Reference entry 10df3fb0; body size 9 bytes.
@@ -21424,13 +22955,23 @@ int __fastcall FUN_10df3fc0(int *param_1)
 // Reference entry 10df47f0; body size 32 bytes.
 #line 1 "ENTRY_10df47f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10df47f0(undefined4 param_2,SCStr *param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10df47f0(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  ((SCStr *)(param_1))->m_op_ctor(param_3);
-  *(undefined8*)(param_1 + 4) = (undefined8)(0);
-  return (SCStr *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 8], esi
+  __asm call LAB_10036c23
+  __asm xorps xmm0, xmm0
+  __asm mov eax, esi
+  __asm movq qword ptr [esi + 4], xmm0
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10df4820; body size 22 bytes.
@@ -21479,13 +23020,24 @@ int __fastcall FUN_10df3fc0(int *param_1)
 // Reference entry 10df4960; body size 34 bytes.
 #line 1 "ENTRY_10df4960"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10df4960(undefined4 *param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_10df4960(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  ((SCStr *)(param_1))->m_op_ctor((SCStr *)*param_2);
-  *(undefined8*)(param_1 + 4) = (undefined8)(0);
-  return (SCStr *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 4], esi
+  __asm push dword ptr [eax]
+  __asm call LAB_10036c23
+  __asm xorps xmm0, xmm0
+  __asm mov eax, esi
+  __asm movq qword ptr [esi + 4], xmm0
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10df4a70; body size 26 bytes.
@@ -21506,30 +23058,43 @@ int __fastcall FUN_10df3fc0(int *param_1)
 // Reference entry 10df4a90; body size 83 bytes.
 #line 1 "ENTRY_10df4a90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10df4a90(int *param_2)
+__declspec(naked) void FUN_10df4a90(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  if ((int *)(param_2) != (int *)((int *)*param_1)) {
-    piVar1 = (int *)((int *)param_1[1]);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      *param_1 = (int)(0);
-      param_1[1] = (int)(0);
-      ((SCVtbl_2_0*)(piVar1))->v();
-    }
-    *param_1 = (int)((int)param_2);
-    if ((int *)(param_2) != (int *)(0x0)) {
-      piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-      param_1[1] = (int)((int)piVar1);
-      ((SCVtbl_1_0*)(piVar1))->v();
-      return (int *)(param_1);
-    }
-    param_1[1] = (int)(0);
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [eax]
+  __asm cmp edi, dword ptr [esi]
+  __asm je 0x10df4adc
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10df4ab7
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov dword ptr [esi], edi
+  __asm test edi, edi
+  __asm je 0x10df4ad5
+  __asm mov eax, dword ptr [edi]
+  __asm mov ecx, edi
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm pop edi
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop edi
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10df4b00; body size 18 bytes.
@@ -21560,34 +23125,43 @@ void FUN_10df4e80(undefined4 param_1,undefined4 *param_2,undefined4 *param_3)
 // Reference entry 10df4e90; body size 28 bytes.
 #line 1 "ENTRY_10df4e90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10df4e90(undefined4 param_1,SCStr *param_2,undefined4 param_3,undefined4 *param_4)
+__declspec(naked) void FUN_10df4e90(void)
 
 {
-  ((SCStr *)(param_2))->m_op_ctor((SCStr *)*param_4);
-  *(undefined8*)(param_2 + 4) = (undefined8)(0);
-  return;
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0xc]
+  __asm mov ecx, esi
+  __asm push dword ptr [eax]
+  __asm call LAB_10036c23
+  __asm xorps xmm0, xmm0
+  __asm movq qword ptr [esi + 4], xmm0
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10df4ec0; body size 36 bytes.
 #line 1 "ENTRY_10df4ec0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10df4ec0(undefined4 *param_2)
+__declspec(naked) void FUN_10df4ec0(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  if ((undefined4 *)(puVar1) != *(undefined4 **)(param_1 + 8)) {
-    *puVar1 = (undefined4)(*param_2);
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 4);
-    return;
-  }
-  thunk_FUN_10df4b20<>(puVar1,param_2);
-  return;
+  __asm mov edx, dword ptr [ecx + 4]
+  __asm cmp edx, dword ptr [ecx + 8]
+  __asm je 0x10df4ed7
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [edx], eax
+  __asm add dword ptr [ecx + 4], 4
+  __asm ret 4
+  __asm push dword ptr [esp + 4]
+  __asm push edx
+  __asm call LAB_1000d29c
+  __asm ret 4
 }
+
 
 
 // Reference entry 10df4ef0; body size 15 bytes.
@@ -21672,24 +23246,26 @@ undefined4 * __fastcall FUN_10df4f40(undefined4 *param_1)
 // Reference entry 10df5000; body size 49 bytes.
 #line 1 "ENTRY_10df5000"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10df5000(undefined4 *param_2)
+__declspec(naked) void FUN_10df5000(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  undefined4 uVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  
-  uVar1 = (undefined4)(param_2[2]);
-  uVar2 = (undefined4)(*param_2);
-  uVar3 = (undefined4)(param_2[1]);
-  param_2[2] = (undefined4)(0);
-  param_2[1] = (undefined4)(0);
-  *param_2 = (undefined4)(0);
-  param_1[2] = (undefined4)(uVar1);
-  *param_1 = (undefined4)(uVar2);
-  param_1[1] = (undefined4)(uVar3);
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm push edi
+  __asm mov edi, dword ptr [esi + 8]
+  __asm mov eax, dword ptr [esi]
+  __asm mov edx, dword ptr [esi + 4]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x06
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 8], edi
+  __asm pop edi
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 4], edx
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10df5040; body size 9 bytes.
@@ -21760,33 +23336,44 @@ undefined4 * __fastcall FUN_10df5080(undefined4 *param_1)
 // Reference entry 10df6ab0; body size 38 bytes.
 #line 1 "ENTRY_10df6ab0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10df6ab0(undefined4 *param_1)
+__declspec(naked) void FUN_10df6ab0(void)
 
 {
-  thunk_FUN_10deef20();
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCBlePeripheralManager_Listener);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizBlePeripheralManagerEventSource);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizBlePeripheralManagerEventSource);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 4], esi
+  __asm call LAB_100351fc
+  __asm mov dword ptr [esi + 0x10], LAB_119362cc
+  __asm mov eax, esi
+  __asm mov dword ptr [esi], LAB_119366dc
+  __asm mov dword ptr [esi + 0x10], LAB_11936700
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10df9290; body size 38 bytes.
 #line 1 "ENTRY_10df9290"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10df9290(undefined4 *param_1)
+__declspec(naked) void FUN_10df9290(void)
 
 {
-  thunk_FUN_10deef20();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizMuseBleClientEventSource);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 4], esi
+  __asm call LAB_100351fc
+  __asm mov dword ptr [esi], LAB_11936710
+  __asm mov eax, esi
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10dff5d0; body size 19 bytes.
@@ -21843,52 +23430,56 @@ undefined4 __fastcall FUN_10dff850(undefined4 *param_1)
 // Reference entry 10e00730; body size 14 bytes.
 #line 1 "ENTRY_10e00730"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10e00730(int param_1)
+__declspec(naked) void FUN_10e00730(void)
 
 {
-  if (*(int *)(param_1 + 4) != 0x9249249) {
-    return;
-  }
-                    
-  std::_Xlength_error("map/set too long");
+  __asm cmp dword ptr [ecx + 4], 0x9249249
+  __asm je LAB_1000d4ae
+  __asm ret
 }
+
 
 
 // Reference entry 10e009e0; body size 79 bytes.
 #line 1 "ENTRY_10e009e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10e009e0(int param_2)
+__declspec(naked) void FUN_10e009e0(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  
-  piVar1 = (int *)(*(int **)(param_2 + 8), 0);
-  *(int*)(param_2 + 8) = (int)(*piVar1);
-  if (*(char *)(*piVar1 + 0xd) == '\0') {
-    *(int*)(*piVar1 + 4) = (int)(param_2);
-  }
-  piVar1[1] = (int)(*(int *)(param_2 + 4));
-  if ((int)(param_2) == *(int *)(*param_1 + 4)) {
-    *(int**)(*param_1 + 4) = (int *)(piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2 = (int *)(*(int **)(param_2 + 4), 0);
-  if ((int)(param_2) == *piVar2) {
-    *piVar2 = (int)((int)piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2[2] = (int)((int)piVar1);
-  *piVar1 = (int)(param_2);
-  *(int**)(param_2 + 4) = (int *)(piVar1);
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [edx + 8]
+  __asm mov eax, dword ptr [esi]
+  __asm mov dword ptr [edx + 8], eax
+  __asm mov eax, dword ptr [esi]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10e009f8
+  __asm mov dword ptr [eax + 4], edx
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm cmp edx, dword ptr [eax + 4]
+  __asm jne 0x10e00a11
+  __asm mov dword ptr [eax + 4], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov eax, dword ptr [edx + 4]
+  __asm cmp edx, dword ptr [eax]
+  __asm jne 0x10e00a23
+  __asm mov dword ptr [eax], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov dword ptr [eax + 8], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e00a50; body size 83 bytes.
@@ -22063,20 +23654,23 @@ undefined4 __fastcall FUN_10e06ab0(undefined4 *param_1)
 // Reference entry 10e06ac0; body size 36 bytes.
 #line 1 "ENTRY_10e06ac0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10e06ac0(undefined4 *param_2)
+__declspec(naked) void FUN_10e06ac0(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  if ((undefined4 *)(puVar1) != *(undefined4 **)(param_1 + 8)) {
-    *puVar1 = (undefined4)(*param_2);
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 4);
-    return;
-  }
-  thunk_FUN_10df4b20<>(puVar1,param_2);
-  return;
+  __asm mov edx, dword ptr [ecx + 4]
+  __asm cmp edx, dword ptr [ecx + 8]
+  __asm je 0x10e06ad7
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [edx], eax
+  __asm add dword ptr [ecx + 4], 4
+  __asm ret 4
+  __asm push dword ptr [esp + 4]
+  __asm push edx
+  __asm call LAB_1000d29c
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e06b70; body size 28 bytes.
@@ -22182,15 +23776,22 @@ undefined4 * __fastcall FUN_10e0b070(undefined4 *param_1, unsigned int recovered
 // Reference entry 10e0b090; body size 40 bytes.
 #line 1 "ENTRY_10e0b090"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e0b090(undefined4 param_2,undefined4 *param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10e0b090(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*param_3);
-  *(undefined8*)(param_1 + 1) = (undefined8)(0);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm xorps xmm0, xmm0
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm movq qword ptr [ecx + 4], xmm0
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10e0b0d0; body size 22 bytes.
@@ -22248,13 +23849,22 @@ undefined4 * __fastcall FUN_10e0b130(undefined4 *param_1, unsigned int recovered
 // Reference entry 10e0b2e0; body size 31 bytes.
 #line 1 "ENTRY_10e0b2e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10e0b2e0(undefined4 param_2,SCStr *param_3, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10e0b2e0(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  ((SCStr *)(param_1))->m_op_ctor(param_3);
-  *(undefined4*)(param_1 + 4) = (undefined4)(0);
-  return (SCStr *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 8], esi
+  __asm call LAB_10036c23
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10e0b310; body size 22 bytes.
@@ -22284,65 +23894,81 @@ undefined4 * __fastcall FUN_10e0b130(undefined4 *param_1, unsigned int recovered
 // Reference entry 10e0b350; body size 42 bytes.
 #line 1 "ENTRY_10e0b350"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e0b350(undefined4 *param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_10e0b350(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)(*(undefined4 *)*param_2);
-  *(undefined8*)(param_1 + 1) = (undefined8)(0);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm xorps xmm0, xmm0
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [eax]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm mov eax, ecx
+  __asm movq qword ptr [ecx + 4], xmm0
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10e0b390; body size 33 bytes.
 #line 1 "ENTRY_10e0b390"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ SCStr * __thiscall Recovered_Bulk::m_FUN_10e0b390(undefined4 *param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_10e0b390(void)
+
 {
-  SCStr *param_1 = (SCStr *)this;
-  ((SCStr *)(param_1))->m_op_ctor((SCStr *)*param_2);
-  *(undefined4*)(param_1 + 4) = (undefined4)(0);
-  return (SCStr *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 4], esi
+  __asm push dword ptr [eax]
+  __asm call LAB_10036c23
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10e0b3c0; body size 25 bytes.
 #line 1 "ENTRY_10e0b3c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10e0b3c0(void)
+__declspec(naked) void FUN_10e0b3c0(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  return;
+  __asm push 0x1c
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm ret
 }
+
 
 
 // Reference entry 10e0b3e0; body size 25 bytes.
 #line 1 "ENTRY_10e0b3e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10e0b3e0(void)
+__declspec(naked) void FUN_10e0b3e0(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  return;
+  __asm push 0x1c
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm ret
 }
+
 
 
 // Reference entry 10e0b400; body size 13 bytes.
@@ -22486,35 +24112,45 @@ undefined4 FUN_10e0b8f0(undefined4 param_1)
 // Reference entry 10e0b900; body size 31 bytes.
 #line 1 "ENTRY_10e0b900"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10e0b900(void)
 
-uint __stdcall FUN_10e0b900(int param_1,uint *param_2){
-  uint in_EAX;
-  
-  if ((*(char *)(param_1 + 0xd) == '\0') &&
-     (in_EAX = (uint)(*param_2), *(int *)(param_1 + 0x10) <= (int)(in_EAX))) {
-    return (uint)(((uint)((int3)(in_EAX >> 8)) << 8 | (uint)(1)));
-  }
-  return (uint)(in_EAX & 0xffffff00);
+{
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm cmp byte ptr [ecx + 0xd], 0
+  __asm jne 0x10e0b91a
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [eax]
+  __asm cmp eax, dword ptr [ecx + 0x10]
+  __asm jl 0x10e0b91a
+  __asm mov al, 1
+  __asm ret 8
+  __asm xor al, al
+  __asm ret 8
 }
+
 
 
 // Reference entry 10e0b930; body size 37 bytes.
 #line 1 "ENTRY_10e0b930"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+__declspec(naked) void FUN_10e0b930(void)
 
-undefined4 __stdcall FUN_10e0b930(int param_1,SCStr *param_2){
-  bool bVar1;
-  
-  if (*(char *)(param_1 + 0xd) == '\0') {
-    bVar1 = (bool)(((SCStr *)(param_2))->op_lt((SCStr *)(param_1 + 0x10)), 0);
-    if (!bVar1) {
-      return (undefined4)(1);
-    }
-  }
-  return (undefined4)(0);
+{
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10e0b950
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm add eax, 0x10
+  __asm push eax
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm jne 0x10e0b950
+  __asm mov al, 1
+  __asm ret 8
+  __asm xor al, al
+  __asm ret 8
 }
+
 
 
 // Reference entry 10e0bbc0; body size 5 bytes.
@@ -22628,16 +24264,20 @@ undefined4 FUN_10e0bc40(undefined4 param_1)
 // Reference entry 10e0bc50; body size 30 bytes.
 #line 1 "ENTRY_10e0bc50"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10e0bc50(undefined4 param_1,undefined4 *param_2,undefined4 param_3,undefined4 *param_4)
+__declspec(naked) void FUN_10e0bc50(void)
 
 {
-  *param_2 = (undefined4)(*(undefined4 *)*param_4);
-  *(undefined8*)(param_2 + 1) = (undefined8)(0);
-  param_2[2] = (undefined4)(0);
-  return;
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm xorps xmm0, xmm0
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [eax]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [ecx], eax
+  __asm movq qword ptr [ecx + 4], xmm0
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm ret
 }
+
 
 
 // Reference entry 10e0bc80; body size 27 bytes.
@@ -22912,45 +24552,55 @@ undefined4 __fastcall FUN_10e0c110(undefined4 param_1)
 // Reference entry 10e0c120; body size 52 bytes.
 #line 1 "ENTRY_10e0c120"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10e0c120(undefined4 *param_1)
+__declspec(naked) void FUN_10e0c120(void)
 
 {
-  void *pvVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x1c
+  __asm mov dword ptr [esp + 8], esi
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10e0c170; body size 52 bytes.
 #line 1 "ENTRY_10e0c170"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10e0c170(undefined4 *param_1)
+__declspec(naked) void FUN_10e0c170(void)
 
 {
-  void *pvVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x1c
+  __asm mov dword ptr [esp + 8], esi
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10e0c1c0; body size 23 bytes.
@@ -22971,33 +24621,45 @@ undefined4 * __fastcall FUN_10e0c1c0(undefined4 *param_1)
 // Reference entry 10e0c1e0; body size 21 bytes.
 #line 1 "ENTRY_10e0c1e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10e0c1e0(undefined4 *param_1)
+__declspec(naked) void FUN_10e0c1e0(void)
 
 {
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm _emit 0xc7 __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10e0c2d0; body size 38 bytes.
 #line 1 "ENTRY_10e0c2d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e0c2d0(undefined4 *param_2)
+__declspec(naked) void FUN_10e0c2d0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  
-  *param_1 = (undefined4)(*param_2);
-  piVar1 = (int *)((int *)param_2[1]);
-  param_1[1] = (undefined4)(piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov edx, dword ptr [esp + 8]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 4], esi
+  __asm mov eax, dword ptr [edx]
+  __asm mov dword ptr [esi], eax
+  __asm mov ecx, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], ecx
+  __asm test ecx, ecx
+  __asm je 0x10e0c2ef
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e0c5f0; body size 19 bytes.
@@ -23018,73 +24680,71 @@ void __fastcall FUN_10e0c5f0(int param_1)
 // Reference entry 10e0cbd0; body size 31 bytes.
 #line 1 "ENTRY_10e0cbd0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10e0cbd0(undefined4 *param_1)
+__declspec(naked) void FUN_10e0cbd0(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return;
+  __asm push esi
+  __asm push 0x1c
+  __asm mov esi, ecx
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10e0cc00; body size 31 bytes.
 #line 1 "ENTRY_10e0cc00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10e0cc00(undefined4 *param_1)
+__declspec(naked) void FUN_10e0cc00(void)
 
 {
-  void *pvVar1;
-  
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return;
+  __asm push esi
+  __asm push 0x1c
+  __asm mov esi, ecx
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10e0cc70; body size 14 bytes.
 #line 1 "ENTRY_10e0cc70"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10e0cc70(int param_1)
+__declspec(naked) void FUN_10e0cc70(void)
 
 {
-  if (*(int *)(param_1 + 4) != 0x9249249) {
-    return;
-  }
-                    
-  std::_Xlength_error("map/set too long");
+  __asm cmp dword ptr [ecx + 4], 0x9249249
+  __asm je LAB_1000d4ae
+  __asm ret
 }
+
 
 
 // Reference entry 10e0cc90; body size 14 bytes.
 #line 1 "ENTRY_10e0cc90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10e0cc90(int param_1)
+__declspec(naked) void FUN_10e0cc90(void)
 
 {
-  if (*(int *)(param_1 + 4) != 0xaaaaaaa) {
-    return;
-  }
-                    
-  std::_Xlength_error("map/set too long");
+  __asm cmp dword ptr [ecx + 4], 0xaaaaaaa
+  __asm je LAB_1000d4ae
+  __asm ret
 }
+
 
 
 // Reference entry 10e0ccb0; body size 3 bytes.
@@ -23318,71 +24978,85 @@ undefined4 __fastcall FUN_10e0cdd0(undefined4 param_1)
 // Reference entry 10e0d300; body size 79 bytes.
 #line 1 "ENTRY_10e0d300"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10e0d300(int param_2)
+__declspec(naked) void FUN_10e0d300(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  
-  piVar1 = (int *)(*(int **)(param_2 + 8), 0);
-  *(int*)(param_2 + 8) = (int)(*piVar1);
-  if (*(char *)(*piVar1 + 0xd) == '\0') {
-    *(int*)(*piVar1 + 4) = (int)(param_2);
-  }
-  piVar1[1] = (int)(*(int *)(param_2 + 4));
-  if ((int)(param_2) == *(int *)(*param_1 + 4)) {
-    *(int**)(*param_1 + 4) = (int *)(piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2 = (int *)(*(int **)(param_2 + 4), 0);
-  if ((int)(param_2) == *piVar2) {
-    *piVar2 = (int)((int)piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2[2] = (int)((int)piVar1);
-  *piVar1 = (int)(param_2);
-  *(int**)(param_2 + 4) = (int *)(piVar1);
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [edx + 8]
+  __asm mov eax, dword ptr [esi]
+  __asm mov dword ptr [edx + 8], eax
+  __asm mov eax, dword ptr [esi]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10e0d318
+  __asm mov dword ptr [eax + 4], edx
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm cmp edx, dword ptr [eax + 4]
+  __asm jne 0x10e0d331
+  __asm mov dword ptr [eax + 4], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov eax, dword ptr [edx + 4]
+  __asm cmp edx, dword ptr [eax]
+  __asm jne 0x10e0d343
+  __asm mov dword ptr [eax], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov dword ptr [eax + 8], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e0d370; body size 79 bytes.
 #line 1 "ENTRY_10e0d370"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10e0d370(int param_2)
+__declspec(naked) void FUN_10e0d370(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  
-  piVar1 = (int *)(*(int **)(param_2 + 8), 0);
-  *(int*)(param_2 + 8) = (int)(*piVar1);
-  if (*(char *)(*piVar1 + 0xd) == '\0') {
-    *(int*)(*piVar1 + 4) = (int)(param_2);
-  }
-  piVar1[1] = (int)(*(int *)(param_2 + 4));
-  if ((int)(param_2) == *(int *)(*param_1 + 4)) {
-    *(int**)(*param_1 + 4) = (int *)(piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2 = (int *)(*(int **)(param_2 + 4), 0);
-  if ((int)(param_2) == *piVar2) {
-    *piVar2 = (int)((int)piVar1);
-    *piVar1 = (int)(param_2);
-    *(int**)(param_2 + 4) = (int *)(piVar1);
-    return;
-  }
-  piVar2[2] = (int)((int)piVar1);
-  *piVar1 = (int)(param_2);
-  *(int**)(param_2 + 4) = (int *)(piVar1);
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, dword ptr [edx + 8]
+  __asm mov eax, dword ptr [esi]
+  __asm mov dword ptr [edx + 8], eax
+  __asm mov eax, dword ptr [esi]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10e0d388
+  __asm mov dword ptr [eax + 4], edx
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm cmp edx, dword ptr [eax + 4]
+  __asm jne 0x10e0d3a1
+  __asm mov dword ptr [eax + 4], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov eax, dword ptr [edx + 4]
+  __asm cmp edx, dword ptr [eax]
+  __asm jne 0x10e0d3b3
+  __asm mov dword ptr [eax], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
+  __asm mov dword ptr [eax + 8], esi
+  __asm mov dword ptr [esi], edx
+  __asm mov dword ptr [edx + 4], esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e0d3e0; body size 11 bytes.
@@ -23490,225 +25164,253 @@ undefined4 __fastcall FUN_10e0d3f0(int param_1)
 // Reference entry 10e0d550; body size 97 bytes.
 #line 1 "ENTRY_10e0d550"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10e0d550(uint param_1)
+__declspec(naked) void FUN_10e0d550(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0x924924a) {
-    param_1 = (uint)(param_1 * 0x1c);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm cmp ecx, 0x9249249
+  __asm ja 0x10e0d5ac
+  __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xcd __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm sub eax, ecx
+  __asm shl eax, 2
+  __asm cmp eax, 0x1000
+  __asm jb 0x10e0d597
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10e0d5ac
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10e0d591
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10e0d5a7
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10e0d5d0; body size 97 bytes.
 #line 1 "ENTRY_10e0d5d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void * FUN_10e0d5d0(uint param_1)
+__declspec(naked) void FUN_10e0d5d0(void)
 
 {
-  void *pvVar1;
-  void *pvVar2;
-  
-  if (param_1 < 0x924924a) {
-    param_1 = (uint)(param_1 * 0x1c);
-    if (param_1 < 0x1000) {
-      if (param_1 != 0) {
-        pvVar1 = (void *)(operator_new(param_1), 0);
-        return (void *)(pvVar1);
-      }
-      return (void *)((void *)0x0);
-    }
-    if (param_1 < param_1 + 0x23) {
-      pvVar1 = (char *)(operator_new(param_1 + 0x23), 0);
-      if ((void *)(pvVar1) != (void *)(0x0)) {
-        pvVar2 = (char *)((char *)((int)pvVar1 + 0x23U & 0xffffffe0));
-        *(void**)((int)pvVar2 - 4) = (void *)(pvVar1);
-        return (void *)(pvVar2);
-      }
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-                    
-  thunk_FUN_1012a2a0();
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm cmp ecx, 0x9249249
+  __asm ja 0x10e0d62c
+  __asm _emit 0x8d __asm _emit 0x04 __asm _emit 0xcd __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm sub eax, ecx
+  __asm shl eax, 2
+  __asm cmp eax, 0x1000
+  __asm jb 0x10e0d617
+  __asm lea ecx, [eax + 0x23]
+  __asm cmp ecx, eax
+  __asm jbe 0x10e0d62c
+  __asm push ecx
+  __asm call LAB_10024f14
+  __asm mov ecx, eax
+  __asm add esp, 4
+  __asm test ecx, ecx
+  __asm je 0x10e0d611
+  __asm lea eax, [ecx + 0x23]
+  __asm and eax, 0xffffffe0
+  __asm mov dword ptr [eax - 4], ecx
+  __asm ret 4
+  __asm call dword ptr [LAB_122fc888]
+  __asm test eax, eax
+  __asm je 0x10e0d627
+  __asm push eax
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
+  __asm call LAB_10070f3b
 }
+
 
 
 // Reference entry 10e0edf0; body size 63 bytes.
 #line 1 "ENTRY_10e0edf0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10e0edf0(undefined4 param_1,int param_2,int param_3)
+__declspec(naked) void FUN_10e0edf0(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_3 * 0x1c);
-  iVar1 = (int)(param_2);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_2 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_2 - iVar1) - 4U) {
-                    
-                    
-                    
-      _invalid_parameter_noinfo_noreturn();
-      return;
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm sub ecx, eax
+  __asm mov eax, dword ptr [esp + 8]
+  __asm shl ecx, 2
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10e0ee1e
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10e0ee29
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
+  __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 // Reference entry 10e0ee40; body size 63 bytes.
 #line 1 "ENTRY_10e0ee40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void FUN_10e0ee40(undefined4 param_1,int param_2,int param_3)
+__declspec(naked) void FUN_10e0ee40(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_3 * 0x1c);
-  iVar1 = (int)(param_2);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_2 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_2 - iVar1) - 4U) {
-                    
-                    
-                    
-      _invalid_parameter_noinfo_noreturn();
-      return;
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm sub ecx, eax
+  __asm mov eax, dword ptr [esp + 8]
+  __asm shl ecx, 2
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10e0ee6e
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10e0ee79
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
+  __asm jmp dword ptr [LAB_122fc888]
 }
+
 
 
 // Reference entry 10e0ee90; body size 61 bytes.
 #line 1 "ENTRY_10e0ee90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10e0ee90(int param_1,int param_2)
+__declspec(naked) void FUN_10e0ee90(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 4);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0x85 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10e0eeb9
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10e0eec6
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10e0eee0; body size 66 bytes.
 #line 1 "ENTRY_10e0eee0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10e0eee0(int param_1,int param_2)
+__declspec(naked) void FUN_10e0eee0(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 0x1c);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm sub ecx, eax
+  __asm mov eax, dword ptr [esp + 4]
+  __asm shl ecx, 2
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10e0ef0e
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10e0ef1b
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10e0ef40; body size 60 bytes.
 #line 1 "ENTRY_10e0ef40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __stdcall FUN_10e0ef40(int param_1,int param_2)
+__declspec(naked) void FUN_10e0ef40(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 0x18);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm lea ecx, [eax + eax*2]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm shl ecx, 3
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10e0ef68
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10e0ef75
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
+  __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10e0ef90; body size 22 bytes.
 #line 1 "ENTRY_10e0ef90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10e0ef90(int param_1)
+__declspec(naked) void FUN_10e0ef90(void)
 
 {
-  ((SCVtbl_6_0*)((int *)(param_1 + 8)))->v();
-                    
-                    
-  ((SCVtbl_7_0*)((int *)(param_1 + 8)))->v();
-  return;
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm push esi
+  __asm lea esi, [ecx + 8]
+  __asm mov ecx, esi
+  __asm call dword ptr [eax + 0x18]
+  __asm mov eax, dword ptr [esi]
+  __asm mov ecx, esi
+  __asm pop esi
+  __asm mov eax, dword ptr [eax + 0x1c]
+  __asm jmp eax
 }
+
 
 
 // Reference entry 10e0efb0; body size 8 bytes.
@@ -23811,283 +25513,362 @@ undefined4 __fastcall FUN_10e120c0(int param_1)
 // Reference entry 10e12260; body size 26 bytes.
 #line 1 "ENTRY_10e12260"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12260(undefined4 param_2)
+__declspec(naked) void FUN_10e12260(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCWizardStateFor);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11938808
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12280; body size 34 bytes.
 #line 1 "ENTRY_10e12280"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12280(undefined4 param_2)
+__declspec(naked) void FUN_10e12280(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_11131cc0((int)(param_2),(int)(2),(int)(0));
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RZPTransferButtonEnumerator);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push 0
+  __asm push 2
+  __asm push dword ptr [esp + 0x14]
+  __asm mov esi, ecx
+  __asm mov dword ptr [esp + 0x10], esi
+  __asm call LAB_10051c6c
+  __asm mov dword ptr [esi], LAB_119387ec
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e122b0; body size 26 bytes.
 #line 1 "ENTRY_10e122b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e122b0(undefined4 param_2)
+__declspec(naked) void FUN_10e122b0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOrphanAccountNoAccessState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11938abc
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e122d0; body size 100 bytes.
 #line 1 "ENTRY_10e122d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e122d0(undefined4 param_2)
+__declspec(naked) void FUN_10e122d0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListener);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[5] = (undefined4)(0);
-  param_1[6] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingBeginSecureTransferState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureExistingBeginSecureTransferState);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSecureExistingBeginSecureTransferState);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[9] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  *(undefined1*)(param_1 + 0xb) = (undefined1)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11885d88
+  __asm mov dword ptr [ecx + 0x10], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_11939ad0
+  __asm mov dword ptr [ecx + 0xc], LAB_11939b88
+  __asm mov dword ptr [ecx + 0x10], LAB_11939bfc
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm mov byte ptr [ecx + 0x2c], 0
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12350; body size 26 bytes.
 #line 1 "ENTRY_10e12350"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12350(undefined4 param_2)
+__declspec(naked) void FUN_10e12350(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingButtonsState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11939368
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12370; body size 26 bytes.
 #line 1 "ENTRY_10e12370"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12370(undefined4 param_2)
+__declspec(naked) void FUN_10e12370(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingCheckExistingState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11938ccc
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12390; body size 26 bytes.
 #line 1 "ENTRY_10e12390"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12390(undefined4 param_2)
+__declspec(naked) void FUN_10e12390(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingCompleteState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11939fe8
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12600; body size 152 bytes.
 #line 1 "ENTRY_10e12600"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12600(undefined4 param_2)
+__declspec(naked) void FUN_10e12600(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingFinishSecureRegState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureExistingFinishSecureRegState);
-  param_1[6] = (undefined4)(0);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[9] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xb] = (undefined4)(0);
-  param_1[0xc] = (undefined4)(0);
-  param_1[0xd] = (undefined4)(0);
-  param_1[0xe] = (undefined4)(0);
-  param_1[0xf] = (undefined4)(0);
-  param_1[0x10] = (undefined4)(0);
-  param_1[0x11] = (undefined4)(0);
-  param_1[0x12] = (undefined4)(0);
-  param_1[0x13] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_11938fac
+  __asm mov dword ptr [ecx + 0xc], LAB_11939064
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x28 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x30 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x34 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x38 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7
+  __asm _emit 0x41 __asm _emit 0x3c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x44
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x48 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x4c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e126c0; body size 30 bytes.
 #line 1 "ENTRY_10e126c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e126c0(undefined4 param_2)
+__declspec(naked) void FUN_10e126c0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingInitState);
-  *(undefined1*)(param_1 + 3) = (undefined1)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11938be4
+  __asm mov byte ptr [ecx + 0xc], 0
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e126f0; body size 26 bytes.
 #line 1 "ENTRY_10e126f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e126f0(undefined4 param_2)
+__declspec(naked) void FUN_10e126f0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingKnownEmailMatchState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_119389a4
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e127a0; body size 93 bytes.
 #line 1 "ENTRY_10e127a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e127a0(undefined4 param_2)
+__declspec(naked) void FUN_10e127a0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingLookupState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureExistingLookupState);
-  *(undefined1*)(param_1 + 6) = (undefined1)(1);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[9] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xb] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193955c
+  __asm mov dword ptr [ecx + 0xc], LAB_11939614
+  __asm mov byte ptr [ecx + 0x18], 1
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12820; body size 30 bytes.
 #line 1 "ENTRY_10e12820"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12820(undefined4 param_2)
+__declspec(naked) void FUN_10e12820(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingNetworkErrorState);
-  *(undefined1*)(param_1 + 3) = (undefined1)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_11939eec
+  __asm mov byte ptr [ecx + 0xc], 0
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12850; body size 165 bytes.
 #line 1 "ENTRY_10e12850"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12850(undefined4 param_2)
+__declspec(naked) void FUN_10e12850(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListener);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[5] = (undefined4)(0);
-  param_1[6] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingPressButtonState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureExistingPressButtonState);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSecureExistingPressButtonState);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[9] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xd] = (undefined4)(0);
-  param_1[0xe] = (undefined4)(0);
-  param_1[0x10] = (undefined4)(0);
-  param_1[0x11] = (undefined4)(0);
-  param_1[0xc] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0xf] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x1b] = (undefined4)(0);
-  param_1[0x25] = (undefined4)(0);
-  param_1[0x26] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11885d88
+  __asm mov dword ptr [ecx + 0x10], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_119398f0
+  __asm mov dword ptr [ecx + 0xc], LAB_119399a8
+  __asm mov dword ptr [ecx + 0x10], LAB_11939a1c
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x34 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x38 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x40 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x44 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x30], LAB_118900d8
+  __asm mov dword ptr [ecx + 0x3c], LAB_118900e8
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x6c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0x94 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0x98 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12920; body size 26 bytes.
 #line 1 "ENTRY_10e12920"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12920(undefined4 param_2)
+__declspec(naked) void FUN_10e12920(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingSpeakerChoiceState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_119397f8
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12940; body size 26 bytes.
 #line 1 "ENTRY_10e12940"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12940(undefined4 param_2)
+__declspec(naked) void FUN_10e12940(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_119388c0
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12960; body size 134 bytes.
 #line 1 "ENTRY_10e12960"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e12960(undefined4 param_2)
+__declspec(naked) void FUN_10e12960(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListener);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[5] = (undefined4)(0);
-  param_1[6] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureExistingWaitingForTransferState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureExistingWaitingForTransferState);
-  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSecureExistingWaitingForTransferState);
-  param_1[7] = (undefined4)(0);
-  param_1[9] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xc] = (undefined4)(0);
-  param_1[0xd] = (undefined4)(0);
-  param_1[8] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0xb] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x17] = (undefined4)(0);
-  param_1[0x21] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11885d88
+  __asm mov dword ptr [ecx + 0x10], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_11939d64
+  __asm mov dword ptr [ecx + 0xc], LAB_11939e1c
+  __asm mov dword ptr [ecx + 0x10], LAB_11939e90
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x30 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x34 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x20], LAB_118900d8
+  __asm mov dword ptr [ecx + 0x2c], LAB_118900e8
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x5c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e12ba0; body size 7 bytes.
@@ -24197,130 +25978,17 @@ void __fastcall FUN_10e135b0(undefined4 *param_1)
 // Reference entry 10e13680; body size 39 bytes.
 #line 1 "ENTRY_10e13680"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10e13680(int *param_1)
+__declspec(naked) void FUN_10e13680(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  SCLibrary *pSVar3;
-  int *piVar4;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCXMLSecureExistingWizard);
-  param_1[2] = (int)((int)(uint)&ghidra_vftable_SCXMLSecureExistingWizard);
-  param_1[10] = (int)((int)(uint)&ghidra_vftable_SCXMLSecureExistingWizard);
-  param_1[0x12] = (int)((int)(uint)&ghidra_vftable_SCXMLSecureExistingWizard);
-  param_1[0x13] = (int)((int)(uint)&ghidra_vftable_SCXMLSecureExistingWizard);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[2] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[10] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[0x12] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[0x13] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  piStack_14 = (int *)(param_1);
-  thunk_FUN_112af4e0("Wizard",5,"Entering Wizard Destructor",uVar2);
-  pSVar3 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
-  piVar4 = (int *)((int *)((SCVtbl_6_1*)((int *)pSVar3))->v((int)(&piStack_14)), 0);
-  piVar1 = (int *)((int *)*piVar4);
-  *piVar4 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar4 = (int *)((int *)0x0);
-  }
-  else {
-    piVar4 = (int *)((int *)((SCVtbl_3_0*)(piVar1))->v(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piStack_14))->v();
-  }
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_51_1*)(piVar1))->v((int)(param_1[0x14]));
-  }
-  thunk_FUN_10dd3190();
-  if (param_1[0x2a] != 0) {
-    thunk_FUN_1059d940((int)(param_1[0x2a]));
-    param_1[0x2a] = (int)(0);
-    *(undefined1*)((int)param_1 + 0xad) = (undefined1)(0);
-  }
-  thunk_FUN_10dd31f0();
-  thunk_FUN_112af4e0("Wizard",5,"Clearing sub-wizard mode.");
-  if ((undefined4 *)param_1[0x26] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x26])(1);
-    param_1[0x26] = (int)(0);
-  }
-
-  if ((int *)(piVar4) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piVar4))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x32]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x31] = (int)(0);
-    param_1[0x32] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x30]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x2f] = (int)(0);
-    param_1[0x30] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x2e]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x2d] = (int)(0);
-    param_1[0x2e] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x28]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x27] = (int)(0);
-    param_1[0x28] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x1c]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x1b] = (int)(0);
-    param_1[0x1c] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  thunk_FUN_10dd1260();
-  param_1[0x13] = (int)((int)(uint)&ghidra_vftable_SCHouseholdEventSink);
-  piVar1 = (int *)((int *)param_1[0x15]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x14] = (int)(0);
-    param_1[0x15] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  param_1[0x12] = (int)((int)(uint)&ghidra_vftable_RControlAIOOpCB);
-  thunk_FUN_11240850();
-  thunk_FUN_103d60a0();
-
-  param_1[2] = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_119384fc
+  __asm mov dword ptr [ecx + 8], LAB_11938730
+  __asm mov dword ptr [ecx + 0x28], LAB_11938740
+  __asm mov dword ptr [ecx + 0x48], LAB_1193874c
+  __asm mov dword ptr [ecx + 0x4c], LAB_1193875c
+  __asm jmp LAB_10088622
 }
+
 
 
 // Reference entry 10e13720; body size 14 bytes.
@@ -24443,14 +26111,20 @@ bool __fastcall FUN_10e1ef40(int *param_1)
 // Reference entry 10e23100; body size 26 bytes.
 #line 1 "ENTRY_10e23100"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e23100(undefined4 param_2)
+__declspec(naked) void FUN_10e23100(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCWizardStateFor);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193a8d8
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e23120; body size 18 bytes.
@@ -24468,171 +26142,89 @@ bool __fastcall FUN_10e1ef40(int *param_1)
 // Reference entry 10e23190; body size 66 bytes.
 #line 1 "ENTRY_10e23190"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e23190(int param_2,undefined4 param_3)
+__declspec(naked) void FUN_10e23190(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCLegacyWelcomeLoginWizardCompleteState);
-  thunk_FUN_112af4e0("Wizard",5,"Exit code set to %d.",param_3);
-  *(undefined4*)(param_2 + 0x94) = (undefined4)(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push ebx
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x14]
+  __asm mov ebx, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x14]
+  __asm push esi
+  __asm push offset LAB_118afb08
+  __asm push 5
+  __asm push offset LAB_11885328
+  __asm mov dword ptr [esp + 0x1c], ebx
+  __asm mov dword ptr [ebx + 4], edi
+  __asm mov dword ptr [ebx + 8], edi
+  __asm mov dword ptr [ebx], LAB_1193ace4
+  __asm call LAB_100238df
+  __asm add esp, 0x10
+  __asm mov dword ptr [edi + 0x94], esi
+  __asm mov eax, ebx
+  __asm pop edi
+  __asm pop esi
+  __asm pop ebx
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10e231f0; body size 26 bytes.
 #line 1 "ENTRY_10e231f0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e231f0(undefined4 param_2)
+__declspec(naked) void FUN_10e231f0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCLegacyWelcomeLoginWizardInitState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193aa48
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e23290; body size 26 bytes.
 #line 1 "ENTRY_10e23290"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e23290(undefined4 param_2)
+__declspec(naked) void FUN_10e23290(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCLegacyWelcomeLoginWizardState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193a990
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e233e0; body size 39 bytes.
 #line 1 "ENTRY_10e233e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10e233e0(int *param_1)
+__declspec(naked) void FUN_10e233e0(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  SCLibrary *pSVar3;
-  int *piVar4;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCLegacyWelcomeLoginWizard);
-  param_1[2] = (int)((int)(uint)&ghidra_vftable_SCLegacyWelcomeLoginWizard);
-  param_1[10] = (int)((int)(uint)&ghidra_vftable_SCLegacyWelcomeLoginWizard);
-  param_1[0x12] = (int)((int)(uint)&ghidra_vftable_SCLegacyWelcomeLoginWizard);
-  param_1[0x13] = (int)((int)(uint)&ghidra_vftable_SCLegacyWelcomeLoginWizard);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[2] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[10] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[0x12] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[0x13] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  piStack_14 = (int *)(param_1);
-  thunk_FUN_112af4e0("Wizard",5,"Entering Wizard Destructor",uVar2);
-  pSVar3 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
-  piVar4 = (int *)((int *)((SCVtbl_6_1*)((int *)pSVar3))->v((int)(&piStack_14)), 0);
-  piVar1 = (int *)((int *)*piVar4);
-  *piVar4 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar4 = (int *)((int *)0x0);
-  }
-  else {
-    piVar4 = (int *)((int *)((SCVtbl_3_0*)(piVar1))->v(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piStack_14))->v();
-  }
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_51_1*)(piVar1))->v((int)(param_1[0x14]));
-  }
-  thunk_FUN_10dd3190();
-  if (param_1[0x2a] != 0) {
-    thunk_FUN_1059d940((int)(param_1[0x2a]));
-    param_1[0x2a] = (int)(0);
-    *(undefined1*)((int)param_1 + 0xad) = (undefined1)(0);
-  }
-  thunk_FUN_10dd31f0();
-  thunk_FUN_112af4e0("Wizard",5,"Clearing sub-wizard mode.");
-  if ((undefined4 *)param_1[0x26] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x26])(1);
-    param_1[0x26] = (int)(0);
-  }
-
-  if ((int *)(piVar4) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piVar4))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x32]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x31] = (int)(0);
-    param_1[0x32] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x30]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x2f] = (int)(0);
-    param_1[0x30] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x2e]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x2d] = (int)(0);
-    param_1[0x2e] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x28]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x27] = (int)(0);
-    param_1[0x28] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x1c]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x1b] = (int)(0);
-    param_1[0x1c] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  thunk_FUN_10dd1260();
-  param_1[0x13] = (int)((int)(uint)&ghidra_vftable_SCHouseholdEventSink);
-  piVar1 = (int *)((int *)param_1[0x15]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x14] = (int)(0);
-    param_1[0x15] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  param_1[0x12] = (int)((int)(uint)&ghidra_vftable_RControlAIOOpCB);
-  thunk_FUN_11240850();
-  thunk_FUN_103d60a0();
-
-  param_1[2] = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_1193a5b8
+  __asm mov dword ptr [ecx + 8], LAB_1193a7ec
+  __asm mov dword ptr [ecx + 0x28], LAB_1193a7fc
+  __asm mov dword ptr [ecx + 0x48], LAB_1193a808
+  __asm mov dword ptr [ecx + 0x4c], LAB_1193a818
+  __asm jmp LAB_10088622
 }
+
 
 
 // Reference entry 10e23410; body size 7 bytes.
@@ -24692,104 +26284,145 @@ void __fastcall FUN_10e234e0(undefined4 *param_1)
 // Reference entry 10e24e30; body size 83 bytes.
 #line 1 "ENTRY_10e24e30"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_10e24e30(int *param_2)
+__declspec(naked) void FUN_10e24e30(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  param_2 = (int *)((int *)*param_2);
-  if ((int *)(param_2) != (int *)((int *)*param_1)) {
-    piVar1 = (int *)((int *)param_1[1]);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      *param_1 = (int)(0);
-      param_1[1] = (int)(0);
-      ((SCVtbl_2_0*)(piVar1))->v();
-    }
-    *param_1 = (int)((int)param_2);
-    if ((int *)(param_2) != (int *)(0x0)) {
-      piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-      param_1[1] = (int)((int)piVar1);
-      ((SCVtbl_1_0*)(piVar1))->v();
-      return (int *)(param_1);
-    }
-    param_1[1] = (int)(0);
-  }
-  return (int *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [eax]
+  __asm cmp edi, dword ptr [esi]
+  __asm je 0x10e24e7c
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10e24e57
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov dword ptr [esi], edi
+  __asm test edi, edi
+  __asm je 0x10e24e75
+  __asm mov eax, dword ptr [edi]
+  __asm mov ecx, edi
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm pop edi
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop edi
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e24f50; body size 130 bytes.
 #line 1 "ENTRY_10e24f50"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall Recovered_Bulk::m_FUN_10e24f50(int *param_2,undefined4 param_3)
+__declspec(naked) void FUN_10e24f50(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  int iVar3;
-  
-  piVar1 = (int *)((int *)*param_2);
-  *param_2 = (int)(0);
-  param_2[1] = (int)(0);
-  ((SCVtbl_1_0*)(param_1))->v();
-  piVar2 = (int *)((int *)param_1[2]);
-  if ((int *)(piVar2) != (int *)(0x0)) {
-    param_1[1] = (int)(0);
-    param_1[2] = (int)(0);
-    ((SCVtbl_2_0*)(piVar2))->v();
-  }
-  param_1[1] = (int)((int)piVar1);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    param_1[2] = (int)(0);
-  }
-  else {
-    iVar3 = (int)(((SCVtbl_3_0*)(piVar1))->v(), 0);
-    param_1[2] = (int)(iVar3);
-    if ((int *)param_1[1] != (int *)(((0x0)))) {
-      ((SCVtbl_5_1*)((int *)param_1[1]))->v((int)(param_3));
-      return (int)(param_1[1]);
-    }
-  }
-  thunk_FUN_112af4e0("SCLibrary",1,"((SCOpRefBase *)(0))->int_start()  - attempt to run NULL op");
-  return (int)(param_1[1]);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [eax]
+  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [esi]
+  __asm call dword ptr [eax + 4]
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x10e24f86
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov dword ptr [esi + 4], edi
+  __asm test edi, edi
+  __asm je 0x10e24faf
+  __asm mov eax, dword ptr [edi]
+  __asm mov ecx, edi
+  __asm call dword ptr [eax + 0xc]
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm mov dword ptr [esi + 8], eax
+  __asm test ecx, ecx
+  __asm je 0x10e24fb6
+  __asm mov eax, dword ptr [ecx]
+  __asm push dword ptr [esp + 0x10]
+  __asm call dword ptr [eax + 0x14]
+  __asm mov eax, dword ptr [esi + 4]
+  __asm pop edi
+  __asm pop esi
+  __asm ret 8
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm push offset LAB_11883b7c
+  __asm push 1
+  __asm push offset LAB_11881488
+  __asm call LAB_100238df
+  __asm mov eax, dword ptr [esi + 4]
+  __asm add esp, 0xc
+  __asm pop edi
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 10e250b0; body size 130 bytes.
 #line 1 "ENTRY_10e250b0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall Recovered_Bulk::m_FUN_10e250b0(int *param_2,undefined4 param_3)
+__declspec(naked) void FUN_10e250b0(void)
+
 {
-  int *param_1 = (int *)this;
-  int *piVar1;
-  int *piVar2;
-  int iVar3;
-  
-  piVar1 = (int *)((int *)*param_2);
-  *param_2 = (int)(0);
-  param_2[1] = (int)(0);
-  ((SCVtbl_1_0*)(param_1))->v();
-  piVar2 = (int *)((int *)param_1[2]);
-  if ((int *)(piVar2) != (int *)(0x0)) {
-    param_1[1] = (int)(0);
-    param_1[2] = (int)(0);
-    ((SCVtbl_2_0*)(piVar2))->v();
-  }
-  param_1[1] = (int)((int)piVar1);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    param_1[2] = (int)(0);
-  }
-  else {
-    iVar3 = (int)(((SCVtbl_3_0*)(piVar1))->v(), 0);
-    param_1[2] = (int)(iVar3);
-    if ((int *)param_1[1] != (int *)(((0x0)))) {
-      ((SCVtbl_5_1*)((int *)param_1[1]))->v((int)(param_3));
-      return (int)(param_1[1]);
-    }
-  }
-  thunk_FUN_112af4e0("SCLibrary",1,"((SCOpRefBase *)(0))->int_start()  - attempt to run NULL op");
-  return (int)(param_1[1]);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [eax]
+  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [esi]
+  __asm call dword ptr [eax + 4]
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x10e250e6
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov dword ptr [esi + 4], edi
+  __asm test edi, edi
+  __asm je 0x10e2510f
+  __asm mov eax, dword ptr [edi]
+  __asm mov ecx, edi
+  __asm call dword ptr [eax + 0xc]
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm mov dword ptr [esi + 8], eax
+  __asm test ecx, ecx
+  __asm je 0x10e25116
+  __asm mov eax, dword ptr [ecx]
+  __asm push dword ptr [esp + 0x10]
+  __asm call dword ptr [eax + 0x14]
+  __asm mov eax, dword ptr [esi + 4]
+  __asm pop edi
+  __asm pop esi
+  __asm ret 8
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm push offset LAB_11883b7c
+  __asm push 1
+  __asm push offset LAB_11881488
+  __asm call LAB_100238df
+  __asm mov eax, dword ptr [esi + 4]
+  __asm add esp, 0xc
+  __asm pop edi
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 10e25160; body size 5 bytes.
@@ -24843,85 +26476,93 @@ undefined4 FUN_10e25190(undefined4 param_1)
 // Reference entry 10e251a0; body size 70 bytes.
 #line 1 "ENTRY_10e251a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10e251a0(undefined4 *param_1)
+__declspec(naked) void FUN_10e251a0(void)
 
 {
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0xf] = (undefined4)(0);
-  param_1[0x19] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193bbe0
+  __asm mov dword ptr [ecx + 0xc], LAB_1193bbf0
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x3c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x64 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10e25200; body size 70 bytes.
 #line 1 "ENTRY_10e25200"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10e25200(undefined4 *param_1)
+__declspec(naked) void FUN_10e25200(void)
 
 {
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0xf] = (undefined4)(0);
-  param_1[0x19] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193c13c
+  __asm mov dword ptr [ecx + 0xc], LAB_1193c14c
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x3c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x64 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10e25260; body size 70 bytes.
 #line 1 "ENTRY_10e25260"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10e25260(undefined4 *param_1)
+__declspec(naked) void FUN_10e25260(void)
 
 {
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0xf] = (undefined4)(0);
-  param_1[0x19] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193bbbc
+  __asm mov dword ptr [ecx + 0xc], LAB_1193bbcc
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x3c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x64 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10e252c0; body size 70 bytes.
 #line 1 "ENTRY_10e252c0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4 * __fastcall FUN_10e252c0(undefined4 *param_1)
+__declspec(naked) void FUN_10e252c0(void)
 
 {
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0xf] = (undefined4)(0);
-  param_1[0x19] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193c808
+  __asm mov dword ptr [ecx + 0xc], LAB_1193c818
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x3c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x64 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10e25420; body size 16 bytes.
@@ -24969,14 +26610,20 @@ undefined4 * __fastcall FUN_10e25460(undefined4 *param_1)
 // Reference entry 10e25480; body size 26 bytes.
 #line 1 "ENTRY_10e25480"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25480(undefined4 param_2)
+__declspec(naked) void FUN_10e25480(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCWizardStateFor);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193b318
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e254a0; body size 10 bytes.
@@ -25086,480 +26733,626 @@ int __fastcall FUN_10e25690(int param_1, unsigned int recovered_unused_stack_0, 
 // Reference entry 10e25720; body size 45 bytes.
 #line 1 "ENTRY_10e25720"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25720(undefined4 param_2,undefined4 param_3,undefined1 param_4,
-            undefined4 param_5)
+__declspec(naked) void FUN_10e25720(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_1025f580((int)(param_2),(int)(param_3),(int)(param_5));
-  *(undefined1*)(param_1 + 6) = (undefined1)(param_4);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCEmailInput);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0x18]
+  __asm mov esi, ecx
+  __asm push dword ptr [esp + 0x14]
+  __asm mov dword ptr [esp + 0xc], esi
+  __asm push dword ptr [esp + 0x14]
+  __asm call LAB_10056d52
+  __asm mov al, byte ptr [esp + 0x14]
+  __asm mov byte ptr [esi + 0x18], al
+  __asm mov eax, esi
+  __asm mov dword ptr [esi], LAB_1193b11c
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10e25760; body size 51 bytes.
 #line 1 "ENTRY_10e25760"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25760(undefined4 param_2,undefined4 param_3,undefined1 param_4,
-            undefined4 param_5)
+__declspec(naked) void FUN_10e25760(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_1025f580((int)(param_2),(int)(param_3),(int)(param_5));
-  *(undefined1*)(param_1 + 6) = (undefined1)(param_4);
-  param_1[7] = (undefined4)(param_3);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCEmailWithReleaseInput);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm push edi
+  __asm push dword ptr [esp + 0x1c]
+  __asm mov edi, ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0x18]
+  __asm mov dword ptr [esp + 0x14], edi
+  __asm call LAB_10056d52
+  __asm mov al, byte ptr [esp + 0x18]
+  __asm mov byte ptr [edi + 0x18], al
+  __asm mov eax, edi
+  __asm mov dword ptr [edi + 0x1c], esi
+  __asm mov dword ptr [edi], LAB_1193bb60
+  __asm pop edi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 0x10
 }
+
 
 
 // Reference entry 10e257a0; body size 38 bytes.
 #line 1 "ENTRY_10e257a0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e257a0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
+__declspec(naked) void FUN_10e257a0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_1025f580((int)(param_2),(int)(param_3),(int)(param_4));
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCMobilePhoneInput);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm push esi
+  __asm push dword ptr [esp + 0x14]
+  __asm mov esi, ecx
+  __asm push dword ptr [esp + 0x14]
+  __asm mov dword ptr [esp + 0xc], esi
+  __asm push dword ptr [esp + 0x14]
+  __asm call LAB_10056d52
+  __asm mov dword ptr [esi], LAB_1193b1d4
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 10e257d0; body size 42 bytes.
 #line 1 "ENTRY_10e257d0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e257d0(undefined4 param_2)
+__declspec(naked) void FUN_10e257d0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCPasswordResetURLHandler);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx], LAB_118912f0
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193b230
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e25ad0; body size 110 bytes.
 #line 1 "ENTRY_10e25ad0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25ad0(undefined4 param_2)
+__declspec(naked) void FUN_10e25ad0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationAccountEmailSubmitState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationAccountEmailSubmitState);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xb] = (undefined4)(0);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[9] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x15] = (undefined4)(0);
-  param_1[0x1f] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193bf8c
+  __asm mov dword ptr [ecx + 0xc], LAB_1193c044
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x18], LAB_1192e9d8
+  __asm mov dword ptr [ecx + 0x24], LAB_1192e9e8
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x54 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x7c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e25b60; body size 26 bytes.
 #line 1 "ENTRY_10e25b60"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25b60(undefined4 param_2)
+__declspec(naked) void FUN_10e25b60(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationAccountExistsState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193d224
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e25b80; body size 110 bytes.
 #line 1 "ENTRY_10e25b80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25b80(undefined4 param_2)
+__declspec(naked) void FUN_10e25b80(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationCheckPasswordState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationCheckPasswordState);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xb] = (undefined4)(0);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[9] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x15] = (undefined4)(0);
-  param_1[0x1f] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193cae4
+  __asm mov dword ptr [ecx + 0xc], LAB_1193cb9c
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x18], LAB_1192e9d8
+  __asm mov dword ptr [ecx + 0x24], LAB_1192e9e8
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x54 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x7c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e25c10; body size 26 bytes.
 #line 1 "ENTRY_10e25c10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25c10(undefined4 param_2)
+__declspec(naked) void FUN_10e25c10(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationCompleteState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193d5f0
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e25c30; body size 51 bytes.
 #line 1 "ENTRY_10e25c30"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25c30(undefined4 param_2)
+__declspec(naked) void FUN_10e25c30(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationCountryState);
-  param_1[3] = (undefined4)(0);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *(undefined1*)(param_1 + 6) = (undefined1)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx], LAB_1193cd34
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm mov byte ptr [ecx + 0x18], 0
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e25e10; body size 30 bytes.
 #line 1 "ENTRY_10e25e10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25e10(undefined4 param_2)
+__declspec(naked) void FUN_10e25e10(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationCreatedState);
-  *(undefined1*)(param_1 + 3) = (undefined1)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193cc28
+  __asm mov byte ptr [ecx + 0xc], 0
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e25e40; body size 130 bytes.
 #line 1 "ENTRY_10e25e40"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25e40(undefined4 param_2)
+__declspec(naked) void FUN_10e25e40(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationDataOptInSubmitState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationDataOptInSubmitState);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xb] = (undefined4)(0);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[9] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x15] = (undefined4)(0);
-  param_1[0x1f] = (undefined4)(0);
-  param_1[0x20] = (undefined4)(0);
-  param_1[0x21] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193c3ec
+  __asm mov dword ptr [ecx + 0xc], LAB_1193c4a4
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x18], LAB_118a0b20
+  __asm mov dword ptr [ecx + 0x24], LAB_118a0b30
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x54 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x7c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e25ef0; body size 26 bytes.
 #line 1 "ENTRY_10e25ef0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25ef0(undefined4 param_2)
+__declspec(naked) void FUN_10e25ef0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationInitState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193b3d0
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e25f10; body size 230 bytes.
 #line 1 "ENTRY_10e25f10"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e25f10(undefined4 param_2)
+__declspec(naked) void FUN_10e25f10(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationLoginPrepState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationLoginPrepState);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xb] = (undefined4)(0);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[9] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x15] = (undefined4)(0);
-  param_1[0x1f] = (undefined4)(0);
-  param_1[0x21] = (undefined4)(0);
-  param_1[0x22] = (undefined4)(0);
-  param_1[0x24] = (undefined4)(0);
-  param_1[0x25] = (undefined4)(0);
-  param_1[0x20] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x2f] = (undefined4)(0);
-  param_1[0x39] = (undefined4)(0);
-  param_1[0x3a] = (undefined4)(0);
-  param_1[0x3b] = (undefined4)(0);
-  param_1[0x3c] = (undefined4)(0);
-  param_1[0x3d] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193b608
+  __asm mov dword ptr [ecx + 0xc], LAB_1193b6c0
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x18], LAB_1192e9b4
+  __asm mov dword ptr [ecx + 0x24], LAB_1192e9c4
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x54 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x7c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81
+  __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0x88 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0x90 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0x94 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x80], LAB_1192e9d8
+  __asm mov dword ptr [ecx + 0x8c], LAB_1192e9e8
+  __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0xbc __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0xe4 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0xe8 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81
+  __asm _emit 0xec __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0xf0 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0xf4 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26580; body size 110 bytes.
 #line 1 "ENTRY_10e26580"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26580(undefined4 param_2)
+__declspec(naked) void FUN_10e26580(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationLoginSubmitState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationLoginSubmitState);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xb] = (undefined4)(0);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[9] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x15] = (undefined4)(0);
-  param_1[0x1f] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193b8ec
+  __asm mov dword ptr [ecx + 0xc], LAB_1193b9a4
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x18], LAB_1192ecf0
+  __asm mov dword ptr [ecx + 0x24], LAB_1192ed00
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x54 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x7c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26610; body size 30 bytes.
 #line 1 "ENTRY_10e26610"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26610(undefined4 param_2)
+__declspec(naked) void FUN_10e26610(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationNetworkErrorState);
-  *(undefined1*)(param_1 + 3) = (undefined1)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193d16c
+  __asm mov byte ptr [ecx + 0xc], 0
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26640; body size 26 bytes.
 #line 1 "ENTRY_10e26640"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26640(undefined4 param_2)
+__declspec(naked) void FUN_10e26640(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationNewAccountIntroState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193ba74
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26660; body size 26 bytes.
 #line 1 "ENTRY_10e26660"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26660(undefined4 param_2)
+__declspec(naked) void FUN_10e26660(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationNewAccountNetworkErrorState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193d0b4
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26840; body size 26 bytes.
 #line 1 "ENTRY_10e26840"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26840(undefined4 param_2)
+__declspec(naked) void FUN_10e26840(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationPasswordSetState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193c334
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e269e0; body size 26 bytes.
 #line 1 "ENTRY_10e269e0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e269e0(undefined4 param_2)
+__declspec(naked) void FUN_10e269e0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationResetPasswordEmailFailState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193d46c
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26a00; body size 26 bytes.
 #line 1 "ENTRY_10e26a00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26a00(undefined4 param_2)
+__declspec(naked) void FUN_10e26a00(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationResetPasswordFailState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193d3a4
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26a20; body size 127 bytes.
 #line 1 "ENTRY_10e26a20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26a20(undefined4 param_2)
+__declspec(naked) void FUN_10e26a20(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationResetPasswordState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationResetPasswordState);
-  param_1[6] = (undefined4)(0);
-  param_1[7] = (undefined4)(0);
-  param_1[9] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xc] = (undefined4)(0);
-  param_1[0xd] = (undefined4)(0);
-  param_1[8] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0xb] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x17] = (undefined4)(0);
-  param_1[0x21] = (undefined4)(0);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193c970
+  __asm mov dword ptr [ecx + 0xc], LAB_1193ca28
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esp], ecx
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x30 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x34 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x20], LAB_11883f44
+  __asm mov dword ptr [ecx + 0x2c], LAB_11883f54
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x5c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26ac0; body size 26 bytes.
 #line 1 "ENTRY_10e26ac0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26ac0(undefined4 param_2)
+__declspec(naked) void FUN_10e26ac0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationResetPasswordSuccessOtherState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193d538
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26ae0; body size 26 bytes.
 #line 1 "ENTRY_10e26ae0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26ae0(undefined4 param_2)
+__declspec(naked) void FUN_10e26ae0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193b550
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26b00; body size 26 bytes.
 #line 1 "ENTRY_10e26b00"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26b00(undefined4 param_2)
+__declspec(naked) void FUN_10e26b00(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationVerifyEmailErrorState);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193d2dc
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e26b20; body size 137 bytes.
 #line 1 "ENTRY_10e26b20"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26b20(undefined4 param_2,undefined1 param_3)
+__declspec(naked) void FUN_10e26b20(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationVerifyEmailState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationVerifyEmailState);
-  param_1[6] = (undefined4)(0);
-  param_1[7] = (undefined4)(0);
-  param_1[9] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xc] = (undefined4)(0);
-  param_1[0xd] = (undefined4)(0);
-  param_1[8] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmail__SCOpSecRegVerifyEmail_);
-  param_1[0xb] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x17] = (undefined4)(0);
-  param_1[0x21] = (undefined4)(0);
-  *(undefined1*)(param_1 + 0x22) = (undefined1)(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov al, byte ptr [esp + 0xc]
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193c63c
+  __asm mov dword ptr [ecx + 0xc], LAB_1193c6f4
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x18 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x30 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x34 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x20], LAB_118a0b44
+  __asm mov dword ptr [ecx + 0x2c], LAB_118a0b54
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x5c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x81 __asm _emit 0x84 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00
+  __asm mov byte ptr [ecx + 0x88], al
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10e26bd0; body size 120 bytes.
 #line 1 "ENTRY_10e26bd0"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26bd0(undefined4 param_2,undefined1 param_3)
+__declspec(naked) void FUN_10e26bd0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (undefined4)(param_2);
-  param_1[2] = (undefined4)(param_2);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
-  param_1[4] = (undefined4)(0);
-  param_1[5] = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationVerifyEmailSubmitState);
-  param_1[3] = (undefined4)((uint)&ghidra_vftable_SCSecureRegistrationVerifyEmailSubmitState);
-  param_1[7] = (undefined4)(0);
-  param_1[8] = (undefined4)(0);
-  param_1[10] = (undefined4)(0);
-  param_1[0xb] = (undefined4)(0);
-  param_1[6] = (undefined4)((uint)&ghidra_vftable_SCOpRef_SCOpSecRegVerifyEmailSubmit__SCOpSecRegVerifyEmailSubmit_);
-  param_1[9] = (undefined4)((uint)&ghidra_vftable_SCOpRef);
-  param_1[0x15] = (undefined4)(0);
-  param_1[0x1f] = (undefined4)(0);
-  *(undefined1*)(param_1 + 0x20) = (undefined1)(param_3);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx + 4], eax
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov al, byte ptr [esp + 0xc]
+  __asm mov dword ptr [ecx + 0xc], LAB_11883984
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x14 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx], LAB_1193c82c
+  __asm mov dword ptr [ecx + 0xc], LAB_1193c8e4
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x1c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x20 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41
+  __asm _emit 0x28 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x2c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [ecx + 0x18], LAB_1193c808
+  __asm mov dword ptr [ecx + 0x24], LAB_1193c818
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x54 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x7c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov byte ptr [ecx + 0x80], al
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10e26c70; body size 42 bytes.
 #line 1 "ENTRY_10e26c70"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e26c70(undefined4 param_2)
+__declspec(naked) void FUN_10e26c70(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = (undefined4)(0);
-  g_lSCObjCount = (int)(g_lSCObjCount + 1);
-  param_1[2] = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCVerifyEmailURLHandler);
-  return (undefined4 *)(param_1);
+  __asm push ecx
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov dword ptr [ecx], LAB_118912f0
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm inc dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [ecx + 8], eax
+  __asm mov eax, ecx
+  __asm mov dword ptr [esp], ecx
+  __asm mov dword ptr [ecx], LAB_1193c588
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 10e27400; body size 7 bytes.
@@ -25764,130 +27557,17 @@ void __fastcall FUN_10e28a70(undefined4 *param_1)
 // Reference entry 10e28a90; body size 39 bytes.
 #line 1 "ENTRY_10e28a90"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-void __fastcall FUN_10e28a90(int *param_1)
+__declspec(naked) void FUN_10e28a90(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  SCLibrary *pSVar3;
-  int *piVar4;
-  int *piStack_14;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-  
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCXMLSecureRegistrationWizard);
-  param_1[2] = (int)((int)(uint)&ghidra_vftable_SCXMLSecureRegistrationWizard);
-  param_1[10] = (int)((int)(uint)&ghidra_vftable_SCXMLSecureRegistrationWizard);
-  param_1[0x12] = (int)((int)(uint)&ghidra_vftable_SCXMLSecureRegistrationWizard);
-  param_1[0x13] = (int)((int)(uint)&ghidra_vftable_SCXMLSecureRegistrationWizard);
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[2] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[10] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[0x12] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  param_1[0x13] = (int)((int)(uint)&ghidra_vftable_SCWizard);
-  piStack_14 = (int *)(param_1);
-  thunk_FUN_112af4e0("Wizard",5,"Entering Wizard Destructor",uVar2);
-  pSVar3 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
-  piVar4 = (int *)((int *)((SCVtbl_6_1*)((int *)pSVar3))->v((int)(&piStack_14)), 0);
-  piVar1 = (int *)((int *)*piVar4);
-  *piVar4 = (int)(0);
-  if ((int *)(piVar1) == (int *)(0x0)) {
-    piVar4 = (int *)((int *)0x0);
-  }
-  else {
-    piVar4 = (int *)((int *)((SCVtbl_3_0*)(piVar1))->v(), 0);
-  }
-
-  if ((int *)(piStack_14) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piStack_14))->v();
-  }
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_51_1*)(piVar1))->v((int)(param_1[0x14]));
-  }
-  thunk_FUN_10dd3190();
-  if (param_1[0x2a] != 0) {
-    thunk_FUN_1059d940((int)(param_1[0x2a]));
-    param_1[0x2a] = (int)(0);
-    *(undefined1*)((int)param_1 + 0xad) = (undefined1)(0);
-  }
-  thunk_FUN_10dd31f0();
-  thunk_FUN_112af4e0("Wizard",5,"Clearing sub-wizard mode.");
-  if ((undefined4 *)param_1[0x26] != (undefined4 *)(((0x0)))) {
-    (*(code *)**(undefined4 **)param_1[0x26])(1);
-    param_1[0x26] = (int)(0);
-  }
-
-  if ((int *)(piVar4) != (int *)(0x0)) {
-    ((SCVtbl_2_0*)(piVar4))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x32]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x31] = (int)(0);
-    param_1[0x32] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x30]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x2f] = (int)(0);
-    param_1[0x30] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x2e]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x2d] = (int)(0);
-    param_1[0x2e] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x28]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x27] = (int)(0);
-    param_1[0x28] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  piVar1 = (int *)((int *)param_1[0x1c]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x1b] = (int)(0);
-    param_1[0x1c] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  thunk_FUN_10dd1260();
-  param_1[0x13] = (int)((int)(uint)&ghidra_vftable_SCHouseholdEventSink);
-  piVar1 = (int *)((int *)param_1[0x15]);
-
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    param_1[0x14] = (int)(0);
-    param_1[0x15] = (int)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  param_1[0x12] = (int)((int)(uint)&ghidra_vftable_RControlAIOOpCB);
-  thunk_FUN_11240850();
-  thunk_FUN_103d60a0();
-
-  param_1[2] = (int)((int)(uint)&ghidra_vftable_SCTimerUser);
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (int)((int)(uint)&ghidra_vftable_SCIObj);
-
-  return;
-
- } catch (...) { }
+  __asm mov dword ptr [ecx], LAB_1193ae18
+  __asm mov dword ptr [ecx + 8], LAB_1193b05c
+  __asm mov dword ptr [ecx + 0x28], LAB_1193b06c
+  __asm mov dword ptr [ecx + 0x48], LAB_1193b078
+  __asm mov dword ptr [ecx + 0x4c], LAB_1193b088
+  __asm jmp LAB_10088622
 }
+
 
 
 // Reference entry 10e28cd0; body size 7 bytes.

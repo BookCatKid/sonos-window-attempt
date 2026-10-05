@@ -140,6 +140,117 @@ struct Treating { char _pad; Treating(...); template<class T> int operator==(T);
 struct ZoneGroupState { char _pad; ZoneGroupState(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 typedef void *WARNING;
 using namespace std;
+extern "C" void LAB_10001c2b(void);
+extern "C" void LAB_100042aa(void);
+extern "C" void LAB_10005b32(void);
+extern "C" void LAB_10005db7(void);
+extern "C" void LAB_10006677(void);
+extern "C" void LAB_10006807(void);
+extern "C" void LAB_100069c9(void);
+extern "C" void LAB_10008431(void);
+extern "C" void LAB_1000e3db(void);
+extern "C" void LAB_1000f169(void);
+extern "C" void LAB_100113dd(void);
+extern "C" void LAB_1001221a(void);
+extern "C" void LAB_100131d8(void);
+extern "C" void LAB_10013543(void);
+extern "C" void LAB_10013746(void);
+extern "C" void LAB_10014d58(void);
+extern "C" void LAB_10016ba3(void);
+extern "C" void LAB_10018084(void);
+extern "C" void LAB_100183cc(void);
+extern "C" void LAB_100193c1(void);
+extern "C" void LAB_1001d1f1(void);
+extern "C" void LAB_1001d3c7(void);
+extern "C" void LAB_1001e010(void);
+extern "C" void LAB_1001ec63(void);
+extern "C" void LAB_1001fd9d(void);
+extern "C" void LAB_100238df(void);
+extern "C" void LAB_10024258(void);
+extern "C" void LAB_10024f14(void);
+extern "C" void LAB_10027705(void);
+extern "C" void LAB_10027e8a(void);
+extern "C" void LAB_1002b373(void);
+extern "C" void LAB_1002b404(void);
+extern "C" void LAB_1002b7a1(void);
+extern "C" void LAB_1002ce53(void);
+extern "C" void LAB_1002f99b(void);
+extern "C" void LAB_1002faea(void);
+extern "C" void LAB_10034a5e(void);
+extern "C" void LAB_10035314(void);
+extern "C" void LAB_100362cd(void);
+extern "C" void LAB_10036c23(void);
+extern "C" void LAB_10038730(void);
+extern "C" void LAB_1003a639(void);
+extern "C" void LAB_1003b66f(void);
+extern "C" void LAB_100446d9(void);
+extern "C" void LAB_10049945(void);
+extern "C" void LAB_1004acdc(void);
+extern "C" void LAB_1004b191(void);
+extern "C" void LAB_1004dccf(void);
+extern "C" void LAB_1004e08a(void);
+extern "C" void LAB_1004f395(void);
+extern "C" void LAB_1005273e(void);
+extern "C" void LAB_10054db8(void);
+extern "C" void LAB_10057fcc(void);
+extern "C" void LAB_10058a5d(void);
+extern "C" void LAB_1005f542(void);
+extern "C" void LAB_1006005a(void);
+extern "C" void LAB_10060640(void);
+extern "C" void LAB_10067ec2(void);
+extern "C" void LAB_1006a690(void);
+extern "C" void LAB_1006e11e(void);
+extern "C" void LAB_10070fbd(void);
+extern "C" void LAB_100727d7(void);
+extern "C" void LAB_10072d77(void);
+extern "C" void LAB_1007380d(void);
+extern "C" void LAB_100752d4(void);
+extern "C" void LAB_1007cfd4(void);
+extern "C" void LAB_1007e5fa(void);
+extern "C" void LAB_1007eb95(void);
+extern "C" void LAB_10083573(void);
+extern "C" void LAB_1008c4cf(void);
+extern "C" void LAB_1008ca83(void);
+extern "C" void LAB_1008d389(void);
+extern "C" void LAB_1008ea4a(void);
+extern "C" void LAB_100913f8(void);
+extern "C" void LAB_10091f8d(void);
+extern "C" void LAB_10092636(void);
+extern "C" void LAB_100932d9(void);
+extern "C" void LAB_10093dce(void);
+extern "C" void LAB_1009a426(void);
+extern "C" void LAB_103c3720(void);
+extern "C" void LAB_1148a05a(void);
+extern "C" void LAB_1186d2ee(void);
+extern "C" void LAB_1186d2f4(void);
+extern "C" void LAB_11879278(void);
+extern "C" void LAB_1187aea4(void);
+extern "C" void LAB_1187af24(void);
+extern "C" void LAB_1187c25c(void);
+extern "C" void LAB_1187f834(void);
+extern "C" void LAB_11880164(void);
+extern "C" void LAB_11885298(void);
+extern "C" void LAB_1188de78(void);
+extern "C" void LAB_118969ec(void);
+extern "C" void LAB_118979c8(void);
+extern "C" void LAB_11898758(void);
+extern "C" void LAB_11898784(void);
+extern "C" void LAB_118987ac(void);
+extern "C" void LAB_11898ffc(void);
+extern "C" void LAB_1189a4a0(void);
+extern "C" void LAB_1189a4e0(void);
+extern "C" void LAB_1189cdec(void);
+extern "C" void LAB_1189ce34(void);
+extern "C" void LAB_1189d9cc(void);
+extern "C" void LAB_1189f964(void);
+extern "C" void LAB_1189f9a4(void);
+extern "C" void LAB_1189f9b4(void);
+extern "C" void LAB_12126b84(void);
+extern "C" void LAB_121a0e68(void);
+extern "C" void LAB_122fc888(void);
+extern "C" void LAB_122fca5c(void);
+
+
 struct Recovered_Bulk { char _pad; void __thiscall m_FUN_1036b220(char param_2); template<class... A> int m_FUN_1036b220(A...); void __thiscall m_FUN_1036b240(char param_2); template<class... A> int m_FUN_1036b240(A...); void __thiscall m_FUN_1036b260(char param_2); template<class... A> int m_FUN_1036b260(A...); void __thiscall m_FUN_1036b280(char param_2); template<class... A> int m_FUN_1036b280(A...); void __thiscall m_FUN_1036b3c0(char param_2); template<class... A> int m_FUN_1036b3c0(A...); void __thiscall m_FUN_1036b3e0(char param_2); template<class... A> int m_FUN_1036b3e0(A...); void __thiscall m_FUN_1036b400(char param_2); template<class... A> int m_FUN_1036b400(A...); void __thiscall m_FUN_1036b600(undefined4 param_2,undefined4 param_3); template<class... A> int m_FUN_1036b600(A...); void __thiscall m_FUN_1036b620(undefined4 param_2,undefined4 param_3); template<class... A> int m_FUN_1036b620(A...); void __thiscall m_FUN_1036b7c0(undefined4 *param_2); template<class... A> int m_FUN_1036b7c0(A...); void __thiscall m_FUN_1036b850(undefined4 *param_2,undefined4 param_3); template<class... A> int m_FUN_1036b850(A...); undefined4 *  __thiscall m_FUN_1036d6e0(undefined4 *param_2); template<class... A> int m_FUN_1036d6e0(A...); undefined4 *  __thiscall m_FUN_1036d720(undefined4 *param_2); template<class... A> int m_FUN_1036d720(A...); undefined4 *  __thiscall m_FUN_1036d780(undefined4 *param_2); template<class... A> int m_FUN_1036d780(A...); undefined4 *  __thiscall m_FUN_1036d7c0(undefined4 *param_2); template<class... A> int m_FUN_1036d7c0(A...); void __thiscall m_FUN_1036d800(undefined4 *param_2, unsigned int recovered_unused_stack_0); template<class... A> int m_FUN_1036d800(A...); void __thiscall m_FUN_1036d850(undefined4 *param_2, unsigned int recovered_unused_stack_0); template<class... A> int m_FUN_1036d850(A...); void __thiscall m_FUN_103703b0(int *param_2); template<class... A> int m_FUN_103703b0(A...); void __thiscall m_FUN_10370400(int *param_2); template<class... A> int m_FUN_10370400(A...); void __thiscall m_FUN_10370450(int *param_2); template<class... A> int m_FUN_10370450(A...); void __thiscall m_FUN_103704a0(int *param_2); template<class... A> int m_FUN_103704a0(A...); void __thiscall m_FUN_103704f0(int *param_2); template<class... A> int m_FUN_103704f0(A...); void __thiscall m_FUN_10370540(int *param_2); template<class... A> int m_FUN_10370540(A...); void __thiscall m_FUN_10370590(int *param_2); template<class... A> int m_FUN_10370590(A...); void __thiscall m_FUN_103705e0(int param_2); template<class... A> int m_FUN_103705e0(A...); void __thiscall m_FUN_10370610(int param_2); template<class... A> int m_FUN_10370610(A...); void __thiscall m_FUN_10370640(int param_2); template<class... A> int m_FUN_10370640(A...); void __thiscall m_FUN_10370670(int param_2); template<class... A> int m_FUN_10370670(A...); void __thiscall m_FUN_103706a0(int param_2); template<class... A> int m_FUN_103706a0(A...); undefined4 __thiscall m_FUN_10374620(undefined4 param_2); template<class... A> int m_FUN_10374620(A...); void __thiscall m_FUN_10376e70(undefined4 param_2,SCStr *param_3); template<class... A> int m_FUN_10376e70(A...); void __thiscall m_FUN_10376ea0(undefined4 param_2,undefined4 param_3); template<class... A> int m_FUN_10376ea0(A...); SCStr * __thiscall m_FUN_1037c5d0(SCStr *param_2); template<class... A> int m_FUN_1037c5d0(A...); undefined4 *  __thiscall m_FUN_1037cbb0(undefined4 *param_2); template<class... A> int m_FUN_1037cbb0(A...); SCStr * __thiscall m_FUN_1037d000(SCStr *param_2); template<class... A> int m_FUN_1037d000(A...); SCStr * __thiscall m_FUN_1037d020(SCStr *param_2); template<class... A> int m_FUN_1037d020(A...); undefined4 __thiscall m_FUN_1037ddb0(undefined4 param_2,undefined4 param_3); template<class... A> int m_FUN_1037ddb0(A...); undefined4 * __thiscall m_FUN_1037efa0(undefined4 *param_2); template<class... A> int m_FUN_1037efa0(A...); int * __thiscall m_FUN_1037eff0(int *param_2); template<class... A> int m_FUN_1037eff0(A...); int * __thiscall m_FUN_10380b80(int *param_2); template<class... A> int m_FUN_10380b80(A...); undefined4 __thiscall m_FUN_10381020(undefined4 *param_2); template<class... A> int m_FUN_10381020(A...); SCStr * __thiscall m_FUN_10382120(SCStr *param_2); template<class... A> int m_FUN_10382120(A...); undefined4 __thiscall m_FUN_10382860(undefined4 param_2,undefined4 param_3); template<class... A> int m_FUN_10382860(A...); void __thiscall m_FUN_1038f760(undefined4 param_2); template<class... A> int m_FUN_1038f760(A...); undefined4 __thiscall m_FUN_1038fab0(undefined4 param_2,undefined4 param_3); template<class... A> int m_FUN_1038fab0(A...); undefined4 __thiscall m_FUN_1038fad0(undefined4 param_2,undefined4 param_3); template<class... A> int m_FUN_1038fad0(A...); void __thiscall m_FUN_10390c70(int param_2); template<class... A> int m_FUN_10390c70(A...); void __thiscall m_FUN_10393b80(undefined4 *param_2); template<class... A> int m_FUN_10393b80(A...); void __thiscall m_FUN_10393bd0(undefined4 *param_2); template<class... A> int m_FUN_10393bd0(A...); void __thiscall m_FUN_10398f40(undefined4 param_2); template<class... A> int m_FUN_10398f40(A...); void __thiscall m_FUN_103994e0(int param_2); template<class... A> int m_FUN_103994e0(A...); void __thiscall m_FUN_10399f60(undefined4 param_2); template<class... A> int m_FUN_10399f60(A...); undefined4 * __thiscall m_FUN_1039f140(int *param_2); template<class... A> int m_FUN_1039f140(A...); undefined4 * __thiscall m_FUN_1039f1e0(int *param_2); template<class... A> int m_FUN_1039f1e0(A...); undefined4 * __thiscall m_FUN_1039f200(int *param_2); template<class... A> int m_FUN_1039f200(A...); undefined4 * __thiscall m_FUN_1039f220(int *param_2); template<class... A> int m_FUN_1039f220(A...); undefined4 * __thiscall m_FUN_103a0070(byte param_2); template<class... A> int m_FUN_103a0070(A...); undefined4 * __thiscall m_FUN_103a00a0(byte param_2); template<class... A> int m_FUN_103a00a0(A...); undefined4 * __thiscall m_FUN_103a00d0(byte param_2); template<class... A> int m_FUN_103a00d0(A...); undefined4 * __thiscall m_FUN_103a0110(byte param_2); template<class... A> int m_FUN_103a0110(A...); undefined4 * __thiscall m_FUN_103a0150(byte param_2); template<class... A> int m_FUN_103a0150(A...); undefined4 __thiscall m_FUN_103a0190(byte param_2); template<class... A> int m_FUN_103a0190(A...); undefined4 __thiscall m_FUN_103a01c0(byte param_2); template<class... A> int m_FUN_103a01c0(A...); undefined4 * __thiscall m_FUN_103a01f0(byte param_2); template<class... A> int m_FUN_103a01f0(A...); undefined4 * __thiscall m_FUN_103a0240(byte param_2); template<class... A> int m_FUN_103a0240(A...); undefined4 * __thiscall m_FUN_103a0290(byte param_2); template<class... A> int m_FUN_103a0290(A...); undefined4 * __thiscall m_FUN_103a02c0(byte param_2); template<class... A> int m_FUN_103a02c0(A...); undefined4 * __thiscall m_FUN_103a02f0(byte param_2); template<class... A> int m_FUN_103a02f0(A...); undefined4 * __thiscall m_FUN_103a0320(byte param_2); template<class... A> int m_FUN_103a0320(A...); undefined4 * __thiscall m_FUN_103a0510(byte param_2); template<class... A> int m_FUN_103a0510(A...); void __thiscall m_FUN_103a0840(int *param_2); template<class... A> int m_FUN_103a0840(A...); SCStr * __thiscall m_FUN_103a1560(SCStr *param_2); template<class... A> int m_FUN_103a1560(A...); SCStr * __thiscall m_FUN_103a15c0(SCStr *param_2); template<class... A> int m_FUN_103a15c0(A...); SCStr * __thiscall m_FUN_103a15e0(SCStr *param_2); template<class... A> int m_FUN_103a15e0(A...); undefined4 __thiscall m_FUN_103a17e0(undefined4 param_2); template<class... A> int m_FUN_103a17e0(A...); SCStr * __thiscall m_FUN_103a1fb0(SCStr *param_2); template<class... A> int m_FUN_103a1fb0(A...); void __thiscall m_FUN_103a3270(int param_2); template<class... A> int m_FUN_103a3270(A...); void __thiscall m_FUN_103a4d20(undefined4 param_2); template<class... A> int m_FUN_103a4d20(A...); int __thiscall m_FUN_103a4f40(SCStr *param_2); template<class... A> int m_FUN_103a4f40(A...); void __thiscall m_FUN_103a57f0(int param_2); template<class... A> int m_FUN_103a57f0(A...); undefined4 * __thiscall m_FUN_103a5de0(int *param_2); template<class... A> int m_FUN_103a5de0(A...); undefined4 * __thiscall m_FUN_103a5e40(int *param_2); template<class... A> int m_FUN_103a5e40(A...); undefined4 * __thiscall m_FUN_103a5e80(int *param_2); template<class... A> int m_FUN_103a5e80(A...); undefined4 * __thiscall m_FUN_103a5ee0(int *param_2); template<class... A> int m_FUN_103a5ee0(A...); undefined4 * __thiscall m_FUN_103a5f00(int *param_2); template<class... A> int m_FUN_103a5f00(A...); undefined4 * __thiscall m_FUN_103a5f20(int *param_2); template<class... A> int m_FUN_103a5f20(A...); undefined4 __thiscall m_FUN_103a92b0(undefined4 param_2); template<class... A> int m_FUN_103a92b0(A...); undefined4 * __thiscall m_FUN_103a9700(byte param_2); template<class... A> int m_FUN_103a9700(A...); undefined4 __thiscall m_FUN_103a9a30(byte param_2); template<class... A> int m_FUN_103a9a30(A...); undefined4 __thiscall m_FUN_103a9a60(byte param_2); template<class... A> int m_FUN_103a9a60(A...); undefined4 * __thiscall m_FUN_103a9b30(byte param_2); template<class... A> int m_FUN_103a9b30(A...); undefined4 * __thiscall m_FUN_103a9c20(byte param_2); template<class... A> int m_FUN_103a9c20(A...); undefined4 * __thiscall m_FUN_103a9c60(byte param_2); template<class... A> int m_FUN_103a9c60(A...); void __thiscall m_FUN_103abc70(int *param_2); template<class... A> int m_FUN_103abc70(A...); void __thiscall m_FUN_103abcc0(int *param_2); template<class... A> int m_FUN_103abcc0(A...); void __thiscall m_FUN_103abd10(int *param_2); template<class... A> int m_FUN_103abd10(A...); void __thiscall m_FUN_103abd60(int param_2); template<class... A> int m_FUN_103abd60(A...); SCStr * __thiscall m_FUN_103b8600(SCStr *param_2); template<class... A> int m_FUN_103b8600(A...); void __thiscall m_FUN_103bc490(undefined4 param_2); template<class... A> int m_FUN_103bc490(A...); undefined4 * __thiscall m_FUN_103be8b0(byte param_2); template<class... A> int m_FUN_103be8b0(A...); undefined4 * __thiscall m_FUN_103be9a0(byte param_2); template<class... A> int m_FUN_103be9a0(A...); void __thiscall m_FUN_103bf3a0(undefined4 param_2); template<class... A> int m_FUN_103bf3a0(A...); void __thiscall m_FUN_103bf890(undefined4 param_2); template<class... A> int m_FUN_103bf890(A...); int __thiscall m_FUN_103bf980(SCStr *param_2); template<class... A> int m_FUN_103bf980(A...); undefined4 * __thiscall m_FUN_103c07e0(int *param_2); template<class... A> int m_FUN_103c07e0(A...); undefined4 * __thiscall m_FUN_103c0870(int *param_2); template<class... A> int m_FUN_103c0870(A...); undefined4 * __thiscall m_FUN_103c08b0(int *param_2); template<class... A> int m_FUN_103c08b0(A...); undefined4 * __thiscall m_FUN_103c3c10(byte param_2); template<class... A> int m_FUN_103c3c10(A...); undefined4 * __thiscall m_FUN_103c3c40(byte param_2); template<class... A> int m_FUN_103c3c40(A...); undefined4 __thiscall m_FUN_103c3cf0(byte param_2); template<class... A> int m_FUN_103c3cf0(A...); undefined4 __thiscall m_FUN_103c3d20(byte param_2); template<class... A> int m_FUN_103c3d20(A...); undefined4 __thiscall m_FUN_103c3d50(byte param_2); template<class... A> int m_FUN_103c3d50(A...); undefined4 __thiscall m_FUN_103c3d80(byte param_2); template<class... A> int m_FUN_103c3d80(A...); undefined4 __thiscall m_FUN_103c3e40(byte param_2); template<class... A> int m_FUN_103c3e40(A...); undefined4 __thiscall m_FUN_103c3f10(byte param_2); template<class... A> int m_FUN_103c3f10(A...); undefined4 __thiscall m_FUN_103c3f40(byte param_2); template<class... A> int m_FUN_103c3f40(A...); undefined4 * __thiscall m_FUN_103c4010(byte param_2); template<class... A> int m_FUN_103c4010(A...); undefined4 * __thiscall m_FUN_103c4050(byte param_2); template<class... A> int m_FUN_103c4050(A...); undefined4 * __thiscall m_FUN_103c4080(byte param_2); template<class... A> int m_FUN_103c4080(A...); undefined4 * __thiscall m_FUN_103c40d0(byte param_2); template<class... A> int m_FUN_103c40d0(A...); undefined4 __thiscall m_FUN_103c41c0(byte param_2); template<class... A> int m_FUN_103c41c0(A...); undefined4 *  __thiscall m_FUN_103c4260(undefined4 *param_2); template<class... A> int m_FUN_103c4260(A...); void __thiscall m_FUN_103c4280(char param_2); template<class... A> int m_FUN_103c4280(A...); void __thiscall m_FUN_103c4c20(undefined4 *param_2); template<class... A> int m_FUN_103c4c20(A...); int __thiscall m_FUN_103c8120(uint param_2); template<class... A> int m_FUN_103c8120(A...); undefined4 __thiscall m_FUN_103c91e0(int param_2, unsigned int recovered_unused_stack_0); template<class... A> int m_FUN_103c91e0(A...); void __thiscall m_FUN_103cc590(int param_2); template<class... A> int m_FUN_103cc590(A...); void __thiscall m_FUN_103cc5e0(int param_2); template<class... A> int m_FUN_103cc5e0(A...); int __thiscall m_FUN_103ce410(SCStr *param_2); template<class... A> int m_FUN_103ce410(A...); undefined4 __thiscall m_FUN_103d1400(byte param_2); template<class... A> int m_FUN_103d1400(A...); undefined4 * __thiscall m_FUN_103d15e0(byte param_2); template<class... A> int m_FUN_103d15e0(A...); void __thiscall m_FUN_103d16c0(undefined4 param_2, unsigned int recovered_unused_stack_0); template<class... A> int m_FUN_103d16c0(A...); void __thiscall m_FUN_103d2370(undefined4 *param_2, unsigned int recovered_unused_stack_0); template<class... A> int m_FUN_103d2370(A...); undefined4 __thiscall m_FUN_103d27d0(undefined4 param_2,undefined4 param_3); template<class... A> int m_FUN_103d27d0(A...); int __thiscall m_FUN_103d5170(SCStr *param_2); template<class... A> int m_FUN_103d5170(A...); undefined4 * __thiscall m_FUN_103d5900(byte param_2); template<class... A> int m_FUN_103d5900(A...); undefined4 * __thiscall m_FUN_103d5940(byte param_2); template<class... A> int m_FUN_103d5940(A...); undefined4 * __thiscall m_FUN_103d9170(int *param_2); template<class... A> int m_FUN_103d9170(A...); undefined4 * __thiscall m_FUN_103e3a40(byte param_2); template<class... A> int m_FUN_103e3a40(A...); undefined4 * __thiscall m_FUN_103e3a70(byte param_2); template<class... A> int m_FUN_103e3a70(A...); undefined4 * __thiscall m_FUN_103e3aa0(byte param_2); template<class... A> int m_FUN_103e3aa0(A...); undefined4 * __thiscall m_FUN_103e3ad0(byte param_2); template<class... A> int m_FUN_103e3ad0(A...); undefined4 * __thiscall m_FUN_103e3b00(byte param_2); template<class... A> int m_FUN_103e3b00(A...); undefined4 * __thiscall m_FUN_103e3b30(byte param_2); template<class... A> int m_FUN_103e3b30(A...); undefined4 * __thiscall m_FUN_103e3b60(byte param_2); template<class... A> int m_FUN_103e3b60(A...); undefined4 * __thiscall m_FUN_103e3b90(byte param_2); template<class... A> int m_FUN_103e3b90(A...); undefined4 * __thiscall m_FUN_103e3bc0(byte param_2); template<class... A> int m_FUN_103e3bc0(A...); undefined4 * __thiscall m_FUN_103e3bf0(byte param_2); template<class... A> int m_FUN_103e3bf0(A...); undefined4 * __thiscall m_FUN_103e3c20(byte param_2); template<class... A> int m_FUN_103e3c20(A...); undefined4 * __thiscall m_FUN_103e3c50(byte param_2); template<class... A> int m_FUN_103e3c50(A...); undefined4 * __thiscall m_FUN_103e3c80(byte param_2); template<class... A> int m_FUN_103e3c80(A...); undefined4 * __thiscall m_FUN_103e3cb0(byte param_2); template<class... A> int m_FUN_103e3cb0(A...); undefined4 * __thiscall m_FUN_103e3ce0(byte param_2); template<class... A> int m_FUN_103e3ce0(A...); undefined4 * __thiscall m_FUN_103e3d10(byte param_2); template<class... A> int m_FUN_103e3d10(A...); undefined4 * __thiscall m_FUN_103e3d40(byte param_2); template<class... A> int m_FUN_103e3d40(A...); undefined4 * __thiscall m_FUN_103e3d70(byte param_2); template<class... A> int m_FUN_103e3d70(A...); undefined4 * __thiscall m_FUN_103e3da0(byte param_2); template<class... A> int m_FUN_103e3da0(A...); undefined4 __thiscall m_FUN_103e3de0(byte param_2); template<class... A> int m_FUN_103e3de0(A...); undefined4 __thiscall m_FUN_103e3e10(byte param_2); template<class... A> int m_FUN_103e3e10(A...); undefined4 __thiscall m_FUN_103e3e40(byte param_2); template<class... A> int m_FUN_103e3e40(A...); undefined4 __thiscall m_FUN_103e3e70(byte param_2); template<class... A> int m_FUN_103e3e70(A...); undefined4 __thiscall m_FUN_103e3ea0(byte param_2); template<class... A> int m_FUN_103e3ea0(A...); undefined4 __thiscall m_FUN_103e3ed0(byte param_2); template<class... A> int m_FUN_103e3ed0(A...); undefined4 __thiscall m_FUN_103e3f00(byte param_2); template<class... A> int m_FUN_103e3f00(A...); undefined4 __thiscall m_FUN_103e3f30(byte param_2); template<class... A> int m_FUN_103e3f30(A...); undefined4 __thiscall m_FUN_103e3f60(byte param_2); template<class... A> int m_FUN_103e3f60(A...); undefined4 __thiscall m_FUN_103e3f90(byte param_2); template<class... A> int m_FUN_103e3f90(A...); undefined4 __thiscall m_FUN_103e3fc0(byte param_2); template<class... A> int m_FUN_103e3fc0(A...); undefined4 __thiscall m_FUN_103e3ff0(byte param_2); template<class... A> int m_FUN_103e3ff0(A...); undefined4 __thiscall m_FUN_103e4020(byte param_2); template<class... A> int m_FUN_103e4020(A...); undefined4 __thiscall m_FUN_103e4050(byte param_2); template<class... A> int m_FUN_103e4050(A...); undefined4 __thiscall m_FUN_103e4080(byte param_2); template<class... A> int m_FUN_103e4080(A...); undefined4 __thiscall m_FUN_103e40b0(byte param_2); template<class... A> int m_FUN_103e40b0(A...); undefined4 __thiscall m_FUN_103e40e0(byte param_2); template<class... A> int m_FUN_103e40e0(A...); undefined4 __thiscall m_FUN_103e4230(byte param_2); template<class... A> int m_FUN_103e4230(A...); undefined4 __thiscall m_FUN_103e4260(byte param_2); template<class... A> int m_FUN_103e4260(A...); undefined4 __thiscall m_FUN_103e4540(byte param_2); template<class... A> int m_FUN_103e4540(A...); undefined4 __thiscall m_FUN_103e4620(byte param_2); template<class... A> int m_FUN_103e4620(A...); undefined4 __thiscall m_FUN_103e4650(byte param_2); template<class... A> int m_FUN_103e4650(A...); undefined4 __thiscall m_FUN_103e48b0(byte param_2); template<class... A> int m_FUN_103e48b0(A...); undefined4 __thiscall m_FUN_103e49c0(byte param_2); template<class... A> int m_FUN_103e49c0(A...); undefined4 __thiscall m_FUN_103e4c00(byte param_2); template<class... A> int m_FUN_103e4c00(A...); undefined4 __thiscall m_FUN_103e4dc0(byte param_2); template<class... A> int m_FUN_103e4dc0(A...); undefined4 __thiscall m_FUN_103e4ef0(byte param_2); template<class... A> int m_FUN_103e4ef0(A...); undefined4 __thiscall m_FUN_103e5000(byte param_2); template<class... A> int m_FUN_103e5000(A...); undefined4 __thiscall m_FUN_103e5030(byte param_2); template<class... A> int m_FUN_103e5030(A...); undefined4 __thiscall m_FUN_103e5250(byte param_2); template<class... A> int m_FUN_103e5250(A...); undefined4 __thiscall m_FUN_103e5330(byte param_2); template<class... A> int m_FUN_103e5330(A...); undefined4 __thiscall m_FUN_103e53d0(byte param_2); template<class... A> int m_FUN_103e53d0(A...); undefined4 __thiscall m_FUN_103e5400(byte param_2); template<class... A> int m_FUN_103e5400(A...); undefined4 __thiscall m_FUN_103e54f0(byte param_2); template<class... A> int m_FUN_103e54f0(A...); undefined4 __thiscall m_FUN_103e5610(byte param_2); template<class... A> int m_FUN_103e5610(A...); undefined4 __thiscall m_FUN_103e5700(byte param_2); template<class... A> int m_FUN_103e5700(A...); undefined4 * __thiscall m_FUN_103e5730(byte param_2); template<class... A> int m_FUN_103e5730(A...); undefined4 * __thiscall m_FUN_103e5760(byte param_2); template<class... A> int m_FUN_103e5760(A...); undefined4 * __thiscall m_FUN_103e57a0(byte param_2); template<class... A> int m_FUN_103e57a0(A...); undefined4 * __thiscall m_FUN_103e57e0(byte param_2); template<class... A> int m_FUN_103e57e0(A...); undefined4 * __thiscall m_FUN_103e5820(byte param_2); template<class... A> int m_FUN_103e5820(A...); undefined4 * __thiscall m_FUN_103e5860(byte param_2); template<class... A> int m_FUN_103e5860(A...); undefined4 * __thiscall m_FUN_103e58a0(byte param_2); template<class... A> int m_FUN_103e58a0(A...); undefined4 * __thiscall m_FUN_103e5980(byte param_2); template<class... A> int m_FUN_103e5980(A...); undefined4 * __thiscall m_FUN_103e59c0(byte param_2); template<class... A> int m_FUN_103e59c0(A...); undefined4 * __thiscall m_FUN_103e5a00(byte param_2); template<class... A> int m_FUN_103e5a00(A...); undefined4 __thiscall m_FUN_103e5a40(byte param_2); template<class... A> int m_FUN_103e5a40(A...); undefined4 * __thiscall m_FUN_103e5a70(byte param_2); template<class... A> int m_FUN_103e5a70(A...); undefined4 * __thiscall m_FUN_103e5ab0(byte param_2); template<class... A> int m_FUN_103e5ab0(A...); undefined4 * __thiscall m_FUN_103e5af0(byte param_2); template<class... A> int m_FUN_103e5af0(A...); undefined4 * __thiscall m_FUN_103e5b30(byte param_2); template<class... A> int m_FUN_103e5b30(A...); undefined4 * __thiscall m_FUN_103e5b70(byte param_2); template<class... A> int m_FUN_103e5b70(A...); undefined4 * __thiscall m_FUN_103e5bb0(byte param_2); template<class... A> int m_FUN_103e5bb0(A...); SCStr * __thiscall m_FUN_103eaa70(SCStr *param_2); template<class... A> int m_FUN_103eaa70(A...); SCStr * __thiscall m_FUN_103eada0(SCStr *param_2); template<class... A> int m_FUN_103eada0(A...); SCStr * __thiscall m_FUN_103eadc0(SCStr *param_2); template<class... A> int m_FUN_103eadc0(A...); SCStr * __thiscall m_FUN_103eade0(SCStr *param_2); template<class... A> int m_FUN_103eade0(A...); SCStr * __thiscall m_FUN_103eae00(SCStr *param_2); template<class... A> int m_FUN_103eae00(A...); SCStr * __thiscall m_FUN_103eae40(SCStr *param_2); template<class... A> int m_FUN_103eae40(A...); SCStr * __thiscall m_FUN_103eaeb0(SCStr *param_2); template<class... A> int m_FUN_103eaeb0(A...); SCStr * __thiscall m_FUN_103eaf10(SCStr *param_2); template<class... A> int m_FUN_103eaf10(A...); SCStr * __thiscall m_FUN_103eb020(SCStr *param_2); template<class... A> int m_FUN_103eb020(A...); };
 
 extern int FUN_102bad40(...);
@@ -924,34 +1035,59 @@ void __thiscall Recovered_Bulk::m_FUN_1036b3e0(char param_2)
 // Reference entry 1036b400; body size 58 bytes.
 #line 1 "ENTRY_1036b400"
 
-void __thiscall Recovered_Bulk::m_FUN_1036b400(char param_2)
+__declspec(naked) void FUN_1036b400(void)
+
 {
-  int param_1 = (int )this;
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0x2c), 0);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1 + 8)));
-    *(undefined4*)(param_1 + 0x2c) = (undefined4)(0);
-  }
-  if (param_2 != '\0') {
-    thunk_FUN_1148a50e(param_1,0x30);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x2c]
+  __asm push edi
+  __asm lea edi, [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x1036b423
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, edi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm cmp byte ptr [esp + 0xc], 0
+  __asm je 0x1036b435
+  __asm push 0x30
+  __asm push esi
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm pop edi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 1036b5d0; body size 35 bytes.
 #line 1 "ENTRY_1036b5d0"
 
-void __stdcall FUN_1036b5d0(int param_1,int param_2)
+__declspec(naked) void FUN_1036b5d0(void)
 
 {
-  for (; param_1 != param_2; param_1 = param_1 + 0x18) {
-    thunk_FUN_103659a0();
-  }
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm push edi
+  __asm mov edi, dword ptr [esp + 0x10]
+  __asm cmp esi, edi
+  __asm je 0x1036b5ee
+  __asm nop
+  __asm mov ecx, esi
+  __asm call LAB_1009a426
+  __asm add esi, 0x18
+  __asm cmp esi, edi
+  __asm jne 0x1036b5e0
+  __asm pop edi
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 1036b600; body size 20 bytes.
@@ -979,137 +1115,185 @@ void __thiscall Recovered_Bulk::m_FUN_1036b620(undefined4 param_2,undefined4 par
 // Reference entry 1036b650; body size 31 bytes.
 #line 1 "ENTRY_1036b650"
 
-void __stdcall FUN_1036b650(undefined4 param_1,undefined4 param_2)
+__declspec(naked) void FUN_1036b650(void)
 
 {
-  char cVar1;
-  
-  cVar1 = (char)(thunk_FUN_102d65b0(param_2), 0);
-  if (cVar1 != '\0') {
-    thunk_FUN_1038c9c0();
-  }
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 0xc]
+  __asm mov esi, ecx
+  __asm call LAB_1001fd9d
+  __asm add esp, 4
+  __asm test al, al
+  __asm je 0x1036b66b
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_100193c1
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 1036b680; body size 22 bytes.
 #line 1 "ENTRY_1036b680"
 
-void __stdcall FUN_1036b680(unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_1036b680(void)
 
 {
-  thunk_FUN_10cf4ae0((int)(0));
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push 0
+  __asm mov ecx, dword ptr [eax]
+  __asm add ecx, 0xf4
+  __asm call LAB_1006005a
+  __asm ret 4
 }
+
 
 
 // Reference entry 1036b740; body size 31 bytes.
 #line 1 "ENTRY_1036b740"
 
-void __stdcall FUN_1036b740(undefined4 param_1,undefined4 param_2)
+__declspec(naked) void FUN_1036b740(void)
 
 {
-  char cVar1;
-  
-  cVar1 = (char)(thunk_FUN_102d65b0(param_2), 0);
-  if (cVar1 != '\0') {
-    thunk_FUN_1038c170();
-  }
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 0xc]
+  __asm mov esi, ecx
+  __asm call LAB_1001fd9d
+  __asm add esp, 4
+  __asm test al, al
+  __asm je 0x1036b75b
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_1000f169
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 1036b770; body size 23 bytes.
 #line 1 "ENTRY_1036b770"
 
-void __fastcall FUN_1036b770(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_1036b770(void)
 
 {
-  thunk_FUN_10cf3780((int)(*(undefined4 *)(param_1 + 4)));
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push dword ptr [ecx + 4]
+  __asm mov ecx, dword ptr [eax]
+  __asm add ecx, 0xe8
+  __asm call LAB_1000e3db
+  __asm ret 4
 }
+
 
 
 // Reference entry 1036b7c0; body size 23 bytes.
 #line 1 "ENTRY_1036b7c0"
 
-void __thiscall Recovered_Bulk::m_FUN_1036b7c0(undefined4 *param_2)
+__declspec(naked) void FUN_1036b7c0(void)
+
 {
-  int param_1 = (int )this;
-  thunk_FUN_103860f0((int)(*param_2),(int)(*(undefined4 *)(*(int *)(param_1 + 4) + 0x10ec)));
-  return;
+  __asm mov ecx, dword ptr [ecx + 4]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push dword ptr [ecx + 0x10ec]
+  __asm push dword ptr [eax]
+  __asm call LAB_1004dccf
+  __asm ret 4
 }
+
 
 
 // Reference entry 1036b7e0; body size 23 bytes.
 #line 1 "ENTRY_1036b7e0"
 
-void __fastcall FUN_1036b7e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_1036b7e0(void)
 
 {
-  thunk_FUN_10cf3780((int)(*(undefined4 *)(param_1 + 4)));
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push dword ptr [ecx + 4]
+  __asm mov ecx, dword ptr [eax]
+  __asm add ecx, 0xe8
+  __asm call LAB_1000e3db
+  __asm ret 4
 }
+
 
 
 // Reference entry 1036b800; body size 23 bytes.
 #line 1 "ENTRY_1036b800"
 
-void __fastcall FUN_1036b800(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_1036b800(void)
 
 {
-  thunk_FUN_10cf3780((int)(*(undefined4 *)(param_1 + 4)));
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm push dword ptr [ecx + 4]
+  __asm mov ecx, dword ptr [eax]
+  __asm add ecx, 0xe8
+  __asm call LAB_1000e3db
+  __asm ret 4
 }
+
 
 
 // Reference entry 1036b820; body size 23 bytes.
 #line 1 "ENTRY_1036b820"
 
-void __stdcall FUN_1036b820(unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_1036b820(void)
 
 {
-  thunk_FUN_1038c830();
-  thunk_FUN_10372ca0();
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_10008431
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm call LAB_1006a690
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 1036b850; body size 39 bytes.
 #line 1 "ENTRY_1036b850"
 
-void __thiscall Recovered_Bulk::m_FUN_1036b850(undefined4 *param_2,undefined4 param_3)
+__declspec(naked) void FUN_1036b850(void)
+
 {
-  int param_1 = (int )this;
-  param_2 = (undefined4 *)((undefined4 *)*param_2);
-  if (*(int **)(param_1 + 0x2c) != (int *)((0x0))) {
-    ((SCVtbl_2_2*)(*(int **)(param_1 + 0x2c)))->v((int)(&param_2),(int)(param_3));
-    return;
-  }
-                    
-  std::_Xbad_function_call();
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov ecx, dword ptr [ecx + 0x2c]
+  __asm mov eax, dword ptr [eax]
+  __asm mov dword ptr [esp + 4], eax
+  __asm test ecx, ecx
+  __asm je 0x1036b872
+  __asm push dword ptr [esp + 8]
+  __asm mov eax, dword ptr [ecx]
+  __asm lea edx, [esp + 8]
+  __asm push edx
+  __asm call dword ptr [eax + 8]
+  __asm ret 8
+  __asm call LAB_1148a05a
 }
+
 
 
 // Reference entry 1036d560; body size 30 bytes.
 #line 1 "ENTRY_1036d560"
 
-int FUN_1036d560(int param_1)
+__declspec(naked) void FUN_1036d560(void)
 
 {
-  char cVar1;
-  int iVar2;
-  int iVar3;
-  
-  cVar1 = (char)(*(char *)(*(int *)(param_1 + 8) + 0xd));
-  iVar2 = (int)(*(int *)(param_1 + 8));
-  while (iVar3 = (int)(iVar2), cVar1 == '\0') {
-    iVar2 = (int)(*(int *)(iVar3 + 8));
-    cVar1 = (char)(*(char *)(iVar2 + 0xd));
-    param_1 = (int)(iVar3);
-  }
-  return (int)(param_1);
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x1036d57b
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
+  __asm mov ecx, eax
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm je 0x1036d570
+  __asm mov eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 1036d5e0; body size 31 bytes.
@@ -1226,171 +1410,241 @@ undefined4 *  __thiscall Recovered_Bulk::m_FUN_1036d7c0(undefined4 *param_2)
 // Reference entry 1036d800; body size 52 bytes.
 #line 1 "ENTRY_1036d800"
 
-void __thiscall Recovered_Bulk::m_FUN_1036d800(undefined4 *param_2, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_1036d800(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_101f53d0();
-  *param_1 = (undefined4)(*param_2);
-  param_1[1] = (undefined4)(param_2[1]);
-  param_1[2] = (undefined4)(param_2[2]);
-  *param_2 = (undefined4)(0);
-  param_2[1] = (undefined4)(0);
-  param_2[2] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm call LAB_1002f99b
+  __asm mov edx, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [edx]
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [edx + 8]
+  __asm mov dword ptr [esi + 8], eax
+  __asm _emit 0xc7 __asm _emit 0x02 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 1036d850; body size 52 bytes.
 #line 1 "ENTRY_1036d850"
 
-void __thiscall Recovered_Bulk::m_FUN_1036d850(undefined4 *param_2, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_1036d850(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_1036e480();
-  *param_1 = (undefined4)(*param_2);
-  param_1[1] = (undefined4)(param_2[1]);
-  param_1[2] = (undefined4)(param_2[2]);
-  *param_2 = (undefined4)(0);
-  param_2[1] = (undefined4)(0);
-  param_2[2] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm call LAB_10060640
+  __asm mov edx, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [edx]
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [edx + 8]
+  __asm mov dword ptr [esi + 8], eax
+  __asm _emit 0xc7 __asm _emit 0x02 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 1036e060; body size 33 bytes.
 #line 1 "ENTRY_1036e060"
 
-void __fastcall FUN_1036e060(int *param_1)
+__declspec(naked) void FUN_1036e060(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x1036e07f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1036e090; body size 33 bytes.
 #line 1 "ENTRY_1036e090"
 
-void __fastcall FUN_1036e090(int *param_1)
+__declspec(naked) void FUN_1036e090(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x1036e0af
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1036e0c0; body size 33 bytes.
 #line 1 "ENTRY_1036e0c0"
 
-void __fastcall FUN_1036e0c0(int *param_1)
+__declspec(naked) void FUN_1036e0c0(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x1036e0df
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1036e0f0; body size 33 bytes.
 #line 1 "ENTRY_1036e0f0"
 
-void __fastcall FUN_1036e0f0(int *param_1)
+__declspec(naked) void FUN_1036e0f0(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x1036e10f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1036e120; body size 33 bytes.
 #line 1 "ENTRY_1036e120"
 
-void __fastcall FUN_1036e120(int *param_1)
+__declspec(naked) void FUN_1036e120(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x1036e13f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1036e150; body size 33 bytes.
 #line 1 "ENTRY_1036e150"
 
-void __fastcall FUN_1036e150(int *param_1)
+__declspec(naked) void FUN_1036e150(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x1036e16f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1036e180; body size 33 bytes.
 #line 1 "ENTRY_1036e180"
 
-void __fastcall FUN_1036e180(int *param_1)
+__declspec(naked) void FUN_1036e180(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x1036e19f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1036e1b0; body size 33 bytes.
 #line 1 "ENTRY_1036e1b0"
 
-void __fastcall FUN_1036e1b0(int *param_1)
+__declspec(naked) void FUN_1036e1b0(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x1036e1cf
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1036e250; body size 25 bytes.
@@ -1408,183 +1662,211 @@ void __fastcall FUN_1036e250(undefined4 *param_1)
 // Reference entry 103703b0; body size 61 bytes.
 #line 1 "ENTRY_103703b0"
 
-void __thiscall Recovered_Bulk::m_FUN_103703b0(int *param_2)
+__declspec(naked) void FUN_103703b0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x103703cc
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x103703e2
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10370400; body size 61 bytes.
 #line 1 "ENTRY_10370400"
 
-void __thiscall Recovered_Bulk::m_FUN_10370400(int *param_2)
+__declspec(naked) void FUN_10370400(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x1037041c
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x10370432
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10370450; body size 61 bytes.
 #line 1 "ENTRY_10370450"
 
-void __thiscall Recovered_Bulk::m_FUN_10370450(int *param_2)
+__declspec(naked) void FUN_10370450(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x1037046c
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x10370482
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103704a0; body size 61 bytes.
 #line 1 "ENTRY_103704a0"
 
-void __thiscall Recovered_Bulk::m_FUN_103704a0(int *param_2)
+__declspec(naked) void FUN_103704a0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x103704bc
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x103704d2
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103704f0; body size 61 bytes.
 #line 1 "ENTRY_103704f0"
 
-void __thiscall Recovered_Bulk::m_FUN_103704f0(int *param_2)
+__declspec(naked) void FUN_103704f0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x1037050c
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x10370522
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10370540; body size 61 bytes.
 #line 1 "ENTRY_10370540"
 
-void __thiscall Recovered_Bulk::m_FUN_10370540(int *param_2)
+__declspec(naked) void FUN_10370540(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x1037055c
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x10370572
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10370590; body size 61 bytes.
 #line 1 "ENTRY_10370590"
 
-void __thiscall Recovered_Bulk::m_FUN_10370590(int *param_2)
+__declspec(naked) void FUN_10370590(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x103705ac
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x103705c2
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103705e0; body size 30 bytes.
@@ -1730,39 +2012,61 @@ void __fastcall FUN_10372500(int *param_1)
 // Reference entry 103725d0; body size 61 bytes.
 #line 1 "ENTRY_103725d0"
 
-undefined4 __stdcall FUN_103725d0(SCStr *param_1){
-  bool bVar1;
-  int iVar2;
-  undefined1 local_c [12];
-  
-  iVar2 = (int)(thunk_FUN_1029ecd0((int)((uint)&local_c),(int)(param_1)), 0);
-  if (*(char *)(*(int *)(iVar2 + 8) + 0xd) == '\0') {
-    bVar1 = (bool)(((SCStr *)(param_1))->op_lt((SCStr *)(*(int *)(iVar2 + 8) + 0x10)), 0);
-    if (!bVar1) {
-      return (undefined4)(1);
-    }
-  }
-  return (undefined4)(0);
+__declspec(naked) void FUN_103725d0(void)
+
+{
+  __asm sub esp, 0xc
+  __asm lea eax, [esp]
+  __asm push dword ptr [esp + 0x10]
+  __asm push eax
+  __asm call LAB_10091f8d
+  __asm mov eax, dword ptr [eax + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10372605
+  __asm mov ecx, dword ptr [esp + 0x10]
+  __asm add eax, 0x10
+  __asm push eax
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm jne 0x10372605
+  __asm mov eax, 1
+  __asm add esp, 0xc
+  __asm ret 4
+  __asm xor eax, eax
+  __asm add esp, 0xc
+  __asm ret 4
 }
+
 
 
 // Reference entry 10372620; body size 61 bytes.
 #line 1 "ENTRY_10372620"
 
-undefined4 __stdcall FUN_10372620(SCStr *param_1){
-  bool bVar1;
-  int iVar2;
-  undefined1 local_c [12];
-  
-  iVar2 = (int)(thunk_FUN_10353d60((int)((uint)&local_c),(int)(param_1)), 0);
-  if (*(char *)(*(int *)(iVar2 + 8) + 0xd) == '\0') {
-    bVar1 = (bool)(((SCStr *)(param_1))->op_lt((SCStr *)(*(int *)(iVar2 + 8) + 0x10)), 0);
-    if (!bVar1) {
-      return (undefined4)(1);
-    }
-  }
-  return (undefined4)(0);
+__declspec(naked) void FUN_10372620(void)
+
+{
+  __asm sub esp, 0xc
+  __asm lea eax, [esp]
+  __asm push dword ptr [esp + 0x10]
+  __asm push eax
+  __asm call LAB_1007cfd4
+  __asm mov eax, dword ptr [eax + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x10372655
+  __asm mov ecx, dword ptr [esp + 0x10]
+  __asm add eax, 0x10
+  __asm push eax
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm jne 0x10372655
+  __asm mov eax, 1
+  __asm add esp, 0xc
+  __asm ret 4
+  __asm xor eax, eax
+  __asm add esp, 0xc
+  __asm ret 4
 }
+
 
 
 // Reference entry 103735a0; body size 18 bytes.
@@ -1790,250 +2094,302 @@ undefined4 __stdcall FUN_103739b0(undefined4 param_1)
 // Reference entry 10374620; body size 21 bytes.
 #line 1 "ENTRY_10374620"
 
-undefined4 __thiscall Recovered_Bulk::m_FUN_10374620(undefined4 param_2)
+__declspec(naked) void FUN_10374620(void)
+
 {
-  int *param_1 = (int *)this;
-  ((SCVtbl_117_1*)(param_1))->v((int)(param_2));
-  return (undefined4)(0);
+  __asm mov edx, dword ptr [ecx]
+  __asm push 0
+  __asm push dword ptr [esp + 8]
+  __asm call dword ptr [edx + 0x1d4]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm ret 4
 }
+
 
 
 // Reference entry 10376940; body size 59 bytes.
 #line 1 "ENTRY_10376940"
 
-void __stdcall FUN_10376940(int param_1,int param_2)
+__declspec(naked) void FUN_10376940(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 0x18);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm lea ecx, [eax + eax*2]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm shl ecx, 3
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10376968
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10376975
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
 }
+
 
 
 // Reference entry 10376990; body size 60 bytes.
 #line 1 "ENTRY_10376990"
 
-void __stdcall FUN_10376990(int param_1,int param_2)
+__declspec(naked) void FUN_10376990(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 8);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp ecx, 0x1000
+  __asm jb 0x103769b9
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x103769c6
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
 }
+
 
 
 // Reference entry 103769e0; body size 60 bytes.
 #line 1 "ENTRY_103769e0"
 
-void __stdcall FUN_103769e0(int param_1,int param_2)
+__declspec(naked) void FUN_103769e0(void)
 
 {
-  int iVar1;
-  uint uVar2;
-  
-  uVar2 = (uint)(param_2 * 8);
-  iVar1 = (int)(param_1);
-  if (0xfff < uVar2) {
-    iVar1 = (int)(*(int *)(param_1 + -4));
-    uVar2 = (uint)(uVar2 + 0x23);
-    if (0x1f < (param_1 - iVar1) - 4U) {
-                    
-      _invalid_parameter_noinfo_noreturn();
-    }
-  }
-  thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm _emit 0x8d __asm _emit 0x0c __asm _emit 0xc5 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [esp + 4]
+  __asm cmp ecx, 0x1000
+  __asm jb 0x10376a09
+  __asm mov edx, dword ptr [eax - 4]
+  __asm add ecx, 0x23
+  __asm sub eax, edx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm ja 0x10376a16
+  __asm mov eax, edx
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret 8
+  __asm call dword ptr [LAB_122fc888]
 }
+
 
 
 // Reference entry 10376b50; body size 57 bytes.
 #line 1 "ENTRY_10376b50"
 
-void __fastcall FUN_10376b50(int param_1)
+__declspec(naked) void FUN_10376b50(void)
 
 {
-  int *piVar1;
-  
-  if (*(int **)(param_1 + 4) != (int *)((0x0))) {
-    ((SCVtbl_25_0*)(*(int **)(param_1 + 4)))->v();
-    piVar1 = (int *)(*(int **)(param_1 + 8), 0);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      *(undefined4*)(param_1 + 4) = (undefined4)(0);
-      *(undefined4*)(param_1 + 8) = (undefined4)(0);
-      ((SCVtbl_2_0*)(piVar1))->v();
-    }
-    *(undefined4*)(param_1 + 4) = (undefined4)(0);
-    *(undefined4*)(param_1 + 8) = (undefined4)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10376b87
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x64]
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x10376b79
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10376ba0; body size 60 bytes.
 #line 1 "ENTRY_10376ba0"
 
-void __fastcall FUN_10376ba0(int param_1)
+__declspec(naked) void FUN_10376ba0(void)
 
 {
-  int *piVar1;
-  
-  if (*(int **)(param_1 + 4) != (int *)((0x0))) {
-    ((SCVtbl_47_0*)(*(int **)(param_1 + 4)))->v();
-    piVar1 = (int *)(*(int **)(param_1 + 8), 0);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      *(undefined4*)(param_1 + 4) = (undefined4)(0);
-      *(undefined4*)(param_1 + 8) = (undefined4)(0);
-      ((SCVtbl_2_0*)(piVar1))->v();
-    }
-    *(undefined4*)(param_1 + 4) = (undefined4)(0);
-    *(undefined4*)(param_1 + 8) = (undefined4)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10376bda
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xbc]
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x10376bcc
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10376bf0; body size 57 bytes.
 #line 1 "ENTRY_10376bf0"
 
-void __fastcall FUN_10376bf0(int param_1)
+__declspec(naked) void FUN_10376bf0(void)
 
 {
-  int *piVar1;
-  
-  if (*(int **)(param_1 + 4) != (int *)((0x0))) {
-    ((SCVtbl_5_0*)(*(int **)(param_1 + 4)))->v();
-    piVar1 = (int *)(*(int **)(param_1 + 8), 0);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      *(undefined4*)(param_1 + 4) = (undefined4)(0);
-      *(undefined4*)(param_1 + 8) = (undefined4)(0);
-      ((SCVtbl_2_0*)(piVar1))->v();
-    }
-    *(undefined4*)(param_1 + 4) = (undefined4)(0);
-    *(undefined4*)(param_1 + 8) = (undefined4)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10376c27
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x14]
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x10376c19
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10376c40; body size 57 bytes.
 #line 1 "ENTRY_10376c40"
 
-void __fastcall FUN_10376c40(int param_1)
+__declspec(naked) void FUN_10376c40(void)
 
 {
-  int *piVar1;
-  
-  if (*(int **)(param_1 + 4) != (int *)((0x0))) {
-    ((SCVtbl_12_0*)(*(int **)(param_1 + 4)))->v();
-    piVar1 = (int *)(*(int **)(param_1 + 8), 0);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      *(undefined4*)(param_1 + 4) = (undefined4)(0);
-      *(undefined4*)(param_1 + 8) = (undefined4)(0);
-      ((SCVtbl_2_0*)(piVar1))->v();
-    }
-    *(undefined4*)(param_1 + 4) = (undefined4)(0);
-    *(undefined4*)(param_1 + 8) = (undefined4)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10376c77
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x30]
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x10376c69
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10376c90; body size 57 bytes.
 #line 1 "ENTRY_10376c90"
 
-void __fastcall FUN_10376c90(int param_1)
+__declspec(naked) void FUN_10376c90(void)
 
 {
-  int *piVar1;
-  
-  if (*(int **)(param_1 + 4) != (int *)((0x0))) {
-    ((SCVtbl_28_0*)(*(int **)(param_1 + 4)))->v();
-    piVar1 = (int *)(*(int **)(param_1 + 8), 0);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-      *(undefined4*)(param_1 + 4) = (undefined4)(0);
-      *(undefined4*)(param_1 + 8) = (undefined4)(0);
-      ((SCVtbl_2_0*)(piVar1))->v();
-    }
-    *(undefined4*)(param_1 + 4) = (undefined4)(0);
-    *(undefined4*)(param_1 + 8) = (undefined4)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x10376cc7
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x70]
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x10376cb9
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10376d40; body size 46 bytes.
 #line 1 "ENTRY_10376d40"
 
-void __fastcall FUN_10376d40(int param_1)
+__declspec(naked) void FUN_10376d40(void)
 
 {
-  char cVar1;
-  
-  if (*(short *)(param_1 + 0x5c) == 0) {
-    cVar1 = (char)(thunk_FUN_11202440(param_1 + 0xdbd1), 0);
-    if (cVar1 == '\0') {
-      *(undefined2*)(param_1 + 0x5c) = (undefined2)(1000);
-    }
-  }
-  thunk_FUN_111c1340();
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm cmp word ptr [esi + 0x5c], 0
+  __asm jne 0x10376d66
+  __asm lea eax, [esi + 0xdbd1]
+  __asm push eax
+  __asm call LAB_10006807
+  __asm add esp, 4
+  __asm test al, al
+  __asm jne 0x10376d66
+  __asm mov eax, 0x3e8
+  __asm mov word ptr [esi + 0x5c], ax
+  __asm mov ecx, esi
+  __asm pop esi
+  __asm jmp LAB_1003a639
 }
+
 
 
 // Reference entry 10376e70; body size 37 bytes.
 #line 1 "ENTRY_10376e70"
 
-void __thiscall Recovered_Bulk::m_FUN_10376e70(undefined4 param_2,SCStr *param_3)
+__declspec(naked) void FUN_10376e70(void)
+
 {
-  int param_1 = (int )this;
-  bool bVar1;
-  
-  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIDateTimeManager:onTimeStatusChanged"), 0);
-  if ((bVar1) && (*(int *)(param_1 + 8) != 0)) {
-    thunk_FUN_1039ab20();
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm push offset LAB_11879278
+  __asm call LAB_1008ca83
+  __asm test al, al
+  __asm je 0x10376e91
+  __asm mov ecx, dword ptr [esi + 8]
+  __asm test ecx, ecx
+  __asm je 0x10376e91
+  __asm call LAB_100932d9
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 10376ea0; body size 35 bytes.
 #line 1 "ENTRY_10376ea0"
 
-void __thiscall Recovered_Bulk::m_FUN_10376ea0(undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10376ea0(void)
+
 {
-  int param_1 = (int )this;
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(*(int *)(param_1 + 8) + 0x3c), 0);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_2_2*)(piVar1))->v((int)(&param_2),(int)(param_3));
-  }
-  return;
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm mov ecx, dword ptr [eax + 0x3c]
+  __asm test ecx, ecx
+  __asm je 0x10376ec0
+  __asm mov eax, dword ptr [esp + 4]
+  __asm lea edx, [esp + 4]
+  __asm push dword ptr [esp + 8]
+  __asm mov dword ptr [esp + 8], eax
+  __asm mov eax, dword ptr [ecx]
+  __asm push edx
+  __asm call dword ptr [eax + 8]
+  __asm ret 8
 }
+
 
 
 // Reference entry 10377700; body size 43 bytes.
@@ -2409,104 +2765,143 @@ void __fastcall FUN_10377b40(int *param_1)
 // Reference entry 103780c0; body size 21 bytes.
 #line 1 "ENTRY_103780c0"
 
-bool __fastcall FUN_103780c0(int param_1)
+__declspec(naked) void FUN_103780c0(void)
 
 {
-  int *piVar1;
-  uint uVar2;
-  
-  piVar1 = (int *)((int *)((SCVtbl_25_0*)(*(int **)(param_1 + 200)))->v(), 0);
-  uVar2 = (uint)(((SCVtbl_9_0*)(piVar1))->v(), 0);
-  return (bool)((uVar2) & 1);
+  __asm mov ecx, dword ptr [ecx + 0xc8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x64]
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 0x24]
+  __asm and al, 1
+  __asm ret
 }
+
 
 
 // Reference entry 10378190; body size 51 bytes.
 #line 1 "ENTRY_10378190"
 
-void FUN_10378190(void)
+__declspec(naked) void FUN_10378190(void)
 
 {
-  char *pcStack_14;
-  undefined4 uStack_10;
-  char *pcStack_c;
-  
-  pcStack_c = (char *)("Fire onAreasChanged event.");
-  uStack_10 = (undefined4)(2);
-  pcStack_14 = (char *)("SCHousehold");
-  thunk_FUN_112af4e0();
-  pcStack_c = (char *)((char *)0x0);
-  ((SCStr *)((SCStr *)&pcStack_14))->int_allocRep("SCIHousehold:onAreasChanged");
-  thunk_FUN_103d65f0<>();
-  return;
+  __asm push ecx
+  __asm push esi
+  __asm push offset LAB_118987ac
+  __asm push 2
+  __asm push offset LAB_118979c8
+  __asm mov esi, ecx
+  __asm call LAB_100238df
+  __asm add esp, 0xc
+  __asm push 0
+  __asm push esi
+  __asm push ecx
+  __asm mov ecx, esp
+  __asm push offset LAB_1187aea4
+  __asm call LAB_1005273e
+  __asm lea ecx, [esi + 0x18]
+  __asm call LAB_10013543
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 10378380; body size 51 bytes.
 #line 1 "ENTRY_10378380"
 
-void FUN_10378380(void)
+__declspec(naked) void FUN_10378380(void)
 
 {
-  char *pcStack_14;
-  undefined4 uStack_10;
-  char *pcStack_c;
-  
-  pcStack_c = (char *)("Fire onSearchablesListChanged event.");
-  uStack_10 = (undefined4)(2);
-  pcStack_14 = (char *)("SCHousehold");
-  thunk_FUN_112af4e0();
-  pcStack_c = (char *)((char *)0x0);
-  ((SCStr *)((SCStr *)&pcStack_14))->int_allocRep("SCIHousehold:onSearchablesListChanged");
-  thunk_FUN_103d63d0<>();
-  return;
+  __asm push ecx
+  __asm push esi
+  __asm push offset LAB_11898758
+  __asm push 2
+  __asm push offset LAB_118979c8
+  __asm mov esi, ecx
+  __asm call LAB_100238df
+  __asm add esp, 0xc
+  __asm push 0
+  __asm push esi
+  __asm push ecx
+  __asm mov ecx, esp
+  __asm push offset LAB_1187af24
+  __asm call LAB_1005273e
+  __asm lea ecx, [esi + 0x18]
+  __asm call LAB_10013746
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103783c0; body size 31 bytes.
 #line 1 "ENTRY_103783c0"
 
-void FUN_103783c0(void)
+__declspec(naked) void FUN_103783c0(void)
 
 {
-  thunk_FUN_112af4e0("SCHousehold",2,"Fire zone groups changed event.");
-  thunk_FUN_103892b0();
-  return;
+  __asm push esi
+  __asm push offset LAB_11898784
+  __asm push 2
+  __asm push offset LAB_118979c8
+  __asm mov esi, ecx
+  __asm call LAB_100238df
+  __asm add esp, 0xc
+  __asm mov ecx, esi
+  __asm pop esi
+  __asm jmp LAB_10067ec2
 }
+
 
 
 // Reference entry 10378660; body size 37 bytes.
 #line 1 "ENTRY_10378660"
 
-void __fastcall FUN_10378660(int param_1)
+__declspec(naked) void FUN_10378660(void)
 
 {
-  undefined2 local_8 [2];
-  undefined4 local_4;
-  
-  local_8[0] = (undefined2)(*(undefined2 *)(param_1 + 0x834));
-  local_4 = (undefined4)(1);
-  thunk_FUN_1038a5a0((int)((uint)&local_8),(int)(0));
-  return;
+  __asm sub esp, 8
+  __asm mov ax, word ptr [ecx + 0x834]
+  __asm mov word ptr [esp], ax
+  __asm lea eax, [esp]
+  __asm push 0
+  __asm push eax
+  __asm _emit 0xc7 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x0c __asm _emit 0x01 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_100042aa
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 10378690; body size 32 bytes.
 #line 1 "ENTRY_10378690"
 
-undefined4 __fastcall FUN_10378690(int *param_1)
+__declspec(naked) void FUN_10378690(void)
 
 {
-  char cVar1;
-  
-  if (param_1[0x15] != 0) {
-    cVar1 = (char)(((SCVtbl_6_0*)(param_1))->v(), 0);
-    if (cVar1 != '\0') {
-      return (undefined4)(*(undefined4 *)(param_1[0x15] + 0x34));
-    }
-  }
-  return (undefined4)(0);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm cmp dword ptr [esi + 0x54], 0
+  __asm je 0x103786ac
+  __asm mov eax, dword ptr [esi]
+  __asm mov eax, dword ptr [eax + 0x18]
+  __asm call eax
+  __asm test al, al
+  __asm je 0x103786ac
+  __asm mov eax, dword ptr [esi + 0x54]
+  __asm pop esi
+  __asm mov eax, dword ptr [eax + 0x34]
+  __asm ret
+  __asm xor eax, eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10378730; body size 21 bytes.
@@ -2534,21 +2929,26 @@ SCStr * __stdcall FUN_10378770(SCStr *param_1)
 // Reference entry 10379f10; body size 33 bytes.
 #line 1 "ENTRY_10379f10"
 
-undefined4 __fastcall FUN_10379f10(int *param_1)
+__declspec(naked) void FUN_10379f10(void)
 
 {
-  char cVar1;
-  undefined4 uVar2;
-  
-  if (param_1[0x15] != 0) {
-    cVar1 = (char)(((SCVtbl_6_0*)(param_1))->v(), 0);
-    if (cVar1 != '\0') {
-      uVar2 = (undefined4)(thunk_FUN_10ce0060(), 0);
-      return (undefined4)(uVar2);
-    }
-  }
-  return (undefined4)(0);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm cmp dword ptr [esi + 0x54], 0
+  __asm je 0x10379f2d
+  __asm mov eax, dword ptr [esi]
+  __asm mov eax, dword ptr [eax + 0x18]
+  __asm call eax
+  __asm test al, al
+  __asm je 0x10379f2d
+  __asm mov ecx, dword ptr [esi + 0x54]
+  __asm pop esi
+  __asm jmp LAB_10006677
+  __asm xor eax, eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10379fd0; body size 21 bytes.
@@ -2598,34 +2998,43 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_1037c5d0(SCStr *param_2)
 // Reference entry 1037cb60; body size 33 bytes.
 #line 1 "ENTRY_1037cb60"
 
-int * __fastcall FUN_1037cb60(int *param_1)
+__declspec(naked) void FUN_1037cb60(void)
 
 {
-  char cVar1;
-  
-  if (param_1[0x15] != 0) {
-    cVar1 = (char)(((SCVtbl_6_0*)(param_1))->v(), 0);
-    if (cVar1 != '\0') {
-      return (int *)((int *)(param_1[0x15] + 0x2c));
-    }
-  }
-  return (int *)(param_1 + 0x16);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm cmp dword ptr [esi + 0x54], 0
+  __asm je 0x1037cb7c
+  __asm mov eax, dword ptr [esi]
+  __asm mov eax, dword ptr [eax + 0x18]
+  __asm call eax
+  __asm test al, al
+  __asm je 0x1037cb7c
+  __asm mov eax, dword ptr [esi + 0x54]
+  __asm add eax, 0x2c
+  __asm pop esi
+  __asm ret
+  __asm lea eax, [esi + 0x58]
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1037cbb0; body size 24 bytes.
 #line 1 "ENTRY_1037cbb0"
 
-undefined4 *  __thiscall Recovered_Bulk::m_FUN_1037cbb0(undefined4 *param_2)
+__declspec(naked) void FUN_1037cbb0(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 uVar1;
-  
-  uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0x838));
-  *param_2 = (undefined4)(*(undefined4 *)(param_1 + 0x834));
-  param_2[1] = (undefined4)(uVar1);
-  return (undefined4 *)(param_2);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov edx, dword ptr [ecx + 0x834]
+  __asm mov ecx, dword ptr [ecx + 0x838]
+  __asm mov dword ptr [eax], edx
+  __asm mov dword ptr [eax + 4], ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 1037d000; body size 23 bytes.
@@ -2653,12 +3062,18 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_1037d020(SCStr *param_2)
 // Reference entry 1037ddb0; body size 26 bytes.
 #line 1 "ENTRY_1037ddb0"
 
-undefined4 __thiscall Recovered_Bulk::m_FUN_1037ddb0(undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_1037ddb0(void)
+
 {
-  int param_1 = (int )this;
-  ((SCVtbl_18_1*)(*(int **)(param_1 + 200)))->v((int)(param_2));
-  return (undefined4)(param_3);
+  __asm mov ecx, dword ptr [ecx + 0xc8]
+  __asm push dword ptr [esp + 8]
+  __asm push dword ptr [esp + 8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x48]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm ret 8
 }
+
 
 
 // Reference entry 1037e9a0; body size 30 bytes.
@@ -2686,76 +3101,95 @@ SCStr * __stdcall FUN_1037ef60(SCStr *param_1)
 // Reference entry 1037efa0; body size 55 bytes.
 #line 1 "ENTRY_1037efa0"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_1037efa0(undefined4 *param_2)
+__declspec(naked) void FUN_1037efa0(void)
+
 {
-  int param_1 = (int )this;
-  int iVar1;
-  undefined4 uVar2;
-  
-  iVar1 = (int)(((SCVtbl_25_0*)(*(int **)(param_1 + 200)))->v(), 0);
-  if (iVar1 != 0) {
-    uVar2 = (undefined4)(thunk_FUN_111134e0(), 0);
-    thunk_FUN_1037b520(param_2,uVar2);
-    return (undefined4 *)(param_2);
-  }
-  *param_2 = (undefined4)(0);
-  return (undefined4 *)(param_2);
+  __asm mov ecx, dword ptr [ecx + 0xc8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x64]
+  __asm test eax, eax
+  __asm je 0x1037efca
+  __asm mov ecx, eax
+  __asm call LAB_1001d3c7
+  __asm push eax
+  __asm push dword ptr [esp + 8]
+  __asm call LAB_100752d4
+  __asm mov eax, dword ptr [esp + 0xc]
+  __asm add esp, 8
+  __asm ret 4
+  __asm mov eax, dword ptr [esp + 4]
+  __asm _emit 0xc7 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm ret 4
 }
+
 
 
 // Reference entry 1037eff0; body size 28 bytes.
 #line 1 "ENTRY_1037eff0"
 
-int * __thiscall Recovered_Bulk::m_FUN_1037eff0(int *param_2)
+__declspec(naked) void FUN_1037eff0(void)
+
 {
-  int param_1 = (int )this;
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0xe8), 0);
-  *param_2 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_2);
+  __asm mov ecx, dword ptr [ecx + 0xe8]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x1037f006
+  __asm mov edx, dword ptr [ecx]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10380b80; body size 28 bytes.
 #line 1 "ENTRY_10380b80"
 
-int * __thiscall Recovered_Bulk::m_FUN_10380b80(int *param_2)
+__declspec(naked) void FUN_10380b80(void)
+
 {
-  int param_1 = (int )this;
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0xe0), 0);
-  *param_2 = (int)((int)piVar1);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (int *)(param_2);
+  __asm mov ecx, dword ptr [ecx + 0xe0]
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x10380b96
+  __asm mov edx, dword ptr [ecx]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10381020; body size 46 bytes.
 #line 1 "ENTRY_10381020"
 
-undefined4 __thiscall Recovered_Bulk::m_FUN_10381020(undefined4 *param_2)
+__declspec(naked) void FUN_10381020(void)
+
 {
-  int param_1 = (int )this;
-  int iVar1;
-  undefined1 *puVar2;
-  
-  puVar2 = (undefined1 *)(&DAT_1186d2ee);
-  if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
-    puVar2 = (undefined1 *)((undefined1 *)*param_2);
-  }
-  iVar1 = (int)(((SCVtbl_1_2*)((int *)(param_1 + 0xc)))->v((int)(puVar2),(int)(1)), 0);
-  if (iVar1 != 0) {
-    return (undefined4)(*(undefined4 *)(iVar1 + 0x534));
-  }
-  return (undefined4)(0);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov edx, offset LAB_1186d2ee
+  __asm push 1
+  __asm mov eax, dword ptr [eax]
+  __asm test eax, eax
+  __asm cmovne edx, eax
+  __asm mov eax, dword ptr [ecx + 0xc]
+  __asm add ecx, 0xc
+  __asm push edx
+  __asm call dword ptr [eax + 4]
+  __asm test eax, eax
+  __asm je 0x10381049
+  __asm mov eax, dword ptr [eax + 0x534]
+  __asm ret 4
+  __asm xor eax, eax
+  __asm ret 4
 }
+
 
 
 // Reference entry 103810f0; body size 28 bytes.
@@ -2816,70 +3250,108 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_10382120(SCStr *param_2)
 // Reference entry 103827f0; body size 42 bytes.
 #line 1 "ENTRY_103827f0"
 
-int __fastcall FUN_103827f0(int param_1)
+__declspec(naked) void FUN_103827f0(void)
 
 {
-  int iVar1;
-  
-  iVar1 = (int)(((SCVtbl_25_0*)(*(int **)(param_1 + 200)))->v(), 0);
-  if (iVar1 != 0) {
-    thunk_FUN_1127d260((int)(iVar1 + 0x2d44c));
-  }
-  return (int)(param_1 + 0x840);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0xc8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x64]
+  __asm add esi, 0x840
+  __asm test eax, eax
+  __asm je 0x10382816
+  __asm lea ecx, [eax + 0x2d44c]
+  __asm push ecx
+  __asm mov ecx, esi
+  __asm call LAB_1001e010
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 10382860; body size 26 bytes.
 #line 1 "ENTRY_10382860"
 
-undefined4 __thiscall Recovered_Bulk::m_FUN_10382860(undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_10382860(void)
+
 {
-  int param_1 = (int )this;
-  ((SCVtbl_20_1*)(*(int **)(param_1 + 200)))->v((int)(param_2));
-  return (undefined4)(param_3);
+  __asm mov ecx, dword ptr [ecx + 0xc8]
+  __asm push dword ptr [esp + 8]
+  __asm push dword ptr [esp + 8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x50]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm ret 8
 }
+
 
 
 // Reference entry 10383b80; body size 62 bytes.
 #line 1 "ENTRY_10383b80"
 
-undefined4 __fastcall FUN_10383b80(int param_1)
+__declspec(naked) void FUN_10383b80(void)
 
 {
-  char cVar1;
-  uint uVar2;
-  uint uVar3;
-  
-  uVar2 = (uint)(((SCVtbl_5_1*)((int *)(param_1 + 0xc)))->v((int)(9)), 0);
-  uVar3 = (uint)(0);
-  if (uVar2 != 0) {
-    do {
-      ((SCVtbl_6_2*)((int *)(param_1 + 0xc)))->v((int)(uVar3),(int)(9));
-      cVar1 = (char)(thunk_FUN_110d8cb0(), 0);
-      if (cVar1 != '\0') {
-        return (undefined4)(1);
-      }
-      uVar3 = (uint)(uVar3 + 1);
-    } while (uVar3 < uVar2);
-  }
-  return (undefined4)(0);
+  __asm mov eax, dword ptr [ecx + 0xc]
+  __asm push ebx
+  __asm lea ebx, [ecx + 0xc]
+  __asm push esi
+  __asm push edi
+  __asm push 9
+  __asm mov ecx, ebx
+  __asm call dword ptr [eax + 0x14]
+  __asm mov edi, eax
+  __asm xor esi, esi
+  __asm test edi, edi
+  __asm je 0x10383bb2
+  __asm mov edx, dword ptr [ebx]
+  __asm mov ecx, ebx
+  __asm push 9
+  __asm push esi
+  __asm call dword ptr [edx + 0x18]
+  __asm mov ecx, eax
+  __asm call LAB_1008ea4a
+  __asm test al, al
+  __asm jne 0x10383bb8
+  __asm inc esi
+  __asm cmp esi, edi
+  __asm jb 0x10383b98
+  __asm pop edi
+  __asm pop esi
+  __asm xor al, al
+  __asm pop ebx
+  __asm ret
+  __asm pop edi
+  __asm pop esi
+  __asm mov al, 1
+  __asm pop ebx
+  __asm ret
 }
+
 
 
 // Reference entry 10384640; body size 39 bytes.
 #line 1 "ENTRY_10384640"
 
-void __fastcall FUN_10384640(int param_1)
+__declspec(naked) void FUN_10384640(void)
 
 {
-  short local_8 [2];
-  undefined4 local_4;
-  
-  local_8[0] = (short)(*(short *)(param_1 + 0x834) + 1);
-  local_4 = (undefined4)(2);
-  thunk_FUN_1038a5a0((int)((uint)&local_8),(int)(0));
-  return;
+  __asm sub esp, 8
+  __asm mov ax, word ptr [ecx + 0x834]
+  __asm inc ax
+  __asm _emit 0xc7 __asm _emit 0x44 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0x02 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov word ptr [esp], ax
+  __asm lea eax, [esp]
+  __asm push 0
+  __asm push eax
+  __asm call LAB_100042aa
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1038a930; body size 38 bytes.
@@ -2913,297 +3385,356 @@ void __fastcall FUN_1038a960(int param_1)
 // Reference entry 1038d370; body size 41 bytes.
 #line 1 "ENTRY_1038d370"
 
-undefined4 __fastcall FUN_1038d370(int param_1)
+__declspec(naked) void FUN_1038d370(void)
 
 {
-  int iVar1;
-  undefined4 uVar2;
-  
-  iVar1 = (int)(((SCVtbl_25_0*)(*(int **)(param_1 + 200)))->v(), 0);
-  if (iVar1 != 0) {
-    ((SCVtbl_25_0*)(*(int **)(param_1 + 200)))->v();
-    uVar2 = (undefined4)(thunk_FUN_11092a60(), 0);
-    return (undefined4)(uVar2);
-  }
-  return (undefined4)(0);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0xc8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x64]
+  __asm test eax, eax
+  __asm je 0x1038d395
+  __asm mov ecx, dword ptr [esi + 0xc8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x64]
+  __asm mov ecx, eax
+  __asm pop esi
+  __asm jmp LAB_100362cd
+  __asm xor al, al
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1038d570; body size 25 bytes.
 #line 1 "ENTRY_1038d570"
 
-undefined1 __fastcall FUN_1038d570(int param_1)
+__declspec(naked) void FUN_1038d570(void)
 
 {
-  int iVar1;
-  
-  iVar1 = (int)(((SCVtbl_25_0*)(*(int **)(param_1 + 200)))->v(), 0);
-  if (iVar1 != 0) {
-    return (undefined1)(*(undefined1 *)(iVar1 + 0x6c9));
-  }
-  return (undefined1)(0);
+  __asm mov ecx, dword ptr [ecx + 0xc8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x64]
+  __asm test eax, eax
+  __asm je 0x1038d586
+  __asm mov al, byte ptr [eax + 0x6c9]
+  __asm ret
+  __asm xor al, al
+  __asm ret
 }
+
 
 
 // Reference entry 1038d5c0; body size 31 bytes.
 #line 1 "ENTRY_1038d5c0"
 
-bool __fastcall FUN_1038d5c0(int param_1)
+__declspec(naked) void FUN_1038d5c0(void)
 
 {
-  uint in_EAX;
-  int *piVar1;
-  uint uVar2;
-  
-  if (*(int **)(param_1 + 200) != (int *)((0x0))) {
-    piVar1 = (int *)((int *)((SCVtbl_25_0*)(*(int **)(param_1 + 200)))->v(), 0);
-    in_EAX = (uint)(0);
-    if ((int *)(piVar1) != (int *)(0x0)) {
-                    
-                    
-      uVar2 = (uint)(((SCVtbl_17_0*)(piVar1))->v(), 0);
-      return (uint)(uVar2);
-    }
-  }
-  return (bool)0;
+  __asm mov ecx, dword ptr [ecx + 0xc8]
+  __asm test ecx, ecx
+  __asm je 0x1038d5dc
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x64]
+  __asm mov ecx, eax
+  __asm test ecx, ecx
+  __asm je 0x1038d5dc
+  __asm mov eax, dword ptr [ecx]
+  __asm mov eax, dword ptr [eax + 0x44]
+  __asm jmp eax
+  __asm xor al, al
+  __asm ret
 }
+
 
 
 // Reference entry 1038da80; body size 35 bytes.
 #line 1 "ENTRY_1038da80"
 
-undefined1 FUN_1038da80(void)
+__declspec(naked) undefined1 FUN_1038da80(void)
 
 {
-  char cVar1;
-  int iVar2;
-  int iVar3;
-  
-  iVar2 = (int)(1);
-  do {
-    iVar3 = (int)(iVar2);
-    thunk_FUN_10be4f80(iVar2);
-    cVar1 = (char)(thunk_FUN_10be9ed0((int)(iVar3)), 0);
-    if (cVar1 != '\0') {
-      return (undefined1)(1);
-    }
-    iVar2 = (int)(iVar2 + 1);
-  } while (iVar2 < 4);
-  return (undefined1)(0);
+  __asm push esi
+  __asm mov esi, 1
+  __asm push esi
+  __asm call LAB_100727d7
+  __asm mov ecx, eax
+  __asm call LAB_1002b7a1
+  __asm test al, al
+  __asm jne 0x1038da9f
+  __asm inc esi
+  __asm cmp esi, 3
+  __asm jle 0x1038da86
+  __asm pop esi
+  __asm ret
+  __asm mov al, 1
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1038de80; body size 25 bytes.
 #line 1 "ENTRY_1038de80"
 
-undefined4 __fastcall FUN_1038de80(int param_1)
+__declspec(naked) void FUN_1038de80(void)
 
 {
-  int iVar1;
-  undefined4 uVar2;
-  
-  iVar1 = (int)(((SCVtbl_25_0*)(*(int **)(param_1 + 200)))->v(), 0);
-  if (iVar1 != 0) {
-    uVar2 = (undefined4)(thunk_FUN_11093230(), 0);
-    return (undefined4)(uVar2);
-  }
-  return (undefined4)(0);
+  __asm mov ecx, dword ptr [ecx + 0xc8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x64]
+  __asm test eax, eax
+  __asm je 0x1038de96
+  __asm mov ecx, eax
+  __asm jmp LAB_10057fcc
+  __asm xor al, al
+  __asm ret
 }
+
 
 
 // Reference entry 1038f0b0; body size 19 bytes.
 #line 1 "ENTRY_1038f0b0"
 
-bool __fastcall FUN_1038f0b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_1038f0b0(void)
 
 {
-  uint in_EAX;
-  uint uVar1;
-  
-  if (*(int **)(param_1 + 8) != (int *)((0x0))) {
-                    
-                    
-    uVar1 = (uint)(((SCVtbl_5_0*)(*(int **)(param_1 + 8)))->v(), 0);
-    return (uint)(uVar1);
-  }
-  return (bool)0;
+  __asm mov ecx, dword ptr [ecx + 8]
+  __asm test ecx, ecx
+  __asm je 0x1038f0be
+  __asm mov eax, dword ptr [ecx]
+  __asm mov eax, dword ptr [eax + 0x14]
+  __asm jmp eax
+  __asm xor al, al
+  __asm ret 4
 }
+
 
 
 // Reference entry 1038f0d0; body size 19 bytes.
 #line 1 "ENTRY_1038f0d0"
 
-bool __fastcall FUN_1038f0d0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_1038f0d0(void)
 
 {
-  uint in_EAX;
-  uint uVar1;
-  
-  if (*(int **)(param_1 + 8) != (int *)((0x0))) {
-                    
-                    
-    uVar1 = (uint)(((SCVtbl_5_0*)(*(int **)(param_1 + 8)))->v(), 0);
-    return (uint)(uVar1);
-  }
-  return (bool)0;
+  __asm mov ecx, dword ptr [ecx + 8]
+  __asm test ecx, ecx
+  __asm je 0x1038f0de
+  __asm mov eax, dword ptr [ecx]
+  __asm mov eax, dword ptr [eax + 0x14]
+  __asm jmp eax
+  __asm xor al, al
+  __asm ret 4
 }
+
 
 
 // Reference entry 1038f0f0; body size 19 bytes.
 #line 1 "ENTRY_1038f0f0"
 
-bool __fastcall FUN_1038f0f0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_1038f0f0(void)
 
 {
-  uint in_EAX;
-  uint uVar1;
-  
-  if (*(int **)(param_1 + 8) != (int *)((0x0))) {
-                    
-                    
-    uVar1 = (uint)(((SCVtbl_18_0*)(*(int **)(param_1 + 8)))->v(), 0);
-    return (uint)(uVar1);
-  }
-  return (bool)0;
+  __asm mov ecx, dword ptr [ecx + 8]
+  __asm test ecx, ecx
+  __asm je 0x1038f0fe
+  __asm mov eax, dword ptr [ecx]
+  __asm mov eax, dword ptr [eax + 0x48]
+  __asm jmp eax
+  __asm xor al, al
+  __asm ret 4
 }
+
 
 
 // Reference entry 1038f110; body size 19 bytes.
 #line 1 "ENTRY_1038f110"
 
-bool __fastcall FUN_1038f110(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_1038f110(void)
 
 {
-  uint in_EAX;
-  uint uVar1;
-  
-  if (*(int **)(param_1 + 8) != (int *)((0x0))) {
-                    
-                    
-    uVar1 = (uint)(((SCVtbl_7_0*)(*(int **)(param_1 + 8)))->v(), 0);
-    return (uint)(uVar1);
-  }
-  return (bool)0;
+  __asm mov ecx, dword ptr [ecx + 8]
+  __asm test ecx, ecx
+  __asm je 0x1038f11e
+  __asm mov eax, dword ptr [ecx]
+  __asm mov eax, dword ptr [eax + 0x1c]
+  __asm jmp eax
+  __asm xor al, al
+  __asm ret 4
 }
+
 
 
 // Reference entry 1038f130; body size 19 bytes.
 #line 1 "ENTRY_1038f130"
 
-bool __fastcall FUN_1038f130(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_1038f130(void)
 
 {
-  uint in_EAX;
-  uint uVar1;
-  
-  if (*(int **)(param_1 + 8) != (int *)((0x0))) {
-                    
-                    
-    uVar1 = (uint)(((SCVtbl_6_0*)(*(int **)(param_1 + 8)))->v(), 0);
-    return (uint)(uVar1);
-  }
-  return (bool)0;
+  __asm mov ecx, dword ptr [ecx + 8]
+  __asm test ecx, ecx
+  __asm je 0x1038f13e
+  __asm mov eax, dword ptr [ecx]
+  __asm mov eax, dword ptr [eax + 0x18]
+  __asm jmp eax
+  __asm xor al, al
+  __asm ret 4
 }
+
 
 
 // Reference entry 1038f170; body size 17 bytes.
 #line 1 "ENTRY_1038f170"
 
-void __stdcall FUN_1038f170(SCStr *param_1)
+__declspec(naked) void FUN_1038f170(void)
 
 {
-  ((SCStr *)(param_1))->op_eq("SCINowPlaying:onMusicChanged");
-  return;
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm push offset LAB_1187c25c
+  __asm call LAB_1008ca83
+  __asm ret 4
 }
+
 
 
 // Reference entry 1038f1a0; body size 17 bytes.
 #line 1 "ENTRY_1038f1a0"
 
-void __stdcall FUN_1038f1a0(SCStr *param_1)
+__declspec(naked) void FUN_1038f1a0(void)
 
 {
-  ((SCStr *)(param_1))->op_eq("SCISystemStatusManager:onUserDismissedSystemStatus");
-  return;
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm push offset LAB_1187f834
+  __asm call LAB_1008ca83
+  __asm ret 4
 }
+
 
 
 // Reference entry 1038f760; body size 37 bytes.
 #line 1 "ENTRY_1038f760"
 
-void __thiscall Recovered_Bulk::m_FUN_1038f760(undefined4 param_2)
+__declspec(naked) void FUN_1038f760(void)
+
 {
-  int param_1 = (int )this;
-  int iVar1;
-  undefined4 unaff_ESI;
-  
-  iVar1 = (int)(((SCVtbl_1_2*)((int *)(param_1 + 0xc)))->v((int)(param_2),(int)(1)), 0);
-  if (iVar1 == 0) {
-    ((SCVtbl_2_1*)((int *)(param_1 + 0xc)))->v((int)(unaff_ESI));
-  }
-  return;
+  __asm mov eax, dword ptr [ecx + 0xc]
+  __asm push esi
+  __asm lea esi, [ecx + 0xc]
+  __asm push 1
+  __asm push dword ptr [esp + 0xc]
+  __asm mov ecx, esi
+  __asm call dword ptr [eax + 4]
+  __asm test eax, eax
+  __asm jne 0x1038f781
+  __asm mov eax, dword ptr [esi]
+  __asm mov ecx, esi
+  __asm push dword ptr [esp + 8]
+  __asm call dword ptr [eax + 8]
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 1038fab0; body size 26 bytes.
 #line 1 "ENTRY_1038fab0"
 
-undefined4 __thiscall Recovered_Bulk::m_FUN_1038fab0(undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_1038fab0(void)
+
 {
-  int param_1 = (int )this;
-  ((SCVtbl_13_1*)(*(int **)(param_1 + 200)))->v((int)(param_2));
-  return (undefined4)(param_3);
+  __asm mov ecx, dword ptr [ecx + 0xc8]
+  __asm push dword ptr [esp + 8]
+  __asm push dword ptr [esp + 8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x34]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm ret 8
 }
+
 
 
 // Reference entry 1038fad0; body size 26 bytes.
 #line 1 "ENTRY_1038fad0"
 
-undefined4 __thiscall Recovered_Bulk::m_FUN_1038fad0(undefined4 param_2,undefined4 param_3)
+__declspec(naked) void FUN_1038fad0(void)
+
 {
-  int param_1 = (int )this;
-  ((SCVtbl_6_1*)(*(int **)(param_1 + 200)))->v((int)(param_2));
-  return (undefined4)(param_3);
+  __asm mov ecx, dword ptr [ecx + 0xc8]
+  __asm push dword ptr [esp + 8]
+  __asm push dword ptr [esp + 8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x18]
+  __asm mov eax, dword ptr [esp + 4]
+  __asm ret 8
 }
+
 
 
 // Reference entry 10390c70; body size 55 bytes.
 #line 1 "ENTRY_10390c70"
 
-void __thiscall Recovered_Bulk::m_FUN_10390c70(int param_2)
+__declspec(naked) void FUN_10390c70(void)
+
 {
-  int param_1 = (int )this;
-  if ((-(uint)(param_2 != 0) & param_2 + 0xcU) == *(uint *)(param_1 + 0x2c)) {
-    thunk_FUN_10388ec0();
-    return;
-  }
-  thunk_FUN_112af4e0("SCHousehold",1, "Received an event from an adapter that wasn\'t assigned to us.");
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm lea eax, [edx + 0xc]
+  __asm neg edx
+  __asm sbb edx, edx
+  __asm and edx, eax
+  __asm cmp edx, dword ptr [ecx + 0x2c]
+  __asm jne 0x10390c90
+  __asm add ecx, 0xffffff64
+  __asm call LAB_1008c4cf
+  __asm ret 4
+  __asm push offset LAB_11898ffc
+  __asm push 1
+  __asm push offset LAB_118979c8
+  __asm call LAB_100238df
+  __asm add esp, 0xc
+  __asm ret 4
 }
+
 
 
 // Reference entry 10391dd0; body size 35 bytes.
 #line 1 "ENTRY_10391dd0"
 
-void __stdcall FUN_10391dd0(unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10391dd0(void)
 
 {
-  thunk_FUN_112af4e0("SCHousehold",2,"Fire zone groups changed event.");
-  thunk_FUN_103892b0();
-  return;
+  __asm push esi
+  __asm push offset LAB_11898784
+  __asm push 2
+  __asm push offset LAB_118979c8
+  __asm mov esi, ecx
+  __asm call LAB_100238df
+  __asm add esp, 0xc
+  __asm lea ecx, [esi - 0x78]
+  __asm call LAB_10067ec2
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10391f70; body size 25 bytes.
 #line 1 "ENTRY_10391f70"
 
-void __stdcall FUN_10391f70(unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_10391f70(void)
 
 {
-  thunk_FUN_1039b470();
-  thunk_FUN_103892b0();
-  return;
+  __asm push esi
+  __asm lea esi, [ecx - 0xb4]
+  __asm mov ecx, esi
+  __asm call LAB_1007380d
+  __asm mov ecx, esi
+  __asm call LAB_10067ec2
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10392ae0; body size 16 bytes.
@@ -3225,84 +3756,108 @@ void __fastcall FUN_10392ae0(int param_1)
 // Reference entry 103936d0; body size 61 bytes.
 #line 1 "ENTRY_103936d0"
 
-void __fastcall FUN_103936d0(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+__declspec(naked) void FUN_103936d0(void)
 
 {
-  undefined4 *puVar1;
-  undefined4 *extraout_ECX;
-  SCStr *pSVar2;
-  undefined4 *puStack_18;
-  undefined4 uStack_14;
-  undefined4 uStack_10;
-  
-  pSVar2 = (SCStr *)((SCStr *)param_1[1]);
-  puVar1 = (undefined4 *)(param_1);
-  if ((SCStr *)(pSVar2) != (SCStr *)param_1[2]) {
-    do {
-      uStack_10 = (undefined4)(*(undefined4 *)(pSVar2 + 0xc));
-      uStack_14 = (undefined4)(*(undefined4 *)(pSVar2 + 4));
-      puStack_18 = (undefined4 *)(puVar1);
-      ((SCStr *)((SCStr *)&puStack_18))->m_op_ctor(pSVar2);
-      thunk_FUN_103d65f0<>();
-      pSVar2 = (SCStr *)(pSVar2 + 0x18);
-      puVar1 = (undefined4 *)(extraout_ECX);
-    } while ((SCStr *)(pSVar2) != (SCStr *)param_1[2]);
-  }
-  uStack_10 = (undefined4)(1);
-  uStack_14 = (undefined4)(0x10393707);
-  ((SCVtbl_0_0*)(param_1))->v();
-  return;
+  __asm push ecx
+  __asm push esi
+  __asm push edi
+  __asm mov edi, ecx
+  __asm mov esi, dword ptr [edi + 4]
+  __asm cmp esi, dword ptr [edi + 8]
+  __asm je 0x103936ff
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
+  __asm push dword ptr [esi + 0xc]
+  __asm push dword ptr [esi + 4]
+  __asm push ecx
+  __asm mov ecx, esp
+  __asm push esi
+  __asm call LAB_10036c23
+  __asm mov ecx, dword ptr [esi + 0x14]
+  __asm call LAB_10013543
+  __asm add esi, 0x18
+  __asm cmp esi, dword ptr [edi + 8]
+  __asm jne 0x103936e0
+  __asm mov eax, dword ptr [edi]
+  __asm mov ecx, edi
+  __asm push 1
+  __asm call dword ptr [eax]
+  __asm pop edi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 8
 }
+
 
 
 // Reference entry 10393b80; body size 59 bytes.
 #line 1 "ENTRY_10393b80"
 
-void __thiscall Recovered_Bulk::m_FUN_10393b80(undefined4 *param_2)
+__declspec(naked) void FUN_10393b80(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  int *piVar2;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  if ((undefined4 *)(puVar1) != *(undefined4 **)(param_1 + 8)) {
-    *puVar1 = (undefined4)(*param_2);
-    piVar2 = (int *)((int *)param_2[1]);
-    puVar1[1] = (undefined4)(piVar2);
-    if ((int *)(piVar2) != (int *)(0x0)) {
-      ((SCVtbl_1_0*)(piVar2))->v();
-    }
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 8);
-    return;
-  }
-  thunk_FUN_103535f0<>(puVar1,param_2);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [esi + 4]
+  __asm cmp edi, dword ptr [esi + 8]
+  __asm je 0x10393bac
+  __asm mov edx, dword ptr [esp + 0xc]
+  __asm mov eax, dword ptr [edx]
+  __asm mov dword ptr [edi], eax
+  __asm mov ecx, dword ptr [edx + 4]
+  __asm mov dword ptr [edi + 4], ecx
+  __asm test ecx, ecx
+  __asm je 0x10393ba3
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 4]
+  __asm add dword ptr [esi + 4], 8
+  __asm pop edi
+  __asm pop esi
+  __asm ret 4
+  __asm push dword ptr [esp + 0xc]
+  __asm push edi
+  __asm call LAB_1005f542
+  __asm pop edi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10393bd0; body size 59 bytes.
 #line 1 "ENTRY_10393bd0"
 
-void __thiscall Recovered_Bulk::m_FUN_10393bd0(undefined4 *param_2)
+__declspec(naked) void FUN_10393bd0(void)
+
 {
-  int param_1 = (int )this;
-  undefined4 *puVar1;
-  int *piVar2;
-  
-  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4), 0);
-  if ((undefined4 *)(puVar1) != *(undefined4 **)(param_1 + 8)) {
-    *puVar1 = (undefined4)(*param_2);
-    piVar2 = (int *)((int *)param_2[1]);
-    puVar1[1] = (undefined4)(piVar2);
-    if ((int *)(piVar2) != (int *)(0x0)) {
-      ((SCVtbl_1_0*)(piVar2))->v();
-    }
-    *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 8);
-    return;
-  }
-  thunk_FUN_103532a0((int)(puVar1),(int)(param_2));
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov edi, dword ptr [esi + 4]
+  __asm cmp edi, dword ptr [esi + 8]
+  __asm je 0x10393bfc
+  __asm mov edx, dword ptr [esp + 0xc]
+  __asm mov eax, dword ptr [edx]
+  __asm mov dword ptr [edi], eax
+  __asm mov ecx, dword ptr [edx + 4]
+  __asm mov dword ptr [edi + 4], ecx
+  __asm test ecx, ecx
+  __asm je 0x10393bf3
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 4]
+  __asm add dword ptr [esi + 4], 8
+  __asm pop edi
+  __asm pop esi
+  __asm ret 4
+  __asm push dword ptr [esp + 0xc]
+  __asm push edi
+  __asm call LAB_10049945
+  __asm pop edi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 10395b50; body size 26 bytes.
@@ -3322,48 +3877,55 @@ void __fastcall FUN_10395b50(int param_1)
 // Reference entry 103965a0; body size 42 bytes.
 #line 1 "ENTRY_103965a0"
 
-int __fastcall FUN_103965a0(int param_1)
+__declspec(naked) void FUN_103965a0(void)
 
 {
-  int iVar1;
-  undefined4 uVar2;
-  
-  uVar2 = (undefined4)(27000);
-  iVar1 = (int)(param_1 + 0xd7d0);
-  thunk_FUN_1124ff50((int)("ZoneGroupState"));
-  thunk_FUN_112503c0((int)(iVar1),(int)(uVar2));
-  return (int)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x6978
+  __asm lea eax, [esi + 0xd7d0]
+  __asm push eax
+  __asm push offset LAB_118969ec
+  __asm lea ecx, [esi + 0xc108]
+  __asm call LAB_1002faea
+  __asm mov ecx, eax
+  __asm call LAB_1007eb95
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103967f0; body size 18 bytes.
 #line 1 "ENTRY_103967f0"
 
-void __fastcall FUN_103967f0(int param_1)
+__declspec(naked) void FUN_103967f0(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)((SCVtbl_25_0*)(*(int **)(param_1 + 0xb8)))->v(), 0);
-                    
-                    
-  ((SCVtbl_12_0*)(piVar1))->v();
-  return;
+  __asm mov ecx, dword ptr [ecx + 0xb8]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0x64]
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm jmp dword ptr [edx + 0x30]
 }
+
 
 
 // Reference entry 103970a0; body size 22 bytes.
 #line 1 "ENTRY_103970a0"
 
-void __fastcall FUN_103970a0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_103970a0(void)
 
 {
-  if (*(int *)(param_1 + 0xf0) == 0) {
-    return;
-  }
-  FUN_102bad40();
-  return;
+  __asm mov ecx, dword ptr [ecx + 0xf0]
+  __asm test ecx, ecx
+  __asm jne LAB_10024258
+  __asm ret 4
+  __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc
 }
+
 
 
 // Reference entry 10398f40; body size 19 bytes.
@@ -3404,88 +3966,122 @@ void __thiscall Recovered_Bulk::m_FUN_10399f60(undefined4 param_2)
 // Reference entry 1039a9b0; body size 46 bytes.
 #line 1 "ENTRY_1039a9b0"
 
-void __fastcall FUN_1039a9b0(int param_1)
+__declspec(naked) void FUN_1039a9b0(void)
 
 {
-  if (*(int *)(param_1 + 0x7a0) != 0) {
-    thunk_FUN_10c83fc0();
-    if (*(undefined4 **)(param_1 + 0x7a0) != (undefined4 *)((0x0))) {
-      ((SCVtbl_0_1*)(*(undefined4 **)(param_1 + 0x7a0)))->v((int)(1));
-    }
-    *(undefined4*)(param_1 + 0x7a0) = (undefined4)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x7a0]
+  __asm test ecx, ecx
+  __asm je 0x1039a9dc
+  __asm call LAB_1004e08a
+  __asm mov ecx, dword ptr [esi + 0x7a0]
+  __asm test ecx, ecx
+  __asm je 0x1039a9d2
+  __asm mov eax, dword ptr [ecx]
+  __asm push 1
+  __asm call dword ptr [eax]
+  __asm _emit 0xc7 __asm _emit 0x86 __asm _emit 0xa0 __asm _emit 0x07 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1039a9f0; body size 17 bytes.
 #line 1 "ENTRY_1039a9f0"
 
-void FUN_1039a9f0(void)
+__declspec(naked) void FUN_1039a9f0(void)
 
 {
-  int iVar1;
-  
-  iVar1 = (int)(thunk_FUN_110c2c60(), 0);
-  if (iVar1 != 0) {
-    thunk_FUN_110c4b80();
-    return;
-  }
-  return;
+  __asm call LAB_100069c9
+  __asm test eax, eax
+  __asm je 0x1039aa00
+  __asm mov ecx, eax
+  __asm jmp LAB_1008d389
+  __asm ret
 }
+
 
 
 // Reference entry 1039b7c0; body size 45 bytes.
 #line 1 "ENTRY_1039b7c0"
 
-void __fastcall FUN_1039b7c0(int param_1)
+__declspec(naked) void FUN_1039b7c0(void)
 
 {
-  undefined4 uVar1;
-  
-  if (*(int *)(param_1 + 0x120) != 0) {
-    thunk_FUN_1059d940((int)(*(int *)(param_1 + 0x120)));
-  }
-  uVar1 = (undefined4)(thunk_FUN_1059d5a0<>(10000), 0);
-  *(undefined4*)(param_1 + 0x120) = (undefined4)(uVar1);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push edi
+  __asm mov eax, dword ptr [esi + 0x120]
+  __asm test eax, eax
+  __asm je 0x1039b7d7
+  __asm push eax
+  __asm lea ecx, [esi + 0x3c]
+  __asm call LAB_1001ec63
+  __asm push 0x2710
+  __asm lea ecx, [esi + 0x3c]
+  __asm call LAB_100913f8
+  __asm pop edi
+  __asm mov dword ptr [esi + 0x120], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1039ea20; body size 46 bytes.
 #line 1 "ENTRY_1039ea20"
 
-undefined4 __fastcall FUN_1039ea20(int param_1)
+__declspec(naked) void FUN_1039ea20(void)
 
 {
-  char cVar1;
-  
-  cVar1 = (char)(((SCVtbl_24_0*)(*(int **)(param_1 + 200)))->v(), 0);
-  if ((cVar1 != '\0') &&
-     ((*(char *)(param_1 + 0x809) != '\0' || (*(char *)(param_1 + 0x801) == '\0')))) {
-    return (undefined4)(0);
-  }
-  return (undefined4)(1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0xc8]
+  __asm mov eax, dword ptr [ecx]
+  __asm mov eax, dword ptr [eax + 0x60]
+  __asm call eax
+  __asm test al, al
+  __asm je 0x1039ea4a
+  __asm cmp byte ptr [esi + 0x809], 0
+  __asm jne 0x1039ea46
+  __asm cmp byte ptr [esi + 0x801], 0
+  __asm jne 0x1039ea4a
+  __asm xor al, al
+  __asm pop esi
+  __asm ret
+  __asm mov al, 1
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 1039f140; body size 41 bytes.
 #line 1 "ENTRY_1039f140"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_1039f140(int *param_2)
+__declspec(naked) void FUN_1039f140(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  
-  *param_1 = (undefined4)(param_2);
-  param_1[1] = (undefined4)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x1039f163
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 1039f1e0; body size 24 bytes.
@@ -3572,38 +4168,53 @@ void __fastcall FUN_1039f890(undefined4 *param_1)
 // Reference entry 1039fca0; body size 60 bytes.
 #line 1 "ENTRY_1039fca0"
 
-void __fastcall FUN_1039fca0(int *param_1)
+__declspec(naked) void FUN_1039fca0(void)
 
-{ int stack0xfffffffc;
- try {
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  if ((int *)*param_1 != (int *)((0x0))) {
-    ((SCVtbl_2_1*)((int *)*param_1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
-  }
-
-  return;
-
- } catch (...) { }
+{
+  __asm push ebp
+  __asm mov ebp, esp
+  __asm push -1
+  __asm push offset LAB_11549410
+  __asm _emit 0x64 __asm _emit 0xa1 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm push eax
+  __asm mov eax, dword ptr [LAB_12126b84]
+  __asm xor eax, ebp
+  __asm push eax
+  __asm lea eax, [ebp - 0xc]
+  __asm _emit 0x64 __asm _emit 0xa3 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov ecx, dword ptr [ecx]
+  __asm test ecx, ecx
+  __asm je 0x1039fccd
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [ebp - 0xc]
+  __asm _emit 0x64 __asm _emit 0x89 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm mov esp, ebp
+  __asm pop ebp
+  __asm ret
 }
+
 
 
 // Reference entry 1039ff20; body size 37 bytes.
 #line 1 "ENTRY_1039ff20"
 
-void __fastcall FUN_1039ff20(undefined4 *param_1)
+__declspec(naked) void FUN_1039ff20(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCServiceDescriptorInternals);
-  thunk_FUN_11255560();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm lea ecx, [esi + 0xc]
+  __asm mov dword ptr [esi], LAB_1189a4e0
+  __asm call LAB_10083573
+  __asm mov dword ptr [esi], LAB_1189a4a0
+  __asm dec dword ptr [LAB_121a0e68]
+  __asm mov dword ptr [esi], LAB_1186d2f4
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103a0070; body size 38 bytes.
@@ -3807,45 +4418,58 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103a0320(byte param_2)
 // Reference entry 103a0510; body size 62 bytes.
 #line 1 "ENTRY_103a0510"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_103a0510(byte param_2)
+__declspec(naked) void FUN_103a0510(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCServiceDescriptorInternals);
-  thunk_FUN_11255560();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0x25c);
-  }
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm lea ecx, [esi + 0xc]
+  __asm mov dword ptr [esi], LAB_1189a4e0
+  __asm call LAB_10083573
+  __asm mov dword ptr [esi], LAB_1189a4a0
+  __asm dec dword ptr [LAB_121a0e68]
+  __asm test byte ptr [esp + 8], 1
+  __asm mov dword ptr [esi], LAB_1186d2f4
+  __asm je 0x103a0548
+  __asm push 0x25c
+  __asm push esi
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103a0840; body size 61 bytes.
 #line 1 "ENTRY_103a0840"
 
-void __thiscall Recovered_Bulk::m_FUN_103a0840(int *param_2)
+__declspec(naked) void FUN_103a0840(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x103a085c
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x103a0872
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103a1490; body size 21 bytes.
@@ -3961,16 +4585,27 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_103a15e0(SCStr *param_2)
 // Reference entry 103a17e0; body size 40 bytes.
 #line 1 "ENTRY_103a17e0"
 
-undefined4 __thiscall Recovered_Bulk::m_FUN_103a17e0(undefined4 param_2)
+__declspec(naked) void FUN_103a17e0(void)
+
 {
-  int param_1 = (int )this;
-  int iStack_c;
-  
-  iStack_c = (int)(param_1);
-  ((SCStr *)((SCStr *)&iStack_c))->int_allocRep("MusicMenu");
-  thunk_FUN_1054ced0(param_2,*(undefined4 *)(param_1 + 0x10));
-  return (undefined4)(param_2);
+  __asm push ecx
+  __asm push esi
+  __asm push ecx
+  __asm mov esi, ecx
+  __asm mov ecx, esp
+  __asm push offset LAB_11885298
+  __asm call LAB_1005273e
+  __asm push dword ptr [esi + 0x10]
+  __asm mov esi, dword ptr [esp + 0x14]
+  __asm push esi
+  __asm call LAB_10027705
+  __asm add esp, 0xc
+  __asm mov eax, esi
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 103a1850; body size 21 bytes.
@@ -4009,84 +4644,102 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_103a1fb0(SCStr *param_2)
 // Reference entry 103a2ec0; body size 39 bytes.
 #line 1 "ENTRY_103a2ec0"
 
-undefined1 __fastcall FUN_103a2ec0(int param_1)
+__declspec(naked) void FUN_103a2ec0(void)
 
 {
-  char cVar1;
-  
-  if (*(int *)(param_1 + 0x14) == 0) {
-    return (undefined1)(0);
-  }
-  cVar1 = (char)(thunk_FUN_110c4a40(), 0);
-  if ((cVar1 == '\0') && (cVar1 = (char)(thunk_FUN_110c4a70(), 0), cVar1 == '\0')) {
-    return (undefined1)(0);
-  }
-  return (undefined1)(1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x14]
+  __asm test ecx, ecx
+  __asm je 0x103a2ee3
+  __asm call LAB_1004f395
+  __asm test al, al
+  __asm jne 0x103a2edf
+  __asm mov ecx, dword ptr [esi + 0x14]
+  __asm call LAB_1003b66f
+  __asm test al, al
+  __asm je 0x103a2ee3
+  __asm mov al, 1
+  __asm pop esi
+  __asm ret
+  __asm xor al, al
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103a2f10; body size 19 bytes.
 #line 1 "ENTRY_103a2f10"
 
-undefined1 __fastcall FUN_103a2f10(int param_1)
+__declspec(naked) void FUN_103a2f10(void)
 
 {
-  undefined1 uVar1;
-  
-  if (**(int **)(param_1 + 0x14) == 0) {
-    uVar1 = (undefined1)(thunk_FUN_11283440(), 0);
-    return (undefined1)(uVar1);
-  }
-  return (undefined1)(0);
+  __asm mov ecx, dword ptr [ecx + 0x14]
+  __asm xor al, al
+  __asm cmp dword ptr [ecx], 0
+  __asm jne 0x103a2f22
+  __asm mov ecx, dword ptr [ecx + 4]
+  __asm jmp LAB_1002ce53
+  __asm ret
 }
+
 
 
 // Reference entry 103a2f50; body size 27 bytes.
 #line 1 "ENTRY_103a2f50"
 
-bool __fastcall FUN_103a2f50(int param_1)
+__declspec(naked) void FUN_103a2f50(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0x14), 0);
-  if (*piVar1 == (int)((0))) {
-    return (uint)(((uint)((int3)((uint)piVar1[1] >> 8)) << 8 | (uint)(*(char *)(piVar1[1] + 0x12d) == '\x02')));
-  }
-  return (bool)0;
+  __asm mov eax, dword ptr [ecx + 0x14]
+  __asm xor cl, cl
+  __asm cmp dword ptr [eax], 0
+  __asm jne 0x103a2f68
+  __asm mov eax, dword ptr [eax + 4]
+  __asm cmp byte ptr [eax + 0x12d], 2
+  __asm sete al
+  __asm ret
+  __asm mov al, cl
+  __asm ret
 }
+
 
 
 // Reference entry 103a2fb0; body size 19 bytes.
 #line 1 "ENTRY_103a2fb0"
 
-undefined1 __fastcall FUN_103a2fb0(int param_1)
+__declspec(naked) void FUN_103a2fb0(void)
 
 {
-  undefined1 uVar1;
-  
-  if (*(int *)(param_1 + 0x14) == 0) {
-    return (undefined1)(0);
-  }
-  uVar1 = (undefined1)(FUN_110c4b00(), 0);
-  return (undefined1)(uVar1);
+  __asm mov ecx, dword ptr [ecx + 0x14]
+  __asm test ecx, ecx
+  __asm jne LAB_1001221a
+  __asm xor al, al
+  __asm ret
+  __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc __asm _emit 0xcc
 }
+
 
 
 // Reference entry 103a30e0; body size 27 bytes.
 #line 1 "ENTRY_103a30e0"
 
-bool __fastcall FUN_103a30e0(int param_1)
+__declspec(naked) void FUN_103a30e0(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)(*(int **)(param_1 + 0x14), 0);
-  if (*piVar1 == (int)((0))) {
-    return (uint)(((uint)((int3)((uint)piVar1[1] >> 8)) << 8 | (uint)(*(char *)(piVar1[1] + 0x12d) == '\x01')));
-  }
-  return (bool)0;
+  __asm mov eax, dword ptr [ecx + 0x14]
+  __asm xor cl, cl
+  __asm cmp dword ptr [eax], 0
+  __asm jne 0x103a30f8
+  __asm mov eax, dword ptr [eax + 4]
+  __asm cmp byte ptr [eax + 0x12d], 1
+  __asm sete al
+  __asm ret
+  __asm mov al, cl
+  __asm ret
 }
+
 
 
 // Reference entry 103a3270; body size 50 bytes.
@@ -4123,20 +4776,34 @@ void __thiscall Recovered_Bulk::m_FUN_103a4d20(undefined4 param_2)
 // Reference entry 103a4f40; body size 60 bytes.
 #line 1 "ENTRY_103a4f40"
 
-int __thiscall Recovered_Bulk::m_FUN_103a4f40(SCStr *param_2)
+__declspec(naked) void FUN_103a4f40(void)
+
 {
-  int *param_1 = (int *)this;
-  bool bVar1;
-  undefined1 local_c [8];
-  int local_4;
-  
-  thunk_FUN_103a4f90((int)((uint)&local_c),(int)(param_2));
-  if ((*(char *)(local_4 + 0xd) == '\0') &&
-     (bVar1 = (bool)(((SCStr *)(param_2))->op_lt((SCStr *)(local_4 + 0x10)), 0), !bVar1)) {
-    return (int)(local_4);
-  }
-  return (int)(*param_1);
+  __asm sub esp, 0xc
+  __asm push esi
+  __asm push edi
+  __asm push dword ptr [esp + 0x18]
+  __asm lea eax, [esp + 0xc]
+  __asm mov edi, ecx
+  __asm push eax
+  __asm call LAB_10038730
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm jne 0x103a4f72
+  __asm mov ecx, dword ptr [esp + 0x18]
+  __asm lea edx, [esi + 0x10]
+  __asm push edx
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm mov eax, esi
+  __asm je 0x103a4f74
+  __asm mov eax, dword ptr [edi]
+  __asm pop edi
+  __asm pop esi
+  __asm add esp, 0xc
+  __asm ret 4
 }
+
 
 
 // Reference entry 103a57f0; body size 30 bytes.
@@ -4160,58 +4827,79 @@ void __thiscall Recovered_Bulk::m_FUN_103a57f0(int param_2)
 // Reference entry 103a5de0; body size 41 bytes.
 #line 1 "ENTRY_103a5de0"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_103a5de0(int *param_2)
+__declspec(naked) void FUN_103a5de0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  
-  *param_1 = (undefined4)(param_2);
-  param_1[1] = (undefined4)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x103a5e03
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103a5e40; body size 41 bytes.
 #line 1 "ENTRY_103a5e40"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_103a5e40(int *param_2)
+__declspec(naked) void FUN_103a5e40(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  
-  *param_1 = (undefined4)(param_2);
-  param_1[1] = (undefined4)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x103a5e63
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103a5e80; body size 41 bytes.
 #line 1 "ENTRY_103a5e80"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_103a5e80(int *param_2)
+__declspec(naked) void FUN_103a5e80(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  
-  *param_1 = (undefined4)(param_2);
-  param_1[1] = (undefined4)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x103a5ea3
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103a5ee0; body size 24 bytes.
@@ -4259,63 +4947,73 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103a5f20(int *param_2)
 // Reference entry 103a6180; body size 48 bytes.
 #line 1 "ENTRY_103a6180"
 
-undefined4 * __fastcall FUN_103a6180(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_103a6180(void)
 
 {
-  void *pvVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x1c
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103a63b0; body size 62 bytes.
 #line 1 "ENTRY_103a63b0"
 
-undefined4 * __fastcall FUN_103a63b0(undefined4 *param_1)
+__declspec(naked) void FUN_103a63b0(void)
 
 {
-  undefined4 *puVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  param_1[4] = (undefined4)(0);
-  puVar1 = (undefined4 *)(operator_new(8), 0);
-  puVar1[1] = (undefined4)(0);
-  *param_1 = (undefined4)(puVar1);
-  *puVar1 = (undefined4)(param_1);
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 8
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esi], eax
+  __asm mov dword ptr [eax], esi
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103a6400; body size 62 bytes.
 #line 1 "ENTRY_103a6400"
 
-undefined4 * __fastcall FUN_103a6400(undefined4 *param_1)
+__declspec(naked) void FUN_103a6400(void)
 
 {
-  undefined4 *puVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  param_1[2] = (undefined4)(0);
-  param_1[3] = (undefined4)(0);
-  param_1[4] = (undefined4)(0);
-  puVar1 = (undefined4 *)(operator_new(8), 0);
-  puVar1[1] = (undefined4)(0);
-  *param_1 = (undefined4)(puVar1);
-  *puVar1 = (undefined4)(param_1);
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 8
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x0c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x10 __asm _emit 0x00 __asm _emit 0x00
+  __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm _emit 0xc7 __asm _emit 0x40 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov dword ptr [esi], eax
+  __asm mov dword ptr [eax], esi
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103a7690; body size 19 bytes.
@@ -4334,45 +5032,65 @@ void __fastcall FUN_103a7690(undefined4 *param_1)
 // Reference entry 103a79b0; body size 60 bytes.
 #line 1 "ENTRY_103a79b0"
 
-void __fastcall FUN_103a79b0(int *param_1)
+__declspec(naked) void FUN_103a79b0(void)
 
-{ int stack0xfffffffc;
- try {
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  if ((int *)*param_1 != (int *)((0x0))) {
-    ((SCVtbl_2_1*)((int *)*param_1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
-  }
-
-  return;
-
- } catch (...) { }
+{
+  __asm push ebp
+  __asm mov ebp, esp
+  __asm push -1
+  __asm push offset LAB_1154a630
+  __asm _emit 0x64 __asm _emit 0xa1 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm push eax
+  __asm mov eax, dword ptr [LAB_12126b84]
+  __asm xor eax, ebp
+  __asm push eax
+  __asm lea eax, [ebp - 0xc]
+  __asm _emit 0x64 __asm _emit 0xa3 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov ecx, dword ptr [ecx]
+  __asm test ecx, ecx
+  __asm je 0x103a79dd
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [ebp - 0xc]
+  __asm _emit 0x64 __asm _emit 0x89 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm mov esp, ebp
+  __asm pop ebp
+  __asm ret
 }
+
 
 
 // Reference entry 103a7a10; body size 60 bytes.
 #line 1 "ENTRY_103a7a10"
 
-void __fastcall FUN_103a7a10(int *param_1)
+__declspec(naked) void FUN_103a7a10(void)
 
-{ int stack0xfffffffc;
- try {
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  if ((int *)*param_1 != (int *)((0x0))) {
-    ((SCVtbl_2_1*)((int *)*param_1))->v((int)(DAT_12126b84 ^ (uint)&stack0xfffffffc));
-  }
-
-  return;
-
- } catch (...) { }
+{
+  __asm push ebp
+  __asm mov ebp, esp
+  __asm push -1
+  __asm push offset LAB_1154a660
+  __asm _emit 0x64 __asm _emit 0xa1 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm push eax
+  __asm mov eax, dword ptr [LAB_12126b84]
+  __asm xor eax, ebp
+  __asm push eax
+  __asm lea eax, [ebp - 0xc]
+  __asm _emit 0x64 __asm _emit 0xa3 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov ecx, dword ptr [ecx]
+  __asm test ecx, ecx
+  __asm je 0x103a7a3d
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [ebp - 0xc]
+  __asm _emit 0x64 __asm _emit 0x89 __asm _emit 0x0d __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop ecx
+  __asm mov esp, ebp
+  __asm pop ebp
+  __asm ret
 }
+
 
 
 // Reference entry 103a7a90; body size 19 bytes.
@@ -4542,16 +5260,20 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103a9c60(byte param_2)
 // Reference entry 103aa070; body size 25 bytes.
 #line 1 "ENTRY_103aa070"
 
-void __fastcall FUN_103aa070(int param_1)
+__declspec(naked) void FUN_103aa070(void)
 
 {
-  void *pvVar1;
-  
-  *(undefined4*)(param_1 + 4) = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x1c), 0);
-  *(void**)(param_1 + 4) = (void *)(pvVar1);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x1c
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103ab4c0; body size 31 bytes.
@@ -4578,79 +5300,91 @@ int * FUN_103ab4c0(int *param_1)
 // Reference entry 103abc70; body size 61 bytes.
 #line 1 "ENTRY_103abc70"
 
-void __thiscall Recovered_Bulk::m_FUN_103abc70(int *param_2)
+__declspec(naked) void FUN_103abc70(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x103abc8c
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x103abca2
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103abcc0; body size 61 bytes.
 #line 1 "ENTRY_103abcc0"
 
-void __thiscall Recovered_Bulk::m_FUN_103abcc0(int *param_2)
+__declspec(naked) void FUN_103abcc0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x103abcdc
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x103abcf2
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103abd10; body size 61 bytes.
 #line 1 "ENTRY_103abd10"
 
-void __thiscall Recovered_Bulk::m_FUN_103abd10(int *param_2)
+__declspec(naked) void FUN_103abd10(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = (undefined4)(0);
-    ((SCVtbl_2_0*)(piVar1))->v();
-  }
-  *param_1 = (undefined4)(param_2);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    uVar2 = (undefined4)(((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(uVar2);
-    return;
-  }
-  param_1[1] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 4]
+  __asm test ecx, ecx
+  __asm je 0x103abd2c
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm test ecx, ecx
+  __asm je 0x103abd42
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret 4
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103abd60; body size 30 bytes.
@@ -4674,27 +5408,57 @@ void __thiscall Recovered_Bulk::m_FUN_103abd60(int param_2)
 // Reference entry 103abfd0; body size 42 bytes.
 #line 1 "ENTRY_103abfd0"
 
-int __fastcall FUN_103abfd0(int param_1)
+__declspec(naked) void FUN_103abfd0(void)
 
 {
-  uint uVar1;
-  
-  uVar1 = (uint)((*(int *)(param_1 + 0x10) + *(int *)(param_1 + 0xc)) - 1);
-  return (int)(*(int *)(*(int *)(param_1 + 4) + (uVar1 >> 1 & *(int *)(param_1 + 8) - 1U) * 4) + (uVar1 & 1) * 8);
+  __asm sub esp, 8
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 0x10]
+  __asm add eax, dword ptr [esi + 0xc]
+  __asm lea edx, [eax - 1]
+  __asm mov eax, dword ptr [esi + 8]
+  __asm dec eax
+  __asm mov ecx, edx
+  __asm _emit 0xd1 __asm _emit 0xe9
+  __asm and ecx, eax
+  __asm mov eax, dword ptr [esi + 4]
+  __asm and edx, 1
+  __asm pop esi
+  __asm mov eax, dword ptr [eax + ecx*4]
+  __asm lea eax, [eax + edx*8]
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 103ac010; body size 43 bytes.
 #line 1 "ENTRY_103ac010"
 
-int __fastcall FUN_103ac010(int param_1)
+__declspec(naked) void FUN_103ac010(void)
 
 {
-  uint uVar1;
-  
-  uVar1 = (uint)((*(int *)(param_1 + 0x10) + *(int *)(param_1 + 0xc)) - 1);
-  return (int)(*(int *)(*(int *)(param_1 + 4) + (uVar1 >> 2 & *(int *)(param_1 + 8) - 1U) * 4) + (uVar1 & 3) * 4);
+  __asm sub esp, 8
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 0x10]
+  __asm add eax, dword ptr [esi + 0xc]
+  __asm lea edx, [eax - 1]
+  __asm mov eax, dword ptr [esi + 8]
+  __asm dec eax
+  __asm mov ecx, edx
+  __asm shr ecx, 2
+  __asm and ecx, eax
+  __asm mov eax, dword ptr [esi + 4]
+  __asm and edx, 3
+  __asm pop esi
+  __asm mov eax, dword ptr [eax + ecx*4]
+  __asm lea eax, [eax + edx*4]
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 103ac150; body size 33 bytes.
@@ -4735,19 +5499,26 @@ void __fastcall FUN_103ac180(int *param_1)
 // Reference entry 103ac1b0; body size 43 bytes.
 #line 1 "ENTRY_103ac1b0"
 
-void __fastcall FUN_103ac1b0(int param_1)
+__declspec(naked) void FUN_103ac1b0(void)
 
 {
-  int iVar1;
-  
-  iVar1 = (int)(*(int *)(param_1 + 0xd8));
-  thunk_FUN_103a4d50((int)(param_1 + 0xd8),(int)(*(undefined4 *)(iVar1 + 4)));
-  *(int*)(iVar1 + 4) = (int)(iVar1);
-  *(int*)iVar1 = (int)((int)(iVar1));
-  *(int*)(iVar1 + 8) = (int)(iVar1);
-  *(undefined4*)(param_1 + 0xdc) = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [ecx + 0xd8]
+  __asm push edi
+  __asm lea edi, [ecx + 0xd8]
+  __asm mov ecx, edi
+  __asm push dword ptr [esi + 4]
+  __asm push edi
+  __asm call LAB_100446d9
+  __asm mov dword ptr [esi + 4], esi
+  __asm mov dword ptr [esi], esi
+  __asm mov dword ptr [esi + 8], esi
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103b7840; body size 21 bytes.
@@ -4775,94 +5546,131 @@ SCStr * __stdcall FUN_103b78c0(SCStr *param_1)
 // Reference entry 103b8600; body size 59 bytes.
 #line 1 "ENTRY_103b8600"
 
-SCStr * __thiscall Recovered_Bulk::m_FUN_103b8600(SCStr *param_2)
+__declspec(naked) void FUN_103b8600(void)
+
 {
-  int param_1 = (int )this;
-  uint uVar1;
-  
-  uVar1 = (uint)((*(int *)(param_1 + 0x70) + *(int *)(param_1 + 0x6c)) - 1);
-  ((SCStr *)(param_2))->m_op_ctor((SCStr *)(*(int *)(*(int *)(param_1 + 100) + (uVar1 >> 2 & *(int *)(param_1 + 0x68) - 1U) * 4) + (uVar1 & 3) * 4));
-  return (SCStr *)(param_2);
+  __asm sub esp, 8
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 0x70]
+  __asm add eax, dword ptr [esi + 0x6c]
+  __asm lea edx, [eax - 1]
+  __asm mov eax, dword ptr [esi + 0x68]
+  __asm mov ecx, edx
+  __asm dec eax
+  __asm shr ecx, 2
+  __asm and edx, 3
+  __asm and ecx, eax
+  __asm mov eax, dword ptr [esi + 0x64]
+  __asm mov eax, dword ptr [eax + ecx*4]
+  __asm mov ecx, dword ptr [esp + 0x10]
+  __asm lea eax, [eax + edx*4]
+  __asm push eax
+  __asm call LAB_10036c23
+  __asm mov eax, dword ptr [esp + 0x10]
+  __asm pop esi
+  __asm add esp, 8
+  __asm ret 4
 }
+
 
 
 // Reference entry 103b8d90; body size 48 bytes.
 #line 1 "ENTRY_103b8d90"
 
-undefined1 __fastcall FUN_103b8d90(int param_1)
+__declspec(naked) void FUN_103b8d90(void)
 
 {
-  char cVar1;
-  int iVar2;
-  
-  if (*(char *)(param_1 + 0x40) == '\0') {
-    iVar2 = (int)(thunk_FUN_11128910(), 0);
-    cVar1 = (char)(thunk_FUN_101a2c70(iVar2 + 0x8d,param_1 + 0x280), 0);
-    if (cVar1 == '\0') {
-      *(undefined1*)(param_1 + 0x40) = (undefined1)(1);
-    }
-  }
-  return (undefined1)(*(undefined1 *)(param_1 + 0x40));
+  __asm push esi
+  __asm mov esi, ecx
+  __asm cmp byte ptr [esi + 0x40], 0
+  __asm jne 0x103b8dbb
+  __asm call LAB_10005b32
+  __asm lea ecx, [esi + 0x280]
+  __asm add eax, 0x8d
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_10093dce
+  __asm add esp, 8
+  __asm test al, al
+  __asm jne 0x103b8dbb
+  __asm mov byte ptr [esi + 0x40], 1
+  __asm mov al, byte ptr [esi + 0x40]
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103b8dd0; body size 48 bytes.
 #line 1 "ENTRY_103b8dd0"
 
-undefined1 __fastcall FUN_103b8dd0(int param_1)
+__declspec(naked) void FUN_103b8dd0(void)
 
 {
-  char cVar1;
-  int iVar2;
-  
-  if (*(char *)(param_1 + 0x40) == '\0') {
-    iVar2 = (int)(thunk_FUN_11128910(), 0);
-    cVar1 = (char)(thunk_FUN_101a2c70(iVar2 + 0x8d,param_1 + 0x84), 0);
-    if (cVar1 == '\0') {
-      *(undefined1*)(param_1 + 0x40) = (undefined1)(1);
-    }
-  }
-  return (undefined1)(*(undefined1 *)(param_1 + 0x40));
+  __asm push esi
+  __asm mov esi, ecx
+  __asm cmp byte ptr [esi + 0x40], 0
+  __asm jne 0x103b8dfb
+  __asm call LAB_10005b32
+  __asm lea ecx, [esi + 0x84]
+  __asm add eax, 0x8d
+  __asm push ecx
+  __asm push eax
+  __asm call LAB_10093dce
+  __asm add esp, 8
+  __asm test al, al
+  __asm jne 0x103b8dfb
+  __asm mov byte ptr [esi + 0x40], 1
+  __asm mov al, byte ptr [esi + 0x40]
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103b9400; body size 19 bytes.
 #line 1 "ENTRY_103b9400"
 
-bool __fastcall FUN_103b9400(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_103b9400(void)
 
 {
-  uint in_EAX;
-  uint uVar1;
-  
-  if (*(int **)(param_1 + 8) != (int *)((0x0))) {
-                    
-                    
-    uVar1 = (uint)(((SCVtbl_3_0*)(*(int **)(param_1 + 8)))->v(), 0);
-    return (uint)(uVar1);
-  }
-  return (bool)0;
+  __asm mov ecx, dword ptr [ecx + 8]
+  __asm test ecx, ecx
+  __asm je 0x103b940e
+  __asm mov eax, dword ptr [ecx]
+  __asm mov eax, dword ptr [eax + 0xc]
+  __asm jmp eax
+  __asm xor al, al
+  __asm ret 4
 }
+
 
 
 // Reference entry 103ba040; body size 49 bytes.
 #line 1 "ENTRY_103ba040"
 
-void __fastcall FUN_103ba040(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_103ba040(void)
 
 {
-  int iStack_14;
-  int iStack_10;
-  undefined4 uStack_c;
-  
-  uStack_c = (undefined4)(0);
-  iStack_10 = (int)(param_1 + -0x280);
-  *(undefined1*)(param_1 + -0x240) = (undefined1)(1);
-  iStack_14 = (int)(param_1);
-  ((SCStr *)((SCStr *)&iStack_14))->int_allocRep("SCIBrowseDataSource:onInvalidation");
-  thunk_FUN_103d65f0<>();
-  return;
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0
+  __asm lea eax, [esi - 0x280]
+  __asm mov byte ptr [esi - 0x240], 1
+  __asm push eax
+  __asm push ecx
+  __asm mov ecx, esp
+  __asm push offset LAB_11880164
+  __asm call LAB_1005273e
+  __asm lea ecx, [esi - 0x278]
+  __asm call LAB_10013543
+  __asm pop esi
+  __asm pop ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 103ba080; body size 18 bytes.
@@ -4913,91 +5721,166 @@ int __fastcall FUN_103bc350(int *param_1)
 // Reference entry 103bc380; body size 18 bytes.
 #line 1 "ENTRY_103bc380"
 
-void __fastcall FUN_103bc380(int *param_1)
+__declspec(naked) void FUN_103bc380(void)
 
 {
-  undefined4 uVar1;
-  
-  uVar1 = (undefined4)(((SCVtbl_26_0*)(param_1))->v(), 0);
-  thunk_FUN_103b8760((int)(uVar1));
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi]
+  __asm call dword ptr [eax + 0x68]
+  __asm push eax
+  __asm mov ecx, esi
+  __asm call LAB_100183cc
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103bc490; body size 24 bytes.
 #line 1 "ENTRY_103bc490"
 
-void __thiscall Recovered_Bulk::m_FUN_103bc490(undefined4 param_2)
+__declspec(naked) void FUN_103bc490(void)
+
 {
-  int *param_1 = (int *)this;
-  undefined4 uVar1;
-  
-  uVar1 = (undefined4)(((SCVtbl_21_1*)(param_1))->v((int)(param_2)), 0);
-  thunk_FUN_103b8760((int)(uVar1));
-  return;
+  __asm push esi
+  __asm push dword ptr [esp + 8]
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi]
+  __asm call dword ptr [eax + 0x54]
+  __asm push eax
+  __asm mov ecx, esi
+  __asm call LAB_100183cc
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103bd6f0; body size 16 bytes.
 #line 1 "ENTRY_103bd6f0"
 
-undefined4 __stdcall FUN_103bd6f0(short param_1,unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_103bd6f0(void)
 
 {
-  return (undefined4)(((uint)(4) << 8 | (uint)(param_1 == 0x40c)));
+  __asm mov eax, 0x40c
+  __asm cmp word ptr [esp + 4], ax
+  __asm sete al
+  __asm ret 8
 }
+
 
 
 // Reference entry 103be170; body size 42 bytes.
 #line 1 "ENTRY_103be170"
 
-int __fastcall FUN_103be170(int param_1)
+__declspec(naked) void FUN_103be170(void)
 
 {
-  uint uVar1;
-  
-  uVar1 = (uint)((*(int *)(param_1 + 0x10) + *(int *)(param_1 + 0xc)) - 1);
-  return (int)(*(int *)(*(int *)(param_1 + 4) + (uVar1 >> 1 & *(int *)(param_1 + 8) - 1U) * 4) + (uVar1 & 1) * 8);
+  __asm sub esp, 8
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 0x10]
+  __asm add eax, dword ptr [esi + 0xc]
+  __asm lea edx, [eax - 1]
+  __asm mov eax, dword ptr [esi + 8]
+  __asm dec eax
+  __asm mov ecx, edx
+  __asm _emit 0xd1 __asm _emit 0xe9
+  __asm and ecx, eax
+  __asm mov eax, dword ptr [esi + 4]
+  __asm and edx, 1
+  __asm pop esi
+  __asm mov eax, dword ptr [eax + ecx*4]
+  __asm lea eax, [eax + edx*8]
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 103be1b0; body size 43 bytes.
 #line 1 "ENTRY_103be1b0"
 
-int __fastcall FUN_103be1b0(int param_1)
+__declspec(naked) void FUN_103be1b0(void)
 
 {
-  uint uVar1;
-  
-  uVar1 = (uint)((*(int *)(param_1 + 0x10) + *(int *)(param_1 + 0xc)) - 1);
-  return (int)(*(int *)(*(int *)(param_1 + 4) + (uVar1 >> 2 & *(int *)(param_1 + 8) - 1U) * 4) + (uVar1 & 3) * 4);
+  __asm sub esp, 8
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 0x10]
+  __asm add eax, dword ptr [esi + 0xc]
+  __asm lea edx, [eax - 1]
+  __asm mov eax, dword ptr [esi + 8]
+  __asm dec eax
+  __asm mov ecx, edx
+  __asm shr ecx, 2
+  __asm and ecx, eax
+  __asm mov eax, dword ptr [esi + 4]
+  __asm and edx, 3
+  __asm pop esi
+  __asm mov eax, dword ptr [eax + ecx*4]
+  __asm lea eax, [eax + edx*4]
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 103be1f0; body size 42 bytes.
 #line 1 "ENTRY_103be1f0"
 
-int __fastcall FUN_103be1f0(int param_1)
+__declspec(naked) void FUN_103be1f0(void)
 
 {
-  uint uVar1;
-  
-  uVar1 = (uint)((*(int *)(param_1 + 0x10) + *(int *)(param_1 + 0xc)) - 1);
-  return (int)(*(int *)(*(int *)(param_1 + 4) + (uVar1 >> 1 & *(int *)(param_1 + 8) - 1U) * 4) + (uVar1 & 1) * 8);
+  __asm sub esp, 8
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 0x10]
+  __asm add eax, dword ptr [esi + 0xc]
+  __asm lea edx, [eax - 1]
+  __asm mov eax, dword ptr [esi + 8]
+  __asm dec eax
+  __asm mov ecx, edx
+  __asm _emit 0xd1 __asm _emit 0xe9
+  __asm and ecx, eax
+  __asm mov eax, dword ptr [esi + 4]
+  __asm and edx, 1
+  __asm pop esi
+  __asm mov eax, dword ptr [eax + ecx*4]
+  __asm lea eax, [eax + edx*8]
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 103be230; body size 43 bytes.
 #line 1 "ENTRY_103be230"
 
-int __fastcall FUN_103be230(int param_1)
+__declspec(naked) void FUN_103be230(void)
 
 {
-  uint uVar1;
-  
-  uVar1 = (uint)((*(int *)(param_1 + 0x10) + *(int *)(param_1 + 0xc)) - 1);
-  return (int)(*(int *)(*(int *)(param_1 + 4) + (uVar1 >> 2 & *(int *)(param_1 + 8) - 1U) * 4) + (uVar1 & 3) * 4);
+  __asm sub esp, 8
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 0x10]
+  __asm add eax, dword ptr [esi + 0xc]
+  __asm lea edx, [eax - 1]
+  __asm mov eax, dword ptr [esi + 8]
+  __asm dec eax
+  __asm mov ecx, edx
+  __asm shr ecx, 2
+  __asm and ecx, eax
+  __asm mov eax, dword ptr [esi + 4]
+  __asm and edx, 3
+  __asm pop esi
+  __asm mov eax, dword ptr [eax + ecx*4]
+  __asm lea eax, [eax + edx*4]
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 103be750; body size 19 bytes.
@@ -5046,58 +5929,70 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103be9a0(byte param_2)
 // Reference entry 103bebe0; body size 35 bytes.
 #line 1 "ENTRY_103bebe0"
 
-void __fastcall FUN_103bebe0(int param_1)
+__declspec(naked) void FUN_103bebe0(void)
 
 {
-  int iVar1;
-  undefined4 *puVar2;
-  
-  iVar1 = (int)(*(int *)(param_1 + 0xc));
-  puVar2 = (undefined4 *)((undefined4 *)(iVar1 + 8));
-  *(undefined4*)(param_1 + 8) = (undefined4)(0xffffffff);
-  thunk_FUN_102a30a0(*puVar2,*(undefined4 *)(iVar1 + 0xc),puVar2);
-  *(undefined4*)(iVar1 + 0xc) = (undefined4)(*puVar2);
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [ecx + 0xc]
+  __asm add esi, 8
+  __asm _emit 0xc7 __asm _emit 0x41 __asm _emit 0x08 __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff __asm _emit 0xff
+  __asm push esi
+  __asm push dword ptr [esi + 4]
+  __asm push dword ptr [esi]
+  __asm call LAB_10027e8a
+  __asm mov eax, dword ptr [esi]
+  __asm add esp, 0xc
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103bf220; body size 31 bytes.
 #line 1 "ENTRY_103bf220"
 
-bool __fastcall FUN_103bf220(int param_1)
+__declspec(naked) void FUN_103bf220(void)
 
 {
-  int *piVar1;
-  uint in_EAX;
-  int iVar2;
-  
-  piVar1 = (int *)((int *)(param_1 + 8));
-  *piVar1 = (int)(*piVar1 + 1);
-  if (-(int)(1) < *piVar1) {
-    iVar2 = (int)(*(int *)(*(int *)(param_1 + 0xc) + 0xc) - *(int *)(*(int *)(param_1 + 0xc) + 8));
-    in_EAX = (uint)(iVar2 >> 3);
-    if (*(int *)(param_1 + 8) < (int)(in_EAX)) {
-      return (uint)(((uint)((int3)(iVar2 >> 0xb)) << 8 | (uint)(1)));
-    }
-  }
-  return (bool)0;
+  __asm add dword ptr [ecx + 8], 1
+  __asm mov edx, dword ptr [ecx + 8]
+  __asm js 0x103bf23c
+  __asm mov ecx, dword ptr [ecx + 0xc]
+  __asm mov eax, dword ptr [ecx + 0xc]
+  __asm sub eax, dword ptr [ecx + 8]
+  __asm sar eax, 3
+  __asm cmp edx, eax
+  __asm jge 0x103bf23c
+  __asm mov al, 1
+  __asm ret
+  __asm xor al, al
+  __asm ret
 }
+
 
 
 // Reference entry 103bf3a0; body size 34 bytes.
 #line 1 "ENTRY_103bf3a0"
 
-void __thiscall Recovered_Bulk::m_FUN_103bf3a0(undefined4 param_2)
+__declspec(naked) void FUN_103bf3a0(void)
+
 {
-  int param_1 = (int )this;
-  int iVar1;
-  int iVar2;
-  
-  iVar1 = (int)(*(int *)(*(int *)(param_1 + 0xc) + 0xc));
-  iVar2 = (int)(*(int *)(*(int *)(param_1 + 0xc) + 8));
-  thunk_FUN_102e8bc0(iVar2,iVar1,iVar1 - iVar2 >> 3,param_2);
-  return;
+  __asm mov ecx, dword ptr [ecx + 0xc]
+  __asm push dword ptr [esp + 4]
+  __asm mov eax, dword ptr [ecx + 0xc]
+  __asm mov edx, dword ptr [ecx + 8]
+  __asm mov ecx, eax
+  __asm sub ecx, edx
+  __asm sar ecx, 3
+  __asm push ecx
+  __asm push eax
+  __asm push edx
+  __asm call LAB_1004acdc
+  __asm add esp, 0x10
+  __asm ret 4
 }
+
 
 
 // Reference entry 103bf890; body size 33 bytes.
@@ -5115,97 +6010,136 @@ void __thiscall Recovered_Bulk::m_FUN_103bf890(undefined4 param_2)
 // Reference entry 103bf980; body size 60 bytes.
 #line 1 "ENTRY_103bf980"
 
-int __thiscall Recovered_Bulk::m_FUN_103bf980(SCStr *param_2)
+__declspec(naked) void FUN_103bf980(void)
+
 {
-  int *param_1 = (int *)this;
-  bool bVar1;
-  undefined1 local_c [8];
-  int local_4;
-  
-  thunk_FUN_103bf9d0((int)((uint)&local_c),(int)(param_2));
-  if ((*(char *)(local_4 + 0xd) == '\0') &&
-     (bVar1 = (bool)(((SCStr *)(param_2))->op_lt((SCStr *)(local_4 + 0x10)), 0), !bVar1)) {
-    return (int)(local_4);
-  }
-  return (int)(*param_1);
+  __asm sub esp, 0xc
+  __asm push esi
+  __asm push edi
+  __asm push dword ptr [esp + 0x18]
+  __asm lea eax, [esp + 0xc]
+  __asm mov edi, ecx
+  __asm push eax
+  __asm call LAB_10092636
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm jne 0x103bf9b2
+  __asm mov ecx, dword ptr [esp + 0x18]
+  __asm lea edx, [esi + 0x10]
+  __asm push edx
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm mov eax, esi
+  __asm je 0x103bf9b4
+  __asm mov eax, dword ptr [edi]
+  __asm pop edi
+  __asm pop esi
+  __asm add esp, 0xc
+  __asm ret 4
 }
+
 
 
 // Reference entry 103c07e0; body size 41 bytes.
 #line 1 "ENTRY_103c07e0"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_103c07e0(int *param_2)
+__declspec(naked) void FUN_103c07e0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  
-  *param_1 = (undefined4)(param_2);
-  param_1[1] = (undefined4)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x103c0803
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103c0870; body size 41 bytes.
 #line 1 "ENTRY_103c0870"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_103c0870(int *param_2)
+__declspec(naked) void FUN_103c0870(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  
-  *param_1 = (undefined4)(param_2);
-  param_1[1] = (undefined4)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x103c0893
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103c08b0; body size 41 bytes.
 #line 1 "ENTRY_103c08b0"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_103c08b0(int *param_2)
+__declspec(naked) void FUN_103c08b0(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  
-  *param_1 = (undefined4)(param_2);
-  param_1[1] = (undefined4)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x103c08d3
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103c0970; body size 48 bytes.
 #line 1 "ENTRY_103c0970"
 
-undefined4 * __fastcall FUN_103c0970(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_103c0970(void)
 
 {
-  void *pvVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x38), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x38
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103c1dd0; body size 19 bytes.
@@ -5237,52 +6171,73 @@ void __fastcall FUN_103c24f0(int param_1)
 // Reference entry 103c2510; body size 33 bytes.
 #line 1 "ENTRY_103c2510"
 
-void __fastcall FUN_103c2510(int *param_1)
+__declspec(naked) void FUN_103c2510(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c252f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c2540; body size 33 bytes.
 #line 1 "ENTRY_103c2540"
 
-void __fastcall FUN_103c2540(int *param_1)
+__declspec(naked) void FUN_103c2540(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c255f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c2570; body size 33 bytes.
 #line 1 "ENTRY_103c2570"
 
-void __fastcall FUN_103c2570(int *param_1)
+__declspec(naked) void FUN_103c2570(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c258f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c25a0; body size 28 bytes.
@@ -5313,52 +6268,73 @@ void __fastcall FUN_103c2670(int param_1)
 // Reference entry 103c2690; body size 33 bytes.
 #line 1 "ENTRY_103c2690"
 
-void __fastcall FUN_103c2690(int *param_1)
+__declspec(naked) void FUN_103c2690(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c26af
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c26c0; body size 33 bytes.
 #line 1 "ENTRY_103c26c0"
 
-void __fastcall FUN_103c26c0(int *param_1)
+__declspec(naked) void FUN_103c26c0(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c26df
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c26f0; body size 33 bytes.
 #line 1 "ENTRY_103c26f0"
 
-void __fastcall FUN_103c26f0(int *param_1)
+__declspec(naked) void FUN_103c26f0(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c270f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c2720; body size 28 bytes.
@@ -5376,49 +6352,70 @@ void __fastcall FUN_103c2720(int *param_1)
 // Reference entry 103c2dc0; body size 32 bytes.
 #line 1 "ENTRY_103c2dc0"
 
-void __fastcall FUN_103c2dc0(undefined4 *param_1)
+__declspec(naked) void FUN_103c2dc0(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpFetchClientToken);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpFetchClientToken);
-  thunk_FUN_103c2be0();
-  thunk_FUN_103c1f90();
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm lea ecx, [esi + 0x48]
+  __asm mov dword ptr [esi], LAB_1189cdec
+  __asm mov dword ptr [esi + 8], LAB_1189ce34
+  __asm call LAB_1002b373
+  __asm mov ecx, esi
+  __asm pop esi
+  __asm jmp LAB_10054db8
 }
+
 
 
 // Reference entry 103c3460; body size 37 bytes.
 #line 1 "ENTRY_103c3460"
 
-int * __fastcall FUN_103c3460(int *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_103c3460(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return (int *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c347f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103c3490; body size 37 bytes.
 #line 1 "ENTRY_103c3490"
 
-int * __fastcall FUN_103c3490(int *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_103c3490(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return (int *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c34af
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103c3c10; body size 38 bytes.
@@ -5583,18 +6580,28 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103c4050(byte param_2)
 // Reference entry 103c4080; body size 58 bytes.
 #line 1 "ENTRY_103c4080"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_103c4080(byte param_2)
+__declspec(naked) void FUN_103c4080(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpFetchClientToken);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpFetchClientToken);
-  thunk_FUN_103c2be0();
-  thunk_FUN_103c1f90();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0x6684);
-  }
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm lea ecx, [esi + 0x48]
+  __asm mov dword ptr [esi], LAB_1189cdec
+  __asm mov dword ptr [esi + 8], LAB_1189ce34
+  __asm call LAB_1002b373
+  __asm mov ecx, esi
+  __asm call LAB_10054db8
+  __asm test byte ptr [esp + 8], 1
+  __asm je 0x103c40b4
+  __asm push 0x6684
+  __asm push esi
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103c40d0; body size 45 bytes.
@@ -5630,16 +6637,20 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_103c41c0(byte param_2)
 // Reference entry 103c4220; body size 25 bytes.
 #line 1 "ENTRY_103c4220"
 
-void __fastcall FUN_103c4220(int param_1)
+__declspec(naked) void FUN_103c4220(void)
 
 {
-  void *pvVar1;
-  
-  *(undefined4*)(param_1 + 4) = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x38), 0);
-  *(void**)(param_1 + 4) = (void *)(pvVar1);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x38
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c4260; body size 19 bytes.
@@ -5670,75 +6681,104 @@ void __thiscall Recovered_Bulk::m_FUN_103c4280(char param_2)
 // Reference entry 103c42a0; body size 21 bytes.
 #line 1 "ENTRY_103c42a0"
 
-undefined4 *  __stdcall FUN_103c42a0(undefined4 *param_1,undefined4 param_2)
+__declspec(naked) void FUN_103c42a0(void)
 
 {
-  FUN_103c3720((int)(*param_1),(int)(param_2));
-  return (undefined4 *)(param_1);
+  __asm mov eax, dword ptr [esp + 4]
+  __asm add ecx, 4
+  __asm push dword ptr [esp + 8]
+  __asm push dword ptr [eax]
+  __asm call LAB_103c3720
+  __asm ret 8
 }
+
 
 
 // Reference entry 103c4c20; body size 19 bytes.
 #line 1 "ENTRY_103c4c20"
 
-void __thiscall Recovered_Bulk::m_FUN_103c4c20(undefined4 *param_2)
+__declspec(naked) void FUN_103c4c20(void)
+
 {
-  int param_1 = (int )this;
-  *param_2 = (undefined4)((uint)&ghidra_vftable__Func_impl_no_alloc__lambda_198ef1bf99411092060a7b4526c1ff25__void_SCUserAccount_const__SCStr_const__);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
-  return;
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov dword ptr [eax], LAB_1189d9cc
+  __asm mov ecx, dword ptr [ecx + 4]
+  __asm mov dword ptr [eax + 4], ecx
+  __asm ret 4
 }
+
 
 
 // Reference entry 103c4d50; body size 33 bytes.
 #line 1 "ENTRY_103c4d50"
 
-void __fastcall FUN_103c4d50(int *param_1)
+__declspec(naked) void FUN_103c4d50(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c4d6f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c4d80; body size 33 bytes.
 #line 1 "ENTRY_103c4d80"
 
-void __fastcall FUN_103c4d80(int *param_1)
+__declspec(naked) void FUN_103c4d80(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c4d9f
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c4db0; body size 33 bytes.
 #line 1 "ENTRY_103c4db0"
 
-void __fastcall FUN_103c4db0(int *param_1)
+__declspec(naked) void FUN_103c4db0(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)(piVar1))->v((int)((int *)(piVar1) != (int *)(param_1)));
-    param_1[9] = (int)(0);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x24]
+  __asm test ecx, ecx
+  __asm je 0x103c4dcf
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, esi
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x24 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c6c50; body size 33 bytes.
@@ -5802,59 +6842,88 @@ void __fastcall FUN_103c7650(undefined4 *param_1)
 // Reference entry 103c78e0; body size 57 bytes.
 #line 1 "ENTRY_103c78e0"
 
-void __fastcall FUN_103c78e0(int param_1)
+__declspec(naked) void FUN_103c78e0(void)
 
 {
-  undefined1 uVar1;
-  undefined4 uVar2;
-  
-  if (*(int *)(param_1 + 0x6628) == 0) {
-    uVar1 = (undefined1)(thunk_FUN_101dce50(), 0);
-    uVar2 = (undefined4)(thunk_FUN_111fe010(param_1 + 0x6224), 0);
-    uVar2 = (undefined4)(thunk_FUN_111fdd60(uVar1,uVar2), 0);
-    *(undefined4*)(param_1 + 0x6628) = (undefined4)(uVar2);
-  }
-  return;
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 0x6628]
+  __asm test eax, eax
+  __asm jne 0x103c7916
+  __asm call LAB_1006e11e
+  __asm mov byte ptr [esp + 4], al
+  __asm lea eax, [esi + 0x6224]
+  __asm push eax
+  __asm call LAB_1004b191
+  __asm push eax
+  __asm push dword ptr [esp + 0xc]
+  __asm call LAB_10035314
+  __asm add esp, 0xc
+  __asm mov dword ptr [esi + 0x6628], eax
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103c7930; body size 53 bytes.
 #line 1 "ENTRY_103c7930"
 
-void __fastcall FUN_103c7930(int param_1)
+__declspec(naked) void FUN_103c7930(void)
 
 {
-  undefined4 uVar1;
-  
-  if (*(int *)(param_1 + 0x6234) != 0) {
-    thunk_FUN_111fd590(*(int *)(param_1 + 0x6234));
-  }
-  uVar1 = (undefined4)(thunk_FUN_111fe010(param_1 + 0x6238), 0);
-  uVar1 = (undefined4)(thunk_FUN_111fdd60(0,uVar1), 0);
-  *(undefined4*)(param_1 + 0x6234) = (undefined4)(uVar1);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov eax, dword ptr [esi + 0x6234]
+  __asm test eax, eax
+  __asm je 0x103c7946
+  __asm push eax
+  __asm call LAB_10005db7
+  __asm add esp, 4
+  __asm lea eax, [esi + 0x6238]
+  __asm push eax
+  __asm call LAB_1004b191
+  __asm push eax
+  __asm push 0
+  __asm call LAB_10035314
+  __asm add esp, 0xc
+  __asm mov dword ptr [esi + 0x6234], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103c8120; body size 53 bytes.
 #line 1 "ENTRY_103c8120"
 
-int __thiscall Recovered_Bulk::m_FUN_103c8120(uint param_2)
+__declspec(naked) void FUN_103c8120(void)
+
 {
-  int param_1 = (int )this;
-  uint uVar1;
-  int iVar2;
-  __time64_t _Var3;
-  
-  _Var3 = (__time64_t)(_time64((__time64_t *)0x0), 0);
-  uVar1 = (uint)((uint)_Var3 + param_2);
-  iVar2 = (int)((int)((ulonglong)_Var3 >> 0x20) + (uint)((uint)((uint)_Var3) + (uint)(param_2) < (uint)((uint)_Var3)) + (uint)(0xffffff87 < uVar1));
-  if (((int)(iVar2) <= *(int *)(param_1 + 0x54)) &&
-     (((int)(iVar2) < *(int *)(param_1 + 0x54) || (uVar1 + 0x78 < *(uint *)(param_1 + 0x50))))) {
-    return (int)(param_1 + 0x60);
-  }
-  return (int)(param_1 + 0x48);
+  __asm push esi
+  __asm push 0
+  __asm mov esi, ecx
+  __asm call dword ptr [LAB_122fca5c]
+  __asm add esp, 4
+  __asm add eax, dword ptr [esp + 8]
+  __asm adc edx, 0
+  __asm add eax, 0x78
+  __asm adc edx, 0
+  __asm cmp dword ptr [esi + 0x54], edx
+  __asm jl 0x103c814e
+  __asm jg 0x103c8147
+  __asm cmp dword ptr [esi + 0x50], eax
+  __asm jbe 0x103c814e
+  __asm lea eax, [esi + 0x60]
+  __asm pop esi
+  __asm ret 4
+  __asm lea eax, [esi + 0x48]
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103c82b0; body size 21 bytes.
@@ -5882,46 +6951,53 @@ SCStr * __stdcall FUN_103c82d0(SCStr *param_1)
 // Reference entry 103c91e0; body size 59 bytes.
 #line 1 "ENTRY_103c91e0"
 
-undefined4 __thiscall Recovered_Bulk::m_FUN_103c91e0(int param_2, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_103c91e0(void)
+
 {
-  int param_1 = (int )this;
-  char cVar1;
-  int iVar2;
-  
-  if (*(int **)(param_1 + 0x58) != (int *)((0x0))) {
-    cVar1 = (char)(((SCVtbl_3_0*)(*(int **)(param_1 + 0x58)))->v(), 0);
-    if (cVar1 != '\0') {
-      iVar2 = (int)(((SCVtbl_2_0*)(*(int **)(param_1 + 0x58)))->v(), 0);
-      goto LAB_103c9202;
-    }
-  }
-  iVar2 = (int)(*(int *)(param_1 + 0x5c));
-LAB_103c9202:
-  if (param_2 == iVar2) {
-    *(undefined4*)(param_1 + 0x5c) = (undefined4)(0);
-    return (undefined4)(1);
-  }
-  return (undefined4)(0);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esi + 0x58]
+  __asm test ecx, ecx
+  __asm je 0x103c91ff
+  __asm mov eax, dword ptr [ecx]
+  __asm mov eax, dword ptr [eax + 0xc]
+  __asm call eax
+  __asm test al, al
+  __asm je 0x103c91ff
+  __asm mov ecx, dword ptr [esi + 0x58]
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm jmp 0x103c9202
+  __asm mov eax, dword ptr [esi + 0x5c]
+  __asm cmp dword ptr [esp + 8], eax
+  __asm jne 0x103c9215
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x5c __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov al, 1
+  __asm pop esi
+  __asm ret 8
+  __asm xor al, al
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 103c96b0; body size 19 bytes.
 #line 1 "ENTRY_103c96b0"
 
-bool __fastcall FUN_103c96b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_103c96b0(void)
 
 {
-  uint in_EAX;
-  uint uVar1;
-  
-  if (*(int **)(param_1 + 8) != (int *)((0x0))) {
-                    
-                    
-    uVar1 = (uint)(((SCVtbl_1_0*)(*(int **)(param_1 + 8)))->v(), 0);
-    return (uint)(uVar1);
-  }
-  return (bool)0;
+  __asm mov ecx, dword ptr [ecx + 8]
+  __asm test ecx, ecx
+  __asm je 0x103c96be
+  __asm mov eax, dword ptr [ecx]
+  __asm mov eax, dword ptr [eax + 4]
+  __asm jmp eax
+  __asm xor al, al
+  __asm ret 4
 }
+
 
 
 // Reference entry 103cbeb0; body size 24 bytes.
@@ -5938,72 +7014,94 @@ undefined4 __stdcall FUN_103cbeb0(undefined4 param_1,undefined4 param_2,undefine
 // Reference entry 103cc590; body size 26 bytes.
 #line 1 "ENTRY_103cc590"
 
-void __thiscall Recovered_Bulk::m_FUN_103cc590(int param_2)
+__declspec(naked) void FUN_103cc590(void)
+
 {
-  int param_1 = (int )this;
-  if (param_2 != 0) {
-                    
-                    
-    ((SCVtbl_5_0*)(*(int **)(param_1 + 0x100)))->v();
-    return;
-  }
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm test edx, edx
+  __asm je 0x103cc5a7
+  __asm mov ecx, dword ptr [ecx + 0x100]
+  __asm mov dword ptr [esp + 4], edx
+  __asm mov eax, dword ptr [ecx]
+  __asm jmp dword ptr [eax + 0x14]
+  __asm ret 4
 }
+
 
 
 // Reference entry 103cc5e0; body size 26 bytes.
 #line 1 "ENTRY_103cc5e0"
 
-void __thiscall Recovered_Bulk::m_FUN_103cc5e0(int param_2)
+__declspec(naked) void FUN_103cc5e0(void)
+
 {
-  int param_1 = (int )this;
-  if (param_2 != 0) {
-                    
-                    
-    ((SCVtbl_6_0*)(*(int **)(param_1 + 0x100)))->v();
-    return;
-  }
-  return;
+  __asm mov edx, dword ptr [esp + 4]
+  __asm test edx, edx
+  __asm je 0x103cc5f7
+  __asm mov ecx, dword ptr [ecx + 0x100]
+  __asm mov dword ptr [esp + 4], edx
+  __asm mov eax, dword ptr [ecx]
+  __asm jmp dword ptr [eax + 0x18]
+  __asm ret 4
 }
+
 
 
 // Reference entry 103ce410; body size 60 bytes.
 #line 1 "ENTRY_103ce410"
 
-int __thiscall Recovered_Bulk::m_FUN_103ce410(SCStr *param_2)
+__declspec(naked) void FUN_103ce410(void)
+
 {
-  int *param_1 = (int *)this;
-  bool bVar1;
-  undefined1 local_c [8];
-  int local_4;
-  
-  thunk_FUN_103ce460((int)((uint)&local_c),(int)(param_2));
-  if ((*(char *)(local_4 + 0xd) == '\0') &&
-     (bVar1 = (bool)(((SCStr *)(param_2))->op_lt((SCStr *)(local_4 + 0x10)), 0), !bVar1)) {
-    return (int)(local_4);
-  }
-  return (int)(*param_1);
+  __asm sub esp, 0xc
+  __asm push esi
+  __asm push edi
+  __asm push dword ptr [esp + 0x18]
+  __asm lea eax, [esp + 0xc]
+  __asm mov edi, ecx
+  __asm push eax
+  __asm call LAB_1001d1f1
+  __asm mov esi, dword ptr [esp + 0x10]
+  __asm cmp byte ptr [esi + 0xd], 0
+  __asm jne 0x103ce442
+  __asm mov ecx, dword ptr [esp + 0x18]
+  __asm lea edx, [esi + 0x10]
+  __asm push edx
+  __asm call LAB_10070fbd
+  __asm test al, al
+  __asm mov eax, esi
+  __asm je 0x103ce444
+  __asm mov eax, dword ptr [edi]
+  __asm pop edi
+  __asm pop esi
+  __asm add esp, 0xc
+  __asm ret 4
 }
+
 
 
 // Reference entry 103cef50; body size 48 bytes.
 #line 1 "ENTRY_103cef50"
 
-undefined4 * __fastcall FUN_103cef50(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+__declspec(naked) void FUN_103cef50(void)
 
 {
-  void *pvVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x18), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x18
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103d0510; body size 19 bytes.
@@ -6035,52 +7133,76 @@ void __fastcall FUN_103d0530(int param_1)
 // Reference entry 103d0550; body size 36 bytes.
 #line 1 "ENTRY_103d0550"
 
-void __fastcall FUN_103d0550(undefined4 *param_1)
+__declspec(naked) void FUN_103d0550(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    thunk_FUN_102460b0((int)(*param_1),(int)(*(undefined4 *)(*piVar1 + 4)));
-    thunk_FUN_1148a50e(*piVar1,0x18);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [ecx + 4]
+  __asm test esi, esi
+  __asm je 0x103d0572
+  __asm mov eax, dword ptr [esi]
+  __asm push dword ptr [eax + 4]
+  __asm push dword ptr [ecx]
+  __asm mov ecx, esi
+  __asm call LAB_10014d58
+  __asm push 0x18
+  __asm push dword ptr [esi]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103d0580; body size 36 bytes.
 #line 1 "ENTRY_103d0580"
 
-void __fastcall FUN_103d0580(undefined4 *param_1)
+__declspec(naked) void FUN_103d0580(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    thunk_FUN_10246170((int)(*param_1),(int)(*(undefined4 *)(*piVar1 + 4)));
-    thunk_FUN_1148a50e(*piVar1,0x28);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [ecx + 4]
+  __asm test esi, esi
+  __asm je 0x103d05a2
+  __asm mov eax, dword ptr [esi]
+  __asm push dword ptr [eax + 4]
+  __asm push dword ptr [ecx]
+  __asm mov ecx, esi
+  __asm call LAB_100113dd
+  __asm push 0x28
+  __asm push dword ptr [esi]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103d05b0; body size 36 bytes.
 #line 1 "ENTRY_103d05b0"
 
-void __fastcall FUN_103d05b0(undefined4 *param_1)
+__declspec(naked) void FUN_103d05b0(void)
 
 {
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if ((int *)(piVar1) != (int *)(0x0)) {
-    thunk_FUN_10246290((int)(*param_1),(int)(*(undefined4 *)(*piVar1 + 4)));
-    thunk_FUN_1148a50e(*piVar1,0x18);
-  }
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [ecx + 4]
+  __asm test esi, esi
+  __asm je 0x103d05d2
+  __asm mov eax, dword ptr [esi]
+  __asm push dword ptr [eax + 4]
+  __asm push dword ptr [ecx]
+  __asm mov ecx, esi
+  __asm call LAB_10058a5d
+  __asm push 0x18
+  __asm push dword ptr [esi]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103d06f0; body size 19 bytes.
@@ -6140,71 +7262,88 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103d15e0(byte param_2)
 // Reference entry 103d1640; body size 25 bytes.
 #line 1 "ENTRY_103d1640"
 
-void __fastcall FUN_103d1640(int param_1)
+__declspec(naked) void FUN_103d1640(void)
 
 {
-  void *pvVar1;
-  
-  *(undefined4*)(param_1 + 4) = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x18), 0);
-  *(void**)(param_1 + 4) = (void *)(pvVar1);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x18
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103d1660; body size 25 bytes.
 #line 1 "ENTRY_103d1660"
 
-void __fastcall FUN_103d1660(int param_1)
+__declspec(naked) void FUN_103d1660(void)
 
 {
-  void *pvVar1;
-  
-  *(undefined4*)(param_1 + 4) = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x28), 0);
-  *(void**)(param_1 + 4) = (void *)(pvVar1);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm push 0x28
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103d16c0; body size 50 bytes.
 #line 1 "ENTRY_103d16c0"
 
-void __thiscall Recovered_Bulk::m_FUN_103d16c0(undefined4 param_2, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_103d16c0(void)
+
 {
-  int *param_1 = (int *)this;
-  int iVar1;
-  
-  iVar1 = (int)(*param_1);
-  thunk_FUN_102460b0((int)(param_1),(int)(*(undefined4 *)(iVar1 + 4)));
-  *(int*)(iVar1 + 4) = (int)(iVar1);
-  *(int*)iVar1 = (int)((int)(iVar1));
-  *(int*)(iVar1 + 8) = (int)(iVar1);
-  param_1[1] = (int)(0);
-  thunk_FUN_103cd850((int)(param_2),(int)(param_2));
-  return;
+  __asm push esi
+  __asm push edi
+  __asm mov edi, ecx
+  __asm mov esi, dword ptr [edi]
+  __asm push dword ptr [esi + 4]
+  __asm push edi
+  __asm call LAB_10014d58
+  __asm push dword ptr [esp + 0xc]
+  __asm mov dword ptr [esi + 4], esi
+  __asm mov ecx, edi
+  __asm push dword ptr [esp + 0x10]
+  __asm mov dword ptr [esi], esi
+  __asm mov dword ptr [esi + 8], esi
+  __asm _emit 0xc7 __asm _emit 0x47 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10018084
+  __asm pop edi
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 103d22b0; body size 30 bytes.
 #line 1 "ENTRY_103d22b0"
 
-int FUN_103d22b0(int param_1)
+__declspec(naked) void FUN_103d22b0(void)
 
 {
-  char cVar1;
-  int iVar2;
-  int iVar3;
-  
-  cVar1 = (char)(*(char *)(*(int *)(param_1 + 8) + 0xd));
-  iVar2 = (int)(*(int *)(param_1 + 8));
-  while (iVar3 = (int)(iVar2), cVar1 == '\0') {
-    iVar2 = (int)(*(int *)(iVar3 + 8));
-    cVar1 = (char)(*(char *)(iVar2 + 0xd));
-    param_1 = (int)(iVar3);
-  }
-  return (int)(param_1);
+  __asm mov ecx, dword ptr [esp + 4]
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm jne 0x103d22cb
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x00
+  __asm mov ecx, eax
+  __asm mov eax, dword ptr [ecx + 8]
+  __asm cmp byte ptr [eax + 0xd], 0
+  __asm je 0x103d22c0
+  __asm mov eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103d2310; body size 31 bytes.
@@ -6231,18 +7370,25 @@ int * FUN_103d2310(int *param_1)
 // Reference entry 103d2370; body size 52 bytes.
 #line 1 "ENTRY_103d2370"
 
-void __thiscall Recovered_Bulk::m_FUN_103d2370(undefined4 *param_2, unsigned int recovered_unused_stack_0)
+__declspec(naked) void FUN_103d2370(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_10247e10();
-  *param_1 = (undefined4)(*param_2);
-  param_1[1] = (undefined4)(param_2[1]);
-  param_1[2] = (undefined4)(param_2[2]);
-  *param_2 = (undefined4)(0);
-  param_2[1] = (undefined4)(0);
-  param_2[2] = (undefined4)(0);
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm call LAB_10016ba3
+  __asm mov edx, dword ptr [esp + 8]
+  __asm mov eax, dword ptr [edx]
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, dword ptr [edx + 4]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov eax, dword ptr [edx + 8]
+  __asm mov dword ptr [esi + 8], eax
+  __asm _emit 0xc7 __asm _emit 0x02 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x42 __asm _emit 0x08
+  __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm pop esi
+  __asm ret 8
 }
+
 
 
 // Reference entry 103d27d0; body size 22 bytes.
@@ -6277,38 +7423,45 @@ void __fastcall FUN_103d3190(int *param_1)
 // Reference entry 103d41d0; body size 50 bytes.
 #line 1 "ENTRY_103d41d0"
 
-undefined4 * __stdcall FUN_103d41d0(undefined4 *param_1)
+__declspec(naked) void FUN_103d41d0(void)
 
 {
-  void *pvVar1;
-  
-  *param_1 = (undefined4)(0);
-  param_1[1] = (undefined4)(0);
-  pvVar1 = (void *)(operator_new(0x18), 0);
-  *(void**)pvVar1 = (void *)((void *)(pvVar1));
-  *(void**)((int)pvVar1 + 4) = (void *)(pvVar1);
-  *(void**)((int)pvVar1 + 8) = (void *)(pvVar1);
-  *(undefined2*)((int)pvVar1 + 0xc) = (undefined2)(0x101);
-  *param_1 = (undefined4)(pvVar1);
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, dword ptr [esp + 8]
+  __asm push 0x18
+  __asm _emit 0xc7 __asm _emit 0x06 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm call LAB_10024f14
+  __asm add esp, 4
+  __asm mov dword ptr [eax], eax
+  __asm mov dword ptr [eax + 4], eax
+  __asm mov dword ptr [eax + 8], eax
+  __asm mov word ptr [eax + 0xc], 0x101
+  __asm mov dword ptr [esi], eax
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103d44d0; body size 33 bytes.
 #line 1 "ENTRY_103d44d0"
 
-void __stdcall FUN_103d44d0(undefined4 param_1,undefined4 *param_2,undefined4 param_3)
+__declspec(naked) void FUN_103d44d0(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)((undefined1 *)*param_2);
-  }
-  thunk_FUN_1125bed0((int)(puVar1),(int)(param_3));
-  return;
+  __asm mov eax, dword ptr [esp + 8]
+  __asm mov ecx, offset LAB_1186d2ee
+  __asm push dword ptr [esp + 0xc]
+  __asm mov eax, dword ptr [eax]
+  __asm test eax, eax
+  __asm cmovne ecx, eax
+  __asm push ecx
+  __asm mov ecx, dword ptr [esp + 0xc]
+  __asm call LAB_10034a5e
+  __asm ret 0xc
 }
+
 
 
 // Reference entry 103d5170; body size 42 bytes.
@@ -6389,18 +7542,23 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_103d5940(byte param_2)
 // Reference entry 103d5b00; body size 28 bytes.
 #line 1 "ENTRY_103d5b00"
 
-void __fastcall FUN_103d5b00(int param_1)
+__declspec(naked) void FUN_103d5b00(void)
 
 {
-  int iVar1;
-  undefined4 *puVar2;
-  
-  iVar1 = (int)(*(int *)(param_1 + 8));
-  puVar2 = (undefined4 *)((undefined4 *)(iVar1 + 8));
-  thunk_FUN_102a30a0(*puVar2,*(undefined4 *)(iVar1 + 0xc),puVar2);
-  *(undefined4*)(iVar1 + 0xc) = (undefined4)(*puVar2);
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [ecx + 8]
+  __asm add esi, 8
+  __asm push esi
+  __asm push dword ptr [esi + 4]
+  __asm push dword ptr [esi]
+  __asm call LAB_10027e8a
+  __asm mov eax, dword ptr [esi]
+  __asm add esp, 0xc
+  __asm mov dword ptr [esi + 4], eax
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 103d5ff0; body size 41 bytes.
@@ -6422,67 +7580,104 @@ undefined4 * __fastcall FUN_103d5ff0(undefined4 *param_1)
 // Reference entry 103d6380; body size 35 bytes.
 #line 1 "ENTRY_103d6380"
 
-void __fastcall FUN_103d6380(int param_1)
+__declspec(naked) void FUN_103d6380(void)
 
 {
-  undefined4 *puVar1;
-  
-  for (puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 8), 0);(undefined4 *)( puVar1) != (undefined4 *)(0x0);
-      puVar1 = (undefined4 *)*puVar1) {
-  }
-  return;
+  __asm mov ecx, dword ptr [ecx + 8]
+  __asm xor eax, eax
+  __asm test ecx, ecx
+  __asm je 0x103d63a2
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm cmp dword ptr [ecx + 0xc], 0xa
+  __asm lea edx, [eax + 1]
+  __asm mov ecx, dword ptr [ecx]
+  __asm cmovge edx, eax
+  __asm mov eax, edx
+  __asm test ecx, ecx
+  __asm jne 0x103d6390
+  __asm ret
 }
+
 
 
 // Reference entry 103d63b0; body size 24 bytes.
 #line 1 "ENTRY_103d63b0"
 
-int __fastcall FUN_103d63b0(int param_1)
+__declspec(naked) void FUN_103d63b0(void)
 
 {
-  undefined4 *puVar1;
-  int iVar2;
-  
-  iVar2 = (int)(0);
-  for (puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 8), 0);(undefined4 *)( puVar1) != (undefined4 *)(0x0);
-      puVar1 = (undefined4 *)*puVar1) {
-    iVar2 = (int)(iVar2 + 1);
-  }
-  return (int)(iVar2);
+  __asm mov ecx, dword ptr [ecx + 8]
+  __asm xor eax, eax
+  __asm test ecx, ecx
+  __asm je 0x103d63c7
+  __asm _emit 0x0f __asm _emit 0x1f __asm _emit 0x80 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm mov ecx, dword ptr [ecx]
+  __asm inc eax
+  __asm test ecx, ecx
+  __asm jne 0x103d63c0
+  __asm ret
 }
+
 
 
 // Reference entry 103d6d90; body size 63 bytes.
 #line 1 "ENTRY_103d6d90"
 
-longlong FUN_103d6d90(void)
+__declspec(naked) longlong FUN_103d6d90(void)
 
 {
-  int local_8;
-  int local_4;
-  
-  thunk_FUN_1145c930(&local_8,0);
-  return (longlong)((longlong)local_8 * 1000 + (longlong)(local_4 / 1000));
+  __asm sub esp, 8
+  __asm push esi
+  __asm lea eax, [esp + 4]
+  __asm push 0
+  __asm push eax
+  __asm call LAB_10001c2b
+  __asm mov eax, 0x10624dd3
+  __asm add esp, 8
+  __asm imul dword ptr [esp + 8]
+  __asm sar edx, 6
+  __asm mov eax, edx
+  __asm shr eax, 0x1f
+  __asm add eax, edx
+  __asm cdq
+  __asm mov esi, edx
+  __asm mov ecx, eax
+  __asm mov eax, dword ptr [esp + 4]
+  __asm mov edx, 0x3e8
+  __asm imul edx
+  __asm add eax, ecx
+  __asm adc edx, esi
+  __asm pop esi
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 103d9170; body size 41 bytes.
 #line 1 "ENTRY_103d9170"
 
-undefined4 * __thiscall Recovered_Bulk::m_FUN_103d9170(int *param_2)
+__declspec(naked) void FUN_103d9170(void)
+
 {
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  
-  *param_1 = (undefined4)(param_2);
-  param_1[1] = (undefined4)(0);
-  if ((int *)(param_2) != (int *)(0x0)) {
-    piVar1 = (int *)((int *)((SCVtbl_3_0*)(param_2))->v(), 0);
-    param_1[1] = (undefined4)(piVar1);
-    ((SCVtbl_1_0*)(piVar1))->v();
-  }
-  return (undefined4 *)(param_1);
+  __asm push esi
+  __asm mov esi, ecx
+  __asm mov ecx, dword ptr [esp + 8]
+  __asm mov dword ptr [esi], ecx
+  __asm _emit 0xc7 __asm _emit 0x46 __asm _emit 0x04 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00 __asm _emit 0x00
+  __asm test ecx, ecx
+  __asm je 0x103d9193
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 0xc]
+  __asm mov dword ptr [esi + 4], eax
+  __asm mov ecx, eax
+  __asm mov edx, dword ptr [eax]
+  __asm call dword ptr [edx + 4]
+  __asm mov eax, esi
+  __asm pop esi
+  __asm ret 4
 }
+
 
 
 // Reference entry 103d91b0; body size 16 bytes.
@@ -6512,18 +7707,24 @@ void __fastcall FUN_103df6e0(undefined4 *param_1)
 // Reference entry 103e2b30; body size 56 bytes.
 #line 1 "ENTRY_103e2b30"
 
-void __fastcall FUN_103e2b30(undefined4 *param_1)
+__declspec(naked) void FUN_103e2b30(void)
 
 {
-  *param_1 = (undefined4)((uint)&ghidra_vftable_RSecRegUserEmailAIOOp);
-  param_1[2] = (undefined4)((uint)&ghidra_vftable_RSecRegUserEmailAIOOp);
-  param_1[7] = (undefined4)((uint)&ghidra_vftable_RSecRegUserEmailAIOOp);
-  param_1[0x195d] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  thunk_FUN_101ba0d0();
-  thunk_FUN_103e2b80();
-  thunk_FUN_103e15a0();
-  return;
+  __asm push esi
+  __asm mov esi, ecx
+  __asm lea ecx, [esi + 0x6574]
+  __asm mov dword ptr [esi], LAB_1189f964
+  __asm mov dword ptr [esi + 8], LAB_1189f9a4
+  __asm mov dword ptr [esi + 0x1c], LAB_1189f9b4
+  __asm mov dword ptr [ecx], LAB_1188de78
+  __asm call LAB_10072d77
+  __asm lea ecx, [esi + 0x3c]
+  __asm call LAB_1002b404
+  __asm mov ecx, esi
+  __asm pop esi
+  __asm jmp LAB_1007e5fa
 }
+
 
 
 // Reference entry 103e3a40; body size 38 bytes.
@@ -7601,210 +8802,207 @@ void __fastcall FUN_103e8070(int *param_1)
 // Reference entry 103ea730; body size 17 bytes.
 #line 1 "ENTRY_103ea730"
 
-undefined1 * __fastcall FUN_103ea730(int param_1)
+__declspec(naked) void FUN_103ea730(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6628) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6628), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6628]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103ea750; body size 17 bytes.
 #line 1 "ENTRY_103ea750"
 
-undefined1 * __fastcall FUN_103ea750(int param_1)
+__declspec(naked) void FUN_103ea750(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6224) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6224), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6224]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103ea770; body size 17 bytes.
 #line 1 "ENTRY_103ea770"
 
-undefined1 * __fastcall FUN_103ea770(int param_1)
+__declspec(naked) void FUN_103ea770(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6228) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6228), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6228]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103ea790; body size 17 bytes.
 #line 1 "ENTRY_103ea790"
 
-undefined1 * __fastcall FUN_103ea790(int param_1)
+__declspec(naked) void FUN_103ea790(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6228) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6228), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6228]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103ea7b0; body size 17 bytes.
 #line 1 "ENTRY_103ea7b0"
 
-undefined1 * __fastcall FUN_103ea7b0(int param_1)
+__declspec(naked) void FUN_103ea7b0(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x612c) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x612c), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x612c]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103ea830; body size 47 bytes.
 #line 1 "ENTRY_103ea830"
 
-void __fastcall FUN_103ea830(int param_1)
+__declspec(naked) void FUN_103ea830(void)
 
 {
-  undefined1 uVar1;
-  undefined4 uVar2;
-  
-  uVar1 = (undefined1)(thunk_FUN_101dce50(), 0);
-  uVar2 = (undefined4)(thunk_FUN_111fe010(param_1 + 0x6234), 0);
-  uVar2 = (undefined4)(thunk_FUN_111fdd60(uVar1,uVar2), 0);
-  *(undefined4*)(param_1 + 0x6230) = (undefined4)(uVar2);
-  return;
+  __asm push ecx
+  __asm push esi
+  __asm mov esi, ecx
+  __asm call LAB_1006e11e
+  __asm mov byte ptr [esp + 4], al
+  __asm lea eax, [esi + 0x6234]
+  __asm push eax
+  __asm call LAB_1004b191
+  __asm push eax
+  __asm push dword ptr [esp + 0xc]
+  __asm call LAB_10035314
+  __asm add esp, 0xc
+  __asm mov dword ptr [esi + 0x6230], eax
+  __asm pop esi
+  __asm pop ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103ea870; body size 17 bytes.
 #line 1 "ENTRY_103ea870"
 
-undefined1 * __fastcall FUN_103ea870(int param_1)
+__declspec(naked) void FUN_103ea870(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6628) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6628), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6628]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103ea890; body size 17 bytes.
 #line 1 "ENTRY_103ea890"
 
-undefined1 * __fastcall FUN_103ea890(int param_1)
+__declspec(naked) void FUN_103ea890(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6224) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6224), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6224]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103ea8b0; body size 17 bytes.
 #line 1 "ENTRY_103ea8b0"
 
-undefined1 * __fastcall FUN_103ea8b0(int param_1)
+__declspec(naked) void FUN_103ea8b0(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6230) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6230), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6230]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103ea8d0; body size 17 bytes.
 #line 1 "ENTRY_103ea8d0"
 
-undefined1 * __fastcall FUN_103ea8d0(int param_1)
+__declspec(naked) void FUN_103ea8d0(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6228) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6228), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6228]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103ea8f0; body size 17 bytes.
 #line 1 "ENTRY_103ea8f0"
 
-undefined1 * __fastcall FUN_103ea8f0(int param_1)
+__declspec(naked) void FUN_103ea8f0(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6224) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6224), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6224]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103eaa30; body size 17 bytes.
 #line 1 "ENTRY_103eaa30"
 
-undefined1 * __fastcall FUN_103eaa30(int param_1)
+__declspec(naked) void FUN_103eaa30(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6228) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6228), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6228]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103eaa50; body size 17 bytes.
 #line 1 "ENTRY_103eaa50"
 
-undefined1 * __fastcall FUN_103eaa50(int param_1)
+__declspec(naked) void FUN_103eaa50(void)
 
 {
-  undefined1 *puVar1;
-  
-  puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x6228) != (undefined1 *)((0x0))) {
-    puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x6228), 0);
-  }
-  return (undefined1 *)(puVar1);
+  __asm mov ecx, dword ptr [ecx + 0x6228]
+  __asm mov eax, offset LAB_1186d2ee
+  __asm test ecx, ecx
+  __asm cmovne eax, ecx
+  __asm ret
 }
+
 
 
 // Reference entry 103eaa70; body size 25 bytes.

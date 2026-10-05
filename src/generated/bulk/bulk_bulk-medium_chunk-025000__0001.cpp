@@ -952,6 +952,474 @@ struct Unwind_117d14a0 { char _pad; Unwind_117d14a0(...); template<class T> int 
 typedef void *WARNING;
 typedef void (*_func_void_void_ptr)(...);
 using namespace std;
+extern "C" void LAB_10003ebd(void);
+extern "C" void LAB_1000ac68(void);
+extern "C" void LAB_1000b253(void);
+extern "C" void LAB_1000f5bf(void);
+extern "C" void LAB_1000f9a7(void);
+extern "C" void LAB_10011487(void);
+extern "C" void LAB_10013093(void);
+extern "C" void LAB_100131d8(void);
+extern "C" void LAB_10015104(void);
+extern "C" void LAB_100157ad(void);
+extern "C" void LAB_10015834(void);
+extern "C" void LAB_100189c1(void);
+extern "C" void LAB_10020b35(void);
+extern "C" void LAB_10023867(void);
+extern "C" void LAB_10024dca(void);
+extern "C" void LAB_1002df51(void);
+extern "C" void LAB_10035daf(void);
+extern "C" void LAB_100383f7(void);
+extern "C" void LAB_1003a48b(void);
+extern "C" void LAB_1003df5f(void);
+extern "C" void LAB_1003f102(void);
+extern "C" void LAB_100413da(void);
+extern "C" void LAB_10043441(void);
+extern "C" void LAB_10047a55(void);
+extern "C" void LAB_1004896e(void);
+extern "C" void LAB_1004a15b(void);
+extern "C" void LAB_1004f9b7(void);
+extern "C" void LAB_100504d4(void);
+extern "C" void LAB_10051311(void);
+extern "C" void LAB_10052fef(void);
+extern "C" void LAB_10058a5d(void);
+extern "C" void LAB_1005b55f(void);
+extern "C" void LAB_1005e007(void);
+extern "C" void LAB_10061883(void);
+extern "C" void LAB_100639f8(void);
+extern "C" void LAB_10066621(void);
+extern "C" void LAB_100699e8(void);
+extern "C" void LAB_1006b1bc(void);
+extern "C" void LAB_1006c346(void);
+extern "C" void LAB_1006eb28(void);
+extern "C" void LAB_1006f50a(void);
+extern "C" void LAB_10073a56(void);
+extern "C" void LAB_100776a1(void);
+extern "C" void LAB_10077e80(void);
+extern "C" void LAB_100796d6(void);
+extern "C" void LAB_1007abda(void);
+extern "C" void LAB_1007bb66(void);
+extern "C" void LAB_100802f1(void);
+extern "C" void LAB_10081ca0(void);
+extern "C" void LAB_10081fa7(void);
+extern "C" void LAB_10083573(void);
+extern "C" void LAB_10087f42(void);
+extern "C" void LAB_1008c50b(void);
+extern "C" void LAB_1008f14d(void);
+extern "C" void LAB_1008f16b(void);
+extern "C" void LAB_10091808(void);
+extern "C" void LAB_10092451(void);
+extern "C" void LAB_100926fe(void);
+extern "C" void LAB_1009293d(void);
+extern "C" void LAB_100938c9(void);
+extern "C" void LAB_1009566f(void);
+extern "C" void LAB_10095aa7(void);
+extern "C" void LAB_100977df(void);
+extern "C" void LAB_117893c8(void);
+extern "C" void LAB_117893e1(void);
+extern "C" void LAB_11789add(void);
+extern "C" void LAB_11789af6(void);
+extern "C" void LAB_11789b44(void);
+extern "C" void LAB_11789b5d(void);
+extern "C" void LAB_11789b76(void);
+extern "C" void LAB_11789b8f(void);
+extern "C" void LAB_1178a446(void);
+extern "C" void LAB_1178a4e6(void);
+extern "C" void LAB_1178a891(void);
+extern "C" void LAB_1178a9b7(void);
+extern "C" void LAB_1178aab7(void);
+extern "C" void LAB_1178abf4(void);
+extern "C" void LAB_1178ac42(void);
+extern "C" void LAB_1178ac90(void);
+extern "C" void LAB_1178acde(void);
+extern "C" void LAB_1178ad2c(void);
+extern "C" void LAB_1178ad7a(void);
+extern "C" void LAB_1178adc8(void);
+extern "C" void LAB_1178ae1b(void);
+extern "C" void LAB_1178ae66(void);
+extern "C" void LAB_1178ae84(void);
+extern "C" void LAB_1178aeaa(void);
+extern "C" void LAB_1178b077(void);
+extern "C" void LAB_1178b177(void);
+extern "C" void LAB_1178b2a6(void);
+extern "C" void LAB_1178b2ec(void);
+extern "C" void LAB_1178b332(void);
+extern "C" void LAB_1178b378(void);
+extern "C" void LAB_1178b3be(void);
+extern "C" void LAB_1178b404(void);
+extern "C" void LAB_1178b44a(void);
+extern "C" void LAB_1178b495(void);
+extern "C" void LAB_1178b4e0(void);
+extern "C" void LAB_1178b4fe(void);
+extern "C" void LAB_1178b51c(void);
+extern "C" void LAB_1178b53a(void);
+extern "C" void LAB_1178b560(void);
+extern "C" void LAB_1178b717(void);
+extern "C" void LAB_1178b811(void);
+extern "C" void LAB_1178b919(void);
+extern "C" void LAB_1178c086(void);
+extern "C" void LAB_1178c8a8(void);
+extern "C" void LAB_1178d2f9(void);
+extern "C" void LAB_1178d93f(void);
+extern "C" void LAB_1178d9cf(void);
+extern "C" void LAB_1178dad7(void);
+extern "C" void LAB_1178eaae(void);
+extern "C" void LAB_1178eac7(void);
+extern "C" void LAB_1178f110(void);
+extern "C" void LAB_1178f129(void);
+extern "C" void LAB_1178f938(void);
+extern "C" void LAB_1178faa8(void);
+extern "C" void LAB_1178fac1(void);
+extern "C" void LAB_1178fb38(void);
+extern "C" void LAB_1178fb51(void);
+extern "C" void LAB_1178fbf6(void);
+extern "C" void LAB_1178fc0f(void);
+extern "C" void LAB_1178fc28(void);
+extern "C" void LAB_1178fc41(void);
+extern "C" void LAB_1178fd1e(void);
+extern "C" void LAB_1178fd37(void);
+extern "C" void LAB_1178fd50(void);
+extern "C" void LAB_1178fd69(void);
+extern "C" void LAB_1178fef8(void);
+extern "C" void LAB_1178ff11(void);
+extern "C" void LAB_1178ffb8(void);
+extern "C" void LAB_1178ffd1(void);
+extern "C" void LAB_1178ffea(void);
+extern "C" void LAB_1179005b(void);
+extern "C" void LAB_117901af(void);
+extern "C" void LAB_11790298(void);
+extern "C" void LAB_11790388(void);
+extern "C" void LAB_11790428(void);
+extern "C" void LAB_11790660(void);
+extern "C" void LAB_11790679(void);
+extern "C" void LAB_11790692(void);
+extern "C" void LAB_117907a8(void);
+extern "C" void LAB_117907c1(void);
+extern "C" void LAB_11790a70(void);
+extern "C" void LAB_11790a89(void);
+extern "C" void LAB_11790aaa(void);
+extern "C" void LAB_11790ac3(void);
+extern "C" void LAB_11790c58(void);
+extern "C" void LAB_11790de8(void);
+extern "C" void LAB_11790e01(void);
+extern "C" void LAB_1179147a(void);
+extern "C" void LAB_11791844(void);
+extern "C" void LAB_11791895(void);
+extern "C" void LAB_11791968(void);
+extern "C" void LAB_11791d28(void);
+extern "C" void LAB_117922b5(void);
+extern "C" void LAB_117922fe(void);
+extern "C" void LAB_11792317(void);
+extern "C" void LAB_11792330(void);
+extern "C" void LAB_11792349(void);
+extern "C" void LAB_11792362(void);
+extern "C" void LAB_1179237b(void);
+extern "C" void LAB_11792399(void);
+extern "C" void LAB_117923b7(void);
+extern "C" void LAB_11792898(void);
+extern "C" void LAB_117928b9(void);
+extern "C" void LAB_117928d2(void);
+extern "C" void LAB_11792948(void);
+extern "C" void LAB_11793398(void);
+extern "C" void LAB_117933f8(void);
+extern "C" void LAB_11793458(void);
+extern "C" void LAB_11793dd8(void);
+extern "C" void LAB_11794128(void);
+extern "C" void LAB_117942eb(void);
+extern "C" void LAB_1179477f(void);
+extern "C" void LAB_11794af0(void);
+extern "C" void LAB_11794b09(void);
+extern "C" void LAB_11794b22(void);
+extern "C" void LAB_11794b3b(void);
+extern "C" void LAB_11794e88(void);
+extern "C" void LAB_11794ea1(void);
+extern "C" void LAB_11795ae8(void);
+extern "C" void LAB_11795bb8(void);
+extern "C" void LAB_11795bd1(void);
+extern "C" void LAB_11795bea(void);
+extern "C" void LAB_11795c03(void);
+extern "C" void LAB_11795fb8(void);
+extern "C" void LAB_117960af(void);
+extern "C" void LAB_117960f0(void);
+extern "C" void LAB_117962ef(void);
+extern "C" void LAB_117965e0(void);
+extern "C" void LAB_11796668(void);
+extern "C" void LAB_11796a50(void);
+extern "C" void LAB_11796b77(void);
+extern "C" void LAB_11796c78(void);
+extern "C" void LAB_117972b8(void);
+extern "C" void LAB_11797370(void);
+extern "C" void LAB_11797888(void);
+extern "C" void LAB_11797d20(void);
+extern "C" void LAB_11797d69(void);
+extern "C" void LAB_117998c8(void);
+extern "C" void LAB_11799918(void);
+extern "C" void LAB_11799968(void);
+extern "C" void LAB_117999c7(void);
+extern "C" void LAB_11799a28(void);
+extern "C" void LAB_11799b22(void);
+extern "C" void LAB_1179a088(void);
+extern "C" void LAB_1179a5ae(void);
+extern "C" void LAB_1179a65f(void);
+extern "C" void LAB_1179a6b8(void);
+extern "C" void LAB_1179a7f9(void);
+extern "C" void LAB_1179a977(void);
+extern "C" void LAB_1179ae28(void);
+extern "C" void LAB_1179b016(void);
+extern "C" void LAB_1179b0be(void);
+extern "C" void LAB_1179b236(void);
+extern "C" void LAB_1179c0a8(void);
+extern "C" void LAB_1179d028(void);
+extern "C" void LAB_1179d041(void);
+extern "C" void LAB_1179d268(void);
+extern "C" void LAB_1179d281(void);
+extern "C" void LAB_1179d308(void);
+extern "C" void LAB_1179d6a8(void);
+extern "C" void LAB_1179d798(void);
+extern "C" void LAB_1179d7d9(void);
+extern "C" void LAB_1179d8f8(void);
+extern "C" void LAB_1179d998(void);
+extern "C" void LAB_1179d9e1(void);
+extern "C" void LAB_1179da48(void);
+extern "C" void LAB_1179db07(void);
+extern "C" void LAB_1179dbd8(void);
+extern "C" void LAB_1179dbf1(void);
+extern "C" void LAB_1179dce0(void);
+extern "C" void LAB_1179dd48(void);
+extern "C" void LAB_1179dd8b(void);
+extern "C" void LAB_1179dda4(void);
+extern "C" void LAB_1179ddbd(void);
+extern "C" void LAB_1179e086(void);
+extern "C" void LAB_1179e208(void);
+extern "C" void LAB_1179e300(void);
+extern "C" void LAB_1179e3c8(void);
+extern "C" void LAB_1179e4d8(void);
+extern "C" void LAB_1179e558(void);
+extern "C" void LAB_1179e571(void);
+extern "C" void LAB_1179e718(void);
+extern "C" void LAB_1179e743(void);
+extern "C" void LAB_1179e75c(void);
+extern "C" void LAB_1179e7e8(void);
+extern "C" void LAB_1179ec28(void);
+extern "C" void LAB_1179ec41(void);
+extern "C" void LAB_1179ee88(void);
+extern "C" void LAB_1179f2c0(void);
+extern "C" void LAB_1179f4e8(void);
+extern "C" void LAB_1179f598(void);
+extern "C" void LAB_1179f880(void);
+extern "C" void LAB_1179fc60(void);
+extern "C" void LAB_1179fce0(void);
+extern "C" void LAB_1179fd01(void);
+extern "C" void LAB_1179fd2a(void);
+extern "C" void LAB_1179ff00(void);
+extern "C" void LAB_117a1598(void);
+extern "C" void LAB_117a15b1(void);
+extern "C" void LAB_117a15ca(void);
+extern "C" void LAB_117a15e3(void);
+extern "C" void LAB_117a17a8(void);
+extern "C" void LAB_117a1f50(void);
+extern "C" void LAB_117a1f69(void);
+extern "C" void LAB_117a2038(void);
+extern "C" void LAB_117a2051(void);
+extern "C" void LAB_117a2160(void);
+extern "C" void LAB_117a21b8(void);
+extern "C" void LAB_117a2218(void);
+extern "C" void LAB_117a2268(void);
+extern "C" void LAB_117a2d87(void);
+extern "C" void LAB_117a2da0(void);
+extern "C" void LAB_117a2dc8(void);
+extern "C" void LAB_117a2de1(void);
+extern "C" void LAB_117a2e67(void);
+extern "C" void LAB_117a2e80(void);
+extern "C" void LAB_117a2ea8(void);
+extern "C" void LAB_117a2ec1(void);
+extern "C" void LAB_117a2f88(void);
+extern "C" void LAB_117a30c7(void);
+extern "C" void LAB_117a3798(void);
+extern "C" void LAB_117a37f8(void);
+extern "C" void LAB_117a3811(void);
+extern "C" void LAB_117a382a(void);
+extern "C" void LAB_117a3843(void);
+extern "C" void LAB_117a385c(void);
+extern "C" void LAB_117a3875(void);
+extern "C" void LAB_117a3938(void);
+extern "C" void LAB_117a39a8(void);
+extern "C" void LAB_117a5a08(void);
+extern "C" void LAB_117a66e8(void);
+extern "C" void LAB_117a6701(void);
+extern "C" void LAB_117a68e8(void);
+extern "C" void LAB_117a6901(void);
+extern "C" void LAB_117a6a80(void);
+extern "C" void LAB_117a6a99(void);
+extern "C" void LAB_117a6e48(void);
+extern "C" void LAB_117a6e61(void);
+extern "C" void LAB_117a9b18(void);
+extern "C" void LAB_117aa010(void);
+extern "C" void LAB_117aa029(void);
+extern "C" void LAB_117aa042(void);
+extern "C" void LAB_117aa0c8(void);
+extern "C" void LAB_117aa128(void);
+extern "C" void LAB_117aac08(void);
+extern "C" void LAB_117ac507(void);
+extern "C" void LAB_117ac567(void);
+extern "C" void LAB_117ac5c7(void);
+extern "C" void LAB_117ac627(void);
+extern "C" void LAB_117ac687(void);
+extern "C" void LAB_117ac6e7(void);
+extern "C" void LAB_117ac7b7(void);
+extern "C" void LAB_117ac817(void);
+extern "C" void LAB_117ac868(void);
+extern "C" void LAB_117ac881(void);
+extern "C" void LAB_117ac8e7(void);
+extern "C" void LAB_117ac938(void);
+extern "C" void LAB_117ac998(void);
+extern "C" void LAB_117aca07(void);
+extern "C" void LAB_117aca2f(void);
+extern "C" void LAB_117aca57(void);
+extern "C" void LAB_117aca7f(void);
+extern "C" void LAB_117acaa7(void);
+extern "C" void LAB_117acae6(void);
+extern "C" void LAB_117acb3e(void);
+extern "C" void LAB_117acc07(void);
+extern "C" void LAB_117acc67(void);
+extern "C" void LAB_117accb8(void);
+extern "C" void LAB_117accd1(void);
+extern "C" void LAB_117acd47(void);
+extern "C" void LAB_117ace58(void);
+extern "C" void LAB_117acec8(void);
+extern "C" void LAB_117acf58(void);
+extern "C" void LAB_117acf89(void);
+extern "C" void LAB_117acfb2(void);
+extern "C" void LAB_117ad2b8(void);
+extern "C" void LAB_117ad2d1(void);
+extern "C" void LAB_117ad328(void);
+extern "C" void LAB_117ad387(void);
+extern "C" void LAB_117ad4a8(void);
+extern "C" void LAB_117ad4f8(void);
+extern "C" void LAB_117ad511(void);
+extern "C" void LAB_117ad738(void);
+extern "C" void LAB_117ad751(void);
+extern "C" void LAB_117ad76a(void);
+extern "C" void LAB_117ad783(void);
+extern "C" void LAB_117ad79c(void);
+extern "C" void LAB_117ad7b5(void);
+extern "C" void LAB_117ad7ce(void);
+extern "C" void LAB_117ad7ec(void);
+extern "C" void LAB_117ad80a(void);
+extern "C" void LAB_117ad948(void);
+extern "C" void LAB_117ad961(void);
+extern "C" void LAB_117ad97a(void);
+extern "C" void LAB_117ad993(void);
+extern "C" void LAB_117adad8(void);
+extern "C" void LAB_117adaf1(void);
+extern "C" void LAB_117ae6b8(void);
+extern "C" void LAB_117ae938(void);
+extern "C" void LAB_117aea97(void);
+extern "C" void LAB_117aef18(void);
+extern "C" void LAB_117aef41(void);
+extern "C" void LAB_117af038(void);
+extern "C" void LAB_117af051(void);
+extern "C" void LAB_117af06a(void);
+extern "C" void LAB_117af083(void);
+extern "C" void LAB_117af09c(void);
+extern "C" void LAB_117af0b5(void);
+extern "C" void LAB_117af0ce(void);
+extern "C" void LAB_117af0ec(void);
+extern "C" void LAB_117af10a(void);
+extern "C" void LAB_117af388(void);
+extern "C" void LAB_117af3a1(void);
+extern "C" void LAB_117af3ba(void);
+extern "C" void LAB_117b0528(void);
+extern "C" void LAB_117b2748(void);
+extern "C" void LAB_117b2761(void);
+extern "C" void LAB_117b277a(void);
+extern "C" void LAB_117b2e28(void);
+extern "C" void LAB_117b42c3(void);
+extern "C" void LAB_117b4358(void);
+extern "C" void LAB_117b4470(void);
+extern "C" void LAB_117b4510(void);
+extern "C" void LAB_117b4568(void);
+extern "C" void LAB_117b4c98(void);
+extern "C" void LAB_117b5918(void);
+extern "C" void LAB_117b5931(void);
+extern "C" void LAB_117b5a23(void);
+extern "C" void LAB_117b6308(void);
+extern "C" void LAB_117b63d8(void);
+extern "C" void LAB_117b63f1(void);
+extern "C" void LAB_117b6d1a(void);
+extern "C" void LAB_117b6d68(void);
+extern "C" void LAB_117b6dd9(void);
+extern "C" void LAB_117b6e38(void);
+extern "C" void LAB_117b8408(void);
+extern "C" void LAB_117b9d58(void);
+extern "C" void LAB_117b9da8(void);
+extern "C" void LAB_117bb16a(void);
+extern "C" void LAB_117bb195(void);
+extern "C" void LAB_117bb1c0(void);
+extern "C" void LAB_117bb987(void);
+extern "C" void LAB_117bbaa7(void);
+extern "C" void LAB_117bc9c8(void);
+extern "C" void LAB_117be627(void);
+extern "C" void LAB_117be640(void);
+extern "C" void LAB_117be659(void);
+extern "C" void LAB_117be672(void);
+extern "C" void LAB_117be68b(void);
+extern "C" void LAB_117be787(void);
+extern "C" void LAB_117be9ef(void);
+extern "C" void LAB_117bea08(void);
+extern "C" void LAB_117bf8b7(void);
+extern "C" void LAB_117bf8d0(void);
+extern "C" void LAB_117bf937(void);
+extern "C" void LAB_117bf962(void);
+extern "C" void LAB_117bfb48(void);
+extern "C" void LAB_117c093f(void);
+extern "C" void LAB_117c0958(void);
+extern "C" void LAB_117c0db8(void);
+extern "C" void LAB_117c0dd1(void);
+extern "C" void LAB_117c0e28(void);
+extern "C" void LAB_117c0e41(void);
+extern "C" void LAB_117c1b98(void);
+extern "C" void LAB_117c20b8(void);
+extern "C" void LAB_117c20d1(void);
+extern "C" void LAB_117c239c(void);
+extern "C" void LAB_117c2628(void);
+extern "C" void LAB_117c2641(void);
+extern "C" void LAB_117c26a8(void);
+extern "C" void LAB_117c26c1(void);
+extern "C" void LAB_117ccd0f(void);
+extern "C" void LAB_11c08aa2(void);
+extern "C" void LAB_12119b50(void);
+extern "C" void LAB_12119b74(void);
+extern "C" void LAB_12120e90(void);
+extern "C" void LAB_12120e94(void);
+extern "C" void LAB_121a0938(void);
+extern "C" void LAB_121a0b18(void);
+extern "C" void LAB_121a0cf0(void);
+extern "C" void LAB_121a0e80(void);
+extern "C" void LAB_121a0f38(void);
+extern "C" void LAB_121a100c(void);
+extern "C" void LAB_121a24d8(void);
+extern "C" void LAB_121a2794(void);
+extern "C" void LAB_121a279c(void);
+extern "C" void LAB_121a3524(void);
+extern "C" void LAB_121a4a8c(void);
+extern "C" void LAB_121a4e48(void);
+extern "C" void LAB_121a5138(void);
+extern "C" void LAB_121a56e4(void);
+extern "C" void LAB_121a63bc(void);
+extern "C" void LAB_121a6b1c(void);
+extern "C" void LAB_121a6bac(void);
+extern "C" void LAB_121a75b8(void);
+extern "C" void LAB_121a75c8(void);
+extern "C" void LAB_121a75d4(void);
+extern "C" void LAB_121a75e4(void);
+extern "C" void LAB_122e8ab0(void);
+extern "C" void LAB_122f5e0c(void);
+extern "C" void LAB_122f6448(void);
+extern "C" void LAB_122f646c(void);
+extern "C" void LAB_122fc888(void);
+
+
 extern int LOCK(...);
 extern int UNLOCK(...);
 extern int _eh_vector_destructor_iterator_(...);
@@ -2776,10052 +3244,14111 @@ struct SCVtbl_2_0 { virtual void _p0(); virtual void _p1(); virtual int v(void);
 struct SCVtbl_4_1 { virtual void _p0(); virtual void _p1(); virtual void _p2(); virtual void _p3(); virtual int v(int a1); };
 struct SCVtbl_1_0 { virtual void _p0(); virtual int v(void); };
 #line 1 "ENTRY_117893b0"
-void FUN_117893b0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117893b0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117893c8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117893c9; body size 25 bytes.
 #line 1 "ENTRY_117893c9"
-void FUN_117893c9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117893c9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117893e1
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11789ac5; body size 25 bytes.
 #line 1 "ENTRY_11789ac5"
-void FUN_11789ac5(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11789ac5(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11789add
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11789ade; body size 25 bytes.
 #line 1 "ENTRY_11789ade"
-void FUN_11789ade(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11789ade(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_11789af6
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11789b2c; body size 25 bytes.
 #line 1 "ENTRY_11789b2c"
-void FUN_11789b2c(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x24)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11789b2c(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_11789b44
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11789b45; body size 25 bytes.
 #line 1 "ENTRY_11789b45"
-void FUN_11789b45(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11789b45(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_11789b5d
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11789b5e; body size 25 bytes.
 #line 1 "ENTRY_11789b5e"
-void FUN_11789b5e(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffef);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11789b5e(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x10
+  __asm je LAB_11789b76
+  __asm and dword ptr [ebp - 0x10], 0xffffffef
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11789b77; body size 25 bytes.
 #line 1 "ENTRY_11789b77"
-void FUN_11789b77(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x20) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffdf);
-    ((SCStr *)((SCStr *)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11789b77(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x20
+  __asm je LAB_11789b8f
+  __asm and dword ptr [ebp - 0x10], 0xffffffdf
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178a42e; body size 25 bytes.
 #line 1 "ENTRY_1178a42e"
-void FUN_1178a42e(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x10)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178a42e(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_1178a446
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178a4ce; body size 25 bytes.
 #line 1 "ENTRY_1178a4ce"
-void FUN_1178a4ce(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x10)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178a4ce(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_1178a4e6
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178a5f0; body size 18 bytes.
 #line 1 "ENTRY_1178a5f0"
-void FUN_1178a5f0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xdbd0);
-  return;
+
+__declspec(naked) void FUN_1178a5f0(void)
+
+{
+  __asm push 0xdbd0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1178a879; body size 25 bytes.
 #line 1 "ENTRY_1178a879"
-void FUN_1178a879(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178a879(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1178a891
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178a99f; body size 25 bytes.
 #line 1 "ENTRY_1178a99f"
-void FUN_1178a99f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0x10)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178a99f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_1178a9b7
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm lea ecx, [ebp + 0x10]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178aa9f; body size 25 bytes.
 #line 1 "ENTRY_1178aa9f"
-void FUN_1178aa9f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178aa9f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_1178aab7
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178abdc; body size 25 bytes.
 #line 1 "ENTRY_1178abdc"
-void FUN_1178abdc(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178abdc(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1178abf4
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178ac2a; body size 25 bytes.
 #line 1 "ENTRY_1178ac2a"
-void FUN_1178ac2a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ac2a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_1178ac42
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178ac78; body size 25 bytes.
 #line 1 "ENTRY_1178ac78"
-void FUN_1178ac78(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffb);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ac78(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 4
+  __asm je LAB_1178ac90
+  __asm and dword ptr [ebp - 0x14], 0xfffffffb
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178acc6; body size 25 bytes.
 #line 1 "ENTRY_1178acc6"
-void FUN_1178acc6(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178acc6(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 8
+  __asm je LAB_1178acde
+  __asm and dword ptr [ebp - 0x14], 0xfffffff7
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178ad14; body size 25 bytes.
 #line 1 "ENTRY_1178ad14"
-void FUN_1178ad14(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xffffffef);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ad14(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x10
+  __asm je LAB_1178ad2c
+  __asm and dword ptr [ebp - 0x14], 0xffffffef
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178ad62; body size 25 bytes.
 #line 1 "ENTRY_1178ad62"
-void FUN_1178ad62(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x20) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xffffffdf);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ad62(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x20
+  __asm je LAB_1178ad7a
+  __asm and dword ptr [ebp - 0x14], 0xffffffdf
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178adb0; body size 25 bytes.
 #line 1 "ENTRY_1178adb0"
-void FUN_1178adb0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x40) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xffffffbf);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178adb0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x40
+  __asm je LAB_1178adc8
+  __asm and dword ptr [ebp - 0x14], 0xffffffbf
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178adfe; body size 30 bytes.
 #line 1 "ENTRY_1178adfe"
-void FUN_1178adfe(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x80) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xffffff7f);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178adfe(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x80
+  __asm je LAB_1178ae1b
+  __asm and dword ptr [ebp - 0x14], 0xffffff7f
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178ae49; body size 30 bytes.
 #line 1 "ENTRY_1178ae49"
-void FUN_1178ae49(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x100) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffeff);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x40)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ae49(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x100
+  __asm je LAB_1178ae66
+  __asm and dword ptr [ebp - 0x14], 0xfffffeff
+  __asm lea ecx, [ebp - 0x40]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178ae67; body size 30 bytes.
 #line 1 "ENTRY_1178ae67"
-void FUN_1178ae67(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x200) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffdff);
-    ((SCStr *)((SCStr *)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ae67(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x200
+  __asm je LAB_1178ae84
+  __asm and dword ptr [ebp - 0x14], 0xfffffdff
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178ae8d; body size 30 bytes.
 #line 1 "ENTRY_1178ae8d"
-void FUN_1178ae8d(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x400) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffbff);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ae8d(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x400
+  __asm je LAB_1178aeaa
+  __asm and dword ptr [ebp - 0x14], 0xfffffbff
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b05f; body size 25 bytes.
 #line 1 "ENTRY_1178b05f"
-void FUN_1178b05f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b05f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_1178b077
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b15f; body size 25 bytes.
 #line 1 "ENTRY_1178b15f"
-void FUN_1178b15f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b15f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_1178b177
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b28e; body size 25 bytes.
 #line 1 "ENTRY_1178b28e"
-void FUN_1178b28e(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b28e(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1178b2a6
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b2d4; body size 25 bytes.
 #line 1 "ENTRY_1178b2d4"
-void FUN_1178b2d4(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b2d4(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_1178b2ec
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b31a; body size 25 bytes.
 #line 1 "ENTRY_1178b31a"
-void FUN_1178b31a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b31a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_1178b332
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b360; body size 25 bytes.
 #line 1 "ENTRY_1178b360"
-void FUN_1178b360(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b360(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_1178b378
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b3a6; body size 25 bytes.
 #line 1 "ENTRY_1178b3a6"
-void FUN_1178b3a6(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffef);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b3a6(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x10
+  __asm je LAB_1178b3be
+  __asm and dword ptr [ebp - 0x10], 0xffffffef
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b3ec; body size 25 bytes.
 #line 1 "ENTRY_1178b3ec"
-void FUN_1178b3ec(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x20) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffdf);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b3ec(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x20
+  __asm je LAB_1178b404
+  __asm and dword ptr [ebp - 0x10], 0xffffffdf
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b432; body size 25 bytes.
 #line 1 "ENTRY_1178b432"
-void FUN_1178b432(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x40) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffbf);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b432(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x40
+  __asm je LAB_1178b44a
+  __asm and dword ptr [ebp - 0x10], 0xffffffbf
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b478; body size 30 bytes.
 #line 1 "ENTRY_1178b478"
-void FUN_1178b478(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x80) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffff7f);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b478(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x80
+  __asm je LAB_1178b495
+  __asm and dword ptr [ebp - 0x10], 0xffffff7f
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b4c3; body size 30 bytes.
 #line 1 "ENTRY_1178b4c3"
-void FUN_1178b4c3(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x100) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffeff);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x24)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b4c3(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x100
+  __asm je LAB_1178b4e0
+  __asm and dword ptr [ebp - 0x10], 0xfffffeff
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b4e1; body size 30 bytes.
 #line 1 "ENTRY_1178b4e1"
-void FUN_1178b4e1(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x200) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffdff);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b4e1(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x200
+  __asm je LAB_1178b4fe
+  __asm and dword ptr [ebp - 0x10], 0xfffffdff
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b4ff; body size 30 bytes.
 #line 1 "ENTRY_1178b4ff"
-void FUN_1178b4ff(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x400) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffbff);
-    ((SCStr *)((SCStr *)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b4ff(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x400
+  __asm je LAB_1178b51c
+  __asm and dword ptr [ebp - 0x10], 0xfffffbff
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b51d; body size 30 bytes.
 #line 1 "ENTRY_1178b51d"
-void FUN_1178b51d(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x800) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffff7ff);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0x10)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b51d(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x800
+  __asm je LAB_1178b53a
+  __asm and dword ptr [ebp - 0x10], 0xfffff7ff
+  __asm lea ecx, [ebp + 0x10]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b543; body size 30 bytes.
 #line 1 "ENTRY_1178b543"
-void FUN_1178b543(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x1000) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffefff);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x20)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b543(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x1000
+  __asm je LAB_1178b560
+  __asm and dword ptr [ebp - 0x10], 0xffffefff
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b6ff; body size 25 bytes.
 #line 1 "ENTRY_1178b6ff"
-void FUN_1178b6ff(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b6ff(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_1178b717
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b7f9; body size 25 bytes.
 #line 1 "ENTRY_1178b7f9"
-void FUN_1178b7f9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b7f9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1178b811
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178b901; body size 25 bytes.
 #line 1 "ENTRY_1178b901"
-void FUN_1178b901(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178b901(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_1178b919
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178c06e; body size 25 bytes.
 #line 1 "ENTRY_1178c06e"
-void FUN_1178c06e(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178c06e(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1178c086
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178c890; body size 25 bytes.
 #line 1 "ENTRY_1178c890"
-void FUN_1178c890(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178c890(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1178c8a8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178d2c0; body size 18 bytes.
 #line 1 "ENTRY_1178d2c0"
-void FUN_1178d2c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_1178d2c0(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1178d2e1; body size 25 bytes.
 #line 1 "ENTRY_1178d2e1"
-void FUN_1178d2e1(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_1011c170();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178d2e1(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1178d2f9
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1009566f
+  __asm ret
 }
+
 
 
 // Reference entry 1178d550; body size 18 bytes.
 #line 1 "ENTRY_1178d550"
-void FUN_1178d550(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_1178d550(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1178d927; body size 25 bytes.
 #line 1 "ENTRY_1178d927"
-void FUN_1178d927(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_1011c170();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178d927(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1178d93f
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1009566f
+  __asm ret
 }
+
 
 
 // Reference entry 1178d9b7; body size 25 bytes.
 #line 1 "ENTRY_1178d9b7"
-void FUN_1178d9b7(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x24) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x24) = (uint)(*(uint *)(unaff_EBP + -0x24) & 0xfffffffe);
-    thunk_FUN_1011c170();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178d9b7(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm and eax, 1
+  __asm je LAB_1178d9cf
+  __asm and dword ptr [ebp - 0x24], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1009566f
+  __asm ret
 }
+
 
 
 // Reference entry 1178dabf; body size 25 bytes.
 #line 1 "ENTRY_1178dabf"
-void FUN_1178dabf(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x30) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x30) = (uint)(*(uint *)(unaff_EBP + -0x30) & 0xfffffffe);
-    thunk_FUN_1011c170();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178dabf(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x30]
+  __asm and eax, 1
+  __asm je LAB_1178dad7
+  __asm and dword ptr [ebp - 0x30], 0xfffffffe
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_1009566f
+  __asm ret
 }
+
 
 
 // Reference entry 1178ea96; body size 25 bytes.
 #line 1 "ENTRY_1178ea96"
-void FUN_1178ea96(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_1011eb70();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ea96(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1178eaae
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp + 0x10]
+  __asm jmp LAB_10035daf
+  __asm ret
 }
+
 
 
 // Reference entry 1178eaaf; body size 25 bytes.
 #line 1 "ENTRY_1178eaaf"
-void FUN_1178eaaf(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_1011eb70();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178eaaf(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_1178eac7
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_10035daf
+  __asm ret
 }
+
 
 
 // Reference entry 1178f0f8; body size 25 bytes.
 #line 1 "ENTRY_1178f0f8"
-void FUN_1178f0f8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x34)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178f0f8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 1
+  __asm je LAB_1178f110
+  __asm and dword ptr [ebp - 0x20], 0xfffffffe
+  __asm lea ecx, [ebp - 0x34]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178f111; body size 25 bytes.
 #line 1 "ENTRY_1178f111"
-void FUN_1178f111(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x34)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178f111(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 2
+  __asm je LAB_1178f129
+  __asm and dword ptr [ebp - 0x20], 0xfffffffd
+  __asm lea ecx, [ebp - 0x34]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178f920; body size 25 bytes.
 #line 1 "ENTRY_1178f920"
-void FUN_1178f920(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178f920(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_1178f938
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fa90; body size 25 bytes.
 #line 1 "ENTRY_1178fa90"
-void FUN_1178fa90(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fa90(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_1178faa8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178faa9; body size 25 bytes.
 #line 1 "ENTRY_1178faa9"
-void FUN_1178faa9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    thunk_FUN_1011d130();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178faa9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_1178fac1
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_10043441
+  __asm ret
 }
+
 
 
 // Reference entry 1178fb20; body size 25 bytes.
 #line 1 "ENTRY_1178fb20"
-void FUN_1178fb20(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fb20(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_1178fb38
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fb39; body size 25 bytes.
 #line 1 "ENTRY_1178fb39"
-void FUN_1178fb39(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fb39(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1178fb51
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fbde; body size 25 bytes.
 #line 1 "ENTRY_1178fbde"
-void FUN_1178fbde(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x20)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fbde(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1178fbf6
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fbf7; body size 25 bytes.
 #line 1 "ENTRY_1178fbf7"
-void FUN_1178fbf7(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fbf7(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_1178fc0f
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fc10; body size 25 bytes.
 #line 1 "ENTRY_1178fc10"
-void FUN_1178fc10(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffb);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x2c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fc10(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 4
+  __asm je LAB_1178fc28
+  __asm and dword ptr [ebp - 0x14], 0xfffffffb
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fc29; body size 25 bytes.
 #line 1 "ENTRY_1178fc29"
-void FUN_1178fc29(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x28)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fc29(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 8
+  __asm je LAB_1178fc41
+  __asm and dword ptr [ebp - 0x14], 0xfffffff7
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fd06; body size 25 bytes.
 #line 1 "ENTRY_1178fd06"
-void FUN_1178fd06(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x20)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fd06(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1178fd1e
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fd1f; body size 25 bytes.
 #line 1 "ENTRY_1178fd1f"
-void FUN_1178fd1f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fd1f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_1178fd37
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fd38; body size 25 bytes.
 #line 1 "ENTRY_1178fd38"
-void FUN_1178fd38(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fd38(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_1178fd50
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fd51; body size 25 bytes.
 #line 1 "ENTRY_1178fd51"
-void FUN_1178fd51(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fd51(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_1178fd69
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178fee0; body size 25 bytes.
 #line 1 "ENTRY_1178fee0"
-void FUN_1178fee0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_1011eb70();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fee0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1178fef8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_10035daf
+  __asm ret
 }
+
 
 
 // Reference entry 1178fef9; body size 25 bytes.
 #line 1 "ENTRY_1178fef9"
-void FUN_1178fef9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_1011eb70();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178fef9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_1178ff11
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_10035daf
+  __asm ret
 }
+
 
 
 // Reference entry 1178ffa0; body size 25 bytes.
 #line 1 "ENTRY_1178ffa0"
-void FUN_1178ffa0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x40) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x40) = (uint)(*(uint *)(unaff_EBP + -0x40) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x54)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ffa0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x40]
+  __asm and eax, 1
+  __asm je LAB_1178ffb8
+  __asm and dword ptr [ebp - 0x40], 0xfffffffe
+  __asm lea ecx, [ebp - 0x54]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178ffb9; body size 25 bytes.
 #line 1 "ENTRY_1178ffb9"
-void FUN_1178ffb9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x40) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x40) = (uint)(*(uint *)(unaff_EBP + -0x40) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x3c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ffb9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x40]
+  __asm and eax, 2
+  __asm je LAB_1178ffd1
+  __asm and dword ptr [ebp - 0x40], 0xfffffffd
+  __asm lea ecx, [ebp - 0x3c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1178ffd2; body size 25 bytes.
 #line 1 "ENTRY_1178ffd2"
-void FUN_1178ffd2(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x40) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x40) = (uint)(*(uint *)(unaff_EBP + -0x40) & 0xfffffffb);
-    thunk_FUN_1011d130();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1178ffd2(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x40]
+  __asm and eax, 4
+  __asm je LAB_1178ffea
+  __asm and dword ptr [ebp - 0x40], 0xfffffffb
+  __asm lea ecx, [ebp - 0x50]
+  __asm jmp LAB_10043441
+  __asm ret
 }
+
 
 
 // Reference entry 11790031; body size 18 bytes.
 #line 1 "ENTRY_11790031"
-void FUN_11790031(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x50),0xb8);
-  return;
+
+__declspec(naked) void FUN_11790031(void)
+
+{
+  __asm push 0xb8
+  __asm mov eax, dword ptr [ebp - 0x50]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11790043; body size 25 bytes.
 #line 1 "ENTRY_11790043"
-void FUN_11790043(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x40) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x40) = (uint)(*(uint *)(unaff_EBP + -0x40) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x3c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790043(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x40]
+  __asm and eax, 8
+  __asm je LAB_1179005b
+  __asm and dword ptr [ebp - 0x40], 0xfffffff7
+  __asm lea ecx, [ebp - 0x3c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11790197; body size 25 bytes.
 #line 1 "ENTRY_11790197"
-void FUN_11790197(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790197(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117901af
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x38]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 11790280; body size 25 bytes.
 #line 1 "ENTRY_11790280"
-void FUN_11790280(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x2c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790280(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 1
+  __asm je LAB_11790298
+  __asm and dword ptr [ebp - 0x20], 0xfffffffe
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117902c9; body size 18 bytes.
 #line 1 "ENTRY_117902c9"
-void FUN_117902c9(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xe4);
-  return;
+
+__declspec(naked) void FUN_117902c9(void)
+
+{
+  __asm push 0xe4
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11790370; body size 25 bytes.
 #line 1 "ENTRY_11790370"
-void FUN_11790370(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790370(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11790388
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11790391; body size 18 bytes.
 #line 1 "ENTRY_11790391"
-void FUN_11790391(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0xe4);
-  return;
+
+__declspec(naked) void FUN_11790391(void)
+
+{
+  __asm push 0xe4
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11790410; body size 25 bytes.
 #line 1 "ENTRY_11790410"
-void FUN_11790410(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790410(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11790428
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11790431; body size 18 bytes.
 #line 1 "ENTRY_11790431"
-void FUN_11790431(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0xd0);
-  return;
+
+__declspec(naked) void FUN_11790431(void)
+
+{
+  __asm push 0xd0
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11790648; body size 25 bytes.
 #line 1 "ENTRY_11790648"
-void FUN_11790648(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790648(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_11790660
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11790661; body size 25 bytes.
 #line 1 "ENTRY_11790661"
-void FUN_11790661(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790661(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_11790679
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179067a; body size 25 bytes.
 #line 1 "ENTRY_1179067a"
-void FUN_1179067a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffb);
-    thunk_FUN_1011d130();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179067a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 4
+  __asm je LAB_11790692
+  __asm and dword ptr [ebp - 0x14], 0xfffffffb
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_10043441
+  __asm ret
 }
+
 
 
 // Reference entry 11790790; body size 25 bytes.
 #line 1 "ENTRY_11790790"
-void FUN_11790790(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    thunk_FUN_1011eb70();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790790(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_117907a8
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_10035daf
+  __asm ret
 }
+
 
 
 // Reference entry 117907a9; body size 25 bytes.
 #line 1 "ENTRY_117907a9"
-void FUN_117907a9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffd);
-    thunk_FUN_1011eb70();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117907a9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 2
+  __asm je LAB_117907c1
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffd
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_10035daf
+  __asm ret
 }
+
 
 
 // Reference entry 11790a58; body size 25 bytes.
 #line 1 "ENTRY_11790a58"
-void FUN_11790a58(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_1011d190();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790a58(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11790a70
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1005e007
+  __asm ret
 }
+
 
 
 // Reference entry 11790a71; body size 25 bytes.
 #line 1 "ENTRY_11790a71"
-void FUN_11790a71(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_1011d190();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790a71(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_11790a89
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1005e007
+  __asm ret
 }
+
 
 
 // Reference entry 11790a92; body size 25 bytes.
 #line 1 "ENTRY_11790a92"
-void FUN_11790a92(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    thunk_FUN_1011eb70();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790a92(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_11790aaa
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_10035daf
+  __asm ret
 }
+
 
 
 // Reference entry 11790aab; body size 25 bytes.
 #line 1 "ENTRY_11790aab"
-void FUN_11790aab(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    thunk_FUN_1011eb70();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790aab(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_11790ac3
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_10035daf
+  __asm ret
 }
+
 
 
 // Reference entry 11790c40; body size 25 bytes.
 #line 1 "ENTRY_11790c40"
-void FUN_11790c40(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790c40(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11790c58
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11790dd0; body size 25 bytes.
 #line 1 "ENTRY_11790dd0"
-void FUN_11790dd0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101d27b0();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790dd0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_11790de8
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_100977df
+  __asm ret
 }
+
 
 
 // Reference entry 11790de9; body size 25 bytes.
 #line 1 "ENTRY_11790de9"
-void FUN_11790de9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_101d2630();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11790de9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_11790e01
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1009293d
+  __asm ret
 }
+
 
 
 // Reference entry 11791462; body size 25 bytes.
 #line 1 "ENTRY_11791462"
-void FUN_11791462(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    thunk_FUN_1011c1d0();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11791462(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_1179147a
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_10023867
+  __asm ret
 }
+
 
 
 // Reference entry 117915d8; body size 18 bytes.
 #line 1 "ENTRY_117915d8"
-void FUN_117915d8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xa0);
-  return;
+
+__declspec(naked) void FUN_117915d8(void)
+
+{
+  __asm push 0xa0
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179182c; body size 25 bytes.
 #line 1 "ENTRY_1179182c"
-void FUN_1179182c(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 0x20) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xffffffdf);
-    thunk_FUN_1011f170();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179182c(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 0x20
+  __asm je LAB_11791844
+  __asm and dword ptr [ebp - 0x18], 0xffffffdf
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_10024dca
+  __asm ret
 }
+
 
 
 // Reference entry 1179187d; body size 25 bytes.
 #line 1 "ENTRY_1179187d"
-void FUN_1179187d(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179187d(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 2
+  __asm je LAB_11791895
+  __asm and dword ptr [ebp - 0x18], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11791950; body size 25 bytes.
 #line 1 "ENTRY_11791950"
-void FUN_11791950(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11791950(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11791968
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11791d10; body size 25 bytes.
 #line 1 "ENTRY_11791d10"
-void FUN_11791d10(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11791d10(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_11791d28
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117921b0; body size 18 bytes.
 #line 1 "ENTRY_117921b0"
-void FUN_117921b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xe0);
-  return;
+
+__declspec(naked) void FUN_117921b0(void)
+
+{
+  __asm push 0xe0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179229d; body size 25 bytes.
 #line 1 "ENTRY_1179229d"
-void FUN_1179229d(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179229d(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117922b5
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x74]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117922e6; body size 25 bytes.
 #line 1 "ENTRY_117922e6"
-void FUN_117922e6(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x20)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117922e6(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117922fe
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117922ff; body size 25 bytes.
 #line 1 "ENTRY_117922ff"
-void FUN_117922ff(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x6c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117922ff(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_11792317
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x6c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11792318; body size 25 bytes.
 #line 1 "ENTRY_11792318"
-void FUN_11792318(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11792318(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_11792330
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11792331; body size 25 bytes.
 #line 1 "ENTRY_11792331"
-void FUN_11792331(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffef);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x68)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11792331(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x10
+  __asm je LAB_11792349
+  __asm and dword ptr [ebp - 0x10], 0xffffffef
+  __asm lea ecx, [ebp - 0x68]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179234a; body size 25 bytes.
 #line 1 "ENTRY_1179234a"
-void FUN_1179234a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x20) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffdf);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179234a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x20
+  __asm je LAB_11792362
+  __asm and dword ptr [ebp - 0x10], 0xffffffdf
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11792363; body size 25 bytes.
 #line 1 "ENTRY_11792363"
-void FUN_11792363(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x40) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffbf);
-    ((SCStr *)((SCStr *)(unaff_EBP + -100)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11792363(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x40
+  __asm je LAB_1179237b
+  __asm and dword ptr [ebp - 0x10], 0xffffffbf
+  __asm lea ecx, [ebp - 0x64]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179237c; body size 30 bytes.
 #line 1 "ENTRY_1179237c"
-void FUN_1179237c(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x80) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffff7f);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179237c(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x80
+  __asm je LAB_11792399
+  __asm and dword ptr [ebp - 0x10], 0xffffff7f
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179239a; body size 30 bytes.
 #line 1 "ENTRY_1179239a"
-void FUN_1179239a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x100) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffeff);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x60)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179239a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x100
+  __asm je LAB_117923b7
+  __asm and dword ptr [ebp - 0x10], 0xfffffeff
+  __asm lea ecx, [ebp - 0x60]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117926a0; body size 18 bytes.
 #line 1 "ENTRY_117926a0"
-void FUN_117926a0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x28),0xe0);
-  return;
+
+__declspec(naked) void FUN_117926a0(void)
+
+{
+  __asm push 0xe0
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11792880; body size 25 bytes.
 #line 1 "ENTRY_11792880"
-void FUN_11792880(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + -0x20)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11792880(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11792898
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp - 0x20]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117928a1; body size 25 bytes.
 #line 1 "ENTRY_117928a1"
-void FUN_117928a1(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117928a1(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117928b9
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117928ba; body size 25 bytes.
 #line 1 "ENTRY_117928ba"
-void FUN_117928ba(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117928ba(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_117928d2
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11792930; body size 25 bytes.
 #line 1 "ENTRY_11792930"
-void FUN_11792930(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11792930(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_11792948
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117929b8; body size 18 bytes.
 #line 1 "ENTRY_117929b8"
-void FUN_117929b8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1c),0xa4);
-  return;
+
+__declspec(naked) void FUN_117929b8(void)
+
+{
+  __asm push 0xa4
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11793158; body size 18 bytes.
 #line 1 "ENTRY_11793158"
-void FUN_11793158(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x2c),0x6214);
-  return;
+
+__declspec(naked) void FUN_11793158(void)
+
+{
+  __asm push 0x6214
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11793180; body size 18 bytes.
 #line 1 "ENTRY_11793180"
-void FUN_11793180(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x2c),0x6214);
-  return;
+
+__declspec(naked) void FUN_11793180(void)
+
+{
+  __asm push 0x6214
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117931a8; body size 18 bytes.
 #line 1 "ENTRY_117931a8"
-void FUN_117931a8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x2c),0x6214);
-  return;
+
+__declspec(naked) void FUN_117931a8(void)
+
+{
+  __asm push 0x6214
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11793298; body size 18 bytes.
 #line 1 "ENTRY_11793298"
-void FUN_11793298(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x2c),0x94);
-  return;
+
+__declspec(naked) void FUN_11793298(void)
+
+{
+  __asm push 0x94
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11793380; body size 25 bytes.
 #line 1 "ENTRY_11793380"
-void FUN_11793380(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11793380(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_11793398
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117933e0; body size 25 bytes.
 #line 1 "ENTRY_117933e0"
-void FUN_117933e0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117933e0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_117933f8
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11793440; body size 25 bytes.
 #line 1 "ENTRY_11793440"
-void FUN_11793440(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11793440(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_11793458
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117934a0; body size 18 bytes.
 #line 1 "ENTRY_117934a0"
-void FUN_117934a0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xc094);
-  return;
+
+__declspec(naked) void FUN_117934a0(void)
+
+{
+  __asm push 0xc094
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117934e6; body size 18 bytes.
 #line 1 "ENTRY_117934e6"
-void FUN_117934e6(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),&DAT_0000449c);
-  return;
+
+__declspec(naked) void FUN_117934e6(void)
+
+{
+  __asm push 0x449c
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11793516; body size 18 bytes.
 #line 1 "ENTRY_11793516"
-void FUN_11793516(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),&DAT_0000449c);
-  return;
+
+__declspec(naked) void FUN_11793516(void)
+
+{
+  __asm push 0x449c
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11793546; body size 18 bytes.
 #line 1 "ENTRY_11793546"
-void FUN_11793546(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),&DAT_0000449c);
-  return;
+
+__declspec(naked) void FUN_11793546(void)
+
+{
+  __asm push 0x449c
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11793630; body size 18 bytes.
 #line 1 "ENTRY_11793630"
-void FUN_11793630(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x6114);
-  return;
+
+__declspec(naked) void FUN_11793630(void)
+
+{
+  __asm push 0x6114
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11793dc0; body size 25 bytes.
 #line 1 "ENTRY_11793dc0"
-void FUN_11793dc0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x24)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11793dc0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 1
+  __asm je LAB_11793dd8
+  __asm and dword ptr [ebp - 0x20], 0xfffffffe
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11794110; body size 25 bytes.
 #line 1 "ENTRY_11794110"
-void FUN_11794110(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x2c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x2c) = (uint)(*(uint *)(unaff_EBP + -0x2c) & 0xfffffffe);
-    thunk_FUN_101f4a30();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11794110(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm and eax, 1
+  __asm je LAB_11794128
+  __asm and dword ptr [ebp - 0x2c], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_100802f1
+  __asm ret
 }
+
 
 
 // Reference entry 117942d3; body size 25 bytes.
 #line 1 "ENTRY_117942d3"
-void FUN_117942d3(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x54) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x54) = (uint)(*(uint *)(unaff_EBP + -0x54) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x24)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117942d3(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x54]
+  __asm and eax, 1
+  __asm je LAB_117942eb
+  __asm and dword ptr [ebp - 0x54], 0xfffffffe
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11794767; body size 25 bytes.
 #line 1 "ENTRY_11794767"
-void FUN_11794767(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11794767(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1179477f
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11794ad8; body size 25 bytes.
 #line 1 "ENTRY_11794ad8"
-void FUN_11794ad8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x24)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11794ad8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_11794af0
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11794af1; body size 25 bytes.
 #line 1 "ENTRY_11794af1"
-void FUN_11794af1(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x20)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11794af1(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_11794b09
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11794b0a; body size 25 bytes.
 #line 1 "ENTRY_11794b0a"
-void FUN_11794b0a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffb);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11794b0a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 4
+  __asm je LAB_11794b22
+  __asm and dword ptr [ebp - 0x14], 0xfffffffb
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11794b23; body size 25 bytes.
 #line 1 "ENTRY_11794b23"
-void FUN_11794b23(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11794b23(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 8
+  __asm je LAB_11794b3b
+  __asm and dword ptr [ebp - 0x14], 0xfffffff7
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11794e70; body size 25 bytes.
 #line 1 "ENTRY_11794e70"
-void FUN_11794e70(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11794e70(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11794e88
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11794e89; body size 25 bytes.
 #line 1 "ENTRY_11794e89"
-void FUN_11794e89(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11794e89(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_11794ea1
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11795ad0; body size 25 bytes.
 #line 1 "ENTRY_11795ad0"
-void FUN_11795ad0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x40) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x40) = (uint)(*(uint *)(unaff_EBP + -0x40) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11795ad0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x40]
+  __asm and eax, 1
+  __asm je LAB_11795ae8
+  __asm and dword ptr [ebp - 0x40], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11795b50; body size 18 bytes.
 #line 1 "ENTRY_11795b50"
-void FUN_11795b50(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xa8);
-  return;
+
+__declspec(naked) void FUN_11795b50(void)
+
+{
+  __asm push 0xa8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11795ba0; body size 25 bytes.
 #line 1 "ENTRY_11795ba0"
-void FUN_11795ba0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11795ba0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_11795bb8
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11795bb9; body size 25 bytes.
 #line 1 "ENTRY_11795bb9"
-void FUN_11795bb9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_1011e630();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11795bb9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_11795bd1
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_100926fe
+  __asm ret
 }
+
 
 
 // Reference entry 11795bd2; body size 25 bytes.
 #line 1 "ENTRY_11795bd2"
-void FUN_11795bd2(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffb);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11795bd2(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 4
+  __asm je LAB_11795bea
+  __asm and dword ptr [ebp - 0x14], 0xfffffffb
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11795beb; body size 25 bytes.
 #line 1 "ENTRY_11795beb"
-void FUN_11795beb(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffff7);
-    thunk_FUN_1011e630();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11795beb(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 8
+  __asm je LAB_11795c03
+  __asm and dword ptr [ebp - 0x14], 0xfffffff7
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_100926fe
+  __asm ret
 }
+
 
 
 // Reference entry 11795e80; body size 18 bytes.
 #line 1 "ENTRY_11795e80"
-void FUN_11795e80(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0xa8);
-  return;
+
+__declspec(naked) void FUN_11795e80(void)
+
+{
+  __asm push 0xa8
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11795fa0; body size 25 bytes.
 #line 1 "ENTRY_11795fa0"
-void FUN_11795fa0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x28) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x28) = (uint)(*(uint *)(unaff_EBP + -0x28) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11795fa0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm and eax, 1
+  __asm je LAB_11795fb8
+  __asm and dword ptr [ebp - 0x28], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11796097; body size 25 bytes.
 #line 1 "ENTRY_11796097"
-void FUN_11796097(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffef);
-    thunk_FUN_1011e630();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11796097(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x10
+  __asm je LAB_117960af
+  __asm and dword ptr [ebp - 0x10], 0xffffffef
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_100926fe
+  __asm ret
 }
+
 
 
 // Reference entry 117960d8; body size 25 bytes.
 #line 1 "ENTRY_117960d8"
-void FUN_117960d8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x20) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffdf);
-    thunk_FUN_1011e630();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117960d8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x20
+  __asm je LAB_117960f0
+  __asm and dword ptr [ebp - 0x10], 0xffffffdf
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_100926fe
+  __asm ret
 }
+
 
 
 // Reference entry 117962d7; body size 25 bytes.
 #line 1 "ENTRY_117962d7"
-void FUN_117962d7(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffb);
-    thunk_FUN_1011e630();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117962d7(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 4
+  __asm je LAB_117962ef
+  __asm and dword ptr [ebp - 0x18], 0xfffffffb
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_100926fe
+  __asm ret
 }
+
 
 
 // Reference entry 117965c8; body size 25 bytes.
 #line 1 "ENTRY_117965c8"
-void FUN_117965c8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x2c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x2c) = (uint)(*(uint *)(unaff_EBP + -0x2c) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117965c8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm and eax, 1
+  __asm je LAB_117965e0
+  __asm and dword ptr [ebp - 0x2c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11796650; body size 25 bytes.
 #line 1 "ENTRY_11796650"
-void FUN_11796650(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x2c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x2c) = (uint)(*(uint *)(unaff_EBP + -0x2c) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11796650(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm and eax, 1
+  __asm je LAB_11796668
+  __asm and dword ptr [ebp - 0x2c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11796a38; body size 25 bytes.
 #line 1 "ENTRY_11796a38"
-void FUN_11796a38(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x34) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x34) = (uint)(*(uint *)(unaff_EBP + -0x34) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x20)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11796a38(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x34]
+  __asm and eax, 1
+  __asm je LAB_11796a50
+  __asm and dword ptr [ebp - 0x34], 0xfffffffe
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11796b5f; body size 25 bytes.
 #line 1 "ENTRY_11796b5f"
-void FUN_11796b5f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x34) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x34) = (uint)(*(uint *)(unaff_EBP + -0x34) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11796b5f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x34]
+  __asm and eax, 1
+  __asm je LAB_11796b77
+  __asm and dword ptr [ebp - 0x34], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11796c60; body size 25 bytes.
 #line 1 "ENTRY_11796c60"
-void FUN_11796c60(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11796c60(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_11796c78
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11796da0; body size 18 bytes.
 #line 1 "ENTRY_11796da0"
-void FUN_11796da0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x698);
-  return;
+
+__declspec(naked) void FUN_11796da0(void)
+
+{
+  __asm push 0x698
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11796df0; body size 18 bytes.
 #line 1 "ENTRY_11796df0"
-void FUN_11796df0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x698);
-  return;
+
+__declspec(naked) void FUN_11796df0(void)
+
+{
+  __asm push 0x698
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117972a0; body size 25 bytes.
 #line 1 "ENTRY_117972a0"
-void FUN_117972a0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_10247e10();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117972a0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117972b8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_100776a1
+  __asm ret
 }
+
 
 
 // Reference entry 11797358; body size 25 bytes.
 #line 1 "ENTRY_11797358"
-void FUN_11797358(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_10247e10();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11797358(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_11797370
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_100776a1
+  __asm ret
 }
+
 
 
 // Reference entry 11797870; body size 25 bytes.
 #line 1 "ENTRY_11797870"
-void FUN_11797870(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x10)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11797870(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_11797888
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11797d08; body size 25 bytes.
 #line 1 "ENTRY_11797d08"
-void FUN_11797d08(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11797d08(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 1
+  __asm je LAB_11797d20
+  __asm and dword ptr [ebp - 0x20], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 11797d51; body size 25 bytes.
 #line 1 "ENTRY_11797d51"
-void FUN_11797d51(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11797d51(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 4
+  __asm je LAB_11797d69
+  __asm and dword ptr [ebp - 0x20], 0xfffffffb
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117981c0; body size 18 bytes.
 #line 1 "ENTRY_117981c0"
-void FUN_117981c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xf8);
-  return;
+
+__declspec(naked) void FUN_117981c0(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117981d2; body size 18 bytes.
 #line 1 "ENTRY_117981d2"
-void FUN_117981d2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xf8);
-  return;
+
+__declspec(naked) void FUN_117981d2(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117981e4; body size 18 bytes.
 #line 1 "ENTRY_117981e4"
-void FUN_117981e4(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xf8);
-  return;
+
+__declspec(naked) void FUN_117981e4(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117981f6; body size 18 bytes.
 #line 1 "ENTRY_117981f6"
-void FUN_117981f6(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xf8);
-  return;
+
+__declspec(naked) void FUN_117981f6(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11798230; body size 18 bytes.
 #line 1 "ENTRY_11798230"
-void FUN_11798230(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xf8);
-  return;
+
+__declspec(naked) void FUN_11798230(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11798242; body size 18 bytes.
 #line 1 "ENTRY_11798242"
-void FUN_11798242(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xf8);
-  return;
+
+__declspec(naked) void FUN_11798242(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11798254; body size 18 bytes.
 #line 1 "ENTRY_11798254"
-void FUN_11798254(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xf8);
-  return;
+
+__declspec(naked) void FUN_11798254(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11798266; body size 18 bytes.
 #line 1 "ENTRY_11798266"
-void FUN_11798266(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xf8);
-  return;
+
+__declspec(naked) void FUN_11798266(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11798278; body size 18 bytes.
 #line 1 "ENTRY_11798278"
-void FUN_11798278(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xf8);
-  return;
+
+__declspec(naked) void FUN_11798278(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11799480; body size 18 bytes.
 #line 1 "ENTRY_11799480"
-void FUN_11799480(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0xdc);
-  return;
+
+__declspec(naked) void FUN_11799480(void)
+
+{
+  __asm push 0xdc
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117998b0; body size 25 bytes.
 #line 1 "ENTRY_117998b0"
-void FUN_117998b0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117998b0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117998c8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11799900; body size 25 bytes.
 #line 1 "ENTRY_11799900"
-void FUN_11799900(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11799900(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11799918
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11799950; body size 25 bytes.
 #line 1 "ENTRY_11799950"
-void FUN_11799950(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11799950(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11799968
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117999af; body size 25 bytes.
 #line 1 "ENTRY_117999af"
-void FUN_117999af(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x10)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117999af(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117999c7
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11799a10; body size 25 bytes.
 #line 1 "ENTRY_11799a10"
-void FUN_11799a10(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11799a10(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_11799a28
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 11799af8; body size 18 bytes.
 #line 1 "ENTRY_11799af8"
-void FUN_11799af8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1c),0xdc);
-  return;
+
+__declspec(naked) void FUN_11799af8(void)
+
+{
+  __asm push 0xdc
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11799b0a; body size 25 bytes.
 #line 1 "ENTRY_11799b0a"
-void FUN_11799b0a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x3c) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x3c) = (uint)(*(uint *)(unaff_EBP + -0x3c) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_11799b0a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x3c]
+  __asm and eax, 2
+  __asm je LAB_11799b22
+  __asm and dword ptr [ebp - 0x3c], 0xfffffffd
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179a070; body size 25 bytes.
 #line 1 "ENTRY_1179a070"
-void FUN_1179a070(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179a070(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1179a088
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179a596; body size 25 bytes.
 #line 1 "ENTRY_1179a596"
-void FUN_1179a596(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x34) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x34) = (uint)(*(uint *)(unaff_EBP + -0x34) & 0xfffffffd);
-    thunk_FUN_1011c170();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179a596(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x34]
+  __asm and eax, 2
+  __asm je LAB_1179a5ae
+  __asm and dword ptr [ebp - 0x34], 0xfffffffd
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_1009566f
+  __asm ret
 }
+
 
 
 // Reference entry 1179a647; body size 25 bytes.
 #line 1 "ENTRY_1179a647"
-void FUN_1179a647(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_1011c170();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179a647(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_1179a65f
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1009566f
+  __asm ret
 }
+
 
 
 // Reference entry 1179a6a0; body size 25 bytes.
 #line 1 "ENTRY_1179a6a0"
-void FUN_1179a6a0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x24) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x24) = (uint)(*(uint *)(unaff_EBP + -0x24) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179a6a0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm and eax, 1
+  __asm je LAB_1179a6b8
+  __asm and dword ptr [ebp - 0x24], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179a7b0; body size 18 bytes.
 #line 1 "ENTRY_1179a7b0"
-void FUN_1179a7b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x29c),0x14);
-  return;
+
+__declspec(naked) void FUN_1179a7b0(void)
+
+{
+  __asm push 0x14
+  __asm mov eax, dword ptr [ebp - 0x29c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179a7d8; body size 34 bytes.
 #line 1 "ENTRY_1179a7d8"
-void FUN_1179a7d8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x2b4) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x2b4) = (uint)(*(uint *)(unaff_EBP + -0x2b4) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x298)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179a7d8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x2b4]
+  __asm and eax, 1
+  __asm je LAB_1179a7f9
+  __asm and dword ptr [ebp - 0x2b4], 0xfffffffe
+  __asm lea ecx, [ebp - 0x298]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179a805; body size 18 bytes.
 #line 1 "ENTRY_1179a805"
-void FUN_1179a805(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x29c),0x20);
-  return;
+
+__declspec(naked) void FUN_1179a805(void)
+
+{
+  __asm push 0x20
+  __asm mov eax, dword ptr [ebp - 0x29c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179a822; body size 18 bytes.
 #line 1 "ENTRY_1179a822"
-void FUN_1179a822(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x29c),0x20);
-  return;
+
+__declspec(naked) void FUN_1179a822(void)
+
+{
+  __asm push 0x20
+  __asm mov eax, dword ptr [ebp - 0x29c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179a944; body size 18 bytes.
 #line 1 "ENTRY_1179a944"
-void FUN_1179a944(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x29c),0x10);
-  return;
+
+__declspec(naked) void FUN_1179a944(void)
+
+{
+  __asm push 0x10
+  __asm mov eax, dword ptr [ebp - 0x29c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179a956; body size 34 bytes.
 #line 1 "ENTRY_1179a956"
-void FUN_1179a956(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x2b4) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x2b4) = (uint)(*(uint *)(unaff_EBP + -0x2b4) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x2a0)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179a956(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x2b4]
+  __asm and eax, 2
+  __asm je LAB_1179a977
+  __asm and dword ptr [ebp - 0x2b4], 0xfffffffd
+  __asm lea ecx, [ebp - 0x2a0]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179ae10; body size 25 bytes.
 #line 1 "ENTRY_1179ae10"
-void FUN_1179ae10(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    thunk_FUN_1011d9d0();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179ae10(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_1179ae28
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_10011487
+  __asm ret
 }
+
 
 
 // Reference entry 1179affe; body size 25 bytes.
 #line 1 "ENTRY_1179affe"
-void FUN_1179affe(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_1011c170();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179affe(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1179b016
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1009566f
+  __asm ret
 }
+
 
 
 // Reference entry 1179b0a6; body size 25 bytes.
 #line 1 "ENTRY_1179b0a6"
-void FUN_1179b0a6(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    thunk_FUN_1011c170();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179b0a6(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_1179b0be
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1009566f
+  __asm ret
 }
+
 
 
 // Reference entry 1179b21e; body size 25 bytes.
 #line 1 "ENTRY_1179b21e"
-void FUN_1179b21e(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x34) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x34) = (uint)(*(uint *)(unaff_EBP + -0x34) & 0xfffffffe);
-    thunk_FUN_1011c170();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179b21e(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x34]
+  __asm and eax, 1
+  __asm je LAB_1179b236
+  __asm and dword ptr [ebp - 0x34], 0xfffffffe
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_1009566f
+  __asm ret
 }
+
 
 
 // Reference entry 1179bba0; body size 18 bytes.
 #line 1 "ENTRY_1179bba0"
-void FUN_1179bba0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x611c);
-  return;
+
+__declspec(naked) void FUN_1179bba0(void)
+
+{
+  __asm push 0x611c
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179bdd8; body size 18 bytes.
 #line 1 "ENTRY_1179bdd8"
-void FUN_1179bdd8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xf8);
-  return;
+
+__declspec(naked) void FUN_1179bdd8(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179bef0; body size 18 bytes.
 #line 1 "ENTRY_1179bef0"
-void FUN_1179bef0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),200);
-  return;
+
+__declspec(naked) void FUN_1179bef0(void)
+
+{
+  __asm push 0xc8
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179c037; body size 18 bytes.
 #line 1 "ENTRY_1179c037"
-void FUN_1179c037(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xf8);
-  return;
+
+__declspec(naked) void FUN_1179c037(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179c090; body size 25 bytes.
 #line 1 "ENTRY_1179c090"
-void FUN_1179c090(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_102a9890();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179c090(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1179c0a8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_10095aa7
+  __asm ret
 }
+
 
 
 // Reference entry 1179c2f7; body size 18 bytes.
 #line 1 "ENTRY_1179c2f7"
-void FUN_1179c2f7(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xf8);
-  return;
+
+__declspec(naked) void FUN_1179c2f7(void)
+
+{
+  __asm push 0xf8
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179cd98; body size 18 bytes.
 #line 1 "ENTRY_1179cd98"
-void FUN_1179cd98(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0xc0);
-  return;
+
+__declspec(naked) void FUN_1179cd98(void)
+
+{
+  __asm push 0xc0
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179d010; body size 25 bytes.
 #line 1 "ENTRY_1179d010"
-void FUN_1179d010(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x38) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x38) = (uint)(*(uint *)(unaff_EBP + -0x38) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d010(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x38]
+  __asm and eax, 2
+  __asm je LAB_1179d028
+  __asm and dword ptr [ebp - 0x38], 0xfffffffd
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179d029; body size 25 bytes.
 #line 1 "ENTRY_1179d029"
-void FUN_1179d029(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x38) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x38) = (uint)(*(uint *)(unaff_EBP + -0x38) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d029(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x38]
+  __asm and eax, 4
+  __asm je LAB_1179d041
+  __asm and dword ptr [ebp - 0x38], 0xfffffffb
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179d250; body size 25 bytes.
 #line 1 "ENTRY_1179d250"
-void FUN_1179d250(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d250(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1179d268
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179d269; body size 25 bytes.
 #line 1 "ENTRY_1179d269"
-void FUN_1179d269(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d269(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_1179d281
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179d2f0; body size 25 bytes.
 #line 1 "ENTRY_1179d2f0"
-void FUN_1179d2f0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d2f0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1179d308
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179d690; body size 25 bytes.
 #line 1 "ENTRY_1179d690"
-void FUN_1179d690(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_102a9890();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d690(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1179d6a8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_10095aa7
+  __asm ret
 }
+
 
 
 // Reference entry 1179d780; body size 25 bytes.
 #line 1 "ENTRY_1179d780"
-void FUN_1179d780(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCImageResource *)((SCImageResource *)(unaff_EBP + -0x30)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d780(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1179d798
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x30]
+  __asm jmp LAB_10066621
+  __asm ret
 }
+
 
 
 // Reference entry 1179d7c1; body size 25 bytes.
 #line 1 "ENTRY_1179d7c1"
-void FUN_1179d7c1(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCImageResource *)((SCImageResource *)(unaff_EBP + -0x28)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d7c1(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_1179d7d9
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_10066621
+  __asm ret
 }
+
 
 
 // Reference entry 1179d8e0; body size 25 bytes.
 #line 1 "ENTRY_1179d8e0"
-void FUN_1179d8e0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d8e0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1179d8f8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179d980; body size 25 bytes.
 #line 1 "ENTRY_1179d980"
-void FUN_1179d980(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x28) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x28) = (uint)(*(uint *)(unaff_EBP + -0x28) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d980(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm and eax, 1
+  __asm je LAB_1179d998
+  __asm and dword ptr [ebp - 0x28], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179d9c9; body size 25 bytes.
 #line 1 "ENTRY_1179d9c9"
-void FUN_1179d9c9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x28) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x28) = (uint)(*(uint *)(unaff_EBP + -0x28) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179d9c9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm and eax, 2
+  __asm je LAB_1179d9e1
+  __asm and dword ptr [ebp - 0x28], 0xfffffffd
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179da30; body size 25 bytes.
 #line 1 "ENTRY_1179da30"
-void FUN_1179da30(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179da30(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1179da48
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179daef; body size 25 bytes.
 #line 1 "ENTRY_1179daef"
-void FUN_1179daef(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179daef(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1179db07
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179dbc0; body size 25 bytes.
 #line 1 "ENTRY_1179dbc0"
-void FUN_1179dbc0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCImageResource *)((SCImageResource *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179dbc0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1179dbd8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_10066621
+  __asm ret
 }
+
 
 
 // Reference entry 1179dbd9; body size 25 bytes.
 #line 1 "ENTRY_1179dbd9"
-void FUN_1179dbd9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCImageResource *)((SCImageResource *)(unaff_EBP + -0x24)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179dbd9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_1179dbf1
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_10066621
+  __asm ret
 }
+
 
 
 // Reference entry 1179dcc8; body size 25 bytes.
 #line 1 "ENTRY_1179dcc8"
-void FUN_1179dcc8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179dcc8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1179dce0
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179dd30; body size 25 bytes.
 #line 1 "ENTRY_1179dd30"
-void FUN_1179dd30(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x2c) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x2c) = (uint)(*(uint *)(unaff_EBP + -0x2c) & 0xfffffffd);
-    thunk_FUN_101d27b0();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179dd30(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm and eax, 2
+  __asm je LAB_1179dd48
+  __asm and dword ptr [ebp - 0x2c], 0xfffffffd
+  __asm lea ecx, [ebp - 0x38]
+  __asm jmp LAB_100977df
+  __asm ret
 }
+
 
 
 // Reference entry 1179dd73; body size 25 bytes.
 #line 1 "ENTRY_1179dd73"
-void FUN_1179dd73(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x2c) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x2c) = (uint)(*(uint *)(unaff_EBP + -0x2c) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179dd73(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm and eax, 4
+  __asm je LAB_1179dd8b
+  __asm and dword ptr [ebp - 0x2c], 0xfffffffb
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179dd8c; body size 25 bytes.
 #line 1 "ENTRY_1179dd8c"
-void FUN_1179dd8c(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x2c) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x2c) = (uint)(*(uint *)(unaff_EBP + -0x2c) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179dd8c(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm and eax, 8
+  __asm je LAB_1179dda4
+  __asm and dword ptr [ebp - 0x2c], 0xfffffff7
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179dda5; body size 25 bytes.
 #line 1 "ENTRY_1179dda5"
-void FUN_1179dda5(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x2c) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x2c) = (uint)(*(uint *)(unaff_EBP + -0x2c) & 0xffffffef);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x38)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179dda5(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm and eax, 0x10
+  __asm je LAB_1179ddbd
+  __asm and dword ptr [ebp - 0x2c], 0xffffffef
+  __asm lea ecx, [ebp - 0x38]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179e06e; body size 25 bytes.
 #line 1 "ENTRY_1179e06e"
-void FUN_1179e06e(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e06e(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_1179e086
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179e1f0; body size 25 bytes.
 #line 1 "ENTRY_1179e1f0"
-void FUN_1179e1f0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e1f0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1179e208
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179e2e8; body size 25 bytes.
 #line 1 "ENTRY_1179e2e8"
-void FUN_1179e2e8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_1011be40();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e2e8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1179e300
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1005b55f
+  __asm ret
 }
+
 
 
 // Reference entry 1179e3b0; body size 25 bytes.
 #line 1 "ENTRY_1179e3b0"
-void FUN_1179e3b0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x10)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e3b0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 2
+  __asm je LAB_1179e3c8
+  __asm and dword ptr [ebp - 0x20], 0xfffffffd
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179e4c0; body size 25 bytes.
 #line 1 "ENTRY_1179e4c0"
-void FUN_1179e4c0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e4c0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1179e4d8
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179e540; body size 25 bytes.
 #line 1 "ENTRY_1179e540"
-void FUN_1179e540(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e540(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_1179e558
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x34]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179e559; body size 25 bytes.
 #line 1 "ENTRY_1179e559"
-void FUN_1179e559(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e559(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 2
+  __asm je LAB_1179e571
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffd
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179e700; body size 25 bytes.
 #line 1 "ENTRY_1179e700"
-void FUN_1179e700(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x44) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x44) = (uint)(*(uint *)(unaff_EBP + -0x44) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x60)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e700(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x44]
+  __asm and eax, 2
+  __asm je LAB_1179e718
+  __asm and dword ptr [ebp - 0x44], 0xfffffffd
+  __asm lea ecx, [ebp - 0x60]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179e719; body size 18 bytes.
 #line 1 "ENTRY_1179e719"
-void FUN_1179e719(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x70),0x260);
-  return;
+
+__declspec(naked) void FUN_1179e719(void)
+
+{
+  __asm push 0x260
+  __asm mov eax, dword ptr [ebp - 0x70]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1179e72b; body size 25 bytes.
 #line 1 "ENTRY_1179e72b"
-void FUN_1179e72b(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x44) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x44) = (uint)(*(uint *)(unaff_EBP + -0x44) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x60)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e72b(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x44]
+  __asm and eax, 8
+  __asm je LAB_1179e743
+  __asm and dword ptr [ebp - 0x44], 0xfffffff7
+  __asm lea ecx, [ebp - 0x60]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179e744; body size 25 bytes.
 #line 1 "ENTRY_1179e744"
-void FUN_1179e744(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x44) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x44) = (uint)(*(uint *)(unaff_EBP + -0x44) & 0xffffffef);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x54)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e744(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x44]
+  __asm and eax, 0x10
+  __asm je LAB_1179e75c
+  __asm and dword ptr [ebp - 0x44], 0xffffffef
+  __asm lea ecx, [ebp - 0x54]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179e7d0; body size 25 bytes.
 #line 1 "ENTRY_1179e7d0"
-void FUN_1179e7d0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179e7d0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_1179e7e8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179ec10; body size 25 bytes.
 #line 1 "ENTRY_1179ec10"
-void FUN_1179ec10(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x28) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x28) = (uint)(*(uint *)(unaff_EBP + -0x28) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179ec10(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm and eax, 2
+  __asm je LAB_1179ec28
+  __asm and dword ptr [ebp - 0x28], 0xfffffffd
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179ec29; body size 25 bytes.
 #line 1 "ENTRY_1179ec29"
-void FUN_1179ec29(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x28) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x28) = (uint)(*(uint *)(unaff_EBP + -0x28) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179ec29(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm and eax, 4
+  __asm je LAB_1179ec41
+  __asm and dword ptr [ebp - 0x28], 0xfffffffb
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179ee70; body size 25 bytes.
 #line 1 "ENTRY_1179ee70"
-void FUN_1179ee70(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179ee70(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 1
+  __asm je LAB_1179ee88
+  __asm and dword ptr [ebp - 0x20], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179f2a8; body size 25 bytes.
 #line 1 "ENTRY_1179f2a8"
-void FUN_1179f2a8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffb);
-    thunk_FUN_1011be40();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179f2a8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 4
+  __asm je LAB_1179f2c0
+  __asm and dword ptr [ebp - 0x14], 0xfffffffb
+  __asm lea ecx, [ebp - 0x38]
+  __asm jmp LAB_1005b55f
+  __asm ret
 }
+
 
 
 // Reference entry 1179f4d0; body size 25 bytes.
 #line 1 "ENTRY_1179f4d0"
-void FUN_1179f4d0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179f4d0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_1179f4e8
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 1179f580; body size 25 bytes.
 #line 1 "ENTRY_1179f580"
-void FUN_1179f580(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x28) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x28) = (uint)(*(uint *)(unaff_EBP + -0x28) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179f580(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm and eax, 1
+  __asm je LAB_1179f598
+  __asm and dword ptr [ebp - 0x28], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179f868; body size 25 bytes.
 #line 1 "ENTRY_1179f868"
-void FUN_1179f868(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179f868(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_1179f880
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179fc48; body size 25 bytes.
 #line 1 "ENTRY_1179fc48"
-void FUN_1179fc48(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179fc48(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 1
+  __asm je LAB_1179fc60
+  __asm and dword ptr [ebp - 0x20], 0xfffffffe
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179fcc8; body size 25 bytes.
 #line 1 "ENTRY_1179fcc8"
-void FUN_1179fcc8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179fcc8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 1
+  __asm je LAB_1179fce0
+  __asm and dword ptr [ebp - 0x20], 0xfffffffe
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179fce9; body size 25 bytes.
 #line 1 "ENTRY_1179fce9"
-void FUN_1179fce9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179fce9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 2
+  __asm je LAB_1179fd01
+  __asm and dword ptr [ebp - 0x20], 0xfffffffd
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179fd12; body size 25 bytes.
 #line 1 "ENTRY_1179fd12"
-void FUN_1179fd12(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179fd12(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 4
+  __asm je LAB_1179fd2a
+  __asm and dword ptr [ebp - 0x20], 0xfffffffb
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 1179fee8; body size 25 bytes.
 #line 1 "ENTRY_1179fee8"
-void FUN_1179fee8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_1179fee8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_1179ff00
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a052e; body size 22 bytes.
 #line 1 "ENTRY_117a052e"
-void FUN_117a052e(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(*(int *)(unaff_EBP + -0x18) + 0x18),4,7,((int (*)())&SCStr::op_dtor));
-  return;
+
+__declspec(naked) void FUN_117a052e(void)
+
+{
+  __asm push offset LAB_1008c50b
+  __asm push 7
+  __asm push 4
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm add eax, 0x18
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117a0544; body size 22 bytes.
 #line 1 "ENTRY_117a0544"
-void FUN_117a0544(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(*(int *)(unaff_EBP + -0x18) + 0x34),4,7,((int (*)())&SCStr::op_dtor));
-  return;
+
+__declspec(naked) void FUN_117a0544(void)
+
+{
+  __asm push offset LAB_1008c50b
+  __asm push 7
+  __asm push 4
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm add eax, 0x34
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117a0ff0; body size 18 bytes.
 #line 1 "ENTRY_117a0ff0"
-void FUN_117a0ff0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117a0ff0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a10b0; body size 18 bytes.
 #line 1 "ENTRY_117a10b0"
-void FUN_117a10b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117a10b0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a1170; body size 18 bytes.
 #line 1 "ENTRY_117a1170"
-void FUN_117a1170(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117a1170(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a1290; body size 18 bytes.
 #line 1 "ENTRY_117a1290"
-void FUN_117a1290(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117a1290(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a1580; body size 25 bytes.
 #line 1 "ENTRY_117a1580"
-void FUN_117a1580(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a1580(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117a1598
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a1599; body size 25 bytes.
 #line 1 "ENTRY_117a1599"
-void FUN_117a1599(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a1599(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117a15b1
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a15b2; body size 25 bytes.
 #line 1 "ENTRY_117a15b2"
-void FUN_117a15b2(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0x10)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a15b2(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_117a15ca
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp + 0x10]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a15cb; body size 25 bytes.
 #line 1 "ENTRY_117a15cb"
-void FUN_117a15cb(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a15cb(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_117a15e3
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a1790; body size 25 bytes.
 #line 1 "ENTRY_117a1790"
-void FUN_117a1790(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a1790(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117a17a8
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a1f38; body size 25 bytes.
 #line 1 "ENTRY_117a1f38"
-void FUN_117a1f38(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x28)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a1f38(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117a1f50
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a1f51; body size 25 bytes.
 #line 1 "ENTRY_117a1f51"
-void FUN_117a1f51(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a1f51(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117a1f69
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2020; body size 25 bytes.
 #line 1 "ENTRY_117a2020"
-void FUN_117a2020(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x28)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2020(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117a2038
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2039; body size 25 bytes.
 #line 1 "ENTRY_117a2039"
-void FUN_117a2039(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2039(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117a2051
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2148; body size 25 bytes.
 #line 1 "ENTRY_117a2148"
-void FUN_117a2148(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2148(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117a2160
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a21a0; body size 25 bytes.
 #line 1 "ENTRY_117a21a0"
-void FUN_117a21a0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a21a0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117a21b8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2200; body size 25 bytes.
 #line 1 "ENTRY_117a2200"
-void FUN_117a2200(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2200(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117a2218
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2250; body size 25 bytes.
 #line 1 "ENTRY_117a2250"
-void FUN_117a2250(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)(*(SCStr **)(unaff_EBP + 8)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2250(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117a2268
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a29d0; body size 18 bytes.
 #line 1 "ENTRY_117a29d0"
-void FUN_117a29d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x6250);
-  return;
+
+__declspec(naked) void FUN_117a29d0(void)
+
+{
+  __asm push 0x6250
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a2d00; body size 18 bytes.
 #line 1 "ENTRY_117a2d00"
-void FUN_117a2d00(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x4490);
-  return;
+
+__declspec(naked) void FUN_117a2d00(void)
+
+{
+  __asm push 0x4490
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a2d6f; body size 25 bytes.
 #line 1 "ENTRY_117a2d6f"
-void FUN_117a2d6f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2d6f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_117a2d87
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2d88; body size 25 bytes.
 #line 1 "ENTRY_117a2d88"
-void FUN_117a2d88(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffef);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2d88(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x10
+  __asm je LAB_117a2da0
+  __asm and dword ptr [ebp - 0x10], 0xffffffef
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2db0; body size 25 bytes.
 #line 1 "ENTRY_117a2db0"
-void FUN_117a2db0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2db0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117a2dc8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2dc9; body size 25 bytes.
 #line 1 "ENTRY_117a2dc9"
-void FUN_117a2dc9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2dc9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117a2de1
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2e4f; body size 25 bytes.
 #line 1 "ENTRY_117a2e4f"
-void FUN_117a2e4f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x18)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2e4f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117a2e67
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2e68; body size 25 bytes.
 #line 1 "ENTRY_117a2e68"
-void FUN_117a2e68(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    ((SCStr *)((SCStr *)(unaff_EBP + 0xc)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2e68(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117a2e80
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2e90; body size 25 bytes.
 #line 1 "ENTRY_117a2e90"
-void FUN_117a2e90(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x1c)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2e90(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_117a2ea8
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2ea9; body size 25 bytes.
 #line 1 "ENTRY_117a2ea9"
-void FUN_117a2ea9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffef);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x14)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2ea9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x10
+  __asm je LAB_117a2ec1
+  __asm and dword ptr [ebp - 0x10], 0xffffffef
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a2f70; body size 25 bytes.
 #line 1 "ENTRY_117a2f70"
-void FUN_117a2f70(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a2f70(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117a2f88
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a30af; body size 25 bytes.
 #line 1 "ENTRY_117a30af"
-void FUN_117a30af(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    ((SCStr *)((SCStr *)(unaff_EBP + -0x10)))->m_op_dtor();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a30af(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117a30c7
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1008c50b
+  __asm ret
 }
+
 
 
 // Reference entry 117a3780; body size 25 bytes.
 #line 1 "ENTRY_117a3780"
-void FUN_117a3780(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_11255560();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a3780(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117a3798
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp]
+  __asm jmp LAB_10083573
+  __asm ret
 }
+
 
 
 // Reference entry 117a37e0; body size 25 bytes.
 #line 1 "ENTRY_117a37e0"
-void FUN_117a37e0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a37e0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 4
+  __asm je LAB_117a37f8
+  __asm and dword ptr [ebp - 0x14], 0xfffffffb
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a37f9; body size 25 bytes.
 #line 1 "ENTRY_117a37f9"
-void FUN_117a37f9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a37f9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117a3811
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a3812; body size 25 bytes.
 #line 1 "ENTRY_117a3812"
-void FUN_117a3812(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a3812(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117a382a
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a382b; body size 25 bytes.
 #line 1 "ENTRY_117a382b"
-void FUN_117a382b(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x20) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xffffffdf);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a382b(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x20
+  __asm je LAB_117a3843
+  __asm and dword ptr [ebp - 0x14], 0xffffffdf
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a3844; body size 25 bytes.
 #line 1 "ENTRY_117a3844"
-void FUN_117a3844(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffff7);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a3844(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 8
+  __asm je LAB_117a385c
+  __asm and dword ptr [ebp - 0x14], 0xfffffff7
+  __asm lea ecx, [ebp - 0x34]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a385d; body size 25 bytes.
 #line 1 "ENTRY_117a385d"
-void FUN_117a385d(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xffffffef);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a385d(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x10
+  __asm je LAB_117a3875
+  __asm and dword ptr [ebp - 0x14], 0xffffffef
+  __asm lea ecx, [ebp - 0x38]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a3920; body size 25 bytes.
 #line 1 "ENTRY_117a3920"
-void FUN_117a3920(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a3920(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_117a3938
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a3990; body size 25 bytes.
 #line 1 "ENTRY_117a3990"
-void FUN_117a3990(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a3990(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_117a39a8
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a4a29; body size 17 bytes.
 #line 1 "ENTRY_117a4a29"
-void FUN_117a4a29(void){
-  thunk_FUN_111a6f10();
-  return;
+
+__declspec(naked) void FUN_117a4a29(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x80
+  __asm jmp LAB_100504d4
 }
+
 
 
 // Reference entry 117a4a3a; body size 17 bytes.
 #line 1 "ENTRY_117a4a3a"
-void FUN_117a4a3a(void){
-  thunk_FUN_111a6f10();
-  return;
+
+__declspec(naked) void FUN_117a4a3a(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x88
+  __asm jmp LAB_100504d4
 }
+
 
 
 // Reference entry 117a4a4b; body size 17 bytes.
 #line 1 "ENTRY_117a4a4b"
-void FUN_117a4a4b(void){
-  thunk_FUN_111a6f10();
-  return;
+
+__declspec(naked) void FUN_117a4a4b(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x90
+  __asm jmp LAB_100504d4
 }
+
 
 
 // Reference entry 117a4a5c; body size 17 bytes.
 #line 1 "ENTRY_117a4a5c"
-void FUN_117a4a5c(void){
-  thunk_FUN_111a6f10();
-  return;
+
+__declspec(naked) void FUN_117a4a5c(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x98
+  __asm jmp LAB_100504d4
 }
+
 
 
 // Reference entry 117a4a6d; body size 17 bytes.
 #line 1 "ENTRY_117a4a6d"
-void FUN_117a4a6d(void){
-  thunk_FUN_11079440();
-  return;
+
+__declspec(naked) void FUN_117a4a6d(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0xa0
+  __asm jmp LAB_1003df5f
 }
+
 
 
 // Reference entry 117a4a7e; body size 17 bytes.
 #line 1 "ENTRY_117a4a7e"
-void FUN_117a4a7e(void){
-  thunk_FUN_11079440();
-  return;
+
+__declspec(naked) void FUN_117a4a7e(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0xb0
+  __asm jmp LAB_1003df5f
 }
+
 
 
 // Reference entry 117a4a8f; body size 17 bytes.
 #line 1 "ENTRY_117a4a8f"
-void FUN_117a4a8f(void){
-  thunk_FUN_110793c0();
-  return;
+
+__declspec(naked) void FUN_117a4a8f(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0xbc
+  __asm jmp LAB_1008f16b
 }
+
 
 
 // Reference entry 117a4aa0; body size 17 bytes.
 #line 1 "ENTRY_117a4aa0"
-void FUN_117a4aa0(void){
-  thunk_FUN_10207220();
-  return;
+
+__declspec(naked) void FUN_117a4aa0(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0xc8
+  __asm jmp LAB_1000f5bf
 }
+
 
 
 // Reference entry 117a4ab1; body size 17 bytes.
 #line 1 "ENTRY_117a4ab1"
-void FUN_117a4ab1(void){
-  thunk_FUN_10207220();
-  return;
+
+__declspec(naked) void FUN_117a4ab1(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0xd4
+  __asm jmp LAB_1000f5bf
 }
+
 
 
 // Reference entry 117a4ac2; body size 17 bytes.
 #line 1 "ENTRY_117a4ac2"
-void FUN_117a4ac2(void){
-  thunk_FUN_11079440();
-  return;
+
+__declspec(naked) void FUN_117a4ac2(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0xe0
+  __asm jmp LAB_1003df5f
 }
+
 
 
 // Reference entry 117a4ad3; body size 17 bytes.
 #line 1 "ENTRY_117a4ad3"
-void FUN_117a4ad3(void){
-  thunk_FUN_11079140();
-  return;
+
+__declspec(naked) void FUN_117a4ad3(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0xec
+  __asm jmp LAB_1003a48b
 }
+
 
 
 // Reference entry 117a4ae4; body size 17 bytes.
 #line 1 "ENTRY_117a4ae4"
-void FUN_117a4ae4(void){
-  thunk_FUN_101ba300();
-  return;
+
+__declspec(naked) void FUN_117a4ae4(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0xf8
+  __asm jmp LAB_1003f102
 }
+
 
 
 // Reference entry 117a4af5; body size 17 bytes.
 #line 1 "ENTRY_117a4af5"
-void FUN_117a4af5(void){
-  thunk_FUN_10db7ee0();
-  return;
+
+__declspec(naked) void FUN_117a4af5(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0xfc
+  __asm jmp LAB_1000ac68
 }
+
 
 
 // Reference entry 117a4b06; body size 17 bytes.
 #line 1 "ENTRY_117a4b06"
-void FUN_117a4b06(void){
-  thunk_FUN_110793c0();
-  return;
+
+__declspec(naked) void FUN_117a4b06(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x100
+  __asm jmp LAB_1008f16b
 }
+
 
 
 // Reference entry 117a4b17; body size 17 bytes.
 #line 1 "ENTRY_117a4b17"
-void FUN_117a4b17(void){
-  thunk_FUN_11079340();
-  return;
+
+__declspec(naked) void FUN_117a4b17(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x110
+  __asm jmp LAB_10015834
 }
+
 
 
 // Reference entry 117a4b28; body size 17 bytes.
 #line 1 "ENTRY_117a4b28"
-void FUN_117a4b28(void){
-  thunk_FUN_10201900();
-  return;
+
+__declspec(naked) void FUN_117a4b28(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x11c
+  __asm jmp LAB_1006c346
 }
+
 
 
 // Reference entry 117a4b39; body size 17 bytes.
 #line 1 "ENTRY_117a4b39"
-void FUN_117a4b39(void){
-  thunk_FUN_101ba300();
-  return;
+
+__declspec(naked) void FUN_117a4b39(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x1c8
+  __asm jmp LAB_1003f102
 }
+
 
 
 // Reference entry 117a4b4a; body size 17 bytes.
 #line 1 "ENTRY_117a4b4a"
-void FUN_117a4b4a(void){
-  thunk_FUN_10201900();
-  return;
+
+__declspec(naked) void FUN_117a4b4a(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x1d8
+  __asm jmp LAB_1006c346
 }
+
 
 
 // Reference entry 117a4b5b; body size 17 bytes.
 #line 1 "ENTRY_117a4b5b"
-void FUN_117a4b5b(void){
-  thunk_FUN_1116b2f0();
-  return;
+
+__declspec(naked) void FUN_117a4b5b(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x660
+  __asm jmp LAB_1006f50a
 }
+
 
 
 // Reference entry 117a4b6c; body size 17 bytes.
 #line 1 "ENTRY_117a4b6c"
-void FUN_117a4b6c(void){
-  thunk_FUN_101ba300();
-  return;
+
+__declspec(naked) void FUN_117a4b6c(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x69c
+  __asm jmp LAB_1003f102
 }
+
 
 
 // Reference entry 117a4b7d; body size 17 bytes.
 #line 1 "ENTRY_117a4b7d"
-void FUN_117a4b7d(void){
-  thunk_FUN_101ba300();
-  return;
+
+__declspec(naked) void FUN_117a4b7d(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x6a0
+  __asm jmp LAB_1003f102
 }
+
 
 
 // Reference entry 117a4b8e; body size 17 bytes.
 #line 1 "ENTRY_117a4b8e"
-void FUN_117a4b8e(void){
-  thunk_FUN_101ba300();
-  return;
+
+__declspec(naked) void FUN_117a4b8e(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x6a8
+  __asm jmp LAB_1003f102
 }
+
 
 
 // Reference entry 117a4b9f; body size 17 bytes.
 #line 1 "ENTRY_117a4b9f"
-void FUN_117a4b9f(void){
-  thunk_FUN_11079970();
-  return;
+
+__declspec(naked) void FUN_117a4b9f(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x6b0
+  __asm jmp LAB_10052fef
 }
+
 
 
 // Reference entry 117a4bb0; body size 17 bytes.
 #line 1 "ENTRY_117a4bb0"
-void FUN_117a4bb0(void){
-  thunk_FUN_1127e5b0();
-  return;
+
+__declspec(naked) void FUN_117a4bb0(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x6d0
+  __asm jmp LAB_10092451
 }
+
 
 
 // Reference entry 117a4bc1; body size 17 bytes.
 #line 1 "ENTRY_117a4bc1"
-void FUN_117a4bc1(void){
-  thunk_FUN_110786e0();
-  return;
+
+__declspec(naked) void FUN_117a4bc1(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x2d404
+  __asm jmp LAB_10013093
 }
+
 
 
 // Reference entry 117a4bdd; body size 17 bytes.
 #line 1 "ENTRY_117a4bdd"
-void FUN_117a4bdd(void){
-  thunk_FUN_11078840();
-  return;
+
+__declspec(naked) void FUN_117a4bdd(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x2d410
+  __asm jmp LAB_1006eb28
 }
+
 
 
 // Reference entry 117a4bee; body size 17 bytes.
 #line 1 "ENTRY_117a4bee"
-void FUN_117a4bee(void){
-  thunk_FUN_101ba300();
-  return;
+
+__declspec(naked) void FUN_117a4bee(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x2d424
+  __asm jmp LAB_1003f102
 }
+
 
 
 // Reference entry 117a4bff; body size 17 bytes.
 #line 1 "ENTRY_117a4bff"
-void FUN_117a4bff(void){
-  thunk_FUN_101ba300();
-  return;
+
+__declspec(naked) void FUN_117a4bff(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x2d430
+  __asm jmp LAB_1003f102
 }
+
 
 
 // Reference entry 117a4c10; body size 17 bytes.
 #line 1 "ENTRY_117a4c10"
-void FUN_117a4c10(void){
-  thunk_FUN_101ba300();
-  return;
+
+__declspec(naked) void FUN_117a4c10(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x2d434
+  __asm jmp LAB_1003f102
 }
+
 
 
 // Reference entry 117a4c21; body size 17 bytes.
 #line 1 "ENTRY_117a4c21"
-void FUN_117a4c21(void){
-  thunk_FUN_101ba300();
-  return;
+
+__declspec(naked) void FUN_117a4c21(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x2d438
+  __asm jmp LAB_1003f102
 }
+
 
 
 // Reference entry 117a4c32; body size 17 bytes.
 #line 1 "ENTRY_117a4c32"
-void FUN_117a4c32(void){
-  thunk_FUN_101ba300();
-  return;
+
+__declspec(naked) void FUN_117a4c32(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x2d43c
+  __asm jmp LAB_1003f102
 }
+
 
 
 // Reference entry 117a4c43; body size 17 bytes.
 #line 1 "ENTRY_117a4c43"
-void FUN_117a4c43(void){
-  thunk_FUN_102dcec0();
-  return;
+
+__declspec(naked) void FUN_117a4c43(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2e4]
+  __asm add ecx, 0x2dcdc
+  __asm jmp LAB_10047a55
 }
+
 
 
 // Reference entry 117a4c5f; body size 21 bytes.
 #line 1 "ENTRY_117a4c5f"
-void FUN_117a4c5f(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x2a8),0x71c);
-  return;
+
+__declspec(naked) void FUN_117a4c5f(void)
+
+{
+  __asm push 0x71c
+  __asm mov eax, dword ptr [ebp - 0x2a8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a5810; body size 18 bytes.
 #line 1 "ENTRY_117a5810"
-void FUN_117a5810(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x2dce4);
-  return;
+
+__declspec(naked) void FUN_117a5810(void)
+
+{
+  __asm push 0x2dce4
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a58e0; body size 18 bytes.
 #line 1 "ENTRY_117a58e0"
-void FUN_117a58e0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117a58e0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a59f0; body size 25 bytes.
 #line 1 "ENTRY_117a59f0"
-void FUN_117a59f0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a59f0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_117a5a08
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a5c98; body size 18 bytes.
 #line 1 "ENTRY_117a5c98"
-void FUN_117a5c98(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0x7098);
-  return;
+
+__declspec(naked) void FUN_117a5c98(void)
+
+{
+  __asm push 0x7098
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a5caa; body size 18 bytes.
 #line 1 "ENTRY_117a5caa"
-void FUN_117a5caa(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0xa7c);
-  return;
+
+__declspec(naked) void FUN_117a5caa(void)
+
+{
+  __asm push 0xa7c
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a6148; body size 18 bytes.
 #line 1 "ENTRY_117a6148"
-void FUN_117a6148(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1c),0xa7c);
-  return;
+
+__declspec(naked) void FUN_117a6148(void)
+
+{
+  __asm push 0xa7c
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a66d0; body size 25 bytes.
 #line 1 "ENTRY_117a66d0"
-void FUN_117a66d0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x30) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x30) = (uint)(*(uint *)(unaff_EBP + -0x30) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a66d0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x30]
+  __asm and eax, 1
+  __asm je LAB_117a66e8
+  __asm and dword ptr [ebp - 0x30], 0xfffffffe
+  __asm lea ecx, [ebp - 0x44]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a66e9; body size 25 bytes.
 #line 1 "ENTRY_117a66e9"
-void FUN_117a66e9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x30) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x30) = (uint)(*(uint *)(unaff_EBP + -0x30) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a66e9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x30]
+  __asm and eax, 2
+  __asm je LAB_117a6701
+  __asm and dword ptr [ebp - 0x30], 0xfffffffd
+  __asm lea ecx, [ebp - 0x40]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a67a0; body size 18 bytes.
 #line 1 "ENTRY_117a67a0"
-void FUN_117a67a0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0xcea4);
-  return;
+
+__declspec(naked) void FUN_117a67a0(void)
+
+{
+  __asm push 0xcea4
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a68d0; body size 25 bytes.
 #line 1 "ENTRY_117a68d0"
-void FUN_117a68d0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a68d0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117a68e8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a68e9; body size 25 bytes.
 #line 1 "ENTRY_117a68e9"
-void FUN_117a68e9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a68e9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117a6901
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a6a68; body size 25 bytes.
 #line 1 "ENTRY_117a6a68"
-void FUN_117a6a68(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a6a68(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 2
+  __asm je LAB_117a6a80
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffd
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a6a81; body size 25 bytes.
 #line 1 "ENTRY_117a6a81"
-void FUN_117a6a81(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a6a81(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 4
+  __asm je LAB_117a6a99
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffb
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a6af8; body size 18 bytes.
 #line 1 "ENTRY_117a6af8"
-void FUN_117a6af8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1c),0xcea4);
-  return;
+
+__declspec(naked) void FUN_117a6af8(void)
+
+{
+  __asm push 0xcea4
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a6b22; body size 19 bytes.
 #line 1 "ENTRY_117a6b22"
-void FUN_117a6b22(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x3c),0x10,1,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117a6b22(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 1
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x3c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117a6d58; body size 18 bytes.
 #line 1 "ENTRY_117a6d58"
-void FUN_117a6d58(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x40),0x7098);
-  return;
+
+__declspec(naked) void FUN_117a6d58(void)
+
+{
+  __asm push 0x7098
+  __asm mov eax, dword ptr [ebp + 0x40]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a6d6a; body size 18 bytes.
 #line 1 "ENTRY_117a6d6a"
-void FUN_117a6d6a(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x40),0xa7c);
-  return;
+
+__declspec(naked) void FUN_117a6d6a(void)
+
+{
+  __asm push 0xa7c
+  __asm mov eax, dword ptr [ebp + 0x40]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a6e30; body size 25 bytes.
 #line 1 "ENTRY_117a6e30"
-void FUN_117a6e30(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x28) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x28) = (uint)(*(uint *)(unaff_EBP + -0x28) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a6e30(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm and eax, 1
+  __asm je LAB_117a6e48
+  __asm and dword ptr [ebp - 0x28], 0xfffffffe
+  __asm lea ecx, [ebp - 0x34]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a6e49; body size 25 bytes.
 #line 1 "ENTRY_117a6e49"
-void FUN_117a6e49(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x28) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x28) = (uint)(*(uint *)(unaff_EBP + -0x28) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a6e49(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm and eax, 2
+  __asm je LAB_117a6e61
+  __asm and dword ptr [ebp - 0x28], 0xfffffffd
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117a7200; body size 18 bytes.
 #line 1 "ENTRY_117a7200"
-void FUN_117a7200(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1938),0x50);
-  return;
+
+__declspec(naked) void FUN_117a7200(void)
+
+{
+  __asm push 0x50
+  __asm mov eax, dword ptr [ebp - 0x1938]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a7558; body size 19 bytes.
 #line 1 "ENTRY_117a7558"
-void FUN_117a7558(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x1c),0x10,1,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117a7558(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 1
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117a75e8; body size 19 bytes.
 #line 1 "ENTRY_117a75e8"
-void FUN_117a75e8(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x2c),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117a75e8(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117a8150; body size 18 bytes.
 #line 1 "ENTRY_117a8150"
-void FUN_117a8150(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x5b8);
-  return;
+
+__declspec(naked) void FUN_117a8150(void)
+
+{
+  __asm push 0x5b8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a8440; body size 18 bytes.
 #line 1 "ENTRY_117a8440"
-void FUN_117a8440(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117a8440(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a8490; body size 18 bytes.
 #line 1 "ENTRY_117a8490"
-void FUN_117a8490(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117a8490(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a9360; body size 18 bytes.
 #line 1 "ENTRY_117a9360"
-void FUN_117a9360(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + -0x10),&DAT_11c08aa2);
-  return;
+
+__declspec(naked) void FUN_117a9360(void)
+
+{
+  __asm push offset LAB_11c08aa2
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100157ad
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a9470; body size 18 bytes.
 #line 1 "ENTRY_117a9470"
-void FUN_117a9470(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + 0x20),&DAT_11c08aa2);
-  return;
+
+__declspec(naked) void FUN_117a9470(void)
+
+{
+  __asm push offset LAB_11c08aa2
+  __asm mov eax, dword ptr [ebp + 0x20]
+  __asm push eax
+  __asm call LAB_100157ad
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a94c0; body size 18 bytes.
 #line 1 "ENTRY_117a94c0"
-void FUN_117a94c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + 0xc),&DAT_11c08aa2);
-  return;
+
+__declspec(naked) void FUN_117a94c0(void)
+
+{
+  __asm push offset LAB_11c08aa2
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100157ad
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a9510; body size 18 bytes.
 #line 1 "ENTRY_117a9510"
-void FUN_117a9510(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + -0x10),&DAT_11c08aa2);
-  return;
+
+__declspec(naked) void FUN_117a9510(void)
+
+{
+  __asm push offset LAB_11c08aa2
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100157ad
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a9560; body size 18 bytes.
 #line 1 "ENTRY_117a9560"
-void FUN_117a9560(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + -0x10),&DAT_11c08aa2);
-  return;
+
+__declspec(naked) void FUN_117a9560(void)
+
+{
+  __asm push offset LAB_11c08aa2
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100157ad
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a95b0; body size 18 bytes.
 #line 1 "ENTRY_117a95b0"
-void FUN_117a95b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + -0x1c),&DAT_11c08aa2);
-  return;
+
+__declspec(naked) void FUN_117a95b0(void)
+
+{
+  __asm push offset LAB_11c08aa2
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100157ad
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a96d0; body size 18 bytes.
 #line 1 "ENTRY_117a96d0"
-void FUN_117a96d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + -0x10),&DAT_11c08aa2);
-  return;
+
+__declspec(naked) void FUN_117a96d0(void)
+
+{
+  __asm push offset LAB_11c08aa2
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100157ad
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a9938; body size 18 bytes.
 #line 1 "ENTRY_117a9938"
-void FUN_117a9938(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + 8),&DAT_11c08aa2);
-  return;
+
+__declspec(naked) void FUN_117a9938(void)
+
+{
+  __asm push offset LAB_11c08aa2
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100157ad
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a9b00; body size 25 bytes.
 #line 1 "ENTRY_117a9b00"
-void FUN_117a9b00(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_10202e00();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a9b00(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117a9b18
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_10003ebd
+  __asm ret
 }
+
 
 
 // Reference entry 117a9be0; body size 18 bytes.
 #line 1 "ENTRY_117a9be0"
-void FUN_117a9be0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + -0x34),&DAT_11c08aa2);
-  return;
+
+__declspec(naked) void FUN_117a9be0(void)
+
+{
+  __asm push offset LAB_11c08aa2
+  __asm mov eax, dword ptr [ebp - 0x34]
+  __asm push eax
+  __asm call LAB_100157ad
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117a9ff8; body size 25 bytes.
 #line 1 "ENTRY_117a9ff8"
-void FUN_117a9ff8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117a9ff8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117aa010
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp + 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aa011; body size 25 bytes.
 #line 1 "ENTRY_117aa011"
-void FUN_117aa011(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aa011(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117aa029
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp + 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aa02a; body size 25 bytes.
 #line 1 "ENTRY_117aa02a"
-void FUN_117aa02a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aa02a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_117aa042
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp + 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aa0b0; body size 25 bytes.
 #line 1 "ENTRY_117aa0b0"
-void FUN_117aa0b0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aa0b0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_117aa0c8
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aa110; body size 25 bytes.
 #line 1 "ENTRY_117aa110"
-void FUN_117aa110(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_1128f340();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aa110(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117aa128
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_10081ca0
+  __asm ret
 }
+
 
 
 // Reference entry 117aa230; body size 18 bytes.
 #line 1 "ENTRY_117aa230"
-void FUN_117aa230(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa230(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa280; body size 18 bytes.
 #line 1 "ENTRY_117aa280"
-void FUN_117aa280(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa280(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa2d0; body size 18 bytes.
 #line 1 "ENTRY_117aa2d0"
-void FUN_117aa2d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xf7e0);
-  return;
+
+__declspec(naked) void FUN_117aa2d0(void)
+
+{
+  __asm push 0xf7e0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa320; body size 18 bytes.
 #line 1 "ENTRY_117aa320"
-void FUN_117aa320(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xdbd8);
-  return;
+
+__declspec(naked) void FUN_117aa320(void)
+
+{
+  __asm push 0xdbd8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa370; body size 18 bytes.
 #line 1 "ENTRY_117aa370"
-void FUN_117aa370(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa370(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa3c0; body size 18 bytes.
 #line 1 "ENTRY_117aa3c0"
-void FUN_117aa3c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa3c0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa410; body size 18 bytes.
 #line 1 "ENTRY_117aa410"
-void FUN_117aa410(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa410(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa460; body size 18 bytes.
 #line 1 "ENTRY_117aa460"
-void FUN_117aa460(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa460(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa4b0; body size 18 bytes.
 #line 1 "ENTRY_117aa4b0"
-void FUN_117aa4b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa4b0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa500; body size 18 bytes.
 #line 1 "ENTRY_117aa500"
-void FUN_117aa500(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa500(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa550; body size 18 bytes.
 #line 1 "ENTRY_117aa550"
-void FUN_117aa550(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117aa550(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa5a0; body size 18 bytes.
 #line 1 "ENTRY_117aa5a0"
-void FUN_117aa5a0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa5a0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa5f0; body size 18 bytes.
 #line 1 "ENTRY_117aa5f0"
-void FUN_117aa5f0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xdbd0);
-  return;
+
+__declspec(naked) void FUN_117aa5f0(void)
+
+{
+  __asm push 0xdbd0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa640; body size 18 bytes.
 #line 1 "ENTRY_117aa640"
-void FUN_117aa640(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa640(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa690; body size 21 bytes.
 #line 1 "ENTRY_117aa690"
-void FUN_117aa690(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x2018),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa690(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x2018]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa6f8; body size 18 bytes.
 #line 1 "ENTRY_117aa6f8"
-void FUN_117aa6f8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x68),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa6f8(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x68]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aa70a; body size 18 bytes.
 #line 1 "ENTRY_117aa70a"
-void FUN_117aa70a(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x68),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117aa70a(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x68]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aabf0; body size 25 bytes.
 #line 1 "ENTRY_117aabf0"
-void FUN_117aabf0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aabf0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117aac08
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ab250; body size 18 bytes.
 #line 1 "ENTRY_117ab250"
-void FUN_117ab250(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117ab250(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ab3d0; body size 18 bytes.
 #line 1 "ENTRY_117ab3d0"
-void FUN_117ab3d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x29ae0);
-  return;
+
+__declspec(naked) void FUN_117ab3d0(void)
+
+{
+  __asm push 0x29ae0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ab4c0; body size 18 bytes.
 #line 1 "ENTRY_117ab4c0"
-void FUN_117ab4c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xe3d8);
-  return;
+
+__declspec(naked) void FUN_117ab4c0(void)
+
+{
+  __asm push 0xe3d8
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ab570; body size 18 bytes.
 #line 1 "ENTRY_117ab570"
-void FUN_117ab570(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x150);
-  return;
+
+__declspec(naked) void FUN_117ab570(void)
+
+{
+  __asm push 0x150
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ab690; body size 18 bytes.
 #line 1 "ENTRY_117ab690"
-void FUN_117ab690(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x150);
-  return;
+
+__declspec(naked) void FUN_117ab690(void)
+
+{
+  __asm push 0x150
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ab6f0; body size 18 bytes.
 #line 1 "ENTRY_117ab6f0"
-void FUN_117ab6f0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117ab6f0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ac430; body size 18 bytes.
 #line 1 "ENTRY_117ac430"
-void FUN_117ac430(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xa7c);
-  return;
+
+__declspec(naked) void FUN_117ac430(void)
+
+{
+  __asm push 0xa7c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ac480; body size 18 bytes.
 #line 1 "ENTRY_117ac480"
-void FUN_117ac480(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117ac480(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ac4ef; body size 25 bytes.
 #line 1 "ENTRY_117ac4ef"
-void FUN_117ac4ef(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac4ef(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ac507
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac54f; body size 25 bytes.
 #line 1 "ENTRY_117ac54f"
-void FUN_117ac54f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac54f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ac567
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac5af; body size 25 bytes.
 #line 1 "ENTRY_117ac5af"
-void FUN_117ac5af(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac5af(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ac5c7
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac60f; body size 25 bytes.
 #line 1 "ENTRY_117ac60f"
-void FUN_117ac60f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac60f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ac627
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac66f; body size 25 bytes.
 #line 1 "ENTRY_117ac66f"
-void FUN_117ac66f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac66f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ac687
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac6cf; body size 25 bytes.
 #line 1 "ENTRY_117ac6cf"
-void FUN_117ac6cf(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac6cf(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ac6e7
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac79f; body size 25 bytes.
 #line 1 "ENTRY_117ac79f"
-void FUN_117ac79f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac79f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_117ac7b7
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac7ff; body size 25 bytes.
 #line 1 "ENTRY_117ac7ff"
-void FUN_117ac7ff(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac7ff(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ac817
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac850; body size 25 bytes.
 #line 1 "ENTRY_117ac850"
-void FUN_117ac850(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac850(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ac868
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac869; body size 25 bytes.
 #line 1 "ENTRY_117ac869"
-void FUN_117ac869(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac869(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117ac881
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac8cf; body size 25 bytes.
 #line 1 "ENTRY_117ac8cf"
-void FUN_117ac8cf(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac8cf(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ac8e7
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac920; body size 25 bytes.
 #line 1 "ENTRY_117ac920"
-void FUN_117ac920(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac920(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_117ac938
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac980; body size 25 bytes.
 #line 1 "ENTRY_117ac980"
-void FUN_117ac980(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac980(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ac998
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ac9ef; body size 25 bytes.
 #line 1 "ENTRY_117ac9ef"
-void FUN_117ac9ef(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ac9ef(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117aca07
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aca17; body size 25 bytes.
 #line 1 "ENTRY_117aca17"
-void FUN_117aca17(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aca17(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117aca2f
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aca3f; body size 25 bytes.
 #line 1 "ENTRY_117aca3f"
-void FUN_117aca3f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aca3f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_117aca57
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aca67; body size 25 bytes.
 #line 1 "ENTRY_117aca67"
-void FUN_117aca67(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aca67(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_117aca7f
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aca8f; body size 25 bytes.
 #line 1 "ENTRY_117aca8f"
-void FUN_117aca8f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffef);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aca8f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x10
+  __asm je LAB_117acaa7
+  __asm and dword ptr [ebp - 0x10], 0xffffffef
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117acace; body size 25 bytes.
 #line 1 "ENTRY_117acace"
-void FUN_117acace(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x20) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffdf);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117acace(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x20
+  __asm je LAB_117acae6
+  __asm and dword ptr [ebp - 0x10], 0xffffffdf
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117acb26; body size 25 bytes.
 #line 1 "ENTRY_117acb26"
-void FUN_117acb26(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x40) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffbf);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117acb26(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x40
+  __asm je LAB_117acb3e
+  __asm and dword ptr [ebp - 0x10], 0xffffffbf
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117acbef; body size 25 bytes.
 #line 1 "ENTRY_117acbef"
-void FUN_117acbef(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117acbef(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117acc07
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117acc4f; body size 25 bytes.
 #line 1 "ENTRY_117acc4f"
-void FUN_117acc4f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117acc4f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117acc67
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117acca0; body size 25 bytes.
 #line 1 "ENTRY_117acca0"
-void FUN_117acca0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117acca0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117accb8
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117accb9; body size 25 bytes.
 #line 1 "ENTRY_117accb9"
-void FUN_117accb9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117accb9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117accd1
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117acd2f; body size 25 bytes.
 #line 1 "ENTRY_117acd2f"
-void FUN_117acd2f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117acd2f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_117acd47
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ace40; body size 25 bytes.
 #line 1 "ENTRY_117ace40"
-void FUN_117ace40(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ace40(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117ace58
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aceb0; body size 25 bytes.
 #line 1 "ENTRY_117aceb0"
-void FUN_117aceb0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x24) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x24) = (uint)(*(uint *)(unaff_EBP + -0x24) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aceb0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm and eax, 1
+  __asm je LAB_117acec8
+  __asm and dword ptr [ebp - 0x24], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp - 0x28]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117acf40; body size 25 bytes.
 #line 1 "ENTRY_117acf40"
-void FUN_117acf40(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117acf40(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 1
+  __asm je LAB_117acf58
+  __asm and dword ptr [ebp - 0x20], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117acf71; body size 25 bytes.
 #line 1 "ENTRY_117acf71"
-void FUN_117acf71(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117acf71(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 2
+  __asm je LAB_117acf89
+  __asm and dword ptr [ebp - 0x20], 0xfffffffd
+  __asm lea ecx, [ebp - 0x30]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117acf9a; body size 25 bytes.
 #line 1 "ENTRY_117acf9a"
-void FUN_117acf9a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117acf9a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 4
+  __asm je LAB_117acfb2
+  __asm and dword ptr [ebp - 0x20], 0xfffffffb
+  __asm lea ecx, [ebp - 0x30]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad2a0; body size 25 bytes.
 #line 1 "ENTRY_117ad2a0"
-void FUN_117ad2a0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad2a0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ad2b8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad2b9; body size 25 bytes.
 #line 1 "ENTRY_117ad2b9"
-void FUN_117ad2b9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad2b9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117ad2d1
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad310; body size 25 bytes.
 #line 1 "ENTRY_117ad310"
-void FUN_117ad310(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_10207220();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad310(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117ad328
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1000f5bf
+  __asm ret
 }
+
 
 
 // Reference entry 117ad36f; body size 25 bytes.
 #line 1 "ENTRY_117ad36f"
-void FUN_117ad36f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad36f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_117ad387
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad400; body size 18 bytes.
 #line 1 "ENTRY_117ad400"
-void FUN_117ad400(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x7098);
-  return;
+
+__declspec(naked) void FUN_117ad400(void)
+
+{
+  __asm push 0x7098
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ad490; body size 25 bytes.
 #line 1 "ENTRY_117ad490"
-void FUN_117ad490(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad490(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ad4a8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad4e0; body size 25 bytes.
 #line 1 "ENTRY_117ad4e0"
-void FUN_117ad4e0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad4e0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117ad4f8
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad4f9; body size 25 bytes.
 #line 1 "ENTRY_117ad4f9"
-void FUN_117ad4f9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad4f9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117ad511
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad720; body size 25 bytes.
 #line 1 "ENTRY_117ad720"
-void FUN_117ad720(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad720(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117ad738
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x3c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad739; body size 25 bytes.
 #line 1 "ENTRY_117ad739"
-void FUN_117ad739(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad739(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117ad751
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x38]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad752; body size 25 bytes.
 #line 1 "ENTRY_117ad752"
-void FUN_117ad752(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad752(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 4
+  __asm je LAB_117ad76a
+  __asm and dword ptr [ebp - 0x14], 0xfffffffb
+  __asm lea ecx, [ebp - 0x34]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad76b; body size 25 bytes.
 #line 1 "ENTRY_117ad76b"
-void FUN_117ad76b(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffff7);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad76b(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 8
+  __asm je LAB_117ad783
+  __asm and dword ptr [ebp - 0x14], 0xfffffff7
+  __asm lea ecx, [ebp - 0x30]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad784; body size 25 bytes.
 #line 1 "ENTRY_117ad784"
-void FUN_117ad784(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xffffffef);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad784(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x10
+  __asm je LAB_117ad79c
+  __asm and dword ptr [ebp - 0x14], 0xffffffef
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad79d; body size 25 bytes.
 #line 1 "ENTRY_117ad79d"
-void FUN_117ad79d(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x20) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xffffffdf);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad79d(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x20
+  __asm je LAB_117ad7b5
+  __asm and dword ptr [ebp - 0x14], 0xffffffdf
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad7b6; body size 25 bytes.
 #line 1 "ENTRY_117ad7b6"
-void FUN_117ad7b6(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x40) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xffffffbf);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad7b6(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x40
+  __asm je LAB_117ad7ce
+  __asm and dword ptr [ebp - 0x14], 0xffffffbf
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad7cf; body size 30 bytes.
 #line 1 "ENTRY_117ad7cf"
-void FUN_117ad7cf(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x80) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xffffff7f);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad7cf(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x80
+  __asm je LAB_117ad7ec
+  __asm and dword ptr [ebp - 0x14], 0xffffff7f
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad7ed; body size 30 bytes.
 #line 1 "ENTRY_117ad7ed"
-void FUN_117ad7ed(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 0x100) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffeff);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad7ed(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 0x100
+  __asm je LAB_117ad80a
+  __asm and dword ptr [ebp - 0x14], 0xfffffeff
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad930; body size 25 bytes.
 #line 1 "ENTRY_117ad930"
-void FUN_117ad930(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad930(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117ad948
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad949; body size 25 bytes.
 #line 1 "ENTRY_117ad949"
-void FUN_117ad949(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad949(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117ad961
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad962; body size 25 bytes.
 #line 1 "ENTRY_117ad962"
-void FUN_117ad962(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad962(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 4
+  __asm je LAB_117ad97a
+  __asm and dword ptr [ebp - 0x14], 0xfffffffb
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ad97b; body size 25 bytes.
 #line 1 "ENTRY_117ad97b"
-void FUN_117ad97b(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffff7);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ad97b(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 8
+  __asm je LAB_117ad993
+  __asm and dword ptr [ebp - 0x14], 0xfffffff7
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ada6b; body size 18 bytes.
 #line 1 "ENTRY_117ada6b"
-void FUN_117ada6b(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1204),0x14);
-  return;
+
+__declspec(naked) void FUN_117ada6b(void)
+
+{
+  __asm push 0x14
+  __asm mov eax, dword ptr [ebp - 0x1204]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117adac0; body size 25 bytes.
 #line 1 "ENTRY_117adac0"
-void FUN_117adac0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117adac0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117adad8
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117adad9; body size 25 bytes.
 #line 1 "ENTRY_117adad9"
-void FUN_117adad9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117adad9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117adaf1
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ae060; body size 18 bytes.
 #line 1 "ENTRY_117ae060"
-void FUN_117ae060(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x71c);
-  return;
+
+__declspec(naked) void FUN_117ae060(void)
+
+{
+  __asm push 0x71c
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ae072; body size 18 bytes.
 #line 1 "ENTRY_117ae072"
-void FUN_117ae072(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x1c48);
-  return;
+
+__declspec(naked) void FUN_117ae072(void)
+
+{
+  __asm push 0x1c48
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ae6a0; body size 25 bytes.
 #line 1 "ENTRY_117ae6a0"
-void FUN_117ae6a0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ae6a0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ae6b8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ae6f0; body size 18 bytes.
 #line 1 "ENTRY_117ae6f0"
-void FUN_117ae6f0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x1998);
-  return;
+
+__declspec(naked) void FUN_117ae6f0(void)
+
+{
+  __asm push 0x1998
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ae7d0; body size 18 bytes.
 #line 1 "ENTRY_117ae7d0"
-void FUN_117ae7d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117ae7d0(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ae920; body size 25 bytes.
 #line 1 "ENTRY_117ae920"
-void FUN_117ae920(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117ae920(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117ae938
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aea7f; body size 25 bytes.
 #line 1 "ENTRY_117aea7f"
-void FUN_117aea7f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aea7f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117aea97
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aed88; body size 18 bytes.
 #line 1 "ENTRY_117aed88"
-void FUN_117aed88(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x25d0);
-  return;
+
+__declspec(naked) void FUN_117aed88(void)
+
+{
+  __asm push 0x25d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117aef00; body size 25 bytes.
 #line 1 "ENTRY_117aef00"
-void FUN_117aef00(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aef00(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_117aef18
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117aef29; body size 25 bytes.
 #line 1 "ENTRY_117aef29"
-void FUN_117aef29(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117aef29(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 2
+  __asm je LAB_117aef41
+  __asm and dword ptr [ebp - 0x18], 0xfffffffd
+  __asm lea ecx, [ebp - 0x34]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af020; body size 25 bytes.
 #line 1 "ENTRY_117af020"
-void FUN_117af020(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af020(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117af038
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af039; body size 25 bytes.
 #line 1 "ENTRY_117af039"
-void FUN_117af039(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af039(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117af051
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af052; body size 25 bytes.
 #line 1 "ENTRY_117af052"
-void FUN_117af052(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af052(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_117af06a
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x30]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af06b; body size 25 bytes.
 #line 1 "ENTRY_117af06b"
-void FUN_117af06b(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af06b(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_117af083
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp - 0x2c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af084; body size 25 bytes.
 #line 1 "ENTRY_117af084"
-void FUN_117af084(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffef);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af084(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x10
+  __asm je LAB_117af09c
+  __asm and dword ptr [ebp - 0x10], 0xffffffef
+  __asm lea ecx, [ebp - 0x28]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af09d; body size 25 bytes.
 #line 1 "ENTRY_117af09d"
-void FUN_117af09d(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x20) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffdf);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af09d(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x20
+  __asm je LAB_117af0b5
+  __asm and dword ptr [ebp - 0x10], 0xffffffdf
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af0b6; body size 25 bytes.
 #line 1 "ENTRY_117af0b6"
-void FUN_117af0b6(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x40) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffbf);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af0b6(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x40
+  __asm je LAB_117af0ce
+  __asm and dword ptr [ebp - 0x10], 0xffffffbf
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af0cf; body size 30 bytes.
 #line 1 "ENTRY_117af0cf"
-void FUN_117af0cf(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x80) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffff7f);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af0cf(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x80
+  __asm je LAB_117af0ec
+  __asm and dword ptr [ebp - 0x10], 0xffffff7f
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af0ed; body size 30 bytes.
 #line 1 "ENTRY_117af0ed"
-void FUN_117af0ed(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x100) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffeff);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af0ed(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x100
+  __asm je LAB_117af10a
+  __asm and dword ptr [ebp - 0x10], 0xfffffeff
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af370; body size 25 bytes.
 #line 1 "ENTRY_117af370"
-void FUN_117af370(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af370(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_117af388
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x48]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af389; body size 25 bytes.
 #line 1 "ENTRY_117af389"
-void FUN_117af389(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af389(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117af3a1
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x44]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af3a2; body size 25 bytes.
 #line 1 "ENTRY_117af3a2"
-void FUN_117af3a2(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117af3a2(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117af3ba
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117af3c3; body size 18 bytes.
 #line 1 "ENTRY_117af3c3"
-void FUN_117af3c3(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x48),0x11bd0);
-  return;
+
+__declspec(naked) void FUN_117af3c3(void)
+
+{
+  __asm push 0x11bd0
+  __asm mov eax, dword ptr [ebp - 0x48]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117af4b0; body size 18 bytes.
 #line 1 "ENTRY_117af4b0"
-void FUN_117af4b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117af4b0(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117af830; body size 18 bytes.
 #line 1 "ENTRY_117af830"
-void FUN_117af830(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),200);
-  return;
+
+__declspec(naked) void FUN_117af830(void)
+
+{
+  __asm push 0xc8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117af8d0; body size 18 bytes.
 #line 1 "ENTRY_117af8d0"
-void FUN_117af8d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x1718);
-  return;
+
+__declspec(naked) void FUN_117af8d0(void)
+
+{
+  __asm push 0x1718
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117af920; body size 18 bytes.
 #line 1 "ENTRY_117af920"
-void FUN_117af920(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x5e8);
-  return;
+
+__declspec(naked) void FUN_117af920(void)
+
+{
+  __asm push 0x5e8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117af970; body size 18 bytes.
 #line 1 "ENTRY_117af970"
-void FUN_117af970(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x171c);
-  return;
+
+__declspec(naked) void FUN_117af970(void)
+
+{
+  __asm push 0x171c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117af9c0; body size 18 bytes.
 #line 1 "ENTRY_117af9c0"
-void FUN_117af9c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x1700);
-  return;
+
+__declspec(naked) void FUN_117af9c0(void)
+
+{
+  __asm push 0x1700
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117afa10; body size 18 bytes.
 #line 1 "ENTRY_117afa10"
-void FUN_117afa10(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x16f4);
-  return;
+
+__declspec(naked) void FUN_117afa10(void)
+
+{
+  __asm push 0x16f4
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117afa6b; body size 21 bytes.
 #line 1 "ENTRY_117afa6b"
-void FUN_117afa6b(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1d58),0x11bd0);
-  return;
+
+__declspec(naked) void FUN_117afa6b(void)
+
+{
+  __asm push 0x11bd0
+  __asm mov eax, dword ptr [ebp - 0x1d58]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117afad0; body size 18 bytes.
 #line 1 "ENTRY_117afad0"
-void FUN_117afad0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0x171c);
-  return;
+
+__declspec(naked) void FUN_117afad0(void)
+
+{
+  __asm push 0x171c
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117afaea; body size 18 bytes.
 #line 1 "ENTRY_117afaea"
-void FUN_117afaea(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0x1718);
-  return;
+
+__declspec(naked) void FUN_117afaea(void)
+
+{
+  __asm push 0x1718
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117afb04; body size 18 bytes.
 #line 1 "ENTRY_117afb04"
-void FUN_117afb04(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0x5e8);
-  return;
+
+__declspec(naked) void FUN_117afb04(void)
+
+{
+  __asm push 0x5e8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117afb70; body size 18 bytes.
 #line 1 "ENTRY_117afb70"
-void FUN_117afb70(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x60),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117afb70(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x60]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117afbc0; body size 21 bytes.
 #line 1 "ENTRY_117afbc0"
-void FUN_117afbc0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x3b0),0x16f4);
-  return;
+
+__declspec(naked) void FUN_117afbc0(void)
+
+{
+  __asm push 0x16f4
+  __asm mov eax, dword ptr [ebp - 0x3b0]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117afe40; body size 18 bytes.
 #line 1 "ENTRY_117afe40"
-void FUN_117afe40(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x1998);
-  return;
+
+__declspec(naked) void FUN_117afe40(void)
+
+{
+  __asm push 0x1998
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b0510; body size 25 bytes.
 #line 1 "ENTRY_117b0510"
-void FUN_117b0510(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b0510(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b0528
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b0f10; body size 45 bytes.
 #line 1 "ENTRY_117b0f10"
-void FUN_117b0f10(void){
-  longlong lVar1;
-  uint uVar2;
-  int unaff_EBP;
-  
-  lVar1 = (longlong)((ulonglong)*(uint *)(unaff_EBP + -100) * 0x4d4);
-  uVar2 = (uint)(-(uint)((int)((ulonglong)lVar1 >> 0x20) != 0) | (uint)lVar1);
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x80),-(uint)(0xfffffffb < uVar2) | uVar2 + 4);
-  return;
+
+__declspec(naked) void FUN_117b0f10(void)
+
+{
+  __asm xor ebx, ebx
+  __asm mov eax, dword ptr [ebp - 0x64]
+  __asm mov ecx, 0x4d4
+  __asm mul ecx
+  __asm seto bl
+  __asm neg ebx
+  __asm or ebx, eax
+  __asm xor eax, eax
+  __asm add ebx, 4
+  __asm setb al
+  __asm neg eax
+  __asm or eax, ebx
+  __asm push eax
+  __asm mov eax, dword ptr [ebp - 0x80]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b0fc8; body size 18 bytes.
 #line 1 "ENTRY_117b0fc8"
-void FUN_117b0fc8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd8c);
-  return;
+
+__declspec(naked) void FUN_117b0fc8(void)
+
+{
+  __asm push 0xd8c
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1100; body size 18 bytes.
 #line 1 "ENTRY_117b1100"
-void FUN_117b1100(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x1b40);
-  return;
+
+__declspec(naked) void FUN_117b1100(void)
+
+{
+  __asm push 0x1b40
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1150; body size 18 bytes.
 #line 1 "ENTRY_117b1150"
-void FUN_117b1150(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x1b40);
-  return;
+
+__declspec(naked) void FUN_117b1150(void)
+
+{
+  __asm push 0x1b40
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b11f0; body size 18 bytes.
 #line 1 "ENTRY_117b11f0"
-void FUN_117b11f0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0xcea4);
-  return;
+
+__declspec(naked) void FUN_117b11f0(void)
+
+{
+  __asm push 0xcea4
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1240; body size 45 bytes.
 #line 1 "ENTRY_117b1240"
-void FUN_117b1240(void){
-  longlong lVar1;
-  uint uVar2;
-  int unaff_EBP;
-  
-  lVar1 = (longlong)((ulonglong)*(uint *)(unaff_EBP + 8) * 0x4d4);
-  uVar2 = (uint)(-(uint)((int)((ulonglong)lVar1 >> 0x20) != 0) | (uint)lVar1);
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x10),-(uint)(0xfffffffb < uVar2) | uVar2 + 4);
-  return;
+
+__declspec(naked) void FUN_117b1240(void)
+
+{
+  __asm xor ebx, ebx
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm mov ecx, 0x4d4
+  __asm mul ecx
+  __asm seto bl
+  __asm neg ebx
+  __asm or ebx, eax
+  __asm xor eax, eax
+  __asm add ebx, 4
+  __asm setb al
+  __asm neg eax
+  __asm or eax, ebx
+  __asm push eax
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1330; body size 19 bytes.
 #line 1 "ENTRY_117b1330"
-void FUN_117b1330(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x2c),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b1330(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1380; body size 18 bytes.
 #line 1 "ENTRY_117b1380"
-void FUN_117b1380(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xe3d0);
-  return;
+
+__declspec(naked) void FUN_117b1380(void)
+
+{
+  __asm push 0xe3d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b15b0; body size 18 bytes.
 #line 1 "ENTRY_117b15b0"
-void FUN_117b15b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b15b0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1600; body size 18 bytes.
 #line 1 "ENTRY_117b1600"
-void FUN_117b1600(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xcea4);
-  return;
+
+__declspec(naked) void FUN_117b1600(void)
+
+{
+  __asm push 0xcea4
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1660; body size 19 bytes.
 #line 1 "ENTRY_117b1660"
-void FUN_117b1660(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x2c),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b1660(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b16b0; body size 19 bytes.
 #line 1 "ENTRY_117b16b0"
-void FUN_117b16b0(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x1c),0x10,1,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b16b0(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 1
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1700; body size 19 bytes.
 #line 1 "ENTRY_117b1700"
-void FUN_117b1700(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x2c),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b1700(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1776; body size 18 bytes.
 #line 1 "ENTRY_117b1776"
-void FUN_117b1776(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117b1776(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1800; body size 18 bytes.
 #line 1 "ENTRY_117b1800"
-void FUN_117b1800(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x5c),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b1800(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x5c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1b50; body size 18 bytes.
 #line 1 "ENTRY_117b1b50"
-void FUN_117b1b50(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x18),0x608);
-  return;
+
+__declspec(naked) void FUN_117b1b50(void)
+
+{
+  __asm push 0x608
+  __asm mov eax, dword ptr [ebp + 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1be0; body size 18 bytes.
 #line 1 "ENTRY_117b1be0"
-void FUN_117b1be0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x6bc);
-  return;
+
+__declspec(naked) void FUN_117b1be0(void)
+
+{
+  __asm push 0x6bc
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1c90; body size 18 bytes.
 #line 1 "ENTRY_117b1c90"
-void FUN_117b1c90(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x608);
-  return;
+
+__declspec(naked) void FUN_117b1c90(void)
+
+{
+  __asm push 0x608
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1d70; body size 18 bytes.
 #line 1 "ENTRY_117b1d70"
-void FUN_117b1d70(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x608);
-  return;
+
+__declspec(naked) void FUN_117b1d70(void)
+
+{
+  __asm push 0x608
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1dc0; body size 19 bytes.
 #line 1 "ENTRY_117b1dc0"
-void FUN_117b1dc0(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x1c),0x10,1,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b1dc0(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 1
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1e1f; body size 18 bytes.
 #line 1 "ENTRY_117b1e1f"
-void FUN_117b1e1f(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0x608);
-  return;
+
+__declspec(naked) void FUN_117b1e1f(void)
+
+{
+  __asm push 0x608
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1e31; body size 18 bytes.
 #line 1 "ENTRY_117b1e31"
-void FUN_117b1e31(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0x608);
-  return;
+
+__declspec(naked) void FUN_117b1e31(void)
+
+{
+  __asm push 0x608
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1e88; body size 18 bytes.
 #line 1 "ENTRY_117b1e88"
-void FUN_117b1e88(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x2c),0x168);
-  return;
+
+__declspec(naked) void FUN_117b1e88(void)
+
+{
+  __asm push 0x168
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1ef0; body size 18 bytes.
 #line 1 "ENTRY_117b1ef0"
-void FUN_117b1ef0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x38),0x16c);
-  return;
+
+__declspec(naked) void FUN_117b1ef0(void)
+
+{
+  __asm push 0x16c
+  __asm mov eax, dword ptr [ebp - 0x38]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b1f9f; body size 18 bytes.
 #line 1 "ENTRY_117b1f9f"
-void FUN_117b1f9f(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x14),0x608);
-  return;
+
+__declspec(naked) void FUN_117b1f9f(void)
+
+{
+  __asm push 0x608
+  __asm mov eax, dword ptr [ebp + 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b2730; body size 25 bytes.
 #line 1 "ENTRY_117b2730"
-void FUN_117b2730(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b2730(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b2748
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b2749; body size 25 bytes.
 #line 1 "ENTRY_117b2749"
-void FUN_117b2749(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b2749(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117b2761
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b2762; body size 25 bytes.
 #line 1 "ENTRY_117b2762"
-void FUN_117b2762(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b2762(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_117b277a
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b2ba0; body size 21 bytes.
 #line 1 "ENTRY_117b2ba0"
-void FUN_117b2ba0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x88),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b2ba0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x88]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b2c00; body size 18 bytes.
 #line 1 "ENTRY_117b2c00"
-void FUN_117b2c00(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b2c00(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b2c50; body size 45 bytes.
 #line 1 "ENTRY_117b2c50"
-void FUN_117b2c50(void){
-  longlong lVar1;
-  uint uVar2;
-  int unaff_EBP;
-  
-  lVar1 = (longlong)((ulonglong)*(uint *)(unaff_EBP + -0x44) * 0x27f0);
-  uVar2 = (uint)(-(uint)((int)((ulonglong)lVar1 >> 0x20) != 0) | (uint)lVar1);
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x40),-(uint)(0xfffffffb < uVar2) | uVar2 + 4);
-  return;
+
+__declspec(naked) void FUN_117b2c50(void)
+
+{
+  __asm xor ebx, ebx
+  __asm mov eax, dword ptr [ebp - 0x44]
+  __asm mov ecx, 0x27f0
+  __asm mul ecx
+  __asm seto bl
+  __asm neg ebx
+  __asm or ebx, eax
+  __asm xor eax, eax
+  __asm add ebx, 4
+  __asm setb al
+  __asm neg eax
+  __asm or eax, ebx
+  __asm push eax
+  __asm mov eax, dword ptr [ebp - 0x40]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b2cd6; body size 19 bytes.
 #line 1 "ENTRY_117b2cd6"
-void FUN_117b2cd6(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + 0x20),0x10,3,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b2cd6(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 3
+  __asm push 0x10
+  __asm lea eax, [ebp + 0x20]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b2d50; body size 18 bytes.
 #line 1 "ENTRY_117b2d50"
-void FUN_117b2d50(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b2d50(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b2d62; body size 18 bytes.
 #line 1 "ENTRY_117b2d62"
-void FUN_117b2d62(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1c),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b2d62(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b2e10; body size 25 bytes.
 #line 1 "ENTRY_117b2e10"
-void FUN_117b2e10(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x28) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x28) = (uint)(*(uint *)(unaff_EBP + -0x28) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b2e10(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm and eax, 1
+  __asm je LAB_117b2e28
+  __asm and dword ptr [ebp - 0x28], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b2fa0; body size 18 bytes.
 #line 1 "ENTRY_117b2fa0"
-void FUN_117b2fa0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x218);
-  return;
+
+__declspec(naked) void FUN_117b2fa0(void)
+
+{
+  __asm push 0x218
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3160; body size 18 bytes.
 #line 1 "ENTRY_117b3160"
-void FUN_117b3160(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xcb4);
-  return;
+
+__declspec(naked) void FUN_117b3160(void)
+
+{
+  __asm push 0xcb4
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3338; body size 18 bytes.
 #line 1 "ENTRY_117b3338"
-void FUN_117b3338(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xcb4);
-  return;
+
+__declspec(naked) void FUN_117b3338(void)
+
+{
+  __asm push 0xcb4
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3500; body size 18 bytes.
 #line 1 "ENTRY_117b3500"
-void FUN_117b3500(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0xcb4);
-  return;
+
+__declspec(naked) void FUN_117b3500(void)
+
+{
+  __asm push 0xcb4
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b37b8; body size 18 bytes.
 #line 1 "ENTRY_117b37b8"
-void FUN_117b37b8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0xcb4);
-  return;
+
+__declspec(naked) void FUN_117b37b8(void)
+
+{
+  __asm push 0xcb4
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3800; body size 18 bytes.
 #line 1 "ENTRY_117b3800"
-void FUN_117b3800(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7f0);
-  return;
+
+__declspec(naked) void FUN_117b3800(void)
+
+{
+  __asm push 0xd7f0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3860; body size 18 bytes.
 #line 1 "ENTRY_117b3860"
-void FUN_117b3860(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd820);
-  return;
+
+__declspec(naked) void FUN_117b3860(void)
+
+{
+  __asm push 0xd820
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b38b0; body size 18 bytes.
 #line 1 "ENTRY_117b38b0"
-void FUN_117b38b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b38b0(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3900; body size 18 bytes.
 #line 1 "ENTRY_117b3900"
-void FUN_117b3900(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b3900(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3912; body size 18 bytes.
 #line 1 "ENTRY_117b3912"
-void FUN_117b3912(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b3912(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3970; body size 18 bytes.
 #line 1 "ENTRY_117b3970"
-void FUN_117b3970(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b3970(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3a10; body size 18 bytes.
 #line 1 "ENTRY_117b3a10"
-void FUN_117b3a10(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x48),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b3a10(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x48]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3a60; body size 18 bytes.
 #line 1 "ENTRY_117b3a60"
-void FUN_117b3a60(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b3a60(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3ab0; body size 18 bytes.
 #line 1 "ENTRY_117b3ab0"
-void FUN_117b3ab0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b3ab0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3b00; body size 18 bytes.
 #line 1 "ENTRY_117b3b00"
-void FUN_117b3b00(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd858);
-  return;
+
+__declspec(naked) void FUN_117b3b00(void)
+
+{
+  __asm push 0xd858
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b3be0; body size 18 bytes.
 #line 1 "ENTRY_117b3be0"
-void FUN_117b3be0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7f8);
-  return;
+
+__declspec(naked) void FUN_117b3be0(void)
+
+{
+  __asm push 0xd7f8
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b42a8; body size 28 bytes.
 #line 1 "ENTRY_117b42a8"
-void FUN_117b42a8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x7c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x7c) = (uint)(*(uint *)(unaff_EBP + -0x7c) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b42a8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x7c]
+  __asm and eax, 1
+  __asm je LAB_117b42c3
+  __asm and dword ptr [ebp - 0x7c], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp - 0x8c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b4340; body size 25 bytes.
 #line 1 "ENTRY_117b4340"
-void FUN_117b4340(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b4340(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b4358
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b4458; body size 25 bytes.
 #line 1 "ENTRY_117b4458"
-void FUN_117b4458(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x44) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x44) = (uint)(*(uint *)(unaff_EBP + -0x44) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b4458(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x44]
+  __asm and eax, 1
+  __asm je LAB_117b4470
+  __asm and dword ptr [ebp - 0x44], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp - 0x54]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b44f8; body size 25 bytes.
 #line 1 "ENTRY_117b44f8"
-void FUN_117b44f8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x5c) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x5c) = (uint)(*(uint *)(unaff_EBP + -0x5c) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b44f8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x5c]
+  __asm and eax, 4
+  __asm je LAB_117b4510
+  __asm and dword ptr [ebp - 0x5c], 0xfffffffb
+  __asm mov ecx, dword ptr [ebp - 0x68]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b4550; body size 25 bytes.
 #line 1 "ENTRY_117b4550"
-void FUN_117b4550(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b4550(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117b4568
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b45a0; body size 18 bytes.
 #line 1 "ENTRY_117b45a0"
-void FUN_117b45a0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x30),0xc18c);
-  return;
+
+__declspec(naked) void FUN_117b45a0(void)
+
+{
+  __asm push 0xc18c
+  __asm mov eax, dword ptr [ebp - 0x30]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b46a0; body size 18 bytes.
 #line 1 "ENTRY_117b46a0"
-void FUN_117b46a0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xc0d0);
-  return;
+
+__declspec(naked) void FUN_117b46a0(void)
+
+{
+  __asm push 0xc0d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b47d0; body size 18 bytes.
 #line 1 "ENTRY_117b47d0"
-void FUN_117b47d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xc18c);
-  return;
+
+__declspec(naked) void FUN_117b47d0(void)
+
+{
+  __asm push 0xc18c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b4c80; body size 25 bytes.
 #line 1 "ENTRY_117b4c80"
-void FUN_117b4c80(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_11126c40();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b4c80(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b4c98
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1002df51
+  __asm ret
 }
+
 
 
 // Reference entry 117b4cd0; body size 18 bytes.
 #line 1 "ENTRY_117b4cd0"
-void FUN_117b4cd0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x7b4);
-  return;
+
+__declspec(naked) void FUN_117b4cd0(void)
+
+{
+  __asm push 0x7b4
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b4d90; body size 19 bytes.
 #line 1 "ENTRY_117b4d90"
-void FUN_117b4d90(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x40),0x10,3,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b4d90(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 3
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x40]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b4de0; body size 19 bytes.
 #line 1 "ENTRY_117b4de0"
-void FUN_117b4de0(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x2c),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b4de0(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b4f90; body size 19 bytes.
 #line 1 "ENTRY_117b4f90"
-void FUN_117b4f90(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x40),0x10,3,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b4f90(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 3
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x40]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b4fe0; body size 19 bytes.
 #line 1 "ENTRY_117b4fe0"
-void FUN_117b4fe0(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x30),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b4fe0(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x30]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b5140; body size 19 bytes.
 #line 1 "ENTRY_117b5140"
-void FUN_117b5140(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x2c),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b5140(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b5434; body size 18 bytes.
 #line 1 "ENTRY_117b5434"
-void FUN_117b5434(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x148);
-  return;
+
+__declspec(naked) void FUN_117b5434(void)
+
+{
+  __asm push 0x148
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b5609; body size 18 bytes.
 #line 1 "ENTRY_117b5609"
-void FUN_117b5609(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b5609(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b56cb; body size 18 bytes.
 #line 1 "ENTRY_117b56cb"
-void FUN_117b56cb(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b56cb(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b578a; body size 18 bytes.
 #line 1 "ENTRY_117b578a"
-void FUN_117b578a(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1c),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b578a(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b5900; body size 25 bytes.
 #line 1 "ENTRY_117b5900"
-void FUN_117b5900(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b5900(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117b5918
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b5919; body size 25 bytes.
 #line 1 "ENTRY_117b5919"
-void FUN_117b5919(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b5919(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117b5931
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b5951; body size 18 bytes.
 #line 1 "ENTRY_117b5951"
-void FUN_117b5951(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1c),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b5951(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b59d0; body size 21 bytes.
 #line 1 "ENTRY_117b59d0"
-void FUN_117b59d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1528),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b59d0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x1528]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b59f0; body size 18 bytes.
 #line 1 "ENTRY_117b59f0"
-void FUN_117b59f0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1534),100);
-  return;
+
+__declspec(naked) void FUN_117b59f0(void)
+
+{
+  __asm push 0x64
+  __asm mov eax, dword ptr [ebp - 0x1534]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b5a02; body size 34 bytes.
 #line 1 "ENTRY_117b5a02"
-void FUN_117b5a02(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x152c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x152c) = (uint)(*(uint *)(unaff_EBP + -0x152c) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b5a02(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x152c]
+  __asm and eax, 1
+  __asm je LAB_117b5a23
+  __asm and dword ptr [ebp - 0x152c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1528]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b5a24; body size 21 bytes.
 #line 1 "ENTRY_117b5a24"
-void FUN_117b5a24(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1528),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b5a24(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x1528]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b5af0; body size 18 bytes.
 #line 1 "ENTRY_117b5af0"
-void FUN_117b5af0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b5af0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b5b50; body size 21 bytes.
 #line 1 "ENTRY_117b5b50"
-void FUN_117b5b50(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x5b4),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b5b50(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x5b4]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b5b65; body size 18 bytes.
 #line 1 "ENTRY_117b5b65"
-void FUN_117b5b65(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x5b4),0x6c);
-  return;
+
+__declspec(naked) void FUN_117b5b65(void)
+
+{
+  __asm push 0x6c
+  __asm mov eax, dword ptr [ebp - 0x5b4]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b5bc0; body size 18 bytes.
 #line 1 "ENTRY_117b5bc0"
-void FUN_117b5bc0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b5bc0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b62f0; body size 25 bytes.
 #line 1 "ENTRY_117b62f0"
-void FUN_117b62f0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b62f0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b6308
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b63c0; body size 25 bytes.
 #line 1 "ENTRY_117b63c0"
-void FUN_117b63c0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b63c0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b63d8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b63d9; body size 25 bytes.
 #line 1 "ENTRY_117b63d9"
-void FUN_117b63d9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b63d9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117b63f1
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b675f; body size 18 bytes.
 #line 1 "ENTRY_117b675f"
-void FUN_117b675f(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b675f(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b680d; body size 18 bytes.
 #line 1 "ENTRY_117b680d"
-void FUN_117b680d(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xdfd0);
-  return;
+
+__declspec(naked) void FUN_117b680d(void)
+
+{
+  __asm push 0xdfd0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b6b34; body size 18 bytes.
 #line 1 "ENTRY_117b6b34"
-void FUN_117b6b34(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x47c);
-  return;
+
+__declspec(naked) void FUN_117b6b34(void)
+
+{
+  __asm push 0x47c
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b6cf0; body size 18 bytes.
 #line 1 "ENTRY_117b6cf0"
-void FUN_117b6cf0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1c),0xc098);
-  return;
+
+__declspec(naked) void FUN_117b6cf0(void)
+
+{
+  __asm push 0xc098
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b6d02; body size 25 bytes.
 #line 1 "ENTRY_117b6d02"
-void FUN_117b6d02(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b6d02(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b6d1a
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b6d50; body size 25 bytes.
 #line 1 "ENTRY_117b6d50"
-void FUN_117b6d50(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b6d50(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b6d68
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b6daf; body size 18 bytes.
 #line 1 "ENTRY_117b6daf"
-void FUN_117b6daf(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x1c),0xc098);
-  return;
+
+__declspec(naked) void FUN_117b6daf(void)
+
+{
+  __asm push 0xc098
+  __asm mov eax, dword ptr [ebp + 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b6dc1; body size 25 bytes.
 #line 1 "ENTRY_117b6dc1"
-void FUN_117b6dc1(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b6dc1(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b6dd9
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp + 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b6e20; body size 25 bytes.
 #line 1 "ENTRY_117b6e20"
-void FUN_117b6e20(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b6e20(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117b6e38
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b7628; body size 19 bytes.
 #line 1 "ENTRY_117b7628"
-void FUN_117b7628(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x30),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b7628(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x30]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7909; body size 18 bytes.
 #line 1 "ENTRY_117b7909"
-void FUN_117b7909(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b7909(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b791b; body size 18 bytes.
 #line 1 "ENTRY_117b791b"
-void FUN_117b791b(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b791b(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b792d; body size 18 bytes.
 #line 1 "ENTRY_117b792d"
-void FUN_117b792d(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b792d(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b79c1; body size 18 bytes.
 #line 1 "ENTRY_117b79c1"
-void FUN_117b79c1(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b79c1(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b79d3; body size 18 bytes.
 #line 1 "ENTRY_117b79d3"
-void FUN_117b79d3(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b79d3(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7a6f; body size 18 bytes.
 #line 1 "ENTRY_117b7a6f"
-void FUN_117b7a6f(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b7a6f(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7a81; body size 18 bytes.
 #line 1 "ENTRY_117b7a81"
-void FUN_117b7a81(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xdc);
-  return;
+
+__declspec(naked) void FUN_117b7a81(void)
+
+{
+  __asm push 0xdc
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7a93; body size 18 bytes.
 #line 1 "ENTRY_117b7a93"
-void FUN_117b7a93(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b7a93(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7aa5; body size 18 bytes.
 #line 1 "ENTRY_117b7aa5"
-void FUN_117b7aa5(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b7aa5(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7ab7; body size 18 bytes.
 #line 1 "ENTRY_117b7ab7"
-void FUN_117b7ab7(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b7ab7(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7d10; body size 45 bytes.
 #line 1 "ENTRY_117b7d10"
-void FUN_117b7d10(void){
-  longlong lVar1;
-  uint uVar2;
-  int unaff_EBP;
-  
-  lVar1 = (longlong)((ulonglong)*(uint *)(unaff_EBP + -0x20) * 0xc);
-  uVar2 = (uint)(-(uint)((int)((ulonglong)lVar1 >> 0x20) != 0) | (uint)lVar1);
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x1c),-(uint)(0xfffffffb < uVar2) | uVar2 + 4);
-  return;
+
+__declspec(naked) void FUN_117b7d10(void)
+
+{
+  __asm xor ebx, ebx
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm mov ecx, 0xc
+  __asm mul ecx
+  __asm seto bl
+  __asm neg ebx
+  __asm or ebx, eax
+  __asm xor eax, eax
+  __asm add ebx, 4
+  __asm setb al
+  __asm neg eax
+  __asm or eax, ebx
+  __asm push eax
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7d3d; body size 18 bytes.
 #line 1 "ENTRY_117b7d3d"
-void FUN_117b7d3d(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b7d3d(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7d90; body size 45 bytes.
 #line 1 "ENTRY_117b7d90"
-void FUN_117b7d90(void){
-  longlong lVar1;
-  uint uVar2;
-  int unaff_EBP;
-  
-  lVar1 = (longlong)((ulonglong)*(uint *)(unaff_EBP + -0x20) * 0xc);
-  uVar2 = (uint)(-(uint)((int)((ulonglong)lVar1 >> 0x20) != 0) | (uint)lVar1);
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x1c),-(uint)(0xfffffffb < uVar2) | uVar2 + 4);
-  return;
+
+__declspec(naked) void FUN_117b7d90(void)
+
+{
+  __asm xor ebx, ebx
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm mov ecx, 0xc
+  __asm mul ecx
+  __asm seto bl
+  __asm neg ebx
+  __asm or ebx, eax
+  __asm xor eax, eax
+  __asm add ebx, 4
+  __asm setb al
+  __asm neg eax
+  __asm or eax, ebx
+  __asm push eax
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7dbd; body size 18 bytes.
 #line 1 "ENTRY_117b7dbd"
-void FUN_117b7dbd(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b7dbd(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7e50; body size 18 bytes.
 #line 1 "ENTRY_117b7e50"
-void FUN_117b7e50(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x2c),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b7e50(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp + 0x2c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7e82; body size 18 bytes.
 #line 1 "ENTRY_117b7e82"
-void FUN_117b7e82(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x14),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117b7e82(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp + 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7eac; body size 18 bytes.
 #line 1 "ENTRY_117b7eac"
-void FUN_117b7eac(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x10),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117b7eac(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp + 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7ece; body size 18 bytes.
 #line 1 "ENTRY_117b7ece"
-void FUN_117b7ece(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x1c),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117b7ece(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp + 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b7f00; body size 18 bytes.
 #line 1 "ENTRY_117b7f00"
-void FUN_117b7f00(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x10),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117b7f00(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp + 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b8228; body size 18 bytes.
 #line 1 "ENTRY_117b8228"
-void FUN_117b8228(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b8228(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b8280; body size 18 bytes.
 #line 1 "ENTRY_117b8280"
-void FUN_117b8280(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x144);
-  return;
+
+__declspec(naked) void FUN_117b8280(void)
+
+{
+  __asm push 0x144
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b83f0; body size 25 bytes.
 #line 1 "ENTRY_117b83f0"
-void FUN_117b83f0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b83f0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 1
+  __asm je LAB_117b8408
+  __asm and dword ptr [ebp - 0x20], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b87e0; body size 19 bytes.
 #line 1 "ENTRY_117b87e0"
-void FUN_117b87e0(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x30),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b87e0(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x30]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b8830; body size 19 bytes.
 #line 1 "ENTRY_117b8830"
-void FUN_117b8830(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x30),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b8830(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x30]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b8880; body size 19 bytes.
 #line 1 "ENTRY_117b8880"
-void FUN_117b8880(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x30),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117b8880(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x30]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117b8a90; body size 18 bytes.
 #line 1 "ENTRY_117b8a90"
-void FUN_117b8a90(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x42c);
-  return;
+
+__declspec(naked) void FUN_117b8a90(void)
+
+{
+  __asm push 0x42c
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9170; body size 18 bytes.
 #line 1 "ENTRY_117b9170"
-void FUN_117b9170(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117b9170(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b91c0; body size 18 bytes.
 #line 1 "ENTRY_117b91c0"
-void FUN_117b91c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b91c0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9210; body size 18 bytes.
 #line 1 "ENTRY_117b9210"
-void FUN_117b9210(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9210(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9260; body size 18 bytes.
 #line 1 "ENTRY_117b9260"
-void FUN_117b9260(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9260(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b92b0; body size 18 bytes.
 #line 1 "ENTRY_117b92b0"
-void FUN_117b92b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b92b0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9300; body size 18 bytes.
 #line 1 "ENTRY_117b9300"
-void FUN_117b9300(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9300(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9312; body size 18 bytes.
 #line 1 "ENTRY_117b9312"
-void FUN_117b9312(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9312(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9360; body size 18 bytes.
 #line 1 "ENTRY_117b9360"
-void FUN_117b9360(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9360(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b93b0; body size 18 bytes.
 #line 1 "ENTRY_117b93b0"
-void FUN_117b93b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b93b0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9400; body size 18 bytes.
 #line 1 "ENTRY_117b9400"
-void FUN_117b9400(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9400(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9450; body size 18 bytes.
 #line 1 "ENTRY_117b9450"
-void FUN_117b9450(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9450(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b94a0; body size 18 bytes.
 #line 1 "ENTRY_117b94a0"
-void FUN_117b94a0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b94a0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b94f0; body size 18 bytes.
 #line 1 "ENTRY_117b94f0"
-void FUN_117b94f0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b94f0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9540; body size 18 bytes.
 #line 1 "ENTRY_117b9540"
-void FUN_117b9540(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9540(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9590; body size 18 bytes.
 #line 1 "ENTRY_117b9590"
-void FUN_117b9590(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9590(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b95e0; body size 18 bytes.
 #line 1 "ENTRY_117b95e0"
-void FUN_117b95e0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b95e0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9630; body size 18 bytes.
 #line 1 "ENTRY_117b9630"
-void FUN_117b9630(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9630(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9680; body size 18 bytes.
 #line 1 "ENTRY_117b9680"
-void FUN_117b9680(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9680(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b96d0; body size 18 bytes.
 #line 1 "ENTRY_117b96d0"
-void FUN_117b96d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b96d0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9720; body size 18 bytes.
 #line 1 "ENTRY_117b9720"
-void FUN_117b9720(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9720(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9770; body size 18 bytes.
 #line 1 "ENTRY_117b9770"
-void FUN_117b9770(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9770(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b97c0; body size 18 bytes.
 #line 1 "ENTRY_117b97c0"
-void FUN_117b97c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b97c0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9810; body size 18 bytes.
 #line 1 "ENTRY_117b9810"
-void FUN_117b9810(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9810(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9860; body size 18 bytes.
 #line 1 "ENTRY_117b9860"
-void FUN_117b9860(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9860(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9a20; body size 18 bytes.
 #line 1 "ENTRY_117b9a20"
-void FUN_117b9a20(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117b9a20(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9a70; body size 18 bytes.
 #line 1 "ENTRY_117b9a70"
-void FUN_117b9a70(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117b9a70(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9ac0; body size 18 bytes.
 #line 1 "ENTRY_117b9ac0"
-void FUN_117b9ac0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xdbd8);
-  return;
+
+__declspec(naked) void FUN_117b9ac0(void)
+
+{
+  __asm push 0xdbd8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9b10; body size 18 bytes.
 #line 1 "ENTRY_117b9b10"
-void FUN_117b9b10(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117b9b10(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9b60; body size 18 bytes.
 #line 1 "ENTRY_117b9b60"
-void FUN_117b9b60(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7e0);
-  return;
+
+__declspec(naked) void FUN_117b9b60(void)
+
+{
+  __asm push 0xd7e0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9bb0; body size 18 bytes.
 #line 1 "ENTRY_117b9bb0"
-void FUN_117b9bb0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b9bb0(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9c00; body size 18 bytes.
 #line 1 "ENTRY_117b9c00"
-void FUN_117b9c00(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b9c00(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9c50; body size 18 bytes.
 #line 1 "ENTRY_117b9c50"
-void FUN_117b9c50(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b9c50(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9ca0; body size 18 bytes.
 #line 1 "ENTRY_117b9ca0"
-void FUN_117b9ca0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b9ca0(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9cf0; body size 18 bytes.
 #line 1 "ENTRY_117b9cf0"
-void FUN_117b9cf0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117b9cf0(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117b9d40; body size 25 bytes.
 #line 1 "ENTRY_117b9d40"
-void FUN_117b9d40(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b9d40(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b9d58
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117b9d90; body size 25 bytes.
 #line 1 "ENTRY_117b9d90"
-void FUN_117b9d90(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117b9d90(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117b9da8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117ba2e0; body size 19 bytes.
 #line 1 "ENTRY_117ba2e0"
-void FUN_117ba2e0(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x2c),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117ba2e0(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba330; body size 19 bytes.
 #line 1 "ENTRY_117ba330"
-void FUN_117ba330(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x2c),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117ba330(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba380; body size 19 bytes.
 #line 1 "ENTRY_117ba380"
-void FUN_117ba380(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x2c),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117ba380(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba3d0; body size 19 bytes.
 #line 1 "ENTRY_117ba3d0"
-void FUN_117ba3d0(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x2c),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117ba3d0(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba4c0; body size 18 bytes.
 #line 1 "ENTRY_117ba4c0"
-void FUN_117ba4c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x2c),0x80);
-  return;
+
+__declspec(naked) void FUN_117ba4c0(void)
+
+{
+  __asm push 0x80
+  __asm mov eax, dword ptr [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba518; body size 18 bytes.
 #line 1 "ENTRY_117ba518"
-void FUN_117ba518(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0x80);
-  return;
+
+__declspec(naked) void FUN_117ba518(void)
+
+{
+  __asm push 0x80
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba578; body size 19 bytes.
 #line 1 "ENTRY_117ba578"
-void FUN_117ba578(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + 0x40),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117ba578(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp + 0x40]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba593; body size 19 bytes.
 #line 1 "ENTRY_117ba593"
-void FUN_117ba593(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + 0x40),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117ba593(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp + 0x40]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba5b6; body size 19 bytes.
 #line 1 "ENTRY_117ba5b6"
-void FUN_117ba5b6(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + 0x40),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117ba5b6(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp + 0x40]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba5c9; body size 19 bytes.
 #line 1 "ENTRY_117ba5c9"
-void FUN_117ba5c9(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + 0x40),0x10,2,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117ba5c9(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 2
+  __asm push 0x10
+  __asm lea eax, [ebp + 0x40]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba630; body size 18 bytes.
 #line 1 "ENTRY_117ba630"
-void FUN_117ba630(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117ba630(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba680; body size 18 bytes.
 #line 1 "ENTRY_117ba680"
-void FUN_117ba680(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117ba680(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba6d0; body size 18 bytes.
 #line 1 "ENTRY_117ba6d0"
-void FUN_117ba6d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117ba6d0(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba720; body size 18 bytes.
 #line 1 "ENTRY_117ba720"
-void FUN_117ba720(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117ba720(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba906; body size 27 bytes.
 #line 1 "ENTRY_117ba906"
-void FUN_117ba906(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_
-            ((char *)(*(int *)(unaff_EBP + -0x1c) + 0xc094),0x90,5, (_func_void_void_ptr *)LAB_1007c354);
-  return;
+
+__declspec(naked) void FUN_117ba906(void)
+
+{
+  __asm push offset LAB_1007c354
+  __asm push 5
+  __asm push 0x90
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm add eax, 0xc094
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba93d; body size 18 bytes.
 #line 1 "ENTRY_117ba93d"
-void FUN_117ba93d(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x548);
-  return;
+
+__declspec(naked) void FUN_117ba93d(void)
+
+{
+  __asm push 0x548
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ba9f0; body size 21 bytes.
 #line 1 "ENTRY_117ba9f0"
-void FUN_117ba9f0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x70b4),0xc394);
-  return;
+
+__declspec(naked) void FUN_117ba9f0(void)
+
+{
+  __asm push 0xc394
+  __asm mov eax, dword ptr [ebp - 0x70b4]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117baa10; body size 21 bytes.
 #line 1 "ENTRY_117baa10"
-void FUN_117baa10(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x70b4),0xe960);
-  return;
+
+__declspec(naked) void FUN_117baa10(void)
+
+{
+  __asm push 0xe960
+  __asm mov eax, dword ptr [ebp - 0x70b4]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117baa25; body size 21 bytes.
 #line 1 "ENTRY_117baa25"
-void FUN_117baa25(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x70b4),0xc394);
-  return;
+
+__declspec(naked) void FUN_117baa25(void)
+
+{
+  __asm push 0xc394
+  __asm mov eax, dword ptr [ebp - 0x70b4]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117baa45; body size 18 bytes.
 #line 1 "ENTRY_117baa45"
-void FUN_117baa45(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x70b4),0x6c);
-  return;
+
+__declspec(naked) void FUN_117baa45(void)
+
+{
+  __asm push 0x6c
+  __asm mov eax, dword ptr [ebp - 0x70b4]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bab0e; body size 18 bytes.
 #line 1 "ENTRY_117bab0e"
-void FUN_117bab0e(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0xc394);
-  return;
+
+__declspec(naked) void FUN_117bab0e(void)
+
+{
+  __asm push 0xc394
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bad16; body size 18 bytes.
 #line 1 "ENTRY_117bad16"
-void FUN_117bad16(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x454);
-  return;
+
+__declspec(naked) void FUN_117bad16(void)
+
+{
+  __asm push 0x454
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bad96; body size 18 bytes.
 #line 1 "ENTRY_117bad96"
-void FUN_117bad96(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x454);
-  return;
+
+__declspec(naked) void FUN_117bad96(void)
+
+{
+  __asm push 0x454
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bb140; body size 18 bytes.
 #line 1 "ENTRY_117bb140"
-void FUN_117bb140(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1c),0x144);
-  return;
+
+__declspec(naked) void FUN_117bb140(void)
+
+{
+  __asm push 0x144
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bb152; body size 25 bytes.
 #line 1 "ENTRY_117bb152"
-void FUN_117bb152(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bb152(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117bb16a
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117bb16b; body size 18 bytes.
 #line 1 "ENTRY_117bb16b"
-void FUN_117bb16b(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),200);
-  return;
+
+__declspec(naked) void FUN_117bb16b(void)
+
+{
+  __asm push 0xc8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bb17d; body size 25 bytes.
 #line 1 "ENTRY_117bb17d"
-void FUN_117bb17d(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bb17d(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117bb195
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117bb196; body size 18 bytes.
 #line 1 "ENTRY_117bb196"
-void FUN_117bb196(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0x1998);
-  return;
+
+__declspec(naked) void FUN_117bb196(void)
+
+{
+  __asm push 0x1998
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bb1a8; body size 25 bytes.
 #line 1 "ENTRY_117bb1a8"
-void FUN_117bb1a8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bb1a8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 4
+  __asm je LAB_117bb1c0
+  __asm and dword ptr [ebp - 0x14], 0xfffffffb
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117bb96f; body size 25 bytes.
 #line 1 "ENTRY_117bb96f"
-void FUN_117bb96f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bb96f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117bb987
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117bb9c8; body size 18 bytes.
 #line 1 "ENTRY_117bb9c8"
-void FUN_117bb9c8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117bb9c8(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bba8f; body size 25 bytes.
 #line 1 "ENTRY_117bba8f"
-void FUN_117bba8f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x1c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x1c) = (uint)(*(uint *)(unaff_EBP + -0x1c) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bba8f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm and eax, 1
+  __asm je LAB_117bbaa7
+  __asm and dword ptr [ebp - 0x1c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x10]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117bbc20; body size 18 bytes.
 #line 1 "ENTRY_117bbc20"
-void FUN_117bbc20(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117bbc20(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bbc78; body size 18 bytes.
 #line 1 "ENTRY_117bbc78"
-void FUN_117bbc78(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x10),0x2cd34);
-  return;
+
+__declspec(naked) void FUN_117bbc78(void)
+
+{
+  __asm push 0x2cd34
+  __asm mov eax, dword ptr [ebp + 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bbcc8; body size 18 bytes.
 #line 1 "ENTRY_117bbcc8"
-void FUN_117bbcc8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x2cd34);
-  return;
+
+__declspec(naked) void FUN_117bbcc8(void)
+
+{
+  __asm push 0x2cd34
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bc9b0; body size 25 bytes.
 #line 1 "ENTRY_117bc9b0"
-void FUN_117bc9b0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x28) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x28) = (uint)(*(uint *)(unaff_EBP + -0x28) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bc9b0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x28]
+  __asm and eax, 1
+  __asm je LAB_117bc9c8
+  __asm and dword ptr [ebp - 0x28], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp - 0x30]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117be60f; body size 25 bytes.
 #line 1 "ENTRY_117be60f"
-void FUN_117be60f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117be60f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117be627
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117be628; body size 25 bytes.
 #line 1 "ENTRY_117be628"
-void FUN_117be628(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117be628(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117be640
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117be641; body size 25 bytes.
 #line 1 "ENTRY_117be641"
-void FUN_117be641(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117be641(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 4
+  __asm je LAB_117be659
+  __asm and dword ptr [ebp - 0x10], 0xfffffffb
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117be65a; body size 25 bytes.
 #line 1 "ENTRY_117be65a"
-void FUN_117be65a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 8) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffff7);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117be65a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 8
+  __asm je LAB_117be672
+  __asm and dword ptr [ebp - 0x10], 0xfffffff7
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117be673; body size 25 bytes.
 #line 1 "ENTRY_117be673"
-void FUN_117be673(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 0x10) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xffffffef);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117be673(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 0x10
+  __asm je LAB_117be68b
+  __asm and dword ptr [ebp - 0x10], 0xffffffef
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117be76f; body size 25 bytes.
 #line 1 "ENTRY_117be76f"
-void FUN_117be76f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x20) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x20) = (uint)(*(uint *)(unaff_EBP + -0x20) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117be76f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm and eax, 1
+  __asm je LAB_117be787
+  __asm and dword ptr [ebp - 0x20], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117be9d7; body size 25 bytes.
 #line 1 "ENTRY_117be9d7"
-void FUN_117be9d7(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117be9d7(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117be9ef
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp + 0xc]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117be9f0; body size 25 bytes.
 #line 1 "ENTRY_117be9f0"
-void FUN_117be9f0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117be9f0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117bea08
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117bead0; body size 18 bytes.
 #line 1 "ENTRY_117bead0"
-void FUN_117bead0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x454);
-  return;
+
+__declspec(naked) void FUN_117bead0(void)
+
+{
+  __asm push 0x454
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bf370; body size 18 bytes.
 #line 1 "ENTRY_117bf370"
-void FUN_117bf370(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x1c),0xc098);
-  return;
+
+__declspec(naked) void FUN_117bf370(void)
+
+{
+  __asm push 0xc098
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bf7e0; body size 18 bytes.
 #line 1 "ENTRY_117bf7e0"
-void FUN_117bf7e0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),500);
-  return;
+
+__declspec(naked) void FUN_117bf7e0(void)
+
+{
+  __asm push 0x1f4
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bf89f; body size 25 bytes.
 #line 1 "ENTRY_117bf89f"
-void FUN_117bf89f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bf89f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117bf8b7
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117bf8b8; body size 25 bytes.
 #line 1 "ENTRY_117bf8b8"
-void FUN_117bf8b8(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bf8b8(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117bf8d0
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117bf91f; body size 25 bytes.
 #line 1 "ENTRY_117bf91f"
-void FUN_117bf91f(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bf91f(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 2
+  __asm je LAB_117bf937
+  __asm and dword ptr [ebp - 0x18], 0xfffffffd
+  __asm lea ecx, [ebp - 0x14]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117bf938; body size 18 bytes.
 #line 1 "ENTRY_117bf938"
-void FUN_117bf938(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),500);
-  return;
+
+__declspec(naked) void FUN_117bf938(void)
+
+{
+  __asm push 0x1f4
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117bf94a; body size 25 bytes.
 #line 1 "ENTRY_117bf94a"
-void FUN_117bf94a(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x18) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x18) = (uint)(*(uint *)(unaff_EBP + -0x18) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bf94a(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm and eax, 1
+  __asm je LAB_117bf962
+  __asm and dword ptr [ebp - 0x18], 0xfffffffe
+  __asm lea ecx, [ebp - 0x1c]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117bfb30; body size 25 bytes.
 #line 1 "ENTRY_117bfb30"
-void FUN_117bfb30(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_110dc650();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117bfb30(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117bfb48
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_10061883
+  __asm ret
 }
+
 
 
 // Reference entry 117bfc40; body size 19 bytes.
 #line 1 "ENTRY_117bfc40"
-void FUN_117bfc40(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((char *)(unaff_EBP + -0x30),0x10,1,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117bfc40(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 1
+  __asm push 0x10
+  __asm lea eax, [ebp - 0x30]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117bfc5b; body size 19 bytes.
 #line 1 "ENTRY_117bfc5b"
-void FUN_117bfc5b(void){
-  void *unaff_EBP;
-  
-  _eh_vector_destructor_iterator_(unaff_EBP,0x10,4,thunk_FUN_1051d480);
-  return;
+
+__declspec(naked) void FUN_117bfc5b(void)
+
+{
+  __asm push offset LAB_1004f9b7
+  __asm push 4
+  __asm push 0x10
+  __asm lea eax, [ebp]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117bfeda; body size 45 bytes.
 #line 1 "ENTRY_117bfeda"
-void FUN_117bfeda(void){
-  longlong lVar1;
-  uint uVar2;
-  int unaff_EBP;
-  
-  lVar1 = (longlong)((ulonglong)*(uint *)(unaff_EBP + 8) * 0x143c);
-  uVar2 = (uint)(-(uint)((int)((ulonglong)lVar1 >> 0x20) != 0) | (uint)lVar1);
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x14),-(uint)(0xfffffffb < uVar2) | uVar2 + 4);
-  return;
+
+__declspec(naked) void FUN_117bfeda(void)
+
+{
+  __asm xor ebx, ebx
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm mov ecx, 0x143c
+  __asm mul ecx
+  __asm seto bl
+  __asm neg ebx
+  __asm or ebx, eax
+  __asm xor eax, eax
+  __asm add ebx, 4
+  __asm setb al
+  __asm neg eax
+  __asm or eax, ebx
+  __asm push eax
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0020; body size 18 bytes.
 #line 1 "ENTRY_117c0020"
-void FUN_117c0020(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117c0020(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0032; body size 18 bytes.
 #line 1 "ENTRY_117c0032"
-void FUN_117c0032(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117c0032(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0044; body size 18 bytes.
 #line 1 "ENTRY_117c0044"
-void FUN_117c0044(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117c0044(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0056; body size 18 bytes.
 #line 1 "ENTRY_117c0056"
-void FUN_117c0056(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117c0056(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c00b0; body size 18 bytes.
 #line 1 "ENTRY_117c00b0"
-void FUN_117c00b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xdfd0);
-  return;
+
+__declspec(naked) void FUN_117c00b0(void)
+
+{
+  __asm push 0xdfd0
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c00c2; body size 18 bytes.
 #line 1 "ENTRY_117c00c2"
-void FUN_117c00c2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117c00c2(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0110; body size 18 bytes.
 #line 1 "ENTRY_117c0110"
-void FUN_117c0110(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x10fd8);
-  return;
+
+__declspec(naked) void FUN_117c0110(void)
+
+{
+  __asm push 0x10fd8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0160; body size 18 bytes.
 #line 1 "ENTRY_117c0160"
-void FUN_117c0160(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xdfd0);
-  return;
+
+__declspec(naked) void FUN_117c0160(void)
+
+{
+  __asm push 0xdfd0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c01b0; body size 18 bytes.
 #line 1 "ENTRY_117c01b0"
-void FUN_117c01b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xe3d0);
-  return;
+
+__declspec(naked) void FUN_117c01b0(void)
+
+{
+  __asm push 0xe3d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0200; body size 18 bytes.
 #line 1 "ENTRY_117c0200"
-void FUN_117c0200(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xf7e0);
-  return;
+
+__declspec(naked) void FUN_117c0200(void)
+
+{
+  __asm push 0xf7e0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0250; body size 18 bytes.
 #line 1 "ENTRY_117c0250"
-void FUN_117c0250(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d8);
-  return;
+
+__declspec(naked) void FUN_117c0250(void)
+
+{
+  __asm push 0xd7d8
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c02e0; body size 18 bytes.
 #line 1 "ENTRY_117c02e0"
-void FUN_117c02e0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117c02e0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0330; body size 18 bytes.
 #line 1 "ENTRY_117c0330"
-void FUN_117c0330(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117c0330(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0380; body size 18 bytes.
 #line 1 "ENTRY_117c0380"
-void FUN_117c0380(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117c0380(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c03d0; body size 18 bytes.
 #line 1 "ENTRY_117c03d0"
-void FUN_117c03d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117c03d0(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0420; body size 18 bytes.
 #line 1 "ENTRY_117c0420"
-void FUN_117c0420(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xd7d0);
-  return;
+
+__declspec(naked) void FUN_117c0420(void)
+
+{
+  __asm push 0xd7d0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c04b0; body size 18 bytes.
 #line 1 "ENTRY_117c04b0"
-void FUN_117c04b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x10fd8);
-  return;
+
+__declspec(naked) void FUN_117c04b0(void)
+
+{
+  __asm push 0x10fd8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c0927; body size 25 bytes.
 #line 1 "ENTRY_117c0927"
-void FUN_117c0927(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c0927(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 1
+  __asm je LAB_117c093f
+  __asm and dword ptr [ebp - 0x14], 0xfffffffe
+  __asm lea ecx, [ebp - 0x24]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117c0940; body size 25 bytes.
 #line 1 "ENTRY_117c0940"
-void FUN_117c0940(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x14) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x14) = (uint)(*(uint *)(unaff_EBP + -0x14) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c0940(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm and eax, 2
+  __asm je LAB_117c0958
+  __asm and dword ptr [ebp - 0x14], 0xfffffffd
+  __asm lea ecx, [ebp - 0x20]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117c0da0; body size 25 bytes.
 #line 1 "ENTRY_117c0da0"
-void FUN_117c0da0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c0da0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117c0db8
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm lea ecx, [ebp - 0x18]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117c0db9; body size 25 bytes.
 #line 1 "ENTRY_117c0db9"
-void FUN_117c0db9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c0db9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 2
+  __asm je LAB_117c0dd1
+  __asm and dword ptr [ebp - 0x10], 0xfffffffd
+  __asm lea ecx, [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117c0e10; body size 25 bytes.
 #line 1 "ENTRY_117c0e10"
-void FUN_117c0e10(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x50) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x50) = (uint)(*(uint *)(unaff_EBP + -0x50) & 0xfffffffd);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c0e10(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x50]
+  __asm and eax, 2
+  __asm je LAB_117c0e28
+  __asm and dword ptr [ebp - 0x50], 0xfffffffd
+  __asm lea ecx, [ebp - 0x58]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117c0e29; body size 25 bytes.
 #line 1 "ENTRY_117c0e29"
-void FUN_117c0e29(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x50) & 4) != 0) {
-    *(uint*)(unaff_EBP + -0x50) = (uint)(*(uint *)(unaff_EBP + -0x50) & 0xfffffffb);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c0e29(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x50]
+  __asm and eax, 4
+  __asm je LAB_117c0e41
+  __asm and dword ptr [ebp - 0x50], 0xfffffffb
+  __asm lea ecx, [ebp - 0x54]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117c1b80; body size 25 bytes.
 #line 1 "ENTRY_117c1b80"
-void FUN_117c1b80(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x10) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x10) = (uint)(*(uint *)(unaff_EBP + -0x10) & 0xfffffffe);
-    thunk_FUN_101ba300();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c1b80(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm and eax, 1
+  __asm je LAB_117c1b98
+  __asm and dword ptr [ebp - 0x10], 0xfffffffe
+  __asm mov ecx, dword ptr [ebp + 8]
+  __asm jmp LAB_1003f102
+  __asm ret
 }
+
 
 
 // Reference entry 117c1f80; body size 18 bytes.
 #line 1 "ENTRY_117c1f80"
-void FUN_117c1f80(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x89c);
-  return;
+
+__declspec(naked) void FUN_117c1f80(void)
+
+{
+  __asm push 0x89c
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c1f92; body size 18 bytes.
 #line 1 "ENTRY_117c1f92"
-void FUN_117c1f92(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x4488);
-  return;
+
+__declspec(naked) void FUN_117c1f92(void)
+
+{
+  __asm push 0x4488
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c1fe0; body size 18 bytes.
 #line 1 "ENTRY_117c1fe0"
-void FUN_117c1fe0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x89c);
-  return;
+
+__declspec(naked) void FUN_117c1fe0(void)
+
+{
+  __asm push 0x89c
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c1ff2; body size 18 bytes.
 #line 1 "ENTRY_117c1ff2"
-void FUN_117c1ff2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x4488);
-  return;
+
+__declspec(naked) void FUN_117c1ff2(void)
+
+{
+  __asm push 0x4488
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c2040; body size 18 bytes.
 #line 1 "ENTRY_117c2040"
-void FUN_117c2040(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x89c);
-  return;
+
+__declspec(naked) void FUN_117c2040(void)
+
+{
+  __asm push 0x89c
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c2052; body size 18 bytes.
 #line 1 "ENTRY_117c2052"
-void FUN_117c2052(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x4488);
-  return;
+
+__declspec(naked) void FUN_117c2052(void)
+
+{
+  __asm push 0x4488
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c20a0; body size 25 bytes.
 #line 1 "ENTRY_117c20a0"
-void FUN_117c20a0(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x74) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x74) = (uint)(*(uint *)(unaff_EBP + -0x74) & 0xfffffffe);
-    thunk_FUN_1124d790();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c20a0(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x74]
+  __asm and eax, 1
+  __asm je LAB_117c20b8
+  __asm and dword ptr [ebp - 0x74], 0xfffffffe
+  __asm lea ecx, [ebp - 0x70]
+  __asm jmp LAB_10091808
+  __asm ret
 }
+
 
 
 // Reference entry 117c20b9; body size 25 bytes.
 #line 1 "ENTRY_117c20b9"
-void FUN_117c20b9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x74) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x74) = (uint)(*(uint *)(unaff_EBP + -0x74) & 0xfffffffd);
-    thunk_FUN_1124d790();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c20b9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x74]
+  __asm and eax, 2
+  __asm je LAB_117c20d1
+  __asm and dword ptr [ebp - 0x74], 0xfffffffd
+  __asm lea ecx, [ebp - 0x50]
+  __asm jmp LAB_10091808
+  __asm ret
 }
+
 
 
 // Reference entry 117c2384; body size 25 bytes.
 #line 1 "ENTRY_117c2384"
-void FUN_117c2384(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x34) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x34) = (uint)(*(uint *)(unaff_EBP + -0x34) & 0xfffffffe);
-    thunk_FUN_1124d790();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c2384(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x34]
+  __asm and eax, 1
+  __asm je LAB_117c239c
+  __asm and dword ptr [ebp - 0x34], 0xfffffffe
+  __asm lea ecx, [ebp - 0x30]
+  __asm jmp LAB_10091808
+  __asm ret
 }
+
 
 
 // Reference entry 117c2450; body size 19 bytes.
 #line 1 "ENTRY_117c2450"
-void FUN_117c2450(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_
-            ((char *)(unaff_EBP + -0x2c),0x1c,1,(_func_void_void_ptr *)LAB_10007171);
-  return;
+
+__declspec(naked) void FUN_117c2450(void)
+
+{
+  __asm push offset LAB_10007171
+  __asm push 1
+  __asm push 0x1c
+  __asm lea eax, [ebp - 0x2c]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117c2610; body size 25 bytes.
 #line 1 "ENTRY_117c2610"
-void FUN_117c2610(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x74) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x74) = (uint)(*(uint *)(unaff_EBP + -0x74) & 0xfffffffe);
-    thunk_FUN_1124d790();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c2610(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x74]
+  __asm and eax, 1
+  __asm je LAB_117c2628
+  __asm and dword ptr [ebp - 0x74], 0xfffffffe
+  __asm lea ecx, [ebp - 0x70]
+  __asm jmp LAB_10091808
+  __asm ret
 }
+
 
 
 // Reference entry 117c2629; body size 25 bytes.
 #line 1 "ENTRY_117c2629"
-void FUN_117c2629(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x74) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x74) = (uint)(*(uint *)(unaff_EBP + -0x74) & 0xfffffffd);
-    thunk_FUN_1124d790();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c2629(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x74]
+  __asm and eax, 2
+  __asm je LAB_117c2641
+  __asm and dword ptr [ebp - 0x74], 0xfffffffd
+  __asm lea ecx, [ebp - 0x50]
+  __asm jmp LAB_10091808
+  __asm ret
 }
+
 
 
 // Reference entry 117c2690; body size 25 bytes.
 #line 1 "ENTRY_117c2690"
-void FUN_117c2690(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x74) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0x74) = (uint)(*(uint *)(unaff_EBP + -0x74) & 0xfffffffe);
-    thunk_FUN_1124d790();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c2690(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x74]
+  __asm and eax, 1
+  __asm je LAB_117c26a8
+  __asm and dword ptr [ebp - 0x74], 0xfffffffe
+  __asm lea ecx, [ebp - 0x70]
+  __asm jmp LAB_10091808
+  __asm ret
 }
+
 
 
 // Reference entry 117c26a9; body size 25 bytes.
 #line 1 "ENTRY_117c26a9"
-void FUN_117c26a9(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0x74) & 2) != 0) {
-    *(uint*)(unaff_EBP + -0x74) = (uint)(*(uint *)(unaff_EBP + -0x74) & 0xfffffffd);
-    thunk_FUN_1124d790();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117c26a9(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0x74]
+  __asm and eax, 2
+  __asm je LAB_117c26c1
+  __asm and dword ptr [ebp - 0x74], 0xfffffffd
+  __asm lea ecx, [ebp - 0x50]
+  __asm jmp LAB_10091808
+  __asm ret
 }
+
 
 
 // Reference entry 117c2e34; body size 18 bytes.
 #line 1 "ENTRY_117c2e34"
-void FUN_117c2e34(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x18),0x988);
-  return;
+
+__declspec(naked) void FUN_117c2e34(void)
+
+{
+  __asm push 0x988
+  __asm mov eax, dword ptr [ebp + 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c2f7b; body size 17 bytes.
 #line 1 "ENTRY_117c2f7b"
-void FUN_117c2f7b(void){
-  thunk_FUN_1124f230();
-  return;
+
+__declspec(naked) void FUN_117c2f7b(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x560]
+  __asm add ecx, 0x11988
+  __asm jmp LAB_1007abda
 }
+
 
 
 // Reference entry 117c326b; body size 17 bytes.
 #line 1 "ENTRY_117c326b"
-void FUN_117c326b(void){
-  thunk_FUN_1124f230();
-  return;
+
+__declspec(naked) void FUN_117c326b(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x560]
+  __asm add ecx, 0x11b8c
+  __asm jmp LAB_1007abda
 }
+
 
 
 // Reference entry 117c3751; body size 18 bytes.
 #line 1 "ENTRY_117c3751"
-void FUN_117c3751(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x1d578);
-  return;
+
+__declspec(naked) void FUN_117c3751(void)
+
+{
+  __asm push 0x1d578
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c3763; body size 18 bytes.
 #line 1 "ENTRY_117c3763"
-void FUN_117c3763(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x1d578);
-  return;
+
+__declspec(naked) void FUN_117c3763(void)
+
+{
+  __asm push 0x1d578
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c3801; body size 18 bytes.
 #line 1 "ENTRY_117c3801"
-void FUN_117c3801(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x184b8);
-  return;
+
+__declspec(naked) void FUN_117c3801(void)
+
+{
+  __asm push 0x184b8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c3813; body size 18 bytes.
 #line 1 "ENTRY_117c3813"
-void FUN_117c3813(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0x184b8);
-  return;
+
+__declspec(naked) void FUN_117c3813(void)
+
+{
+  __asm push 0x184b8
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c3ace; body size 18 bytes.
 #line 1 "ENTRY_117c3ace"
-void FUN_117c3ace(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x10),0x988);
-  return;
+
+__declspec(naked) void FUN_117c3ace(void)
+
+{
+  __asm push 0x988
+  __asm mov eax, dword ptr [ebp + 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c3b3e; body size 18 bytes.
 #line 1 "ENTRY_117c3b3e"
-void FUN_117c3b3e(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0xe9e8);
-  return;
+
+__declspec(naked) void FUN_117c3b3e(void)
+
+{
+  __asm push 0xe9e8
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c3c3b; body size 17 bytes.
 #line 1 "ENTRY_117c3c3b"
-void FUN_117c3c3b(void){
-  thunk_FUN_1124f230();
-  return;
+
+__declspec(naked) void FUN_117c3c3b(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2c8]
+  __asm add ecx, 0x11988
+  __asm jmp LAB_1007abda
 }
+
 
 
 // Reference entry 117c3ceb; body size 17 bytes.
 #line 1 "ENTRY_117c3ceb"
-void FUN_117c3ceb(void){
-  thunk_FUN_1124f230();
-  return;
+
+__declspec(naked) void FUN_117c3ceb(void)
+
+{
+  __asm mov ecx, dword ptr [ebp - 0x2c8]
+  __asm add ecx, 0x11988
+  __asm jmp LAB_1007abda
 }
+
 
 
 // Reference entry 117c3f79; body size 18 bytes.
 #line 1 "ENTRY_117c3f79"
-void FUN_117c3f79(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x117f0);
-  return;
+
+__declspec(naked) void FUN_117c3f79(void)
+
+{
+  __asm push 0x117f0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c3f8b; body size 18 bytes.
 #line 1 "ENTRY_117c3f8b"
-void FUN_117c3f8b(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0x18),0x12428);
-  return;
+
+__declspec(naked) void FUN_117c3f8b(void)
+
+{
+  __asm push 0x12428
+  __asm mov eax, dword ptr [ebp + 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4270; body size 18 bytes.
 #line 1 "ENTRY_117c4270"
-void FUN_117c4270(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x16e0);
-  return;
+
+__declspec(naked) void FUN_117c4270(void)
+
+{
+  __asm push 0x16e0
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c42d0; body size 18 bytes.
 #line 1 "ENTRY_117c42d0"
-void FUN_117c42d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11c38);
-  return;
+
+__declspec(naked) void FUN_117c42d0(void)
+
+{
+  __asm push 0x11c38
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c42e2; body size 18 bytes.
 #line 1 "ENTRY_117c42e2"
-void FUN_117c42e2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11c38);
-  return;
+
+__declspec(naked) void FUN_117c42e2(void)
+
+{
+  __asm push 0x11c38
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4340; body size 18 bytes.
 #line 1 "ENTRY_117c4340"
-void FUN_117c4340(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x22d58);
-  return;
+
+__declspec(naked) void FUN_117c4340(void)
+
+{
+  __asm push 0x22d58
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4390; body size 18 bytes.
 #line 1 "ENTRY_117c4390"
-void FUN_117c4390(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x1d578);
-  return;
+
+__declspec(naked) void FUN_117c4390(void)
+
+{
+  __asm push 0x1d578
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c43a2; body size 18 bytes.
 #line 1 "ENTRY_117c43a2"
-void FUN_117c43a2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x9c0);
-  return;
+
+__declspec(naked) void FUN_117c43a2(void)
+
+{
+  __asm push 0x9c0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c43b4; body size 18 bytes.
 #line 1 "ENTRY_117c43b4"
-void FUN_117c43b4(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0x1d578);
-  return;
+
+__declspec(naked) void FUN_117c43b4(void)
+
+{
+  __asm push 0x1d578
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c43c6; body size 18 bytes.
 #line 1 "ENTRY_117c43c6"
-void FUN_117c43c6(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x9c0);
-  return;
+
+__declspec(naked) void FUN_117c43c6(void)
+
+{
+  __asm push 0x9c0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c43d8; body size 18 bytes.
 #line 1 "ENTRY_117c43d8"
-void FUN_117c43d8(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
-  return;
+
+__declspec(naked) void FUN_117c43d8(void)
+
+{
+  __asm push 0x27f68
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c43ea; body size 18 bytes.
 #line 1 "ENTRY_117c43ea"
-void FUN_117c43ea(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x184b8);
-  return;
+
+__declspec(naked) void FUN_117c43ea(void)
+
+{
+  __asm push 0x184b8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c43fc; body size 18 bytes.
 #line 1 "ENTRY_117c43fc"
-void FUN_117c43fc(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
-  return;
+
+__declspec(naked) void FUN_117c43fc(void)
+
+{
+  __asm push 0x27f68
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c440e; body size 18 bytes.
 #line 1 "ENTRY_117c440e"
-void FUN_117c440e(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x184b8);
-  return;
+
+__declspec(naked) void FUN_117c440e(void)
+
+{
+  __asm push 0x184b8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4420; body size 18 bytes.
 #line 1 "ENTRY_117c4420"
-void FUN_117c4420(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
-  return;
+
+__declspec(naked) void FUN_117c4420(void)
+
+{
+  __asm push 0x27f68
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4432; body size 18 bytes.
 #line 1 "ENTRY_117c4432"
-void FUN_117c4432(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
-  return;
+
+__declspec(naked) void FUN_117c4432(void)
+
+{
+  __asm push 0x27f68
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4444; body size 18 bytes.
 #line 1 "ENTRY_117c4444"
-void FUN_117c4444(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
-  return;
+
+__declspec(naked) void FUN_117c4444(void)
+
+{
+  __asm push 0x27f68
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4456; body size 18 bytes.
 #line 1 "ENTRY_117c4456"
-void FUN_117c4456(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x184b8);
-  return;
+
+__declspec(naked) void FUN_117c4456(void)
+
+{
+  __asm push 0x184b8
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4468; body size 18 bytes.
 #line 1 "ENTRY_117c4468"
-void FUN_117c4468(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
-  return;
+
+__declspec(naked) void FUN_117c4468(void)
+
+{
+  __asm push 0x27f68
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c447a; body size 18 bytes.
 #line 1 "ENTRY_117c447a"
-void FUN_117c447a(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x9c0);
-  return;
+
+__declspec(naked) void FUN_117c447a(void)
+
+{
+  __asm push 0x9c0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c448c; body size 18 bytes.
 #line 1 "ENTRY_117c448c"
-void FUN_117c448c(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x1d578);
-  return;
+
+__declspec(naked) void FUN_117c448c(void)
+
+{
+  __asm push 0x1d578
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c449e; body size 18 bytes.
 #line 1 "ENTRY_117c449e"
-void FUN_117c449e(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x9c0);
-  return;
+
+__declspec(naked) void FUN_117c449e(void)
+
+{
+  __asm push 0x9c0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4540; body size 18 bytes.
 #line 1 "ENTRY_117c4540"
-void FUN_117c4540(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
-  return;
+
+__declspec(naked) void FUN_117c4540(void)
+
+{
+  __asm push 0x11908
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4552; body size 18 bytes.
 #line 1 "ENTRY_117c4552"
-void FUN_117c4552(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
-  return;
+
+__declspec(naked) void FUN_117c4552(void)
+
+{
+  __asm push 0x11908
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c45b0; body size 18 bytes.
 #line 1 "ENTRY_117c45b0"
-void FUN_117c45b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11e38);
-  return;
+
+__declspec(naked) void FUN_117c45b0(void)
+
+{
+  __asm push 0x11e38
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c45c2; body size 18 bytes.
 #line 1 "ENTRY_117c45c2"
-void FUN_117c45c2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11e38);
-  return;
+
+__declspec(naked) void FUN_117c45c2(void)
+
+{
+  __asm push 0x11e38
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4620; body size 18 bytes.
 #line 1 "ENTRY_117c4620"
-void FUN_117c4620(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
-  return;
+
+__declspec(naked) void FUN_117c4620(void)
+
+{
+  __asm push 0x11908
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4632; body size 18 bytes.
 #line 1 "ENTRY_117c4632"
-void FUN_117c4632(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
-  return;
+
+__declspec(naked) void FUN_117c4632(void)
+
+{
+  __asm push 0x11908
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4690; body size 18 bytes.
 #line 1 "ENTRY_117c4690"
-void FUN_117c4690(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
-  return;
+
+__declspec(naked) void FUN_117c4690(void)
+
+{
+  __asm push 0x11908
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c46a2; body size 18 bytes.
 #line 1 "ENTRY_117c46a2"
-void FUN_117c46a2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
-  return;
+
+__declspec(naked) void FUN_117c46a2(void)
+
+{
+  __asm push 0x11908
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4700; body size 18 bytes.
 #line 1 "ENTRY_117c4700"
-void FUN_117c4700(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x13790);
-  return;
+
+__declspec(naked) void FUN_117c4700(void)
+
+{
+  __asm push 0x13790
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c474f; body size 18 bytes.
 #line 1 "ENTRY_117c474f"
-void FUN_117c474f(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0x988);
-  return;
+
+__declspec(naked) void FUN_117c474f(void)
+
+{
+  __asm push 0x988
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c47b0; body size 18 bytes.
 #line 1 "ENTRY_117c47b0"
-void FUN_117c47b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),74000);
-  return;
+
+__declspec(naked) void FUN_117c47b0(void)
+
+{
+  __asm push 0x12110
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c47c2; body size 18 bytes.
 #line 1 "ENTRY_117c47c2"
-void FUN_117c47c2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),74000);
-  return;
+
+__declspec(naked) void FUN_117c47c2(void)
+
+{
+  __asm push 0x12110
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4860; body size 18 bytes.
 #line 1 "ENTRY_117c4860"
-void FUN_117c4860(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x12e08);
-  return;
+
+__declspec(naked) void FUN_117c4860(void)
+
+{
+  __asm push 0x12e08
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c48b0; body size 18 bytes.
 #line 1 "ENTRY_117c48b0"
-void FUN_117c48b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
-  return;
+
+__declspec(naked) void FUN_117c48b0(void)
+
+{
+  __asm push 0x27f68
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c48c2; body size 18 bytes.
 #line 1 "ENTRY_117c48c2"
-void FUN_117c48c2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
-  return;
+
+__declspec(naked) void FUN_117c48c2(void)
+
+{
+  __asm push 0x27f68
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4920; body size 18 bytes.
 #line 1 "ENTRY_117c4920"
-void FUN_117c4920(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x13468);
-  return;
+
+__declspec(naked) void FUN_117c4920(void)
+
+{
+  __asm push 0x13468
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4932; body size 18 bytes.
 #line 1 "ENTRY_117c4932"
-void FUN_117c4932(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x13468);
-  return;
+
+__declspec(naked) void FUN_117c4932(void)
+
+{
+  __asm push 0x13468
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c499b; body size 21 bytes.
 #line 1 "ENTRY_117c499b"
-void FUN_117c499b(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x2a8),0x125e0);
-  return;
+
+__declspec(naked) void FUN_117c499b(void)
+
+{
+  __asm push 0x125e0
+  __asm mov eax, dword ptr [ebp - 0x2a8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4a00; body size 18 bytes.
 #line 1 "ENTRY_117c4a00"
-void FUN_117c4a00(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11e50);
-  return;
+
+__declspec(naked) void FUN_117c4a00(void)
+
+{
+  __asm push 0x11e50
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4a12; body size 18 bytes.
 #line 1 "ENTRY_117c4a12"
-void FUN_117c4a12(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11e50);
-  return;
+
+__declspec(naked) void FUN_117c4a12(void)
+
+{
+  __asm push 0x11e50
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4a24; body size 18 bytes.
 #line 1 "ENTRY_117c4a24"
-void FUN_117c4a24(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x168);
-  return;
+
+__declspec(naked) void FUN_117c4a24(void)
+
+{
+  __asm push 0x168
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4a80; body size 18 bytes.
 #line 1 "ENTRY_117c4a80"
-void FUN_117c4a80(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x13790);
-  return;
+
+__declspec(naked) void FUN_117c4a80(void)
+
+{
+  __asm push 0x13790
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4acf; body size 18 bytes.
 #line 1 "ENTRY_117c4acf"
-void FUN_117c4acf(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0x988);
-  return;
+
+__declspec(naked) void FUN_117c4acf(void)
+
+{
+  __asm push 0x988
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4bb0; body size 18 bytes.
 #line 1 "ENTRY_117c4bb0"
-void FUN_117c4bb0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11c38);
-  return;
+
+__declspec(naked) void FUN_117c4bb0(void)
+
+{
+  __asm push 0x11c38
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4bc2; body size 18 bytes.
 #line 1 "ENTRY_117c4bc2"
-void FUN_117c4bc2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11c38);
-  return;
+
+__declspec(naked) void FUN_117c4bc2(void)
+
+{
+  __asm push 0x11c38
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4c20; body size 18 bytes.
 #line 1 "ENTRY_117c4c20"
-void FUN_117c4c20(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
-  return;
+
+__declspec(naked) void FUN_117c4c20(void)
+
+{
+  __asm push 0x11908
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4c32; body size 18 bytes.
 #line 1 "ENTRY_117c4c32"
-void FUN_117c4c32(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
-  return;
+
+__declspec(naked) void FUN_117c4c32(void)
+
+{
+  __asm push 0x11908
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4c90; body size 18 bytes.
 #line 1 "ENTRY_117c4c90"
-void FUN_117c4c90(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11c38);
-  return;
+
+__declspec(naked) void FUN_117c4c90(void)
+
+{
+  __asm push 0x11c38
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c4ca2; body size 18 bytes.
 #line 1 "ENTRY_117c4ca2"
-void FUN_117c4ca2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11c38);
-  return;
+
+__declspec(naked) void FUN_117c4ca2(void)
+
+{
+  __asm push 0x11c38
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c5070; body size 18 bytes.
 #line 1 "ENTRY_117c5070"
-void FUN_117c5070(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x230);
-  return;
+
+__declspec(naked) void FUN_117c5070(void)
+
+{
+  __asm push 0x230
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c50c0; body size 18 bytes.
 #line 1 "ENTRY_117c50c0"
-void FUN_117c50c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x330);
-  return;
+
+__declspec(naked) void FUN_117c50c0(void)
+
+{
+  __asm push 0x330
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c51e0; body size 18 bytes.
 #line 1 "ENTRY_117c51e0"
-void FUN_117c51e0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0x988);
-  return;
+
+__declspec(naked) void FUN_117c51e0(void)
+
+{
+  __asm push 0x988
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c51f2; body size 18 bytes.
 #line 1 "ENTRY_117c51f2"
-void FUN_117c51f2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0x988);
-  return;
+
+__declspec(naked) void FUN_117c51f2(void)
+
+{
+  __asm push 0x988
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c60e0; body size 18 bytes.
 #line 1 "ENTRY_117c60e0"
-void FUN_117c60e0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x610c);
-  return;
+
+__declspec(naked) void FUN_117c60e0(void)
+
+{
+  __asm push 0x610c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c60f2; body size 18 bytes.
 #line 1 "ENTRY_117c60f2"
-void FUN_117c60f2(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),&DAT_00004494);
-  return;
+
+__declspec(naked) void FUN_117c60f2(void)
+
+{
+  __asm push 0x4494
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c64a0; body size 18 bytes.
 #line 1 "ENTRY_117c64a0"
-void FUN_117c64a0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0x428);
-  return;
+
+__declspec(naked) void FUN_117c64a0(void)
+
+{
+  __asm push 0x428
+  __asm mov eax, dword ptr [ebp - 0x18]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c64f0; body size 18 bytes.
 #line 1 "ENTRY_117c64f0"
-void FUN_117c64f0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xf590);
-  return;
+
+__declspec(naked) void FUN_117c64f0(void)
+
+{
+  __asm push 0xf590
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c6540; body size 18 bytes.
 #line 1 "ENTRY_117c6540"
-void FUN_117c6540(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x998);
-  return;
+
+__declspec(naked) void FUN_117c6540(void)
+
+{
+  __asm push 0x998
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c6590; body size 18 bytes.
 #line 1 "ENTRY_117c6590"
-void FUN_117c6590(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xf590);
-  return;
+
+__declspec(naked) void FUN_117c6590(void)
+
+{
+  __asm push 0xf590
+  __asm mov eax, dword ptr [ebp + 0xc]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c8300; body size 18 bytes.
 #line 1 "ENTRY_117c8300"
-void FUN_117c8300(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x74c);
-  return;
+
+__declspec(naked) void FUN_117c8300(void)
+
+{
+  __asm push 0x74c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117c89b0; body size 18 bytes.
 #line 1 "ENTRY_117c89b0"
-void FUN_117c89b0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x74c);
-  return;
+
+__declspec(naked) void FUN_117c89b0(void)
+
+{
+  __asm push 0x74c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ca4c0; body size 18 bytes.
 #line 1 "ENTRY_117ca4c0"
-void FUN_117ca4c0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x68c);
-  return;
+
+__declspec(naked) void FUN_117ca4c0(void)
+
+{
+  __asm push 0x68c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117caf70; body size 18 bytes.
 #line 1 "ENTRY_117caf70"
-void FUN_117caf70(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x68c);
-  return;
+
+__declspec(naked) void FUN_117caf70(void)
+
+{
+  __asm push 0x68c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cafc0; body size 18 bytes.
 #line 1 "ENTRY_117cafc0"
-void FUN_117cafc0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x68c);
-  return;
+
+__declspec(naked) void FUN_117cafc0(void)
+
+{
+  __asm push 0x68c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cb650; body size 18 bytes.
 #line 1 "ENTRY_117cb650"
-void FUN_117cb650(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x68c);
-  return;
+
+__declspec(naked) void FUN_117cb650(void)
+
+{
+  __asm push 0x68c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cbdd6; body size 18 bytes.
 #line 1 "ENTRY_117cbdd6"
-void FUN_117cbdd6(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x7208);
-  return;
+
+__declspec(naked) void FUN_117cbdd6(void)
+
+{
+  __asm push 0x7208
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cbea0; body size 18 bytes.
 #line 1 "ENTRY_117cbea0"
-void FUN_117cbea0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x118);
-  return;
+
+__declspec(naked) void FUN_117cbea0(void)
+
+{
+  __asm push 0x118
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cbef0; body size 18 bytes.
 #line 1 "ENTRY_117cbef0"
-void FUN_117cbef0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x89c);
-  return;
+
+__declspec(naked) void FUN_117cbef0(void)
+
+{
+  __asm push 0x89c
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cbf02; body size 18 bytes.
 #line 1 "ENTRY_117cbf02"
-void FUN_117cbf02(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x4488);
-  return;
+
+__declspec(naked) void FUN_117cbf02(void)
+
+{
+  __asm push 0x4488
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cbf50; body size 18 bytes.
 #line 1 "ENTRY_117cbf50"
-void FUN_117cbf50(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x7208);
-  return;
+
+__declspec(naked) void FUN_117cbf50(void)
+
+{
+  __asm push 0x7208
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cbfb0; body size 18 bytes.
 #line 1 "ENTRY_117cbfb0"
-void FUN_117cbfb0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xfc);
-  return;
+
+__declspec(naked) void FUN_117cbfb0(void)
+
+{
+  __asm push 0xfc
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cc270; body size 19 bytes.
 #line 1 "ENTRY_117cc270"
-void FUN_117cc270(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_(*(void **)(unaff_EBP + -0x10),0x38,0x10,thunk_FUN_11236130<>);
-  return;
+
+__declspec(naked) void FUN_117cc270(void)
+
+{
+  __asm push offset LAB_10015104
+  __asm push 0x10
+  __asm push 0x38
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117cc2c8; body size 22 bytes.
 #line 1 "ENTRY_117cc2c8"
-void FUN_117cc2c8(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_
-            ((char *)(*(int *)(unaff_EBP + -0x14) + 4),0x5c,0x10, (_func_void_void_ptr *)LAB_10023128);
-  return;
+
+__declspec(naked) void FUN_117cc2c8(void)
+
+{
+  __asm push offset LAB_10023128
+  __asm push 0x10
+  __asm push 0x5c
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm add eax, 4
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117cc370; body size 22 bytes.
 #line 1 "ENTRY_117cc370"
-void FUN_117cc370(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_
-            ((char *)(*(int *)(unaff_EBP + -0x10) + 4),0x5c,0x10, (_func_void_void_ptr *)LAB_10023128);
-  return;
+
+__declspec(naked) void FUN_117cc370(void)
+
+{
+  __asm push offset LAB_10023128
+  __asm push 0x10
+  __asm push 0x5c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm add eax, 4
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117cc3c8; body size 22 bytes.
 #line 1 "ENTRY_117cc3c8"
-void FUN_117cc3c8(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_
-            ((char *)(*(int *)(unaff_EBP + -0x14) + 4),0x5c,0x10, (_func_void_void_ptr *)LAB_10023128);
-  return;
+
+__declspec(naked) void FUN_117cc3c8(void)
+
+{
+  __asm push offset LAB_10023128
+  __asm push 0x10
+  __asm push 0x5c
+  __asm mov eax, dword ptr [ebp - 0x14]
+  __asm add eax, 4
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117cc470; body size 19 bytes.
 #line 1 "ENTRY_117cc470"
-void FUN_117cc470(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_
-            (*(void **)(unaff_EBP + -0x10),0x5c,0x10,(_func_void_void_ptr *)LAB_1007b85f);
-  return;
+
+__declspec(naked) void FUN_117cc470(void)
+
+{
+  __asm push offset LAB_1007b85f
+  __asm push 0x10
+  __asm push 0x5c
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117cc804; body size 18 bytes.
 #line 1 "ENTRY_117cc804"
-void FUN_117cc804(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + 0x10),&DAT_11c08aa2);
-  return;
+
+__declspec(naked) void FUN_117cc804(void)
+
+{
+  __asm push offset LAB_11c08aa2
+  __asm mov eax, dword ptr [ebp + 0x10]
+  __asm push eax
+  __asm call LAB_100157ad
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cccee; body size 34 bytes.
 #line 1 "ENTRY_117cccee"
-void FUN_117cccee(void){
-  int unaff_EBP;
-  
-  if ((*(uint *)(unaff_EBP + -0xa78c) & 1) != 0) {
-    *(uint*)(unaff_EBP + -0xa78c) = (uint)(*(uint *)(unaff_EBP + -0xa78c) & 0xfffffffe);
-    thunk_FUN_1011f780();
-    return;
-  }
-  return;
+
+__declspec(naked) void FUN_117cccee(void)
+
+{
+  __asm mov eax, dword ptr [ebp - 0xa78c]
+  __asm and eax, 1
+  __asm je LAB_117ccd0f
+  __asm and dword ptr [ebp - 0xa78c], 0xfffffffe
+  __asm lea ecx, [ebp - 0x88]
+  __asm jmp LAB_1004a15b
+  __asm ret
 }
+
 
 
 // Reference entry 117cd360; body size 18 bytes.
 #line 1 "ENTRY_117cd360"
-void FUN_117cd360(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x4f0);
-  return;
+
+__declspec(naked) void FUN_117cd360(void)
+
+{
+  __asm push 0x4f0
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117cf7ab; body size 24 bytes.
 #line 1 "ENTRY_117cf7ab"
-void FUN_117cf7ab(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_
-            ((char *)(*(int *)(unaff_EBP + -0x10) + 0xcb8),0x24,4, (_func_void_void_ptr *)LAB_100831f9);
-  return;
+
+__declspec(naked) void FUN_117cf7ab(void)
+
+{
+  __asm push offset LAB_100831f9
+  __asm push 4
+  __asm push 0x24
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm add eax, 0xcb8
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117cf80b; body size 24 bytes.
 #line 1 "ENTRY_117cf80b"
-void FUN_117cf80b(void){
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_
-            ((char *)(*(int *)(unaff_EBP + -0x10) + 0xcb8),0x24,4, (_func_void_void_ptr *)LAB_100831f9);
-  return;
+
+__declspec(naked) void FUN_117cf80b(void)
+
+{
+  __asm push offset LAB_100831f9
+  __asm push 4
+  __asm push 0x24
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm add eax, 0xcb8
+  __asm push eax
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117d017f; body size 18 bytes.
 #line 1 "ENTRY_117d017f"
-void FUN_117d017f(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + 8),0x1804);
-  return;
+
+__declspec(naked) void FUN_117d017f(void)
+
+{
+  __asm push 0x1804
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117d01d0; body size 18 bytes.
 #line 1 "ENTRY_117d01d0"
-void FUN_117d01d0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + 8),0x1804);
-  return;
+
+__declspec(naked) void FUN_117d01d0(void)
+
+{
+  __asm push 0x1804
+  __asm mov eax, dword ptr [ebp + 8]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117d0250; body size 18 bytes.
 #line 1 "ENTRY_117d0250"
-void FUN_117d0250(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x10),0x1804);
-  return;
+
+__declspec(naked) void FUN_117d0250(void)
+
+{
+  __asm push 0x1804
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117d02be; body size 18 bytes.
 #line 1 "ENTRY_117d02be"
-void FUN_117d02be(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x1c),0x1804);
-  return;
+
+__declspec(naked) void FUN_117d02be(void)
+
+{
+  __asm push 0x1804
+  __asm mov eax, dword ptr [ebp - 0x1c]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117d0390; body size 18 bytes.
 #line 1 "ENTRY_117d0390"
-void FUN_117d0390(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x20),0x1804);
-  return;
+
+__declspec(naked) void FUN_117d0390(void)
+
+{
+  __asm push 0x1804
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_1008f14d
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117d0f50; body size 18 bytes.
 #line 1 "ENTRY_117d0f50"
-void FUN_117d0f50(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0x14c);
-  return;
+
+__declspec(naked) void FUN_117d0f50(void)
+
+{
+  __asm push 0x14c
+  __asm mov eax, dword ptr [ebp - 0x24]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117d0ff6; body size 21 bytes.
 #line 1 "ENTRY_117d0ff6"
-void FUN_117d0ff6(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x90),0x674);
-  return;
+
+__declspec(naked) void FUN_117d0ff6(void)
+
+{
+  __asm push 0x674
+  __asm mov eax, dword ptr [ebp - 0x90]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117d1118; body size 18 bytes.
 #line 1 "ENTRY_117d1118"
-void FUN_117d1118(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0x14c);
-  return;
+
+__declspec(naked) void FUN_117d1118(void)
+
+{
+  __asm push 0x14c
+  __asm mov eax, dword ptr [ebp - 0x20]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117d14a0; body size 18 bytes.
 #line 1 "ENTRY_117d14a0"
-void FUN_117d14a0(void){
-  int unaff_EBP;
-  
-  thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),800);
-  return;
+
+__declspec(naked) void FUN_117d14a0(void)
+
+{
+  __asm push 0x320
+  __asm mov eax, dword ptr [ebp - 0x10]
+  __asm push eax
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117eaec0; body size 40 bytes.
 #line 1 "ENTRY_117eaec0"
 
-void FUN_117eaec0(void)
+__declspec(naked) void FUN_117eaec0(void)
 
 {
-  thunk_FUN_101fdb50((int)(&DAT_121a0938),(int)(*(undefined4 *)(DAT_121a0938 + 4)));
-  thunk_FUN_1148a50e(DAT_121a0938,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_121a0938]
+  __asm mov ecx, offset LAB_121a0938
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a0938
+  __asm call LAB_10020b35
+  __asm push 0x18
+  __asm push dword ptr [LAB_121a0938]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ecf20; body size 40 bytes.
 #line 1 "ENTRY_117ecf20"
 
-void FUN_117ecf20(void)
+__declspec(naked) void FUN_117ecf20(void)
 
 {
-  thunk_FUN_10264380((int)(&DAT_121a0b18),(int)(*(undefined4 *)(DAT_121a0b18 + 4)));
-  thunk_FUN_1148a50e(DAT_121a0b18,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_121a0b18]
+  __asm mov ecx, offset LAB_121a0b18
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a0b18
+  __asm call LAB_100938c9
+  __asm push 0x18
+  __asm push dword ptr [LAB_121a0b18]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117ef170; body size 40 bytes.
 #line 1 "ENTRY_117ef170"
 
-void FUN_117ef170(void)
+__declspec(naked) void FUN_117ef170(void)
 
 {
-  thunk_FUN_10246290((int)(&DAT_121a0cf0),(int)(*(undefined4 *)(DAT_121a0cf0 + 4)));
-  thunk_FUN_1148a50e(DAT_121a0cf0,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_121a0cf0]
+  __asm mov ecx, offset LAB_121a0cf0
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a0cf0
+  __asm call LAB_10058a5d
+  __asm push 0x18
+  __asm push dword ptr [LAB_121a0cf0]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117f1860; body size 20 bytes.
 #line 1 "ENTRY_117f1860"
 
-void FUN_117f1860(void)
+__declspec(naked) void FUN_117f1860(void)
 
 {
-  _eh_vector_destructor_iterator_(&DAT_121a0e80,4,0x2b,((int (*)())&SCStr::op_dtor));
-  return;
+  __asm push offset LAB_1008c50b
+  __asm push 0x2b
+  __asm push 4
+  __asm push offset LAB_121a0e80
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 117f1880; body size 40 bytes.
 #line 1 "ENTRY_117f1880"
 
-void FUN_117f1880(void)
+__declspec(naked) void FUN_117f1880(void)
 
 {
-  thunk_FUN_102e6ba0((int)(&DAT_121a0f38),(int)(*(undefined4 *)(DAT_121a0f38 + 4)));
-  thunk_FUN_1148a50e(DAT_121a0f38,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_121a0f38]
+  __asm mov ecx, offset LAB_121a0f38
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a0f38
+  __asm call LAB_100639f8
+  __asm push 0x18
+  __asm push dword ptr [LAB_121a0f38]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 117f18d0; body size 62 bytes.
 #line 1 "ENTRY_117f18d0"
 
-void FUN_117f18d0(void)
+__declspec(naked) void FUN_117f18d0(void)
 
 {
-  thunk_FUN_101f4150(&DAT_121a100c,*(undefined4 *)(DAT_121a100c + 4));
-  if (0x1f < (DAT_121a100c - *(int *)(DAT_121a100c + -4)) - 4U) {
-                    
-                    
-                    
-    _invalid_parameter_noinfo_noreturn();
-    return;
-  }
-  thunk_FUN_1148a50e(*(int *)(DAT_121a100c + -4),0x104f);
-  return;
+  __asm mov eax, dword ptr [LAB_121a100c]
+  __asm mov ecx, offset LAB_121a100c
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a100c
+  __asm call LAB_100189c1
+  __asm mov eax, dword ptr [LAB_121a100c]
+  __asm mov ecx, dword ptr [eax - 4]
+  __asm sub eax, ecx
+  __asm add eax, -4
+  __asm cmp eax, 0x1f
+  __asm jbe 0x117f18ff
+  __asm jmp dword ptr [LAB_122fc888]
+  __asm push 0x104f
+  __asm push ecx
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11809710; body size 40 bytes.
 #line 1 "ENTRY_11809710"
 
-void FUN_11809710(void)
+__declspec(naked) void FUN_11809710(void)
 
 {
-  thunk_FUN_10681f80((int)(&DAT_121a24d8),(int)(*(undefined4 *)(DAT_121a24d8 + 4)));
-  thunk_FUN_1148a50e(DAT_121a24d8,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_121a24d8]
+  __asm mov ecx, offset LAB_121a24d8
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a24d8
+  __asm call LAB_10073a56
+  __asm push 0x18
+  __asm push dword ptr [LAB_121a24d8]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1180b290; body size 39 bytes.
 #line 1 "ENTRY_1180b290"
 
-void FUN_1180b290(void)
+__declspec(naked) void FUN_1180b290(void)
 
 {
-  if ((int *)(PTR_PTR_12119b74) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)((int *)PTR_PTR_12119b74))->v((int)((undefined **)PTR_PTR_12119b74 != (undefined **)&PTR_vftable_12119b50));
-    PTR_PTR_12119b74 = (int *)((undefined *)0x0);
-  }
-  return;
+  __asm mov ecx, dword ptr [LAB_12119b74]
+  __asm test ecx, ecx
+  __asm je 0x1180b2b6
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, offset LAB_12119b50
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm mov dword ptr [LAB_12119b74], 0
+  __asm ret
 }
+
 
 
 // Reference entry 1180c230; body size 40 bytes.
 #line 1 "ENTRY_1180c230"
 
-void FUN_1180c230(void)
+__declspec(naked) void FUN_1180c230(void)
 
 {
-  thunk_FUN_106dd300((int)(&DAT_121a279c),(int)(*(undefined4 *)(DAT_121a279c + 4)));
-  thunk_FUN_1148a50e(DAT_121a279c,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_121a279c]
+  __asm mov ecx, offset LAB_121a279c
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a279c
+  __asm call LAB_100796d6
+  __asm push 0x18
+  __asm push dword ptr [LAB_121a279c]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1180c270; body size 40 bytes.
 #line 1 "ENTRY_1180c270"
 
-void FUN_1180c270(void)
+__declspec(naked) void FUN_1180c270(void)
 
 {
-  thunk_FUN_106dd3c0((int)(&DAT_121a2794),(int)(*(undefined4 *)(DAT_121a2794 + 4)));
-  thunk_FUN_1148a50e(DAT_121a2794,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_121a2794]
+  __asm mov ecx, offset LAB_121a2794
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a2794
+  __asm call LAB_10087f42
+  __asm push 0x18
+  __asm push dword ptr [LAB_121a2794]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11817a90; body size 40 bytes.
 #line 1 "ENTRY_11817a90"
 
-void FUN_11817a90(void)
+__declspec(naked) void FUN_11817a90(void)
 
 {
-  thunk_FUN_106ab4f0((int)(&DAT_121a3524),(int)(*(undefined4 *)(DAT_121a3524 + 4)));
-  thunk_FUN_1148a50e(DAT_121a3524,0x20);
-  return;
+  __asm mov eax, dword ptr [LAB_121a3524]
+  __asm mov ecx, offset LAB_121a3524
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a3524
+  __asm call LAB_1006b1bc
+  __asm push 0x20
+  __asm push dword ptr [LAB_121a3524]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1182b520; body size 40 bytes.
 #line 1 "ENTRY_1182b520"
 
-void FUN_1182b520(void)
+__declspec(naked) void FUN_1182b520(void)
 
 {
-  thunk_FUN_10af42f0((int)(&DAT_121a4a8c),(int)(*(undefined4 *)(DAT_121a4a8c + 4)));
-  thunk_FUN_1148a50e(DAT_121a4a8c,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_121a4a8c]
+  __asm mov ecx, offset LAB_121a4a8c
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a4a8c
+  __asm call LAB_100413da
+  __asm push 0x18
+  __asm push dword ptr [LAB_121a4a8c]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1182d790; body size 40 bytes.
 #line 1 "ENTRY_1182d790"
 
-void FUN_1182d790(void)
+__declspec(naked) void FUN_1182d790(void)
 
 {
-  thunk_FUN_10b59b80((int)(&DAT_121a4e48),(int)(*(undefined4 *)(DAT_121a4e48 + 4)));
-  thunk_FUN_1148a50e(DAT_121a4e48,0x1c);
-  return;
+  __asm mov eax, dword ptr [LAB_121a4e48]
+  __asm mov ecx, offset LAB_121a4e48
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a4e48
+  __asm call LAB_1000b253
+  __asm push 0x1c
+  __asm push dword ptr [LAB_121a4e48]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11830f70; body size 40 bytes.
 #line 1 "ENTRY_11830f70"
 
-void FUN_11830f70(void)
+__declspec(naked) void FUN_11830f70(void)
 
 {
-  thunk_FUN_10bcf100((int)(&DAT_121a5138),(int)(*(undefined4 *)(DAT_121a5138 + 4)));
-  thunk_FUN_1148a50e(DAT_121a5138,0x30);
-  return;
+  __asm mov eax, dword ptr [LAB_121a5138]
+  __asm mov ecx, offset LAB_121a5138
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a5138
+  __asm call LAB_10077e80
+  __asm push 0x30
+  __asm push dword ptr [LAB_121a5138]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11835520; body size 40 bytes.
 #line 1 "ENTRY_11835520"
 
-void FUN_11835520(void)
+__declspec(naked) void FUN_11835520(void)
 
 {
-  thunk_FUN_10c5e210((int)(&DAT_121a56e4),(int)(*(undefined4 *)(DAT_121a56e4 + 4)));
-  thunk_FUN_1148a50e(DAT_121a56e4,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_121a56e4]
+  __asm mov ecx, offset LAB_121a56e4
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a56e4
+  __asm call LAB_1007bb66
+  __asm push 0x18
+  __asm push dword ptr [LAB_121a56e4]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 118442b0; body size 40 bytes.
 #line 1 "ENTRY_118442b0"
 
-void FUN_118442b0(void)
+__declspec(naked) void FUN_118442b0(void)
 
 {
-  thunk_FUN_10d9ec90((int)(&DAT_121a63bc),(int)(*(undefined4 *)(DAT_121a63bc + 4)));
-  thunk_FUN_1148a50e(DAT_121a63bc,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_121a63bc]
+  __asm mov ecx, offset LAB_121a63bc
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a63bc
+  __asm call LAB_10051311
+  __asm push 0x18
+  __asm push dword ptr [LAB_121a63bc]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1184e0c0; body size 20 bytes.
 #line 1 "ENTRY_1184e0c0"
 
-void FUN_1184e0c0(void)
+__declspec(naked) void FUN_1184e0c0(void)
 
 {
-  _eh_vector_destructor_iterator_(&DAT_121a6b1c,4,1,((int (*)())&SCStr::op_dtor));
-  return;
+  __asm push offset LAB_1008c50b
+  __asm push 1
+  __asm push 4
+  __asm push offset LAB_121a6b1c
+  __asm call LAB_100699e8
+  __asm ret
 }
+
 
 
 // Reference entry 1184ebd0; body size 40 bytes.
 #line 1 "ENTRY_1184ebd0"
 
-void FUN_1184ebd0(void)
+__declspec(naked) void FUN_1184ebd0(void)
 
 {
-  thunk_FUN_10ed00f0((int)(&DAT_121a6bac),(int)(*(undefined4 *)(DAT_121a6bac + 4)));
-  thunk_FUN_1148a50e(DAT_121a6bac,0x30);
-  return;
+  __asm mov eax, dword ptr [LAB_121a6bac]
+  __asm mov ecx, offset LAB_121a6bac
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_121a6bac
+  __asm call LAB_1004896e
+  __asm push 0x30
+  __asm push dword ptr [LAB_121a6bac]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 1185bd50; body size 38 bytes.
 #line 1 "ENTRY_1185bd50"
 
-void FUN_1185bd50(void)
+__declspec(naked) void FUN_1185bd50(void)
 
 {
-  undefined4 *puVar1;
-  
-  thunk_FUN_10c7d430();
-  if ((int *)(DAT_121a75e4) != (int *)(0x0)) {
-    puVar1 = (undefined4 *)((undefined4 *)((SCVtbl_2_0*)((int *)(uint)(DAT_121a75e4)))->v(), 0);
-    if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
-    }
-  }
-  return;
+  __asm mov ecx, offset LAB_121a75d4
+  __asm call LAB_1000f9a7
+  __asm mov ecx, dword ptr [LAB_121a75e4]
+  __asm test ecx, ecx
+  __asm je 0x1185bd75
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm test eax, eax
+  __asm je 0x1185bd75
+  __asm mov edx, dword ptr [eax]
+  __asm mov ecx, eax
+  __asm push 1
+  __asm call dword ptr [edx]
+  __asm ret
 }
+
 
 
 // Reference entry 1185bd80; body size 38 bytes.
 #line 1 "ENTRY_1185bd80"
 
-void FUN_1185bd80(void)
+__declspec(naked) void FUN_1185bd80(void)
 
 {
-  undefined4 *puVar1;
-  
-  thunk_FUN_10c7d430();
-  if ((int *)(DAT_121a75c8) != (int *)(0x0)) {
-    puVar1 = (undefined4 *)((undefined4 *)((SCVtbl_2_0*)((int *)(uint)(DAT_121a75c8)))->v(), 0);
-    if ((undefined4 *)(puVar1) != (undefined4 *)(0x0)) {
-      ((SCVtbl_0_1*)(puVar1))->v((int)(1));
-    }
-  }
-  return;
+  __asm mov ecx, offset LAB_121a75b8
+  __asm call LAB_1000f9a7
+  __asm mov ecx, dword ptr [LAB_121a75c8]
+  __asm test ecx, ecx
+  __asm je 0x1185bda5
+  __asm mov eax, dword ptr [ecx]
+  __asm call dword ptr [eax + 8]
+  __asm test eax, eax
+  __asm je 0x1185bda5
+  __asm mov edx, dword ptr [eax]
+  __asm mov ecx, eax
+  __asm push 1
+  __asm call dword ptr [edx]
+  __asm ret
 }
+
 
 
 // Reference entry 118624f0; body size 40 bytes.
 #line 1 "ENTRY_118624f0"
 
-void FUN_118624f0(void)
+__declspec(naked) void FUN_118624f0(void)
 
 {
-  thunk_FUN_111a4830((int)(&DAT_122e8ab0),(int)(*(undefined4 *)(DAT_122e8ab0 + 4)));
-  thunk_FUN_1148a50e(DAT_122e8ab0,0x18);
-  return;
+  __asm mov eax, dword ptr [LAB_122e8ab0]
+  __asm mov ecx, offset LAB_122e8ab0
+  __asm push dword ptr [eax + 4]
+  __asm push offset LAB_122e8ab0
+  __asm call LAB_10081fa7
+  __asm push 0x18
+  __asm push dword ptr [LAB_122e8ab0]
+  __asm call LAB_100131d8
+  __asm add esp, 8
+  __asm ret
 }
+
 
 
 // Reference entry 11862620; body size 50 bytes.
 #line 1 "ENTRY_11862620"
 
-void FUN_11862620(void)
+__declspec(naked) void FUN_11862620(void)
 
 {
-  int *piVar1;
-  int iVar2;
-  int *piVar3;
-  
-  piVar3 = (int *)(DAT_122f5e0c);
-  if ((int *)(DAT_122f5e0c) != (int *)(0x0)) {
-    LOCK();
-    iVar2 = (int)(((int *)&DAT_122f5e0c)[1] + -1);
-    ((int *)&DAT_122f5e0c)[1] = (int)(iVar2);
-    UNLOCK();
-    if (iVar2 == 0) {
-      ((SCVtbl_0_0*)(piVar3))->v();
-      LOCK();
-      piVar1 = (int *)(piVar3 + 2);
-      iVar2 = (int)(*piVar1);
-      *piVar1 = (int)(*piVar1 + -1);
-      UNLOCK();
-      if (iVar2 == 1) {
-                    
-                    
-        ((SCVtbl_1_0*)(piVar3))->v();
-        return;
-      }
-    }
-  }
-  return;
+  __asm push esi
+  __asm mov esi, dword ptr [LAB_122f5e0c]
+  __asm test esi, esi
+  __asm je 0x11862650
+  __asm push edi
+  __asm or edi, 0xffffffff
+  __asm mov eax, edi
+  __asm _emit 0xf0 __asm _emit 0x0f __asm _emit 0xc1 __asm _emit 0x46 __asm _emit 0x04
+  __asm jne 0x1186264f
+  __asm mov eax, dword ptr [esi]
+  __asm mov ecx, esi
+  __asm call dword ptr [eax]
+  __asm _emit 0xf0 __asm _emit 0x0f __asm _emit 0xc1 __asm _emit 0x7e __asm _emit 0x08
+  __asm dec edi
+  __asm jne 0x1186264f
+  __asm mov eax, dword ptr [esi]
+  __asm mov ecx, esi
+  __asm pop edi
+  __asm pop esi
+  __asm jmp dword ptr [eax + 4]
+  __asm pop edi
+  __asm pop esi
+  __asm ret
 }
+
 
 
 // Reference entry 11862680; body size 21 bytes.
 #line 1 "ENTRY_11862680"
 
-void FUN_11862680(void)
+__declspec(naked) void FUN_11862680(void)
 
 {
-  thunk_FUN_11282620();
-  PTR_vftable_12120e90 = (int *)((undefined *)(uint)&ghidra_vftable_RMusicServiceListCB);
-  return;
+  __asm mov ecx, offset LAB_12120e94
+  __asm call LAB_100383f7
+  __asm mov dword ptr [LAB_12120e90], 0x119e54a0
+  __asm ret
 }
+
 
 
 // Reference entry 118626e0; body size 39 bytes.
 #line 1 "ENTRY_118626e0"
 
-void FUN_118626e0(void)
+__declspec(naked) void FUN_118626e0(void)
 
 {
-  if ((int *)(DAT_122f646c) != (int *)(0x0)) {
-    ((SCVtbl_4_1*)((int *)(uint)(DAT_122f646c)))->v((int)((int *)(DAT_122f646c) != (int *)&DAT_122f6448));
-    DAT_122f646c = (int)((int *)0x0);
-  }
-  return;
+  __asm mov ecx, dword ptr [LAB_122f646c]
+  __asm test ecx, ecx
+  __asm je 0x11862706
+  __asm mov edx, dword ptr [ecx]
+  __asm cmp ecx, offset LAB_122f6448
+  __asm setne al
+  __asm movzx eax, al
+  __asm push eax
+  __asm call dword ptr [edx + 0x10]
+  __asm mov dword ptr [LAB_122f646c], 0
+  __asm ret
 }
+
 

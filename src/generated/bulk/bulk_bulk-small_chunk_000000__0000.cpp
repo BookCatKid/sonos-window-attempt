@@ -563,6 +563,15 @@ typedef void *_CSharp_delete_SCIWebsocketConnectionInfo;
 typedef void *_CSharp_delete_SCIWebsocketConnectionInfo_4;
 typedef void (*_func_void_void_ptr)(...);
 using namespace std;
+extern "C" void LAB_10361670(void);
+extern "C" void LAB_10620390(void);
+extern "C" void LAB_10783270(void);
+extern "C" void LAB_107e81f0(void);
+extern "C" void LAB_10cb1b60(void);
+extern "C" void LAB_10da6830(void);
+extern "C" void LAB_110dbdf0(void);
+
+
 struct Recovered_Bulk { char _pad; undefined4 * __thiscall m_FUN_1000100a(byte param_2); template<class... A> int m_FUN_1000100a(A...); int __thiscall m_FUN_1000100f(int param_2); template<class... A> int m_FUN_1000100f(A...); undefined4 * __thiscall m_FUN_10001028(undefined4 param_2); template<class... A> int m_FUN_10001028(A...); undefined4 * __thiscall m_FUN_1000103c(byte param_2); template<class... A> int m_FUN_1000103c(A...); undefined4 __thiscall m_FUN_10001041(undefined4 param_2); template<class... A> int m_FUN_10001041(A...); void __thiscall m_FUN_10001073(SCIHousehold *param_1); template<class... A> int m_FUN_10001073(A...); undefined4 __thiscall m_FUN_10001078(undefined4 *param_2); template<class... A> int m_FUN_10001078(A...); undefined4 * __thiscall m_FUN_100010a5(byte param_2); template<class... A> int m_FUN_100010a5(A...); undefined4 * __thiscall m_FUN_100010b4(byte param_2); template<class... A> int m_FUN_100010b4(A...); undefined4 * __thiscall m_FUN_100010dc(byte param_2); template<class... A> int m_FUN_100010dc(A...); int * __thiscall m_FUN_1000110e(int *param_2,uint *param_3); template<class... A> int m_FUN_1000110e(A...); void __thiscall m_FUN_1000112c(undefined4 param_2,undefined8 param_3); template<class... A> int m_FUN_1000112c(A...); undefined4 __thiscall m_FUN_10001163(undefined4 param_2); template<class... A> int m_FUN_10001163(A...); undefined4 * __thiscall m_FUN_10001172(int *param_2); template<class... A> int m_FUN_10001172(A...); undefined4 __thiscall m_FUN_1000117c(undefined4 param_2); template<class... A> int m_FUN_1000117c(A...); undefined4 __thiscall m_FUN_10001186(byte param_2); template<class... A> int m_FUN_10001186(A...); undefined1 __thiscall m_FUN_1000118b(SCStr *param_2); template<class... A> int m_FUN_1000118b(A...); undefined4 * __thiscall m_FUN_100011db(undefined4 *param_2,undefined4 param_3,int param_4); template<class... A> int m_FUN_100011db(A...); undefined4 * __thiscall m_FUN_100011ea(byte param_2); template<class... A> int m_FUN_100011ea(A...); undefined4 * __thiscall m_FUN_100011fe(undefined4 *param_2); template<class... A> int m_FUN_100011fe(A...); int __thiscall m_FUN_10001221(int param_2,int *param_3); template<class... A> int m_FUN_10001221(A...); undefined4 __thiscall m_FUN_10001230(int *param_2,undefined4 param_3,undefined4 param_4); template<class... A> int m_FUN_10001230(A...); void __thiscall m_FUN_10001244(undefined4 param_2,undefined4 param_3,undefined4 param_4,
                   undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                   undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
@@ -6821,11 +6830,15 @@ void FUN_10001393(void)
 
 
 
-undefined1 FUN_1000139d(void)
+undefined1 // Reference entry 1000139d; transcribed reference bytes.
+#line 1 "ENTRY_1000139d"
+
+__declspec(naked) undefined1 FUN_1000139d(void)
 
 {
-  return (undefined1)(1);
+  __asm jmp LAB_10cb1b60
 }
+
 
 
 // Reference entry 100013b1; body size 5 bytes.
@@ -6969,310 +6982,15 @@ void FUN_10001456(void)
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
-undefined4 __stdcall FUN_10001460(undefined4 param_1)
+undefined4 __stdcall // Reference entry 10001460; transcribed reference bytes.
+#line 1 "ENTRY_10001460"
+
+__declspec(naked) void FUN_10001460(void)
+
 {
- try {
-  int *piVar1;
-  undefined4 *puVar2;
-  int iVar3;
-  undefined4 uVar4;
-  undefined4 uVar5;
-  int *piVar6;
-  uint uVar7;
-  undefined4 *puVar8;
-  int *piVar9;
-  undefined4 uVar10;
-  undefined4 uVar11;
-  undefined4 uVar12;
-  undefined4 uVar13;
-  undefined **appuStack_16c [8];
-  undefined **appuStack_14c [8];
-  undefined **appuStack_12c [8];
-  undefined **appuStack_10c [8];
-  undefined **appuStack_ec [8];
-  SCStr aSStack_cc [12];
-  undefined4 uStack_c0;
-  int *piStack_bc;
-  undefined4 auStack_b8 [2];
-  undefined4 uStack_b0;
-  int *piStack_ac;
-  undefined4 auStack_a8 [2];
-  undefined4 uStack_a0;
-  int *piStack_9c;
-  undefined4 auStack_98 [2];
-  undefined4 uStack_90;
-  int *piStack_8c;
-  undefined4 uStack_88;
-  void *pvStack_84;
-  undefined1 *puStack_80;
-  undefined4 uStack_7c;
-  undefined1 auStack_78 [4];
-  undefined4 uStack_74;
-  int *piStack_70;
-  undefined4 auStack_6c [2];
-  undefined4 uStack_64;
-  int *piStack_60;
-  undefined4 uStack_5c;
-  undefined4 auStack_58 [2];
-  undefined4 auStack_50 [2];
-  undefined4 auStack_48 [2];
-  undefined4 auStack_40 [2];
-  undefined4 uStack_38;
-  int *piStack_34;
-  undefined4 uStack_30;
-  undefined **ppuStack_2c;
-  undefined4 uStack_28;
-  int *piStack_24;
-  int *piStack_20;
-  int iStack_1c;
-  undefined4 *puStack_18;
-  undefined4 *puStack_14;
-  int iStack_10;
-  undefined4 uStack_c;
-  int iStack_8;
-
-
-  iVar3 = (int)(thunk_FUN_10eb41c0(DAT_12126b84 ^ (uint)(uint)&auStack_78), 0);
-  uVar13 = (undefined4)(*(undefined4 *)(iVar3 + 0xe8));
-  uVar4 = (undefined4)(thunk_FUN_10c5f450((uint)&aSStack_cc,0x2e36,&DAT_11882ff0), 0);
-
-  thunk_FUN_10ec0a20<>("copyNumber");
-  uVar12 = (undefined4)(2);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(1);
-  thunk_FUN_10ecea60<>(uVar4);
-  iVar3 = (int)(thunk_FUN_10ec7940<>(uVar12), 0);
-  thunk_FUN_105f6290(iVar3 + 4);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(2);
-  uVar4 = (undefined4)(thunk_FUN_10c5f450((uint)&auStack_58,0x208f,&DAT_11882ff0), 0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(3);
-  thunk_FUN_10ec0a20<>(&DAT_118bd270);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(4);
-  iVar3 = (int)(thunk_FUN_10ecea60<>(uVar4), 0);
-  thunk_FUN_105f6290(iVar3 + 4);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(5);
-  uVar4 = (undefined4)(thunk_FUN_10c62730(&uStack_c,uVar13), 0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(6);
-  thunk_FUN_10c5f870(uVar4);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(7);
-  uVar4 = (undefined4)(thunk_FUN_10ed4430(&uStack_38), 0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(8);
-  thunk_FUN_10ec06d0<>("checkmark");
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(9);
-  uStack_30 = (undefined4)(thunk_FUN_10c5f550((uint)&auStack_50,&DAT_11889c5c,uVar13), 0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(10);
-  thunk_FUN_10ec0bb0<>("confirmationNumber");
-  uVar13 = (undefined4)(1);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0xb);
-  thunk_FUN_10ecbb40<>(uVar4);
-  uVar5 = (undefined4)(thunk_FUN_10ec7d80(uVar13), 0);
-  puVar8 = (undefined4 *)((uint)&auStack_40);
-  uVar10 = (undefined4)(1);
-  uVar13 = (undefined4)(DAT_118bef00);
-  uVar4 = (undefined4)(_UNK_118bef04);
-  uVar12 = (undefined4)(_UNK_118bef08);
-  uVar11 = (undefined4)(_UNK_118bef0c);
-  thunk_FUN_10eced20(uStack_30);
-  thunk_FUN_10ecf780<>(puVar8);
-  thunk_FUN_10eca2b0<>(uVar10);
-  thunk_FUN_10ec7b90(uVar13,uVar4);
-  thunk_FUN_10ec7af0<>(uVar12,uVar11);
-  iVar3 = (int)(thunk_FUN_10ecb130<>(uVar5), 0);
-  thunk_FUN_105f6290(iVar3 + 4);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0xc);
-  uVar13 = (undefined4)(thunk_FUN_10c5f450((uint)&auStack_48,0x2e35,&DAT_11882ff0), 0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0xd);
-  thunk_FUN_10ec1b40(&DAT_118bd268);
-  uVar4 = (undefined4)(1);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0xe);
-  thunk_FUN_10eced20(uVar13);
-  iVar3 = (int)(thunk_FUN_10ecd540<>(uVar4), 0);
-  thunk_FUN_105f6290(iVar3 + 4);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0xf);
-  thunk_FUN_10ec1d40();
-  uVar4 = (undefined4)(1);
-  uVar13 = (undefined4)(1);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x10);
-  thunk_FUN_1061c630<>(6);
-  thunk_FUN_10ec7220<>(uVar13);
-  iVar3 = (int)(thunk_FUN_10ec6870<>(uVar4), 0);
-  thunk_FUN_105f6290(iVar3 + 4);
-  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
-
-  piStack_24 = (int *)((int *)0x0);
-  piStack_20 = (int *)((int *)0x0);
-  iStack_1c = (int)(0);
-  puStack_18 = (undefined4 *)((undefined4 *)0x0);
-  puStack_14 = (undefined4 *)((undefined4 *)0x0);
-  iStack_10 = (int)(0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x12);
-  piVar6 = (int *)((int *)thunk_FUN_106050a0((uint)&appuStack_ec), 0);
-  piVar6 = (int *)((int *)(**(code **)(*piVar6 + 8))((uint)&appuStack_10c), 0);
-  piVar6 = (int *)((int *)(**(code **)(*piVar6 + 8))((uint)&appuStack_12c), 0);
-  piVar6 = (int *)((int *)(**(code **)(*piVar6 + 8))((uint)&appuStack_14c), 0);
-  iStack_8 = (int)(((uint)(*(unsigned short *)((char *)&iStack_8 + 1)) << 8 | (uint)(*(int *)(iStack_8 + 0xe0) != 0)));
-  piVar6 = (int *)((int *)(**(code **)(*piVar6 + 0xc))(iStack_8,(uint)&appuStack_16c), 0);
-  uVar13 = (undefined4)((**(code **)(*piVar6 + 4))(), 0);
-  thunk_FUN_105f60e0<>(uVar13);
-  puVar2 = (undefined4 *)(puStack_14);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x11);
-  puVar8 = (undefined4 *)(puStack_18);
-  if ((undefined4 *)(puStack_18) != (undefined4 *)(0x0)) {
-    for (;(undefined4 *)((puVar8)) != (undefined4 *)(puVar2); puVar8 = puVar8 + 8) {
-      (**(code **)*puVar8)(0);
-    }
-    uVar7 = (uint)(iStack_10 - (int)puStack_18 & 0xffffffe0);
-    puVar8 = (undefined4 *)(puStack_18);
-    if (0xfff < uVar7) {
-      puVar8 = (undefined4 *)((undefined4 *)puStack_18[-1]);
-      uVar7 = (uint)(uVar7 + 0x23);
-      if (0x1f < (uint)((int)puStack_18 + (-4 - (int)puVar8))) goto LAB_10620746;
-    }
-    thunk_FUN_1148a50e(puVar8,uVar7);
-    puStack_18 = (undefined4 *)((undefined4 *)0x0);
-    puStack_14 = (undefined4 *)((undefined4 *)0x0);
-    iStack_10 = (int)(0);
-  }
-  piVar6 = (int *)(piStack_20);
-  if ((int *)(piStack_24) != (int *)(0x0)) {
-    if ((int *)(piStack_24) != (int *)(piStack_20)) {
-      piVar9 = (int *)(piStack_24 + 1);
-      do {
-        *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x13);
-        ((SCStr *)((SCStr *)(piVar9 + 1)))->int_release();
-        piVar9[1] = (int)(0);
-        piVar1 = (int *)((int *)*piVar9);
-        *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x14);
-        if ((int *)(piVar1) != (int *)(0x0)) {
-          piVar9[-1] = (int)(0);
-          *piVar9 = (int)(0);
-          (**(code **)(*piVar1 + 8))();
-        }
-        *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x11);
-        piVar1 = (int *)(piVar9 + 2);
-        piVar9 = (int *)(piVar9 + 3);
-      } while ((int *)(piVar1) != (int *)(piVar6));
-    }
-    uVar7 = (uint)(((iStack_1c - (int)piStack_24) / 0xc) * 0xc);
-    piVar6 = (int *)(piStack_24);
-    if (0xfff < uVar7) {
-      piVar6 = (int *)((int *)piStack_24[-1]);
-      uVar7 = (uint)(uVar7 + 0x23);
-      if (0x1f < (uint)((int)piStack_24 + (-4 - (int)piVar6))) {
-LAB_10620746:
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(piVar6,uVar7);
-    piStack_24 = (int *)((int *)0x0);
-    piStack_20 = (int *)((int *)0x0);
-    iStack_1c = (int)(0);
-  }
-  ppuStack_2c = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
-  thunk_FUN_10604790();
-  thunk_FUN_10604820();
-  appuStack_ec[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x15);
-  ((SCStr *)((SCStr *)&uStack_5c))->int_release();
-  piVar6 = (int *)(piStack_60);
-
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x16);
-  if ((int *)(piStack_60) != (int *)(0x0)) {
-
-    piStack_60 = (int *)((int *)0x0);
-    (**(code **)(*piVar6 + 8))();
-  }
-  thunk_FUN_10604790();
-  thunk_FUN_10604820();
-  appuStack_10c[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x17);
-  ((SCStr *)((SCStr *)(uint)&auStack_6c))->int_release();
-  piVar6 = (int *)(piStack_70);
-  auStack_6c[0] = (undefined4)(0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x18);
-  if ((int *)(piStack_70) != (int *)(0x0)) {
-
-    piStack_70 = (int *)((int *)0x0);
-    (**(code **)(*piVar6 + 8))();
-  }
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x19);
-  ((SCStr *)((SCStr *)(uint)&auStack_48))->int_release();
-  auStack_48[0] = (undefined4)(0);
-  thunk_FUN_10604790();
-  thunk_FUN_10604820();
-  appuStack_12c[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x1a);
-  ((SCStr *)((SCStr *)&uStack_88))->int_release();
-  piVar6 = (int *)(piStack_8c);
-
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x1b);
-  if ((int *)(piStack_8c) != (int *)(0x0)) {
-
-    piStack_8c = (int *)((int *)0x0);
-    (**(code **)(*piVar6 + 8))();
-  }
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x1c);
-  ((SCStr *)((SCStr *)(uint)&auStack_50))->int_release();
-  auStack_50[0] = (undefined4)(0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x1d);
-  ((SCStr *)((SCStr *)(uint)&auStack_98))->int_release();
-  piVar6 = (int *)(piStack_9c);
-  auStack_98[0] = (undefined4)(0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x1e);
-  if ((int *)(piStack_9c) != (int *)(0x0)) {
-
-    piStack_9c = (int *)((int *)0x0);
-    (**(code **)(*piVar6 + 8))();
-  }
-  piVar6 = (int *)(piStack_34);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x1f);
-  if ((int *)(piStack_34) != (int *)(0x0)) {
-
-    piStack_34 = (int *)((int *)0x0);
-    (**(code **)(*piVar6 + 8))();
-  }
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x20);
-  ((SCStr *)((SCStr *)(uint)&auStack_40))->int_release();
-  auStack_40[0] = (undefined4)(0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x21);
-  ((SCStr *)((SCStr *)&uStack_c))->int_release();
-
-  thunk_FUN_10604790();
-  thunk_FUN_10604820();
-  appuStack_14c[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x22);
-  ((SCStr *)((SCStr *)(uint)&auStack_a8))->int_release();
-  piVar6 = (int *)(piStack_ac);
-  auStack_a8[0] = (undefined4)(0);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x23);
-  if ((int *)(piStack_ac) != (int *)(0x0)) {
-
-    piStack_ac = (int *)((int *)0x0);
-    (**(code **)(*piVar6 + 8))();
-  }
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x24);
-  ((SCStr *)((SCStr *)(uint)&auStack_58))->int_release();
-  auStack_58[0] = (undefined4)(0);
-  thunk_FUN_10604790();
-  thunk_FUN_10604820();
-  appuStack_16c[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
-  *(unsigned char*)((char *)&uStack_7c + 0) = (unsigned char)(0x25);
-  ((SCStr *)((SCStr *)(uint)&auStack_b8))->int_release();
-  piVar6 = (int *)(piStack_bc);
-  auStack_b8[0] = (undefined4)(0);
-  uStack_7c = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_7c + 1)) << 8 | (uint)(0x26)));
-  if ((int *)(piStack_bc) != (int *)(0x0)) {
-
-    piStack_bc = (int *)((int *)0x0);
-    (**(code **)(*piVar6 + 8))();
-  }
-
-  ((SCStr *)((uint)&aSStack_cc))->int_release();
-
-  return (undefined4)(param_1);
-
- } catch (...) { }
+  __asm jmp LAB_10620390
 }
+
 
 
 // Reference entry 1000146a; body size 5 bytes.
@@ -8272,10 +7990,12 @@ void FUN_10001a3c(void)
 // Reference entry 10001a50; body size 5 bytes.
 #line 1 "ENTRY_10001a50"
 
-__declspec(naked) /* WARNING: Globals starting with _ overlap */
-void FUN_10001a4b(void)
+__declspec(naked) void FUN_10001a50(void)
 
-{ __asm jmp LAB_10838995 }
+{
+  __asm jmp LAB_107e81f0
+}
+
 
 
 undefined4 __stdcall FUN_10001a50(undefined4 param_1){
@@ -9737,9 +9457,12 @@ __declspec(naked) SCStr * __stdcall FUN_100022de(SCStr *param_1)
 // Reference entry 10002310; body size 5 bytes.
 #line 1 "ENTRY_10002310"
 
-__declspec(naked) void FUN_100022e3(void)
+__declspec(naked) void FUN_10002310(void)
 
-{ __asm jmp FUN_10dff200 }
+{
+  __asm jmp LAB_10783270
+}
+
 
 
 void FUN_100022f2(void)
@@ -9968,9 +9691,12 @@ __declspec(naked) void FUN_10002437(void)
 // Reference entry 10002450; body size 5 bytes.
 #line 1 "ENTRY_10002450"
 
-__declspec(naked) void FUN_1000243c(void)
+__declspec(naked) void FUN_10002450(void)
 
-{ __asm jmp LAB_10803243 }
+{
+  __asm jmp LAB_110dbdf0
+}
+
 
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10002450(undefined4 param_2,undefined4 param_3,undefined4 param_4)
@@ -10486,35 +10212,22 @@ __declspec(naked) undefined1 FUN_10002711(void)
 // Reference entry 10002720; body size 5 bytes.
 #line 1 "ENTRY_10002720"
 
-
-
-__declspec(naked) void FUN_100028c9(void)
-
-{ __asm jmp LAB_103a93f7 }
-
-void __fastcall FUN_100028d3(undefined4 *param_1)
+__declspec(naked) void FUN_10002720(void)
 
 {
- try {
-  int *piVar1;
-  uint uVar2;
-  void *pvStack_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[1]);
-
-
-    ((SCVtbl_2_1*)(piVar1))->v((int)(uVar2));
-
-  return;
-
- } catch (...) { }
-
+  __asm jmp LAB_10da6830
 }
+
+
+void __fastcall // Reference entry 100028d3; transcribed reference bytes.
+#line 1 "ENTRY_100028d3"
+
+__declspec(naked) void FUN_100028d3(void)
+
+{
+  __asm jmp LAB_10361670
+}
+
 void __fastcall FUN_10002720(int param_1);
 
 // Reference entry 10002748; body size 5 bytes.
