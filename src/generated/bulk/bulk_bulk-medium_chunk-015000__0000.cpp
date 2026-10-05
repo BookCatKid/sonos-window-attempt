@@ -21040,11 +21040,8 @@ void FUN_11245810(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
 __declspec(naked) void FUN_11246be0(void)
 
 {
-  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x04
-  __asm call LAB_1004a56b
-  __asm _emit 0x0f __asm _emit 0xb7 __asm _emit 0xc0 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04
-  __asm add ax, word ptr [LAB_11c03cf0]
-  __asm _emit 0xc3
+  __asm _emit 0xff __asm _emit 0x74 __asm _emit 0x24 __asm _emit 0x04 __asm _emit 0xe8 __asm _emit 0x82 __asm _emit 0x39 __asm _emit 0xe0 __asm _emit 0xfe __asm _emit 0x0f __asm _emit 0xb7 __asm _emit 0xc0 __asm _emit 0x83 __asm _emit 0xc4 __asm _emit 0x04 __asm _emit 0x66
+  __asm _emit 0x03 __asm _emit 0x05 __asm _emit 0xf0 __asm _emit 0x3c __asm _emit 0xc0 __asm _emit 0x11 __asm _emit 0xc3
 }
 
 

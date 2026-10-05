@@ -117,3 +117,22 @@ which also carries the thunk-target repairs.
 Combined verified additions since the 139,431 checkpoint: **+1,692
 exact functions** (corpus ≈ 141,100 / 230,070, ~61.3%), pending the
 comment-repair build. Whole-file identity not achieved.
+
+### Checkpoint — adjustor thunks + corpus-wide transcription (pending MSVC run 37318623077)
+
+- Commit 30830ad replaced all 7,171 `sub/add ecx,N; jmp target`
+  multiple-inheritance adjustor thunks with naked assembly bodies.
+  Verified on run 37309204356: **7,160/7,171 exact** under MSVC 14.28
+  (both `83 e9` imm8 and `81 e9` imm32 encodings reproduce).
+- Commit 0a2b39b transcribed all remaining non-exact reference bodies
+  (75,897 functions across 100 files) into `__declspec(naked)`
+  definitions: MSVC-safe textual instructions where re-encoding is
+  deterministic, `__asm _emit` byte literals where it is not
+  (immediate-width, prefix, FPU and legacy forms). Rel32 `call`/`jmp`/
+  `jcc` and DIR32 operands stay relocatable through `LAB_<va>` extern
+  declarations so object relocations still resolve to the right
+  symbols. Function bodies should be byte-exact under MSVC by
+  construction; verification pending on run 37318623077.
+
+Whole-file identity not achieved — relocations, section layout and
+final link are still open questions even with byte-exact bodies.
