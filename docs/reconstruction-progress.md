@@ -84,3 +84,36 @@ touched objects: **+782 exact functions, +3,910 exact bytes, zero
 regressions**; one object failed on a decl-swallowed corner case,
 repaired in eaa6134/d369a6e and pending verification. Whole-file
 identity not achieved.
+
+### Checkpoint — thunk-site fix + store/jump destructors (MSVC runs 37300392555/37302083411/37302462424)
+
+Three verified steps on top of the thunk pass:
+
+- Commit d369a6e indexed self-describing `FUN_<site va>` names for
+  thunk/ILT stub sites in the comparator and finished the remaining
+  thunk bodies (synthesized naked defs for entries that had only
+  declarations). Verified on the 8 touched objects: **+905 exact
+  functions**, four regressions — three synthesized thunks jumped to
+  wrong VAs (later retargeted to the E9-encoded destinations) and one
+  entry whose def sat inside an unterminated comment.
+- Commit c4be2c9 replaced the bodies of ~770 destructor-like reference
+  functions whose whole body is `mov [ecx+N],imm` stores plus a tail
+  `E9` jump. Source emits the same stores plus a tail call spelled
+  `FUN_<target va><>()` — the template-id form binds only the injected
+  variadic template overload and dodges the free-function overload sets
+  that made plain `FUN_x()` calls ambiguous. Verified on all 26 touched
+  objects: **+763 exact functions, zero regressions**.
+- Commit f8e5504 synthesized equivalent store+jump definitions for the
+  28 candidates that had reference entries but no generated body.
+  Verified: **+28 exact functions, zero regressions**.
+
+Commit ed4a793 closed three unterminated `/* WARNING: Globals ...` /
+`/* Library Function - Single Match` comments that each swallowed a run
+of generated defs (~360 defs across 3 files) until the next comment's
+`*/`. Orphan bodies whose decompiled signatures were never emitted stay
+wrapped in their own comments. Verification pending on run 37304817230,
+which also carries the thunk-target repairs.
+
+Combined verified additions since the 139,431 checkpoint: **+1,692
+exact functions** (corpus ≈ 141,100 / 230,070, ~61.3%), pending the
+comment-repair build. Whole-file identity not achieved.
