@@ -11691,9 +11691,8 @@ void __fastcall FUN_101d6020(int param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_101d6060(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -11703,9 +11702,8 @@ void __thiscall Recovered_Bulk::m_FUN_101d6060(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_101d6080(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -11819,9 +11817,8 @@ int * FUN_101d6f50(int *param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_101d6f80(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -11831,9 +11828,8 @@ void __thiscall Recovered_Bulk::m_FUN_101d6f80(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_101d6fa0(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -20496,9 +20492,8 @@ void __fastcall FUN_10231d60(int *param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_10232050(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -20508,9 +20503,8 @@ void __thiscall Recovered_Bulk::m_FUN_10232050(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_10232070(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -20520,9 +20514,8 @@ void __thiscall Recovered_Bulk::m_FUN_10232070(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_10232150(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -20532,9 +20525,8 @@ void __thiscall Recovered_Bulk::m_FUN_10232150(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_10232170(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -20544,9 +20536,8 @@ void __thiscall Recovered_Bulk::m_FUN_10232170(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_102321b0(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -20864,9 +20855,8 @@ void __thiscall Recovered_Bulk::m_FUN_10232900(undefined4 *param_2,undefined4 pa
 
 void __thiscall Recovered_Bulk::m_FUN_10233650(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -20876,9 +20866,8 @@ void __thiscall Recovered_Bulk::m_FUN_10233650(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_10233670(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -20888,9 +20877,8 @@ void __thiscall Recovered_Bulk::m_FUN_10233670(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_102336b0(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -20900,9 +20888,8 @@ void __thiscall Recovered_Bulk::m_FUN_102336b0(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_102336d0(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
@@ -20912,9 +20899,8 @@ void __thiscall Recovered_Bulk::m_FUN_102336d0(undefined4 *param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_10233710(undefined4 *param_2)
 {
-  int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[1] = (undefined4)(*(undefined4 *)((int)this + 4));
   return;
 }
 
