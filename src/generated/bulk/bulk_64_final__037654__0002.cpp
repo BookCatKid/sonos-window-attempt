@@ -6369,7 +6369,7 @@ void FUN_117f8fe0(void)
   if ((int *)(DAT_121a1648) != (int *)(0x0)) {
     DAT_121a1644 = (int)(0);
     DAT_121a1648 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -6923,7 +6923,7 @@ void FUN_117f9ae0(void)
   if ((int *)(DAT_121a1750) != (int *)(0x0)) {
     DAT_121a174c = (int)(0);
     DAT_121a1750 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -6949,7 +6949,7 @@ void FUN_117f9b60(void)
   if ((int *)(DAT_121a1740) != (int *)(0x0)) {
     DAT_121a173c = (int)(0);
     DAT_121a1740 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -6975,7 +6975,7 @@ void FUN_117f9be0(void)
   if ((int *)(DAT_121a16d0) != (int *)(0x0)) {
     DAT_121a16cc = (int)(0);
     DAT_121a16d0 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -7001,7 +7001,7 @@ void FUN_117f9c60(void)
   if ((int *)(DAT_121a16f0) != (int *)(0x0)) {
     DAT_121a16ec = (int)(0);
     DAT_121a16f0 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -7027,7 +7027,7 @@ void FUN_117f9ce0(void)
   if ((int *)(DAT_121a1720) != (int *)(0x0)) {
     DAT_121a171c = (int)(0);
     DAT_121a1720 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -7053,7 +7053,7 @@ void FUN_117f9d60(void)
   if ((int *)(DAT_121a1710) != (int *)(0x0)) {
     DAT_121a170c = (int)(0);
     DAT_121a1710 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -7079,7 +7079,7 @@ void FUN_117f9de0(void)
   if ((int *)(DAT_121a16e0) != (int *)(0x0)) {
     DAT_121a16dc = (int)(0);
     DAT_121a16e0 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -7105,7 +7105,7 @@ void FUN_117f9e60(void)
   if ((int *)(DAT_121a1700) != (int *)(0x0)) {
     DAT_121a16fc = (int)(0);
     DAT_121a1700 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -7131,7 +7131,7 @@ void FUN_117f9ee0(void)
   if ((int *)(DAT_121a1730) != (int *)(0x0)) {
     DAT_121a172c = (int)(0);
     DAT_121a1730 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -8693,7 +8693,7 @@ void FUN_117fbe00(void)
   if ((int *)(DAT_121a18b8) != (int *)(0x0)) {
     DAT_121a18b4 = (int)(0);
     DAT_121a18b8 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -8741,7 +8741,7 @@ void FUN_117fbef0(void)
   if ((int *)(DAT_121a18c8) != (int *)(0x0)) {
     DAT_121a18c4 = (int)(0);
     DAT_121a18c8 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -10901,7 +10901,7 @@ void FUN_117fe9e0(void)
   if ((int *)(DAT_121a1abc) != (int *)(0x0)) {
     DAT_121a1ab8 = (int)(0);
     DAT_121a1abc = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -14437,7 +14437,7 @@ void FUN_11802ff0(void)
   if ((int *)(DAT_121a1dac) != (int *)(0x0)) {
     DAT_121a1da8 = (int)(0);
     DAT_121a1dac = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -16321,7 +16321,7 @@ void FUN_118055a0(void)
   if ((int *)(DAT_121a1f94) != (int *)(0x0)) {
     DAT_121a1f90 = (int)(0);
     DAT_121a1f94 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -20474,7 +20474,7 @@ void FUN_1180a9b0(void)
   if ((int *)(DAT_121a25f4) != (int *)(0x0)) {
     DAT_121a25f0 = (int)(0);
     DAT_121a25f4 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -20588,7 +20588,7 @@ void FUN_1180abf0(void)
   if ((int *)(DAT_121a2654) != (int *)(0x0)) {
     DAT_121a2650 = (int)(0);
     DAT_121a2654 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -21328,7 +21328,7 @@ void FUN_1180baa0(void)
   if ((int *)(DAT_121a2688) != (int *)(0x0)) {
     DAT_121a2684 = (int)(0);
     DAT_121a2688 = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;

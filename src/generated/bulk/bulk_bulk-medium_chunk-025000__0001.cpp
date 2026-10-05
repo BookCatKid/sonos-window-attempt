@@ -12771,7 +12771,7 @@ void FUN_11862620(void)
       if (iVar2 == 1) {
                     
                     
-        (**(code **)(*piVar3 + 4))();
+        (*(code ***)piVar3)[1]();
         return;
       }
     }

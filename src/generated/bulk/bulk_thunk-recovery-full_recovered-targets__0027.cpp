@@ -14450,7 +14450,7 @@ void __fastcall FUN_11151ab0(int *param_1, unsigned int recovered_unused_stack_0
 
   uVar3 = (undefined4)(thunk_FUN_111a2df0(uStack_8), 0);
   uVar4 = (undefined4)(thunk_FUN_111a32a0(), 0);
-  (**(code **)(*param_1 + 0x8c))((uint)&acStack_40c,0x401,uVar3,uVar4);
+  (*(code ***)param_1)[35]((uint)&acStack_40c,0x401,uVar3,uVar4);
   if (acStack_40c[0] == '\0') {
     puStack_41c = (undefined4 *)((undefined4 *)0x0);
   }
@@ -14505,7 +14505,7 @@ void __fastcall FUN_11151ab0(int *param_1, unsigned int recovered_unused_stack_0
   
   uVar2 = (undefined4)(thunk_FUN_111a2df0(), 0);
   uVar3 = (undefined4)(thunk_FUN_111a32a0(), 0);
-  sVar1 = (short)((**(code **)(*param_1 + 0x44))(uVar2,uVar3), 0);
+  sVar1 = (short)((*(code ***)param_1)[17](uVar2,uVar3), 0);
   thunk_FUN_111a36f0();
   param_2[2] = (undefined4)((uint)(sVar1 == 0));
   *param_2 = (undefined4)(5);
@@ -21217,7 +21217,7 @@ undefined4 __fastcall FUN_1116f610(int param_1)
 {
   int *param_1 = (int *)this;
   for (param_2 = (int)(param_2 * 4); param_2 != 0; param_2 = param_2 + -1) {
-    (**(code **)(*param_1 + 4))(&DAT_11882ff0,1);
+    (*(code ***)param_1)[1](&DAT_11882ff0,1);
   }
   return;
 }
@@ -21231,7 +21231,7 @@ undefined4 __fastcall FUN_1116f610(int param_1)
 void __fastcall FUN_1116f950(int *param_1)
 
 {
-  (**(code **)(*param_1 + 4))(&DAT_11881ac8,1);
+  (*(code ***)param_1)[1](&DAT_11881ac8,1);
   return;
 }
 
@@ -23804,7 +23804,7 @@ void FUN_11175c20(void)
   if (*(int **)(param_1 + 4) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 4) + 4))(param_4);
   }
-  uVar1 = (undefined2)((**(code **)(*param_3 + 4)) (param_2,param_7,param_4, "dc:title,res,dc:creator,upnp:artist,upnp:album,upnp:albumArtURI",param_5, param_6,param_8,param_9,param_10), 0);
+  uVar1 = (undefined2)((*(code ***)param_3)[1] (param_2,param_7,param_4, "dc:title,res,dc:creator,upnp:artist,upnp:album,upnp:albumArtURI",param_5, param_6,param_8,param_9,param_10), 0);
   if (*(int **)(param_1 + 4) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 4) + 8))(param_4);
   }

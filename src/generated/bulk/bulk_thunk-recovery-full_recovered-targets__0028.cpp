@@ -9395,7 +9395,7 @@ undefined4 __stdcall FUN_111937e0(undefined4 param_1, undefined4 *param_2, unsig
     piVar4 = (int *)(*(int **)(param_1 + 0x30), 0);
     if ((int *)(piVar4) != (int *)(0x0)) {
       if (*(int *)(param_1 + 0x34) != 0) {
-        (**(code **)(*piVar4 + 0x10))();
+        (*(code ***)piVar4)[4]();
         piVar4 = (int *)(*(int **)(param_1 + 0x30), 0);
       }
       if ((int *)(piVar4) != (int *)(0x0)) {
@@ -22545,12 +22545,12 @@ undefined4 __fastcall FUN_111da6d0(int param_1)
   int iVar3;
   
   if ((*(uint *)(param_2 + 0x130) >> 0x15 & 1) != 0) {
-    uVar1 = (uint)((**(code **)(*param_3 + 0xc))(), 0);
+    uVar1 = (uint)((*(code ***)param_3)[3](), 0);
     iVar3 = (int)(param_1 + 0x1250);
     (**(code **)(*(int *)(param_1 + 0x1250) + 4))();
     if ((uVar1 & 1) != 0) {
       piVar2 = (int *)((int *)thunk_FUN_1124fec0("explicit"), 0);
-      (**(code **)(*piVar2 + 0xc))(&DAT_11889d24);
+      (*(code ***)piVar2)[3](&DAT_11889d24);
       thunk_FUN_11250060<>("contentFiltering");
       thunk_FUN_1124f4c0<>(iVar3);
       return (undefined4)(1);
@@ -24588,7 +24588,7 @@ undefined4 __stdcall FUN_111e85c0(undefined4 param_1,undefined4 param_2)
   }
   bStack_15ddd = (bool)(param_6 == 0);
   thunk_FUN_11283280((uint)&auStack_108,0x80);
-  uStack_15dec = (undefined4)((**(code **)(*param_1 + 8))(), 0);
+  uStack_15dec = (undefined4)((*(code ***)param_1)[2](), 0);
   thunk_FUN_1124e950(uStack_15dec,"credentials");
 
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
@@ -24635,9 +24635,9 @@ undefined4 __stdcall FUN_111e85c0(undefined4 param_1,undefined4 param_2)
   if ((*(int *)(iStack_15df0 + 4) == 0) || (iVar4 = (int)(0x191), *(int *)(iStack_15df0 + 4) == 1)) {
     iVar4 = (int)(9);
   }
-  (**(code **)(*piVar3 + 0xc))(iStack_15df0 + iVar4);
+  (*(code ***)piVar3)[3](iStack_15df0 + iVar4);
   piVar3 = (int *)((int *)thunk_FUN_11250000("startTime",0), 0);
-  (**(code **)(*piVar3 + 0xc))(uStack_15df4);
+  (*(code ***)piVar3)[3](uStack_15df4);
   thunk_FUN_11250000("duration",0);
   thunk_FUN_1124f350(param_5);
   thunk_FUN_1124eaa0();
@@ -24649,7 +24649,7 @@ undefined4 __stdcall FUN_111e85c0(undefined4 param_1,undefined4 param_2)
   puVar8 = (undefined4 *)(&uStack_15de8);
   thunk_FUN_112500b0<>("http://www.sonos.com/Services/1.1|duration");
   thunk_FUN_112504b0(puVar8);
-  uVar6 = (undefined4)((**(code **)(*param_1 + 8))(), 0);
+  uVar6 = (undefined4)((*(code ***)param_1)[2](), 0);
   thunk_FUN_1124dd60();
   *(unsigned char*)((char *)&uStack_15dd4 + 0) = (unsigned char)(7);
   ppuStack_9698 = (undefined **)((uint)&ghidra_vftable_RSonosParamRX);
@@ -24700,7 +24700,7 @@ LAB_111ee419:
 
 
     thunk_FUN_11262fc0<>((uint)&auStack_88);
-    (**(code **)(*piVar3 + 8))(&ppuStack_15e10,uStack_15de8);
+    (*(code ***)piVar3)[2](&ppuStack_15e10,uStack_15de8);
   }
   ppuStack_9698 = (undefined **)((uint)&ghidra_vftable_RSonosParamRX);
   thunk_FUN_1124ecb0();
@@ -24817,7 +24817,7 @@ void __fastcall FUN_111eebe0(int param_1)
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)(uint)&auStack_120e8);
 
   thunk_FUN_112b0270("sonoscp",5,"reportAccountAction: %s; sd.name: %s; sd.sid: %d",param_2, param_1[2] + 0x1528,*(undefined4 *)(param_1[2] + 0x165c),uStack_8);
-  uVar3 = (undefined4)((**(code **)(*param_1 + 8))(), 0);
+  uVar3 = (undefined4)((*(code ***)param_1)[2](), 0);
   thunk_FUN_1124e950(uVar3,"credentials");
 
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
@@ -24855,7 +24855,7 @@ void __fastcall FUN_111eebe0(int param_1)
     uStack_598c = (undefined4)(uStack_77a4);
   }
   piVar4 = (int *)((int *)thunk_FUN_11250000(&DAT_1187b694,0), 0);
-  (**(code **)(*piVar4 + 0xc))(param_2);
+  (*(code ***)piVar4)[3](param_2);
   sVar2 = (short)(thunk_FUN_111c5fc0(), 0);
   if (sVar2 == 0x3fc) {
     if (iStack_120f8 != 0) {
@@ -24937,7 +24937,7 @@ LAB_111ef02f:
   thunk_FUN_112b0270("sonoscp",5, "reportPlaySeconds: context: %s; uri: %s; cid: %s; id: %s; seconds: %lld; offset: %lld"
                      ,param_4[1],*param_4,param_3,param_2,param_4[2],param_4[3],param_4[4], param_4[5],uStack_8);
   *param_5 = (undefined4)(0x3c);
-  uVar3 = (undefined4)((**(code **)(*param_1 + 8))(), 0);
+  uVar3 = (undefined4)((*(code ***)param_1)[2](), 0);
   thunk_FUN_1124e950(uVar3,"credentials");
 
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
@@ -24975,17 +24975,17 @@ LAB_111ef02f:
     uStack_5c38 = (undefined4)(uStack_7a50);
   }
   piVar4 = (int *)((int *)thunk_FUN_11250000(&DAT_1187b440,0), 0);
-  (**(code **)(*piVar4 + 0xc))(param_2);
+  (*(code ***)piVar4)[3](param_2);
   thunk_FUN_11250000("seconds",0);
   func_0x10060406(param_4[2],param_4[3]);
   if ((((char *)(param_3) != (char *)(0x0)) && (*param_3 != (char)(('\0')))) &&
      ((*(uint *)(param_1[2] + 0x1658) >> 0x13 & 1) != 0)) {
     piVar4 = (int *)((int *)thunk_FUN_11250000("contextId",0), 0);
-    (**(code **)(*piVar4 + 0xc))(param_3);
+    (*(code ***)piVar4)[3](param_3);
   }
   if (((char *)param_4[7] != (char *)(((0x0)))) && (*(char *)param_4[7] != '\0')) {
     piVar4 = (int *)((int *)thunk_FUN_11250000("privateData",0), 0);
-    (**(code **)(*piVar4 + 0xc))(param_4[7]);
+    (*(code ***)piVar4)[3](param_4[7]);
   }
   if (*(char *)(param_4 + 6) != '\0') {
     thunk_FUN_11250000("offsetMillis",0);
@@ -25077,7 +25077,7 @@ LAB_111ef589:
 
   thunk_FUN_112b0270("sonoscp",5, "reportPlayStatus: %s; context: %s; uri: %s; cid: %s; id: %s; seconds: %lld; offset: %lld"
                      ,param_4[8],param_4[1],*param_4,param_3,param_2,param_4[2],param_4[3], param_4[4],param_4[5],uStack_8);
-  uVar3 = (undefined4)((**(code **)(*param_1 + 8))(), 0);
+  uVar3 = (undefined4)((*(code ***)param_1)[2](), 0);
   thunk_FUN_1124e950(uVar3,"credentials");
 
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
@@ -25115,13 +25115,13 @@ LAB_111ef589:
     uStack_598c = (undefined4)(uStack_77a4);
   }
   piVar4 = (int *)((int *)thunk_FUN_11250000(&DAT_1187b440,0), 0);
-  (**(code **)(*piVar4 + 0xc))(param_2);
+  (*(code ***)piVar4)[3](param_2);
   piVar4 = (int *)((int *)thunk_FUN_11250000("status",0), 0);
-  (**(code **)(*piVar4 + 0xc))(param_4[8]);
+  (*(code ***)piVar4)[3](param_4[8]);
   if ((((char *)(param_3) != (char *)(0x0)) && (*param_3 != (char)(('\0')))) &&
      ((*(uint *)(param_1[2] + 0x1658) >> 0x13 & 1) != 0)) {
     piVar4 = (int *)((int *)thunk_FUN_11250000("contextId",0), 0);
-    (**(code **)(*piVar4 + 0xc))(param_3);
+    (*(code ***)piVar4)[3](param_3);
   }
   if (*(char *)(param_4 + 6) != '\0') {
     thunk_FUN_11250000("offsetMillis",0);
@@ -25201,7 +25201,7 @@ LAB_111efaa0:
 
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)(uint)&auStack_120e8);
 
-  uVar3 = (undefined4)((**(code **)(*param_1 + 8))(uStack_8), 0);
+  uVar3 = (undefined4)((*(code ***)param_1)[2](uStack_8), 0);
   thunk_FUN_1124e950(uVar3,"credentials");
 
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
@@ -25239,11 +25239,11 @@ LAB_111efaa0:
     uStack_598c = (undefined4)(uStack_77a4);
   }
   piVar4 = (int *)((int *)thunk_FUN_11250000(&DAT_1187b440,0), 0);
-  (**(code **)(*piVar4 + 0xc))(param_2);
+  (*(code ***)piVar4)[3](param_2);
   thunk_FUN_11250000(&DAT_1187d828,0);
   thunk_FUN_1124f350(param_3);
   piVar4 = (int *)((int *)thunk_FUN_11250000("message",0), 0);
-  (**(code **)(*piVar4 + 0xc))(param_4);
+  (*(code ***)piVar4)[3](param_4);
   sVar2 = (short)(thunk_FUN_111c5fc0(), 0);
   if (sVar2 == 0x3fc) {
     if (iStack_120f8 != 0) {
@@ -25321,7 +25321,7 @@ LAB_111eff18:
 
   thunk_FUN_112b0270("sonoscp",5, "setPlayedSeconds: context: %s; uri: %s; cid: %s; id: %s; seconds: %lld; offset: %lld"
                      ,param_4[1],*param_4,param_3,param_2,param_4[2],param_4[3],param_4[4], param_4[5],uStack_8);
-  uVar3 = (undefined4)((**(code **)(*param_1 + 8))(), 0);
+  uVar3 = (undefined4)((*(code ***)param_1)[2](), 0);
   thunk_FUN_1124e950(uVar3,"credentials");
 
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
@@ -25359,17 +25359,17 @@ LAB_111eff18:
     uStack_598c = (undefined4)(uStack_77a4);
   }
   piVar4 = (int *)((int *)thunk_FUN_11250000(&DAT_1187b440,0), 0);
-  (**(code **)(*piVar4 + 0xc))(param_2);
+  (*(code ***)piVar4)[3](param_2);
   thunk_FUN_11250000("seconds",0);
   func_0x10060406(param_4[2],param_4[3]);
   if ((((char *)(param_3) != (char *)(0x0)) && (*param_3 != (char)(('\0')))) &&
      ((*(uint *)(param_1[2] + 0x1658) >> 0x13 & 1) != 0)) {
     piVar4 = (int *)((int *)thunk_FUN_11250000("contextId",0), 0);
-    (**(code **)(*piVar4 + 0xc))(param_3);
+    (*(code ***)piVar4)[3](param_3);
   }
   if (((char *)param_4[7] != (char *)(((0x0)))) && (*(char *)param_4[7] != '\0')) {
     piVar4 = (int *)((int *)thunk_FUN_11250000("privateData",0), 0);
-    (**(code **)(*piVar4 + 0xc))(param_4[7]);
+    (*(code ***)piVar4)[3](param_4[7]);
   }
   if (*(char *)(param_4 + 6) != '\0') {
     thunk_FUN_11250000("offsetMillis",0);

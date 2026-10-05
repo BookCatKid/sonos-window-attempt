@@ -16588,7 +16588,7 @@ void FUN_110da1d0(undefined4 *param_1,int *param_2,undefined4 *param_3)
     puVar4 = (undefined1 *)((undefined1 *)*param_3);
   }
   puStack_9c = (undefined4 *)(param_1);
-  uVar2 = (undefined4)((**(code **)(*param_2 + 0x58))(puVar4,(uint)&acStack_98,0x91), 0);
+  uVar2 = (undefined4)((*(code ***)param_2)[22](puVar4,(uint)&acStack_98,0x91), 0);
   thunk_FUN_112584f0(uVar2);
   if (acStack_98[0] != '\0') {
     pcVar5 = (char *)((uint)&acStack_98);
@@ -17711,7 +17711,7 @@ undefined4 __fastcall FUN_110df010(int *param_1)
 {
   int iVar1;
   
-  iVar1 = (int)((**(code **)(*param_1 + 0x28))(), 0);
+  iVar1 = (int)((*(code ***)param_1)[10](), 0);
   if (iVar1 != 0) {
     thunk_FUN_110c2c60();
     iVar1 = (int)(thunk_FUN_110c1f30(*(int *)(iVar1 + 0x1674) << 8 | 7), 0);
@@ -21615,7 +21615,7 @@ undefined4 FUN_111020a0(int param_1)
     thunk_FUN_112a8010(param_1 + 0x1c);
     if ((int *)(piVar1) != (int *)(0x0)) {
       thunk_FUN_110f9e80("RUpdateWorkerThread: starting doing work (pv=%p)\n",piVar1[2]);
-      (**(code **)(*piVar1 + 0xc))();
+      (*(code ***)piVar1)[3]();
       thunk_FUN_110f9e80("RUpdateWorkerThread: work done (pv=%p)\n",piVar1[2]);
       thunk_FUN_1106b190(piVar1,0,0);
     }
@@ -21651,7 +21651,7 @@ void __fastcall FUN_11102180(int param_1)
     thunk_FUN_112a8010(param_1 + 0x1c);
     if ((int *)(piVar1) != (int *)(0x0)) {
       thunk_FUN_110f9e80("RUpdateWorkerThread: starting doing work (pv=%p)\n",piVar1[2]);
-      (**(code **)(*piVar1 + 0xc))();
+      (*(code ***)piVar1)[3]();
       thunk_FUN_110f9e80("RUpdateWorkerThread: work done (pv=%p)\n",piVar1[2]);
       thunk_FUN_1106b190(piVar1,0,0);
     }
@@ -27011,7 +27011,7 @@ void __stdcall FUN_11117050(undefined4 param_1,undefined4 param_2,undefined4 *pa
       iVar4 = (int)(thunk_FUN_110cb560(), 0);
       if ((iVar4 != 0) && (piVar1 = (int *)(*(int **)(iVar4 + 0x2c), 0),(int *)( piVar1) != (int *)(0x0))) {
         thunk_FUN_111a2ec0();
-        uVar3 = (ushort)((**(code **)(*piVar1 + 0x20))((uint)&auStack_88,0x81), 0);
+        uVar3 = (ushort)((*(code ***)piVar1)[8]((uint)&auStack_88,0x81), 0);
         if (uVar3 == 0) {
           thunk_FUN_111a67e0<>("timeServer",(uint)&auStack_88);
         }
@@ -27312,7 +27312,7 @@ undefined4 FUN_11118290(int param_1,undefined4 *param_2,undefined4 *param_3)
         else {
           pcVar6 = (char *)("0.sonostime.pool.ntp.org,1.sonostime.pool.ntp.org,2.sonostime.pool.ntp.org,3.sonostime.pool.ntp.org");
         }
-        uVar4 = (ushort)((**(code **)(*piVar1 + 0x1c))(pcVar6), 0);
+        uVar4 = (ushort)((*(code ***)piVar1)[7](pcVar6), 0);
         thunk_FUN_111a36f0();
         *param_2 = (undefined4)(4);
         *(double*)(param_2 + 2) = (double)((double)uVar4);
@@ -27362,7 +27362,7 @@ undefined4 __stdcall FUN_11118360(undefined4 param_1,undefined4 param_2,undefine
   else {
     uVar4 = (undefined4)(thunk_FUN_111a2df0(), 0);
     iVar3 = (int)(thunk_FUN_111a2bd0(), 0);
-    uVar2 = (ushort)((**(code **)(*piStack_4 + 0xc))(uVar4,iVar3 != 0), 0);
+    uVar2 = (ushort)((*(code ***)piStack_4)[3](uVar4,iVar3 != 0), 0);
     thunk_FUN_111a36f0();
     dVar5 = (double)((double)uVar2);
   }
@@ -27468,7 +27468,7 @@ LAB_111186e7:
         thunk_FUN_111a5f10<>("includeLinkedZones",(uint)&auStack_c8c);
         iVar4 = (int)(thunk_FUN_111a2bd0(), 0);
         uStack_c90 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_c90 + 1)) << 8 | (uint)(iVar4 != 0)));
-        uVar3 = (ushort)((**(code **)(*piStack_c94 + 0x34)) (uStack_c98,(uint)&auStack_20,(uint)&auStack_14,(uint)&auStack_2c,uStack_c7c,(uint)&auStack_48, (uint)&auStack_46c,(uint)&auStack_c6c,(uint)&auStack_68,uVar5,uStack_c90), 0);
+        uVar3 = (ushort)((*(code ***)piStack_c94)[13] (uStack_c98,(uint)&auStack_20,(uint)&auStack_14,(uint)&auStack_2c,uStack_c7c,(uint)&auStack_48, (uint)&auStack_46c,(uint)&auStack_c6c,(uint)&auStack_68,uVar5,uStack_c90), 0);
         thunk_FUN_111a36f0();
         *param_3 = (undefined4)(4);
         *(double*)(param_3 + 2) = (double)((double)uVar3);
@@ -27687,7 +27687,7 @@ LAB_11119fc7:
 
             if ((int *)(piVar9) != (int *)(0x0)) {
               if (*(int *)(param_1 + 400) != 0) {
-                (**(code **)(*piVar9 + 0x10))();
+                (*(code ***)piVar9)[4]();
                 piVar9 = (int *)(*(int **)(param_1 + 0x18c), 0);
               }
               if (((int *)(piVar9) != (int *)(0x0)) && (iVar5 = (int)(thunk_FUN_1123fcd0(piVar9 + 1), 0), iVar5 == 0)) {
@@ -27716,21 +27716,21 @@ LAB_11119fc7:
             thunk_FUN_1124ffa0(&DAT_11910258,0);
             thunk_FUN_1124f350(uVar7);
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0("StartLocalTime",0), 0);
-            (**(code **)(*piVar9 + 0xc))((uint)&auStack_20);
+            (*(code ***)piVar9)[3]((uint)&auStack_20);
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0("Duration",0), 0);
-            (**(code **)(*piVar9 + 0xc))((uint)&auStack_14);
+            (*(code ***)piVar9)[3]((uint)&auStack_14);
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0("Recurrence",0), 0);
-            (**(code **)(*piVar9 + 0xc))((uint)&auStack_2c);
+            (*(code ***)piVar9)[3]((uint)&auStack_2c);
             thunk_FUN_1124ffa0("Enabled",0);
             thunk_FUN_1124f3c0<>(uVar2);
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0("RoomUUID",0), 0);
-            (**(code **)(*piVar9 + 0xc))(param_2 + 0x33);
+            (*(code ***)piVar9)[3](param_2 + 0x33);
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0("ProgramURI",0), 0);
-            (**(code **)(*piVar9 + 0xc))(param_2 + 0x7c);
+            (*(code ***)piVar9)[3](param_2 + 0x7c);
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0("ProgramMetaData",0), 0);
-            (**(code **)(*piVar9 + 0xc))(param_2 + 0x47d);
+            (*(code ***)piVar9)[3](param_2 + 0x47d);
             piVar9 = (int *)((int *)thunk_FUN_1124ffa0("PlayMode",0), 0);
-            (**(code **)(*piVar9 + 0xc))(param_2 + 0xc90);
+            (*(code ***)piVar9)[3](param_2 + 0xc90);
             thunk_FUN_1124ffa0("Volume",0);
             thunk_FUN_1124f2e0(uVar3);
             thunk_FUN_1124ffa0("IncludeLinkedZones",0);
@@ -27768,7 +27768,7 @@ LAB_11119fc7:
 
       if ((int *)(piVar9) != (int *)(0x0)) {
         if (*(int *)(param_1 + 0x184) != 0) {
-          (**(code **)(*piVar9 + 0x10))();
+          (*(code ***)piVar9)[4]();
           piVar9 = (int *)(*(int **)(param_1 + 0x180), 0);
         }
         if (((int *)(piVar9) != (int *)(0x0)) && (iVar5 = (int)(thunk_FUN_1123fcd0(piVar9 + 1), 0), iVar5 == 0)) {
@@ -27795,21 +27795,21 @@ LAB_11119fc7:
       uVar2 = (undefined1)(*(undefined1 *)(param_2 + 0x32));
       iVar5 = (int)(*(int *)(param_1 + 0x180));
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0("StartLocalTime",0), 0);
-      (**(code **)(*piVar9 + 0xc))((uint)&auStack_20);
+      (*(code ***)piVar9)[3]((uint)&auStack_20);
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0("Duration",0), 0);
-      (**(code **)(*piVar9 + 0xc))((uint)&auStack_14);
+      (*(code ***)piVar9)[3]((uint)&auStack_14);
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0("Recurrence",0), 0);
-      (**(code **)(*piVar9 + 0xc))((uint)&auStack_2c);
+      (*(code ***)piVar9)[3]((uint)&auStack_2c);
       thunk_FUN_1124ffa0("Enabled",0);
       thunk_FUN_1124f3c0<>(uVar2);
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0("RoomUUID",0), 0);
-      (**(code **)(*piVar9 + 0xc))(param_2 + 0x33);
+      (*(code ***)piVar9)[3](param_2 + 0x33);
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0("ProgramURI",0), 0);
-      (**(code **)(*piVar9 + 0xc))(param_2 + 0x7c);
+      (*(code ***)piVar9)[3](param_2 + 0x7c);
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0("ProgramMetaData",0), 0);
-      (**(code **)(*piVar9 + 0xc))(param_2 + 0x47d);
+      (*(code ***)piVar9)[3](param_2 + 0x47d);
       piVar9 = (int *)((int *)thunk_FUN_1124ffa0("PlayMode",0), 0);
-      (**(code **)(*piVar9 + 0xc))(param_2 + 0xc90);
+      (*(code ***)piVar9)[3](param_2 + 0xc90);
       thunk_FUN_1124ffa0("Volume",0);
       thunk_FUN_1124f2e0(uVar3);
       thunk_FUN_1124ffa0("IncludeLinkedZones",0);

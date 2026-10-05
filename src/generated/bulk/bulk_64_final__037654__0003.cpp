@@ -9024,7 +9024,7 @@ void FUN_1182acc0(void)
   if ((int *)(DAT_121a4a2c) != (int *)(0x0)) {
     DAT_121a4a28 = (int)(0);
     DAT_121a4a2c = (int)((int *)0x0);
-    (**(code **)(*piVar1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (*(code ***)piVar1)[2](DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;

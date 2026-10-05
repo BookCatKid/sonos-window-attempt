@@ -72113,7 +72113,7 @@ void FUN_1137d5a0(undefined4 *param_1,char *param_2)
       piVar4 = (int *)((int *)*piVar3);
       piVar1 = (int *)(piVar4 + 1);
       *piVar1 = (int)(*piVar1 + -1);
-      (**(code **)(*piVar4 + 0x1c))(piVar3);
+      (*(code ***)piVar4)[7](piVar3);
       return;
     }
   }
@@ -75973,14 +75973,14 @@ int FUN_11383f10(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 p
     FUN_113a62d0(piVar2,iVar4);
     piVar1 = (int *)((int *)piVar2[2]);
     if (*piVar1 != (int)((0))) {
-      (**(code **)(*piVar1 + 4))(piVar1);
+      (*(code ***)piVar1)[1](piVar1);
       *piVar1 = (int)(0);
     }
     if (iVar4 != 0) {
       if ((code *)(DAT_122f6d78) != (code *)(0x0)) {
         (*(code *)(uint)(DAT_122f6d78))();
       }
-      (**(code **)(*piVar2 + 0x1c))(*piVar2,piVar2[0x1b],0);
+      (*(code ***)piVar2)[7](*piVar2,piVar2[0x1b],0);
       if ((code *)(DAT_122f6d7c) != (code *)(0x0)) {
         (*(code *)(uint)(DAT_122f6d7c))();
       }
@@ -82308,11 +82308,11 @@ LAB_1138ef22:
               uStack_20 = (uint)(uVar14);
               iStack_1c = (int)(iVar7);
               if (uStack_2c <= ((unsigned long long)(iVar7) << 32 | (unsigned long long)(uVar14))) {
-                uVar11 = (uint)((**(code **)(*piStack_18 + 0x18))(piStack_18,&uStack_8), 0);
+                uVar11 = (uint)((*(code ***)piStack_18)[6](piStack_18,&uStack_8), 0);
                 lVar5 = (longlong)(((unsigned long long)(iStack_14) << 32 | (unsigned long long)(uStack_30)));
                 if (uVar11 != 0) break;
                 if ((iStack_14 <= iStack_4) && ((iStack_14 < iStack_4 || (uStack_30 < uStack_8)))) {
-                  uVar11 = (uint)((**(code **)(*piVar4 + 0x10))(piVar4,uStack_30,iStack_14), 0);
+                  uVar11 = (uint)((*(code ***)piVar4)[4](piVar4,uStack_30,iStack_14), 0);
                 }
                 lVar5 = (longlong)(((unsigned long long)(iStack_14) << 32 | (unsigned long long)(uStack_30)));
                 if (uVar11 != 0) break;
@@ -82342,7 +82342,7 @@ LAB_1138ef22:
               iVar9 = (int)(__alldiv(uVar14,iVar7,uStack_c,uStack_8), 0);
               uVar11 = (uint)((**(code **)(iStack_24 + 0xcc))(iStack_24,iVar9 + 1,puVar18,uVar19), 0);
               if (uVar11 == 0) {
-                uVar11 = (uint)((**(code **)(*piStack_18 + 0xc))(piStack_18,param_1[1],uVar10,uVar14,iVar7), 0);
+                uVar11 = (uint)((*(code ***)piStack_18)[3](piStack_18,param_1[1],uVar10,uVar14,iVar7), 0);
               }
               if ((int *)(param_1) != (int *)(0x0)) {
                 if ((*(byte *)(param_1 + 7) & 0x20) == 0) {
@@ -87864,7 +87864,7 @@ uint FUN_1139f7b0(int *param_1,undefined4 param_2)
     if (piVar7[0x54] <= iVar14) break;
     piVar13 = (int *)(*(int **)(*(int *)(iVar15 + iVar14 * 4) + 8), 0);
     if (((int *)(piVar13) != (int *)(0x0)) && (*(code **)(*piVar13 + 0x3c) != (code *)((0x0)))) {
-      uVar12 = (uint)((**(code **)(*piVar13 + 0x3c))(piVar13), 0);
+      uVar12 = (uint)((*(code ***)piVar13)[15](piVar13), 0);
       FUN_11383050(param_2,piVar13);
       iVar15 = (int)((int)param_1);
     }
@@ -87981,7 +87981,7 @@ LAB_1139ffea:
               cVar1 = (char)(*pcVar16);
               pcVar16 = (char *)(pcVar16 + 1);
             } while (cVar1 != '\0');
-            uVar8 = (uint)((**(code **)(*param_1 + 0xc)) (param_1,pcVar11,((int)pcVar16 - (int)(pcVar11 + 1) & 0x3fffffffU) + 1
+            uVar8 = (uint)((*(code ***)param_1)[3] (param_1,pcVar11,((int)pcVar16 - (int)(pcVar11 + 1) & 0x3fffffffU) + 1
                                ,uVar17,local_10), 0);
             pcVar16 = (char *)(pcVar11 + 1);
             do {
@@ -88001,9 +88001,9 @@ LAB_1139ffea:
         } while ((int)((iStack_c)) < piVar7[5]);
       }
       piVar13 = (int *)(param_1);
-      uVar17 = (uint)((**(code **)(*param_1 + 0x30))(param_1), 0);
+      uVar17 = (uint)((*(code ***)param_1)[12](param_1), 0);
       if ((uVar17 & 0x400) == 0) {
-        uVar8 = (uint)((**(code **)(*piVar13 + 0x14))(piVar13,2), 0);
+        uVar8 = (uint)((*(code ***)piVar13)[5](piVar13,2), 0);
         uVar12 = (uint)(0);
         if (uVar8 != 0) {
 LAB_1139fb4c:
@@ -88035,7 +88035,7 @@ LAB_1139fb4c:
         } while (uVar12 == 0);
       }
       if (*piVar13 != (int)((0))) {
-        (**(code **)(*piVar13 + 4))(piVar13);
+        (*(code ***)piVar13)[1](piVar13);
         *piVar13 = (int)(0);
       }
       if (DAT_12121e80 == 0) {
@@ -88110,7 +88110,7 @@ LAB_1139fb4c:
           piVar3 = (int *)((int *)piVar13[(int)param_1]);
           piVar4 = (int *)((int *)piVar3[2]);
           if (((int *)(piVar4) != (int *)(0x0)) && (*(code **)(*piVar4 + 0x40) != (code *)((0x0)))) {
-            (**(code **)(*piVar4 + 0x40))(piVar4);
+            (*(code ***)piVar4)[16](piVar4);
           }
           piVar4 = (int *)(piVar3 + 3);
           *piVar4 = (int)(*piVar4 + -1);
@@ -88160,7 +88160,7 @@ LAB_1139fe2f:
               }
             }
             if ((int *)(piVar6) != (int *)(0x0)) {
-              (**(code **)(*piVar6 + 0x10))(piVar6);
+              (*(code ***)piVar6)[4](piVar6);
             }
             if (iVar10 == 0) {
 LAB_1139fef1:
@@ -88339,7 +88339,7 @@ LAB_113a01a6:
       piVar3 = (int *)((int *)piVar13[(int)param_1]);
       piVar4 = (int *)((int *)piVar3[2]);
       if (((int *)(piVar4) != (int *)(0x0)) && (*(code **)(*piVar4 + 0x40) != (code *)((0x0)))) {
-        (**(code **)(*piVar4 + 0x40))(piVar4);
+        (*(code ***)piVar4)[16](piVar4);
       }
       piVar4 = (int *)(piVar3 + 3);
       *piVar4 = (int)(*piVar4 + -1);
@@ -88389,7 +88389,7 @@ LAB_113a02ef:
           }
         }
         if ((int *)(piStack_4) != (int *)(0x0)) {
-          (**(code **)(*piStack_4 + 0x10))(piStack_4);
+          (*(code ***)piStack_4)[4](piStack_4);
         }
         if (iVar10 == 0) {
 LAB_113a03b1:
@@ -94898,7 +94898,7 @@ int FUN_113ab2d0(int *param_1,undefined8 param_2,uint param_3,uint param_4,ushor
     } while ((int *)(piVar11) != (int *)(0x0));
   }
   piVar11 = (int *)((int *)piVar11[2]);
-  iVar20 = (int)((**(code **)(*piVar11 + 0xc))(piVar11,param_6), 0);
+  iVar20 = (int)((*(code ***)piVar11)[3](piVar11,param_6), 0);
   if ((iVar20 != 0) && (iVar20 != 0x13)) {
     if (iVar20 == 7) {
       iVar14 = (int)(*piVar3);
@@ -124654,7 +124654,7 @@ int FUN_113f5f50(int *param_1)
     iVar5 = (int)(FUN_113f9140(param_1), 0);
     return (int)(iVar5);
   case 2:
-    iVar7 = (int)((**(code **)(*param_1 + 0x28))(*(undefined4 *)(*param_1 + 0x2c),iVar5 + 0x544,0x20), 0);
+    iVar7 = (int)((*(code ***)param_1)[10](*(undefined4 *)(*param_1 + 0x2c),iVar5 + 0x544,0x20), 0);
     if (iVar7 == 0) {
       _Var8 = (__time64_t)(_time64((__time64_t *)0x0), 0);
       *(__time64_t*)(piVar2[0xe] + 8) = (__time64_t)(_Var8);
@@ -126057,7 +126057,7 @@ void FUN_113fa530(int *param_1)
   int iStack_4;
   
   piVar1 = (int *)(param_1);
-  iVar2 = (int)((**(code **)(*param_1 + 0x28))(*(undefined4 *)(*param_1 + 0x2c),param_1[0xf] + 0x544,0x20), 0);
+  iVar2 = (int)((*(code ***)param_1)[10](*(undefined4 *)(*param_1 + 0x2c),param_1[0xf] + 0x544,0x20), 0);
   if (iVar2 == 0) {
     _Var3 = (__time64_t)(_time64((__time64_t *)0x0), 0);
     *(__time64_t*)(piVar1[0xe] + 8) = (__time64_t)(_Var3);
@@ -126372,7 +126372,7 @@ LAB_113fb0b4:
     iVar7 = (int)(0x20);
   }
   if (((iVar7 != iVar8) && (*(int *)(iVar5 + 0x14) = iVar7, iVar7 != 0)) &&
-     (iVar8 = (int)((**(code **)(*param_1 + 0x28))(*(undefined4 *)(*param_1 + 0x2c),iVar5 + 0x18,iVar7), 0), iVar8 != 0)) {
+     (iVar8 = (int)((*(code ***)param_1)[10](*(undefined4 *)(*param_1 + 0x2c),iVar5 + 0x18,iVar7), 0), iVar8 != 0)) {
     return (int)(iVar8);
   }
 LAB_113fb0da:

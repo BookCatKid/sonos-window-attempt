@@ -1468,7 +1468,7 @@ void __fastcall FUN_110b51f0(undefined4 *param_1)
 void __thiscall Recovered_Bulk::m_FUN_110b5240(int *param_2)
 {
   int *param_1 = (int *)this;
-  (**(code **)(*param_2 + 8))();
+  (*(code ***)param_2)[2]();
   thunk_FUN_112a7c70(*param_1 + 0x24);
   return;
 }
@@ -3403,7 +3403,7 @@ void __thiscall Recovered_Bulk::m_FUN_110cad70(undefined4 param_2)
     }
   }
   param_1[5] = (int)(0);
-  (**(code **)(*param_1 + 0xbc))(param_2);
+  (*(code ***)param_1)[47](param_2);
   return;
 }
 
@@ -4551,9 +4551,9 @@ undefined4 __fastcall FUN_110db5c0(int *param_1)
 {
   int iVar1;
   
-  iVar1 = (int)((**(code **)(*param_1 + 0x54))(), 0);
+  iVar1 = (int)((*(code ***)param_1)[21](), 0);
   if (iVar1 == 1) {
-    iVar1 = (int)((**(code **)(*param_1 + 0x5c))(), 0);
+    iVar1 = (int)((*(code ***)param_1)[23](), 0);
     if ((*(byte *)(iVar1 + 4) & 1) != 0) {
       return (undefined4)(1);
     }
@@ -4827,7 +4827,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_110e09c0(undefined4 param_2,short *p
   int *param_1 = (int *)this;
   param_1[0xb] = (int)(0);
   if (*param_3 == (short)((0))) {
-    (**(code **)(*param_1 + 0x24))(param_1[10],param_1 + 8);
+    (*(code ***)param_1)[9](param_1[10],param_1 + 8);
   }
   return (undefined4)(1);
 }
@@ -5291,7 +5291,7 @@ undefined4 __fastcall FUN_110ecc20(int *param_1)
 int __fastcall FUN_110ecd80(int *param_1)
 
 {
-  (**(code **)(*param_1 + 0xe4))();
+  (*(code ***)param_1)[57]();
   return (int)(param_1[0x31]);
 }
 
