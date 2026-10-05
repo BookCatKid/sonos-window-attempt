@@ -410,9 +410,9 @@ extern "C" void LAB_1195da18(void);
 extern "C" void LAB_1195dc1c(void);
 extern "C" void LAB_1195e2a0(void);
 extern "C" void LAB_1195e878(void);
-extern "C" void LAB_12126b84(void);
-extern "C" void LAB_121a0e68(void);
-extern "C" void LAB_122fc888(void);
+extern "C" unsigned char LAB_12126b84;
+extern "C" unsigned char LAB_121a0e68;
+extern "C" unsigned char LAB_122fc888;
 
 extern "C" void LAB_10003c83(void);
 extern "C" void LAB_100051af(void);
@@ -667,9 +667,9 @@ extern "C" void LAB_1195da18(void);
 extern "C" void LAB_1195dc1c(void);
 extern "C" void LAB_1195e2a0(void);
 extern "C" void LAB_1195e878(void);
-extern "C" void LAB_12126b84(void);
-extern "C" void LAB_121a0e68(void);
-extern "C" void LAB_122fc888(void);
+extern "C" unsigned char LAB_12126b84;
+extern "C" unsigned char LAB_121a0e68;
+extern "C" unsigned char LAB_122fc888;
 
 extern "C" void LAB_10003c83(void);
 extern "C" void LAB_100051af(void);
@@ -924,9 +924,9 @@ extern "C" void LAB_1195da18(void);
 extern "C" void LAB_1195dc1c(void);
 extern "C" void LAB_1195e2a0(void);
 extern "C" void LAB_1195e878(void);
-extern "C" void LAB_12126b84(void);
-extern "C" void LAB_121a0e68(void);
-extern "C" void LAB_122fc888(void);
+extern "C" unsigned char LAB_12126b84;
+extern "C" unsigned char LAB_121a0e68;
+extern "C" unsigned char LAB_122fc888;
 
 extern "C" void LAB_10003c83(void);
 extern "C" void LAB_100051af(void);
@@ -1178,9 +1178,9 @@ extern "C" void LAB_1195da18(void);
 extern "C" void LAB_1195dc1c(void);
 extern "C" void LAB_1195e2a0(void);
 extern "C" void LAB_1195e878(void);
-extern "C" void LAB_12126b84(void);
-extern "C" void LAB_121a0e68(void);
-extern "C" void LAB_122fc888(void);
+extern "C" unsigned char LAB_12126b84;
+extern "C" unsigned char LAB_121a0e68;
+extern "C" unsigned char LAB_122fc888;
 
 
 extern "C" void FUN_100074c3(void);
