@@ -865,3 +865,27 @@ Full-corpus comparison on the 451-object artifact:
 
 Still object-body coverage only — linker placement, section layout,
 and whole-DLL byte identity remain unverified and unclaimed.
+
+## First whole-image comparison (placement + real link)
+
+Two complementary milestones:
+
+- **lld-link produced a working link** of all 182 bulk objects plus a
+  generated `stubs.obj` (602K undefined externals defined as COFF
+  IMAGE_SYM_ABSOLUTE symbols at their reference VAs, so DIR32 relocs
+  resolve to correct addresses). 6,189 of 6,222 exports map through a
+  generated .def; `tools/make_link_stubs.py` + `tools/link_bulk.cmd`
+  wire the same path into CI for real link.exe.
+- **`analysis/linked-bulk-current/recovery-layout.dll`** places every
+  verified function body at its reference VA in a reference-layout PE
+  skeleton: **26,574,451 / 37,153,792 file bytes identical (71.5%)**.
+  Per-section: `.rdata` `.data` `.idata` `.tls` `.00cfg` `.rsrc` all
+  100% identical; `.text` 16,628,104/25,583,104 (65.0%); `.reloc`
+  13.5% (generated table partially matches). Every placed byte is
+  comparator-verified, not speculative.
+
+Remaining `.text` gap is coverage (~34% of the section is
+untranscribed/unverified functions and interleaved bytes), not
+encoding: verified bodies are byte-exact. Whole-file identity still
+unachieved; missing pieces are uncovered `.text` bytes, import/CRT
+startup synthesis, and `.reloc` ordering.
