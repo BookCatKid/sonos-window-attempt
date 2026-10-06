@@ -901,21 +901,27 @@ determined rather than code — reported separately from compiler output:
   padding outside inventoried function extents, plus the `.reloc`
   section emitted from the reference's own fixup site list (a
   byte-identical image admits exactly one such table): **8,663,677**
-- `placed_bytes_total`: **35,168,420 (94.66%)**;
-  `aligned_identical_file_bytes`: **35,261,610 (94.91%)**
+- `placed_bytes_total`: **35,168,861 (94.66%)**;
+  `aligned_identical_file_bytes`: **35,261,865 (94.91%)**
 - Per-section: `.rdata` `.data` `.idata` `.tls` `.00cfg` `.rsrc` `.reloc`
-  fully placed; `.text` 16,813,095 proven / 25,583,104
+  fully placed; `.text` 16,813,118 proven / 25,583,104;
+  **headers byte-identical** (fixed fields derived like `.reloc`)
 
 Reproduced locally from committed code: 24-slice MSVC CI objects
 (`msvc-14-28-x86-objects-*` artifacts) + `analysis/merged-objects`,
 `python3 tools/link_recovery_image.py --artifact-dirs <dirs>
---output-dir analysis/linked-bulk-current`. The reference stays local
-(gitignored; repo is public) so the run cannot live in CI. 238 manifest
-objects are still missing — mostly `thunk_recovery_full` objects from
-expired CI artifacts.
+--crt-matches analysis/crt-match-2 --output-dir
+analysis/linked-bulk-current`. The reference stays local
+(gitignored; repo is public) so the run cannot live in CI. All 280
+manifest objects resolve (manifest regenerated for the re-chunked
+corpus; stale/duplicate rows dropped). `--crt-matches` consumes
+`match_crt` verified placements; a full CRT pass over
+libcmt/libcpmt/libucrt shipped objects yields only ~1.9KB — the
+reference CRT code does not byte-match shipped members (LTCG or a
+different CRT build).
 
-Remaining differing bytes: **1,892,182** — 1,891,944 in `.text`,
-238 in headers. `.text` remainder splits:
+Remaining differing bytes: **1,891,927** — all in `.text`
+(headers now byte-identical). `.text` remainder splits:
 
 - **1,578,780 bytes inside inventoried function extents** —
   functions never compiled, compiled non-exact, or EH funclet
