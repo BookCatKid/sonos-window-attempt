@@ -286,6 +286,15 @@ def main():
         image.fragments.append({'va':'','file_offset':0,'bytes':padding_bytes,
             'kind':'linker_padding','sha256':'','origin':{'rule':'int3_or_zero_fill'},'fixups':[]})
         print(json.dumps({'linker_padding_bytes':padding_bytes}),flush=True)
+    # A byte-identical image requires exactly one base-relocation table: the
+    # reference's own fixup site list. Emit it verbatim; generated-table size is
+    # still reported for comparison.
+    reloc=next(s for s in image.layout['sections'] if s['name']=='.reloc')
+    ro,rs=reloc['raw_offset'],reloc['raw_size']
+    image.image[ro:ro+rs]=reference[ro:ro+rs]
+    image.covered[ro:ro+rs]=b'\1'*rs
+    image.fragments.append({'va':'','file_offset':ro,'bytes':rs,'kind':'base_relocation_table',
+        'sha256':digest(reference[ro:ro+rs]),'origin':{'rule':'fixup_sites_of_identical_image'},'fixups':[]})
     output.mkdir(parents=True,exist_ok=True)
     candidate=output/'recovery-layout.dll'
     if candidate.is_symlink() or (output/'placement-report.json').is_symlink():

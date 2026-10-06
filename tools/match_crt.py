@@ -40,10 +40,12 @@ def lib_members(path):
             break
         if name_raw == '//':
             long_names = data[body:body + size]
-        elif name_raw and name_raw != '/' and not name_raw.startswith('/0'):
+        elif name_raw and name_raw != '/':
             if name_raw.startswith('/'):
                 idx = int(name_raw[1:])
-                end = long_names.find(b'\n', idx)
+                end = long_names.find(b'\x00', idx)
+                if end < 0:
+                    end = long_names.find(b'\n', idx)
                 if end < 0:
                     offset = body + size + (size & 1)
                     continue
@@ -55,6 +57,41 @@ def lib_members(path):
             if machine == 0x14C or machine == 0xFFFF:
                 yield name, blob
         offset = body + size + (size & 1)
+
+
+def all_data_definitions(sections, symbols, by_index=None):
+    """Like immutable_data_definitions but also admits writable-section symbols.
+    Verification is still a complete-initializer byte match at the proposed VA."""
+    result = []
+    for symbol in symbols:
+        if symbol['storage'] not in (2, 3) or symbol['type'] & 0x20:
+            continue
+        if not 0 < symbol['section'] <= len(sections):
+            continue
+        section = sections[symbol['section'] - 1]
+        if section['characteristics'] & 0x20000000:
+            continue
+        start = symbol['offset']
+        ends = [s['offset'] for s in symbols if s['section'] == symbol['section'] and s['offset'] > start]
+        stop = min(ends, default=len(section['code']))
+        data = section['code'][start:stop]
+        relocs = []
+        for r in section['relocations']:
+            if start <= r['offset'] < stop:
+                target = (by_index or {}).get(r['symbol_index'])
+                relocs.append({'offset': r['offset'] - start, 'type': r['type'],
+                               'symbol': target['name'] if target else ''})
+        literal = symbol['name'].startswith('??_C@')
+        if not data or (len(data) < 4 and not literal):
+            continue
+        if any(r['type'] != 6 or r['offset'] + 4 > len(data) or not r['symbol'] for r in relocs):
+            continue
+        occupied = [o for r in relocs for o in range(r['offset'], r['offset'] + 4)]
+        if len(occupied) != len(set(occupied)):
+            continue
+        result.append({'symbol': symbol['name'], 'public': symbol['storage'] == 2,
+                       'data': data, 'relocs': relocs})
+    return result
 
 
 def main():
@@ -112,7 +149,7 @@ def main():
                 s, sy, ix = read_coff(path)
             except Exception:
                 continue
-            for item in immutable_data_definitions(s, sy, ix, include_relocations=True):
+            for item in all_data_definitions(s, sy, ix):
                 item['object'] = str(path)
                 local_data[str(path), item['symbol']].append(item)
                 if item['public']:
@@ -167,7 +204,7 @@ def main():
             def readonly(address, length):
                 idx = next((i for i, (rva, size, _) in enumerate(pe_sections)
                             if base + rva <= address and address + length <= base + rva + size), None)
-                return idx is not None and not native_characteristics[idx] & (0x20000000 | 0x80000000)
+                return idx is not None and not native_characteristics[idx] & 0x20000000
 
             for r in b['relocs']:
                 if r['type'] != 6 or r['symbol'] in known:
