@@ -31,6 +31,14 @@ on:
         description: Also link the bulk objects into a recovered DLL image
         type: boolean
         default: false
+      bulk_flags:
+        description: Optional cl flag line for the bulk build (SONOS_BULK_FLAGS)
+        type: string
+        default: ''
+      bulk_suffix:
+        description: Optional suffix appended to bulk object names
+        type: string
+        default: ''
   push:
     branches: [main]
     paths:
@@ -132,6 +140,8 @@ jobs:
           SONOS_FOCUSED_PROBE: ${{ github.event.inputs.focused_probe == 'true' && '1' || '0' }}
           SONOS_PART_MOD: ${{ matrix.mod }}
           SONOS_PART_SLICE: ${{ matrix.slice }}
+          SONOS_BULK_FLAGS: ${{ github.event.inputs.bulk_flags }}
+          SONOS_BULK_SUFFIX: ${{ github.event.inputs.bulk_suffix }}
         shell: cmd
         run: |
           if "%SONOS_FOCUSED_PROBE%"=="1" (call tools\build_focused_probe.cmd) else (call tools\build_probe.cmd)

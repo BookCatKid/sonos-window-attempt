@@ -14,6 +14,12 @@ if ($mod -gt 1) {
 }
 $workers = 6
 $root = (Get-Location).Path
+# SONOS_BULK_FLAGS overrides the default flag line for sweep experiments;
+# SONOS_BULK_SUFFIX renames outputs so variants do not collide.
+$bulkFlags = '/O2 /bigobj /MD /GS /GR /EHa /Zi /FS'
+if ($env:SONOS_BULK_FLAGS) { $bulkFlags = $env:SONOS_BULK_FLAGS }
+$suffix = ''
+if ($env:SONOS_BULK_SUFFIX) { $suffix = $env:SONOS_BULK_SUFFIX }
 $jobs = @()
 0..($workers - 1) | ForEach-Object {
     $my = @()
@@ -24,19 +30,19 @@ $jobs = @()
     # split it back apart inside the job.
     $joined = $my -join "`n"
     $jobs += Start-Job -ScriptBlock {
-        param([string]$fileList, [string]$root)
+        param([string]$fileList, [string]$root, [string]$flags, [string]$sfx)
         Set-Location $root
+        $flagArgs = $flags -split ' '
         foreach ($f in ($fileList -split "`n")) {
             if (-not $f) { continue }
             $f = $f.Trim()
-            $name = [IO.Path]::GetFileNameWithoutExtension($f)
-            & cl /nologo /O2 /bigobj /MD /GS /GR /EHa /Zi /FS /c `
-                "/Foout\$name.obj" $f *> "out\$name.log"
+            $name = [IO.Path]::GetFileNameWithoutExtension($f) + $sfx
+            & cl /nologo /c @flagArgs "/Foout\$name.obj" $f *> "out\$name.log"
             if ($LASTEXITCODE -ne 0) {
                 "$f" | Out-File -Append -Encoding ascii out\bulk-failures.log
             }
         }
-    } -ArgumentList $joined, $root
+    } -ArgumentList $joined, $root, $bulkFlags, $suffix
 }
 $jobs | Wait-Job | Out-Null
 $jobs | Receive-Job
