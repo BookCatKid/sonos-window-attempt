@@ -272,6 +272,7 @@ def main():
     p.add_argument('--include-flag-sweep',action='store_true')
     p.add_argument('--library-artifact-root',type=Path,help='Pinned upstream C object artifact directory')
     p.add_argument('--library-variants',nargs='+',default=['zlib_o2','expat_on_o2'])
+    p.add_argument('--crt-matches',type=Path,help='Directory of match_crt *.matches.json placements')
     p.add_argument('--only',nargs='+')
     p.add_argument('--output-dir',type=Path,required=True)
     args=p.parse_args();output=args.output_dir.resolve()
@@ -336,6 +337,18 @@ def main():
         summaries.append(summary);print(json.dumps(summary),flush=True)
     if args.library_artifact_root:
         summaries.extend(place_libraries(args.library_artifact_root,args.library_variants,image,reference))
+    if args.crt_matches and not args.data_only:
+        placed=0
+        for matches in sorted(args.crt_matches.glob('*.matches.json')):
+            for p_ in json.loads(matches.read_text())['placements']:
+                va=int(p_['entry'],16);patched=bytes.fromhex(p_['patched_hex'])
+                try:
+                    image.place(va,patched,'library_function',
+                        {'object':p_['object'],'lib':p_['lib'],'symbol':p_['symbol'],'entry':p_['entry']})
+                    placed+=1
+                except ValueError:
+                    pass
+        print(json.dumps({'crt_match_placements':placed}),flush=True)
     if not summaries or not image.fragments:raise SystemExit('No proven fragments to place')
     relocation_bytes=image.finish_relocations()
     padding_bytes=0
