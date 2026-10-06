@@ -133,7 +133,6 @@ jobs:
           }
 
       - name: Inventory available CRT sources
-        if: matrix.slice == 0
         shell: pwsh
         run: |
           $roots = @(

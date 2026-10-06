@@ -192,41 +192,67 @@ def needed_operands(reference, image, layout, inventory):
     return sets
 
 
+def _nest(inner, depth, decl='ProbeD4'):
+    """Wrap ``inner`` in ``depth`` nested scopes holding one local each so the
+    statement's temporaries land at stepped frame offsets."""
+    body = inner
+    for i in range(depth):
+        body = f'{{ {decl} n{i}; {body} }}'
+    return body
+
+
 def emit_targeted(out, sets):
-    # Member offset N: struct with member at exactly N; cleanup walks the
-    # stored pointer + N in EH funclets from new-expression probes.
+    # Member offset N: struct with member at exactly N; new-expression cleanup
+    # walks the stored pointer + N. The pointer slot's [ebp-disp] depends on
+    # frame layout, so nest the expression at several chain depths to sweep
+    # the disp8 neighbourhood of every reference slot operand.
     for n in sorted(sets['add_off']):
         if n <= 0 or n > 0x8000:
             continue
         pad = f'char pad[{n - 1}]; ' if n > 1 else ''
         out.append(
-            f'struct ProbeOff{n:05x} {{ {pad}ProbeSub m; }};\n'
-            f'void probe_off_{n:05x}() {{ ProbeOff{n:05x} *p = '
-            f'new ProbeOff{n:05x}; probe_throw(); }}'
+            f'struct ProbeOff{n:05x} {{ {pad}ProbeSub m; }};'
         )
-    # Deep locals: a single destructable object of size ~V lands at
-    # [ebp-V] so its funclet is lea ecx,[ebp-V]; jmp ~Deep.
+        for d in range(0, 9):
+            out.append(
+                f'void probe_off_{n:05x}_{d}() {{ '
+                + _nest(f'ProbeOff{n:05x} *p = new ProbeOff{n:05x}; '
+                        'probe_throw();', d)
+                + ' }'
+            )
+    # Deep locals: reference disps sit a few bytes off the object's size
+    # because the parent's frame carries extra EH temps. Emit a small size
+    # neighbourhood around each needed magnitude so one variant lands on the
+    # exact disp.
     for v in sorted(sets['deep_lea']):
         size = -v
         if size < 8 or size > 0x40000:
             continue
-        out.append(
-            f'struct ProbeDeep{size:05x} {{ char c[{size - 4}]; ProbeD4 m; '
-            f'~ProbeDeep{size:05x}(); }};\n'
-            f'void probe_deep_{size:05x}() {{ ProbeDeep{size:05x} x; '
-            f'probe_throw(); }}'
-        )
-    # Sized deletes: new char[sz] in a throwing scope emits
-    # push sz; mov eax,[ebp-p]; push eax; call delete(p,sz)...
+        for delta in (-12, -8, -4, 0, 4, 8, 12):
+            s = size + delta
+            if s < 8:
+                continue
+            out.append(
+                f'struct ProbeDeep{v & 0xffffffff:08x}_{delta & 0x1f:02x} {{ '
+                f'char c[{s - 4}]; ProbeD4 m; '
+                f'~ProbeDeep{v & 0xffffffff:08x}_{delta & 0x1f:02x}(); }};\n'
+                f'void probe_deep_{v & 0xffffffff:08x}_{delta & 0x1f:02x}() {{ '
+                f'ProbeDeep{v & 0xffffffff:08x}_{delta & 0x1f:02x} x; '
+                f'probe_throw(); }}'
+            )
+    # Sized deletes: new char[sz] cleanup is
+    #   push sz; mov eax,[ebp-p]; push eax; call delete(p,sz)...
+    # Nest each size so the pointer slot sweeps the needed disp range.
     for sz in sorted(sets['del_sz']):
         if sz < 4 or sz > 0x8000:
             continue
-        out.append(
-            f'void probe_dsz_{sz:05x}() {{ char *p = new char[{sz}]; '
-            f'probe_throw(); }}'
-        )
-        # array-of-objects form covers the vector-delete shape too
-        if sz >= 8 and sz <= 0x400:
+        for d in range(0, 9):
+            out.append(
+                f'void probe_dsz_{sz:05x}_{d}() {{ '
+                + _nest(f'char *p = new char[{sz}]; probe_throw();', d)
+                + ' }'
+            )
+        if 8 <= sz <= 0x400:
             out.append(
                 f'struct ProbeA{sz:05x} {{ char c[{sz}]; '
                 f'~ProbeA{sz:05x}(); }};\n'
