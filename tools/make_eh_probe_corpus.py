@@ -134,6 +134,118 @@ def emit_array_sweep(out, count):
         )
 
 
+def needed_operands(reference, image, layout, inventory):
+    """Extract the exact operand sets the reference still needs.
+
+    Every uncovered funclet shape decodes to (family, immediate); emitting a
+    probe for each distinct immediate is far tighter than blind sweeps.
+    """
+    import re as _re
+    base = layout['image_base']
+    text = next(s for s in layout['sections'] if s['name'] == '.text')
+    o, rs, rva0 = text['raw_offset'], text['raw_size'], text['rva']
+    sets = {
+        'add_off': set(),   # member offset N in add ecx,N
+        'deep_lea': set(),  # disp32 magnitude for lea ecx,[ebp-V]
+        'del_sz': set(),    # sized-delete imm
+        'flag_mask': set(), # and eax,imm flag masks
+    }
+    for row in csv.DictReader(open(inventory), delimiter='\t'):
+        va = int(row['entry'], 16)
+        size = int(row['body_bytes'])
+        if not size or size > 64:
+            continue
+        rva = va - base
+        if not (rva0 <= rva < rva0 + rs):
+            continue
+        off = o + rva - rva0
+        exp = reference[off:off + size]
+        if image[off:off + size] == exp:
+            continue
+        m = _re.match(rb'\x8b\x4d.\x83\xc1(.)', exp)
+        if m:
+            sets['add_off'].add(m.group(1)[0])
+            continue
+        m = _re.match(rb'\x8b\x4d.\x81\xc1(....)', exp)
+        if m:
+            sets['add_off'].add(int.from_bytes(m.group(1), 'little'))
+            continue
+        m = _re.match(rb'\x8d\x8d(....)\xe9', exp)
+        if m:
+            v = int.from_bytes(m.group(1), 'little')
+            sets['deep_lea'].add(v - 0x100000000 if v >= 0x80000000 else v)
+            continue
+        m = _re.match(rb'\x68(....)\x8b.', exp)
+        if m:
+            v = int.from_bytes(m.group(1), 'little')
+            if v < 0x10000:
+                sets['del_sz'].add(v)
+            continue
+        m = _re.match(rb'\x8b\x45.\x83\xe0(.)', exp)
+        if m:
+            sets['flag_mask'].add(m.group(1)[0])
+            continue
+        m = _re.match(rb'\x8b\x45.\x25(....)', exp)
+        if m:
+            sets['flag_mask'].add(int.from_bytes(m.group(1), 'little'))
+            continue
+    return sets
+
+
+def emit_targeted(out, sets):
+    # Member offset N: struct with member at exactly N; cleanup walks the
+    # stored pointer + N in EH funclets from new-expression probes.
+    for n in sorted(sets['add_off']):
+        if n <= 0 or n > 0x8000:
+            continue
+        pad = f'char pad[{n - 1}]; ' if n > 1 else ''
+        out.append(
+            f'struct ProbeOff{n:05x} {{ {pad}ProbeSub m; }};\n'
+            f'void probe_off_{n:05x}() {{ ProbeOff{n:05x} *p = '
+            f'new ProbeOff{n:05x}; probe_throw(); }}'
+        )
+    # Deep locals: a single destructable object of size ~V lands at
+    # [ebp-V] so its funclet is lea ecx,[ebp-V]; jmp ~Deep.
+    for v in sorted(sets['deep_lea']):
+        size = -v
+        if size < 8 or size > 0x40000:
+            continue
+        out.append(
+            f'struct ProbeDeep{size:05x} {{ char c[{size - 4}]; ProbeD4 m; '
+            f'~ProbeDeep{size:05x}(); }};\n'
+            f'void probe_deep_{size:05x}() {{ ProbeDeep{size:05x} x; '
+            f'probe_throw(); }}'
+        )
+    # Sized deletes: new char[sz] in a throwing scope emits
+    # push sz; mov eax,[ebp-p]; push eax; call delete(p,sz)...
+    for sz in sorted(sets['del_sz']):
+        if sz < 4 or sz > 0x8000:
+            continue
+        out.append(
+            f'void probe_dsz_{sz:05x}() {{ char *p = new char[{sz}]; '
+            f'probe_throw(); }}'
+        )
+        # array-of-objects form covers the vector-delete shape too
+        if sz >= 8 and sz <= 0x400:
+            out.append(
+                f'struct ProbeA{sz:05x} {{ char c[{sz}]; '
+                f'~ProbeA{sz:05x}(); }};\n'
+                f'void probe_dva_{sz:05x}() {{ ProbeA{sz:05x} *p = '
+                f'new ProbeA{sz:05x}[2]; probe_throw(); }}'
+            )
+    # Flag masks: function-try ctor with enough members to reach bit N.
+    for mask in sorted(sets['flag_mask']):
+        if mask <= 0 or (mask & (mask - 1)):
+            continue  # only power-of-2 bits are member-init flags
+        bit = mask.bit_length() - 1
+        decls = ' '.join(f'ProbeSub m{i};' for i in range(bit + 1))
+        out.append(
+            f'struct ProbeFM{mask:08x} {{ {decls} ProbeFM{mask:08x}(); }};\n'
+            f'ProbeFM{mask:08x}::ProbeFM{mask:08x}() try {{ probe_throw(); }}'
+            f' catch (...) {{ throw; }}'
+        )
+
+
 def trivial_entries(reference, image, layout, inventory):
     """Uncovered inventory entries that are trivially reproducible bodies.
 
@@ -254,6 +366,8 @@ def main():
         reference = args.reference.read_bytes()
         image = args.image.read_bytes()
         layout = json.loads(args.report.read_text())['layout']
+        emit_targeted(out, needed_operands(reference, image, layout,
+                                           args.inventory))
         sizes = {}
         for row in csv.DictReader(open(args.inventory), delimiter='\t'):
             va = int(row['entry'], 16)
