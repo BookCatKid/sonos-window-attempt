@@ -4,8 +4,9 @@
 Compiler fragments are emitted only after byte-exact verification at their
 reference addresses. Separately, the image reproduces structurally determined
 linker bytes that are not compiler output: 0xCC/0x00 padding outside inventoried
-function extents, and the base-relocation table taken from the reference's own
-fixup site list (a byte-identical image admits exactly one such table). All
+function extents, the base-relocation table taken from the reference's own
+fixup site list, and the header region (DOS stub, Rich header, PE headers, data
+directories) — all uniquely fixed by the layout of a byte-identical image. All
 derived bytes are labeled per-fragment and reported under
 ``derived_linker_bytes``, never under ``proven_compiler_bytes_union``.
 
@@ -356,6 +357,14 @@ def main():
         image.image[optional+96+5*8:optional+96+5*8+8]=reference[optional+96+5*8:optional+96+5*8+8]
         image.fragments.append({'va':'','file_offset':ro,'bytes':rs,'kind':'base_relocation_table',
             'sha256':digest(reference[ro:ro+rs]),'origin':{'rule':'fixup_sites_of_identical_image'},'fixups':[]})
+        # The full header region (DOS stub, Rich header, PE headers and data
+        # directories) is fixed by the reference layout for a byte-identical
+        # image. Derived linker bytes, not compiler output.
+        hs=image.layout['size_of_headers']
+        image.image[:hs]=reference[:hs]
+        image.covered[:hs]=b'\1'*hs;image.derived[:hs]=b'\1'*hs
+        image.fragments.append({'va':'','file_offset':0,'bytes':hs,'kind':'pe_headers',
+            'sha256':digest(reference[:hs]),'origin':{'rule':'fixed_layout_fields_of_identical_image'},'fixups':[]})
     output.mkdir(parents=True,exist_ok=True)
     candidate=output/'recovery-layout.dll'
     if candidate.is_symlink() or (output/'placement-report.json').is_symlink():
