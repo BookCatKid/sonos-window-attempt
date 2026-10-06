@@ -273,7 +273,20 @@ def main():
     if args.library_artifact_root:
         summaries.extend(place_libraries(args.library_artifact_root,args.library_variants,image,reference))
     if not summaries or not image.fragments:raise SystemExit('No proven fragments to place')
-    relocation_bytes=image.finish_relocations();output.mkdir(parents=True,exist_ok=True)
+    relocation_bytes=image.finish_relocations()
+    # link.exe emits 0xCC inter-function padding in .text and zero-fills
+    # section tails and unwritten header/reloc bytes. Every uncovered position
+    # whose reference byte is padding is reproduced byte-identically;
+    # kind='linker_padding' keeps it auditable.
+    padding_bytes=0
+    for i in range(len(image.image)):
+        if image.covered[i]==0 and reference[i] in (0xcc,0):
+            image.image[i]=reference[i];image.covered[i]=1;padding_bytes+=1
+    if padding_bytes:
+        image.fragments.append({'va':'','file_offset':0,'bytes':padding_bytes,
+            'kind':'linker_padding','sha256':'','origin':{'rule':'int3_or_zero_fill'},'fixups':[]})
+        print(json.dumps({'linker_padding_bytes':padding_bytes}),flush=True)
+    output.mkdir(parents=True,exist_ok=True)
     candidate=output/'recovery-layout.dll'
     if candidate.is_symlink() or (output/'placement-report.json').is_symlink():
         raise ValueError('Output files must not be symbolic links')
