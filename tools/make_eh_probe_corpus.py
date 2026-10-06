@@ -47,13 +47,21 @@ def emit_mov_chains(out, count):
 
 
 def emit_delete_chains(out, count):
-    # Nested new-expression pointer locals -> sized-delete cleanup funclets
-    #   push sz; mov eax,[ebp-p_i]; push eax; call delete; add esp,8; ret
+    # Sized-delete cleanup of a new-expression pointer ->
+    #   push sz; mov eax,[ebp-p]; push eax; call delete; add esp,8; ret
+    # Sizes sweep both the imm8 (push sz) and imm32 (push imm32) forms and
+    # the pointer slot walks with the pad index.
     for k in range(count):
         pad = f'int pad[{k}]; ' if k else ''
         out.append(
             f"void probe_del_{k:04d}() {{ {pad}"
             f"ProbeD4 *p = new ProbeD4; probe_throw(); }}"
+        )
+    for sz in range(4, 260, 4):
+        out.append(
+            f"struct ProbeDel{sz:03d} {{ char c[{sz}]; ~ProbeDel{sz:03d}(); }};\n"
+            f"void probe_del_sz{sz:03d}() {{ ProbeDel{sz:03d} *p = "
+            f"new ProbeDel{sz:03d}; probe_throw(); }}"
         )
 
 
@@ -80,6 +88,16 @@ def emit_flag_members(out, members):
             f"struct ProbeFlag{n:02d} {{ {decls} ProbeFlag{n:02d}(); }};\n"
             f"ProbeFlag{n:02d}::ProbeFlag{n:02d}() try {{ probe_throw(); }}"
             f" catch (...) {{ throw; }}"
+        )
+
+
+def emit_array_members(out, count):
+    # Array members inside ctor/dtor probes ->
+    #   lea eax,[ecx+N]; push eax; call vector-dtor            (13+ bytes)
+    for k in range(1, count + 1):
+        out.append(
+            f"struct ProbeArrH{k:04d} {{ ProbeSub m[{k}]; ProbeArrH{k:04d}(); }};\n"
+            f"ProbeArrH{k:04d}::ProbeArrH{k:04d}() {{ probe_throw(); }}"
         )
 
 
@@ -147,6 +165,7 @@ def main():
     emit_member_sweep(out, args.sweep)
     emit_flag_members(out, 8)
     emit_member_new_probes(out, args.sweep)
+    emit_array_members(out, min(args.sweep, 40))
     emit_delete_chains(out, args.sweep)
     emit_array_sweep(out, args.sweep)
 

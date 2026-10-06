@@ -38,30 +38,27 @@ def funclet_candidates(sections, symbols):
             continue
         starts = syms_by_section.get(i, [0])
         code = sec['code']
-        for st in starts:
-            sec_relocs = sorted(
-                (r for r in sec['relocations'] if r['offset'] >= st),
-                key=lambda r: r['offset'])
-            # Find the first padding run that does not overlap a relocation
-            # operand (reloc addend bytes are emitted as zeros).
-            pos = st
-            while True:
-                m = TAIL_MARKERS.search(code, pos)
-                if not m:
-                    end = len(code)
-                    break
-                covered = any(r['offset'] <= m.start() < r['offset'] + 4
-                              or m.start() <= r['offset'] < m.end()
-                              for r in sec_relocs)
-                if covered:
-                    pos = m.end()
-                    continue
-                end = m.start()
-                break
-            body = code[st:end]
+        # Each funclet symbol is an independent entry point whose body ends
+        # at the next symbol's offset or the section's padding tail.
+        bounds = sorted(starts) or [0]
+        code_end = len(code)
+        m = TAIL_MARKERS.search(code)
+        while m is not None:
+            covered = any(r['offset'] <= m.start() < r['offset'] + 4
+                          or m.start() <= r['offset'] < m.end()
+                          for r in sec['relocations'])
+            if covered:
+                nxt = TAIL_MARKERS.search(code, m.end())
+                m = nxt
+                continue
+            code_end = m.start()
+            break
+        all_bounds = bounds + [code_end]
+        for st, next_st in zip(all_bounds, all_bounds[1:]):
+            body = code[st:next_st]
             relocs = [{'offset': r['offset'] - st, 'type': r['type'],
                        'symbol_index': r['symbol_index']}
-                      for r in sec_relocs if r['offset'] < end]
+                      for r in sec['relocations'] if st <= r['offset'] < next_st]
             if len(body) >= 3:
                 yield body, relocs
 
@@ -85,13 +82,13 @@ def main():
     text = next(s for s in layout['sections'] if s['name'] == '.text')
     o, rs, rva0 = text['raw_offset'], text['raw_size'], text['rva']
 
-    # Index uncovered reference funclets by (size, first-3-bytes) so each
-    # candidate only compares against a small bucket.
-    need = defaultdict(list)  # (size, prefix) -> [(va, exp)]
+    # Uncovered reference funclets grouped by size; a lazily-built signature
+    # index per (size, reloc-mask) turns each candidate lookup into a dict hit.
+    need = defaultdict(list)  # size -> [(va, exp)]
     for row in csv.DictReader(open(args.inventory), delimiter='\t'):
         va = int(row['entry'], 16)
         size = int(row['body_bytes'])
-        if not (3 <= size <= 64):
+        if not (3 <= size <= 512):
             continue
         rva = va - base
         if not (rva0 <= rva < rva0 + rs):
@@ -100,7 +97,22 @@ def main():
         exp = reference[off:off + size]
         if image[off:off + size] == exp:
             continue
-        need[(size, exp[:3])].append((va, exp))
+        need[size].append((va, exp))
+
+    def sig(body, maskpos):
+        return bytes(b for i, b in enumerate(body) if i not in maskpos)
+
+    ref_index = {}  # (size, maskkey) -> {sig: [va]}
+
+    def lookup(size, body, maskpos):
+        key = (size, maskpos)
+        table = ref_index.get(key)
+        if table is None:
+            table = defaultdict(list)
+            for va, exp in need.get(size, ()):
+                table[sig(exp, maskpos)].append(va)
+            ref_index[key] = table
+        return table.get(sig(body, maskpos), ())
 
     placements = []
     seen_va = set()
@@ -112,27 +124,23 @@ def main():
             except Exception:
                 continue
             for body, relocs in funclet_candidates(sections, symbols):
-                mask = bytearray(len(body))
-                for r in relocs:
-                    for k in range(r['offset'], min(r['offset'] + 4, len(body))):
-                        mask[k] = 1
-                size = len(body)
-                fixed = bytes(b for i, b in enumerate(body) if not mask[i])
-                fpos = [i for i in range(size) if not mask[i]]
-                for va, exp in need.get((size, body[:3]), ()):
+                maskpos = frozenset(
+                    k for r in relocs
+                    for k in range(r['offset'], min(r['offset'] + 4, len(body))))
+                for va in lookup(len(body), body, maskpos):
                     if va in seen_va:
                         continue
-                    if all(exp[i] == body[i] for i in fpos):
-                        placements.append({
-                            'entry': f'{va:08x}',
-                            'patched_hex': exp.hex(),
-                            'object': str(p),
-                            'lib': 'eh-funclets',
-                            'symbol': f'funclet@{va:08x}',
-                        })
-                        seen_va.add(va)
-                        matched += 1
-                        break
+                    size = len(body)
+                    placements.append({
+                        'entry': f'{va:08x}',
+                        'patched_hex': reference[
+                            va - base - rva0 + o:va - base - rva0 + o + size].hex(),
+                        'object': str(p),
+                        'lib': 'eh-funclets',
+                        'symbol': f'funclet@{va:08x}',
+                    })
+                    seen_va.add(va)
+                    matched += 1
     args.out.write_text(json.dumps({'placements': placements}))
     print(json.dumps({'matched_funclets': matched,
                       'matched_bytes': sum(len(bytes.fromhex(p['patched_hex'])) for p in placements)}))
