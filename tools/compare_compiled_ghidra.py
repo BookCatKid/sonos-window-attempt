@@ -413,7 +413,7 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
         # the value is computable pre-link and equality proves the same
         # internal structure.
         if (reloc['type'] == 0x14 and reloc.get('target_section') ==
-                reloc.get('func_section') and reloc['target_section']):
+                reloc.get('func_section') and reloc.get('target_section')):
             value = (reloc['target_offset'] - reloc['func_start']) - (offset + 4)
             if value & 0xffffffff == expected_field:
                 struct.pack_into('<I', patched, offset, value & 0xffffffff)
@@ -426,7 +426,7 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
         # reference value is the function VA plus the intra-function offset of
         # our label, so equality proves the same internal layout.
         if (reloc['type'] == 0x6 and reloc.get('target_section') ==
-                reloc.get('func_section') and reloc['target_section']):
+                reloc.get('func_section') and reloc.get('target_section')):
             value = entry_va + (reloc['target_offset'] - reloc['func_start'])
             if value & 0xffffffff == expected_field:
                 struct.pack_into('<I', patched, offset, expected_field)

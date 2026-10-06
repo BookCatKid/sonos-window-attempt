@@ -20,8 +20,60 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from compare_compiled_ghidra import read_coff
+
+
+def u16(data, offset):
+    return struct.unpack_from('<H', data, offset)[0]
+
+
+def u32(data, offset):
+    return struct.unpack_from('<I', data, offset)[0]
+
+
+def read_coff(path):
+    data = path.read_bytes()
+    bigobj = len(data) >= 56 and u16(data, 0) == 0 and u16(data, 2) == 0xffff
+    if bigobj:
+        if u16(data, 6) != 0x14c:
+            raise ValueError(f'{path}: expected x86 COFF BigObj')
+        section_count = u32(data, 44)
+        symbol_start = u32(data, 48)
+        symbol_count = u32(data, 52)
+        section_start = 56
+        symbol_size = 20
+        section_number_offset = 12
+        storage_offset = 18
+        aux_offset = 19
+    elif u16(data, 0) == 0x14c:
+        section_count = u16(data, 2)
+        symbol_start = u32(data, 8)
+        symbol_count = u32(data, 12)
+        section_start = 20 + u16(data, 16)
+        symbol_size = 18
+        section_number_offset = 12
+        storage_offset = 16
+        aux_offset = 17
+    else:
+        raise ValueError(f'{path}: expected x86 COFF')
+    strings = symbol_start + symbol_count * symbol_size
+    symbols_by_index = {}
+    index = 0
+    while index < symbol_count:
+        head = symbol_start + index * symbol_size
+        raw_name = data[head:head + 8]
+        if raw_name[:4] == b'\0\0\0\0':
+            string_pos = strings + u32(raw_name, 4)
+            end = data.index(b'\0', string_pos)
+            name = data[string_pos:end].decode('utf-8', errors='replace')
+        else:
+            name = raw_name.split(b'\0')[0].decode('utf-8', errors='replace')
+        section = (struct.unpack_from('<i', data, head + section_number_offset)[0]
+                   if bigobj else
+                   struct.unpack_from('<h', data, head + section_number_offset)[0])
+        symbols_by_index[index] = {'name': name, 'section': section,
+                                   'storage': data[head + storage_offset]}
+        index += 1 + data[head + aux_offset]
+    return symbols_by_index
 
 VA_RE = re.compile(
     r'(?:^|[^0-9a-zA-Z])(?:LAB|DAT|FUN|FuncInfo|thunk_FUN|ghidra_\w+|'
@@ -44,7 +96,7 @@ def scan_objects(objects_dir, pattern='*.obj'):
         if path.name == 'stubs.obj':
             continue
         try:
-            sections, symbols, by_index = read_coff(path)
+            by_index = read_coff(path)
         except Exception:
             continue
         for sym in by_index.values():
@@ -53,8 +105,7 @@ def scan_objects(objects_dir, pattern='*.obj'):
             if sym['section'] == 0:
                 undefined[sym['name']] = name_va(sym['name'])
             elif sym['section'] > 0:
-                defined[sym['name']] = (path.name, sym['section'],
-                                        sym['offset'])
+                defined[sym['name']] = path.name
     return undefined, defined
 
 
