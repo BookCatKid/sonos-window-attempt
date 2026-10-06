@@ -144,6 +144,24 @@ jobs:
           call C:\VS2019BuildTools\VC\Auxiliary\Build\vcvarsall.bat amd64_x86 -vcvars_ver=14.28 >> out\setup.log 2>&1
           call tools\link_bulk.cmd
 
+      - name: Package CRT static libraries
+        if: github.event.inputs.link_dll == 'true' && matrix.slice == 0
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force out\crtlibs | Out-Null
+          $dirs = @('C:\VS2019BuildTools\VC\Tools\MSVC\14.28.29910\lib\x86')
+          $kitRoot = "${env:ProgramFiles(x86)}\Windows Kits\10\Lib"
+          if (Test-Path $kitRoot) {
+            $dirs += Get-ChildItem $kitRoot -Directory | ForEach-Object { Join-Path $_.FullName 'ucrt\x86' } | Where-Object { Test-Path $_ }
+          }
+          foreach ($dir in $dirs) {
+            foreach ($lib in Get-ChildItem $dir -Filter *.lib) {
+              Copy-Item $lib.FullName -Destination (Join-Path 'out\crtlibs' ($lib.BaseName + '-' + [math]::Abs(($dir).GetHashCode()) + '.lib'))
+            }
+            Write-Output "copied $dir"
+          }
+          Get-ChildItem out\crtlibs | ForEach-Object { Write-Output $_.Name }
+
       - name: Compile genuine linker and library experiments
         if: github.event.inputs.build_experiments == 'true'
         shell: cmd
@@ -190,4 +208,5 @@ jobs:
             out/layout/**
             out/libraries/**
             out/matching/**
+            out/crtlibs/**
           if-no-files-found: warn
