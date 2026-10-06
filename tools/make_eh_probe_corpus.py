@@ -40,10 +40,13 @@ def emit_mov_sweep(out, count):
 
 
 def emit_member_sweep(out, count):
-    # Member cleanup in a ctor: action on this -> positive/negative disp forms.
+    # Member cleanup in a ctor unwinds via this=[ebp+8]:
+    #   member at offset 0 -> mov ecx,[ebp+8]; jmp ~Sub        (8 bytes)
+    #   member at offset N -> mov ecx,[ebp+8]; add ecx,N; jmp  (11 bytes)
     for k in range(count):
+        pad = f'int pad[{k}]; ' if k else ''
         out.append(
-            f"struct ProbeHost{k:04d} {{ ProbeSub m; int pad[{k + 1}]; "
+            f"struct ProbeHost{k:04d} {{ {pad}ProbeSub m; "
             f"ProbeHost{k:04d}(); }};\n"
             f"ProbeHost{k:04d}::ProbeHost{k:04d}() {{ probe_throw(); }}"
         )
