@@ -61,7 +61,10 @@ def lib_members(path):
 
 def all_data_definitions(sections, symbols, by_index=None):
     """Like immutable_data_definitions but also admits writable-section symbols.
-    Verification is still a complete-initializer byte match at the proposed VA."""
+    Verification is still a complete-initializer byte match at the proposed VA.
+    Unlike the immutable variant this admits all-zero definitions: a writable
+    global's zero initializer still proves placement when the reference bytes
+    at the proposed VA match the complete extent."""
     result = []
     for symbol in symbols:
         if symbol['storage'] not in (2, 3) or symbol['type'] & 0x20:
@@ -201,7 +204,7 @@ def main():
                     known[nm] = vas
             expected = function_bytes(reference, b['entry'], len(b['code']), base, pe_sections)
 
-            def readonly(address, length):
+            def data_section(address, length):
                 idx = next((i for i, (rva, size, _) in enumerate(pe_sections)
                             if base + rva <= address and address + length <= base + rva + size), None)
                 return idx is not None and not native_characteristics[idx] & 0x20000000
@@ -215,7 +218,7 @@ def main():
                     b['object'], r['symbol'], address, local_data, global_data,
                     gn, ln,
                     lambda va, size: function_bytes(reference, va, size, base, pe_sections),
-                    readonly)
+                    data_section)
                 if verified:
                     known[r['symbol']] = [address]
             patched, _, unresolved = resolve_known_relocations(

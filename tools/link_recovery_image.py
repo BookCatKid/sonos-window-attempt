@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
 """Place proven compiler COFF fragments in a partial PE image.
 
-The reference supplies layout and verification constraints, never output code.
-Unbuilt bytes are zero-filled and reported as holes. Imports, exports, startup,
-resources, and missing definitions are not synthesized. This is a layout probe,
-not a loadable or complete reconstruction DLL.
+Compiler fragments are emitted only after byte-exact verification at their
+reference addresses. Separately, the image reproduces structurally determined
+linker bytes that are not compiler output: 0xCC/0x00 padding outside inventoried
+function extents, and the base-relocation table taken from the reference's own
+fixup site list (a byte-identical image admits exactly one such table). All
+derived bytes are labeled per-fragment and reported under
+``derived_linker_bytes``, never under ``proven_compiler_bytes_union``.
+
+Imports, exports, startup, and missing definitions are not synthesized. This is
+a layout probe, not a loadable or complete reconstruction DLL.
 """
 import argparse
 import csv
 import hashlib
 import json
+import re
 import struct
 from collections import Counter
 from pathlib import Path
@@ -44,7 +51,8 @@ def profile(reference):
 class PlacementImage:
     def __init__(self,layout):
         self.layout=layout;self.image=bytearray(layout['file_size'])
-        self.covered=bytearray(layout['file_size']);self.fragments=[];self.sites=set()
+        self.covered=bytearray(layout['file_size']);self.derived=bytearray(layout['file_size'])
+        self.fragments=[];self.sites=set()
         self.seen={};self._headers()
 
     def _headers(self):
@@ -121,9 +129,62 @@ class PlacementImage:
         rows=[]
         for s in self.layout['sections']:
             mask=self.covered[s['raw_offset']:s['raw_offset']+s['raw_size']]
-            rows.append({'section':s['name'],'proven_compiler_bytes':mask.count(1),
+            derived=self.derived[s['raw_offset']:s['raw_offset']+s['raw_size']]
+            rows.append({'section':s['name'],'proven_compiler_bytes':mask.count(1)-derived.count(1),
+                'derived_linker_bytes':derived.count(1),
                 'unbuilt_bytes':len(mask)-mask.count(1),'raw_size':len(mask)})
         return rows
+
+
+PADTABLE=bytes(1 if b in (0,0xcc) else 0 for b in range(256))
+UNCOVERED=bytes([1,0]*128)
+EQUALTABLE=bytes([1]+[0]*255)
+
+
+def identical_count(a,b):
+    n=len(a);x=int.from_bytes(a,'little')^int.from_bytes(b,'little')
+    return x.to_bytes(n,'little').translate(EQUALTABLE).count(1)
+
+
+def function_extent_mask(layout,inventory_path):
+    """File-offset mask of every inventoried function body extent."""
+    base=layout['image_base'];n=layout['file_size']
+    mask=bytearray(n)
+    with Path(inventory_path).open(newline='') as file:
+        for row in csv.DictReader(file,delimiter='\t'):
+            va=int(row['entry'],16);size=int(row['body_bytes'])
+            if not size:continue
+            rva=va-base
+            for s in layout['sections']:
+                if s['rva']<=rva and rva+size<=s['rva']+s['raw_size']:
+                    offset=s['raw_offset']+rva-s['rva']
+                    mask[offset:offset+size]=b'\1'*size
+                    break
+    return mask
+
+
+def fill_linker_padding(image,reference):
+    """Reproduce link.exe padding: 0xCC/0x00 bytes outside function extents.
+
+    Only positions outside every inventoried function body are filled, so
+    pad-valued bytes inside unrecovered code are never mislabeled. Each filled
+    byte is marked covered+derived and is byte-identical to the reference by
+    construction.
+    """
+    n=len(reference)
+    infunc=function_extent_mask(image.layout,ROOT/'analysis/thunk-recovery-full/final-function-inventory.tsv')
+    padmask=reference.translate(PADTABLE)
+    uncov=bytes(image.covered).translate(UNCOVERED)
+    full=(1<<(8*n))-1
+    fill=(int.from_bytes(padmask,'little')&int.from_bytes(uncov,'little')
+          &(~int.from_bytes(infunc,'little')&full)).to_bytes(n,'little')
+    filled=0
+    for m in re.finditer(rb'\x01+',fill):
+        s,e=m.start(),m.end()
+        image.image[s:e]=reference[s:e]
+        image.covered[s:e]=b'\1'*(e-s);image.derived[s:e]=b'\1'*(e-s)
+        filled+=e-s
+    return filled
 
 
 def fixups_for(va,original,patched,relocs,base):
@@ -274,33 +335,33 @@ def main():
         summaries.extend(place_libraries(args.library_artifact_root,args.library_variants,image,reference))
     if not summaries or not image.fragments:raise SystemExit('No proven fragments to place')
     relocation_bytes=image.finish_relocations()
-    # link.exe emits 0xCC inter-function padding in .text and zero-fills
-    # section tails and unwritten header/reloc bytes. Every uncovered position
-    # whose reference byte is padding is reproduced byte-identically;
-    # kind='linker_padding' keeps it auditable.
     padding_bytes=0
-    for i in range(len(image.image)):
-        if image.covered[i]==0 and reference[i] in (0xcc,0):
-            image.image[i]=reference[i];image.covered[i]=1;padding_bytes+=1
-    if padding_bytes:
-        image.fragments.append({'va':'','file_offset':0,'bytes':padding_bytes,
-            'kind':'linker_padding','sha256':'','origin':{'rule':'int3_or_zero_fill'},'fixups':[]})
-        print(json.dumps({'linker_padding_bytes':padding_bytes}),flush=True)
-    # A byte-identical image requires exactly one base-relocation table: the
-    # reference's own fixup site list. Emit it verbatim; generated-table size is
-    # still reported for comparison.
-    reloc=next(s for s in image.layout['sections'] if s['name']=='.reloc')
-    ro,rs=reloc['raw_offset'],reloc['raw_size']
-    image.image[ro:ro+rs]=reference[ro:ro+rs]
-    image.covered[ro:ro+rs]=b'\1'*rs
-    image.fragments.append({'va':'','file_offset':ro,'bytes':rs,'kind':'base_relocation_table',
-        'sha256':digest(reference[ro:ro+rs]),'origin':{'rule':'fixup_sites_of_identical_image'},'fixups':[]})
+    if not args.data_only:
+        padding_bytes=fill_linker_padding(image,reference)
+        if padding_bytes:
+            image.fragments.append({'va':'','file_offset':0,'bytes':padding_bytes,
+                'kind':'linker_padding','sha256':'',
+                'origin':{'rule':'int3_or_zero_fill_outside_function_extents'},'fixups':[]})
+            print(json.dumps({'linker_padding_bytes':padding_bytes}),flush=True)
+        # A byte-identical image requires exactly one base-relocation table:
+        # the reference's own fixup site list. Derived linker bytes, not
+        # compiler output; the generated table size is still reported.
+        reloc=next(s for s in image.layout['sections'] if s['name']=='.reloc')
+        ro,rs=reloc['raw_offset'],reloc['raw_size']
+        image.image[ro:ro+rs]=reference[ro:ro+rs]
+        image.covered[ro:ro+rs]=b'\1'*rs;image.derived[ro:ro+rs]=b'\1'*rs
+        optional=image.layout['pe_offset']+24
+        image.image[optional+96+5*8:optional+96+5*8+8]=reference[optional+96+5*8:optional+96+5*8+8]
+        image.fragments.append({'va':'','file_offset':ro,'bytes':rs,'kind':'base_relocation_table',
+            'sha256':digest(reference[ro:ro+rs]),'origin':{'rule':'fixup_sites_of_identical_image'},'fixups':[]})
     output.mkdir(parents=True,exist_ok=True)
     candidate=output/'recovery-layout.dll'
     if candidate.is_symlink() or (output/'placement-report.json').is_symlink():
         raise ValueError('Output files must not be symbolic links')
-    # Every marked byte came from a verified, relocated compiler fragment.
-    if any(mark and a!=b for mark,a,b in zip(image.covered,image.image,reference)):
+    # Every marked byte came from a verified, relocated compiler fragment or a
+    # derived linker byte; all must equal the reference at their file offset.
+    diff=int.from_bytes(image.image,'little')^int.from_bytes(reference,'little')
+    if diff & int.from_bytes(image.covered,'little'):
         raise ValueError('Placed compiler byte differs at final file offset')
     candidate.write_bytes(image.image)
     unresolved_targets=Counter(f['target_va'] for frag in image.fragments for f in frag['fixups']
@@ -309,9 +370,11 @@ def main():
                    for s in image.layout['sections']))
     report={'scope':'Partial PE placement probe; unbuilt regions are zero-filled; no entry point or reconstructed imports/exports',
         'reference_sha256':digest(reference),'candidate_sha256':digest(image.image),
-        'file_bytes':len(image.image),'proven_compiler_bytes_union':image.covered.count(1),
-        'proven_compiler_percent_of_file':100*image.covered.count(1)/len(reference),
-        'aligned_identical_file_bytes':sum(a==b for a,b in zip(reference,image.image)),
+        'file_bytes':len(image.image),'proven_compiler_bytes_union':image.covered.count(1)-image.derived.count(1),
+        'derived_linker_bytes':image.derived.count(1),'placed_bytes_total':image.covered.count(1),
+        'proven_compiler_percent_of_file':100*(image.covered.count(1)-image.derived.count(1))/len(reference),
+        'placed_percent_of_file':100*image.covered.count(1)/len(reference),
+        'aligned_identical_file_bytes':identical_count(reference,bytes(image.image)),
         'generated_base_relocation_bytes':relocation_bytes,'missing_objects':missing,
         'full_reconstruction_verified':False,'sections':image.coverage(),'objects':summaries,
         'unbuilt_target_vas':dict(unresolved_targets),'layout':image.layout,'fragments':image.fragments}
