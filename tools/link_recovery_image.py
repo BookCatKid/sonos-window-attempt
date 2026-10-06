@@ -163,7 +163,7 @@ def function_extent_mask(layout,inventory_path):
     return mask
 
 
-def fill_linker_padding(image,reference):
+def fill_linker_padding(image,reference,inventory_path=None):
     """Reproduce link.exe padding: 0xCC/0x00 bytes outside function extents.
 
     Only positions outside every inventoried function body are filled, so
@@ -172,7 +172,9 @@ def fill_linker_padding(image,reference):
     construction.
     """
     n=len(reference)
-    infunc=function_extent_mask(image.layout,ROOT/'analysis/thunk-recovery-full/final-function-inventory.tsv')
+    if inventory_path is None:
+        inventory_path=ROOT/'analysis/thunk-recovery-full/final-function-inventory.tsv'
+    infunc=function_extent_mask(image.layout,inventory_path)
     padmask=reference.translate(PADTABLE)
     uncov=bytes(image.covered).translate(UNCOVERED)
     full=(1<<(8*n))-1
