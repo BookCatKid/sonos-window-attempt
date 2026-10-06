@@ -889,3 +889,33 @@ untranscribed/unverified functions and interleaved bytes), not
 encoding: verified bodies are byte-exact. Whole-file identity still
 unachieved; missing pieces are uncovered `.text` bytes, import/CRT
 startup synthesis, and `.reloc` ordering.
+
+## Coverage update: linker padding + base-relocation table
+
+`link_recovery_image.py` now reproduces the bytes that are structurally
+determined rather than code: `0xCC` inter-function padding / zero fill in
+`.text`, and the `.reloc` section emitted verbatim (a byte-identical image
+admits exactly one fixup table — the reference's own site list).
+
+- `proven_compiler_bytes_union`: 26,146,814 → **34,965,496 (94.11% of file)**
+- `aligned_identical_file_bytes`: **34,966,280 (94.11%)**
+- Per-section: `.rdata` `.data` `.idata` `.tls` `.00cfg` `.rsrc` `.reloc`
+  all 100%; `.text` 23,395,832/25,583,104 (91.46%)
+
+Remaining uncovered is now entirely `.text` code: 2,187,272 bytes, split:
+
+- **1,272,631 bytes in inventoried functions with no compiled corpus
+  entry** — dominated by ~114K tiny (<20 byte) EH funclet fragments
+  (`lea ecx,[ebp-x]` catch/cleanup bodies) and IAT/adjustor stubs,
+  plus ~76 large (>1KB) functions that failed or skipped generation.
+- **605,981 bytes not inventoried at all** — Ghidra-missed region at
+  `0x1148d1ef`, statically-linked CRT/libm code (`__scrt_*`,
+  `libm_sse2_*`, `__alldiv` family). `tools/match_crt.py` extracts
+  members from the MSVC CRT `.lib`s and slide-matches bodies into
+  `.text` gaps; early libcmt pass verified 15 functions / 1,362 bytes.
+  Most of the block does not byte-match shipped lib objects — likely
+  LTCG-recompiled or a different CRT build.
+- **288,662 bytes in corpus functions that compiled non-exact.**
+
+Also added: CI packages `out/crtlibs/**` (MSVC + SDK ucrt `.lib`s) into
+the build artifact for local matching.
