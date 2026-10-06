@@ -26,18 +26,30 @@ extern void operator delete(void *, unsigned int);
 def emit_lea_chains(out, count):
     # Nested scopes: each local gets its own unwind state -> one 8-byte
     # funclet each (lea ecx,[ebp-off_i]; jmp ~ProbeD4), offsets stepping by
-    # sizeof(ProbeD4)=4 across the chain.
+    # sizeof(ProbeD4)=4 across the chain. MSVC caps nesting ~120 blocks.
+    count = min(count, 100)
     for k in range(1, count + 1):
         body = ''
         for i in range(k):
             body += f'{{ ProbeD4 t{i}; '
         body += 'probe_throw();' + ' }' * k
         out.append(f"void probe_lea_{k:04d}() {{ {body} }}")
+    # Wider steps for deeper disp32 offsets.
+    for sz in (8, 16, 32):
+        out.append(
+            f"struct ProbeD{sz} {{ long long v[{sz // 8}]; ~ProbeD{sz}(); }};")
+        for k in range(1, count + 1):
+            body = ''
+            for i in range(k):
+                body += f'{{ ProbeD{sz} t{i}; '
+            body += 'probe_throw();' + ' }' * k
+            out.append(f"void probe_d{sz}_{k:04d}() {{ {body} }}")
 
 
 def emit_mov_chains(out, count):
     # Copy-initialised temporaries in nested scopes -> hidden pointer slots ->
     #   mov ecx,[ebp-off_i]; jmp ~ProbeD4
+    count = min(count, 100)
     for k in range(1, count + 1):
         body = ''
         for i in range(k):
