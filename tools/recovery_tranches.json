@@ -1118,5 +1118,9 @@
  {
   "object": "bulk_tiny-recovery__0045",
   "directory": "analysis/compiled-cpp-bulk/bulk_tiny-recovery__0045"
+ },
+ {
+  "object": "eh_probe_0000",
+  "directory": "analysis/compiled-eh-probe"
  }
 ]

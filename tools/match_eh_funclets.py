@@ -85,8 +85,9 @@ def main():
     text = next(s for s in layout['sections'] if s['name'] == '.text')
     o, rs, rva0 = text['raw_offset'], text['raw_size'], text['rva']
 
-    # Index uncovered reference funclets by (size, masked-shape prefix).
-    need = defaultdict(list)  # (size, fixed-prefix-sig) -> [va]
+    # Index uncovered reference funclets by (size, first-3-bytes) so each
+    # candidate only compares against a small bucket.
+    need = defaultdict(list)  # (size, prefix) -> [(va, exp)]
     for row in csv.DictReader(open(args.inventory), delimiter='\t'):
         va = int(row['entry'], 16)
         size = int(row['body_bytes'])
@@ -99,14 +100,7 @@ def main():
         exp = reference[off:off + size]
         if image[off:off + size] == exp:
             continue
-        need[size].append((va, exp))
-
-    # For each size, index reference bodies by their fixed-byte pattern where
-    # the trailing 4 bytes are the jmp/call target (reloc position).
-    def ref_sig(exp, reloc_off):
-        sig = bytearray(exp)
-        sig[reloc_off:reloc_off + 4] = b'????'
-        return bytes(sig)
+        need[(size, exp[:3])].append((va, exp))
 
     placements = []
     seen_va = set()
@@ -118,36 +112,27 @@ def main():
             except Exception:
                 continue
             for body, relocs in funclet_candidates(sections, symbols):
-                # reloc positions to mask (assume <=2 relocs in a funclet)
-                mask = [0] * len(body)
+                mask = bytearray(len(body))
                 for r in relocs:
                     for k in range(r['offset'], min(r['offset'] + 4, len(body))):
                         mask[k] = 1
                 size = len(body)
-                if size not in need:
-                    continue
-                cand = bytes(body[i] if not mask[i] else 0x3f for i in range(size))
-                for va, exp in need[size]:
+                fixed = bytes(b for i, b in enumerate(body) if not mask[i])
+                fpos = [i for i in range(size) if not mask[i]]
+                for va, exp in need.get((size, body[:3]), ()):
                     if va in seen_va:
                         continue
-                    ok = True
-                    for i in range(size):
-                        if not mask[i] and exp[i] != body[i]:
-                            ok = False
-                            break
-                    if not ok:
-                        continue
-                    # patch: all reloc bytes from reference
-                    placements.append({
-                        'entry': f'{va:08x}',
-                        'patched_hex': exp.hex(),
-                        'object': str(p),
-                        'lib': 'eh-funclets',
-                        'symbol': f'funclet@{va:08x}',
-                    })
-                    seen_va.add(va)
-                    matched += 1
-                    break
+                    if all(exp[i] == body[i] for i in fpos):
+                        placements.append({
+                            'entry': f'{va:08x}',
+                            'patched_hex': exp.hex(),
+                            'object': str(p),
+                            'lib': 'eh-funclets',
+                            'symbol': f'funclet@{va:08x}',
+                        })
+                        seen_va.add(va)
+                        matched += 1
+                        break
     args.out.write_text(json.dumps({'placements': placements}))
     print(json.dumps({'matched_funclets': matched,
                       'matched_bytes': sum(len(bytes.fromhex(p['patched_hex'])) for p in placements)}))
