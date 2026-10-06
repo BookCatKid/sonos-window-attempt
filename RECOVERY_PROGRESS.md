@@ -920,6 +920,45 @@ libcmt/libcpmt/libucrt shipped objects yields only ~1.9KB — the
 reference CRT code does not byte-match shipped members (LTCG or a
 different CRT build).
 
+## EH funclet recovery: reference is `/GS-` (2026-10-01)
+
+Discovery: the reference contains **zero** security-cookie funclet
+trampolines (`mov edx,[esp+8]; ... call __security_check_cookie`) and only
+two /GS stack-cookie prologues in 37MB — it was compiled with **`/GS-`**.
+That single flag explains why EH funclets never verified: under `/GS`,
+MSVC wraps every funclet in a cookie-check trampoline; under `/GS-` it
+emits the **bare funclet body** (`lea/mov ecx,[ebp-off]; jmp ~T`) at
+offset 0 of the `.text$x` COMDAT — self-contained code that depends only
+on the parent's frame layout, not its identity.
+
+`tools/match_eh_funclets.py` extracts bare funclet bodies from `/GS-`
+objects and slide-matches them against uncovered reference funclets
+(fixed-byte equality; reloc operands patched from reference, same policy
+as `match_crt`). Over the 24-slice `/GS-` rebuild (run 37413724539):
+
+- **33,772 funclets matched / 270,230 bytes** — applied to the previous
+  image they lift `aligned_identical_file_bytes` to **35,531,860
+  (95.63%)**.
+- `tools/make_eh_probe_corpus.py` generates a synthetic probe corpus
+  (`src/generated/bulk/eh_probe_0000.cpp`, real C++): chained
+  `ProbeD4 t0..tK` locals step funclet `[ebp-off]` operands by 4;
+  `t = probe_make()` copy-init emits `mov ecx,[ebp-off]` pointer-slot
+  forms; padded member ctors emit `mov ecx,[ebp+8]; add ecx,N`;
+  multi-member ctors emit flag-gated `mov eax,[ebp-flag]; and eax,N;
+  jz; ...` funclets; `new ProbeD4` emits sized-delete cleanup.
+- Remaining uncovered shapes (from the 91,267 inventory entries still
+  differing after this pass): ~20K `lea ecx,[ebp-off]` at offsets the
+  first probe sweep didn't reach, ~4.2K flag-gated 25B, ~2.8K
+  `mov ecx; add ecx,N`, ~1.1K imm32-offset member forms, ~825
+  sized-delete thunks, plus a long tail of larger multi-instruction
+  funclets.
+
+`/GS-` also has no downside for parent bodies: functions without
+cookie-triggering buffers emit identical code under `/GS` and `/GS-`;
+buffered parents that previously carried cookie code the reference
+lacks can only improve. The full-image regeneration using `/GS-`
+objects is in `analysis/linked-gsminus/`.
+
 Remaining differing bytes: **1,891,927** — all in `.text`
 (headers now byte-identical). `.text` remainder splits:
 
