@@ -71,14 +71,27 @@ def emit_member_sweep(out, count):
 
 
 def emit_flag_members(out, members):
-    # Multi-member ctor: MSVC tracks constructed members with flag bits ->
+    # Function-try-block ctors track constructed members with flag bits ->
     #   mov eax,[ebp-flag]; and eax,<bit>; jz; and flag,~bit;
     #   lea ecx,[ebp-m]; jmp ~Sub; ret                        (25 bytes)
     for n in range(2, members + 1):
         decls = ' '.join(f'ProbeSub m{i};' for i in range(n))
         out.append(
             f"struct ProbeFlag{n:02d} {{ {decls} ProbeFlag{n:02d}(); }};\n"
-            f"ProbeFlag{n:02d}::ProbeFlag{n:02d}() {{ probe_throw(); }}"
+            f"ProbeFlag{n:02d}::ProbeFlag{n:02d}() try {{ probe_throw(); }}"
+            f" catch (...) {{ throw; }}"
+        )
+
+
+def emit_member_new_probes(out, count):
+    # new-expression pointer cleanup destroying a member through the stored
+    # pointer ->  mov ecx,[ebp-p]; add ecx,N; jmp ~Sub          (11 bytes)
+    for k in range(count):
+        pad = f'int pad[{k}]; ' if k else ''
+        out.append(
+            f"struct ProbePtr{k:04d} {{ {pad}ProbeSub m; }};\n"
+            f"void probe_pnew_{k:04d}() {{ ProbePtr{k:04d} *p = "
+            f"new ProbePtr{k:04d}; probe_throw(); }}"
         )
 
 
@@ -133,6 +146,7 @@ def main():
     emit_mov_chains(out, args.sweep)
     emit_member_sweep(out, args.sweep)
     emit_flag_members(out, 8)
+    emit_member_new_probes(out, args.sweep)
     emit_delete_chains(out, args.sweep)
     emit_array_sweep(out, args.sweep)
 

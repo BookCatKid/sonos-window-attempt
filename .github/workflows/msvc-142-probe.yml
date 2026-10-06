@@ -132,6 +132,23 @@ jobs:
             throw 'Requested MSVC toolset did not install at the expected path'
           }
 
+      - name: Inventory available CRT sources
+        if: matrix.slice == 0
+        shell: pwsh
+        run: |
+          $roots = @(
+            'C:\VS2019BuildTools\VC\Tools\MSVC\14.28.29910\crt\src',
+            'C:\VS2019BuildTools\VC\crt\src',
+            "${env:ProgramFiles(x86)}\Windows Kits\10\Source"
+          )
+          foreach ($r in $roots) {
+            if (Test-Path $r) {
+              Write-Output "CRT-SRC $r"
+              Get-ChildItem $r -Directory -ErrorAction SilentlyContinue |
+                ForEach-Object { Write-Output "  DIR $($_.Name)" }
+            } else { Write-Output "MISSING $r" }
+          }
+
       - name: Compile C++ candidates for x86
         if: github.event.inputs.build_experiments != 'true'
         env:
