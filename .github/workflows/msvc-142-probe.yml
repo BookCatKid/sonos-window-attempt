@@ -27,6 +27,10 @@ on:
         description: Matrix JSON for bulk-part slicing, e.g. {"slice":[0,1,2,3],"mod":[4]}
         type: string
         default: '{"slice":[0],"mod":[1]}'
+      link_dll:
+        description: Also link the bulk objects into a recovered DLL image
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -131,6 +135,14 @@ jobs:
         shell: cmd
         run: |
           if "%SONOS_FOCUSED_PROBE%"=="1" (call tools\build_focused_probe.cmd) else (call tools\build_probe.cmd)
+          if errorlevel 1 exit /b 1
+
+      - name: Link recovered DLL image
+        if: github.event.inputs.link_dll == 'true' && matrix.slice == 0
+        shell: cmd
+        run: |
+          call C:\VS2019BuildTools\VC\Auxiliary\Build\vcvarsall.bat amd64_x86 -vcvars_ver=14.28 >> out\setup.log 2>&1
+          call tools\link_bulk.cmd
 
       - name: Compile genuine linker and library experiments
         if: github.event.inputs.build_experiments == 'true'
