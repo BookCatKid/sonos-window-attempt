@@ -17,7 +17,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from match_library_objects import (bodies, fixed_runs, immutable_data_definitions,
-    imported_targets, security_cookie_targets, verify_readonly_definition)
+    imported_targets, security_cookie_targets, verify_data_definition)
 from compare_compiled_ghidra import read_coff, resolve_known_relocations
 from classify_functions import DLL, ROOT, section_map, function_bytes
 
@@ -214,7 +214,7 @@ def main():
                     continue
                 addend = struct.unpack_from('<I', b['code'], r['offset'])[0]
                 address = (struct.unpack_from('<I', expected, r['offset'])[0] - addend) & 0xffffffff
-                verified, _ = verify_readonly_definition(
+                verified, _ = verify_data_definition(
                     b['object'], r['symbol'], address, local_data, global_data,
                     gn, ln,
                     lambda va, size: function_bytes(reference, va, size, base, pe_sections),

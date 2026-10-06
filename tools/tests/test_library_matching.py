@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from match_library_objects import fixed_runs, match, imported_targets, immutable_data_definitions, security_cookie_targets, codeview_function_sizes, verify_readonly_definition
+from match_library_objects import fixed_runs, match, imported_targets, immutable_data_definitions, security_cookie_targets, codeview_function_sizes, verify_data_definition
 from types import SimpleNamespace
 
 
@@ -113,7 +113,7 @@ class LibraryMatchingTests(unittest.TestCase):
         local={('a.obj','_table'):[table]};global_data={'_text':[text]}
         native={0x2000:b'ABCD'+struct.pack('<II',0x3000,0x4000),0x3000:b'hello\0'}
         read=lambda address,size:native.get(address,b'')[:size]
-        check=lambda names={'_fn':[0x4000]},readonly=lambda address,size:True:verify_readonly_definition(
+        check=lambda names={'_fn':[0x4000]},readonly=lambda address,size:True:verify_data_definition(
             'a.obj','_table',0x2000,local,global_data,names,{},read,readonly)
         ok,evidence=check();self.assertTrue(ok);self.assertEqual(len(evidence),2)
         self.assertFalse(check(names={})[0])
@@ -128,7 +128,7 @@ class LibraryMatchingTests(unittest.TestCase):
         leaf={'object':'a','symbol':'??_C@empty','data':b'\0','relocs':[]}
         local={('a','_table'):[table],('a','??_C@empty'):[leaf]}
         native={0x2000:struct.pack('<I',0x3000),0x3000:b'\0'}
-        check=lambda:verify_readonly_definition('a','_table',0x2000,local,{}, {},{},
+        check=lambda:verify_data_definition('a','_table',0x2000,local,{}, {},{},
             lambda va,size:native.get(va,b'')[:size],lambda va,size:True)
         self.assertTrue(check()[0]);native[0x3000]=b'x';self.assertFalse(check()[0])
         native[0x3000]=struct.pack('<I',0x2000)

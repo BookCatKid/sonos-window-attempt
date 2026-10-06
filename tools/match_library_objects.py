@@ -225,7 +225,7 @@ def immutable_data_definitions(sections, symbols, by_index=None, include_relocat
     return result
 
 
-def verify_readonly_definition(obj, symbol, address, local_data, global_data,
+def verify_data_definition(obj, symbol, address, local_data, global_data,
                                global_names, local_names, read_native, readonly, visiting=None):
     """Prove a complete constant initializer and every pointed-to child.
 
@@ -257,7 +257,7 @@ def verify_readonly_definition(obj, symbol, address, local_data, global_data,
             if known:
                 if target not in known:valid=False;break
             else:
-                verified,evidence=verify_readonly_definition(owner,child,target,local_data,global_data,
+                verified,evidence=verify_data_definition(owner,child,target,local_data,global_data,
                     global_names,local_names,read_native,readonly,visiting|{key})
                 if not verified:valid=False;break
                 children.extend(evidence)
@@ -376,7 +376,7 @@ def match(objects, reference, inventory, accepted_fragment_sink=None):
             if r['type']!=6 or r['symbol'] in known:continue
             addend=struct.unpack_from('<I',b['code'],r['offset'])[0]
             address=(struct.unpack_from('<I',expected,r['offset'])[0]-addend)&0xffffffff
-            verified,evidence=verify_readonly_definition(b['object'],r['symbol'],address,local_data,global_data,
+            verified,evidence=verify_data_definition(b['object'],r['symbol'],address,local_data,global_data,
                 global_names,local_names,lambda va,size:function_bytes(reference,va,size,base,sections),readonly)
             if verified:
                 known[r['symbol']]=[address];data_evidence.extend(evidence)

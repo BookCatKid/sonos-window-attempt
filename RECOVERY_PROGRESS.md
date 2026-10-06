@@ -725,7 +725,7 @@ Library matching now admits read-only symbol extents that contain DIR32
 pointer fixups. `immutable_data_definitions` emits entire compiler constant
 initializers with their relocations only when every fixup is an in-bounds,
 non-overlapping DIR32 against a resolvable symbol.
-`verify_readonly_definition` treats a native operand address as a proposal:
+`verify_data_definition` treats a native operand address as a proposal:
 fixed byte runs must match, and every pointer child must independently verify —
 bound function endpoints via the closed dependency graph, or data children by
 the same complete-extent proof applied recursively. Cyclic tables and unknown
