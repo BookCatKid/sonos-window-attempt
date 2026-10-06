@@ -362,6 +362,7 @@ def main():
         raise ValueError('Output files must not be symbolic links')
     # Every marked byte came from a verified, relocated compiler fragment or a
     # derived linker byte; all must equal the reference at their file offset.
+    if len(image.image)!=len(reference):raise ValueError('Layout size drifted from reference')
     diff=int.from_bytes(image.image,'little')^int.from_bytes(reference,'little')
     if diff & int.from_bytes(image.covered,'little'):
         raise ValueError('Placed compiler byte differs at final file offset')
