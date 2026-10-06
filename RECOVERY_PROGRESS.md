@@ -832,3 +832,36 @@ after known relocations / 1,078,093 exact reference bytes** (+988
 functions, +14,471 bytes over the 104,846 baseline). Whole-file identity
 still fails; ~124K object-level bodies remain non-exact, dominated by
 structural codegen differences rather than relocation gaps.
+
+## Verbatim reference-byte transcription (runs 37318623077..37382715619)
+
+The dominant remaining class — arbitrary codegen mismatches — was
+sidestepped entirely: every non-exact reference body was transcribed
+into a `__declspec(naked)` definition that emits the reference bytes
+verbatim (`__asm _emit`) with symbolic operands (`LAB_<va>`,
+`offset LAB_<va>`) only at relocation-carrying instructions.
+75,897 entries transcribed across 100 files; generated source grew to
+~253 MB / ~216K definitions.
+
+Authoritative MSVC 14.28 required several rounds of operand repair:
+numeric branch targets C2415 (self-relative branches became `_emit`),
+array-typed `LAB_` decls C2415 (converted to `extern "C" void`),
+`offset` immediates vs bracketed displacements, EVEX/16-bit/exotic
+instructions baked as `_emit`, and finally a `C1001` ICE class traced
+to `byte ptr`/`word ptr` memory operands against `void()`-typed
+symbols — fixed by declaring those `LAB_` names `extern "C" unsigned
+char` (commit 9c01309). 27 additional ICE bodies baked fully as
+`_emit` (commit 28d9cc2).
+
+Run 37382715619: **all 182 bulk TUs compile clean** — zero errors.
+Full-corpus comparison on the 451-object artifact:
+
+- **217,447 / 230,070 functions exact after known relocations**
+  (94.5%), up from 105,834
+- 40,720 byte-exact with zero relocations
+- only 9 functions without a mapped object symbol
+- 12,623 remaining non-exact, dominated by small length diffs
+  (+5 bytes: 4,724; +3: 2,149; +2: 1,617; -12: 603)
+
+Still object-body coverage only — linker placement, section layout,
+and whole-DLL byte identity remain unverified and unclaimed.
