@@ -941,5 +941,31 @@ Remaining differing bytes: **1,891,927** — all in `.text`
 positions; ~93K coincidentally equal the reference, e.g. unfilled
 zeros inside function extents.)
 
-Also added: CI packages `out/crtlibs/**` (MSVC + SDK ucrt `.lib`s) into
-the build artifact for local matching.
+### Flag-sweep verdict (slice-0 experiment, 8 files / 8,071 functions)
+
+`/O2 /MT /EHa`, `/O2 /MD /EHsc`, `/O2 /MT /EHsc` all score identically
+(7,829 accepted) — `/MT`/`/MD` and `/EHa`/`/EHsc` do not change codegen
+for this corpus. `/O1` loses (7,122). Flags were already correct;
+non-exact functions are decompilation-fidelity issues, not flag issues.
+`SONOS_BULK_FLAGS`/`SONOS_BULK_SUFFIX` env overrides in
+`build_bulk_parallel.ps1` + `bulk_flags`/`bulk_suffix` workflow inputs
+support future sweeps.
+
+### Remaining-work decomposition
+
+- **~1.1MB EH funclets** in `eh-lifetime-evidence.jsonl` families:
+  33,681 evidence parents, of which **32,669 already have byte-exact
+  parent bodies** — only their state-action funclets are missing.
+  Uncovered shapes cluster into classic MSVC action patterns:
+  `lea ecx,[ebp-x]; jmp dtor` (RAII local), `mov ecx,[ebp-x]; jmp dtor`,
+  `push arg; mov eax,[ebp-x]; push eax; call` (delete/free thunks),
+  `jmp dword ptr [IAT]` (terminate). The single-state terminate family
+  (9,053 parents) is already fully covered by `single_state_guards`.
+  Next step: `compile_*`-style generators per uncovered action family —
+  emit real try/catch/RAII C++ whose MSVC funclets verify.
+- **~350KB indexed-but-non-exact** functions (10,523) — decompiled C++
+  compiles but bytes differ; needs record-level fixes, not flags.
+- **~313KB uninventoried CRT region** — shipped libcmt/libcpmt/libucrt
+  objects do not byte-match (1.9KB total over 9 libs); likely LTCG or a
+  different CRT build. Rich header shows prod `0x74df` builds 260/261
+  dominating (1,075 objs) — toolset identification pending.
