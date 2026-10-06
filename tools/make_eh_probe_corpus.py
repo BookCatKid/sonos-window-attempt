@@ -24,19 +24,37 @@ extern void operator delete(void *, unsigned int);
 
 
 def emit_lea_chains(out, count):
-    # N destructable locals in one scope -> N state actions, each
-    #   lea ecx,[ebp-off_i]; jmp ~ProbeD4   (offsets step by sizeof=4)
+    # Nested scopes: each local gets its own unwind state -> one 8-byte
+    # funclet each (lea ecx,[ebp-off_i]; jmp ~ProbeD4), offsets stepping by
+    # sizeof(ProbeD4)=4 across the chain.
     for k in range(1, count + 1):
-        decls = ' '.join(f'ProbeD4 t{i};' for i in range(k))
-        out.append(f"void probe_lea_{k:04d}() {{ {decls} probe_throw(); }}")
+        body = ''
+        for i in range(k):
+            body += f'{{ ProbeD4 t{i}; '
+        body += 'probe_throw();' + ' }' * k
+        out.append(f"void probe_lea_{k:04d}() {{ {body} }}")
 
 
 def emit_mov_chains(out, count):
-    # Copy-initialised temporaries -> hidden pointer slots ->
+    # Copy-initialised temporaries in nested scopes -> hidden pointer slots ->
     #   mov ecx,[ebp-off_i]; jmp ~ProbeD4
     for k in range(1, count + 1):
-        decls = ' '.join(f'ProbeD4 t{i} = probe_make4();' for i in range(k))
-        out.append(f"void probe_mov_{k:04d}() {{ {decls} probe_throw(); }}")
+        body = ''
+        for i in range(k):
+            body += f'{{ ProbeD4 t{i} = probe_make4(); '
+        body += 'probe_throw();' + ' }' * k
+        out.append(f"void probe_mov_{k:04d}() {{ {body} }}")
+
+
+def emit_delete_chains(out, count):
+    # Nested new-expression pointer locals -> sized-delete cleanup funclets
+    #   push sz; mov eax,[ebp-p_i]; push eax; call delete; add esp,8; ret
+    for k in range(count):
+        pad = f'int pad[{k}]; ' if k else ''
+        out.append(
+            f"void probe_del_{k:04d}() {{ {pad}"
+            f"ProbeD4 *p = new ProbeD4; probe_throw(); }}"
+        )
 
 
 def emit_member_sweep(out, count):
@@ -61,17 +79,6 @@ def emit_flag_members(out, members):
         out.append(
             f"struct ProbeFlag{n:02d} {{ {decls} ProbeFlag{n:02d}(); }};\n"
             f"ProbeFlag{n:02d}::ProbeFlag{n:02d}() {{ probe_throw(); }}"
-        )
-
-
-def emit_delete_probes(out, count):
-    # new-expression cleanup: sized delete of the stored pointer ->
-    #   push sz; mov eax,[ebp-p]; push eax; call delete; add esp,8; ret
-    for k in range(count):
-        pad = f'int pad[{k}]; ' if k else ''
-        out.append(
-            f"void probe_del_{k:04d}() {{ {pad}"
-            f"ProbeD4 *p = new ProbeD4; probe_throw(); }}"
         )
 
 
@@ -126,7 +133,7 @@ def main():
     emit_mov_chains(out, args.sweep)
     emit_member_sweep(out, args.sweep)
     emit_flag_members(out, 8)
-    emit_delete_probes(out, args.sweep)
+    emit_delete_chains(out, args.sweep)
     emit_array_sweep(out, args.sweep)
 
     index_rows = []
