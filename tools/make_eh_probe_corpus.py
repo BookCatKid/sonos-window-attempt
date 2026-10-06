@@ -135,15 +135,23 @@ def emit_array_sweep(out, count):
 
 
 def trivial_entries(reference, image, layout, inventory):
-    """Uncovered inventory entries that are trivially reproducible bodies."""
+    """Uncovered inventory entries that are trivially reproducible bodies.
+
+    Each recognized byte shape maps to a C++ snippet that MSVC compiles to
+    exactly those bytes under /O2. Member-form bodies are emitted as a
+    method named FUN_<va> on a per-address stub struct so the mangled
+    symbol still binds to the index name.
+    """
+    import re as _re
     base = layout['image_base']
     text = next(s for s in layout['sections'] if s['name'] == '.text')
     o, rs, rva0 = text['raw_offset'], text['raw_size'], text['rva']
-    b001, iat = [], []
+    rows = []
+
     for row in csv.DictReader(open(inventory), delimiter='\t'):
         va = int(row['entry'], 16)
         size = int(row['body_bytes'])
-        if not size:
+        if not size or size > 24:
             continue
         rva = va - base
         if not (rva0 <= rva < rva0 + rs):
@@ -152,11 +160,71 @@ def trivial_entries(reference, image, layout, inventory):
         exp = reference[off:off + size]
         if image[off:off + size] == exp:
             continue
-        if exp == b'\xb0\x01\xc3':
-            b001.append(va)
+        n = f'FUN_{va:08x}'
+        body = None
+        # return constant:  b8 imm32 c3  |  b0 01/00 c3  |  33 c0 c3
+        m = _re.fullmatch(rb'\xb8(....)\xc3', exp)
+        if m:
+            body = f'int {n}() {{ return {int.from_bytes(m.group(1), "little")}; }}'
+        elif exp == b'\xb0\x01\xc3':
+            body = f'bool {n}() {{ return true; }}'
+        elif exp == b'\x33\xc0\xc3':
+            body = f'int {n}() {{ return 0; }}'
+        # return arg0:  8b 44 24 04 (c2 imm16 stdcall | c3 cdecl)
+        m = _re.fullmatch(rb'\x8b\x44\x24\x04(\xc2(..)|\xc3)', exp)
+        if m and not body:
+            if m.group(1) != b'\xc3':
+                nargs = int.from_bytes(m.group(2), 'little') // 4
+                args = ', '.join(f'void *a{i}' for i in range(nargs))
+                body = f'void *__stdcall {n}({args}) {{ return a0; }}'
+            else:
+                body = f'void *{n}(void *a0) {{ return a0; }}'
+        # member getter:  8b 41 NN c3 int | 66 8b 41 NN c3 short |
+        #                 8b 81 NNNN c3 disp32 | 8d 41 NN c3 address
+        m = _re.fullmatch(rb'\x8b\x41(.)\xc3', exp)
+        if m and not body:
+            off8 = m.group(1)[0]
+            body = (f'struct GS{va:08x} {{ char p[{off8}]; int m; '
+                    f'int {n}(); }};\n'
+                    f'int GS{va:08x}::{n}() {{ return m; }}')
+        m = _re.fullmatch(rb'\x66\x8b\x41(.)\xc3', exp)
+        if m and not body:
+            off8 = m.group(1)[0]
+            body = (f'struct GS{va:08x} {{ char p[{off8}]; short m; '
+                    f'short {n}(); }};\n'
+                    f'short GS{va:08x}::{n}() {{ return m; }}')
+        m = _re.fullmatch(rb'\x8b\x81(....)\xc3', exp)
+        if m and not body:
+            off32 = int.from_bytes(m.group(1), 'little')
+            body = (f'struct GS{va:08x} {{ char p[{off32}]; int m; '
+                    f'int {n}(); }};\n'
+                    f'int GS{va:08x}::{n}() {{ return m; }}')
+        m = _re.fullmatch(rb'\x8d\x41(.)\xc3', exp)
+        if m and not body:
+            off8 = m.group(1)[0]
+            body = (f'struct GS{va:08x} {{ char p[{off8}]; int m; '
+                    f'int *{n}(); }};\n'
+                    f'int *GS{va:08x}::{n}() {{ return &m; }}')
+        # setter:  8b 44 24 04 c7 00 imm32 c2 imm16
+        m = _re.fullmatch(rb'\x8b\x44\x24\x04\xc7\x00(....)\xc2(..)', exp)
+        if m and not body:
+            v = int.from_bytes(m.group(1), 'little')
+            nargs = int.from_bytes(m.group(2), 'little') // 4
+            rest = ', '.join(f'void *a{i}' for i in range(1, nargs))
+            sig = 'int *p' + (', ' + rest if rest else '')
+            body = f'void __stdcall {n}({sig}) {{ *p = {v}; }}'
+        # bool arg writer: 8b442404 c6 00 01 b0 01 c2 imm16
+        m = _re.fullmatch(rb'\x8b\x44\x24\x04\xc6\x00\x01\xb0\x01\xc2(..)', exp)
+        if m and not body:
+            nargs = int.from_bytes(m.group(1), 'little') // 4
+            rest = ', '.join(f'void *a{i}' for i in range(1, nargs))
+            sig = 'char *p' + (', ' + rest if rest else '')
+            body = f'bool __stdcall {n}({sig}) {{ *p = 1; return true; }}'
+        if body:
+            rows.append((va, body))
         elif size == 6 and exp[:2] == b'\xff\x25':
-            iat.append(va)
-    return b001, iat
+            rows.append((va, 'IAT'))
+    return rows
 
 
 def main():
@@ -186,16 +254,21 @@ def main():
         reference = args.reference.read_bytes()
         image = args.image.read_bytes()
         layout = json.loads(args.report.read_text())['layout']
-        b001, iat = trivial_entries(reference, image, layout, args.inventory)
-        for va in b001:
-            out.append(f"bool FUN_{va:08x}() {{ return true; }}")
-            index_rows.append((f'{va:08x}', f'FUN_{va:08x}', '3'))
-        for va in iat:
-            out.append(
-                f"extern __declspec(dllimport) void probe_import_{va:08x}();\n"
-                f"void FUN_{va:08x}() {{ probe_import_{va:08x}(); }}"
-            )
-            index_rows.append((f'{va:08x}', f'FUN_{va:08x}', '6'))
+        sizes = {}
+        for row in csv.DictReader(open(args.inventory), delimiter='\t'):
+            va = int(row['entry'], 16)
+            if row['body_bytes']:
+                sizes[va] = int(row['body_bytes'])
+        for va, body in trivial_entries(reference, image, layout,
+                                        args.inventory):
+            if body == 'IAT':
+                out.append(
+                    f"extern __declspec(dllimport) void probe_import_{va:08x}();\n"
+                    f"void FUN_{va:08x}() {{ probe_import_{va:08x}(); }}"
+                )
+            else:
+                out.append(body)
+            index_rows.append((f'{va:08x}', f'FUN_{va:08x}', str(sizes[va])))
 
     args.out.write_text('\n'.join(out) + '\n')
     if args.index_out:
