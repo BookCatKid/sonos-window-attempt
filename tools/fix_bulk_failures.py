@@ -76,32 +76,76 @@ def _cmp_rewrite(line, col):
     ``cmp`` is identical either way. Covers both the ``(T *)(expr)`` and
     ``(T *)name`` spellings plus a leading unary/deref on the operand.
     """
-    new = re.sub(r'\(\s*(?:const\s+)?[A-Za-z_][\w:<>]*\s*\*+\s*\)\s*\(',
-                 '(uintptr_t)(', line)
-    new = re.sub(r'\(\s*(?:const\s+)?[A-Za-z_][\w:<>]*\s*\*+\s*\)\s*([A-Za-z_]\w*)',
-                 r'(uintptr_t)\1', new)
+    # ``(void)expr`` compared to a pointer: make it a void* cast first so
+    # both sides stay pointer-typed and never hit the uintptr_t path.
+    line = re.sub(r'\(\s*void\s*\)\s*\(', '(void *)(', line)
+    # ``**(T **)(x)`` and ``*(T *)(x)`` in comparisons: rewrite the cast in
+    # one step so each dereference still has a pointer operand.
+    def _deref_cast(m):
+        stars = len(m.group(1))
+        return m.group(1) + '(int ' + '*' * stars + ')(uintptr_t)('
+    new = re.sub(r'(\*+)\s*\(\s*(?:const\s+)?[A-Za-z_][\w:<>]*\s*\*+\s*\)'
+                 r'\s*\((?!\s*uintptr_t\b)', _deref_cast, line)
+    new = re.sub(r'(?<!\*)\(\s*(?:const\s+)?[A-Za-z_][\w:<>]*\s*\*+\s*\)\s*'
+                 r'\((?!\s*uintptr_t\b)', '(uintptr_t)(', new)
+    new = re.sub(r'(?<!\*)\(\s*(?:const\s+)?[A-Za-z_][\w:<>]*\s*\*+\s*\)\s*'
+                 r'((?!uintptr_t\b)[A-Za-z_]\w*)', r'(uintptr_t)\1', new)
+    # A dereference in front of the rewritten cast is now ``*(uintptr_t)``;
+    # keep it legal by typing the pointer as ``int *``.
+    new = re.sub(r'\*\s*\(uintptr_t\)\s*\(',
+                 '*(int *)(uintptr_t)(', new)
+    new = re.sub(r'\*\s*\(uintptr_t\)\s*(\w+)',
+                 r'*(int *)(uintptr_t)\1', new)
     if new == line:
-        # No cast on the line: the pointer operand is a bare lvalue. Wrap the
-        # identifier nearest the reported column that sits beside a
-        # comparison operator.
-        best = None
-        for m in list(re.finditer(
-                r'\b([A-Za-z_]\w*(?:\[[^\]]*\]|->\w+|\.\w+)*)\b'
-                r'(?=\s*(?:==|!=|<=?|>=?))', line)) + list(re.finditer(
-                r'(?:==|!=|<=?|>=?)\s*'
-                r'([A-Za-z_]\w*(?:\[[^\]]*\]|->\w+|\.\w+)*)', line)):
-            name = m.group(1)
-            if name in ('if', 'while', 'return', 'switch', 'for', 'int',
-                        'uint', 'char', 'uintptr_t', 'sizeof'):
-                continue
-            d = abs(m.start(1) - (col - 1))
-            if best is None or d < best[0]:
-                best = (d, m, name)
-        if best is not None:
-            _, m, name = best
-            new = (line[:m.start(1)] + '(uintptr_t)(' + name + ')' +
-                   line[m.end(1):])
-            return new
+        # Locate the comparison operator nearest the error column and wrap
+        # both operands in uintptr_t; a 32-bit integer compare generates the
+        # same ``cmp`` for pointer/integer mixes.
+        ops = [m for m in re.finditer(r'==|!=|<=|>=|(?<![<>&|])<(?![<=&|])|'
+                                      r'(?<![<>&|])>(?![>=&|])', line)]
+        if not ops:
+            return None
+        m = min(ops, key=lambda o: abs(o.start() - (col - 1)))
+        # Right operand: stop at a top-level && || , ; ? : or a ')' from an
+        # enclosing construct.
+        i, depth = m.end(), 0
+        while i < len(line) and line[i] == ' ':
+            i += 1
+        rs = i
+        while i < len(line):
+            ch = line[i]
+            if ch == '(':
+                depth += 1
+            elif ch == ')':
+                if depth == 0:
+                    break
+                depth -= 1
+            elif depth == 0 and (ch in ';,?' or line.startswith('&&', i) or
+                                 line.startswith('||', i) or ch == ':'):
+                break
+            i += 1
+        right = line[rs:i].rstrip()
+        # Left operand: scan back to a top-level && || , ; ? : or '('/'{'.
+        j, depth = m.start() - 1, 0
+        while j >= 0:
+            ch = line[j]
+            if ch == ')':
+                depth += 1
+            elif ch == '(':
+                if depth == 0:
+                    break
+                depth -= 1
+            elif depth == 0 and (ch in ';,?:{}' or line[j:j + 2] == '&&' or
+                                 line[j:j + 2] == '||'):
+                break
+            j -= 1
+        left = line[j + 1:m.start()].strip()
+        if not left or not right:
+            return None
+        ls = j + 1 + (len(line[j + 1:m.start()]) -
+                      len(line[j + 1:m.start()].lstrip()))
+        return (line[:ls] + '(uintptr_t)(' + left + ')' +
+                line[m.start():rs] + '(uintptr_t)(' + right + ')' +
+                line[i:])
     return new if new != line else None
 
 
@@ -124,11 +168,39 @@ def patch_definition(defn, lineno, col, message):
         target = m.group(1) if m else 'int'
         target = target.split(' (aka ')[0]
         pos = col - 1
-        rhs = line[pos:].rstrip().rstrip(';')
-        new = line[:pos] + f'({target})(uintptr_t)(' + rhs + ');'
+        st = pos
+        while st < len(line) and line[st] == ' ':
+            st += 1
+        # Bound the RHS operand: scan forward until a top-level ; , or a
+        # ')' belonging to an enclosing construct (for/if/while/call).
+        i, depth = st, 0
+        while i < len(line):
+            ch = line[i]
+            if ch == '(':
+                depth += 1
+            elif ch == ')':
+                if depth == 0:
+                    break
+                depth -= 1
+            elif ch in ';,' and depth == 0:
+                break
+            i += 1
+        rhs = line[st:i].rstrip()
+        if not rhs:
+            return None
+        new = (line[:st] + f'({target})(uintptr_t)(' + rhs + ')' +
+               line[i:])
     elif 'invalid operands to binary expression' in message:
-        # Wrap the operand following the operator; pointer arithmetic on a
-        # uintptr_t operand codegen's identically.
+        # A ``(void)expr`` operand in a comparison becomes a ``void*`` cast
+        # via the comparison path; everything else wraps the operand
+        # following the operator. Pointer arithmetic on a uintptr_t operand
+        # codegen's identically.
+        if "'void'" in message:
+            new = _cmp_rewrite(line, col)
+            if new and new != line:
+                lines[lineno - 1] = new
+                return '\n'.join(lines)
+            new = line
         ops = [m for m in re.finditer(r'<<|>>|<=|>=|==|!=|[+\-*/&|^<>]',
                                       line)]
         ops = [m for m in ops if m.start() >= col - 4]
@@ -157,31 +229,47 @@ def patch_definition(defn, lineno, col, message):
     elif 'indirection requires pointer operand' in message:
         # `*x` where x is an integer: Ghidra's deref of a scalar needs a
         # pointer cast; likewise repair earlier uintptr_t damage.
-        pos = col - 1
-        m = re.match(r'\*+\s*(\(uintptr_t\)\s*)?(\w+|\([^()]*\))', line[pos:])
-        if m:
+        new = re.sub(r'\*\s*\(uintptr_t\)\s*\(',
+                     '*(int *)(uintptr_t)(', line)
+        if new == line:
+            new = re.sub(r'\*\s*\(uintptr_t\)\s*(\w+)',
+                         r'*(int *)(uintptr_t)\1', line)
+        if new == line:
+            pos = col - 1
+            m = re.match(r'\*+\s*(\(uintptr_t\)\s*)?(\w+|\([^()]*\))',
+                         line[pos:])
+            if not m:
+                return None
             new = (line[:pos] + '*(int *)(uintptr_t)(' + m.group(2) + ')' +
                    line[pos + m.end():])
-        else:
-            new = re.sub(r'\*\s*\(uintptr_t\)\s*\(',
-                         '*(int *)(uintptr_t)(', line)
-            if new == line:
-                new = re.sub(r'\*\s*\(uintptr_t\)\s*(\w+)',
-                             r'*(int *)(uintptr_t)\1', line)
     elif 'use of overloaded operator' in message and 'ambiguous' in message:
         # A class-typed operand makes builtin comparison ambiguous; force
         # both sides through int.
         new = _cmp_rewrite(line, col)
-        if new == line:
+        if not new or new == line:
             ops = [m for m in re.finditer(r'<=|>=|==|!=|<|>', line)]
             ops = [m for m in ops if m.start() >= col - 6]
             if ops:
                 m = ops[0]
                 operand = line[m.end():].lstrip()
                 lead = len(line[m.end():]) - len(operand)
-                end = operand.find(')') 
-                end = end if end > 0 else operand.find(';')
-                end = end if end > 0 else len(operand)
+                if operand.startswith('('):
+                    depth = 0
+                    end = 0
+                    for i, ch in enumerate(operand):
+                        depth += ch == '('
+                        depth -= ch == ')'
+                        if depth == 0:
+                            end = i + 1
+                            break
+                    tail = re.match(r'\s*\w+(?:\[[^\]]*\])*', operand[end:])
+                    if tail:
+                        end += tail.end()
+                else:
+                    t = re.match(r'\w+(?:\[[^\]]*\])*', operand)
+                    end = t.end() if t else 0
+                if not end:
+                    return None
                 new = (line[:m.end() + lead] + '(int)(' +
                        operand[:end].rstrip() + ')' + operand[end:])
     elif 'member reference type' in message and 'not a pointer' in message:
@@ -198,6 +286,32 @@ def patch_definition(defn, lineno, col, message):
             m = best[1]
             new = (line[:m.start()] + '(*(struct __RFLD **)&' +
                    m.group(1) + ').' + m.group(2) + line[m.end():])
+        else:
+            # ``(scalar_expr)->field``: cast the base to the field stub's
+            # pointer type instead of dereferencing through its address.
+            ar = line.find('->', max(0, col - 8))
+            if ar < 0:
+                ar = line.find('->')
+            if ar > 0:
+                i = ar - 1
+                while i >= 0 and line[i] == ' ':
+                    i -= 1
+                if i >= 0 and line[i] == ')':
+                    depth, base0 = 0, -1
+                    for j in range(i, -1, -1):
+                        depth += line[j] == ')'
+                        depth -= line[j] == '('
+                        if depth == 0:
+                            base0 = j
+                            break
+                    if base0 >= 0:
+                        base = line[base0:ar].rstrip()
+                        fld = re.match(r'\s*(\w+)', line[ar + 2:])
+                        if fld:
+                            new = (line[:base0] + '((struct __RFLD *)'
+                                   '(uintptr_t)(' + base + '))->' +
+                                   fld.group(1) +
+                                   line[ar + 2 + fld.end():])
         if new == line:
             return None
     elif 'invalid argument type' in message and 'unary' in message:
@@ -216,7 +330,8 @@ def patch_definition(defn, lineno, col, message):
                    line[pos + m.end(1):])
         else:
             # `(...)[i]`: cast the parenthesised base to a pointer. Find the
-            # ')' adjacent to '[' and walk back to its '('.
+            # ')' adjacent to '[' and walk back to its '('. The cast must be
+            # wrapped in parens or ``[]`` would bind tighter than the cast.
             br = line.rfind('[', 0, col + 4)
             if br < 0 or line[br - 1] != ')':
                 return None
@@ -231,7 +346,148 @@ def patch_definition(defn, lineno, col, message):
                         break
             if open_idx < 0:
                 return None
-            new = (line[:open_idx] + '(int *)' + line[open_idx:])
+            new = (line[:open_idx] + '((int *)(uintptr_t)' +
+                   line[open_idx:br] + ')' + line[br:])
+    elif ('cannot cast from type' in message and
+          'to pointer type' in message):
+        # ``(T *)(double_const)``: route the scalar through uintptr_t so the
+        # cast chain is legal (double->uintptr_t->T*).
+        new = re.sub(r'\((\w+)\s*\*\)\s*\(',
+                     r'(\1 *)(uintptr_t)(', line, count=1)
+        if new == line:
+            new = re.sub(r'\((\w+)\s*\*\)\s*(?=[-\w.])',
+                         r'(\1 *)(uintptr_t)', line, count=1)
+        if new == line:
+            return None
+    elif ("cast from 'void' to 'uintptr_t'" in message or
+          "cast from type 'void'" in message):
+        # ``(uintptr_t)(void_expr)``: sequence the void expression with a
+        # comma so the cast operand has a value.
+        pos = line.find('(uintptr_t)', max(0, col - 12))
+        if pos < 0:
+            return None
+        op = line.find('(', pos + len('(uintptr_t)'))
+        if op < 0:
+            return None
+        depth, close = 0, -1
+        for i in range(op, len(line)):
+            depth += line[i] == '('
+            depth -= line[i] == ')'
+            if depth == 0:
+                close = i
+                break
+        if close < 0:
+            return None
+        new = line[:close] + ',0' + line[close:]
+    elif 'does not name a template but is followed by template' in message:
+        # ``~pair<>`` destructor-name args and ``s_<T>`` exprs: the angle
+        # construct is garbage either way; drop the arg to a null pointer.
+        new = re.sub(r'~?\b\w+\s*<[^;<>]*>', '(void*)0', line, count=1)
+        if new == line:
+            return None
+    elif ('is ambiguous' in message and
+          'reference to' in message):
+        m = re.search(r"reference to '(\w+)' is ambiguous", message)
+        if not m:
+            return None
+        # Prefer the global stub over the std one.
+        new = re.sub(r'(?<!:)\b' + m.group(1) + r'\b',
+                     '::' + m.group(1), line, count=1)
+    elif 'is not assignable' in message and 'array type' in message:
+        # ``arr1 = arr2`` on arrays: struct-wrap both lvalues so the copy
+        # assigns through a struct temporary.
+        m = re.search(r'array type .(\w+)\[(\d+)\]', message)
+        eq = line.find('=')
+        if not m or eq < 0 or line[eq + 1] == '=':
+            return None
+        n = m.group(2)
+        lhs = line[:eq].rstrip()
+        st = lhs.rfind(' ')
+        lhs_v = lhs[st + 1:] if st >= 0 else lhs
+        rhs = line[eq + 1:].rstrip().rstrip(';').strip()
+        if not re.fullmatch(r'\w+(?:\[[^\]]*\])?', lhs_v):
+            return None
+        new = (lhs[:st + 1] if st >= 0 else '') + \
+            f'*(struct {{char _p[{n}];}} *)&{lhs_v} = ' \
+            f'*(struct {{char _p[{n}];}} *)&{rhs};'
+    elif "expected '(' for function-style cast" in message:
+        # ``(type)name`` where type resolved to a variable: drop the cast.
+        pos = col - 1
+        m = re.match(r'\((\w+)\)', line[pos:])
+        if not m:
+            m2 = re.search(r'\((\w+)\)\s*\(?[\w&*]', line)
+            if not m2:
+                return None
+            m = m2
+            pos = m.start()
+        new = line[:pos] + line[pos + m.end():]
+    elif 'overloaded function could not be resolved' in message:
+        # Bare overloaded name as an argument: take its address through a
+        # code* cast to pick a single overload.
+        pos = col - 1
+        m = re.match(r'(\w+)', line[pos:])
+        if not m:
+            return None
+        new = (line[:pos] + '(code *)&' + m.group(1) +
+               line[pos + m.end(1):])
+    elif 'member reference base type' in message and 'is not a structure' in message:
+        # ``h->f`` where h's typedef resolved to void*: cast through __RFLD.
+        new = line
+        best = None
+        for m in re.finditer(r'(\w+)\s*->\s*(\w+)', line):
+            d = abs(m.start() - (col - 1))
+            if best is None or d < best[0]:
+                best = (d, m)
+        if best is None:
+            return None
+        m = best[1]
+        new = (line[:m.start()] + '((struct __RFLD *)(uintptr_t)(' +
+               m.group(1) + '))->' + m.group(2) + line[m.end():])
+    elif 'cannot take the address of an rvalue' in message:
+        # ``&(rvalue)``: ``&*p`` == ``p``, so express the address directly.
+        pos = col - 1
+        m = re.match(r'&\s*', line[pos:])
+        if not m:
+            return None
+        i = pos + m.end()
+        if i < len(line) and line[i] == '(':
+            depth, close = 0, -1
+            for j in range(i, len(line)):
+                depth += line[j] == '('
+                depth -= line[j] == ')'
+                if depth == 0:
+                    close = j
+                    break
+            if close < 0:
+                return None
+            operand = line[i:close + 1]
+        else:
+            m2 = re.match(r'[\w.]+', line[i:])
+            if not m2:
+                return None
+            close = i + m2.end()
+            if close < len(line) and line[close] == '(':
+                depth = 0
+                for j in range(close, len(line)):
+                    depth += line[j] == '('
+                    depth -= line[j] == ')'
+                    if depth == 0:
+                        close = j + 1
+                        break
+                if depth != 0:
+                    return None
+            operand = line[i:close]
+            close -= 1
+        new = (line[:pos] + '(int *)(uintptr_t)(' + operand + ')' +
+               line[close + 1:])
+    elif 'right hand operand to .*' in message:
+        # ``a .* b`` on scalars: degrade to a plain subtract (garbage anyway).
+        new = line.replace('.*', ' - (uintptr_t)', 1)
+    elif 'invalid suffix' in message and 'floating constant' in message:
+        # Ghidra float artefacts like ``0._0_8_``: strip the suffix.
+        new = re.sub(r'\._\d+_\d+_', '', line)
+        if new == line:
+            return None
     elif "C-style cast from" in message and 'is not allowed' in message:
         m = re.search(r"\((\w+)\s*\[\s*(\d+)\s*\]\)", line)
         if not m:
@@ -276,7 +532,7 @@ def header_extra(message):
     return None
 
 
-def repair_record(record, defined, scratch, max_iter=10):
+def repair_record(record, defined, scratch, max_iter=25):
     x = cbm.transform_cached(record, defined)
     if x is None:
         return None, 'transform error'
@@ -309,7 +565,11 @@ def repair_record(record, defined, scratch, max_iter=10):
             extra = header_extra(message)
             if extra is not None:
                 if isinstance(extra, tuple):
-                    member_stubs.setdefault('__fields__', set()).add(extra[2])
+                    # Named structs take the field as a static member;
+                    # __RFLD is synthesized from __scalarfields__.
+                    key = ('__scalarfields__' if extra[1] == '__RFLD'
+                           else extra[1])
+                    member_stubs.setdefault(key, set()).add(extra[2])
                 elif extra == '__retemplate__':
                     cur = 'template<>\n' + cur
                 else:
