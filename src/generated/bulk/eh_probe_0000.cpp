@@ -1537,6 +1537,100 @@ void probe_seh_10() { { ProbePOD n9; { ProbePOD n8; { ProbePOD n7; { ProbePOD n6
 void probe_sehf_10() { { ProbePOD n9; { ProbePOD n8; { ProbePOD n7; { ProbePOD n6; { ProbePOD n5; { ProbePOD n4; { ProbePOD n3; { ProbePOD n2; { ProbePOD n1; { ProbePOD n0; __try { probe_throw(); } __finally { probe_sink(0); } } } } } } } } } } } }
 void probe_seh_11() { { ProbePOD n10; { ProbePOD n9; { ProbePOD n8; { ProbePOD n7; { ProbePOD n6; { ProbePOD n5; { ProbePOD n4; { ProbePOD n3; { ProbePOD n2; { ProbePOD n1; { ProbePOD n0; __try { probe_throw(); } __except(probe_cond()) { probe_sink(0); } } } } } } } } } } } } }
 void probe_sehf_11() { { ProbePOD n10; { ProbePOD n9; { ProbePOD n8; { ProbePOD n7; { ProbePOD n6; { ProbePOD n5; { ProbePOD n4; { ProbePOD n3; { ProbePOD n2; { ProbePOD n1; { ProbePOD n0; __try { probe_throw(); } __finally { probe_sink(0); } } } } } } } } } } } } }
+int probe_tv_zero() { return 0; }
+int probe_tv_one() { return 1; }
+bool probe_tv_true() { return true; }
+bool probe_tv_false() { return false; }
+void *probe_tv_arg(void *a0) { return a0; }
+void *__stdcall probe_tv_sarg(void *a0) { return a0; }
+void *__stdcall probe_tv_sarg2(void *a0, void *a1) { return a0; }
+void *__stdcall probe_tv_sarg3(void *a0, void *a1, void *a2) { return a0; }
+void *__stdcall probe_tv_sarg4(void *a0, void *a1, void *a2, void *a3) { return a0; }
+struct ProbeTV00 { int m; int g_00(); };
+int ProbeTV00::g_00() { return m; }
+struct ProbeTL00 { int m; int *a_00(); };
+int *ProbeTL00::a_00() { return &m; }
+struct ProbeTV04 { char p[4]; int m; int g_04(); };
+int ProbeTV04::g_04() { return m; }
+struct ProbeTL04 { char p[4]; int m; int *a_04(); };
+int *ProbeTL04::a_04() { return &m; }
+struct ProbeTV08 { char p[8]; int m; int g_08(); };
+int ProbeTV08::g_08() { return m; }
+struct ProbeTL08 { char p[8]; int m; int *a_08(); };
+int *ProbeTL08::a_08() { return &m; }
+struct ProbeTV0c { char p[12]; int m; int g_0c(); };
+int ProbeTV0c::g_0c() { return m; }
+struct ProbeTL0c { char p[12]; int m; int *a_0c(); };
+int *ProbeTL0c::a_0c() { return &m; }
+struct ProbeTV10 { char p[16]; int m; int g_10(); };
+int ProbeTV10::g_10() { return m; }
+struct ProbeTL10 { char p[16]; int m; int *a_10(); };
+int *ProbeTL10::a_10() { return &m; }
+struct ProbeTV14 { char p[20]; int m; int g_14(); };
+int ProbeTV14::g_14() { return m; }
+struct ProbeTL14 { char p[20]; int m; int *a_14(); };
+int *ProbeTL14::a_14() { return &m; }
+struct ProbeTV18 { char p[24]; int m; int g_18(); };
+int ProbeTV18::g_18() { return m; }
+struct ProbeTL18 { char p[24]; int m; int *a_18(); };
+int *ProbeTL18::a_18() { return &m; }
+struct ProbeTV1c { char p[28]; int m; int g_1c(); };
+int ProbeTV1c::g_1c() { return m; }
+struct ProbeTL1c { char p[28]; int m; int *a_1c(); };
+int *ProbeTL1c::a_1c() { return &m; }
+struct ProbeTV20 { char p[32]; int m; int g_20(); };
+int ProbeTV20::g_20() { return m; }
+struct ProbeTL20 { char p[32]; int m; int *a_20(); };
+int *ProbeTL20::a_20() { return &m; }
+struct ProbeTV24 { char p[36]; int m; int g_24(); };
+int ProbeTV24::g_24() { return m; }
+struct ProbeTL24 { char p[36]; int m; int *a_24(); };
+int *ProbeTL24::a_24() { return &m; }
+struct ProbeTV28 { char p[40]; int m; int g_28(); };
+int ProbeTV28::g_28() { return m; }
+struct ProbeTL28 { char p[40]; int m; int *a_28(); };
+int *ProbeTL28::a_28() { return &m; }
+struct ProbeTV2c { char p[44]; int m; int g_2c(); };
+int ProbeTV2c::g_2c() { return m; }
+struct ProbeTL2c { char p[44]; int m; int *a_2c(); };
+int *ProbeTL2c::a_2c() { return &m; }
+struct ProbeTV30 { char p[48]; int m; int g_30(); };
+int ProbeTV30::g_30() { return m; }
+struct ProbeTL30 { char p[48]; int m; int *a_30(); };
+int *ProbeTL30::a_30() { return &m; }
+struct ProbeTV34 { char p[52]; int m; int g_34(); };
+int ProbeTV34::g_34() { return m; }
+struct ProbeTL34 { char p[52]; int m; int *a_34(); };
+int *ProbeTL34::a_34() { return &m; }
+struct ProbeTV38 { char p[56]; int m; int g_38(); };
+int ProbeTV38::g_38() { return m; }
+struct ProbeTL38 { char p[56]; int m; int *a_38(); };
+int *ProbeTL38::a_38() { return &m; }
+struct ProbeTV3c { char p[60]; int m; int g_3c(); };
+int ProbeTV3c::g_3c() { return m; }
+struct ProbeTL3c { char p[60]; int m; int *a_3c(); };
+int *ProbeTL3c::a_3c() { return &m; }
+struct ProbeTV40 { char p[64]; int m; int g_40(); };
+int ProbeTV40::g_40() { return m; }
+struct ProbeTL40 { char p[64]; int m; int *a_40(); };
+int *ProbeTL40::a_40() { return &m; }
+struct ProbeTV44 { char p[68]; int m; int g_44(); };
+int ProbeTV44::g_44() { return m; }
+struct ProbeTL44 { char p[68]; int m; int *a_44(); };
+int *ProbeTL44::a_44() { return &m; }
+struct ProbeTV48 { char p[72]; int m; int g_48(); };
+int ProbeTV48::g_48() { return m; }
+struct ProbeTL48 { char p[72]; int m; int *a_48(); };
+int *ProbeTL48::a_48() { return &m; }
+struct ProbeTV4c { char p[76]; int m; int g_4c(); };
+int ProbeTV4c::g_4c() { return m; }
+struct ProbeTL4c { char p[76]; int m; int *a_4c(); };
+int *ProbeTL4c::a_4c() { return &m; }
+int *probe_idx1(int *a, int i) { return a + i * 1; }
+int *probe_idx2(int *a, int i) { return a + i * 2; }
+int *probe_idx3(int *a, int i) { return a + i * 3; }
+int *probe_idx4(int *a, int i) { return a + i * 4; }
+int *probe_idx5(int *a, int i) { return a + i * 5; }
 struct ProbeOff00004 { char pad[3]; ProbeSub m; };
 void probe_off_00004_0() { ProbeOff00004 *p = new ProbeOff00004; probe_throw(); }
 void probe_off_00004_1() { { ProbeD4 n0; ProbeOff00004 *p = new ProbeOff00004; probe_throw(); } }

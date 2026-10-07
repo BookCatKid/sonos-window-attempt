@@ -480,6 +480,44 @@ def emit_extra_families(out, count):
         )
 
 
+def emit_universal_trivia(out):
+    """Emit the common leaf bodies unconditionally.
+
+    Ghidra-missed functions have no inventory row, so trivial_entries never
+    emits them; the windowed matcher only needs an object containing the
+    bytes. One copy of each shape is enough -- matches are per-VA.
+    """
+    out.append('int probe_tv_zero() { return 0; }')
+    out.append('int probe_tv_one() { return 1; }')
+    out.append('bool probe_tv_true() { return true; }')
+    out.append('bool probe_tv_false() { return false; }')
+    out.append('void *probe_tv_arg(void *a0) { return a0; }')
+    out.append('void *__stdcall probe_tv_sarg(void *a0) { return a0; }')
+    out.append('void *__stdcall probe_tv_sarg2(void *a0, void *a1) '
+               '{ return a0; }')
+    out.append('void *__stdcall probe_tv_sarg3(void *a0, void *a1, void *a2) '
+               '{ return a0; }')
+    out.append('void *__stdcall probe_tv_sarg4(void *a0, void *a1, void *a2,'
+               ' void *a3) { return a0; }')
+    # member getters/setters at the offsets the reference uses most
+    for off in (0, 4, 8, 0xc, 0x10, 0x14, 0x18, 0x1c, 0x20, 0x24, 0x28,
+                0x2c, 0x30, 0x34, 0x38, 0x3c, 0x40, 0x44, 0x48, 0x4c):
+        pad = f'char p[{off}]; ' if off else ''
+        out.append(
+            f'struct ProbeTV{off:02x} {{ {pad}int m; int g_{off:02x}(); }};\n'
+            f'int ProbeTV{off:02x}::g_{off:02x}() {{ return m; }}'
+        )
+        out.append(
+            f'struct ProbeTL{off:02x} {{ {pad}int m; int *a_{off:02x}(); }};\n'
+            f'int *ProbeTL{off:02x}::a_{off:02x}() {{ return &m; }}'
+        )
+    # indexed helpers:  mov eax,[esp+8]; lea ecx,[eax*N]; ...
+    for k in range(1, 6):
+        out.append(
+            f'int *probe_idx{k}(int *a, int i) {{ return a + i * {k}; }}'
+        )
+
+
 def trivial_entries(reference, image, layout, inventory):
     """Uncovered inventory entries that are trivially reproducible bodies.
 
@@ -595,6 +633,7 @@ def main():
     emit_delete_chains(out, args.sweep)
     emit_array_sweep(out, args.sweep)
     emit_extra_families(out, 12)
+    emit_universal_trivia(out)
 
     index_rows = []
     if args.reference and args.image and args.report:
