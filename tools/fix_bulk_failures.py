@@ -80,6 +80,27 @@ def _cmp_rewrite(line, col):
                  '(uintptr_t)(', line)
     new = re.sub(r'\(\s*(?:const\s+)?[A-Za-z_][\w:<>]*\s*\*+\s*\)\s*([A-Za-z_]\w*)',
                  r'(uintptr_t)\1', new)
+    if new == line:
+        # No cast on the line: the pointer operand is a bare lvalue. Wrap the
+        # identifier nearest the reported column that sits beside a
+        # comparison operator.
+        best = None
+        for m in list(re.finditer(
+                r'\b([A-Za-z_]\w*(?:\[[^\]]*\]|->\w+|\.\w+)*)\b'
+                r'(?=\s*(?:==|!=|<=?|>=?))', line)) + list(re.finditer(
+                r'(?:==|!=|<=?|>=?)\s*([A-Za-z_]\w*)', line)):
+            name = m.group(1)
+            if name in ('if', 'while', 'return', 'switch', 'for', 'int',
+                        'uint', 'char', 'uintptr_t', 'sizeof'):
+                continue
+            d = abs(m.start() - (col - 1))
+            if best is None or d < best[0]:
+                best = (d, m, name)
+        if best is not None:
+            _, m, name = best
+            new = (line[:m.start()] + '(uintptr_t)(' + name + ')' +
+                   line[m.start() + len(name):])
+            return new
     return new if new != line else None
 
 
@@ -133,13 +154,35 @@ def patch_definition(defn, lineno, col, message):
         if new == line:
             new = re.sub(r'\bcode\s+(\w+)', r'code *\1', line)
     elif 'indirection requires pointer operand' in message:
-        # An earlier uintptr_t coercion stripped a cast the line dereferenced;
-        # put the pointer cast back around the integer conversion.
-        new = re.sub(r'\*\s*\(uintptr_t\)\s*\(',
-                     '*(int *)(uintptr_t)(', line)
+        # `*x` where x is an integer: Ghidra's deref of a scalar needs a
+        # pointer cast; likewise repair earlier uintptr_t damage.
+        pos = col - 1
+        m = re.match(r'\*+\s*(\(uintptr_t\)\s*)?(\w+|\([^()]*\))', line[pos:])
+        if m:
+            new = (line[:pos] + '*(int *)(uintptr_t)(' + m.group(2) + ')' +
+                   line[pos + m.end():])
+        else:
+            new = re.sub(r'\*\s*\(uintptr_t\)\s*\(',
+                         '*(int *)(uintptr_t)(', line)
+            if new == line:
+                new = re.sub(r'\*\s*\(uintptr_t\)\s*(\w+)',
+                             r'*(int *)(uintptr_t)\1', line)
+    elif 'use of overloaded operator' in message and 'ambiguous' in message:
+        # A class-typed operand makes builtin comparison ambiguous; force
+        # both sides through int.
+        new = _cmp_rewrite(line, col)
         if new == line:
-            new = re.sub(r'\*\s*\(uintptr_t\)\s*(\w+)',
-                         r'*(int *)(uintptr_t)\1', line)
+            ops = [m for m in re.finditer(r'<=|>=|==|!=|<|>', line)]
+            ops = [m for m in ops if m.start() >= col - 6]
+            if ops:
+                m = ops[0]
+                operand = line[m.end():].lstrip()
+                lead = len(line[m.end():]) - len(operand)
+                end = operand.find(')') 
+                end = end if end > 0 else operand.find(';')
+                end = end if end > 0 else len(operand)
+                new = (line[:m.end() + lead] + '(int)(' +
+                       operand[:end].rstrip() + ')' + operand[end:])
     elif 'member reference type' in message and 'not a pointer' in message:
         # scalar->field: route through the field-bearing stub. clang's
         # column lands on or near the '->'; scan the whole line for the
