@@ -39,6 +39,14 @@ on:
         description: Optional suffix appended to bulk object names
         type: string
         default: ''
+      crt_probe:
+        description: Compile installed CRT sources (vcruntime/stl/ucrt) for matching
+        type: boolean
+        default: false
+      crt_sdk:
+        description: Windows SDK version whose ucrt sources to compile, e.g. 10.0.17763.0
+        type: string
+        default: '10.0.17763.0'
   push:
     branches: [main]
     paths:
@@ -188,6 +196,42 @@ jobs:
           }
           Get-ChildItem out\crtlibs | ForEach-Object { Write-Output $_.Name }
 
+      - name: Compile installed CRT sources
+        if: github.event.inputs.crt_probe == 'true'
+        shell: pwsh
+        run: |
+          $tool = 'C:\VS2019BuildTools\VC\Tools\MSVC\14.28.29910'
+          $cl = Join-Path $tool 'bin\HostX64\x86\cl.exe'
+          $src = Join-Path $tool 'crt\src'
+          New-Item -ItemType Directory -Force out\crtsrc | Out-Null
+          $flags = @('/nologo','/c','/O2','/GS-','/MT','/Zl','/Zc:wchar_t','/GR','/EHsc','/DNDEBUG','/wd4530')
+          $roots = @(
+            Join-Path $src 'vcruntime',
+            Join-Path $src 'i386',
+            Join-Path $src 'stl',
+            Join-Path $src 'vccorlib'
+          )
+          $sdkUcrt = "${env:ProgramFiles(x86)}\Windows Kits\10\Source\${{ github.event.inputs.crt_sdk }}\ucrt"
+          if (Test-Path $sdkUcrt) { $roots += $sdkUcrt }
+          $inc = @(
+            (Join-Path $tool 'include'),
+            (Join-Path $src 'vcruntime'),
+            (Join-Path $src 'stl'),
+            $sdkUcrt
+          ) | ForEach-Object { '/I' + $_ }
+          $count = 0
+          foreach ($r in $roots) {
+            if (-not (Test-Path $r)) { Write-Output "MISSING $r"; continue }
+            Get-ChildItem $r -Recurse -Include *.c,*.cpp -File | ForEach-Object {
+              $tag = $_.FullName.Substring($r.Length + 1).Replace('\','_').Replace('/','_')
+              $log = "out\crtsrc\$tag.log"
+              & $cl $flags $inc $_.FullName ("/Foout\crtsrc\$tag.obj") *> $log
+              if ($LASTEXITCODE -eq 0) { $script:count++ }
+            }
+          }
+          Write-Output "compiled $count CRT objects"
+          Get-ChildItem out\crtsrc\*.obj | Measure-Object | Select-Object -Expand Count
+
       - name: Compile genuine linker and library experiments
         if: github.event.inputs.build_experiments == 'true'
         shell: cmd
@@ -235,5 +279,6 @@ jobs:
             out/libraries/**
             out/matching/**
             out/crtlibs/**
+            out/crtsrc/**
           if-no-files-found: warn
 
