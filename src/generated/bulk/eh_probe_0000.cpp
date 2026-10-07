@@ -4,6 +4,8 @@ struct ProbeD4 { int v; ProbeD4(); ~ProbeD4(); };
 struct ProbeSub { ~ProbeSub(); };
 extern void probe_throw();
 extern void probe_sink(void *);
+extern int probe_cond();
+extern ProbeSub *probe_psub();
 extern ProbeDtor probe_make();
 extern ProbeD4 probe_make4();
 extern void *operator new(unsigned int);
@@ -1206,6 +1208,42 @@ extern void (*volatile probe_fp7)();
 void probe_iat_7() { probe_fp7(); }
 extern void (*volatile probe_fq7)();
 void probe_iatq_7() { probe_fq7(); __assume(0); }
+void probe_cond_0() { if (probe_cond()) { ProbeSub t; probe_throw(); } }
+void probe_condp_0() { ProbeSub *p = probe_psub(); if (probe_cond()) delete p; probe_throw(); }
+void probe_condm_0() { if (probe_cond()) { ProbeDtor t; } probe_throw(); }
+void probe_cond_1() { { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } }
+void probe_condp_1() { ProbeSub *p = probe_psub(); { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } }
+void probe_condm_1() { { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } }
+void probe_cond_2() { { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } }
+void probe_condp_2() { ProbeSub *p = probe_psub(); { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } }
+void probe_condm_2() { { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } }
+void probe_cond_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } } }
+void probe_condp_3() { ProbeSub *p = probe_psub(); { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } } }
+void probe_condm_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } } }
+void probe_cond_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } } } }
+void probe_condp_4() { ProbeSub *p = probe_psub(); { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } } } }
+void probe_condm_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } } } }
+void probe_cond_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } } } } }
+void probe_condp_5() { ProbeSub *p = probe_psub(); { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } } } } }
+void probe_condm_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } } } } }
+void probe_cond_6() { { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } } } } } }
+void probe_condp_6() { ProbeSub *p = probe_psub(); { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } } } } } }
+void probe_condm_6() { { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } } } } } }
+void probe_cond_7() { { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } } } } } } }
+void probe_condp_7() { ProbeSub *p = probe_psub(); { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } } } } } } }
+void probe_condm_7() { { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } } } } } } }
+void probe_cond_8() { { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } } } } } } } }
+void probe_condp_8() { ProbeSub *p = probe_psub(); { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } } } } } } } }
+void probe_condm_8() { { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } } } } } } } }
+void probe_cond_9() { { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } } } } } } } } }
+void probe_condp_9() { ProbeSub *p = probe_psub(); { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } } } } } } } } }
+void probe_condm_9() { { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } } } } } } } } }
+void probe_cond_10() { { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } } } } } } } } } }
+void probe_condp_10() { ProbeSub *p = probe_psub(); { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } } } } } } } } } }
+void probe_condm_10() { { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } } } } } } } } } }
+void probe_cond_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } } } } } } } } } } }
+void probe_condp_11() { ProbeSub *p = probe_psub(); { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } } } } } } } } } } }
+void probe_condm_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } } } } } } } } } } }
 struct ProbeOff00004 { char pad[3]; ProbeSub m; };
 void probe_off_00004_0() { ProbeOff00004 *p = new ProbeOff00004; probe_throw(); }
 void probe_off_00004_1() { { ProbeD4 n0; ProbeOff00004 *p = new ProbeOff00004; probe_throw(); } }

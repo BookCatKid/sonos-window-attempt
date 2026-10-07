@@ -16,6 +16,8 @@ struct ProbeD4 { int v; ProbeD4(); ~ProbeD4(); };
 struct ProbeSub { ~ProbeSub(); };
 extern void probe_throw();
 extern void probe_sink(void *);
+extern int probe_cond();
+extern ProbeSub *probe_psub();
 extern ProbeDtor probe_make();
 extern ProbeD4 probe_make4();
 extern void *operator new(unsigned int);
@@ -375,6 +377,27 @@ def emit_extra_families(out, count):
         out.append(
             f'extern void (*volatile probe_fq{k})();\n'
             f'void probe_iatq_{k}() {{ probe_fq{k}(); __assume(0); }}'
+        )
+    # Conditional construction: MSVC tracks a conditionally-built local with
+    # flag bits ->  mov eax,[ebp-flag]; and eax,bit; jz; and [flag],~bit;
+    #               (lea|mov) ecx,obj; jmp ~T; ret
+    for d in range(count):
+        out.append(
+            f'void probe_cond_{d}() {{ '
+            + _nest('if (probe_cond()) { ProbeSub t; probe_throw(); }',
+                    d)
+            + ' }'
+        )
+        out.append(
+            f'void probe_condp_{d}() {{ ProbeSub *p = probe_psub(); '
+            + _nest('if (probe_cond()) delete p; probe_throw();', d)
+            + ' }'
+        )
+        out.append(
+            f'void probe_condm_{d}() {{ '
+            + _nest('if (probe_cond()) { ProbeDtor t; } probe_throw();',
+                    d)
+            + ' }'
         )
 
 
