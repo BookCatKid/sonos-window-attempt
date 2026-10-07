@@ -206,10 +206,10 @@ jobs:
           New-Item -ItemType Directory -Force out\crtsrc | Out-Null
           $flags = @('/nologo','/c','/O2','/GS-','/MT','/Zl','/Zc:wchar_t','/GR','/EHsc','/DNDEBUG','/wd4530')
           $roots = @(
-            Join-Path $src 'vcruntime',
-            Join-Path $src 'i386',
-            Join-Path $src 'stl',
-            Join-Path $src 'vccorlib'
+            "$src\vcruntime",
+            "$src\i386",
+            "$src\stl",
+            "$src\vccorlib"
           )
           $sdkUcrt = "${env:ProgramFiles(x86)}\Windows Kits\10\Source\${{ github.event.inputs.crt_sdk }}\ucrt"
           if (Test-Path $sdkUcrt) { $roots += $sdkUcrt }
