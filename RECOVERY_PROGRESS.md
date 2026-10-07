@@ -1048,3 +1048,31 @@ CRT sources ARE installed on the runner:
 stl,vccorlib}` and UCRT under `Windows Kits\10\Source\<sdk>\ucrt` for
 SDK 10240/17763/19041/22621/26100. A `crt_probe` workflow input now
 compiles those with `/O2 /GS-` and uploads the objects for matching.
+
+### Iteration: windowed matching + trivial bodies -> 97.90%
+
+**97.90% aligned-identical** (36,375,117 / 37,153,792; candidate SHA
+`fcff12caaa9cfe92`, `analysis/linked-gsminus8/`).
+
+- `match_eh_funclets.py` now also yields `.text$mn` COMDAT bodies and
+  anchors windowed scans on a one-shot 4-byte position index over
+  differing runs. Bulk-corpus objects contribute real function bodies
+  against Ghidra-missed code (22,077 placements / 261KB in one pass).
+- `link_recovery_image.py` padding: `0x90` joined `0xCC`/`0x00` for
+  outside-extent fills, and bounded `0xCC` runs inside extents adjacent
+  to coverage are filled (trailing pad after small bodies).
+- Corpus additions: conditional-construction probes, catch-by-ref/value
+  funclets, `call [fp]` stubs, SEH `__try/__except/__finally`, sized-
+  delete pointer-first nests, flag-hunt construct matrix, and
+  unconditional universal trivia (`return true/0`, arg getters,
+  member getters) so Ghidra-missed leaf bodies match via windows.
+
+Constraint check: ~36 generated source files contain `__asm _emit`
+byte transcriptions (the old decompile fallback). Verified zero
+placement bytes originate from those objects -- the no-asm rule holds.
+
+Remaining (~780KB): ~334KB of >256B real bodies whose only source is
+the asm transcription (need real-C++ reconstruction), ~240KB of small
+in-extent bodies (flag-gated `and eax,imm` forms not yet emitted by
+any construct tried; sized-delete/push32 forms), ~200KB outside-extent
+(funclets, epilogues, CRT string/memory routines Ghidra missed).
