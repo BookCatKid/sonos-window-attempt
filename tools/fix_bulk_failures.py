@@ -870,15 +870,32 @@ def main():
                     default=ROOT / 'analysis' / 'compiled-cpp-bulk' /
                     'refixed' / 'compiled-index.tsv')
     ap.add_argument('--name-prefix', default='bulk_refixed')
+    ap.add_argument('--include-switchd', action='store_true',
+                    help='also attempt records gated out solely by switchD_')
     ap.add_argument('--limit', type=int, default=0)
     args = ap.parse_args()
 
     failures = load_failure_entries(args.index_dir)
     records = load_records(args.exports)
     todo = [records[e] for e in sorted(failures) if e in records]
+    gated = []
+    if args.include_switchd:
+        # Ghidra's ``switchD_*``/``caseD_*`` jump-table labels are legal C
+        # gotos — eligible_bulk excludes them conservatively. Attempt the
+        # ones not gated for any other reason.
+        gated = [r for r in records.values()
+                 if r['entry'] not in failures
+                 and re.search(r'\bswitchD_', r.get('decompiled_c', ''))
+                 and not re.search(
+                     r'\bSUB_|\bbadstackalloc|\bin_FS_SEGMENT|'
+                     r'\bunaff_retaddr|\bregister0x|\bCatch_All_|'
+                     r'\bCatch_\w+\s*\(', r.get('decompiled_c', ''))]
+        gated.sort(key=lambda r: r['entry'])
+        todo += gated
     if args.limit:
         todo = todo[:args.limit]
-    print(f'{len(failures)} failures, {len(todo)} with records', flush=True)
+    print(f'{len(failures)} failures, {len(gated)} gated-switchd, '
+          f'{len(todo)} with records', flush=True)
 
     # clang-cl parses a leading-dot filename as a /U option; keep the scratch
     # file outside the source tree entirely.
@@ -895,7 +912,8 @@ def main():
         if result is not None:
             fixed.append((record, result, err or []))
             print(f'  fixed {record["entry"]} ({record["body_bytes"]}B) '
-                  f'was: {failures[record["entry"]][:60]}', flush=True)
+                  f'was: {failures.get(record["entry"], "gated")[:60]}',
+                  flush=True)
         else:
             still_bad.append((record['entry'], err))
     scratch.unlink(missing_ok=True)
@@ -904,35 +922,46 @@ def main():
         print(f'    {e}: {err[:90]}')
 
     if fixed:
-        out = args.out_dir / f'{args.name_prefix}_0000.cpp'
-        recs = []
-        all_extras = []
-        for record, defn, extras in fixed:
-            rec = dict(record)
-            xf = record['xformed'] or (None,) * 6
-            rec['xformed'] = (defn,) + tuple(xf[1:6])
-            recs.append(rec)
-            all_extras.extend(e for e in extras if e not in all_extras)
-        source, _ = cbm.cpp_source(recs, defined)
-        if all_extras:
-            pos = source.find('#line')
-            if pos < 0:
-                pos = len(source)
-            source = source[:pos] + '\n'.join(all_extras) + '\n' + source[pos:]
-        try:
-            from apply_bulk_signature_recovery import lower_free_thiscall
-            source, _lowered = lower_free_thiscall(source)
-        except Exception:
-            pass
-        out.write_text(source)
+        gated_entries = {r['entry'] for r in gated}
+        groups = {'0000': [f for f in fixed
+                           if f[0]['entry'] not in gated_entries],
+                  '0001': [f for f in fixed
+                           if f[0]['entry'] in gated_entries]}
+        all_rows = []
+        for suffix, group in groups.items():
+            if not group:
+                continue
+            out = args.out_dir / f'{args.name_prefix}_{suffix}.cpp'
+            recs = []
+            all_extras = []
+            for record, defn, extras in group:
+                rec = dict(record)
+                xf = record['xformed'] or (None,) * 6
+                rec['xformed'] = (defn,) + tuple(xf[1:6])
+                recs.append(rec)
+                all_extras.extend(e for e in extras if e not in all_extras)
+            source, _ = cbm.cpp_source(recs, defined)
+            if all_extras:
+                pos = source.find('#line')
+                if pos < 0:
+                    pos = len(source)
+                source = (source[:pos] + '\n'.join(all_extras) + '\n' +
+                          source[pos:])
+            try:
+                from apply_bulk_signature_recovery import lower_free_thiscall
+                source, _lowered = lower_free_thiscall(source)
+            except Exception:
+                pass
+            out.write_text(source)
+            all_rows.extend(group)
+            print(f'wrote {out} ({len(group)} fns, '
+                  f'{sum(r["body_bytes"] for r, _, _ in group)} bytes)')
         args.index_out.parent.mkdir(parents=True, exist_ok=True)
         with args.index_out.open('w', newline='') as f:
             w = csv.writer(f, delimiter='\t')
             w.writerow(['entry', 'name', 'reference_body_bytes'])
             w.writerows([r['entry'], r['name'], r['body_bytes']]
-                        for r, _, _ in fixed)
-        print(f'wrote {out} ({len(fixed)} fns, '
-              f'{sum(r["body_bytes"] for r, _, _ in fixed)} bytes)')
+                        for r, _, _ in all_rows)
 
 
 if __name__ == '__main__':
