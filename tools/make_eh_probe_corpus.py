@@ -389,12 +389,17 @@ def emit_targeted(out, sets):
             )
     # Flag-clears: a catch block that returns to try-level resets the
     # construction-flag dword ->  and dword[ebp-slot],mask
+    seen_masks = set()
     for slot, mask in sorted(sets.get('flag_clr', ())):
-        if slot < 0x08 or slot > 0x7f or not mask:
+        # slot is a signed disp8; negative slots (ebp-0x10 -> 0xf0) are the
+        # common case, so only dedupe on the mask -- the nest sweep covers
+        # the slot neighbourhood either way.
+        if not mask or mask in seen_masks:
             continue
+        seen_masks.add(mask)
         bit = (~mask & 0xff).bit_length()
         decls = ' '.join(f'ProbeSub m{i};' for i in range(min(bit, 24)))
-        for d in range(0, 5):
+        for d in range(0, 9):
             tag = f'{slot:02x}_{mask:02x}_{d}'
             out.append(
                 f'void probe_fclr_{tag}() {{ '
@@ -409,6 +414,10 @@ def emit_targeted(out, sets):
                 f'{{ probe_throw(); {sinks}; }} catch (...) {{ throw; }}'
             )
     # Flag masks: function-try ctor with enough members to reach bit N.
+    # The flag dword's frame slot depends on the parent's local layout,
+    # so sweep ctor-body padding to shift it through the observed disp8
+    # neighbourhood, and emit sequential + nested conditional locals for
+    # frames that track object lifetimes with flag bits instead.
     for mask in sorted(sets['flag_mask']):
         if mask <= 0 or (mask & (mask - 1)):
             continue  # only power-of-2 bits are member-init flags
@@ -419,6 +428,36 @@ def emit_targeted(out, sets):
             f'ProbeFM{mask:08x}::ProbeFM{mask:08x}() try {{ probe_throw(); }}'
             f' catch (...) {{ throw; }}'
         )
+        for pad in range(1, 13):
+            tag = f'{mask:08x}_{pad}'
+            out.append(
+                f'struct ProbeFP{tag} {{ {decls} ProbeFP{tag}(); }};\n'
+                f'ProbeFP{tag}::ProbeFP{tag}() try '
+                f'{{ int pad[{pad}]; probe_sink(&pad[0]); probe_throw(); }}'
+                f' catch (...) {{ throw; }}'
+            )
+        # Nested conditional locals: overlapping lifetimes give each
+        # object its own flag bit.
+        inner = 'probe_throw();'
+        for i in range(bit + 1):
+            inner = (f'if (probe_cond()) {{ ProbeSub t{i}; '
+                     f'probe_sink(&t{i}); {inner} }}')
+        for pad in range(0, 9):
+            pl = f'int q[{pad}]; probe_sink(&q[0]); ' if pad else ''
+            out.append(
+                f'void probe_fq_{mask:08x}_{pad}() {{ {pl}{inner} }}'
+            )
+        # Sequential conditional locals: MSVC may assign distinct bits
+        # even when lifetimes are disjoint.
+        seq = ' '.join(
+            f'if (probe_cond()) {{ ProbeSub s{i}; probe_sink(&s{i}); }}'
+            for i in range(bit + 1))
+        for pad in range(0, 9):
+            pl = f'int r[{pad}]; probe_sink(&r[0]); ' if pad else ''
+            out.append(
+                f'void probe_fs_{mask:08x}_{pad}() {{ {pl}{seq} '
+                f'probe_throw(); }}'
+            )
 
 
 def emit_extra_families(out, count):
