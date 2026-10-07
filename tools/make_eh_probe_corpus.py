@@ -302,6 +302,8 @@ def emit_targeted(out, sets):
     # Sized deletes: new char[sz] cleanup is
     #   push sz; mov eax,[ebp-p]; push eax; call delete(p,sz)...
     # Nest each size so the pointer slot sweeps the needed disp range.
+    # Two layouts: pointer deepest (nest wraps it) and pointer first
+    # (shallow slot, pad locals deeper).
     for sz in sorted(sets['del_sz']):
         if sz < 4 or sz > 0x8000:
             continue
@@ -309,6 +311,12 @@ def emit_targeted(out, sets):
             out.append(
                 f'void probe_dsz_{sz:05x}_{d}() {{ '
                 + _nest(f'char *p = new char[{sz}]; probe_throw();', d)
+                + ' }'
+            )
+            out.append(
+                f'void probe_dszf_{sz:05x}_{d}() {{ '
+                f'char *p = new char[{sz}]; '
+                + _nest('probe_throw();', d)
                 + ' }'
             )
         if 8 <= sz <= 0x400:
@@ -581,7 +589,7 @@ def main():
     emit_lea_chains(out, args.sweep)
     emit_mov_chains(out, args.sweep)
     emit_member_sweep(out, args.sweep)
-    emit_flag_members(out, 8)
+    emit_flag_members(out, 16)
     emit_member_new_probes(out, args.sweep)
     emit_array_members(out, min(args.sweep, 40))
     emit_delete_chains(out, args.sweep)
