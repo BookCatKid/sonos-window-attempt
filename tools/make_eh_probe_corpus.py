@@ -400,6 +400,25 @@ def emit_extra_families(out, count):
                     d)
             + ' }'
         )
+    # Member-init new-expressions in function-try ctors use construction-flag
+    # bits ->  mov eax,[ebp-flag]; and eax,bit; jz; and [flag],~bit;
+    #          mov ecx,[ebp-this]; jmp ~T; ret
+    for d in range(count):
+        for n in (1, 2, 4):
+            pad = f'int pad[{d}]; ' if d else ''
+            mems = ' '.join(f'ProbeSub *p{i};' for i in range(n))
+            init = ', '.join(f'p{i}(new ProbeSub)' for i in range(n))
+            tag = f'{d}_{n}'
+            out.append(
+                f'struct ProbeNI{tag} {{ {pad}{mems} ProbeNI{tag}(); }};\n'
+                f'ProbeNI{tag}::ProbeNI{tag}() try : {init} '
+                f'{{ probe_throw(); }} catch (...) {{ throw; }}'
+            )
+            out.append(
+                f'struct ProbeNJ{tag} {{ {pad}{mems} ProbeNJ{tag}(); }};\n'
+                f'ProbeNJ{tag}::ProbeNJ{tag}() : {init} '
+                f'{{ probe_throw(); }}'
+            )
     # SEH __try/__except filters receive the establisher frame through a
     # second stack arg -> mov edx,[esp+8]; lea eax,[edx+0xc]; xor-checked
     # field loads + calls. Sweeping locals shifts the field offsets.

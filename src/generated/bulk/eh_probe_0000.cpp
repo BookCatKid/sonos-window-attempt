@@ -1245,6 +1245,150 @@ void probe_condm_10() { { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; 
 void probe_cond_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeSub t; probe_throw(); } } } } } } } } } } } } }
 void probe_condp_11() { ProbeSub *p = probe_psub(); { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) delete p; probe_throw(); } } } } } } } } } } } }
 void probe_condm_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond()) { ProbeDtor t; } probe_throw(); } } } } } } } } } } } }
+struct ProbeNI0_1 { ProbeSub *p0; ProbeNI0_1(); };
+ProbeNI0_1::ProbeNI0_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ0_1 { ProbeSub *p0; ProbeNJ0_1(); };
+ProbeNJ0_1::ProbeNJ0_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI0_2 { ProbeSub *p0; ProbeSub *p1; ProbeNI0_2(); };
+ProbeNI0_2::ProbeNI0_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ0_2 { ProbeSub *p0; ProbeSub *p1; ProbeNJ0_2(); };
+ProbeNJ0_2::ProbeNJ0_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI0_4 { ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI0_4(); };
+ProbeNI0_4::ProbeNI0_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ0_4 { ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ0_4(); };
+ProbeNJ0_4::ProbeNJ0_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI1_1 { int pad[1]; ProbeSub *p0; ProbeNI1_1(); };
+ProbeNI1_1::ProbeNI1_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ1_1 { int pad[1]; ProbeSub *p0; ProbeNJ1_1(); };
+ProbeNJ1_1::ProbeNJ1_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI1_2 { int pad[1]; ProbeSub *p0; ProbeSub *p1; ProbeNI1_2(); };
+ProbeNI1_2::ProbeNI1_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ1_2 { int pad[1]; ProbeSub *p0; ProbeSub *p1; ProbeNJ1_2(); };
+ProbeNJ1_2::ProbeNJ1_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI1_4 { int pad[1]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI1_4(); };
+ProbeNI1_4::ProbeNI1_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ1_4 { int pad[1]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ1_4(); };
+ProbeNJ1_4::ProbeNJ1_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI2_1 { int pad[2]; ProbeSub *p0; ProbeNI2_1(); };
+ProbeNI2_1::ProbeNI2_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ2_1 { int pad[2]; ProbeSub *p0; ProbeNJ2_1(); };
+ProbeNJ2_1::ProbeNJ2_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI2_2 { int pad[2]; ProbeSub *p0; ProbeSub *p1; ProbeNI2_2(); };
+ProbeNI2_2::ProbeNI2_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ2_2 { int pad[2]; ProbeSub *p0; ProbeSub *p1; ProbeNJ2_2(); };
+ProbeNJ2_2::ProbeNJ2_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI2_4 { int pad[2]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI2_4(); };
+ProbeNI2_4::ProbeNI2_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ2_4 { int pad[2]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ2_4(); };
+ProbeNJ2_4::ProbeNJ2_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI3_1 { int pad[3]; ProbeSub *p0; ProbeNI3_1(); };
+ProbeNI3_1::ProbeNI3_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ3_1 { int pad[3]; ProbeSub *p0; ProbeNJ3_1(); };
+ProbeNJ3_1::ProbeNJ3_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI3_2 { int pad[3]; ProbeSub *p0; ProbeSub *p1; ProbeNI3_2(); };
+ProbeNI3_2::ProbeNI3_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ3_2 { int pad[3]; ProbeSub *p0; ProbeSub *p1; ProbeNJ3_2(); };
+ProbeNJ3_2::ProbeNJ3_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI3_4 { int pad[3]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI3_4(); };
+ProbeNI3_4::ProbeNI3_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ3_4 { int pad[3]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ3_4(); };
+ProbeNJ3_4::ProbeNJ3_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI4_1 { int pad[4]; ProbeSub *p0; ProbeNI4_1(); };
+ProbeNI4_1::ProbeNI4_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ4_1 { int pad[4]; ProbeSub *p0; ProbeNJ4_1(); };
+ProbeNJ4_1::ProbeNJ4_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI4_2 { int pad[4]; ProbeSub *p0; ProbeSub *p1; ProbeNI4_2(); };
+ProbeNI4_2::ProbeNI4_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ4_2 { int pad[4]; ProbeSub *p0; ProbeSub *p1; ProbeNJ4_2(); };
+ProbeNJ4_2::ProbeNJ4_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI4_4 { int pad[4]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI4_4(); };
+ProbeNI4_4::ProbeNI4_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ4_4 { int pad[4]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ4_4(); };
+ProbeNJ4_4::ProbeNJ4_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI5_1 { int pad[5]; ProbeSub *p0; ProbeNI5_1(); };
+ProbeNI5_1::ProbeNI5_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ5_1 { int pad[5]; ProbeSub *p0; ProbeNJ5_1(); };
+ProbeNJ5_1::ProbeNJ5_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI5_2 { int pad[5]; ProbeSub *p0; ProbeSub *p1; ProbeNI5_2(); };
+ProbeNI5_2::ProbeNI5_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ5_2 { int pad[5]; ProbeSub *p0; ProbeSub *p1; ProbeNJ5_2(); };
+ProbeNJ5_2::ProbeNJ5_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI5_4 { int pad[5]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI5_4(); };
+ProbeNI5_4::ProbeNI5_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ5_4 { int pad[5]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ5_4(); };
+ProbeNJ5_4::ProbeNJ5_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI6_1 { int pad[6]; ProbeSub *p0; ProbeNI6_1(); };
+ProbeNI6_1::ProbeNI6_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ6_1 { int pad[6]; ProbeSub *p0; ProbeNJ6_1(); };
+ProbeNJ6_1::ProbeNJ6_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI6_2 { int pad[6]; ProbeSub *p0; ProbeSub *p1; ProbeNI6_2(); };
+ProbeNI6_2::ProbeNI6_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ6_2 { int pad[6]; ProbeSub *p0; ProbeSub *p1; ProbeNJ6_2(); };
+ProbeNJ6_2::ProbeNJ6_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI6_4 { int pad[6]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI6_4(); };
+ProbeNI6_4::ProbeNI6_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ6_4 { int pad[6]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ6_4(); };
+ProbeNJ6_4::ProbeNJ6_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI7_1 { int pad[7]; ProbeSub *p0; ProbeNI7_1(); };
+ProbeNI7_1::ProbeNI7_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ7_1 { int pad[7]; ProbeSub *p0; ProbeNJ7_1(); };
+ProbeNJ7_1::ProbeNJ7_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI7_2 { int pad[7]; ProbeSub *p0; ProbeSub *p1; ProbeNI7_2(); };
+ProbeNI7_2::ProbeNI7_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ7_2 { int pad[7]; ProbeSub *p0; ProbeSub *p1; ProbeNJ7_2(); };
+ProbeNJ7_2::ProbeNJ7_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI7_4 { int pad[7]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI7_4(); };
+ProbeNI7_4::ProbeNI7_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ7_4 { int pad[7]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ7_4(); };
+ProbeNJ7_4::ProbeNJ7_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI8_1 { int pad[8]; ProbeSub *p0; ProbeNI8_1(); };
+ProbeNI8_1::ProbeNI8_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ8_1 { int pad[8]; ProbeSub *p0; ProbeNJ8_1(); };
+ProbeNJ8_1::ProbeNJ8_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI8_2 { int pad[8]; ProbeSub *p0; ProbeSub *p1; ProbeNI8_2(); };
+ProbeNI8_2::ProbeNI8_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ8_2 { int pad[8]; ProbeSub *p0; ProbeSub *p1; ProbeNJ8_2(); };
+ProbeNJ8_2::ProbeNJ8_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI8_4 { int pad[8]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI8_4(); };
+ProbeNI8_4::ProbeNI8_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ8_4 { int pad[8]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ8_4(); };
+ProbeNJ8_4::ProbeNJ8_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI9_1 { int pad[9]; ProbeSub *p0; ProbeNI9_1(); };
+ProbeNI9_1::ProbeNI9_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ9_1 { int pad[9]; ProbeSub *p0; ProbeNJ9_1(); };
+ProbeNJ9_1::ProbeNJ9_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI9_2 { int pad[9]; ProbeSub *p0; ProbeSub *p1; ProbeNI9_2(); };
+ProbeNI9_2::ProbeNI9_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ9_2 { int pad[9]; ProbeSub *p0; ProbeSub *p1; ProbeNJ9_2(); };
+ProbeNJ9_2::ProbeNJ9_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI9_4 { int pad[9]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI9_4(); };
+ProbeNI9_4::ProbeNI9_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ9_4 { int pad[9]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ9_4(); };
+ProbeNJ9_4::ProbeNJ9_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI10_1 { int pad[10]; ProbeSub *p0; ProbeNI10_1(); };
+ProbeNI10_1::ProbeNI10_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ10_1 { int pad[10]; ProbeSub *p0; ProbeNJ10_1(); };
+ProbeNJ10_1::ProbeNJ10_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI10_2 { int pad[10]; ProbeSub *p0; ProbeSub *p1; ProbeNI10_2(); };
+ProbeNI10_2::ProbeNI10_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ10_2 { int pad[10]; ProbeSub *p0; ProbeSub *p1; ProbeNJ10_2(); };
+ProbeNJ10_2::ProbeNJ10_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI10_4 { int pad[10]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI10_4(); };
+ProbeNI10_4::ProbeNI10_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ10_4 { int pad[10]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ10_4(); };
+ProbeNJ10_4::ProbeNJ10_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
+struct ProbeNI11_1 { int pad[11]; ProbeSub *p0; ProbeNI11_1(); };
+ProbeNI11_1::ProbeNI11_1() try : p0(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ11_1 { int pad[11]; ProbeSub *p0; ProbeNJ11_1(); };
+ProbeNJ11_1::ProbeNJ11_1() : p0(new ProbeSub) { probe_throw(); }
+struct ProbeNI11_2 { int pad[11]; ProbeSub *p0; ProbeSub *p1; ProbeNI11_2(); };
+ProbeNI11_2::ProbeNI11_2() try : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ11_2 { int pad[11]; ProbeSub *p0; ProbeSub *p1; ProbeNJ11_2(); };
+ProbeNJ11_2::ProbeNJ11_2() : p0(new ProbeSub), p1(new ProbeSub) { probe_throw(); }
+struct ProbeNI11_4 { int pad[11]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNI11_4(); };
+ProbeNI11_4::ProbeNI11_4() try : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); } catch (...) { throw; }
+struct ProbeNJ11_4 { int pad[11]; ProbeSub *p0; ProbeSub *p1; ProbeSub *p2; ProbeSub *p3; ProbeNJ11_4(); };
+ProbeNJ11_4::ProbeNJ11_4() : p0(new ProbeSub), p1(new ProbeSub), p2(new ProbeSub), p3(new ProbeSub) { probe_throw(); }
 void probe_seh_0() { __try { probe_throw(); } __except(probe_cond()) { probe_sink(0); } }
 void probe_sehf_0() { __try { probe_throw(); } __finally { probe_sink(0); } }
 void probe_seh_1() { { ProbePOD n0; __try { probe_throw(); } __except(probe_cond()) { probe_sink(0); } } }
