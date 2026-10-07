@@ -207,12 +207,30 @@ def patch_definition(defn, lineno, col, message):
         new = (line[:pos] + m.group(1) + '(uintptr_t)(' + m.group(2) + ')' +
                line[pos + m.end():])
     elif 'subscripted value is not an array' in message:
+        # `EXPR[i]` where EXPR is a scalar address: treat as pointer-index.
         pos = col - 1
         m = re.match(r'(\w+)\s*\[', line[pos:])
-        if not m:
-            return None
-        new = (line[:pos] + '(*(int **)&' + m.group(1) + ')' +
-               line[pos + m.end(1):])
+        if m:
+            new = (line[:pos] + '(*(int **)&' + m.group(1) + ')' +
+                   line[pos + m.end(1):])
+        else:
+            # `(...)[i]`: cast the parenthesised base to a pointer. Find the
+            # ')' adjacent to '[' and walk back to its '('.
+            br = line.rfind('[', 0, col + 4)
+            if br < 0 or line[br - 1] != ')':
+                return None
+            depth, open_idx = 0, -1
+            for i in range(br - 1, -1, -1):
+                if line[i] == ')':
+                    depth += 1
+                elif line[i] == '(':
+                    depth -= 1
+                    if depth == 0:
+                        open_idx = i
+                        break
+            if open_idx < 0:
+                return None
+            new = (line[:open_idx] + '(int *)' + line[open_idx:])
     elif "C-style cast from" in message and 'is not allowed' in message:
         m = re.search(r"\((\w+)\s*\[\s*(\d+)\s*\]\)", line)
         if not m:
@@ -279,7 +297,7 @@ def repair_record(record, defined, scratch, max_iter=10):
         scratch.write_text(source)
         ok, entry_errs, file_errs = compile_errors(scratch)
         if ok:
-            return cur, None
+            return cur, [e for e in extra_decls if isinstance(e, str)]
         if entry_errs:
             lineno, col, message = entry_errs[0]
             last_err = message
@@ -344,7 +362,7 @@ def main():
         except Exception as exc:
             result, err = None, repr(exc)
         if result is not None:
-            fixed.append((record, result))
+            fixed.append((record, result, err or []))
             print(f'  fixed {record["entry"]} ({record["body_bytes"]}B) '
                   f'was: {failures[record["entry"]][:60]}', flush=True)
         else:
@@ -357,20 +375,33 @@ def main():
     if fixed:
         out = args.out_dir / f'{args.name_prefix}_0000.cpp'
         recs = []
-        for record, defn in fixed:
+        all_extras = []
+        for record, defn, extras in fixed:
             rec = dict(record)
-            rec['xformed'] = (defn,) + tuple(record['xformed'][1:])
+            xf = record['xformed'] or (None,) * 6
+            rec['xformed'] = (defn,) + tuple(xf[1:6])
             recs.append(rec)
+            all_extras.extend(e for e in extras if e not in all_extras)
         source, _ = cbm.cpp_source(recs, defined)
+        if all_extras:
+            pos = source.find('#line')
+            if pos < 0:
+                pos = len(source)
+            source = source[:pos] + '\n'.join(all_extras) + '\n' + source[pos:]
+        try:
+            from apply_bulk_signature_recovery import lower_free_thiscall
+            source, _lowered = lower_free_thiscall(source)
+        except Exception:
+            pass
         out.write_text(source)
         args.index_out.parent.mkdir(parents=True, exist_ok=True)
         with args.index_out.open('w', newline='') as f:
             w = csv.writer(f, delimiter='\t')
             w.writerow(['entry', 'name', 'reference_body_bytes'])
             w.writerows([r['entry'], r['name'], r['body_bytes']]
-                        for r, _ in fixed)
+                        for r, _, _ in fixed)
         print(f'wrote {out} ({len(fixed)} fns, '
-              f'{sum(r["body_bytes"] for r, _ in fixed)} bytes)')
+              f'{sum(r["body_bytes"] for r, _, _ in fixed)} bytes)')
 
 
 if __name__ == '__main__':
