@@ -1008,3 +1008,43 @@ support future sweeps.
   objects do not byte-match (1.9KB total over 9 libs); likely LTCG or a
   different CRT build. Rich header shows prod `0x74df` builds 260/261
   dominating (1,075 objs) — toolset identification pending.
+
+### Iteration: EH-probe matcher + durable 96.28% regen
+
+**96.28% aligned-identical** (35,769,876 / 37,153,792; candidate SHA
+`9b37c10cbccf37f144a09e5cd43f64a90b90c8b2eb08223c04b8134d044d1c76`,
+`analysis/linked-gsminus3/`). Proven compiler bytes 27,018,796 (72.7%);
+placed 35,682,891 (96.04%).
+
+New machinery since the `/GS-` baseline:
+
+- `tools/make_eh_probe_corpus.py` generates real-C++ probe families in
+  `src/generated/bulk/eh_probe_0000.cpp`: nested-scope chains for
+  `lea ecx,[ebp-x]; jmp dtor` funclets, copy-init chains for `mov ecx`
+  forms, member-offset and new-expression probes for `add ecx,N`,
+  sized-delete probes (`push sz; mov eax,[ebp-x]; push eax; call`),
+  function-try ctors for flag-gated `and eax,bit` cleanup, deep-local
+  probes for disp32 offsets, plus a byte-shape-driven emitter that
+  writes exact trivial functions (`mov eax,imm; ret`, arg-forward
+  `ret N`, member getters/setters) keyed `FUN_<va>` for the normal
+  index path. All real C++; nothing embedded.
+- `tools/match_eh_funclets.py` extracts bare `.text$x` funclet bodies
+  (per-symbol bounds; padding skip reloc-aware) and matches fixed bytes
+  against uncovered reference entries with reloc-masked operands.
+- `/tmp`-hosted intermediates were wiped once; artifacts now live in
+  `analysis/objs-gsminus/s*` (24-slice `/GS-` objects),
+  `analysis/probe-objects/` (latest probe obj) and
+  `analysis/eh-matches/` (funclet placements fed via `--crt-matches`).
+- IMPORTANT: `analysis/merged-objects/` holds older `/GS` objects —
+  do not pass it to `link_recovery_image.py` ahead of the slice dirs.
+
+Matcher caveat found: probe frame slots sit a few bytes off the
+reference's because parent frames carry different EH temps. Targeted
+operands therefore emit a small neighbourhood (deep sizes +-12B,
+new-expression probes nested at depths 0-8) so one variant lands.
+
+CRT sources ARE installed on the runner:
+`C:\VS2019BuildTools\VC\Tools\MSVC\14.28.29910\crt\src\{vcruntime,i386,
+stl,vccorlib}` and UCRT under `Windows Kits\10\Source\<sdk>\ucrt` for
+SDK 10240/17763/19041/22621/26100. A `crt_probe` workflow input now
+compiles those with `/O2 /GS-` and uploads the objects for matching.
