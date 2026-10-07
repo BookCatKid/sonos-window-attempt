@@ -76,6 +76,8 @@ def _operand_end(line, i):
     followed by ``(`` or ``&``/``*``/identifier continues the operand.
     """
     n = len(line)
+    while i < n and line[i].isspace():
+        i += 1
     while i < n:
         if line[i] == '(':
             depth = 0
@@ -94,6 +96,31 @@ def _operand_end(line, i):
         m = re.match(r'[A-Za-z_]\w*', line[i:])
         if m:
             i += m.end()
+            continue
+        break
+    return i
+
+
+def _operand_start(line, i):
+    """Return the start index of the operand whose value ends at ``i``."""
+    while i > 0:
+        if line[i - 1] == ')':
+            depth = 0
+            j = i - 1
+            while j >= 0:
+                depth += line[j] == ')'
+                depth -= line[j] == '('
+                j -= 1
+                if depth == 0:
+                    break
+            i = j + 1
+            continue
+        if line[i - 1].isspace():
+            i -= 1
+            continue
+        m = re.search(r'[A-Za-z_0-9]\w*$', line[:i])
+        if m:
+            i = m.start()
             continue
         break
     return i
@@ -185,6 +212,15 @@ def patch_definition(defn, lineno, col, message):
     if not (0 < lineno <= len(lines)):
         return None
     line = lines[lineno - 1]
+    # Ghidra fuses field-offset access as ``obj.*(T*)((char *)&f + N)``;
+    # the downstream error varies, so rewrite it regardless of message.
+    fm = re.search(r'(\w+)\s*\.\*\s*\(\s*([\w ]*\*)\s*\)\s*\(\s*'
+                   r'\(char \*\)\s*&\w+\s*\+\s*([^)]*)\)', line)
+    if fm:
+        lines[lineno - 1] = (line[:fm.start()] + '*(' + fm.group(2) + ')'
+                             '((char *)&' + fm.group(1) + ' + (' +
+                             fm.group(3) + '))' + line[fm.end():])
+        return '\n'.join(lines)
     if ('comparison between pointer and integer' in message or
             'comparison of distinct pointer types' in message or
             'ordered comparison' in message):
@@ -247,23 +283,40 @@ def patch_definition(defn, lineno, col, message):
     elif 'called object type' in message:
         pos = col - 1
         m = re.match(r'(\w+)\s*\(', line[pos:])
-        if not m:
-            return None
-        new = (line[:pos] + '(*(int(**)(...))&' + m.group(1) + ')' +
-               line[pos + m.end(1):])
+        if m:
+            new = (line[:pos] + '(*(int(**)(...))&' + m.group(1) + ')' +
+                   line[pos + m.end(1):])
+        else:
+            # ``(cast_expr)(args)``: call through a function-pointer pun.
+            end = _operand_end(line, pos)
+            if end <= pos:
+                return None
+            new = (line[:pos] + '(*(int(**)(...))(uintptr_t)(' +
+                   line[pos:end] + '))' + line[end:])
     elif 'subscript of pointer to function type' in message:
         # ``p[i]`` where p is ``code *``: index through a ``code **`` pun.
-        br = line.find('[', max(0, col - 20), col + 10)
-        if br < 0:
-            br = line.rfind('[', 0, col + 4)
-        if br < 0:
+        brs = [i for i, ch in enumerate(line[:col + 16]) if ch == '[']
+        if not brs:
             return None
+        br = min(brs, key=lambda i: abs(i - (col - 1)))
         m = re.search(r'(\w+)\s*$', line[:br])
         if not m:
             return None
         base = m.group(1)
         new = (line[:m.start(1)] + '((code **)(uintptr_t)(' + base + '))' +
                line[br:])
+    elif 'subscripted value is not' in message:
+        # Scalar/void base subscripted: pun the base to ``char **``.
+        br = line.find('[', max(0, col - 20), col + 10)
+        if br < 0:
+            br = line.rfind('[', 0, col + 4)
+        if br < 0:
+            return None
+        st = _operand_start(line, br)
+        if st >= br:
+            return None
+        new = (line[:st] + '(*(char ***)(uintptr_t)(' +
+               line[st:br] + '))' + line[br:])
     elif 'arithmetic on a pointer to the function type' in message:
         # ``p + n`` on ``code *``: byte-wise arithmetic via char *.
         pos = col - 1
@@ -476,25 +529,34 @@ def patch_definition(defn, lineno, col, message):
             return None
         n = m.group(2)
         lhs = line[:eq].rstrip()
-        st = lhs.rfind(' ')
-        lhs_v = lhs[st + 1:] if st >= 0 else lhs
         rhs = line[eq + 1:].rstrip().rstrip(';').strip()
-        if not re.fullmatch(r'\w+(?:\[[^\]]*\])?', lhs_v):
+        if '=' in rhs or not lhs:
             return None
-        new = (lhs[:st + 1] if st >= 0 else '') + \
-            f'*(struct {{char _p[{n}];}} *)&{lhs_v} = ' \
-            f'*(struct {{char _p[{n}];}} *)&{rhs};'
+        # Address of the lhs lvalue works for ``arr[i]`` and ``*expr``
+        # alike; memcpy sidesteps the array-assign ban entirely.
+        lead = len(line) - len(line.lstrip())
+        new = (line[:lead] + f'memcpy(&({lhs.strip()}), '
+               f'(const void *)(uintptr_t)({rhs}), {n});')
     elif "expected '(' for function-style cast" in message:
-        # ``(type)name`` where type resolved to a variable: drop the cast.
-        pos = col - 1
-        m = re.match(r'\((\w+)\)', line[pos:])
-        if not m:
-            m2 = re.search(r'\((\w+)\)\s*\(?[\w&*]', line)
-            if not m2:
-                return None
-            m = m2
-            pos = m.start()
-        new = line[:pos] + line[pos + m.end():]
+        # ``PTR_x<>y`` fused tokens parse as template-ids needing ``(``;
+        # collapse the whole token before blaming a real cast.
+        fused = re.search(r'\b\w*(?:<[^;{}]*>)+\w*', line)
+        if fused and fused.start() <= col <= fused.end() + 12:
+            new = (line[:fused.start()] + '(void *)0' +
+                   line[fused.end():])
+        else:
+            # ``(type)name`` where type resolved to a variable: drop it.
+            pos = col - 1
+            m = re.match(r'\((\w+)\)', line[pos:])
+            if m:
+                new = line[:pos] + line[pos + m.end():]
+            else:
+                # Fallback: nearest ``(type)`` cast — ``m2.end()`` is
+                # already an absolute offset.
+                m2 = re.search(r'\((\w+)\)\s*\(?[\w&*]', line)
+                if not m2:
+                    return None
+                new = line[:m2.start()] + line[m2.end():]
     elif 'overloaded function could not be resolved' in message:
         # Bare overloaded name as an argument: take its address through a
         # code* cast to pick a single overload.
@@ -545,8 +607,18 @@ def patch_definition(defn, lineno, col, message):
         if new == line:
             return None
     elif 'right hand operand to .*' in message:
-        # ``a .* b`` on scalars: degrade to a plain subtract (garbage anyway).
-        new = line.replace('.*', ' - (uintptr_t)', 1)
+        # Ghidra fuses field-offset access as ``obj.*(T*)((char *)&f + N)``;
+        # rewrite to a byte-offset deref through the struct base.
+        m = re.search(
+            r'(\w+)\s*\.\*\s*\(\s*([\w ]*\*)\s*\)\s*\(\s*'
+            r'\(char \*\)\s*&\w+\s*\+\s*([^)]*)\)',
+            line)
+        if m:
+            new = (line[:m.start()] + '*(' + m.group(2) + ')'
+                   '((char *)&' + m.group(1) + ' + (' + m.group(3) + '))' +
+                   line[m.end():])
+        else:
+            new = line.replace('.*', ' - (uintptr_t)', 1)
     elif ("template specialization requires" in message or
           'no function template matches function template specialization'
           in message or 'expected \';\' at end of declaration' in message):
@@ -566,10 +638,35 @@ def patch_definition(defn, lineno, col, message):
                      '(void *)0', line, count=1)
         if new == line:
             return None
+    elif 'chained comparison' in message:
+        # ``a < b > c``: silence -Wparentheses by wrapping ``a < b`` in
+        # parens, and drop any ``|| y`` operand fusion first.
+        line2 = re.sub(r'\|\|\s*[^()]*\)', ')', line, count=1)
+        ops = [m for m in re.finditer(r'(?<![<>=!])<|>(?![=>])', line2)]
+        if len(ops) < 2:
+            if line2 == line:
+                return None
+            new = line2
+        else:
+            lt, gt = ops[0], ops[1]
+            lhs_st = _operand_start(line2, lt.start())
+            rhs_end = _operand_end(line2, lt.end())
+            if rhs_end <= lt.end() or rhs_end > gt.start():
+                return None
+            new = (line2[:lhs_st] + '(' + line2[lhs_st:rhs_end] + ')' +
+                   line2[rhs_end:])
     elif ('`' in line and
           ('expected expression' in message or 'expected' in message)):
-        # Ghidra emits `` `public:...'` `` backtick literals; drop to 0.
-        new = re.sub(r'`[^`]*`', '0', line, count=1)
+        # Ghidra emits `` `public:...'` `` backtick literals (terminated
+        # with a quote). A trailing ``::`` continuation on the next line
+        # carries the real operand — splice it in place of the literal.
+        newdefn = re.sub(r"`[^`']*'\s*:+\s*", '', defn, count=1)
+        if newdefn != defn and "::" not in \
+                newdefn.split('\n')[lineno - 1]:
+            return newdefn
+        new = re.sub(r"`[^`']*'(?:::\w+)*", '0', line, count=1)
+        if new == line:
+            new = re.sub(r'`[^`\n]*', '0', line, count=1)
         if new == line:
             return None
     elif 'invalid suffix' in message and 'floating constant' in message:
@@ -583,6 +680,46 @@ def patch_definition(defn, lineno, col, message):
             return None
         new = line.replace(m.group(0),
                            f'*({m.group(1)}(*)[{m.group(2)}])&', 1)
+    elif "expected ')'" in message:
+        # Decompiler wrapped an expression across lines and dropped the
+        # closing paren. Rebalance parens for the enclosing statement:
+        # scan back to the previous statement boundary, count the deficit,
+        # and insert that many ')' before the ';' on the error line.
+        start = lineno - 1
+        while start > 0 and not re.search(r'[;{}:]\s*$',
+                                          lines[start - 1]):
+            start -= 1
+        stmt = '\n'.join(lines[start:lineno])
+        semi = stmt.rfind(';')
+        cut = stmt[:semi] if semi >= 0 else stmt
+        deficit = cut.count('(') - cut.count(')')
+        if deficit <= 0 or semi < 0:
+            return None
+        # Replace the ';' in the error line with ')' * deficit + ';'.
+        si = line.rfind(';')
+        if si < 0:
+            return None
+        new = line[:si] + ')' * deficit + line[si:]
+    elif ('expected expression' in message and
+          re.search(r'\(\s*(?:(?:unsigned|signed)\s+)?'
+                    r'(?:char|short|int|long|float|double|void|byte|word|'
+                    r'dword|bool|size_t|uint|ushort|ulong|ulonglong|'
+                    r'longlong|undefined\d|code)\s*\**\)|'
+                    r'\(\s*[\w:]+\s*\*+\s*\)'
+                    r'\s*(?=\s*(?:[),\];]|==|!=|<=|>=|<|>|&&|\|\||$))', line)):
+        # Dangling cast ``(int))``/``(T*),``: Ghidra dropped the operand;
+        # give the cast a ``0`` operand so the statement parses. Only
+        # keyword or pointer-typed casts qualify — parenthesised
+        # expressions like ``(x) < y`` must not be touched.
+        new = re.sub(r'(\(\s*(?:(?:unsigned|signed)\s+)?'
+                     r'(?:char|short|int|long|float|double|void|byte|word|'
+                     r'dword|bool|size_t|uint|ushort|ulong|ulonglong|'
+                     r'longlong|undefined\d|code)\s*\**\)|'
+                     r'\(\s*[\w:]+\s*\*+\s*\))'
+                     r'\s*(?=\s*(?:[),\];]|==|!=|<=|>=|<|>|&&|\|\||$))',
+                     r'\g<1>0', line, count=1)
+        if new == line:
+            return None
     else:
         return None
     if new is None or new == line:
@@ -607,7 +744,18 @@ def header_extra(message):
                     '(void *, const void *, unsigned);')
     m = re.search(r"use of undeclared identifier '(\w+)'", message)
     if m:
-        return f'extern char {m.group(1)};'
+        name = m.group(1)
+        libc = {
+            'memcpy': 'extern "C" void *memcpy(void *, const void *, unsigned);',
+            'memset': 'extern "C" void *memset(void *, int, unsigned);',
+            'fwrite': 'extern "C" unsigned fwrite(const void *, unsigned, unsigned, void *);',
+            'ferror': 'extern "C" int ferror(void *);',
+            'strpbrk': 'extern "C" char *strpbrk(const char *, const char *);',
+            'memcmp': 'extern "C" int memcmp(const void *, const void *, unsigned);',
+        }
+        if name in libc:
+            return libc[name]
+        return f'extern char {name};'
     m = re.search(r"no member named '(\w+)' in '([^']+)'", message)
     if m:
         return ('__field__', m.group(2), m.group(1))
@@ -691,6 +839,16 @@ def repair_record(record, defined, scratch, max_iter=25):
         if file_errs:
             lineno, col, message = file_errs[0]
             last_err = 'decl:' + message
+            m = re.search(r"redefinition of '(\w+)'", message)
+            if m:
+                # Drop whichever emitted decl collides: our header extra
+                # or a ('ptr'|'call', name) entry in the record externs.
+                name = m.group(1)
+                extra_decls = [d for d in extra_decls
+                               if not re.search(r'\b' + name + r'\b', d)]
+                externs.difference_update(
+                    {e for e in externs if e[1] == name})
+                continue
             extra = header_extra(message)
             if extra is not None and isinstance(extra, str) \
                     and extra not in extra_decls:
