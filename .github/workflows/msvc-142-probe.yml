@@ -211,13 +211,19 @@ jobs:
             "$src\stl",
             "$src\vccorlib"
           )
-          $sdkUcrt = "${env:ProgramFiles(x86)}\Windows Kits\10\Source\${{ github.event.inputs.crt_sdk }}\ucrt"
+          $sdk = '${{ github.event.inputs.crt_sdk }}'
+          $sdkUcrt = "${env:ProgramFiles(x86)}\Windows Kits\10\Source\$sdk\ucrt"
           if (Test-Path $sdkUcrt) { $roots += $sdkUcrt }
+          $kitInc = "${env:ProgramFiles(x86)}\Windows Kits\10\Include\$sdk"
           $inc = @(
             (Join-Path $tool 'include'),
             (Join-Path $src 'vcruntime'),
             (Join-Path $src 'stl'),
-            $sdkUcrt
+            $sdkUcrt,
+            "$kitInc\ucrt",
+            "$kitInc\um",
+            "$kitInc\shared",
+            "$kitInc\winrt"
           ) | ForEach-Object { '/I' + $_ }
           $count = 0
           foreach ($r in $roots) {
@@ -231,6 +237,7 @@ jobs:
           }
           Write-Output "compiled $count CRT objects"
           Get-ChildItem out\crtsrc\*.obj | Measure-Object | Select-Object -Expand Count
+          exit 0
 
       - name: Compile genuine linker and library experiments
         if: github.event.inputs.build_experiments == 'true'
