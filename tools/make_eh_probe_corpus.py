@@ -15,12 +15,19 @@ struct ProbeDtor { ProbeDtor(); ~ProbeDtor(); };
 struct ProbeD4 { int v; ProbeD4(); ~ProbeD4(); };
 struct ProbePOD { int v; };
 struct ProbeSub { ~ProbeSub(); };
+struct ProbeThrow { ProbeThrow(); ~ProbeThrow(); };
+struct ProbeThrow4 { int v; ProbeThrow4(); ~ProbeThrow4(); };
 extern void probe_throw();
 extern void probe_sink(void *);
 extern int probe_cond();
 extern ProbeSub *probe_psub();
 extern ProbeDtor probe_make();
 extern ProbeD4 probe_make4();
+extern void probe_sink2(ProbeDtor, ProbeDtor);
+extern void probe_sink24(ProbeD4, ProbeD4);
+extern void probe_sinkm(ProbeDtor, ProbeD4, ProbeDtor);
+extern ProbeDtor *probe_pdt();
+extern ProbeD4 *probe_pd4();
 extern void *operator new(unsigned int);
 extern void operator delete(void *, unsigned int);
 """
@@ -110,6 +117,60 @@ def emit_flag_members(out, members):
                 f"ProbeFlag{sz:02d}n{n:02d}::ProbeFlag{sz:02d}n{n:02d}() "
                 f"try {{ probe_throw(); }} catch (...) {{ throw; }}"
             )
+
+
+def emit_throwing_flags(out, members):
+    # Members whose ctors may throw force MSVC to track construction state
+    # in a flag dword; unwind funclets then emit
+    #   mov eax,[ebp-flag]; and eax,<bit>; jz; and flag,~bit;
+    #   lea ecx,[ebp-m]; jmp ~Throw
+    # Plain (non-function-try) ctors emit unwind funclets for partial
+    # construction; function-try ctors add the catch-rethrow form.
+    for n in range(2, members + 1):
+        decls = ' '.join(f'ProbeThrow m{i};' for i in range(n))
+        tag = f'n{n:02d}'
+        out.append(
+            f"struct ProbeTF{tag} {{ {decls} ProbeTF{tag}(); }};\n"
+            f"ProbeTF{tag}::ProbeTF{tag}() {{ probe_throw(); }}"
+        )
+        out.append(
+            f"struct ProbeTG{tag} {{ {decls} ProbeTG{tag}(); }};\n"
+            f"ProbeTG{tag}::ProbeTG{tag}() try {{ probe_throw(); }} "
+            f"catch (...) {{ throw; }}"
+        )
+        out.append(
+            f"struct ProbeTH{tag} {{ {decls} ProbeTH{tag}(); }};\n"
+            f"ProbeTH{tag}::ProbeTH{tag}() try : m0() {{ probe_throw(); }} "
+            f"catch (...) {{ throw; }}"
+        )
+    # Same with sized members (member offset 4) and mixed tails so the flag
+    # dword lands at different frame slots.
+    for n in range(2, members + 1):
+        decls = ' '.join(f'ProbeThrow4 m{i};' for i in range(n))
+        tag = f'w{n:02d}'
+        out.append(
+            f"struct ProbeTF{tag} {{ {decls} ProbeTF{tag}(); }};\n"
+            f"ProbeTF{tag}::ProbeTF{tag}() {{ probe_throw(); }}"
+        )
+        out.append(
+            f"struct ProbeTG{tag} {{ {decls} ProbeTG{tag}(); }};\n"
+            f"ProbeTG{tag}::ProbeTG{tag}() try {{ probe_throw(); }} "
+            f"catch (...) {{ throw; }}"
+        )
+    # One throwing member after K sub members / before them, in a function
+    # whose frame also carries nested locals.
+    for k in range(0, members + 1):
+        subs = ' '.join(f'ProbeSub s{i};' for i in range(k))
+        out.append(
+            f"struct ProbeTM{k:02d} {{ {subs} ProbeThrow m; "
+            f"ProbeTM{k:02d}(); }};\n"
+            f"ProbeTM{k:02d}::ProbeTM{k:02d}() {{ probe_throw(); }}"
+        )
+        out.append(
+            f"struct ProbeTN{k:02d} {{ ProbeThrow m; {subs} "
+            f"ProbeTN{k:02d}(); }};\n"
+            f"ProbeTN{k:02d}::ProbeTN{k:02d}() {{ probe_throw(); }}"
+        )
 
 
 def emit_array_members(out, count):
@@ -452,6 +513,42 @@ def emit_extra_families(out, count):
         'do { ProbeSub t; probe_throw(); } while (0);',
         # comma-separated construction
         '{ ProbeSub t; probe_cond(), probe_throw(); }',
+        # conditional-expression temporaries: MSVC tracks which arm's temp
+        # exists with a flag bit -> and eax,bit; jz; and [flag],~bit
+        '{ ProbeDtor t = probe_cond() ? probe_make() : probe_make(); '
+        'probe_throw(); }',
+        '{ ProbeD4 t = probe_cond() ? probe_make4() : probe_make4(); '
+        'probe_throw(); }',
+        '{ ProbeDtor &&t = probe_cond() ? probe_make() : probe_make(); '
+        'probe_sink(&t); probe_throw(); }',
+        '{ ProbeD4 &&t = probe_cond() ? probe_make4() : probe_make4(); '
+        'probe_sink(&t); probe_throw(); }',
+        '{ (probe_cond() ? probe_make() : probe_make()); probe_throw(); }',
+        '{ ProbeDtor const &t = probe_cond() ? probe_make() : probe_make(); '
+        'probe_throw(); }',
+        '{ ProbeD4 const &t = probe_cond() ? probe_make4() : probe_make4(); '
+        'probe_throw(); }',
+        # two independent conditional locals -> two flag bits
+        '{ ProbeSub a; if (probe_cond()) { a.~ProbeSub(); } '
+        'probe_throw(); }',
+        # && / || with constructed operand
+        'if (probe_cond() && (probe_make(), true)) { probe_throw(); }',
+        # argument temporaries: evaluated right-to-left, so partial
+        # construction cannot be a single EH state -> bit flags
+        'probe_sink2(probe_make(), probe_make());',
+        'probe_sink24(probe_make4(), probe_make4());',
+        'probe_sinkm(probe_make(), probe_make4(), probe_make());',
+        'probe_sink2(probe_cond() ? probe_make() : *probe_pdt(), '
+        'probe_make());',
+        'probe_sink24(probe_make4(), '
+        'probe_cond() ? probe_make4() : probe_make4());',
+        '{ probe_sink2(probe_make(), probe_make()); probe_throw(); }',
+        '{ probe_sink24(probe_make4(), probe_make4()); probe_throw(); }',
+        # ?: arms from different sources -> flag picks which temp exists
+        '{ ProbeDtor t = probe_cond() ? *probe_pdt() : probe_make(); '
+        'probe_throw(); }',
+        '{ ProbeDtor t = probe_cond() ? probe_make() : *probe_pdt(); '
+        'probe_throw(); }',
     )
     for vi, v in enumerate(variants):
         for d in range(6):
@@ -628,6 +725,7 @@ def main():
     emit_mov_chains(out, args.sweep)
     emit_member_sweep(out, args.sweep)
     emit_flag_members(out, 16)
+    emit_throwing_flags(out, 16)
     emit_member_new_probes(out, args.sweep)
     emit_array_members(out, min(args.sweep, 40))
     emit_delete_chains(out, args.sweep)

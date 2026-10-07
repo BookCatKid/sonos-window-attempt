@@ -3,12 +3,19 @@ struct ProbeDtor { ProbeDtor(); ~ProbeDtor(); };
 struct ProbeD4 { int v; ProbeD4(); ~ProbeD4(); };
 struct ProbePOD { int v; };
 struct ProbeSub { ~ProbeSub(); };
+struct ProbeThrow { ProbeThrow(); ~ProbeThrow(); };
+struct ProbeThrow4 { int v; ProbeThrow4(); ~ProbeThrow4(); };
 extern void probe_throw();
 extern void probe_sink(void *);
 extern int probe_cond();
 extern ProbeSub *probe_psub();
 extern ProbeDtor probe_make();
 extern ProbeD4 probe_make4();
+extern void probe_sink2(ProbeDtor, ProbeDtor);
+extern void probe_sink24(ProbeD4, ProbeD4);
+extern void probe_sinkm(ProbeDtor, ProbeD4, ProbeDtor);
+extern ProbeDtor *probe_pdt();
+extern ProbeD4 *probe_pd4();
 extern void *operator new(unsigned int);
 extern void operator delete(void *, unsigned int);
 
@@ -625,6 +632,224 @@ struct ProbeFlag32n15 { ProbeD32 m0; ProbeD32 m1; ProbeD32 m2; ProbeD32 m3; Prob
 ProbeFlag32n15::ProbeFlag32n15() try { probe_throw(); } catch (...) { throw; }
 struct ProbeFlag32n16 { ProbeD32 m0; ProbeD32 m1; ProbeD32 m2; ProbeD32 m3; ProbeD32 m4; ProbeD32 m5; ProbeD32 m6; ProbeD32 m7; ProbeD32 m8; ProbeD32 m9; ProbeD32 m10; ProbeD32 m11; ProbeD32 m12; ProbeD32 m13; ProbeD32 m14; ProbeD32 m15; ProbeFlag32n16(); };
 ProbeFlag32n16::ProbeFlag32n16() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn02 { ProbeThrow m0; ProbeThrow m1; ProbeTFn02(); };
+ProbeTFn02::ProbeTFn02() { probe_throw(); }
+struct ProbeTGn02 { ProbeThrow m0; ProbeThrow m1; ProbeTGn02(); };
+ProbeTGn02::ProbeTGn02() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn02 { ProbeThrow m0; ProbeThrow m1; ProbeTHn02(); };
+ProbeTHn02::ProbeTHn02() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn03 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeTFn03(); };
+ProbeTFn03::ProbeTFn03() { probe_throw(); }
+struct ProbeTGn03 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeTGn03(); };
+ProbeTGn03::ProbeTGn03() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn03 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeTHn03(); };
+ProbeTHn03::ProbeTHn03() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn04 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeTFn04(); };
+ProbeTFn04::ProbeTFn04() { probe_throw(); }
+struct ProbeTGn04 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeTGn04(); };
+ProbeTGn04::ProbeTGn04() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn04 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeTHn04(); };
+ProbeTHn04::ProbeTHn04() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn05 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeTFn05(); };
+ProbeTFn05::ProbeTFn05() { probe_throw(); }
+struct ProbeTGn05 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeTGn05(); };
+ProbeTGn05::ProbeTGn05() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn05 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeTHn05(); };
+ProbeTHn05::ProbeTHn05() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn06 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeTFn06(); };
+ProbeTFn06::ProbeTFn06() { probe_throw(); }
+struct ProbeTGn06 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeTGn06(); };
+ProbeTGn06::ProbeTGn06() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn06 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeTHn06(); };
+ProbeTHn06::ProbeTHn06() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn07 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeTFn07(); };
+ProbeTFn07::ProbeTFn07() { probe_throw(); }
+struct ProbeTGn07 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeTGn07(); };
+ProbeTGn07::ProbeTGn07() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn07 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeTHn07(); };
+ProbeTHn07::ProbeTHn07() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn08 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeTFn08(); };
+ProbeTFn08::ProbeTFn08() { probe_throw(); }
+struct ProbeTGn08 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeTGn08(); };
+ProbeTGn08::ProbeTGn08() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn08 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeTHn08(); };
+ProbeTHn08::ProbeTHn08() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn09 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeTFn09(); };
+ProbeTFn09::ProbeTFn09() { probe_throw(); }
+struct ProbeTGn09 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeTGn09(); };
+ProbeTGn09::ProbeTGn09() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn09 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeTHn09(); };
+ProbeTHn09::ProbeTHn09() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn10 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeTFn10(); };
+ProbeTFn10::ProbeTFn10() { probe_throw(); }
+struct ProbeTGn10 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeTGn10(); };
+ProbeTGn10::ProbeTGn10() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn10 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeTHn10(); };
+ProbeTHn10::ProbeTHn10() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn11 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeTFn11(); };
+ProbeTFn11::ProbeTFn11() { probe_throw(); }
+struct ProbeTGn11 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeTGn11(); };
+ProbeTGn11::ProbeTGn11() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn11 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeTHn11(); };
+ProbeTHn11::ProbeTHn11() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn12 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeTFn12(); };
+ProbeTFn12::ProbeTFn12() { probe_throw(); }
+struct ProbeTGn12 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeTGn12(); };
+ProbeTGn12::ProbeTGn12() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn12 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeTHn12(); };
+ProbeTHn12::ProbeTHn12() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn13 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeTFn13(); };
+ProbeTFn13::ProbeTFn13() { probe_throw(); }
+struct ProbeTGn13 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeTGn13(); };
+ProbeTGn13::ProbeTGn13() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn13 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeTHn13(); };
+ProbeTHn13::ProbeTHn13() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn14 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeThrow m13; ProbeTFn14(); };
+ProbeTFn14::ProbeTFn14() { probe_throw(); }
+struct ProbeTGn14 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeThrow m13; ProbeTGn14(); };
+ProbeTGn14::ProbeTGn14() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn14 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeThrow m13; ProbeTHn14(); };
+ProbeTHn14::ProbeTHn14() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn15 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeThrow m13; ProbeThrow m14; ProbeTFn15(); };
+ProbeTFn15::ProbeTFn15() { probe_throw(); }
+struct ProbeTGn15 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeThrow m13; ProbeThrow m14; ProbeTGn15(); };
+ProbeTGn15::ProbeTGn15() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn15 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeThrow m13; ProbeThrow m14; ProbeTHn15(); };
+ProbeTHn15::ProbeTHn15() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFn16 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeThrow m13; ProbeThrow m14; ProbeThrow m15; ProbeTFn16(); };
+ProbeTFn16::ProbeTFn16() { probe_throw(); }
+struct ProbeTGn16 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeThrow m13; ProbeThrow m14; ProbeThrow m15; ProbeTGn16(); };
+ProbeTGn16::ProbeTGn16() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTHn16 { ProbeThrow m0; ProbeThrow m1; ProbeThrow m2; ProbeThrow m3; ProbeThrow m4; ProbeThrow m5; ProbeThrow m6; ProbeThrow m7; ProbeThrow m8; ProbeThrow m9; ProbeThrow m10; ProbeThrow m11; ProbeThrow m12; ProbeThrow m13; ProbeThrow m14; ProbeThrow m15; ProbeTHn16(); };
+ProbeTHn16::ProbeTHn16() try : m0() { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw02 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeTFw02(); };
+ProbeTFw02::ProbeTFw02() { probe_throw(); }
+struct ProbeTGw02 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeTGw02(); };
+ProbeTGw02::ProbeTGw02() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw03 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeTFw03(); };
+ProbeTFw03::ProbeTFw03() { probe_throw(); }
+struct ProbeTGw03 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeTGw03(); };
+ProbeTGw03::ProbeTGw03() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw04 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeTFw04(); };
+ProbeTFw04::ProbeTFw04() { probe_throw(); }
+struct ProbeTGw04 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeTGw04(); };
+ProbeTGw04::ProbeTGw04() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw05 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeTFw05(); };
+ProbeTFw05::ProbeTFw05() { probe_throw(); }
+struct ProbeTGw05 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeTGw05(); };
+ProbeTGw05::ProbeTGw05() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw06 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeTFw06(); };
+ProbeTFw06::ProbeTFw06() { probe_throw(); }
+struct ProbeTGw06 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeTGw06(); };
+ProbeTGw06::ProbeTGw06() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw07 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeTFw07(); };
+ProbeTFw07::ProbeTFw07() { probe_throw(); }
+struct ProbeTGw07 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeTGw07(); };
+ProbeTGw07::ProbeTGw07() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw08 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeTFw08(); };
+ProbeTFw08::ProbeTFw08() { probe_throw(); }
+struct ProbeTGw08 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeTGw08(); };
+ProbeTGw08::ProbeTGw08() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw09 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeTFw09(); };
+ProbeTFw09::ProbeTFw09() { probe_throw(); }
+struct ProbeTGw09 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeTGw09(); };
+ProbeTGw09::ProbeTGw09() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw10 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeTFw10(); };
+ProbeTFw10::ProbeTFw10() { probe_throw(); }
+struct ProbeTGw10 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeTGw10(); };
+ProbeTGw10::ProbeTGw10() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw11 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeTFw11(); };
+ProbeTFw11::ProbeTFw11() { probe_throw(); }
+struct ProbeTGw11 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeTGw11(); };
+ProbeTGw11::ProbeTGw11() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw12 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeThrow4 m11; ProbeTFw12(); };
+ProbeTFw12::ProbeTFw12() { probe_throw(); }
+struct ProbeTGw12 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeThrow4 m11; ProbeTGw12(); };
+ProbeTGw12::ProbeTGw12() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw13 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeThrow4 m11; ProbeThrow4 m12; ProbeTFw13(); };
+ProbeTFw13::ProbeTFw13() { probe_throw(); }
+struct ProbeTGw13 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeThrow4 m11; ProbeThrow4 m12; ProbeTGw13(); };
+ProbeTGw13::ProbeTGw13() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw14 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeThrow4 m11; ProbeThrow4 m12; ProbeThrow4 m13; ProbeTFw14(); };
+ProbeTFw14::ProbeTFw14() { probe_throw(); }
+struct ProbeTGw14 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeThrow4 m11; ProbeThrow4 m12; ProbeThrow4 m13; ProbeTGw14(); };
+ProbeTGw14::ProbeTGw14() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw15 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeThrow4 m11; ProbeThrow4 m12; ProbeThrow4 m13; ProbeThrow4 m14; ProbeTFw15(); };
+ProbeTFw15::ProbeTFw15() { probe_throw(); }
+struct ProbeTGw15 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeThrow4 m11; ProbeThrow4 m12; ProbeThrow4 m13; ProbeThrow4 m14; ProbeTGw15(); };
+ProbeTGw15::ProbeTGw15() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTFw16 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeThrow4 m11; ProbeThrow4 m12; ProbeThrow4 m13; ProbeThrow4 m14; ProbeThrow4 m15; ProbeTFw16(); };
+ProbeTFw16::ProbeTFw16() { probe_throw(); }
+struct ProbeTGw16 { ProbeThrow4 m0; ProbeThrow4 m1; ProbeThrow4 m2; ProbeThrow4 m3; ProbeThrow4 m4; ProbeThrow4 m5; ProbeThrow4 m6; ProbeThrow4 m7; ProbeThrow4 m8; ProbeThrow4 m9; ProbeThrow4 m10; ProbeThrow4 m11; ProbeThrow4 m12; ProbeThrow4 m13; ProbeThrow4 m14; ProbeThrow4 m15; ProbeTGw16(); };
+ProbeTGw16::ProbeTGw16() try { probe_throw(); } catch (...) { throw; }
+struct ProbeTM00 {  ProbeThrow m; ProbeTM00(); };
+ProbeTM00::ProbeTM00() { probe_throw(); }
+struct ProbeTN00 { ProbeThrow m;  ProbeTN00(); };
+ProbeTN00::ProbeTN00() { probe_throw(); }
+struct ProbeTM01 { ProbeSub s0; ProbeThrow m; ProbeTM01(); };
+ProbeTM01::ProbeTM01() { probe_throw(); }
+struct ProbeTN01 { ProbeThrow m; ProbeSub s0; ProbeTN01(); };
+ProbeTN01::ProbeTN01() { probe_throw(); }
+struct ProbeTM02 { ProbeSub s0; ProbeSub s1; ProbeThrow m; ProbeTM02(); };
+ProbeTM02::ProbeTM02() { probe_throw(); }
+struct ProbeTN02 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeTN02(); };
+ProbeTN02::ProbeTN02() { probe_throw(); }
+struct ProbeTM03 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeThrow m; ProbeTM03(); };
+ProbeTM03::ProbeTM03() { probe_throw(); }
+struct ProbeTN03 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeTN03(); };
+ProbeTN03::ProbeTN03() { probe_throw(); }
+struct ProbeTM04 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeThrow m; ProbeTM04(); };
+ProbeTM04::ProbeTM04() { probe_throw(); }
+struct ProbeTN04 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeTN04(); };
+ProbeTN04::ProbeTN04() { probe_throw(); }
+struct ProbeTM05 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeThrow m; ProbeTM05(); };
+ProbeTM05::ProbeTM05() { probe_throw(); }
+struct ProbeTN05 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeTN05(); };
+ProbeTN05::ProbeTN05() { probe_throw(); }
+struct ProbeTM06 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeThrow m; ProbeTM06(); };
+ProbeTM06::ProbeTM06() { probe_throw(); }
+struct ProbeTN06 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeTN06(); };
+ProbeTN06::ProbeTN06() { probe_throw(); }
+struct ProbeTM07 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeThrow m; ProbeTM07(); };
+ProbeTM07::ProbeTM07() { probe_throw(); }
+struct ProbeTN07 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeTN07(); };
+ProbeTN07::ProbeTN07() { probe_throw(); }
+struct ProbeTM08 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeThrow m; ProbeTM08(); };
+ProbeTM08::ProbeTM08() { probe_throw(); }
+struct ProbeTN08 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeTN08(); };
+ProbeTN08::ProbeTN08() { probe_throw(); }
+struct ProbeTM09 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeThrow m; ProbeTM09(); };
+ProbeTM09::ProbeTM09() { probe_throw(); }
+struct ProbeTN09 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeTN09(); };
+ProbeTN09::ProbeTN09() { probe_throw(); }
+struct ProbeTM10 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeThrow m; ProbeTM10(); };
+ProbeTM10::ProbeTM10() { probe_throw(); }
+struct ProbeTN10 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeTN10(); };
+ProbeTN10::ProbeTN10() { probe_throw(); }
+struct ProbeTM11 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeThrow m; ProbeTM11(); };
+ProbeTM11::ProbeTM11() { probe_throw(); }
+struct ProbeTN11 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeTN11(); };
+ProbeTN11::ProbeTN11() { probe_throw(); }
+struct ProbeTM12 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeSub s11; ProbeThrow m; ProbeTM12(); };
+ProbeTM12::ProbeTM12() { probe_throw(); }
+struct ProbeTN12 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeSub s11; ProbeTN12(); };
+ProbeTN12::ProbeTN12() { probe_throw(); }
+struct ProbeTM13 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeSub s11; ProbeSub s12; ProbeThrow m; ProbeTM13(); };
+ProbeTM13::ProbeTM13() { probe_throw(); }
+struct ProbeTN13 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeSub s11; ProbeSub s12; ProbeTN13(); };
+ProbeTN13::ProbeTN13() { probe_throw(); }
+struct ProbeTM14 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeSub s11; ProbeSub s12; ProbeSub s13; ProbeThrow m; ProbeTM14(); };
+ProbeTM14::ProbeTM14() { probe_throw(); }
+struct ProbeTN14 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeSub s11; ProbeSub s12; ProbeSub s13; ProbeTN14(); };
+ProbeTN14::ProbeTN14() { probe_throw(); }
+struct ProbeTM15 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeSub s11; ProbeSub s12; ProbeSub s13; ProbeSub s14; ProbeThrow m; ProbeTM15(); };
+ProbeTM15::ProbeTM15() { probe_throw(); }
+struct ProbeTN15 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeSub s11; ProbeSub s12; ProbeSub s13; ProbeSub s14; ProbeTN15(); };
+ProbeTN15::ProbeTN15() { probe_throw(); }
+struct ProbeTM16 { ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeSub s11; ProbeSub s12; ProbeSub s13; ProbeSub s14; ProbeSub s15; ProbeThrow m; ProbeTM16(); };
+ProbeTM16::ProbeTM16() { probe_throw(); }
+struct ProbeTN16 { ProbeThrow m; ProbeSub s0; ProbeSub s1; ProbeSub s2; ProbeSub s3; ProbeSub s4; ProbeSub s5; ProbeSub s6; ProbeSub s7; ProbeSub s8; ProbeSub s9; ProbeSub s10; ProbeSub s11; ProbeSub s12; ProbeSub s13; ProbeSub s14; ProbeSub s15; ProbeTN16(); };
+ProbeTN16::ProbeTN16() { probe_throw(); }
 struct ProbePtr0000 { ProbeSub m; };
 void probe_pnew_0000() { ProbePtr0000 *p = new ProbePtr0000; probe_throw(); }
 struct ProbePtr0001 { int pad[1]; ProbeSub m; };
@@ -1513,6 +1738,114 @@ void probe_flag_9_2() { { ProbeD4 n1; { ProbeD4 n0; { ProbeSub t; probe_cond(), 
 void probe_flag_9_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeSub t; probe_cond(), probe_throw(); } } } } }
 void probe_flag_9_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeSub t; probe_cond(), probe_throw(); } } } } } }
 void probe_flag_9_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeSub t; probe_cond(), probe_throw(); } } } } } } }
+void probe_flag_10_0() { { ProbeDtor t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } }
+void probe_flag_10_1() { { ProbeD4 n0; { ProbeDtor t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } } }
+void probe_flag_10_2() { { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } } } }
+void probe_flag_10_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } } } } }
+void probe_flag_10_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } } } } } }
+void probe_flag_10_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } } } } } } }
+void probe_flag_11_0() { { ProbeD4 t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } }
+void probe_flag_11_1() { { ProbeD4 n0; { ProbeD4 t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } } }
+void probe_flag_11_2() { { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } } } }
+void probe_flag_11_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } } } } }
+void probe_flag_11_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } } } } } }
+void probe_flag_11_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } } } } } } }
+void probe_flag_12_0() { { ProbeDtor &&t = probe_cond() ? probe_make() : probe_make(); probe_sink(&t); probe_throw(); } }
+void probe_flag_12_1() { { ProbeD4 n0; { ProbeDtor &&t = probe_cond() ? probe_make() : probe_make(); probe_sink(&t); probe_throw(); } } }
+void probe_flag_12_2() { { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor &&t = probe_cond() ? probe_make() : probe_make(); probe_sink(&t); probe_throw(); } } } }
+void probe_flag_12_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor &&t = probe_cond() ? probe_make() : probe_make(); probe_sink(&t); probe_throw(); } } } } }
+void probe_flag_12_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor &&t = probe_cond() ? probe_make() : probe_make(); probe_sink(&t); probe_throw(); } } } } } }
+void probe_flag_12_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor &&t = probe_cond() ? probe_make() : probe_make(); probe_sink(&t); probe_throw(); } } } } } } }
+void probe_flag_13_0() { { ProbeD4 &&t = probe_cond() ? probe_make4() : probe_make4(); probe_sink(&t); probe_throw(); } }
+void probe_flag_13_1() { { ProbeD4 n0; { ProbeD4 &&t = probe_cond() ? probe_make4() : probe_make4(); probe_sink(&t); probe_throw(); } } }
+void probe_flag_13_2() { { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 &&t = probe_cond() ? probe_make4() : probe_make4(); probe_sink(&t); probe_throw(); } } } }
+void probe_flag_13_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 &&t = probe_cond() ? probe_make4() : probe_make4(); probe_sink(&t); probe_throw(); } } } } }
+void probe_flag_13_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 &&t = probe_cond() ? probe_make4() : probe_make4(); probe_sink(&t); probe_throw(); } } } } } }
+void probe_flag_13_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 &&t = probe_cond() ? probe_make4() : probe_make4(); probe_sink(&t); probe_throw(); } } } } } } }
+void probe_flag_14_0() { { (probe_cond() ? probe_make() : probe_make()); probe_throw(); } }
+void probe_flag_14_1() { { ProbeD4 n0; { (probe_cond() ? probe_make() : probe_make()); probe_throw(); } } }
+void probe_flag_14_2() { { ProbeD4 n1; { ProbeD4 n0; { (probe_cond() ? probe_make() : probe_make()); probe_throw(); } } } }
+void probe_flag_14_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { (probe_cond() ? probe_make() : probe_make()); probe_throw(); } } } } }
+void probe_flag_14_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { (probe_cond() ? probe_make() : probe_make()); probe_throw(); } } } } } }
+void probe_flag_14_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { (probe_cond() ? probe_make() : probe_make()); probe_throw(); } } } } } } }
+void probe_flag_15_0() { { ProbeDtor const &t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } }
+void probe_flag_15_1() { { ProbeD4 n0; { ProbeDtor const &t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } } }
+void probe_flag_15_2() { { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor const &t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } } } }
+void probe_flag_15_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor const &t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } } } } }
+void probe_flag_15_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor const &t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } } } } } }
+void probe_flag_15_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor const &t = probe_cond() ? probe_make() : probe_make(); probe_throw(); } } } } } } }
+void probe_flag_16_0() { { ProbeD4 const &t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } }
+void probe_flag_16_1() { { ProbeD4 n0; { ProbeD4 const &t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } } }
+void probe_flag_16_2() { { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 const &t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } } } }
+void probe_flag_16_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 const &t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } } } } }
+void probe_flag_16_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 const &t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } } } } } }
+void probe_flag_16_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeD4 const &t = probe_cond() ? probe_make4() : probe_make4(); probe_throw(); } } } } } } }
+void probe_flag_17_0() { { ProbeSub a; if (probe_cond()) { a.~ProbeSub(); } probe_throw(); } }
+void probe_flag_17_1() { { ProbeD4 n0; { ProbeSub a; if (probe_cond()) { a.~ProbeSub(); } probe_throw(); } } }
+void probe_flag_17_2() { { ProbeD4 n1; { ProbeD4 n0; { ProbeSub a; if (probe_cond()) { a.~ProbeSub(); } probe_throw(); } } } }
+void probe_flag_17_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeSub a; if (probe_cond()) { a.~ProbeSub(); } probe_throw(); } } } } }
+void probe_flag_17_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeSub a; if (probe_cond()) { a.~ProbeSub(); } probe_throw(); } } } } } }
+void probe_flag_17_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeSub a; if (probe_cond()) { a.~ProbeSub(); } probe_throw(); } } } } } } }
+void probe_flag_18_0() { if (probe_cond() && (probe_make(), true)) { probe_throw(); } }
+void probe_flag_18_1() { { ProbeD4 n0; if (probe_cond() && (probe_make(), true)) { probe_throw(); } } }
+void probe_flag_18_2() { { ProbeD4 n1; { ProbeD4 n0; if (probe_cond() && (probe_make(), true)) { probe_throw(); } } } }
+void probe_flag_18_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond() && (probe_make(), true)) { probe_throw(); } } } } }
+void probe_flag_18_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond() && (probe_make(), true)) { probe_throw(); } } } } } }
+void probe_flag_18_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; if (probe_cond() && (probe_make(), true)) { probe_throw(); } } } } } } }
+void probe_flag_19_0() { probe_sink2(probe_make(), probe_make()); }
+void probe_flag_19_1() { { ProbeD4 n0; probe_sink2(probe_make(), probe_make()); } }
+void probe_flag_19_2() { { ProbeD4 n1; { ProbeD4 n0; probe_sink2(probe_make(), probe_make()); } } }
+void probe_flag_19_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink2(probe_make(), probe_make()); } } } }
+void probe_flag_19_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink2(probe_make(), probe_make()); } } } } }
+void probe_flag_19_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink2(probe_make(), probe_make()); } } } } } }
+void probe_flag_20_0() { probe_sink24(probe_make4(), probe_make4()); }
+void probe_flag_20_1() { { ProbeD4 n0; probe_sink24(probe_make4(), probe_make4()); } }
+void probe_flag_20_2() { { ProbeD4 n1; { ProbeD4 n0; probe_sink24(probe_make4(), probe_make4()); } } }
+void probe_flag_20_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink24(probe_make4(), probe_make4()); } } } }
+void probe_flag_20_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink24(probe_make4(), probe_make4()); } } } } }
+void probe_flag_20_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink24(probe_make4(), probe_make4()); } } } } } }
+void probe_flag_21_0() { probe_sinkm(probe_make(), probe_make4(), probe_make()); }
+void probe_flag_21_1() { { ProbeD4 n0; probe_sinkm(probe_make(), probe_make4(), probe_make()); } }
+void probe_flag_21_2() { { ProbeD4 n1; { ProbeD4 n0; probe_sinkm(probe_make(), probe_make4(), probe_make()); } } }
+void probe_flag_21_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sinkm(probe_make(), probe_make4(), probe_make()); } } } }
+void probe_flag_21_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sinkm(probe_make(), probe_make4(), probe_make()); } } } } }
+void probe_flag_21_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sinkm(probe_make(), probe_make4(), probe_make()); } } } } } }
+void probe_flag_22_0() { probe_sink2(probe_cond() ? probe_make() : *probe_pdt(), probe_make()); }
+void probe_flag_22_1() { { ProbeD4 n0; probe_sink2(probe_cond() ? probe_make() : *probe_pdt(), probe_make()); } }
+void probe_flag_22_2() { { ProbeD4 n1; { ProbeD4 n0; probe_sink2(probe_cond() ? probe_make() : *probe_pdt(), probe_make()); } } }
+void probe_flag_22_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink2(probe_cond() ? probe_make() : *probe_pdt(), probe_make()); } } } }
+void probe_flag_22_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink2(probe_cond() ? probe_make() : *probe_pdt(), probe_make()); } } } } }
+void probe_flag_22_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink2(probe_cond() ? probe_make() : *probe_pdt(), probe_make()); } } } } } }
+void probe_flag_23_0() { probe_sink24(probe_make4(), probe_cond() ? probe_make4() : probe_make4()); }
+void probe_flag_23_1() { { ProbeD4 n0; probe_sink24(probe_make4(), probe_cond() ? probe_make4() : probe_make4()); } }
+void probe_flag_23_2() { { ProbeD4 n1; { ProbeD4 n0; probe_sink24(probe_make4(), probe_cond() ? probe_make4() : probe_make4()); } } }
+void probe_flag_23_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink24(probe_make4(), probe_cond() ? probe_make4() : probe_make4()); } } } }
+void probe_flag_23_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink24(probe_make4(), probe_cond() ? probe_make4() : probe_make4()); } } } } }
+void probe_flag_23_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; probe_sink24(probe_make4(), probe_cond() ? probe_make4() : probe_make4()); } } } } } }
+void probe_flag_24_0() { { probe_sink2(probe_make(), probe_make()); probe_throw(); } }
+void probe_flag_24_1() { { ProbeD4 n0; { probe_sink2(probe_make(), probe_make()); probe_throw(); } } }
+void probe_flag_24_2() { { ProbeD4 n1; { ProbeD4 n0; { probe_sink2(probe_make(), probe_make()); probe_throw(); } } } }
+void probe_flag_24_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { probe_sink2(probe_make(), probe_make()); probe_throw(); } } } } }
+void probe_flag_24_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { probe_sink2(probe_make(), probe_make()); probe_throw(); } } } } } }
+void probe_flag_24_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { probe_sink2(probe_make(), probe_make()); probe_throw(); } } } } } } }
+void probe_flag_25_0() { { probe_sink24(probe_make4(), probe_make4()); probe_throw(); } }
+void probe_flag_25_1() { { ProbeD4 n0; { probe_sink24(probe_make4(), probe_make4()); probe_throw(); } } }
+void probe_flag_25_2() { { ProbeD4 n1; { ProbeD4 n0; { probe_sink24(probe_make4(), probe_make4()); probe_throw(); } } } }
+void probe_flag_25_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { probe_sink24(probe_make4(), probe_make4()); probe_throw(); } } } } }
+void probe_flag_25_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { probe_sink24(probe_make4(), probe_make4()); probe_throw(); } } } } } }
+void probe_flag_25_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { probe_sink24(probe_make4(), probe_make4()); probe_throw(); } } } } } } }
+void probe_flag_26_0() { { ProbeDtor t = probe_cond() ? *probe_pdt() : probe_make(); probe_throw(); } }
+void probe_flag_26_1() { { ProbeD4 n0; { ProbeDtor t = probe_cond() ? *probe_pdt() : probe_make(); probe_throw(); } } }
+void probe_flag_26_2() { { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? *probe_pdt() : probe_make(); probe_throw(); } } } }
+void probe_flag_26_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? *probe_pdt() : probe_make(); probe_throw(); } } } } }
+void probe_flag_26_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? *probe_pdt() : probe_make(); probe_throw(); } } } } } }
+void probe_flag_26_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? *probe_pdt() : probe_make(); probe_throw(); } } } } } } }
+void probe_flag_27_0() { { ProbeDtor t = probe_cond() ? probe_make() : *probe_pdt(); probe_throw(); } }
+void probe_flag_27_1() { { ProbeD4 n0; { ProbeDtor t = probe_cond() ? probe_make() : *probe_pdt(); probe_throw(); } } }
+void probe_flag_27_2() { { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? probe_make() : *probe_pdt(); probe_throw(); } } } }
+void probe_flag_27_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? probe_make() : *probe_pdt(); probe_throw(); } } } } }
+void probe_flag_27_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? probe_make() : *probe_pdt(); probe_throw(); } } } } } }
+void probe_flag_27_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; { ProbeDtor t = probe_cond() ? probe_make() : *probe_pdt(); probe_throw(); } } } } } } }
 void probe_seh_0() { __try { probe_throw(); } __except(probe_cond()) { probe_sink(0); } }
 void probe_sehf_0() { __try { probe_throw(); } __finally { probe_sink(0); } }
 void probe_seh_1() { { ProbePOD n0; __try { probe_throw(); } __except(probe_cond()) { probe_sink(0); } } }
