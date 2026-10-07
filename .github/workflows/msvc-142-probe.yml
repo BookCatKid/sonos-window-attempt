@@ -220,6 +220,7 @@ jobs:
             (Join-Path $src 'vcruntime'),
             (Join-Path $src 'stl'),
             $sdkUcrt,
+            "$sdkUcrt\inc",
             "$kitInc\ucrt",
             "$kitInc\um",
             "$kitInc\shared",

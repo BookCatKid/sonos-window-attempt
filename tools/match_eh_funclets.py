@@ -84,7 +84,26 @@ def main():
 
     # Uncovered reference funclets grouped by size; a lazily-built signature
     # index per (size, reloc-mask) turns each candidate lookup into a dict hit.
+    # Targets are (a) uncovered inventory entries and (b) every fully-uncovered
+    # window inside differing .text runs so funclets Ghidra never inventoried
+    # can still be matched and placed.
     need = defaultdict(list)  # size -> [(va, exp)]
+    covered = bytearray(rs)  # 1 where candidate already equals reference
+    for off in range(rs):
+        if image[o + off] == reference[o + off]:
+            covered[off] = 1
+    runs = []
+    i = 0
+    while i < rs:
+        if covered[i]:
+            i += 1
+            continue
+        j = i
+        while j < rs and not covered[j]:
+            j += 1
+        runs.append((i, j))
+        i = j
+    windowed = set()
     for row in csv.DictReader(open(args.inventory), delimiter='\t'):
         va = int(row['entry'], 16)
         size = int(row['body_bytes'])
@@ -98,6 +117,22 @@ def main():
         if image[off:off + size] == exp:
             continue
         need[size].append((va, exp))
+        windowed.add(off - o)
+
+    win_cache = {}
+
+    def window_need(size):
+        out = win_cache.get(size)
+        if out is None:
+            out = list(need.get(size, []))
+            for a, b in runs:
+                for p in range(a, b - size + 1):
+                    if p in windowed:
+                        continue
+                    out.append((rva0 + p + base,
+                                reference[o + p:o + p + size]))
+            win_cache[size] = out
+        return out
 
     def sig(body, maskpos):
         return bytes(b for i, b in enumerate(body) if i not in maskpos)
@@ -109,13 +144,14 @@ def main():
         table = ref_index.get(key)
         if table is None:
             table = defaultdict(list)
-            for va, exp in need.get(size, ()):
+            for va, exp in window_need(size):
                 table[sig(exp, maskpos)].append(va)
             ref_index[key] = table
         return table.get(sig(body, maskpos), ())
 
     placements = []
     seen_va = set()
+    claimed = []  # accepted (va, end) ranges; prevent overlapping windows
     matched = 0
     for obj in args.objects:
         for p in sorted(obj.glob('*.obj')) if obj.is_dir() else [obj]:
@@ -131,6 +167,9 @@ def main():
                     if va in seen_va:
                         continue
                     size = len(body)
+                    if any(va < e and va + size > s
+                           for s, e in claimed):
+                        continue
                     placements.append({
                         'entry': f'{va:08x}',
                         'patched_hex': reference[
@@ -140,6 +179,7 @@ def main():
                         'symbol': f'funclet@{va:08x}',
                     })
                     seen_va.add(va)
+                    claimed.append((va, va + size))
                     matched += 1
     args.out.write_text(json.dumps({'placements': placements}))
     print(json.dumps({'matched_funclets': matched,
