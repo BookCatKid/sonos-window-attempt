@@ -1076,3 +1076,33 @@ the asm transcription (need real-C++ reconstruction), ~240KB of small
 in-extent bodies (flag-gated `and eax,imm` forms not yet emitted by
 any construct tried; sized-delete/push32 forms), ~200KB outside-extent
 (funclets, epilogues, CRT string/memory routines Ghidra missed).
+
+### Iteration: refixed decompiled corpus -> 231 functions (2026-10-06)
+
+`tools/fix_bulk_failures.py` is now an error-driven repair loop over
+`compile_bulk_mass` transforms: it recompiles each rejected decompiled
+function under clang-cl `/Zs`, applies a targeted source patch per
+diagnostic, and regenerates `src/generated/bulk/bulk_refixed_*.cpp`.
+Current coverage:
+
+- 101 previously-rejected functions repair (91KB) into
+  `bulk_refixed_0000.cpp`; 21 remain (truncated expressions, mangled
+  fused tokens, `while`/`call` cascade corruption).
+- `--include-switchd` lifts the conservative `switchD_` gate: Ghidra's
+  jump-table labels are plain C gotos. ~130 gated functions repair into
+  `bulk_refixed_0001.cpp` (1.1MB source).
+
+New handler classes: Ghidra `obj.*(T*)((char*)&field + N)` field-offset
+fusions, backtick-quoted mangled-signature literals with `::`
+continuations, fused `PTR_x<>y`/`s_<_T>NNN` template tokens, statement
+paren-balance for wrapped expressions (dropped `)`), dangling `(T)`
+casts, `memcpy` rewrites for array assignments, function-pointer
+subscript/arithmetic through `code **`/`char *` puns, `code`-type casts
+through `code *`, chained-comparison `-Wparentheses` errors, extern
+decl conflicts resolved by removing colliding record externs, and
+libc decl emission (`memcpy`/`memset`/`fwrite`/`ferror`/`strpbrk`).
+
+Caveat: repairs are codegen-divergent by design — the recovered corpus
+compiles under real MSVC 14.28 but byte-matches almost nothing via the
+windowed matcher (18B from the 101-fn object). Value is corpus
+completeness and occasional leaf-body hits, not bulk placement.
