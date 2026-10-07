@@ -419,6 +419,39 @@ def emit_extra_families(out, count):
                 f'ProbeNJ{tag}::ProbeNJ{tag}() : {init} '
                 f'{{ probe_throw(); }}'
             )
+    # Broad hunt for MSVC's flag-bit construction tracking: the reference
+    # emits  mov eax,[ebp-flag]; and eax,bit; jz; and [flag],~bit; cleanup
+    # for objects whose construction the state machine cannot express.
+    # Try every construct known to force runtime "was it built" tracking.
+    variants = (
+        # object in if-init / switch-init (C++17) and while-condition
+        'if (ProbeSub t = *probe_psub(); probe_cond()) { probe_throw(); }',
+        'switch (ProbeSub t = *probe_psub(); probe_cond()) '
+        '{ case 0: probe_throw(); }',
+        'while (probe_cond()) { ProbeSub t; probe_throw(); }',
+        # for-init object whose dtor must run from loop-exit paths
+        'for (ProbeSub t; probe_cond(); ) { probe_throw(); }',
+        # catch resuming inside a ctor with members
+        'try { probe_throw(); } catch (...) { ProbeSub t; probe_throw(); }',
+        # object init from throwing call in member-init list
+        '{ ProbeSub t = *probe_psub(); probe_throw(); }',
+        # nested conditional scopes
+        'if (probe_cond()) { if (probe_cond()) { ProbeSub t; '
+        'probe_throw(); } }',
+        # temp bound to ref across try boundary
+        '{ ProbeSub const &t = *probe_psub(); probe_throw(); }',
+        # do-while scoped object
+        'do { ProbeSub t; probe_throw(); } while (0);',
+        # comma-separated construction
+        '{ ProbeSub t; probe_cond(), probe_throw(); }',
+    )
+    for vi, v in enumerate(variants):
+        for d in range(6):
+            out.append(
+                f'void probe_flag_{vi}_{d}() {{ '
+                + _nest(v, d)
+                + ' }'
+            )
     # SEH __try/__except filters receive the establisher frame through a
     # second stack arg -> mov edx,[esp+8]; lea eax,[edx+0xc]; xor-checked
     # field loads + calls. Sweeping locals shifts the field offsets.

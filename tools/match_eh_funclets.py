@@ -27,16 +27,23 @@ def funclet_candidates(sections, symbols):
 
     With /GS- the unwind funclet body sits at offset 0 of a .text$x COMDAT,
     followed by padding and the security-cookie trampoline. The body ends at
-    the first run of int3/nop padding.
+    the first run of int3/nop padding. .text$mn COMDATs contribute their
+    function bodies as well: a whole compiled function can window-match a
+    differing run the inventory never recorded.
     """
     syms_by_section = defaultdict(list)
     for s in symbols:
         if 'unwindfunclet' in s['name'] or 'catch' in s['name'] or 'try' in s['name']:
             syms_by_section[s['section'] - 1].append(s['offset'])
+    code_syms = defaultdict(list)
+    for s in symbols:
+        if s.get('type') == 0x20 or s['name'].startswith(('?','FUN_','probe_')):
+            code_syms[s['section'] - 1].append(s['offset'])
     for i, sec in enumerate(sections):
-        if sec['name'] != '.text$x' or not sec['code']:
+        if sec['name'] not in ('.text$x', '.text$mn') or not sec['code']:
             continue
-        starts = syms_by_section.get(i, [0])
+        is_mn = sec['name'] == '.text$mn'
+        starts = syms_by_section.get(i) or code_syms.get(i) or [0]
         code = sec['code']
         # Each funclet symbol is an independent entry point whose body ends
         # at the next symbol's offset or the section's padding tail.
@@ -122,15 +129,11 @@ def main():
     win_cache = {}
 
     def window_need(size):
+        # Inventory entries only; run windows are scanned per-candidate
+        # with bytes.find below.
         out = win_cache.get(size)
         if out is None:
             out = list(need.get(size, []))
-            for a, b in runs:
-                for p in range(a, b - size + 1):
-                    if p in windowed:
-                        continue
-                    out.append((rva0 + p + base,
-                                reference[o + p:o + p + size]))
             win_cache[size] = out
         return out
 
@@ -149,8 +152,37 @@ def main():
             ref_index[key] = table
         return table.get(sig(body, maskpos), ())
 
+    # One-shot index: first 4 bytes at every position inside a differing run
+    # -> list of .text-relative offsets. Candidates anchor on a 4-byte
+    # unmasked span, then verify the whole window.
+    idx4 = defaultdict(list)
+    for a, b in runs:
+        seg = reference[o + a:o + b]
+        for p in range(len(seg) - 3):
+            idx4[int.from_bytes(seg[p:p + 4], 'little')].append(a + p)
+
+    def lookup_runs(size, body, maskpos):
+        span_start = -1
+        for i in range(size - 3):
+            if not any(j in maskpos for j in range(i, i + 4)):
+                span_start = i
+                break
+        if span_start < 0:
+            return ()
+        needle = int.from_bytes(body[span_start:span_start + 4], 'little')
+        hits = []
+        for q in idx4.get(needle, ()):
+            w = q - span_start
+            if w < 0 or w + size > rs or covered[w] or covered[w + size - 1]:
+                continue
+            if all(body[i] == reference[o + w + i]
+                   for i in range(size) if i not in maskpos):
+                hits.append(rva0 + w + base)
+        return hits
+
     placements = []
     seen_va = set()
+    seen_cands = set()
     claimed = []  # accepted (va, end) ranges; prevent overlapping windows
     matched = 0
     for obj in args.objects:
@@ -163,10 +195,17 @@ def main():
                 maskpos = frozenset(
                     k for r in relocs
                     for k in range(r['offset'], min(r['offset'] + 4, len(body))))
-                for va in lookup(len(body), body, maskpos):
+                size = len(body)
+                ckey = (size, maskpos, sig(body, maskpos))
+                if ckey in seen_cands:
+                    continue
+                seen_cands.add(ckey)
+                hits = list(lookup(size, body, maskpos))
+                hits += [va for va in lookup_runs(size, body, maskpos)
+                         if (va - base - rva0) not in windowed]
+                for va in hits:
                     if va in seen_va:
                         continue
-                    size = len(body)
                     if any(va < e and va + size > s
                            for s, e in claimed):
                         continue
