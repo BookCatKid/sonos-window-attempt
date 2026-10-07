@@ -88,18 +88,19 @@ def _cmp_rewrite(line, col):
         for m in list(re.finditer(
                 r'\b([A-Za-z_]\w*(?:\[[^\]]*\]|->\w+|\.\w+)*)\b'
                 r'(?=\s*(?:==|!=|<=?|>=?))', line)) + list(re.finditer(
-                r'(?:==|!=|<=?|>=?)\s*([A-Za-z_]\w*)', line)):
+                r'(?:==|!=|<=?|>=?)\s*'
+                r'([A-Za-z_]\w*(?:\[[^\]]*\]|->\w+|\.\w+)*)', line)):
             name = m.group(1)
             if name in ('if', 'while', 'return', 'switch', 'for', 'int',
                         'uint', 'char', 'uintptr_t', 'sizeof'):
                 continue
-            d = abs(m.start() - (col - 1))
+            d = abs(m.start(1) - (col - 1))
             if best is None or d < best[0]:
                 best = (d, m, name)
         if best is not None:
             _, m, name = best
-            new = (line[:m.start()] + '(uintptr_t)(' + name + ')' +
-                   line[m.start() + len(name):])
+            new = (line[:m.start(1)] + '(uintptr_t)(' + name + ')' +
+                   line[m.end(1):])
             return new
     return new if new != line else None
 
@@ -268,6 +269,10 @@ def header_extra(message):
     m = re.search(r"template specialization requires 'template<>'", message)
     if m:
         return '__retemplate__'
+    m = re.search(r"'(\w+)' does not refer to a value", message)
+    if m:
+        name = m.group(1)
+        return f'extern char {name}_v[];\n#define {name} {name}_v'
     return None
 
 

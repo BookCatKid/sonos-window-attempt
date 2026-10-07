@@ -118,9 +118,14 @@ extern "C" void __security_check_cookie(size_t);
 extern "C" int __security_cookie;
 struct __RFLD2 { int tm_hour; int tm_isdst; int tm_mday; int tm_min; int tm_mon; int tm_sec; int tm_wday; int tm_yday; int tm_year; };
 struct __RFLD { int tm_hour; int tm_isdst; int tm_mday; int tm_min; int tm_mon; int tm_sec; int tm_wday; int tm_yday; int tm_year; };
+namespace std { typedef int _Iterator_base0; }
 struct SCLibParameters { char _pad; SCLibParameters(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int hasDeveloperOption(A...); };
 struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int getSingleton(A...); };
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int beginsWith(A...); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int length(A...); static int op_ctor(...) { return 0; } static int op_eq(...) { return 0; } template<class... A> int split(A...); };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int append(A...); template<class... A> int beginsWith(A...); template<class... A> int format(A...); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_allocStdRep(A...); template<class... A> int int_release(A...); template<class... A> int length(A...); static int op_ctor(...) { return 0; } static int op_eq(...) { return 0; } template<class... A> int split(A...); template<class... A> int stringWithFormat(A...); };
+namespace std { template<class...> struct _Tree_simple_types { char _pad; _Tree_simple_types(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
+namespace std { template<class...> struct _Tree_unchecked_const_iterator { char _pad; _Tree_unchecked_const_iterator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int op_inc(...); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
+namespace std { template<class...> struct _Tree_val { char _pad; _Tree_val(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
+namespace std { template<class...> struct allocator { char _pad; allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
 namespace std { template<class...> struct basic_ios { char _pad; basic_ios(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); template<class... A> int setstate(A...); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
 namespace std { template<class...> struct basic_istream { char _pad; basic_istream(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); template<class... A> int _Ipfx(A...); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
 namespace std { template<class...> struct basic_streambuf { char _pad; basic_streambuf(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); template<class... A> int sbumpc(A...); template<class... A> int sgetc(A...); template<class... A> int snextc(A...); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
@@ -142,19 +147,27 @@ struct GetAllPrefixLocations { char _pad; GetAllPrefixLocations(...); template<c
 struct Globals { char _pad; Globals(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct HadError { char _pad; HadError(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct LatestSWGen { char _pad; LatestSWGen(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Libraries { char _pad; Libraries(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Library { char _pad; Library(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Match { char _pad; Match(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct ObjectID { char _pad; ObjectID(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct OnSearchForZonePlayers { char _pad; OnSearchForZonePlayers(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Perform { char _pad; Perform(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct PlayModelHeroView { char _pad; PlayModelHeroView(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct PostalCode { char _pad; PostalCode(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct PrefixAndIndexCSV { char _pad; PrefixAndIndexCSV(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Release { char _pad; Release(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct SCCountryList { char _pad; SCCountryList(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct SCFetchUpdateManifestOp { char _pad; SCFetchUpdateManifestOp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct SCIUrlSessionProvider { char _pad; SCIUrlSessionProvider(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct SCSecureRegistrationResetPasswordSuccessOtherState { char _pad; SCSecureRegistrationResetPasswordSuccessOtherState(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Self { char _pad; Self(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Single { char _pad; Single(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct SkipLogin { char _pad; SkipLogin(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Sonos { char _pad; Sonos(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Sorting { char _pad; Sorting(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct StashedEmail { char _pad; StashedEmail(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Studio { char _pad; Studio(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct ThreadLocalStoragePointer { char _pad; ThreadLocalStoragePointer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct TotalPrefixes { char _pad; TotalPrefixes(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
@@ -168,6 +181,9 @@ struct UpdateBranch { char _pad; UpdateBranch(...); template<class T> int operat
 struct UpdateID { char _pad; UpdateID(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct UsageDataOptIn { char _pad; UsageDataOptIn(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct UsageDataSet { char _pad; UsageDataSet(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Visual { char _pad; Visual(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct WORD_12411e10 { char _pad; WORD_12411e10(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+template<class...> struct basic_string { char _pad; basic_string(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int vftable; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 typedef void *DB;
 typedef void *HTTP;
 typedef void *IP;
@@ -180,12 +196,16 @@ typedef void *_Ipfx;
 typedef void *_PtFuncCompare;
 typedef void (*_func_void_void_ptr)(...);
 using namespace std;
-struct Recovered_Bulk { char _pad; bool __thiscall m_FUN_101b87f0(char *param_2); template<class... A> int m_FUN_101b87f0(A...); bool __thiscall m_FUN_101b88f0(int *param_2); template<class... A> int m_FUN_101b88f0(A...); void __thiscall m_FUN_1021bf80(int *param_2,int *param_3); template<class... A> int m_FUN_1021bf80(A...); void __thiscall m_FUN_1086d990(undefined4 param_2); template<class... A> int m_FUN_1086d990(A...); void __thiscall m_FUN_10a3e140(undefined4 param_2); template<class... A> int m_FUN_10a3e140(A...); void __thiscall m_FUN_10d93ba0(undefined1 *param_2); template<class... A> int m_FUN_10d93ba0(A...); void __thiscall m_FUN_10f85160(int param_2,short *param_3); template<class... A> int m_FUN_10f85160(A...); void __thiscall m_FUN_1106d3a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+struct Recovered_Bulk { char _pad; bool __thiscall m_FUN_101b87f0(char *param_2); template<class... A> int m_FUN_101b87f0(A...); bool __thiscall m_FUN_101b88f0(int *param_2); template<class... A> int m_FUN_101b88f0(A...); void __thiscall m_FUN_1021bf80(int *param_2,int *param_3); template<class... A> int m_FUN_1021bf80(A...); void __thiscall m_FUN_1086d990(undefined4 param_2); template<class... A> int m_FUN_1086d990(A...); void __thiscall m_FUN_10a3e140(undefined4 param_2); template<class... A> int m_FUN_10a3e140(A...); undefined4 * __thiscall m_FUN_10d3bf10(undefined4 *param_2,int *param_3); template<class... A> int m_FUN_10d3bf10(A...); void __thiscall m_FUN_10d93ba0(undefined1 *param_2); template<class... A> int m_FUN_10d93ba0(A...); void __thiscall m_FUN_10f85160(int param_2,short *param_3); template<class... A> int m_FUN_10f85160(A...); void __thiscall m_FUN_1106d3a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,int *param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
             undefined4 param_14,undefined4 param_15); template<class... A> int m_FUN_1106d3a0(A...); void __thiscall m_FUN_11094940(undefined4 *param_2,int *param_3,undefined4 *param_4); template<class... A> int m_FUN_11094940(A...); void __thiscall m_FUN_11115d10(undefined1 *param_2,undefined4 param_3); template<class... A> int m_FUN_11115d10(A...); void __thiscall m_FUN_11124a80(byte *param_2,undefined4 *param_3); template<class... A> int m_FUN_11124a80(A...); void __thiscall m_FUN_11201af0(byte *param_2,undefined4 param_3); template<class... A> int m_FUN_11201af0(A...); bool __thiscall m_FUN_11298db0(undefined4 param_2,uint param_3,int param_4); template<class... A> int m_FUN_11298db0(A...); };
 
 extern int FUN_1005ef7a(...);
+extern int FUN_1086eaf0(...);
+extern int FUN_1086ed30(...);
+extern int FUN_108724e0(...);
+extern int FUN_10872dc0(...);
 extern int FUN_10ba4768(...);
 extern int FUN_11124530(...);
 extern int FUN_11302b00(...);
@@ -239,6 +259,9 @@ extern int FUN_113ab2d0(...);
 extern int FUN_113ac480(...);
 extern int FUN_113b97d0(...);
 extern int FUN_11862580(...);
+extern int LOCK(...);
+extern int UNLOCK(...);
+extern int ___scrt_is_ucrt_dll_in_use(...);
 extern int __alldiv(...);
 extern int __allmul(...);
 extern int _atexit(...);
@@ -262,9 +285,11 @@ extern __declspec(dllimport) int strncmp(...);
 extern __declspec(dllimport) int strtoul(...);
 extern int thunk_FUN_10118c40(...);
 extern int thunk_FUN_1011be40(...);
+extern int thunk_FUN_1012a2a0(...);
 extern int thunk_FUN_1012cab0(...);
 extern int thunk_FUN_1012d130(...);
 extern int thunk_FUN_101a2bf0(...);
+extern int thunk_FUN_101a2e90(...);
 extern int thunk_FUN_101aa0b0(...);
 extern int thunk_FUN_101aa9f0(...);
 extern int thunk_FUN_101b9160(...);
@@ -273,25 +298,47 @@ extern int thunk_FUN_101ba300(...);
 extern int thunk_FUN_101ba530(...);
 extern int thunk_FUN_101dd3a0(...);
 extern int thunk_FUN_101fda20(...);
+extern int thunk_FUN_101ff8b0(...);
 extern int thunk_FUN_10202e00(...);
 extern int thunk_FUN_102207b0(...);
 extern int thunk_FUN_10236af0(...);
+extern int thunk_FUN_10246170(...);
+extern int thunk_FUN_10246290(...);
 extern int thunk_FUN_10281490(...);
 extern int thunk_FUN_102a3810(...);
+extern int thunk_FUN_102a3ea0(...);
 extern int thunk_FUN_102caa30(...);
 extern int thunk_FUN_10302280(...);
 extern int thunk_FUN_10302a50(...);
 extern int thunk_FUN_1034de40(...);
+extern int thunk_FUN_1034e460(...);
 extern int thunk_FUN_10351370(...);
 extern int thunk_FUN_10365150(...);
 extern int thunk_FUN_1036e270(...);
+extern int thunk_FUN_103ac6e0(...);
+extern int thunk_FUN_103cdb40(...);
+extern int thunk_FUN_103cf4f0(...);
+extern int thunk_FUN_103d42c0(...);
+extern int thunk_FUN_103d45e0(...);
+extern int thunk_FUN_103d5ff0(...);
+extern int thunk_FUN_104068e0(...);
 extern int thunk_FUN_10425b60(...);
+extern int thunk_FUN_104da560(...);
 extern int thunk_FUN_105055d0(...);
 extern int thunk_FUN_105055e0(...);
 extern int thunk_FUN_105a1c80(...);
 extern int thunk_FUN_105a1d20(...);
+extern int thunk_FUN_105b6d40(...);
+extern int thunk_FUN_105c12d0(...);
+extern int thunk_FUN_10604790(...);
+extern int thunk_FUN_10604820(...);
+extern int thunk_FUN_10647480(...);
 extern int thunk_FUN_106a5620(...);
 extern int thunk_FUN_10785ae0(...);
+extern int thunk_FUN_1086f2f0(...);
+extern int thunk_FUN_10878180(...);
+extern int thunk_FUN_1087bdd0(...);
+extern int thunk_FUN_1087e360(...);
 extern int thunk_FUN_10a21a10(...);
 extern int thunk_FUN_10a22590(...);
 extern int thunk_FUN_10a3f3e0(...);
@@ -301,8 +348,13 @@ extern int thunk_FUN_10be54d0(...);
 extern int thunk_FUN_10be6d30(...);
 extern int thunk_FUN_10bf11c0(...);
 extern int thunk_FUN_10bf11e0(...);
+extern int thunk_FUN_10c5ee20(...);
 extern int thunk_FUN_10c5f1d0(...);
+extern int thunk_FUN_10c5f450(...);
+extern int thunk_FUN_10c5f840(...);
 extern int thunk_FUN_10c61010(...);
+extern int thunk_FUN_10c61ec0(...);
+extern int thunk_FUN_10c61f70(...);
 extern int thunk_FUN_10c66110(...);
 extern int thunk_FUN_10c98c80(...);
 extern int thunk_FUN_10cc9cb0(...);
@@ -318,21 +370,43 @@ extern int thunk_FUN_10df6f00(...);
 extern int thunk_FUN_10dfba00(...);
 extern int thunk_FUN_10dfbb10(...);
 extern int thunk_FUN_10dfd7b0(...);
+extern int thunk_FUN_10e0f250(...);
+extern int thunk_FUN_10e0f500(...);
 extern int thunk_FUN_10e25c70(...);
 extern int thunk_FUN_10e26030(...);
 extern int thunk_FUN_10e3bda0(...);
 extern int thunk_FUN_10e3c100(...);
 extern int thunk_FUN_10e3c400(...);
 extern int thunk_FUN_10e3c5a0(...);
+extern int thunk_FUN_10eace00(...);
 extern int thunk_FUN_10eb41b0(...);
+extern int thunk_FUN_10eb41c0(...);
 extern int thunk_FUN_10eba400(...);
 extern int thunk_FUN_10ebb810(...);
 extern int thunk_FUN_10ebb8e0(...);
 extern int thunk_FUN_10ebb920(...);
 extern int thunk_FUN_10ebbab0(...);
+extern int thunk_FUN_10ec0e00(...);
+extern int thunk_FUN_10ec0ec0(...);
+extern int thunk_FUN_10ec0fb0(...);
+extern int thunk_FUN_10ec1b40(...);
+extern int thunk_FUN_10ec1c00(...);
+extern int thunk_FUN_10ec1f00(...);
+extern int thunk_FUN_10ec3540(...);
+extern int thunk_FUN_10ec3670(...);
+extern int thunk_FUN_10ec3700(...);
+extern int thunk_FUN_10eca560(...);
+extern int thunk_FUN_10ecbbd0(...);
+extern int thunk_FUN_10ecd3c0(...);
+extern int thunk_FUN_10ece7b0(...);
+extern int thunk_FUN_10ecec70(...);
+extern int thunk_FUN_10eced20(...);
+extern int thunk_FUN_10ecf6e0(...);
+extern int thunk_FUN_10ed4540(...);
 extern int thunk_FUN_10efb220(...);
 extern int thunk_FUN_10efdbb0(...);
 extern int thunk_FUN_10eff900(...);
+extern int thunk_FUN_10f024a0(...);
 extern int thunk_FUN_10f796f0(...);
 extern int thunk_FUN_10f82020(...);
 extern int thunk_FUN_10f82840(...);
@@ -395,9 +469,14 @@ extern int thunk_FUN_112af4e0(...);
 extern int thunk_FUN_112b0270(...);
 extern int thunk_FUN_11395910(...);
 extern int thunk_FUN_113cfb70(...);
+extern int thunk_FUN_113cfe50(...);
+extern int thunk_FUN_113d03e0(...);
+extern int thunk_FUN_113d15c0(...);
 extern int thunk_FUN_113d2fe0(...);
 extern int thunk_FUN_113dc730(...);
 extern int thunk_FUN_113dde70(...);
+extern int thunk_FUN_11401f20(...);
+extern int thunk_FUN_11401ff0(...);
 extern int thunk_FUN_1140ccc0(...);
 extern int thunk_FUN_1140cd70(...);
 extern int thunk_FUN_1140ce80(...);
@@ -422,9 +501,11 @@ extern int thunk_FUN_1148ab00(...);
 extern int thunk_FUN_1148ac28(...);
 extern int thunk_FUN_1148b586(...);
 extern int thunk_FUN_1148bc65(...);
+extern int thunk_FUN_118064a0(...);
 extern int DAT_1186d2ee;
 extern int DAT_1187b440;
 extern int DAT_11882ff0;
+extern int DAT_1188465c;
 extern int DAT_118a1c40;
 extern int DAT_118d39d4;
 extern int DAT_119dd8b8;
@@ -443,12 +524,22 @@ extern int DAT_12121ed0;
 extern int DAT_12121ed8;
 extern int DAT_12121f78;
 extern int DAT_12126b84;
+extern int DAT_121a2008;
+extern int DAT_121a200c;
+extern int DAT_121a2010;
+extern int DAT_121a2014;
+extern int DAT_121a2018;
+extern int DAT_121a201c;
+extern int DAT_121a2020;
+extern int DAT_121a2024;
+extern int DAT_121a2030;
 extern int DAT_122e8a30;
 extern int DAT_122f5664;
 extern int DAT_122f5670;
 extern int DAT_122f6d28;
 extern int DAT_122f6d4c;
 extern int DAT_122f6d88;
+extern int DAT_122fabd8;
 extern int UNK_119ca0d8;
 extern int UNK_119ca0e8;
 extern int _UNK_119ca0d0;
@@ -459,13 +550,17 @@ extern int _UNK_11a02f88;
 extern int _UNK_11a02f8c;
 extern int _tls_index;
 extern int g_lSCObjCount;
+extern int ghidra_vftable_RAsyncBrowseCacheCB;
 extern int ghidra_vftable_RUpnpCDGetAllPrefixLocationsAIOOp;
 extern int ghidra_vftable_RZPDevice;
 extern int ghidra_vftable_SCArray;
+extern int ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface;
 extern int ghidra_vftable_SCCountry;
 extern int ghidra_vftable_SCIObjImpl;
 extern int ghidra_vftable_SCIOpCBDelegate;
 extern int ghidra_vftable_SCOpRef;
+extern int ghidra_vftable_SCSearchTypeNonSonosItem;
+extern int ghidra_vftable_SCSearchTypeSonosItem;
 extern int ghidra_vftable_SCSecureRegistrationAccountEmailState;
 extern int ghidra_vftable_SCSecureRegistrationAccountEmailSubmitState;
 extern int ghidra_vftable_SCSecureRegistrationAccountExistsState;
@@ -490,6 +585,7 @@ extern int ghidra_vftable_SCSecureRegistrationState;
 extern int ghidra_vftable_SCSecureRegistrationVerifyEmailErrorState;
 extern int ghidra_vftable_SCSecureRegistrationVerifyEmailState;
 extern int ghidra_vftable_SCSecureRegistrationVerifyEmailSubmitState;
+extern int ghidra_vftable_SCSetupAssetSet;
 extern int ghidra_vftable_SCStrPropDelegate;
 extern int in_stack_00000020;
 extern int in_stack_00000024;
@@ -528,8 +624,15 @@ extern undefined1 LAB_1021c629[];
 extern undefined1 LAB_107c0512[];
 extern undefined1 LAB_107c0565[];
 extern undefined1 LAB_107c0644[];
+extern undefined1 LAB_108790a4[];
+extern undefined1 LAB_10879170[];
+extern undefined1 LAB_1087a092[];
+extern undefined1 LAB_1087a0df[];
+extern undefined1 LAB_10b749ae[];
+extern undefined1 LAB_10b749b4[];
 extern undefined1 LAB_10bae8ed[];
 extern undefined1 LAB_10bae906[];
+extern undefined1 LAB_10d3bf9e[];
 extern undefined1 LAB_10d93ed4[];
 extern undefined1 LAB_10d93ee3[];
 extern undefined1 LAB_10d93f57[];
@@ -586,14 +689,23 @@ extern undefined1 LAB_113a3110[];
 extern undefined1 LAB_113a42c4[];
 extern undefined1 LAB_113a43d7[];
 extern undefined1 LAB_113ab167[];
+extern undefined1 LAB_113d0fec[];
+extern undefined1 LAB_113d10f0[];
+extern undefined1 LAB_113d10f5[];
+extern undefined1 LAB_113d1106[];
+extern undefined1 LAB_113d1123[];
 extern undefined1 LAB_1141d36c[];
 extern undefined1 LAB_1150769f[];
 extern undefined1 LAB_1152fe1f[];
 extern undefined1 LAB_1160ac45[];
 extern undefined1 LAB_1162ad45[];
+extern undefined1 LAB_1162c04c[];
+extern undefined1 LAB_1162c1ff[];
 extern undefined1 LAB_11680db5[];
+extern undefined1 LAB_116bac75[];
 extern undefined1 LAB_116c29f5[];
 extern undefined1 LAB_116c40a5[];
+extern undefined1 LAB_1170b9dc[];
 extern undefined1 LAB_1171d14d[];
 extern undefined1 LAB_1173f566[];
 extern undefined1 LAB_1177d501[];
@@ -628,6 +740,12 @@ void __fastcall FUN_10302a60(int param_1);
 template<class... A> int FUN_10302a60(A...);
 void __fastcall FUN_107c03d0(int param_1);
 template<class... A> int FUN_107c03d0(A...);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_10878180(undefined4 param_1,char *param_2);
+template<class... A> int FUN_10878180(A...);
+void FUN_10879b10(void);
+template<class... A> int FUN_10879b10(A...);
+char * FUN_10b74210(char *param_1,undefined1 *param_2,undefined4 param_3,char param_4);
+template<class... A> int FUN_10b74210(A...);
 basic_istream<char,std::char_traits<char>> * FUN_10ba4650(basic_istream<char,std::char_traits<char>> *param_1,undefined4 *param_2,byte param_3);
 template<class... A> int FUN_10ba4650(A...);
 undefined1 * FUN_10bae6d0(int *param_1,char *param_2);
@@ -655,6 +773,10 @@ int FUN_113a4210(int *param_1);
 template<class... A> int FUN_113a4210(A...);
 int FUN_113aae40(int *param_1,uint param_2,uint param_3,undefined4 param_4,undefined4 param_5);
 template<class... A> int FUN_113aae40(A...);
+void FUN_113d0870(undefined4 param_1,int param_2);
+template<class... A> int FUN_113d0870(A...);
+void FUN_113d0e60(undefined4 param_1,int param_2,char param_3,undefined4 param_4,undefined4 param_5, undefined4 param_6,undefined4 param_7,uint *param_8);
+template<class... A> int FUN_113d0e60(A...);
 void FUN_1141d1c0(uint *param_1,uint param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5);
 template<class... A> int FUN_1141d1c0(A...);
 tm * FUN_11423ea0(__time64_t *param_1,tm *param_2);
@@ -665,6 +787,8 @@ void FUN_1146c1b0(undefined4 param_1,int param_2);
 template<class... A> int FUN_1146c1b0(A...);
 void FUN_114894f0(int *param_1,byte *param_2,byte *param_3);
 template<class... A> int FUN_114894f0(A...);
+/* Library Function - Single Match ___scrt_acquire_startup_lock Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */undefined4 FUN_1148a5d1(void);
+template<class... A> int FUN_1148a5d1(A...);
 // Reference entry 101b87f0; body size 199 bytes.
 extern char iRam00000001;
 extern char pbRam1211e5d4;
@@ -674,7 +798,12 @@ extern char pppppbRam12120580;
 extern char pppppbRam12120584;
 extern char pppppbRam12120588;
 typedef int errno_t;
+typedef int word;
+extern char WORD_12411e10_v[];
+#define WORD_12411e10 WORD_12411e10_v
 extern char _bStack0000001c;
+extern char Self_v[];
+#define Self Self_v
 #line 1 "ENTRY_101b87f0"
 
 bool __thiscall Recovered_Bulk::m_FUN_101b87f0(char *param_2)
@@ -1516,6 +1645,1069 @@ void __thiscall Recovered_Bulk::m_FUN_1086d990(undefined4 param_2)
 }
 
 
+// Reference entry 10878180; body size 4085 bytes.
+#line 1 "ENTRY_10878180"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_10878180(undefined4 param_1,char *param_2)
+
+{
+ try {
+  int *piVar1;
+  char **ppcVar2;
+  undefined1 uVar3;
+  char cVar4;
+  uint uVar5;
+  int iVar6;
+  undefined4 ****ppppuVar7;
+  undefined4 *****pppppuVar8;
+  void *pvVar9;
+  undefined4 *puVar10;
+  undefined4 uVar11;
+  undefined4 uVar12;
+  undefined4 *puVar13;
+  char *pcVar14;
+  undefined1 *puVar15;
+  char *pcVar16;
+  int *piVar17;
+  int *piVar18;
+  char **ppcVar19;
+  undefined4 uVar20;
+  undefined4 uVar21;
+  SCStr local_270 [4];
+  undefined4 local_26c;
+  undefined4 local_268 [6];
+  int local_250 [2];
+  int local_248 [3];
+  undefined4 local_23c;
+  undefined4 local_238 [5];
+  undefined4 local_224;
+  undefined4 local_220;
+  undefined4 local_21c [6];
+  int local_204 [2];
+  int local_1fc [3];
+  undefined4 local_1f0;
+  undefined4 local_1ec [5];
+  undefined4 local_1d8;
+  undefined4 local_1d4;
+  undefined4 local_1d0 [6];
+  int local_1b8 [2];
+  int local_1b0 [3];
+  undefined4 local_1a4;
+  undefined4 local_1a0 [5];
+  undefined4 local_18c;
+  undefined4 local_188;
+  undefined4 local_184 [6];
+  int local_16c [2];
+  int local_164 [3];
+  undefined4 local_158;
+  undefined4 local_154 [5];
+  undefined1 local_140 [8];
+  undefined1 local_138 [8];
+  undefined4 local_130;
+  undefined1 local_12c [12];
+  undefined4 local_120;
+  int *local_11c;
+  undefined4 local_118 [2];
+  undefined4 local_110;
+  int *local_10c;
+  undefined4 local_108;
+  undefined4 local_104 [2];
+  char *local_fc;
+  char *local_f8;
+  char **local_f4;
+  undefined4 local_f0;
+  undefined4 local_ec;
+  undefined4 local_e8 [6];
+  int local_d0 [2];
+  int local_c8 [3];
+  undefined4 local_bc;
+  undefined4 local_b8 [5];
+  undefined4 local_a4;
+  int *local_a0;
+  int *local_9c;
+  undefined4 local_98;
+  undefined4 local_94 [2];
+  undefined4 local_8c;
+  undefined4 local_88 [2];
+  int *local_80 [2];
+  char *local_78;
+  int *local_74;
+  undefined1 *local_70;
+  undefined1 *local_6c;
+  char *local_68 [2];
+  undefined4 local_60;
+  int *local_5c;
+  undefined4 local_58;
+  char *local_54;
+  char *local_50;
+  char *local_4c;
+  uint local_48;
+  char **local_44;
+  undefined4 ****local_40;
+  char *local_3c;
+  int *local_38;
+  char *local_34;
+  char **local_30;
+  undefined4 ****local_2c;
+  int iStack_28;
+  int iStack_24;
+  int iStack_20;
+  char *local_1c;
+  uint local_18;
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar5 = (uint)(DAT_12126b84);
+
+  local_130 = (undefined4)(param_1);
+  local_8c = (undefined4)(param_1);
+
+
+  local_14 = (uint)(uVar5);
+  thunk_FUN_10ec0ec0(&param_2);
+
+  thunk_FUN_10eb41c0(uVar5);
+  thunk_FUN_10eace00((uint)&local_68);
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
+  pcVar16 = (char *)("");
+  if ((char *)(local_68[0]) != (char *)(0x0)) {
+    pcVar16 = (char *)(local_68[0]);
+  }
+  ((SCStr *)((SCStr *)&local_38))->int_allocRep(pcVar16);
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
+  thunk_FUN_10c61f70(&local_70,&local_38);
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
+  ((SCStr *)((SCStr *)&local_38))->int_release();
+  local_38 = (int *)((int *)0x0);
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
+  thunk_FUN_10ec0e00();
+  uVar20 = (undefined4)(9);
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(7);
+  thunk_FUN_1087e360(0);
+  uVar20 = (undefined4)(thunk_FUN_10647480(uVar20), 0);
+  thunk_FUN_10ec3670(uVar20);
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
+  ((SCStr *)((SCStr *)&local_58))->int_release();
+  piVar18 = (int *)(local_5c);
+
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(9);
+  if ((int *)(local_5c) != (int *)(0x0)) {
+
+    local_5c = (int *)((int *)0x0);
+    (**(code **)(*piVar18 + 8))();
+  }
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
+  uVar3 = (undefined1)((undefined1)local_8);
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
+  if (((char *)(local_68[0]) == (char *)(0x0)) || (*local_68[0] == '\0')) {
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(uVar3);
+    uVar20 = (undefined4)(thunk_FUN_10c5f450((uint)&local_88,0x287e,&DAT_11882ff0), 0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xf);
+    thunk_FUN_10ec1b40("title");
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x10);
+    iVar6 = (int)(thunk_FUN_10eced20(uVar20), 0);
+    thunk_FUN_10ec3700(iVar6 + 4);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x11);
+    ((SCStr *)((SCStr *)&local_58))->int_release();
+    piVar18 = (int *)(local_5c);
+
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x12);
+    if ((int *)(local_5c) != (int *)(0x0)) {
+
+      local_5c = (int *)((int *)0x0);
+      (**(code **)(*piVar18 + 8))();
+    }
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x13);
+  }
+  else {
+    puVar15 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(local_70) != (undefined1 *)(0x0)) {
+      puVar15 = (undefined1 *)(local_70);
+    }
+    uVar20 = (undefined4)(thunk_FUN_10c5f450((uint)&local_88,0x287d,&DAT_1188465c,puVar15), 0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(10);
+    thunk_FUN_10ec1b40("title");
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xb);
+    iVar6 = (int)(thunk_FUN_10eced20(uVar20), 0);
+    thunk_FUN_10ec3700(iVar6 + 4);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xc);
+    ((SCStr *)((SCStr *)&local_58))->int_release();
+    piVar18 = (int *)(local_5c);
+
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xd);
+    if ((int *)(local_5c) != (int *)(0x0)) {
+
+      local_5c = (int *)((int *)0x0);
+      (**(code **)(*piVar18 + 8))();
+    }
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xe);
+  }
+  ((SCStr *)((SCStr *)(uint)&local_88))->int_release();
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
+  thunk_FUN_105c12d0((uint)&local_80);
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x14);
+  uVar3 = (undefined1)((undefined1)local_8);
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x14);
+  local_38 = (int *)((int *)*local_80[0]);
+  if ((int)((local_38)) != (uintptr_t)(local_80[0])) {
+    local_9c = (int *)((int *)((int)((void *)__readfsdword(0x18)) + _tls_index * 4));
+    do {
+      piVar17 = (int *)(local_38);
+      piVar18 = (int *)(local_38 + 4);
+      local_34 = (char *)((char *)local_38[8]);
+      local_1c = (char *)((char *)0x0);
+
+      if (0xf < (uint)local_38[9]) {
+        piVar18 = (int *)((int *)*piVar18);
+      }
+      if ((char *)(local_34) < (char *)0x10) {
+        local_40 = (undefined4 ****)((undefined4 ****)*piVar18);
+        iStack_28 = (int)(piVar18[1]);
+        iStack_24 = (int)(piVar18[2]);
+        iStack_20 = (int)(piVar18[3]);
+
+        local_2c = (undefined4 ****)(local_40);
+      }
+      else {
+        local_48 = (uint)((uint)local_34 | 0xf);
+        if (0x7fffffff < local_48) {
+
+        }
+        uVar5 = (uint)(local_48 + 1);
+        if (uVar5 < 0x1000) {
+          if (uVar5 == 0) {
+            local_40 = (undefined4 ****)((undefined4 *****)0x0);
+          }
+          else {
+            local_40 = (undefined4 ****)(operator_new(uVar5), 0);
+          }
+        }
+        else {
+          if (local_48 + 0x24 <= uVar5) goto LAB_10879170;
+          ppppuVar7 = (undefined4 ****)(operator_new(local_48 + 0x24), 0);
+          if ((undefined4 ****)(ppppuVar7) == (undefined4 ****)(0x0)) goto LAB_108790a4;
+          local_40 = (undefined4 ****)((undefined4 ****)((int)ppppuVar7 + 0x23U & 0xffffffe0));
+          local_40[-1] = (undefined4 ***)(ppppuVar7);
+        }
+        local_2c = (undefined4 ****)(local_40);
+        memcpy(local_40,piVar18,(size_t)(local_34 + 1));
+        local_18 = (uint)(local_48);
+      }
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x15);
+      pcVar16 = (char *)("");
+      if ((char *)(param_2) != (char *)(0x0)) {
+        pcVar16 = (char *)(param_2);
+      }
+      pcVar14 = (char *)(pcVar16);
+      do {
+        cVar4 = (char)(*pcVar14);
+        pcVar14 = (char *)(pcVar14 + 1);
+      } while (cVar4 != '\0');
+      pppppuVar8 = (undefined4 *****)(&local_2c);
+      if (0xf < local_18) {
+        pppppuVar8 = (undefined4 *****)((undefined4 *****)local_40);
+      }
+      local_48 = (uint)(local_18);
+      local_1c = (char *)(local_34);
+      local_34 = (char *)(pcVar16 + 1);
+      cVar4 = (char)(thunk_FUN_104068e0(pppppuVar8,local_1c,pcVar16,(int)pcVar14 - (int)(pcVar16 + 1)), 0);
+      if (cVar4 != '\0') {
+        ppcVar19 = (char **)((char **)piVar17[10]);
+        local_30 = (char **)((char **)piVar17[0xb]);
+        local_34 = (char *)((char *)0x0);
+        local_54 = (char *)((char *)0x0);
+        local_3c = (char *)((char *)0x0);
+        local_50 = (char *)((char *)0x0);
+        local_4c = (char *)((char *)0x0);
+        local_44 = (char **)(ppcVar19);
+        if ((char **)(ppcVar19) != (char **)(local_30)) {
+          uVar5 = (uint)((int)local_30 - (int)ppcVar19 >> 3);
+          if (0x1fffffff < uVar5) {
+LAB_10879170:
+                    
+            thunk_FUN_1012a2a0();
+          }
+          local_44 = (char **)((char **)(uVar5 * 8));
+          if ((char **)(local_44) < (char **)0x1000) {
+            if ((char **)(local_44) == (char **)(0x0)) {
+              local_3c = (char *)((char *)0x0);
+            }
+            else {
+              local_3c = (char *)(operator_new((uint)local_44), 0);
+            }
+          }
+          else {
+            if ((char **)(((int)local_44 + 0x23U)) <= (char **)(local_44)) goto LAB_10879170;
+            pvVar9 = (char *)(operator_new((int)local_44 + 0x23U), 0);
+            if ((void *)(pvVar9) == (void *)(0x0)) goto LAB_108790a4;
+            local_3c = (char *)((char *)((int)pvVar9 + 0x23U & 0xffffffe0));
+            *(void**)(local_3c + -4) = (void *)(pvVar9);
+          }
+          ppcVar2 = (char **)(local_30);
+          local_4c = (char *)((char *)((int)local_44 + (int)local_3c));
+          local_f4 = (char **)(&local_54);
+          *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x17);
+          local_fc = (char *)(local_3c);
+          local_54 = (char *)(local_3c);
+          local_50 = (char *)(local_3c);
+          local_44 = (char **)(local_f4);
+          do {
+            *(char**)local_3c = (char *)((char *)(*ppcVar19));
+            piVar18 = (int *)((int *)ppcVar19[1]);
+            *(int**)(local_3c + 4) = (int *)(piVar18);
+            if ((int *)(piVar18) != (int *)(0x0)) {
+              local_f8 = (char *)(local_3c);
+              (**(code **)(*piVar18 + 4))();
+            }
+            local_3c = (char *)(local_3c + 8);
+            ppcVar19 = (char **)(ppcVar19 + 2);
+          } while ((char **)((ppcVar19)) != (char **)(ppcVar2));
+          local_34 = (char *)(local_54);
+          piVar17 = (int *)(local_38);
+          local_fc = (char *)(local_3c);
+          local_f8 = (char *)(local_3c);
+        }
+        pcVar16 = (char *)(local_34);
+        local_54 = (char *)(local_34);
+        local_50 = (char *)(local_3c);
+        if ((char *)((local_34)) != (char *)(local_3c)) {
+          do {
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x19);
+            piVar18 = (int *)(*(int **)(pcVar16 + 4), 0);
+            local_78 = (char *)(*(char **)pcVar16);
+            local_74 = (int *)(piVar18);
+            local_34 = (char *)(local_78);
+            if ((int *)(piVar18) != (int *)(0x0)) {
+              (**(code **)(*piVar18 + 4))();
+            }
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1a);
+            pcVar14 = (char *)(local_34);
+            piVar17 = (int *)(piVar18);
+            if ((int *)(piVar18) != (int *)(0x0)) {
+              (**(code **)(*piVar18 + 4))(local_34,piVar18);
+            }
+            uVar20 = (undefined4)(thunk_FUN_10f024a0(pcVar14,piVar17), 0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1b);
+            thunk_FUN_10c61ec0(&local_6c,uVar20);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1e);
+            ((SCStr *)((SCStr *)(uint)&local_b8))->int_release();
+            local_b8[0] = (undefined4)(0);
+            local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x1f)));
+            ((SCStr *)((SCStr *)&local_bc))->int_release();
+
+            thunk_FUN_102a3ea0((uint)&local_c8,*(undefined4 *)(local_c8[0] + 4));
+            thunk_FUN_1148a50e(local_c8[0],0x14);
+            cVar4 = (char)(*(char *)((int)*(int **)(local_d0[0] + 4) + 0xd), 0);
+            piVar17 = (int *)(*(int **)(local_d0[0] + 4), 0);
+            while (cVar4 == '\0') {
+              thunk_FUN_1086f2f0((uint)&local_d0,piVar17[2]);
+              piVar1 = (int *)((int *)*piVar17);
+              thunk_FUN_1148a50e(piVar17,0x14);
+              piVar18 = (int *)(local_74);
+              piVar17 = (int *)(piVar1);
+              cVar4 = (char)(*(char *)((int)piVar1 + 0xd));
+            }
+            thunk_FUN_1148a50e(local_d0[0],0x14);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x20);
+            ((SCStr *)((SCStr *)(uint)&local_e8))->int_release();
+            local_e8[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x21);
+            ((SCStr *)((SCStr *)&local_ec))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x22);
+            ((SCStr *)((SCStr *)&local_f0))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1d);
+            pcVar14 = (char *)(local_34);
+            piVar17 = (int *)(piVar18);
+            if ((int *)(piVar18) != (int *)(0x0)) {
+              (**(code **)(*piVar18 + 4))(local_34,piVar18);
+            }
+            uVar20 = (undefined4)(thunk_FUN_10f024a0(pcVar14,piVar17), 0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x23);
+            thunk_FUN_10c5ee20(uVar20);
+            thunk_FUN_10c61010(&local_60,(uint)&local_138,6,0,0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x26);
+            ((SCStr *)((SCStr *)(uint)&local_154))->int_release();
+            local_154[0] = (undefined4)(0);
+            local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x27)));
+            ((SCStr *)((SCStr *)&local_158))->int_release();
+
+            thunk_FUN_102a3ea0((uint)&local_164,*(undefined4 *)(local_164[0] + 4));
+            thunk_FUN_1148a50e(local_164[0],0x14);
+            cVar4 = (char)(*(char *)((int)*(int **)(local_16c[0] + 4) + 0xd), 0);
+            piVar17 = (int *)(*(int **)(local_16c[0] + 4), 0);
+            while (cVar4 == '\0') {
+              thunk_FUN_1086f2f0((uint)&local_16c,piVar17[2]);
+              piVar18 = (int *)((int *)*piVar17);
+              thunk_FUN_1148a50e(piVar17,0x14);
+              cVar4 = (char)(*(char *)((int)piVar18 + 0xd));
+              piVar17 = (int *)(piVar18);
+              piVar18 = (int *)(local_74);
+            }
+            thunk_FUN_1148a50e(local_16c[0],0x14);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x28);
+            ((SCStr *)((SCStr *)(uint)&local_184))->int_release();
+            local_184[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x29);
+            ((SCStr *)((SCStr *)&local_188))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2a);
+            ((SCStr *)((SCStr *)&local_18c))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x25);
+            pcVar14 = (char *)(local_34);
+            piVar17 = (int *)(piVar18);
+            if ((int *)(piVar18) != (int *)(0x0)) {
+              (**(code **)(*piVar18 + 4))(local_34,piVar18);
+            }
+            uVar20 = (undefined4)(thunk_FUN_10f024a0(pcVar14,piVar17), 0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2b);
+            thunk_FUN_10c5ee20(uVar20);
+            if ((*(int *)(*local_9c + 0x104) < (int)(DAT_121a2030)) &&
+               (thunk_FUN_1148ab00(&DAT_121a2030), DAT_121a2030 == -1)) {
+              DAT_121a200c = (int)(0);
+              DAT_121a2010 = (int)(0);
+              DAT_121a2014 = (int)(0);
+              *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2d);
+              DAT_121a2008 = (int)((uint)&ghidra_vftable_SCSetupAssetSet);
+              DAT_121a2018 = (int)((void *)0x0);
+              DAT_121a201c = (int)(0);
+              DAT_121a2018 = (int)(operator_new(0x18), 0);
+              *(void**)DAT_121a2018 = (void *)((int)(DAT_121a2018));
+              *(void**)((int)DAT_121a2018 + 4) = (void *)(DAT_121a2018);
+              *(void**)((int)DAT_121a2018 + 8) = (void *)(DAT_121a2018);
+              *(undefined2*)((int)DAT_121a2018 + 0xc) = (undefined2)(0x101);
+              *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2e);
+              DAT_121a2020 = (int)((void *)0x0);
+              DAT_121a2024 = (int)(0);
+              DAT_121a2020 = (int)(operator_new(0x18), 0);
+              *(void**)DAT_121a2020 = (void *)((int)(DAT_121a2020));
+              *(void**)((int)DAT_121a2020 + 4) = (void *)(DAT_121a2020);
+              *(void**)((int)DAT_121a2020 + 8) = (void *)(DAT_121a2020);
+              *(undefined2*)((int)DAT_121a2020 + 0xc) = (undefined2)(0x101);
+              _atexit(thunk_FUN_118064a0);
+              *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2b);
+              thunk_FUN_1148aaa4(&DAT_121a2030);
+            }
+            local_44 = (char **)((char **)thunk_FUN_10e0f250((uint)&local_140), 0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2f);
+            ((SCStr *)((SCStr *)(uint)&local_b8))->int_release();
+            local_b8[0] = (undefined4)(0);
+            local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x30)));
+            ((SCStr *)((SCStr *)&local_bc))->int_release();
+
+            thunk_FUN_102a3ea0((uint)&local_c8,*(undefined4 *)(local_c8[0] + 4));
+            thunk_FUN_1148a50e(local_c8[0],0x14);
+            cVar4 = (char)(*(char *)((int)*(int **)(local_d0[0] + 4) + 0xd), 0);
+            piVar17 = (int *)(*(int **)(local_d0[0] + 4), 0);
+            while (cVar4 == '\0') {
+              thunk_FUN_1086f2f0((uint)&local_d0,piVar17[2]);
+              piVar18 = (int *)((int *)*piVar17);
+              thunk_FUN_1148a50e(piVar17,0x14);
+              cVar4 = (char)(*(char *)((int)piVar18 + 0xd));
+              piVar17 = (int *)(piVar18);
+              piVar18 = (int *)(local_74);
+            }
+            thunk_FUN_1148a50e(local_d0[0],0x14);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x31);
+            ((SCStr *)((SCStr *)(uint)&local_e8))->int_release();
+            local_e8[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x32);
+            ((SCStr *)((SCStr *)&local_ec))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x33);
+            ((SCStr *)((SCStr *)&local_f0))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x25);
+            pcVar14 = (char *)(local_34);
+            piVar17 = (int *)(piVar18);
+            if ((int *)(piVar18) != (int *)(0x0)) {
+              (**(code **)(*piVar18 + 4))(local_34,piVar18);
+            }
+            uVar20 = (undefined4)(thunk_FUN_10f024a0(pcVar14,piVar17), 0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x34);
+            thunk_FUN_10c5ee20(uVar20);
+            thunk_FUN_10c5f840(&local_60);
+            uVar21 = (undefined4)(4);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x35);
+            uVar20 = (undefined4)(thunk_FUN_10e0f500(&local_a4,3), 0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x36);
+            pcVar14 = (char *)(local_34);
+            piVar17 = (int *)(piVar18);
+            if ((int *)(piVar18) != (int *)(0x0)) {
+              (**(code **)(*piVar18 + 4))(local_34,piVar18,uVar20,uVar21);
+            }
+            puVar10 = (undefined4 *)((undefined4 *)thunk_FUN_10f024a0(pcVar14,piVar17), 0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x37);
+            puVar15 = (undefined1 *)(&DAT_1186d2ee);
+            if ((undefined1 *)*puVar10 != (undefined1 *)((0x0))) {
+              puVar15 = (undefined1 *)((undefined1 *)*puVar10);
+            }
+            thunk_FUN_10ec1c00(puVar15);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x38);
+            uVar20 = (undefined4)(thunk_FUN_10ecbbd0(uVar20), 0);
+            puVar15 = (undefined1 *)(&DAT_1186d2ee);
+            if ((undefined1 *)(local_6c) != (undefined1 *)(0x0)) {
+              puVar15 = (undefined1 *)(local_6c);
+            }
+            uVar11 = (undefined4)(thunk_FUN_10c5f450((uint)&local_88,0x277d,&DAT_1188465c,puVar15,uVar20), 0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x39);
+            uVar12 = (undefined4)(thunk_FUN_10ed4540((uint)&local_104,(uint)&local_12c,uVar11), 0);
+            puVar10 = (undefined4 *)((uint)&local_94);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x3a);
+            pcVar14 = (char *)(local_34);
+            piVar17 = (int *)(piVar18);
+            if ((int *)(piVar18) != (int *)(0x0)) {
+              (**(code **)(*piVar18 + 4))(local_34,piVar18,puVar10,uVar12);
+            }
+            puVar13 = (undefined4 *)((undefined4 *)thunk_FUN_10f024a0(pcVar14,piVar17), 0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x3b);
+            puVar15 = (undefined1 *)(&DAT_1186d2ee);
+            if ((undefined1 *)*puVar13 != (undefined1 *)((0x0))) {
+              puVar15 = (undefined1 *)((undefined1 *)*puVar13);
+            }
+            thunk_FUN_10ec1f00(puVar15);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x3c);
+            thunk_FUN_10ecec70(puVar10);
+            thunk_FUN_10ecf6e0(uVar12);
+            thunk_FUN_10ece7b0(uVar11);
+            iVar6 = (int)(thunk_FUN_10ecd3c0(uVar20,uVar21), 0);
+            thunk_FUN_10ec3700(iVar6 + 4);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x3d);
+            ((SCStr *)((SCStr *)&local_108))->int_release();
+            piVar17 = (int *)(local_10c);
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x3e);
+            if ((int *)(local_10c) != (int *)(0x0)) {
+
+              local_10c = (int *)((int *)0x0);
+              (**(code **)(*piVar17 + 8))();
+            }
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x3f);
+            ((SCStr *)((SCStr *)(uint)&local_1a0))->int_release();
+            local_1a0[0] = (undefined4)(0);
+            local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x40)));
+            ((SCStr *)((SCStr *)&local_1a4))->int_release();
+
+            thunk_FUN_102a3ea0((uint)&local_1b0,*(undefined4 *)(local_1b0[0] + 4));
+            thunk_FUN_1148a50e(local_1b0[0],0x14);
+            cVar4 = (char)(*(char *)((int)*(int **)(local_1b8[0] + 4) + 0xd), 0);
+            piVar17 = (int *)(*(int **)(local_1b8[0] + 4), 0);
+            while (cVar4 == '\0') {
+              thunk_FUN_1086f2f0((uint)&local_1b8,piVar17[2]);
+              piVar18 = (int *)((int *)*piVar17);
+              thunk_FUN_1148a50e(piVar17,0x14);
+              cVar4 = (char)(*(char *)((int)piVar18 + 0xd));
+              piVar17 = (int *)(piVar18);
+              piVar18 = (int *)(local_74);
+            }
+            thunk_FUN_1148a50e(local_1b8[0],0x14);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x41);
+            ((SCStr *)((SCStr *)(uint)&local_1d0))->int_release();
+            local_1d0[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x42);
+            ((SCStr *)((SCStr *)&local_1d4))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x43);
+            ((SCStr *)((SCStr *)&local_1d8))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x44);
+            ((SCStr *)((SCStr *)(uint)&local_104))->int_release();
+            local_104[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x45);
+            ((SCStr *)((SCStr *)(uint)&local_88))->int_release();
+            local_88[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x46);
+            ((SCStr *)((SCStr *)(uint)&local_118))->int_release();
+            piVar17 = (int *)(local_11c);
+            local_118[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x47);
+            if ((int *)(local_11c) != (int *)(0x0)) {
+
+              local_11c = (int *)((int *)0x0);
+              (**(code **)(*piVar17 + 8))();
+            }
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x48);
+            ((SCStr *)((SCStr *)(uint)&local_1ec))->int_release();
+            local_1ec[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x49);
+            ((SCStr *)((SCStr *)&local_1f0))->int_release();
+
+            thunk_FUN_102a3ea0((uint)&local_1fc,*(undefined4 *)(local_1fc[0] + 4));
+            thunk_FUN_1148a50e(local_1fc[0],0x14);
+            thunk_FUN_1086f2f0((uint)&local_204,*(undefined4 *)(local_204[0] + 4));
+            thunk_FUN_1148a50e(local_204[0],0x14);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x4a);
+            ((SCStr *)((SCStr *)(uint)&local_21c))->int_release();
+            local_21c[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x4b);
+            ((SCStr *)((SCStr *)&local_220))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x4c);
+            ((SCStr *)((SCStr *)&local_224))->int_release();
+            piVar17 = (int *)(local_a0);
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x4d);
+            if ((int *)(local_a0) != (int *)(0x0)) {
+
+              local_a0 = (int *)((int *)0x0);
+              (**(code **)(*piVar17 + 8))();
+            }
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x4e);
+            ((SCStr *)((SCStr *)(uint)&local_94))->int_release();
+            local_94[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x4f);
+            ((SCStr *)((SCStr *)(uint)&local_238))->int_release();
+            local_238[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x50);
+            ((SCStr *)((SCStr *)&local_23c))->int_release();
+
+            thunk_FUN_102a3ea0((uint)&local_248,*(undefined4 *)(local_248[0] + 4));
+            thunk_FUN_1148a50e(local_248[0],0x14);
+            thunk_FUN_1086f2f0((uint)&local_250,*(undefined4 *)(local_250[0] + 4));
+            thunk_FUN_1148a50e(local_250[0],0x14);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x51);
+            ((SCStr *)((SCStr *)(uint)&local_268))->int_release();
+            local_268[0] = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x52);
+            ((SCStr *)((SCStr *)&local_26c))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x53);
+            ((SCStr *)((uint)&local_270))->int_release();
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x54);
+            ((SCStr *)((SCStr *)&local_60))->int_release();
+
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x55);
+            ((SCStr *)((SCStr *)&local_6c))->int_release();
+            local_6c = (undefined1 *)((undefined1 *)0x0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x56);
+            if ((int *)(piVar18) != (int *)(0x0)) {
+              local_78 = (char *)((char *)0x0);
+              local_74 = (int *)((int *)0x0);
+              (**(code **)(*piVar18 + 8))();
+            }
+            pcVar16 = (char *)(pcVar16 + 8);
+          } while ((char *)(pcVar16) != (char *)(local_3c));
+          local_3c = (char *)(local_50);
+          piVar17 = (int *)(local_38);
+        }
+        local_50 = (char *)(local_3c);
+        if ((char *)(local_54) != (char *)(0x0)) {
+          pcVar16 = (char *)(local_3c);
+          pcVar14 = (char *)(local_54);
+          if ((char *)(local_54) != (char *)(local_3c)) {
+            do {
+              piVar18 = (int *)(*(int **)(pcVar14 + 4), 0);
+              *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x57);
+              if ((int *)(piVar18) != (int *)(0x0)) {
+                pcVar14[0] = (char)('\0');
+                pcVar14[1] = (char)('\0');
+                pcVar14[2] = (char)('\0');
+                pcVar14[3] = (char)('\0');
+                pcVar14[4] = (char)('\0');
+                pcVar14[5] = (char)('\0');
+                pcVar14[6] = (char)('\0');
+                pcVar14[7] = (char)('\0');
+                (**(code **)(*piVar18 + 8))();
+                pcVar16 = (char *)(local_3c);
+              }
+              pcVar14 = (char *)(pcVar14 + 8);
+            } while ((char *)(pcVar14) != (char *)(pcVar16));
+          }
+          *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x15);
+          uVar5 = (uint)(((int)local_4c - (int)local_54 >> 3) * 8);
+          pcVar16 = (char *)(local_54);
+          if (0xfff < uVar5) {
+            pcVar16 = (char *)(*(char **)(local_54 + -4), 0);
+            uVar5 = (uint)(uVar5 + 0x23);
+            if ((char *)(0x1f) < (char *)((local_54) + (-4 - (int)pcVar16))) goto LAB_108790a4;
+          }
+          thunk_FUN_1148a50e(pcVar16,uVar5);
+          local_54 = (char *)((char *)0x0);
+          local_50 = (char *)((char *)0x0);
+          local_4c = (char *)((char *)0x0);
+        }
+      }
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x14);
+      if (0xf < local_48) {
+        uVar5 = (uint)(local_48 + 1);
+        pppppuVar8 = (undefined4 *****)((undefined4 *****)local_40);
+        if (0xfff < uVar5) {
+          pppppuVar8 = (undefined4 *****)((undefined4 *****)local_40[-1]);
+          uVar5 = (uint)(local_48 + 0x24);
+          if (0x1f < (uint)((int)local_40 + (-4 - (int)pppppuVar8))) {
+LAB_108790a4:
+                    
+            _invalid_parameter_noinfo_noreturn();
+          }
+        }
+        thunk_FUN_1148a50e(pppppuVar8,uVar5);
+      }
+      local_38 = (int *)((int *)piVar17[2]);
+      if (*(char *)((int)local_38 + 0xd) == '\0') {
+        cVar4 = (char)(*(char *)(*local_38 + 0xd));
+        piVar18 = (int *)((int *)*local_38);
+        while (cVar4 == '\0') {
+          cVar4 = (char)(*(char *)(*piVar18 + 0xd));
+          local_38 = (int *)(piVar18);
+          piVar18 = (int *)((int *)*piVar18);
+        }
+      }
+      else {
+        cVar4 = (char)(*(char *)(piVar17[1] + 0xd));
+        piVar18 = (int *)((int *)piVar17[1]);
+        while ((local_38 = (int *)(piVar18), cVar4 == '\0' && ((int *)(piVar17) == (int *)local_38[2]))) {
+          cVar4 = (char)(*(char *)(local_38[1] + 0xd));
+          piVar18 = (int *)((int *)local_38[1]);
+          piVar17 = (int *)(local_38);
+        }
+      }
+      uVar3 = (undefined1)((undefined1)local_8);
+    } while ((int)((local_38)) != (uintptr_t)(local_80[0]));
+  }
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(uVar3);
+  thunk_FUN_105b6d40((uint)&local_80,local_80[0][1]);
+  thunk_FUN_1148a50e(local_80[0],0x34);
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x58);
+  ((SCStr *)((SCStr *)&local_70))->int_release();
+  local_70 = (undefined1 *)((undefined1 *)0x0);
+  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x59)));
+  ((SCStr *)((SCStr *)(uint)&local_68))->int_release();
+  local_68[0] = (char *)((char *)0x0);
+
+  ((SCStr *)((SCStr *)&param_2))->int_release();
+
+  thunk_FUN_1148ac28();
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10879b10; body size 1492 bytes.
+#line 1 "ENTRY_10879b10"
+
+void FUN_10879b10(void)
+
+{ int stack0xffffff4c;
+ try {
+  undefined1 uVar1;
+  undefined3 uVar2;
+  char cVar3;
+  uint uVar4;
+  void *pvVar5;
+  undefined4 *puVar6;
+  int iVar7;
+  int *piVar8;
+  int *piVar9;
+  basic_string<char,std::char_traits<char>,std::allocator<char>> *pbVar10;
+  undefined4 *puVar11;
+  uint uVar12;
+  basic_string<char,std::char_traits<char>,std::allocator<char>> *pbVar13;
+  int *local_78 [2];
+  int local_70;
+  basic_string<char,std::char_traits<char>,std::allocator<char>> *local_6c;
+  int local_68;
+  int local_64;
+  basic_string<char,std::char_traits<char>,std::allocator<char>> *local_60;
+  int *local_5c;
+  uint local_58;
+  undefined4 *local_54;
+  undefined4 *local_50;
+  basic_string<char,std::char_traits<char>,std::allocator<char>> *local_4c;
+  basic_string<char,std::char_traits<char>,std::allocator<char>> *local_48;
+  undefined4 *local_44;
+  undefined1 local_3d;
+  basic_string<char,std::char_traits<char>,std::allocator<char>> *local_3c;
+  SCStr local_38 [4];
+  undefined **local_34;
+  void *local_2c;
+  int iStack_28;
+  int iStack_24;
+  int iStack_20;
+  basic_string<char,std::char_traits<char>,std::allocator<char>> *local_1c;
+  uint local_18;
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  local_14 = (uint)(DAT_12126b84);
+
+  thunk_FUN_10ec0fb0();
+
+  thunk_FUN_105c12d0();
+  local_3c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)0x0);
+  local_6c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)0x0);
+
+
+
+  *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
+  uVar2 = (undefined3)(*(unsigned short *)((char *)&local_8 + 1));
+  *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
+  *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
+  local_5c = (int *)((int *)*local_78[0]);
+  if ((int)((local_5c)) != (uintptr_t)(local_78[0])) {
+    do {
+      piVar8 = (int *)(local_5c);
+      piVar9 = (int *)(local_5c + 4);
+      local_3c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)local_5c[8]);
+      local_1c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)0x0);
+
+      if (0xf < (uint)local_5c[9]) {
+        piVar9 = (int *)((int *)*piVar9);
+      }
+      if ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_3c) < (basic_string<char,std::char_traits<char>,std::allocator<char>> *)0x10) {
+        local_2c = (void *)((void *)*piVar9);
+        iStack_28 = (int)(piVar9[1]);
+        iStack_24 = (int)(piVar9[2]);
+        iStack_20 = (int)(piVar9[3]);
+
+        local_1c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_3c);
+      }
+      else {
+        local_58 = (uint)((uint)local_3c | 0xf);
+        if (0x7fffffff < local_58) {
+
+        }
+        uVar4 = (uint)(local_58 + 1);
+        if (uVar4 < 0x1000) {
+          if (uVar4 == 0) {
+            local_2c = (void *)((void *)0x0);
+          }
+          else {
+            local_2c = (void *)(operator_new(uVar4), 0);
+          }
+        }
+        else {
+          if (local_58 + 0x24 <= uVar4) goto LAB_1087a0df;
+          pvVar5 = (char *)(operator_new(local_58 + 0x24), 0);
+          if ((void *)(pvVar5) == (void *)(0x0)) goto LAB_1087a092;
+          local_2c = (char *)((char *)((int)pvVar5 + 0x23U & 0xffffffe0));
+          *(void**)((int)local_2c - 4) = (void *)(pvVar5);
+        }
+        memcpy(local_2c,piVar9,(size_t)(local_3c + 1));
+        local_1c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_3c);
+      }
+      pbVar10 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)piVar8[10]);
+      local_3c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)piVar8[0xb]);
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
+      local_54 = (undefined4 *)((undefined4 *)0x0);
+      local_44 = (undefined4 *)((undefined4 *)0x0);
+      local_50 = (undefined4 *)((undefined4 *)0x0);
+      local_4c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)0x0);
+      local_18 = (uint)(local_58);
+      if ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar10) != (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_3c)) {
+        uVar4 = (uint)((int)local_3c - (int)pbVar10 >> 3);
+        local_48 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar10);
+        if (0x1fffffff < uVar4) {
+LAB_1087a0df:
+                    
+          thunk_FUN_1012a2a0();
+        }
+        local_48 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)(uVar4 * 8));
+        if ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_48) < (basic_string<char,std::char_traits<char>,std::allocator<char>> *)0x1000) {
+          if ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_48) == (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(0x0)) {
+            local_44 = (undefined4 *)((undefined4 *)0x0);
+          }
+          else {
+            local_44 = (undefined4 *)(operator_new((uint)local_48), 0);
+          }
+        }
+        else {
+          if (local_48 + 0x23 <= (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_48)) goto LAB_1087a0df;
+          pvVar5 = (char *)(operator_new((uint)(local_48 + 0x23)), 0);
+          if ((void *)(pvVar5) == (void *)(0x0)) goto LAB_1087a092;
+          local_44 = (undefined4 *)((undefined4 *)((int)pvVar5 + 0x23U & 0xffffffe0));
+          local_44[-1] = (undefined4)(pvVar5);
+        }
+        pbVar13 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_3c);
+        local_4c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_48 + (int)local_44);
+        local_60 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)&local_54);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
+        local_54 = (undefined4 *)(local_44);
+        local_50 = (undefined4 *)(local_44);
+        do {
+          *local_44 = (undefined4)(*(undefined4 *)pbVar10);
+          piVar9 = (int *)(*(int **)(pbVar10 + 4), 0);
+          local_44[1] = (undefined4)(piVar9);
+          if ((int *)(piVar9) != (int *)(0x0)) {
+            (**(code **)(*piVar9 + 4))();
+          }
+          local_44 = (undefined4 *)(local_44 + 2);
+          pbVar10 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar10 + 8);
+          piVar8 = (int *)(local_5c);
+        } while ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar10) != (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar13));
+      }
+      local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(7)));
+      local_3c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)0x0);
+      local_60 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *) ((int)local_44 - (int)local_54 >> 3));
+      local_48 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_60);
+      if ((undefined4 *)(local_54) != (undefined4 *)(local_44)) {
+        pbVar10 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)0x0);
+        puVar6 = (undefined4 *)(local_54);
+        local_50 = (undefined4 *)(local_44);
+        do {
+          piVar9 = (int *)((int *)puVar6[1]);
+          if ((int *)(piVar9) != (int *)(0x0)) {
+            (**(code **)(*piVar9 + 4))();
+          }
+          *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
+          cVar3 = (char)(thunk_FUN_1034e460(), 0);
+          if (cVar3 != '\0') {
+            pbVar10 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar10 + 1);
+            local_3c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar10);
+          }
+          *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(9);
+          if ((int *)(piVar9) != (int *)(0x0)) {
+            (**(code **)(*piVar9 + 8))();
+          }
+          puVar6 = (undefined4 *)(puVar6 + 2);
+          local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(7)));
+        } while ((undefined4 *)(puVar6) != (undefined4 *)(local_44));
+        local_44 = (undefined4 *)(local_50);
+        piVar8 = (int *)(local_5c);
+      }
+      iVar7 = (int)(local_68);
+
+      if ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_60) != (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(0x0)) {
+        local_50 = (undefined4 *)(local_44);
+        if (local_68 == local_70) {
+          FUN_1086ed30(local_68,&local_2c,&local_48,&local_3c);
+          local_70 = (int)(local_64);
+          local_58 = (uint)(local_18);
+          local_44 = (undefined4 *)(local_50);
+        }
+        else {
+          FUN_10872dc0(&local_6c);
+          local_68 = (int)(iVar7 + 0x24);
+          local_58 = (uint)(local_18);
+          local_44 = (undefined4 *)(local_50);
+        }
+      }
+      local_50 = (undefined4 *)(local_44);
+      if ((undefined4 *)(local_54) != (undefined4 *)(0x0)) {
+        puVar6 = (undefined4 *)(local_44);
+        puVar11 = (undefined4 *)(local_54);
+        if ((undefined4 *)(local_54) != (undefined4 *)(local_44)) {
+          do {
+            piVar9 = (int *)((int *)puVar11[1]);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(10);
+            if ((int *)(piVar9) != (int *)(0x0)) {
+              *puVar11 = (undefined4)(0);
+              puVar11[1] = (undefined4)(0);
+              (**(code **)(*piVar9 + 8))();
+              puVar6 = (undefined4 *)(local_44);
+            }
+            puVar11 = (undefined4 *)(puVar11 + 2);
+          } while ((undefined4 *)((puVar11)) != (undefined4 *)(puVar6));
+        }
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
+        puVar6 = (undefined4 *)(local_54);
+        if ((0xfff < (uint)(((int)local_4c - (int)local_54 >> 3) * 8)) &&
+           (puVar6 = (undefined4 *)((undefined4 *)local_54[-1]), 0x1f < (uint)((int)local_54 + (-4 - (int)puVar6)))) goto LAB_1087a092;
+        thunk_FUN_1148a50e(puVar6);
+        local_54 = (undefined4 *)((undefined4 *)0x0);
+        local_50 = (undefined4 *)((undefined4 *)0x0);
+        local_4c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *)0x0);
+      }
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
+      if (0xf < local_58) {
+        pvVar5 = (void *)(local_2c);
+        if ((0xfff < local_58 + 1) &&
+           (pvVar5 = (char *)(*(void **)((int)local_2c + -4), 0), 0x1f < (uint)((int)local_2c + (-4 - (int)pvVar5)))) goto LAB_1087a092;
+        thunk_FUN_1148a50e(pvVar5);
+      }
+      local_5c = (int *)((int *)piVar8[2]);
+      if (*(char *)((int)local_5c + 0xd) == '\0') {
+        cVar3 = (char)(*(char *)(*local_5c + 0xd));
+        piVar9 = (int *)((int *)*local_5c);
+        while (cVar3 == '\0') {
+          cVar3 = (char)(*(char *)(*piVar9 + 0xd));
+          local_5c = (int *)(piVar9);
+          piVar9 = (int *)((int *)*piVar9);
+        }
+      }
+      else {
+        cVar3 = (char)(*(char *)(piVar8[1] + 0xd));
+        piVar9 = (int *)((int *)piVar8[1]);
+        while ((local_5c = (int *)(piVar9), cVar3 == '\0' && ((int *)(piVar8) == (int *)local_5c[2]))) {
+          cVar3 = (char)(*(char *)(local_5c[1] + 0xd));
+          piVar9 = (int *)((int *)local_5c[1]);
+          piVar8 = (int *)(local_5c);
+        }
+      }
+    } while ((int)((local_5c)) != (uintptr_t)(local_78[0]));
+    local_3c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_6c);
+    uVar2 = (undefined3)(*(unsigned short *)((char *)&local_8 + 1));
+  }
+  *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(uVar2);
+  pbVar10 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_3c);
+  uVar4 = (uint)((local_68 - (int)local_3c) / 0x24);
+  local_6c = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_3c);
+  if (uVar4 != 0) {
+    local_60 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((basic_string<char,std::char_traits<char>,std::allocator<char>> *) ((uint)local_60 & 0xffffff00));
+    FUN_108724e0(local_3c,local_68,uVar4);
+    uVar12 = (uint)(0);
+    uVar1 = (undefined1)((undefined1)local_8);
+    do {
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(uVar1);
+      local_48 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar10);
+      ((SCStr *)((SCStr *)&stack0xffffff4c))->int_allocStdRep(pbVar10);
+      thunk_FUN_10878180((uint)&local_38);
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xb);
+      thunk_FUN_10ec3540();
+      thunk_FUN_10604790();
+      thunk_FUN_10604820();
+      local_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xc);
+      ((SCStr *)((uint)&local_38))->int_release();
+      uVar12 = (uint)(uVar12 + 1);
+      pbVar10 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_48 + 0x24);
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
+      uVar1 = (undefined1)((undefined1)local_8);
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
+      local_48 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar10);
+    } while (uVar12 < uVar4);
+  }
+  pbVar10 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(local_3c);
+  iVar7 = (int)(thunk_FUN_10eca560(), 0);
+  if (iVar7 == 0) {
+    thunk_FUN_1087bdd0();
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xd);
+    thunk_FUN_10ec3540();
+    thunk_FUN_10604790();
+    thunk_FUN_10604820();
+    local_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xe);
+    ((SCStr *)((uint)&local_38))->int_release();
+  }
+  if ((basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar10) != (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(0x0)) {
+    FUN_1086eaf0(pbVar10,local_68);
+    pbVar13 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(pbVar10);
+    if ((0xfff < (uint)(((local_70 - (int)pbVar10) / 0x24) * 0x24)) &&
+       (pbVar13 = (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(*(basic_string<char,std::char_traits<char>,std::allocator<char>> **) (pbVar10 + -4), 0), (basic_string<char,std::char_traits<char>,std::allocator<char>> *)(0x1f) < (basic_string<char,std::char_traits<char>,std::allocator<char>> *)((pbVar10) + (-4 - (int)pbVar13)))) {
+LAB_1087a092:
+                    
+      _invalid_parameter_noinfo_noreturn();
+    }
+    thunk_FUN_1148a50e(pbVar13);
+  }
+  thunk_FUN_105b6d40((uint)&local_78);
+  thunk_FUN_1148a50e(local_78[0]);
+
+  thunk_FUN_1148ac28();
+  return;
+
+ } catch (...) { }
+}
+
+
 // Reference entry 10a3e140; body size 1041 bytes.
 #line 1 "ENTRY_10a3e140"
 
@@ -1685,6 +2877,451 @@ void __thiscall Recovered_Bulk::m_FUN_10a3e140(undefined4 param_2)
   *(undefined4*)(param_1 + 0x140) = (undefined4)(2);
 
   return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10b74210; body size 1961 bytes.
+#line 1 "ENTRY_10b74210"
+
+char * FUN_10b74210(char *param_1,undefined1 *param_2,undefined4 param_3,char param_4)
+
+{
+ try {
+  char cVar1;
+  int *piVar2;
+  int iVar3;
+  undefined1 uVar4;
+  uint uVar5;
+  undefined4 *puVar6;
+  undefined4 uVar7;
+  int iVar8;
+  void *pvVar9;
+  char *pcVar10;
+  char *pcVar11;
+  char *pcVar12;
+  undefined1 *puVar13;
+  undefined1 *puVar14;
+  undefined1 *puVar15;
+  SCStr *pSVar16;
+  int *piVar17;
+  SCStr *this_;
+  SCStr *pSVar18;
+  bool bVar19;
+  undefined1 *local_68;
+  SCStr *local_64;
+  SCStr *local_60;
+  SCStr *local_5c;
+  undefined4 local_58;
+  SCStr *local_54;
+  SCStr *local_50;
+  SCStr **local_4c;
+  int *local_48 [2];
+  int *local_40;
+  undefined4 local_3c;
+  SCStr *local_38;
+  SCStr *local_34;
+  SCStr **local_30;
+  int *local_2c;
+  char *local_28;
+  undefined1 *local_24;
+  undefined1 *local_20;
+  char *local_1c;
+  int *local_18;
+  undefined1 local_11;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+  
+  puVar14 = (undefined1 *)(param_2);
+
+
+  uVar5 = (uint)(DAT_12126b84);
+
+  pSVar18 = (SCStr *)((SCStr *)(param_2 + 8));
+  ((SCStr *)((SCStr *)&local_28))->m_op_ctor(pSVar18);
+  if (((char *)(local_28) == (char *)(0x0)) || (*local_28 == (char)(('\0')))) {
+    bVar19 = (bool)(true);
+  }
+  else {
+    bVar19 = (bool)(false);
+  }
+
+  ((SCStr *)((SCStr *)&local_28))->int_release();
+
+  if (bVar19) {
+    ((SCStr *)((SCStr *)&local_24))->m_op_ctor((SCStr *)(puVar14 + 4));
+
+    puVar6 = (undefined4 *)((undefined4 *)thunk_FUN_103d42c0(&local_28), 0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
+    puVar14 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(local_24) != (undefined1 *)(0x0)) {
+      puVar14 = (undefined1 *)(local_24);
+    }
+    puVar13 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*puVar6 != (undefined1 *)((0x0))) {
+      puVar13 = (undefined1 *)((undefined1 *)*puVar6);
+    }
+    ((SCStr *)(param_1))->stringWithFormat("<a href=\"testpoint?name=%s\">%s</a>",puVar13,puVar14,uVar5);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
+    ((SCStr *)((SCStr *)&local_28))->int_release();
+    local_28 = (char *)((char *)0x0);
+
+    pSVar18 = (SCStr *)((SCStr *)&local_24);
+  }
+  else {
+    ((SCStr *)((SCStr *)&local_24))->int_allocRep("</p>");
+
+    ((SCStr *)((SCStr *)&local_18))->int_allocRep("<p>");
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
+    ((SCStr *)((SCStr *)&local_1c))->m_op_ctor(pSVar18);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(7);
+    uVar7 = (undefined4)(thunk_FUN_101a2e90(&local_28,&local_18,&local_1c), 0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
+    thunk_FUN_101a2e90(&local_20,uVar7,&local_24);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xb);
+    ((SCStr *)((SCStr *)&local_28))->int_release();
+    local_28 = (char *)((char *)0x0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xd);
+    ((SCStr *)((SCStr *)&local_1c))->int_release();
+    local_1c = (char *)((char *)0x0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xf);
+    ((SCStr *)((SCStr *)&local_18))->int_release();
+    local_18 = (int *)((int *)0x0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x11);
+    ((SCStr *)((SCStr *)&local_24))->int_release();
+    local_24 = (undefined1 *)((undefined1 *)0x0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x10);
+    thunk_FUN_103cf4f0(puVar14 + 0x1c);
+    uVar7 = (undefined4)(param_3);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x12);
+    uVar4 = (undefined1)((undefined1)local_8);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x12);
+    local_2c = (int *)((int *)*local_48[0]);
+    if ((int)((local_2c)) != (uintptr_t)(local_48[0])) {
+      do {
+        piVar17 = (int *)(local_2c);
+        ((SCStr *)((SCStr *)&local_1c))->m_op_ctor((SCStr *)(local_2c + 4));
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x13);
+        ((SCStr *)((SCStr *)&local_24))->m_op_ctor((SCStr *)(piVar17 + 5));
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x14);
+        puVar6 = (undefined4 *)((undefined4 *)thunk_FUN_103d45e0(&local_28,uVar7,&local_1c,0), 0);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x15);
+        puVar14 = (undefined1 *)(&DAT_1186d2ee);
+        if ((undefined1 *)(local_24) != (undefined1 *)(0x0)) {
+          puVar14 = (undefined1 *)(local_24);
+        }
+        puVar13 = (undefined1 *)(&DAT_1186d2ee);
+        if ((undefined1 *)*puVar6 != (undefined1 *)((0x0))) {
+          puVar13 = (undefined1 *)((undefined1 *)*puVar6);
+        }
+        pcVar10 = (char *)("");
+        if ((char *)(local_1c) != (char *)(0x0)) {
+          pcVar10 = (char *)(local_1c);
+        }
+        ((SCStr *)((char *)&local_18))->stringWithFormat("<div> <span class=\"label\">%1$s</span> <input type=\"text\" name=\"%1$s\" value=\"%2$s\"> <span class=\"note\">%3$s</span> </div>"
+                   ,pcVar10,puVar13,puVar14);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x18);
+        ((SCStr *)((SCStr *)&local_28))->int_release();
+        local_28 = (char *)((char *)0x0);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x17);
+        piVar17 = (int *)((int *)&DAT_1186d2ee);
+        if ((int *)(local_18) != (int *)(0x0)) {
+          piVar17 = (int *)(local_18);
+        }
+        uVar5 = (uint)(((SCStr *)((SCStr *)&local_18))->length(), 0);
+        ((SCStr *)((SCStr *)&local_20))->append((char *)piVar17,uVar5);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x19);
+        ((SCStr *)((SCStr *)&local_18))->int_release();
+        local_18 = (int *)((int *)0x0);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1a);
+        ((SCStr *)((SCStr *)&local_24))->int_release();
+        local_24 = (undefined1 *)((undefined1 *)0x0);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1b);
+        ((SCStr *)((SCStr *)&local_1c))->int_release();
+        local_1c = (char *)((char *)0x0);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x12);
+        ((std::_Tree_unchecked_const_iterator<> *)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0>
+                      *)&local_2c))->op_inc();
+        puVar14 = (undefined1 *)(param_2);
+        uVar4 = (undefined1)((undefined1)local_8);
+      } while ((int)((local_2c)) != (uintptr_t)(local_48[0]));
+    }
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(uVar4);
+    local_38 = (SCStr *)((SCStr *)&local_40);
+    local_40 = (int *)((int *)0x0);
+
+    local_34 = (SCStr *)(local_38);
+    local_40 = (int *)(operator_new(0x28), 0);
+    *local_40 = (int)((int)local_40);
+    local_40[1] = (int)((int)local_40);
+    local_40[2] = (int)((int)local_40);
+    *(undefined2*)(local_40 + 3) = (undefined2)(0x101);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1c);
+    iVar8 = (int)(thunk_FUN_103cdb40(*(undefined4 *)(*(int *)(puVar14 + 0x24) + 4),local_40,param_2), 0);
+    local_40[1] = (int)(iVar8);
+    local_3c = (undefined4)(*(undefined4 *)(puVar14 + 0x28));
+    piVar17 = (int *)((int *)local_40[1]);
+    if (*(char *)((int)piVar17 + 0xd) == '\0') {
+      cVar1 = (char)(*(char *)(*piVar17 + 0xd));
+      piVar2 = (int *)((int *)*piVar17);
+      while (cVar1 == '\0') {
+        cVar1 = (char)(*(char *)(*piVar2 + 0xd));
+        piVar17 = (int *)(piVar2);
+        piVar2 = (int *)((int *)*piVar2);
+      }
+      *local_40 = (int)((int)piVar17);
+      iVar8 = (int)(*(int *)(local_40[1] + 8));
+      cVar1 = (char)(*(char *)(iVar8 + 0xd));
+      iVar3 = (int)(local_40[1]);
+      while (cVar1 == '\0') {
+        cVar1 = (char)(*(char *)(*(int *)(iVar8 + 8) + 0xd));
+        iVar3 = (int)(iVar8);
+        iVar8 = (int)(*(int *)(iVar8 + 8));
+      }
+      local_40[2] = (int)(iVar3);
+    }
+    else {
+      *local_40 = (int)((int)local_40);
+      local_40[2] = (int)((int)local_40);
+    }
+    local_18 = (int *)((int *)*local_40);
+    if ((int *)((local_18)) != (int *)(local_40)) {
+      do {
+        piVar17 = (int *)(local_18);
+        local_28 = (char *)((char *)0x0);
+        pSVar18 = (SCStr *)((SCStr *)(local_18 + 5));
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1e);
+        ((SCStr *)((SCStr *)&local_68))->m_op_ctor(pSVar18);
+        local_34 = (SCStr *)((SCStr *)piVar17[7]);
+        pSVar16 = (SCStr *)((SCStr *)piVar17[6]);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1f);
+        uVar4 = (undefined1)((undefined1)local_8);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1f);
+        local_64 = (SCStr *)((SCStr *)0x0);
+        local_60 = (SCStr *)((SCStr *)0x0);
+        local_5c = (SCStr *)((SCStr *)0x0);
+        if ((SCStr *)(pSVar16) != (SCStr *)(local_34)) {
+          uVar5 = (uint)((int)local_34 - (int)pSVar16 >> 3);
+          if (0x1fffffff < uVar5) {
+LAB_10b749b4:
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(uVar4);
+                    
+            thunk_FUN_1012a2a0();
+          }
+          local_30 = (SCStr **)((SCStr **)(uVar5 * 8));
+          if ((SCStr **)(local_30) < (SCStr **)0x1000) {
+            if ((SCStr **)(local_30) == (SCStr **)(0x0)) {
+              this_ = (SCStr *)((SCStr *)0x0);
+            }
+            else {
+              this_ = (SCStr *)(operator_new((uint)local_30), 0);
+            }
+          }
+          else {
+            if ((SCStr **)(((int)local_30 + 0x23U)) <= (SCStr **)(local_30)) goto LAB_10b749b4;
+            pvVar9 = (char *)(operator_new((int)local_30 + 0x23U), 0);
+            if ((void *)(pvVar9) == (void *)(0x0)) goto LAB_10b749ae;
+            this_ = (SCStr *)((SCStr *)((int)pvVar9 + 0x23U & 0xffffffe0));
+            *(void**)(this_ + -4) = (void *)(pvVar9);
+          }
+          pSVar18 = (SCStr *)(local_34);
+          local_5c = (SCStr *)((SCStr *)((int)local_30 + (int)this_));
+          local_4c = (SCStr **)(&local_64);
+          local_64 = (SCStr *)(this_);
+          local_60 = (SCStr *)(this_);
+          local_54 = (SCStr *)(this_);
+          local_30 = (SCStr **)(local_4c);
+          do {
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x21);
+            local_50 = (SCStr *)(this_);
+            local_34 = (SCStr *)(this_);
+            ((SCStr *)(this_))->m_op_ctor(pSVar16);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x22);
+            ((SCStr *)(this_ + 4))->m_op_ctor(pSVar16 + 4);
+            this_ = (SCStr *)(this_ + 8);
+            pSVar16 = (SCStr *)(pSVar16 + 8);
+          } while ((SCStr *)(pSVar16) != (SCStr *)(pSVar18));
+          pSVar18 = (SCStr *)((SCStr *)(local_18 + 5));
+          piVar17 = (int *)(local_18);
+          local_60 = (SCStr *)(this_);
+          local_54 = (SCStr *)(this_);
+          local_50 = (SCStr *)(this_);
+        }
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x25);
+        ((SCStr *)((SCStr *)&local_58))->m_op_ctor(pSVar18 + 0x10);
+        pSVar18 = (SCStr *)(local_64);
+        if ((SCStr *)(local_64) != (SCStr *)(local_60)) {
+          do {
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x26);
+            local_11 = (undefined1)(((SCStr *)((SCStr *)&local_58))->op_eq(pSVar18), 0);
+            pcVar10 = (char *)(" selected");
+            puVar14 = (undefined1 *)(&DAT_1186d2ee);
+            if (*(undefined1 **)(pSVar18 + 4) != (undefined1 *)((0x0))) {
+              puVar14 = (undefined1 *)(*(undefined1 **)(pSVar18 + 4), 0);
+            }
+            puVar13 = (undefined1 *)(&DAT_1186d2ee);
+            if (*(undefined1 **)pSVar18 != (undefined1 *)((0x0))) {
+              puVar13 = (undefined1 *)(*(undefined1 **)pSVar18);
+            }
+            if (!(bool)local_11) {
+              pcVar10 = (char *)("");
+            }
+            pSVar16 = (SCStr *)((SCStr *)((SCStr *)((char *)&local_2c))->stringWithFormat("<option value=\"%2$s\"%3$s>%1$s</option>",puVar13,puVar14
+                                          ,pcVar10), 0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x27);
+            pcVar10 = (char *)("");
+            if (*(char **)pSVar16 != (char *)((0x0))) {
+              pcVar10 = (char *)(*(char **)pSVar16);
+            }
+            uVar5 = (uint)(((SCStr *)(pSVar16))->length(), 0);
+            ((SCStr *)((SCStr *)&local_28))->append(pcVar10,uVar5);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x28);
+            ((SCStr *)((SCStr *)&local_2c))->int_release();
+            pSVar18 = (SCStr *)(pSVar18 + 8);
+            local_2c = (int *)((int *)0x0);
+            piVar17 = (int *)(local_18);
+          } while ((SCStr *)(pSVar18) != (SCStr *)(local_60));
+        }
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x26);
+        ((SCStr *)((SCStr *)&local_24))->m_op_ctor((SCStr *)(piVar17 + 4));
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x29);
+        puVar14 = (undefined1 *)(&DAT_1186d2ee);
+        if ((undefined1 *)(local_68) != (undefined1 *)(0x0)) {
+          puVar14 = (undefined1 *)(local_68);
+        }
+        pcVar10 = (char *)("");
+        if ((char *)(local_28) != (char *)(0x0)) {
+          pcVar10 = (char *)(local_28);
+        }
+        puVar13 = (undefined1 *)(&DAT_1186d2ee);
+        if ((undefined1 *)(local_24) != (undefined1 *)(0x0)) {
+          puVar13 = (undefined1 *)(local_24);
+        }
+        ((SCStr *)((char * *)(&local_1c)))->stringWithFormat("<div> <span class=\"label\">%1$s</span> <select name=\"%1$s\"> %2$s </select> <span class=\"note\">%3$s</span> </div>"
+                   ,puVar13,pcVar10,puVar14);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2a);
+        pcVar10 = (char *)("");
+        if ((char *)(local_1c) != (char *)(0x0)) {
+          pcVar10 = (char *)(local_1c);
+        }
+        uVar5 = (uint)(((SCStr *)((SCStr *)&local_1c))->length(), 0);
+        ((SCStr *)((SCStr *)&local_20))->append(pcVar10,uVar5);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2b);
+        ((SCStr *)((SCStr *)&local_1c))->int_release();
+        local_1c = (char *)((char *)0x0);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2c);
+        ((SCStr *)((SCStr *)&local_24))->int_release();
+        local_24 = (undefined1 *)((undefined1 *)0x0);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2d);
+        ((SCStr *)((SCStr *)&local_58))->int_release();
+        pSVar16 = (SCStr *)(local_60);
+
+        pSVar18 = (SCStr *)(local_64);
+        if ((SCStr *)(local_64) != (SCStr *)(0x0)) {
+          for (;(SCStr *)((pSVar18)) != (SCStr *)(pSVar16); pSVar18 = pSVar18 + 8) {
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2e);
+            ((SCStr *)(pSVar18 + 4))->int_release();
+            *(undefined4*)(pSVar18 + 4) = (undefined4)(0);
+            *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2f);
+            ((SCStr *)(pSVar18))->int_release();
+            *(undefined4*)pSVar18 = (undefined4)((SCStr *)(0));
+            piVar17 = (int *)(local_18);
+          }
+          *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1e);
+          uVar5 = (uint)(((int)local_5c - (int)local_64 >> 3) * 8);
+          pSVar18 = (SCStr *)(local_64);
+          if (0xfff < uVar5) {
+            pSVar18 = (SCStr *)(*(SCStr **)(local_64 + -4), 0);
+            uVar5 = (uint)(uVar5 + 0x23);
+            if ((SCStr *)(0x1f) < (SCStr *)((local_64) + (-4 - (int)pSVar18))) {
+LAB_10b749ae:
+                    
+              _invalid_parameter_noinfo_noreturn();
+            }
+          }
+          thunk_FUN_1148a50e(pSVar18,uVar5);
+          local_64 = (SCStr *)((SCStr *)0x0);
+          local_60 = (SCStr *)((SCStr *)0x0);
+          local_5c = (SCStr *)((SCStr *)0x0);
+        }
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x30);
+        ((SCStr *)((SCStr *)&local_68))->int_release();
+        local_68 = (undefined1 *)((undefined1 *)0x0);
+        *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x31);
+        ((SCStr *)((SCStr *)&local_28))->int_release();
+        local_18 = (int *)((int *)piVar17[2]);
+        if (*(char *)((int)local_18 + 0xd) == '\0') {
+          cVar1 = (char)(*(char *)(*local_18 + 0xd));
+          piVar17 = (int *)((int *)*local_18);
+          while (cVar1 == '\0') {
+            cVar1 = (char)(*(char *)(*piVar17 + 0xd));
+            local_18 = (int *)(piVar17);
+            piVar17 = (int *)((int *)*piVar17);
+          }
+        }
+        else {
+          cVar1 = (char)(*(char *)(piVar17[1] + 0xd));
+          piVar2 = (int *)((int *)piVar17[1]);
+          while ((local_18 = (int *)(piVar2), cVar1 == '\0' && ((int *)(piVar17) == (int *)local_18[2]))) {
+            cVar1 = (char)(*(char *)(local_18[1] + 0xd));
+            piVar2 = (int *)((int *)local_18[1]);
+            piVar17 = (int *)(local_18);
+          }
+        }
+        puVar14 = (undefined1 *)(param_2);
+      } while ((int *)((local_18)) != (int *)(local_40));
+    }
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1d);
+    puVar6 = (undefined4 *)((undefined4 *)thunk_FUN_103d42c0(&local_2c), 0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x32);
+    ((SCStr *)((SCStr *)&param_2))->m_op_ctor((SCStr *)(puVar14 + 4));
+    local_34 = (SCStr *)((SCStr *)0x11889d1c);
+    puVar14 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(local_20) != (undefined1 *)(0x0)) {
+      puVar14 = (undefined1 *)(local_20);
+    }
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x33);
+    puVar13 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*puVar6 != (undefined1 *)((0x0))) {
+      puVar13 = (undefined1 *)((undefined1 *)*puVar6);
+    }
+    puVar15 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(param_2) != (undefined1 *)(0x0)) {
+      puVar15 = (undefined1 *)(param_2);
+    }
+    bVar19 = (bool)(param_4 == '\0');
+    pcVar10 = (char *)("style=\"display: block\"");
+    if (bVar19) {
+      pcVar10 = (char *)("");
+    }
+    pcVar11 = (char *)("true");
+    if (bVar19) {
+      pcVar11 = (char *)("false");
+    }
+    pcVar12 = (char *)("active");
+    if (bVar19) {
+      pcVar12 = (char *)("");
+    }
+    ((SCStr *)(param_1))->stringWithFormat("<div class=\"collapse-row %4$s\"> <button class=\"submit-button\" form=\"%1$s\" title=\"Perform\" aria-label=\"Perform\"> <i class=\"fas fa-play-circle fa-2x\"></i> </button> <button class=\"collapse-button %4$s\" aria-controls=\"content-%1$s\" aria-expanded=\"%5$s\"> %1$s </button> </div> <div id=\"content-%1$s\" class=\"collapse-content\" %6$s> <form id=\"%1$s\" action=\"/testpoint\"> <input type=\"hidden\" name=\"name\" value=\"%2$s\"> %3$s </form> </div>"
+               ,puVar15,puVar13,puVar14,pcVar12,pcVar11,pcVar10);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x34);
+    ((SCStr *)((SCStr *)&param_2))->int_release();
+    param_2 = (undefined1 *)((undefined1 *)0x0);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x35)));
+    ((SCStr *)((SCStr *)&local_2c))->int_release();
+    local_2c = (int *)((int *)0x0);
+    thunk_FUN_10246170(&local_40,local_40[1]);
+    thunk_FUN_1148a50e(local_40,0x28);
+    thunk_FUN_10246290((uint)&local_48,local_48[0][1]);
+    thunk_FUN_1148a50e(local_48[0],0x18);
+
+    pSVar18 = (SCStr *)((SCStr *)&local_20);
+  }
+  ((SCStr *)(pSVar18))->int_release();
+
+  return (char *)(param_1);
 
  } catch (...) { }
 }
@@ -1892,6 +3529,190 @@ LAB_10bae906:
   *(int*)(param_2 + 0x14) = (int)(iVar9);
 
   return (undefined1 *)((undefined1 *)(uint)bVar5);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10d3bf10; body size 930 bytes.
+#line 1 "ENTRY_10d3bf10"
+
+undefined4 * __thiscall Recovered_Bulk::m_FUN_10d3bf10(undefined4 *param_2,int *param_3)
+{
+  int *param_1 = (int *)this; int stack0xfffffffc;
+ try {
+  char *_Memory;
+  undefined4 uVar1;
+  bool bVar2;
+  char cVar3;
+  int *piVar4;
+  uint uVar5;
+  int *piVar6;
+  int iVar7;
+  char *pcVar8;
+  SCStr *this_;
+  undefined1 *puVar9;
+  int *local_34;
+  int *local_30;
+  SCStr *local_2c;
+  undefined4 local_28;
+  char *local_24;
+  undefined4 local_20;
+  undefined4 local_1c;
+  undefined4 local_18;
+  undefined4 local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  bVar2 = (bool)(false);
+  local_30 = (int *)(param_1);
+  thunk_FUN_110828b0(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+  local_2c = (SCStr *)((SCStr *)(param_1 + 0x24));
+  puVar9 = (undefined1 *)(&DAT_1186d2ee);
+  if ((undefined1 *)param_1[0x24] != (undefined1 *)(((0x0)))) {
+    puVar9 = (undefined1 *)((undefined1 *)param_1[0x24]);
+  }
+  piVar4 = (int *)((int *)thunk_FUN_11093530(puVar9,0), 0);
+  if (((char)param_1[0x21] == '\0') &&
+     (((int *)(piVar4) == (int *)(0x0) || (uVar5 = (uint)((**(code **)(*piVar4 + 0x78))(), 0),(int *)((uVar5)) < (int *)(param_3))))) {
+LAB_10d3bf9e:
+    *param_2 = (undefined4)(0);
+
+    return (undefined4 *)(param_2);
+  }
+  if ((char)param_1[0x21] == '\0') {
+    local_24 = (char *)((char *)0x0);
+
+    (**(code **)(*piVar4 + 0x80))(param_3,&local_24,&local_34);
+
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
+    cVar3 = (char)((**(code **)(*piVar4 + 0x88))(param_3), 0);
+    pcVar8 = (char *)("object.container.sonos-incrementalSearch");
+    if (cVar3 == '\0') {
+      pcVar8 = (char *)("object.container.sonos-search");
+    }
+    ((SCStr *)((SCStr *)&local_28))->int_allocRep(pcVar8);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
+    ((SCStr *)((SCStr *)&local_14))->int_release();
+    local_14 = (undefined4)(local_28);
+    ((SCStr *)((SCStr *)&local_14))->int_addref();
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
+    ((SCStr *)((SCStr *)&local_28))->int_release();
+
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
+    ((SCStr *)(this_))->format((char *)&local_18);
+    ((SCStr *)((SCStr *)&param_3))->int_allocRep("");
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
+    thunk_FUN_103ac6e0(&local_20,&param_3,local_2c,&local_14,&local_18,0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
+    ((SCStr *)((SCStr *)&param_3))->int_release();
+    param_3 = (int *)((int *)0x0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(7);
+    piVar4 = (int *)(operator_new(0x40), 0);
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(9);
+    param_3 = (int *)(piVar4);
+    if ((int *)(piVar4) == (int *)(0x0)) {
+      piVar4 = (int *)((int *)0x0);
+    }
+    else {
+      pcVar8 = (char *)("");
+      if ((char *)(local_24) != (char *)(0x0)) {
+        pcVar8 = (char *)(local_24);
+      }
+      ((SCStr *)((SCStr *)&local_1c))->int_allocRep(pcVar8);
+      bVar2 = (bool)(true);
+      local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(10)));
+      thunk_FUN_104da560();
+
+      thunk_FUN_103d5ff0();
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xc);
+      *piVar4 = (int)((int)(uint)&ghidra_vftable_SCSearchTypeNonSonosItem);
+      piVar4[6] = (int)((int)(uint)&ghidra_vftable_SCSearchTypeNonSonosItem);
+      ((SCStr *)((SCStr *)(piVar4 + 0xe)))->m_op_ctor((SCStr *)&local_20);
+      local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0xd)));
+      ((SCStr *)((SCStr *)(piVar4 + 0xf)))->m_op_ctor((SCStr *)&local_1c);
+    }
+
+    *param_2 = (undefined4)(piVar4);
+    if ((int *)(piVar4) != (int *)(0x0)) {
+      (**(code **)(*piVar4 + 4))();
+    }
+
+    if (bVar2) {
+
+      ((SCStr *)((SCStr *)&local_1c))->int_release();
+
+    }
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x10);
+    ((SCStr *)((SCStr *)&local_20))->int_release();
+
+    *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x11);
+    ((SCStr *)((SCStr *)&local_18))->int_release();
+
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x12)));
+    ((SCStr *)((SCStr *)&local_14))->int_release();
+    pcVar8 = (char *)(local_24);
+
+
+    if ((((char *)(local_24) != (char *)(0x0)) &&
+        (_Memory = (char *)(local_24 + -0x10), *(int *)(local_24 + -0x10) < 0xffff)) &&
+       (iVar7 = (int)(thunk_FUN_1123fcd0(_Memory), 0), iVar7 == 0)) {
+      uVar1 = (undefined4)(*(undefined4 *)(pcVar8 + -4));
+      pcVar8[-0xffffffff00000008] = (char)('\0');
+      pcVar8[-0xffffffff00000007] = (char)('\0');
+      pcVar8[-0xffffffff00000006] = (char)('\0');
+      pcVar8[-0xffffffff00000005] = (char)('\0');
+      pcVar8[-0xffffffff0000000c] = (char)('\0');
+      pcVar8[-0xffffffff0000000b] = (char)('\0');
+      pcVar8[-0xffffffff0000000a] = (char)('\0');
+      pcVar8[-0xffffffff00000009] = (char)('\0');
+      thunk_FUN_113cfb70(pcVar8,uVar1);
+      free(_Memory);
+    }
+  }
+  else {
+    if ((uint)param_1[0x27] < (uintptr_t)(param_3)) goto LAB_10d3bf9e;
+    piVar4 = (int *)(operator_new(0xf8), 0);
+
+    local_34 = (int *)(piVar4);
+    if ((int *)(piVar4) == (int *)(0x0)) {
+      piVar4 = (int *)((int *)0x0);
+    }
+    else {
+      thunk_FUN_104da560();
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x15);
+      thunk_FUN_103d5ff0();
+      piVar4[0xe] = (int)((int)(uint)&ghidra_vftable_RAsyncBrowseCacheCB);
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x17);
+      *piVar4 = (int)((int)(uint)&ghidra_vftable_SCSearchTypeSonosItem);
+      piVar4[6] = (int)((int)(uint)&ghidra_vftable_SCSearchTypeSonosItem);
+      piVar4[0xe] = (int)((int)(uint)&ghidra_vftable_SCSearchTypeSonosItem);
+      ((SCStr *)((SCStr *)(piVar4 + 0xf)))->m_op_ctor(local_2c);
+      piVar6 = (int *)(local_30);
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x18);
+      ((SCStr *)((SCStr *)(piVar4 + 0x10)))->m_op_ctor((SCStr *)(local_30 + 0x23));
+      piVar4[0x11] = (int)((int)param_3);
+      piVar4[0x12] = (int)((int)piVar6);
+      piVar4[0x13] = (int)(0);
+      *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x19);
+      piVar6 = (int *)((int *)(**(code **)(*piVar6 + 0xc))(), 0);
+      piVar4[0x13] = (int)((int)piVar6);
+      (**(code **)(*piVar6 + 4))();
+      local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x1a)));
+      *(undefined1*)(piVar4 + 0x14) = (undefined1)(0);
+      thunk_FUN_101ff8b0();
+      *(undefined1*)(piVar4 + 0x3c) = (undefined1)(0);
+    }
+
+    *param_2 = (undefined4)(piVar4);
+    if ((int *)(piVar4) != (int *)(0x0)) {
+      (**(code **)(*piVar4 + 4))();
+    }
+  }
+
+  return (undefined4 *)(param_2);
 
  } catch (...) { }
 }
@@ -7567,6 +9388,243 @@ LAB_113ab167:
 }
 
 
+// Reference entry 113d0870; body size 325 bytes.
+#line 1 "ENTRY_113d0870"
+
+void FUN_113d0870(undefined4 param_1,int param_2)
+
+{
+  int *piVar1;
+  int *piVar2;
+  uint uVar3;
+  bool bVar4;
+  int local_44 [14];
+  word *local_c;
+  undefined4 local_8;
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)(uint)&local_44);
+  local_44[0] = (int)(-0x31320a0);
+  local_44[1] = (int)(0x3615bb0b);
+  local_44[2] = (int)(0xc32d3254);
+  local_44[3] = (int)(0xd56bc53f);
+  local_44[4] = (int)(0x7d617ad5);
+  local_44[5] = (int)(0xe647432a);
+  local_44[6] = (int)(0x16b05a78);
+  local_44[7] = (int)(0x626d9bc0);
+  local_44[8] = (int)(0x52d0c0ba);
+  local_44[9] = (int)(0xf87bfa3c);
+  local_44[10] = (int)(0xa5f1dd2b);
+  local_44[0xb] = (int)(0xe640eccb);
+  local_44[0xc] = (int)(0xe43f300c);
+  local_44[0xd] = (int)(0x5c59d2d8);
+  local_c = (word *)(&WORD_12411e10);
+  local_8 = (undefined4)(0x53519b26);
+  if (param_2 == 0x424) {
+    thunk_FUN_113d15c0(1,param_1,0x424,(uint)&local_44 + 8);
+    piVar1 = (int *)((uint)&local_44 + 8);
+    piVar2 = (int *)((uint)&local_44);
+    uVar3 = (uint)(0x1c);
+    while (*piVar1 == (int)(*(piVar2))) {
+      piVar1 = (int *)(piVar1 + 1);
+      piVar2 = (int *)(piVar2 + 1);
+      bVar4 = (bool)(uVar3 < 4);
+      uVar3 = (uint)(uVar3 - 4);
+      if (bVar4) {
+        thunk_FUN_1148ac28();
+        return;
+      }
+    }
+  }
+  else if (param_2 == 0x34a) {
+    thunk_FUN_113d15c0(1,param_1,0x34a,(uint)&local_44);
+    piVar1 = (int *)((uint)&local_44);
+    piVar2 = (int *)((uint)&local_44 + 8);
+    uVar3 = (uint)(0x1c);
+    while (*piVar1 == (int)(*(piVar2))) {
+      piVar1 = (int *)(piVar1 + 1);
+      piVar2 = (int *)(piVar2 + 1);
+      bVar4 = (bool)(uVar3 < 4);
+      uVar3 = (uint)(uVar3 - 4);
+      if (bVar4) {
+        thunk_FUN_1148ac28();
+        return;
+      }
+    }
+  }
+  thunk_FUN_1148ac28();
+  return;
+}
+
+
+// Reference entry 113d0e60; body size 745 bytes.
+#line 1 "ENTRY_113d0e60"
+
+void FUN_113d0e60(undefined4 param_1,int param_2,char param_3,undefined4 param_4,undefined4 param_5,
+                 undefined4 param_6,undefined4 param_7,uint *param_8)
+
+{
+  byte bVar1;
+  int iVar2;
+  int iVar3;
+  byte *pbVar4;
+  int *piVar5;
+  int *piVar6;
+  void *pvVar7;
+  uint uVar8;
+  byte *pbVar9;
+  uint *puVar10;
+  bool bVar11;
+  undefined1 auStack_d0 [3];
+  undefined1 local_cd;
+  uint *local_cc;
+  undefined4 local_c8;
+  undefined4 local_c4;
+  undefined4 local_c0;
+  undefined4 local_bc;
+  undefined4 local_b8;
+  char *local_b4;
+  uint local_b0;
+  undefined4 local_ac;
+  char *local_a8;
+  undefined4 local_a4;
+  undefined4 local_a0;
+  char *local_9c;
+  undefined4 local_98;
+  undefined4 local_94;
+  char *local_90;
+  undefined4 local_8c;
+  int local_88 [14];
+  word *local_50;
+  undefined4 local_4c;
+  byte local_48 [36];
+  int local_24 [8];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)(uint)&auStack_d0);
+  local_c4 = (undefined4)(param_5);
+  local_c8 = (undefined4)(param_4);
+  pvVar7 = (void *)((void *)0x0);
+  local_c0 = (undefined4)(param_6);
+  local_bc = (undefined4)(param_7);
+  local_cc = (uint *)(param_8);
+  local_cd = (undefined1)(1);
+  *param_8 = (uint)(0);
+  if (param_3 != '\0') {
+    local_88[0] = (int)(-0x31320a0);
+    local_88[1] = (int)(0x3615bb0b);
+    local_88[2] = (int)(0xc32d3254);
+    local_88[3] = (int)(0xd56bc53f);
+    local_88[4] = (int)(0x7d617ad5);
+    local_88[5] = (int)(0xe647432a);
+    local_88[6] = (int)(0x16b05a78);
+    local_88[7] = (int)(0x626d9bc0);
+    local_88[8] = (int)(0x52d0c0ba);
+    local_88[9] = (int)(0xf87bfa3c);
+    local_88[10] = (int)(0xa5f1dd2b);
+    local_88[0xb] = (int)(0xe640eccb);
+    local_88[0xc] = (int)(0xe43f300c);
+    local_88[0xd] = (int)(0x5c59d2d8);
+    local_50 = (word *)(&WORD_12411e10);
+    local_4c = (undefined4)(0x53519b26);
+    if (param_2 == 0x424) {
+      thunk_FUN_113d15c0(1,param_1,0x424,(uint)&local_24);
+      piVar5 = (int *)((uint)&local_24);
+      piVar6 = (int *)((uint)&local_88);
+      uVar8 = (uint)(0x1c);
+      do {
+        if (*piVar5 != (int)(*(piVar6))) goto LAB_113d0fec;
+        piVar5 = (int *)(piVar5 + 1);
+        piVar6 = (int *)(piVar6 + 1);
+        bVar11 = (bool)(3 < uVar8);
+        uVar8 = (uint)(uVar8 - 4);
+      } while (bVar11);
+      goto LAB_113d1123;
+    }
+    if (param_2 == 0x34a) {
+      thunk_FUN_113d15c0(1,param_1,0x34a,(uint)&local_48);
+      pbVar9 = (byte *)((uint)&local_48);
+      piVar6 = (int *)((uint)&local_88 + 8);
+      uVar8 = (uint)(0x1c);
+      do {
+        if (*(int *)(int)(pbVar9) != (int)(*piVar6)) goto LAB_113d0fec;
+        pbVar9 = (byte *)(pbVar9 + 4);
+        piVar6 = (int *)(piVar6 + 1);
+        bVar11 = (bool)(3 < uVar8);
+        uVar8 = (uint)(uVar8 - 4);
+      } while (bVar11);
+      goto LAB_113d1123;
+    }
+  }
+LAB_113d0fec:
+  puVar10 = (uint *)(local_cc);
+  local_b8 = (undefined4)(local_c8);
+  local_ac = (undefined4)(local_c4);
+  local_a0 = (undefined4)(local_c0);
+  local_b4 = (char *)("urn:sonos:device");
+  local_b0 = (uint)(2);
+  local_a8 = (char *)("urn:sonos:udn");
+  local_a4 = (undefined4)(4);
+  local_9c = (char *)("urn:sonos:hhid");
+  local_98 = (undefined4)(8);
+  local_94 = (undefined4)(local_bc);
+  local_90 = (char *)("urn:sonos:user");
+  local_8c = (undefined4)(0x10);
+  pvVar7 = (void *)(malloc(0x1a0), 0);
+  if ((void *)(pvVar7) != (void *)(0x0)) {
+    *(undefined4*)((int)pvVar7 + 0x198) = (undefined4)(1);
+    *(undefined4*)((int)pvVar7 + 0x19c) = (undefined4)(0);
+    thunk_FUN_11401f20(pvVar7);
+    iVar2 = (int)(thunk_FUN_11401ff0(pvVar7,param_1,param_2), 0);
+    if ((iVar2 == 0) && (*(int *)((int)pvVar7 + 0x194) == 0)) {
+      puVar10 = (uint *)(&local_b0);
+      iVar2 = (int)(4);
+      do {
+        pbVar9 = (byte *)((byte *)puVar10[-2]);
+        if (((byte *)(pbVar9) != (byte *)(0x0)) && (*pbVar9 != (byte)((0)))) {
+          iVar3 = (int)(thunk_FUN_113d03e0(pvVar7,(uint)&local_48,0x21,puVar10[-1]), 0);
+          if (iVar3 == 0) {
+            pbVar4 = (byte *)((uint)&local_48);
+            do {
+              bVar1 = (byte)(*pbVar4);
+              bVar11 = (bool)((byte)(bVar1) < *pbVar9);
+              if ((byte)(bVar1) != *pbVar9) {
+LAB_113d10f0:
+                uVar8 = (uint)(-(uint)bVar11 | 1);
+                goto LAB_113d10f5;
+              }
+              if (bVar1 == 0) break;
+              bVar1 = (byte)(pbVar4[1]);
+              bVar11 = (bool)((byte)((bVar1)) < pbVar9[1]);
+              if ((byte)((bVar1)) != pbVar9[1]) goto LAB_113d10f0;
+              pbVar4 = (byte *)(pbVar4 + 2);
+              pbVar9 = (byte *)(pbVar9 + 2);
+            } while (bVar1 != 0);
+            uVar8 = (uint)(0);
+LAB_113d10f5:
+            if (uVar8 == 0) goto LAB_113d1106;
+          }
+          local_cd = (undefined1)(0);
+          *local_cc = (uint)(*local_cc | *puVar10);
+        }
+LAB_113d1106:
+        puVar10 = (uint *)(puVar10 + 3);
+        iVar2 = (int)(iVar2 + -1);
+      } while (iVar2 != 0);
+      goto LAB_113d1123;
+    }
+  }
+  thunk_FUN_113cfe50(pvVar7);
+  *puVar10 = (uint)(*puVar10 | 1);
+  local_cd = (undefined1)(0);
+  pvVar7 = (void *)((void *)0x0);
+LAB_113d1123:
+  thunk_FUN_113cfe50(pvVar7);
+  thunk_FUN_1148ac28();
+  return;
+}
+
+
 // Reference entry 1141d1c0; body size 486 bytes.
 #line 1 "ENTRY_1141d1c0"
 
@@ -7952,5 +10010,37 @@ void FUN_114894f0(int *param_1,byte *param_2,byte *param_3)
   local_2c = (byte *)(pbVar3);
   thunk_FUN_1148ac28();
   return;
+}
+
+
+// Reference entry 1148a5d1; body size 50 bytes.
+#line 1 "ENTRY_1148a5d1"
+
+/* Library Function - Single Match
+    ___scrt_acquire_startup_lock
+   
+   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */undefined4 FUN_1148a5d1(void){
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = (int)(___scrt_is_ucrt_dll_in_use(), 0);
+  if (iVar2 != 0) {
+    while( true ) {
+      iVar2 = (int)(0);
+      LOCK();
+      iVar1 = (int)(*(int *)((int)Self + 4));
+      if (DAT_122fabd8 != 0) {
+        iVar2 = (int)(DAT_122fabd8);
+        iVar1 = (int)(DAT_122fabd8);
+      }
+      DAT_122fabd8 = (int)(iVar1);
+      UNLOCK();
+      if (iVar2 == 0) break;
+      if (*(int *)((int)Self + 4) == (int)(iVar2)) {
+        return (undefined4)(1);
+      }
+    }
+  }
+  return (undefined4)(0);
 }
 
