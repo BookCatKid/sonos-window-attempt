@@ -94,23 +94,33 @@ def emit_flag_members(out, members):
     # Function-try-block ctors track constructed members with flag bits ->
     #   mov eax,[ebp-flag]; and eax,<bit>; jz; and flag,~bit;
     #   lea ecx,[ebp-m]; jmp ~Sub; ret                        (25 bytes)
-    for n in range(2, members + 1):
-        decls = ' '.join(f'ProbeSub m{i};' for i in range(n))
-        out.append(
-            f"struct ProbeFlag{n:02d} {{ {decls} ProbeFlag{n:02d}(); }};\n"
-            f"ProbeFlag{n:02d}::ProbeFlag{n:02d}() try {{ probe_throw(); }}"
-            f" catch (...) {{ throw; }}"
-        )
+    # Member size shifts the flag dword and member offsets; count shifts the
+    # tested bit, so sweep both.
+    for sz in (4, 8, 16, 32):
+        for n in range(2, members + 1):
+            decls = ' '.join(f'ProbeSub m{i};' for i in range(n)) \
+                if sz == 4 else \
+                ' '.join(f'ProbeD{sz} m{i};' for i in range(n))
+            out.append(
+                f"struct ProbeFlag{sz:02d}n{n:02d} {{ {decls} "
+                f"ProbeFlag{sz:02d}n{n:02d}(); }};\n"
+                f"ProbeFlag{sz:02d}n{n:02d}::ProbeFlag{sz:02d}n{n:02d}() "
+                f"try {{ probe_throw(); }} catch (...) {{ throw; }}"
+            )
 
 
 def emit_array_members(out, count):
     # Array members inside ctor/dtor probes ->
     #   lea eax,[ecx+N]; push eax; call vector-dtor            (13+ bytes)
-    for k in range(1, count + 1):
-        out.append(
-            f"struct ProbeArrH{k:04d} {{ ProbeSub m[{k}]; ProbeArrH{k:04d}(); }};\n"
-            f"ProbeArrH{k:04d}::ProbeArrH{k:04d}() {{ probe_throw(); }}"
-        )
+    # An int member in front shifts the array to field offset 4.
+    for pre in ('', 'int p; '):
+        for k in range(1, count + 1):
+            tag = f'p{k:04d}' if pre else f'{k:04d}'
+            out.append(
+                f"struct ProbeArrH{tag} {{ {pre}ProbeSub m[{k}]; "
+                f"ProbeArrH{tag}(); }};\n"
+                f"ProbeArrH{tag}::ProbeArrH{tag}() {{ probe_throw(); }}"
+            )
 
 
 def emit_member_new_probes(out, count):
@@ -213,7 +223,7 @@ def emit_targeted(out, sets):
         out.append(
             f'struct ProbeOff{n:05x} {{ {pad}ProbeSub m; }};'
         )
-        for d in range(0, 9):
+        for d in range(0, 17):
             out.append(
                 f'void probe_off_{n:05x}_{d}() {{ '
                 + _nest(f'ProbeOff{n:05x} *p = new ProbeOff{n:05x}; '
@@ -246,7 +256,7 @@ def emit_targeted(out, sets):
     for sz in sorted(sets['del_sz']):
         if sz < 4 or sz > 0x8000:
             continue
-        for d in range(0, 9):
+        for d in range(0, 17):
             out.append(
                 f'void probe_dsz_{sz:05x}_{d}() {{ '
                 + _nest(f'char *p = new char[{sz}]; probe_throw();', d)
