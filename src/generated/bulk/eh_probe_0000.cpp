@@ -1164,18 +1164,18 @@ void probe_cref_2_8() { { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; 
 void probe_cref_2_9() { { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } } } } } } }
 void probe_cref_2_10() { { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } } } } } } } }
 void probe_cref_2_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } } } } } } } } }
-void probe_cref_3_0() { try { probe_throw(); } catch (int o) { probe_sink(o); } }
-void probe_cref_3_1() { { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } }
-void probe_cref_3_2() { { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } }
-void probe_cref_3_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } }
-void probe_cref_3_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } }
-void probe_cref_3_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } }
-void probe_cref_3_6() { { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } }
-void probe_cref_3_7() { { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } } }
-void probe_cref_3_8() { { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } } } }
-void probe_cref_3_9() { { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } } } } }
-void probe_cref_3_10() { { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } } } } } }
-void probe_cref_3_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } } } } } } }
+void probe_cref_3_0() { try { probe_throw(); } catch (int o) { probe_sink(&o); } }
+void probe_cref_3_1() { { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } }
+void probe_cref_3_2() { { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } } }
+void probe_cref_3_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } } } }
+void probe_cref_3_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } } } } }
+void probe_cref_3_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } } } } } }
+void probe_cref_3_6() { { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } } } } } } }
+void probe_cref_3_7() { { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } } } } } } } }
+void probe_cref_3_8() { { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } } } } } } } } }
+void probe_cref_3_9() { { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } } } } } } } } } }
+void probe_cref_3_10() { { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } } } } } } } } } } }
+void probe_cref_3_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(&o); } } } } } } } } } } } } }
 extern void (*volatile probe_fp0)();
 void probe_iat_0() { probe_fp0(); }
 extern void (*volatile probe_fq0)();

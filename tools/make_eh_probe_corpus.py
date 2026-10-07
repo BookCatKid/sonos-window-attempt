@@ -358,7 +358,7 @@ def emit_extra_families(out, count):
         'catch (ProbeSub o) { probe_sink(&o); }',
         'catch (ProbeSub &o) { probe_sink(&o); }',
         'catch (ProbeSub o) { o.~ProbeSub(); }',
-        'catch (int o) { probe_sink(o); }',
+        'catch (int o) { probe_sink(&o); }',
     )
     for i, form in enumerate(forms):
         for d in range(0, count):
