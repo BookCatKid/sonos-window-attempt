@@ -22,6 +22,29 @@ typedef unsigned char BYTE;
 typedef unsigned char uchar;
 typedef int BOOL;
 typedef void *HANDLE;
+extern char iRam00000001;
+extern char pbRam1211e5d4;
+extern char pbRam1211e5d8;
+extern char pbRam1211e5dc;
+extern char pppppbRam12120580;
+extern char pppppbRam12120584;
+extern char pppppbRam12120588;
+extern char wMonth;
+extern char wDayOfWeek;
+extern char wHour;
+extern char lpReserved2;
+typedef int errno_t;
+typedef int word;
+extern char WORD_12411e10_v[];
+#define WORD_12411e10 WORD_12411e10_v
+extern char _bStack0000001c;
+typedef int _Fac_node;
+typedef int _Facet_base;
+namespace std { struct _Facet_base; }
+extern char Self_v[];
+#define Self Self_v
+typedef int _onexit_t;
+typedef struct { char _p[10]; } unkbyte10;
 typedef struct HINSTANCE__ { char _pad; } HINSTANCE__;
 typedef HINSTANCE__ *HINSTANCE;
 typedef void *LPVOID;
@@ -118,7 +141,7 @@ extern "C" void __security_check_cookie(size_t);
 extern "C" int __security_cookie;
 struct __RFLD2 { int Bias; int Data1; int Data2; int DaylightBias; int DaylightDate; int DebugInfo; int LockCount; int LockSemaphore; int OwningThread; int RecursionCount; int SpareWORD; int SpinCount; int StandardBias; int StandardDate; int bInheritHandle; int cb; int dwFillAttribute; int dwFlags; int dwProcessId; int dwThreadId; int dwX; int dwXCountChars; int dwXSize; int dwY; int dwYCountChars; int dwYSize; int hProcess; int hStdError; int hStdInput; int hStdOutput; int hThread; int lpDesktop; int lpReserved; int lpSecurityDescriptor; int lpTitle; int nLength; int tm_hour; int tm_isdst; int tm_mday; int tm_min; int tm_mon; int tm_sec; int tm_wday; int tm_yday; int tm_year; int unused; int wDay; int wDayOfWeek; int wHour; int wMilliseconds; int wMinute; int wMonth; int wSecond; int wShowWindow; int wYear; };
 struct __RFLD { int Bias; int Data1; int Data2; int DaylightBias; __RFLD2 DaylightDate; int DebugInfo; int LockCount; int LockSemaphore; int OwningThread; int RecursionCount; int SpareWORD; int SpinCount; int StandardBias; __RFLD2 StandardDate; int bInheritHandle; int cb; int dwFillAttribute; int dwFlags; int dwProcessId; int dwThreadId; int dwX; int dwXCountChars; int dwXSize; int dwY; int dwYCountChars; int dwYSize; int hProcess; int hStdError; int hStdInput; int hStdOutput; int hThread; int lpDesktop; int lpReserved; int lpSecurityDescriptor; int lpTitle; int nLength; int tm_hour; int tm_isdst; int tm_mday; int tm_min; int tm_mon; int tm_sec; int tm_wday; int tm_yday; int tm_year; int unused; int wDay; int wDayOfWeek; int wHour; int wMilliseconds; int wMinute; int wMonth; int wSecond; int wShowWindow; int wYear; };
-namespace std { typedef int _Iterator_base0; }
+namespace std { static int _Fac_node; static int _Facet_Register; static int _Facet_base; typedef int _Iterator_base0; }
 struct SCHouseholdEventSink { char _pad; SCHouseholdEventSink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); static int op_ctor(...) { return 0; } };
 struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int getSCHousehold(A...); template<class... A> int getSingleton(A...); };
 struct SCSecureRegistrationResetPasswordSuccessOtherState { char _pad; SCSecureRegistrationResetPasswordSuccessOtherState(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); static int vftable; };
@@ -141,6 +164,7 @@ struct CLSID { char _pad; CLSID(...); template<class T> int operator==(T); templ
 struct CLSIDFromString { char _pad; CLSIDFromString(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct CStack_68 { char _pad; CStack_68(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct CStack_78 { char _pad; CStack_78(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Can { char _pad; Can(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct CancelledFlow { char _pad; CancelledFlow(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Clearing { char _pad; Clearing(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct CloseHandle { char _pad; CloseHandle(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
@@ -155,12 +179,15 @@ struct CurrentControlSet { char _pad; CurrentControlSet(...); template<class T> 
 struct CurrentTrackMetaData { char _pad; CurrentTrackMetaData(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct CustomerID { char _pad; CustomerID(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct DStack_9c { char _pad; DStack_9c(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct DVar5 { char _pad; DVar5(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct DVar9 { char _pad; DVar9(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Data1 { char _pad; Data1(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Data2 { char _pad; Data2(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct DatabasePath { char _pad; DatabasePath(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct DaylightBias { char _pad; DaylightBias(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct DaylightDate { char _pad; DaylightDate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct DebugInfo { char _pad; DebugInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct DeleteCriticalSection { char _pad; DeleteCriticalSection(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct DesktopController { char _pad; DesktopController(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct DhcpDomain { char _pad; DhcpDomain(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Diagnostics { char _pad; Diagnostics(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
@@ -171,12 +198,14 @@ struct EnqueuedTransportURI { char _pad; EnqueuedTransportURI(...); template<cla
 struct EnqueuedTransportURIMetaData { char _pad; EnqueuedTransportURIMetaData(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Error { char _pad; Error(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Example { char _pad; Example(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ExpandEnvironmentStringsA { char _pad; ExpandEnvironmentStringsA(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Failed { char _pad; Failed(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Function { char _pad; Function(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct GetAdaptersInfo { char _pad; GetAdaptersInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct GetCurrentProcess { char _pad; GetCurrentProcess(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct GetLastError { char _pad; GetLastError(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct GetNumberOfInterfaces { char _pad; GetNumberOfInterfaces(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct GetWindowsDirectoryA { char _pad; GetWindowsDirectoryA(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Globals { char _pad; Globals(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct HKEY__ { char _pad; HKEY__(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct HStack_8c { char _pad; HStack_8c(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
@@ -191,6 +220,7 @@ struct Key { char _pad; Key(...); template<class T> int operator==(T); template<
 struct LPCRITICAL_SECTION { char _pad; LPCRITICAL_SECTION(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct LVar2 { char _pad; LVar2(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct LVar3 { char _pad; LVar3(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct LVar4 { char _pad; LVar4(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct LatestSWGen { char _pad; LatestSWGen(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Libraries { char _pad; Libraries(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Library { char _pad; Library(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
@@ -218,6 +248,7 @@ struct RegCloseKey_exref { char _pad; RegCloseKey_exref(...); template<class T> 
 struct RegEnumKeyExA { char _pad; RegEnumKeyExA(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct RegOpenKeyExA { char _pad; RegOpenKeyExA(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct RegOpenKeyExA_exref { char _pad; RegOpenKeyExA_exref(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct RegQueryValueExA { char _pad; RegQueryValueExA(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct RegQueryValueExW { char _pad; RegQueryValueExW(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Release { char _pad; Release(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Removing { char _pad; Removing(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
@@ -230,6 +261,7 @@ struct SearchList { char _pad; SearchList(...); template<class T> int operator==
 struct Self { char _pad; Self(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Services { char _pad; Services(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct SetHandleInformation { char _pad; SetHandleInformation(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SetLastError { char _pad; SetLastError(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Single { char _pad; Single(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct SkipLogin { char _pad; SkipLogin(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Sonar { char _pad; Sonar(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
@@ -250,7 +282,9 @@ struct TIME_ZONE_INFORMATION { char _pad; TIME_ZONE_INFORMATION(...); template<c
 struct Tcpip { char _pad; Tcpip(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct TerminateProcess { char _pad; TerminateProcess(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct ThreadLocalStoragePointer { char _pad; ThreadLocalStoragePointer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Too { char _pad; Too(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct TransferAccount { char _pad; TransferAccount(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Type { char _pad; Type(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct UNK_1072fe00 { char _pad; UNK_1072fe00(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct UNK_119ca0d8 { char _pad; UNK_119ca0d8(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
@@ -262,6 +296,7 @@ struct UNK_119d224f { char _pad; UNK_119d224f(...); template<class T> int operat
 struct UPnP { char _pad; UPnP(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Unable { char _pad; Unable(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct Unknown { char _pad; Unknown(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Unwind_116dce71 { char _pad; Unwind_116dce71(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct UpdateBranch { char _pad; UpdateBranch(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct UsageDataOptIn { char _pad; UsageDataOptIn(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct UsageDataSet { char _pad; UsageDataSet(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
@@ -272,19 +307,20 @@ struct _PROCESS_INFORMATION { char _pad; _PROCESS_INFORMATION(...); template<cla
 struct _SECURITY_ATTRIBUTES { char _pad; _SECURITY_ATTRIBUTES(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct _STARTUPINFOA { char _pad; _STARTUPINFOA(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 struct _SYSTEMTIME { char _pad; _SYSTEMTIME(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
-template<class...> struct PTR_s___ { char _pad; PTR_s___(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 template<class...> struct _func_basic_ostream { char _pad; _func_basic_ostream(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 template<class...> struct basic_string { char _pad; basic_string(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Bias; static int Data1; static int Data2; static int DaylightBias; static int DaylightDate; static int DebugInfo; static int LockCount; static int LockSemaphore; static int OwningThread; static int RecursionCount; static int SpinCount; static int StandardBias; static int StandardDate; static int bInheritHandle; static int cb; static int dwFillAttribute; static int dwFlags; static int dwProcessId; static int dwThreadId; static int dwX; static int dwXCountChars; static int dwXSize; static int dwY; static int dwYCountChars; static int dwYSize; static int hProcess; static int hStdError; static int hStdInput; static int hStdOutput; static int hThread; static int lpDesktop; static int lpReserved; static int lpSecurityDescriptor; static int lpTitle; static int nLength; static int unused; static int wDay; static int wDayOfWeek; static int wHour; static int wMilliseconds; static int wMinute; static int wMonth; static int wSecond; static int wShowWindow; static int wYear; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 typedef void *ACTION;
 typedef void *AFTER;
 typedef void *ALLOW_UNKNOWN_MODEL;
 typedef void *ANALYZE;
+typedef void *ASCII;
 typedef void *CASCADE;
 typedef void *CHAR;
 typedef void *CHECK;
 typedef void *DB;
 typedef void *DEFAULT;
 typedef void *DIDL;
+typedef void *E;
 typedef void *HKEY;
 typedef void *HTTP;
 typedef void *ID;
@@ -299,6 +335,7 @@ typedef void *LPSECURITY_ATTRIBUTES;
 typedef void *LPSTR;
 typedef void *LPWSTR;
 typedef void *LSTATUS;
+typedef void *MXCSR;
 typedef void *NO;
 typedef void *NOT;
 typedef void *OLECHAR;
@@ -316,7 +353,9 @@ typedef void *X;
 typedef void *Y;
 typedef void *ZP;
 typedef void *_DIDL_Lite;
+typedef void *_Func;
 typedef void *_Ipfx;
+typedef void (*_func_4879)(...);
 typedef void (*_func_void_void_ptr)(...);
 using namespace std;
 struct Recovered_Bulk { char _pad; void __thiscall m_FUN_1086d990(undefined4 param_2); template<class... A> int m_FUN_1086d990(A...); void __thiscall m_FUN_10a3e140(undefined4 param_2); template<class... A> int m_FUN_10a3e140(A...); undefined1 __thiscall m_FUN_10c71f40(undefined4 *param_2,undefined4 param_3); template<class... A> int m_FUN_10c71f40(A...); undefined4 * __thiscall m_FUN_10d3bf10(undefined4 *param_2,int *param_3); template<class... A> int m_FUN_10d3bf10(A...); void __thiscall m_FUN_10d93ba0(undefined1 *param_2); template<class... A> int m_FUN_10d93ba0(A...); undefined4 * __thiscall m_FUN_10ef34f0(byte param_2); template<class... A> int m_FUN_10ef34f0(A...); undefined4 * __thiscall m_FUN_10efc450(undefined4 *param_2); template<class... A> int m_FUN_10efc450(A...); void __thiscall m_FUN_10f85160(int param_2,short *param_3); template<class... A> int m_FUN_10f85160(A...); int __thiscall m_FUN_11019290(void *param_2,undefined4 param_3,size_t param_4); template<class... A> int m_FUN_11019290(A...); void __thiscall m_FUN_1106d3a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
@@ -324,13 +363,15 @@ struct Recovered_Bulk { char _pad; void __thiscall m_FUN_1086d990(undefined4 par
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
             undefined4 param_14,undefined4 param_15); template<class... A> int m_FUN_1106d3a0(A...); void __thiscall m_FUN_11094940(undefined4 *param_2,int *param_3,undefined4 *param_4); template<class... A> int m_FUN_11094940(A...); void __thiscall m_FUN_11115d10(undefined1 *param_2,undefined4 param_3); template<class... A> int m_FUN_11115d10(A...); void __thiscall m_FUN_11124a80(byte *param_2,undefined4 *param_3); template<class... A> int m_FUN_11124a80(A...); void __thiscall m_FUN_111e86b0(undefined4 param_2); template<class... A> int m_FUN_111e86b0(A...); void __thiscall m_FUN_11201af0(byte *param_2,undefined4 param_3); template<class... A> int m_FUN_11201af0(A...); bool __thiscall m_FUN_11250610(int *param_2,undefined4 param_3,int param_4,int param_5,int param_6,
             int *param_7,char *param_8); template<class... A> int m_FUN_11250610(A...); void __thiscall m_FUN_11252260(undefined4 param_2); template<class... A> int m_FUN_11252260(A...); void __thiscall m_FUN_11263bc0(WORD *param_2,char param_3,int param_4); template<class... A> int m_FUN_11263bc0(A...); bool __thiscall m_FUN_11298db0(undefined4 param_2,uint param_3,int param_4); template<class... A> int m_FUN_11298db0(A...); int __thiscall m_FUN_113d2860(undefined4 *param_2,undefined4 param_3,uint param_4,int param_5,
-            int *param_6); template<class... A> int m_FUN_113d2860(A...); };
+            int *param_6); template<class... A> int m_FUN_113d2860(A...); void __thiscall m_FUN_1148a139(void); template<class... A> int m_FUN_1148a139(A...); };
 
 extern __declspec(dllimport) int CLSIDFromString(...);
 extern __declspec(dllimport) int CloseHandle(...);
 extern __declspec(dllimport) int CreatePipe(...);
 extern __declspec(dllimport) int CreateProcessA(...);
+extern __declspec(dllimport) int DeleteCriticalSection(...);
 extern __declspec(dllimport) int DuplicateHandle(...);
+extern __declspec(dllimport) int ExpandEnvironmentStringsA(...);
 extern int FUN_1005ef7a(...);
 extern int FUN_1086eaf0(...);
 extern int FUN_1086ed30(...);
@@ -341,6 +382,8 @@ extern int FUN_10baec50(...);
 extern int FUN_11124530(...);
 extern int FUN_1113f500(...);
 extern int FUN_1113f505(...);
+extern int FUN_112b0e20(...);
+extern int FUN_112b0eb0(...);
 extern int FUN_112b2930(...);
 extern int FUN_112b4020(...);
 extern int FUN_112b7970(...);
@@ -512,6 +555,7 @@ extern int FUN_113cdf40(...);
 extern int FUN_113ce210(...);
 extern int FUN_113ce6d0(...);
 extern int FUN_113d2b80(...);
+extern int FUN_113d7bf0(...);
 extern int FUN_113db795(...);
 extern int FUN_113e23d0(...);
 extern int FUN_113eaf64(...);
@@ -615,11 +659,14 @@ extern int FUN_11437a3d(...);
 extern int FUN_11437a74(...);
 extern int FUN_11437a79(...);
 extern int FUN_11437a7c(...);
+extern int FUN_11465ac0(...);
+extern int FUN_1147dbe0(...);
 extern int FUN_11862580(...);
 extern __declspec(dllimport) int GetAdaptersInfo(...);
 extern __declspec(dllimport) int GetCurrentProcess(...);
 extern __declspec(dllimport) int GetLastError(...);
 extern __declspec(dllimport) int GetNumberOfInterfaces(...);
+extern __declspec(dllimport) int GetWindowsDirectoryA(...);
 extern __declspec(dllimport) int InitializeCriticalSection(...);
 extern int LOCK(...);
 extern __declspec(dllimport) int MultiByteToWideChar(...);
@@ -631,9 +678,13 @@ extern __declspec(dllimport) int ReadFile(...);
 extern __declspec(dllimport) int RegCloseKey(...);
 extern __declspec(dllimport) int RegEnumKeyExA(...);
 extern __declspec(dllimport) int RegOpenKeyExA(...);
+extern __declspec(dllimport) int RegQueryValueExA(...);
 extern __declspec(dllimport) int RegQueryValueExW(...);
+extern int SUB104(...);
+extern int SUB108(...);
 extern int SUB148(...);
 extern __declspec(dllimport) int SetHandleInformation(...);
+extern __declspec(dllimport) int SetLastError(...);
 extern int Sub(...);
 extern __declspec(dllimport) int SystemTimeToTzSpecificLocalTime(...);
 extern __declspec(dllimport) int TerminateProcess(...);
@@ -641,23 +692,33 @@ extern int UNLOCK(...);
 extern int ___scrt_is_ucrt_dll_in_use(...);
 extern int __alldiv(...);
 extern int __allmul(...);
+extern int __onexit(...);
 extern int _atexit(...);
 extern int _eh_vector_constructor_iterator_(...);
+extern int _eh_vector_destructor_iterator_(...);
+extern __declspec(dllimport) int _errno(...);
 extern __declspec(dllimport) int _gmtime64(...);
 extern __declspec(dllimport) int _gmtime64_s(...);
 extern __declspec(dllimport) int _invalid_parameter_noinfo_noreturn(...);
 extern __declspec(dllimport) int _localtime64(...);
 extern __declspec(dllimport) int _localtime64_s(...);
 extern __declspec(dllimport) int _mktime64(...);
+extern __declspec(dllimport) int _stricmp(...);
 extern __declspec(dllimport) int _time64(...);
 extern __declspec(dllimport) int atoi(...);
 extern __declspec(dllimport) int atol(...);
+extern int builtin_strncpy(...);
 extern int createPropertyBag(...);
 extern int createSCNullAsyncOperation(...);
 extern int createSCStringArray(...);
+extern __declspec(dllimport) int crt_atexit(...);
 extern int divpd(...);
 extern int failed(...);
+extern __declspec(dllimport) int fclose(...);
 extern __declspec(dllimport) int ferror(...);
+extern __declspec(dllimport) int floor(...);
+extern __declspec(dllimport) int fopen(...);
+extern __declspec(dllimport) int frexp(...);
 extern int func_0x10015311(...);
 extern int hit(...);
 extern __declspec(dllimport) int isalnum(...);
@@ -665,15 +726,20 @@ extern __declspec(dllimport) int libm_sse2_log_precise(...);
 extern __declspec(dllimport) int longjmp(...);
 extern __declspec(dllimport) int memchr(...);
 extern __declspec(dllimport) int memmove(...);
+extern __declspec(dllimport) int modf(...);
 extern int operator_new(...);
 extern int pmovsxwd(...);
 extern int pmovzxwd(...);
 extern int pmulld(...);
+extern __declspec(dllimport) int register_onexit_function(...);
+extern int sCAL(...);
 extern int stored(...);
+extern __declspec(dllimport) int strchr(...);
 extern __declspec(dllimport) int strncat(...);
 extern __declspec(dllimport) int strncmp(...);
 extern __declspec(dllimport) int strpbrk(...);
 extern __declspec(dllimport) int strrchr(...);
+extern __declspec(dllimport) int strtod(...);
 extern __declspec(dllimport) int strtok(...);
 extern int thunk_FUN_10118c40(...);
 extern int thunk_FUN_1011be40(...);
@@ -917,10 +983,14 @@ extern int thunk_FUN_112aa500(...);
 extern int thunk_FUN_112aa790(...);
 extern int thunk_FUN_112af4e0(...);
 extern int thunk_FUN_112b0270(...);
+extern int thunk_FUN_112b9e10(...);
 extern int thunk_FUN_112ba570(...);
 extern int thunk_FUN_112ba6c0(...);
 extern int thunk_FUN_112ba720(...);
 extern int thunk_FUN_112bb1d0(...);
+extern int thunk_FUN_112bc250(...);
+extern int thunk_FUN_112bc4c0(...);
+extern int thunk_FUN_112bcb80(...);
 extern int thunk_FUN_1133fce0(...);
 extern int thunk_FUN_11390f20(...);
 extern int thunk_FUN_113949e0(...);
@@ -945,6 +1015,8 @@ extern int thunk_FUN_113d39f0(...);
 extern int thunk_FUN_113d3bb0(...);
 extern int thunk_FUN_113d3c80(...);
 extern int thunk_FUN_113d3e30(...);
+extern int thunk_FUN_113d95a0(...);
+extern int thunk_FUN_113d9620(...);
 extern int thunk_FUN_113dc730(...);
 extern int thunk_FUN_113dde70(...);
 extern int thunk_FUN_113e5e30(...);
@@ -973,8 +1045,11 @@ extern int thunk_FUN_1145c460(...);
 extern int thunk_FUN_1145ddd0(...);
 extern int thunk_FUN_1145de30(...);
 extern int thunk_FUN_1145de60(...);
+extern int thunk_FUN_114621a0(...);
 extern int thunk_FUN_1146c180(...);
 extern int thunk_FUN_1146c9e0(...);
+extern int thunk_FUN_1146cad0(...);
+extern int thunk_FUN_11489320(...);
 extern int thunk_FUN_1148a50e(...);
 extern int thunk_FUN_1148aaa4(...);
 extern int thunk_FUN_1148ab00(...);
@@ -987,6 +1062,7 @@ extern int thunk_FUN_118064a0(...);
 extern int DAT_00000007;
 extern int DAT_0000000a;
 extern int DAT_0000000c;
+extern int DAT_00000014;
 extern int DAT_1186d2ee;
 extern int DAT_1186d560;
 extern int DAT_1187b440;
@@ -999,6 +1075,8 @@ extern int DAT_1189dab8;
 extern int DAT_1189dabc;
 extern int DAT_1189f4a8;
 extern int DAT_118a1c40;
+extern int DAT_118a1c50;
+extern int DAT_118a1c90;
 extern int DAT_118d39d4;
 extern int DAT_118da62c;
 extern int DAT_118e8d3c;
@@ -1009,6 +1087,7 @@ extern int DAT_119106bc;
 extern int DAT_119106be;
 extern int DAT_119190cc;
 extern int DAT_1194bf40;
+extern int DAT_1195ec18;
 extern int DAT_1195f830;
 extern int DAT_119d21d0;
 extern int DAT_119d21d8;
@@ -1025,6 +1104,9 @@ extern int DAT_119df0a0;
 extern int DAT_119df9ec;
 extern int DAT_119e4e04;
 extern int DAT_119e8d20;
+extern int DAT_119e9840;
+extern int DAT_119e9844;
+extern int DAT_119e9846;
 extern int DAT_119f77dc;
 extern int DAT_119f7d40;
 extern int DAT_119f7da0;
@@ -1058,7 +1140,11 @@ extern int DAT_11b8a9a0;
 extern int DAT_11b8aad8;
 extern int DAT_11b9f404;
 extern int DAT_11bf1358;
+extern int DAT_11c03cc0;
+extern int DAT_11c03cd0;
 extern int DAT_11c03ce8;
+extern int DAT_11c05410;
+extern int DAT_11c05430;
 extern int DAT_1211e604;
 extern int DAT_1211e8d4;
 extern int DAT_1211e8e0;
@@ -1122,7 +1208,9 @@ extern int DAT_122f9ae4;
 extern int DAT_122f9ae8;
 extern int DAT_122f9aec;
 extern int DAT_122f9af0;
+extern int DAT_122fabcc;
 extern int DAT_122fabd8;
+extern int DAT_122fabe0;
 extern int DAT_122faff4;
 extern int RegCloseKey_exref;
 extern int RegOpenKeyExA_exref;
@@ -1190,6 +1278,7 @@ extern int ghidra_vftable_SCStrPropDelegate;
 extern int ghidra_vftable_SCSwfObjHHListener;
 extern int ghidra_vftable_Tarball;
 extern int ghidra_vftable_l2_RRawStreamWriter;
+extern int in_ST0;
 extern int in_XMM0_Qa;
 extern int in_XMM1;
 extern int in_stack_00000020;
@@ -1207,6 +1296,7 @@ extern int uStackY_68;
 extern int uStack_10;
 extern int uStack_108;
 extern int uStack_14;
+extern int uStack_18;
 extern int uStack_1c;
 extern int uStack_20;
 extern int uStack_24;
@@ -1215,6 +1305,7 @@ extern int uStack_2c;
 extern int uStack_30;
 extern int uStack_34;
 extern int uStack_4;
+extern int uStack_47;
 extern int uStack_48;
 extern int uStack_4a;
 extern int uStack_4c;
@@ -1346,6 +1437,12 @@ extern undefined1 LAB_112a8f35[];
 extern undefined1 LAB_112a8f50[];
 extern undefined1 LAB_112a8f63[];
 extern undefined1 LAB_112aad3b[];
+extern undefined1 LAB_112b1562[];
+extern undefined1 LAB_112b15a1[];
+extern undefined1 LAB_112b15c3[];
+extern undefined1 LAB_112b16d5[];
+extern undefined1 LAB_112b62a7[];
+extern undefined1 LAB_112b6301[];
 extern undefined1 LAB_1130215d[];
 extern undefined1 LAB_11305e71[];
 extern undefined1 LAB_1130601d[];
@@ -1420,7 +1517,12 @@ extern undefined1 LAB_113d1123[];
 extern undefined1 LAB_113d2967[];
 extern undefined1 LAB_113d2a23[];
 extern undefined1 LAB_113d2a7f[];
+extern undefined1 LAB_113d87e6[];
+extern undefined1 LAB_113d88d6[];
 extern undefined1 LAB_1141d36c[];
+extern undefined1 LAB_1146122f[];
+extern undefined1 LAB_114612f1[];
+extern undefined1 LAB_114613e4[];
 extern undefined1 LAB_1160ac45[];
 extern undefined1 LAB_1162ad45[];
 extern undefined1 LAB_1162c04c[];
@@ -1476,6 +1578,7 @@ extern int *PTR_GetSystemTime_121223c0;
 extern int *PTR_GetTickCount_121223f0;
 extern int *PTR_QueryPerformanceCounter_121224c8;
 extern int *PTR_free_12121e64;
+extern int *PTR_guard_check_icall_12302000;
 extern int *PTR_realloc_12121e60;
 extern int *PTR_s_COMPILER_msvc_1928_119fc028;
 extern int *PTR_s_acr_hdpi_1211e5f0;
@@ -1560,8 +1663,12 @@ void FUN_112a8d70(undefined4 *param_1,int param_2,undefined4 *param_3);
 template<class... A> int FUN_112a8d70(A...);
 void FUN_112aa9f0(char *param_1,int *param_2,char param_3);
 template<class... A> int FUN_112aa9f0(A...);
+void FUN_112b1450(char *param_1,void *param_2,uint param_3);
+template<class... A> int FUN_112b1450(A...);
 void FUN_112b41c0(int *param_1);
 template<class... A> int FUN_112b41c0(A...);
+void FUN_112b60e0(char *param_1,undefined4 param_2,int *param_3);
+template<class... A> int FUN_112b60e0(A...);
 void FUN_112b7810(int param_1,int param_2,undefined4 param_3);
 template<class... A> int FUN_112b7810(A...);
 void FUN_112b81d0(int param_1,undefined4 param_2);
@@ -1570,6 +1677,8 @@ int FUN_112e4550(int a1, int a2, int a3, int a4);
 template<class... A> int FUN_112e4550(A...);
 LPCRITICAL_SECTION FUN_112f5bb0(PRTL_CRITICAL_SECTION_DEBUG param_1);
 template<class... A> int FUN_112f5bb0(A...);
+void FUN_112f5c40(LPCRITICAL_SECTION param_1);
+template<class... A> int FUN_112f5c40(A...);
 void FUN_112fef90(undefined4 param_1,size_t param_2,void *param_3);
 template<class... A> int FUN_112fef90(A...);
 int FUN_11301fe0(int param_1,uint param_2,int param_3,int param_4,int param_5);
@@ -1603,6 +1712,8 @@ void FUN_113d0870(undefined4 param_1,int param_2);
 template<class... A> int FUN_113d0870(A...);
 void FUN_113d0e60(undefined4 param_1,int param_2,char param_3,undefined4 param_4,undefined4 param_5, undefined4 param_6,undefined4 param_7,uint *param_8);
 template<class... A> int FUN_113d0e60(A...);
+void FUN_113d8690(int param_1,undefined4 param_2,code *param_3,code *param_4,undefined4 param_5, code *param_6,undefined4 param_7,int *param_8,code *param_9,int param_10);
+template<class... A> int FUN_113d8690(A...);
 int FUN_113db790(int a1);
 template<class... A> int FUN_113db790(A...);
 int FUN_113df049(int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, int a9);
@@ -1641,33 +1752,41 @@ int FUN_11437a00(int a1);
 template<class... A> int FUN_11437a00(A...);
 int FUN_11439e39(void);
 template<class... A> int FUN_11439e39(A...);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ int FUN_1145c2a0(char *param_1,double *param_2);
+template<class... A> int FUN_1145c2a0(A...);
+void FUN_11460f30(undefined4 param_1,char *param_2,uint param_3,double param_4,uint param_5);
+template<class... A> int FUN_11460f30(A...);
 void FUN_1146c1b0(undefined4 param_1,int param_2);
 template<class... A> int FUN_1146c1b0(A...);
+void FUN_1147fa50(int param_1,undefined1 param_2,char *param_3,char *param_4);
+template<class... A> int FUN_1147fa50(A...);
 void FUN_114894f0(int *param_1,byte *param_2,byte *param_3);
 template<class... A> int FUN_114894f0(A...);
+void __cdecl FUN_1148a1d0(::_Facet_base *param_1);
+template<class... A> int FUN_1148a1d0(A...);
 /* Library Function - Single Match ___scrt_acquire_startup_lock Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */undefined4 FUN_1148a5d1(void);
 template<class... A> int FUN_1148a5d1(A...);
+/* Library Function - Single Match __onexit Library: Visual Studio 2019 Release */_onexit_t __cdecl FUN_1148a905(_onexit_t _Func);
+template<class... A> int FUN_1148a905(A...);
+/* Library Function - Single Match _atexit Library: Visual Studio 2019 Release */int __cdecl FUN_1148a968(_func_4879 *param_1);
+template<class... A> int FUN_1148a968(A...);
+int FUN_1148b660(void);
+template<class... A> int FUN_1148b660(A...);
+int FUN_1148b671(void);
+template<class... A> int FUN_1148b671(A...);
+uint FUN_1148b747(void);
+template<class... A> int FUN_1148b747(A...);
+longlong FUN_1148b7d0(void);
+template<class... A> int FUN_1148b7d0(A...);
+undefined8 FUN_1148b8fc(void);
+template<class... A> int FUN_1148b8fc(A...);
+/* Library Function - Single Match __filter_x86_sse2_floating_point_exception_default Library: Visual Studio 2019 Release */int FUN_1148d1ef(int param_1);
+template<class... A> int FUN_1148d1ef(A...);
+void FUN_116dce71(void);
+template<class... A> int FUN_116dce71(A...);
 int FUN_11862490(void);
 template<class... A> int FUN_11862490(A...);
 // Reference entry 1000155a; body size 5 bytes.
-extern char iRam00000001;
-extern char pbRam1211e5d4;
-extern char pbRam1211e5d8;
-extern char pbRam1211e5dc;
-extern char pppppbRam12120580;
-extern char pppppbRam12120584;
-extern char pppppbRam12120588;
-extern char wMonth;
-extern char wDayOfWeek;
-extern char wHour;
-extern char lpReserved2;
-typedef int errno_t;
-typedef int word;
-extern char WORD_12411e10_v[];
-#define WORD_12411e10 WORD_12411e10_v
-extern char _bStack0000001c;
-extern char Self_v[];
-#define Self Self_v
 #line 1 "ENTRY_1000155a"
 
 void FUN_1000155a(undefined4 *param_1,int param_2,undefined4 *param_3)
@@ -12081,6 +12200,166 @@ LAB_112aad3b:
 }
 
 
+// Reference entry 112b1450; body size 714 bytes.
+#line 1 "ENTRY_112b1450"
+
+void FUN_112b1450(char *param_1,void *param_2,uint param_3)
+
+{
+  bool bVar1;
+  bool bVar2;
+  char *pcVar3;
+  int iVar4;
+  uint uVar5;
+  uint *puVar6;
+  char cVar7;
+  int iVar8;
+  uint *puVar9;
+  uint local_34;
+  int local_30;
+  int local_2c;
+  uint *local_28;
+  uint *local_24;
+  char *local_20;
+  char *local_1c;
+  void *local_18;
+  undefined1 local_14 [4];
+  undefined4 uStack_10;
+  undefined4 uStack_c;
+  undefined4 uStack_8;
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)&local_34);
+  puVar6 = (uint *)((uint *)(uint)&local_14);
+  local_18 = (void *)(param_2);
+  local_14[0] = (undefined1)(*(undefined1(*)[4])(int *)(uintptr_t)(0x0));
+  uStack_10 = (undefined4)(0);
+  uStack_c = (undefined4)(0);
+  uStack_8 = (undefined4)(0);
+  local_28 = (uint *)((uint *)0x0);
+  cVar7 = (char)(*param_1);
+  if (cVar7 == ':') {
+    cVar7 = (char)(param_1[1]);
+    param_1 = (char *)(param_1 + 1);
+    if (cVar7 != ':') goto LAB_112b16d5;
+  }
+  local_34 = (uint)(0);
+  bVar1 = (bool)(false);
+  local_2c = (int)(0);
+  local_30 = (int)(-1);
+  iVar8 = (int)((int)cVar7);
+  local_1c = (char *)(param_1);
+  if (cVar7 != '\0') {
+    local_24 = (uint *)((uint *)((uint)&local_14 + 2));
+    do {
+      param_1 = (char *)(param_1 + 1);
+      local_20 = (char *)("0123456789abcdef");
+      pcVar3 = (char *)(strchr("0123456789abcdef",iVar8), 0);
+      if ((char *)(pcVar3) == (char *)(0x0)) {
+        local_20 = (char *)("0123456789ABCDEF");
+        pcVar3 = (char *)(strchr("0123456789ABCDEF",iVar8), 0);
+        if ((char *)(pcVar3) != (char *)(0x0)) goto LAB_112b1562;
+        if (iVar8 != 0x3a) {
+          if (iVar8 != 0x2e) {
+            if ((iVar8 != 0x2f) ||
+               (iVar4 = (int)(FUN_112b0e20(param_1,&local_30), 0), iVar8 = (int)(local_30), puVar9 = (uint *)(puVar6), iVar4 < 1)) goto LAB_112b16d5;
+            goto LAB_112b15a1;
+          }
+          puVar9 = (uint *)(puVar6 + 1);
+          if (((uint *)((&local_4)) < (uint *)(puVar9)) || (iVar8 = (int)(FUN_112b0eb0(local_1c,puVar6,&local_30), 0), iVar8 < 1)) goto LAB_112b16d5;
+          bVar2 = (bool)(true);
+          iVar8 = (int)(local_30);
+          goto LAB_112b15c3;
+        }
+        local_1c = (char *)(param_1);
+        if (bVar1) {
+          if (*param_1 == (char)(('\0'))) goto LAB_112b16d5;
+          if ((uint *)((&local_4)) < (uint *)(local_24)) {
+            thunk_FUN_1148ac28();
+            return;
+          }
+          local_24 = (uint *)((uint *)((int)local_24 + 2));
+          bVar1 = (bool)(false);
+          *(char*)puVar6 = (char)((uint *)((char)(local_34 >> 8)));
+          *(char*)((int)puVar6 + 1) = (char)((char)local_34);
+          puVar6 = (uint *)((uint *)((int)puVar6 + 2));
+          local_2c = (int)(0);
+          local_34 = (uint)(0);
+          puVar9 = (uint *)(local_28);
+        }
+        else {
+          puVar9 = (uint *)(puVar6);
+          if ((uint *)(local_28) != (uint *)(0x0)) goto LAB_112b16d5;
+        }
+      }
+      else {
+LAB_112b1562:
+        uVar5 = (uint)(thunk_FUN_112b9e10((int)pcVar3 - (int)local_20), 0);
+        local_34 = (uint)(local_34 << 4 | uVar5);
+        local_2c = (int)(local_2c + 1);
+        if (4 < local_2c) goto LAB_112b16d5;
+        bVar1 = (bool)(true);
+        puVar9 = (uint *)(local_28);
+      }
+      local_28 = (uint *)(puVar9);
+      iVar8 = (int)((int)*param_1);
+    } while (iVar8 != 0);
+  }
+  iVar8 = (int)(-1);
+  puVar9 = (uint *)(puVar6);
+LAB_112b15a1:
+  bVar2 = (bool)(false);
+  if (bVar1) {
+    if ((uint *)(&local_4) < (uint *)((int)puVar9 + 2)) goto LAB_112b16d5;
+    *(char*)puVar9 = (char)((uint *)((char)(local_34 >> 8)));
+    *(char*)((int)puVar9 + 1) = (char)((char)local_34);
+    puVar9 = (uint *)((uint *)((int)puVar9 + 2));
+  }
+LAB_112b15c3:
+  if (iVar8 == -1) {
+    iVar8 = (int)(0x80);
+  }
+  iVar4 = (int)((int)(iVar8 + 0xf + (iVar8 + 0xf >> 0x1f & 0xfU)) >> 4);
+  if (iVar4 < 2) {
+    iVar4 = (int)(2);
+  }
+  if (bVar2) {
+    iVar4 = (int)(8);
+  }
+  puVar6 = (uint *)((uint *)((uint)&local_14 + iVar4 * 2));
+  if ((uint *)(local_28) == (uint *)(0x0)) {
+    if ((uint *)((puVar9)) != (uint *)(puVar6)) goto LAB_112b16d5;
+  }
+  else {
+    iVar4 = (int)((int)puVar9 - (int)local_28);
+    if ((uint *)((puVar9)) == (uint *)(puVar6)) {
+LAB_112b16d5:
+      SetLastError(2);
+      thunk_FUN_1148ac28();
+      return;
+    }
+    if (0 < iVar4) {
+      do {
+        puVar9 = (uint *)((uint *)((int)puVar9 + -1));
+        puVar6 = (uint *)((uint *)((int)puVar6 + -1));
+        *(undefined1*)puVar6 = (undefined1)((uint *)(*(undefined1 *)puVar9));
+        *(undefined1*)puVar9 = (undefined1)((uint *)(0));
+        iVar4 = (int)(iVar4 + -1);
+      } while (iVar4 != 0);
+    }
+  }
+  uVar5 = (uint)((int)(iVar8 + 7 + (iVar8 + 7 >> 0x1f & 7U)) >> 3);
+  if (uVar5 <= param_3) {
+    memcpy(local_18,(char *)&local_14,uVar5);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  SetLastError(0x2738);
+  thunk_FUN_1148ac28();
+  return;
+}
+
+
 // Reference entry 112b41c0; body size 1166 bytes.
 #line 1 "ENTRY_112b41c0"
 
@@ -12325,6 +12604,106 @@ void FUN_112b41c0(int *param_1)
   return;
 
  } catch (...) { }
+}
+
+
+// Reference entry 112b60e0; body size 574 bytes.
+#line 1 "ENTRY_112b60e0"
+
+void FUN_112b60e0(char *param_1,undefined4 param_2,int *param_3)
+
+{
+  int *piVar1;
+  char *_Str1;
+  undefined4 *puVar2;
+  int iVar3;
+  LSTATUS LVar4;
+  FILE *_File;
+  DWORD DVar5;
+  int iVar6;
+  undefined4 *puVar7;
+  int *piVar8;
+  FILE *local_214;
+  undefined1 local_210 [4];
+  CHAR local_20c [6];
+  undefined1 local_206 [254];
+  BYTE local_108 [260];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)&local_214);
+  local_20c[0] = (CHAR)('\0');
+  iVar3 = (int)(thunk_FUN_112ba570(), 0);
+  if (iVar3 == 3) {
+    LVar4 = (LSTATUS)(RegOpenKeyExA((HKEY)0x80000002,"System\\CurrentControlSet\\Services\\Tcpip\\Parameters", 0,0x20019,(PHKEY)&local_214), 0);
+    if (LVar4 == (LSTATUS)(0)) {
+      local_210[0] = (undefined1)(*(undefined1(*)[4])(int *)(uintptr_t)(0x104));
+      RegQueryValueExA((HKEY)local_214,"DatabasePath",(LPDWORD)0x0,(LPDWORD)0x0,(uint)&local_108, (LPDWORD)(uint)&local_210);
+      ExpandEnvironmentStringsA((LPCSTR)(uint)&local_108,(uint)&local_20c,0x104);
+      RegCloseKey((HKEY)local_214);
+    }
+  }
+  else {
+    if (iVar3 != 2) goto LAB_112b6301;
+    GetWindowsDirectoryA((uint)&local_20c,0x104);
+  }
+  puVar2 = (undefined4 *)((undefined4 *)((uint)&local_210 + 3));
+  do {
+    puVar7 = (undefined4 *)(puVar2);
+    puVar2 = (undefined4 *)((undefined4 *)((int)puVar7 + 1));
+  } while (*(char *)((int)puVar7 + 1) != '\0');
+  *(undefined4*)((int)puVar7 + 1) = (undefined4)(DAT_119e9840);
+  *(undefined2*)((int)puVar7 + 5) = (undefined2)(DAT_119e9844);
+  *(undefined1*)((int)puVar7 + 7) = (undefined1)(DAT_119e9846);
+  iVar3 = (int)(thunk_FUN_112bc4c0(param_1), 0);
+  if (iVar3 == 0) {
+    _File = (FILE *)(fopen((uint)&local_20c,"r"), 0);
+    local_214 = (FILE *)(_File);
+    if ((FILE *)(_File) != (FILE *)(0x0)) {
+      iVar3 = (int)(thunk_FUN_112bcb80(_File,param_2,param_3), 0);
+      if (iVar3 == 0) {
+        while (iVar6 = (int)(_stricmp(*(char **)*param_3,param_1), 0), iVar6 != 0) {
+          piVar8 = (int *)(*(int **)(*param_3 + 4), 0);
+          _Str1 = (char *)((char *)*piVar8);
+          while ((char *)(_Str1) != (char *)(0x0)) {
+            iVar6 = (int)(_stricmp(_Str1,param_1), 0);
+            if (iVar6 == 0) {
+              _File = (FILE *)(local_214);
+              if (*piVar8 != (int)((0))) goto LAB_112b62a7;
+              break;
+            }
+            piVar1 = (int *)(piVar8 + 1);
+            piVar8 = (int *)(piVar8 + 1);
+            _Str1 = (char *)((char *)*piVar1);
+          }
+          thunk_FUN_112bc250(*param_3);
+          _File = (FILE *)(local_214);
+          iVar3 = (int)(thunk_FUN_112bcb80(local_214,param_2,param_3), 0);
+          if (iVar3 != 0) break;
+        }
+      }
+LAB_112b62a7:
+      fclose(_File);
+      if (iVar3 == 0xd) {
+        *param_3 = (int)(0);
+        thunk_FUN_1148ac28();
+        return;
+      }
+      if (iVar3 != 0) {
+        *param_3 = (int)(0);
+      }
+      thunk_FUN_1148ac28();
+      return;
+    }
+    DVar5 = (DWORD)(GetLastError(), 0);
+    if ((DVar5 != (DWORD)(2)) && (DVar5 != (DWORD)(3))) {
+      *param_3 = (int)(0);
+      thunk_FUN_1148ac28();
+      return;
+    }
+  }
+LAB_112b6301:
+  thunk_FUN_1148ac28();
+  return;
 }
 
 
@@ -12586,6 +12965,40 @@ LPCRITICAL_SECTION FUN_112f5bb0(PRTL_CRITICAL_SECTION_DEBUG param_1)
     InitializeCriticalSection(lpCriticalSection);
   }
   return (LPCRITICAL_SECTION)(lpCriticalSection);
+}
+
+
+// Reference entry 112f5c40; body size 113 bytes.
+#line 1 "ENTRY_112f5c40"
+
+void FUN_112f5c40(LPCRITICAL_SECTION param_1)
+
+{
+  int iVar1;
+  
+  if ((((__RFLD *)&param_1)[1].DebugInfo == 0x0) ||
+     ((uintptr_t)(((__RFLD *)&param_1)[1].DebugInfo)== (uintptr_t)((PRTL_CRITICAL_SECTION_DEBUG)0x1))) {
+    DeleteCriticalSection(param_1);
+    if (DAT_12121e80 == 0) {
+      (*(code *)(uint)(DAT_12121ea4))(param_1);
+    }
+    else {
+      if (DAT_122f6d88 != 0) {
+        (*(code *)(uint)(DAT_12121ed0))(DAT_122f6d88);
+      }
+      iVar1 = (int)((*(code *)(uint)(DAT_12121eac))(param_1), 0);
+      DAT_122f6d28 = (int)(DAT_122f6d28 - iVar1);
+      DAT_122f6d4c = (int)(DAT_122f6d4c + -1);
+      (*(code *)(uint)(DAT_12121ea4))(param_1);
+      if (DAT_122f6d88 != 0) {
+                    
+                    
+        (*(code *)(uint)(DAT_12121ed8))();
+        return;
+      }
+    }
+  }
+  return;
 }
 
 
@@ -19186,6 +19599,114 @@ LAB_113d2a7f:
 }
 
 
+// Reference entry 113d8690; body size 638 bytes.
+#line 1 "ENTRY_113d8690"
+
+void FUN_113d8690(int param_1,undefined4 param_2,code *param_3,code *param_4,undefined4 param_5,
+                 code *param_6,undefined4 param_7,int *param_8,code *param_9,int param_10)
+
+{
+  code *pcVar1;
+  int iVar2;
+  code *pcVar3;
+  char cVar4;
+  int *piVar5;
+  byte bVar6;
+  char cVar7;
+  undefined4 *puVar8;
+  int iVar9;
+  int iStack_60;
+  code *local_5c;
+  code *local_58;
+  undefined4 local_54;
+  undefined4 local_50;
+  code *local_4c;
+  char cStack_48;
+  undefined4 uStack_47;
+  int aiStack_24 [8];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)&iStack_60);
+  local_50 = (undefined4)(param_2);
+  bVar6 = (byte)(0);
+  local_58 = (code *)(param_3);
+  local_5c = (code *)(param_4);
+  local_54 = (undefined4)(param_5);
+  local_4c = (code *)(param_6);
+  do {
+    if (*(byte *)(param_1 + 0x109c) <= (byte)(bVar6)) {
+      thunk_FUN_1148ac28();
+      return;
+    }
+    puVar8 = (undefined4 *)((undefined4 *)(param_1 + 0x10a0 + (uint)bVar6 * 0x910));
+    iStack_60 = (int)((*local_5c)(local_54,*(undefined1 *)(puVar8 + 1),(int)puVar8 + 5,*puVar8), 0);
+    bVar6 = (byte)(bVar6 + 1);
+  } while (iStack_60 == 0);
+  iVar2 = (int)(thunk_FUN_113d9620(param_7), 0);
+  iVar9 = (int)(iStack_60);
+  if (iVar2 != 0) {
+    cVar7 = (char)((char)param_7);
+    if (cVar7 == '\x01') {
+      pcVar3 = (code *)((code *)0x20);
+    }
+    else if (cVar7 == '\x02') {
+      pcVar3 = (code *)((code *)0x10);
+    }
+    else if (cVar7 == '\x03') {
+      pcVar3 = (code *)((code *)&DAT_00000014);
+    }
+    else {
+      pcVar3 = (code *)((code *)0x0);
+      if (cVar7 == '\x04') {
+        pcVar3 = (code *)((code *)0x1c);
+      }
+    }
+    if (((code *)(pcVar3) == (code *)(param_9)) && (cVar4 = (char)(*(char *)(puVar8 + 0x201)), cVar7 == cVar4)) {
+      if (*(int *)(param_1 + 0x850) != 0) {
+        local_5c = (code *)((code *)0x20);
+        iVar2 = (int)(FUN_113d7bf0(&cStack_48,param_1,2,0x21), 0);
+        iVar9 = (int)(iStack_60);
+        if ((iVar2 == 0) || (cStack_48 != cVar7)) goto LAB_113d88d6;
+        piVar5 = (int *)(&uStack_47);
+        pcVar3 = (code *)(param_9);
+        while (pcVar1 = (code *)((uintptr_t)(pcVar3) + -4), (code *)(0x3) < (code *)((pcVar3))) {
+          if (*piVar5 != (int)(*(param_8))) goto LAB_113d87e6;
+          piVar5 = (int *)(piVar5 + 1);
+          param_8 = (int *)(param_8 + 1);
+          pcVar3 = (code *)(pcVar1);
+        }
+        if ((code *)(pcVar1) != (code *)(0xfffffffc)) {
+LAB_113d87e6:
+          if (((char)*piVar5 != (char)*param_8) ||
+             (((code *)(pcVar1) != (code *)(0xfffffffd) &&
+              ((*(char *)(((int)piVar5 + 1)) != *(char *)((int)param_8 + 1) ||
+               (((code *)(pcVar1) != (code *)(0xfffffffe) &&
+                ((*(char *)(((int)piVar5 + 2)) != *(char *)((int)param_8 + 2) ||
+                 (((code *)(pcVar1) != (code *)(0xffffffff) &&
+                  (*(char *)(((int)piVar5 + 3)) != *(char *)((int)param_8 + 3))))))))))))) goto LAB_113d88d6;
+        }
+        iVar2 = (int)(thunk_FUN_113d95a0(param_1,0,0,local_50,param_7,(uint)&aiStack_24,&local_5c), 0);
+        iVar9 = (int)(iStack_60);
+        if ((iVar2 == 0) || ((code *)(local_5c) != (code *)(param_9))) goto LAB_113d88d6;
+        cVar4 = (char)(*(char *)(puVar8 + 0x201));
+        param_8 = (int *)((uint)&aiStack_24);
+      }
+      iVar9 = (int)(iStack_60);
+      iVar2 = (int)((*local_58)(iStack_60,cVar4,*(undefined1 *)(puVar8 + 0x202),param_8,param_9, puVar8 + 0x204,puVar8[0x203]), 0);
+      if ((iVar2 != 0) && (param_10 != 0)) {
+        FUN_113d7bf0(&local_58,param_1,3,4);
+      }
+    }
+  }
+LAB_113d88d6:
+  if ((code *)(local_4c) != (code *)(0x0)) {
+    (*local_4c)(iVar9);
+  }
+  thunk_FUN_1148ac28();
+  return;
+}
+
+
 // Reference entry 113db790; body size 64 bytes.
 #line 1 "ENTRY_113db790"
 int FUN_113db790(int a1) {
@@ -21869,6 +22390,331 @@ int FUN_11439e39(void)
 }
 
 
+// Reference entry 1145c2a0; body size 171 bytes.
+#line 1 "ENTRY_1145c2a0"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+int FUN_1145c2a0(char *param_1,double *param_2)
+
+{
+  int *piVar1;
+  int iVar2;
+  char *local_c;
+  double local_8;
+  undefined2 uVar3;
+  
+  local_c = (char *)((char *)0x0);
+  *param_2 = (double)(0.0);
+  piVar1 = (int *)(_errno(), 0);
+  *piVar1 = (int)(0);
+  local_8 = (double)(strtod(param_1,&local_c), 0);
+  piVar1 = (int *)(_errno(), 0);
+  uVar3 = (undefined2)((undefined2)((uint)piVar1 >> 0x10));
+  iVar2 = (int)((uint)((uint)(uVar3) << 8 | (uint)((local_8 == 0.0) << 6 |(local_8 != local_8) << 2 | 2U | local_8 < 0.0)) << 8, 0);
+  if ((local_8 != 0.0) || ((char *)(local_c) != (char *)(param_1))) {
+    if (*piVar1 == (int)((0x22))) {
+      if (local_8 == DAT_11c03cc0) {
+        return (int)((uint)((uint)(uVar3) << 8 | (uint)((local_8 == DAT_11c03cc0) << 6 |
+                                    ((local_8 != local_8) ||(DAT_11c03cc0 != DAT_11c03cc0)) << 2 | 2U |
+                                    local_8 < DAT_11c03cc0)) << 8);
+      }
+      if (local_8 == DAT_11c03cd0) {
+        return (int)((uint)((uint)(uVar3) << 8 | (uint)((local_8 == DAT_11c03cd0) << 6 |
+                                    ((local_8 != local_8) ||(DAT_11c03cd0 != DAT_11c03cd0)) << 2 | 2U |
+                                    local_8 < DAT_11c03cd0)) << 8);
+      }
+      iVar2 = (int)((uint)((uint)(uVar3) << 8 | (uint)((local_8 == 0.0) << 6 |(local_8 != local_8) << 2 | 2U | local_8 < 0.0)) << 8, 0);
+      if (local_8 == 0.0) {
+        return (int)(iVar2);
+      }
+    }
+    else if (*piVar1 != (int)((0))) {
+      return (int)(iVar2);
+    }
+    if ((*param_1 != (char)(('\0'))) && (*local_c == (char)(('\0')))) {
+      *param_2 = (double)(local_8);
+      return (int)(((uint)((int3)((uint)iVar2 >> 8)) << 8 | (uint)(1)));
+    }
+  }
+  return (int)(iVar2);
+}
+
+
+// Reference entry 11460f30; body size 1212 bytes.
+#line 1 "ENTRY_11460f30"
+
+void FUN_11460f30(undefined4 param_1,char *param_2,uint param_3,double param_4,uint param_5)
+
+{
+  double dVar1;
+  ulonglong uVar2;
+  size_t sVar3;
+  uint uVar4;
+  size_t extraout_EDX;
+  size_t extraout_EDX_00;
+  size_t sVar5;
+  int iVar6;
+  uint uVar7;
+  char *pcVar8;
+  size_t sVar9;
+  char *_Dst;
+  char *pcVar10;
+  float10 fVar11;
+  double dVar12;
+  double dVar13;
+  double dVar14;
+  undefined4 local_30;
+  uint local_2c;
+  undefined8 local_28;
+  char *local_20;
+  char *local_1c;
+  size_t local_18;
+  undefined4 local_14;
+  double local_10;
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)&local_30);
+  local_2c = (uint)(0xf);
+  if (param_5 != 0) {
+    local_2c = (uint)(param_5);
+  }
+  local_30 = (undefined4)(param_1);
+  if (0x10 < local_2c) {
+    local_2c = (uint)(0x10);
+  }
+  local_1c = (char *)(param_2);
+  if (local_2c + 5 <= param_3) {
+    if (param_4 < 0.0) {
+      param_4 = (double)((double)((unsigned long long)((uint)((ulonglong)param_4 >> 0x20) ^ *(uint *)((char *)&DAT_118a1c90 + 4)) << 32 | (unsigned long long)((uint)((*(unsigned long long *)&(param_4)) >> ((0) * 8)) ^ (uint)DAT_118a1c90)));
+      *param_2 = (char)('-');
+      param_2 = (char *)(param_2 + 1);
+      param_3 = (uint)(param_3 - 1);
+    }
+    local_1c = (char *)(param_2);
+    local_10 = (double)(param_4);
+    if (DAT_11c05410 <= param_4) {
+      if (param_4 <= DAT_11bf1358) {
+        frexp(param_4,(int *)&local_18);
+        local_18 = (size_t)((int)(local_18 * 0x4d) >> 8);
+        local_14 = (undefined4)(local_18);
+        fVar11 = (float10)((float10)FUN_11465ac0(local_18), 0);
+        sVar9 = (size_t)(extraout_EDX);
+        dVar14 = (double)(DAT_11c05410);
+        local_28 = (undefined8)((double)fVar11);
+        sVar3 = (size_t)(local_18);
+        do {
+          local_18 = (size_t)(sVar3);
+          sVar5 = (size_t)(sVar9);
+          dVar12 = (double)(local_10);
+          local_20 = (char *)((char *)sVar5);
+          if ((dVar14 <= local_28) && (dVar13 = (double)(local_28), local_10 <= local_28)) break;
+          sVar9 = (size_t)(sVar5 + 1);
+          fVar11 = (float10)((float10)FUN_11465ac0(sVar9), 0);
+          dVar1 = (double)((double)fVar11);
+          sVar5 = (size_t)(extraout_EDX_00);
+          dVar13 = (double)(local_28);
+          local_28 = (undefined8)(dVar1);
+          sVar3 = (size_t)(sVar9);
+        } while (dVar1 <= DAT_11bf1358);
+        _Dst = (char *)(local_1c);
+        local_14 = (undefined4)(sVar5);
+        for (dVar12 = (double)(dVar12 / dVar13); DAT_118a1c50 <= dVar12; dVar12 = dVar12 / DAT_1195ec18) {
+          local_14 = (undefined4)(local_14 + 1);
+          local_20 = (char *)((char *)local_14);
+          local_18 = (size_t)(local_14);
+        }
+        if ((int)local_20 + 2U < 2) {
+          local_20 = (char *)((char *)-(int)local_20);
+          local_14 = (undefined4)(0);
+          local_18 = (size_t)(0);
+          local_28 = (undefined8)((double)((ulonglong)local_28 & 0xffffffff));
+          iVar6 = (int)(0);
+          local_1c = (char *)(local_20);
+        }
+        else {
+          iVar6 = (int)(0);
+          local_20 = (char *)((char *)0x0);
+          local_1c = (char *)((char *)0x0);
+          local_28 = (undefined8)((double)((ulonglong)local_28 & 0xffffffff));
+        }
+        do {
+          sVar9 = (size_t)(local_14);
+          if (local_20 + iVar6 + 1 < (char *)(local_1c) + local_2c) {
+            dVar12 = (double)(modf(dVar12 * DAT_1195ec18,&local_10), 0);
+            local_14 = (undefined4)(local_18);
+          }
+          else {
+            local_10 = (double)(dVar12 * DAT_1195ec18 + DAT_118a1c40);
+            local_10 = (double)(floor(local_10), 0);
+            uVar2 = (ulonglong)((ulonglong)local_28);
+            if (DAT_11c05430 < local_10) {
+              pcVar8 = (char *)(local_1c);
+              if ((char *)(local_20) == (char *)(0x0)) {
+                while (*(uint *)((char *)&local_28 + 4) != (uint)((0x0))) {
+                  if (local_10 <= DAT_11c05430) goto LAB_1146122f;
+                  pcVar10 = (char *)(_Dst + -1);
+                  iVar6 = (int)((int)*pcVar10);
+                  if (local_14 == 0xffffffff) {
+                    if (iVar6 == 0x2e) {
+                      iVar6 = (int)((int)_Dst[-2]);
+                      pcVar10 = (char *)(_Dst + -2);
+                      param_3 = (uint)(param_3 + 1);
+                      local_14 = (undefined4)(1);
+                      local_18 = (size_t)(1);
+                      *(uint*)((char *)&local_28 + 4) = (uint)((char *)(uVar2 >> 0x20));
+                    }
+                  }
+                  else {
+                    local_18 = (size_t)(local_14 + 1);
+                    local_14 = (undefined4)(local_18);
+                  }
+                  *(uint*)((char *)&local_28 + 4) = (uint)((char *)((int)*(uint *)((char *)&local_28 + 4) + -1));
+                  *(uint*)((char *)&local_28 + 0) = (uint)((undefined4)uVar2);
+                  local_10 = (double)((double)(iVar6 + -0x2f));
+                  _Dst = (char *)(pcVar10);
+                  uVar2 = (ulonglong)((ulonglong)local_28);
+                  sVar9 = (size_t)(local_14);
+                }
+                if (local_10 <= DAT_11c05430) goto LAB_1146122f;
+                local_28 = (undefined8)((double)uVar2);
+                if (sVar9 == 0xffffffff) {
+                  _Dst = (char *)(_Dst + -1);
+                  if (*_Dst == (char)(('.'))) {
+                    param_3 = (uint)(param_3 + 1);
+                    local_18 = (size_t)(1);
+                    local_14 = (undefined4)(local_18);
+                  }
+                }
+                else {
+                  local_18 = (size_t)(sVar9 + 1);
+                  local_14 = (undefined4)(local_18);
+                }
+              }
+              else {
+                local_20 = (char *)(local_20 + -1);
+                pcVar8 = (char *)(local_1c + -1);
+                if (*(uint *)((char *)&local_28 + 4) != (uint)((0x0))) {
+                  pcVar8 = (char *)(local_1c);
+                }
+              }
+              local_1c = (char *)(pcVar8);
+              local_10 = (double)(DAT_118a1c50);
+              uVar2 = (ulonglong)((ulonglong)local_28);
+            }
+LAB_1146122f:
+            local_28 = (undefined8)((double)uVar2);
+            dVar12 = (double)(0.0);
+          }
+          pcVar8 = (char *)(local_1c);
+          if (local_10 == 0.0) {
+            local_20 = (char *)(local_20 + 1);
+            pcVar8 = (char *)(*(uint *)((char *)&local_28 + 4));
+            pcVar10 = (char *)(local_1c + 1);
+            if (*(uint *)((char *)&local_28 + 4) != (uint)((0x0))) {
+              pcVar10 = (char *)(local_1c);
+            }
+          }
+          else {
+            local_1c = (char *)((char *)0x0);
+            for (pcVar10 = (char *)(local_20);(char *)( pcVar10) != (char *)(0x0); pcVar10 = pcVar10 + -1) {
+              if (local_14 != 0xffffffff) {
+                if (local_14 == 0) {
+                  *_Dst = (char)('.');
+                  _Dst = (char *)(_Dst + 1);
+                  param_3 = (uint)(param_3 - 1);
+                }
+                local_14 = (undefined4)(local_14 - 1);
+                local_18 = (size_t)(local_14);
+              }
+              *_Dst = (char)('0');
+              _Dst = (char *)(_Dst + 1);
+            }
+            if (local_14 != 0xffffffff) {
+              if (local_14 == 0) {
+                *_Dst = (char)('.');
+                _Dst = (char *)(_Dst + 1);
+                param_3 = (uint)(param_3 - 1);
+              }
+              local_18 = (size_t)(local_14 - 1);
+              local_14 = (undefined4)(local_18);
+            }
+            *_Dst = (char)((char)(int)local_10 + '0');
+            _Dst = (char *)(_Dst + 1);
+            pcVar8 = (char *)(*(uint *)((char *)&local_28 + 4) + (1 - (int)pcVar8));
+            local_28 = (undefined8)((double)((unsigned long long)(local_20 + (int)pcVar8) << 32 | (unsigned long long)((undefined4)local_28)));
+            pcVar8 = (char *)(local_20 + (int)pcVar8);
+            local_20 = (char *)(pcVar10);
+            pcVar10 = (char *)(local_1c);
+          }
+          local_1c = (char *)(pcVar10);
+          if ((local_1c +(uintptr_t)((char *)(local_2c)) <= (char *)(local_20) + (int)pcVar8) || (dVar12 <= DAT_11c05410)) goto LAB_114612f1;
+          iVar6 = (int)((int)*(uint *)((char *)&local_28 + 4));
+        } while( true );
+      }
+      if (DAT_11c05410 <= param_4) {
+        builtin_strncpy(param_2,"inf",4);
+        thunk_FUN_1148ac28();
+        return;
+      }
+    }
+    param_2[0] = (char)('0');
+    param_2[1] = (char)('\0');
+    thunk_FUN_1148ac28();
+    return;
+  }
+LAB_114613e4:
+                    
+  thunk_FUN_1146c180(local_30,"ASCII conversion buffer too small");
+LAB_114612f1:
+  if (local_14 + 1 < 4) {
+    pcVar10 = (char *)(_Dst);
+    if (0 < (int)local_14) {
+      memset(_Dst,0x30,local_14);
+      pcVar10 = (char *)(_Dst + local_14);
+    }
+  }
+  else {
+    *_Dst = (char)('E');
+    pcVar10 = (char *)(_Dst + 1);
+    param_3 = (uint)(param_3 + (-1 - (int)pcVar8));
+    if ((int)local_14 < 0) {
+      param_3 = (uint)(param_3 - 1);
+      *pcVar10 = (char)('-');
+      pcVar10 = (char *)(_Dst + 2);
+      local_14 = (undefined4)(-local_14);
+    }
+    uVar4 = (uint)(0);
+    if (local_14 != 0) {
+      uVar4 = (uint)(0);
+      do {
+        uVar7 = (uint)(local_14 / 10);
+        *(char*)((int)&local_10 + uVar4) = (char)((char)local_14 + (char)uVar7 * -10 + '0');
+        uVar4 = (uint)(uVar4 + 1);
+        local_14 = (undefined4)(uVar7);
+      } while (uVar7 != 0);
+      local_14 = (undefined4)(0);
+      local_2c = (uint)(uVar4);
+    }
+    if (param_3 <= uVar4) goto LAB_114613e4;
+    if (uVar4 != 0) {
+      do {
+        iVar6 = (int)(uVar4 + 3);
+        uVar4 = (uint)(uVar4 - 1);
+        *pcVar10 = (char)(*(char *)((int)&local_14 + iVar6));
+        pcVar10 = (char *)(pcVar10 + 1);
+      } while (uVar4 != 0);
+      *pcVar10 = (char)('\0');
+      thunk_FUN_1148ac28();
+      return;
+    }
+  }
+  *pcVar10 = (char)('\0');
+  thunk_FUN_1148ac28();
+  return;
+}
+
+
 // Reference entry 1146c1b0; body size 103 bytes.
 #line 1 "ENTRY_1146c1b0"
 
@@ -21903,6 +22749,62 @@ void FUN_1146c1b0(undefined4 param_1,int param_2)
   }
                     
   thunk_FUN_1148bc65();
+}
+
+
+// Reference entry 1147fa50; body size 280 bytes.
+#line 1 "ENTRY_1147fa50"
+
+void FUN_1147fa50(int param_1,undefined1 param_2,char *param_3,char *param_4)
+
+{
+  char *pcVar1;
+  char *pcVar2;
+  char cVar3;
+  undefined4 uVar4;
+  char *pcVar5;
+  char *pcVar6;
+  undefined4 local_48;
+  undefined1 local_44;
+  undefined1 local_43 [2];
+  char acStack_41 [61];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)&local_48);
+  local_48 = (undefined4)(param_4);
+  pcVar1 = (char *)(param_3 + 1);
+  pcVar6 = (char *)(param_3);
+  do {
+    cVar3 = (char)(*pcVar6);
+    pcVar6 = (char *)(pcVar6 + 1);
+  } while (cVar3 != '\0');
+  pcVar2 = (char *)(param_4 + 1);
+  do {
+    cVar3 = (char)(*param_4);
+    param_4 = (char *)(param_4 + 1);
+  } while (cVar3 != '\0');
+  pcVar5 = (char *)(pcVar6 + ((int)param_4 - (int)pcVar2) + (2 - (int)pcVar1));
+  if ((char *)(0x40) < (char *)((pcVar5))) {
+    thunk_FUN_1146cad0(param_1,"Can\'t write sCAL (buffer too small)");
+    thunk_FUN_1148ac28();
+    return;
+  }
+  local_44 = (undefined1)(param_2);
+  memcpy((void *)(uintptr_t)((uint)&local_43),(void *)(uintptr_t)(param_3),(size_t)(uintptr_t)((size_t)(pcVar6 + (1 - (int)pcVar1))));
+  memcpy((void *)(uintptr_t)(pcVar6 + (int)((uint)&local_43 + (1 - (int)pcVar1))),(void *)(uintptr_t)(local_48),(size_t)(uintptr_t)((int)param_4 - (int)pcVar2));
+  if (param_1 != 0) {
+    FUN_1147dbe0(param_1,0x7343414c,pcVar5);
+    if ((char *)(pcVar5) != (char *)(0x0)) {
+      thunk_FUN_11489320(param_1,&local_44,pcVar5);
+      thunk_FUN_114621a0(param_1,&local_44,pcVar5);
+    }
+    uVar4 = (undefined4)(*(undefined4 *)(param_1 + 0x138));
+    *(undefined4*)(param_1 + 0x2ac) = (undefined4)(0x82);
+    local_48 = (undefined4)((char *)((uint)((char)uVar4) << 24 | (uint)(((uint)((char)((uint)uVar4 >> 8)) << 16 | (uint)(((uint)((char)((uint)uVar4 >> 0x10)) << 8 | (uint)((char)((uint)uVar4 >> 0x18))))))));
+    thunk_FUN_11489320(param_1,&local_48,4);
+  }
+  thunk_FUN_1148ac28();
+  return;
 }
 
 
@@ -22052,6 +22954,50 @@ void FUN_114894f0(int *param_1,byte *param_2,byte *param_3)
 }
 
 
+// Reference entry 1148a139; body size 49 bytes.
+#line 1 "ENTRY_1148a139"
+
+
+   
+void __thiscall Recovered_Bulk::m_FUN_1148a139(void)
+{
+  ::_Fac_node *this_ = (::_Fac_node *)this;
+  code *pcVar1;
+  undefined4 *puVar2;
+  
+  pcVar1 = (code *)(*(code **)(**(int **)(this_ + 4) + 8), 0);
+  (*(code *)PTR_guard_check_icall_12302000)();
+  puVar2 = (undefined4 *)((undefined4 *)(*pcVar1)(), 0);
+  if ((undefined4 *)(puVar2) != (undefined4 *)(0x0)) {
+    pcVar1 = (code *)(*(code **)*puVar2);
+    (*(code *)PTR_guard_check_icall_12302000)(1);
+    (*pcVar1)();
+  }
+  return;
+}
+
+
+// Reference entry 1148a1d0; body size 44 bytes.
+#line 1 "ENTRY_1148a1d0"
+
+
+   
+void __cdecl  FUN_1148a1d0(::_Facet_base *param_1){
+  undefined4 *puVar1;
+  
+  puVar1 = (undefined4 *)(operator_new(8), 0);
+  if ((undefined4 *)(puVar1) == (undefined4 *)(0x0)) {
+    puVar1 = (undefined4 *)((undefined4 *)0x0);
+  }
+  else {
+    *puVar1 = (undefined4)(DAT_122fabcc);
+    puVar1[1] = (undefined4)(param_1);
+  }
+  DAT_122fabcc = (int)(puVar1);
+  return;
+}
+
+
 // Reference entry 1148a5d1; body size 50 bytes.
 #line 1 "ENTRY_1148a5d1"
 
@@ -22081,6 +23027,274 @@ void FUN_114894f0(int *param_1,byte *param_2,byte *param_3)
     }
   }
   return (undefined4)(0);
+}
+
+
+// Reference entry 1148a905; body size 45 bytes.
+#line 1 "ENTRY_1148a905"
+
+/* Library Function - Single Match
+    __onexit
+   
+   Library: Visual Studio 2019 Release */_onexit_t __cdecl FUN_1148a905(_onexit_t _Func){
+  int iVar1;
+  
+  if (DAT_122fabe0 == -1) {
+    iVar1 = (int)(crt_atexit(), 0);
+  }
+  else {
+    iVar1 = (int)(register_onexit_function(&DAT_122fabe0,_Func), 0);
+  }
+  return (_onexit_t)((_onexit_t)(~-(uint)(iVar1 != 0) & (uint)_Func));
+}
+
+
+// Reference entry 1148a968; body size 21 bytes.
+#line 1 "ENTRY_1148a968"
+
+/* Library Function - Single Match
+    _atexit
+   
+   Library: Visual Studio 2019 Release */int __cdecl FUN_1148a968(_func_4879 *param_1){
+  _onexit_t p_Var1;
+  
+  p_Var1 = (_onexit_t)(__onexit((_onexit_t)param_1), 0);
+  return (int)((p_Var1 != (_onexit_t)0x0) - 1);
+}
+
+
+// Reference entry 1148b660; body size 17 bytes.
+#line 1 "ENTRY_1148b660"
+
+int FUN_1148b660(void)
+
+{
+  uint uVar1;
+  ushort uVar2;
+  float10 in_ST0;
+  undefined4 uStack_1c;
+  undefined2 uStack_18;
+  
+  if (1 < DAT_122faff4) {
+    return (int)((int)in_ST0);
+  }
+  uStack_1c = (undefined4)((uint)(*(unsigned long long *)&(in_ST0) >> 0x20));
+  uStack_18 = (undefined2)((ushort)(*(unsigned long long *)&(in_ST0) >> 0x40));
+  uVar2 = (ushort)(uStack_18 & 0x7fff);
+  uVar1 = (uint)(-(uint)((short)uStack_18 < 0));
+  if (uVar2 < 0x3fff) {
+    return (int)(0);
+  }
+  if ((int)uStack_1c < 0) {
+    if (uVar2 < 0x401e) {
+      return (int)((uStack_1c >> (0x3eU - (char)uVar2 & 0x1f) ^ uVar1) + (uint)((short)uStack_18 < 0));
+    }
+    if (((uVar2 < 0x401f) && ((int)uVar1 < 0)) && (uStack_1c == 0x80000000)) {
+      return (int)(-0x80000000);
+    }
+  }
+  return (int)(-0x80000000);
+}
+
+
+// Reference entry 1148b671; body size 107 bytes.
+#line 1 "ENTRY_1148b671"
+
+int FUN_1148b671(void)
+
+{
+  uint uVar1;
+  ushort uVar2;
+  unkbyte10 in_ST0;
+  undefined4 uStack_1c;
+  undefined2 uStack_18;
+  
+  uStack_1c = (undefined4)((uint)(*(unsigned long long *)&(in_ST0) >> 0x20));
+  uStack_18 = (undefined2)((ushort)(*(unsigned long long *)&(in_ST0) >> 0x40));
+  uVar2 = (ushort)(uStack_18 & 0x7fff);
+  uVar1 = (uint)(-(uint)((short)uStack_18 < 0));
+  if (uVar2 < 0x3fff) {
+    return (int)(0);
+  }
+  if ((int)uStack_1c < 0) {
+    if (uVar2 < 0x401e) {
+      return (int)((uStack_1c >> (0x3eU - (char)uVar2 & 0x1f) ^ uVar1) + (uint)((short)uStack_18 < 0));
+    }
+    if (((uVar2 < 0x401f) && ((int)uVar1 < 0)) && (uStack_1c == 0x80000000)) {
+      return (int)(-0x80000000);
+    }
+  }
+  return (int)(-0x80000000);
+}
+
+
+// Reference entry 1148b747; body size 91 bytes.
+#line 1 "ENTRY_1148b747"
+
+uint FUN_1148b747(void)
+
+{
+  ushort uVar1;
+  unkbyte10 in_ST0;
+  uint uStack_1c;
+  ushort uStack_18;
+  
+  uStack_1c = (uint)((uint)(*(unsigned long long *)&(in_ST0) >> 0x20));
+  uStack_18 = (ushort)((ushort)(*(unsigned long long *)&(in_ST0) >> 0x40));
+  uVar1 = (ushort)(uStack_18 & 0x7fff);
+  if ((short)uStack_18 < 0) {
+    if (uVar1 < 0x3fff) {
+      return (uint)(0);
+    }
+  }
+  else {
+    if (uVar1 < 0x3fff) {
+      return (uint)(0);
+    }
+    if (((int)uStack_1c < 0) && (uVar1 < 0x401f)) {
+      return (uint)(uStack_1c >> (0x3eU - (char)uVar1 & 0x1f));
+    }
+  }
+  return (uint)(0xffffffff);
+}
+
+
+// Reference entry 1148b7d0; body size 171 bytes.
+#line 1 "ENTRY_1148b7d0"
+
+longlong FUN_1148b7d0(void)
+
+{
+  uint uVar1;
+  uint uVar2;
+  byte bVar3;
+  ushort uVar4;
+  uint uVar5;
+  bool bVar6;
+  float10 in_ST0;
+  undefined8 local_20;
+  undefined2 uStack_18;
+  
+  if (1 < DAT_122faff4) {
+    return (longlong)((longlong)in_ST0);
+  }
+  *(uint*)((char *)&local_20 + 0) = (uint)(SUB104(in_ST0,0), 0);
+  uVar2 = (uint)((uint)local_20);
+  *(uint*)((char *)&local_20 + 4) = (uint)((uint)(*(unsigned long long *)&(in_ST0) >> 0x20));
+  uVar1 = (uint)(*(uint *)((char *)&local_20 + 4));
+  local_20 = (undefined8)(SUB108(in_ST0,0), 0);
+  uStack_18 = (undefined2)((ushort)(*(unsigned long long *)&(in_ST0) >> 0x40));
+  uVar4 = (ushort)(uStack_18 & 0x7fff);
+  if (uVar4 < 0x3fff) {
+    return (longlong)(0);
+  }
+  if ((int)uVar1 < 0) {
+    if (uVar4 < 0x403e) {
+      bVar3 = (byte)(0x3e - (char)uVar4);
+      uVar5 = (uint)(uVar1);
+      if (0x1f < bVar3) {
+        uVar5 = (uint)(0);
+        uVar2 = (uint)(uVar1);
+      }
+      uVar2 = (uint)(uVar2 >> (bVar3 & 0x1f) | uVar5 << 0x20 - (bVar3 & 0x1f));
+      uVar5 = (uint)(uVar5 >> (bVar3 & 0x1f));
+      if ((short)uStack_18 < 0) {
+        bVar6 = (bool)(uVar2 != 0);
+        uVar2 = (uint)(-uVar2);
+        uVar5 = (uint)(-(uVar5 + bVar6));
+      }
+      return (longlong)(((unsigned long long)(uVar5) << 32 | (unsigned long long)(uVar2)));
+    }
+    if (((uVar4 < 0x403f) && ((uVar1 & 0x7fffffff) == 0 && uVar2 == 0)) && ((short)uStack_18 < 0)) {
+      return (longlong)(local_20);
+    }
+  }
+  return (longlong)(-0x8000000000000000);
+}
+
+
+// Reference entry 1148b8fc; body size 109 bytes.
+#line 1 "ENTRY_1148b8fc"
+
+undefined8 FUN_1148b8fc(void)
+
+{
+  byte bVar1;
+  ushort uVar2;
+  uint uVar3;
+  unkbyte10 in_ST0;
+  uint local_20;
+  uint uStack_1c;
+  ushort uStack_18;
+  
+  local_20 = (uint)((*(uint *)&(in_ST0)));
+  uStack_1c = (uint)((uint)(*(unsigned long long *)&(in_ST0) >> 0x20));
+  uStack_18 = (ushort)((ushort)(*(unsigned long long *)&(in_ST0) >> 0x40));
+  uVar2 = (ushort)(uStack_18 & 0x7fff);
+  if ((short)uStack_18 < 0) {
+    if (uVar2 < 0x3fff) {
+      return (undefined8)(0);
+    }
+  }
+  else {
+    if (uVar2 < 0x3fff) {
+      return (undefined8)(0);
+    }
+    if (((int)uStack_1c < 0) && (uVar2 < 0x403f)) {
+      bVar1 = (byte)(0x3e - (char)uVar2);
+      uVar3 = (uint)(uStack_1c);
+      if (0x1f < bVar1) {
+        uVar3 = (uint)(0);
+        local_20 = (uint)(uStack_1c);
+      }
+      return (undefined8)(((unsigned long long)(uVar3 >> (bVar1 & 0x1f)) << 32 | (unsigned long long)(local_20 >> (bVar1 & 0x1f) | uVar3 << 0x20 - (bVar1 & 0x1f))));
+    }
+  }
+  return (undefined8)(0xffffffffffffffff);
+}
+
+
+// Reference entry 1148d1ef; body size 120 bytes.
+#line 1 "ENTRY_1148d1ef"
+
+/* Library Function - Single Match
+    __filter_x86_sse2_floating_point_exception_default
+   
+   Library: Visual Studio 2019 Release */int FUN_1148d1ef(int param_1){
+  uint uVar1;
+  
+  if ((DAT_122faff4 < 1) || ((param_1 != -0x3ffffd4c && (param_1 != -0x3ffffd4b)))) {
+    return (int)(param_1);
+  }
+  uVar1 = (uint)(0u ^ 0x3f);
+  if ((uVar1 & 0x81) != 0) {
+    if ((uVar1 & 0x204) == 0) {
+      return (int)(-0x3fffff72);
+    }
+    if ((uVar1 & 0x102) != 0) {
+      if ((uVar1 & 0x408) == 0) {
+        return (int)(-0x3fffff6f);
+      }
+      if ((uVar1 & 0x810) != 0) {
+        if ((uVar1 & 0x1020) != 0) {
+          return (int)(param_1);
+        }
+        return (int)(-0x3fffff71);
+      }
+      return (int)(-0x3fffff6d);
+    }
+  }
+  return (int)(-0x3fffff70);
+}
+
+
+// Reference entry 116dce71; body size 19 bytes.
+#line 1 "ENTRY_116dce71"
+void FUN_116dce71(void){
+  int unaff_EBP;
+  
+  _eh_vector_destructor_iterator_((char *)(unaff_EBP + 0x60),0x10,6,~(uintptr_t)((void *)0));
+  return;
 }
 
 
