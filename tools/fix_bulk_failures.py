@@ -69,6 +69,36 @@ def compile_errors(path):
     return result.returncode == 0, entry_errs, file_errs
 
 
+def _operand_end(line, i):
+    """Return the index just past the operand starting at ``i``.
+
+    Handles parenthesised operands and cast chains: a ``(...)`` immediately
+    followed by ``(`` or ``&``/``*``/identifier continues the operand.
+    """
+    n = len(line)
+    while i < n:
+        if line[i] == '(':
+            depth = 0
+            for j in range(i, n):
+                depth += line[j] == '('
+                depth -= line[j] == ')'
+                if depth == 0:
+                    i = j + 1
+                    break
+            else:
+                return -1
+            continue
+        if line[i] in '&*':
+            i += 1
+            continue
+        m = re.match(r'[A-Za-z_]\w*', line[i:])
+        if m:
+            i += m.end()
+            continue
+        break
+    return i
+
+
 def _cmp_rewrite(line, col):
     """Turn pointer casts on the error line into uintptr_t casts.
 
@@ -221,11 +251,48 @@ def patch_definition(defn, lineno, col, message):
             return None
         new = (line[:pos] + '(*(int(**)(...))&' + m.group(1) + ')' +
                line[pos + m.end(1):])
-    elif ('subscript of pointer to function type' in message or
-          'arithmetic on a pointer to the function type' in message):
-        new = re.sub(r'\bcode\s*\*\s*(\w+)', r'code **\1', line)
+    elif 'subscript of pointer to function type' in message:
+        # ``p[i]`` where p is ``code *``: index through a ``code **`` pun.
+        br = line.find('[', max(0, col - 20), col + 10)
+        if br < 0:
+            br = line.rfind('[', 0, col + 4)
+        if br < 0:
+            return None
+        m = re.search(r'(\w+)\s*$', line[:br])
+        if not m:
+            return None
+        base = m.group(1)
+        new = (line[:m.start(1)] + '((code **)(uintptr_t)(' + base + '))' +
+               line[br:])
+    elif 'arithmetic on a pointer to the function type' in message:
+        # ``p + n`` on ``code *``: byte-wise arithmetic via char *.
+        pos = col - 1
+        m = re.match(r'(?:\*\s*)*', line[pos:])
+        i = pos + m.end()
+        end = _operand_end(line, i)
+        if end <= i:
+            m2 = re.search(r'(\w+)\s*[+\-*/]', line)
+            if not m2:
+                return None
+            i = m2.start(1)
+            pos = i
+            end = _operand_end(line, i)
+            if end <= i:
+                return None
+            return (line[:pos] + '(char *)(uintptr_t)(' + line[i:end] + ')' +
+                    line[end:])
+        new = (line[:pos] + line[pos:i] +
+               '(char *)(uintptr_t)(' + line[i:end] + ')' + line[end:])
+    elif re.search(r"cast from '?\w+[\w ]*'?.*to 'code'", message):
+        # ``(code)(x)``: function-type casts are illegal; go through the
+        # pointer type instead.
+        new = re.sub(r'\(\s*code\s*\)\s*\(', '(code *)(uintptr_t)(', line,
+                     count=1)
         if new == line:
-            new = re.sub(r'\bcode\s+(\w+)', r'code *\1', line)
+            new = re.sub(r'\(\s*code\s*\)\s*(\w+)',
+                         r'(code *)(uintptr_t)\1', line, count=1)
+        if new == line:
+            return None
     elif 'indirection requires pointer operand' in message:
         # `*x` where x is an integer: Ghidra's deref of a scalar needs a
         # pointer cast; likewise repair earlier uintptr_t damage.
@@ -316,11 +383,18 @@ def patch_definition(defn, lineno, col, message):
             return None
     elif 'invalid argument type' in message and 'unary' in message:
         pos = col - 1
-        m = re.match(r'([~!])\s*(\w+)', line[pos:])
+        m = re.match(r'([~!])\s*', line[pos:])
         if not m:
             return None
-        new = (line[:pos] + m.group(1) + '(uintptr_t)(' + m.group(2) + ')' +
-               line[pos + m.end():])
+        i = pos + m.end()
+        while i < len(line) and line[i] == ' ':
+            i += 1
+        end = _operand_end(line, i)
+        if end <= i:
+            return None
+        operand = line[i:end]
+        new = (line[:pos] + m.group(1) + '(uintptr_t)(' + operand + ')' +
+               line[end:])
     elif 'subscripted value is not an array' in message:
         # `EXPR[i]` where EXPR is a scalar address: treat as pointer-index.
         pos = col - 1
@@ -431,18 +505,23 @@ def patch_definition(defn, lineno, col, message):
         new = (line[:pos] + '(code *)&' + m.group(1) +
                line[pos + m.end(1):])
     elif 'member reference base type' in message and 'is not a structure' in message:
-        # ``h->f`` where h's typedef resolved to void*: cast through __RFLD.
+        # ``h->f`` or ``h.f`` where h's typedef resolved to void*: cast
+        # through the field-bearing stub.
         new = line
         best = None
-        for m in re.finditer(r'(\w+)\s*->\s*(\w+)', line):
+        for m in re.finditer(r'(\w+(?:\[[^\]]*\])*)\s*(->|\.)\s*(\w+)', line):
             d = abs(m.start() - (col - 1))
             if best is None or d < best[0]:
                 best = (d, m)
         if best is None:
             return None
         m = best[1]
-        new = (line[:m.start()] + '((struct __RFLD *)(uintptr_t)(' +
-               m.group(1) + '))->' + m.group(2) + line[m.end():])
+        if m.group(2) == '->':
+            new = (line[:m.start()] + '((struct __RFLD *)(uintptr_t)(' +
+                   m.group(1) + '))->' + m.group(3) + line[m.end():])
+        else:
+            new = (line[:m.start()] + '(*(struct __RFLD *)(uintptr_t)(' +
+                   m.group(1) + ')).' + m.group(3) + line[m.end():])
     elif 'cannot take the address of an rvalue' in message:
         # ``&(rvalue)``: ``&*p`` == ``p``, so express the address directly.
         pos = col - 1
@@ -450,39 +529,49 @@ def patch_definition(defn, lineno, col, message):
         if not m:
             return None
         i = pos + m.end()
-        if i < len(line) and line[i] == '(':
-            depth, close = 0, -1
-            for j in range(i, len(line)):
-                depth += line[j] == '('
-                depth -= line[j] == ')'
-                if depth == 0:
-                    close = j
-                    break
-            if close < 0:
-                return None
-            operand = line[i:close + 1]
-        else:
-            m2 = re.match(r'[\w.]+', line[i:])
-            if not m2:
-                return None
-            close = i + m2.end()
-            if close < len(line) and line[close] == '(':
-                depth = 0
-                for j in range(close, len(line)):
-                    depth += line[j] == '('
-                    depth -= line[j] == ')'
-                    if depth == 0:
-                        close = j + 1
-                        break
-                if depth != 0:
-                    return None
-            operand = line[i:close]
-            close -= 1
+        while i < len(line) and line[i] == ' ':
+            i += 1
+        end = _operand_end(line, i)
+        if end <= i:
+            return None
+        operand = line[i:end]
         new = (line[:pos] + '(int *)(uintptr_t)(' + operand + ')' +
-               line[close + 1:])
+               line[end:])
+    elif 'expression is not assignable' in message:
+        # ``(T)x = v``: cast results are rvalues; drop the cast so the
+        # assignment targets the lvalue underneath.
+        new = re.sub(r'\(\s*\w[\w:<> ]*\*?\s*\)\s*(\w+)(\s*=[^=])',
+                     r'\1\2', line, count=1)
+        if new == line:
+            return None
     elif 'right hand operand to .*' in message:
         # ``a .* b`` on scalars: degrade to a plain subtract (garbage anyway).
         new = line.replace('.*', ' - (uintptr_t)', 1)
+    elif ("template specialization requires" in message or
+          'no function template matches function template specialization'
+          in message or 'expected \';\' at end of declaration' in message):
+        if (defn.lstrip().startswith('template<>') and
+                'no function template matches' in message):
+            # The retemplate hint was wrong for this def — drop it.
+            return re.sub(r'\A\s*template<>\s*\n', '', defn)
+        # Fused Ghidra type tokens like ``_func_X<..>ptr_Y<..>ptr`` parse as
+        # template-ids; collapse the whole token to ``int``.
+        new = re.sub(r'\b\w*(?:<[^;{}]*>)+[\w:<>]*', 'int', line, count=1)
+        if new == line:
+            return None
+    elif ('use of undeclared identifier' in message and
+          re.search(r'\w+<', line)):
+        # ``s_<_DIDL_Lite>...`` fused name: collapse the template-id token.
+        new = re.sub(r'\b\w*(?:<[^;{}]*>)+[\w:<>._]*',
+                     '(void *)0', line, count=1)
+        if new == line:
+            return None
+    elif ('`' in line and
+          ('expected expression' in message or 'expected' in message)):
+        # Ghidra emits `` `public:...'` `` backtick literals; drop to 0.
+        new = re.sub(r'`[^`]*`', '0', line, count=1)
+        if new == line:
+            return None
     elif 'invalid suffix' in message and 'floating constant' in message:
         # Ghidra float artefacts like ``0._0_8_``: strip the suffix.
         new = re.sub(r'\._\d+_\d+_', '', line)
@@ -529,6 +618,8 @@ def header_extra(message):
     if m:
         name = m.group(1)
         return f'extern char {name}_v[];\n#define {name} {name}_v'
+    if 'incomplete type' in message and '__RFLD' in message:
+        return '__fld_seed__'
     return None
 
 
@@ -563,6 +654,19 @@ def repair_record(record, defined, scratch, max_iter=25):
             lineno, col, message = entry_errs[0]
             last_err = message
             extra = header_extra(message)
+            # A '<...>' token on the error line is a fused Ghidra type name
+            # (``_func_X<..>ptr``), not a real specialization — let
+            # patch_definition collapse it before retemplating the def.
+            err_line = cur.split('\n')[lineno - 1]
+            if (extra == '__retemplate__' and
+                    re.search(r'<[^;{}]*>', err_line)):
+                extra = None
+            # ``name<...>`` undeclared is a fused token, not a global:
+            # let patch_definition collapse it instead of extern-ing it.
+            if (extra and isinstance(extra, str) and
+                    extra.startswith('extern char') and
+                    re.search(r'\w+<', err_line)):
+                extra = None
             if extra is not None:
                 if isinstance(extra, tuple):
                     # Named structs take the field as a static member;
@@ -572,6 +676,10 @@ def repair_record(record, defined, scratch, max_iter=25):
                     member_stubs.setdefault(key, set()).add(extra[2])
                 elif extra == '__retemplate__':
                     cur = 'template<>\n' + cur
+                elif extra == '__fld_seed__':
+                    fld = re.search(r'(?:->|\.)\s*(\w+)', err_line)
+                    member_stubs.setdefault('__scalarfields__', set()).add(
+                        fld.group(1) if fld else '__seed')
                 else:
                     extra_decls.append(extra)
                 continue
