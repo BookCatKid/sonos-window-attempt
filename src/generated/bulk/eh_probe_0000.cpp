@@ -1126,6 +1126,86 @@ void probe_arr_0066() { int pad[67]; probe_sink(&pad[0]); ProbeDtor a[4]; probe_
 void probe_arr_0067() { int pad[68]; probe_sink(&pad[0]); ProbeDtor a[4]; probe_throw(); }
 void probe_arr_0068() { int pad[69]; probe_sink(&pad[0]); ProbeDtor a[4]; probe_throw(); }
 void probe_arr_0069() { int pad[70]; probe_sink(&pad[0]); ProbeDtor a[4]; probe_throw(); }
+void probe_cref_0_0() { try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } }
+void probe_cref_0_1() { { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } }
+void probe_cref_0_2() { { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } } }
+void probe_cref_0_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } } } }
+void probe_cref_0_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } } } } }
+void probe_cref_0_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } } } } } }
+void probe_cref_0_6() { { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } } } } } } }
+void probe_cref_0_7() { { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } } } } } } } }
+void probe_cref_0_8() { { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } } } } } } } } }
+void probe_cref_0_9() { { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } } } } } } } } } }
+void probe_cref_0_10() { { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } } } } } } } } } } }
+void probe_cref_0_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { probe_sink(&o); } } } } } } } } } } } } }
+void probe_cref_1_0() { try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } }
+void probe_cref_1_1() { { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } }
+void probe_cref_1_2() { { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } } }
+void probe_cref_1_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } } } }
+void probe_cref_1_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } } } } }
+void probe_cref_1_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } } } } } }
+void probe_cref_1_6() { { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } } } } } } }
+void probe_cref_1_7() { { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } } } } } } } }
+void probe_cref_1_8() { { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } } } } } } } } }
+void probe_cref_1_9() { { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } } } } } } } } } }
+void probe_cref_1_10() { { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } } } } } } } } } } }
+void probe_cref_1_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub &o) { probe_sink(&o); } } } } } } } } } } } } }
+void probe_cref_2_0() { try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } }
+void probe_cref_2_1() { { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } }
+void probe_cref_2_2() { { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } }
+void probe_cref_2_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } }
+void probe_cref_2_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } }
+void probe_cref_2_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } } }
+void probe_cref_2_6() { { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } } } }
+void probe_cref_2_7() { { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } } } } }
+void probe_cref_2_8() { { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } } } } } }
+void probe_cref_2_9() { { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } } } } } } }
+void probe_cref_2_10() { { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } } } } } } } }
+void probe_cref_2_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (ProbeSub o) { o.~ProbeSub(); } } } } } } } } } } } } }
+void probe_cref_3_0() { try { probe_throw(); } catch (int o) { probe_sink(o); } }
+void probe_cref_3_1() { { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } }
+void probe_cref_3_2() { { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } }
+void probe_cref_3_3() { { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } }
+void probe_cref_3_4() { { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } }
+void probe_cref_3_5() { { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } }
+void probe_cref_3_6() { { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } }
+void probe_cref_3_7() { { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } } }
+void probe_cref_3_8() { { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } } } }
+void probe_cref_3_9() { { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } } } } }
+void probe_cref_3_10() { { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } } } } } }
+void probe_cref_3_11() { { ProbeD4 n10; { ProbeD4 n9; { ProbeD4 n8; { ProbeD4 n7; { ProbeD4 n6; { ProbeD4 n5; { ProbeD4 n4; { ProbeD4 n3; { ProbeD4 n2; { ProbeD4 n1; { ProbeD4 n0; try { probe_throw(); } catch (int o) { probe_sink(o); } } } } } } } } } } } } }
+extern void (*volatile probe_fp0)();
+void probe_iat_0() { probe_fp0(); }
+extern void (*volatile probe_fq0)();
+void probe_iatq_0() { probe_fq0(); __assume(0); }
+extern void (*volatile probe_fp1)();
+void probe_iat_1() { probe_fp1(); }
+extern void (*volatile probe_fq1)();
+void probe_iatq_1() { probe_fq1(); __assume(0); }
+extern void (*volatile probe_fp2)();
+void probe_iat_2() { probe_fp2(); }
+extern void (*volatile probe_fq2)();
+void probe_iatq_2() { probe_fq2(); __assume(0); }
+extern void (*volatile probe_fp3)();
+void probe_iat_3() { probe_fp3(); }
+extern void (*volatile probe_fq3)();
+void probe_iatq_3() { probe_fq3(); __assume(0); }
+extern void (*volatile probe_fp4)();
+void probe_iat_4() { probe_fp4(); }
+extern void (*volatile probe_fq4)();
+void probe_iatq_4() { probe_fq4(); __assume(0); }
+extern void (*volatile probe_fp5)();
+void probe_iat_5() { probe_fp5(); }
+extern void (*volatile probe_fq5)();
+void probe_iatq_5() { probe_fq5(); __assume(0); }
+extern void (*volatile probe_fp6)();
+void probe_iat_6() { probe_fp6(); }
+extern void (*volatile probe_fq6)();
+void probe_iatq_6() { probe_fq6(); __assume(0); }
+extern void (*volatile probe_fp7)();
+void probe_iat_7() { probe_fp7(); }
+extern void (*volatile probe_fq7)();
+void probe_iatq_7() { probe_fq7(); __assume(0); }
 struct ProbeOff00004 { char pad[3]; ProbeSub m; };
 void probe_off_00004_0() { ProbeOff00004 *p = new ProbeOff00004; probe_throw(); }
 void probe_off_00004_1() { { ProbeD4 n0; ProbeOff00004 *p = new ProbeOff00004; probe_throw(); } }
@@ -10690,12 +10770,14 @@ struct GS101da340 { char p[8]; int m; int FUN_101da340(); };
 int GS101da340::FUN_101da340() { return m; }
 struct GS101da350 { char p[8]; int m; int FUN_101da350(); };
 int GS101da350::FUN_101da350() { return m; }
+bool FUN_101dcdc0() { return true; }
 void __stdcall FUN_101ee300(int *p) { *p = 0; }
 void __stdcall FUN_101f1180(int *p) { *p = 0; }
 struct GS101f13c0 { char p[116]; int m; int FUN_101f13c0(); };
 int GS101f13c0::FUN_101f13c0() { return m; }
 struct GS101f13d0 { char p[36]; int m; int FUN_101f13d0(); };
 int GS101f13d0::FUN_101f13d0() { return m; }
+bool FUN_101f3470() { return true; }
 struct GS101faf70 { char p[8]; int m; int *FUN_101faf70(); };
 int *GS101faf70::FUN_101faf70() { return &m; }
 int FUN_101fb090() { return 303197944; }
@@ -10703,6 +10785,7 @@ struct GS101fb470 { char p[12]; int m; int FUN_101fb470(); };
 int GS101fb470::FUN_101fb470() { return m; }
 struct GS101fb590 { char p[16]; int m; int FUN_101fb590(); };
 int GS101fb590::FUN_101fb590() { return m; }
+bool FUN_10208c70() { return true; }
 struct GS10208cd0 { char p[84]; int m; int FUN_10208cd0(); };
 int GS10208cd0::FUN_10208cd0() { return m; }
 void __stdcall FUN_1020d220(int *p) { *p = 0; }
@@ -10721,6 +10804,11 @@ struct GS102115d0 { char p[35404]; int m; int FUN_102115d0(); };
 int GS102115d0::FUN_102115d0() { return m; }
 struct GS102115e0 { char p[192]; int m; int FUN_102115e0(); };
 int GS102115e0::FUN_102115e0() { return m; }
+bool FUN_102178c0() { return true; }
+bool FUN_10217ae0() { return true; }
+bool FUN_10219c70() { return true; }
+bool FUN_10219c90() { return true; }
+bool FUN_10219ca0() { return true; }
 struct GS10220670 { char p[12]; int m; int FUN_10220670(); };
 int GS10220670::FUN_10220670() { return m; }
 bool __stdcall FUN_10220cb0(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
@@ -10784,8 +10872,16 @@ int FUN_102395e0() { return 2; }
 int FUN_102395f0() { return 2; }
 int FUN_10239600() { return 1; }
 int FUN_10239610() { return 1; }
+bool FUN_10243110() { return true; }
+bool FUN_10244da0() { return true; }
+bool FUN_10244db0() { return true; }
+bool FUN_10244de0() { return true; }
+bool FUN_10244df0() { return true; }
+bool FUN_10244e20() { return true; }
+bool FUN_10244e50() { return true; }
 struct GS1024c680 { char p[8]; int m; int FUN_1024c680(); };
 int GS1024c680::FUN_1024c680() { return m; }
+bool FUN_1024e510() { return true; }
 struct GS1024fde0 { char p[8]; int m; int *FUN_1024fde0(); };
 int *GS1024fde0::FUN_1024fde0() { return &m; }
 int FUN_1024fed0() { return 303198808; }
@@ -10970,6 +11066,7 @@ int *GS102c1b90::FUN_102c1b90() { return &m; }
 int FUN_102c1be0() { return 303199896; }
 struct GS102c2010 { char p[20]; int m; int FUN_102c2010(); };
 int GS102c2010::FUN_102c2010() { return m; }
+bool FUN_102c8b70() { return true; }
 struct GS102d4d00 { char p[4]; int m; int *FUN_102d4d00(); };
 int *GS102d4d00::FUN_102d4d00() { return &m; }
 int FUN_102d4fd0() { return 303199964; }
@@ -11192,6 +11289,8 @@ struct GS103a3e40 { char p[32]; int m; int FUN_103a3e40(); };
 int GS103a3e40::FUN_103a3e40() { return m; }
 bool __stdcall FUN_103a4140(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 bool __stdcall FUN_103a4150(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
+bool FUN_103ac120() { return true; }
+bool FUN_103ac130() { return true; }
 void __stdcall FUN_103b7100(int *p) { *p = 0; }
 void __stdcall FUN_103b7110(int *p) { *p = 0; }
 void __stdcall FUN_103b75c0(int *p) { *p = 0; }
@@ -11206,6 +11305,8 @@ void __stdcall FUN_103b7890(int *p, void *a1) { *p = 0; }
 void __stdcall FUN_103b7970(int *p) { *p = 0; }
 void __stdcall FUN_103b7980(int *p) { *p = 0; }
 void __stdcall FUN_103b7990(int *p) { *p = 0; }
+bool FUN_103b93e0() { return true; }
+bool FUN_103bdd30() { return true; }
 struct GS103c4810 { char p[4]; int m; int *FUN_103c4810(); };
 int *GS103c4810::FUN_103c4810() { return &m; }
 int FUN_103c4d40() { return 303202524; }
@@ -11581,6 +11682,8 @@ int FUN_1050abf0() { return 3; }
 int FUN_1050ac00() { return 2; }
 int FUN_1050ac10() { return 3; }
 int FUN_1050ac30() { return 1; }
+bool FUN_1050e640() { return true; }
+bool FUN_1050e650() { return true; }
 struct GS105152a0 { char p[8]; int m; int FUN_105152a0(); };
 int GS105152a0::FUN_105152a0() { return m; }
 struct GS105152b0 { char p[8]; int m; int FUN_105152b0(); };
@@ -11592,6 +11695,35 @@ int FUN_105226f0() { return 294319124; }
 int FUN_10522700() { return 294091608; }
 int FUN_10522710() { return 294319380; }
 bool __stdcall FUN_10524bf0(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
+bool FUN_1052dd00() { return true; }
+bool FUN_1052dd10() { return true; }
+bool FUN_1052dd20() { return true; }
+bool FUN_1052dd30() { return true; }
+bool FUN_1052e0c0() { return true; }
+bool FUN_1052e130() { return true; }
+bool FUN_1052e160() { return true; }
+bool FUN_1052e190() { return true; }
+bool FUN_1052e320() { return true; }
+bool FUN_1052e340() { return true; }
+bool FUN_1052e350() { return true; }
+bool FUN_1052e3d0() { return true; }
+bool FUN_1052e400() { return true; }
+bool FUN_1052e420() { return true; }
+bool FUN_1052e430() { return true; }
+bool FUN_1052e440() { return true; }
+bool FUN_1052e490() { return true; }
+bool FUN_1052e4a0() { return true; }
+bool FUN_1052e4b0() { return true; }
+bool FUN_1052e500() { return true; }
+bool FUN_1052e510() { return true; }
+bool FUN_1052e520() { return true; }
+bool FUN_1052e550() { return true; }
+bool FUN_1052e560() { return true; }
+bool FUN_1052e580() { return true; }
+bool FUN_1052e590() { return true; }
+bool FUN_1052e5d0() { return true; }
+bool FUN_1052e5f0() { return true; }
+bool FUN_1052e630() { return true; }
 void __stdcall FUN_10533fb0(int *p) { *p = 0; }
 struct GS10534660 { char p[144]; int m; int FUN_10534660(); };
 int GS10534660::FUN_10534660() { return m; }
@@ -11632,8 +11764,46 @@ int GS10535ad0::FUN_10535ad0() { return m; }
 void __stdcall FUN_10536400(int *p, void *a1) { *p = 0; }
 void __stdcall FUN_1053cf20(int *p) { *p = 0; }
 void __stdcall FUN_1053d140(int *p) { *p = 0; }
+bool FUN_105412c0() { return true; }
+bool FUN_105412d0() { return true; }
+bool FUN_105412e0() { return true; }
+bool FUN_10541300() { return true; }
+bool FUN_10541340() { return true; }
+bool FUN_105414c0() { return true; }
+bool FUN_105414d0() { return true; }
+bool FUN_105414e0() { return true; }
+bool FUN_10541510() { return true; }
+bool FUN_10541520() { return true; }
+bool FUN_10541530() { return true; }
+bool FUN_10541540() { return true; }
+bool FUN_10541550() { return true; }
+bool FUN_10541560() { return true; }
+bool FUN_10541570() { return true; }
+bool FUN_10541580() { return true; }
+bool FUN_10541590() { return true; }
+bool FUN_105415a0() { return true; }
+bool FUN_105416b0() { return true; }
+bool FUN_105416c0() { return true; }
+bool FUN_105416d0() { return true; }
+bool FUN_105416e0() { return true; }
+bool FUN_105416f0() { return true; }
+bool FUN_10541700() { return true; }
 int FUN_105452a0() { return 2; }
+bool FUN_10546840() { return true; }
+bool FUN_10546850() { return true; }
+bool FUN_10546860() { return true; }
+bool FUN_10546870() { return true; }
+bool FUN_10546880() { return true; }
+bool FUN_105468a0() { return true; }
+bool FUN_105468b0() { return true; }
+bool FUN_105468c0() { return true; }
+bool FUN_105468e0() { return true; }
+bool FUN_105468f0() { return true; }
 bool __stdcall FUN_1054bd40(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
+bool FUN_1054bf10() { return true; }
+bool FUN_1054bf20() { return true; }
+bool FUN_1054bf70() { return true; }
+bool FUN_1054c090() { return true; }
 struct GS1054cfe0 { char p[60]; short m; short FUN_1054cfe0(); };
 short GS1054cfe0::FUN_1054cfe0() { return m; }
 struct GS1054d640 { char p[44]; int m; int FUN_1054d640(); };
@@ -11643,11 +11813,15 @@ struct GS10553b00 { char p[36]; short m; short FUN_10553b00(); };
 short GS10553b00::FUN_10553b00() { return m; }
 struct GS10557940 { char p[32]; int m; int FUN_10557940(); };
 int GS10557940::FUN_10557940() { return m; }
+bool FUN_1055baa0() { return true; }
 int FUN_1055d460() { return 4; }
 int FUN_1055dc60() { return 5; }
 int FUN_1055dd10() { return 2; }
+bool FUN_1055f440() { return true; }
 struct GS10574f60 { char p[36]; short m; short FUN_10574f60(); };
 short GS10574f60::FUN_10574f60() { return m; }
+bool FUN_10576020() { return true; }
+bool FUN_10576030() { return true; }
 struct GS105791a0 { char p[32]; int m; int FUN_105791a0(); };
 int GS105791a0::FUN_105791a0() { return m; }
 bool __stdcall FUN_10579420(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
@@ -11656,6 +11830,7 @@ bool __stdcall FUN_10579440(char *p, void *a1, void *a2, void *a3) { *p = 1; ret
 bool __stdcall FUN_10585fd0(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 bool __stdcall FUN_10585fe0(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 bool __stdcall FUN_10585ff0(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
+bool FUN_1058a820() { return true; }
 void __stdcall FUN_1058d250(int *p) { *p = 0; }
 struct GS1058eba0 { char p[36]; short m; short FUN_1058eba0(); };
 short GS1058eba0::FUN_1058eba0() { return m; }
@@ -11715,6 +11890,7 @@ short GS105befe0::FUN_105befe0() { return m; }
 int FUN_105bf770() { return 300000; }
 struct GS105c2230 { char p[32]; int m; int FUN_105c2230(); };
 int GS105c2230::FUN_105c2230() { return m; }
+bool FUN_105c5880() { return true; }
 int FUN_105c7600() { return 5; }
 int FUN_105c7610() { return 1; }
 int FUN_105c7bf0() { return 2; }
@@ -11803,8 +11979,39 @@ int FUN_105f2110() { return 303207456; }
 struct GS10618bf0 { char p[284]; int m; int FUN_10618bf0(); };
 int GS10618bf0::FUN_10618bf0() { return m; }
 int FUN_10618ef0() { return 1; }
+bool FUN_106198e0() { return true; }
+bool FUN_106198f0() { return true; }
+bool FUN_10619940() { return true; }
+bool FUN_10619950() { return true; }
+bool FUN_10619980() { return true; }
+bool FUN_106199b0() { return true; }
+bool FUN_106199c0() { return true; }
+bool FUN_106199d0() { return true; }
+bool FUN_106199e0() { return true; }
+bool FUN_106199f0() { return true; }
+bool FUN_10619a00() { return true; }
+bool FUN_10619a10() { return true; }
+bool FUN_10619a40() { return true; }
 int FUN_106231d0() { return 1; }
+bool FUN_10623230() { return true; }
+bool FUN_10623240() { return true; }
+bool FUN_10623250() { return true; }
+bool FUN_10623260() { return true; }
 int FUN_10643030() { return 1; }
+bool FUN_10643810() { return true; }
+bool FUN_10643830() { return true; }
+bool FUN_10643840() { return true; }
+bool FUN_10643850() { return true; }
+bool FUN_10643870() { return true; }
+bool FUN_10643880() { return true; }
+bool FUN_10643890() { return true; }
+bool FUN_106438c0() { return true; }
+bool FUN_106438e0() { return true; }
+bool FUN_10643900() { return true; }
+bool FUN_10643910() { return true; }
+bool FUN_10643930() { return true; }
+bool FUN_10643940() { return true; }
+bool FUN_10643960() { return true; }
 struct GS1065ab90 { char p[4]; int m; int *FUN_1065ab90(); };
 int *GS1065ab90::FUN_1065ab90() { return &m; }
 struct GS1065aba0 { char p[4]; int m; int *FUN_1065aba0(); };
@@ -11817,6 +12024,22 @@ int FUN_1065ad40() { return 303208340; }
 struct GS1066d5a0 { char p[48]; short m; short FUN_1066d5a0(); };
 short GS1066d5a0::FUN_1066d5a0() { return m; }
 int FUN_10677d00() { return 1; }
+bool FUN_10678980() { return true; }
+bool FUN_10678990() { return true; }
+bool FUN_10678a00() { return true; }
+bool FUN_10678a10() { return true; }
+bool FUN_10678a20() { return true; }
+bool FUN_10678a30() { return true; }
+bool FUN_10678a50() { return true; }
+bool FUN_10678a60() { return true; }
+bool FUN_10678ac0() { return true; }
+bool FUN_10678ae0() { return true; }
+bool FUN_10678af0() { return true; }
+bool FUN_10678b00() { return true; }
+bool FUN_10678b10() { return true; }
+bool FUN_10678b70() { return true; }
+bool FUN_10678b80() { return true; }
+bool FUN_10678ba0() { return true; }
 struct GS1067f140 { char p[52]; int m; int FUN_1067f140(); };
 int GS1067f140::FUN_1067f140() { return m; }
 int FUN_10686aa0() { return 294411476; }
@@ -11901,14 +12124,43 @@ int GS106ee750::FUN_106ee750() { return m; }
 int FUN_106f2010() { return 2; }
 struct GS106f2040 { char p[36]; int m; int FUN_106f2040(); };
 int GS106f2040::FUN_106f2040() { return m; }
+bool FUN_106f4a60() { return true; }
+bool FUN_106f4a70() { return true; }
+bool FUN_106f4a80() { return true; }
+bool FUN_106f4a90() { return true; }
+bool FUN_106f4ab0() { return true; }
+bool FUN_106f4ac0() { return true; }
+bool FUN_106f4ad0() { return true; }
+bool FUN_106f4b00() { return true; }
 int FUN_106fced0() { return 2; }
+bool FUN_106fcf40() { return true; }
+bool FUN_106fcf50() { return true; }
+bool FUN_106fcf60() { return true; }
 int FUN_10702600() { return 2; }
+bool FUN_10702640() { return true; }
+bool FUN_10702650() { return true; }
+bool FUN_10702660() { return true; }
+bool FUN_10702670() { return true; }
 int FUN_107079a0() { return 2; }
+bool FUN_10707a00() { return true; }
+bool FUN_10707a10() { return true; }
+bool FUN_10707a20() { return true; }
 struct GS107085a0 { char p[40]; int m; int FUN_107085a0(); };
 int GS107085a0::FUN_107085a0() { return m; }
 int FUN_107104d0() { return 2; }
+bool FUN_10710610() { return true; }
+bool FUN_10710620() { return true; }
+bool FUN_10710630() { return true; }
 int FUN_107172c0() { return 2; }
+bool FUN_10717340() { return true; }
+bool FUN_10717350() { return true; }
+bool FUN_10717360() { return true; }
 int FUN_10721ff0() { return 2; }
+bool FUN_107220f0() { return true; }
+bool FUN_10722100() { return true; }
+bool FUN_10722110() { return true; }
+bool FUN_10722120() { return true; }
+bool FUN_10722130() { return true; }
 struct GS1072e1f0 { char p[4]; int m; int *FUN_1072e1f0(); };
 int *GS1072e1f0::FUN_1072e1f0() { return &m; }
 struct GS1072e200 { char p[4]; int m; int *FUN_1072e200(); };
@@ -11916,72 +12168,412 @@ int *GS1072e200::FUN_1072e200() { return &m; }
 int FUN_1072e6c0() { return 303209388; }
 int FUN_1072e6d0() { return 303209320; }
 int FUN_10743260() { return 1; }
+bool FUN_10748b00() { return true; }
+bool FUN_10748b10() { return true; }
+bool FUN_10748b20() { return true; }
+bool FUN_10748b30() { return true; }
+bool FUN_10748b60() { return true; }
+bool FUN_10748b70() { return true; }
+bool FUN_10748b80() { return true; }
+bool FUN_10748b90() { return true; }
+bool FUN_10748ba0() { return true; }
+bool FUN_10748bc0() { return true; }
+bool FUN_10748bd0() { return true; }
+bool FUN_10748c10() { return true; }
 int FUN_1074c9e0() { return 1; }
+bool FUN_1074ca00() { return true; }
 int FUN_1074e960() { return 1; }
+bool FUN_1074e9a0() { return true; }
 int FUN_107577f0() { return 1; }
+bool FUN_10757870() { return true; }
+bool FUN_10757880() { return true; }
+bool FUN_10757890() { return true; }
+bool FUN_107578a0() { return true; }
+bool FUN_107578b0() { return true; }
 int FUN_10760b10() { return 1; }
+bool FUN_10761050() { return true; }
+bool FUN_10761060() { return true; }
+bool FUN_10761070() { return true; }
+bool FUN_10761080() { return true; }
+bool FUN_10761090() { return true; }
+bool FUN_107610a0() { return true; }
+bool FUN_107610b0() { return true; }
 int FUN_10767050() { return 1; }
+bool FUN_10767090() { return true; }
+bool FUN_107670a0() { return true; }
+bool FUN_107670b0() { return true; }
 int FUN_1076b450() { return 1; }
+bool FUN_1076bed0() { return true; }
+bool FUN_1076bee0() { return true; }
 int FUN_10771d10() { return 1; }
+bool FUN_10771d60() { return true; }
+bool FUN_10771d70() { return true; }
+bool FUN_10771d80() { return true; }
+bool FUN_10771d90() { return true; }
 int FUN_1077a540() { return 1; }
+bool FUN_1077a580() { return true; }
+bool FUN_1077a590() { return true; }
+bool FUN_1077a5a0() { return true; }
+bool FUN_1077a5b0() { return true; }
 int FUN_1077dfe0() { return 1; }
+bool FUN_1077e020() { return true; }
 int FUN_10782dc0() { return 1; }
+bool FUN_10782e20() { return true; }
+bool FUN_10782e30() { return true; }
+bool FUN_10782e40() { return true; }
 int FUN_10785860() { return 1; }
+bool FUN_10785890() { return true; }
 int FUN_107bca10() { return 1; }
+bool FUN_107be740() { return true; }
+bool FUN_107be750() { return true; }
+bool FUN_107be760() { return true; }
+bool FUN_107be770() { return true; }
+bool FUN_107be790() { return true; }
+bool FUN_107be7a0() { return true; }
+bool FUN_107be7b0() { return true; }
+bool FUN_107be7c0() { return true; }
+bool FUN_107be7d0() { return true; }
+bool FUN_107be7e0() { return true; }
+bool FUN_107be7f0() { return true; }
+bool FUN_107be800() { return true; }
+bool FUN_107be810() { return true; }
+bool FUN_107be820() { return true; }
+bool FUN_107be830() { return true; }
+bool FUN_107be850() { return true; }
+bool FUN_107be860() { return true; }
+bool FUN_107be870() { return true; }
+bool FUN_107be880() { return true; }
+bool FUN_107be890() { return true; }
+bool FUN_107be8a0() { return true; }
+bool FUN_107be8b0() { return true; }
+bool FUN_107be8c0() { return true; }
+bool FUN_107be8d0() { return true; }
+bool FUN_107be8e0() { return true; }
+bool FUN_107be8f0() { return true; }
+bool FUN_107be900() { return true; }
+bool FUN_107be910() { return true; }
+bool FUN_107be930() { return true; }
 int FUN_107e03c0() { return 1; }
+bool FUN_107e0f90() { return true; }
+bool FUN_107e0fa0() { return true; }
+bool FUN_107e0fb0() { return true; }
+bool FUN_107e0fc0() { return true; }
+bool FUN_107e0fd0() { return true; }
+bool FUN_107e0fe0() { return true; }
+bool FUN_107e0ff0() { return true; }
+bool FUN_107e1000() { return true; }
+bool FUN_107e1010() { return true; }
+bool FUN_107e1020() { return true; }
 int FUN_107e8b50() { return 2; }
+bool FUN_107e8b70() { return true; }
 int FUN_107fee80() { return 1; }
+bool FUN_107feec0() { return true; }
+bool FUN_107feed0() { return true; }
+bool FUN_107feee0() { return true; }
+bool FUN_107feef0() { return true; }
+bool FUN_107fef00() { return true; }
+bool FUN_107fef10() { return true; }
+bool FUN_107fef20() { return true; }
+bool FUN_107fef30() { return true; }
+bool FUN_107fef40() { return true; }
+bool FUN_107fef50() { return true; }
+bool FUN_107fef60() { return true; }
+bool FUN_107fef70() { return true; }
+bool FUN_107fef80() { return true; }
 int FUN_108104d0() { return 1; }
+bool FUN_10810510() { return true; }
+bool FUN_10810520() { return true; }
+bool FUN_10810530() { return true; }
+bool FUN_10810540() { return true; }
+bool FUN_10810550() { return true; }
+bool FUN_10810560() { return true; }
+bool FUN_10810570() { return true; }
+bool FUN_10810580() { return true; }
 int FUN_10817250() { return 1; }
+bool FUN_108172b0() { return true; }
+bool FUN_108172c0() { return true; }
+bool FUN_108172d0() { return true; }
 int FUN_108249a0() { return 1; }
+bool FUN_10825300() { return true; }
+bool FUN_10825310() { return true; }
+bool FUN_10825320() { return true; }
+bool FUN_10825330() { return true; }
+bool FUN_10825340() { return true; }
+bool FUN_10825350() { return true; }
+bool FUN_10825360() { return true; }
+bool FUN_10825370() { return true; }
+bool FUN_10825380() { return true; }
+bool FUN_10825390() { return true; }
+bool FUN_108253a0() { return true; }
 int FUN_108358e0() { return 1; }
+bool FUN_10836190() { return true; }
+bool FUN_108361a0() { return true; }
+bool FUN_108361b0() { return true; }
+bool FUN_108361c0() { return true; }
+bool FUN_108361d0() { return true; }
+bool FUN_108361e0() { return true; }
+bool FUN_108361f0() { return true; }
 int FUN_1083ca80() { return 1; }
 struct GS1083d0b0 { char p[256]; int m; int FUN_1083d0b0(); };
 int GS1083d0b0::FUN_1083d0b0() { return m; }
+bool FUN_1083d1d0() { return true; }
+bool FUN_1083d1e0() { return true; }
+bool FUN_1083d1f0() { return true; }
 struct GS10848ce0 { char p[4]; int m; int *FUN_10848ce0(); };
 int *GS10848ce0::FUN_10848ce0() { return &m; }
 int FUN_10848d10() { return 303209456; }
 int FUN_10859b60() { return 1; }
+bool FUN_10859cc0() { return true; }
+bool FUN_10859cd0() { return true; }
+bool FUN_10859ce0() { return true; }
+bool FUN_10859cf0() { return true; }
+bool FUN_10859d00() { return true; }
+bool FUN_10859d20() { return true; }
+bool FUN_10859d30() { return true; }
+bool FUN_10859d40() { return true; }
+bool FUN_10859d50() { return true; }
+bool FUN_10859d60() { return true; }
+bool FUN_10859d80() { return true; }
+bool FUN_10859dd0() { return true; }
+bool FUN_10859de0() { return true; }
+bool FUN_10859e00() { return true; }
 int FUN_1085f020() { return 1; }
+bool FUN_1085f040() { return true; }
 int FUN_1086c3b0() { return 1; }
+bool FUN_1086cc70() { return true; }
+bool FUN_1086cc80() { return true; }
+bool FUN_1086cc90() { return true; }
+bool FUN_1086cca0() { return true; }
+bool FUN_1086ccb0() { return true; }
+bool FUN_1086ccc0() { return true; }
+bool FUN_1086ccd0() { return true; }
+bool FUN_1086cce0() { return true; }
+bool FUN_1086ccf0() { return true; }
+bool FUN_1086cd00() { return true; }
 int FUN_1087d700() { return 1; }
+bool FUN_1087d750() { return true; }
+bool FUN_1087d770() { return true; }
+bool FUN_1087d780() { return true; }
+bool FUN_1087d790() { return true; }
 int FUN_1087ec40() { return 1; }
 int FUN_1088f380() { return 1; }
+bool FUN_1088f720() { return true; }
+bool FUN_1088f730() { return true; }
+bool FUN_1088f740() { return true; }
+bool FUN_1088f750() { return true; }
+bool FUN_1088f760() { return true; }
+bool FUN_1088f770() { return true; }
+bool FUN_1088f780() { return true; }
+bool FUN_1088f790() { return true; }
+bool FUN_1088f7a0() { return true; }
+bool FUN_1088f7b0() { return true; }
+bool FUN_1088f7c0() { return true; }
+bool FUN_1088f7e0() { return true; }
 int FUN_1089cd70() { return 1; }
+bool FUN_1089cdb0() { return true; }
+bool FUN_1089cdc0() { return true; }
+bool FUN_1089cdd0() { return true; }
+bool FUN_1089cde0() { return true; }
+bool FUN_1089cdf0() { return true; }
+bool FUN_1089ce00() { return true; }
+bool FUN_1089ce10() { return true; }
 int FUN_108b0d00() { return 1; }
+bool FUN_108b16f0() { return true; }
+bool FUN_108b1700() { return true; }
+bool FUN_108b1710() { return true; }
+bool FUN_108b1720() { return true; }
+bool FUN_108b1730() { return true; }
+bool FUN_108b1740() { return true; }
+bool FUN_108b1750() { return true; }
+bool FUN_108b1770() { return true; }
+bool FUN_108b1780() { return true; }
+bool FUN_108b17a0() { return true; }
+bool FUN_108b17c0() { return true; }
 int FUN_108bbad0() { return 1; }
+bool FUN_108bbb10() { return true; }
+bool FUN_108bbb20() { return true; }
+bool FUN_108bbb30() { return true; }
+bool FUN_108bbb40() { return true; }
 int FUN_108c6100() { return 1; }
+bool FUN_108c6160() { return true; }
+bool FUN_108c6170() { return true; }
+bool FUN_108c6190() { return true; }
+bool FUN_108c61a0() { return true; }
+bool FUN_108c61b0() { return true; }
+bool FUN_108c61c0() { return true; }
+bool FUN_108c61d0() { return true; }
 int FUN_108dd690() { return 1; }
+bool FUN_108dd9d0() { return true; }
+bool FUN_108dd9e0() { return true; }
+bool FUN_108dd9f0() { return true; }
+bool FUN_108dda00() { return true; }
+bool FUN_108dda10() { return true; }
+bool FUN_108dda20() { return true; }
+bool FUN_108dda30() { return true; }
+bool FUN_108dda40() { return true; }
+bool FUN_108dda50() { return true; }
+bool FUN_108dda60() { return true; }
+bool FUN_108dda70() { return true; }
+bool FUN_108dda80() { return true; }
+bool FUN_108dda90() { return true; }
 int FUN_108f4c70() { return 1; }
+bool FUN_108f4cd0() { return true; }
+bool FUN_108f4ce0() { return true; }
+bool FUN_108f4cf0() { return true; }
+bool FUN_108f4d00() { return true; }
+bool FUN_108f4d10() { return true; }
+bool FUN_108f4d20() { return true; }
+bool FUN_108f4d30() { return true; }
+bool FUN_108f4d40() { return true; }
+bool FUN_108f4d50() { return true; }
+bool FUN_108f4d60() { return true; }
+bool FUN_108f4d70() { return true; }
+bool FUN_108f4d80() { return true; }
+bool FUN_108f4d90() { return true; }
+bool FUN_108f4db0() { return true; }
+bool FUN_108f4dc0() { return true; }
 int FUN_108fabe0() { return 1; }
+bool FUN_108fac20() { return true; }
 int FUN_10903ce0() { return 1; }
+bool FUN_109040a0() { return true; }
+bool FUN_109040b0() { return true; }
+bool FUN_109040c0() { return true; }
+bool FUN_109040d0() { return true; }
 int FUN_109142d0() { return 1; }
+bool FUN_109143a0() { return true; }
+bool FUN_109143b0() { return true; }
+bool FUN_109143c0() { return true; }
+bool FUN_109143e0() { return true; }
+bool FUN_109143f0() { return true; }
+bool FUN_10914410() { return true; }
+bool FUN_10914420() { return true; }
+bool FUN_10914430() { return true; }
+bool FUN_10914440() { return true; }
 int FUN_10929cf0() { return 1; }
+bool FUN_1092a090() { return true; }
+bool FUN_1092a0a0() { return true; }
+bool FUN_1092a0b0() { return true; }
+bool FUN_1092a0c0() { return true; }
+bool FUN_1092a0d0() { return true; }
+bool FUN_1092a0e0() { return true; }
+bool FUN_1092a100() { return true; }
+bool FUN_1092a110() { return true; }
+bool FUN_1092a120() { return true; }
+bool FUN_1092a130() { return true; }
+bool FUN_1092a140() { return true; }
+bool FUN_1092a160() { return true; }
+bool FUN_1092a170() { return true; }
 int FUN_109442c0() { return 1; }
+bool FUN_10945310() { return true; }
+bool FUN_10945320() { return true; }
+bool FUN_10945330() { return true; }
+bool FUN_10945340() { return true; }
+bool FUN_10945350() { return true; }
+bool FUN_10945360() { return true; }
+bool FUN_10945370() { return true; }
+bool FUN_10945380() { return true; }
+bool FUN_10945390() { return true; }
+bool FUN_109453a0() { return true; }
+bool FUN_109453b0() { return true; }
+bool FUN_109453c0() { return true; }
+bool FUN_109453d0() { return true; }
+bool FUN_109453e0() { return true; }
+bool FUN_109453f0() { return true; }
+bool FUN_10945400() { return true; }
 int FUN_10952da0() { return 1; }
+bool FUN_10953230() { return true; }
+bool FUN_10953240() { return true; }
+bool FUN_10953250() { return true; }
+bool FUN_10953260() { return true; }
+bool FUN_10953270() { return true; }
+bool FUN_10953280() { return true; }
 int FUN_109577d0() { return 1; }
+bool FUN_10957810() { return true; }
+bool FUN_10957820() { return true; }
 int FUN_1095af80() { return 1; }
+bool FUN_1095afc0() { return true; }
 int FUN_10960df0() { return 1; }
+bool FUN_10960e30() { return true; }
+bool FUN_10960e40() { return true; }
+bool FUN_10960e50() { return true; }
+bool FUN_10960e60() { return true; }
 int FUN_109663c0() { return 1; }
+bool FUN_1096f350() { return true; }
+bool FUN_1096f360() { return true; }
+bool FUN_1096f370() { return true; }
 int FUN_10972890() { return 1; }
+bool FUN_10972a10() { return true; }
+bool FUN_10972a20() { return true; }
 int FUN_1097e450() { return 1; }
+bool FUN_1097e8f0() { return true; }
+bool FUN_1097e900() { return true; }
+bool FUN_1097e910() { return true; }
+bool FUN_1097e920() { return true; }
+bool FUN_1097e930() { return true; }
+bool FUN_1097e940() { return true; }
+bool FUN_1097e970() { return true; }
+bool FUN_1097e980() { return true; }
+bool FUN_1097e990() { return true; }
 bool __stdcall FUN_1097fa70(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 int FUN_10987f70() { return 1; }
+bool FUN_10988010() { return true; }
+bool FUN_10988020() { return true; }
+bool FUN_10988030() { return true; }
+bool FUN_10988070() { return true; }
 int FUN_1098c950() { return 1; }
+bool FUN_1098cc50() { return true; }
+bool FUN_1098cc60() { return true; }
 int FUN_10996c40() { return 1; }
+bool FUN_10998240() { return true; }
+bool FUN_10998250() { return true; }
+bool FUN_10998260() { return true; }
+bool FUN_10998270() { return true; }
 int FUN_1099c6b0() { return 1; }
+bool FUN_1099c710() { return true; }
 int FUN_109a4770() { return 1; }
+bool FUN_109a55c0() { return true; }
+bool FUN_109a55d0() { return true; }
+bool FUN_109a55e0() { return true; }
+bool FUN_109a55f0() { return true; }
 int FUN_109b41c0() { return 1; }
+bool FUN_109b42c0() { return true; }
+bool FUN_109b42e0() { return true; }
+bool FUN_109b4300() { return true; }
+bool FUN_109b4330() { return true; }
 int FUN_109bd1a0() { return 1; }
+bool FUN_109be290() { return true; }
+bool FUN_109be2a0() { return true; }
+bool FUN_109be2b0() { return true; }
+bool FUN_109be2c0() { return true; }
 int FUN_109c3880() { return 1; }
+bool FUN_109c38c0() { return true; }
+bool FUN_109c38e0() { return true; }
 int FUN_109c9390() { return 1; }
+bool FUN_109ca330() { return true; }
+bool FUN_109ca340() { return true; }
+bool FUN_109ca360() { return true; }
 struct GS109ccdf0 { char p[4]; int m; int *FUN_109ccdf0(); };
 int *GS109ccdf0::FUN_109ccdf0() { return &m; }
 int FUN_109cce10() { return 303209524; }
 int FUN_109d0340() { return 1; }
+bool FUN_109d7650() { return true; }
+bool FUN_109d7660() { return true; }
+bool FUN_109d7670() { return true; }
 int FUN_109e03a0() { return 1; }
+bool FUN_109e0600() { return true; }
+bool FUN_109e0610() { return true; }
+bool FUN_109e0630() { return true; }
+bool FUN_109e0640() { return true; }
 int FUN_109ec450() { return 1; }
+bool FUN_109ec4e0() { return true; }
+bool FUN_109ec4f0() { return true; }
+bool FUN_109ec500() { return true; }
+bool FUN_109ec510() { return true; }
+bool FUN_109ec530() { return true; }
 int FUN_109f2ee0() { return 1; }
+bool FUN_109f2f50() { return true; }
+bool FUN_109f2f60() { return true; }
+bool FUN_109f2f70() { return true; }
 struct GS10a008f0 { char p[36]; short m; short FUN_10a008f0(); };
 short GS10a008f0::FUN_10a008f0() { return m; }
 struct GS10a00900 { char p[36]; short m; short FUN_10a00900(); };
@@ -11991,6 +12583,17 @@ short GS10a00910::FUN_10a00910() { return m; }
 struct GS10a00920 { char p[36]; short m; short FUN_10a00920(); };
 short GS10a00920::FUN_10a00920() { return m; }
 int FUN_10a04630() { return 1; }
+bool FUN_10a05c90() { return true; }
+bool FUN_10a05ca0() { return true; }
+bool FUN_10a05cb0() { return true; }
+bool FUN_10a05cc0() { return true; }
+bool FUN_10a05cd0() { return true; }
+bool FUN_10a05ce0() { return true; }
+bool FUN_10a05cf0() { return true; }
+bool FUN_10a05d00() { return true; }
+bool FUN_10a05d10() { return true; }
+bool FUN_10a05d20() { return true; }
+bool FUN_10a05d30() { return true; }
 struct GS10a08a90 { char p[32]; int m; int FUN_10a08a90(); };
 int GS10a08a90::FUN_10a08a90() { return m; }
 struct GS10a08aa0 { char p[32]; int m; int FUN_10a08aa0(); };
@@ -12004,45 +12607,303 @@ bool __stdcall FUN_10a08c80(char *p, void *a1, void *a2, void *a3) { *p = 1; ret
 bool __stdcall FUN_10a08c90(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 bool __stdcall FUN_10a08ca0(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 int FUN_10a0c450() { return 1; }
+bool FUN_10a0c4d0() { return true; }
 int FUN_10a11da0() { return 1; }
+bool FUN_10a11e00() { return true; }
+bool FUN_10a11e10() { return true; }
+bool FUN_10a11e20() { return true; }
 int FUN_10a1c8c0() { return 1; }
+bool FUN_10a1cff0() { return true; }
+bool FUN_10a1d000() { return true; }
+bool FUN_10a1d010() { return true; }
+bool FUN_10a1d020() { return true; }
+bool FUN_10a1d030() { return true; }
 int FUN_10a3c7b0() { return 1; }
+bool FUN_10a3d680() { return true; }
+bool FUN_10a3d690() { return true; }
+bool FUN_10a3d6a0() { return true; }
+bool FUN_10a3d6b0() { return true; }
+bool FUN_10a3d6c0() { return true; }
+bool FUN_10a3d6d0() { return true; }
+bool FUN_10a3d6e0() { return true; }
+bool FUN_10a3d6f0() { return true; }
+bool FUN_10a3d700() { return true; }
+bool FUN_10a3d710() { return true; }
+bool FUN_10a3d720() { return true; }
+bool FUN_10a3d730() { return true; }
+bool FUN_10a3d740() { return true; }
 int FUN_10a43c10() { return 1; }
+bool FUN_10a43ee0() { return true; }
+bool FUN_10a43ef0() { return true; }
 int FUN_10a487f0() { return 1; }
+bool FUN_10a48830() { return true; }
+bool FUN_10a48840() { return true; }
 int FUN_10a4c3a0() { return 1; }
+bool FUN_10a4c3e0() { return true; }
+bool FUN_10a4c3f0() { return true; }
 int FUN_10a618b0() { return 2; }
+bool FUN_10a619c0() { return true; }
+bool FUN_10a619d0() { return true; }
+bool FUN_10a619e0() { return true; }
+bool FUN_10a619f0() { return true; }
+bool FUN_10a61a00() { return true; }
+bool FUN_10a61a10() { return true; }
+bool FUN_10a61a20() { return true; }
+bool FUN_10a61a30() { return true; }
+bool FUN_10a61a40() { return true; }
+bool FUN_10a61a50() { return true; }
 int FUN_10a710c0() { return 1; }
+bool FUN_10a710d0() { return true; }
+bool FUN_10a710e0() { return true; }
+bool FUN_10a710f0() { return true; }
+bool FUN_10a71100() { return true; }
+bool FUN_10a71110() { return true; }
+bool FUN_10a71120() { return true; }
+bool FUN_10a71130() { return true; }
+bool FUN_10a71140() { return true; }
+bool FUN_10a71150() { return true; }
+bool FUN_10a71160() { return true; }
+bool FUN_10a71170() { return true; }
+bool FUN_10a71180() { return true; }
+bool FUN_10a71190() { return true; }
 int FUN_10a741e0() { return 1; }
+bool FUN_10a741f0() { return true; }
+bool FUN_10a74200() { return true; }
+bool FUN_10a74210() { return true; }
+bool FUN_10a74220() { return true; }
 int FUN_10a7c010() { return 1; }
+bool FUN_10a7c070() { return true; }
+bool FUN_10a7c080() { return true; }
+bool FUN_10a7c090() { return true; }
+bool FUN_10a7c0a0() { return true; }
 int FUN_10a80380() { return 1; }
+bool FUN_10a80390() { return true; }
+bool FUN_10a803a0() { return true; }
+bool FUN_10a803b0() { return true; }
+bool FUN_10a803c0() { return true; }
 int FUN_10a831f0() { return 1; }
+bool FUN_10a83200() { return true; }
+bool FUN_10a83210() { return true; }
+bool FUN_10a83220() { return true; }
 int FUN_10a88a10() { return 1; }
+bool FUN_10a88a20() { return true; }
+bool FUN_10a88a30() { return true; }
+bool FUN_10a88a40() { return true; }
+bool FUN_10a88a50() { return true; }
 int FUN_10a90690() { return 2; }
+bool FUN_10a906c0() { return true; }
+bool FUN_10a906d0() { return true; }
+bool FUN_10a906e0() { return true; }
+bool FUN_10a906f0() { return true; }
+bool FUN_10a90700() { return true; }
+bool FUN_10a999d0() { return true; }
+bool FUN_10a999e0() { return true; }
+bool FUN_10a999f0() { return true; }
+bool FUN_10a99a00() { return true; }
+bool FUN_10a99a10() { return true; }
+bool FUN_10a99a20() { return true; }
+bool FUN_10a99a30() { return true; }
+bool FUN_10a99a40() { return true; }
 int FUN_10aa14b0() { return 1; }
+bool FUN_10aa18e0() { return true; }
+bool FUN_10aa18f0() { return true; }
+bool FUN_10aa1900() { return true; }
+bool FUN_10aa1910() { return true; }
+bool FUN_10aa1920() { return true; }
+bool FUN_10aa1930() { return true; }
+bool FUN_10aa1940() { return true; }
 int FUN_10ab2590() { return 1; }
+bool FUN_10ab25a0() { return true; }
+bool FUN_10ab25b0() { return true; }
+bool FUN_10ab25c0() { return true; }
+bool FUN_10ab25d0() { return true; }
+bool FUN_10ab25e0() { return true; }
+bool FUN_10ab25f0() { return true; }
+bool FUN_10ab2600() { return true; }
+bool FUN_10ab2610() { return true; }
+bool FUN_10ab2620() { return true; }
+bool FUN_10ab2630() { return true; }
+bool FUN_10ab2640() { return true; }
+bool FUN_10ab2650() { return true; }
+bool FUN_10ab2660() { return true; }
+bool FUN_10ab2670() { return true; }
+bool FUN_10ab2680() { return true; }
+bool FUN_10ab2690() { return true; }
+bool FUN_10ab26a0() { return true; }
 int FUN_10ab3f10() { return 1; }
+bool FUN_10ab3f20() { return true; }
+bool FUN_10ab3f30() { return true; }
 int FUN_10ab5f80() { return 1; }
+bool FUN_10ab5f90() { return true; }
+bool FUN_10ab5fa0() { return true; }
+bool FUN_10ab5fb0() { return true; }
 int FUN_10ab6380() { return 1; }
+bool FUN_10ab6390() { return true; }
 int FUN_10ae4d30() { return 1; }
+bool FUN_10ae5830() { return true; }
+bool FUN_10ae5840() { return true; }
+bool FUN_10ae5850() { return true; }
+bool FUN_10ae5860() { return true; }
+bool FUN_10ae5870() { return true; }
+bool FUN_10ae5880() { return true; }
+bool FUN_10ae5890() { return true; }
+bool FUN_10ae58a0() { return true; }
+bool FUN_10ae58b0() { return true; }
+bool FUN_10ae58c0() { return true; }
+bool FUN_10ae58d0() { return true; }
+bool FUN_10ae58e0() { return true; }
+bool FUN_10ae58f0() { return true; }
+bool FUN_10ae5900() { return true; }
+bool FUN_10ae5910() { return true; }
+bool FUN_10ae5920() { return true; }
+bool FUN_10ae5930() { return true; }
+bool FUN_10ae5940() { return true; }
+bool FUN_10ae5950() { return true; }
+bool FUN_10ae5960() { return true; }
+bool FUN_10ae5970() { return true; }
+bool FUN_10ae5980() { return true; }
+bool FUN_10ae5990() { return true; }
+bool FUN_10ae59a0() { return true; }
+bool FUN_10ae59b0() { return true; }
+bool FUN_10ae59c0() { return true; }
+bool FUN_10ae59d0() { return true; }
+bool FUN_10ae59e0() { return true; }
+bool FUN_10ae59f0() { return true; }
+bool FUN_10ae5a00() { return true; }
+bool FUN_10ae5a10() { return true; }
+bool FUN_10ae5a20() { return true; }
+bool FUN_10ae5a30() { return true; }
+bool FUN_10ae5a40() { return true; }
+bool FUN_10ae5a50() { return true; }
+bool FUN_10ae5a60() { return true; }
+bool FUN_10ae5a70() { return true; }
+bool FUN_10ae5a80() { return true; }
 int FUN_10ae8f30() { return 1; }
+bool FUN_10ae8f40() { return true; }
+bool FUN_10ae8f50() { return true; }
+bool FUN_10ae8f60() { return true; }
+bool FUN_10ae8f70() { return true; }
 int FUN_10af34c0() { return 1; }
+bool FUN_10af34d0() { return true; }
+bool FUN_10af34e0() { return true; }
+bool FUN_10af34f0() { return true; }
+bool FUN_10af3500() { return true; }
+bool FUN_10af3510() { return true; }
+bool FUN_10af3520() { return true; }
+bool FUN_10af3530() { return true; }
+bool FUN_10af3540() { return true; }
+bool FUN_10af3550() { return true; }
 int FUN_10afd5f0() { return 1; }
+bool FUN_10afea10() { return true; }
+bool FUN_10afea20() { return true; }
+bool FUN_10afea30() { return true; }
+bool FUN_10afea40() { return true; }
+bool FUN_10afea50() { return true; }
+bool FUN_10afea60() { return true; }
 int FUN_10b02430() { return 1; }
+bool FUN_10b02440() { return true; }
+bool FUN_10b02450() { return true; }
+bool FUN_10b02460() { return true; }
+bool FUN_10b02470() { return true; }
 int FUN_10b08b70() { return 1; }
+bool FUN_10b08bc0() { return true; }
+bool FUN_10b08bd0() { return true; }
+bool FUN_10b08bf0() { return true; }
 int FUN_10b18d50() { return 1; }
+bool FUN_10b18ef0() { return true; }
+bool FUN_10b18f10() { return true; }
+bool FUN_10b18f20() { return true; }
+bool FUN_10b18f30() { return true; }
+bool FUN_10b18f50() { return true; }
+bool FUN_10b18f60() { return true; }
+bool FUN_10b18f80() { return true; }
+bool FUN_10b18f90() { return true; }
+bool FUN_10b18fa0() { return true; }
+bool FUN_10b18fb0() { return true; }
+bool FUN_10b18fc0() { return true; }
+bool FUN_10b18fd0() { return true; }
 int FUN_10b215e0() { return 1; }
+bool FUN_10b21600() { return true; }
+bool FUN_10b21610() { return true; }
+bool FUN_10b21620() { return true; }
+bool FUN_10b21630() { return true; }
+bool FUN_10b21640() { return true; }
+bool FUN_10b21650() { return true; }
 int FUN_10b2dd40() { return 1; }
+bool FUN_10b2dd70() { return true; }
+bool FUN_10b2dd80() { return true; }
+bool FUN_10b2dd90() { return true; }
+bool FUN_10b2dda0() { return true; }
+bool FUN_10b2ddb0() { return true; }
+bool FUN_10b2ddc0() { return true; }
+bool FUN_10b2ddd0() { return true; }
+bool FUN_10b2dde0() { return true; }
+bool FUN_10b2ddf0() { return true; }
+bool FUN_10b2de00() { return true; }
+bool FUN_10b2de10() { return true; }
+bool FUN_10b2de20() { return true; }
 int FUN_10b317c0() { return 1; }
+bool FUN_10b31810() { return true; }
+bool FUN_10b31820() { return true; }
+bool FUN_10b31830() { return true; }
+bool FUN_10b31840() { return true; }
 int FUN_10b45f30() { return 1; }
+bool FUN_10b46080() { return true; }
+bool FUN_10b460a0() { return true; }
+bool FUN_10b460b0() { return true; }
+bool FUN_10b460c0() { return true; }
+bool FUN_10b460d0() { return true; }
+bool FUN_10b460e0() { return true; }
+bool FUN_10b460f0() { return true; }
+bool FUN_10b46100() { return true; }
+bool FUN_10b46110() { return true; }
+bool FUN_10b46120() { return true; }
+bool FUN_10b46130() { return true; }
+bool FUN_10b46140() { return true; }
 bool __stdcall FUN_10b48760(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 bool __stdcall FUN_10b48770(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 int FUN_10b4f970() { return 1; }
+bool FUN_10b4f980() { return true; }
+bool FUN_10b4f990() { return true; }
+bool FUN_10b4f9a0() { return true; }
+bool FUN_10b4f9b0() { return true; }
+bool FUN_10b4f9c0() { return true; }
+bool FUN_10b4f9d0() { return true; }
+bool FUN_10b4f9e0() { return true; }
+bool FUN_10b4f9f0() { return true; }
+bool FUN_10b4fa00() { return true; }
+bool FUN_10b54c30() { return true; }
+bool FUN_10b54c70() { return true; }
+bool FUN_10b54c80() { return true; }
 int FUN_10b582b0() { return 1; }
+bool FUN_10b582d0() { return true; }
+bool FUN_10b582e0() { return true; }
+bool FUN_10b582f0() { return true; }
+bool FUN_10b58300() { return true; }
+bool FUN_10b59430() { return true; }
 int FUN_10b6b570() { return 1; }
+bool FUN_10b6b9e0() { return true; }
+bool FUN_10b6b9f0() { return true; }
+bool FUN_10b6ba00() { return true; }
+bool FUN_10b6ba10() { return true; }
+bool FUN_10b6ba20() { return true; }
+bool FUN_10b6ba30() { return true; }
+bool FUN_10b6ba40() { return true; }
+bool FUN_10b6ba50() { return true; }
+bool FUN_10b6ba60() { return true; }
+bool FUN_10b6ba70() { return true; }
+bool FUN_10b6ba80() { return true; }
+bool FUN_10b6ba90() { return true; }
+bool FUN_10b6baa0() { return true; }
+bool FUN_10b6bab0() { return true; }
+bool FUN_10b6bac0() { return true; }
+bool FUN_10b6bad0() { return true; }
 struct GS10b6ff50 { char p[52]; int m; int FUN_10b6ff50(); };
 int GS10b6ff50::FUN_10b6ff50() { return m; }
 struct GS10b70260 { char p[36]; short m; short FUN_10b70260(); };
 short GS10b70260::FUN_10b70260() { return m; }
+bool FUN_10b719f0() { return true; }
+bool FUN_10b71bc0() { return true; }
 struct GS10b72870 { char p[32]; int m; int FUN_10b72870(); };
 int GS10b72870::FUN_10b72870() { return m; }
 int FUN_10b81800() { return 3; }
@@ -12121,6 +12982,9 @@ int *GS10ba9660::FUN_10ba9660() { return &m; }
 int FUN_10baa270() { return 303209736; }
 int FUN_10baa280() { return 303209656; }
 bool __stdcall FUN_10bb4370(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
+bool FUN_10bb6f90() { return true; }
+bool FUN_10bb6fa0() { return true; }
+bool FUN_10bb6fc0() { return true; }
 int FUN_10bb7ca0() { return 6; }
 int FUN_10bb7cb0() { return 1; }
 int FUN_10bb7cc0() { return 5; }
@@ -12129,6 +12993,10 @@ int FUN_10bb7cf0() { return 2; }
 int FUN_10bb7d00() { return 8; }
 int FUN_10bb7d10() { return 9; }
 int FUN_10bb7d20() { return 7; }
+bool FUN_10bbab90() { return true; }
+bool FUN_10bbaba0() { return true; }
+bool FUN_10bbb3f0() { return true; }
+bool FUN_10bbb420() { return true; }
 struct GS10bbc020 { char p[8]; int m; int FUN_10bbc020(); };
 int GS10bbc020::FUN_10bbc020() { return m; }
 struct GS10bbc030 { char p[8]; int m; int FUN_10bbc030(); };
@@ -12210,6 +13078,10 @@ void __stdcall FUN_10c1b5a0(int *p) { *p = 0; }
 void __stdcall FUN_10c1bbb0(int *p, void *a1) { *p = 0; }
 void __stdcall FUN_10c1e7d0(int *p) { *p = 0; }
 void __stdcall FUN_10c1ea10(int *p) { *p = 0; }
+bool FUN_10c1edb0() { return true; }
+bool FUN_10c1eee0() { return true; }
+bool FUN_10c1f550() { return true; }
+bool FUN_10c20d00() { return true; }
 struct GS10c2c440 { char p[4]; int m; int *FUN_10c2c440(); };
 int *GS10c2c440::FUN_10c2c440() { return &m; }
 int FUN_10c2c500() { return 303210516; }
@@ -12338,6 +13210,9 @@ void __stdcall FUN_10c841c0(int *p) { *p = 0; }
 void __stdcall FUN_10c843f0(int *p) { *p = 0; }
 void __stdcall FUN_10c84400(int *p) { *p = 0; }
 void __stdcall FUN_10c844d0(int *p) { *p = 0; }
+bool FUN_10c84510() { return true; }
+bool FUN_10c84520() { return true; }
+bool FUN_10c84540() { return true; }
 struct GS10c8da10 { char p[252]; int m; int FUN_10c8da10(); };
 int GS10c8da10::FUN_10c8da10() { return m; }
 struct GS10c95170 { char p[76]; int m; int FUN_10c95170(); };
@@ -12356,6 +13231,22 @@ struct GS10c986e0 { char p[100]; int m; int FUN_10c986e0(); };
 int GS10c986e0::FUN_10c986e0() { return m; }
 struct GS10c98ca0 { char p[96]; int m; int FUN_10c98ca0(); };
 int GS10c98ca0::FUN_10c98ca0() { return m; }
+bool FUN_10ca3ca0() { return true; }
+bool FUN_10ca3df0() { return true; }
+bool FUN_10ca3e00() { return true; }
+bool FUN_10ca3e30() { return true; }
+bool FUN_10ca3f10() { return true; }
+bool FUN_10ca3f20() { return true; }
+bool FUN_10ca3f30() { return true; }
+bool FUN_10ca3f50() { return true; }
+bool FUN_10ca3f60() { return true; }
+bool FUN_10ca3f70() { return true; }
+bool FUN_10ca3fa0() { return true; }
+bool FUN_10ca3fc0() { return true; }
+bool FUN_10ca3fd0() { return true; }
+bool FUN_10ca4030() { return true; }
+bool FUN_10ca4040() { return true; }
+bool FUN_10ca40b0() { return true; }
 int FUN_10ca8b30() { return 2; }
 int FUN_10ca8b70() { return 24; }
 int FUN_10ca8b80() { return 20; }
@@ -12386,7 +13277,33 @@ struct GS10ca92e0 { char p[208]; int m; int FUN_10ca92e0(); };
 int GS10ca92e0::FUN_10ca92e0() { return m; }
 struct GS10ca9440 { char p[208]; int m; int FUN_10ca9440(); };
 int GS10ca9440::FUN_10ca9440() { return m; }
+bool FUN_10cb1860() { return true; }
+bool FUN_10cb1870() { return true; }
+bool FUN_10cb1ad0() { return true; }
+bool FUN_10cb1ae0() { return true; }
+bool FUN_10cb1af0() { return true; }
+bool FUN_10cb1b00() { return true; }
+bool FUN_10cb1b10() { return true; }
+bool FUN_10cb1b20() { return true; }
+bool FUN_10cb1b40() { return true; }
+bool FUN_10cb1b60() { return true; }
+bool FUN_10cb1b80() { return true; }
+bool FUN_10cb1b90() { return true; }
+bool FUN_10cb1bb0() { return true; }
+bool FUN_10cb1bc0() { return true; }
+bool FUN_10cb1be0() { return true; }
+bool FUN_10cb1bf0() { return true; }
+bool FUN_10cb1c00() { return true; }
+bool FUN_10cb1c10() { return true; }
+bool FUN_10cb1c20() { return true; }
+bool FUN_10cb1c30() { return true; }
+bool FUN_10cb1c40() { return true; }
+bool FUN_10cb1ca0() { return true; }
 int FUN_10cb22c0() { return 1000; }
+bool FUN_10cb49b0() { return true; }
+bool FUN_10cb7690() { return true; }
+bool FUN_10cb76a0() { return true; }
+bool FUN_10cb76b0() { return true; }
 struct GS10cbb130 { char p[20]; int m; int FUN_10cbb130(); };
 int GS10cbb130::FUN_10cbb130() { return m; }
 struct GS10cbb140 { char p[16]; int m; int FUN_10cbb140(); };
@@ -12480,6 +13397,8 @@ short GS10ce2910::FUN_10ce2910() { return m; }
 struct GS10ce2c00 { char p[32]; int m; int FUN_10ce2c00(); };
 int GS10ce2c00::FUN_10ce2c00() { return m; }
 void __stdcall FUN_10ce43c0(int *p) { *p = 0; }
+bool FUN_10ce44f0() { return true; }
+bool FUN_10ce4510() { return true; }
 struct GS10cf3430 { char p[4]; int m; int *FUN_10cf3430(); };
 int *GS10cf3430::FUN_10cf3430() { return &m; }
 struct GS10cf3440 { char p[4]; int m; int *FUN_10cf3440(); };
@@ -12493,14 +13412,25 @@ int GS10cf6580::FUN_10cf6580() { return m; }
 struct GS10cf7dd0 { char p[136]; int m; int FUN_10cf7dd0(); };
 int GS10cf7dd0::FUN_10cf7dd0() { return m; }
 void __stdcall FUN_10cf8920(int *p) { *p = 0; }
+bool FUN_10cf8a40() { return true; }
+bool FUN_10cf8a50() { return true; }
+bool FUN_10cf8af0() { return true; }
 void __stdcall FUN_10cfa080(int *p) { *p = 0; }
+bool FUN_10cfa2e0() { return true; }
+bool FUN_10cfa300() { return true; }
+bool FUN_10cfbc70() { return true; }
 void __stdcall FUN_10cfc4d0(int *p) { *p = 0; }
+bool FUN_10cfcd40() { return true; }
+bool FUN_10cfcd60() { return true; }
+bool FUN_10d03190() { return true; }
+bool FUN_10d03280() { return true; }
 struct GS10d042e0 { char p[8]; int m; int FUN_10d042e0(); };
 int GS10d042e0::FUN_10d042e0() { return m; }
 void __stdcall FUN_10d04c10(int *p) { *p = 0; }
 struct GS10d04f40 { char p[104]; int m; int *FUN_10d04f40(); };
 int *GS10d04f40::FUN_10d04f40() { return &m; }
 void __stdcall FUN_10d054e0(int *p) { *p = 0; }
+bool FUN_10d07700() { return true; }
 struct GS10d0a1c0 { char p[4]; int m; int *FUN_10d0a1c0(); };
 int *GS10d0a1c0::FUN_10d0a1c0() { return &m; }
 struct GS10d0a1d0 { char p[4]; int m; int *FUN_10d0a1d0(); };
@@ -12508,23 +13438,36 @@ int *GS10d0a1d0::FUN_10d0a1d0() { return &m; }
 int FUN_10d0a220() { return 303210788; }
 int FUN_10d0a230() { return 303210856; }
 void __stdcall FUN_10d0ac60(int *p, void *a1) { *p = 0; }
+bool FUN_10d10390() { return true; }
+bool FUN_10d12de0() { return true; }
+bool FUN_10d12df0() { return true; }
 struct GS10d136f0 { char p[8]; int m; int FUN_10d136f0(); };
 int GS10d136f0::FUN_10d136f0() { return m; }
 void __stdcall FUN_10d13d40(int *p) { *p = 0; }
+bool FUN_10d13ff0() { return true; }
+bool FUN_10d14060() { return true; }
 void __stdcall FUN_10d169c0(int *p, void *a1) { *p = 0; }
 void __stdcall FUN_10d178b0(int *p) { *p = 0; }
+bool FUN_10d1b3c0() { return true; }
 int FUN_10d1c380() { return 4; }
 void __stdcall FUN_10d1cd00(int *p) { *p = 0; }
+bool FUN_10d1ce20() { return true; }
+bool FUN_10d1ce30() { return true; }
+bool FUN_10d1ce60() { return true; }
+bool FUN_10d1e0a0() { return true; }
 int FUN_10d1e100() { return 4; }
+bool FUN_10d1e540() { return true; }
 struct GS10d1fae0 { char p[4]; int m; int *FUN_10d1fae0(); };
 int *GS10d1fae0::FUN_10d1fae0() { return &m; }
 struct GS10d1faf0 { char p[4]; int m; int *FUN_10d1faf0(); };
 int *GS10d1faf0::FUN_10d1faf0() { return &m; }
 int FUN_10d1fb40() { return 303210992; }
 int FUN_10d1fb50() { return 303210924; }
+bool FUN_10d200b0() { return true; }
 int FUN_10d203f0() { return 4; }
 void __stdcall FUN_10d205c0(int *p) { *p = 0; }
 void __stdcall FUN_10d218b0(int *p) { *p = 0; }
+bool FUN_10d21a80() { return true; }
 void __stdcall FUN_10d28910(int *p) { *p = 294813588; }
 struct GS10d28db0 { char p[4]; int m; int *FUN_10d28db0(); };
 int *GS10d28db0::FUN_10d28db0() { return &m; }
@@ -12554,6 +13497,9 @@ int FUN_10d293f0() { return 303211248; }
 int FUN_10d29400() { return 303211128; }
 int FUN_10d29410() { return 303211452; }
 int FUN_10d29420() { return 303211316; }
+bool FUN_10d29550() { return true; }
+bool FUN_10d29560() { return true; }
+bool FUN_10d29570() { return true; }
 void __stdcall FUN_10d29a20(int *p) { *p = 0; }
 void __stdcall FUN_10d29a30(int *p) { *p = 0; }
 void __stdcall FUN_10d29a40(int *p) { *p = 0; }
@@ -12573,6 +13519,14 @@ void __stdcall FUN_10d2a940(int *p) { *p = 0; }
 void __stdcall FUN_10d2aa60(int *p) { *p = 0; }
 void __stdcall FUN_10d2aa70(int *p) { *p = 0; }
 void __stdcall FUN_10d2aa80(int *p) { *p = 0; }
+bool FUN_10d2aa90() { return true; }
+bool FUN_10d2aaa0() { return true; }
+bool FUN_10d2aab0() { return true; }
+bool FUN_10d2ab60() { return true; }
+bool FUN_10d2ab70() { return true; }
+bool FUN_10d2ac60() { return true; }
+bool FUN_10d2ac70() { return true; }
+bool FUN_10d2ac80() { return true; }
 struct GS10d30be0 { char p[4]; int m; int *FUN_10d30be0(); };
 int *GS10d30be0::FUN_10d30be0() { return &m; }
 struct GS10d30bf0 { char p[4]; int m; int *FUN_10d30bf0(); };
@@ -12582,17 +13536,32 @@ int *GS10d30c00::FUN_10d30c00() { return &m; }
 int FUN_10d30c70() { return 303211792; }
 int FUN_10d30c80() { return 303211656; }
 int FUN_10d30c90() { return 303211724; }
+bool FUN_10d34db0() { return true; }
+bool FUN_10d34dc0() { return true; }
 void __stdcall FUN_10d37900(int *p) { *p = 0; }
+bool FUN_10d37fc0() { return true; }
+bool FUN_10d3bc60() { return true; }
 void __stdcall FUN_10d3c4c0(int *p) { *p = 0; }
 void __stdcall FUN_10d3c5b0(int *p) { *p = 0; }
 void __stdcall FUN_10d3c5c0(int *p) { *p = 0; }
 void __stdcall FUN_10d3c740(int *p) { *p = 0; }
+bool FUN_10d3c860() { return true; }
+bool FUN_10d3c8d0() { return true; }
+bool FUN_10d3c8e0() { return true; }
+bool FUN_10d3ee60() { return true; }
 struct GS10d3f780 { char p[8]; int m; int FUN_10d3f780(); };
 int GS10d3f780::FUN_10d3f780() { return m; }
 struct GS10d3f790 { char p[8]; int m; int FUN_10d3f790(); };
 int GS10d3f790::FUN_10d3f790() { return m; }
 void __stdcall FUN_10d3fcf0(int *p) { *p = 0; }
+bool FUN_10d3ffb0() { return true; }
+bool FUN_10d3ffd0() { return true; }
+bool FUN_10d3ffe0() { return true; }
+bool FUN_10d3fff0() { return true; }
 void __stdcall FUN_10d462c0(int *p) { *p = 0; }
+bool FUN_10d467c0() { return true; }
+bool FUN_10d467e0() { return true; }
+bool FUN_10d507f0() { return true; }
 struct GS10d54540 { char p[4]; int m; int *FUN_10d54540(); };
 int *GS10d54540::FUN_10d54540() { return &m; }
 struct GS10d54550 { char p[4]; int m; int *FUN_10d54550(); };
@@ -12608,34 +13577,54 @@ int GS10d554a0::FUN_10d554a0() { return m; }
 void __stdcall FUN_10d554b0(int *p, void *a1) { *p = 0; }
 void __stdcall FUN_10d55ab0(int *p) { *p = 0; }
 void __stdcall FUN_10d55ae0(int *p) { *p = 0; }
+bool FUN_10d56e30() { return true; }
 struct GS10d59bd0 { char p[4]; int m; int *FUN_10d59bd0(); };
 int *GS10d59bd0::FUN_10d59bd0() { return &m; }
 int FUN_10d59c00() { return 303211996; }
 void __stdcall FUN_10d5a1d0(int *p, void *a1) { *p = 0; }
+bool FUN_10d5efb0() { return true; }
 void __stdcall FUN_10d5f670(int *p) { *p = 0; }
+bool FUN_10d615c0() { return true; }
+bool FUN_10d615d0() { return true; }
+bool FUN_10d615e0() { return true; }
 void __stdcall FUN_10d61d40(int *p) { *p = 0; }
 void __stdcall FUN_10d621a0(int *p) { *p = 0; }
 void __stdcall FUN_10d62480(int *p) { *p = 0; }
+bool FUN_10d63340() { return true; }
 struct GS10d653a0 { char p[4]; int m; int *FUN_10d653a0(); };
 int *GS10d653a0::FUN_10d653a0() { return &m; }
 struct GS10d653b0 { char p[4]; int m; int *FUN_10d653b0(); };
 int *GS10d653b0::FUN_10d653b0() { return &m; }
 int FUN_10d65400() { return 303212064; }
 int FUN_10d65410() { return 303212132; }
+bool FUN_10d654f0() { return true; }
+bool FUN_10d65500() { return true; }
+bool FUN_10d65520() { return true; }
+bool FUN_10d65530() { return true; }
 void __stdcall FUN_10d65540(int *p, void *a1) { *p = 0; }
 int FUN_10d65c90() { return 7; }
 int FUN_10d668d0() { return 1; }
 void __stdcall FUN_10d66e70(int *p) { *p = 0; }
 void __stdcall FUN_10d66e80(int *p) { *p = 0; }
+bool FUN_10d670f0() { return true; }
+bool FUN_10d67180() { return true; }
+bool FUN_10d67190() { return true; }
+bool FUN_10d671a0() { return true; }
+bool FUN_10d671b0() { return true; }
 void __stdcall FUN_10d6afc0(int *p, void *a1) { *p = 0; }
 void __stdcall FUN_10d6afd0(int *p, void *a1) { *p = 0; }
 int FUN_10d6d500() { return 1; }
 struct GS10d6dab0 { char p[16]; int m; int *FUN_10d6dab0(); };
 int *GS10d6dab0::FUN_10d6dab0() { return &m; }
+bool FUN_10d6f380() { return true; }
+bool FUN_10d77670() { return true; }
+bool FUN_10d77690() { return true; }
 int FUN_10d77e40() { return 1; }
 int FUN_10d77e60() { return 2; }
 int FUN_10d77ed0() { return 3; }
 int FUN_10d77ee0() { return 1; }
+bool FUN_10d79fe0() { return true; }
+bool FUN_10d7bab0() { return true; }
 struct GS10d83910 { char p[36]; short m; short FUN_10d83910(); };
 short GS10d83910::FUN_10d83910() { return m; }
 struct GS10d83920 { char p[36]; short m; short FUN_10d83920(); };
@@ -12689,9 +13678,13 @@ struct GS10dd26f0 { char p[8]; int m; int FUN_10dd26f0(); };
 int GS10dd26f0::FUN_10dd26f0() { return m; }
 struct GS10dd2700 { char p[16]; int m; int FUN_10dd2700(); };
 int GS10dd2700::FUN_10dd2700() { return m; }
+bool FUN_10dd5340() { return true; }
 void __stdcall FUN_10de01b0(int *p) { *p = 0; }
 struct GS10de1f60 { char p[28]; int m; int FUN_10de1f60(); };
 int GS10de1f60::FUN_10de1f60() { return m; }
+bool FUN_10de2140() { return true; }
+bool FUN_10de2160() { return true; }
+bool FUN_10de2170() { return true; }
 struct GS10de6e40 { char p[36]; short m; short FUN_10de6e40(); };
 short GS10de6e40::FUN_10de6e40() { return m; }
 struct GS10de8c90 { char p[32]; int m; int FUN_10de8c90(); };
@@ -12705,6 +13698,14 @@ short GS10e0ac80::FUN_10e0ac80() { return m; }
 struct GS10e0aef0 { char p[40]; int m; int FUN_10e0aef0(); };
 int GS10e0aef0::FUN_10e0aef0() { return m; }
 int FUN_10e0f780() { return 303145524; }
+bool FUN_10e15170() { return true; }
+bool FUN_10e15190() { return true; }
+bool FUN_10e151a0() { return true; }
+bool FUN_10e151f0() { return true; }
+bool FUN_10e15240() { return true; }
+bool FUN_10e15250() { return true; }
+bool FUN_10e15260() { return true; }
+bool FUN_10e15290() { return true; }
 int FUN_10e199b0() { return 12; }
 int FUN_10e199c0() { return 18; }
 int FUN_10e199d0() { return 15; }
@@ -12718,9 +13719,44 @@ int FUN_10e19a60() { return 17; }
 int FUN_10e19a70() { return 16; }
 int FUN_10e19a80() { return 19; }
 int FUN_10e19c60() { return 21; }
+bool FUN_10e19d60() { return true; }
+bool FUN_10e19d70() { return true; }
+bool FUN_10e19d80() { return true; }
+bool FUN_10e1ef70() { return true; }
+bool FUN_10e1efd0() { return true; }
+bool FUN_10e1efe0() { return true; }
+bool FUN_10e1eff0() { return true; }
+bool FUN_10e1f000() { return true; }
+bool FUN_10e22a30() { return true; }
+bool FUN_10e22a40() { return true; }
+bool FUN_10e22a50() { return true; }
+bool FUN_10e22a60() { return true; }
+bool FUN_10e22b10() { return true; }
+bool FUN_10e22b20() { return true; }
+bool FUN_10e22b30() { return true; }
+bool FUN_10e22b40() { return true; }
+bool FUN_10e22b60() { return true; }
+bool FUN_10e22ca0() { return true; }
+bool FUN_10e23890() { return true; }
 int FUN_10e24250() { return 1; }
 int FUN_10e24270() { return 2; }
 int FUN_10e242f0() { return 3; }
+bool FUN_10e24e00() { return true; }
+bool FUN_10e2cd30() { return true; }
+bool FUN_10e2cd40() { return true; }
+bool FUN_10e2cd50() { return true; }
+bool FUN_10e2cdf0() { return true; }
+bool FUN_10e2ced0() { return true; }
+bool FUN_10e2cf40() { return true; }
+bool FUN_10e2cf50() { return true; }
+bool FUN_10e2cf60() { return true; }
+bool FUN_10e2cf70() { return true; }
+bool FUN_10e2cf90() { return true; }
+bool FUN_10e2cfb0() { return true; }
+bool FUN_10e2cfd0() { return true; }
+bool FUN_10e2cfe0() { return true; }
+bool FUN_10e2cff0() { return true; }
+bool FUN_10e2d0c0() { return true; }
 int FUN_10e30270() { return 4; }
 int FUN_10e30280() { return 5; }
 int FUN_10e30290() { return 25; }
@@ -12747,6 +13783,23 @@ int FUN_10e30400() { return 13; }
 int FUN_10e30960() { return 64; }
 int FUN_10e30970() { return 32; }
 int FUN_10e309c0() { return 7; }
+bool FUN_10e3e530() { return true; }
+bool FUN_10e3e550() { return true; }
+bool FUN_10e3e560() { return true; }
+bool FUN_10e3e600() { return true; }
+bool FUN_10e3e6a0() { return true; }
+bool FUN_10e45730() { return true; }
+bool FUN_10e45740() { return true; }
+bool FUN_10e457e0() { return true; }
+bool FUN_10e457f0() { return true; }
+bool FUN_10e45800() { return true; }
+bool FUN_10e45af0() { return true; }
+bool FUN_10e45b00() { return true; }
+bool FUN_10e45c60() { return true; }
+bool FUN_10e48b60() { return true; }
+bool FUN_10e48bf0() { return true; }
+bool FUN_10e48c00() { return true; }
+bool FUN_10e48c60() { return true; }
 int FUN_10e4ad80() { return 4; }
 int FUN_10e4ad90() { return 1; }
 int FUN_10e4ada0() { return 5; }
@@ -12757,6 +13810,23 @@ int FUN_10e4adf0() { return 2; }
 int FUN_10e4ae00() { return 8; }
 int FUN_10e4ae20() { return 6; }
 int FUN_10e4afa0() { return 12; }
+bool FUN_10e4b060() { return true; }
+bool FUN_10e4e310() { return true; }
+bool FUN_10e4e320() { return true; }
+bool FUN_10e4e340() { return true; }
+bool FUN_10e4e350() { return true; }
+bool FUN_10e4e360() { return true; }
+bool FUN_10e4e370() { return true; }
+bool FUN_10e4e3b0() { return true; }
+bool FUN_10e4e3c0() { return true; }
+bool FUN_10e4e3d0() { return true; }
+bool FUN_10e4e3e0() { return true; }
+bool FUN_10e4e3f0() { return true; }
+bool FUN_10e4e400() { return true; }
+bool FUN_10e523c0() { return true; }
+bool FUN_10e52430() { return true; }
+bool FUN_10e524a0() { return true; }
+bool FUN_10e524d0() { return true; }
 int FUN_10e55550() { return 3; }
 int FUN_10e55560() { return 6; }
 int FUN_10e55570() { return 4; }
@@ -12766,6 +13836,33 @@ int FUN_10e555a0() { return 5; }
 int FUN_10e555b0() { return 9; }
 int FUN_10e555c0() { return 1; }
 int FUN_10e555e0() { return 2; }
+bool FUN_10e55800() { return true; }
+bool FUN_10e55810() { return true; }
+bool FUN_10e58700() { return true; }
+bool FUN_10e58800() { return true; }
+bool FUN_10e58820() { return true; }
+bool FUN_10e58830() { return true; }
+bool FUN_10e58840() { return true; }
+bool FUN_10e58850() { return true; }
+bool FUN_10e58860() { return true; }
+bool FUN_10e58890() { return true; }
+bool FUN_10e588e0() { return true; }
+bool FUN_10e5a270() { return true; }
+bool FUN_10e5a290() { return true; }
+bool FUN_10e5a2a0() { return true; }
+bool FUN_10e5a2b0() { return true; }
+bool FUN_10e5a2c0() { return true; }
+bool FUN_10e5a2d0() { return true; }
+bool FUN_10e65e90() { return true; }
+bool FUN_10e65ea0() { return true; }
+bool FUN_10e65f20() { return true; }
+bool FUN_10e65fe0() { return true; }
+bool FUN_10e66040() { return true; }
+bool FUN_10e66050() { return true; }
+bool FUN_10e66060() { return true; }
+bool FUN_10e660a0() { return true; }
+bool FUN_10e66230() { return true; }
+bool FUN_10e66240() { return true; }
 int FUN_10e698f0() { return 3; }
 int FUN_10e69900() { return 4; }
 int FUN_10e69910() { return 5; }
@@ -12787,30 +13884,72 @@ int FUN_10e69ca0() { return 294912960; }
 int FUN_10e69cc0() { return 19; }
 struct GS10e69da0 { char p[16]; int m; int FUN_10e69da0(); };
 int GS10e69da0::FUN_10e69da0() { return m; }
+bool FUN_10e714c0() { return true; }
+bool FUN_10e714d0() { return true; }
+bool FUN_10e714f0() { return true; }
+bool FUN_10e71510() { return true; }
+bool FUN_10e71520() { return true; }
+bool FUN_10e71530() { return true; }
+bool FUN_10e71540() { return true; }
+bool FUN_10e71550() { return true; }
+bool FUN_10e71560() { return true; }
+bool FUN_10e715a0() { return true; }
+bool FUN_10e733a0() { return true; }
+bool FUN_10e75740() { return true; }
+bool FUN_10e75760() { return true; }
+bool FUN_10e75770() { return true; }
+bool FUN_10e78040() { return true; }
+bool FUN_10e780c0() { return true; }
 int FUN_10e795f0() { return 1; }
 int FUN_10e79600() { return 5; }
 int FUN_10e79610() { return 4; }
 int FUN_10e79620() { return 3; }
 int FUN_10e79640() { return 2; }
 int FUN_10e79720() { return 6; }
+bool FUN_10e7b3f0() { return true; }
+bool FUN_10e7b450() { return true; }
+bool FUN_10e7e930() { return true; }
+bool FUN_10e7f580() { return true; }
+bool FUN_10e80b20() { return true; }
+bool FUN_10e80b30() { return true; }
+bool FUN_10e80b40() { return true; }
 int FUN_10e80e60() { return 1; }
 int FUN_10e80e80() { return 2; }
 int FUN_10e80e90() { return 3; }
 int FUN_10e80ea0() { return 4; }
+bool FUN_10e825a0() { return true; }
+bool FUN_10e825b0() { return true; }
+bool FUN_10e825c0() { return true; }
+bool FUN_10e83fc0() { return true; }
+bool FUN_10e84040() { return true; }
 int FUN_10e84d10() { return 1; }
 int FUN_10e84d20() { return 2; }
 int FUN_10e84d30() { return 4; }
 int FUN_10e84d40() { return 3; }
 int FUN_10e84e30() { return 5; }
+bool FUN_10e86690() { return true; }
+bool FUN_10e866a0() { return true; }
+bool FUN_10e866b0() { return true; }
+bool FUN_10e866c0() { return true; }
+bool FUN_10e87180() { return true; }
+bool FUN_10e87190() { return true; }
 int FUN_10e87760() { return 1; }
 int FUN_10e87770() { return 2; }
 int FUN_10e87780() { return 3; }
 int FUN_10e87790() { return 4; }
 int FUN_10e877a0() { return 5; }
 int FUN_10e87880() { return 6; }
+bool FUN_10e89810() { return true; }
+bool FUN_10e89820() { return true; }
+bool FUN_10e89830() { return true; }
+bool FUN_10e89840() { return true; }
+bool FUN_10e89850() { return true; }
+bool FUN_10e89cc0() { return true; }
 int FUN_10e89df0() { return 1; }
 int FUN_10e89e10() { return 2; }
 int FUN_10e89e80() { return 3; }
+bool FUN_10e89f20() { return true; }
+bool FUN_10e9cfe0() { return true; }
 struct GS10e9da80 { char p[8]; int m; int FUN_10e9da80(); };
 int GS10e9da80::FUN_10e9da80() { return m; }
 struct GS10e9da90 { char p[8]; int m; int FUN_10e9da90(); };
@@ -12825,6 +13964,15 @@ struct GS10e9dea0 { char p[36]; short m; short FUN_10e9dea0(); };
 short GS10e9dea0::FUN_10e9dea0() { return m; }
 struct GS10ea1af0 { char p[16]; int m; int FUN_10ea1af0(); };
 int GS10ea1af0::FUN_10ea1af0() { return m; }
+bool FUN_10ea2600() { return true; }
+bool FUN_10ea2610() { return true; }
+bool FUN_10ea2620() { return true; }
+bool FUN_10ea2630() { return true; }
+bool FUN_10ea2640() { return true; }
+bool FUN_10ea2650() { return true; }
+bool FUN_10ea2660() { return true; }
+bool FUN_10ea2670() { return true; }
+bool FUN_10ea26b0() { return true; }
 struct GS10ea6bf0 { char p[32]; int m; int FUN_10ea6bf0(); };
 int GS10ea6bf0::FUN_10ea6bf0() { return m; }
 bool __stdcall FUN_10ea6c30(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
@@ -12881,6 +14029,10 @@ int FUN_10ef30e0() { return 294959484; }
 int FUN_10ef7b80() { return 294959712; }
 struct GS10f044e0 { char p[24]; int m; int *FUN_10f044e0(); };
 int *GS10f044e0::FUN_10f044e0() { return &m; }
+bool FUN_10f04f50() { return true; }
+bool FUN_10f05710() { return true; }
+bool FUN_10f05820() { return true; }
+bool FUN_10f05ab0() { return true; }
 int FUN_10f05ff0() { return 7; }
 int FUN_10f06110() { return 4; }
 int FUN_10f06120() { return 15; }
@@ -12910,6 +14062,23 @@ int FUN_10f09b00() { return 15; }
 int FUN_10f09b10() { return 21; }
 int FUN_10f09b20() { return 3; }
 int FUN_10f09b30() { return 18; }
+bool FUN_10f0b420() { return true; }
+bool FUN_10f0b430() { return true; }
+bool FUN_10f0b440() { return true; }
+bool FUN_10f0b450() { return true; }
+bool FUN_10f0b480() { return true; }
+bool FUN_10f0b4b0() { return true; }
+bool FUN_10f0b4c0() { return true; }
+bool FUN_10f0b4d0() { return true; }
+bool FUN_10f0b4e0() { return true; }
+bool FUN_10f0b4f0() { return true; }
+bool FUN_10f0b890() { return true; }
+bool FUN_10f0b8a0() { return true; }
+bool FUN_10f0b8b0() { return true; }
+bool FUN_10f0b8c0() { return true; }
+bool FUN_10f0b8f0() { return true; }
+bool FUN_10f0b940() { return true; }
+bool FUN_10f0b960() { return true; }
 int FUN_10f0bd50() { return 6; }
 int FUN_10f0bd60() { return 12; }
 int FUN_10f0bd70() { return 8; }
@@ -12921,6 +14090,14 @@ int FUN_10f0cc70() { return 24; }
 int FUN_10f0cc80() { return 17; }
 int FUN_10f0cc90() { return 13; }
 int FUN_10f0cca0() { return 23; }
+bool FUN_10f0d420() { return true; }
+bool FUN_10f0d430() { return true; }
+bool FUN_10f0d440() { return true; }
+bool FUN_10f0d450() { return true; }
+bool FUN_10f0d460() { return true; }
+bool FUN_10f0d470() { return true; }
+bool FUN_10f0d490() { return true; }
+bool FUN_10f0d4a0() { return true; }
 struct GS10f116c0 { char p[25144]; int m; int FUN_10f116c0(); };
 int GS10f116c0::FUN_10f116c0() { return m; }
 struct GS10f116d0 { char p[24848]; int m; int FUN_10f116d0(); };
@@ -13067,12 +14244,21 @@ struct GS10f8e740 { char p[32]; int m; int FUN_10f8e740(); };
 int GS10f8e740::FUN_10f8e740() { return m; }
 struct GS10f8e750 { char p[32]; int m; int FUN_10f8e750(); };
 int GS10f8e750::FUN_10f8e750() { return m; }
+bool FUN_10f8f9b0() { return true; }
+bool FUN_10f8f9c0() { return true; }
+bool FUN_10f8f9d0() { return true; }
 int FUN_10f8ff00() { return 1; }
 int FUN_10f8ff20() { return 2; }
 int FUN_10f8ff30() { return 4; }
 int FUN_10f8ff40() { return 3; }
 int FUN_10f8ff50() { return 5; }
 int FUN_10f90050() { return 6; }
+bool FUN_10f90840() { return true; }
+bool FUN_10f90880() { return true; }
+bool FUN_10f90890() { return true; }
+bool FUN_10f913a0() { return true; }
+bool FUN_10f92520() { return true; }
+bool FUN_10f92540() { return true; }
 int FUN_10f936a0() { return 6; }
 int FUN_10f936b0() { return 5; }
 int FUN_10f936c0() { return 7; }
@@ -13080,12 +14266,30 @@ int FUN_10f936d0() { return 1; }
 int FUN_10f936e0() { return 3; }
 int FUN_10f93700() { return 2; }
 int FUN_10f937d0() { return 8; }
+bool FUN_10f963b0() { return true; }
+bool FUN_10f963c0() { return true; }
+bool FUN_10f963d0() { return true; }
+bool FUN_10f963f0() { return true; }
+bool FUN_10f96410() { return true; }
+bool FUN_10f97630() { return true; }
+bool FUN_10f97660() { return true; }
+bool FUN_10f97670() { return true; }
+bool FUN_10f97790() { return true; }
 int FUN_10f97b50() { return 1; }
 int FUN_10f97b60() { return 4; }
 int FUN_10f97b70() { return 5; }
 int FUN_10f97b90() { return 2; }
 int FUN_10f97ba0() { return 3; }
 int FUN_10f97c70() { return 6; }
+bool FUN_10f98ec0() { return true; }
+bool FUN_10f98ed0() { return true; }
+bool FUN_10f98ef0() { return true; }
+bool FUN_10f98f00() { return true; }
+bool FUN_10f98f10() { return true; }
+bool FUN_10f98f20() { return true; }
+bool FUN_10f99430() { return true; }
+bool FUN_10f9dbc0() { return true; }
+bool FUN_10f9dca0() { return true; }
 int FUN_10fa01f0() { return 1; }
 int FUN_10fa0210() { return 6; }
 int FUN_10fa0230() { return 2; }
@@ -13095,13 +14299,27 @@ int FUN_10fa0260() { return 7; }
 int FUN_10fa0270() { return 9; }
 int FUN_10fa0280() { return 5; }
 int FUN_10fa0400() { return 11; }
+bool FUN_10fa3490() { return true; }
 int FUN_10fa3560() { return 2000; }
+bool FUN_10fa5c00() { return true; }
+bool FUN_10fa5c90() { return true; }
 int FUN_10fa76c0() { return 1; }
 int FUN_10fa76d0() { return 2; }
 int FUN_10fa76f0() { return 5; }
 int FUN_10fa7700() { return 3; }
 int FUN_10fa7710() { return 4; }
 int FUN_10fa7830() { return 6; }
+bool FUN_10fa9a80() { return true; }
+bool FUN_10faa9a0() { return true; }
+bool FUN_10faa9b0() { return true; }
+bool FUN_10faa9c0() { return true; }
+bool FUN_10fb6740() { return true; }
+bool FUN_10fb69d0() { return true; }
+bool FUN_10fb69e0() { return true; }
+bool FUN_10fb6a00() { return true; }
+bool FUN_10fb6a60() { return true; }
+bool FUN_10fb6a70() { return true; }
+bool FUN_10fb6a80() { return true; }
 int FUN_10fb9040() { return 8; }
 int FUN_10fb9050() { return 9; }
 int FUN_10fb9060() { return 1; }
@@ -13111,7 +14329,23 @@ int FUN_10fb90b0() { return 5; }
 int FUN_10fb90c0() { return 4; }
 int FUN_10fb90d0() { return 6; }
 int FUN_10fb9240() { return 12; }
+bool FUN_10fbc990() { return true; }
+bool FUN_10fbc9b0() { return true; }
+bool FUN_10fbc9d0() { return true; }
+bool FUN_10fbc9e0() { return true; }
+bool FUN_10fbc9f0() { return true; }
+bool FUN_10fbca00() { return true; }
+bool FUN_10fbca10() { return true; }
+bool FUN_10fbca20() { return true; }
 int FUN_10fbcb70() { return 1500; }
+bool FUN_10fbcfb0() { return true; }
+bool FUN_10fc0730() { return true; }
+bool FUN_10fc0800() { return true; }
+bool FUN_10fc0810() { return true; }
+bool FUN_10fc0820() { return true; }
+bool FUN_10fc0850() { return true; }
+bool FUN_10fc3d30() { return true; }
+bool FUN_10fc3e20() { return true; }
 int FUN_10fc5b70() { return 1; }
 int FUN_10fc5b80() { return 7; }
 int FUN_10fc5b90() { return 8; }
@@ -13122,9 +14356,19 @@ int FUN_10fc5bf0() { return 11; }
 int FUN_10fc5c00() { return 6; }
 int FUN_10fc5c10() { return 5; }
 int FUN_10fc5db0() { return 12; }
+bool FUN_10fc93b0() { return true; }
 int FUN_10fc9460() { return 2000; }
 int FUN_10fca820() { return 2; }
 int FUN_10fcaa10() { return 2; }
+bool FUN_10fcb9a0() { return true; }
+bool FUN_10fcb9b0() { return true; }
+bool FUN_10fcba60() { return true; }
+bool FUN_10fcbaf0() { return true; }
+bool FUN_10fcbb20() { return true; }
+bool FUN_10fccc50() { return true; }
+bool FUN_10fccc60() { return true; }
+bool FUN_10fcd690() { return true; }
+bool FUN_10fcd6b0() { return true; }
 void __stdcall FUN_10fcece0(int *p) { *p = 0; }
 void __stdcall FUN_10fcecf0(int *p) { *p = 0; }
 void __stdcall FUN_10fced00(int *p) { *p = 0; }
@@ -13141,9 +14385,28 @@ struct GS10fcef90 { char p[20]; int m; int FUN_10fcef90(); };
 int GS10fcef90::FUN_10fcef90() { return m; }
 void __stdcall FUN_10fcefe0(int *p, void *a1) { *p = 0; }
 void __stdcall FUN_10fcf1e0(int *p) { *p = 0; }
+bool FUN_10fcf2e0() { return true; }
+bool FUN_10fcf320() { return true; }
+bool FUN_10fcf330() { return true; }
+bool FUN_10fcf3e0() { return true; }
 struct GS10fd1c90 { char p[8]; int m; int FUN_10fd1c90(); };
 int GS10fd1c90::FUN_10fd1c90() { return m; }
+bool FUN_10fd2550() { return true; }
+bool FUN_10fd2560() { return true; }
+bool FUN_10fdd4e0() { return true; }
+bool FUN_10fdd4f0() { return true; }
+bool FUN_10fdd500() { return true; }
+bool FUN_10fdd510() { return true; }
+bool FUN_10fdd520() { return true; }
+bool FUN_10fdd530() { return true; }
+bool FUN_10fdd540() { return true; }
+bool FUN_10fdd550() { return true; }
+bool FUN_10fdd560() { return true; }
+bool FUN_10fdd570() { return true; }
+bool FUN_10fdd580() { return true; }
 bool __stdcall FUN_10fe4580(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
+bool FUN_10fe6d20() { return true; }
+bool FUN_10fe84c0() { return true; }
 struct GS10fef2e0 { char p[4]; int m; int *FUN_10fef2e0(); };
 int *GS10fef2e0::FUN_10fef2e0() { return &m; }
 struct GS10fef2f0 { char p[4]; int m; int *FUN_10fef2f0(); };
@@ -13156,8 +14419,15 @@ int FUN_10fef940() { return 303212576; }
 int FUN_10fef950() { return 303212644; }
 int FUN_10fef960() { return 303212780; }
 int FUN_10fef970() { return 303212712; }
+bool FUN_10ff0bb0() { return true; }
+bool FUN_10ff0bc0() { return true; }
+bool FUN_10ff0bd0() { return true; }
+bool FUN_10ff0be0() { return true; }
 void __stdcall FUN_10ff1790(int *p) { *p = 0; }
 void __stdcall FUN_10ff2bc0(int *p) { *p = 0; }
+bool FUN_10ff6dd0() { return true; }
+bool FUN_10ff6f40() { return true; }
+bool FUN_10ff6f50() { return true; }
 void __stdcall FUN_10ffca30(int *p) { *p = 0; }
 void __stdcall FUN_10ffca40(int *p) { *p = 0; }
 void __stdcall FUN_10ffca50(int *p) { *p = 0; }
@@ -13175,12 +14445,19 @@ struct GS110059d0 { char p[25104]; int m; int FUN_110059d0(); };
 int GS110059d0::FUN_110059d0() { return m; }
 struct GS110059e0 { char p[25104]; int m; int FUN_110059e0(); };
 int GS110059e0::FUN_110059e0() { return m; }
+bool FUN_11010fe0() { return true; }
+bool FUN_11011830() { return true; }
 int FUN_11013340() { return 1; }
 int FUN_11013350() { return 5; }
 int FUN_11013370() { return 2; }
 int FUN_11013380() { return 4; }
 int FUN_11013390() { return 3; }
 int FUN_11013460() { return 6; }
+bool FUN_110158b0() { return true; }
+bool FUN_110158d0() { return true; }
+bool FUN_110158e0() { return true; }
+bool FUN_110158f0() { return true; }
+bool FUN_11015900() { return true; }
 struct GS11018110 { char p[36]; short m; short FUN_11018110(); };
 short GS11018110::FUN_11018110() { return m; }
 struct GS110185a0 { char p[32]; int m; int FUN_110185a0(); };
@@ -13210,6 +14487,11 @@ struct GS110208d0 { char p[8]; int m; int FUN_110208d0(); };
 int GS110208d0::FUN_110208d0() { return m; }
 struct GS110208e0 { char p[8]; int m; int FUN_110208e0(); };
 int GS110208e0::FUN_110208e0() { return m; }
+bool FUN_11020d00() { return true; }
+bool FUN_11020d20() { return true; }
+bool FUN_11020d30() { return true; }
+bool FUN_11020d40() { return true; }
+bool FUN_11020d60() { return true; }
 struct GS11022330 { char p[8]; int m; int FUN_11022330(); };
 int GS11022330::FUN_11022330() { return m; }
 struct GS11022340 { char p[8]; int m; int FUN_11022340(); };
@@ -13228,7 +14510,12 @@ struct GS11031480 { char p[8]; int m; int FUN_11031480(); };
 int GS11031480::FUN_11031480() { return m; }
 struct GS11031490 { char p[8]; int m; int FUN_11031490(); };
 int GS11031490::FUN_11031490() { return m; }
+bool FUN_11037720() { return true; }
+bool FUN_11037730() { return true; }
 int FUN_1103b480() { return 9; }
+bool FUN_1103b6a0() { return true; }
+bool FUN_1103b6b0() { return true; }
+bool FUN_1103bc70() { return true; }
 struct GS11044500 { char p[52]; int m; int FUN_11044500(); };
 int GS11044500::FUN_11044500() { return m; }
 struct GS11045070 { char p[48]; int m; int FUN_11045070(); };
@@ -13297,6 +14584,9 @@ int FUN_110cca30() { return 5; }
 void __stdcall FUN_110ccb90(int *p, void *a1) { *p = 0; }
 void __stdcall FUN_110ce890(int *p, void *a1) { *p = 0; }
 int FUN_110d1ee0() { return 294139328; }
+bool FUN_110d3860() { return true; }
+bool FUN_110d8920() { return true; }
+bool FUN_110d8ca0() { return true; }
 struct GS110da8b0 { char p[32]; int m; int FUN_110da8b0(); };
 int GS110da8b0::FUN_110da8b0() { return m; }
 struct GS110db230 { char p[20]; int m; int FUN_110db230(); };
@@ -13306,6 +14596,7 @@ struct GS110deff0 { char p[48]; int m; int *FUN_110deff0(); };
 int *GS110deff0::FUN_110deff0() { return &m; }
 int FUN_110e2110() { return 294129960; }
 bool __stdcall FUN_110e3600(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
+bool FUN_110e36a0() { return true; }
 bool __stdcall FUN_110e7d00(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 struct GS110eba00 { char p[192]; int m; int FUN_110eba00(); };
 int GS110eba00::FUN_110eba00() { return m; }
@@ -13382,6 +14673,8 @@ struct GS1114dd90 { char p[44]; int m; int *FUN_1114dd90(); };
 int *GS1114dd90::FUN_1114dd90() { return &m; }
 void __stdcall FUN_1114ddb0(int *p, void *a1) { *p = 0; }
 bool __stdcall FUN_1114df10(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
+bool FUN_1114fb00() { return true; }
+bool FUN_1114fb10() { return true; }
 bool __stdcall FUN_111581d0(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 bool __stdcall FUN_111581e0(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
 bool __stdcall FUN_111581f0(char *p, void *a1, void *a2, void *a3) { *p = 1; return true; }
@@ -13430,10 +14723,13 @@ int GS1119a960::FUN_1119a960() { return m; }
 struct GS1119a9e0 { char p[84]; int m; int FUN_1119a9e0(); };
 int GS1119a9e0::FUN_1119a9e0() { return m; }
 int FUN_111a6250() { return 6; }
+bool FUN_111a9310() { return true; }
 struct GS111c1b90 { char p[41808]; int m; int FUN_111c1b90(); };
 int GS111c1b90::FUN_111c1b90() { return m; }
+bool FUN_111c20b0() { return true; }
 struct GS111e3800 { char p[32]; int m; int *FUN_111e3800(); };
 int *GS111e3800::FUN_111e3800() { return &m; }
+bool FUN_111f17e0() { return true; }
 int FUN_111f2f70() { return 295517768; }
 struct GS112016f0 { char p[55256]; int m; int FUN_112016f0(); };
 int GS112016f0::FUN_112016f0() { return m; }
@@ -13466,6 +14762,8 @@ struct GS11232e10 { char p[92]; int m; int *FUN_11232e10(); };
 int *GS11232e10::FUN_11232e10() { return &m; }
 struct GS11232e40 { char p[27952]; int m; int FUN_11232e40(); };
 int GS11232e40::FUN_11232e40() { return m; }
+bool FUN_112333c0() { return true; }
+bool FUN_11238b90() { return true; }
 int FUN_1123fcc0() { return 295554656; }
 void *__stdcall FUN_112417f0(void *a0) { return a0; }
 int FUN_11243bf0() { return 295563952; }
@@ -13501,6 +14799,8 @@ int GS11260a50::FUN_11260a50() { return m; }
 struct GS11260a80 { char p[12]; int m; int FUN_11260a80(); };
 int GS11260a80::FUN_11260a80() { return m; }
 int FUN_11260ba0() { return 303170968; }
+bool FUN_11268320() { return true; }
+bool FUN_11268580() { return true; }
 struct GS1126c440 { char p[17584]; int m; int FUN_1126c440(); };
 int GS1126c440::FUN_1126c440() { return m; }
 struct GS1126c450 { char p[8208]; int m; int FUN_1126c450(); };
@@ -13547,6 +14847,7 @@ int GS112967e0::FUN_112967e0() { return m; }
 struct GS1129d440 { char p[36]; int m; int *FUN_1129d440(); };
 int *GS1129d440::FUN_1129d440() { return &m; }
 int FUN_112a7e40() { return 305097552; }
+bool FUN_112a8c70() { return true; }
 extern __declspec(dllimport) void probe_import_112b0900();
 void FUN_112b0900() { probe_import_112b0900(); }
 extern __declspec(dllimport) void probe_import_112b0910();
@@ -13596,6 +14897,7 @@ struct GS112efc10 { char p[296]; int m; int FUN_112efc10(); };
 int GS112efc10::FUN_112efc10() { return m; }
 struct GS112f05a0 { char p[300]; int m; int FUN_112f05a0(); };
 int GS112f05a0::FUN_112f05a0() { return m; }
+bool FUN_112f1c30() { return true; }
 struct GS112f4f50 { char p[4]; int m; int FUN_112f4f50(); };
 int GS112f4f50::FUN_112f4f50() { return m; }
 int FUN_113b9a80() { return 295710676; }
@@ -13624,6 +14926,7 @@ struct GS11458e90 { char p[208]; int m; int FUN_11458e90(); };
 int GS11458e90::FUN_11458e90() { return m; }
 struct GS1145a2a0 { char p[4]; int m; int FUN_1145a2a0(); };
 int GS1145a2a0::FUN_1145a2a0() { return m; }
+bool FUN_11460040() { return true; }
 extern __declspec(dllimport) void probe_import_11489c94();
 void FUN_11489c94() { probe_import_11489c94(); }
 extern __declspec(dllimport) void probe_import_11489c9a();
@@ -13887,3 +15190,8 @@ extern __declspec(dllimport) void probe_import_1148d165();
 void FUN_1148d165() { probe_import_1148d165(); }
 extern __declspec(dllimport) void probe_import_1148d16b();
 void FUN_1148d16b() { probe_import_1148d16b(); }
+bool FUN_1148d1dd() { return true; }
+bool FUN_1148d1e0() { return true; }
+bool FUN_1148d1e3() { return true; }
+bool FUN_1148d1e6() { return true; }
+bool FUN_1148d1e9() { return true; }

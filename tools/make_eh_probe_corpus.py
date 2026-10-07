@@ -159,14 +159,20 @@ def needed_operands(reference, image, layout, inventory):
         'deep_lea': set(),  # disp32 magnitude for lea ecx,[ebp-V]
         'del_sz': set(),    # sized-delete imm
         'flag_mask': set(), # and eax,imm flag masks
+        'flag_clr': set(),  # (slot, mask) for and dword[ebp-slot],mask
     }
+    ext_mask = bytearray(rs)
     for row in csv.DictReader(open(inventory), delimiter='\t'):
         va = int(row['entry'], 16)
         size = int(row['body_bytes'])
-        if not size or size > 64:
+        if not size:
             continue
         rva = va - base
         if not (rva0 <= rva < rva0 + rs):
+            continue
+        for i in range(rva - rva0, min(rs, rva - rva0 + size)):
+            ext_mask[i] = 1
+        if size > 64:
             continue
         off = o + rva - rva0
         exp = reference[off:off + size]
@@ -199,6 +205,46 @@ def needed_operands(reference, image, layout, inventory):
         if m:
             sets['flag_mask'].add(int.from_bytes(m.group(1), 'little'))
             continue
+    # Scan fully-differing runs OUTSIDE the inventory for the same families.
+    diff = bytes(a != b for a, b in
+                 zip(reference[o:o + rs], image[o:o + rs]))
+    i = 0
+    while i < rs:
+        if not (diff[i] and not ext_mask[i]):
+            i += 1
+            continue
+        j = i
+        while j < rs and diff[j] and not ext_mask[j]:
+            j += 1
+        exp = reference[o + i:o + j]
+        m = _re.match(rb'\x8b\x45(.)\x83\xe0(.)', exp)
+        if m:
+            sets['flag_mask'].add(m.group(2)[0])
+            i = j
+            continue
+        m = _re.match(rb'\x8b\x45(.)\x25(....)', exp)
+        if m:
+            sets['flag_mask'].add(int.from_bytes(m.group(2), 'little'))
+            i = j
+            continue
+        m = _re.match(rb'\x83\x65(.)(.)', exp)
+        if m:
+            sets['flag_clr'].add((m.group(1)[0], m.group(2)[0]))
+            i = j
+            continue
+        m = _re.match(rb'\x6a(.)\x8b\x45', exp)
+        if m:
+            sets['del_sz'].add(m.group(1)[0])
+            i = j
+            continue
+        m = _re.match(rb'\x68(....)\x8b.', exp)
+        if m:
+            v = int.from_bytes(m.group(1), 'little')
+            if v < 0x10000:
+                sets['del_sz'].add(v)
+            i = j
+            continue
+        i = j
     return sets
 
 
@@ -269,6 +315,27 @@ def emit_targeted(out, sets):
                 f'void probe_dva_{sz:05x}() {{ ProbeA{sz:05x} *p = '
                 f'new ProbeA{sz:05x}[2]; probe_throw(); }}'
             )
+    # Flag-clears: a catch block that returns to try-level resets the
+    # construction-flag dword ->  and dword[ebp-slot],mask
+    for slot, mask in sorted(sets.get('flag_clr', ())):
+        if slot < 0x08 or slot > 0x7f or not mask:
+            continue
+        bit = (~mask & 0xff).bit_length()
+        decls = ' '.join(f'ProbeSub m{i};' for i in range(min(bit, 24)))
+        for d in range(0, 5):
+            tag = f'{slot:02x}_{mask:02x}_{d}'
+            out.append(
+                f'void probe_fclr_{tag}() {{ '
+                + _nest('try { probe_throw(); } catch (...) '
+                        '{ probe_sink(0); }', d)
+                + ' }'
+            )
+            sinks = '; '.join(['probe_sink(0)'] * (d + 1))
+            out.append(
+                f'struct ProbeFC{tag} {{ {decls} ProbeFC{tag}(); }};\n'
+                f'ProbeFC{tag}::ProbeFC{tag}() try '
+                f'{{ probe_throw(); {sinks}; }} catch (...) {{ throw; }}'
+            )
     # Flag masks: function-try ctor with enough members to reach bit N.
     for mask in sorted(sets['flag_mask']):
         if mask <= 0 or (mask & (mask - 1)):
@@ -279,6 +346,35 @@ def emit_targeted(out, sets):
             f'struct ProbeFM{mask:08x} {{ {decls} ProbeFM{mask:08x}(); }};\n'
             f'ProbeFM{mask:08x}::ProbeFM{mask:08x}() try {{ probe_throw(); }}'
             f' catch (...) {{ throw; }}'
+        )
+
+
+def emit_extra_families(out, count):
+    # Catch-by-value/ref handlers make the framehandler pass the thrown object
+    # through a second stack arg -> funclets reading [esp+8].
+    forms = (
+        'catch (ProbeSub o) { probe_sink(&o); }',
+        'catch (ProbeSub &o) { probe_sink(&o); }',
+        'catch (ProbeSub o) { o.~ProbeSub(); }',
+        'catch (int o) { probe_sink(o); }',
+    )
+    for i, form in enumerate(forms):
+        for d in range(0, count):
+            out.append(
+                f'void probe_cref_{i}_{d}() {{ '
+                + _nest(f'try {{ probe_throw(); }} {form}', d)
+                + ' }'
+            )
+    # Indirect-call stubs: a call through a global function pointer emits
+    #   ff15 <&fp> ; cc/c3 -> IAT-thunk shape.
+    for k in range(8):
+        out.append(
+            f'extern void (*volatile probe_fp{k})();\n'
+            f'void probe_iat_{k}() {{ probe_fp{k}(); }}'
+        )
+        out.append(
+            f'extern void (*volatile probe_fq{k})();\n'
+            f'void probe_iatq_{k}() {{ probe_fq{k}(); __assume(0); }}'
         )
 
 
@@ -396,6 +492,7 @@ def main():
     emit_array_members(out, min(args.sweep, 40))
     emit_delete_chains(out, args.sweep)
     emit_array_sweep(out, args.sweep)
+    emit_extra_families(out, 12)
 
     index_rows = []
     if args.reference and args.image and args.report:

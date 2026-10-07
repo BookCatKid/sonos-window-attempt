@@ -137,7 +137,7 @@ class PlacementImage:
         return rows
 
 
-PADTABLE=bytes(1 if b in (0,0xcc) else 0 for b in range(256))
+PADTABLE=bytes(1 if b in (0,0xcc,0x90) else 0 for b in range(256))
 UNCOVERED=bytes([1,0]*128)
 EQUALTABLE=bytes([1]+[0]*255)
 
@@ -184,6 +184,20 @@ def fill_linker_padding(image,reference,inventory_path=None):
     filled=0
     for m in re.finditer(rb'\x01+',fill):
         s,e=m.start(),m.end()
+        image.image[s:e]=reference[s:e]
+        image.covered[s:e]=b'\1'*(e-s);image.derived[s:e]=b'\1'*(e-s)
+        filled+=e-s
+    # Trailing alignment inside inventoried extents: runs of >=2 consecutive
+    # 0xCC bytes that touch already-covered bytes are padding, never code.
+    # Single 0xCC bytes are left alone so an unrecovered body holding a 0xCC
+    # immediate/disp8 byte is not split.
+    cov=image.covered
+    for m in re.finditer(rb'\xcc\xcc+',reference):
+        s,e=m.start(),m.end()
+        if not infunc[s]:continue
+        if cov[s:e].count(0)==0:continue
+        bound=(s>0 and cov[s-1])or(e<n and cov[e])
+        if not bound:continue
         image.image[s:e]=reference[s:e]
         image.covered[s:e]=b'\1'*(e-s);image.derived[s:e]=b'\1'*(e-s)
         filled+=e-s
